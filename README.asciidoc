@@ -1,0 +1,15 @@
+== PG-Cicero ==
+
+PostgreSQL Documentation Translation Project using XML Docbook format.
+
+=== Scripts ===
+
+  * xml-update
+  * pot-update
+
+== Credits ==
+
+License::
+	GPL v3 or later
+Author::
+	(C) 2011 2ndQuadrant Italia <info@2ndquadrant.it>
