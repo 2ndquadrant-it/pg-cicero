@@ -90,6 +90,8 @@ if [ -n "$LANGUAGE" ]; then
     LANGOPT="--language="$LANGUAGE
 else
     LANGOPT="--mark-untranslated"
+    echo "WARNING: Language not specified"
+    LANGUAGE="untranslated"
 fi
 
 #
@@ -122,18 +124,18 @@ i=0
 tot=0
 ok=0
 fail=0
-echo "-> Creating XMLs in "$OUTPUTDIR
+echo "-> Creating XMLs in "$OUTPUTDIR"/"$LANGUAGE
 START_TIME=`date '+%T' 2>/dev/null`
 for srcfile in $( find $BASEDIR -type f -name '*.xml' | sed -e "s|$BASEDIR/||" ) 
 do
     INPUT_FILE=$srcfile
-    OUTPUT_FILE=$OUTPUTDIR/$srcfile
+    OUTPUT_FILE=$OUTPUTDIR/$LANGUAGE/$srcfile
     PO_FILE=$PODIR/$( echo $srcfile | sed -e 's/\.xml/\.po/' )
 
     if [ ! -d `dirname $OUTPUT_FILE` ]; then
         mkdir -p `dirname $OUTPUT_FILE`
     fi
-    xml2po $LANGOPT --po-file=$PO_FILE --output=$OUTPUT_FILE $BASEDIR/$INPUT_FILE | msguniq --use-first | msgcat -w80 -
+    xml2po $LANGOPT -e --po-file=$PO_FILE --output=$OUTPUT_FILE $BASEDIR/$INPUT_FILE
 
     if [ $? -eq 0 ]; then
         ok=$ok+1

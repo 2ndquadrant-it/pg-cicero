@@ -94,6 +94,8 @@ if [ -n "$LANGUAGE" ]; then
     LANGOPT="--language="$LANGUAGE
 else
     LANGOPT="--mark-untranslated"
+    echo "WARNING: Language not specified"
+    LANGUAGE="untranslated"
 fi
 
 #
@@ -126,18 +128,18 @@ i=0
 tot=0
 ok=0
 fail=0
-echo "-> Creating POs in "$PODIR
+echo "-> Creating POs in "$PODIR"/"$LANGUAGE
 START_TIME=`date '+%T' 2>/dev/null`
 for srcfile in $( find $BASEDIR -type f -name '*.xml' | sed -e "s|$BASEDIR/||" ) 
 do
     INPUT_FILE=$srcfile
-    OUTPUT_FILE=$PODIR/$( echo $srcfile | sed -e 's/\.xml/\.po/' )
+    OUTPUT_FILE=$PODIR/$LANGUAGE/$( echo $srcfile | sed -e 's/\.xml/\.po/' )
     REUSE_FILE=$REUSEDIR/$srcfile
 
     if [ ! -d `dirname $OUTPUT_FILE` ]; then
         mkdir -p `dirname $OUTPUT_FILE`
     fi
-    xml2po $LANGOPT --reuse=$REUSE_FILE --output=$OUTPUT_FILE $BASEDIR/$INPUT_FILE | msguniq --use-first
+    xml2po $LANGOPT --reuse=$REUSE_FILE --output=$OUTPUT_FILE $BASEDIR/$INPUT_FILE 
 
     if [ $? -eq 0 ]; then
         ok=$ok+1
@@ -148,6 +150,10 @@ do
     echo -ne "$(progressbar_step $i)\r"
     tot=$tot+1 
     i=$i+1
+    AUX=`mktemp`
+    msguniq --use-first $OUTPUT_FILE -o $AUX
+    cat $AUX > $OUTPUT_FILE
+
 done
 END_TIME=`date '+%T' 2>/dev/null`
 
@@ -156,9 +162,6 @@ echo "  Complete!"
 echo "  Total Files : " $tot 
 echo "  Successes   : " $ok
 echo "  Fails       : " $fail
-if [ $fail -gt 0 ]; then
-    echo "    (Please see $TMPFILE for details)"
-fi
 echo "  Started at  : " $START_TIME
 echo "  Ended at    : " $END_TIME
 echo 
