@@ -130,16 +130,22 @@ ok=0
 fail=0
 echo "-> Creating POs in "$PODIR"/"$LANGUAGE
 START_TIME=`date '+%T' 2>/dev/null`
+
+cp -r $BASEDIR base
+cp -r $REUSEDIR reuse
+
 for srcfile in $( find $BASEDIR -type f -name '*.xml' | sed -e "s|$BASEDIR/||" ) 
 do
     INPUT_FILE=$srcfile
     OUTPUT_FILE=$PODIR/$LANGUAGE/$( echo $srcfile | sed -e 's/\.xml/\.po/' )
-    REUSE_FILE=$REUSEDIR/$srcfile
+    #REUSE_FILE=$REUSEDIR/$srcfile
 
     if [ ! -d `dirname $OUTPUT_FILE` ]; then
         mkdir -p `dirname $OUTPUT_FILE`
     fi
-    xml2po $LANGOPT --reuse=$REUSE_FILE --output=$OUTPUT_FILE $BASEDIR/$INPUT_FILE 
+    
+    sed -i -e 's/&mdash;/-/g' reuse/$srcfile base/$srcfile
+    xml2po $LANGOPT --reuse=reuse/$srcfile --output=$OUTPUT_FILE base/$srcfile
 
     if [ $? -eq 0 ]; then
         ok=$ok+1
@@ -148,14 +154,12 @@ do
         fail=$fail+1
     fi
     echo -ne "$(progressbar_step $i)\r"
+
+    msguniq --use-first $OUTPUT_FILE -o $OUTPUT_FILE.unique && mv $OUTPUT_FILE.unique $OUTPUT_FILE 
+
     tot=$tot+1 
     i=$i+1
-    AUX=`mktemp`
-    msguniq --use-first $OUTPUT_FILE -o $AUX
-    cat $AUX > $OUTPUT_FILE
-
 done
-END_TIME=`date '+%T' 2>/dev/null`
 
 echo 
 echo "  Complete!"
