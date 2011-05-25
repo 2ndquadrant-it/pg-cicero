@@ -103,16 +103,12 @@ entity_list = {
     'rcub':'}',
 }
 
-def usage():
-    print "usage: " + sys.argv[0] + " [-s] infile outfile \n"
-    print " -s: standalone"
-
 class sgml2xml:
 
-    def __init__(self, src, dst, standalone):
+    def __init__(self, src, dst, oprions):
         self.src = src
         self.dst = dst
-        self.standalone = standalone
+        self.options = options
 
     def translate_entity(self, entity):
         if entity in entity_list:
@@ -225,28 +221,30 @@ class sgml2xml:
                                 if self.read(2) == ']>':
                                     ignore_closed = True
 
-                    elif char == '[%' and self.read(11) == 'standalone-':
-
-                        aux = self.read(2)
-                        if aux == 'ig':
-                            char = self.read(5)
-                            if char[-1] != '[':
+                    elif char == '[%':
+                        entity = ''
+                        while True:
+                            char = self.read(1)
+                            if char in ';':
                                 self.read(1)
-                            if not standalone:
+                                break
+                            if char in '[':
+                                break
+                            entity += char;
+
+                        if entity == 'standalone-ignore':
+                            if not options['standalone']:
                                 res.write(self.parse_tree(True))
                             else:
                                 self.parse_tree(True)
 
-                        elif aux == 'in':
-                            char = self.read(6)
-                            if char[-1] != '[':
-                                self.read(1)
-                            if standalone:
+                        elif entity == 'standalone-include':
+                            if options['standalone']:
                                 res.write(self.parse_tree(True))
                             else:
                                 self.parse_tree(True)
                         else:
-                            raise SystemExit('ERROR: unknown "<![%standalone-" directive')
+                            raise SystemExit('ERROR: unknown parameter entity: %%%s' % entity)
                     else:
                         res.write('<!' + char)
 
@@ -297,17 +295,23 @@ class sgml2xml:
         self.dst.write(res)
         self.dst.close()
 
+def usage():
+    print "usage: " + sys.argv[0] + " [-s] infile outfile"
+    print "\t-s: standalone"
+
 if __name__ == '__main__':
     argn = len(sys.argv)
     if argn not in (3, 4):
         usage()
         sys.exit(1)
 
-    if sys.argv[1] == '-s':
-        standalone = True
+    options = {}
+    options['standalone'] = False
+    while sys.argv[1][1:] in 'si':
+        if sys.argv[1] == '-s':
+            options['standalone'] = True
+
         del sys.argv[1]
-    else:
-        standalone = False
 
     src_name = sys.argv[1]
     dst_name = sys.argv[2]
@@ -323,6 +327,6 @@ if __name__ == '__main__':
     except IOError, msg:
         raise SystemExit('ERROR: Error creating output file\n%s' % msg)
 
-    converter = sgml2xml(src_file, dst_file, standalone)
+    converter = sgml2xml(src_file, dst_file, options)
     converter.convert();
 
