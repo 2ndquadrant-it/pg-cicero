@@ -243,6 +243,11 @@ class sgml2xml:
                                 res.write(self.parse_tree(True))
                             else:
                                 self.parse_tree(True)
+                        elif entity == 'include-index':
+                            if options['index']:
+                                res.write(self.parse_tree(True))
+                            else:
+                                self.parse_tree(True)
                         else:
                             raise SystemExit('ERROR: unknown parameter entity: %%%s' % entity)
                     else:
@@ -298,6 +303,7 @@ class sgml2xml:
 def usage():
     print "usage: " + sys.argv[0] + " [-s] infile outfile"
     print "\t-s: standalone"
+    print "\t-i: include index"
 
 if __name__ == '__main__':
     argn = len(sys.argv)
@@ -307,9 +313,12 @@ if __name__ == '__main__':
 
     options = {}
     options['standalone'] = False
+    options['index'] = False
     while sys.argv[1][1:] in 'si':
         if sys.argv[1] == '-s':
             options['standalone'] = True
+        elif sys.argv[1] == '-i':
+            options['index'] = True
 
         del sys.argv[1]
 
