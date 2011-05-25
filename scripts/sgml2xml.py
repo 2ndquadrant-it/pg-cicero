@@ -20,6 +20,7 @@
 import sys
 from collections import deque
 from cStringIO import StringIO
+import os
 
 entity_list = {
     'aacute':'á',
@@ -301,9 +302,25 @@ class sgml2xml:
         self.dst.close()
 
 def usage():
-    print "usage: " + sys.argv[0] + " [-s] infile outfile"
+    print "usage: " + sys.argv[0] + " [-s] indir outdir"
     print "\t-s: standalone"
     print "\t-i: include index"
+
+def convert_file(src_name, dst_name, options):
+    try:
+        src_file = open(src_name, 'r')
+    except IOError, msg:
+        raise SystemExit('ERROR: Error opening input file\n%s' % msg)
+
+    try:
+        dst_file = open(dst_name, 'w')
+        if dst_name[-4:] != '.xml':
+            print >> sys.stderr, 'WARNING: output file extension is not xml'
+    except IOError, msg:
+        raise SystemExit('ERROR: Error creating output file\n%s' % msg)
+
+    converter = sgml2xml(src_file, dst_file, options)
+    converter.convert();
 
 if __name__ == '__main__':
     argn = len(sys.argv)
@@ -322,20 +339,31 @@ if __name__ == '__main__':
 
         del sys.argv[1]
 
-    src_name = sys.argv[1]
-    dst_name = sys.argv[2]
-    try:
-        src_file = open(src_name, 'r')
-    except IOError, msg:
-        raise SystemExit('ERROR: Error opening input file\n%s' % msg)
+    src = sys.argv[1]
+    dst = sys.argv[2]
 
-    try:
-        dst_file = open(dst_name, 'w')
-        if dst_name[-4:] != '.xml':
-            print >> sys.stderr, 'WARNING: output file extension is not xml'
-    except IOError, msg:
-        raise SystemExit('ERROR: Error creating output file\n%s' % msg)
-
-    converter = sgml2xml(src_file, dst_file, options)
-    converter.convert();
-
+    if not os.path.isdir(src):
+        if os.path.isdir(dst):
+            name = os.path.basename(src)
+            dst = os.path.join(dst, name)
+        convert_file(src, dst, options)
+    else:
+        if not os.path.isdir(dst):
+            try:
+                os.makedirs(dst)
+            except IOError, msg:
+                raise SystemExit('ERROR: Error creating directory\n%s' % msg)
+        for root, dirs, files in os.walk(src):
+            for file in files:
+                fsplit = os.path.splitext(file)
+                if fsplit[1] == '.sgml':
+                    dst_dir = root.replace(src, dst)
+                    if not os.path.isdir(dst_dir):
+                        try:
+                            os.makedirs(dst_dir)
+                        except IOError, msg:
+                            raise SystemExit('ERROR: Error creating directory\n%s' % msg)
+                    dst_file = os.path.join(dst_dir, fsplit[0] + '.xml')
+                    src_file = os.path.join(root, file)
+                    print "Generatins %s" % dst_file
+                    convert_file(src_file, dst_file, options)
