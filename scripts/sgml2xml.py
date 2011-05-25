@@ -107,34 +107,39 @@ def usage():
     print "usage: " + sys.argv[0] + " [-s] infile outfile \n"
     print " -s: standalone"
 
-def translate_entity(entity):
-    if entity in entity_list:
-        return entity_list[entity]
-    return "&" + entity + ";"
+class sgml2xml:
 
-def sgml2xml(src, dst, standalone):
+    def __init__(self, src, dst, standalone):
+        self.src = src
+        self.dst = dst
+        self.standalone = standalone
 
-    def read(n):
-        return src.read(n).decode('latin1').encode('utf-8')
+    def translate_entity(self, entity):
+        if entity in entity_list:
+            return entity_list[entity]
+        return "&" + entity + ";"
 
-    def parse_entity():
-        char = read(1)
+    def read(self, n):
+        return self.src.read(n).decode('latin1').encode('utf-8')
+
+    def parse_entity(self):
+        char = self.read(1)
         entity = ''
         while True:
             if char == ';':
                 break
             entity += char
-            char = read(1)
+            char = self.read(1)
         return entity;
 
-    def parse_tree(condictional=False):
+    def parse_tree(self, condictional=False):
         fifo = deque()
         res = StringIO()
         while 1:
-            char = read(1)
+            char = self.read(1)
             if not char: break
             if condictional and char == ']':
-                char = read(1)
+                char = self.read(1)
                 if char == ']':
                     char = self.read(1)
                     if char == '>':
@@ -145,7 +150,7 @@ def sgml2xml(src, dst, standalone):
                     res.write(']')
 
             if char == '<':
-                char = read(1)
+                char = self.read(1)
 
                 if char == '/':
                     try:
@@ -154,65 +159,65 @@ def sgml2xml(src, dst, standalone):
                         raise SystemExit('ERROR: trying to pop an empty qeue')
 
                     while char != '>':
-                        char = read(1)
+                        char = self.read(1)
 
                 elif char == '!':
-                    char = read(2)
+                    char = self.read(2)
                     if char == '--':
                         res.write('<!--')
 
                         comment_closed = False
                         while comment_closed == False:
-                            char = read(1)
+                            char = self.read(1)
                             if char == '-':
-                                if read(2) == '->':
+                                if self.read(2) == '->':
                                     comment_closed = True
                                     res.write('-->')
                             else:
                                 res.write(char)
 
-                    elif char == '[C'  and read(5) == 'DATA[':
+                    elif char == '[C'  and self.read(5) == 'DATA[':
                         res.write('<![CDATA[')
 
                         cdata_closed = False
                         while cdata_closed == False:
-                            char = read(1)
+                            char = self.read(1)
                             if char == ']':
-                                if read(2) == ']>':
+                                if self.read(2) == ']>':
                                     cdata_closed = True
                                     res.write(']]>')
                             else:
                                 res.write(char)
 
-                    elif char == '[I' and read(6) == 'GNORE[':
+                    elif char == '[I' and self.read(6) == 'GNORE[':
 
                         ignore_closed = False
                         while ignore_closed == False:
-                            char = read(1)
+                            char = self.read(1)
                             if char == ']':
-                                if read(2) == ']>':
+                                if self.read(2) == ']>':
                                     ignore_closed = True
 
-                    elif char == '[%' and read(11) == 'standalone-':
+                    elif char == '[%' and self.read(11) == 'standalone-':
 
-                        aux = read(2)
+                        aux = self.read(2)
                         if aux == 'ig':
-                            char = read(5)
+                            char = self.read(5)
                             if char[-1] != '[':
-                                read(1)
+                                self.read(1)
                             if not standalone:
-                                res.write(parse_tree(True))
+                                res.write(self.parse_tree(True))
                             else:
-                                parse_tree(True)
+                                self.parse_tree(True)
 
                         elif aux == 'in':
-                            char = read(6)
+                            char = self.read(6)
                             if char[-1] != '[':
-                                read(1)
+                                self.read(1)
                             if standalone:
-                                res.write(parse_tree(True))
+                                res.write(self.parse_tree(True))
                             else:
-                                parse_tree(True)
+                                self.parse_tree(True)
                         else:
                             raise SystemExit('ERROR: unknown "<![%standalone-" directive')
                     else:
@@ -220,12 +225,12 @@ def sgml2xml(src, dst, standalone):
 
                 else:
                     tag = char
-                    char = read(1)
+                    char = self.read(1)
                     params = ''
                     # get the tag name
                     while True:
                         tag += char
-                        char = read(1)
+                        char = self.read(1)
                         if char == ' ' or char == '\t' or  char == '\n'  or char == '>':
                             break
 
@@ -233,11 +238,11 @@ def sgml2xml(src, dst, standalone):
                     if char != '>':
                         while True:
                             if char == '&':
-                                entity = parse_entity()
-                                params += translate_entity(entity)
+                                entity = self.parse_entity()
+                                params += self.translate_entity(entity)
                             else:
                                 params = params + char
-                            char = read(1)
+                            char = self.read(1)
                             if char == '>':
                                 break
 
@@ -259,19 +264,20 @@ def sgml2xml(src, dst, standalone):
                         res.write("<" + tag + params + ">")
 
             elif char == '&':
-                entity = parse_entity()
-                res.write(translate_entity(entity))
+                entity = self.parse_entity()
+                res.write(self.translate_entity(entity))
             else:
                 res.write(char)
 
         return res.getvalue()
 
-    res = parse_tree()
+    def convert(self):
+        res = self.parse_tree()
 
-    src.close()
-    dst.write('<?xml version="1.0" encoding="UTF-8"?>\n')
-    dst.write(res)
-    dst.close()
+        self.src.close()
+        self.dst.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        self.dst.write(res)
+        self.dst.close()
 
 if __name__ == '__main__':
     argn = len(sys.argv)
@@ -299,5 +305,6 @@ if __name__ == '__main__':
     except IOError, msg:
         raise SystemExit('ERROR: Error creating output file\n%s' % msg)
 
-    sgml2xml(src_file, dst_file, standalone)
+    converter = sgml2xml(src_file, dst_file, standalone)
+    converter.convert();
 
