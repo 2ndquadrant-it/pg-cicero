@@ -132,6 +132,25 @@ class sgml2xml:
             char = self.read(1)
         return self.translate_entity(entity);
 
+    def parse_tagname(self, firstchar=None):
+        if firstchar == None:
+            char = self.read(1)
+        tag = ''
+        char = firstchar
+        # skip initial spaces
+        while True:
+            if char not in ' \t\n':
+                break
+            char = self.read(1)
+
+        # get the tag name
+        while True:
+            if char in ' \t\n>':
+                break
+            tag += char
+            char = self.read(1)
+        return tag.lower(), char
+
     def parse_tree(self, condictional=False):
         fifo = deque()
         res = StringIO()
@@ -153,11 +172,19 @@ class sgml2xml:
                 char = self.read(1)
 
                 if char == '/':
+                    char = self.read(1)
+                    tag, char = self.parse_tagname(char)
                     try:
-                        res.write('</' + fifo.pop() + '>')
+                        stack_tag = fifo.pop()
+                        if tag == '':
+                            tag = stack_tag
+                        else:
+                            while stack_tag != tag:
+                                res.write('</' + stack_tag + '>')
+                                stack_tag = fifo.pop()
                     except IndexError:
-                        raise SystemExit('ERROR: trying to pop an empty qeue')
-
+                        raise SystemExit('ERROR: trying to pop an empty qeue:\n%s' % res.getvalue()[-100:])
+                    res.write('</' + tag + '>')
                     while char != '>':
                         char = self.read(1)
 
@@ -224,17 +251,10 @@ class sgml2xml:
                         res.write('<!' + char)
 
                 else:
-                    tag = char
-                    char = self.read(1)
-                    params = ''
-                    # get the tag name
-                    while True:
-                        tag += char
-                        char = self.read(1)
-                        if char == ' ' or char == '\t' or  char == '\n'  or char == '>':
-                            break
+                    tag, char = self.parse_tagname(char)
 
                     # get params
+                    params = ''
                     if char != '>':
                         while True:
                             if char == '&':
