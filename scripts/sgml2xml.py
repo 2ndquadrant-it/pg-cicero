@@ -17,7 +17,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import sys, os
+import sys
 from collections import deque
 from cStringIO import StringIO
 
@@ -134,12 +134,15 @@ def sgml2xml(src, dst, standalone):
             char = read(1)
             if not char: break
             if condictional and char == ']':
-                char = read(2)
-                if char == ']>':
-                    return res.getvalue()
+                char = read(1)
+                if char == ']':
+                    char = self.read(1)
+                    if char == '>':
+                        return res.getvalue()
+                    else:
+                        res.write(']]')
                 else:
-                    char = ']'
-                    src.seek(-2, os.SEEK_CUR)
+                    res.write(']')
 
             if char == '<':
                 char = read(1)
@@ -194,18 +197,18 @@ def sgml2xml(src, dst, standalone):
 
                         aux = read(2)
                         if aux == 'ig':
-                            char = read(6)
+                            char = read(5)
                             if char[-1] != '[':
-                                src.seek(-1, os.SEEK_CUR)
+                                read(1)
                             if not standalone:
                                 res.write(parse_tree(True))
                             else:
                                 parse_tree(True)
 
                         elif aux == 'in':
-                            char = read(7)
+                            char = read(6)
                             if char[-1] != '[':
-                                src.seek(-1, os.SEEK_CUR)
+                                read(1)
                             if standalone:
                                 res.write(parse_tree(True))
                             else:
