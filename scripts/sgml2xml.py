@@ -130,7 +130,7 @@ class sgml2xml:
                 break
             entity += char
             char = self.read(1)
-        return entity;
+        return self.translate_entity(entity);
 
     def parse_tree(self, condictional=False):
         fifo = deque()
@@ -238,8 +238,7 @@ class sgml2xml:
                     if char != '>':
                         while True:
                             if char == '&':
-                                entity = self.parse_entity()
-                                params += self.translate_entity(entity)
+                                params += self.parse_entity()
                             else:
                                 params = params + char
                             char = self.read(1)
@@ -264,8 +263,7 @@ class sgml2xml:
                         res.write("<" + tag + params + ">")
 
             elif char == '&':
-                entity = self.parse_entity()
-                res.write(self.translate_entity(entity))
+                res.write(self.parse_entity())
             else:
                 res.write(char)
 
