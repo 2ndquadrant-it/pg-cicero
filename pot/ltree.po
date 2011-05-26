@@ -1,0 +1,534 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:5(title) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:8(primary) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:204(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:204(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:210(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:210(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:216(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:218(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:222(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:224(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:228(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:230(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:234(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:236(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:240(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:242(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:246(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:248(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:252(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:252(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:253(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:254(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:258(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:259(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:260(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:264(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:265(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:266(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:270(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:272(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:276(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:278(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:282(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:284(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:288(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:290(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:308(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:314(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:330(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:331(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:332(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:336(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:337(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:338(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:343(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:349(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:386(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:387(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:395(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:396(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:407(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:408(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:446(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:447(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:455(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:462(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:471(type)
+msgid "ltree"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:11(para)
+msgid "This module implements a data type <type>ltree</type> for representing labels of data stored in a hierarchical tree-like structure. Extensive facilities for searching through label trees are provided."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:18(title)
+msgid "Definitions"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:20(para)
+msgid "A <firstterm>label</firstterm> is a sequence of alphanumeric characters and underscores (for example, in C locale the characters <literal>A-Za-z0-9_</literal> are allowed). Labels must be less than 256 bytes long."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:27(para)
+msgid "Examples: <literal>42</literal>, <literal>Personal_Services</literal>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:31(para)
+msgid "A <firstterm>label path</firstterm> is a sequence of zero or more labels separated by dots, for example <literal>L1.L2.L3</literal>, representing a path from the root of a hierarchical tree to a particular node. The length of a label path must be less than 65Kb, but keeping it under 2Kb is preferable. In practice this is not a major limitation; for example, the longest label path in the DMOZ catalogue (<ulink url=\"http://www.dmoz.org\"/>) is about 240 bytes."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:41(para)
+msgid "Example: <literal>Top.Countries.Europe.Russia</literal>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:45(para)
+msgid "The <filename>ltree</filename> module provides several data types:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:51(para)
+msgid "<type>ltree</type> stores a label path."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:57(para)
+msgid "<type>lquery</type> represents a regular-expression-like pattern for matching <type>ltree</type> values. A simple word matches that label within a path. A star symbol (<literal>*</literal>) matches zero or more labels. For example: <synopsis>\nfoo         <lineannotation>Match the exact label path <literal>foo</literal></lineannotation>\n*.foo.*     <lineannotation>Match any label path containing the label <literal>foo</literal></lineannotation>\n*.foo       <lineannotation>Match any label path whose last label is <literal>foo</literal></lineannotation>\n</synopsis>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:69(para)
+msgid "Star symbols can also be quantified to restrict how many labels they can match: <synopsis>\n*{<replaceable>n</replaceable>}        <lineannotation>Match exactly <replaceable>n</replaceable> labels</lineannotation>\n*{<replaceable>n</replaceable>,}       <lineannotation>Match at least <replaceable>n</replaceable> labels</lineannotation>\n*{<replaceable>n</replaceable>,<replaceable>m</replaceable>}      <lineannotation>Match at least <replaceable>n</replaceable> but not more than <replaceable>m</replaceable> labels</lineannotation>\n*{,<replaceable>m</replaceable>}       <lineannotation>Match at most <replaceable>m</replaceable> labels — same as </lineannotation> *{0,<replaceable>m</replaceable>}\n</synopsis>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:80(para)
+msgid "There are several modifiers that can be put at the end of a non-star label in <type>lquery</type> to make it match more than just the exact match: <synopsis>\n@           <lineannotation>Match case-insensitively, for example <literal>a@</literal> matches <literal>A</literal></lineannotation>\n*           <lineannotation>Match any label with this prefix, for example <literal>foo*</literal> matches <literal>foobar</literal></lineannotation>\n%           <lineannotation>Match initial underscore-separated words</lineannotation>\n</synopsis> The behavior of <literal>%</literal> is a bit complicated. It tries to match words rather than the entire label. For example <literal>foo_bar%</literal> matches <literal>foo_bar_baz</literal> but not <literal>foo_barbaz</literal>. If combined with <literal>*</literal>, prefix matching applies to each word separately, for example <literal>foo_bar%*</literal> matches <literal>foo1_bar2_baz</literal> but not <literal>foo1_br2_baz</literal>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:97(para)
+msgid "Also, you can write several possibly-modified labels separated with <literal>|</literal> (OR) to match any of those labels, and you can put <literal>!</literal> (NOT) at the start to match any label that doesn't match any of the alternatives."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:106(programlisting)
+#, no-wrap
+msgid "\nTop.*{0,2}.sport*@.!football|tennis.Russ*|Spain\na.  b.     c.      d.               e.\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:104(para)
+msgid "Here's an annotated example of <type>lquery</type>: <placeholder-1/> This query will match any label path that:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:114(para)
+msgid "begins with the label <literal>Top</literal>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:119(para)
+msgid "and next has zero to two labels before"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:124(para)
+msgid "a label beginning with the case-insensitive prefix <literal>sport</literal>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:129(para)
+msgid "then a label not matching <literal>football</literal> nor <literal>tennis</literal>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:135(para)
+msgid "and then ends with a label beginning with <literal>Russ</literal> or exactly matching <literal>Spain</literal>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:144(para)
+msgid "<type>ltxtquery</type> represents a full-text-search-like pattern for matching <type>ltree</type> values. An <type>ltxtquery</type> value contains words, possibly with the modifiers <literal>@</literal>, <literal>*</literal>, <literal>%</literal> at the end; the modifiers have the same meanings as in <type>lquery</type>. Words can be combined with <literal>&amp;</literal> (AND), <literal>|</literal> (OR), <literal>!</literal> (NOT), and parentheses. The key difference from <type>lquery</type> is that <type>ltxtquery</type> matches words without regard to their position in the label path."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:158(programlisting)
+#, no-wrap
+msgid "\nEurope &amp; Russia*@ &amp; !Transportation\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:156(para)
+msgid "Here's an example <type>ltxtquery</type>: <placeholder-1/> This will match paths that contain the label <literal>Europe</literal> and any label beginning with <literal>Russia</literal> (case-insensitive), but not paths containing the label <literal>Transportation</literal>. The location of these words within the path is not important. Also, when <literal>%</literal> is used, the word can be matched to any underscore-separated word within a label, regardless of position."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:172(para)
+msgid "Note: <type>ltxtquery</type> allows whitespace between symbols, but <type>ltree</type> and <type>lquery</type> do not."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:179(title)
+msgid "Operators and Functions"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:181(para)
+msgid "Type <type>ltree</type> has the usual comparison operators <literal>=</literal>, <literal>&lt;&gt;</literal>, <literal>&lt;</literal>, <literal>&gt;</literal>, <literal>&lt;=</literal>, <literal>&gt;=</literal>. Comparison sorts in the order of a tree traversal, with the children of a node sorted by label text. In addition, there are the following specialized operators:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:191(title)
+msgid "<type>ltree</type> Operators"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:196(entry)
+msgid "Operator"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:197(entry)
+msgid "Returns"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:198(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:377(entry)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:204(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:270(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:288(literal)
+msgid "@&gt;"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:205(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:211(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:217(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:223(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:229(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:235(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:241(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:247(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:271(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:277(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:283(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:289(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:295(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:301(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:307(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:313(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:319(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:325(type)
+msgid "boolean"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:206(entry)
+msgid "is left argument an ancestor of right (or equal)?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:210(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:276(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:282(literal)
+msgid "&lt;@"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:212(entry)
+msgid "is left argument a descendant of right (or equal)?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:216(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:222(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:294(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:300(literal)
+msgid "~"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:216(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:218(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:222(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:224(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:230(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:236(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:294(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:296(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:300(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:302(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:308(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:314(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:342(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:344(type)
+msgid "lquery"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:218(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:224(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:242(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:248(entry)
+msgid "does <placeholder-1/> match <placeholder-2/>?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:228(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:234(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:306(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:312(literal)
+msgid "?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:228(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:234(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:306(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:312(type)
+msgid "lquery[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:230(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:236(entry)
+msgid "does <placeholder-1/> match any <placeholder-2/> in array?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:240(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:246(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:318(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:324(literal)
+msgid "@"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:240(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:242(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:246(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:248(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:318(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:320(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:324(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:326(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:348(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:350(type)
+msgid "ltxtquery"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:252(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:258(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:264(literal)
+msgid "||"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:254(entry)
+msgid "concatenate <placeholder-1/> paths"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:258(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:264(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:447(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:454(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:455(type)
+msgid "text"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:260(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:266(entry)
+msgid "convert text to <placeholder-1/> and concatenate"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:270(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:276(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:282(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:288(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:294(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:300(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:306(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:312(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:318(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:324(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:330(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:336(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:342(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:348(type)
+msgid "ltree[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:272(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:278(entry)
+msgid "does array contain an ancestor of <placeholder-1/>?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:284(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:290(entry)
+msgid "does array contain a descendant of <placeholder-1/>?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:296(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:302(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:320(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:326(entry)
+msgid "does array contain any path matching <placeholder-1/>?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:308(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:314(entry)
+msgid "does <placeholder-1/> array contain any path matching any <placeholder-2/>?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:330(literal)
+msgid "?@&gt;"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:332(entry)
+msgid "first array entry that is an ancestor of <placeholder-1/>; NULL if none"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:336(literal)
+msgid "?&lt;@"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:338(entry)
+msgid "first array entry that is a descendant of <placeholder-1/>; NULL if none"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:342(literal)
+msgid "?~"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:344(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:350(entry)
+msgid "first array entry that matches <placeholder-1/>; NULL if none"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:348(literal)
+msgid "?@"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:357(para)
+msgid "The operators <literal>&lt;@</literal>, <literal>@&gt;</literal>, <literal>@</literal> and <literal>~</literal> have analogues <literal>^&lt;@</literal>, <literal>^@&gt;</literal>, <literal>^@</literal>, <literal>^~</literal>, which are the same except they do not use indexes. These are useful only for testing purposes."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:365(para)
+msgid "The following functions are available:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:370(title)
+msgid "<type>ltree</type> Functions"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:375(entry)
+msgid "Function"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:376(entry)
+msgid "Return Type"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:378(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:532(title)
+msgid "Example"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:379(entry)
+msgid "Result"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:385(function)
+msgid "subltree(ltree, int start, int end)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:387(parameter)
+msgid "start"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:388(parameter)
+msgid "end"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:387(entry)
+msgid "subpath of <placeholder-1/> from position <placeholder-2/> to position <placeholder-3/>-1 (counting from 0)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:389(literal)
+msgid "subltree('Top.Child1.Child2',1,2)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:390(literal)
+msgid "Child1"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:394(function)
+msgid "subpath(ltree, int offset, int len)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:397(parameter) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:398(parameter) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:409(parameter) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:410(parameter) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:437(parameter) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:438(parameter)
+msgid "offset"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:397(parameter) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:399(parameter)
+msgid "len"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:396(entry)
+msgid "subpath of <placeholder-1/> starting at position <placeholder-2/>, length <placeholder-3/>. If <placeholder-4/> is negative, subpath starts that far from the end of the path. If <placeholder-5/> is negative, leaves that many labels off the end of the path."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:401(literal)
+msgid "subpath('Top.Child1.Child2',0,2)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:402(literal)
+msgid "Top.Child1"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:406(function)
+msgid "subpath(ltree, int offset)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:408(entry)
+msgid "subpath of <placeholder-1/> starting at position <placeholder-2/>, extending to end of path. If <placeholder-3/> is negative, subpath starts that far from the end of the path."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:412(literal)
+msgid "subpath('Top.Child1.Child2',1)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:413(literal)
+msgid "Child1.Child2"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:417(function)
+msgid "nlevel(ltree)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:418(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:426(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:435(type)
+msgid "integer"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:419(entry)
+msgid "number of labels in path"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:420(literal)
+msgid "nlevel('Top.Child1.Child2')"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:421(literal)
+msgid "3"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:425(function)
+msgid "index(ltree a, ltree b)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:427(parameter) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:436(parameter)
+msgid "b"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:428(parameter) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:437(parameter)
+msgid "a"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:427(entry)
+msgid "position of first occurrence of <placeholder-1/> in <placeholder-2/>; -1 if not found"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:429(literal)
+msgid "index('0.1.2.3.5.4.5.6.8.5.6.8','5.6')"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:430(literal)
+msgid "6"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:434(function)
+msgid "index(ltree a, ltree b, int offset)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:438(parameter)
+msgid "-offset"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:436(entry)
+msgid "position of first occurrence of <placeholder-1/> in <placeholder-2/>, searching starting at <placeholder-3/>; negative <placeholder-4/> means start <placeholder-5/> labels from the end of the path"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:440(literal)
+msgid "index('0.1.2.3.5.4.5.6.8.5.6.8','5.6',-4)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:441(literal)
+msgid "9"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:445(function)
+msgid "text2ltree(text)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:447(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:455(entry)
+msgid "cast <placeholder-1/> to <placeholder-2/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:453(function)
+msgid "ltree2text(ltree)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:461(function)
+msgid "lca(ltree, ltree, ...)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:463(entry)
+msgid "lowest common ancestor, i.e., longest common prefix of paths (up to 8 arguments supported)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:465(literal)
+msgid "lca('1.2.2.3','1.2.3.4.5.6')"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:466(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:474(literal)
+msgid "1.2"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:470(function)
+msgid "lca(ltree[])"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:472(entry)
+msgid "lowest common ancestor, i.e., longest common prefix of paths"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:473(literal)
+msgid "lca(array['1.2.2.3'::ltree,'1.2.3'])"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:483(title)
+msgid "Indexes"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:484(para)
+msgid "<filename>ltree</filename> supports several types of indexes that can speed up the indicated operators:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:491(para)
+msgid "B-tree index over <type>ltree</type>: <literal>&lt;</literal>, <literal>&lt;=</literal>, <literal>=</literal>, <literal>&gt;=</literal>, <literal>&gt;</literal>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:498(para)
+msgid "GiST index over <type>ltree</type>: <literal>&lt;</literal>, <literal>&lt;=</literal>, <literal>=</literal>, <literal>&gt;=</literal>, <literal>&gt;</literal>, <literal>@&gt;</literal>, <literal>&lt;@</literal>, <literal>@</literal>, <literal>~</literal>, <literal>?</literal>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:505(para) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:518(para)
+msgid "Example of creating such an index:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:508(programlisting)
+#, no-wrap
+msgid "\nCREATE INDEX path_gist_idx ON test USING GIST (path);\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:513(para)
+msgid "GiST index over <type>ltree[]</type>: <literal>ltree[] &lt;@ ltree</literal>, <literal>ltree @&gt; ltree[]</literal>, <literal>@</literal>, <literal>~</literal>, <literal>?</literal>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:521(programlisting)
+#, no-wrap
+msgid "\nCREATE INDEX path_gist_idx ON test USING GIST (array_path);\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:524(para)
+msgid "Note: This index type is lossy."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:534(para)
+msgid "This example uses the following data (also available in file <filename>contrib/ltree/ltreetest.sql</filename> in the source distribution):"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:539(programlisting)
+#, no-wrap
+msgid "\nCREATE TABLE test (path ltree);\nINSERT INTO test VALUES ('Top');\nINSERT INTO test VALUES ('Top.Science');\nINSERT INTO test VALUES ('Top.Science.Astronomy');\nINSERT INTO test VALUES ('Top.Science.Astronomy.Astrophysics');\nINSERT INTO test VALUES ('Top.Science.Astronomy.Cosmology');\nINSERT INTO test VALUES ('Top.Hobbies');\nINSERT INTO test VALUES ('Top.Hobbies.Amateurs_Astronomy');\nINSERT INTO test VALUES ('Top.Collections');\nINSERT INTO test VALUES ('Top.Collections.Pictures');\nINSERT INTO test VALUES ('Top.Collections.Pictures.Astronomy');\nINSERT INTO test VALUES ('Top.Collections.Pictures.Astronomy.Stars');\nINSERT INTO test VALUES ('Top.Collections.Pictures.Astronomy.Galaxies');\nINSERT INTO test VALUES ('Top.Collections.Pictures.Astronomy.Astronauts');\nCREATE INDEX path_gist_idx ON test USING gist(path);\nCREATE INDEX path_idx ON test USING btree(path);\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:558(para)
+msgid "Now, we have a table <structname>test</structname> populated with data describing the hierarchy shown below:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:563(literallayout)
+#, no-wrap
+msgid "\n                        Top\n                     /   |  \\\n             Science Hobbies Collections\n                 /       |              \\\n        Astronomy   Amateurs_Astronomy Pictures\n           /  \\                            |\nAstrophysics  Cosmology                Astronomy\n                                        /  |    \\\n                                 Galaxies Stars Astronauts\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:575(para)
+msgid "We can do inheritance: <screen>\nltreetest=&gt; SELECT path FROM test WHERE path &lt;@ 'Top.Science';\n                path\n------------------------------------\n Top.Science\n Top.Science.Astronomy\n Top.Science.Astronomy.Astrophysics\n Top.Science.Astronomy.Cosmology\n(4 rows)\n</screen>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:589(para)
+msgid "Here are some examples of path matching: <screen>\nltreetest=&gt; SELECT path FROM test WHERE path ~ '*.Astronomy.*';\n                     path\n-----------------------------------------------\n Top.Science.Astronomy\n Top.Science.Astronomy.Astrophysics\n Top.Science.Astronomy.Cosmology\n Top.Collections.Pictures.Astronomy\n Top.Collections.Pictures.Astronomy.Stars\n Top.Collections.Pictures.Astronomy.Galaxies\n Top.Collections.Pictures.Astronomy.Astronauts\n(7 rows)\n\nltreetest=&gt; SELECT path FROM test WHERE path ~ '*.!pictures@.*.Astronomy.*';\n                path\n------------------------------------\n Top.Science.Astronomy\n Top.Science.Astronomy.Astrophysics\n Top.Science.Astronomy.Cosmology\n(3 rows)\n</screen>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:614(para)
+msgid "Here are some examples of full text search: <screen>\nltreetest=&gt; SELECT path FROM test WHERE path @ 'Astro*% &amp; !pictures@';\n                path\n------------------------------------\n Top.Science.Astronomy\n Top.Science.Astronomy.Astrophysics\n Top.Science.Astronomy.Cosmology\n Top.Hobbies.Amateurs_Astronomy\n(4 rows)\n\nltreetest=&gt; SELECT path FROM test WHERE path @ 'Astro* &amp; !pictures@';\n                path\n------------------------------------\n Top.Science.Astronomy\n Top.Science.Astronomy.Astrophysics\n Top.Science.Astronomy.Cosmology\n(3 rows)\n</screen>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:636(para)
+msgid "Path construction using functions: <screen>\nltreetest=&gt; SELECT subpath(path,0,2)||'Space'||subpath(path,2) FROM test WHERE path &lt;@ 'Top.Science.Astronomy';\n                 ?column?\n------------------------------------------\n Top.Science.Space.Astronomy\n Top.Science.Space.Astronomy.Astrophysics\n Top.Science.Space.Astronomy.Cosmology\n(3 rows)\n</screen>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:649(para)
+msgid "We could simplify this by creating a SQL function that inserts a label at a specified position in a path: <screen>\nCREATE FUNCTION ins_label(ltree, int, text) RETURNS ltree\n    AS 'select subpath($1,0,$2) || $3 || subpath($1,$2);'\n    LANGUAGE SQL IMMUTABLE;\n\nltreetest=&gt; SELECT ins_label(path,2,'Space') FROM test WHERE path &lt;@ 'Top.Science.Astronomy';\n                ins_label\n------------------------------------------\n Top.Science.Space.Astronomy\n Top.Science.Space.Astronomy.Astrophysics\n Top.Science.Space.Astronomy.Cosmology\n(3 rows)\n</screen>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:669(title)
+msgid "Authors"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:671(para)
+msgid "All work was done by Teodor Sigaev (<email>teodor@stack.net</email>) and Oleg Bartunov (<email>oleg@sai.msu.su</email>). See <ulink url=\"http://www.sai.msu.su/~megera/postgres/gist/\"/> for additional information. Authors would like to thank Eugeny Rodichev for helpful discussions. Comments and bug reports are welcome."
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ltree.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

@@ -1,0 +1,149 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:5(title)
+msgid "spi"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:8(primary)
+msgid "SPI"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:9(secondary)
+msgid "examples"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:12(para)
+msgid "The <filename>contrib/spi</filename> module provides several workable examples of using SPI and triggers. While these functions are of some value in their own right, they are even more useful as examples to modify for your own purposes. The functions are general enough to be used with any table, but you have to specify table and field names (as described below) while creating a trigger."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:22(title)
+msgid "refint.c — functions for implementing referential integrity"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:24(para)
+msgid "<function>check_primary_key()</function> and <function>check_foreign_key()</function> are used to check foreign key constraints. (This functionality is long since superseded by the built-in foreign key mechanism, of course, but the module is still useful as an example.)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:31(para)
+msgid "<function>check_primary_key()</function> checks the referencing table. To use, create a <literal>BEFORE INSERT OR UPDATE</literal> trigger using this function on a table referencing another table. Specify as the trigger arguments: the referencing table's column name(s) which form the foreign key, the referenced table name, and the column names in the referenced table which form the primary/unique key. To handle multiple foreign keys, create a trigger for each reference."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:41(para)
+msgid "<function>check_foreign_key()</function> checks the referenced table. To use, create a <literal>BEFORE DELETE OR UPDATE</literal> trigger using this function on a table referenced by other table(s). Specify as the trigger arguments: the number of referencing tables for which the function has to perform checking, the action if a referencing key is found (<literal>cascade</literal> — to delete the referencing row, <literal>restrict</literal> — to abort transaction if referencing keys exist, <literal>setnull</literal> — to set referencing key fields to null), the triggered table's column names which form the primary/unique key, then the referencing table name and column names (repeated for as many referencing tables as were specified by first argument). Note that the primary/unique key columns should be marked NOT NULL and should have a unique index."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:57(para)
+msgid "There are examples in <filename>refint.example</filename>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:63(title)
+msgid "timetravel.c — functions for implementing time travel"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:73(programlisting)
+#, no-wrap
+msgid "\nCREATE TABLE mytab (\n        ...             ...\n        start_date      abstime,\n        stop_date       abstime\n        ...             ...\n);\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:65(para)
+msgid "Long ago, <productname>PostgreSQL</productname> had a built-in time travel feature that kept the insert and delete times for each tuple. This can be emulated using these functions. To use these functions, you must add to a table two columns of <type>abstime</type> type to store the date when a tuple was inserted (start_date) and changed/deleted (stop_date): <placeholder-1/> The columns can be named whatever you like, but in this discussion we'll call them start_date and stop_date."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:86(para)
+msgid "When a new row is inserted, start_date should normally be set to current time, and stop_date to <literal>infinity</literal>. The trigger will automatically substitute these values if the inserted data contains nulls in these columns. Generally, inserting explicit non-null data in these columns should only be done when re-loading dumped data."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:95(para)
+msgid "Tuples with stop_date equal to <literal>infinity</literal> are <quote>valid now</quote>, and can be modified. Tuples with a finite stop_date cannot be modified anymore — the trigger will prevent it. (If you need to do that, you can turn off time travel as shown below.)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:102(para)
+msgid "For a modifiable row, on update only the stop_date in the tuple being updated will be changed (to current time) and a new tuple with the modified data will be inserted. Start_date in this new tuple will be set to current time and stop_date to <literal>infinity</literal>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:109(para)
+msgid "A delete does not actually remove the tuple but only sets its stop_date to current time."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:114(para)
+msgid "To query for tuples <quote>valid now</quote>, include <literal>stop_date = 'infinity'</literal> in the query's WHERE condition. (You might wish to incorporate that in a view.) Similarly, you can query for tuples valid at any past time with suitable conditions on start_date and stop_date."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:122(para)
+msgid "<function>timetravel()</function> is the general trigger function that supports this behavior. Create a <literal>BEFORE INSERT OR UPDATE OR DELETE</literal> trigger using this function on each time-traveled table. Specify two trigger arguments: the actual names of the start_date and stop_date columns. Optionally, you can specify one to three more arguments, which must refer to columns of type <type>text</type>. The trigger will store the name of the current user into the first of these columns during INSERT, the second column during UPDATE, and the third during DELETE."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:134(para)
+msgid "<function>set_timetravel()</function> allows you to turn time-travel on or off for a table. <literal>set_timetravel('mytab', 1)</literal> will turn TT ON for table <literal>mytab</literal>. <literal>set_timetravel('mytab', 0)</literal> will turn TT OFF for table <literal>mytab</literal>. In both cases the old status is reported. While TT is off, you can modify the start_date and stop_date columns freely. Note that the on/off status is local to the current database session — fresh sessions will always start out with TT ON for all tables."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:145(para)
+msgid "<function>get_timetravel()</function> returns the TT state for a table without changing it."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:150(para)
+msgid "There is an example in <filename>timetravel.example</filename>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:156(title)
+msgid "autoinc.c — functions for autoincrementing fields"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:158(para)
+msgid "<function>autoinc()</function> is a trigger that stores the next value of a sequence into an integer field. This has some overlap with the built-in <quote>serial column</quote> feature, but it is not the same: <function>autoinc()</function> will override attempts to substitute a different field value during inserts, and optionally it can be used to increment the field during updates, too."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:167(para)
+msgid "To use, create a <literal>BEFORE INSERT</literal> (or optionally <literal>BEFORE INSERT OR UPDATE</literal>) trigger using this function. Specify two trigger arguments: the name of the integer column to be modified, and the name of the sequence object that will supply values. (Actually, you can specify any number of pairs of such names, if you'd like to update more than one autoincrementing column.)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:176(para)
+msgid "There is an example in <filename>autoinc.example</filename>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:183(title)
+msgid "insert_username.c — functions for tracking who changed a table"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:185(para)
+msgid "<function>insert_username()</function> is a trigger that stores the current user's name into a text field. This can be useful for tracking who last modified a particular row within a table."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:191(para)
+msgid "To use, create a <literal>BEFORE INSERT</literal> and/or <literal>UPDATE</literal> trigger using this function. Specify a single trigger argument: the name of the text column to be modified."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:197(para)
+msgid "There is an example in <filename>insert_username.example</filename>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:204(title)
+msgid "moddatetime.c — functions for tracking last modification time"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:206(para)
+msgid "<function>moddatetime()</function> is a trigger that stores the current time into a <type>timestamp</type> field. This can be useful for tracking the last modification time of a particular row within a table."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:212(para)
+msgid "To use, create a <literal>BEFORE UPDATE</literal> trigger using this function. Specify a single trigger argument: the name of the <type>timestamp</type> column to be modified."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:218(para)
+msgid "There is an example in <filename>moddatetime.example</filename>."
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/contrib-spi.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

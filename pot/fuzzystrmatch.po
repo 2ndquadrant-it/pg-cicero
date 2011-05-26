@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:5(title) /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:8(primary)
+msgid "fuzzystrmatch"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:11(para)
+msgid "The <filename>fuzzystrmatch</filename> module provides several functions to determine similarities and distance between strings."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:17(para)
+msgid "At present, <filename>fuzzystrmatch</filename> does not work well with multibyte encodings (such as UTF-8)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:24(title)
+msgid "Soundex"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:26(para)
+msgid "The Soundex system is a method of matching similar-sounding names by converting them to the same code. It was initially used by the United States Census in 1880, 1900, and 1910. Note that Soundex is not very useful for non-English names."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:33(para)
+msgid "The <filename>fuzzystrmatch</filename> module provides two functions for working with Soundex codes:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:38(synopsis)
+#, no-wrap
+msgid "\nsoundex(text) returns text\ndifference(text, text) returns int\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:43(para)
+msgid "The <function>soundex</function> function converts a string to its Soundex code. The <function>difference</function> function converts two strings to their Soundex codes and then reports the number of matching code positions. Since Soundex codes have four characters, the result ranges from zero to four, with zero being no match and four being an exact match. (Thus, the function is misnamed — <function>similarity</function> would have been a better name.)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:53(para)
+msgid "Here are some usage examples:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:57(programlisting)
+#, no-wrap
+msgid "\nSELECT soundex('hello world!');\n\nSELECT soundex('Anne'), soundex('Ann'), difference('Anne', 'Ann');\nSELECT soundex('Anne'), soundex('Andrew'), difference('Anne', 'Andrew');\nSELECT soundex('Anne'), soundex('Margaret'), difference('Anne', 'Margaret');\n\nCREATE TABLE s (nm text);\n\nINSERT INTO s VALUES ('john');\nINSERT INTO s VALUES ('joan');\nINSERT INTO s VALUES ('wobbly');\nINSERT INTO s VALUES ('jack');\n\nSELECT * FROM s WHERE soundex(nm) = soundex('john');\n\nSELECT * FROM s WHERE difference(s.nm, 'john') &gt; 2;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:78(title)
+msgid "Levenshtein"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:80(para)
+msgid "This function calculates the Levenshtein distance between two strings:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:84(synopsis)
+#, no-wrap
+msgid "\nlevenshtein(text source, text target, int ins_cost, int del_cost, int sub_cost) returns int\nlevenshtein(text source, text target) returns int\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:89(para)
+msgid "Both <literal>source</literal> and <literal>target</literal> can be any non-null string, with a maximum of 255 bytes. The cost parameters specify how much to charge for a character insertion, deletion, or substitution, respectively. You can omit the cost parameters, as in the second version of the function; in that case they all default to 1."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:97(para)
+msgid "Examples:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:101(screen)
+#, no-wrap
+msgid "\ntest=# SELECT levenshtein('GUMBO', 'GAMBOL');\n levenshtein\n-------------\n           2\n(1 row)\n\ntest=# SELECT levenshtein('GUMBO', 'GAMBOL', 2,1,1);\n levenshtein\n-------------\n           3\n(1 row)\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:117(title)
+msgid "Metaphone"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:119(para)
+msgid "Metaphone, like Soundex, is based on the idea of constructing a representative code for an input string. Two strings are then deemed similar if they have the same codes."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:125(para)
+msgid "This function calculates the metaphone code of an input string:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:129(synopsis)
+#, no-wrap
+msgid "\nmetaphone(text source, int max_output_length) returns text\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:133(para)
+msgid "<literal>source</literal> has to be a non-null string with a maximum of 255 characters. <literal>max_output_length</literal> sets the maximum length of the output metaphone code; if longer, the output is truncated to this length."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:140(para) /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:173(para)
+msgid "Example:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:144(screen)
+#, no-wrap
+msgid "\ntest=# SELECT metaphone('GUMBO', 4);\n metaphone\n-----------\n KM\n(1 row)\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:154(title)
+msgid "Double Metaphone"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:156(para)
+msgid "The Double Metaphone system computes two <quote>sounds like</quote> strings for a given input string — a <quote>primary</quote> and an <quote>alternate</quote>. In most cases they are the same, but for non-English names especially they can be a bit different, depending on pronunciation. These functions compute the primary and alternate codes:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:164(synopsis)
+#, no-wrap
+msgid "\ndmetaphone(text source) returns text\ndmetaphone_alt(text source) returns text\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:169(para)
+msgid "There is no length limit on the input strings."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:177(screen)
+#, no-wrap
+msgid "\ntest=# select dmetaphone('gumbo');\n dmetaphone\n------------\n KMP\n(1 row)\n"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/fuzzystrmatch.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

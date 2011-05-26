@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:9(refentrytitle) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:15(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:20(primary)
+msgid "CREATE USER"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:10(manvolnum)
+msgid "7"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:11(refmiscinfo)
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:16(refpurpose)
+msgid "define a new database role"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:25(replaceable)
+msgid "name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:25(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:27(replaceable)
+msgid "option"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:27(phrase)
+msgid "where <placeholder-1/> can be:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:35(replaceable)
+msgid "connlimit"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:36(replaceable)
+msgid "password"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:37(replaceable)
+msgid "timestamp"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:38(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:39(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:40(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:41(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:42(replaceable)
+msgid "role_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:43(replaceable)
+msgid "uid"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:24(synopsis)
+#, no-wrap
+msgid "\nCREATE USER <placeholder-1/> [ [ WITH ] <placeholder-2/> [ ... ] ]\n\n<placeholder-3/>\n    \n      SUPERUSER | NOSUPERUSER\n    | CREATEDB | NOCREATEDB\n    | CREATEROLE | NOCREATEROLE\n    | CREATEUSER | NOCREATEUSER\n    | INHERIT | NOINHERIT\n    | LOGIN | NOLOGIN\n    | CONNECTION LIMIT <placeholder-4/>\n    | [ ENCRYPTED | UNENCRYPTED ] PASSWORD '<placeholder-5/>'\n    | VALID UNTIL '<placeholder-6/>' \n    | IN ROLE <placeholder-7/> [, ...]\n    | IN GROUP <placeholder-8/> [, ...]\n    | ROLE <placeholder-9/> [, ...]\n    | ADMIN <placeholder-10/> [, ...]\n    | USER <placeholder-11/> [, ...]\n    | SYSID <placeholder-12/> \n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:48(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:50(para)
+msgid "<command>CREATE USER</command> is now an alias for <xref linkend=\"sql-createrole\"/>. The only difference is that when the command is spelled <command>CREATE USER</command>, <literal>LOGIN</literal> is assumed by default, whereas <literal>NOLOGIN</literal> is assumed when the command is spelled <command>CREATE ROLE</command>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:62(title)
+msgid "Compatibility"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:64(para)
+msgid "The <command>CREATE USER</command> statement is a <productname>PostgreSQL</productname> extension. The SQL standard leaves the definition of users to the implementation."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:72(title)
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_user.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

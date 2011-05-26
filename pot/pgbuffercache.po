@@ -1,0 +1,197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:5(title) /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:8(primary)
+msgid "pg_buffercache"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:11(para)
+msgid "The <filename>pg_buffercache</filename> module provides a means for examining what's happening in the shared buffer cache in real time."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:16(para)
+msgid "The module provides a C function <function>pg_buffercache_pages</function> that returns a set of records, plus a view <structname>pg_buffercache</structname> that wraps the function for convenient use."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:23(para)
+msgid "By default public access is revoked from both of these, just in case there are security issues lurking."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:29(title)
+msgid "The <structname>pg_buffercache</structname> view"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:31(para)
+msgid "The definitions of the columns exposed by the view are shown in <xref linkend=\"pgbuffercache-columns\"/>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:36(title)
+msgid "<structname>pg_buffercache</structname> Columns"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:41(entry)
+msgid "Name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:42(entry)
+msgid "Type"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:43(entry)
+msgid "References"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:44(entry)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:50(structfield)
+msgid "bufferid"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:51(type)
+msgid "integer"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:53(varname)
+msgid "shared_buffers"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:53(entry)
+msgid "ID, in the range 1..<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:57(structfield)
+msgid "relfilenode"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:58(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:65(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:72(type)
+msgid "oid"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:59(literal)
+msgid "pg_class.relfilenode"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:60(entry)
+msgid "Filenode number of the relation"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:64(structfield)
+msgid "reltablespace"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:66(literal)
+msgid "pg_tablespace.oid"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:67(entry)
+msgid "Tablespace OID of the relation"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:71(structfield)
+msgid "reldatabase"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:73(literal)
+msgid "pg_database.oid"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:74(entry)
+msgid "Database OID of the relation"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:78(structfield)
+msgid "relblocknumber"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:79(type)
+msgid "bigint"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:81(entry)
+msgid "Page number within the relation"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:85(structfield)
+msgid "relforknumber"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:86(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:100(type)
+msgid "smallint"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:88(entry)
+msgid "Fork number within the relation"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:92(structfield)
+msgid "isdirty"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:93(type)
+msgid "boolean"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:95(entry)
+msgid "Is the page dirty?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:99(structfield)
+msgid "usagecount"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:102(entry)
+msgid "Page LRU count"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:109(para)
+msgid "There is one row for each buffer in the shared cache. Unused buffers are shown with all fields null except <structfield>bufferid</structfield>. Shared system catalogs are shown as belonging to database zero."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:115(para)
+msgid "Because the cache is shared by all the databases, there will normally be pages from relations not belonging to the current database. This means that there may not be matching join rows in <structname>pg_class</structname> for some rows, or that there could even be incorrect joins. If you are trying to join against <structname>pg_class</structname>, it's a good idea to restrict the join to rows having <structfield>reldatabase</structfield> equal to the current database's OID or zero."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:125(para)
+msgid "When the <structname>pg_buffercache</structname> view is accessed, internal buffer manager locks are taken for long enough to copy all the buffer state data that the view will display. This ensures that the view produces a consistent set of results, while not blocking normal buffer activity longer than necessary. Nonetheless there could be some impact on database performance if this view is read often."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:136(title)
+msgid "Sample output"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:138(screen)
+#, no-wrap
+msgid "\nregression=# SELECT c.relname, count(*) AS buffers\n             FROM pg_buffercache b INNER JOIN pg_class c\n             ON b.relfilenode = pg_relation_filenode(c.oid) AND\n                b.reldatabase IN (0, (SELECT oid FROM pg_database\n                                      WHERE datname = current_database()))\n             GROUP BY c.relname\n             ORDER BY 2 DESC\n             LIMIT 10;\n\n             relname             | buffers\n---------------------------------+---------\n tenk2                           |     345\n tenk1                           |     141\n pg_proc                         |      46\n pg_class                        |      45\n pg_attribute                    |      43\n pg_class_relname_nsp_index      |      30\n pg_proc_proname_args_nsp_index  |      28\n pg_attribute_relid_attnam_index |      26\n pg_depend                       |      22\n pg_depend_reference_index       |      20\n(10 rows)\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:165(title)
+msgid "Authors"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:167(para)
+msgid "Mark Kirkwood <email>markir@paradise.net.nz</email>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:171(para)
+msgid "Design suggestions: Neil Conway <email>neilc@samurai.com</email>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:175(para)
+msgid "Debugging advice: Tom Lane <email>tgl@sss.pgh.pa.us</email>"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgbuffercache.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

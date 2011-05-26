@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:9(refentrytitle) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:15(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:20(primary)
+msgid "ABORT"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:10(manvolnum)
+msgid "7"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:11(refmiscinfo)
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:16(refpurpose)
+msgid "abort the current transaction"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:24(synopsis)
+#, no-wrap
+msgid "\nABORT [ WORK | TRANSACTION ]\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:30(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:32(para)
+msgid "<command>ABORT</command> rolls back the current transaction and causes all the updates made by the transaction to be discarded. This command is identical in behavior to the standard <acronym>SQL</acronym> command <xref linkend=\"SQL-ROLLBACK\"/>, and is present only for historical reasons."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:43(title)
+msgid "Parameters"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:47(literal)
+msgid "WORK"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:48(literal)
+msgid "TRANSACTION"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:50(para)
+msgid "Optional key words. They have no effect."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:59(title)
+msgid "Notes"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:61(para)
+msgid "Use <xref linkend=\"SQL-COMMIT\"/> to successfully terminate a transaction."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:66(para)
+msgid "Issuing <command>ABORT</command> when not inside a transaction does no harm, but it will provoke a warning message."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:73(title)
+msgid "Examples"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:77(programlisting)
+#, no-wrap
+msgid "\nABORT;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:75(para)
+msgid "To abort all changes: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:84(title)
+msgid "Compatibility"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:86(para)
+msgid "This command is a <productname>PostgreSQL</productname> extension present for historical reasons. <command>ROLLBACK</command> is the equivalent standard SQL command."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:94(title)
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/abort.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

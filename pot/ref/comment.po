@@ -1,0 +1,232 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:9(refentrytitle) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:15(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:20(primary)
+msgid "COMMENT"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:10(manvolnum)
+msgid "7"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:11(refmiscinfo)
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:16(refpurpose)
+msgid "define or change the comment of an object"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:27(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:32(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:33(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:34(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:36(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:39(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:40(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:41(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:42(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:44(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:45(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:46(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:47(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:48(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:49(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:50(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:52(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:53(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:89(replaceable)
+msgid "object_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:28(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:31(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:43(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:51(replaceable)
+msgid "table_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:28(replaceable)
+msgid "column_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:29(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:91(replaceable)
+msgid "agg_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:29(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:108(replaceable)
+msgid "agg_type"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:30(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:119(replaceable)
+msgid "source_type"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:30(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:128(replaceable)
+msgid "target_type"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:31(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:92(replaceable)
+msgid "constraint_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:35(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:93(replaceable)
+msgid "function_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:35(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:137(replaceable)
+msgid "argmode"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:35(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:154(replaceable)
+msgid "argname"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:35(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:167(replaceable)
+msgid "argtype"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:37(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:178(replaceable)
+msgid "large_object_oid"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:38(replaceable)
+msgid "operator_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:38(replaceable)
+msgid "left_type"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:38(replaceable)
+msgid "right_type"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:39(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:40(replaceable)
+msgid "index_method"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:43(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:95(replaceable)
+msgid "rule_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:51(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:96(replaceable)
+msgid "trigger_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:54(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:197(replaceable)
+msgid "text"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:24(synopsis)
+#, no-wrap
+msgid "\nCOMMENT ON\n{\n  TABLE <placeholder-1/> |\n  COLUMN <placeholder-2/>.<placeholder-3/> |\n  AGGREGATE <placeholder-4/> (<placeholder-5/> [, ...] ) |\n  CAST (<placeholder-6/> AS <placeholder-7/>) |\n  CONSTRAINT <placeholder-8/> ON <placeholder-9/> |\n  CONVERSION <placeholder-10/> |\n  DATABASE <placeholder-11/> |\n  DOMAIN <placeholder-12/> |\n  FUNCTION <placeholder-13/> ( [ [ <placeholder-14/> ] [ <placeholder-15/> ] <placeholder-16/> [, ...] ] ) |\n  INDEX <placeholder-17/> |\n  LARGE OBJECT <placeholder-18/> |\n  OPERATOR <placeholder-19/> (<placeholder-20/>, <placeholder-21/>) |\n  OPERATOR CLASS <placeholder-22/> USING <placeholder-23/> |\n  OPERATOR FAMILY <placeholder-24/> USING <placeholder-25/> |\n  [ PROCEDURAL ] LANGUAGE <placeholder-26/> |\n  ROLE <placeholder-27/> |\n  RULE <placeholder-28/> ON <placeholder-29/> |\n  SCHEMA <placeholder-30/> |\n  SEQUENCE <placeholder-31/> |\n  TABLESPACE <placeholder-32/> |\n  TEXT SEARCH CONFIGURATION <placeholder-33/> |\n  TEXT SEARCH DICTIONARY <placeholder-34/> |\n  TEXT SEARCH PARSER <placeholder-35/> |\n  TEXT SEARCH TEMPLATE <placeholder-36/> |\n  TRIGGER <placeholder-37/> ON <placeholder-38/> |\n  TYPE <placeholder-39/> |\n  VIEW <placeholder-40/>\n} IS '<placeholder-41/>'\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:59(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:61(para)
+msgid "<command>COMMENT</command> stores a comment about a database object."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:65(para)
+msgid "To modify a comment, issue a new <command>COMMENT</command> command for the same object. Only one comment string is stored for each object. To remove a comment, write <literal>NULL</literal> in place of the text string. Comments are automatically dropped when the object is dropped."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:73(para)
+msgid "Comments can be viewed using <application>psql</application>'s <command>\\d</command> family of commands. Other user interfaces to retrieve comments can be built atop the same built-in functions that <application>psql</application> uses, namely <function>obj_description</function>, <function>col_description</function>, and <function>shobj_description</function> (see <xref linkend=\"functions-info-comment-table\"/>)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:85(title)
+msgid "Parameters"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:90(replaceable)
+msgid "table_name.column_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:94(replaceable)
+msgid "op"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:98(para)
+msgid "The name of the object to be commented. Names of tables, aggregates, domains, functions, indexes, operators, operator classes, operator families, sequences, text search objects, types, and views can be schema-qualified."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:110(para)
+msgid "An input data type on which the aggregate function operates. To reference a zero-argument aggregate function, write <literal>*</literal> in place of the list of input data types."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:121(para)
+msgid "The name of the source data type of the cast."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:130(para)
+msgid "The name of the target data type of the cast."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:140(para)
+msgid "The mode of a function argument: <literal>IN</literal>, <literal>OUT</literal>, <literal>INOUT</literal>, or <literal>VARIADIC</literal>. If omitted, the default is <literal>IN</literal>. Note that <command>COMMENT ON FUNCTION</command> does not actually pay any attention to <literal>OUT</literal> arguments, since only the input arguments are needed to determine the function's identity. So it is sufficient to list the <literal>IN</literal>, <literal>INOUT</literal>, and <literal>VARIADIC</literal> arguments."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:157(para)
+msgid "The name of a function argument. Note that <command>COMMENT ON FUNCTION</command> does not actually pay any attention to argument names, since only the argument data types are needed to determine the function's identity."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:170(para)
+msgid "The data type(s) of the function's arguments (optionally schema-qualified), if any."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:180(para)
+msgid "The OID of the large object."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:187(literal)
+msgid "PROCEDURAL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:190(para)
+msgid "This is a noise word."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:199(para)
+msgid "The new comment, written as a string literal; or <literal>NULL</literal> to drop the comment."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:210(title)
+msgid "Notes"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:212(para)
+msgid "There is presently no security mechanism for comments: any user connected to a database can see all the comments for objects in that database (although only superusers can change comments for objects that they don't own). For shared objects such as databases, roles, and tablespaces comments are stored globally and any user connected to any database can see all the comments for shared objects. Therefore, don't put security-critical information in comments."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:225(title)
+msgid "Examples"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:230(programlisting)
+#, no-wrap
+msgid "\nCOMMENT ON TABLE mytable IS 'This is my table.';\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:236(programlisting)
+#, no-wrap
+msgid "\nCOMMENT ON TABLE mytable IS NULL;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:227(para)
+msgid "Attach a comment to the table <literal>mytable</literal>: <placeholder-1/> Remove it again: <placeholder-2/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:244(programlisting)
+#, no-wrap
+msgid "\nCOMMENT ON AGGREGATE my_aggregate (double precision) IS 'Computes sample variance';\nCOMMENT ON CAST (text AS int4) IS 'Allow casts from text to int4';\nCOMMENT ON COLUMN my_table.my_column IS 'Employee ID number';\nCOMMENT ON CONVERSION my_conv IS 'Conversion to UTF8';\nCOMMENT ON DATABASE my_database IS 'Development Database';\nCOMMENT ON DOMAIN my_domain IS 'Email Address Domain';\nCOMMENT ON FUNCTION my_function (timestamp) IS 'Returns Roman Numeral';\nCOMMENT ON INDEX my_index IS 'Enforces uniqueness on employee ID';\nCOMMENT ON LANGUAGE plpython IS 'Python support for stored procedures';\nCOMMENT ON LARGE OBJECT 346344 IS 'Planning document';\nCOMMENT ON OPERATOR ^ (text, text) IS 'Performs intersection of two texts';\nCOMMENT ON OPERATOR - (NONE, text) IS 'This is a prefix operator on text';\nCOMMENT ON OPERATOR CLASS int4ops USING btree IS '4 byte integer operators for btrees';\nCOMMENT ON OPERATOR FAMILY integer_ops USING btree IS 'all integer operators for btrees';\nCOMMENT ON ROLE my_role IS 'Administration group for finance tables';\nCOMMENT ON RULE my_rule ON my_table IS 'Logs updates of employee records';\nCOMMENT ON SCHEMA my_schema IS 'Departmental data';\nCOMMENT ON SEQUENCE my_sequence IS 'Used to generate primary keys';\nCOMMENT ON TABLE my_schema.my_table IS 'Employee Information';\nCOMMENT ON TABLESPACE my_tablespace IS 'Tablespace for indexes';\nCOMMENT ON TEXT SEARCH CONFIGURATION my_config IS 'Special word filtering';\nCOMMENT ON TEXT SEARCH DICTIONARY swedish IS 'Snowball stemmer for swedish language';\nCOMMENT ON TEXT SEARCH PARSER my_parser IS 'Splits text into words';\nCOMMENT ON TEXT SEARCH TEMPLATE snowball IS 'Snowball stemmer';\nCOMMENT ON TRIGGER my_trigger ON my_table IS 'Used for RI';\nCOMMENT ON TYPE complex IS 'Complex number data type';\nCOMMENT ON VIEW my_view IS 'View of departmental costs';\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:241(para)
+msgid "Some more examples: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:277(title)
+msgid "Compatibility"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:279(para)
+msgid "There is no <command>COMMENT</command> command in the SQL standard."
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/comment.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

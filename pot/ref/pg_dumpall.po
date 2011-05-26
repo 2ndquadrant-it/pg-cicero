@@ -1,0 +1,512 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:9(application) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:15(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:20(primary) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:25(command)
+msgid "pg_dumpall"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:10(manvolnum)
+msgid "1"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:11(refmiscinfo)
+msgid "Application"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:16(productname)
+msgid "PostgreSQL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:16(refpurpose)
+msgid "extract a <placeholder-1/> database cluster into a script file"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:26(replaceable)
+msgid "connection-option"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:27(replaceable)
+msgid "option"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:32(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:34(para)
+msgid "<application>pg_dumpall</application> is a utility for writing out (<quote>dumping</quote>) all <productname>PostgreSQL</productname> databases of a cluster into one script file. The script file contains <acronym>SQL</acronym> commands that can be used as input to <xref linkend=\"app-psql\"/> to restore the databases. It does this by calling <xref linkend=\"app-pgdump\"/> for each database in a cluster. <application>pg_dumpall</application> also dumps global objects that are common to all databases. (<application>pg_dump</application> does not save these objects.) This currently includes information about database users and groups, tablespaces, and properties such as access permissions that apply to databases as a whole."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:49(para)
+msgid "Since <application>pg_dumpall</application> reads tables from all databases you will most likely have to connect as a database superuser in order to produce a complete dump. Also you will need superuser privileges to execute the saved script in order to be allowed to add users and groups, and to create databases."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:57(para)
+msgid "The SQL script will be written to the standard output. Use the [-f|file] option or shell operators to redirect it into a file."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:62(para)
+msgid "<application>pg_dumpall</application> needs to connect several times to the <productname>PostgreSQL</productname> server (once per database). If you use password authentication it will ask for a password each time. It is convenient to have a <filename>~/.pgpass</filename> file in such cases. See <xref linkend=\"libpq-pgpass\"/> for more information."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:74(title)
+msgid "Options"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:82(option)
+msgid "-a"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:83(option)
+msgid "--data-only"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:85(para)
+msgid "Dump only the data, not the schema (data definitions)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:92(option)
+msgid "-c"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:93(option)
+msgid "--clean"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:95(para)
+msgid "Include SQL commands to clean (drop) databases before recreating them. <command>DROP</command> commands for roles and tablespaces are added as well."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:104(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:105(replaceable)
+msgid "filename"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:104(option)
+msgid "-f <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:105(option)
+msgid "--file=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:107(para)
+msgid "Send output to the specified file. If this is omitted, the standard output is used."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:115(option)
+msgid "-g"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:116(option)
+msgid "--globals-only"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:118(para)
+msgid "Dump only global objects (roles and tablespaces), no databases."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:125(option)
+msgid "-i"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:126(option)
+msgid "--ignore-version"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:128(para)
+msgid "A deprecated option that is now ignored."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:135(option)
+msgid "-o"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:136(option)
+msgid "--oids"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:138(para)
+msgid "Dump object identifiers (<acronym>OID</acronym>s) as part of the data for every table. Use this option if your application references the <acronym>OID</acronym> columns in some way (e.g., in a foreign key constraint). Otherwise, this option should not be used."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:149(option)
+msgid "-O"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:150(option)
+msgid "--no-owner"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:152(para)
+msgid "Do not output commands to set ownership of objects to match the original database. By default, <application>pg_dumpall</application> issues <command>ALTER OWNER</command> or <command>SET SESSION AUTHORIZATION</command> statements to set ownership of created schema elements. These statements will fail when the script is run unless it is started by a superuser (or the same user that owns all of the objects in the script). To make a script that can be restored by any user, but will give that user ownership of all the objects, specify <option>-O</option>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:169(replaceable)
+msgid "timeout"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:169(option)
+msgid "--lock-wait-timeout=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:171(para)
+msgid "Do not wait forever to acquire shared table locks at the beginning of the dump. Instead, fail if unable to lock a table within the specified <replaceable class=\"parameter\">timeout</replaceable>. The timeout may be specified in any of the formats accepted by <command>SET statement_timeout</command>. Allowed values vary depending on the server version you are dumping from, but an integer number of milliseconds is accepted by all versions since 7.3. This option is ignored when dumping from a pre-7.3 server."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:185(option)
+msgid "--no-tablespaces"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:187(para)
+msgid "Do not output commands to create tablespaces nor select tablespaces for objects. With this option, all objects will be created in whichever tablespace is the default during restore."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:197(option)
+msgid "-r"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:198(option)
+msgid "--roles-only"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:200(para)
+msgid "Dump only roles, no databases or tablespaces."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:207(option)
+msgid "-s"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:208(option)
+msgid "--schema-only"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:210(para)
+msgid "Dump only the object definitions (schema), not data."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:217(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:218(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:419(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:420(replaceable)
+msgid "username"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:217(option)
+msgid "-S <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:218(option)
+msgid "--superuser=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:220(para)
+msgid "Specify the superuser user name to use when disabling triggers. This is only relevant if <option>--disable-triggers</option> is used. (Usually, it's better to leave this out, and instead start the resulting script as superuser.)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:230(option)
+msgid "-t"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:231(option)
+msgid "--tablespaces-only"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:233(para)
+msgid "Dump only tablespaces, no databases or roles."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:240(option)
+msgid "-v"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:241(option)
+msgid "--verbose"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:243(para)
+msgid "Specifies verbose mode. This will cause <application>pg_dumpall</application> to output start/stop times to the dump file, and progress messages to standard error. It will also enable verbose output in <application>pg_dump</application>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:253(option)
+msgid "-V"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:254(option)
+msgid "--version"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:256(para)
+msgid "Print the <application>pg_dumpall</application> version and exit."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:263(option)
+msgid "-x"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:264(option)
+msgid "--no-privileges"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:265(option)
+msgid "--no-acl"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:267(para)
+msgid "Prevent dumping of access privileges (grant/revoke commands)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:274(option)
+msgid "--binary-upgrade"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:276(para)
+msgid "This option is for use by in-place upgrade utilities. Its use for other purposes is not recommended or supported. The behavior of the option may change in future releases without notice."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:286(option)
+msgid "--inserts"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:288(para)
+msgid "Dump data as <command>INSERT</command> commands (rather than <command>COPY</command>). This will make restoration very slow; it is mainly useful for making dumps that can be loaded into non-<productname>PostgreSQL</productname> databases. Note that the restore might fail altogether if you have rearranged column order. The <option>--column-inserts</option> option is safer, though even slower."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:301(option)
+msgid "--column-inserts"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:302(option)
+msgid "--attribute-inserts"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:304(para)
+msgid "Dump data as <command>INSERT</command> commands with explicit column names (<literal>INSERT INTO <replaceable>table</replaceable> (<replaceable>column</replaceable>, ...) VALUES ...</literal>). This will make restoration very slow; it is mainly useful for making dumps that can be loaded into non-<productname>PostgreSQL</productname> databases."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:317(option)
+msgid "--disable-dollar-quoting"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:319(para)
+msgid "This option disables the use of dollar quoting for function bodies, and forces them to be quoted using SQL standard string syntax."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:327(option)
+msgid "--disable-triggers"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:329(para)
+msgid "This option is only relevant when creating a data-only dump. It instructs <application>pg_dumpall</application> to include commands to temporarily disable triggers on the target tables while the data is reloaded. Use this if you have referential integrity checks or other triggers on the tables that you do not want to invoke during data reload."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:338(para)
+msgid "Presently, the commands emitted for <option>--disable-triggers</option> must be done as superuser. So, you should also specify a superuser name with <option>-S</option>, or preferably be careful to start the resulting script as a superuser."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:348(option)
+msgid "--use-set-session-authorization"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:350(para)
+msgid "Output SQL-standard <command>SET SESSION AUTHORIZATION</command> commands instead of <command>ALTER OWNER</command> commands to determine object ownership. This makes the dump more standards compatible, but depending on the history of the objects in the dump, might not restore properly."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:361(option)
+msgid "-?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:362(option)
+msgid "--help"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:364(para)
+msgid "Show help about <application>pg_dumpall</application> command line arguments, and exit."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:76(para)
+msgid "The following command-line options control the content and format of the output. <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:379(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:380(replaceable)
+msgid "host"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:379(option)
+msgid "-h <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:380(option)
+msgid "--host=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:382(para)
+msgid "Specifies the host name of the machine on which the database server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket. The default is taken from the <envar>PGHOST</envar> environment variable, if set, else a Unix domain socket connection is attempted."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:393(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:394(replaceable)
+msgid "dbname"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:393(option)
+msgid "-l <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:394(option)
+msgid "--database=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:396(para)
+msgid "Specifies the name of the database to connect to to dump global objects and discover what other databases should be dumped. If not specified, the <literal>postgres</literal> database will be used, and if that does not exist, <literal>template1</literal> will be used."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:406(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:407(replaceable)
+msgid "port"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:406(option)
+msgid "-p <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:407(option)
+msgid "--port=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:409(para)
+msgid "Specifies the TCP port or local Unix domain socket file extension on which the server is listening for connections. Defaults to the <envar>PGPORT</envar> environment variable, if set, or a compiled-in default."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:419(option)
+msgid "-U <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:420(option)
+msgid "--username=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:422(para)
+msgid "User name to connect as."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:429(option)
+msgid "-w"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:430(option)
+msgid "--no-password"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:432(para)
+msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:444(option)
+msgid "-W"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:445(option)
+msgid "--password"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:447(para)
+msgid "Force <application>pg_dumpall</application> to prompt for a password before connecting to a database."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:452(para)
+msgid "This option is never essential, since <application>pg_dumpall</application> will automatically prompt for a password if the server demands password authentication. However, <application>pg_dumpall</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:462(para)
+msgid "Note that the password prompt will occur again for each database to be dumped. Usually, it's better to set up a <filename>~/.pgpass</filename> file than to rely on manual password entry."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:471(replaceable)
+msgid "rolename"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:471(option)
+msgid "--role=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:473(para)
+msgid "Specifies a role name to be used to create the dump. This option causes <application>pg_dumpall</application> to issue a <command>SET ROLE</command><replaceable class=\"parameter\">rolename</replaceable> command after connecting to the database. It is useful when the authenticated user (specified by <option>-U</option>) lacks privileges needed by <application>pg_dumpall</application>, but can switch to a role with the required rights. Some installations have a policy against logging in directly as a superuser, and use of this option allows dumps to be made without violating the policy."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:374(para)
+msgid "The following command-line options control the database connection parameters. <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:492(title)
+msgid "Environment"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:496(envar)
+msgid "PGHOST"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:497(envar)
+msgid "PGOPTIONS"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:498(envar)
+msgid "PGPORT"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:499(envar)
+msgid "PGUSER"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:502(para)
+msgid "Default connection parameters"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:509(para)
+msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:519(title)
+msgid "Notes"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:521(para)
+msgid "Since <application>pg_dumpall</application> calls <application>pg_dump</application> internally, some diagnostic messages will refer to <application>pg_dump</application>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:527(para)
+msgid "Once restored, it is wise to run <command>ANALYZE</command> on each database so the optimizer has useful statistics. You can also run <command>vacuumdb -a -z</command> to analyze all databases."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:534(para)
+msgid "<application>pg_dumpall</application> requires all needed tablespace directories to exist before the restore; otherwise, database creation will fail for databases in non-default locations."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:544(title)
+msgid "Examples"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:545(para)
+msgid "To dump all databases: <screen>\n<prompt>$</prompt> <userinput>pg_dumpall &gt; db.out</userinput>\n</screen>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:553(para)
+msgid "To reload database(s) from this file, you can use: <screen>\n<prompt>$</prompt> <userinput>psql -f db.out postgres</userinput>\n</screen> (It is not important to which database you connect here since the script file created by <application>pg_dumpall</application> will contain the appropriate commands to create and connect to the saved databases.)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:566(title)
+msgid "See Also"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:568(para)
+msgid "Check <xref linkend=\"app-pgdump\"/> for details on possible error conditions."
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_dumpall.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

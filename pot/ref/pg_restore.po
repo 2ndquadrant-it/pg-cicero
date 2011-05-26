@@ -1,0 +1,703 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:6(refentrytitle) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:12(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:21(primary) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:26(command)
+msgid "pg_restore"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:7(manvolnum)
+msgid "1"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:8(refmiscinfo)
+msgid "Application"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:15(productname)
+msgid "PostgreSQL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:16(application)
+msgid "pg_dump"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:14(refpurpose)
+msgid "restore a <placeholder-1/> database from an archive file created by <placeholder-2/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:27(replaceable)
+msgid "connection-option"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:28(replaceable)
+msgid "option"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:29(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:80(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:148(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:149(replaceable)
+msgid "filename"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:35(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:37(para)
+msgid "<application>pg_restore</application> is a utility for restoring a <productname>PostgreSQL</productname> database from an archive created by <xref linkend=\"app-pgdump\"/> in one of the non-plain-text formats. It will issue the commands necessary to reconstruct the database to the state it was in at the time it was saved. The archive files also allow <application>pg_restore</application> to be selective about what is restored, or even to reorder the items prior to being restored. The archive files are designed to be portable across architectures."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:49(para)
+msgid "<application>pg_restore</application> can operate in two modes. If a database name is specified, <application>pg_restore</application> connects to that database and restores archive contents directly into the database. Otherwise, a script containing the SQL commands necessary to rebuild the database is created and written to a file or standard output. This script output is equivalent to the plain text output format of <application>pg_dump</application>. Some of the options controlling the output are therefore analogous to <application>pg_dump</application> options."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:61(para)
+msgid "Obviously, <application>pg_restore</application> cannot restore information that is not present in the archive file. For instance, if the archive was made using the <quote>dump data as <command>INSERT</command> commands</quote> option, <application>pg_restore</application> will not be able to load the data using <command>COPY</command> statements."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:72(title)
+msgid "Options"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:82(para)
+msgid "Specifies the location of the archive file to be restored. If not specified, the standard input is used."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:90(option)
+msgid "-a"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:91(option)
+msgid "--data-only"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:93(para)
+msgid "Restore only the data, not the schema (data definitions)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:100(option)
+msgid "-c"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:101(option)
+msgid "--clean"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:103(para)
+msgid "Clean (drop) database objects before recreating them."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:110(option)
+msgid "-C"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:111(option)
+msgid "--create"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:113(para)
+msgid "Create the database before restoring into it. (When this option is used, the database named with <option>-d</option> is used only to issue the initial <command>CREATE DATABASE</command> command. All data is restored into the database name that appears in the archive.)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:124(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:125(replaceable)
+msgid "dbname"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:124(option)
+msgid "-d <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:125(option)
+msgid "--dbname=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:127(para)
+msgid "Connect to database <replaceable class=\"parameter\">dbname</replaceable> and restore directly into the database."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:136(option)
+msgid "-e"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:137(option)
+msgid "--exit-on-error"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:139(para)
+msgid "Exit if an error is encountered while sending SQL commands to the database. The default is to continue and to display a count of errors at the end of the restoration."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:148(option)
+msgid "-f <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:149(option)
+msgid "--file=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:151(para)
+msgid "Specify output file for generated script, or for the listing when used with <option>-l</option>. Default is the standard output."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:160(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:161(replaceable)
+msgid "format"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:160(option)
+msgid "-F <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:161(option)
+msgid "--format=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:171(literal)
+msgid "t"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:172(literal)
+msgid "tar"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:174(para)
+msgid "The archive is a <command>tar</command> archive."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:181(literal)
+msgid "c"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:182(literal)
+msgid "custom"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:184(para)
+msgid "The archive is in the custom format of <application>pg_dump</application>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:163(para)
+msgid "Specify format of the archive. It is not necessary to specify the format, since <application>pg_restore</application> will determine the format automatically. If specified, it can be one of the following: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:196(option)
+msgid "-i"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:197(option)
+msgid "--ignore-version"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:199(para)
+msgid "A deprecated option that is now ignored."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:206(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:207(replaceable)
+msgid "index"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:206(option)
+msgid "-I <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:207(option)
+msgid "--index=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:209(para)
+msgid "Restore definition of named index only."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:216(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:217(replaceable)
+msgid "number-of-jobs"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:216(option)
+msgid "-j <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:217(option)
+msgid "--jobs=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:219(para)
+msgid "Run the most time-consuming parts of <application>pg_restore</application> — those which load data, create indexes, or create constraints — using multiple concurrent jobs. This option can dramatically reduce the time to restore a large database to a server running on a multiprocessor machine."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:228(para)
+msgid "Each job is one process or one thread, depending on the operating system, and uses a separate connection to the server."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:234(para)
+msgid "The optimal value for this option depends on the hardware setup of the server, of the client, and of the network. Factors include the number of CPU cores and the disk setup. A good place to start is the number of CPU cores on the server, but values larger than that can also lead to faster restore times in many cases. Of course, values that are too high will lead to decreased performance because of thrashing."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:244(para)
+msgid "Only the custom archive format is supported with this option. The input file must be a regular file (not, for example, a pipe). This option is ignored when emitting a script rather than connecting directly to a database server. Also, multiple jobs cannot be used together with the option <option>--single-transaction</option>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:256(option)
+msgid "-l"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:257(option)
+msgid "--list"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:259(para)
+msgid "List the contents of the archive. The output of this operation can be used as input to the <option>-L</option> option. Note that if filtering switches such as <option>-n</option> or <option>-t</option> are used with <option>-l</option>, they will restrict the items listed."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:269(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:270(replaceable)
+msgid "list-file"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:269(option)
+msgid "-L <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:270(option)
+msgid "--use-list=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:272(para)
+msgid "Restore only those archive elements that are listed in <replaceable class=\"PARAMETER\">list-file</replaceable>, and restore them in the order they appear in the file. Note that if filtering switches such as <option>-n</option> or <option>-t</option> are used with <option>-L</option>, they will further restrict the items restored."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:279(para)
+msgid "<replaceable class=\"PARAMETER\">list-file</replaceable> is normally created by editing the output of a previous <option>-l</option> operation. Lines can be moved or removed, and can also be commented out by placing a semicolon (<literal>;</literal>) at the start of the line. See below for examples."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:290(replaceable)
+msgid "namespace"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:290(option)
+msgid "-n <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:291(replaceable)
+msgid "schema"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:291(option)
+msgid "--schema=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:293(para)
+msgid "Restore only objects that are in the named schema. This can be combined with the <option>-t</option> option to restore just a specific table."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:302(option)
+msgid "-O"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:303(option)
+msgid "--no-owner"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:305(para)
+msgid "Do not output commands to set ownership of objects to match the original database. By default, <application>pg_restore</application> issues <command>ALTER OWNER</command> or <command>SET SESSION AUTHORIZATION</command> statements to set ownership of created schema elements. These statements will fail unless the initial connection to the database is made by a superuser (or the same user that owns all of the objects in the script). With <option>-O</option>, any user name can be used for the initial connection, and this user will own all the created objects."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:322(option)
+msgid "--no-tablespaces"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:324(para)
+msgid "Do not output commands to select tablespaces. With this option, all objects will be created in whichever tablespace is the default during restore."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:333(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:334(replaceable)
+msgid "function-name(argtype [, ...])"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:333(option)
+msgid "-P <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:334(option)
+msgid "--function=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:336(para)
+msgid "Restore the named function only. Be careful to spell the function name and arguments exactly as they appear in the dump file's table of contents."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:345(option)
+msgid "-R"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:346(option)
+msgid "--no-reconnect"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:348(para)
+msgid "This option is obsolete but still accepted for backwards compatibility."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:356(option)
+msgid "-s"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:357(option)
+msgid "--schema-only"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:359(para)
+msgid "Restore only the schema (data definitions), not the data (table contents). Current sequence values will not be restored, either. (Do not confuse this with the <option>--schema</option> option, which uses the word <quote>schema</quote> in a different meaning.)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:369(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:370(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:549(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:550(replaceable)
+msgid "username"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:369(option)
+msgid "-S <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:370(option)
+msgid "--superuser=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:372(para)
+msgid "Specify the superuser user name to use when disabling triggers. This is only relevant if <option>--disable-triggers</option> is used."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:380(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:381(replaceable)
+msgid "table"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:380(option)
+msgid "-t <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:381(option)
+msgid "--table=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:383(para)
+msgid "Restore definition and/or data of named table only. This can be combined with the <option>-n</option> option to specify a schema."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:391(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:392(replaceable)
+msgid "trigger"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:391(option)
+msgid "-T <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:392(option)
+msgid "--trigger=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:394(para)
+msgid "Restore named trigger only."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:401(option)
+msgid "-v"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:402(option)
+msgid "--verbose"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:404(para)
+msgid "Specifies verbose mode."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:411(option)
+msgid "-V"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:412(option)
+msgid "--version"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:414(para)
+msgid "Print the <application>pg_restore</application> version and exit."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:421(option)
+msgid "-x"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:422(option)
+msgid "--no-privileges"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:423(option)
+msgid "--no-acl"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:425(para)
+msgid "Prevent restoration of access privileges (grant/revoke commands)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:432(option)
+msgid "--disable-triggers"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:434(para)
+msgid "This option is only relevant when performing a data-only restore. It instructs <application>pg_restore</application> to execute commands to temporarily disable triggers on the target tables while the data is reloaded. Use this if you have referential integrity checks or other triggers on the tables that you do not want to invoke during data reload."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:443(para)
+msgid "Presently, the commands emitted for <option>--disable-triggers</option> must be done as superuser. So, you should also specify a superuser name with <option>-S</option>, or preferably run <application>pg_restore</application> as a <productname>PostgreSQL</productname> superuser."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:454(option)
+msgid "--use-set-session-authorization"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:456(para)
+msgid "Output SQL-standard <command>SET SESSION AUTHORIZATION</command> commands instead of <command>ALTER OWNER</command> commands to determine object ownership. This makes the dump more standards-compatible, but depending on the history of the objects in the dump, might not restore properly."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:467(option)
+msgid "--no-data-for-failed-tables"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:469(para)
+msgid "By default, table data is restored even if the creation command for the table failed (e.g., because it already exists). With this option, data for such a table is skipped. This behavior is useful if the target database already contains the desired table contents. For example, auxiliary tables for <productname>PostgreSQL</productname> extensions such as <productname>PostGIS</productname> might already be loaded in the target database; specifying this option prevents duplicate or obsolete data from being loaded into them."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:481(para)
+msgid "This option is effective only when restoring directly into a database, not when producing SQL script output."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:489(option)
+msgid "-1"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:490(option)
+msgid "--single-transaction"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:492(para)
+msgid "Execute the restore as a single transaction (that is, wrap the emitted commands in <command>BEGIN</command>/<command>COMMIT</command>). This ensures that either all the commands complete successfully, or no changes are applied. This option implies <option>--exit-on-error</option>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:503(option)
+msgid "-?"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:504(option)
+msgid "--help"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:506(para)
+msgid "Show help about <application>pg_restore</application> command line arguments, and exit."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:74(para)
+msgid "<application>pg_restore</application> accepts the following command line arguments. <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:522(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:523(replaceable)
+msgid "host"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:522(option)
+msgid "-h <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:523(option)
+msgid "--host=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:525(para)
+msgid "Specifies the host name of the machine on which the server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket. The default is taken from the <envar>PGHOST</envar> environment variable, if set, else a Unix domain socket connection is attempted."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:536(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:537(replaceable)
+msgid "port"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:536(option)
+msgid "-p <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:537(option)
+msgid "--port=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:539(para)
+msgid "Specifies the TCP port or local Unix domain socket file extension on which the server is listening for connections. Defaults to the <envar>PGPORT</envar> environment variable, if set, or a compiled-in default."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:549(option)
+msgid "-U <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:550(option)
+msgid "--username=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:552(para)
+msgid "User name to connect as."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:559(option)
+msgid "-w"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:560(option)
+msgid "--no-password"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:562(para)
+msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:574(option)
+msgid "-W"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:575(option)
+msgid "--password"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:577(para)
+msgid "Force <application>pg_restore</application> to prompt for a password before connecting to a database."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:582(para)
+msgid "This option is never essential, since <application>pg_restore</application> will automatically prompt for a password if the server demands password authentication. However, <application>pg_restore</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:595(replaceable)
+msgid "rolename"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:595(option)
+msgid "--role=<placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:597(para)
+msgid "Specifies a role name to be used to perform the restore. This option causes <application>pg_restore</application> to issue a <command>SET ROLE</command><replaceable class=\"parameter\">rolename</replaceable> command after connecting to the database. It is useful when the authenticated user (specified by <option>-U</option>) lacks privileges needed by <application>pg_restore</application>, but can switch to a role with the required rights. Some installations have a policy against logging in directly as a superuser, and use of this option allows restores to be performed without violating the policy."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:516(para)
+msgid "<application>pg_restore</application> also accepts the following command line arguments for connection parameters: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:617(title)
+msgid "Environment"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:621(envar)
+msgid "PGHOST"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:622(envar)
+msgid "PGOPTIONS"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:623(envar)
+msgid "PGPORT"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:624(envar)
+msgid "PGUSER"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:627(para)
+msgid "Default connection parameters"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:634(para)
+msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:644(title)
+msgid "Diagnostics"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:646(para)
+msgid "When a direct database connection is specified using the <option>-d</option> option, <application>pg_restore</application> internally executes <acronym>SQL</acronym> statements. If you have problems running <application>pg_restore</application>, make sure you are able to select information from the database using, for example, <xref linkend=\"app-psql\"/>. Also, any default connection settings and environment variables used by the <application>libpq</application> front-end library will apply."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:660(title)
+msgid "Notes"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:669(programlisting)
+#, no-wrap
+msgid "\nCREATE DATABASE foo WITH TEMPLATE template0;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:662(para)
+msgid "If your installation has any local additions to the <literal>template1</literal> database, be careful to load the output of <application>pg_restore</application> into a truly empty database; otherwise you are likely to get errors due to duplicate definitions of the added objects. To make an empty database without any local additions, copy from <literal>template0</literal> not <literal>template1</literal>, for example: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:679(para)
+msgid "When restoring data to a pre-existing table and the option <option>--disable-triggers</option> is used, <application>pg_restore</application> emits commands to disable triggers on user tables before inserting the data, then emits commands to re-enable them after the data has been inserted. If the restore is stopped in the middle, the system catalogs might be left in the wrong state."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:690(para)
+msgid "<application>pg_restore</application> cannot restore large objects selectively; for instance, only those for a specific table. If an archive contains large objects, then all large objects will be restored, or none of them if they are excluded via <option>-L</option>, <option>-t</option>, or other options."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:674(para)
+msgid "The limitations of <application>pg_restore</application> are detailed below. <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:702(para)
+msgid "See also the <xref linkend=\"app-pgdump\"/> documentation for details on limitations of <application>pg_dump</application>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:707(para)
+msgid "Once restored, it is wise to run <command>ANALYZE</command> on each restored table so the optimizer has useful statistics; see <xref linkend=\"vacuum-for-statistics\"/> and <xref linkend=\"autovacuum\"/> for more information."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:718(title)
+msgid "Examples"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:720(para)
+msgid "Assume we have dumped a database called <literal>mydb</literal> into a custom-format dump file: <screen>\n<prompt>$</prompt> <userinput>pg_dump -Fc mydb &gt; db.dump</userinput>\n</screen>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:729(para)
+msgid "To drop the database and recreate it from the dump: <screen>\n<prompt>$</prompt> <userinput>dropdb mydb</userinput>\n<prompt>$</prompt> <userinput>pg_restore -C -d postgres db.dump</userinput>\n</screen> The database named in the <option>-d</option> switch can be any database existing in the cluster; <application>pg_restore</application> only uses it to issue the <command>CREATE DATABASE</command> command for <literal>mydb</literal>. With <option>-C</option>, data is always restored into the database name that appears in the dump file."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:744(para)
+msgid "To reload the dump into a new database called <literal>newdb</literal>: <screen>\n<prompt>$</prompt> <userinput>createdb -T template0 newdb</userinput>\n<prompt>$</prompt> <userinput>pg_restore -d newdb db.dump</userinput>\n</screen> Notice we don't use <option>-C</option>, and instead connect directly to the database to be restored into. Also note that we clone the new database from <literal>template0</literal> not <literal>template1</literal>, to ensure it is initially empty."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:765(programlisting)
+#, no-wrap
+msgid "\n;\n; Archive created at Mon Sep 14 13:55:39 2009\n;     dbname: DBDEMOS\n;     TOC Entries: 81\n;     Compression: 9\n;     Dump Version: 1.10-0\n;     Format: CUSTOM\n;     Integer: 4 bytes\n;     Offset: 8 bytes\n;     Dumped from database version: 8.3.5\n;     Dumped by pg_dump version: 8.3.8\n;\n;\n; Selected TOC Entries:\n;\n3; 2615 2200 SCHEMA - public pasha\n1861; 0 0 COMMENT - SCHEMA public pasha\n1862; 0 0 ACL - public pasha\n317; 1247 17715 TYPE public composite pasha\n319; 1247 25899 DOMAIN public domain0 pasha\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:758(para)
+msgid "To reorder database items, it is first necessary to dump the table of contents of the archive: <screen>\n<prompt>$</prompt> <userinput>pg_restore -l db.dump &gt; db.list</userinput>\n</screen> The listing file consists of a header and one line for each item, e.g.: <placeholder-1/> Semicolons start a comment, and the numbers at the start of lines refer to the internal archive ID assigned to each item."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:793(programlisting)
+#, no-wrap
+msgid "\n10; 145433 TABLE map_resolutions postgres\n;2; 145344 TABLE species postgres\n;4; 145359 TABLE nt_header postgres\n6; 145402 TABLE species_records postgres\n;8; 145416 TABLE ss_old postgres\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:791(para)
+msgid "Lines in the file can be commented out, deleted, and reordered. For example: <placeholder-1/> could be used as input to <application>pg_restore</application> and would only restore items 10 and 6, in that order: <screen>\n<prompt>$</prompt> <userinput>pg_restore -L db.list db.dump</userinput>\n</screen>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:810(title)
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/pg_restore.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

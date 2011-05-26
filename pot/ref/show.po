@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:9(refentrytitle) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:15(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:20(primary)
+msgid "SHOW"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:10(manvolnum)
+msgid "7"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:11(refmiscinfo)
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:16(refpurpose)
+msgid "show the value of a run-time parameter"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:25(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:51(replaceable)
+msgid "name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:24(synopsis)
+#, no-wrap
+msgid "\nSHOW <placeholder-1/>\nSHOW ALL\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:31(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:33(para)
+msgid "<command>SHOW</command> will display the current setting of run-time parameters. These variables can be set using the <command>SET</command> statement, by editing the <filename>postgresql.conf</filename> configuration file, through the <envar>PGOPTIONS</envar> environmental variable (when using <application>libpq</application> or a <application>libpq</application>-based application), or through command-line flags when starting the <command>postgres</command> server. See <xref linkend=\"runtime-config\"/> for details."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:47(title)
+msgid "Parameters"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:62(literal)
+msgid "SERVER_VERSION"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:64(para)
+msgid "Shows the server's version number."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:71(literal)
+msgid "SERVER_ENCODING"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:73(para)
+msgid "Shows the server-side character set encoding. At present, this parameter can be shown but not set, because the encoding is determined at database creation time."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:82(literal)
+msgid "LC_COLLATE"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:84(para)
+msgid "Shows the database's locale setting for collation (text ordering). At present, this parameter can be shown but not set, because the setting is determined at database creation time."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:94(literal)
+msgid "LC_CTYPE"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:96(para)
+msgid "Shows the database's locale setting for character classification. At present, this parameter can be shown but not set, because the setting is determined at database creation time."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:106(literal)
+msgid "IS_SUPERUSER"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:108(para)
+msgid "True if the current role has superuser privileges."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:53(para)
+msgid "The name of a run-time parameter. Available parameters are documented in <xref linkend=\"runtime-config\"/> and on the <xref linkend=\"SQL-SET\"/> reference page. In addition, there are a few parameters that can be shown but not set: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:119(literal)
+msgid "ALL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:121(para)
+msgid "Show the values of all configuration parameters, with descriptions."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:130(title)
+msgid "Notes"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:132(para)
+msgid "The function <function>current_setting</function> produces equivalent output; see <xref linkend=\"functions-admin\"/>. Also, the <link linkend=\"view-pg-settings\"><structname>pg_settings</structname></link> system view produces the same information."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:143(title)
+msgid "Examples"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:148(programlisting)
+#, no-wrap
+msgid "\nSHOW DateStyle;\n DateStyle\n-----------\n ISO, MDY\n(1 row)\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:145(para)
+msgid "Show the current setting of the parameter <varname>DateStyle</varname>: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:159(programlisting)
+#, no-wrap
+msgid "\nSHOW geqo;\n geqo\n------\n on\n(1 row)\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:157(para)
+msgid "Show the current setting of the parameter <varname>geqo</varname>: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:170(programlisting)
+#, no-wrap
+msgid "\nSHOW ALL;\n            name         | setting |                description                                                          \n-------------------------+---------+-------------------------------------------------\n allow_system_table_mods | off     | Allows modifications of the structure of ...\n    .\n    .\n    .\n xmloption               | content | Sets whether XML data in implicit parsing ...\n zero_damaged_pages      | off     | Continues processing past damaged page headers.\n(196 rows)\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:168(para)
+msgid "Show all settings: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:186(title)
+msgid "Compatibility"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:188(para)
+msgid "The <command>SHOW</command> command is a <productname>PostgreSQL</productname> extension."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:195(title)
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/show.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

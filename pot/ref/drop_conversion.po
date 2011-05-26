@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:6(refentrytitle) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:12(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:17(primary)
+msgid "DROP CONVERSION"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:7(manvolnum)
+msgid "7"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:8(refmiscinfo)
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:13(refpurpose)
+msgid "remove a conversion"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:22(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:50(replaceable)
+msgid "name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:21(synopsis)
+#, no-wrap
+msgid "\nDROP CONVERSION [ IF EXISTS ] <placeholder-1/> [ CASCADE | RESTRICT ]\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:27(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:29(para)
+msgid "<command>DROP CONVERSION</command> removes a previously defined conversion. To be able to drop a conversion, you must own the conversion."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:36(title)
+msgid "Parameters"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:40(literal)
+msgid "IF EXISTS"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:42(para)
+msgid "Do not throw an error if the conversion does not exist. A notice is issued in this case."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:53(para)
+msgid "The name of the conversion. The conversion name can be schema-qualified."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:61(literal)
+msgid "CASCADE"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:62(literal)
+msgid "RESTRICT"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:65(para)
+msgid "These key words do not have any effect, since there are no dependencies on conversions."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:75(title)
+msgid "Examples"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:79(programlisting)
+#, no-wrap
+msgid "\nDROP CONVERSION myname;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:77(para)
+msgid "To drop the conversion named <literal>myname</literal>: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:86(title)
+msgid "Compatibility"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:88(para)
+msgid "There is no <command>DROP CONVERSION</command> statement in the SQL standard, but a <command>DROP TRANSLATION</command> statement that goes along with the <command>CREATE TRANSLATION</command> statement that is similar to the <command>CREATE CONVERSION</command> statement in PostgreSQL."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:98(title)
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/drop_conversion.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

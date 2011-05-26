@@ -1,0 +1,168 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:6(title)
+msgid "Release 8.4.8"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:9(title)
+msgid "Release Date"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:10(simpara)
+msgid "2011-04-18"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:13(para)
+msgid "This release contains a variety of fixes from 8.4.7. For information about new features in the 8.4 major release, see <xref linkend=\"release-8-4\"/>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:20(title)
+msgid "Migration to Version 8.4.8"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:22(para)
+msgid "A dump/restore is not required for those running 8.4.X."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:26(para)
+msgid "However, if your installation was upgraded from a previous major release by running <application>pg_upgrade</application>, you should take action to prevent possible data loss due to a now-fixed bug in <application>pg_upgrade</application>. The recommended solution is to run <command>VACUUM FREEZE</command> on all TOAST tables. More information is available at <ulink url=\"http://wiki.postgresql.org/wiki/20110408pg_upgrade_fix\"> http://wiki.postgresql.org/wiki/20110408pg_upgrade_fix</ulink>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:37(para)
+msgid "Also, if you are upgrading from a version earlier than 8.4.2, see the release notes for 8.4.2."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:45(title)
+msgid "Changes"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:50(para)
+msgid "Fix <application>pg_upgrade</application>'s handling of TOAST tables (Bruce Momjian)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:55(para)
+msgid "The <structname>pg_class</structname>.<structfield>relfrozenxid</structfield> value for TOAST tables was not correctly copied into the new installation during <application>pg_upgrade</application>. This could later result in <literal>pg_clog</literal> files being discarded while they were still needed to validate tuples in the TOAST tables, leading to <quote>could not access status of transaction</quote> failures."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:64(para)
+msgid "This error poses a significant risk of data loss for installations that have been upgraded with <application>pg_upgrade</application>. This patch corrects the problem for future uses of <application>pg_upgrade</application>, but does not in itself cure the issue in installations that have been processed with a buggy version of <application>pg_upgrade</application>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:74(para)
+msgid "Suppress incorrect <quote>PD_ALL_VISIBLE flag was incorrectly set</quote> warning (Heikki Linnakangas)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:79(para)
+msgid "<command>VACUUM</command> would sometimes issue this warning in cases that are actually valid."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:86(para)
+msgid "Disallow including a composite type in itself (Tom Lane)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:90(para)
+msgid "This prevents scenarios wherein the server could recurse infinitely while processing the composite type. While there are some possible uses for such a structure, they don't seem compelling enough to justify the effort required to make sure it always works safely."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:99(para)
+msgid "Avoid potential deadlock during catalog cache initialization (Nikhil Sontakke)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:104(para)
+msgid "In some cases the cache loading code would acquire share lock on a system index before locking the index's catalog. This could deadlock against processes trying to acquire exclusive locks in the other, more standard order."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:113(para)
+msgid "Fix dangling-pointer problem in <literal>BEFORE ROW UPDATE</literal> trigger handling when there was a concurrent update to the target tuple (Tom Lane)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:119(para)
+msgid "This bug has been observed to result in intermittent <quote>cannot extract system attribute from virtual tuple</quote> failures while trying to do <literal>UPDATE RETURNING ctid</literal>. There is a very small probability of more serious errors, such as generating incorrect index entries for the updated tuple."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:129(para)
+msgid "Disallow <command>DROP TABLE</command> when there are pending deferred trigger events for the table (Tom Lane)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:134(para)
+msgid "Formerly the <command>DROP</command> would go through, leading to <quote>could not open relation with OID nnn</quote> errors when the triggers were eventually fired."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:142(para)
+msgid "Prevent crash triggered by constant-false WHERE conditions during GEQO optimization (Tom Lane)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:152(para)
+msgid "Improve planner's handling of semi-join and anti-join cases (Tom Lane)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:159(para)
+msgid "Fix selectivity estimation for text search to account for NULLs (Jesper Krogh)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:166(para)
+msgid "Improve PL/pgSQL's ability to handle row types with dropped columns (Pavel Stehule)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:171(para)
+msgid "This is a back-patch of fixes previously made in 9.0."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:177(para)
+msgid "Fix PL/Python memory leak involving array slices (Daniel Popowich)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:183(para)
+msgid "Fix <application>pg_restore</application> to cope with long lines (over 1KB) in TOC files (Tom Lane)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:190(para)
+msgid "Put in more safeguards against crashing due to division-by-zero with overly enthusiastic compiler optimization (Aurelien Jarno)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:197(para)
+msgid "Support use of dlopen() in FreeBSD and OpenBSD on MIPS (Tom Lane)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:201(para)
+msgid "There was a hard-wired assumption that this system function was not available on MIPS hardware on these systems. Use a compile-time test instead, since more recent versions have it."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:209(para)
+msgid "Fix compilation failures on HP-UX (Heikki Linnakangas)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:215(para)
+msgid "Fix version-incompatibility problem with <application>libintl</application> on Windows (Hiroshi Inoue)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:222(para)
+msgid "Fix usage of <application>xcopy</application> in Windows build scripts to work correctly under Windows 7 (Andrew Dunstan)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:227(para)
+msgid "This affects the build scripts only, not installation or usage."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:233(para)
+msgid "Fix path separator used by <application>pg_regress</application> on Cygwin (Andrew Dunstan)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:240(para)
+msgid "Update time zone data files to <application>tzdata</application> release 2011f for DST law changes in Chile, Cuba, Falkland Islands, Morocco, Samoa, and Turkey; also historical corrections for South Australia, Alaska, and Hawaii."
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-8.4.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

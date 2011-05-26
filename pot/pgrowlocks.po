@@ -1,0 +1,171 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:5(title) /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:8(primary)
+msgid "pgrowlocks"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:11(para)
+msgid "The <filename>pgrowlocks</filename> module provides a function to show row locking information for a specified table."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:17(title)
+msgid "Overview"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:19(synopsis)
+#, no-wrap
+msgid "\npgrowlocks(text) returns setof record\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:23(para)
+msgid "The parameter is the name of a table. The result is a set of records, with one row for each locked row within the table. The output columns are shown in <xref linkend=\"pgrowlocks-columns\"/>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:30(title)
+msgid "<function>pgrowlocks</function> output columns"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:35(entry)
+msgid "Name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:36(entry)
+msgid "Type"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:37(entry)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:43(structfield)
+msgid "locked_row"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:44(type)
+msgid "tid"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:45(entry)
+msgid "Tuple ID (TID) of locked row"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:48(structfield)
+msgid "lock_type"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:49(type)
+msgid "text"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:50(literal)
+msgid "Shared"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:51(literal)
+msgid "Exclusive"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:50(entry)
+msgid "<placeholder-1/> for shared lock, or <placeholder-2/> for exclusive lock"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:54(structfield)
+msgid "locker"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:55(type)
+msgid "xid"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:56(entry)
+msgid "Transaction ID of locker, or multixact ID if multi-transaction"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:59(structfield)
+msgid "multi"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:60(type)
+msgid "boolean"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:61(entry)
+msgid "True if locker is a multi-transaction"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:64(structfield)
+msgid "xids"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:65(type)
+msgid "xid[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:66(entry)
+msgid "Transaction IDs of lockers (more than one if multi-transaction)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:69(structfield)
+msgid "pids"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:70(type)
+msgid "integer[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:71(entry)
+msgid "Process IDs of locking backends (more than one if multi-transaction)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:78(para)
+msgid "<function>pgrowlocks</function> takes <literal>AccessShareLock</literal> for the target table and reads each row one by one to collect the row locking information. This is not very speedy for a large table. Note that:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:86(para)
+msgid "If the table as a whole is exclusive-locked by someone else, <function>pgrowlocks</function> will be blocked."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:92(para)
+msgid "<function>pgrowlocks</function> is not guaranteed to produce a self-consistent snapshot. It is possible that a new row lock is taken, or an old lock is freed, during its execution."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:105(programlisting)
+#, no-wrap
+msgid "\nSELECT * FROM accounts AS a, pgrowlocks('accounts') AS p\n  WHERE p.locked_row = a.ctid;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:100(para)
+msgid "<function>pgrowlocks</function> does not show the contents of locked rows. If you want to take a look at the row contents at the same time, you could do something like this: <placeholder-1/> Be aware however that (as of <productname>PostgreSQL</productname> 8.3) such a query will be very inefficient."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:116(title)
+msgid "Sample output"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:118(screen)
+#, no-wrap
+msgid "\ntest=# SELECT * FROM pgrowlocks('t1');\n locked_row | lock_type | locker | multi |   xids    |     pids\n------------+-----------+--------+-------+-----------+---------------\n      (0,1) | Shared    |     19 | t     | {804,805} | {29066,29068}\n      (0,2) | Shared    |     19 | t     | {804,805} | {29066,29068}\n      (0,3) | Exclusive |    804 | f     | {804}     | {29066}\n      (0,4) | Exclusive |    804 | f     | {804}     | {29066}\n(4 rows)\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:131(title)
+msgid "Author"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:133(para)
+msgid "Tatsuo Ishii"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/pgrowlocks.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

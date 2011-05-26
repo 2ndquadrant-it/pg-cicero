@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:9(refentrytitle) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:15(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:20(primary)
+msgid "ROLLBACK TO SAVEPOINT"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:10(manvolnum)
+msgid "7"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:11(refmiscinfo)
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:16(refpurpose)
+msgid "roll back to a savepoint"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:24(primary)
+msgid "savepoints"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:25(secondary)
+msgid "rolling back"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:30(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:54(replaceable)
+msgid "savepoint_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:29(synopsis)
+#, no-wrap
+msgid "\nROLLBACK [ WORK | TRANSACTION ] TO [ SAVEPOINT ] <placeholder-1/>\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:35(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:37(para)
+msgid "Roll back all commands that were executed after the savepoint was established. The savepoint remains valid and can be rolled back to again later, if needed."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:43(para)
+msgid "<command>ROLLBACK TO SAVEPOINT</command> implicitly destroys all savepoints that were established after the named savepoint."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:50(title)
+msgid "Parameters"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:56(para)
+msgid "The savepoint to roll back to."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:65(title)
+msgid "Notes"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:67(para)
+msgid "Use <xref linkend=\"SQL-RELEASE-SAVEPOINT\"/> to destroy a savepoint without discarding the effects of commands executed after it was established."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:73(para)
+msgid "Specifying a savepoint name that has not been established is an error."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:77(para)
+msgid "Cursors have somewhat non-transactional behavior with respect to savepoints. Any cursor that is opened inside a savepoint will be closed when the savepoint is rolled back. If a previously opened cursor is affected by a <command>FETCH</command> or <command>MOVE</command> command inside a savepoint that is later rolled back, the cursor remains at the position that <command>FETCH</command> left it pointing to (that is, the cursor motion caused by <command>FETCH</command> is not rolled back). Closing a cursor is not undone by rolling back, either. However, other side-effects caused by the cursor's query (such as side-effects of volatile functions called by the query) <emphasis>are</emphasis> rolled back if they occur during a savepoint that is later rolled back. A cursor whose execution causes a transaction to abort is put in a cannot-execute state, so while the transaction can be restored using <command>ROLLBACK TO SAVEPOINT</command>, the cursor can no longer be used."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:96(title)
+msgid "Examples"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:101(programlisting)
+#, no-wrap
+msgid "\nROLLBACK TO SAVEPOINT my_savepoint;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:98(para)
+msgid "To undo the effects of the commands executed after <literal>my_savepoint</literal> was established: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:108(programlisting)
+#, no-wrap
+msgid "\nBEGIN;\n\nDECLARE foo CURSOR FOR SELECT 1 UNION SELECT 2;\n\nSAVEPOINT foo;\n\nFETCH 1 FROM foo;\n ?column? \n----------\n        1\n\nROLLBACK TO SAVEPOINT foo;\n\nFETCH 1 FROM foo;\n ?column? \n----------\n        2\n\nCOMMIT;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:106(para)
+msgid "Cursor positions are not affected by savepoint rollback: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:135(title)
+msgid "Compatibility"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:137(para)
+msgid "The <acronym>SQL</acronym> standard specifies that the key word <literal>SAVEPOINT</literal> is mandatory, but <productname>PostgreSQL</productname> and <productname>Oracle</productname> allow it to be omitted. SQL allows only <literal>WORK</literal>, not <literal>TRANSACTION</literal>, as a noise word after <literal>ROLLBACK</literal>. Also, SQL has an optional clause <literal>AND [ NO ] CHAIN</literal> which is not currently supported by <productname>PostgreSQL</productname>. Otherwise, this command conforms to the SQL standard."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:150(title)
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/rollback_to.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

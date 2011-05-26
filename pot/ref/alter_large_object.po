@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:9(refentrytitle) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:15(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:20(primary)
+msgid "ALTER LARGE OBJECT"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:10(manvolnum)
+msgid "7"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:11(refmiscinfo)
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:16(refpurpose)
+msgid "change the definition of a large object"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:25(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:45(replaceable)
+msgid "large_object_oid"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:25(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:54(replaceable)
+msgid "new_owner"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:24(synopsis)
+#, no-wrap
+msgid "\nALTER LARGE OBJECT <placeholder-1/> OWNER TO <placeholder-2/>\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:30(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:32(para)
+msgid "<command>ALTER LARGE OBJECT</command> changes the definition of a large object. The only functionality is to assign a new owner. You must be superuser or owner of the large object to use <command>ALTER LARGE OBJECT</command>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:41(title)
+msgid "Parameters"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:47(para)
+msgid "OID of the large object to be altered"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:56(para)
+msgid "The new owner of the large object"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:65(title)
+msgid "Compatibility"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:67(para)
+msgid "There is no <command>ALTER LARGE OBJECT</command> statement in the SQL standard."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:74(title)
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_large_object.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

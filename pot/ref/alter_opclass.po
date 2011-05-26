@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:9(refentrytitle) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:15(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:20(primary)
+msgid "ALTER OPERATOR CLASS"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:10(manvolnum)
+msgid "7"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:11(refmiscinfo)
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:16(refpurpose)
+msgid "change the definition of an operator class"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:25(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:26(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:54(replaceable)
+msgid "name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:25(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:26(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:64(replaceable)
+msgid "index_method"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:25(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:73(replaceable)
+msgid "new_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:26(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:82(replaceable)
+msgid "new_owner"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:24(synopsis)
+#, no-wrap
+msgid "\nALTER OPERATOR CLASS <placeholder-1/> USING <placeholder-2/> RENAME TO <placeholder-3/>\nALTER OPERATOR CLASS <placeholder-4/> USING <placeholder-5/> OWNER TO <placeholder-6/>\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:31(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:33(para)
+msgid "<command>ALTER OPERATOR CLASS</command> changes the definition of an operator class."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:38(para)
+msgid "You must own the operator class to use <command>ALTER OPERATOR CLASS</command>. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the operator class's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the operator class. However, a superuser can alter ownership of any operator class anyway.)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:50(title)
+msgid "Parameters"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:56(para)
+msgid "The name (optionally schema-qualified) of an existing operator class."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:66(para)
+msgid "The name of the index method this operator class is for."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:75(para)
+msgid "The new name of the operator class."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:84(para)
+msgid "The new owner of the operator class."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:93(title)
+msgid "Compatibility"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:95(para)
+msgid "There is no <command>ALTER OPERATOR CLASS</command> statement in the SQL standard."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:102(title)
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/alter_opclass.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

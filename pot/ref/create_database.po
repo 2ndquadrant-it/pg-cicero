@@ -1,0 +1,212 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:9(refentrytitle) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:15(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:20(primary)
+msgid "CREATE DATABASE"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:10(manvolnum)
+msgid "7"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:11(refmiscinfo)
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:16(refpurpose)
+msgid "create a new database"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:25(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:77(replaceable)
+msgid "name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:26(replaceable)
+msgid "user_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:27(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:95(replaceable)
+msgid "template"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:28(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:105(replaceable)
+msgid "encoding"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:29(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:120(replaceable)
+msgid "lc_collate"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:30(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:132(replaceable)
+msgid "lc_ctype"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:31(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:143(replaceable)
+msgid "tablespace"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:32(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:158(replaceable)
+msgid "connlimit"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:24(synopsis)
+#, no-wrap
+msgid "\nCREATE DATABASE <placeholder-1/>\n    [ [ WITH ] [ OWNER [=] <placeholder-2/> ]\n           [ TEMPLATE [=] <placeholder-3/> ]\n           [ ENCODING [=] <placeholder-4/> ]\n           [ LC_COLLATE [=] <placeholder-5/> ]\n           [ LC_CTYPE [=] <placeholder-6/> ]\n           [ TABLESPACE [=] <placeholder-7/> ]\n           [ CONNECTION LIMIT [=] <placeholder-8/> ] ]\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:37(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:39(para)
+msgid "<command>CREATE DATABASE</command> creates a new <productname>PostgreSQL</productname> database."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:44(para)
+msgid "To create a database, you must be a superuser or have the special <literal>CREATEDB</literal> privilege. See <xref linkend=\"SQL-CREATEUSER\"/>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:50(para)
+msgid "Normally, the creator becomes the owner of the new database. Superusers can create databases owned by other users, by using the <literal>OWNER</literal> clause. They can even create databases owned by users with no special privileges. Non-superusers with <literal>CREATEDB</literal> privilege can only create databases owned by themselves."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:58(para)
+msgid "By default, the new database will be created by cloning the standard system database <literal>template1</literal>. A different template can be specified by writing <literal>TEMPLATE <replaceable class=\"parameter\">name</replaceable></literal>. In particular, by writing <literal>TEMPLATE template0</literal>, you can create a virgin database containing only the standard objects predefined by your version of <productname>PostgreSQL</productname>. This is useful if you wish to avoid copying any installation-local objects that might have been added to <literal>template1</literal>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:73(title)
+msgid "Parameters"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:79(para)
+msgid "The name of a database to create."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:85(replaceable)
+msgid "use_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:87(para)
+msgid "The name of the database user who will own the new database, or <literal>DEFAULT</literal> to use the default (namely, the user executing the command)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:97(para)
+msgid "The name of the template from which to create the new database, or <literal>DEFAULT</literal> to use the default template (<literal>template1</literal>)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:107(para)
+msgid "Character set encoding to use in the new database. Specify a string constant (e.g., <literal>'SQL_ASCII'</literal>), or an integer encoding number, or <literal>DEFAULT</literal> to use the default encoding (namely, the encoding of the template database). The character sets supported by the <productname>PostgreSQL</productname> server are described in <xref linkend=\"multibyte-charset-supported\"/>. See below for additional restrictions."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:122(para)
+msgid "Collation order (<literal>LC_COLLATE</literal>) to use in the new database. This affects the sort order applied to strings, e.g. in queries with ORDER BY, as well as the order used in indexes on text columns. The default is to use the collation order of the template database. See below for additional restrictions."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:134(para)
+msgid "Character classification (<literal>LC_CTYPE</literal>) to use in the new database. This affects the categorization of characters, e.g. lower, upper and digit. The default is to use the character classification of the template database. See below for additional restrictions."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:145(para)
+msgid "The name of the tablespace that will be associated with the new database, or <literal>DEFAULT</literal> to use the template database's tablespace. This tablespace will be the default tablespace used for objects created in this database. See <xref linkend=\"sql-createtablespace\"/> for more information."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:160(para)
+msgid "How many concurrent connections can be made to this database. -1 (the default) means no limit."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:168(para)
+msgid "Optional parameters can be written in any order, not only the order illustrated above."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:175(title)
+msgid "Notes"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:177(para)
+msgid "<command>CREATE DATABASE</command> cannot be executed inside a transaction block."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:182(para)
+msgid "Errors along the line of <quote>could not initialize database directory</quote> are most likely related to insufficient permissions on the data directory, a full disk, or other file system problems."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:188(para)
+msgid "Use <xref linkend=\"SQL-DROPDATABASE\"/> to remove a database."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:192(para)
+msgid "The program <xref linkend=\"APP-CREATEDB\"/> is a wrapper program around this command, provided for convenience."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:197(para)
+msgid "Although it is possible to copy a database other than <literal>template1</literal> by specifying its name as the template, this is not (yet) intended as a general-purpose <quote><command>COPY DATABASE</command></quote> facility. The principal limitation is that no other sessions can be connected to the template database while it is being copied. <command>CREATE DATABASE</command> will fail if any other connection exists when it starts; otherwise, new connections to the template database are locked out until <command>CREATE DATABASE</command> completes. See <xref linkend=\"manage-ag-templatedbs\"/> for more information."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:209(para)
+msgid "The character set encoding specified for the new database must be compatible with the chosen locale settings (<literal>LC_COLLATE</literal> and <literal>LC_CTYPE</literal>). If the locale is <literal>C</literal> (or equivalently <literal>POSIX</literal>), then all encodings are allowed, but for other locale settings there is only one encoding that will work properly. (On Windows, however, UTF-8 encoding can be used with any locale.) <command>CREATE DATABASE</command> will allow superusers to specify <literal>SQL_ASCII</literal> encoding regardless of the locale settings, but this choice is deprecated and may result in misbehavior of character-string functions if data that is not encoding-compatible with the locale is stored in the database."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:223(para)
+msgid "The encoding and locale settings must match those of the template database, except when <literal>template0</literal> is used as template. This is because other databases might contain data that does not match the specified encoding, or might contain indexes whose sort ordering is affected by <literal>LC_COLLATE</literal> and <literal>LC_CTYPE</literal>. Copying such data would result in a database that is corrupt according to the new settings. <literal>template0</literal>, however, is known to not contain any data or indexes that would be affected."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:234(para)
+msgid "The <literal>CONNECTION LIMIT</literal> option is only enforced approximately; if two new sessions start at about the same time when just one connection <quote>slot</quote> remains for the database, it is possible that both will fail. Also, the limit is not enforced against superusers."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:243(title)
+msgid "Examples"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:248(programlisting)
+#, no-wrap
+msgid "\nCREATE DATABASE lusiadas;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:245(para)
+msgid "To create a new database: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:257(programlisting)
+#, no-wrap
+msgid "\nCREATE DATABASE sales OWNER salesapp TABLESPACE salesspace;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:253(para)
+msgid "To create a database <literal>sales</literal> owned by user <literal>salesapp</literal> with a default tablespace of <literal>salesspace</literal>: <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:266(programlisting)
+#, no-wrap
+msgid "\nCREATE DATABASE music ENCODING 'LATIN1' TEMPLATE template0;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:262(para)
+msgid "To create a database <literal>music</literal> which supports the ISO-8859-1 character set: <placeholder-1/> In this example, the <literal>TEMPLATE template0</literal> clause would only be required if <literal>template1</literal>'s encoding is not ISO-8859-1. Note that changing encoding might require selecting new <literal>LC_COLLATE</literal> and <literal>LC_CTYPE</literal> settings as well."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:278(title)
+msgid "Compatibility"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:280(para)
+msgid "There is no <command>CREATE DATABASE</command> statement in the SQL standard. Databases are equivalent to catalogs, whose creation is implementation-defined."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:288(title)
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_database.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

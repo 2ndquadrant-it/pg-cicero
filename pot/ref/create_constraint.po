@@ -1,0 +1,137 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:9(refentrytitle) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:15(refname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:20(primary)
+msgid "CREATE CONSTRAINT TRIGGER"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:10(manvolnum)
+msgid "7"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:11(refmiscinfo)
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:16(refpurpose)
+msgid "define a new constraint trigger"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:25(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:57(replaceable)
+msgid "name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:26(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:69(replaceable)
+msgid "event"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:27(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:80(replaceable)
+msgid "table_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:28(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:90(replaceable)
+msgid "referenced_table_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:31(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:115(replaceable)
+msgid "condition"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:32(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:131(replaceable)
+msgid "function_name"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:32(replaceable) /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:142(replaceable)
+msgid "arguments"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:24(synopsis)
+#, no-wrap
+msgid "\nCREATE CONSTRAINT TRIGGER <placeholder-1/>\n    AFTER <placeholder-2/> [ OR ... ]\n    ON <placeholder-3/>\n    [ FROM <placeholder-4/> ]\n    { NOT DEFERRABLE | [ DEFERRABLE ] { INITIALLY IMMEDIATE | INITIALLY DEFERRED } }\n    FOR EACH ROW\n    [ WHEN ( <placeholder-5/> ) ]\n    EXECUTE PROCEDURE <placeholder-6/> ( <placeholder-7/> )\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:37(title)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:39(para)
+msgid "<command>CREATE CONSTRAINT TRIGGER</command> creates a <firstterm>constraint trigger</firstterm>. This is the same as a regular trigger except that the timing of the trigger firing can be adjusted using <xref linkend=\"SQL-SET-CONSTRAINTS\"/>. Constraint triggers must be <literal>AFTER ROW</literal> triggers. They can be fired either at the end of the statement causing the triggering event, or at the end of the containing transaction; in the latter case they are said to be <firstterm>deferred</firstterm>. A pending deferred-trigger firing can also be forced to happen immediately by using <command>SET CONSTRAINTS</command>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:53(title)
+msgid "Parameters"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:59(para)
+msgid "The name of the constraint trigger. This is also the name to use when modifying the trigger's behavior using <command>SET CONSTRAINTS</command>. The name cannot be schema-qualified — the trigger inherits the schema of its table."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:71(para)
+msgid "One of <literal>INSERT</literal>, <literal>UPDATE</literal>, or <literal>DELETE</literal>; this specifies the event that will fire the trigger. Multiple events can be specified using <literal>OR</literal>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:82(para)
+msgid "The (possibly schema-qualified) name of the table in which the triggering events occur."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:92(para)
+msgid "The (possibly schema-qualified) name of another table referenced by the constraint. This option is used for foreign-key constraints and is not recommended for general use."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:101(literal)
+msgid "DEFERRABLE"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:102(literal)
+msgid "NOT DEFERRABLE"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:103(literal)
+msgid "INITIALLY IMMEDIATE"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:104(literal)
+msgid "INITIALLY DEFERRED"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:106(para)
+msgid "The default timing of the trigger. See the <xref linkend=\"SQL-CREATETABLE\"/> documentation for details of these constraint options."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:117(para)
+msgid "A Boolean expression that determines whether the trigger function will actually be executed. This acts the same as in <xref linkend=\"SQL-CREATETRIGGER\"/>. Note in particular that evaluation of the <literal>WHEN</literal> condition is not deferred, but occurs immediately after the row update operation is performed. If the condition does not evaluate to <literal>true</literal> then the trigger is not queued for deferred execution."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:133(para)
+msgid "The function to call when the trigger is fired. See <xref linkend=\"SQL-CREATETRIGGER\"/> for details."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:144(para)
+msgid "Optional argument strings to pass to the trigger function. See <xref linkend=\"SQL-CREATETRIGGER\"/> for details."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:155(title)
+msgid "Compatibility"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:156(para)
+msgid "<command>CREATE CONSTRAINT TRIGGER</command> is a <productname>PostgreSQL</productname> extension of the <acronym>SQL</acronym> standard."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:164(title)
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/ref/create_constraint.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

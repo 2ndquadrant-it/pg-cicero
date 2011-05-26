@@ -1,0 +1,920 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:5(title)
+msgid "Release 9.0alpha4"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:7(title)
+msgid "Overview"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:8(para)
+msgid "PostgreSQL alpha releases are snapshots of development code. They are intended to preview and test upcoming features and to provide the possibility for early feedback. They should not be used in production installations or active development projects. While the PostgreSQL code is continuously subject to a number of automated and manual tests, alpha releases might have serious bugs. Also features may be changed incompatibly or removed at any time during the development cycle."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:18(para)
+msgid "The development cycle of a PostgreSQL major release alternates between periods of development and periods of integration work, called commit fests, normally one month each. Alpha releases are planned to be produced at the end of every commit fest, thus every two months. Since the first commit fest starts within a month from the beginning of development altogether, early alpha releases are not indicative of the likely feature set of the final release."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:27(para)
+msgid "The release notes below highlight user visible changes and new features. There are normally numerous bug fixes and performance improvements in every new snapshot of PostgreSQL, and it would be too bulky to attempt to list them all. Note that many bug fixes are also backported to stable releases of PostgreSQL, and you should be using those if you are looking for bug-fix-only upgrades for your current installations."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:36(para)
+msgid "The release notes are cumulative over all alpha releases. Items that are new in the latest alpha release are <emphasis>emphasized</emphasis>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:43(title)
+msgid "Migration"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:44(para)
+msgid "To upgrade from any release to an alpha release or from an alpha release to any other release will most likely require a dump/restore upgrade procedure. It may happen that this is not necessary in particular cases, but that is not verified beforehand. (The server will warn you in any case when a dump/restore is necessary if you attempt to use it with an old data directory.) Note, however, that the dump/restore upgrade procedure is expected to work for alpha releases, and problems in this area should be reported."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:57(title)
+msgid "Testing"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:58(para)
+msgid "The primary reason we release alphas is to get users to test new features as early as possible. If you are interested in helping with organized testing, please see <ulink url=\"http://wiki.postgresql.org/wiki/HowToBetaTest\">the testing information page</ulink>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:67(title)
+msgid "Changes"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:69(title)
+msgid "SQL Features"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:73(emphasis)
+msgid "Disallow comments on columns of relation types other than tables, views, and composite types, that is, sequences and TOAST tables."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:80(emphasis)
+msgid "Adjust naming of indexes and their columns. Index expression columns are now named after the FigureColname result for their expressions, rather than always being \"pg_expression_N\". Digits are appended to this name if needed to make the column name unique within the index. Default names for indexes and associated constraints now include the column names of all their columns, not only the first one as in previous practice."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:92(emphasis)
+msgid "Allow the index name to be omitted in CREATE INDEX, causing the system to choose an index name the same as it would do for an unnamed index constraint. A necessary side-effect is to promote the word CONCURRENTLY to a more reserved status; it can't be a table/column/index name anymore unless quoted."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:102(emphasis)
+msgid "Improve the handling of SET CONSTRAINTS commands by having them search pg_constraint before searching pg_trigger. This allows saner handling of corner cases."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:109(emphasis)
+msgid "Typed table feature; this adds the CREATE TABLE name OF type command."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:115(emphasis)
+msgid "Tighten integrity checks on ALTER TABLE ... RENAME COLUMN in inheritance hierarchies."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:121(emphasis)
+msgid "Replace the pg_listener-based LISTEN/NOTIFY mechanism with an in-memory queue. In addition, add support for a \"payload\" string to be passed along with each notify event."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:127(emphasis)
+msgid "This implementation should be significantly more efficient than the old one, and is also more compatible with Hot Standby usage. There is not yet any facility for HS standby servers to receive notifications generated on the master, although such a thing is possible in future."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:136(emphasis)
+msgid "Have SELECT and CREATE TABLE AS queries return a row count. While this is invisible in psql, other interfaces, like libpq, make this value visible."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:143(emphasis)
+msgid "Extend the set of frame options supported for window functions. This allows the frame to start from CURRENT ROW (in either RANGE or ROWS mode), and it also adds support for ROWS n PRECEDING and ROWS n FOLLOWING start and end points."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:151(para)
+msgid "Add DO statement to support execution of procedural language code without having to create a function for it."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:157(para)
+msgid "Support use of function argument names to identify which actual arguments match which function parameters. The syntax uses AS, for example funcname(value AS arg1, anothervalue AS arg2)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:165(para)
+msgid "Remove previously deprecated configuration parameter add_missing_from. The system now always behaves as though add_missing_from were off."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:172(para)
+msgid "Performance and behavioral improvements in UPDATE, DELETE, and SELECT FOR UPDATE/SHARE queries with joins. Fix various corner cases that could have resulted in duplicated output rows. Set-returning functions are now prohibited in the target list of SELECT FOR UPDATE/SHARE. FOR UPDATE does not propagate into a WITH query anymore."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:182(para)
+msgid "Fix SELECT FOR UPDATE/SHARE in conjunction with LIMIT. Previously, it could return fewer rows than the limit specified."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:188(para)
+msgid "Add a WHEN clause to CREATE TRIGGER, allowing a boolean expression to be checked to determine whether the trigger should be fired."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:192(para)
+msgid "For BEFORE triggers this is mostly a matter of spec compliance; but for AFTER triggers it can provide a noticeable performance improvement, since queuing of a deferred trigger event and re-fetching of the row(s) at end of statement can be short-circuited if the trigger does not need to be fired."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:201(para)
+msgid "Add exclusion constraints, which generalize the concept of uniqueness to support any indexable commutative operator, not just equality. Two rows violate the exclusion constraint if \"row1.col OP row2.col\" is TRUE for each of the columns in the constraint."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:210(para)
+msgid "Support ORDER BY within aggregate function calls, at long last providing a non-kluge method for controlling the order in which values are fed to an aggregate function. At the same time eliminate the old implementation restriction that DISTINCT was only supported for single-argument aggregates."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:217(para)
+msgid "Behavioral change: formerly, agg(DISTINCT x) dropped null values of x unconditionally. Now, it does so only if the aggregate's transition function is strict; otherwise nulls are treated as DISTINCT normally would, i.e., you get one copy."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:225(para)
+msgid "Add SQL-compliant triggers on columns, which fire only if certain columns are named in the UPDATE's SET list."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:231(para)
+msgid "Add CREATE LIKE INCLUDING COMMENTS and STORAGE, and INCLUDING ALL shortcut to allow users to make an exact copy of a table including all options and features."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:238(para)
+msgid "Define a new, more extensible syntax for COPY options in order to support additional COPY options in the future."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:244(para)
+msgid "Modify the definition of window-function PARTITION BY and ORDER BY clauses so that their elements are always taken as simple expressions over the query's input columns. This fixes a bug."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:252(para)
+msgid "Fix bug with nested WITH RECURSIVE statements."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:257(para)
+msgid "Add surrogate pair support for U&amp; string and identifier syntax."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:263(para)
+msgid "Add Unicode escapes in E'...' strings."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:268(para)
+msgid "DROP COLUMN and DROP CONSTRAINT now support an IF EXISTS clause so that users can avoid fatal errors when running repeatable scripts."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:274(para)
+msgid "UNIQUE constraints can now be DEFERRABLE. This is primarily useful for incremental updates of numerical keys, e.g. \"ID = ID + 1\""
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:281(para)
+msgid "Allow parentheses around the query expression that follows a WITH clause."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:287(para)
+msgid "INFORMATION_SCHEMA, a catalog of standard views of database objects, has been updated to the SQL:2008 standard."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:293(para)
+msgid "Change character_octet_length to more sensible values in INFORMATION_SCHEMA."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:299(para)
+msgid "Allow * as parameter for FORCE QUOTE for COPY CSV, so that all columns will be quoted."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:307(title)
+msgid "Performance"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:311(emphasis)
+msgid "Support \"x IS NOT NULL\" clauses as index-scan conditions."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:317(emphasis)
+msgid "When estimating the selectivity of an inequality \"column &gt; constant\" or \"column &lt; constant\", and the comparison value is in the first or last histogram bin or outside the histogram entirely, try to fetch the actual column min or max value using an index scan (if there is an index on the column). If successful, replace the lower or upper histogram bound with that value before carrying on with the estimate. This limits the estimation error caused by moving min/max values when the comparison value is close to the min or max."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:331(emphasis)
+msgid "Generic implementation of red-black binary tree. For now, only GIN uses it during index creation. Using self-balanced tree greatly speeds up index creation in corner cases with preordered data."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:338(para)
+msgid "Allow rewriting forms of ALTER TABLE to skip WAL logging."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:344(para)
+msgid "Speed up INFORMATION_SCHEMA's privilege views."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:349(para)
+msgid "Make TRUNCATE do truncate-in-place when processing a relation that was created or previously truncated in the current (sub)transaction."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:356(para)
+msgid "Implement \"join removal\" for cases where the inner side of a left join is unique and is not referenced above the join. This should speed up many ORM-generated and reporting tool queries."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:363(para)
+msgid "Remove the use of the flat files pg_auth and pg_database in order to improve performance. (Warning: pgbouncer and possibly other tools currently suggest referring to the pg_auth file for its user database. Such schemes will no longer work.)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:371(para)
+msgid "EXPLAIN allows output of plans in XML, JSON, or YAML format for automated processing of explain plans by analysis or visualization tools."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:377(para)
+msgid "EXPLAIN now supports the use of generic options in EXPLAIN ( option value, ... ) format, which permits the creation of additional EXPLAIN options."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:384(para)
+msgid "ALTER TABLE ... ALTER COLUMN ... SET STATISTICS DISTINCT allows users to manually tweak the number of distinct values estimated for a column, to fix cases where ANALYZE estimates are incorrect."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:391(para)
+msgid "Make GEQO's planning deterministic by having it start from a predictable random number seed each time."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:397(para)
+msgid "Rewrite GEQO's gimme_tree function so that it always finds a legal join sequence. Previously, it could have failed to produce a plan in some cases."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:404(para)
+msgid "Tweak TOAST code so that columns marked with MAIN storage strategy are not forced out-of-line unless that is necessary to make the row fit on a page. Previously, they were forced out-of-line if needed to get the row down to the default target size (1/4th page)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:412(para)
+msgid "Simplify the forms foo &lt;&gt; true and foo &lt;&gt; false to foo = false and foo = true during query optimization."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:418(para)
+msgid "Avoid per-send() system calls to manage SIGPIPE in libpq, if the platform provides either sockopt(SO_NOSIGPIPE) or the MSG_NOSIGNAL flag to send()."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:427(title)
+msgid "Administration and Monitoring"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:431(emphasis)
+msgid "Add the ability to store inheritance-tree statistics in pg_statistic, and teach ANALYZE to compute such stats for tables that have subclasses."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:438(emphasis)
+msgid "Revise pgstat's tracking of tuple changes to improve the reliability of decisions about when to auto-analyze. The previous code depended on n_live_tuples + n_dead_tuples - last_anl_tuples, where all three of these numbers could be bad estimates from ANALYZE itself. Even worse, in the presence of a steady flow of HOT updates and matching HOT-tuple reclamations, auto-analyze might never trigger at all, even if all three numbers are exactly right, because n_dead_tuples could hold steady."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:451(emphasis)
+msgid "Support ALTER TABLESPACE name SET/RESET ( tablespace_options ), currently supporting seq_page_cost and random_page_cost as parameters."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:458(emphasis)
+msgid "New faster implementation of VACUUM FULL. The old idiom of using CLUSTER instead of VACUUM FULL for speed is now obsolete."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:465(emphasis)
+msgid "Add buffer access counters to pg_stat_statements."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:471(emphasis)
+msgid "Add some simple support and documentation for using process-specific oom_adj settings to prevent the postmaster from being OOM-killed on Linux systems."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:478(emphasis)
+msgid "Place tablespace directories in their own subdirectory so pg_migrator can upgrade clusters without renaming the tablespace directories."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:485(emphasis)
+msgid "Introduce Streaming Replication."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:490(emphasis)
+msgid "Add pg_table_size() and pg_indexes_size() to provide more user-friendly wrappers around the pg_relation_size() function."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:497(emphasis)
+msgid "Add pg_stat_reset_shared('bgwriter') to reset the cluster-wide shared statistics of the bgwriter."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:503(emphasis)
+msgid "Replace ALTER TABLE ... SET STATISTICS DISTINCT with a more general mechanism. Attributes can now have options, just as relations and tablespaces do, and the reloptions code is used to parse, validate, and store them."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:512(emphasis)
+msgid "Fix longstanding gripe that we check for 0000000001.history at start of archive recovery, even when we know it is never present."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:519(emphasis)
+msgid "Make standby server continuously retry restoring the next WAL segment with restore_command, if the connection to the primary server is lost. This ensures that the standby can recover automatically, if the connection is lost for a long time and standby falls behind so much that the required WAL segments have been archived and deleted in the master."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:528(emphasis)
+msgid "This also makes standby_mode useful without streaming replication; the server will keep retrying restore_command every few seconds until the trigger file is found. That's the same basic functionality pg_standby offers, but without the bells and whistles."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:537(emphasis)
+msgid "Add functions to reset the statistics counter for a single table/index or a single function."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:543(emphasis)
+msgid "Augment EXPLAIN output with more details on Hash nodes."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:549(emphasis)
+msgid "Reindexing shared system catalogs is now fully transactional and crash-safe."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:554(para)
+msgid "Allow read-only connections during recovery, also known as Hot Standby. This provides a built-in master-standby replication solution."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:561(para)
+msgid "Provide a parenthesized-options syntax for VACUUM, analogous to that recently adopted for EXPLAIN. This will allow additional options to be implemented in future without having to make them fully-reserved keywords. The old syntax remains available for existing options, however."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:570(para)
+msgid "Add support for an application_name parameter, which is displayed in pg_stat_activity and recorded in log entries."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:576(para)
+msgid "Fix longstanding problems in VACUUM caused by untimely interruptions."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:582(para)
+msgid "Add YAML to list of EXPLAIN formats."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:587(para)
+msgid "Add an EXPLAIN (BUFFERS) option to show buffer-usage statistics."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:592(para)
+msgid "Add a hook to let loadable modules get control at ProcessUtility execution, and use it to extend contrib/pg_stat_statements to track utility commands."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:599(para)
+msgid "Add a Boolean server configuration parameter \"bonjour\" to control whether a Bonjour-enabled build actually attempts to advertise itself via Bonjour."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:606(para)
+msgid "When reloading postgresql.conf, log what parameters actually changed."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:612(para)
+msgid "Make it possibly to specify server configuration parameters per user-database combination. Add a \\drds command to psql to display the settings."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:619(para)
+msgid "Allow the collection of statistics on sequences."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:624(para)
+msgid "Increase the maximum value of extra_float_digits to 3, and have pg_dump use that value when the backend is new enough to allow it, because it is possible to need 3 extra digits for float4 values (but not for float8 values)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:632(para)
+msgid "Add the ability to include the SQLSTATE error code of any error messages in the PostgreSQL activity log with the new log_line_prefix placeholder %e."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:639(para)
+msgid "Show the exact value being complained of in unique-constraint-violation error messages, including unique-index build failures."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:648(title)
+msgid "Security"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:652(emphasis)
+msgid "Add support for RADIUS authentication."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:656(para)
+msgid "When querying a table with child tables, do not check permissions on the child tables, only on the parent table. The old behavior was found to be useless and confusing in virtually all cases, and also contrary to the SQL standard."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:664(para)
+msgid "Add a hook to CREATE/ALTER ROLE to allow an external module to check the strength of database passwords, and create a sample implementation of such a hook as a new contrib module \"passwordcheck\"."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:672(para)
+msgid "Add large object access control."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:677(para)
+msgid "Allow LDAP authentication to operate in search+bind mode, meaning it does a search for the user in the directory first, and then binds with the DN found for this user. This allows for LDAP logins in scenarios where the DN of the user cannot be determined simply by prefix and suffix, such as the case where different users are located in different containers. The old way of authentication can be significantly faster, so it's kept as an option."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:689(para)
+msgid "Add ALTER DEFAULT PRIVILEGES command, which allows users to adjust the privileges that will be applied to subsequently-created objects."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:696(para)
+msgid "Add GRANT/REVOKE ON ALL TABLES/SEQUENCES/FUNCTIONS IN SCHEMA. This makes it easier to manage permissions on database objects."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:702(para)
+msgid "Support \"samehost\" and \"samenet\" specifications in pg_hba.conf. This allows users with dynamic server addresses to run PostgreSQL without frequently modifying pg_hba.conf."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:709(para)
+msgid "New has_sequence_privilege() functions allow you to check sequence privileges for a given ROLE."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:717(title)
+msgid "Built-In Functions"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:721(emphasis)
+msgid "Fix 3-parameter form of bit substring() to throw error for negative length, as required by SQL standard."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:728(emphasis)
+msgid "Add get_bit/set_bit functions for bit strings, paralleling those for bytea, and implement OVERLAY() for bit strings and bytea."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:735(emphasis)
+msgid "Add string_agg aggregate functions. The one-argument version concatenates the input values into a string. The two-argument version also does the same thing, but inserts delimiters between elements."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:743(emphasis)
+msgid "Honor to_char() \"FM\" specification in YYY, YY, and Y; it was already honored by YYYY."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:748(para)
+msgid "Remove configuration parameter regex_flavor. It is now always \"advanced\"."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:754(para)
+msgid "Teach the regular expression functions to do case-insensitive matching and locale-dependent character classification properly when the database encoding is UTF8. This previously only worked correctly for single-byte encodings. It is still broken for other multibyte encodings."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:763(para)
+msgid "Support POSIX-compatible interpretation of ? as well as {m,n} and related constructs in SIMILAR TO, per SQL:2008."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:769(para)
+msgid "The to_char() formatting functions now supports EEEE (scientific notation)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:775(para)
+msgid "Use floor() not rint() when reducing precision of fractional seconds in timestamp_trunc, timestamptz_trunc, and interval_trunc() for the float-datetime case. This improves accuracy of time calculations."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:783(para)
+msgid "Fix ancient bug in handling of to_char() modifier 'TH', when used with HH."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:791(title)
+msgid "Data Types"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:795(emphasis)
+msgid "Allow enums to be created with zero labels, for use during binary upgrade."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:800(para)
+msgid "When doing \"ARRAY[...]::domain\", where domain is a domain over an array type, we need to check domain constraints. Regression introduced in 8.4."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:807(para)
+msgid "Fix integer-to-bit-string conversions to handle the first fractional byte correctly when the output bit width is wider than the given integer by something other than a multiple of 8 bits."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:814(para)
+msgid "Fix encoding handling in binary input function of xml type."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:819(para)
+msgid "Tighten binary receive functions so that they reject values that the text input functions don't accept either."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:825(para)
+msgid "New hex-string input and output format options for type bytea. Hex output format is enabled by default, which is an incompatible change. See the new bytea_output parameter if you need to restore compatibility."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:833(para)
+msgid "Adds prefix support for text search synonym dictionary, allowing creation of synonyms on partial matches."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:841(title)
+msgid "Server Tools"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:844(para)
+msgid "initdb now selects the encoding SQL_ASCII when the locale specifies US-ASCII. This case previously failed."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:850(para)
+msgid "Add init[db] option to pg_ctl."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:855(para)
+msgid "It is now reasonably safe to use pg_ctl to start the postmaster from a boot-time script."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:861(para)
+msgid "pg_dump/pg_restore --clean now drops large objects."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:866(para)
+msgid "Modify parallel pg_restore ordering logic to avoid a potential O(N^2) slowdown for some complex databases."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:874(title)
+msgid "libpq"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:878(emphasis)
+msgid "Add user-specific .pg_service.conf file."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:883(emphasis)
+msgid "Add new escaping functions PQescapeLiteral and PQescapeIdentifier."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:889(emphasis)
+msgid "Introduce two new libpq connection functions, PQconnectdbParams and PQconnectStartParams, which are analogous to PQconnectdb and PQconnectStart respectively, but accept two NULL-terminated arrays, keywords and values, rather than conninfo strings. This avoids the need to build the conninfo string in cases where it might be inconvenient to do so."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:899(para)
+msgid "Throw error when a specified connection service name is not found in pg_service.conf, instead of ignoring it."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:905(para)
+msgid "Make libpq reject non-numeric and out-of-range port numbers with a suitable error message."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:913(title)
+msgid "psql"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:917(emphasis)
+msgid "Allow psql variables to be interpolated with literal or identifier escaping."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:922(para)
+msgid "In psql, show view definition only with \\d+, not with \\d."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:927(para)
+msgid "In psql, ignore UTF-8-encoded Unicode byte-order mark at the beginning of a file if the client encoding is UTF-8."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:933(para)
+msgid "Improve psql's tabular display of wrapped-around data by inserting markers in the formerly-always-blank columns just to left and right of the data. \"pset linestyle old-ascii\" is added to make the previous behavior available if anyone really wants it."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:941(para)
+msgid "Simplify psql's new linestyle behavior to default to linestyle=ascii all the time, rather than hoping we can tell whether the terminal supports UTF-8 characters."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:948(para)
+msgid "Implement significantly saner behavior when two or more psql sessions overlap in their use of the history file."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:954(para)
+msgid "Add \"pset linestyle ascii/unicode\" option to psql, allowing our traditional ASCII-art style of table output to be upgraded to use Unicode box drawing characters if desired."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:962(para)
+msgid "Have \\d show child tables that inherit from the specified parent"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:967(para)
+msgid "psql now shows the index methods in \\di"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:975(title)
+msgid "Procedural Languages"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:977(title)
+msgid "PL/pgSQL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:981(emphasis)
+msgid "Add \"USING expressions\" option to PL/pgSQL's OPEN cursor FOR EXECUTE."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:986(para)
+msgid "PL/pgSQL is installed by default."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:991(para)
+msgid "Remove PL/pgSQL's RENAME declaration, which has bizarre and mostly nonfunctional behavior, and is so little used that no one has been interested in fixing it. To ensure that possible uses are covered, remove the ALIAS declaration's arbitrary restriction that only $n identifiers can be aliased."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1001(para)
+msgid "The PL/pgSQL parser and scanner were reworked to behave much more sanely:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1005(para)
+msgid "A variable reference will only be recognized where it can validly go, ie, a place where a column value or parameter would be legal, instead of the former behavior that would replace any textual match including table names and column aliases (leading to syntax errors later on)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1012(para)
+msgid "When a name could refer either to a PL/pgSQL variable or a table column, PL/pgSQL formerly always assumed the variable was meant, sometimes resulting in surprising behavior. Now, PL/pgSQL can assume the variable is meant, or assume the table column is meant, or throw an error in ambiguous cases. For safety the default is to throw error. To configure this see <link linkend=\"plpgsql-var-subst\">the PL/pgSQL documentation</link>."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1021(para)
+msgid "Error reporting is much nicer: it no longer shows edited versions of statements that look significantly different from what you wrote."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1026(para)
+msgid "Note that this change affects the set of keywords that are reserved in PL/pgSQL (i.e., cannot be the name of a PL/pgSQL variable). Now, all keywords shown as reserved in <link linkend=\"sql-keywords-appendix\">Appendix C</link> are reserved for PL/pgSQL purposes as well. However, many PL/pgSQL-only keywords that were formerly treated as reserved no longer are. As in regular SQL, you can double-quote a variable's name if you want to use a name that conflicts with a reserved keyword."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1038(para)
+msgid "PL/pgSQL IN parameters now accept value assignments."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1043(para)
+msgid "Allow cursor commands MOVE FORWARD n, MOVE BACKWARD n, MOVE FORWARD ALL, MOVE BACKWARD ALL in PL/pgSQL."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1049(para)
+msgid "PL/pgSQL functions can now better cope with row types containing dropped columns."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1058(title)
+msgid "PL/Perl"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1062(emphasis)
+msgid "Add utility functions to PL/Perl: quote_literal, quote_nullable, quote_ident, encode_bytea, decode_bytea, looks_like_number, encode_array_literal, encode_array_constructor."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1070(emphasis)
+msgid "Add plperl.on_plperl_init, plperl.on_plperlu_init, and plperl.on_init settings for startup code."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1076(emphasis)
+msgid "Allow (ineffective) use of \"require\". If the required module is not already loaded then it dies. So \"use strict;\" now works in PL/Perl."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1083(emphasis)
+msgid "Pre-load the feature module if Perl &gt;= 5.10. So \"use feature :5.10;\" now works in PL/Perl."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1089(emphasis)
+msgid "Stored procedure subs are now given names. The names are not visible in ordinary use, but they make tools like Devel::NYTProf and Devel::Cover much more useful."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1097(emphasis)
+msgid "Handle END blocks in PL/Perl."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1102(emphasis)
+msgid "Clean up package namespace use and use of Safe."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1107(emphasis)
+msgid "Change log level of Perl warnings from NOTICE to WARNING."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1112(para)
+msgid "Add support for anonymous code blocks (DO blocks) to PL/Perl."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1117(para)
+msgid "Improve error context reporting in PL/Perl, for easier debugging."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1123(para)
+msgid "Convert a Perl array to a PostgreSQL array when returned by set-returning functions as well as non-SRFs."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1132(title)
+msgid "PL/Python"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1136(emphasis)
+msgid "Improved printing of Python exceptions in PL/Python."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1142(emphasis)
+msgid "Add PL/Python DO handler."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1146(para)
+msgid "Support arrays as parameters and return values of PL/Python functions."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1152(para)
+msgid "Add Python 3 support to PL/Python. It behaves more or less unchanged compared to Python 2, but the new language variant is called plpython3u."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1159(para)
+msgid "Fix/improve bytea and boolean support in PL/Python. Data type conversion into and out of PL/Python previously went through an intermediate string representation, which caused various discrepancies especially with bytea and boolean data. This is now fixed by converting the values directly."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1168(para)
+msgid "PL/Python now accepts Unicode objects where it previously only accepted string objects (for example, as return value). Unicode objects are converted to the PostgreSQL server encoding as necessary."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1176(para)
+msgid "Improve error context reporting in PL/Python, for easier debugging."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1182(para)
+msgid "Greatly expand the regression testing for PL/Python."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1191(title)
+msgid "Additional Supplied Modules"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1195(emphasis)
+msgid "Add query text to auto_explain output."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1199(para)
+msgid "Add \\shell and \\setshell meta commands to pgbench."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1202(para)
+msgid "\\shell runs an external shell command. \\setshell does the same and assigns the result to a variable."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1208(para)
+msgid "Multiple improvements in contrib/hstore, including raising limits on keys and values, conversions to and from records and arrays, and support for GROUP BY and DISTINCT."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1215(para)
+msgid "pgbench is now multi-threaded, allowing it to use multiple CPU's for its client connections, and to do more realistic workload testing."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1222(para)
+msgid "Added the ability to retrieve asynchronous notifications using dblink, via the addition of the function dblink_get_notify()."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1228(para)
+msgid "Added matchorig, matchsynonyms, and keepsynonyms options to contrib/dict_xsyn."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1234(para)
+msgid "Added contrib/unaccent."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1241(title)
+msgid "ECPG"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1245(emphasis)
+msgid "Add sqlda support in both native and compatibility mode."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1251(emphasis)
+msgid "Fix SQL3 type return value: For non-SQL3 types ECPG used to return -OID. This will break if there are enough OIDs to fill the namespace. Therefore we play it safe and return 0 if there is no OID-&gt;SQL3 type mapping available."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1259(emphasis)
+msgid "Make char the default sqlda type."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1264(emphasis)
+msgid "Add DESCRIBE [OUTPUT] statement."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1269(emphasis)
+msgid "Add out-of-scope cursor support to native mode."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1273(para)
+msgid "Refactor ECPG grammar so that it uses the core grammar's unreserved_keyword list, minus a few specific words that have to be treated specially. This de-reserves a number of words in ECPG."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1280(para)
+msgid "Added dynamic cursor names to ECPG."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1285(para)
+msgid "Add ECPG function that returns the current transaction status."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1290(para)
+msgid "Make ECPG more robust against applications freeing strings."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1295(para)
+msgid "ECPG now includes a STRING datatype for Informix compatibility mode."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1303(title)
+msgid "Ports"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1307(emphasis)
+msgid "Add basic build support for Visual Studio 2008, without resorting to generating the build files for 2005 and then converting them."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1314(emphasis)
+msgid "Added support for 64-bit Windows platforms."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1318(para)
+msgid "Disable triggering failover with a signal in pg_standby on Windows. It never really worked before anyway."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1324(para)
+msgid "Change the WIN32 API version to be 5.01 (Windows XP), to bring in the proper IPv6 headers in newer SDKs."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1330(para)
+msgid "Write to the Windows eventlog in UTF-16, converting the message encoding as necessary."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1336(para)
+msgid "Replace use of the long-deprecated Bonjour API DNSServiceRegistrationCreate with the not-so-deprecated DNSServiceRegister. The new code will fail on Mac OS X releases before 10.3."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1344(para)
+msgid "Reserve the shared memory region during backend startup on Windows, so that memory allocated by starting third party DLLs doesn't end up conflicting with it. Hopefully this solves the long-time issue with \"could not reattach to shared memory\" errors on Win32."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1353(para)
+msgid "Add s_lock support for SuperH architecture (not well tested)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1360(title)
+msgid "Source Code, Build Options"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1364(emphasis)
+msgid "Improve PGXS makefile system to allow the module's makefile to specify where to install DATA and DOCS files. This is mainly intended to allow versioned installation, eg, install into contrib/fooM.N/ rather than directly into contrib/."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1373(emphasis)
+msgid "Get rid of the need for manual maintenance of the initial contents of pg_attribute, by having genbki.pl derive the information from the various catalog header files. This greatly simplifies modification of the \"bootstrapped\" catalogs. This patch finally kills genbki.sh and Gen_fmgrtab.sh; we now rely entirely on Perl scripts for those build steps. To avoid creating a Perl build dependency where there was not one before, they will be built and shipped in tarballs."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1386(emphasis)
+msgid "Move the default configuration for the MSVC build system to config_default.pl, and allow using config.pl to override the defaults."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1393(emphasis)
+msgid "Make configure check the version of Perl we're building with, and reject versions &lt; 5.8."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1399(emphasis)
+msgid "Remove all support for working around on systems that don't provide a working 64-bit integer type."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1405(emphasis)
+msgid "Add new make targets \"world\", \"install-world\" and \"installcheck-world\" to build, install and check just about everything. In addition to everything built installed and tested by all, install and installcheck targets, these build HTML documentation, build and test contrib, and test procedural languages and ECPG."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1414(para)
+msgid "configure --enable-thread-safety is now the default (but can still be turned off)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1420(para)
+msgid "Fix inclusions of readline/editline header files so that we only attempt to #include the version of history.h that is in the same directory as the readline.h we are using. This avoids problems in some scenarios where both readline and editline are installed."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1429(para)
+msgid "Derived files that are shipped in the distribution used to be built in the source directory even for out-of-tree builds. They are now built in the build tree. This should be more convenient for certain developers' workflows."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1437(para)
+msgid "Functions which conflict with C++ reserved words have been renamed, making backend header files now safe to use with C++ libraries."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1443(para)
+msgid "Add man pages for SPI functions."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1448(para)
+msgid "Upgrade to Autoconf 2.63 (not relevant to users of distribution tarballs)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1454(para)
+msgid "Minimum version of Flex is now 2.5.31, to support reentrant scanners (not relevant to users of distribution tarballs)."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1460(para)
+msgid "Documentation build rules have been improved. The generated documentation files are now shipped \"loose\", not in sub-tarballs."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1467(para)
+msgid "New toolchain to generate man pages. From now on, the man pages will be current in every release."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1473(para)
+msgid "Code-coverage testing support now extends to the entire source tree, not only src/backend/."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:1479(para)
+msgid "Make the core scanner re-entrant, along with additional fixes that will let it be used directly by PL/pgSQL."
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/release-alpha.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

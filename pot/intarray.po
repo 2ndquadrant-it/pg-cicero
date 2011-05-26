@@ -1,0 +1,422 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:5(title) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:8(primary)
+msgid "intarray"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:11(para)
+msgid "The <filename>intarray</filename> module provides a number of useful functions and operators for manipulating one-dimensional arrays of integers. There is also support for indexed searches using some of the operators."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:18(title)
+msgid "<filename>intarray</filename> Functions and Operators"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:21(title)
+msgid "<filename>intarray</filename> Functions"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:26(entry)
+msgid "Function"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:27(entry)
+msgid "Return Type"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:28(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:127(entry)
+msgid "Description"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:29(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:273(title)
+msgid "Example"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:30(entry)
+msgid "Result"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:36(function)
+msgid "icount(int[])"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:37(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:85(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:149(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:154(type)
+msgid "int"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:38(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:150(entry)
+msgid "number of elements in array"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:39(literal)
+msgid "icount('{1,2,3}'::int[])"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:40(literal)
+msgid "3"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:44(function)
+msgid "sort(int[], text dir)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:45(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:53(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:61(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:69(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:77(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:93(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:101(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:109(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:159(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:164(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:169(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:174(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:179(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:184(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:189(type)
+msgid "int[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:46(parameter)
+msgid "dir"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:46(literal)
+msgid "asc"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:46(literal)
+msgid "desc"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:46(entry)
+msgid "sort array — <placeholder-1/> must be <placeholder-2/> or <placeholder-3/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:47(literal)
+msgid "sort('{1,2,3}'::int[], 'desc')"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:48(literal)
+msgid "{3,2,1}"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:52(function)
+msgid "sort(int[])"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:54(entry) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:62(entry)
+msgid "sort in ascending order"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:55(literal)
+msgid "sort(array[11,77,44])"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:56(literal)
+msgid "{11,44,77}"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:60(function)
+msgid "sort_asc(int[])"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:68(function)
+msgid "sort_desc(int[])"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:70(entry)
+msgid "sort in descending order"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:76(function)
+msgid "uniq(int[])"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:78(entry)
+msgid "remove adjacent duplicates"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:79(literal)
+msgid "uniq(sort('{1,2,3,2,1}'::int[]))"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:80(literal)
+msgid "{1,2,3}"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:84(function)
+msgid "idx(int[], int item)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:86(parameter)
+msgid "item"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:86(entry)
+msgid "index of first element matching <placeholder-1/> (0 if none)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:87(literal)
+msgid "idx(array[11,22,33,22,11], 22)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:88(literal)
+msgid "2"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:92(function)
+msgid "subarray(int[], int start, int len)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:94(parameter) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:102(parameter)
+msgid "start"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:94(parameter)
+msgid "len"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:94(entry)
+msgid "portion of array starting at position <placeholder-1/>, <placeholder-2/> elements"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:95(literal)
+msgid "subarray('{1,2,3,2,1}'::int[], 2, 3)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:96(literal)
+msgid "{2,3,2}"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:100(function)
+msgid "subarray(int[], int start)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:102(entry)
+msgid "portion of array starting at position <placeholder-1/>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:103(literal)
+msgid "subarray('{1,2,3,2,1}'::int[], 2)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:104(literal)
+msgid "{2,3,2,1}"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:108(function)
+msgid "intset(int)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:110(entry)
+msgid "make single-element array"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:111(literal)
+msgid "intset(42)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:112(literal)
+msgid "{42}"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:120(title)
+msgid "<filename>intarray</filename> Operators"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:125(entry)
+msgid "Operator"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:126(entry)
+msgid "Returns"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:133(literal)
+msgid "int[] &amp;&amp; int[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:134(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:139(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:144(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:194(type) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:199(type)
+msgid "boolean"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:135(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:140(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:145(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:195(literal) /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:200(literal)
+msgid "true"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:135(entry)
+msgid "overlap — <placeholder-1/> if arrays have at least one common element"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:138(literal)
+msgid "int[] @&gt; int[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:140(entry)
+msgid "contains — <placeholder-1/> if left array contains right array"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:143(literal)
+msgid "int[] &lt;@ int[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:145(entry)
+msgid "contained — <placeholder-1/> if left array is contained in right array"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:148(literal)
+msgid "# int[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:153(literal)
+msgid "int[] # int"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:155(function)
+msgid "idx"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:155(entry)
+msgid "index (same as <placeholder-1/> function)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:158(literal)
+msgid "int[] + int"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:160(entry)
+msgid "push element onto array (add it to end of array)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:163(literal)
+msgid "int[] + int[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:165(entry)
+msgid "array concatenation (right array added to the end of left one)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:168(literal)
+msgid "int[] - int"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:170(entry)
+msgid "remove entries matching right argument from array"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:173(literal)
+msgid "int[] - int[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:175(entry)
+msgid "remove elements of right array from left"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:178(literal)
+msgid "int[] | int"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:180(entry)
+msgid "union of arguments"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:183(literal)
+msgid "int[] | int[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:185(entry)
+msgid "union of arrays"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:188(literal)
+msgid "int[] &amp; int[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:190(entry)
+msgid "intersection of arrays"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:193(literal)
+msgid "int[] @@ query_int"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:195(entry)
+msgid "<placeholder-1/> if array satisfies query (see below)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:198(literal)
+msgid "query_int ~~ int[]"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:200(literal)
+msgid "@@"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:200(entry)
+msgid "<placeholder-1/> if array satisfies query (commutator of <placeholder-2/>)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:206(para)
+msgid "(Before PostgreSQL 8.2, the containment operators <literal>@&gt;</literal> and <literal>&lt;@</literal> were respectively called <literal>@</literal> and <literal>~</literal>. These names are still available, but are deprecated and will eventually be retired. Notice that the old names are reversed from the convention formerly followed by the core geometric data types!)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:214(para)
+msgid "The containment operators <literal>@&gt;</literal> and <literal>&lt;@</literal> are approximately equivalent to <productname>PostgreSQL</productname>'s built-in operators of the same names, except that they work only on integer arrays while the built-in operators work for any array type. An important difference is that <filename>intarray</filename>'s operators do not consider an empty array to be contained in anything else. This is consistent with the behavior of GIN-indexed queries, but not with the usual mathematical definition of containment."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:225(para)
+msgid "The <literal>@@</literal> and <literal>~~</literal> operators test whether an array satisfies a <firstterm>query</firstterm>, which is expressed as a value of a specialized data type <type>query_int</type>. A <firstterm>query</firstterm> consists of integer values that are checked against the elements of the array, possibly combined using the operators <literal>&amp;</literal> (AND), <literal>|</literal> (OR), and <literal>!</literal> (NOT). Parentheses can be used as needed. For example, the query <literal>1&amp;(2|3)</literal> matches arrays that contain 1 and also contain either 2 or 3."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:239(title)
+msgid "Index Support"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:241(para)
+msgid "<filename>intarray</filename> provides index support for the <literal>&amp;&amp;</literal>, <literal>@&gt;</literal>, <literal>&lt;@</literal>, and <literal>@@</literal> operators, as well as regular array equality."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:247(para)
+msgid "Two GiST index operator classes are provided: <literal>gist__int_ops</literal> (used by default) is suitable for small- to medium-size data sets, while <literal>gist__intbig_ops</literal> uses a larger signature and is more suitable for indexing large data sets (i.e., columns containing a large number of distinct array values). The implementation uses an RD-tree data structure with built-in lossy compression."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:258(para)
+msgid "There is also a non-default GIN operator class <literal>gin__int_ops</literal> supporting the same operators."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:263(para)
+msgid "The choice between GiST and GIN indexing depends on the relative performance characteristics of GiST and GIN, which are discussed elsewhere. As a rule of thumb, a GIN index is faster to search than a GiST index, but slower to build or update; so GIN is better suited for static data and GiST for often-updated data."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:275(programlisting)
+#, no-wrap
+msgid "\n-- a message can be in one or more <quote>sections</quote>\nCREATE TABLE message (mid INT PRIMARY KEY, sections INT[], ...);\n\n-- create specialized index\nCREATE INDEX message_rdtree_idx ON message USING GIST (sections gist__int_ops);\n\n-- select messages in section 1 OR 2 - OVERLAP operator\nSELECT message.mid FROM message WHERE message.sections &amp;&amp; '{1,2}';\n\n-- select messages in sections 1 AND 2 - CONTAINS operator\nSELECT message.mid FROM message WHERE message.sections @&gt; '{1,2}';\n\n-- the same, using QUERY operator\nSELECT message.mid FROM message WHERE message.sections @@ '1&amp;2'::query_int;\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:294(title)
+msgid "Benchmark"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:296(para)
+msgid "The source directory <filename>contrib/intarray/bench</filename> contains a benchmark test suite. To run:"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:301(programlisting)
+#, no-wrap
+msgid "\ncd .../bench\ncreatedb TEST\npsql TEST &lt; ../_int.sql\n./create_test.pl | psql TEST\n./bench.pl\n"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:309(para)
+msgid "The <filename>bench.pl</filename> script has numerous options, which are displayed when it is run without any arguments."
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:316(title)
+msgid "Authors"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:318(para)
+msgid "All work was done by Teodor Sigaev (<email>teodor@sigaev.ru</email>) and Oleg Bartunov (<email>oleg@sai.msu.su</email>). See <ulink url=\"http://www.sai.msu.su/~megera/postgres/gist/\"/> for additional information. Andrey Oktyabrski did a great work on adding new functions and operations."
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/intarray.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

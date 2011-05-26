@@ -1,0 +1,612 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-26 12:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:5(title)
+msgid "Acronyms"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:14(acronym)
+msgid "ANSI"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:17(ulink)
+msgid "American National Standards Institute"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:24(acronym)
+msgid "API"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:27(ulink)
+msgid "Application Programming Interface"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:33(acronym)
+msgid "ASCII"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:36(ulink)
+msgid "American Standard Code for Information Interchange"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:43(acronym)
+msgid "BKI"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:46(link)
+msgid "Backend Interface"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:52(acronym)
+msgid "CA"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:55(ulink)
+msgid "Certificate Authority"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:61(acronym)
+msgid "CIDR"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:65(ulink)
+msgid "Classless Inter-Domain Routing"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:72(acronym)
+msgid "CPAN"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:75(ulink)
+msgid "Comprehensive Perl Archive Network"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:81(acronym)
+msgid "CRL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:85(ulink)
+msgid "Certificate Revocation List"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:92(acronym)
+msgid "CSV"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:96(ulink)
+msgid "Comma Separated Values"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:103(acronym)
+msgid "CTE"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:106(link)
+msgid "Common Table Expression"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:112(acronym)
+msgid "CVE"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:115(ulink)
+msgid "Common Vulnerabilities and Exposures"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:121(acronym)
+msgid "DBA"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:125(ulink)
+msgid "Database Administrator"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:132(acronym)
+msgid "DBI"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:135(ulink)
+msgid "Database Interface (Perl)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:141(acronym)
+msgid "DBMS"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:144(ulink)
+msgid "Database Management System"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:151(acronym)
+msgid "DDL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:153(para)
+msgid "<ulink url=\"http://en.wikipedia.org/wiki/Data_Definition_Language\">Data Definition Language</ulink>, SQL commands such as <command>CREATE TABLE</command>, <command>ALTER USER</command>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:163(acronym)
+msgid "DML"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:165(para)
+msgid "<ulink url=\"http://en.wikipedia.org/wiki/Data_Manipulation_Language\">Data Manipulation Language</ulink>, SQL commands such as <command>INSERT</command>, <command>UPDATE</command>, <command>DELETE</command>"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:175(acronym)
+msgid "DST"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:179(ulink)
+msgid "Daylight Saving Time"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:186(acronym)
+msgid "ECPG"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:189(link)
+msgid "Embedded C for PostgreSQL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:195(acronym)
+msgid "ESQL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:198(ulink)
+msgid "Embedded SQL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:205(acronym)
+msgid "FAQ"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:208(ulink)
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:215(acronym)
+msgid "FSM"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:218(link)
+msgid "Free Space Map"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:224(acronym)
+msgid "GEQO"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:227(link)
+msgid "Genetic Query Optimizer"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:233(acronym)
+msgid "GIN"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:236(link)
+msgid "Generalized Inverted Index"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:242(acronym)
+msgid "GiST"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:245(link)
+msgid "Generalized Search Tree"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:251(acronym) /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:255(ulink)
+msgid "Git"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:261(acronym)
+msgid "GMT"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:264(ulink)
+msgid "Greenwich Mean Time"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:270(acronym)
+msgid "GSSAPI"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:274(ulink)
+msgid "Generic Security Services Application Programming Interface"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:281(acronym)
+msgid "GUC"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:283(para)
+msgid "<link linkend=\"config-setting\">Grand Unified Configuration</link>, the <productname>PostgreSQL</productname> subsystem that handles server configuration"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:291(acronym)
+msgid "HBA"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:294(link)
+msgid "Host-Based Authentication"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:300(acronym)
+msgid "HOT"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:304(ulink)
+msgid "Heap-Only Tuples"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:311(acronym)
+msgid "IEC"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:315(ulink)
+msgid "International Electrotechnical Commission"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:322(acronym)
+msgid "IEEE"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:325(ulink)
+msgid "Institute of Electrical and Electronics Engineers"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:332(acronym)
+msgid "IPC"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:336(ulink)
+msgid "Inter-Process Communication"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:343(acronym)
+msgid "ISO"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:346(ulink)
+msgid "International Organization for Standardization"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:353(acronym)
+msgid "ISSN"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:356(ulink)
+msgid "International Standard Serial Number"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:363(acronym)
+msgid "JDBC"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:367(ulink)
+msgid "Java Database Connectivity"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:374(acronym)
+msgid "LDAP"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:378(ulink)
+msgid "Lightweight Directory Access Protocol"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:385(acronym)
+msgid "MSVC"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:389(productname)
+msgid "Microsoft Visual C"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:396(acronym)
+msgid "MVCC"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:399(link)
+msgid "Multi-Version Concurrency Control"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:405(acronym)
+msgid "NLS"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:409(ulink)
+msgid "National Language Support"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:416(acronym)
+msgid "ODBC"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:420(ulink)
+msgid "Open Database Connectivity"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:427(acronym)
+msgid "OID"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:430(link)
+msgid "Object Identifier"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:436(acronym)
+msgid "OLAP"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:439(ulink)
+msgid "Online Analytical Processing"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:446(acronym)
+msgid "OLTP"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:449(ulink)
+msgid "Online Transaction Processing"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:456(acronym)
+msgid "ORDBMS"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:459(ulink)
+msgid "Object-Relational Database Management System"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:466(acronym)
+msgid "PAM"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:470(ulink)
+msgid "Pluggable Authentication Modules"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:477(acronym)
+msgid "PGSQL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:480(productname) /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:489(productname)
+msgid "PostgreSQL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:486(acronym)
+msgid "PGXS"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:489(link)
+msgid "<placeholder-1/> Extension System"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:495(acronym)
+msgid "PID"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:498(ulink)
+msgid "Process Identifier"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:504(acronym)
+msgid "PITR"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:506(para)
+msgid "<link linkend=\"continuous-archiving\">Point-In-Time Recovery</link> (Continuous Archiving)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:514(acronym)
+msgid "PL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:517(link)
+msgid "Programming Languages (server-side)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:523(acronym)
+msgid "POSIX"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:526(ulink)
+msgid "Portable Operating System Interface"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:533(acronym)
+msgid "RDBMS"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:537(ulink)
+msgid "Relational Database Management System"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:544(acronym)
+msgid "RFC"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:548(ulink)
+msgid "Request For Comments"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:555(acronym)
+msgid "SGML"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:558(ulink)
+msgid "Standard Generalized Markup Language"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:565(acronym)
+msgid "SPI"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:568(link)
+msgid "Server Programming Interface"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:574(acronym)
+msgid "SQL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:577(ulink)
+msgid "Structured Query Language"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:583(acronym)
+msgid "SRF"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:586(link)
+msgid "Set-Returning Function"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:592(acronym)
+msgid "SSH"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:595(ulink)
+msgid "Secure Shell"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:602(acronym)
+msgid "SSL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:605(ulink)
+msgid "Secure Sockets Layer"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:611(acronym)
+msgid "SSPI"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:614(ulink)
+msgid "Security Support Provider Interface"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:621(acronym)
+msgid "SYSV"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:624(ulink)
+msgid "Unix System V"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:630(acronym)
+msgid "TCP/IP"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:634(ulink)
+msgid "Transmission Control Protocol (TCP) / Internet Protocol (IP)"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:641(acronym)
+msgid "TID"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:644(link)
+msgid "Tuple Identifier"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:650(acronym)
+msgid "TOAST"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:653(link)
+msgid "The Oversized-Attribute Storage Technique"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:659(acronym)
+msgid "TPC"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:662(ulink)
+msgid "Transaction Processing Performance Council"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:669(acronym)
+msgid "URL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:672(ulink)
+msgid "Uniform Resource Locator"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:679(acronym)
+msgid "UTC"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:683(ulink)
+msgid "Coordinated Universal Time"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:690(acronym)
+msgid "UTF"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:693(ulink)
+msgid "Unicode Transformation Format"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:700(acronym)
+msgid "UTF8"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:703(ulink)
+msgid "Eight-Bit Unicode Transformation Format"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:710(acronym)
+msgid "UUID"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:713(link)
+msgid "Universally Unique Identifier"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:719(acronym)
+msgid "WAL"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:722(link)
+msgid "Write-Ahead Log"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:728(acronym)
+msgid "XID"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:731(link)
+msgid "Transaction Identifier"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:737(acronym)
+msgid "XML"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:740(ulink)
+msgid "Extensible Markup Language"
+msgstr ""
+
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:7(para)
+msgid "This is a list of acronyms commonly used in the <productname>PostgreSQL</productname> documentation and in discussions about <productname>PostgreSQL</productname>. <placeholder-1/>"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: /home/carloratm/progetti/postgresql-source/doc-9.0.4/acronyms.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+
