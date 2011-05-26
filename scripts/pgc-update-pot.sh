@@ -95,8 +95,8 @@ function progressbar_step()
 #
 # Make a temporary copy of base xml
 #
-WORKDIR=`mktemp -d -t cicero-XXXX`
-cp -r $BASEDIR $WORKDIR/base
+#WORKDIR=`mktemp -d -t cicero-XXXX`
+#cp -r $BASEDIR $WORKDIR/base
 
 declare -i tot 
 declare -i ok
@@ -107,17 +107,18 @@ tot=0
 ok=0
 fail=0
 echo "-> Generating POTs in "$POTDIR
+
 for srcfile in $( find $BASEDIR -type f -name '*.xml' | sed -e "s|$BASEDIR/||" ) 
 do
      INPUT_FILE=$srcfile
      OUTPUT_FILE=$POTDIR/$( echo $srcfile | sed -e 's/\.xml/\.po/' )
     
-     sed -i -e 's/&mdash;/-/g' $WORKDIR/base/$srcfile
+     #sed -i -e 's/&mdash;/-/g' $INPUT_FILE
      if [ ! -d `dirname $OUTPUT_FILE` ]; then
          mkdir -p `dirname $OUTPUT_FILE`
      fi
-     xml2po -o $OUTPUT_FILE $BASEDIR/$INPUT_FILE
-    
+     xml2po -o $OUTPUT_FILE $INPUT_FILE
+     
      if [ $? -eq 0 ]; then
         ok=$ok+1
      else
@@ -136,4 +137,3 @@ echo "  Total Files : " $tot
 echo "  Successes   : " $ok
 echo "  Fails       : " $fail
 echo 
-
