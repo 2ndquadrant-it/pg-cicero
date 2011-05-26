@@ -112,6 +112,7 @@ entity_list = {
 class sgml2xml:
 
     entity_re = re.compile(r'<!entity([^>]+)system([^>]+)\.sgml([^>]+)>', re.IGNORECASE)
+    doctype_re = re.compile(r'<!DOCTYPE (\S+) PUBLIC "-//OASIS//DTD DocBook V([\d.]+)//EN"')
 
     def __init__(self, src, dst, oprions):
         self.src = src
@@ -304,6 +305,7 @@ class sgml2xml:
         res = self.parse_tree()
 
         res = re.sub(sgml2xml.entity_re, r'<!ENTITY\1SYSTEM\2.xml\3>', res)
+        res = re.sub(sgml2xml.doctype_re, r'<!DOCTYPE \1 PUBLIC "-//OASIS//DTD DocBook XML V\2//EN" "docbook/dtd/xml/\2/docbookx.dtd"' , res)
 
         self.src.close()
         self.dst.write('<?xml version="1.0" encoding="UTF-8"?>\n')
