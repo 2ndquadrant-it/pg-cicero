@@ -97,12 +97,16 @@ entity_list = {
     'Ograve':'Ò',
     'oslash':'ø',
     'Oslash':'Ø',
+    'scaron':'š',
     'lsqb':'[',
     'rsqb':']',
     'otilde':'õ',
     'Otilde':'Õ',
     'lcub':'{',
     'rcub':'}',
+    'pi':'π',
+    'nbsp':' ',
+    'bull':'•'
 }
 
 class sgml2xml:
