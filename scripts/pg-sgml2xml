@@ -21,6 +21,7 @@ import sys
 from collections import deque
 from cStringIO import StringIO
 import os
+import re
 
 entity_list = {
     'aacute':'á',
@@ -105,6 +106,8 @@ entity_list = {
 }
 
 class sgml2xml:
+
+    entity_re = re.compile(r'<!entity([^>]+)system([^>]+)\.sgml([^>]+)>', re.IGNORECASE)
 
     def __init__(self, src, dst, oprions):
         self.src = src
@@ -295,6 +298,8 @@ class sgml2xml:
 
     def convert(self):
         res = self.parse_tree()
+
+        res = re.sub(sgml2xml.entity_re, r'<!ENTITY\1SYSTEM\2.xml\3>', res)
 
         self.src.close()
         self.dst.write('<?xml version="1.0" encoding="UTF-8"?>\n')
