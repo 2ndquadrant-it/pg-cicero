@@ -36,15 +36,15 @@ then
     exit 65
 fi
 
-while getopts ":b:f:t:l:p:" opt; do
+while getopts ":b:p:o:l:" opt; do
     case $opt in
          b)
              BASEDIR=$OPTARG
              ;;
-         f)
+         p)
              PODIR=$OPTARG
              ;;
-         t)
+         o)
              OUTPUTDIR=$OPTARG
              ;;
          l)
@@ -124,30 +124,68 @@ i=0
 tot=0
 ok=0
 fail=0
-echo "-> Creating XMLs in "$OUTPUTDIR"/"$LANGUAGE
+
+WORKDIR=`mktemp -d -t cicero-XXXX`
+cp -r $BASEDIR $WORKDIR/base
+
+#
+# These POTs simply doesn't exists
+#
+blacklist="filelist.xml ref/allfiles.xml standalone-install.xml"
+
+if [ ! -d $OUTPUTDIR ]; then
+    mkdir -p $OUTPUTDIR
+fi
+echo "-> Creating XMLs in '$OUTPUTDIR'"
 for srcfile in $( find $BASEDIR -type f -name '*.xml' | sed -e "s|$BASEDIR/||" ) 
 do
-    INPUT_FILE=$srcfile
-    OUTPUT_FILE=$OUTPUTDIR/$LANGUAGE/$srcfile
-    PO_FILE=$PODIR/$( echo $srcfile | sed -e 's/\.xml/\.po/' )
 
-    if [ ! -d `dirname $OUTPUT_FILE` ]; then
-        mkdir -p `dirname $OUTPUT_FILE`
+    grep -q "$srcfile" <<< $blacklist
+    if [ $? -eq 0 ]; then
+        continue
     fi
-    xml2po $LANGOPT --po-file=$PO_FILE --output=$OUTPUT_FILE $BASEDIR/$INPUT_FILE
+    
+    INPUT_FILE=$srcfile
+    OUTPUT_FILE=$OUTPUTDIR/$srcfile
+    PO_FILE=$PODIR/${srcfile%.*}.po 
+    
+    if [ ! -d `dirname ${OUTPUT_FILE}` ]; then
+        mkdir -p `dirname ${OUTPUT_FILE}`
+    fi
+
+     # Ugly hack
+     if [ "$srcfile" = "postgres.xml" ]; then
+         START=2
+         END=`grep -n '.\<book id="postgres">' ${WORKDIR}/base/${srcfile} | cut -d ':' -f 1`
+         let "END -= 1"
+         #remove entities
+         sed -i -e "$START,${END}d" -e '/&.*;/d' ${WORKDIR}/base/${srcfile} 
+         diff ${WORKDIR}/base/${srcfile} ${BASEDIR}/${srcfile} > .uglyhack.patch
+    else
+         sed -i -e '2s/^/<book>\n/; $s/$/\n<\/book>/' $WORKDIR/base/$INPUT_FILE
+    fi  
+     
+    xml2po $LANGOPT --po-file=$PO_FILE --output=$OUTPUT_FILE $WORKDIR/base/$INPUT_FILE
+    sed -i -e '2s/<book*//; $d' $OUTPUT_FILE
+    if [ "$srcfile" = "postgres.xml" ]; then
+        patch -s -p1 $OUTPUT_FILE .uglyhack.patch 
+    fi
 
     if [ $? -eq 0 ]; then
         ok=$ok+1
     else
-        echo "ERROR generating " $OUTPUT_FILE
+        echo "ERROR generating $OUTPUT_FILE"
         fail=$fail+1
     fi
     echo -ne "$(progressbar_step $i)\r"
     tot=$tot+1 
     i=$i+1
+
 done
 
-echo -ne "$(progressbar_step $i)\r"
+
+
+echo -e "$(progressbar_step $i)"
 echo 
 echo "  Complete!"
 echo "  Total Files : " $tot 
@@ -155,3 +193,4 @@ echo "  Successes   : " $ok
 echo "  Fails       : " $fail
 echo 
 
+rm -r $WORKDIR

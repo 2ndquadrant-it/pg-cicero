@@ -24,8 +24,8 @@ function usage(){
     echo
     echo "Options:"
     echo "  -b BASE_DIR    where original XML files in DocBook format are"
-    echo "  -f FROM_DIR    where translated XML files are located"
-    echo "  -o TO_DIR      where translated .po files will be placed"
+    echo "  -r REUSE_DIR   where translated XML files are located"
+    echo "  -o OUTPUT_DIR  where translated .po files will be placed"
     echo "  -l LANGUAGE    translation language"
     echo "  -p POT_DIR     if specified, it generates untranslated PO files"
     echo
@@ -37,7 +37,7 @@ then
     exit 65
 fi
 
-while getopts ":b:f:o:l:p:" opt; do
+while getopts ":b:r:o:l:p:" opt; do
     case $opt in
          b)
              BASEDIR=$OPTARG
@@ -177,43 +177,6 @@ echo
 
 if [ -n "$POTDIR" ]; then
 
-    declare -i tot 
-    declare -i ok
-    declare -i fail
-    declare -i i
-    i=0
-    tot=0
-    ok=0
-    fail=0
-    echo "-> Generating POTs in "$POTDIR
-    for srcfile in $( find $BASEDIR -type f -name '*.xml' | sed -e "s|$BASEDIR/||" ) 
-    do
-        INPUT_FILE=$srcfile
-        OUTPUT_FILE=$POTDIR/$( echo $srcfile | sed -e 's/\.xml/\.po/' )
-    
-        sed -i -e 's/&mdash;/-/g' $WORKDIR/base/$srcfile
-        if [ ! -d `dirname $OUTPUT_FILE` ]; then
-            mkdir -p `dirname $OUTPUT_FILE`
-        fi
-        xml2po -o $OUTPUT_FILE $BASEDIR/$INPUT_FILE
-    
-        if [ $? -eq 0 ]; then
-             ok=$ok+1
-        else
-             echo "ERROR generating " $OUTPUT_FILE
-             fail=$fail+1
-        fi
-        echo -ne "$(progressbar_step $i)\r"
-        tot=$tot+1 
-        i=$i+1
-    done
-
-    echo -ne "$(progressbar_step $i)\r"
-    echo 
-    echo "  Complete!"
-    echo "  Total Files : " $tot 
-    echo "  Successes   : " $ok
-    echo "  Fails       : " $fail
-    echo 
+     ./pg-update-pot.sh -b $BASEDIR -o $POTDIR 
 
 fi

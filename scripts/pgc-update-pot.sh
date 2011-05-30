@@ -95,8 +95,8 @@ function progressbar_step()
 #
 # Make a temporary copy of base xml
 #
-#WORKDIR=`mktemp -d -t cicero-XXXX`
-#cp -r $BASEDIR $WORKDIR/base
+WORKDIR=`mktemp -d -t cicero-XXXX`
+cp -r $BASEDIR $WORKDIR/base
 
 declare -i tot 
 declare -i ok
@@ -106,34 +106,65 @@ i=0
 tot=0
 ok=0
 fail=0
-echo "-> Generating POTs in "$POTDIR
+echo "-> Generating POTs in $POTDIR"
 
-for srcfile in $( find $BASEDIR -type f -name '*.xml' | sed -e "s|$BASEDIR/||" ) 
+if [ ! -d $POTDIR ]; then
+    mkdir -p $POTDIR
+fi
+
+#
+# These POTs will not be generated
+#
+blacklist="filelist.xml ref/allfiles.xml standalone-install.xml"
+
+for srcfile in $( find "$BASEDIR" -type f -name '*.xml' | sed -e "s|$BASEDIR/||" ) 
 do
-     INPUT_FILE=$srcfile
-     OUTPUT_FILE=$POTDIR/$( echo $srcfile | sed -e 's/\.xml/\.po/' )
-    
-     #sed -i -e 's/&mdash;/-/g' $INPUT_FILE
-     if [ ! -d `dirname $OUTPUT_FILE` ]; then
-         mkdir -p `dirname $OUTPUT_FILE`
-     fi
-     xml2po -o $OUTPUT_FILE $INPUT_FILE
-     
+     grep -q "$srcfile" <<< $blacklist
      if [ $? -eq 0 ]; then
-        ok=$ok+1
+         continue
+     fi
+
+     INPUT_FILE=$srcfile
+     OUTPUT_FILE=$POTDIR/${srcfile%.*}.po 
+     
+     # Ugly hack
+     if [ "$srcfile" = "postgres.xml" ]; then
+         START=2
+         END=`grep -n '.\<book id="postgres">' ${WORKDIR}/base/${srcfile} | cut -d ':' -f 1`
+         let "END -= 1"
+         #sed -e "1,${START}d" -e "$END,\$d" ${WORKDIR}/base/${srcfile} > .uglyhack
+         #remove entities
+         sed -i -e "$START,${END}d" -e '/&.*;/d' ${WORKDIR}/base/${srcfile} 
+     fi  
+      
+     if [ ! -d `dirname ${OUTPUT_FILE}` ]; then
+         mkdir -p `dirname ${OUTPUT_FILE}`
+     fi
+ 
+     #sed -i -e 's/&mdash;/-/g' $INPUT_FILE
+
+     # This hack adds a root element to the file
+     sed -i -e '2s/^/<book>\n/; $s/$/\n<\/book>/' $WORKDIR/base/$INPUT_FILE
+     xml2po -o $OUTPUT_FILE $WORKDIR/base/$INPUT_FILE
+    
+     if [ $? -eq 0 ]; then
+         ok=$ok+1
      else
-        echo "ERROR generating " $OUTPUT_FILE
-        fail=$fail+1
+         echo "ERROR generating $OUTPUT_FILE"
+         fail=$fail+1
      fi
      echo -ne "$(progressbar_step $i)\r"
      tot=$tot+1 
      i=$i+1
+
 done
 
-echo -ne "$(progressbar_step $i)\r"
+echo -ne "$(progressbar_step $i)"
 echo 
 echo "  Complete!"
-echo "  Total Files : " $tot 
-echo "  Successes   : " $ok
-echo "  Fails       : " $fail
+echo "  Total Files : $tot" 
+echo "  Successes   : $ok"
+echo "  Fails       : $fail"
 echo 
+
+#rm -r $WORKDIR
