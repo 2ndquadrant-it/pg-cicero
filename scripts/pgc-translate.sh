@@ -24,7 +24,7 @@ function usage(){
     echo
     echo "Options:"
     echo " -b BASE_DIR    where original XML files in DocBook format are"
-    echo " -p FROM_DIR    where translated po files are located"
+    echo " -p PO_DIR      where translated po files are located"
     echo " -o OUTPUT_DIR  where generated .xml files will be placed"
     echo " -l LANGUAGE    translation language"
     echo
@@ -148,27 +148,33 @@ do
     INPUT_FILE=$srcfile
     OUTPUT_FILE=$OUTPUTDIR/$srcfile
     PO_FILE=$PODIR/${srcfile%.*}.po 
-    
+   
+    #echo "INPUT  FILE: ${WORKDIR}/base/${INPUT_FILE}"
+    #echo "OUTPUT FILE: ${OUTPUT_FILE}"
+    #echo "PO     FILE: ${PO_FILE}"
+
     if [ ! -d `dirname ${OUTPUT_FILE}` ]; then
         mkdir -p `dirname ${OUTPUT_FILE}`
     fi
 
-     # Ugly hack
-     if [ "$srcfile" = "postgres.xml" ]; then
+    # Ugly hack
+    if [ "$srcfile" = "postgres.xml" ]; then
          START=2
          END=`grep -n '.\<book id="postgres">' ${WORKDIR}/base/${srcfile} | cut -d ':' -f 1`
          let "END -= 1"
          #remove entities
          sed -i -e "$START,${END}d" -e '/&.*;/d' ${WORKDIR}/base/${srcfile} 
-         diff ${WORKDIR}/base/${srcfile} ${BASEDIR}/${srcfile} > .uglyhack.patch
+         diff -burN ${WORKDIR}/base/${srcfile} ${BASEDIR}/${srcfile} > .uglyhack.patch
+         exit 1
     else
          sed -i -e '2s/^/<book>\n/; $s/$/\n<\/book>/' $WORKDIR/base/$INPUT_FILE
     fi  
      
     xml2po $LANGOPT --po-file=$PO_FILE --output=$OUTPUT_FILE $WORKDIR/base/$INPUT_FILE
-    sed -i -e '2s/<book*//; $d' $OUTPUT_FILE
     if [ "$srcfile" = "postgres.xml" ]; then
-        patch -s -p1 $OUTPUT_FILE .uglyhack.patch 
+        patch $OUTPUT_FILE < .uglyhack.patch 
+    else
+        sed -i -e '2s/<book*//; $d' $OUTPUT_FILE
     fi
 
     if [ $? -eq 0 ]; then
@@ -183,14 +189,13 @@ do
 
 done
 
-
-
 echo -e "$(progressbar_step $i)"
 echo 
 echo "  Complete!"
-echo "  Total Files : " $tot 
-echo "  Successes   : " $ok
-echo "  Fails       : " $fail
+echo "  Total Files : ${tot}"
+echo "  Successes   : ${ok}"
+echo "  Fails       : ${fail}"
+echo "  Files are in: ${WORKDIR}"
 echo 
 
-rm -r $WORKDIR
+#rm -r $WORKDIR

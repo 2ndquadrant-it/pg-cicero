@@ -42,7 +42,7 @@ while getopts ":b:r:o:l:p:" opt; do
          b)
              BASEDIR=$OPTARG
              ;;
-         f)
+         r)
              REUSEDIR=$OPTARG
              ;;
          o)
