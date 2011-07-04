@@ -165,14 +165,15 @@ do
          #remove entities
          sed -i -e "$START,${END}d" -e '/&.*;/d' ${WORKDIR}/base/${srcfile} 
          diff -burN ${WORKDIR}/base/${srcfile} ${BASEDIR}/${srcfile} > .uglyhack.patch
-         exit 1
     else
          sed -i -e '2s/^/<book>\n/; $s/$/\n<\/book>/' $WORKDIR/base/$INPUT_FILE
     fi  
      
     xml2po $LANGOPT --po-file=$PO_FILE --output=$OUTPUT_FILE $WORKDIR/base/$INPUT_FILE
     if [ "$srcfile" = "postgres.xml" ]; then
-        patch $OUTPUT_FILE < .uglyhack.patch 
+        patch -fff $OUTPUT_FILE < .uglyhack.patch 
+        echo $OUTPUT_FILE
+        exit 1
     else
         sed -i -e '2s/<book*//; $d' $OUTPUT_FILE
     fi
