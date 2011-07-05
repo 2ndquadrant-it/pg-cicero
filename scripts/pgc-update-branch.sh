@@ -24,7 +24,9 @@ function usage(){
 	echo "  $0 [OPTIONS] POSTGRESQL_GIT_DIR [PGCICERO_GIT_DIR]"
 	echo
 	echo "Options:"
-	echo "  -b BRANCH    the PostgreSQL vranch to clone (Default: master)"
+	echo "  -b BRANCH    the PostgreSQL branch to clone (Default: master)"
+	echo "  -v           verbose"
+	echo "  -q           quiet"
 	echo
 	echo "PGCICERO_GIT_DIR is assumed the parent directory of the one containing the script if not passed"
 	exit 1
@@ -39,12 +41,19 @@ BASE="$(cd $(dirname $0); pwd)"
 DOCDIR="doc/src/sgml"
 sgml2xml="$BASE/pgc-sgml2xml -i"
 
-set -- `getopt -u -n"$0" b: "$@"` || usage
+# default options
+BRANCH="master"
+VERBOSE=
+QUIET=
+
+set -- `getopt -u -n"$0" b:vq "$@"` || usage
 
 while [ $# -gt 0 ]
 do
 	case "$1" in
 		-b) BRANCH="$2"; shift;;
+		-v) VERBOSE=1; QUIET=; sgml2xml="$sgml2xml -v";;
+		-q) QUIET=1;VERBOSE=;;
 		--) shift; break;;
 		-*) usage;;
 		*)  break;;
@@ -57,9 +66,6 @@ then
 	usage
 	exit 65
 fi
-
-# default branch
-: ${BRANCH:=master}
 
 POSTGRESQL_GIT_DIR=$1
 PGCICERO_GIT_DIR=${2:-$(cd $BASE/..; pwd)}
@@ -100,14 +106,21 @@ then
     die "ERROR: the branch \"$BRANCH\" does not look like a PostgreSQL one."
 fi
 
-WORKDIR=$(mktemp -d -t pgctmp-XXXX)
+[ "$QUIET" ] || echo "Updating documentation from the branch \"$BRANCH\"..."
 
+WORKDIR=$(mktemp -d -t pgctmp-XXXX)
 trap "rm -fr '$WORKDIR'" EXIT
 
+[ "$VERBOSE" ] && echo "[v] Using workdir \"$WORKDIR\""
+
 # extract the documentation from the source branch
+[ "$VERBOSE" ] && echo "[v] Extract the documentation from the PostgreSQL git repository from branch \"$BRANCH\""
 git --git-dir="$POSTGRESQL_GIT_DIR" archive --format=tar "$BRANCH_REF" "$DOCDIR"  | tar x -C "$WORKDIR"
 
+[ "$VERBOSE" ] && echo "[v] Convert the documentation from sgml to xml"
 $sgml2xml "$WORKDIR/doc/src/sgml" "$WORKDIR/xml"
+
+[ "$VERBOSE" ] && echo "[v] Commit the result to pg-cicero repository"
 
 # git black magic
 export GIT_INDEX_FILE="$WORKDIR/index"
@@ -116,14 +129,21 @@ cd $WORKDIR
 
 DEST_REF="$(git show-ref "$BRANCH" | head -n 1 | awk '{print $2}')"
 # if it's only remote, track it locally
-[ -n "$DEST_REF" ] && [ "$DEST_REF" != "refs/heads/$BRANCH" ] && git branch --track "$BRANCH" "$DEST_REF"
+if [ -n "$DEST_REF" ] && [ "$DEST_REF" != "refs/heads/$BRANCH" ]
+then
+    [ "$VERBOSE" ] && echo "[v] Setup a local branch \"$BRANCH\" tracking \"$DEST_REF\""
+    git branch --track "$BRANCH" "$DEST_REF"
+fi
 # if it exists, update the index
 COMMITOPT=
 if git show-ref --quiet --verify "refs/heads/$BRANCH"
 then
     git ls-tree -r --full-name "$BRANCH" | git update-index --index-info
     COMMITOPT="-p \"$BRANCH\""
+else
+    [ "$VERBOSE" ] && echo "[v] Create new empty branch \"$BRANCH\""
 fi
+[ "$VERBOSE" ] && echo "[v] Add updated files"
 find xml -type f | git update-index --add --stdin
 SHA=$(git write-tree)
 if [ $? -gt 0 ] || [ -z "$SHA" ]
@@ -133,8 +153,9 @@ fi
 if git show-ref --quiet --verify "refs/heads/$BRANCH" && git diff-index --cached --quiet "$BRANCH" --ignore-submodules --
 then
     echo "No changes to commit"
-    exit 0
+    exit 1
 fi
+[ "$VERBOSE" ] && echo "[v] Commit updates"
 COMMITSHA=$(echo "pgc-update-branch $BRANCH" | git commit-tree "$SHA" $COMMITOPT)
 if [ $? -gt 0 ] || [ -z "$COMMITSHA" ]
 then
@@ -142,5 +163,5 @@ then
 fi
 git update-ref "refs/heads/$BRANCH" "$COMMITSHA"
 
-echo DONE
+[ "$QUIET" ] || echo "Update completed. The result is in branch \"$BRANCH\" into the \"${PGCICERO_GIT_DIR}\" repository."
 exit 0
