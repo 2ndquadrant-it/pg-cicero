@@ -127,21 +127,22 @@ export GIT_INDEX_FILE="$WORKDIR/index"
 export GIT_DIR="$PGCICERO_GIT_DIR"
 cd $WORKDIR
 
-DEST_REF="$(git show-ref "$BRANCH" | head -n 1 | awk '{print $2}')"
+DEST_BRANCH="postgresql/$BRANCH"
+DEST_REF="$(git show-ref "$DEST_BRANCH" | head -n 1 | awk '{print $2}')"
 # if it's only remote, track it locally
-if [ -n "$DEST_REF" ] && [ "$DEST_REF" != "refs/heads/$BRANCH" ]
+if [ -n "$DEST_REF" ] && [ "$DEST_REF" != "refs/heads/$DEST_BRANCH" ]
 then
-    [ "$VERBOSE" ] && echo "[v] Setup a local branch \"$BRANCH\" tracking \"$DEST_REF\""
-    git branch --track "$BRANCH" "$DEST_REF"
+    [ "$VERBOSE" ] && echo "[v] Setup a local branch \"$DEST_BRANCH\" tracking \"$DEST_REF\""
+    git branch --track "$DEST_BRANCH" "$DEST_REF"
 fi
 # if it exists, update the index
 COMMITOPT=
-if git show-ref --quiet --verify "refs/heads/$BRANCH"
+if git show-ref --quiet --verify "refs/heads/$DEST_BRANCH"
 then
-    git ls-tree -r --full-name "$BRANCH" | git update-index --index-info
-    COMMITOPT="-p \"$BRANCH\""
+    git ls-tree -r --full-name "$DEST_BRANCH" | git update-index --index-info
+    COMMITOPT="-p \"$DEST_BRANCH\""
 else
-    [ "$VERBOSE" ] && echo "[v] Create new empty branch \"$BRANCH\""
+    [ "$VERBOSE" ] && echo "[v] Create new empty branch \"$DEST_BRANCH\""
 fi
 [ "$VERBOSE" ] && echo "[v] Add updated files"
 find xml -type f | git update-index --add --stdin
@@ -150,18 +151,22 @@ if [ $? -gt 0 ] || [ -z "$SHA" ]
 then
     die "git write-tree failed"
 fi
-if git show-ref --quiet --verify "refs/heads/$BRANCH" && git diff-index --cached --quiet "$BRANCH" --ignore-submodules --
+if git show-ref --quiet --verify "refs/heads/$DEST_BRANCH" && git diff-index --cached --quiet "$DEST_BRANCH" --ignore-submodules --
 then
     echo "No changes to commit"
     exit 1
 fi
 [ "$VERBOSE" ] && echo "[v] Commit updates"
-COMMITSHA=$(echo "pgc-update-branch $BRANCH" | git commit-tree "$SHA" $COMMITOPT)
+COMMITSHA=$(echo "pgc-update-branch $DEST_BRANCH" | git commit-tree "$SHA" $COMMITOPT)
 if [ $? -gt 0 ] || [ -z "$COMMITSHA" ]
 then
     die "git commit-tree failed"
 fi
-git update-ref "refs/heads/$BRANCH" "$COMMITSHA"
+git update-ref "refs/heads/$DEST_BRANCH" "$COMMITSHA"
 
-[ "$QUIET" ] || echo "Update completed. The result is in branch \"$BRANCH\" into the \"${PGCICERO_GIT_DIR}\" repository."
+[ "$QUIET" ] || {
+    echo "Update completed."
+    echo "The result is in branch \"$DEST_BRANCH\" into the \"${PGCICERO_GIT_DIR}\" repository."
+    echo "Please check content then merge it to branch \"$BRANCH\""
+}
 exit 0
