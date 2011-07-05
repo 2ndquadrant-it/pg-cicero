@@ -119,7 +119,7 @@ DEST_REF="$(git show-ref "$BRANCH" | head -n 1 | awk '{print $2}')"
 [ -n "$DEST_REF" ] && [ "$DEST_REF" != "refs/heads/$BRANCH" ] && git branch --track "$BRANCH" "$DEST_REF"
 # if it exists, update the index
 COMMITOPT=
-if git show-ref --quiet --verify refs/heads/$BRANCH
+if git show-ref --quiet --verify "refs/heads/$BRANCH"
 then
     git ls-tree -r --full-name "$BRANCH" | git update-index --index-info
     COMMITOPT="-p \"$BRANCH\""
@@ -130,7 +130,12 @@ if [ $? -gt 0 ] || [ -z "$SHA" ]
 then
     die "git write-tree failed"
 fi
-COMMITSHA=$(echo "pgc-update for $BRANCH" | git commit-tree "$SHA" $COMMITOPT)
+if git show-ref --quiet --verify "refs/heads/$BRANCH" && git diff-index --cached --quiet "$BRANCH" --ignore-submodules --
+then
+    echo "No changes to commit"
+    exit 0
+fi
+COMMITSHA=$(echo "pgc-update-branch $BRANCH" | git commit-tree "$SHA" $COMMITOPT)
 if [ $? -gt 0 ] || [ -z "$COMMITSHA" ]
 then
     die "git commit-tree failed"
