@@ -316,9 +316,10 @@ class sgml2xml:
         self.dst.close()
 
 def usage():
-    print "usage: " + sys.argv[0] + " [-s] indir outdir"
+    print "usage: " + sys.argv[0] + " [-s] [-i] [-v] indir outdir"
     print "\t-s: standalone"
     print "\t-i: include index"
+    print "\t-v: verbose"
 
 def convert_file(src_name, dst_name, options):
     try:
@@ -338,18 +339,21 @@ def convert_file(src_name, dst_name, options):
 
 if __name__ == '__main__':
     argn = len(sys.argv)
-    if argn not in (3, 4):
+    if argn < 3 or argn > 5:
         usage()
         sys.exit(1)
 
     options = {}
     options['standalone'] = False
     options['index'] = False
-    while sys.argv[1][1:] in 'si':
+    options['verbose'] = False
+    while sys.argv[1][1:] in 'siv':
         if sys.argv[1] == '-s':
             options['standalone'] = True
         elif sys.argv[1] == '-i':
             options['index'] = True
+        elif sys.argv[1] == '-v':
+            options['verbose'] = True
 
         del sys.argv[1]
 
@@ -379,5 +383,5 @@ if __name__ == '__main__':
                             raise SystemExit('ERROR: Error creating directory\n%s' % msg)
                     dst_file = os.path.join(dst_dir, fsplit[0] + '.xml')
                     src_file = os.path.join(root, file)
-                    print "Generating %s" % dst_file
+                    if options['verbose']: print "Generating %s" % dst_file[len(dst)+1:]
                     convert_file(src_file, dst_file, options)
