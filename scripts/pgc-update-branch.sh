@@ -118,7 +118,7 @@ trap "rm -fr '$WORKDIR'" EXIT
 git --git-dir="$POSTGRESQL_GIT_DIR" archive --format=tar "$BRANCH_REF" "$DOCDIR"  | tar x -C "$WORKDIR"
 
 [ "$VERBOSE" ] && echo "[v] Convert the documentation from sgml to xml"
-$sgml2xml "$WORKDIR/doc/src/sgml" "$WORKDIR/xml"
+$sgml2xml "$WORKDIR/$DOCDIR" "$WORKDIR/xml"
 
 [ "$VERBOSE" ] && echo "[v] Commit the result to pg-cicero repository"
 
