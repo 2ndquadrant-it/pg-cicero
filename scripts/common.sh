@@ -34,3 +34,8 @@ function progressbar_step()
     echo -ne "$PB_PERC$PB_BAR\r"
 }
 
+function die () {
+	echo $@
+	exit 128
+}
+

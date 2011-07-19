@@ -16,71 +16,83 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-source common.sh
+. common.sh
 
 function usage(){
-    echo 
+    echo
     echo "Usage:"
-    echo 
-    echo -e "\t$0 [OPTIONS] <BASE_DIR> <PO_DIR>"
+    echo
+    echo "    $0 [OPTIONS] SRC_DIR PO_DIR OUT_DIR"
     echo
     echo "Options:"
-    echo "    -o OUTPUT_DIR  where generated .xml files will be placed"
-    echo "    -l LANGUAGE    translation language"
+	echo "  -p        show a progressbar"
+	echo "  -k        keep the workdir, for debug only"
     echo
+	exit 1
 }
 
-while getopts ":o:l:" opt; do
-    case $opt in
-         o)
-             OUTPUTDIR=$OPTARG
-             ;;
-         l)
-             LANGUAGE=$OPTARG
-             ;;
-         \?)
-             echo "Invalid option: -$OPTARG" >&2
-             echo
-             usage
-             exit 1
-             ;;
-         :)
-             echo "Option -$OPTARG requires an argument." >&2
-             echo
-             usage
-             exit 1
-             ;;
-    esac
-done
-# Set default options
-
-if [ ! -n "$OUTPUTDIR" ]; then
-    OUTPUTDIR=$PWD
-    echo "fadffdsfadsfafdafds"
-    exit 1
-fi
-if [ -n "$LANGUAGE" ]; then
-    LANGOPT="--language="$LANGUAGE
-else
-    LANGOPT="--mark-untranslated"
-    echo "WARNING: Language not specified."
-    LANGUAGE="untranslated"
-fi
-
-shift $((OPTIND-1))
-
-if [ $# -ne 2 ]
+if [ $# -eq 0 ]
 then
-    usage
-    exit 65
+	usage
 fi
 
-BASEDIR=$1
-PODIR=$2
+BASEDIR="$(cd $(dirname $0); pwd)"
+PROGRESSBAR=
+KEEP=
 
-# Creates PO files 
+set -- `getopt -u -n"$0" pk "$@"` || usage
 
-TOTAL_STEPS=$( find $BASEDIR -type f -name '*.xml' | wc -l )  
+while [ $# -gt 0 ]
+do
+	case "$1" in
+		-p) PROGRESSBAR=1; ;;
+		-k) KEEP=1; ;;
+		--) shift; break;;
+		-*) usage;;
+		*)  break;;
+	esac
+	shift;
+done
+
+if [ $# -ne 3 ]
+then
+	usage
+fi
+
+SRC_DIR=$1
+PO_DIR=$2
+OUT_DIR=$3
+
+# Check directories
+if [ ! -d $SRC_DIR ]
+then
+	die "Directory $SRC_DIR doesn't exist!"
+fi
+if [ ! -d $PO_DIR ]
+then
+	die "Directory $PO_DIR doesn't exist!"
+fi
+SRC_DIR=`echo $SRC_DIR | sed -e 's/\/$//'`
+PO_DIR=`echo $PO_DIR | sed -e 's/\/$//'`
+
+[ "$PROGRESSBAR" ] && TOTAL_STEPS=$( find $SRC_DIR -type f -name '*.xml' | wc -l )
+
+#
+# Make a temporary copy of base xml
+#
+WORKDIR=`mktemp -d -t cicero-XXXX`
+[ "$KEEP" ] && echo "Workdir is ${WORKDIR}"
+cp -r $SRC_DIR/* $WORKDIR
+
+if [ ! -d $OUT_DIR ]
+then
+    mkdir -p $OUT_DIR
+fi
+
+#
+# These files will not be generated
+#
+blacklist="filelist.xml ref/allfiles.xml standalone-install.xml"
 
 declare -i ok
 declare -i fail
@@ -88,71 +100,59 @@ declare -i i
 ok=0
 fail=0
 i=0
-
-WORKDIR=`mktemp -d -t pgcicero-XXXX`
-cp -r $BASEDIR $WORKDIR/base
-
-# These POTs simply doesn't exists
-
-blacklist="filelist.xml ref/allfiles.xml standalone-install.xml postgres.xml"
-
-# TODO avoid to do this manually
-mkdir -p $OUTPUTDIR/ref
-
-OUTPUTDIR=`echo ${OUTPUTDIR/%\//}`
-PODIR=`echo ${PODIR/%\//}`
-
-echo "-> Creating XMLs in '$OUTPUTDIR'"
-for srcfile in $( find $BASEDIR -type f -name '*.xml' | sed -e "s|$BASEDIR||" ) 
+echo "-> Creating XMLs in '$OUT_DIR'"
+for srcfile in $( find "$SRC_DIR" -type f -name '*.xml' | sed -e "s|$SRC_DIR/||" )
 do
-    srcfile=`echo ${srcfile/#\//}`
-    grep -q "$srcfile" <<< $blacklist
-    if [ $? -eq 0 ]; then
-        continue
-    fi
-    
+	grep -q "$srcfile" <<< $blacklist
+	if [ $? -eq 0 ]; then
+		continue
+	fi
+
     INPUT_FILE=$srcfile
-    OUTPUT_FILE=$OUTPUTDIR/$srcfile
-    PO_FILE=$PODIR/${srcfile%.*}.po 
-    
-    # Ugly hack
-    #if [ "$srcfile" = "postgres.xml" ]; then
-    #     START=2
-    #     END=`grep -n '.\<book id="postgres">' ${WORKDIR}/base/${srcfile} | cut -d ':' -f 1`
-    #     let "END -= 1"
-    #     #remove entities
-    #     sed -i -e "$START,${END}d" -e '/&.*;/d' ${WORKDIR}/base/${srcfile} 
-    #     diff -burN ${WORKDIR}/base/${srcfile} ${BASEDIR}/${srcfile} > .uglyhack.patch
-    #else
-    #     sed -i -e '2s/^/<book>\n/; $s/$/\n<\/book>/' $WORKDIR/base/$INPUT_FILE
-    #fi  
-    
-    # This one puts a root element in every xml
-    sed -i -e '2s/^/<book>\n/; $s/$/\n<\/book>/' $WORKDIR/base/$INPUT_FILE
-     
-    xml2po $LANGOPT --po-file=$PO_FILE --output=$OUTPUT_FILE $WORKDIR/base/$INPUT_FILE
+    OUTPUT_FILE=$OUT_DIR/$srcfile
+    PO_FILE=$PO_DIR/${srcfile%.*}.po
 
-    # Delete the root element 
-    sed -i -e '2s/<book*//; $d' $OUTPUT_FILE
+	if [ ! -d `dirname $OUTPUT_FILE` ]; then
+		mkdir -p `dirname $OUTPUT_FILE`
+	fi
 
-    if [ $? -eq 0 ]; then
-        ok=$ok+1
-    else
-        echo "ERROR generating $OUTPUT_FILE"
-        fail=$fail+1
-    fi
-    echo -ne "$(progressbar_step $i)\r"
-    i=$i+1
+	if [ "$srcfile" == "postgres.xml" ]; then
+		# FIXME questo rimuove le entità ma poi vanno rimesse.
+		sed -i -e 's/&.*;//' $WORKDIR/$INPUT_FILE
+	else
+		# This hack adds a root element to the file
+		sed -i -e '2s/^/<book>\n/; $s/$/\n<\/book>/' $WORKDIR/$INPUT_FILE
+	fi
 
+	xml2po $LANGOPT --po-file=$PO_FILE --output=$OUTPUT_FILE $WORKDIR/$INPUT_FILE
+	if [ $? -eq 0 ]; then
+		ok=$ok+1
+		if [ "$srcfile" != "postgres.xml" ]; then
+			# toglie l'elemento root provvisorio
+			sed -i -e '2s/<book*//; $d' $OUTPUT_FILE
+		fi
+	else
+		echo "ERROR generating $OUTPUT_FILE"
+		fail=$fail+1
+	fi
+	[ "$PROGRESSBAR" ] && echo -ne "$(progressbar_step $i)\r"
+
+	tot=$tot+1
+	i=$i+1
 done
 
-echo -e "$(progressbar_step $i)"
-echo 
+i=$i+1
+[ "$PROGRESSBAR" ] && echo -ne "$(progressbar_step $i)"
+i=$i-1
+echo
 echo "  Complete!"
-echo "  Total Files : ${i}"
-echo "  Successes   : ${ok}"
-echo "  Fails       : ${fail}"
-#echo "  Files are in: ${WORKDIR}"
-echo 
+echo "  Total Files : $i"
+echo "  Successes   : $ok"
+echo "  Fails       : $fail"
+echo
 
-rm -r $WORKDIR
+[ ! "$KEEP" ] && rm -r $WORKDIR
+
+exit 0
+
+# vim: tabstop=4:softtabstop=4:shiftwidth=4:noexpandtab

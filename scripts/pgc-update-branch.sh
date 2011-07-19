@@ -64,7 +64,7 @@ done
 if [ $# -lt 1 ] || [ $# -gt 2 ]
 then
 	usage
-	exit 65
+	exit -1
 fi
 
 POSTGRESQL_GIT_DIR=$1

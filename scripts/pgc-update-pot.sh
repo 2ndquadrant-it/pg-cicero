@@ -16,155 +16,130 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+. common.sh
 
 function usage(){
-    echo "Usage:"
-    echo 
-    echo "  $0 [OPTIONS]"
-    echo
-    echo "Options:"
-    echo "  -b BASE_DIR    where original XML files in DocBook format are"
-    echo "  -o OUTPUT_DIR  where translated .po files will be placed"
-    echo
+	echo "Usage:"
+	echo
+	echo "  $0 [OPTIONS] SRC_DIR OUTPUT_DIR"
+	echo
+	echo "Options:"
+	echo "  -p        show a progressbar"
+	echo "  -k        keep the workdir, for debug only"
+	echo
+    exit 1
 }
 
 if [ $# -eq 0 ]
 then
-    usage
-    exit 65
+	usage
 fi
 
-while getopts ":b:o:" opt; do
-    case $opt in
-         b)
-             BASEDIR=$OPTARG
-             ;;
-         o)
-             POTDIR=$OPTARG
-             ;;
-         \?)
-             echo "Invalid option: -$OPTARG" >&2
-             echo
-             usage
-             exit 1
-             ;;
-         :)
-             echo "Option -$OPTARG requires an argument." >&2
-             echo
-             usage
-             exit 1
-             ;;
-    esac   
+BASEDIR="$(cd $(dirname $0); pwd)"
+PROGRESSBAR=
+KEEP=
+
+set -- `getopt -u -n"$0" pk "$@"` || usage
+
+while [ $# -gt 0 ]
+do
+	case "$1" in
+		-p) PROGRESSBAR=1; ;;
+		-k) KEEP=1; ;;
+		--) shift; break;;
+		-*) usage;;
+		*)  break;;
+	esac
+	shift;
 done
 
-#
-# Check for mandatory options
-#
-if [ ! -n "$BASEDIR" ]; then
-    echo
-    echo "ERROR: you must specify a directory where original DocBook xml files are located (-b option)."
-    usage
-    exit 1
-fi
-if [ ! -n "$POTDIR" ]; then
-    echo 
-    echo "ERROR: you must specify a destination directory for the translated PO files (-o option) "
-    usage
-    exit 1
+if [ $# -ne 2 ]
+then
+	usage
 fi
 
-# determine terminal columns
-MAX_COLS=$(stty -a | tr -s ';' '\n' | grep "column" | sed s/'[^[:digit:]]'//g)
-TOTAL_STEPS=$( find $BASEDIR -type f -name '*.xml' | wc -l )  
-PB_CHAR="#" 
-PB_OFFSET=7 
-PB_REAL_COLS=$(($MAX_COLS-$PB_OFFSET))     
-function progressbar_step()
-{
-    PB_VALUE=$1 
-    V=$((($PB_VALUE*100)/$TOTAL_STEPS))
-    NCHAR=$((($V*$PB_REAL_COLS)/100))
-    for((j=0; j<$NCHAR; j++)); do
-        PB_BAR="$PB_BAR$PB_CHAR"
-    done
-    PB_PERC=$(printf "[%3d%%] " $V)
-    echo -ne "$PB_PERC$PB_BAR\r"
-}
+SRC_DIR=$1
+OUT_DIR=$2
 
+if [ ! -d $SRC_DIR ]
+then
+	die "Directory $SRC_DIR doesn't exist!"
+fi
+SRC_DIR=`echo $SRC_DIR | sed -e 's/\/$//'`
+
+[ "$PROGRESSBAR" ] && TOTAL_STEPS=$( find $SRC_DIR -type f -name '*.xml' | wc -l )
 
 #
 # Make a temporary copy of base xml
 #
 WORKDIR=`mktemp -d -t cicero-XXXX`
-cp -r $BASEDIR $WORKDIR/base
+[ "$KEEP" ] && echo "Workdir is ${WORKDIR}"
+cp -r $SRC_DIR/* $WORKDIR
 
-declare -i tot 
+if [ ! -d $OUT_DIR ]
+then
+    mkdir -p $OUT_DIR
+fi
+echo "-> Generating POTs in $OUT_DIR"
+
+#
+# These files will not be generated
+#
+blacklist="filelist.xml ref/allfiles.xml standalone-install.xml"
+
 declare -i ok
 declare -i fail
 declare -i i
 i=0
-tot=0
 ok=0
 fail=0
-echo "-> Generating POTs in $POTDIR"
-
-if [ ! -d $POTDIR ]; then
-    mkdir -p $POTDIR
-fi
-
-#
-# These POTs will not be generated
-#
-blacklist="filelist.xml ref/allfiles.xml standalone-install.xml"
-
-for srcfile in $( find "$BASEDIR" -type f -name '*.xml' | sed -e "s|$BASEDIR/||" ) 
+for srcfile in $( find "$SRC_DIR" -type f -name '*.xml' | sed -e "s|$SRC_DIR/||" )
 do
-     grep -q "$srcfile" <<< $blacklist
-     if [ $? -eq 0 ]; then
-         continue
-     fi
+	grep -q "$srcfile" <<< $blacklist
+	if [ $? -eq 0 ]; then
+		continue
+	fi
 
-     INPUT_FILE=$srcfile
-     OUTPUT_FILE=$POTDIR/${srcfile%.*}.po 
-     
-     # Ugly hack
-     if [ "$srcfile" = "postgres.xml" ]; then
-         START=2
-         END=`grep -n '.\<book id="postgres">' ${WORKDIR}/base/${srcfile} | cut -d ':' -f 1`
-         let "END -= 1"
-         #sed -e "1,${START}d" -e "$END,\$d" ${WORKDIR}/base/${srcfile} > .uglyhack
-         #remove entities
-         sed -i -e "$START,${END}d" -e '/&.*;/d' ${WORKDIR}/base/${srcfile} 
-     fi  
-      
-     if [ ! -d `dirname ${OUTPUT_FILE}` ]; then
-         mkdir -p `dirname ${OUTPUT_FILE}`
-     fi
- 
-     #sed -i -e 's/&mdash;/-/g' $INPUT_FILE
+	INPUT_FILE=$srcfile
+	OUTPUT_FILE=$OUT_DIR/${srcfile%.*}.po
 
-     # This hack adds a root element to the file
-     sed -i -e '2s/^/<book>\n/; $s/$/\n<\/book>/' $WORKDIR/base/$INPUT_FILE
-     xml2po -o $OUTPUT_FILE $WORKDIR/base/$INPUT_FILE
-    
-     if [ $? -eq 0 ]; then
-         ok=$ok+1
-     else
-         echo "ERROR generating $OUTPUT_FILE"
-         fail=$fail+1
-     fi
-     echo -ne "$(progressbar_step $i)\r"
-     tot=$tot+1 
-     i=$i+1
+	if [ ! -d `dirname $OUTPUT_FILE` ]; then
+		mkdir -p `dirname $OUTPUT_FILE`
+	fi
 
+	if [ "$srcfile" == "postgres.xml" ]; then
+		# FIXME questo rimuove le entità ma poi vanno rimesse.
+		sed -i -e 's/&.*;//' $WORKDIR/$INPUT_FILE
+	else
+		# This hack adds a root element to the file
+		sed -i -e '2s/^/<book>\n/; $s/$/\n<\/book>/' $WORKDIR/$INPUT_FILE
+	fi
+
+	xml2po -o $OUTPUT_FILE $WORKDIR/$INPUT_FILE
+
+	if [ $? -eq 0 ]; then
+		ok=$ok+1
+	else
+		echo "ERROR generating $OUTPUT_FILE"
+		fail=$fail+1
+	fi
+	[ "$PROGRESSBAR" ] && echo -ne "$(progressbar_step $i)\r"
+
+	tot=$tot+1
+	i=$i+1
 done
 
-echo -ne "$(progressbar_step $i)"
-echo 
+i=$i+1
+[ "$PROGRESSBAR" ] && echo -ne "$(progressbar_step $i)"
+i=$i-1
+echo
 echo "  Complete!"
-echo "  Total Files : $tot" 
+echo "  Total Files : $i"
 echo "  Successes   : $ok"
 echo "  Fails       : $fail"
-echo 
+echo
 
-#rm -r $WORKDIR
+[ ! "$KEEP" ] && rm -r $WORKDIR
+
+exit 0
+# vim: tabstop=4:softtabstop=4:shiftwidth=4:noexpandtab
