@@ -26,7 +26,6 @@ function usage(){
     echo
     echo "Options:"
 	echo "  -p        show a progressbar"
-	echo "  -k        keep the workdir, for debug only"
     echo
 	exit 1
 }
@@ -38,7 +37,6 @@ fi
 
 BASEDIR="$(cd $(dirname $0); pwd)"
 PROGRESSBAR=
-KEEP=
 
 set -- `getopt -u -n"$0" pk "$@"` || usage
 
@@ -46,7 +44,6 @@ while [ $# -gt 0 ]
 do
 	case "$1" in
 		-p) PROGRESSBAR=1; ;;
-		-k) KEEP=1; ;;
 		--) shift; break;;
 		-*) usage;;
 		*)  break;;
@@ -82,7 +79,7 @@ PO_DIR=`echo $PO_DIR | sed -e 's/\/$//'`
 #
 WORKDIR=`mktemp -d -t cicero-XXXX`
 [ "$KEEP" ] && echo "Workdir is ${WORKDIR}"
-cp -r $SRC_DIR/* $WORKDIR
+#cp -r $SRC_DIR/* $WORKDIR
 
 if [ ! -d $OUT_DIR ]
 then
@@ -115,27 +112,23 @@ do
 	if [ ! -d `dirname $OUTPUT_FILE` ]; then
 		mkdir -p `dirname $OUTPUT_FILE`
 	fi
-
-	if [ "$srcfile" == "postgres.xml" ]; then
-		# FIXME questo rimuove le entità ma poi vanno rimesse.
-		sed -i -e 's/&.*;//' $WORKDIR/$INPUT_FILE
-	else
-		# This hack adds a root element to the file
-		sed -i -e '2s/^/<book>\n/; $s/$/\n<\/book>/' $WORKDIR/$INPUT_FILE
+	if [ ! -d `dirname $WORKDIR/$INPUT_FILE` ]; then
+		mkdir -p `dirname $WORKDIR/$INPUT_FILE`
 	fi
 
+	cp $SRC_DIR/$INPUT_FILE $WORKDIR/$INPUT_FILE	
+
 	xml2po $LANGOPT --po-file=$PO_FILE --output=$OUTPUT_FILE $WORKDIR/$INPUT_FILE
+
 	if [ $? -eq 0 ]; then
 		ok=$ok+1
-		if [ "$srcfile" != "postgres.xml" ]; then
-			# toglie l'elemento root provvisorio
-			sed -i -e '2s/<book*//; $d' $OUTPUT_FILE
-		fi
 	else
 		echo "ERROR generating $OUTPUT_FILE"
 		fail=$fail+1
 	fi
 	[ "$PROGRESSBAR" ] && echo -ne "$(progressbar_step $i)\r"
+
+	rm $WORKDIR/$INPUT_FILE
 
 	tot=$tot+1
 	i=$i+1
@@ -150,8 +143,6 @@ echo "  Total Files : $i"
 echo "  Successes   : $ok"
 echo "  Fails       : $fail"
 echo
-
-[ ! "$KEEP" ] && rm -r $WORKDIR
 
 exit 0
 

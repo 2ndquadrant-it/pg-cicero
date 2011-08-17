@@ -25,7 +25,6 @@ function usage(){
 	echo
 	echo "Options:"
 	echo "  -p        show a progressbar"
-	echo "  -k        keep the workdir, for debug only"
 	echo
     exit 1
 }
@@ -39,13 +38,12 @@ BASEDIR="$(cd $(dirname $0); pwd)"
 PROGRESSBAR=
 KEEP=
 
-set -- `getopt -u -n"$0" pk "$@"` || usage
+set -- `getopt -u -n"$0" p "$@"` || usage
 
 while [ $# -gt 0 ]
 do
 	case "$1" in
 		-p) PROGRESSBAR=1; ;;
-		-k) KEEP=1; ;;
 		--) shift; break;;
 		-*) usage;;
 		*)  break;;
@@ -70,12 +68,11 @@ SRC_DIR=`echo $SRC_DIR | sed -e 's/\/$//'`
 [ "$PROGRESSBAR" ] && TOTAL_STEPS=$( find $SRC_DIR -type f -name '*.xml' | wc -l )
 
 #
-# Make a temporary copy of base xml
+# Make a temporary dir to work in it
 #
 WORKDIR=`mktemp -d -t cicero-XXXX`
-[ "$KEEP" ] && echo "Workdir is ${WORKDIR}"
-cp -r $SRC_DIR/* $WORKDIR
 
+OUT_DIR=`echo $OUT_DIR | sed -e 's/\/$//'`
 if [ ! -d $OUT_DIR ]
 then
     mkdir -p $OUT_DIR
@@ -106,14 +103,13 @@ do
 	if [ ! -d `dirname $OUTPUT_FILE` ]; then
 		mkdir -p `dirname $OUTPUT_FILE`
 	fi
-
-	if [ "$srcfile" == "postgres.xml" ]; then
-		# FIXME questo rimuove le entità ma poi vanno rimesse.
-		sed -i -e 's/&.*;//' $WORKDIR/$INPUT_FILE
-	else
-		# This hack adds a root element to the file
-		sed -i -e '2s/^/<book>\n/; $s/$/\n<\/book>/' $WORKDIR/$INPUT_FILE
+	if [ ! -d `dirname $WORKDIR/$INPUT_FILE` ]; then
+		mkdir -p `dirname $WORKDIR/$INPUT_FILE`
 	fi
+
+	cp $SRC_DIR/$INPUT_FILE $WORKDIR/$INPUT_FILE
+
+	sed -i -e 's/&/&amp;/g' $WORKDIR/$INPUT_FILE
 
 	xml2po -o $OUTPUT_FILE $WORKDIR/$INPUT_FILE
 
@@ -124,6 +120,10 @@ do
 		fail=$fail+1
 	fi
 	[ "$PROGRESSBAR" ] && echo -ne "$(progressbar_step $i)\r"
+
+	rm $WORKDIR/$INPUT_FILE
+	
+	sed -i -e 's/&amp;/\&/g' $OUTPUT_FILE
 
 	tot=$tot+1
 	i=$i+1
@@ -138,8 +138,6 @@ echo "  Total Files : $i"
 echo "  Successes   : $ok"
 echo "  Fails       : $fail"
 echo
-
-[ ! "$KEEP" ] && rm -r $WORKDIR
 
 exit 0
 # vim: tabstop=4:softtabstop=4:shiftwidth=4:noexpandtab
