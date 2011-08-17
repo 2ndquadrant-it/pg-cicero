@@ -262,8 +262,7 @@ REVOKE ALL PRIVILEGES ON kinds FROM manuel;
 
 <programlisting>
 REVOKE admins FROM joe;
-</programlisting>
-  </para>
+</programlisting></para>
  </refsect1>
 
  <refsect1 id="sql-revoke-compatibility">

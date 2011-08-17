@@ -295,7 +295,7 @@ NET STOP pgsql-8.3  (<productname>PostgreSQL</productname> 8.3 and older used a 
      <application>pg_upgrade</application> requires the specification of the old and new cluster's
      data and executable (<filename>bin</filename>) directories. You can also specify
      user and port values, and whether you want the data linked instead of
-     copied (the default). 
+     copied (the default).
     </para>
 
     <para>

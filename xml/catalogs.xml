@@ -240,6 +240,11 @@
      </row>
 
      <row>
+      <entry><link linkend="catalog-pg-shseclabel"><structname>pg_shseclabel</structname></link></entry>
+      <entry>security labels on shared database objects</entry>
+     </row>
+
+     <row>
       <entry><link linkend="catalog-pg-statistic"><structname>pg_statistic</structname></link></entry>
       <entry>planner statistics</entry>
      </row>
@@ -1150,6 +1155,15 @@
       <entry></entry>
       <entry>
        Attribute-level options, as <quote>keyword=value</quote> strings
+      </entry>
+     </row>
+
+     <row>
+      <entry><structfield>attfdwoptions</structfield></entry>
+      <entry><type>text[]</type></entry>
+      <entry></entry>
+      <entry>
+       Attribute-level foreign data wrapper options, as <quote>keyword=value</quote> strings
       </entry>
      </row>
 
@@ -4677,8 +4691,15 @@
 
   <para>
    The catalog <structname>pg_seclabel</structname> stores security
-   labels on database objects.  See the
-   <xref linkend="sql-security-label"/> statement.
+   labels on database objects.  Security labels can be manipulated
+   with the <xref linkend="sql-security-label"/> command.  For an easier
+   way to view security labels, see <xref linkend="view-pg-seclabels"/>.
+  </para>
+
+  <para>
+   See also <link linkend="catalog-pg-shseclabel"><structname>pg_shseclabel</structname></link>,
+   which performs a similar function for security labels of database objects
+   that are shared across a database cluster.
   </para>
 
   <table>
@@ -4959,6 +4980,73 @@
 
  </sect1>
 
+ <sect1 id="catalog-pg-shseclabel">
+  <title><structname>pg_shseclabel</structname></title>
+
+  <indexterm zone="catalog-pg-shseclabel">
+   <primary>pg_shseclabel</primary>
+  </indexterm>
+
+  <para>
+   The catalog <structname>pg_shseclabel</structname> stores security
+   lables on shared database objects.  Security labels can be manipulated
+   with the <xref linkend="sql-security-label"/> command.  For an easier
+   way to view security labels, see <xref linkend="view-pg-seclabels"/>.
+  </para>
+
+  <para>
+   See also <link linkend="catalog-pg-seclabel"><structname>pg_seclabel</structname></link>,
+   which performs a similar function for security labels involving objects
+   within a single database.
+  </para>
+
+  <para>
+   Unlike most system catalogs, <structname>pg_shseclabel</structname>
+   is shared across all databases of a cluster: there is only one
+   copy of <structname>pg_shseclabel</structname> per cluster, not
+   one per database.
+  </para>
+
+  <table>
+   <title><structname>pg_shseclabel</structname> Columns</title>
+   <tgroup cols="4">
+    <thead>
+     <row>
+      <entry>Name</entry>
+      <entry>Type</entry>
+      <entry>References</entry>
+      <entry>Description</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry><structfield>objoid</structfield></entry>
+      <entry><type>oid</type></entry>
+      <entry>any OID column</entry>
+      <entry>The OID of the object this security label pertains to</entry>
+     </row>
+     <row>
+      <entry><structfield>classoid</structfield></entry>
+      <entry><type>oid</type></entry>
+      <entry><literal><link linkend="catalog-pg-class"><structname>pg_class</structname></link>.oid</literal></entry>
+      <entry>The OID of the system catalog this object appears in</entry>
+     </row>
+     <row>
+      <entry><structfield>provider</structfield></entry>
+      <entry><type>name</type></entry>
+      <entry></entry>
+      <entry>The label provider associated with this label.</entry>
+     </row>
+     <row>
+      <entry><structfield>label</structfield></entry>
+      <entry><type>text</type></entry>
+      <entry></entry>
+      <entry>The security label applied to this object.</entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+ </sect1>
 
  <sect1 id="catalog-pg-statistic">
   <title><structname>pg_statistic</structname></title>
@@ -6929,9 +7017,9 @@
       <entry><type>oid</type></entry>
       <entry><literal><link linkend="catalog-pg-database"><structname>pg_database</structname></link>.oid</literal></entry>
       <entry>
-       OID of the database in which the object exists, or
-       zero if the object is a shared object, or
-       null if the object is a transaction ID
+       OID of the database in which the lock target exists, or
+       zero if the target is a shared object, or
+       null if the target is a transaction ID
       </entry>
      </row>
      <row>
@@ -6939,7 +7027,7 @@
       <entry><type>oid</type></entry>
       <entry><literal><link linkend="catalog-pg-class"><structname>pg_class</structname></link>.oid</literal></entry>
       <entry>
-       OID of the relation, or null if the object is not
+       OID of the relation targeted by the lock, or null if the target is not
        a relation or part of a relation
       </entry>
      </row>
@@ -6948,8 +7036,8 @@
       <entry><type>integer</type></entry>
       <entry></entry>
       <entry>
-       Page number within the relation, or null if the object
-       is not a tuple or relation page
+       Page number targeted by the lock within the relation,
+       or null if the target is not a relation page or tuple
       </entry>
      </row>
      <row>
@@ -6957,7 +7045,8 @@
       <entry><type>smallint</type></entry>
       <entry></entry>
       <entry>
-       Tuple number within the page, or null if the object is not a tuple
+       Tuple number targeted by the lock within the page,
+       or null if the target is not a tuple
       </entry>
      </row>
      <row>
@@ -6965,8 +7054,8 @@
       <entry><type>text</type></entry>
       <entry></entry>
       <entry>
-       Virtual ID of a transaction, or null if the object is not a
-       virtual transaction ID
+       Virtual ID of the transaction targeted by the lock,
+       or null if the target is not a virtual transaction ID
       </entry>
      </row>
      <row>
@@ -6974,7 +7063,8 @@
       <entry><type>xid</type></entry>
       <entry></entry>
       <entry>
-       ID of a transaction, or null if the object is not a transaction ID
+       ID of the transaction targeted by the lock,
+       or null if the target is not a transaction ID
       </entry>
      </row>
      <row>
@@ -6982,8 +7072,8 @@
       <entry><type>oid</type></entry>
       <entry><literal><link linkend="catalog-pg-class"><structname>pg_class</structname></link>.oid</literal></entry>
       <entry>
-       OID of the system catalog containing the object, or null if the
-       object is not a general database object
+       OID of the system catalog containing the lock target, or null if the
+       target is not a general database object
       </entry>
      </row>
      <row>
@@ -6991,8 +7081,8 @@
       <entry><type>oid</type></entry>
       <entry>any OID column</entry>
       <entry>
-       OID of the object within its system catalog, or null if the
-       object is not a general database object.
+       OID of the lock target within its system catalog, or null if the
+       target is not a general database object.
        For advisory locks it is used to distinguish the two key
        spaces (1 for an int8 key, 2 for two int4 keys).
       </entry>
@@ -7002,10 +7092,11 @@
       <entry><type>smallint</type></entry>
       <entry></entry>
       <entry>
-       For a table column, this is the column number (the
+       Column number targeted by the lock (the
        <structfield>classid</structfield> and <structfield>objid</structfield> refer to the
-       table itself).  For all other object types, this column is
-       zero.  Null if the object is not a general database object
+       table itself),
+       or zero if the target is some other general database object,
+       or null if the target is not a general database object
       </entry>
      </row>
      <row>
@@ -7037,6 +7128,12 @@
       <entry><type>boolean</type></entry>
       <entry></entry>
       <entry>True if lock is held, false if lock is awaited</entry>
+     </row>
+     <row>
+      <entry><structfield>fastpath</structfield></entry>
+      <entry><type>boolean</type></entry>
+      <entry></entry>
+      <entry>True if lock was taken via fast path, false if taken via main lock table</entry>
      </row>
     </tbody>
    </tgroup>
@@ -7088,16 +7185,29 @@
   <para>
    The <structname>pg_locks</structname> view displays data from both the
    regular lock manager and the predicate lock manager, which are
-   separate systems.  When this view is accessed, the internal data
-   structures of each lock manager are momentarily locked, and copies are
-   made for the view to display.  Each lock manager will therefore
-   produce a consistent set of results, but as we do not lock both lock
-   managers simultaneously, it is possible for locks to be taken or
-   released after we interrogate the regular lock manager and before we
-   interrogate the predicate lock manager.  Each lock manager is only
-   locked for the minimum possible time so as to reduce the performance
-   impact of querying this view, but there could nevertheless be some
-   impact on database performance if it is frequently accessed.
+   separate systems.  This data is not guaranteed to be entirely consistent.
+   Data on fast-path locks (with <structfield>fastpath</structfield> = <literal>true</literal>)
+   is gathered from each backend one at a time, without freezing the state of
+   the entire lock manager, so it is possible for locks to be taken and
+   released as information is gathered.  Note, however, that these locks are
+   known not to conflict with any other lock currently in place.  After
+   all backends have been queried for fast-path locks, the remainder of the
+   lock manager is locked as a unit, and a consistent snapshot of all
+   remaining locks is dumped as an atomic action.  Once the lock manager has
+   been unlocked, the predicate lock manager is similarly locked and all
+   predicate locks are dumped as an atomic action.  Thus, with the exception
+   of fast-path locks, each lock manager will deliver a consistent set of
+   results, but as we do not lock both lock managers simultaneously, it is
+   possible for locks to be taken or released after we interrogate the regular
+   lock manager and before we interrogate the predicate lock manager.
+  </para>
+
+  <para>
+   Locking the lock manger and/or predicate lock manager could have some
+   impact on database performance if this view is very frequently accessed.
+   The locks are held only for the minimum amount of time necessary to
+   obtain data from the lock manager, but this does not completely eliminate
+   the possibility of a performance impact.
   </para>
 
   <para>

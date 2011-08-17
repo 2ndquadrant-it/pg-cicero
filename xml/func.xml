@@ -1483,15 +1483,15 @@
          <primary>decode</primary>
         </indexterm>
         <literal><function>decode(<parameter>string</parameter> <type>text</type>,
-        <parameter>type</parameter> <type>text</type>)</function></literal>
+        <parameter>format</parameter> <type>text</type>)</function></literal>
        </entry>
        <entry><type>bytea</type></entry>
        <entry>
-        Decode binary data from <parameter>string</parameter> previously
-        encoded with <function>encode</function>.  Parameter type is same as in <function>encode</function>.
+        Decode binary data from textual representation in <parameter>string</parameter>.
+        Options for <parameter>format</parameter> are same as in <function>encode</function>.
        </entry>
        <entry><literal>decode('MTIzAAE=', 'base64')</literal></entry>
-       <entry><literal>123\000\001</literal></entry>
+       <entry><literal>\x3132330001</literal></entry>
       </row>
 
       <row>
@@ -1500,13 +1500,13 @@
          <primary>encode</primary>
         </indexterm>
         <literal><function>encode(<parameter>data</parameter> <type>bytea</type>,
-        <parameter>type</parameter> <type>text</type>)</function></literal>
+        <parameter>format</parameter> <type>text</type>)</function></literal>
        </entry>
        <entry><type>text</type></entry>
        <entry>
-        Encode binary data to different representation.  Supported
-        types are: <literal>base64</literal>, <literal>hex</literal>, <literal>escape</literal>.
-        <literal>Escape</literal> merely outputs null bytes as <literal>\000</literal> and
+        Encode binary data into a textual representation.  Supported
+        formats are: <literal>base64</literal>, <literal>hex</literal>, <literal>escape</literal>.
+        <literal>escape</literal> merely outputs null bytes as <literal>\000</literal> and
         doubles backslashes.
        </entry>
        <entry><literal>encode(E'123\\000\\001', 'base64')</literal></entry>
@@ -1524,7 +1524,7 @@
        <entry><type>text</type></entry>
        <entry>
          Format a string.  This function is similar to the C function
-         <function>sprintf</function>; but only the following conversions
+         <function>sprintf</function>; but only the following conversion specifications
          are recognized: <literal>%s</literal> interpolates the corresponding
          argument as a string; <literal>%I</literal> escapes its argument as
          an SQL identifier; <literal>%L</literal> escapes its argument as an
@@ -1708,7 +1708,7 @@
         <function>quote_nullable</function> is often more suitable.
         See also <xref linkend="plpgsql-quote-literal-example"/>.
        </entry>
-       <entry><literal>quote_literal('O\'Reilly')</literal></entry>
+       <entry><literal>quote_literal(E'O\'Reilly')</literal></entry>
        <entry><literal>'O''Reilly'</literal></entry>
       </row>
 
@@ -2859,6 +2859,14 @@
     that use the regular function invocation syntax
     (see <xref linkend="functions-binarystring-other"/>).
    </para>
+
+   <note>
+    <para>
+     The sample results shown on this page assume that the server parameter
+     <link linkend="guc-bytea-output"><varname>bytea_output</varname></link> is set
+     to <literal>escape</literal> (the traditional PostgreSQL format).
+    </para>
+   </note>
 
    <table id="functions-binarystring-sql">
     <title><acronym>SQL</acronym> Binary String Functions and Operators</title>
@@ -9260,6 +9268,8 @@ SELECT xml_is_well_formed_document('<pg:foo xmlns:pg="http://postgresql.org/stuf
     against the XML value
     <replaceable>xml</replaceable>.  It returns an array of XML values
     corresponding to the node set produced by the XPath expression.
+    If the XPath expression returns a scalar value rather than a node set,
+    a single-element array is returned.
    </para>
 
   <para>
@@ -13095,6 +13105,12 @@ SELECT relname FROM pg_class WHERE pg_table_is_visible(oid);
        <entry>is operator visible in search path</entry>
       </row>
       <row>
+       <entry><literal><function>pg_opfamily_is_visible(<parameter>opclass_oid</parameter>)</function></literal>
+       </entry>
+       <entry><type>boolean</type></entry>
+       <entry>is operator family visible in search path</entry>
+      </row>
+      <row>
        <entry><literal><function>pg_table_is_visible(<parameter>table_oid</parameter>)</function></literal>
        </entry>
        <entry><type>boolean</type></entry>
@@ -13148,6 +13164,9 @@ SELECT relname FROM pg_class WHERE pg_table_is_visible(oid);
    </indexterm>
    <indexterm>
     <primary>pg_operator_is_visible</primary>
+   </indexterm>
+   <indexterm>
+    <primary>pg_opfamily_is_visible</primary>
    </indexterm>
    <indexterm>
     <primary>pg_table_is_visible</primary>

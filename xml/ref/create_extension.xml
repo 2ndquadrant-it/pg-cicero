@@ -112,8 +112,7 @@ CREATE EXTENSION [ IF NOT EXISTS ] <replaceable class="parameter">extension_name
      <varlistentry>
       <term><replaceable class="parameter">old_version</replaceable></term>
       <listitem>
-       <para>
-        <literal>FROM</literal> <replaceable class="parameter">old_version</replaceable>
+       <para><literal>FROM</literal> <replaceable class="parameter">old_version</replaceable>
         must be specified when, and only when, you are attempting to install
         an extension that replaces an <quote>old style</quote> module that is just
         a collection of objects not packaged into an extension.  This option

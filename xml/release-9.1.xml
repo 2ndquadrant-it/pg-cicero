@@ -10,19 +10,99 @@
    <simpara>2011-??-??</simpara>
   </note>
 
-  <para>CURRENT AS OF 2011-06-09</para>
+  <para>CURRENT AS OF 2011-07-07</para>
 
   <sect2>
    <title>Overview</title>
 
    <para>
-    This release of
-    <productname>PostgreSQL</productname> adds numerous major features, including:
+    This release shows <productname>PostgreSQL</productname> moving beyond the
+    traditional relational feature set with new, ground-breaking
+    functionality that is unique to <productname>PostgreSQL</productname>.
+    Additionally, this release improves streaming replication by adding
+    a synchronous option and monitoring improvements.  Major enhancements
+    include:
    </para>
 
-   <para>
-    (summary to be added)
-   </para>
+   <itemizedlist>
+
+    <!-- This list duplicates items below, but without authors or details-->
+
+    <listitem>
+     <para>
+      Support unlogged tables using the <link
+      linkend="sql-createtable-description"><literal>UNLOGGED</literal></link>
+      option in <link linkend="sql-createtable"><command>CREATE
+      TABLE</command></link>
+     </para>
+    </listitem>
+
+    <listitem>
+     <para>
+      Allow <link linkend="synchronous-replication">synchronous
+      replication</link>
+     </para>
+    </listitem>
+
+    <listitem>
+     <para>
+      Add support for <link linkend="sql-createforeigntable">foreign
+      tables</link>
+     </para>
+    </listitem>
+
+    <listitem>
+     <para>
+      Add per-column <link
+      linkend="collation">collation</link> support
+     </para>
+    </listitem>
+
+    <listitem>
+     <para>
+      Add a <link linkend="sql-security-label"><command>SECURITY
+      LABEL</command></link> command
+     </para>
+    </listitem>
+
+    <listitem>
+     <para>
+      Add a true <link
+      linkend="xact-serializable">serializable</link> isolation
+      level
+     </para>
+    </listitem>
+
+    <listitem>
+     <para>
+      Allow data-modification commands
+      (<command>INSERT</command>/<command>UPDATE</command>/<command>DELETE)</command> in
+      <link linkend="queries-with"><literal>WITH</literal></link> clauses
+     </para>
+    </listitem>
+
+    <listitem>
+     <para>
+      Add nearest-neighbor (order-by-operator) searching to <link
+      linkend="gist"><acronym>GiST</acronym> indexes</link>
+     </para>
+    </listitem>
+
+    <listitem>
+     <para>
+      Add <link linkend="extend-extensions">extensions</link> which
+      simplify packaging of additions to <productname>PostgreSQL</productname>
+     </para>
+    </listitem>
+
+    <listitem>
+     <para>
+      Update the <link linkend="plpython">PL/Python</link> server-side
+      language
+     </para>
+    </listitem>
+
+   </itemizedlist>
 
    <para>
     The above items are explained in more detail in the sections below.
@@ -383,6 +463,19 @@
        <para>
         Reduce the memory requirement for large ispell dictionaries
         (Pavel Stehule, Tom Lane)
+       </para>
+      </listitem>
+
+      <listitem>
+       <para>
+        Avoid leaving data files open after <quote>blind writes</quote>
+        (Alvaro Herrera)
+       </para>
+
+       <para>
+        This fixes scenarios where backends might hold open files that
+        were long since deleted, preventing the kernel from reclaiming
+        disk space.
        </para>
       </listitem>
 
@@ -1982,7 +2075,7 @@
 
        <para>
         This is passed to the editor according to the
-        <envar>EDITOR_LINENUMBER_SWITCH</envar> psql variable.
+        <envar>PSQL_EDITOR_LINENUMBER_ARG</envar> environment variable.
        </para>
       </listitem>
 
@@ -2401,6 +2494,13 @@
        </para>
       </listitem>
 
+      <listitem>
+       <para>
+         Improve support for building with
+         <application>Clang</application> (Peter Eisentraut)
+       </para>
+      </listitem>
+
      </itemizedlist>
 
     <sect4>
@@ -2786,6 +2886,20 @@
 
       <para>
        Previously only Solaris 9 kernel tuning was documented.
+      </para>
+     </listitem>
+
+     <listitem>
+      <para>
+       Handle non-ASCII characters consistently in <filename>HISTORY</filename> file
+       (Peter Eisentraut)
+      </para>
+
+      <para>
+       While the <filename>HISTORY</filename> file is in English, we do have to deal
+       with non-ASCII letters in contributor names.  These are now
+       transliterated so that they are reasonably legible without assumptions
+       about character set.
       </para>
      </listitem>
 

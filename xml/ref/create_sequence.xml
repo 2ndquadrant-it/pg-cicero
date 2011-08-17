@@ -319,8 +319,7 @@ BEGIN;
 COPY distributors FROM 'input_file';
 SELECT setval('serial', max(id)) FROM distributors;
 END;
-</programlisting>
-  </para>
+</programlisting></para>
  </refsect1>
 
  <refsect1>
@@ -349,8 +348,7 @@ END;
       extension.
      </para>
     </listitem>
-   </itemizedlist>
-  </para>
+   </itemizedlist></para>
  </refsect1>
 
  <refsect1>

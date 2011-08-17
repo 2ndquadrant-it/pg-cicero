@@ -93,8 +93,7 @@ ALTER USER MAPPING FOR { <replaceable class="parameter">user_name</replaceable> 
    Change the password for user mapping <literal>bob</literal>, server<literal> foo</literal>:
 <programlisting>
 ALTER USER MAPPING FOR bob SERVER foo OPTIONS (user 'bob', password 'public');
-</programlisting>
-  </para>
+</programlisting></para>
 
  </refsect1>
 
