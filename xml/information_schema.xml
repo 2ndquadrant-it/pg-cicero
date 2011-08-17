@@ -484,13 +484,26 @@
      <row>
       <entry><literal>interval_type</literal></entry>
       <entry><type>character_data</type></entry>
-      <entry>Not yet implemented</entry>
+      <entry>
+       If <literal>data_type</literal> identifies an interval type,
+       this column contains the specification which fields the
+       intervals include for this attribute, e.g., <literal>YEAR TO
+       MONTH</literal>, <literal>DAY TO SECOND</literal>, etc.  If no
+       field restrictions were specified (that is, the interval
+       accepts all fields), and for all other data types, this field
+       is null.
+      </entry>
      </row>
 
      <row>
       <entry><literal>interval_precision</literal></entry>
-      <entry><type>character_data</type></entry>
-      <entry>Not yet implemented</entry>
+      <entry><type>cardinal_number</type></entry>
+      <entry>
+       Applies to a feature not available
+       in <productname>PostgreSQL</productname>
+       (see <literal>datetime_precision</literal> for the fractional
+       seconds precision of interval type attributes)
+      </entry>
      </row>
 
      <row>
@@ -1006,6 +1019,69 @@
   </table>
  </sect1>
 
+ <sect1 id="infoschema-column-options">
+  <title><literal>column_options</literal></title>
+
+  <para>
+   The view <literal>column_options</literal> contains all the
+   options defined for foreign table columns in the current database.  Only
+   those foreign table columns are shown that the current user has access to
+   (by way of being the owner or having some privilege).
+  </para>
+
+  <table>
+   <title><literal>column_options</literal> Columns</title>
+
+   <tgroup cols="3">
+    <thead>
+     <row>
+      <entry>Name</entry>
+      <entry>Data Type</entry>
+      <entry>Description</entry>
+     </row>
+    </thead>
+
+    <tbody>
+     <row>
+      <entry><literal>table_catalog</literal></entry>
+      <entry><type>sql_identifier</type></entry>
+      <entry>Name of the database that contains the foreign table (always the current database)</entry>
+     </row>
+
+     <row>
+      <entry><literal>table_schema</literal></entry>
+      <entry><type>sql_identifier</type></entry>
+      <entry>Name of the schema that contains the foreign table</entry>
+     </row>
+
+     <row>
+      <entry><literal>table_name</literal></entry>
+      <entry><type>sql_identifier</type></entry>
+      <entry>Name of the foreign table</entry>
+     </row>
+
+     <row>
+      <entry><literal>column_name</literal></entry>
+      <entry><type>sql_identifier</type></entry>
+      <entry>Name of the column</entry>
+     </row>
+
+     <row>
+      <entry><literal>option_name</literal></entry>
+      <entry><type>sql_identifier</type></entry>
+      <entry>Name of an option</entry>
+     </row>
+
+     <row>
+      <entry><literal>option_value</literal></entry>
+      <entry><type>character_data</type></entry>
+      <entry>Value of the option</entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+ </sect1>
+
  <sect1 id="infoschema-column-privileges">
   <title><literal>column_privileges</literal></title>
 
@@ -1339,13 +1415,26 @@
      <row>
       <entry><literal>interval_type</literal></entry>
       <entry><type>character_data</type></entry>
-      <entry>Not yet implemented</entry>
+      <entry>
+       If <literal>data_type</literal> identifies an interval type,
+       this column contains the specification which fields the
+       intervals include for this column, e.g., <literal>YEAR TO
+       MONTH</literal>, <literal>DAY TO SECOND</literal>, etc.  If no
+       field restrictions were specified (that is, the interval
+       accepts all fields), and for all other data types, this field
+       is null.
+      </entry>
      </row>
 
      <row>
       <entry><literal>interval_precision</literal></entry>
-      <entry><type>character_data</type></entry>
-      <entry>Not yet implemented</entry>
+      <entry><type>cardinal_number</type></entry>
+      <entry>
+       Applies to a feature not available
+       in <productname>PostgreSQL</productname>
+       (see <literal>datetime_precision</literal> for the fractional
+       seconds precision of interval type columns)
+      </entry>
      </row>
 
      <row>
@@ -2135,13 +2224,26 @@
      <row>
       <entry><literal>interval_type</literal></entry>
       <entry><type>character_data</type></entry>
-      <entry>Not yet implemented</entry>
+      <entry>
+       If <literal>data_type</literal> identifies an interval type,
+       this column contains the specification which fields the
+       intervals include for this domain, e.g., <literal>YEAR TO
+       MONTH</literal>, <literal>DAY TO SECOND</literal>, etc.  If no
+       field restrictions were specified (that is, the interval
+       accepts all fields), and for all other data types, this field
+       is null.
+      </entry>
      </row>
 
      <row>
       <entry><literal>interval_precision</literal></entry>
-      <entry><type>character_data</type></entry>
-      <entry>Not yet implemented</entry>
+      <entry><type>cardinal_number</type></entry>
+      <entry>
+       Applies to a feature not available
+       in <productname>PostgreSQL</productname>
+       (see <literal>datetime_precision</literal> for the fractional
+       seconds precision of interval type domains)
+      </entry>
      </row>
 
      <row>
@@ -2401,7 +2503,7 @@ ORDER BY c.ordinal_position;
 
      <row>
       <entry><literal>interval_precision</literal></entry>
-      <entry><type>character_data</type></entry>
+      <entry><type>cardinal_number</type></entry>
       <entry>Always null, since this information is not applied to array element data types in <productname>PostgreSQL</productname></entry>
      </row>
 
@@ -3151,7 +3253,7 @@ ORDER BY c.ordinal_position;
 
      <row>
       <entry><literal>interval_precision</literal></entry>
-      <entry><type>character_data</type></entry>
+      <entry><type>cardinal_number</type></entry>
       <entry>Always null, since this information is not applied to parameter data types in <productname>PostgreSQL</productname></entry>
      </row>
 
@@ -4038,7 +4140,7 @@ ORDER BY c.ordinal_position;
 
      <row>
       <entry><literal>interval_precision</literal></entry>
-      <entry><type>character_data</type></entry>
+      <entry><type>cardinal_number</type></entry>
       <entry>Always null, since this information is not applied to return data types in <productname>PostgreSQL</productname></entry>
      </row>
 
@@ -4275,7 +4377,11 @@ ORDER BY c.ordinal_position;
      <row>
       <entry><literal>is_udt_dependent</literal></entry>
       <entry><type>yes_or_no</type></entry>
-      <entry>Applies to a feature not available in <productname>PostgreSQL</productname></entry>
+      <entry>
+       Currently always <literal>NO</literal>.  The alternative
+       <literal>YES</literal> applies to a feature not available in
+       <productname>PostgreSQL</productname>.
+      </entry>
      </row>
 
      <row>
@@ -4370,7 +4476,7 @@ ORDER BY c.ordinal_position;
 
      <row>
       <entry><literal>result_cast_interval_precision</literal></entry>
-      <entry><type>character_data</type></entry>
+      <entry><type>cardinal_number</type></entry>
       <entry>Applies to a feature not available in <productname>PostgreSQL</productname></entry>
      </row>
 
@@ -4775,6 +4881,11 @@ ORDER BY c.ordinal_position;
    embedded SQL in C; that is all you will learn from this table.
   </para>
 
+  <para>
+   This table was removed from the SQL standard in SQL:2008, so there
+   are no entries referring to standards later than SQL:2003.
+  </para>
+
   <table>
    <title><literal>sql_languages</literal> Columns</title>
 
@@ -4802,8 +4913,7 @@ ORDER BY c.ordinal_position;
       <entry><type>character_data</type></entry>
       <entry>
        The year the standard referenced in
-       <literal>sql_language_source</literal> was approved; currently
-       <literal>2003</literal>
+       <literal>sql_language_source</literal> was approved.
       </entry>
      </row>
 
@@ -5374,12 +5484,7 @@ ORDER BY c.ordinal_position;
      <row>
       <entry><literal>commit_action</literal></entry>
       <entry><type>character_data</type></entry>
-      <entry>
-       If the table is a temporary table, then
-       <literal>PRESERVE</literal>, else null.  (The SQL standard
-       defines other commit actions for temporary tables, which are
-       not supported by <productname>PostgreSQL</productname>.)
-      </entry>
+      <entry>Not yet implemented</entry>
      </row>
     </tbody>
    </tgroup>
@@ -5926,11 +6031,7 @@ ORDER BY c.ordinal_position;
      <row>
       <entry><literal>data_type</literal></entry>
       <entry><type>character_data</type></entry>
-      <entry>
-       Always <literal>USER-DEFINED TYPE</literal> (for joining
-       against <literal>object_type</literal> columns in other
-       views)
-      </entry>
+      <entry>Applies to a feature not available in <productname>PostgreSQL</productname></entry>
      </row>
 
      <row>
@@ -6013,7 +6114,7 @@ ORDER BY c.ordinal_position;
 
      <row>
       <entry><literal>interval_precision</literal></entry>
-      <entry><type>character_data</type></entry>
+      <entry><type>cardinal_number</type></entry>
       <entry>Applies to a feature not available in <productname>PostgreSQL</productname></entry>
      </row>
 

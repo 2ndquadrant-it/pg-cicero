@@ -191,8 +191,7 @@ ALTER INDEX distributors SET TABLESPACE fasttablespace;
 <programlisting>
 ALTER INDEX distributors SET (fillfactor = 75);
 REINDEX INDEX distributors;
-</programlisting>
-  </para>
+</programlisting></para>
 
  </refsect1>
 

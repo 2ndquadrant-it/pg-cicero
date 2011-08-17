@@ -76,8 +76,7 @@ ABORT [ WORK | TRANSACTION ]
    To abort all changes:
 <programlisting>
 ABORT;
-</programlisting>
-  </para>
+</programlisting></para>
  </refsect1>
 
  <refsect1>

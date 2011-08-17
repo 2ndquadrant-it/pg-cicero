@@ -84,8 +84,7 @@ PostgreSQL documentation
       (<filename>psqlrc</filename> and <filename>~/.psqlrc</filename>) are
       ignored with this option.
       </para>
-      <para>
-      <replaceable class="parameter">command</replaceable> must be either
+      <para><replaceable class="parameter">command</replaceable> must be either
       a command string that is completely parsable by the server (i.e.,
       it contains no <application>psql</application>-specific features),
       or a single backslash command. Thus you cannot mix
@@ -840,8 +839,7 @@ testdb=&gt;
         backslash escapes do not apply.
         </para>
 
-        <para>
-        <literal>\copy ... from stdin | to stdout</literal>
+        <para><literal>\copy ... from stdin | to stdout</literal>
         reads/writes based on the command input and output respectively.
         All rows are read from the same source that issued the command,
         continuing until <literal>\.</literal> is read or the stream
@@ -893,11 +891,16 @@ testdb=&gt;
         </para>
 
         <para>
+        For some types of relation, <literal>\d</literal> shows additional information
+        for each column: column values for sequences, indexed expression for
+        indexes and foreign data wrapper options for foreign tables.
+        </para>
+
+        <para>
         The command form <literal>\d+</literal> is identical, except that
         more information is displayed: any comments associated with the
         columns of the table are shown, as is the presence of OIDs in the
-        table, the view definition if the relation is a view, and the generic
-        options if the relation is a foreign table.
+        table, the view definition if the relation is a view.
         </para>
 
         <para>
@@ -951,7 +954,7 @@ testdb=&gt;
 
 
       <varlistentry>
-        <term><literal>\dc[S] [ <link linkend="app-psql-patterns"><replaceable class="parameter">pattern</replaceable></link> ]</literal></term>
+        <term><literal>\dc[S+] [ <link linkend="app-psql-patterns"><replaceable class="parameter">pattern</replaceable></link> ]</literal></term>
         <listitem>
         <para>
         Lists conversions between character-set encodings.
@@ -961,19 +964,23 @@ testdb=&gt;
         By default, only user-created objects are shown;  supply a
         pattern or the <literal>S</literal> modifier to include system
         objects.
+        If <literal>+</literal> is appended to the command name, each object
+        is listed with its associated description.
         </para>
         </listitem>
       </varlistentry>
 
 
       <varlistentry>
-        <term><literal>\dC [ <link linkend="app-psql-patterns"><replaceable class="parameter">pattern</replaceable></link> ]</literal></term>
+        <term><literal>\dC[+] [ <link linkend="app-psql-patterns"><replaceable class="parameter">pattern</replaceable></link> ]</literal></term>
         <listitem>
         <para>
         Lists type casts.
         If <replaceable class="parameter">pattern</replaceable>
         is specified, only casts whose source or target types match the
         pattern are listed.
+        If <literal>+</literal> is appended to the command name, each object
+        is listed with its associated description.
         </para>
         </listitem>
       </varlistentry>
@@ -983,24 +990,21 @@ testdb=&gt;
         <term><literal>\dd[S] [ <link linkend="app-psql-patterns"><replaceable class="parameter">pattern</replaceable></link> ]</literal></term>
         <listitem>
         <para>
-        Shows the descriptions of objects matching the <replaceable
-        class="parameter">pattern</replaceable>, or of all visible objects if
-        no argument is given.  But in either case, only objects that have
-        a description are listed.
+        Shows the descriptions of objects of type <literal>constraint</literal>,
+        <literal>operator class</literal>, <literal>operator family</literal>,
+        <literal>rule</literal>, and <literal>trigger</literal>. All
+        other comments may be viewed by the respective backslash commands for
+        those object types.
+        </para>
+
+        <para>
+        <literal>\dd</literal> displays descriptions for objects matching the
+        <replaceable class="parameter">pattern</replaceable>, or of visible
+        objects of the appropriate type if no argument is given.  But in either
+        case, only objects that have a description are listed.
         By default, only user-created objects are shown;  supply a
         pattern or the <literal>S</literal> modifier to include system
         objects.
-        <quote>Object</quote> covers aggregates, functions, operators,
-        types, relations (tables, views, indexes, sequences), large
-        objects, rules, and triggers. For example:
-<programlisting>
-=&gt; <userinput>\dd version</userinput>
-                     Object descriptions
-   Schema   |  Name   |  Object  |        Description
-------------+---------+----------+---------------------------
- pg_catalog | version | function | PostgreSQL version string
-(1 row)
-</programlisting>
         </para>
 
         <para>
@@ -1035,7 +1039,7 @@ testdb=&gt;
 
 
       <varlistentry>
-        <term><literal>\dD[S] [ <link linkend="app-psql-patterns"><replaceable class="parameter">pattern</replaceable></link> ]</literal></term>
+        <term><literal>\dD[S+] [ <link linkend="app-psql-patterns"><replaceable class="parameter">pattern</replaceable></link> ]</literal></term>
         <listitem>
         <para>
         Lists domains. If <replaceable
@@ -1044,6 +1048,8 @@ testdb=&gt;
         By default, only user-created objects are shown;  supply a
         pattern or the <literal>S</literal> modifier to include system
         objects.
+        If <literal>+</literal> is appended to the command name, each object
+        is listed with its associated description.
         </para>
         </listitem>
       </varlistentry>
@@ -1089,7 +1095,7 @@ testdb=&gt;
         specified, only those servers whose name matches the pattern
         are listed.  If the form <literal>\des+</literal> is used, a
         full description of each server is shown, including the
-        server's ACL, type, version, and options.
+        server's ACL, type, version, options, and description.
         </para>
         </listitem>
       </varlistentry>
@@ -1103,7 +1109,8 @@ testdb=&gt;
         If <replaceable class="parameter">pattern</replaceable> is
         specified, only entries whose table name or schema name matches
         the pattern are listed.  If the form <literal>\det+</literal>
-        is used, generic options are also displayed.
+        is used, generic options and the foreign table description
+        are also displayed.
         </para>
         </listitem>
       </varlistentry>
@@ -1141,8 +1148,8 @@ testdb=&gt;
         If <replaceable class="parameter">pattern</replaceable> is
         specified, only those foreign-data wrappers whose name matches
         the pattern are listed.  If the form <literal>\dew+</literal>
-        is used, the ACL and options of the foreign-data wrapper are
-        also shown.
+        is used, the ACL, options, and description of the foreign-data
+        wrapper are also shown.
         </para>
         </listitem>
       </varlistentry>
@@ -1441,25 +1448,21 @@ testdb=&gt;
         <literal>\r</literal> to cancel.
         </para>
 
-        <tip>
-        <para>
-        <application>psql</application> checks the environment
-        variables <envar>PSQL_EDITOR</envar>, <envar>EDITOR</envar>, and
-        <envar>VISUAL</envar> (in that order) for an editor to use. If
-        all of them are unset, <filename>vi</filename> is used on Unix
-        systems, <filename>notepad.exe</filename> on Windows systems.
-        </para>
-        </tip>
-
         <para>
         If a line number is specified, <application>psql</application> will
         position the cursor on the specified line of the file or query buffer.
-        This feature requires the <varname>EDITOR_LINENUMBER_SWITCH</varname>
-        variable to be set, so that <application>psql</application> knows how
-        to specify the line number to the editor.  Note that if a single
-        all-digits argument is given, <application>psql</application> assumes
-        it is a line number not a file name.
+        Note that if a single all-digits argument is given,
+        <application>psql</application> assumes it is a line number,
+        not a file name.
         </para>
+
+        <tip>
+        <para>
+        See under <xref linkend="app-psql-environment"
+        endterm="app-psql-environment-title"/> for how to configure and
+        customize your editor.
+        </para>
+        </tip>
         </listitem>
       </varlistentry>
 
@@ -1515,13 +1518,18 @@ Tue Oct 26 21:40:57 CEST 1999
 
         <para>
         If a line number is specified, <application>psql</application> will
-        position the cursor on the specified line of the function body
-        (note that the function body typically does not begin on the
-        first line of the file).
-        This feature requires the <varname>EDITOR_LINENUMBER_SWITCH</varname>
-        variable to be set, so that <application>psql</application> knows how
-        to specify the line number to the editor.
+        position the cursor on the specified line of the function body.
+        (Note that the function body typically does not begin on the first
+        line of the file.)
         </para>
+
+        <tip>
+        <para>
+        See under <xref linkend="app-psql-environment"
+        endterm="app-psql-environment-title"/> for how to configure and
+        customize your editor.
+        </para>
+        </tip>
         </listitem>
       </varlistentry>
 
@@ -1622,6 +1630,21 @@ Tue Oct 26 21:40:57 CEST 1999
         <literal>all</literal>.
         </para>
         </note>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term><literal>\ir <replaceable class="parameter">filename</replaceable></literal></term>
+        <listitem>
+        <para>
+        The <literal>\ir</literal> command is similar to <literal>\i</literal>, but resolves
+        relative pathnames differently.  When executing in interactive mode,
+        the two commands behave identically.  However, when invoked from a
+        script, <literal>\ir</literal> interprets pathnames relative to the
+        directory in which the script is located, rather than the current
+        working directory.
+        </para>
         </listitem>
       </varlistentry>
 
@@ -1738,8 +1761,7 @@ lo_import 152801
         specified, the query output will be reset to the standard output.
         </para>
 
-        <para>
-        <quote>Query results</quote> includes all tables, command
+        <para><quote>Query results</quote> includes all tables, command
         responses, and notices obtained from the database server, as
         well as output of various backslash commands that query the
         database (such as <command>\d</command>), but not error
@@ -1907,21 +1929,18 @@ lo_import 152801
           is enough.)
           </para>
 
-          <para>
-          <literal>unaligned</literal> format writes all columns of a row on one
+          <para><literal>unaligned</literal> format writes all columns of a row on one
           line, separated by the currently active field separator. This
           is useful for creating output that might be intended to be read
           in by other programs (for example, tab-separated or comma-separated
           format).
           </para>
 
-          <para>
-          <literal>aligned</literal> format is the standard, human-readable,
+          <para><literal>aligned</literal> format is the standard, human-readable,
           nicely formatted text output;  this is the default.
           </para>
 
-          <para>
-          <literal>wrapped</literal> format is like <literal>aligned</literal> but wraps
+          <para><literal>wrapped</literal> format is like <literal>aligned</literal> but wraps
           wide data values across lines to make the output fit in the target
           column width.  The target width is determined as described under
           the <literal>columns</literal> option.  Note that <application>psql</application> will
@@ -1955,8 +1974,7 @@ lo_import 152801
           <literal>wrapped</literal> output formats.
           </para>
 
-          <para>
-          <literal>ascii</literal> style uses plain <acronym>ASCII</acronym>
+          <para><literal>ascii</literal> style uses plain <acronym>ASCII</acronym>
           characters.  Newlines in data are shown using
           a <literal>+</literal> symbol in the right-hand margin.
           When the <literal>wrapped</literal> format wraps data from
@@ -1965,8 +1983,7 @@ lo_import 152801
           and again in the left-hand margin of the following line.
           </para>
 
-          <para>
-          <literal>old-ascii</literal> style uses plain <acronym>ASCII</acronym>
+          <para><literal>old-ascii</literal> style uses plain <acronym>ASCII</acronym>
           characters, using the formatting style used
           in <productname>PostgreSQL</productname> 8.4 and earlier.
           Newlines in data are shown using a <literal>:</literal>
@@ -1976,8 +1993,7 @@ lo_import 152801
           symbol is used in place of the left-hand column separator.
           </para>
 
-          <para>
-          <literal>unicode</literal> style uses Unicode box-drawing characters.
+          <para><literal>unicode</literal> style uses Unicode box-drawing characters.
           Newlines in data are shown using a carriage return symbol
           in the right-hand margin.  When the data is wrapped from one line
           to the next without a newline character, an ellipsis symbol
@@ -2459,8 +2475,7 @@ testdb=&gt; <userinput>\set foo bar</userinput>
 <programlisting>
 testdb=&gt; <userinput>\echo :foo</userinput>
 bar
-</programlisting>
-    </para>
+</programlisting></para>
 
     <note>
     <para>
@@ -2580,27 +2595,6 @@ bar
         on program start-up, use the switch <option>-E</option>.)  If you set
         the variable to the value <literal>noexec</literal>, the queries are
         just shown but are not actually sent to the server and executed.
-        </para>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry>
-        <term><varname>EDITOR_LINENUMBER_SWITCH</varname></term>
-        <listitem>
-        <para>
-        When <command>\edit</command> or <command>\ef</command> is used with a
-        line number argument, this variable specifies the command-line switch
-        used to pass the line number to the user's editor.  For editors such
-        as <productname>emacs</productname> or <productname>vi</productname>, you can simply set
-        this variable to a plus sign.  Include a trailing space in the value
-        of the variable if there needs to be space between the switch name and
-        the line number.
-        Examples:
-
-<programlisting>
-\set EDITOR_LINENUMBER_SWITCH +
-\set EDITOR_LINENUMBER_SWITCH '--line '
-</programlisting>
         </para>
         </listitem>
       </varlistentry>
@@ -3153,8 +3147,8 @@ $endif
  </refsect1>
 
 
- <refsect1>
-  <title>Environment</title>
+ <refsect1 id="app-psql-environment">
+  <title id="app-psql-environment-title">Environment</title>
 
   <variablelist>
 
@@ -3204,8 +3198,41 @@ $endif
 
     <listitem>
      <para>
-      Editor used by the <command>\e</command> command.  The variables
-      are examined in the order listed; the first that is set is used.
+      Editor used by the <command>\e</command> and
+      <command>\ef</command> commands.  The variables are examined in
+      the order listed; the first that is set is used.
+     </para>
+
+     <para>
+      The built-in default editors are <filename>vi</filename> on Unix
+      systems and <filename>notepad.exe</filename> on Windows systems.
+     </para>
+    </listitem>
+   </varlistentry>
+
+   <varlistentry>
+    <term><envar>PSQL_EDITOR_LINENUMBER_ARG</envar></term>
+
+    <listitem>
+     <para>
+      When <command>\e</command> or <command>\ef</command> is used
+      with a line number argument, this variable specifies the
+      command-line argument used to pass the starting line number to
+      the user's editor.  For editors such as <productname>Emacs</productname> or
+      <productname>vi</productname>, this is a plus sign.  Include a trailing
+      space in the value of the variable if there needs to be space
+      between the option name and the line number.  Examples:
+<programlisting>
+PSQL_EDITOR_LINENUMBER_ARG='+'
+PSQL_EDITOR_LINENUMBER_ARG='--line '
+</programlisting>
+     </para>
+
+     <para>
+      The default is <literal>+</literal> on Unix systems
+      (corresponding to the default editor <filename>vi</filename>,
+      and useful for many other common editors); but there is no
+      default on Windows systems.
      </para>
     </listitem>
    </varlistentry>
@@ -3299,8 +3326,7 @@ $endif
       </listitem>
 
       <listitem>
-      <para>
-       <application>psql</application> is only guaranteed to work smoothly
+      <para><application>psql</application> is only guaranteed to work smoothly
        with servers of the same version. That does not mean other combinations
        will fail outright, but subtle and not-so-subtle problems might come
        up.  Backslash commands are particularly likely to fail if the
@@ -3343,8 +3369,7 @@ $endif
       raster font does not work with the ANSI code page.
      </para>
     </listitem>
-   </itemizedlist>
- </para>
+   </itemizedlist></para>
 
  </refsect1>
 
@@ -3450,8 +3475,7 @@ second | three
 -[ RECORD 4 ]-
 first  | 4
 second | four
-</programlisting>
-  </para>
+</programlisting></para>
 
  </refsect1>
 
