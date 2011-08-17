@@ -64,7 +64,7 @@ done
 if [ $# -lt 1 ] || [ $# -gt 2 ]
 then
 	usage
-	exit 65
+	exit -1
 fi
 
 POSTGRESQL_GIT_DIR=$1
@@ -93,7 +93,7 @@ else
 fi
 
 # make sure that the requested branch exists in source repository
-BRANCH_REF="$(git --git-dir="$POSTGRESQL_GIT_DIR" show-ref "$BRANCH" | head -n 1 | awk '{print $2}')"
+BRANCH_REF=($(git --git-dir="$POSTGRESQL_GIT_DIR" show-ref "$BRANCH" | head -n 1 | awk '{print $2, $1}'))
 
 if [ -z "$BRANCH_REF" ]
 then
@@ -101,7 +101,7 @@ then
 fi
 
 # does it look like a postgresql repository?
-if [ "$(git --git-dir="$POSTGRESQL_GIT_DIR" cat-file -t "$BRANCH":"$DOCDIR")" != "tree" ]
+if [ "$(git --git-dir="$POSTGRESQL_GIT_DIR" cat-file -t "$BRANCH_REF":"$DOCDIR")" != "tree" ]
 then
     die "ERROR: the branch \"$BRANCH\" does not look like a PostgreSQL one."
 fi
@@ -118,7 +118,7 @@ trap "rm -fr '$WORKDIR'" EXIT
 git --git-dir="$POSTGRESQL_GIT_DIR" archive --format=tar "$BRANCH_REF" "$DOCDIR"  | tar x -C "$WORKDIR"
 
 [ "$VERBOSE" ] && echo "[v] Convert the documentation from sgml to xml"
-$sgml2xml "$WORKDIR/doc/src/sgml" "$WORKDIR/xml"
+$sgml2xml "$WORKDIR/$DOCDIR" "$WORKDIR/xml"
 
 [ "$VERBOSE" ] && echo "[v] Commit the result to pg-cicero repository"
 
@@ -128,7 +128,7 @@ export GIT_DIR="$PGCICERO_GIT_DIR"
 cd $WORKDIR
 
 DEST_BRANCH="postgresql/$BRANCH"
-DEST_REF="$(git show-ref "$DEST_BRANCH" | head -n 1 | awk '{print $2}')"
+DEST_REF=($(git show-ref "$DEST_BRANCH" | head -n 1 | awk '{print $2, $1}'))
 # if it's only remote, track it locally
 if [ -n "$DEST_REF" ] && [ "$DEST_REF" != "refs/heads/$DEST_BRANCH" ]
 then
@@ -140,11 +140,14 @@ COMMITOPT=
 if git show-ref --quiet --verify "refs/heads/$DEST_BRANCH"
 then
     git ls-tree -r --full-name "$DEST_BRANCH" | git update-index --index-info
-    COMMITOPT="-p \"$DEST_BRANCH\""
+    COMMITOPT="-p $DEST_BRANCH"
 else
     [ "$VERBOSE" ] && echo "[v] Create new empty branch \"$DEST_BRANCH\""
 fi
 [ "$VERBOSE" ] && echo "[v] Add updated files"
+cd $WORKDIR/doc/src
+find sgml -type f -name \*.sgml | git update-index --add --stdin
+cd $WORKDIR
 find xml -type f | git update-index --add --stdin
 SHA=$(git write-tree)
 if [ $? -gt 0 ] || [ -z "$SHA" ]
@@ -157,7 +160,7 @@ then
     exit 1
 fi
 [ "$VERBOSE" ] && echo "[v] Commit updates"
-COMMITSHA=$(echo "pgc-update-branch $DEST_BRANCH" | git commit-tree "$SHA" $COMMITOPT)
+COMMITSHA=$(echo -e "pgc-update-branch $DEST_BRANCH\n\nSource-Commit: ${BRANCH_REF[1]}" | git commit-tree "$SHA" $COMMITOPT)
 if [ $? -gt 0 ] || [ -z "$COMMITSHA" ]
 then
     die "git commit-tree failed"
