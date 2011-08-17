@@ -169,7 +169,7 @@ git update-ref "refs/heads/$DEST_BRANCH" "$COMMITSHA"
 
 [ "$QUIET" ] || {
     echo "Update completed."
-    echo "The result is in branch \"$DEST_BRANCH\" into the \"${PGCICERO_GIT_DIR}\" repository."
+    echo "The result is in branch \"$DEST_BRANCH\" into the \"${PGCICERO_GIT_DIR%/.git}\" repository."
     echo "Please check content then merge it to branch \"$BRANCH\""
 }
 exit 0
