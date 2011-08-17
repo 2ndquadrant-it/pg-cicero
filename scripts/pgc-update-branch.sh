@@ -145,6 +145,9 @@ else
     [ "$VERBOSE" ] && echo "[v] Create new empty branch \"$DEST_BRANCH\""
 fi
 [ "$VERBOSE" ] && echo "[v] Add updated files"
+cd $WORKDIR/doc/src
+find sgml -type f -name \*.sgml | git update-index --add --stdin
+cd $WORKDIR
 find xml -type f | git update-index --add --stdin
 SHA=$(git write-tree)
 if [ $? -gt 0 ] || [ -z "$SHA" ]
