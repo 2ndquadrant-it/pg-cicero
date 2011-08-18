@@ -79,12 +79,12 @@ PO_DIR=`echo $PO_DIR | sed -e 's/\/$//'`
 #
 WORKDIR=`mktemp -d -t cicero-XXXX`
 [ "$KEEP" ] && echo "Workdir is ${WORKDIR}"
-#cp -r $SRC_DIR/* $WORKDIR
 
 if [ ! -d $OUT_DIR ]
 then
     mkdir -p $OUT_DIR
 fi
+OUT_DIR=`echo $OUT_DIR | sed -e 's/\/$//'`
 
 #
 # These files will not be generated
