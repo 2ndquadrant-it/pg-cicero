@@ -79,11 +79,6 @@ then
 fi
 echo "-> Generating POTs in $OUT_DIR"
 
-#
-# These files will not be generated
-#
-blacklist="filelist.xml ref/allfiles.xml standalone-install.xml"
-
 declare -i ok
 declare -i fail
 declare -i i
@@ -92,7 +87,7 @@ ok=0
 fail=0
 for srcfile in $( find "$SRC_DIR" -type f -name '*.xml' | sed -e "s|$SRC_DIR/||" )
 do
-	grep -q "$srcfile" <<< $blacklist
+	grep -q "$srcfile" <<< $BLACKLIST
 	if [ $? -eq 0 ]; then
 		continue
 	fi

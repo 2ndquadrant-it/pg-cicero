@@ -39,3 +39,4 @@ function die () {
 	exit 128
 }
 
+BLACKLIST="version.xml filelist.xml ref/allfiles.xml standalone-install.xml"

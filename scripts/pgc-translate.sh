@@ -86,11 +86,6 @@ then
 fi
 OUT_DIR=`echo $OUT_DIR | sed -e 's/\/$//'`
 
-#
-# These files will not be generated
-#
-blacklist="filelist.xml ref/allfiles.xml standalone-install.xml"
-
 declare -i ok
 declare -i fail
 declare -i i
@@ -100,7 +95,7 @@ i=0
 echo "-> Creating XMLs in '$OUT_DIR'"
 for srcfile in $( find "$SRC_DIR" -type f -name '*.xml' | sed -e "s|$SRC_DIR/||" )
 do
-	grep -q "$srcfile" <<< $blacklist
+	grep -q "$srcfile" <<< $BLACKLIST
 	if [ $? -eq 0 ]; then
 		continue
 	fi
@@ -118,7 +113,7 @@ do
 
 	cp $SRC_DIR/$INPUT_FILE $WORKDIR/$INPUT_FILE	
 
-	xml2po $LANGOPT --po-file=$PO_FILE --output=$OUTPUT_FILE $WORKDIR/$INPUT_FILE
+	xml2po --po-file=$PO_FILE --output=$OUTPUT_FILE $WORKDIR/$INPUT_FILE
 
 	if [ $? -eq 0 ]; then
 		ok=$ok+1
