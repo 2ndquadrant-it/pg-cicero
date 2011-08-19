@@ -57,7 +57,7 @@ OUT_DIR=$3
 if [ -n "$4" ]
 then
 	STYLESHEET_DIR=$4
-	STYLESHEET_FILE=${STYLESHEET_DIR}/pg-chunked.xsl
+	STYLESHEET_FILE=${STYLESHEET_DIR}/pg-chunked-web.xsl
 else
 	###########################################################
 	# Determine the stylesheet directory
@@ -86,32 +86,19 @@ else
 	###########################################################
 fi
 
-if [ ! -d $ORIG_DIR ]
-then
-	die "Directory $ORIG_DIR doesn't exist!"
-fi
-ORIG_DIR=`echo $ORIG_DIR | sed -e 's/\/$//'`
-
-if [ ! -d $SRC_DIR ]
-then
-	die "Directory $SRC_DIR doesn't exist!"
-fi
-SRC_DIR=`echo $SRC_DIR | sed -e 's/\/$//'`
-
-if [ ! -d $OUT_DIR ]
-then
-    mkdir -p $OUT_DIR
-fi
-OUT_DIR=`echo $OUT_DIR | sed -e 's/\/$//'`
+check_dir "$ORIG_DIR" 1
+ORIG_DIR=${ORIG_DIR%\/}
+check_dir "$SRC_DIR" 1
+SRC_DIR=${SRC_DIR%\/}
+check_dir "$OUT_DIR" 0
+OUT_DIR=${OUT_DIR%\/}
 
 WORKDIR=`mktemp -d -t cicero-XXXX`
 cp -r $SRC_DIR/* $WORKDIR
 
 for f in $BLACKLIST
 do
-	if [ ! -d `dirname $WORKDIR/$f` ]; then
-		mkdir -p `dirname $WORKDIR/$f`
-	fi
+	mkdir -p `dirname $WORKDIR/$f`
 	cp $ORIG_DIR/$f $WORKDIR/$f
 done
 
@@ -125,4 +112,14 @@ xsltproc --xinclude --nonet -stringparam profile.condition html \
     -stringparam use.id.as.filename "yes" \
 	-stringparam base.dir $OUT_DIR/ \
     ${STYLESHEET_FILE} ${WORKDIR}/postgres.xml 2>/dev/null
+
+if [ -n "$4" ]
+then
+	mkdir -p $OUT_DIR/stylesheets
+	mkdir -p $OUT_DIR/images
+	cp $STYLESHEET_DIR/*.css $OUT_DIR/stylesheets/ 
+	cp $STYLESHEET_DIR/img/*.png $OUT_DIR/images/ 
+	sed -i -e "s|../stylesheets|stylesheets|g" $OUT_DIR/*.html
+	sed -i -e "s|../images|images|g" $OUT_DIR/*.html
+fi
 

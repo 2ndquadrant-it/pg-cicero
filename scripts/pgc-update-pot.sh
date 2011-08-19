@@ -59,11 +59,8 @@ fi
 SRC_DIR=$1
 OUT_DIR=$2
 
-if [ ! -d $SRC_DIR ]
-then
-	die "Directory $SRC_DIR doesn't exist!"
-fi
-SRC_DIR=`echo $SRC_DIR | sed -e 's/\/$//'`
+check_dir "$SRC_DIR" 1
+SRC_DIR=${SRC_DIR%\/}
 
 [ "$PROGRESSBAR" ] && TOTAL_STEPS=$( find $SRC_DIR -type f -name '*.xml' | wc -l )
 
@@ -72,11 +69,9 @@ SRC_DIR=`echo $SRC_DIR | sed -e 's/\/$//'`
 #
 WORKDIR=`mktemp -d -t cicero-XXXX`
 
-OUT_DIR=`echo $OUT_DIR | sed -e 's/\/$//'`
-if [ ! -d $OUT_DIR ]
-then
-    mkdir -p $OUT_DIR
-fi
+check_dir "$OUT_DIR" 0
+OUT_DIR=${OUT_DIR%\/}
+
 echo "-> Generating POTs in $OUT_DIR"
 
 declare -i ok
@@ -95,13 +90,9 @@ do
 	INPUT_FILE=$srcfile
 	OUTPUT_FILE=$OUT_DIR/${srcfile%.*}.po
 
-	if [ ! -d `dirname $OUTPUT_FILE` ]; then
-		mkdir -p `dirname $OUTPUT_FILE`
-	fi
-	if [ ! -d `dirname $WORKDIR/$INPUT_FILE` ]; then
-		mkdir -p `dirname $WORKDIR/$INPUT_FILE`
-	fi
-
+	mkdir -p `dirname $OUTPUT_FILE`
+	mkdir -p `dirname $WORKDIR/$INPUT_FILE`
+	
 	cp $SRC_DIR/$INPUT_FILE $WORKDIR/$INPUT_FILE
 
 	sed -i -e 's/&/&amp;/g' $WORKDIR/$INPUT_FILE

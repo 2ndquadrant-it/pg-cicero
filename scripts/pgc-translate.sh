@@ -60,31 +60,18 @@ SRC_DIR=$1
 PO_DIR=$2
 OUT_DIR=$3
 
-# Check directories
-if [ ! -d $SRC_DIR ]
-then
-	die "Directory $SRC_DIR doesn't exist!"
-fi
-if [ ! -d $PO_DIR ]
-then
-	die "Directory $PO_DIR doesn't exist!"
-fi
-SRC_DIR=`echo $SRC_DIR | sed -e 's/\/$//'`
-PO_DIR=`echo $PO_DIR | sed -e 's/\/$//'`
+check_dir "$SRC_DIR" 1
+SRC_DIR=${SRC_DIR%\/}
+check_dir "$PO_DIR" 1
+PO_DIR=${PO_DIR%\/}
 
 [ "$PROGRESSBAR" ] && TOTAL_STEPS=$( find $SRC_DIR -type f -name '*.xml' | wc -l )
 
-#
-# Make a temporary copy of base xml
-#
 WORKDIR=`mktemp -d -t cicero-XXXX`
 [ "$KEEP" ] && echo "Workdir is ${WORKDIR}"
 
-if [ ! -d $OUT_DIR ]
-then
-    mkdir -p $OUT_DIR
-fi
-OUT_DIR=`echo $OUT_DIR | sed -e 's/\/$//'`
+check_dir "$OUT_DIR" 0
+OUT_DIR=${OUT_DIR%\/}
 
 declare -i ok
 declare -i fail
@@ -104,13 +91,9 @@ do
     OUTPUT_FILE=$OUT_DIR/$srcfile
     PO_FILE=$PO_DIR/${srcfile%.*}.po
 
-	if [ ! -d `dirname $OUTPUT_FILE` ]; then
-		mkdir -p `dirname $OUTPUT_FILE`
-	fi
-	if [ ! -d `dirname $WORKDIR/$INPUT_FILE` ]; then
-		mkdir -p `dirname $WORKDIR/$INPUT_FILE`
-	fi
-
+	mkdir -p `dirname $OUTPUT_FILE`
+	mkdir -p `dirname $WORKDIR/$INPUT_FILE`
+	
 	cp $SRC_DIR/$INPUT_FILE $WORKDIR/$INPUT_FILE	
 
 	xml2po --po-file=$PO_FILE --output=$OUTPUT_FILE $WORKDIR/$INPUT_FILE
