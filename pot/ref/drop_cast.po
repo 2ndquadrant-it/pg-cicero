@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 17:54+0200\n"
+"POT-Creation-Date: 2011-08-22 18:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,106 +9,106 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:7(refentrytitle) /tmp/cicero-lkRf/ref/drop_cast.xml:13(refname) /tmp/cicero-lkRf/ref/drop_cast.xml:18(primary) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:7(refentrytitle) /tmp/cicero-LTnd/ref/drop_cast.xml:13(refname) /tmp/cicero-LTnd/ref/drop_cast.xml:18(primary) 
 msgid "DROP CAST"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:8(manvolnum) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:8(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:9(refmiscinfo) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:9(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:14(refpurpose) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:14(refpurpose) 
 msgid "remove a cast"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:23(replaceable) /tmp/cicero-lkRf/ref/drop_cast.xml:57(replaceable) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:23(replaceable) /tmp/cicero-LTnd/ref/drop_cast.xml:57(replaceable) 
 msgid "source_type"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:23(replaceable) /tmp/cicero-lkRf/ref/drop_cast.xml:67(replaceable) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:23(replaceable) /tmp/cicero-LTnd/ref/drop_cast.xml:67(replaceable) 
 msgid "target_type"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:22(synopsis) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:22(synopsis) 
 #, no-wrap
 msgid "\nDROP CAST [ IF EXISTS ] (<placeholder-1/> AS <placeholder-2/>) [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:28(title) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:28(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:30(para) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:30(para) 
 msgid "<command>DROP CAST</command> removes a previously defined cast."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:34(para) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:34(para) 
 msgid "To be able to drop a cast, you must own the source or the target data type. These are the same privileges that are required to create a cast."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:42(title) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:42(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:47(literal) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:47(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:49(para) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:49(para) 
 msgid "Do not throw an error if the cast does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:60(para) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:60(para) 
 msgid "The name of the source data type of the cast."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:70(para) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:70(para) 
 msgid "The name of the target data type of the cast."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:77(literal) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:77(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:78(literal) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:78(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:81(para) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:81(para) 
 msgid "These key words do not have any effect, since there are no dependencies on casts."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:91(title) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:91(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:95(programlisting) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:95(programlisting) 
 #, no-wrap
 msgid "\nDROP CAST (text AS int);\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:93(para) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:93(para) 
 msgid "To drop the cast from type <type>text</type> to type <type>int</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:101(title) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:101(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:103(para) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:103(para) 
 msgid "The <command>DROP CAST</command> command conforms to the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:109(title) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:109(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lkRf/ref/drop_cast.xml:0(None) 
+#: /tmp/cicero-LTnd/ref/drop_cast.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

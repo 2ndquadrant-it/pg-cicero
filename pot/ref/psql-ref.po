@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 17:54+0200\n"
+"POT-Creation-Date: 2011-08-22 18:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,546 +9,546 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:10(application) /tmp/cicero-lkRf/ref/psql-ref.xml:16(application) /tmp/cicero-lkRf/ref/psql-ref.xml:23(primary) /tmp/cicero-lkRf/ref/psql-ref.xml:28(command) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:10(application) /tmp/cicero-LTnd/ref/psql-ref.xml:16(application) /tmp/cicero-LTnd/ref/psql-ref.xml:23(primary) /tmp/cicero-LTnd/ref/psql-ref.xml:28(command) 
 msgid "psql"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:11(manvolnum) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:11(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:12(refmiscinfo) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:12(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:18(productname) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:18(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:17(refpurpose) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:17(refpurpose) 
 msgid "<placeholder-1/> interactive terminal"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:29(replaceable) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:29(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:30(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:110(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:111(replaceable) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:30(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:110(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:111(replaceable) 
 msgid "dbname"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:31(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:380(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:381(replaceable) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:31(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:380(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:381(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:36(title) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:38(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:38(para) 
 msgid "<application>psql</application> is a terminal-based front-end to <productname>PostgreSQL</productname>. It enables you to type in queries interactively, issue them to <productname>PostgreSQL</productname>, and see the query results. Alternatively, input can be from a file. In addition, it provides a number of meta-commands and various shell-like features to facilitate writing scripts and automating a wide variety of tasks."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:50(title) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:50(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:54(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:54(option) 
 msgid "-a"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:55(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:55(option) 
 msgid "--echo-all"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:57(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:57(para) 
 msgid "Print all input lines to standard output as they are read. This is more useful for script processing than interactive mode. This is equivalent to setting the variable <varname>ECHO</varname> to <literal>all</literal>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:67(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:67(option) 
 msgid "-A"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:68(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:68(option) 
 msgid "--no-align"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:70(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:70(para) 
 msgid "Switches to unaligned output mode. (The default output mode is otherwise aligned.)"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:78(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:79(replaceable) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:78(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:79(replaceable) 
 msgid "command"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:78(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:78(option) 
 msgid "-c <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:79(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:79(option) 
 msgid "--command=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:81(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:81(para) 
 msgid "Specifies that <application>psql</application> is to execute one command string, <replaceable class=\"parameter\">command</replaceable>, and then exit. This is useful in shell scripts. Start-up files (<filename>psqlrc</filename> and <filename>~/.psqlrc</filename>) are ignored with this option."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:88(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:88(para) 
 msgid "<replaceable class=\"parameter\">command</replaceable> must be either a command string that is completely parsable by the server (i.e., it contains no <application>psql</application>-specific features), or a single backslash command. Thus you cannot mix <acronym>SQL</acronym> and <application>psql</application> meta-commands with this option. To achieve that, you could pipe the string into <application>psql</application>, like this: <literal>echo '\\x \\\\ SELECT * FROM foo;' | psql</literal>. (<literal>\\\\</literal> is the separator meta-command.)"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:98(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:98(para) 
 msgid "If the command string contains multiple SQL commands, they are processed in a single transaction, unless there are explicit <command>BEGIN</command>/<command>COMMIT</command> commands included in the string to divide it into multiple transactions. This is different from the behavior when the same string is fed to <application>psql</application>'s standard input."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:110(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:110(option) 
 msgid "-d <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:111(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:111(option) 
 msgid "--dbname=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:113(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:113(para) 
 msgid "Specifies the name of the database to connect to. This is equivalent to specifying <replaceable class=\"parameter\">dbname</replaceable> as the first non-option argument on the command line."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:119(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:119(para) 
 msgid "If this parameter contains an <symbol>=</symbol> sign, it is treated as a <parameter>conninfo</parameter> string. See <xref linkend=\"libpq-connect\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:127(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:127(option) 
 msgid "-e"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:128(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:128(option) 
 msgid "--echo-queries"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:130(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:130(para) 
 msgid "Copy all SQL commands sent to the server to standard output as well. This is equivalent to setting the variable <varname>ECHO</varname> to <literal>queries</literal>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:140(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:140(option) 
 msgid "-E"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:141(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:141(option) 
 msgid "--echo-hidden"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:143(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:143(para) 
 msgid "Echo the actual queries generated by <command>\\d</command> and other backslash commands. You can use this to study <application>psql</application>'s internal operations. This is equivalent to setting the variable <varname>ECHO_HIDDEN</varname> from within <application>psql</application>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:154(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:155(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:235(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:236(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:258(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:259(replaceable) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:154(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:155(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:235(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:236(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:258(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:259(replaceable) 
 msgid "filename"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:154(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:154(option) 
 msgid "-f <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:155(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:155(option) 
 msgid "--file=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:157(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:157(para) 
 msgid "Use the file <replaceable class=\"parameter\">filename</replaceable> as the source of commands instead of reading commands interactively. After the file is processed, <application>psql</application> terminates. This is in many ways equivalent to the internal command <command>\\i</command>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:165(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:165(para) 
 msgid "If <replaceable>filename</replaceable> is <literal>-</literal> (hyphen), then standard input is read."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:170(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:170(para) 
 msgid "Using this option is subtly different from writing <literal>psql &lt; <replaceable class=\"parameter\">filename</replaceable></literal>. In general, both will do what you expect, but using <literal>-f</literal> enables some nice features such as error messages with line numbers. There is also a slight chance that using this option will reduce the start-up overhead. On the other hand, the variant using the shell's input redirection is (in theory) guaranteed to yield exactly the same output you would have received had you entered everything by hand."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:186(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:187(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:313(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:314(replaceable) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:186(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:187(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:313(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:314(replaceable) 
 msgid "separator"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:186(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:186(option) 
 msgid "-F <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:187(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:187(option) 
 msgid "--field-separator=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:189(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:189(para) 
 msgid "Use <replaceable class=\"parameter\">separator</replaceable> as the field separator for unaligned output. This is equivalent to <command>\\pset fieldsep</command> or <command>\\f</command>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:198(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:199(replaceable) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:198(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:199(replaceable) 
 msgid "hostname"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:198(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:198(option) 
 msgid "-h <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:199(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:199(option) 
 msgid "--host=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:201(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:201(para) 
 msgid "Specifies the host name of the machine on which the server is running. If the value begins with a slash, it is used as the directory for the Unix-domain socket."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:211(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:211(option) 
 msgid "-H"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:212(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:212(option) 
 msgid "--html"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:214(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:214(para) 
 msgid "Turn on <acronym>HTML</acronym> tabular output. This is equivalent to <literal>\\pset format html</literal> or the <command>\\H</command> command."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:223(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:223(option) 
 msgid "-l"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:224(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:224(option) 
 msgid "--list"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:226(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:226(para) 
 msgid "List all available databases, then exit. Other non-connection options are ignored. This is similar to the internal command <command>\\list</command>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:235(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:235(option) 
 msgid "-L <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:236(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:236(option) 
 msgid "--log-file=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:238(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:238(para) 
 msgid "Write all query output into file <replaceable class=\"parameter\">filename</replaceable>, in addition to the normal output destination."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:247(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:247(option) 
 msgid "-n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:248(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:248(option) 
 msgid "--no-readline"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:250(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:250(para) 
 msgid "Do not use readline for line editing and do not use the history. This can be useful to turn off tab expansion when cutting and pasting."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:258(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:258(option) 
 msgid "-o <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:259(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:259(option) 
 msgid "--output=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:261(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:261(para) 
 msgid "Put all query output into file <replaceable class=\"parameter\">filename</replaceable>. This is equivalent to the command <command>\\o</command>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:270(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:271(replaceable) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:270(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:271(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:270(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:270(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:271(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:271(option) 
 msgid "--port=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:273(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:273(para) 
 msgid "Specifies the TCP port or the local Unix-domain socket file extension on which the server is listening for connections. Defaults to the value of the <envar>PGPORT</envar> environment variable or, if not set, to the port specified at compile time, usually 5432."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:284(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:285(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:392(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:393(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:394(replaceable) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:284(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:285(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:392(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:393(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:394(replaceable) 
 msgid "assignment"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:284(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:284(option) 
 msgid "-P <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:285(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:285(option) 
 msgid "--pset=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:287(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:287(para) 
 msgid "Specifies printing options, in the style of <command>\\pset</command>. Note that here you have to separate name and value with an equal sign instead of a space. For example, to set the output format to LaTeX, you could write <literal>-P format=latex</literal>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:298(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:298(option) 
 msgid "-q"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:299(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:299(option) 
 msgid "--quiet"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:301(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:301(para) 
 msgid "Specifies that <application>psql</application> should do its work quietly. By default, it prints welcome messages and various informational output. If this option is used, none of this happens. This is useful with the <option>-c</option> option. Within <application>psql</application> you can also set the <varname>QUIET</varname> variable to achieve the same effect."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:313(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:313(option) 
 msgid "-R <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:314(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:314(option) 
 msgid "--record-separator=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:316(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:316(para) 
 msgid "Use <replaceable class=\"parameter\">separator</replaceable> as the record separator for unaligned output. This is equivalent to the <command>\\pset recordsep</command> command."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:325(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:325(option) 
 msgid "-s"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:326(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:326(option) 
 msgid "--single-step"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:328(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:328(para) 
 msgid "Run in single-step mode. That means the user is prompted before each command is sent to the server, with the option to cancel execution as well. Use this to debug scripts."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:337(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:337(option) 
 msgid "-S"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:338(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:338(option) 
 msgid "--single-line"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:340(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:340(para) 
 msgid "Runs in single-line mode where a newline terminates an SQL command, as a semicolon does."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:346(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:346(para) 
 msgid "This mode is provided for those who insist on it, but you are not necessarily encouraged to use it. In particular, if you mix <acronym>SQL</acronym> and meta-commands on a line the order of execution might not always be clear to the inexperienced user."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:357(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:357(option) 
 msgid "-t"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:358(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:358(option) 
 msgid "--tuples-only"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:360(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:360(para) 
 msgid "Turn off printing of column names and result row count footers, etc. This is equivalent to the <command>\\t</command> command."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:368(replaceable) /tmp/cicero-lkRf/ref/psql-ref.xml:369(replaceable) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:368(replaceable) /tmp/cicero-LTnd/ref/psql-ref.xml:369(replaceable) 
 msgid "table_options"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:368(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:368(option) 
 msgid "-T <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:369(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:369(option) 
 msgid "--table-attr=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:371(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:371(para) 
 msgid "Specifies options to be placed within the <acronym>HTML</acronym><sgmltag>table</sgmltag> tag. See <command>\\pset</command> for details."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:380(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:380(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:381(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:381(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:383(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:383(para) 
 msgid "Connect to the database as the user <replaceable class=\"parameter\">username</replaceable> instead of the default. (You must have permission to do so, of course.)"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:392(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:392(option) 
 msgid "-v <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:393(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:393(option) 
 msgid "--set=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:394(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:394(option) 
 msgid "--variable=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:396(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:396(para) 
 msgid "Perform a variable assignment, like the <command>\\set</command> internal command. Note that you must separate name and value, if any, by an equal sign on the command line. To unset a variable, leave off the equal sign. To just set a variable without a value, use the equal sign but leave off the value. These assignments are done during a very early stage of start-up, so variables reserved for internal purposes might get overwritten later."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:409(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:409(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:410(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:410(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:412(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:412(para) 
 msgid "Print the <application>psql</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:419(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:419(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:420(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:420(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:422(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:422(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:430(para) /tmp/cicero-lkRf/ref/psql-ref.xml:456(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:430(para) /tmp/cicero-LTnd/ref/psql-ref.xml:456(para) 
 msgid "Note that this option will remain set for the entire session, and so it affects uses of the meta-command <command>\\connect</command> as well as the initial connection attempt."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:439(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:439(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:440(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:440(option) 
 msgid "--password"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:442(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:442(para) 
 msgid "Force <application>psql</application> to prompt for a password before connecting to a database."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:447(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:447(para) 
 msgid "This option is never essential, since <application>psql</application> will automatically prompt for a password if the server demands password authentication. However, <application>psql</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:465(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:465(option) 
 msgid "-x"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:466(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:466(option) 
 msgid "--expanded"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:468(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:468(para) 
 msgid "Turn on the expanded table formatting mode. This is equivalent to the <command>\\x</command> command."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:476(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:476(option) 
 msgid "-X,"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:477(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:477(option) 
 msgid "--no-psqlrc"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:479(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:479(para) 
 msgid "Do not read the start-up file (neither the system-wide <filename>psqlrc</filename> file nor the user's <filename>~/.psqlrc</filename> file)."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:488(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:488(option) 
 msgid "-1"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:489(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:489(option) 
 msgid "--single-transaction"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:491(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:491(para) 
 msgid "When <application>psql</application> executes a script with the <option>-f</option> option, adding this option wraps <command>BEGIN</command>/<command>COMMIT</command> around the script to execute it as a single transaction. This ensures that either all the commands complete successfully, or no changes are applied."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:499(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:499(para) 
 msgid "If the script itself uses <command>BEGIN</command>, <command>COMMIT</command>, or <command>ROLLBACK</command>, this option will not have the desired effects. Also, if the script contains any command that cannot be executed inside a transaction block, specifying this option will cause that command (and hence the whole transaction) to fail."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:511(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:511(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:512(option) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:512(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:514(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:514(para) 
 msgid "Show help about <application>psql</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:526(title) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:526(title) 
 msgid "Exit Status"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:528(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:528(para) 
 msgid "<application>psql</application> returns 0 to the shell if it finished normally, 1 if a fatal error of its own occurs (e.g. out of memory, file not found), 2 if the connection to the server went bad and the session was not interactive, and 3 if an error occurred in a script and the variable <varname>ON_ERROR_STOP</varname> was set."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:539(title) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:539(title) 
 msgid "Usage"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:542(title) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:542(title) 
 msgid "Connecting to a Database"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:544(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:544(para) 
 msgid "<application>psql</application> is a regular <productname>PostgreSQL</productname> client application. In order to connect to a database you need to know the name of your target database, the host name and port number of the server, and what user name you want to connect as. <application>psql</application> can be told about those parameters via command line options, namely <option>-d</option>, <option>-h</option>, <option>-p</option>, and <option>-U</option> respectively. If an argument is found that does not belong to any option it will be interpreted as the database name (or the user name, if the database name is already given). Not all of these options are required; there are useful defaults. If you omit the host name, <application>psql</application> will connect via a Unix-domain socket to a server on the local host, or via TCP/IP to <literal>localhost</literal> on machines that don't have Unix-domain sockets. The default port number is determined at compile time. Since the database server uses the same default, you will not have to specify the port in most cases. The default user name is your Unix user name, as is the default database name. Note that you cannot just connect to any database under any user name. Your database administrator should have informed you about your access rights."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:567(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:567(para) 
 msgid "When the defaults aren't quite right, you can save yourself some typing by setting the environment variables <envar>PGDATABASE</envar>, <envar>PGHOST</envar>, <envar>PGPORT</envar> and/or <envar>PGUSER</envar> to appropriate values. (For additional environment variables, see <xref linkend=\"libpq-envars\"/>.) It is also convenient to have a <filename>~/.pgpass</filename> file to avoid regularly having to type in passwords. See <xref linkend=\"libpq-pgpass\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:583(programlisting) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:583(programlisting) 
 #, no-wrap
 msgid "\n$ <userinput>psql \"service=myservice sslmode=require\"</userinput>\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:578(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:578(para) 
 msgid "An alternative way to specify connection parameters is in a <parameter>conninfo</parameter> string, which is used instead of a database name. This mechanism give you very wide control over the connection. For example: <placeholder-1/> This way you can also use LDAP for connection parameter lookup as described in <xref linkend=\"libpq-ldap\"/>. See <xref linkend=\"libpq-connect\"/> for more information on all the available connection options."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:592(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:592(para) 
 msgid "If the connection could not be made for any reason (e.g., insufficient privileges, server is not running on the targeted host, etc.), <application>psql</application> will return an error and terminate."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:598(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:598(para) 
 msgid "If at least one of standard input or standard output are a terminal, then <application>psql</application> sets the client encoding to <quote>auto</quote>, which will detect the appropriate client encoding from the locale settings (<envar>LC_CTYPE</envar> environment variable on Unix systems). If this doesn't work out as expected, the client encoding can be overridden using the environment variable <envar>PGCLIENTENCODING</envar>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:611(title) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:611(title) 
 msgid "Entering SQL Commands"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:618(programlisting) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:618(programlisting) 
 #, no-wrap
 msgid "\n$ <userinput>psql testdb</userinput>\npsql ()\nType \"help\" for help.\n\ntestdb=\n\n    \n\n    \n    At the prompt, the user can type in SQL commands.\n    Ordinarily, input lines are sent to the server when a\n    command-terminating semicolon is reached. An end of line does not\n    terminate a command.  Thus commands can be spread over several lines for\n    clarity. If the command was sent and executed without error, the results\n    of the command are displayed on the screen.\n    \n\n    \n    Whenever a command is executed, psql also polls\n    for asynchronous notification events generated by\n     and\n    .\n    \n  \n\n  \n    Meta-Commands\n\n    \n    Anything you enter in psql that begins\n    with an unquoted backslash is a psql\n    meta-command that is processed by psql\n    itself. These commands make\n    psql more useful for administration or\n    scripting. Meta-commands are often called slash or backslash commands.\n    \n\n    \n    The format of a psql command is the backslash,\n    followed immediately by a command verb, then any arguments. The arguments\n    are separated from the command verb and each other by any number of\n    whitespace characters.\n    \n\n    \n    To include whitespace into an argument you can quote it with a\n    single quote. To include a single quote into such an argument,\n    use two single quotes. Anything contained in single quotes is\n    furthermore subject to C-like substitutions for\n    \\n (new line), \\t (tab),\n    \\digits (octal), and\n    \\xdigits (hexadecimal).\n    \n\n    \n    If an unquoted argument begins with a colon (:),\n    it is taken as a psql variable and the value of the\n    variable is used as the argument instead.  If the variable name is\n    surrounded by single quotes (e.g. :'var'), it\n    will be escaped as an SQL literal and the result will be used as\n    the argument.  If the variable name is surrounded by double quotes,\n    it will be escaped as an SQL identifier and the result will be used\n    as the argument.\n    \n\n    \n    Arguments that are enclosed in backquotes (`)\n    are taken as a command line that is passed to the shell. The\n    output of the command (with any trailing newline removed) is taken\n    as the argument value. The above escape sequences also apply in\n    backquotes.\n    \n\n    \n    Some commands take an SQL identifier (such as a\n    table name) as argument. These arguments follow the syntax rules\n    of SQL: Unquoted letters are forced to\n    lowercase, while double quotes (\") protect letters\n    from case conversion and allow incorporation of whitespace into\n    the identifier.  Within double quotes, paired double quotes reduce\n    to a single double quote in the resulting name.  For example,\n    FOO\"BAR\"BAZ is interpreted as fooBARbaz,\n    and \"A weird\"\" name\" becomes A weird\"\n    name.\n    \n\n    \n    Parsing for arguments stops at the end of the line, or when another\n    unquoted backslash is found.  An unquoted backslash\n    is taken as the beginning of a new meta-command. The special\n    sequence \\\\ (two backslashes) marks the end of\n    arguments and continues parsing SQL commands, if\n    any. That way SQL and\n    psql commands can be freely mixed on a\n    line. But in any case, the arguments of a meta-command cannot\n    continue beyond the end of the line.\n    \n\n    \n    The following meta-commands are defined:\n\n    \n      \n        \\a\n        \n        \n        If the current table output format is unaligned, it is switched to aligned.\n        If it is not unaligned, it is set to unaligned. This command is\n        kept for backwards compatibility. See \\pset for a\n        more general solution.\n        \n        \n      \n\n      \n        \\c or \\connect [ dbname [ username ] [ host ] [ port ] ]\n        \n        \n        Establishes a new connection to a PostgreSQL\n        server. If the new connection is successfully made, the\n        previous connection is closed. If any of dbname, username, host or port are omitted or specified\n        as -, the value of that parameter from the\n        previous connection is used. If there is no previous\n        connection, the libpq default for\n        the parameter's value is used.\n        \n\n        \n        If the connection attempt failed (wrong user name, access\n        denied, etc.), the previous connection will only be kept if\n        psql is in interactive mode. When\n        executing a non-interactive script, processing will\n        immediately stop with an error. This distinction was chosen as\n        a user convenience against typos on the one hand, and a safety\n        mechanism that scripts are not accidentally acting on the\n        wrong database on the other hand.\n        \n        \n      \n\n      \n        \\C [ title ]\n        \n        \n        Sets the title of any tables being printed as the result of a\n        query or unset any such title. This command is equivalent to\n        \\pset title title. (The name of\n        this command derives from caption, as it was\n        previously only used to set the caption in an\n        HTML table.)\n        \n        \n      \n\n      \n       \\cd [ directory ]\n       \n        \n         Changes the current working directory to\n         directory. Without argument, changes\n         to the current user's home directory.\n        \n\n        \n         \n          To print your current working directory, use \\! pwd.\n         \n        \n       \n      \n\n      \n        \\conninfo\n        \n        \n        Outputs information about the current database connection.\n        \n        \n      \n\n      \n        \\copy { table [ ( column_list ) ] | ( query ) }\n        { from | to }\n        { filename | stdin | stdout | pstdin | pstdout }\n        [ with ]\n            [ binary ]\n            [ oids ]\n            [ delimiter [ as ] 'character' ]\n            [ null [ as ] 'string' ]\n            [ csv\n              [ header ]\n              [ quote [ as ] 'character' ]\n              [ escape [ as ] 'character' ]\n              [ force quote column_list | * ]\n              [ force not null column_list ] ]\n        \n\n        \n        \n        Performs a frontend (client) copy. This is an operation that\n        runs an SQL \n        command, but instead of the server\n        reading or writing the specified file,\n        psql reads or writes the file and\n        routes the data between the server and the local file system.\n        This means that file accessibility and privileges are those of\n        the local user, not the server, and no SQL superuser\n        privileges are required.\n        \n\n        \n        The syntax of the command is similar to that of the\n        SQL \n        command.  Note that, because of this,\n        special parsing rules apply to the \\copy\n        command. In particular, the variable substitution rules and\n        backslash escapes do not apply.\n        \n\n        \\copy ... from stdin | to stdout\n        reads/writes based on the command input and output respectively.\n        All rows are read from the same source that issued the command,\n        continuing until \\. is read or the stream\n        reaches EOF. Output is sent to the same place as\n        command output. To read/write from\n        psql's standard input or output, use\n        pstdin or pstdout. This option is useful\n        for populating tables in-line within a SQL script file.\n        \n\n        \n        \n        This operation is not as efficient as the SQL\n        COPY command because all data must pass\n        through the client/server connection. For large\n        amounts of data the SQL command might be preferable.\n        \n        \n\n        \n      \n\n      \n        \\copyright\n        \n        \n        Shows the copyright and distribution terms of\n        PostgreSQL.\n        \n        \n      \n\n      \n        \\d[S+] [ pattern ]\n\n        \n        \n        For each relation (table, view, index, sequence, or foreign table)\n        or composite type matching the\n        pattern, show all\n        columns, their types, the tablespace (if not the default) and any\n        special attributes such as NOT NULL or defaults.\n        Associated indexes, constraints, rules, and triggers are\n        also shown.  For foreign tables, the associated foreign\n        server is shown as well.\n        (Matching the pattern is defined in\n        \n        below.)\n        \n\n        \n        For some types of relation, \\d shows additional information\n        for each column: column values for sequences, indexed expression for\n        indexes and foreign data wrapper options for foreign tables.\n        \n\n        \n        The command form \\d+ is identical, except that\n        more information is displayed: any comments associated with the\n        columns of the table are shown, as is the presence of OIDs in the\n        table, the view definition if the relation is a view.\n        \n\n        \n        By default, only user-created objects are shown;  supply a\n        pattern or the S modifier to include system\n        objects.\n        \n\n        \n        \n        If \\d is used without a\n        pattern argument, it is\n        equivalent to \\dtvsE which will show a list of\n        all visible tables, views, sequences and foreign tables.\n        This is purely a convenience measure.\n        \n        \n        \n      \n\n      \n        \\da[S] [ pattern ]\n\n        \n        \n        Lists aggregate functions, together with their\n        return type and the data types they operate on. If pattern\n        is specified, only aggregates whose names match the pattern are shown.\n        By default, only user-created objects are shown;  supply a\n        pattern or the S modifier to include system\n        objects.\n        \n        \n      \n\n\n      \n        \\db[+] [ pattern ]\n\n        \n        \n        Lists tablespaces. If pattern\n        is specified, only tablespaces whose names match the pattern are shown.\n        If + is appended to the command name, each object\n        is listed with its associated permissions.\n        \n        \n      \n\n\n      \n        \\dc[S+] [ pattern ]\n        \n        \n        Lists conversions between character-set encodings.\n        If pattern\n        is specified, only conversions whose names match the pattern are\n        listed.\n        By default, only user-created objects are shown;  supply a\n        pattern or the S modifier to include system\n        objects.\n        If + is appended to the command name, each object\n        is listed with its associated description.\n        \n        \n      \n\n\n      \n        \\dC[+] [ pattern ]\n        \n        \n        Lists type casts.\n        If pattern\n        is specified, only casts whose source or target types match the\n        pattern are listed.\n        If + is appended to the command name, each object\n        is listed with its associated description.\n        \n        \n      \n\n\n      \n        \\dd[S] [ pattern ]\n        \n        \n        Shows the descriptions of objects of type constraint,\n        operator class, operator family,\n        rule, and trigger. All\n        other comments may be viewed by the respective backslash commands for\n        those object types.\n        \n\n        \n        \\dd displays descriptions for objects matching the\n        pattern, or of visible\n        objects of the appropriate type if no argument is given.  But in either\n        case, only objects that have a description are listed.\n        By default, only user-created objects are shown;  supply a\n        pattern or the S modifier to include system\n        objects.\n        \n\n        \n        Descriptions for objects can be created with the \n        SQL command.\n       \n        \n      \n\n\n      \n        \\ddp [ pattern ]\n        \n        \n        Lists default access privilege settings.  An entry is shown for\n        each role (and schema, if applicable) for which the default\n        privilege settings have been changed from the built-in defaults.\n        If pattern is\n        specified, only entries whose role name or schema name matches\n        the pattern are listed.\n        \n\n        \n        The  command is used to set\n        default access privileges.  The meaning of the\n        privilege display is explained under\n        .\n        \n        \n      \n\n\n      \n        \\dD[S+] [ pattern ]\n        \n        \n        Lists domains. If pattern\n        is specified, only domains whose names match the pattern are shown.\n        By default, only user-created objects are shown;  supply a\n        pattern or the S modifier to include system\n        objects.\n        If + is appended to the command name, each object\n        is listed with its associated description.\n        \n        \n      \n\n\n      \n        \\dE[S+] [ pattern ]\n        \\di[S+] [ pattern ]\n        \\ds[S+] [ pattern ]\n        \\dt[S+] [ pattern ]\n        \\dv[S+] [ pattern ]\n\n        \n        \n        In this group of commands, the letters E,\n        i, s,\n        t, and v\n        stand for foreign table, index, sequence, table, and view,\n        respectively.\n        You can specify any or all of\n        these letters, in any order, to obtain a listing of objects\n        of these types.  For example, \\dit lists indexes\n        and tables.  If + is\n        appended to the command name, each object is listed with its\n        physical size on disk and its associated description, if any.\n        If pattern is\n        specified, only objects whose names match the pattern are listed.\n        By default, only user-created objects are shown; supply a\n        pattern or the S modifier to include system\n        objects.\n        \n        \n      \n\n\n      \n        \\des[+] [ pattern ]\n        \n        \n        Lists foreign servers (mnemonic: external\n        servers).\n        If pattern is\n        specified, only those servers whose name matches the pattern\n        are listed.  If the form \\des+ is used, a\n        full description of each server is shown, including the\n        server's ACL, type, version, options, and description.\n        \n        \n      \n\n\n      \n        \\det[+] [ pattern ]\n        \n        \n        Lists foreign tables (mnemonic: external tables).\n        If pattern is\n        specified, only entries whose table name or schema name matches\n        the pattern are listed.  If the form \\det+\n        is used, generic options and the foreign table description\n        are also displayed.\n        \n        \n      \n\n\n      \n        \\deu[+] [ pattern ]\n        \n        \n        Lists user mappings (mnemonic: external\n        users).\n        If pattern is\n        specified, only those mappings whose user names match the\n        pattern are listed.  If the form \\deu+ is\n        used, additional information about each mapping is shown.\n        \n\n        \n        \n        \\deu+ might also display the user name and\n        password of the remote user, so care should be taken not to\n        disclose them.\n        \n        \n        \n      \n\n\n      \n        \\dew[+] [ pattern ]\n        \n        \n        Lists foreign-data wrappers (mnemonic: external\n        wrappers).\n        If pattern is\n        specified, only those foreign-data wrappers whose name matches\n        the pattern are listed.  If the form \\dew+\n        is used, the ACL, options, and description of the foreign-data\n        wrapper are also shown.\n        \n        \n      \n\n\n      \n        \\df[antwS+] [ pattern ]\n\n        \n        \n        Lists functions, together with their arguments, return types, and\n        function types, which are classified as agg (aggregate),\n        normal, trigger, or window.\n        To display only functions\n        of specific type(s), add the corresponding letters a,\n        n, t, or w to the command.\n        If pattern is specified, only\n        functions whose names match the pattern are shown.  If the\n        form \\df+ is used, additional information\n        about each function, including volatility, language, source\n        code and description, is shown.  By default, only user-created\n        objects are shown; supply a pattern or the S\n        modifier to include system objects.\n        \n\n        \n        \n        To look up functions taking arguments or returning values of a specific\n        type, use your pager's search capability to scroll through the\n        \\df output.\n        \n        \n\n        \n      \n\n      \n        \\dF[+] [ pattern ]\n        \n        \n         Lists text search configurations.\n         If pattern is specified,\n         only configurations whose names match the pattern are shown.\n         If the form \\dF+ is used, a full description of\n         each configuration is shown, including the underlying text search\n         parser and the dictionary list for each parser token type.\n        \n        \n      \n\n      \n        \\dFd[+] [ pattern ]\n        \n        \n         Lists text search dictionaries.\n         If pattern is specified,\n         only dictionaries whose names match the pattern are shown.\n         If the form \\dFd+ is used, additional information\n         is shown about each selected dictionary, including the underlying\n         text search template and the option values.\n        \n        \n      \n\n      \n        \\dFp[+] [ pattern ]\n        \n        \n         Lists text search parsers.\n         If pattern is specified,\n         only parsers whose names match the pattern are shown.\n         If the form \\dFp+ is used, a full description of\n         each parser is shown, including the underlying functions and the\n         list of recognized token types.\n        \n        \n      \n\n      \n        \\dFt[+] [ pattern ]\n        \n        \n         Lists text search templates.\n         If pattern is specified,\n         only templates whose names match the pattern are shown.\n         If the form \\dFt+ is used, additional information\n         is shown about each template, including the underlying function names.\n        \n        \n      \n\n\n      \n        \\dg[+] [ pattern ]\n        \n        \n        Lists database roles. If pattern is specified, only\n        those roles whose names match the pattern are listed.\n        (This command is now effectively the same as \\du).\n        If the form \\dg+ is used, additional information\n        is shown about each role, including the comment for each role.\n        \n        \n      \n\n\n      \n        \\dl\n        \n        \n        This is an alias for \\lo_list, which shows a\n        list of large objects.\n        \n        \n      \n\n      \n        \\dL[S+] [ pattern ]\n        \n        \n        Lists procedural languages. If pattern\n        is specified, only languages whose names match the pattern are listed.\n        By default, only user-created languages\n        are shown; supply the S modifier to include system\n        objects. If + is appended to the command name, each\n        language is listed with its call handler, validator, access privileges,\n        and whether it is a system object.\n        \n        \n      \n\n\n      \n        \\dn[S+] [ pattern ]\n\n        \n        \n        Lists schemas (namespaces). If pattern\n        is specified, only schemas whose names match the pattern are listed.\n        By default, only user-created objects are shown; supply a\n        pattern or the S modifier to include system objects.\n        If + is appended to the command name, each object\n        is listed with its associated permissions and description, if any.\n        \n        \n      \n\n\n      \n        \\do[S] [ pattern ]\n        \n        \n        Lists operators with their operand and return types.\n        If pattern is\n        specified, only operators whose names match the pattern are listed.\n        By default, only user-created objects are shown;  supply a\n        pattern or the S modifier to include system\n        objects.\n        \n        \n      \n\n\n      \n        \\dO[S+] [ pattern ]\n        \n        \n        Lists collations.\n        If pattern is\n        specified, only collations whose names match the pattern are\n        listed.  By default, only user-created objects are shown;\n        supply a pattern or the S modifier to\n        include system objects.  If + is appended\n        to the command name, each collation is listed with its associated\n        description, if any.\n        Note that only collations usable with the current database's encoding\n        are shown, so the results may vary in different databases of the\n        same installation.\n        \n        \n      \n\n\n      \n        \\dp [ pattern ]\n        \n        \n        Lists tables, views and sequences with their\n        associated access privileges.\n        If pattern is\n        specified, only tables, views and sequences whose names match the\n        pattern are listed.\n        \n\n        \n        The  and\n        \n        commands are used to set access privileges.  The meaning of the\n        privilege display is explained under\n        .\n        \n        \n      \n\n      \n        \\drds [ role-pattern [ database-pattern ] ]\n        \n        \n        Lists defined configuration settings.  These settings can be\n        role-specific, database-specific, or both.\n        role-pattern and\n        database-pattern are used to select\n        specific roles and databases to list, respectively.  If omitted, or if\n        * is specified, all settings are listed, including those\n        not role-specific or database-specific, respectively.\n        \n\n        \n        The  and\n        \n        commands are used to define per-role and per-database configuration\n        settings.\n        \n        \n      \n\n      \n        \\dT[S+] [ pattern ]\n        \n        \n        Lists data types.\n        If pattern is\n        specified, only types whose names match the pattern are listed.\n        If + is appended to the command name, each type is\n        listed with its internal name and size, as well as its allowed values\n        if it is an enum type.\n        By default, only user-created objects are shown;  supply a\n        pattern or the S modifier to include system\n        objects.\n        \n        \n      \n\n      \n        \\du[+] [ pattern ]\n        \n        \n        Lists database roles. If pattern is specified, only\n        those roles whose names match the pattern are listed.\n        If the form \\du+ is used, additional information\n        is shown about each role, including the comment for each role.\n        \n        \n      \n\n      \n        \\dx[+] [ pattern ]\n        \n        \n        Lists installed extensions.\n        If pattern\n        is specified, only those extensions whose names match the pattern\n        are listed.\n        If the form \\dx+ is used, all the objects belonging\n        to each matching extension are listed.\n        \n        \n      \n\n      \n        \\e or \\edit   filename   line_number  \n\n        \n        \n        If filename is\n        specified, the file is edited; after the editor exits, its\n        content is copied back to the query buffer. If no filename is given, the current query\n        buffer is copied to a temporary file which is then edited in the same\n        fashion.\n        \n\n        \n        The new query buffer is then re-parsed according to the normal\n        rules of psql, where the whole buffer\n        is treated as a single line. (Thus you cannot make scripts this\n        way. Use \\i for that.) This means that\n        if the query ends with (or contains) a semicolon, it is\n        immediately executed. Otherwise it will merely wait in the\n        query buffer; type semicolon or \\g to send it, or\n        \\r to cancel.\n        \n\n        \n        If a line number is specified, psql will\n        position the cursor on the specified line of the file or query buffer.\n        Note that if a single all-digits argument is given,\n        psql assumes it is a line number,\n        not a file name.\n        \n\n        \n        \n        See under  for how to configure and\n        customize your editor.\n        \n        \n        \n      \n\n      \n        \\echo text [ ... ]\n        \n        \n        Prints the arguments to the standard output, separated by one\n        space and followed by a newline. This can be useful to\n        intersperse information in the output of scripts. For example:\n\n= \\echo `date`\nTue Oct 26 21:40:57 CEST 1999\n\n        If the first argument is an unquoted -n the trailing\n        newline is not written.\n        \n\n        \n        \n        If you use the \\o command to redirect your\n        query output you might wish to use \\qecho\n        instead of this command.\n        \n        \n        \n      \n\n      \n        \\ef  function_description   line_number   \n\n        \n        \n         This command fetches and edits the definition of the named function,\n         in the form of a CREATE OR REPLACE FUNCTION command.\n         Editing is done in the same way as for \\edit.\n         After the editor exits, the updated command waits in the query buffer;\n         type semicolon or \\g to send it, or \\r\n         to cancel.\n        \n\n        \n         The target function can be specified by name alone, or by name\n         and arguments, for example foo(integer, text).\n         The argument types must be given if there is more\n         than one function of the same name.\n        \n\n        \n         If no function is specified, a blank CREATE FUNCTION\n         template is presented for editing.\n        \n\n        \n        If a line number is specified, psql will\n        position the cursor on the specified line of the function body.\n        (Note that the function body typically does not begin on the first\n        line of the file.)\n        \n\n        \n        \n        See under  for how to configure and\n        customize your editor.\n        \n        \n        \n      \n\n\n      \n        \\encoding [ encoding ]\n\n        \n        \n        Sets the client character set encoding.  Without an argument, this command\n        shows the current encoding.\n        \n        \n      \n\n\n      \n        \\f [ string ]\n\n        \n        \n        Sets the field separator for unaligned query output. The default\n        is the vertical bar (|). See also\n        \\pset for a generic way of setting output\n        options.\n        \n        \n      \n\n\n      \n        \\g [ { filename | |command } ]\n\n        \n        \n        Sends the current query input buffer to the server and\n        optionally stores the query's output in filename or pipes the output\n        into a separate Unix shell executing command. A bare\n        \\g is virtually equivalent to a semicolon. A\n        \\g with argument is a one-shot\n        alternative to the \\o command.\n        \n        \n      \n\n      \n        \\h or \\help [ command ]\n        \n        \n        Gives syntax help on the specified SQL\n        command. If command\n        is not specified, then psql will list\n        all the commands for which syntax help is available. If\n        command is an\n        asterisk (*), then syntax help on all\n        SQL commands is shown.\n        \n\n        \n        \n        To simplify typing, commands that consists of several words do\n        not have to be quoted. Thus it is fine to type \\help\n        alter table.\n        \n        \n        \n      \n\n\n      \n        \\H\n        \n        \n        Turns on HTML query output format. If the\n        HTML format is already on, it is switched\n        back to the default aligned text format. This command is for\n        compatibility and convenience, but see \\pset\n        about setting other output options.\n        \n        \n      \n\n\n      \n        \\i filename\n        \n        \n        Reads input from the file filename and executes it as\n        though it had been typed on the keyboard.\n        \n        \n        \n        If you want to see the lines on the screen as they are read you\n        must set the variable ECHO to\n        all.\n        \n        \n        \n      \n\n\n      \n        \\ir filename\n        \n        \n        The \\ir command is similar to \\i, but resolves\n        relative pathnames differently.  When executing in interactive mode,\n        the two commands behave identically.  However, when invoked from a\n        script, \\ir interprets pathnames relative to the\n        directory in which the script is located, rather than the current\n        working directory.\n        \n        \n      \n\n\n      \n        \\l (or \\list)\n        \\l+ (or \\list+)\n        \n        \n        List the names, owners, character set encodings, and access privileges\n        of all the databases in the server.\n        If + is appended to the command name, database\n        sizes, default tablespaces, and descriptions are also displayed.\n        (Size information is only available for databases that the current\n        user can connect to.)\n        \n        \n      \n\n\n      \n        \\lo_export loid filename\n\n        \n        \n        Reads the large object with OID loid from the database and\n        writes it to filename. Note that this is\n        subtly different from the server function\n        lo_export, which acts with the permissions\n        of the user that the database server runs as and on the server's\n        file system.\n        \n        \n        \n        Use \\lo_list to find out the large object's\n        OID.\n        \n        \n        \n      \n\n\n      \n        \\lo_import filename [ comment ]\n\n        \n        \n        Stores the file into a PostgreSQL\n        large object. Optionally, it associates the given\n        comment with the object. Example:\n\nfoo= \\lo_import '/home/peter/pictures/photo.xcf' 'a picture of me'\nlo_import 152801\n\n        The response indicates that the large object received object\n        ID 152801, which can be used to access the newly-created large\n        object in the future. For the sake of readability, it is\n        recommended to always associate a human-readable comment with\n        every object. Both OIDs and comments can be viewed with the\n        \\lo_list command.\n        \n\n        \n        Note that this command is subtly different from the server-side\n        lo_import because it acts as the local user\n        on the local file system, rather than the server's user and file\n        system.\n        \n        \n      \n\n      \n        \\lo_list\n        \n        \n        Shows a list of all PostgreSQL\n        large objects currently stored in the database,\n        along with any comments provided for them.\n        \n        \n      \n\n      \n        \\lo_unlink loid\n\n        \n        \n        Deletes the large object with OID\n        loid from the\n        database.\n        \n\n        \n        \n        Use \\lo_list to find out the large object's\n        OID.\n        \n        \n        \n      \n\n\n      \n        \\o [ {filename | |command} ]\n\n        \n        \n        Saves future query results to the file filename or pipes future results\n        into a separate Unix shell to execute command. If no arguments are\n        specified, the query output will be reset to the standard output.\n        \n\n        Query results includes all tables, command\n        responses, and notices obtained from the database server, as\n        well as output of various backslash commands that query the\n        database (such as \\d), but not error\n        messages.\n        \n\n        \n        \n        To intersperse text output in between query results, use\n        \\qecho.\n        \n        \n        \n      \n\n\n      \n        \\p\n        \n        \n        Print the current query buffer to the standard output.\n        \n        \n      \n\n      \n        \\password [ username ]\n        \n        \n        Changes the password of the specified user (by default, the current\n        user).  This command prompts for the new password, encrypts it, and\n        sends it to the server as an ALTER ROLE command.  This\n        makes sure that the new password does not appear in cleartext in the\n        command history, the server log, or elsewhere.\n        \n        \n      \n\n      \n        \\prompt [ text ] name\n        \n        \n         Prompts the user to set variable name.  An optional prompt, text, can be specified.  (For multiword\n         prompts, use single quotes.)\n        \n\n        \n         By default, \\prompt uses the terminal for input and\n         output.  However, if the -f command line switch is\n         used, \\prompt uses standard input and standard output.\n        \n        \n      \n\n      \n        \\pset option [ value ]\n\n        \n        \n        This command sets options affecting the output of query result tables.\n        option\n        indicates which option is to be set. The semantics of\n        value vary depending\n        on the selected option.  For some options, omitting value causes the option to be toggled\n        or unset, as described under the particular option.  If no such\n        behavior is mentioned, then omitting\n        value just results in\n        the current setting being displayed.\n        \n\n        \n        Adjustable printing options are:\n        \n          \n          border\n          \n          \n          The value must be a\n          number. In general, the higher\n          the number the more borders and lines the tables will have,\n          but this depends on the particular format. In\n          HTML format, this will translate directly\n          into the border=... attribute; in the\n          other formats only values 0 (no border), 1 (internal dividing lines),\n          and 2 (table frame) make sense.\n          \n          \n          \n\n          \n          columns\n          \n          \n          Sets the target width for the wrapped format, and also\n          the width limit for determining whether output is wide enough to\n          require the pager.\n          Zero (the default) causes the target width to be controlled by the\n          environment variable COLUMNS, or the detected screen width\n          if COLUMNS is not set.\n          In addition, if columns is zero then the\n          wrapped format only affects screen output.\n          If columns is nonzero then file and pipe output is\n          wrapped to that width as well.\n          \n          \n          \n\n          \n          expanded (or x)\n          \n          \n          If value is specified\n          it must be either on or off\n          which will enable or disable expanded mode.  If value is omitted the command toggles\n          between regular and expanded mode.\n          When expanded mode is enabled, query results\n          are displayed in two columns, with the column name on the left and\n          the data on the right. This mode is useful if the data wouldn't fit\n          on the screen in the normal horizontal mode.\n          \n          \n          \n\n          \n          fieldsep\n          \n          \n          Specifies the field separator to be used in unaligned output\n          format. That way one can create, for example, tab- or\n          comma-separated output, which other programs might prefer. To\n          set a tab as field separator, type \\pset fieldsep\n          '\\t'. The default field separator is\n          '|' (a vertical bar).\n          \n          \n          \n\n          \n          footer\n          \n          \n          If value is specified\n          it must be either on or off\n          which will enable or disable display of the table footer\n          (the (n rows) count).\n          If value is omitted the\n          command toggles footer display on or off.\n          \n          \n          \n\n          \n          format\n          \n          \n          Sets the output format to one of unaligned,\n          aligned, wrapped,\n          html,\n          latex, or troff-ms.\n          Unique abbreviations are allowed.  (That would mean one letter\n          is enough.)\n          \n\n          unaligned format writes all columns of a row on one\n          line, separated by the currently active field separator. This\n          is useful for creating output that might be intended to be read\n          in by other programs (for example, tab-separated or comma-separated\n          format).\n          \n\n          aligned format is the standard, human-readable,\n          nicely formatted text output;  this is the default.\n          \n\n          wrapped format is like aligned but wraps\n          wide data values across lines to make the output fit in the target\n          column width.  The target width is determined as described under\n          the columns option.  Note that psql will\n          not attempt to wrap column header titles; therefore,\n          wrapped format behaves the same as aligned\n          if the total width needed for column headers exceeds the target.\n          \n\n          \n          The html, latex, and troff-ms\n          formats put out tables that are intended to\n          be included in documents using the respective mark-up\n          language. They are not complete documents! (This might not be\n          so dramatic in HTML, but in LaTeX you must\n          have a complete document wrapper.)\n          \n          \n          \n\n          \n          linestyle\n          \n          \n          Sets the border line drawing style to one\n          of ascii, old-ascii\n          or unicode.\n          Unique abbreviations are allowed.  (That would mean one\n          letter is enough.)\n          The default setting is ascii.\n          This option only affects the aligned and\n          wrapped output formats.\n          \n\n          ascii style uses plain ASCII\n          characters.  Newlines in data are shown using\n          a + symbol in the right-hand margin.\n          When the wrapped format wraps data from\n          one line to the next without a newline character, a dot\n          (.) is shown in the right-hand margin of the first line,\n          and again in the left-hand margin of the following line.\n          \n\n          old-ascii style uses plain ASCII\n          characters, using the formatting style used\n          in PostgreSQL 8.4 and earlier.\n          Newlines in data are shown using a :\n          symbol in place of the left-hand column separator.\n          When the data is wrapped from one line\n          to the next without a newline character, a ;\n          symbol is used in place of the left-hand column separator.\n          \n\n          unicode style uses Unicode box-drawing characters.\n          Newlines in data are shown using a carriage return symbol\n          in the right-hand margin.  When the data is wrapped from one line\n          to the next without a newline character, an ellipsis symbol\n          is shown in the right-hand margin of the first line, and\n          again in the left-hand margin of the following line.\n          \n\n          \n          When the border setting is greater than zero,\n          this option also determines the characters\n          with which the border lines are drawn.\n          Plain ASCII characters work everywhere, but\n          Unicode characters look nicer on displays that recognize them.\n          \n          \n          \n\n          \n          null\n          \n          \n          Sets the string to be printed in place of a null value.\n          The default is to print nothing, which can easily be mistaken for\n          an empty string. For example, one might prefer \\pset null\n          '(null)'.\n          \n          \n          \n\n          \n          numericlocale\n          \n          \n          If value is specified\n          it must be either on or off\n          which will enable or disable display of a locale-specific character\n          to separate groups of digits to the left of the decimal marker.\n          If value is omitted the\n          command toggles between regular and locale-specific numeric output.\n          \n          \n          \n\n          \n          pager\n          \n          \n          Controls use of a pager program for query and psql\n          help output. If the environment variable PAGER\n          is set, the output is piped to the specified program.\n          Otherwise a platform-dependent default (such as\n          more) is used.\n          \n\n          \n          When the pager option is off, the pager\n          program is not used. When the pager option is\n          on, the pager is used when appropriate, i.e., when the\n          output is to a terminal and will not fit on the screen.\n          The pager option can also be set to always,\n          which causes the pager to be used for all terminal output regardless\n          of whether it fits on the screen.  \\pset pager\n          without a value\n          toggles pager use on and off.\n          \n          \n          \n\n          \n          recordsep\n          \n          \n          Specifies the record (line) separator to use in unaligned\n          output format. The default is a newline character.\n          \n          \n          \n\n          \n          tableattr (or T)\n          \n          \n          Specifies attributes to be placed inside the\n          HTML table tag in\n          html output format. This\n          could for example be cellpadding or\n          bgcolor. Note that you probably don't want\n          to specify border here, as that is already\n          taken care of by \\pset border.\n          If no\n          value is given,\n          the table attributes are unset.\n          \n          \n          \n\n          \n          title\n          \n          \n          Sets the table title for any subsequently printed tables. This\n          can be used to give your output descriptive tags. If no\n          value is given,\n          the title is unset.\n          \n          \n          \n\n          \n          tuples_only (or t)\n          \n          \n          If value is specified\n          it must be either on or off\n          which will enable or disable tuples-only mode.\n          If value is omitted the\n          command toggles between regular and tuples-only output.\n          Regular output includes extra information such\n          as column headers, titles, and various footers. In tuples-only\n          mode, only actual table data is shown.\n          \n          \n          \n        \n        \n\n        \n        Illustrations of how these different formats look can be seen in\n        the  section.\n        \n\n        \n        \n        There are various shortcut commands for \\pset. See\n        \\a, \\C, \\H,\n        \\t, \\T, and \\x.\n        \n        \n\n        \n        \n        It is an error to call \\pset without any\n        arguments. In the future this case might show the current status\n        of all printing options.\n        \n        \n\n        \n      \n\n\n      \n        \\q\n        \n        \n        Quits the psql program.\n        \n        \n      \n\n\n      \n        \\qecho text [ ... ] \n        \n        \n        This command is identical to \\echo except\n        that the output will be written to the query output channel, as\n        set by \\o.\n        \n        \n      \n\n\n      \n        \\r\n        \n        \n        Resets (clears) the query buffer.\n        \n        \n      \n\n\n      \n        \\s [ filename ]\n        \n        \n        Print or save the command line history to filename. If filename is omitted, the history\n        is written to the standard output. This option is only available\n        if psql is configured to use the\n        GNU Readline library.\n        \n        \n      \n\n\n      \n        \\set [ name [ value [ ... ] ] ]\n\n        \n        \n        Sets the internal variable name to value or, if more than one value\n        is given, to the concatenation of all of them. If no second\n        argument is given, the variable is just set with no value. To\n        unset a variable, use the \\unset command.\n        \n\n        \n        Valid variable names can contain characters, digits, and\n        underscores. See the section  below for details.\n        Variable names are case-sensitive.\n        \n\n        \n        Although you are welcome to set any variable to anything you\n        want, psql treats several variables\n        as special. They are documented in the section about variables.\n        \n\n        \n        \n        This command is totally separate from the SQL\n        command .\n        \n        \n        \n      \n\n\n      \n        \\sf[+] function_description \n\n        \n        \n         This command fetches and shows the definition of the named function,\n         in the form of a CREATE OR REPLACE FUNCTION command.\n         The definition is printed to the current query output channel,\n         as set by \\o.\n        \n\n        \n         The target function can be specified by name alone, or by name\n         and arguments, for example foo(integer, text).\n         The argument types must be given if there is more\n         than one function of the same name.\n        \n\n        \n         If + is appended to the command name, then the\n         output lines are numbered, with the first line of the function body\n         being line 1.\n        \n        \n      \n\n\n      \n        \\t\n        \n        \n        Toggles the display of output column name headings and row count\n        footer. This command is equivalent to \\pset\n        tuples_only and is provided for convenience.\n        \n        \n      \n\n\n      \n        \\T table_options\n        \n        \n        Specifies attributes to be placed within the\n        table tag in HTML\n        output format. This command is equivalent to \\pset\n        tableattr table_options.\n        \n        \n      \n\n\n      \n       \\timing [ on | off ]\n        \n        \n         Without parameter, toggles a display of how long each SQL statement\n         takes, in milliseconds.  With parameter, sets same.\n        \n       \n      \n\n\n      \n        \\w filename\n        \\w |command\n        \n        \n        Outputs the current query buffer to the file filename or pipes it to the Unix\n        command command.\n        \n        \n      \n\n\n      \n        \\x\n        \n        \n        Toggles expanded table formatting mode. As such it is equivalent to\n        \\pset expanded.\n       \n       \n      \n\n\n      \n        \\z [ pattern ]\n        \n        \n        Lists tables, views and sequences with their\n        associated access privileges.\n        If a pattern is\n        specified, only tables, views and sequences whose names match the\n        pattern are listed.\n        \n\n        \n        This is an alias for \\dp (display\n        privileges).\n        \n        \n      \n\n\n      \n        \\! [ command ]\n        \n        \n        Escapes to a separate Unix shell or executes the Unix command\n        command. The\n        arguments are not further interpreted; the shell will see them\n        as-is.\n        \n        \n      \n\n\n      \n        \\?\n        \n        \n        Shows help information about the backslash commands.\n        \n        \n      \n\n    \n  \n\n  \n   Patterns\n\n   \n    patterns\n    in psql and pg_dump\n   \n\n  \n   The various \\d commands accept a pattern parameter to specify the\n   object name(s) to be displayed.  In the simplest case, a pattern\n   is just the exact name of the object.  The characters within a\n   pattern are normally folded to lower case, just as in SQL names;\n   for example, \\dt FOO will display the table named\n   foo.  As in SQL names, placing double quotes around\n   a pattern stops folding to lower case.  Should you need to include\n   an actual double quote character in a pattern, write it as a pair\n   of double quotes within a double-quote sequence; again this is in\n   accord with the rules for SQL quoted identifiers.  For example,\n   \\dt \"FOO\"\"BAR\" will display the table named\n   FOO\"BAR (not foo\"bar).  Unlike the normal\n   rules for SQL names, you can put double quotes around just part\n   of a pattern, for instance \\dt FOO\"FOO\"BAR will display\n   the table named fooFOObar.\n  \n\n  \n   Whenever the pattern parameter\n   is omitted completely, the \\d commands display all objects\n   that are visible in the current schema search path * as the pattern.\n   (An object is said to be visible if its\n   containing schema is in the search path and no object of the same\n   kind and name appears earlier in the search path. This is equivalent to the\n   statement that the object can be referenced by name without explicit\n   schema qualification.)\n   To see all objects in the database regardless of visibility,\n   use *.* as the pattern.\n  \n\n  \n   Within a pattern, * matches any sequence of characters\n   (including no characters) and ? matches any single character.\n   (This notation is comparable to Unix shell file name patterns.)\n   For example, \\dt int* displays tables whose names\n   begin with int.  But within double quotes, *\n   and ? lose these special meanings and are just matched\n   literally.\n  \n\n  \n   A pattern that contains a dot (.) is interpreted as a schema\n   name pattern followed by an object name pattern.  For example,\n   \\dt foo*.*bar* displays all tables whose table name\n   includes bar that are in schemas whose schema name\n   starts with foo.  When no dot appears, then the pattern\n   matches only objects that are visible in the current schema search path.\n   Again, a dot within double quotes loses its special meaning and is matched\n   literally.\n  \n\n  \n   Advanced users can use regular-expression notations such as character\n   classes, for example [0-9] to match any digit.  All regular\n   expression special characters work as specified in\n   , except for . which\n   is taken as a separator as mentioned above, * which is\n   translated to the regular-expression notation .*,\n   ? which is translated to ., and\n   $ which is matched literally.  You can emulate\n   these pattern characters at need by writing\n   ? for .,\n   (R+|) for\n   R*, or\n   (R|) for\n   R?.\n   $ is not needed as a regular-expression character since\n   the pattern must match the whole name, unlike the usual\n   interpretation of regular expressions (in other words, $\n   is automatically appended to your pattern).  Write * at the\n   beginning and/or end if you don't wish the pattern to be anchored.\n   Note that within double quotes, all regular expression special characters\n   lose their special meanings and are matched literally.  Also, the regular\n   expression special characters are matched literally in operator name\n   patterns (i.e., the argument of \\do).\n  \n  \n \n\n \n  Advanced Features\n\n   \n    Variables\n\n    \n    psql provides variable substitution\n    features similar to common Unix command shells.\n    Variables are simply name/value pairs, where the value\n    can be any string of any length. To set variables, use the\n    psql meta-command\n    \\set:\n\ntestdb= \\set foo bar\n\n    sets the variable foo to the value\n    bar. To retrieve the content of the variable, precede\n    the name with a colon and use it as the argument of any slash\n    command:\n\ntestdb= \\echo :foo\nbar\n\n\n    \n    \n    The arguments of \\set are subject to the same\n    substitution rules as with other commands. Thus you can construct\n    interesting references such as \\set :foo\n    'something' and get soft links or\n    variable variables of Perl\n    or PHP fame,\n    respectively. Unfortunately (or fortunately?), there is no way to do\n    anything useful with these constructs. On the other hand,\n    \\set bar :foo is a perfectly valid way to copy a\n    variable.\n    \n    \n\n    \n    If you call \\set without a second argument, the\n    variable is set, with an empty string as value. To unset (or delete) a\n    variable, use the command \\unset.\n    \n\n    \n    psql's internal variable names can\n    consist of letters, numbers, and underscores in any order and any\n    number of them. A number of these variables are treated specially\n    by psql. They indicate certain option\n    settings that can be changed at run time by altering the value of\n    the variable or that represent some state of the application. Although\n    you can use these variables for any other purpose, this is not\n    recommended, as the program behavior might grow really strange\n    really quickly. By convention, all specially treated variables\n    consist of all upper-case letters (and possibly numbers and\n    underscores). To ensure maximum compatibility in the future, avoid\n    using such variable names for your own purposes. A list of all specially\n    treated variables follows.\n   \n\n    \n      \n      \n       autocommit\n       psql\n      \n        AUTOCOMMIT\n        \n        \n        When on (the default), each SQL command is automatically\n        committed upon successful completion.  To postpone commit in this\n        mode, you must enter a BEGIN or START\n        TRANSACTION SQL command.  When off or unset, SQL\n        commands are not committed until you explicitly issue\n        COMMIT or END.  The autocommit-off\n        mode works by issuing an implicit BEGIN for you, just\n        before any command that is not already in a transaction block and\n        is not itself a BEGIN or other transaction-control\n        command, nor a command that cannot be executed inside a transaction\n        block (such as VACUUM).\n        \n\n        \n        \n         In autocommit-off mode, you must explicitly abandon any failed\n         transaction by entering ABORT or ROLLBACK.\n         Also keep in mind that if you exit the session\n         without committing, your work will be lost.\n        \n        \n\n        \n        \n         The autocommit-on mode is PostgreSQL's traditional\n         behavior, but autocommit-off is closer to the SQL spec.  If you\n         prefer autocommit-off, you might wish to set it in the system-wide\n         psqlrc file or your\n         ~/.psqlrc file.\n        \n        \n        \n      \n\n      \n        DBNAME\n        \n        \n        The name of the database you are currently connected to. This is\n        set every time you connect to a database (including program\n        start-up), but can be unset.\n        \n        \n      \n\n      \n        ECHO\n        \n        \n        If set to all, all lines\n        entered from the keyboard or from a script are written to the standard output\n        before they are parsed or executed. To select this behavior on program\n        start-up, use the switch -a. If set to\n        queries,\n        psql merely prints all queries as\n        they are sent to the server. The switch for this is\n        -e.\n        \n        \n      \n\n      \n        ECHO_HIDDEN\n        \n        \n        When this variable is set and a backslash command queries the\n        database, the query is first shown. This way you can study the\n        PostgreSQL internals and provide\n        similar functionality in your own programs. (To select this behavior\n        on program start-up, use the switch -E.)  If you set\n        the variable to the value noexec, the queries are\n        just shown but are not actually sent to the server and executed.\n        \n        \n      \n\n      \n        ENCODING\n        \n        \n        The current client character set encoding.\n        \n        \n      \n\n      \n        FETCH_COUNT\n        \n        \n        If this variable is set to an integer value  0,\n        the results of SELECT queries are fetched\n        and displayed in groups of that many rows, rather than the\n        default behavior of collecting the entire result set before\n        display.  Therefore only a\n        limited amount of memory is used, regardless of the size of\n        the result set.  Settings of 100 to 1000 are commonly used\n        when enabling this feature.\n        Keep in mind that when using this feature, a query might\n        fail after having already displayed some rows.\n        \n        \n        \n        Although you can use any output format with this feature,\n        the default aligned format tends to look bad\n        because each group of FETCH_COUNT rows\n        will be formatted separately, leading to varying column\n        widths across the row groups.  The other output formats work better.\n        \n        \n        \n      \n\n      \n        HISTCONTROL\n        \n        \n         If this variable is set to ignorespace,\n         lines which begin with a space are not entered into the history\n         list. If set to a value of ignoredups, lines\n         matching the previous history line are not entered. A value of\n         ignoreboth combines the two options. If\n         unset, or if set to any other value than those above, all lines\n         read in interactive mode are saved on the history list.\n        \n        \n        \n        This feature was shamelessly plagiarized from\n        Bash.\n        \n        \n        \n      \n\n      \n        HISTFILE\n        \n        \n        The file name that will be used to store the history list. The default\n        value is ~/.psql_history.  For example, putting:\n\n\\set HISTFILE ~/.psql_history- :DBNAME\n\n        in ~/.psqlrc will cause\n        psql to maintain a separate history for\n        each database.\n        \n        \n        \n        This feature was shamelessly plagiarized from\n        Bash.\n        \n        \n        \n      \n\n      \n        HISTSIZE\n        \n        \n        The number of commands to store in the command history. The\n        default value is 500.\n        \n        \n        \n        This feature was shamelessly plagiarized from\n        Bash.\n        \n        \n        \n      \n\n      \n        HOST\n        \n        \n        The database server host you are currently connected to. This is\n        set every time you connect to a database (including program\n        start-up), but can be unset.\n        \n        \n      \n\n      \n        IGNOREEOF\n        \n        \n         If unset, sending an EOF character (usually\n         ControlD)\n         to an interactive session of psql\n         will terminate the application. If set to a numeric value,\n         that many EOF characters are ignored before the\n         application terminates.  If the variable is set but has no\n         numeric value, the default is 10.\n        \n        \n        \n        This feature was shamelessly plagiarized from\n        Bash.\n        \n        \n        \n      \n\n      \n        LASTOID\n        \n        \n        The value of the last affected OID, as returned from an\n        INSERT or \\lo_import\n        command. This variable is only guaranteed to be valid until\n        after the result of the next SQL command has\n        been displayed.\n        \n        \n      \n\n      \n      \n       rollback\n       psql\n      \n        ON_ERROR_ROLLBACK\n        \n        \n        When on, if a statement in a transaction block\n        generates an error, the error is ignored and the transaction\n        continues. When interactive, such errors are only\n        ignored in interactive sessions, and not when reading script\n        files. When off (the default), a statement in a\n        transaction block that generates an error aborts the entire\n        transaction. The on_error_rollback-on mode works by issuing an\n        implicit SAVEPOINT for you, just before each command\n        that is in a transaction block, and rolls back to the savepoint\n        on error.\n        \n        \n      \n\n      \n        ON_ERROR_STOP\n        \n        \n        By default, command processing continues after an error.  When this\n        variable is set, it will instead stop immediately.  In interactive mode,\n        psql will return to the command prompt;\n        otherwise, psql will exit, returning\n        error code 3 to distinguish this case from fatal error\n        conditions, which are reported using error code 1.  In either case,\n        any currently running scripts (the toplevel script, if any, and any\n        other scripts which it may have in invoked) will be terminated\n        immediately.  If the toplevel command string contained multiple SQL\n        commands, processing will stop with the current command.\n        \n        \n      \n\n      \n        PORT\n        \n        \n        The database server port to which you are currently connected.\n        This is set every time you connect to a database (including\n        program start-up), but can be unset.\n        \n        \n      \n\n      \n        PROMPT1\n        PROMPT2\n        PROMPT3\n        \n        \n        These specify what the prompts psql\n        issues should look like. See  below.\n        \n        \n      \n\n      \n        QUIET\n        \n        \n        This variable is equivalent to the command line option\n        -q. It is probably not too useful in\n        interactive mode.\n        \n        \n      \n\n      \n        SINGLELINE\n        \n        \n        This variable is equivalent to the command line option\n        -S.\n        \n        \n      \n\n      \n        SINGLESTEP\n        \n        \n        This variable is equivalent to the command line option\n        -s.\n        \n        \n      \n\n      \n        USER\n        \n        \n        The database user you are currently connected as. This is set\n        every time you connect to a database (including program\n        start-up), but can be unset.\n        \n        \n      \n\n      \n        VERBOSITY\n        \n        \n        This variable can be set to the values default,\n        verbose, or terse to control the verbosity\n        of error reports.\n        \n        \n      \n\n    \n\n   \n\n   \n    SQL Interpolation\n\n    \n    An additional useful feature of psql\n    variables is that you can substitute (interpolate)\n    them into regular SQL statements.\n    psql provides special facilities for\n    ensuring that values used as SQL literals and identifiers are\n    properly escaped.  The syntax for interpolating a value without\n    any special escaping is again to prepend the variable name with a colon\n    (:):\n\ntestdb= \\set foo 'my_table'\ntestdb= SELECT * FROM :foo;\n\n    would then query the table my_table. Note that this\n    may be unsafe: the value of the variable is copied literally, so it can\n    even contain unbalanced quotes or backslash commands. You must make sure\n    that it makes sense where you put it.\n    \n\n    \n    When a value is to be used as an SQL literal or identifier, it is\n    safest to arrange for it to be escaped.  To escape the value of\n    a variable as an SQL literal, write a colon followed by the variable\n    name in single quotes.  To escape the value an SQL identifier, write\n    a colon followed by the variable name in double quotes.  The previous\n    example would be more safely written this way:\n\ntestdb= \\set foo 'my_table'\ntestdb= SELECT * FROM :\"foo\";\n\n    Variable interpolation will not be performed into quoted\n    SQL entities.\n    \n\n    \n    One  possible use of this mechanism is to\n    copy the contents of a file into a table column. First load the file into a\n    variable and then proceed as above:\n\ntestdb= \\set content `cat my_file.txt`\ntestdb= INSERT INTO my_table VALUES (:'content');\n\n    (Note that this still won't work if my_file.txt contains NUL bytes.\n    psql does not support embedded NUL bytes in variable values.)\n    \n\n    \n    Since colons can legally appear in SQL commands, an apparent attempt\n    at interpolation (such as :name,\n    :'name', or :\"name\") is not\n    changed unless the named variable is currently set. In any case, you\n    can escape a colon with a backslash to protect it from substitution.\n    (The colon syntax for variables is standard SQL for\n    embedded query languages, such as ECPG.\n    The colon syntax for array slices and type casts are\n    PostgreSQL extensions, hence the\n    conflict.  The colon syntax for escaping a variable's value as an\n    SQL literal or identifier is a psql\n    extension.)\n    \n\n   \n\n   \n    Prompting\n\n    \n    The prompts psql issues can be customized\n    to your preference. The three variables PROMPT1,\n    PROMPT2, and PROMPT3 contain strings\n    and special escape sequences that describe the appearance of the\n    prompt. Prompt 1 is the normal prompt that is issued when\n    psql requests a new command. Prompt 2 is\n    issued when more input is expected during command input because the\n    command was not terminated with a semicolon or a quote was not closed.\n    Prompt 3 is issued when you run an SQL\n    COPY command and you are expected to type in the\n    row values on the terminal.\n    \n\n    \n    The value of the selected prompt variable is printed literally,\n    except where a percent sign (%) is encountered.\n    Depending on the next character, certain other text is substituted\n    instead. Defined substitutions are:\n\n    \n      \n        %M\n        \n         \n          The full host name (with domain name) of the database server,\n          or [local] if the connection is over a Unix\n          domain socket, or\n          [local:/dir/name],\n          if the Unix domain socket is not at the compiled in default\n          location.\n        \n       \n      \n\n      \n        %m\n        \n         \n          The host name of the database server, truncated at the\n          first dot, or [local] if the connection is\n          over a Unix domain socket.\n         \n        \n      \n\n      \n        %\n        The port number at which the database server is listening.\n      \n\n      \n        %n\n        \n         \n          The database session user name.  (The expansion of this\n          value might change during a database session as the result\n          of the command SET SESSION\n          AUTHORIZATION.)\n         \n        \n      \n\n      \n        %/\n        The name of the current database.\n      \n\n      \n        %~\n        Like %/, but the output is ~\n         (tilde) if the database is your default database.\n      \n\n      \n        %#\n        \n         \n          If the session user is a database superuser, then a\n          #, otherwise a .\n          (The expansion of this value might change during a database\n          session as the result of the command SET SESSION\n          AUTHORIZATION.)\n         \n        \n      \n\n      \n        %R\n        \n        \n        In prompt 1 normally =, but ^ if\n        in single-line mode, and ! if the session is\n        disconnected from the database (which can happen if\n        \\connect fails). In prompt 2 the sequence is\n        replaced by -, *, a single quote,\n        a double quote, or a dollar sign, depending on whether\n        psql expects more input because the\n        command wasn't terminated yet, because you are inside a\n        /* ... */ comment, or because you are inside\n        a quoted or dollar-escaped string. In prompt 3 the sequence doesn't\n        produce anything.\n        \n        \n      \n\n      \n        %x\n        \n        \n        Transaction status: an empty string when not in a transaction\n        block, or * when in a transaction block, or\n        ! when in a failed transaction block, or ?\n        when the transaction state is indeterminate (for example, because\n        there is no connection).\n        \n        \n      \n\n      \n        %digits\n        \n        \n        The character with the indicated octal code is substituted.\n        \n        \n      \n\n      \n        %:name:\n        \n        \n        The value of the psql variable\n        name. See the\n        section  for details.\n        \n        \n      \n\n      \n        %`command`\n        \n        \n        The output of command, similar to ordinary\n        back-tick substitution.\n        \n        \n      \n\n      \n        %[ ... %]\n        \n         \n         Prompts can contain terminal control characters which, for\n         example, change the color, background, or style of the prompt\n         text, or change the title of the terminal window. In order for\n         the line editing features of Readline to work properly, these\n         non-printing control characters must be designated as invisible\n         by surrounding them with %[ and\n         %]. Multiple pairs of these can occur within\n         the prompt.  For example:\n\ntestdb= \\set PROMPT1 '%[%033[1;33;40m%]%n@%/%R%[%033[0m%]%# '\n\n         results in a boldfaced (1;) yellow-on-black\n         (33;40) prompt on VT100-compatible, color-capable\n         terminals.\n        \n        \n      \n\n    \n\n    To insert a percent sign into your prompt, write\n    %%. The default prompts are\n    '%/%R%# ' for prompts 1 and 2, and\n    ' ' for prompt 3.\n    \n\n    \n    \n    This feature was shamelessly plagiarized from\n    tcsh.\n    \n    \n\n   \n\n   \n    Command-Line Editing\n\n    \n    psql supports the Readline\n    library for convenient line editing and retrieval. The command\n    history is automatically saved when psql\n    exits and is reloaded when\n    psql starts up. Tab-completion is also\n    supported, although the completion logic makes no claim to be an\n    SQL parser.  If for some reason you do not like the tab completion, you\n    can turn it off by putting this in a file named\n    .inputrc in your home directory:\n\n$if psql\nset disable-completion on\n$endif\n\n    (This is not a psql but a\n    Readline feature. Read its documentation\n    for further details.)\n    \n   \n  \n \n\n\n \n  Environment\n\n  \n\n   \n    COLUMNS\n\n    \n     \n      If \\pset columns is zero, controls the\n      width for the wrapped format and width for determining\n      if wide output requires the pager.\n     \n    \n   \n\n   \n    PAGER\n\n    \n     \n      If the query results do not fit on the screen, they are piped\n      through this command.  Typical values are\n      more or less.  The default\n      is platform-dependent.  The use of the pager can be disabled by\n      using the \\pset command.\n     \n    \n   \n\n   \n    PGDATABASE\n    PGHOST\n    PGPORT\n    PGUSER\n\n    \n     \n      Default connection parameters (see ).\n     \n    \n   \n\n   \n    PSQL_EDITOR\n    EDITOR\n    VISUAL\n\n    \n     \n      Editor used by the \\e and\n      \\ef commands.  The variables are examined in\n      the order listed; the first that is set is used.\n     \n\n     \n      The built-in default editors are vi on Unix\n      systems and notepad.exe on Windows systems.\n     \n    \n   \n\n   \n    PSQL_EDITOR_LINENUMBER_ARG\n\n    \n     \n      When \\e or \\ef is used\n      with a line number argument, this variable specifies the\n      command-line argument used to pass the starting line number to\n      the user's editor.  For editors such as Emacs or\n      vi, this is a plus sign.  Include a trailing\n      space in the value of the variable if there needs to be space\n      between the option name and the line number.  Examples:\n\nPSQL_EDITOR_LINENUMBER_ARG='+'\nPSQL_EDITOR_LINENUMBER_ARG='--line '\n\n     \n\n     \n      The default is + on Unix systems\n      (corresponding to the default editor vi,\n      and useful for many other common editors); but there is no\n      default on Windows systems.\n     \n    \n   \n\n   \n    SHELL\n\n    \n     \n      Command executed by the \\! command.\n     \n    \n   \n\n   \n    TMPDIR\n\n    \n     \n      Directory for storing temporary files.  The default is\n      /tmp.\n     \n    \n   \n  \n\n  \n   This utility, like most other PostgreSQL utilities,\n   also uses the environment variables supported by libpq\n   (see ).\n  \n\n \n\n\n \n  Files\n\n  \n   \n    \n     Unless it is passed an -X\n     or -c option,\n     psql attempts to\n     read and execute commands from the system-wide\n     psqlrc file and the user's\n     ~/.psqlrc file before starting up.\n     (On Windows, the user's startup file is named\n     %APPDATA%\\postgresql\\psqlrc.conf.)\n     See PREFIX/share/psqlrc.sample\n     for information on setting up the system-wide file.  It could be used\n     to set up the client or the server to taste (using the \\set\n      and SET commands).\n    \n   \n\n   \n    \n     Both the system-wide psqlrc file and the user's\n     ~/.psqlrc file can be made version-specific\n     by appending a dash and the PostgreSQL\n     release number, for example ~/.psqlrc-.\n     A matching version-specific file will be read in preference to a\n     non-version-specific file.\n    \n   \n\n   \n    \n     The command-line history is stored in the file\n     ~/.psql_history, or\n     %APPDATA%\\postgresql\\psql_history on Windows.\n    \n   \n  \n \n\n\n \n  Notes\n\n    \n      \n      \n       In an earlier life psql allowed the\n       first argument of a single-letter backslash command to start\n       directly after the command, without intervening whitespace.\n       As of PostgreSQL 8.4 this is no\n       longer allowed.\n      \n      \n\n      \n      psql is only guaranteed to work smoothly\n       with servers of the same version. That does not mean other combinations\n       will fail outright, but subtle and not-so-subtle problems might come\n       up.  Backslash commands are particularly likely to fail if the\n       server is of a newer version than psql itself.  However,\n       backslash commands of the \\d family should work with\n       servers of versions back to 7.4, though not necessarily with servers\n       newer than  psql itself.\n      \n      \n\n    \n \n\n\n \n  Notes for Windows Users\n\n \n  psql is built as a console\n  application.  Since the Windows console windows use a different\n  encoding than the rest of the system, you must take special care\n  when using 8-bit characters within psql.\n  If psql detects a problematic\n  console code page, it will warn you at startup. To change the\n  console code page, two things are necessary:\n\n   \n    \n     \n      Set the code page by entering cmd.exe /c chcp\n      1252. (1252 is a code page that is appropriate for\n      German; replace it with your value.) If you are using Cygwin,\n      you can put this command in /etc/profile.\n     \n    \n\n    \n     \n      Set the console font to Lucida Console, because the\n      raster font does not work with the ANSI code page.\n     \n    \n   \n\n \n\n\n \n  Examples\n\n  \n  The first example shows how to spread a command over several lines of\n  input. Notice the changing prompt:\n\ntestdb= CREATE TABLE my_table (\ntestdb(  first integer not null default 0,\ntestdb(  second text)\ntestdb- ;\nCREATE TABLE\n\n  Now look at the table definition again:\n\ntestdb= \\d my_table\n             Table \"my_table\"\n Attribute |  Type   |      Modifier\n-----------+---------+--------------------\n first     | integer | not null default 0\n second    | text    |\n\n\n  Now we change the prompt to something more interesting:\n\ntestdb= \\set PROMPT1 '%n@%m %~%R%# '\npeter@localhost testdb=\n\n  Let's assume you have filled the table with data and want to take a\n  look at it:\n\npeter@localhost testdb= SELECT * FROM my_table;\n first | second\n-------+--------\n     1 | one\n     2 | two\n     3 | three\n     4 | four\n(4 rows)\n\n\n  You can display tables in different ways by using the\n  \\pset command:\n\npeter@localhost testdb= \\pset border 2\nBorder style is 2.\npeter@localhost testdb= SELECT * FROM my_table;\n+-------+--------+\n| first | second |\n+-------+--------+\n|     1 | one    |\n|     2 | two    |\n|     3 | three  |\n|     4 | four   |\n+-------+--------+\n(4 rows)\n\npeter@localhost testdb= \\pset border 0\nBorder style is 0.\npeter@localhost testdb= SELECT * FROM my_table;\nfirst second\n----- ------\n    1 one\n    2 two\n    3 three\n    4 four\n(4 rows)\n\npeter@localhost testdb= \\pset border 1\nBorder style is 1.\npeter@localhost testdb= \\pset format unaligned\nOutput format is unaligned.\npeter@localhost testdb= \\pset fieldsep \",\"\nField separator is \",\".\npeter@localhost testdb= \\pset tuples_only\nShowing only tuples.\npeter@localhost testdb= SELECT second, first FROM my_table;\none,1\ntwo,2\nthree,3\nfour,4\n\n  Alternatively, use the short commands:\n\npeter@localhost testdb= \\a \\t \\x\nOutput format is aligned.\nTuples only is off.\nExpanded display is on.\npeter@localhost testdb= SELECT * FROM my_table;\n-[ RECORD 1 ]-\nfirst  | 1\nsecond | one\n-[ RECORD 2 ]-\nfirst  | 2\nsecond | two\n-[ RECORD 3 ]-\nfirst  | 3\nsecond | three\n-[ RECORD 4 ]-\nfirst  | 4\nsecond | four\n\n\n \n\n\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:613(para) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:613(para) 
 msgid "In normal operation, <application>psql</application> provides a prompt with the name of the database to which <application>psql</application> is currently connected, followed by the string <literal>=&gt;</literal>. For example: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lkRf/ref/psql-ref.xml:0(None) 
+#: /tmp/cicero-LTnd/ref/psql-ref.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

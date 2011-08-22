@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 17:53+0200\n"
+"POT-Creation-Date: 2011-08-22 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,584 +9,584 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lkRf/pgbench.xml:6(title) /tmp/cicero-lkRf/pgbench.xml:9(primary) 
+#: /tmp/cicero-LTnd/pgbench.xml:6(title) /tmp/cicero-LTnd/pgbench.xml:9(primary) 
 msgid "pgbench"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:12(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:12(para) 
 msgid "<application>pgbench</application> is a simple program for running benchmark tests on <productname>PostgreSQL</productname>. It runs the same sequence of SQL commands over and over, possibly in multiple concurrent database sessions, and then calculates the average transaction rate (transactions per second). By default, <application>pgbench</application> tests a scenario that is loosely based on TPC-B, involving five <command>SELECT</command>, <command>UPDATE</command>, and <command>INSERT</command> commands per transaction. However, it is easy to test other cases by writing your own transaction script files."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:24(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:24(para) 
 msgid "Typical output from pgbench looks like: <screen>\ntransaction type: TPC-B (sort of)\nscaling factor: 10\nquery mode: simple\nnumber of clients: 10\nnumber of threads: 1\nnumber of transactions per client: 1000\nnumber of transactions actually processed: 10000/10000\ntps = 85.184871 (including connections establishing)\ntps = 85.296346 (excluding connections establishing)\n</screen> The first six lines report some of the most important parameter settings. The next line reports the number of transactions completed and intended (the latter being just the product of number of clients and number of transactions per client); these will be equal unless the run failed before completion. (In <literal>-T</literal> mode, only the actual number of transactions is printed.) The last two lines report the number of transactions per second, figured with and without counting the time to start database sessions."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:50(title) 
+#: /tmp/cicero-LTnd/pgbench.xml:50(title) 
 msgid "Overview"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:60(programlisting) 
+#: /tmp/cicero-LTnd/pgbench.xml:60(programlisting) 
 #, no-wrap
 msgid "\npgbench -i <optional> <replaceable>other-options</replaceable> </optional> <replaceable>dbname</replaceable>\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:52(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:52(para) 
 msgid "The default TPC-B-like transaction test requires specific tables to be set up beforehand. <application>pgbench</application> should be invoked with the <literal>-i</literal> (initialize) option to create and populate these tables. (When you are testing a custom script, you don't need this step, but will instead need to do whatever setup your test needs.) Initialization looks like: <placeholder-1/> where <replaceable>dbname</replaceable> is the name of the already-created database to test in. (You may also need <literal>-h</literal>, <literal>-p</literal>, and/or <literal>-U</literal> options to specify how to connect to the database server.)"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:71(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:71(para) 
 msgid "<literal>pgbench -i</literal> creates four tables <structname>pgbench_accounts</structname>, <structname>pgbench_branches</structname>, <structname>pgbench_history</structname>, and <structname>pgbench_tellers</structname>, destroying any existing tables of these names. Be very careful to use another database if you have tables having these names!"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:81(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:81(para) 
 msgid "At the default <quote>scale factor</quote> of 1, the tables initially contain this many rows: <screen>\ntable                   # of rows\n---------------------------------\npgbench_branches        1\npgbench_tellers         10\npgbench_accounts        100000\npgbench_history         0\n</screen> You can (and, for most purposes, probably should) increase the number of rows by using the <literal>-s</literal> (scale factor) option. The <literal>-F</literal> (fillfactor) option might also be used at this point."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:101(programlisting) 
+#: /tmp/cicero-LTnd/pgbench.xml:101(programlisting) 
 #, no-wrap
 msgid "\npgbench <optional> <replaceable>options</replaceable> </optional> <replaceable>dbname</replaceable>\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:97(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:97(para) 
 msgid "Once you have done the necessary setup, you can run your benchmark with a command that doesn't include <literal>-i</literal>, that is <placeholder-1/> In nearly all cases, you'll need some options to make a useful test. The most important options are <literal>-c</literal> (number of clients), <literal>-t</literal> (number of transactions), <literal>-T</literal> (time limit), and <literal>-f</literal> (specify a custom script file). See below for a full list."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:112(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:112(para) 
 msgid "<xref linkend=\"pgbench-init-options\"/> shows options that are used during database initialization, while <xref linkend=\"pgbench-run-options\"/> shows options that are used while running benchmarks, and <xref linkend=\"pgbench-common-options\"/> shows options that are useful in both cases."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:124(title) 
+#: /tmp/cicero-LTnd/pgbench.xml:124(title) 
 msgid "<application>pgbench</application> Initialization Options"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:133(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:133(option) 
 msgid "-i"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:135(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:135(para) 
 msgid "Required to invoke initialization mode."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:142(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:142(option) 
 msgid "-F"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:142(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:142(replaceable) 
 msgid "fillfactor"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:144(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:144(para) 
 msgid "Create the <structname>pgbench_accounts</structname>, <structname>pgbench_tellers</structname> and <structname>pgbench_branches</structname> tables with the given fillfactor. Default is 100."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:154(option) /tmp/cicero-lkRf/pgbench.xml:342(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:154(option) /tmp/cicero-LTnd/pgbench.xml:342(option) 
 msgid "-s"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:154(replaceable) /tmp/cicero-lkRf/pgbench.xml:342(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:154(replaceable) /tmp/cicero-LTnd/pgbench.xml:342(replaceable) 
 msgid "scale_factor"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:156(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:156(para) 
 msgid "Multiply the number of rows generated by the scale factor. For example, <literal>-s 100</literal> will create 10,000,000 rows in the <structname>pgbench_accounts</structname> table. Default is 1."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:165(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:165(replaceable) 
 msgid "index_tablespace"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:165(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:165(option) 
 msgid "--index-tablespace=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:167(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:167(para) 
 msgid "Create indexes in the specified tablespace, rather than the default tablespace."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:175(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:175(replaceable) 
 msgid "tablespace"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:175(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:175(option) 
 msgid "--tablespace=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:177(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:177(para) 
 msgid "Create tables in the specified tablespace, rather than the default tablespace."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:185(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:185(option) 
 msgid "--unlogged-tables"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:187(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:187(para) 
 msgid "Create all tables as unlogged tables, rather than permanent tables."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:126(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:126(para) 
 msgid "<application>pgbench</application> accepts the following command-line initialization arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:199(title) 
+#: /tmp/cicero-LTnd/pgbench.xml:199(title) 
 msgid "<application>pgbench</application> Benchmarking Options"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:208(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:208(option) 
 msgid "-c"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:208(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:208(replaceable) 
 msgid "clients"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:210(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:210(para) 
 msgid "Number of clients simulated, that is, number of concurrent database sessions. Default is 1."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:218(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:218(option) 
 msgid "-C"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:220(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:220(para) 
 msgid "Establish a new connection for each transaction, rather than doing it just once per client session. This is useful to measure the connection overhead."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:229(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:229(option) 
 msgid "-d"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:231(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:231(para) 
 msgid "Print debugging output."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:238(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:238(option) 
 msgid "-D"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:238(replaceable) /tmp/cicero-lkRf/pgbench.xml:509(replaceable) /tmp/cicero-lkRf/pgbench.xml:532(replaceable) /tmp/cicero-lkRf/pgbench.xml:579(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:238(replaceable) /tmp/cicero-LTnd/pgbench.xml:509(replaceable) /tmp/cicero-LTnd/pgbench.xml:532(replaceable) /tmp/cicero-LTnd/pgbench.xml:579(replaceable) 
 msgid "varname"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:238(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:238(literal) 
 msgid "="
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:238(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:238(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:240(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:240(para) 
 msgid "Define a variable for use by a custom script (see below). Multiple <literal>-D</literal> options are allowed."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:248(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:248(option) 
 msgid "-f"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:248(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:248(replaceable) 
 msgid "filename"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:250(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:250(para) 
 msgid "Read transaction script from <replaceable>filename</replaceable>. See below for details. <literal>-N</literal>, <literal>-S</literal>, and <literal>-f</literal> are mutually exclusive."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:260(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:260(option) 
 msgid "-j"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:260(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:260(replaceable) 
 msgid "threads"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:262(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:262(para) 
 msgid "Number of worker threads within <application>pgbench</application>. Using more than one thread can be helpful on multi-CPU machines. The number of clients must be a multiple of the number of threads, since each thread is given the same number of client sessions to manage. Default is 1."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:273(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:273(option) 
 msgid "-l"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:275(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:275(para) 
 msgid "Write the time taken by each transaction to a log file. See below for details."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:283(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:283(option) 
 msgid "-M"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:283(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:283(replaceable) 
 msgid "querymode"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:289(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:289(para) 
 msgid "<literal>simple</literal>: use simple query protocol."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:292(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:292(para) 
 msgid "<literal>extended</literal>: use extended query protocol."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:295(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:295(para) 
 msgid "<literal>prepared</literal>: use extended query protocol with prepared statements."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:285(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:285(para) 
 msgid "Protocol to use for submitting queries to the server: <placeholder-1/> The default is simple query protocol. (See <xref linkend=\"protocol\"/> for more information.)"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:305(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:305(option) 
 msgid "-n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:307(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:307(para) 
 msgid "Perform no vacuuming before running the test. This option is <emphasis>necessary</emphasis> if you are running a custom test scenario that does not include the standard tables <structname>pgbench_accounts</structname>, <structname>pgbench_branches</structname>, <structname>pgbench_history</structname>, and <structname>pgbench_tellers</structname>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:319(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:319(option) 
 msgid "-N"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:321(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:321(para) 
 msgid "Do not update <structname>pgbench_tellers</structname> and <structname>pgbench_branches</structname>. This will avoid update contention on these tables, but it makes the test case even less like TPC-B."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:331(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:331(option) 
 msgid "-r"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:333(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:333(para) 
 msgid "Report the average per-statement latency (execution time from the perspective of the client) of each command after the benchmark finishes. See below for details."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:344(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:344(para) 
 msgid "Report the specified scale factor in <application>pgbench</application>'s output. With the built-in tests, this is not necessary; the correct scale factor will be detected by counting the number of rows in the <structname>pgbench_branches</structname> table. However, when testing custom benchmarks (<literal>-f</literal> option), the scale factor will be reported as 1 unless this option is used."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:356(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:356(option) 
 msgid "-S"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:358(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:358(para) 
 msgid "Perform select-only transactions instead of TPC-B-like test."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:365(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:365(option) 
 msgid "-t"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:365(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:365(replaceable) 
 msgid "transactions"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:367(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:367(para) 
 msgid "Number of transactions each client runs. Default is 10."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:374(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:374(option) 
 msgid "-T"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:374(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:374(replaceable) 
 msgid "seconds"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:376(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:376(para) 
 msgid "Run the test for this many seconds, rather than a fixed number of transactions per client. <literal>-t</literal> and <literal>-T</literal> are mutually exclusive."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:385(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:385(option) 
 msgid "-v"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:387(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:387(para) 
 msgid "Vacuum all four standard tables before running the test. With neither <literal>-n</literal> nor <literal>-v</literal>, pgbench will vacuum the <structname>pgbench_tellers</structname> and <structname>pgbench_branches</structname> tables, and will truncate <structname>pgbench_history</structname>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:201(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:201(para) 
 msgid "<application>pgbench</application> accepts the following command-line benchmarking arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:402(title) 
+#: /tmp/cicero-LTnd/pgbench.xml:402(title) 
 msgid "<application>pgbench</application> Common Options"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:411(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:411(option) 
 msgid "-h"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:411(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:411(replaceable) 
 msgid "hostname"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:413(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:413(para) 
 msgid "The database server's host name"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:420(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:420(option) 
 msgid "-p"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:420(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:420(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:422(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:422(para) 
 msgid "The database server's port number"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:429(option) 
+#: /tmp/cicero-LTnd/pgbench.xml:429(option) 
 msgid "-U"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:429(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:429(replaceable) 
 msgid "login"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:431(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:431(para) 
 msgid "The user name to connect as"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:404(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:404(para) 
 msgid "<application>pgbench</application> accepts the following command-line common arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:443(title) 
+#: /tmp/cicero-LTnd/pgbench.xml:443(title) 
 msgid "What is the <quote>Transaction</quote> Actually Performed in pgbench?"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:445(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:445(para) 
 msgid "The default transaction script issues seven commands per transaction:"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:450(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:450(literal) 
 msgid "BEGIN;"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:451(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:451(literal) 
 msgid "UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:452(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:452(literal) 
 msgid "SELECT abalance FROM pgbench_accounts WHERE aid = :aid;"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:453(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:453(literal) 
 msgid "UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:454(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:454(literal) 
 msgid "UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:455(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:455(literal) 
 msgid "INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:456(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:456(literal) 
 msgid "END;"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:459(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:459(para) 
 msgid "If you specify <literal>-N</literal>, steps 4 and 5 aren't included in the transaction. If you specify <literal>-S</literal>, only the <command>SELECT</command> is issued."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:467(title) 
+#: /tmp/cicero-LTnd/pgbench.xml:467(title) 
 msgid "Custom Scripts"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:469(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:469(para) 
 msgid "<application>pgbench</application> has support for running custom benchmark scenarios by replacing the default transaction script (described above) with a transaction script read from a file (<literal>-f</literal> option). In this case a <quote>transaction</quote> counts as one execution of a script file. You can even specify multiple scripts (multiple <literal>-f</literal> options), in which case a random one of the scripts is chosen each time a client session starts a new transaction."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:480(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:480(para) 
 msgid "The format of a script file is one SQL command per line; multiline SQL commands are not supported. Empty lines and lines beginning with <literal>--</literal> are ignored. Script file lines can also be <quote>meta commands</quote>, which are interpreted by <application>pgbench</application> itself, as described below."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:488(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:488(para) 
 msgid "There is a simple variable-substitution facility for script files. Variables can be set by the command-line <literal>-D</literal> option, explained above, or by the meta commands explained below. In addition to any variables preset by <literal>-D</literal> command-line options, the variable <literal>scale</literal> is preset to the current scale factor. Once set, a variable's value can be inserted into a SQL command by writing <literal>:</literal><replaceable>variablename</replaceable>. When running more than one client session, each session has its own set of variables."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:500(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:500(para) 
 msgid "Script file meta commands begin with a backslash (<literal>\\</literal>). Arguments to a meta command are separated by white space. These meta commands are supported:"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:509(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:509(replaceable) 
 msgid "operand1"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:509(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:509(replaceable) 
 msgid "operator"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:509(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:509(replaceable) 
 msgid "operand2"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:509(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:509(literal) 
 msgid "\\set <placeholder-1/><placeholder-2/> [ <placeholder-3/><placeholder-4/> ]"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:513(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:513(para) 
 msgid "Sets variable <replaceable>varname</replaceable> to a calculated integer value. Each <replaceable>operand</replaceable> is either an integer constant or a <literal>:</literal><replaceable>variablename</replaceable> reference to a variable having an integer value. The <replaceable>operator</replaceable> can be <literal>+</literal>, <literal>-</literal>, <literal>*</literal>, or <literal>/</literal>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:523(programlisting) 
+#: /tmp/cicero-LTnd/pgbench.xml:523(programlisting) 
 #, no-wrap
 msgid "\n\\set ntellers 10 * :scale\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:521(para) /tmp/cicero-lkRf/pgbench.xml:544(para) /tmp/cicero-lkRf/pgbench.xml:568(para) /tmp/cicero-lkRf/pgbench.xml:597(para) /tmp/cicero-lkRf/pgbench.xml:616(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:521(para) /tmp/cicero-LTnd/pgbench.xml:544(para) /tmp/cicero-LTnd/pgbench.xml:568(para) /tmp/cicero-LTnd/pgbench.xml:597(para) /tmp/cicero-LTnd/pgbench.xml:616(para) 
 msgid "Example: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:532(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:532(replaceable) 
 msgid "min"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:532(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:532(replaceable) 
 msgid "max"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:532(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:532(literal) 
 msgid "\\setrandom <placeholder-1/><placeholder-2/><placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:536(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:536(para) 
 msgid "Sets variable <replaceable>varname</replaceable> to a random integer value between the limits <replaceable>min</replaceable> and <replaceable>max</replaceable> inclusive. Each limit can be either an integer constant or a <literal>:</literal><replaceable>variablename</replaceable> reference to a variable having an integer value."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:546(programlisting) 
+#: /tmp/cicero-LTnd/pgbench.xml:546(programlisting) 
 #, no-wrap
 msgid "\n\\setrandom aid 1 :naccounts\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:555(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:555(replaceable) 
 msgid "number"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:555(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:555(literal) 
 msgid "\\sleep <placeholder-1/> [ us | ms | s ]"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:559(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:559(para) 
 msgid "Causes script execution to sleep for the specified duration in microseconds (<literal>us</literal>), milliseconds (<literal>ms</literal>) or seconds (<literal>s</literal>). If the unit is omitted then seconds are the default. <replaceable>number</replaceable> can be either an integer constant or a <literal>:</literal><replaceable>variablename</replaceable> reference to a variable having an integer value."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:570(programlisting) 
+#: /tmp/cicero-LTnd/pgbench.xml:570(programlisting) 
 #, no-wrap
 msgid "\n\\sleep 10 ms\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:579(replaceable) /tmp/cicero-lkRf/pgbench.xml:608(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:579(replaceable) /tmp/cicero-LTnd/pgbench.xml:608(replaceable) 
 msgid "command"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:579(replaceable) /tmp/cicero-lkRf/pgbench.xml:608(replaceable) 
+#: /tmp/cicero-LTnd/pgbench.xml:579(replaceable) /tmp/cicero-LTnd/pgbench.xml:608(replaceable) 
 msgid "argument"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:579(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:579(literal) 
 msgid "\\setshell <placeholder-1/><placeholder-2/> [ <placeholder-3/> ... ]"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:583(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:583(para) 
 msgid "Sets variable <replaceable>varname</replaceable> to the result of the shell command <replaceable>command</replaceable>. The command must return an integer value through its standard output."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:589(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:589(para) 
 msgid "<replaceable>argument</replaceable> can be either a text constant or a <literal>:</literal><replaceable>variablename</replaceable> reference to a variable of any types. If you want to use <replaceable>argument</replaceable> starting with colons, you need to add an additional colon at the beginning of <replaceable>argument</replaceable>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:599(programlisting) 
+#: /tmp/cicero-LTnd/pgbench.xml:599(programlisting) 
 #, no-wrap
 msgid "\n\\setshell variable_to_be_assigned command literal_argument :variable ::literal_starting_with_colon\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:608(literal) 
+#: /tmp/cicero-LTnd/pgbench.xml:608(literal) 
 msgid "\\shell <placeholder-1/> [ <placeholder-2/> ... ]"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:612(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:612(para) 
 msgid "Same as <literal>\\setshell</literal>, but the result is ignored."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:618(programlisting) 
+#: /tmp/cicero-LTnd/pgbench.xml:618(programlisting) 
 #, no-wrap
 msgid "\n\\shell command literal_argument :variable ::literal_starting_with_colon\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:630(programlisting) 
+#: /tmp/cicero-LTnd/pgbench.xml:630(programlisting) 
 #, no-wrap
 msgid "\n\\set nbranches :scale\n\\set ntellers 10 * :scale\n\\set naccounts 100000 * :scale\n\\setrandom aid 1 :naccounts\n\\setrandom bid 1 :nbranches\n\\setrandom tid 1 :ntellers\n\\setrandom delta -5000 5000\nBEGIN;\nUPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;\nSELECT abalance FROM pgbench_accounts WHERE aid = :aid;\nUPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;\nUPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;\nINSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);\nEND;\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:626(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:626(para) 
 msgid "As an example, the full definition of the built-in TPC-B-like transaction is: <placeholder-1/> This script allows each iteration of the transaction to reference different, randomly-chosen rows. (This example also shows why it's important for each client session to have its own variables — otherwise they'd not be independently touching different rows.)"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:656(title) 
+#: /tmp/cicero-LTnd/pgbench.xml:656(title) 
 msgid "Per-Transaction Logging"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:658(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:658(para) 
 msgid "With the <literal>-l</literal> option, <application>pgbench</application> writes the time taken by each transaction to a log file. The log file will be named <filename>pgbench_log.<replaceable>nnn</replaceable></filename>, where <replaceable>nnn</replaceable> is the PID of the pgbench process. If the <literal>-j</literal> option is 2 or higher, creating multiple worker threads, each will have its own log file. The first worker will use the same name for its log file as in the standard single worker case. The additional log files for the other workers will be named <filename>pgbench_log.<replaceable>nnn</replaceable>.<replaceable>mmm</replaceable></filename>, where <replaceable>mmm</replaceable> is a sequential number for each worker starting with 1."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:672(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:672(para) 
 msgid "The format of the log is: <synopsis>\n<replaceable>client_id</replaceable> <replaceable>transaction_no</replaceable> <replaceable>time</replaceable> <replaceable>file_no</replaceable> <replaceable>time_epoch</replaceable> <replaceable>time_us</replaceable>\n</synopsis> where <replaceable>time</replaceable> is the total elapsed transaction time in microseconds, <replaceable>file_no</replaceable> identifies which script file was used (useful when multiple scripts were specified with <literal>-f</literal>), and <replaceable>time_epoch</replaceable>/<replaceable>time_us</replaceable> are a UNIX epoch format timestamp and an offset in microseconds (suitable for creating a ISO 8601 timestamp with fractional seconds) showing when the transaction completed."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:689(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:689(para) 
 msgid "Here are example outputs: <screen>\n 0 199 2241 0 1175850568 995598\n 0 200 2465 0 1175850568 998079\n 0 201 2513 0 1175850569 608\n 0 202 2038 0 1175850569 2663\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:701(title) 
+#: /tmp/cicero-LTnd/pgbench.xml:701(title) 
 msgid "Per-Statement Latencies"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:703(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:703(para) 
 msgid "With the <literal>-r</literal> option, <application>pgbench</application> collects the elapsed transaction time of each statement executed by every client. It then reports an average of those values, referred to as the latency for each statement, after the benchmark has finished."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:710(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:710(para) 
 msgid "For the default script, the output will look similar to this: <screen>\nstarting vacuum...end.\ntransaction type: TPC-B (sort of)\nscaling factor: 1\nquery mode: simple\nnumber of clients: 10\nnumber of threads: 1\nnumber of transactions per client: 1000\nnumber of transactions actually processed: 10000/10000\ntps = 618.764555 (including connections establishing)\ntps = 622.977698 (excluding connections establishing)\nstatement latencies in milliseconds:\n        0.004386        \\set nbranches 1 * :scale\n        0.001343        \\set ntellers 10 * :scale\n        0.001212        \\set naccounts 100000 * :scale\n        0.001310        \\setrandom aid 1 :naccounts\n        0.001073        \\setrandom bid 1 :nbranches\n        0.001005        \\setrandom tid 1 :ntellers\n        0.001078        \\setrandom delta -5000 5000\n        0.326152        BEGIN;\n        0.603376        UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;\n        0.454643        SELECT abalance FROM pgbench_accounts WHERE aid = :aid;\n        5.528491        UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;\n        7.335435        UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;\n        0.371851        INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);\n        1.212976        END;\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:741(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:741(para) 
 msgid "If multiple script files are specified, the averages are reported separately for each script file."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:746(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:746(para) 
 msgid "Note that collecting the additional timing information needed for per-statement latency computation adds some overhead. This will slow average execution speed and lower the computed TPS. The amount of slowdown varies significantly depending on platform and hardware. Comparing average TPS values with and without latency reporting enabled is a good way to measure if the timing overhead is significant."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:757(title) 
+#: /tmp/cicero-LTnd/pgbench.xml:757(title) 
 msgid "Good Practices"
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:759(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:759(para) 
 msgid "It is very easy to use <application>pgbench</application> to produce completely meaningless numbers. Here are some guidelines to help you get useful results."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:765(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:765(para) 
 msgid "In the first place, <emphasis>never</emphasis> believe any test that runs for only a few seconds. Use the <literal>-t</literal> or <literal>-T</literal> option to make the run last at least a few minutes, so as to average out noise. In some cases you could need hours to get numbers that are reproducible. It's a good idea to try the test run a few times, to find out if your numbers are reproducible or not."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:774(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:774(para) 
 msgid "For the default TPC-B-like test scenario, the initialization scale factor (<literal>-s</literal>) should be at least as large as the largest number of clients you intend to test (<literal>-c</literal>); else you'll mostly be measuring update contention. There are only <literal>-s</literal> rows in the <structname>pgbench_branches</structname> table, and every transaction wants to update one of them, so <literal>-c</literal> values in excess of <literal>-s</literal> will undoubtedly result in lots of transactions blocked waiting for other transactions."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:785(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:785(para) 
 msgid "The default test scenario is also quite sensitive to how long it's been since the tables were initialized: accumulation of dead rows and dead space in the tables changes the results. To understand the results you must keep track of the total number of updates and when vacuuming happens. If autovacuum is enabled it can result in unpredictable changes in measured performance."
 msgstr ""
 
-#: /tmp/cicero-lkRf/pgbench.xml:794(para) 
+#: /tmp/cicero-LTnd/pgbench.xml:794(para) 
 msgid "A limitation of <application>pgbench</application> is that it can itself become the bottleneck when trying to test a large number of client sessions. This can be alleviated by running <application>pgbench</application> on a different machine from the database server, although low network latency will be essential. It might even be useful to run several <application>pgbench</application> instances concurrently, on several client machines, against the same database server."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lkRf/pgbench.xml:0(None) 
+#: /tmp/cicero-LTnd/pgbench.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

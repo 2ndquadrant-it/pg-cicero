@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 17:53+0200\n"
+"POT-Creation-Date: 2011-08-22 18:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,81 +9,81 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:10(refentrytitle) /tmp/cicero-lkRf/ref/alter_tstemplate.xml:16(refname) /tmp/cicero-lkRf/ref/alter_tstemplate.xml:21(primary) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:10(refentrytitle) /tmp/cicero-LTnd/ref/alter_tstemplate.xml:16(refname) /tmp/cicero-LTnd/ref/alter_tstemplate.xml:21(primary) 
 msgid "ALTER TEXT SEARCH TEMPLATE"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:11(manvolnum) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:12(refmiscinfo) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:17(refpurpose) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:17(refpurpose) 
 msgid "change the definition of a text search template"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:26(replaceable) /tmp/cicero-lkRf/ref/alter_tstemplate.xml:27(replaceable) /tmp/cicero-lkRf/ref/alter_tstemplate.xml:50(replaceable) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:26(replaceable) /tmp/cicero-LTnd/ref/alter_tstemplate.xml:27(replaceable) /tmp/cicero-LTnd/ref/alter_tstemplate.xml:50(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:26(replaceable) /tmp/cicero-lkRf/ref/alter_tstemplate.xml:59(replaceable) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:26(replaceable) /tmp/cicero-LTnd/ref/alter_tstemplate.xml:59(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:27(replaceable) /tmp/cicero-lkRf/ref/alter_tstemplate.xml:68(replaceable) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:27(replaceable) /tmp/cicero-LTnd/ref/alter_tstemplate.xml:68(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:25(synopsis) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:25(synopsis) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH TEMPLATE <placeholder-1/> RENAME TO <placeholder-2/>\nALTER TEXT SEARCH TEMPLATE <placeholder-3/> SET SCHEMA <placeholder-4/>\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:32(title) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:34(para) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:34(para) 
 msgid "<command>ALTER TEXT SEARCH TEMPLATE</command> changes the definition of a text search template. Currently, the only supported functionality is to change the template's name."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:40(para) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:40(para) 
 msgid "You must be a superuser to use <command>ALTER TEXT SEARCH TEMPLATE</command>."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:46(title) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:46(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:52(para) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:52(para) 
 msgid "The name (optionally schema-qualified) of an existing text search template."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:61(para) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:61(para) 
 msgid "The new name of the text search template."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:70(para) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:70(para) 
 msgid "The new schema for the text search template."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:79(title) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:79(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:81(para) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:81(para) 
 msgid "There is no <command>ALTER TEXT SEARCH TEMPLATE</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:88(title) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:88(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lkRf/ref/alter_tstemplate.xml:0(None) 
+#: /tmp/cicero-LTnd/ref/alter_tstemplate.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

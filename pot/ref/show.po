@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 17:54+0200\n"
+"POT-Creation-Date: 2011-08-22 18:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,148 +9,148 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lkRf/ref/show.xml:10(refentrytitle) /tmp/cicero-lkRf/ref/show.xml:16(refname) /tmp/cicero-lkRf/ref/show.xml:21(primary) 
+#: /tmp/cicero-LTnd/ref/show.xml:10(refentrytitle) /tmp/cicero-LTnd/ref/show.xml:16(refname) /tmp/cicero-LTnd/ref/show.xml:21(primary) 
 msgid "SHOW"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:11(manvolnum) 
+#: /tmp/cicero-LTnd/ref/show.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:12(refmiscinfo) 
+#: /tmp/cicero-LTnd/ref/show.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:17(refpurpose) 
+#: /tmp/cicero-LTnd/ref/show.xml:17(refpurpose) 
 msgid "show the value of a run-time parameter"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:26(replaceable) /tmp/cicero-lkRf/ref/show.xml:52(replaceable) 
+#: /tmp/cicero-LTnd/ref/show.xml:26(replaceable) /tmp/cicero-LTnd/ref/show.xml:52(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:25(synopsis) 
+#: /tmp/cicero-LTnd/ref/show.xml:25(synopsis) 
 #, no-wrap
 msgid "\nSHOW <placeholder-1/>\nSHOW ALL\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:32(title) 
+#: /tmp/cicero-LTnd/ref/show.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:34(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:34(para) 
 msgid "<command>SHOW</command> will display the current setting of run-time parameters. These variables can be set using the <command>SET</command> statement, by editing the <filename>postgresql.conf</filename> configuration file, through the <envar>PGOPTIONS</envar> environmental variable (when using <application>libpq</application> or a <application>libpq</application>-based application), or through command-line flags when starting the <command>postgres</command> server. See <xref linkend=\"runtime-config\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:48(title) 
+#: /tmp/cicero-LTnd/ref/show.xml:48(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:63(literal) 
+#: /tmp/cicero-LTnd/ref/show.xml:63(literal) 
 msgid "SERVER_VERSION"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:65(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:65(para) 
 msgid "Shows the server's version number."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:72(literal) 
+#: /tmp/cicero-LTnd/ref/show.xml:72(literal) 
 msgid "SERVER_ENCODING"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:74(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:74(para) 
 msgid "Shows the server-side character set encoding. At present, this parameter can be shown but not set, because the encoding is determined at database creation time."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:83(literal) 
+#: /tmp/cicero-LTnd/ref/show.xml:83(literal) 
 msgid "LC_COLLATE"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:85(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:85(para) 
 msgid "Shows the database's locale setting for collation (text ordering). At present, this parameter can be shown but not set, because the setting is determined at database creation time."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:95(literal) 
+#: /tmp/cicero-LTnd/ref/show.xml:95(literal) 
 msgid "LC_CTYPE"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:97(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:97(para) 
 msgid "Shows the database's locale setting for character classification. At present, this parameter can be shown but not set, because the setting is determined at database creation time."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:107(literal) 
+#: /tmp/cicero-LTnd/ref/show.xml:107(literal) 
 msgid "IS_SUPERUSER"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:109(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:109(para) 
 msgid "True if the current role has superuser privileges."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:54(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:54(para) 
 msgid "The name of a run-time parameter. Available parameters are documented in <xref linkend=\"runtime-config\"/> and on the <xref linkend=\"sql-set\"/> reference page. In addition, there are a few parameters that can be shown but not set: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:119(literal) 
+#: /tmp/cicero-LTnd/ref/show.xml:119(literal) 
 msgid "ALL"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:121(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:121(para) 
 msgid "Show the values of all configuration parameters, with descriptions."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:130(title) 
+#: /tmp/cicero-LTnd/ref/show.xml:130(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:132(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:132(para) 
 msgid "The function <function>current_setting</function> produces equivalent output; see <xref linkend=\"functions-admin\"/>. Also, the <link linkend=\"view-pg-settings\"><structname>pg_settings</structname></link> system view produces the same information."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:143(title) 
+#: /tmp/cicero-LTnd/ref/show.xml:143(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:148(programlisting) 
+#: /tmp/cicero-LTnd/ref/show.xml:148(programlisting) 
 #, no-wrap
 msgid "\nSHOW DateStyle;\n DateStyle\n-----------\n ISO, MDY\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:145(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:145(para) 
 msgid "Show the current setting of the parameter <varname>DateStyle</varname>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:159(programlisting) 
+#: /tmp/cicero-LTnd/ref/show.xml:159(programlisting) 
 #, no-wrap
 msgid "\nSHOW geqo;\n geqo\n------\n on\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:157(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:157(para) 
 msgid "Show the current setting of the parameter <varname>geqo</varname>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:170(programlisting) 
+#: /tmp/cicero-LTnd/ref/show.xml:170(programlisting) 
 #, no-wrap
 msgid "\nSHOW ALL;\n            name         | setting |                description                                                          \n-------------------------+---------+-------------------------------------------------\n allow_system_table_mods | off     | Allows modifications of the structure of ...\n    .\n    .\n    .\n xmloption               | content | Sets whether XML data in implicit parsing ...\n zero_damaged_pages      | off     | Continues processing past damaged page headers.\n(196 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:168(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:168(para) 
 msgid "Show all settings: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:185(title) 
+#: /tmp/cicero-LTnd/ref/show.xml:185(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:187(para) 
+#: /tmp/cicero-LTnd/ref/show.xml:187(para) 
 msgid "The <command>SHOW</command> command is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-lkRf/ref/show.xml:194(title) 
+#: /tmp/cicero-LTnd/ref/show.xml:194(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lkRf/ref/show.xml:0(None) 
+#: /tmp/cicero-LTnd/ref/show.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
