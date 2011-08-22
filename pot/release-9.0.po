@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 17:52+0200\n"
+"POT-Creation-Date: 2011-08-22 17:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,216 +9,216 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-VdKm/release-9.0.xml:6(title) 
+#: /tmp/cicero-imzd/release-9.0.xml:6(title) 
 msgid "Release 9.0.4"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:9(title) 
+#: /tmp/cicero-imzd/release-9.0.xml:9(title) 
 msgid "Release Date"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:10(simpara) 
+#: /tmp/cicero-imzd/release-9.0.xml:10(simpara) 
 msgid "2011-04-18"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:13(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:13(para) 
 msgid "This release contains a variety of fixes from 9.0.3. For information about new features in the 9.0 major release, see <xref linkend=\"release-9-0\"/>."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:20(title) 
+#: /tmp/cicero-imzd/release-9.0.xml:20(title) 
 msgid "Migration to Version 9.0.4"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:22(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:22(para) 
 msgid "A dump/restore is not required for those running 9.0.X."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:26(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:26(para) 
 msgid "However, if your installation was upgraded from a previous major release by running <application>pg_upgrade</application>, you should take action to prevent possible data loss due to a now-fixed bug in <application>pg_upgrade</application>. The recommended solution is to run <command>VACUUM FREEZE</command> on all TOAST tables. More information is available at <ulink url=\"http://wiki.postgresql.org/wiki/20110408pg_upgrade_fix\"> http://wiki.postgresql.org/wiki/20110408pg_upgrade_fix</ulink>."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:40(title) 
+#: /tmp/cicero-imzd/release-9.0.xml:40(title) 
 msgid "Changes"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:45(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:45(para) 
 msgid "Fix <application>pg_upgrade</application>'s handling of TOAST tables (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:50(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:50(para) 
 msgid "The <structname>pg_class</structname>.<structfield>relfrozenxid</structfield> value for TOAST tables was not correctly copied into the new installation during <application>pg_upgrade</application>. This could later result in <literal>pg_clog</literal> files being discarded while they were still needed to validate tuples in the TOAST tables, leading to <quote>could not access status of transaction</quote> failures."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:59(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:59(para) 
 msgid "This error poses a significant risk of data loss for installations that have been upgraded with <application>pg_upgrade</application>. This patch corrects the problem for future uses of <application>pg_upgrade</application>, but does not in itself cure the issue in installations that have been processed with a buggy version of <application>pg_upgrade</application>."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:69(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:69(para) 
 msgid "Suppress incorrect <quote>PD_ALL_VISIBLE flag was incorrectly set</quote> warning (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:74(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:74(para) 
 msgid "<command>VACUUM</command> would sometimes issue this warning in cases that are actually valid."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:81(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:81(para) 
 msgid "Use better SQLSTATE error codes for hot standby conflict cases (Tatsuo Ishii and Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:86(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:86(para) 
 msgid "All retryable conflict errors now have an error code that indicates that a retry is possible. Also, session closure due to the database being dropped on the master is now reported as <literal>ERRCODE_DATABASE_DROPPED</literal>, rather than <literal>ERRCODE_ADMIN_SHUTDOWN</literal>, so that connection poolers can handle the situation correctly."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:97(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:97(para) 
 msgid "Prevent intermittent hang in interactions of startup process with bgwriter process (Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:102(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:102(para) 
 msgid "This affected recovery in non-hot-standby cases."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:108(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:108(para) 
 msgid "Disallow including a composite type in itself (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:112(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:112(para) 
 msgid "This prevents scenarios wherein the server could recurse infinitely while processing the composite type. While there are some possible uses for such a structure, they don't seem compelling enough to justify the effort required to make sure it always works safely."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:121(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:121(para) 
 msgid "Avoid potential deadlock during catalog cache initialization (Nikhil Sontakke)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:126(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:126(para) 
 msgid "In some cases the cache loading code would acquire share lock on a system index before locking the index's catalog. This could deadlock against processes trying to acquire exclusive locks in the other, more standard order."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:135(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:135(para) 
 msgid "Fix dangling-pointer problem in <literal>BEFORE ROW UPDATE</literal> trigger handling when there was a concurrent update to the target tuple (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:141(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:141(para) 
 msgid "This bug has been observed to result in intermittent <quote>cannot extract system attribute from virtual tuple</quote> failures while trying to do <literal>UPDATE RETURNING ctid</literal>. There is a very small probability of more serious errors, such as generating incorrect index entries for the updated tuple."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:151(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:151(para) 
 msgid "Disallow <command>DROP TABLE</command> when there are pending deferred trigger events for the table (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:156(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:156(para) 
 msgid "Formerly the <command>DROP</command> would go through, leading to <quote>could not open relation with OID nnn</quote> errors when the triggers were eventually fired."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:164(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:164(para) 
 msgid "Allow <quote>replication</quote> as a user name in <filename>pg_hba.conf</filename> (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:169(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:169(para) 
 msgid "<quote>replication</quote> is special in the database name column, but it was mistakenly also treated as special in the user name column."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:176(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:176(para) 
 msgid "Prevent crash triggered by constant-false WHERE conditions during GEQO optimization (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:186(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:186(para) 
 msgid "Improve planner's handling of semi-join and anti-join cases (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:193(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:193(para) 
 msgid "Fix handling of <literal>SELECT FOR UPDATE</literal> in a sub-SELECT (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:198(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:198(para) 
 msgid "This bug typically led to <quote>cannot extract system attribute from virtual tuple</quote> errors."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:205(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:205(para) 
 msgid "Fix selectivity estimation for text search to account for NULLs (Jesper Krogh)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:212(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:212(para) 
 msgid "Fix get_actual_variable_range() to support hypothetical indexes injected by an index adviser plugin (Gurjeet Singh)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:219(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:219(para) 
 msgid "Fix PL/Python memory leak involving array slices (Daniel Popowich)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:225(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:225(para) 
 msgid "Allow <application>libpq</application>'s SSL initialization to succeed when user's home directory is unavailable (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:230(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:230(para) 
 msgid "If the SSL mode is such that a root certificate file is not required, there is no need to fail. This change restores the behavior to what it was in pre-9.0 releases."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:238(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:238(para) 
 msgid "Fix <application>libpq</application> to return a useful error message for errors detected in <function>conninfo_array_parse</function> (Joseph Adams)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:243(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:243(para) 
 msgid "A typo caused the library to return NULL, rather than the <structname>PGconn</structname> structure containing the error message, to the application."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:251(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:251(para) 
 msgid "Fix <application>ecpg</application> preprocessor's handling of float constants (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:258(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:258(para) 
 msgid "Fix parallel <application>pg_restore</application> to handle comments on POST_DATA items correctly (Arnd Hannemann)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:265(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:265(para) 
 msgid "Fix <application>pg_restore</application> to cope with long lines (over 1KB) in TOC files (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:272(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:272(para) 
 msgid "Put in more safeguards against crashing due to division-by-zero with overly enthusiastic compiler optimization (Aurelien Jarno)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:279(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:279(para) 
 msgid "Support use of dlopen() in FreeBSD and OpenBSD on MIPS (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:283(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:283(para) 
 msgid "There was a hard-wired assumption that this system function was not available on MIPS hardware on these systems. Use a compile-time test instead, since more recent versions have it."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:291(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:291(para) 
 msgid "Fix compilation failures on HP-UX (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:297(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:297(para) 
 msgid "Avoid crash when trying to write to the Windows console very early in process startup (Rushabh Lathia)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:304(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:304(para) 
 msgid "Support building with MinGW 64 bit compiler for Windows (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:311(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:311(para) 
 msgid "Fix version-incompatibility problem with <application>libintl</application> on Windows (Hiroshi Inoue)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:318(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:318(para) 
 msgid "Fix usage of <application>xcopy</application> in Windows build scripts to work correctly under Windows 7 (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:323(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:323(para) 
 msgid "This affects the build scripts only, not installation or usage."
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:329(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:329(para) 
 msgid "Fix path separator used by <application>pg_regress</application> on Cygwin (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-VdKm/release-9.0.xml:336(para) 
+#: /tmp/cicero-imzd/release-9.0.xml:336(para) 
 msgid "Update time zone data files to <application>tzdata</application> release 2011f for DST law changes in Chile, Cuba, Falkland Islands, Morocco, Samoa, and Turkey; also historical corrections for South Australia, Alaska, and Hawaii."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-VdKm/release-9.0.xml:0(None) 
+#: /tmp/cicero-imzd/release-9.0.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
