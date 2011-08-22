@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:00+0200\n"
+"POT-Creation-Date: 2011-08-22 18:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,297 +9,297 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-LTnd/isn.xml:6(title) /tmp/cicero-LTnd/isn.xml:9(primary) /tmp/cicero-LTnd/isn.xml:256(type) 
+#: /tmp/cicero-lyhk/isn.xml:6(title) /tmp/cicero-lyhk/isn.xml:9(primary) /tmp/cicero-lyhk/isn.xml:256(type) 
 msgid "isn"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:12(para) 
+#: /tmp/cicero-lyhk/isn.xml:12(para) 
 msgid "The <filename>isn</filename> module provides data types for the following international product numbering standards: EAN13, UPC, ISBN (books), ISMN (music), and ISSN (serials). Numbers are validated on input according to a hard-coded list of prefixes; this list of prefixes is also used to hyphenate numbers on output. Since new prefixes are assigned from time to time, the list of prefixes may be out of date. It is hoped that a future version of this module will obtained the prefix list from one or more tables that can be easily updated by users as needed; however, at present, the list can only be updated by modifying the source code and recompiling. Alternatively, prefix validation and hyphenation support may be dropped from a future version of this module."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:27(title) 
+#: /tmp/cicero-lyhk/isn.xml:27(title) 
 msgid "Data Types"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:29(para) 
+#: /tmp/cicero-lyhk/isn.xml:29(para) 
 msgid "<xref linkend=\"isn-datatypes\"/> shows the data types provided by the <filename>isn</filename> module."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:35(title) 
+#: /tmp/cicero-lyhk/isn.xml:35(title) 
 msgid "<filename>isn</filename> Data Types"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:39(entry) 
+#: /tmp/cicero-lyhk/isn.xml:39(entry) 
 msgid "Data Type"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:40(entry) /tmp/cicero-LTnd/isn.xml:239(entry) 
+#: /tmp/cicero-lyhk/isn.xml:40(entry) /tmp/cicero-lyhk/isn.xml:239(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:46(type) 
+#: /tmp/cicero-lyhk/isn.xml:46(type) 
 msgid "EAN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:47(entry) 
+#: /tmp/cicero-lyhk/isn.xml:47(entry) 
 msgid "European Article Numbers, always displayed in the EAN13 display format"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:53(type) 
+#: /tmp/cicero-lyhk/isn.xml:53(type) 
 msgid "ISBN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:54(entry) 
+#: /tmp/cicero-lyhk/isn.xml:54(entry) 
 msgid "International Standard Book Numbers to be displayed in the new EAN13 display format"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:61(type) 
+#: /tmp/cicero-lyhk/isn.xml:61(type) 
 msgid "ISMN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:62(entry) 
+#: /tmp/cicero-lyhk/isn.xml:62(entry) 
 msgid "International Standard Music Numbers to be displayed in the new EAN13 display format"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:68(type) 
+#: /tmp/cicero-lyhk/isn.xml:68(type) 
 msgid "ISSN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:69(entry) 
+#: /tmp/cicero-lyhk/isn.xml:69(entry) 
 msgid "International Standard Serial Numbers to be displayed in the new EAN13 display format"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:75(type) 
+#: /tmp/cicero-lyhk/isn.xml:75(type) 
 msgid "ISBN"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:76(entry) 
+#: /tmp/cicero-lyhk/isn.xml:76(entry) 
 msgid "International Standard Book Numbers to be displayed in the old short display format"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:82(type) 
+#: /tmp/cicero-lyhk/isn.xml:82(type) 
 msgid "ISMN"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:83(entry) 
+#: /tmp/cicero-lyhk/isn.xml:83(entry) 
 msgid "International Standard Music Numbers to be displayed in the old short display format"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:89(type) 
+#: /tmp/cicero-lyhk/isn.xml:89(type) 
 msgid "ISSN"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:90(entry) 
+#: /tmp/cicero-lyhk/isn.xml:90(entry) 
 msgid "International Standard Serial Numbers to be displayed in the old short display format"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:96(type) 
+#: /tmp/cicero-lyhk/isn.xml:96(type) 
 msgid "UPC"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:97(entry) 
+#: /tmp/cicero-lyhk/isn.xml:97(entry) 
 msgid "Universal Product Codes"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:105(para) 
+#: /tmp/cicero-lyhk/isn.xml:105(para) 
 msgid "Some notes:"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:111(para) 
+#: /tmp/cicero-lyhk/isn.xml:111(para) 
 msgid "ISBN13, ISMN13, ISSN13 numbers are all EAN13 numbers."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:114(para) 
+#: /tmp/cicero-lyhk/isn.xml:114(para) 
 msgid "EAN13 numbers aren't always ISBN13, ISMN13 or ISSN13 (some are)."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:118(para) 
+#: /tmp/cicero-lyhk/isn.xml:118(para) 
 msgid "Some ISBN13 numbers can be displayed as ISBN."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:121(para) 
+#: /tmp/cicero-lyhk/isn.xml:121(para) 
 msgid "Some ISMN13 numbers can be displayed as ISMN."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:124(para) 
+#: /tmp/cicero-lyhk/isn.xml:124(para) 
 msgid "Some ISSN13 numbers can be displayed as ISSN."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:127(para) 
+#: /tmp/cicero-lyhk/isn.xml:127(para) 
 msgid "UPC numbers are a subset of the EAN13 numbers (they are basically EAN13 without the first <literal>0</literal> digit)."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:131(para) 
+#: /tmp/cicero-lyhk/isn.xml:131(para) 
 msgid "All UPC, ISBN, ISMN and ISSN numbers can be represented as EAN13 numbers."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:136(para) 
+#: /tmp/cicero-lyhk/isn.xml:136(para) 
 msgid "Internally, all these types use the same representation (a 64-bit integer), and all are interchangeable. Multiple types are provided to control display formatting and to permit tighter validity checking of input that is supposed to denote one particular type of number."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:143(para) 
+#: /tmp/cicero-lyhk/isn.xml:143(para) 
 msgid "The <type>ISBN</type>, <type>ISMN</type>, and <type>ISSN</type> types will display the short version of the number (ISxN 10) whenever it's possible, and will show ISxN 13 format for numbers that do not fit in the short version. The <type>EAN13</type>, <type>ISBN13</type>, <type>ISMN13</type> and <type>ISSN13</type> types will always display the long version of the ISxN (EAN13)."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:154(title) 
+#: /tmp/cicero-lyhk/isn.xml:154(title) 
 msgid "Casts"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:156(para) 
+#: /tmp/cicero-lyhk/isn.xml:156(para) 
 msgid "The <filename>isn</filename> module provides the following pairs of type casts:"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:162(para) 
+#: /tmp/cicero-lyhk/isn.xml:162(para) 
 msgid "ISBN13 &lt;=&gt; EAN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:167(para) 
+#: /tmp/cicero-lyhk/isn.xml:167(para) 
 msgid "ISMN13 &lt;=&gt; EAN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:172(para) 
+#: /tmp/cicero-lyhk/isn.xml:172(para) 
 msgid "ISSN13 &lt;=&gt; EAN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:177(para) 
+#: /tmp/cicero-lyhk/isn.xml:177(para) 
 msgid "ISBN &lt;=&gt; EAN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:182(para) 
+#: /tmp/cicero-lyhk/isn.xml:182(para) 
 msgid "ISMN &lt;=&gt; EAN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:187(para) 
+#: /tmp/cicero-lyhk/isn.xml:187(para) 
 msgid "ISSN &lt;=&gt; EAN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:192(para) 
+#: /tmp/cicero-lyhk/isn.xml:192(para) 
 msgid "UPC &lt;=&gt; EAN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:197(para) 
+#: /tmp/cicero-lyhk/isn.xml:197(para) 
 msgid "ISBN &lt;=&gt; ISBN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:202(para) 
+#: /tmp/cicero-lyhk/isn.xml:202(para) 
 msgid "ISMN &lt;=&gt; ISMN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:207(para) 
+#: /tmp/cicero-lyhk/isn.xml:207(para) 
 msgid "ISSN &lt;=&gt; ISSN13"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:213(para) 
+#: /tmp/cicero-lyhk/isn.xml:213(para) 
 msgid "When casting from <type>EAN13</type> to another type, there is a run-time check that the value is within the domain of the other type, and an error is thrown if not. The other casts are simply relabelings that will always succeed."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:222(title) 
+#: /tmp/cicero-lyhk/isn.xml:222(title) 
 msgid "Functions and Operators"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:224(para) 
+#: /tmp/cicero-lyhk/isn.xml:224(para) 
 msgid "The <filename>isn</filename> module provides the standard comparison operators, plus B-tree and hash indexing support for all these data types. In addition there are several specialized functions; shown in <xref linkend=\"isn-functions\"/>. In this table, <type>isn</type> means any one of the module's data types."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:233(title) 
+#: /tmp/cicero-lyhk/isn.xml:233(title) 
 msgid "<filename>isn</filename> Functions"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:237(entry) 
+#: /tmp/cicero-lyhk/isn.xml:237(entry) 
 msgid "Function"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:238(entry) 
+#: /tmp/cicero-lyhk/isn.xml:238(entry) 
 msgid "Returns"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:245(function) 
+#: /tmp/cicero-lyhk/isn.xml:245(function) 
 msgid "isn_weak(boolean)"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:246(type) /tmp/cicero-LTnd/isn.xml:251(type) /tmp/cicero-LTnd/isn.xml:261(type) 
+#: /tmp/cicero-lyhk/isn.xml:246(type) /tmp/cicero-lyhk/isn.xml:251(type) /tmp/cicero-lyhk/isn.xml:261(type) 
 msgid "boolean"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:247(entry) 
+#: /tmp/cicero-lyhk/isn.xml:247(entry) 
 msgid "Sets the weak input mode (returns new setting)"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:250(function) 
+#: /tmp/cicero-lyhk/isn.xml:250(function) 
 msgid "isn_weak()"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:252(entry) 
+#: /tmp/cicero-lyhk/isn.xml:252(entry) 
 msgid "Gets the current status of the weak mode"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:255(function) 
+#: /tmp/cicero-lyhk/isn.xml:255(function) 
 msgid "make_valid(isn)"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:257(entry) 
+#: /tmp/cicero-lyhk/isn.xml:257(entry) 
 msgid "Validates an invalid number (clears the invalid flag)"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:260(function) 
+#: /tmp/cicero-lyhk/isn.xml:260(function) 
 msgid "is_valid(isn)"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:262(entry) 
+#: /tmp/cicero-lyhk/isn.xml:262(entry) 
 msgid "Checks for the presence of the invalid flag"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:268(para) 
+#: /tmp/cicero-lyhk/isn.xml:268(para) 
 msgid "<firstterm>Weak</firstterm> mode is used to be able to insert invalid data into a table. Invalid means the check digit is wrong, not that there are missing numbers."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:274(para) 
+#: /tmp/cicero-lyhk/isn.xml:274(para) 
 msgid "Why would you want to use the weak mode? Well, it could be that you have a huge collection of ISBN numbers, and that there are so many of them that for weird reasons some have the wrong check digit (perhaps the numbers were scanned from a printed list and the OCR got the numbers wrong, perhaps the numbers were manually captured... who knows). Anyway, the point is you might want to clean the mess up, but you still want to be able to have all the numbers in your database and maybe use an external tool to locate the invalid numbers in the database so you can verify the information and validate it more easily; so for example you'd want to select all the invalid numbers in the table."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:287(para) 
+#: /tmp/cicero-lyhk/isn.xml:287(para) 
 msgid "When you insert invalid numbers in a table using the weak mode, the number will be inserted with the corrected check digit, but it will be displayed with an exclamation mark (<literal>!</literal>) at the end, for example <literal>0-11-000322-5!</literal>. This invalid marker can be checked with the <function>is_valid</function> function and cleared with the <function>make_valid</function> function."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:296(para) 
+#: /tmp/cicero-lyhk/isn.xml:296(para) 
 msgid "You can also force the insertion of invalid numbers even when not in the weak mode, by appending the <literal>!</literal> character at the end of the number."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:302(para) 
+#: /tmp/cicero-lyhk/isn.xml:302(para) 
 msgid "Another special feature is that during input, you can write <literal>?</literal> in place of the check digit, and the correct check digit will be inserted automatically."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:310(title) 
+#: /tmp/cicero-lyhk/isn.xml:310(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:312(programlisting) 
+#: /tmp/cicero-lyhk/isn.xml:312(programlisting) 
 #, no-wrap
 msgid "\n--Using the types directly:\nSELECT isbn('978-0-393-04002-9');\nSELECT isbn13('0901690546');\nSELECT issn('1436-4522');\n\n--Casting types:\n-- note that you can only cast from ean13 to another type when the\n-- number would be valid in the realm of the target type;\n-- thus, the following will NOT work: select isbn(ean13('0220356483481'));\n-- but these will:\nSELECT upc(ean13('0220356483481'));\nSELECT ean13(upc('220356483481'));\n\n--Create a table with a single column to hold ISBN numbers:\nCREATE TABLE test (id isbn);\nINSERT INTO test VALUES('9780393040029');\n\n--Automatically calculate check digits (observe the '?'):\nINSERT INTO test VALUES('220500896?');\nINSERT INTO test VALUES('978055215372?');\n\nSELECT issn('3251231?');\nSELECT ismn('979047213542?');\n\n--Using the weak mode:\nSELECT isn_weak(true);\nINSERT INTO test VALUES('978-0-11-000533-4');\nINSERT INTO test VALUES('9780141219307');\nINSERT INTO test VALUES('2-205-00876-X');\nSELECT isn_weak(false);\n\nSELECT id FROM test WHERE NOT is_valid(id);\nUPDATE test SET id = make_valid(id) WHERE id = '2-205-00876-X!';\n\nSELECT * FROM test;\n\nSELECT isbn13(id) FROM test;\n"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:354(title) 
+#: /tmp/cicero-lyhk/isn.xml:354(title) 
 msgid "Bibliography"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:356(para) 
+#: /tmp/cicero-lyhk/isn.xml:356(para) 
 msgid "The information to implement this module was collected from several sites, including: <placeholder-1/> The prefixes used for hyphenation were also compiled from: <placeholder-2/> Care was taken during the creation of the algorithms and they were meticulously verified against the suggested algorithms in the official ISBN, ISMN, ISSN User Manuals."
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:380(title) 
+#: /tmp/cicero-lyhk/isn.xml:380(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:381(para) 
+#: /tmp/cicero-lyhk/isn.xml:381(para) 
 msgid "Germán Méndez Bravo (Kronuz), 2004 - 2006"
 msgstr ""
 
-#: /tmp/cicero-LTnd/isn.xml:385(para) 
+#: /tmp/cicero-lyhk/isn.xml:385(para) 
 msgid "This module was inspired by Garrett A. Wollman's <filename>isbn_issn</filename> code."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-LTnd/isn.xml:0(None) 
+#: /tmp/cicero-lyhk/isn.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

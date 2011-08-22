@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:01+0200\n"
+"POT-Creation-Date: 2011-08-22 18:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,264 +9,264 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:10(application) /tmp/cicero-LTnd/ref/droplang.xml:16(refname) /tmp/cicero-LTnd/ref/droplang.xml:21(primary) /tmp/cicero-LTnd/ref/droplang.xml:26(command) /tmp/cicero-LTnd/ref/droplang.xml:33(command) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:10(application) /tmp/cicero-lyhk/ref/droplang.xml:16(refname) /tmp/cicero-lyhk/ref/droplang.xml:21(primary) /tmp/cicero-lyhk/ref/droplang.xml:26(command) /tmp/cicero-lyhk/ref/droplang.xml:33(command) 
 msgid "droplang"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:11(manvolnum) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:11(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:12(refmiscinfo) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:12(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:17(productname) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:17(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:17(refpurpose) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:17(refpurpose) 
 msgid "remove a <placeholder-1/> procedural language"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:27(replaceable) /tmp/cicero-LTnd/ref/droplang.xml:34(replaceable) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:27(replaceable) /tmp/cicero-lyhk/ref/droplang.xml:34(replaceable) 
 msgid "connection-option"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:28(replaceable) /tmp/cicero-LTnd/ref/droplang.xml:74(replaceable) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:28(replaceable) /tmp/cicero-lyhk/ref/droplang.xml:74(replaceable) 
 msgid "langname"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:29(replaceable) /tmp/cicero-LTnd/ref/droplang.xml:36(replaceable) /tmp/cicero-LTnd/ref/droplang.xml:83(replaceable) /tmp/cicero-LTnd/ref/droplang.xml:84(replaceable) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:29(replaceable) /tmp/cicero-lyhk/ref/droplang.xml:36(replaceable) /tmp/cicero-lyhk/ref/droplang.xml:83(replaceable) /tmp/cicero-lyhk/ref/droplang.xml:84(replaceable) 
 msgid "dbname"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:35(arg) /tmp/cicero-LTnd/ref/droplang.xml:106(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:35(arg) /tmp/cicero-lyhk/ref/droplang.xml:106(option) 
 msgid "--list"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:35(arg) /tmp/cicero-LTnd/ref/droplang.xml:105(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:35(arg) /tmp/cicero-lyhk/ref/droplang.xml:105(option) 
 msgid "-l"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:41(title) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:41(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:45(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:45(para) 
 msgid "<application>droplang</application> is a utility for removing an existing procedural language from a <productname>PostgreSQL</productname> database."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:51(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:51(para) 
 msgid "<application>droplang</application> is just a wrapper around the <xref linkend=\"sql-dropextension\"/> SQL command."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:57(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:57(para) 
 msgid "<application>droplang</application> is deprecated and may be removed in a future <productname>PostgreSQL</productname> release. Direct use of the <command>DROP EXTENSION</command> command is recommended instead."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:67(title) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:67(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:76(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:76(para) 
 msgid "Specifies the name of the procedural language to be removed."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:83(optional) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:83(optional) 
 msgid "-d"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:84(optional) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:84(optional) 
 msgid "--dbname="
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:86(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:86(para) 
 msgid "Specifies from which database the language should be removed. The default is to use the database with the same name as the current system user."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:95(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:95(option) 
 msgid "-e"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:96(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:96(option) 
 msgid "--echo"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:98(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:98(para) 
 msgid "Display SQL commands as they are executed."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:108(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:108(para) 
 msgid "Show a list of already installed languages in the target database."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:115(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:115(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:116(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:116(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:118(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:118(para) 
 msgid "Print the <application>droplang</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:125(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:125(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:126(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:126(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:128(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:128(para) 
 msgid "Show help about <application>droplang</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:69(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:69(para) 
 msgid "<application>droplang</application> accepts the following command line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:144(replaceable) /tmp/cicero-LTnd/ref/droplang.xml:145(replaceable) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:144(replaceable) /tmp/cicero-lyhk/ref/droplang.xml:145(replaceable) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:144(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:144(option) 
 msgid "-h <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:145(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:145(option) 
 msgid "--host=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:147(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:147(para) 
 msgid "Specifies the host name of the machine on which the server is running. If host begins with a slash, it is used as the directory for the Unix domain socket."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:157(replaceable) /tmp/cicero-LTnd/ref/droplang.xml:158(replaceable) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:157(replaceable) /tmp/cicero-lyhk/ref/droplang.xml:158(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:157(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:157(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:158(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:158(option) 
 msgid "--port=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:160(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:160(para) 
 msgid "Specifies the Internet TCP/IP port or local Unix domain socket file extension on which the server is listening for connections."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:169(replaceable) /tmp/cicero-LTnd/ref/droplang.xml:170(replaceable) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:169(replaceable) /tmp/cicero-lyhk/ref/droplang.xml:170(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:169(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:169(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:170(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:170(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:172(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:172(para) 
 msgid "User name to connect as."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:179(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:179(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:180(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:180(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:182(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:182(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:194(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:194(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:195(option) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:195(option) 
 msgid "--password"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:197(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:197(para) 
 msgid "Force <application>droplang</application> to prompt for a password before connecting to a database."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:202(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:202(para) 
 msgid "This option is never essential, since <application>droplang</application> will automatically prompt for a password if the server demands password authentication. However, <application>droplang</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:138(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:138(para) 
 msgid "<application>droplang</application> also accepts the following command line arguments for connection parameters: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:220(title) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:220(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:224(envar) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:224(envar) 
 msgid "PGDATABASE"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:225(envar) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:225(envar) 
 msgid "PGHOST"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:226(envar) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:226(envar) 
 msgid "PGPORT"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:227(envar) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:227(envar) 
 msgid "PGUSER"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:230(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:230(para) 
 msgid "Default connection parameters"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:237(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:237(para) 
 msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:247(title) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:247(title) 
 msgid "Diagnostics"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:249(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:249(para) 
 msgid "Most error messages are self-explanatory. If not, run <application>droplang</application> with the <option>--echo</option> option and see under the respective <acronym>SQL</acronym> command for details. Also, any default connection settings and environment variables used by the <application>libpq</application> front-end library will apply."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:261(title) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:261(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:263(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:263(para) 
 msgid "Use <xref linkend=\"app-createlang\"/> to add a language."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:270(title) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:270(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:272(para) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:272(para) 
 msgid "To remove the language <literal>pltcl</literal>: <screen>\n<prompt>$ </prompt><userinput>droplang pltcl dbname</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/droplang.xml:280(title) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:280(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-LTnd/ref/droplang.xml:0(None) 
+#: /tmp/cicero-lyhk/ref/droplang.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

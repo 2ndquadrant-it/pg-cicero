@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:00+0200\n"
+"POT-Creation-Date: 2011-08-22 18:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,304 +9,304 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-LTnd/external-projects.xml:6(title) 
+#: /tmp/cicero-lyhk/external-projects.xml:6(title) 
 msgid "External Projects"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:8(para) 
+#: /tmp/cicero-lyhk/external-projects.xml:8(para) 
 msgid "<productname>PostgreSQL</productname> is a complex software project, and managing the project is difficult. We have found that many enhancements to <productname>PostgreSQL</productname> can be more efficiently developed separately from the core project."
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:15(para) 
+#: /tmp/cicero-lyhk/external-projects.xml:15(para) 
 msgid "To help our community with the development of their external projects, we have created <ulink url=\"http://www.pgfoundry.org/\">PgFoundry</ulink>, a website that provides hosting for <productname>PostgreSQL</productname>-related projects that are maintained outside the core <productname>PostgreSQL</productname> distribution. PgFoundry is built using the GForge software project and is similar to <ulink url=\"http://sourceforge.net\">SourceForge.net</ulink> in its feature set, providing mailing lists, forums, bug tracking, SCM, and web hosting. If you have a <productname>PostgreSQL</productname>-related open source project that you would like to have hosted at PgFoundry, please feel free to create a new project there."
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:29(title) 
+#: /tmp/cicero-lyhk/external-projects.xml:29(title) 
 msgid "Client Interfaces"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:32(primary) 
+#: /tmp/cicero-lyhk/external-projects.xml:32(primary) 
 msgid "interfaces"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:33(secondary) /tmp/cicero-LTnd/external-projects.xml:144(secondary) /tmp/cicero-LTnd/external-projects.xml:160(secondary) /tmp/cicero-LTnd/external-projects.xml:245(secondary) 
+#: /tmp/cicero-lyhk/external-projects.xml:33(secondary) /tmp/cicero-lyhk/external-projects.xml:144(secondary) /tmp/cicero-lyhk/external-projects.xml:160(secondary) /tmp/cicero-lyhk/external-projects.xml:245(secondary) 
 msgid "externally maintained"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:41(para) 
+#: /tmp/cicero-lyhk/external-projects.xml:41(para) 
 msgid "<link linkend=\"libpq\">libpq</link> is included because it is the primary C language interface, and because many other client interfaces are built on top of it."
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:49(para) 
+#: /tmp/cicero-lyhk/external-projects.xml:49(para) 
 msgid "<link linkend=\"ecpg\">ECPG</link> is included because it depends on the server-side SQL grammar, and is therefore sensitive to changes in <productname>PostgreSQL</productname> itself."
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:36(para) 
+#: /tmp/cicero-lyhk/external-projects.xml:36(para) 
 msgid "There are only two client interfaces included in the base <productname>PostgreSQL</productname> distribution: <placeholder-1/> All other language interfaces are external projects and are distributed separately. <xref linkend=\"language-interface-table\"/> includes a list of some of these projects. Note that some of these packages might not be released under the same license as <productname>PostgreSQL</productname>. For more information on each language interface, including licensing terms, refer to its website and documentation."
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:66(title) 
+#: /tmp/cicero-lyhk/external-projects.xml:66(title) 
 msgid "Externally Maintained Client Interfaces"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:71(entry) /tmp/cicero-LTnd/external-projects.xml:187(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:71(entry) /tmp/cicero-lyhk/external-projects.xml:187(entry) 
 msgid "Name"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:72(entry) /tmp/cicero-LTnd/external-projects.xml:188(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:72(entry) /tmp/cicero-lyhk/external-projects.xml:188(entry) 
 msgid "Language"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:73(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:73(entry) 
 msgid "Comments"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:74(entry) /tmp/cicero-LTnd/external-projects.xml:189(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:74(entry) /tmp/cicero-lyhk/external-projects.xml:189(entry) 
 msgid "Website"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:80(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:80(entry) 
 msgid "DBD::Pg"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:81(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:81(entry) 
 msgid "Perl"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:82(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:82(entry) 
 msgid "Perl DBI driver"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:83(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:83(ulink) 
 msgid "http://search.cpan.org/dist/DBD-Pg/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:87(entry) /tmp/cicero-LTnd/external-projects.xml:88(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:87(entry) /tmp/cicero-lyhk/external-projects.xml:88(entry) 
 msgid "JDBC"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:89(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:89(entry) 
 msgid "Type 4 JDBC driver"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:90(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:90(ulink) 
 msgid "http://jdbc.postgresql.org/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:94(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:94(entry) 
 msgid "libpqxx"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:95(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:95(entry) 
 msgid "C++"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:96(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:96(entry) 
 msgid "New-style C++ interface"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:97(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:97(ulink) 
 msgid "http://pqxx.org/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:101(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:101(entry) 
 msgid "Npgsql"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:102(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:102(entry) 
 msgid ".NET"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:103(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:103(entry) 
 msgid ".NET data provider"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:104(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:104(ulink) 
 msgid "http://npgsql.projects.postgresql.org/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:108(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:108(entry) 
 msgid "ODBCng"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:109(entry) /tmp/cicero-LTnd/external-projects.xml:123(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:109(entry) /tmp/cicero-lyhk/external-projects.xml:123(entry) 
 msgid "ODBC"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:110(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:110(entry) 
 msgid "An alternative ODBC driver"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:111(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:111(ulink) 
 msgid "http://projects.commandprompt.com/public/odbcng/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:115(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:115(entry) 
 msgid "pgtclng"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:116(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:116(entry) 
 msgid "Tcl"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:118(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:118(ulink) 
 msgid "http://pgfoundry.org/projects/pgtclng/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:122(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:122(entry) 
 msgid "psqlODBC"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:124(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:124(entry) 
 msgid "The most commonly-used ODBC driver"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:125(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:125(ulink) 
 msgid "http://psqlodbc.projects.postgresql.org/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:129(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:129(entry) 
 msgid "psycopg"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:130(entry) /tmp/cicero-LTnd/external-projects.xml:208(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:130(entry) /tmp/cicero-lyhk/external-projects.xml:208(entry) 
 msgid "Python"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:131(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:131(entry) 
 msgid "DB API 2.0-compliant"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:132(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:132(ulink) 
 msgid "http://www.initd.org/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:140(title) 
+#: /tmp/cicero-lyhk/external-projects.xml:140(title) 
 msgid "Administration Tools"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:143(primary) 
+#: /tmp/cicero-lyhk/external-projects.xml:143(primary) 
 msgid "administration tools"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:147(para) 
+#: /tmp/cicero-lyhk/external-projects.xml:147(para) 
 msgid "There are several administration tools available for <productname>PostgreSQL</productname>. The most popular is <application><ulink url=\"http://www.pgadmin.org/\">pgAdmin III</ulink></application>, and there are several commercially available ones as well."
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:156(title) 
+#: /tmp/cicero-lyhk/external-projects.xml:156(title) 
 msgid "Procedural Languages"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:159(primary) 
+#: /tmp/cicero-lyhk/external-projects.xml:159(primary) 
 msgid "procedural language"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:163(para) 
+#: /tmp/cicero-lyhk/external-projects.xml:163(para) 
 msgid "<productname>PostgreSQL</productname> includes several procedural languages with the base distribution: <link linkend=\"plpgsql\">PL/pgSQL</link>, <link linkend=\"pltcl\">PL/Tcl</link>, <link linkend=\"plperl\">PL/Perl</link>, and <link linkend=\"plpython\">PL/Python</link>."
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:171(para) 
+#: /tmp/cicero-lyhk/external-projects.xml:171(para) 
 msgid "In addition, there are a number of procedural languages that are developed and maintained outside the core <productname>PostgreSQL</productname> distribution. <xref linkend=\"pl-language-table\"/> lists some of these packages. Note that some of these projects might not be released under the same license as <productname>PostgreSQL</productname>. For more information on each procedural language, including licensing information, refer to its website and documentation."
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:182(title) 
+#: /tmp/cicero-lyhk/external-projects.xml:182(title) 
 msgid "Externally Maintained Procedural Languages"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:195(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:195(entry) 
 msgid "PL/Java"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:196(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:196(entry) 
 msgid "Java"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:197(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:197(ulink) 
 msgid "http://pljava.projects.postgresql.org/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:201(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:201(entry) 
 msgid "PL/PHP"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:202(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:202(entry) 
 msgid "PHP"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:203(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:203(ulink) 
 msgid "http://www.commandprompt.com/community/plphp/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:207(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:207(entry) 
 msgid "PL/Py"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:209(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:209(ulink) 
 msgid "http://python.projects.postgresql.org/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:213(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:213(entry) 
 msgid "PL/R"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:214(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:214(entry) 
 msgid "R"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:215(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:215(ulink) 
 msgid "http://www.joeconway.com/plr/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:219(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:219(entry) 
 msgid "PL/Ruby"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:220(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:220(entry) 
 msgid "Ruby"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:221(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:221(ulink) 
 msgid "http://raa.ruby-lang.org/project/pl-ruby/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:225(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:225(entry) 
 msgid "PL/Scheme"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:226(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:226(entry) 
 msgid "Scheme"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:227(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:227(ulink) 
 msgid "http://plscheme.projects.postgresql.org/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:231(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:231(entry) 
 msgid "PL/sh"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:232(entry) 
+#: /tmp/cicero-lyhk/external-projects.xml:232(entry) 
 msgid "Unix shell"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:233(ulink) 
+#: /tmp/cicero-lyhk/external-projects.xml:233(ulink) 
 msgid "http://plsh.projects.postgresql.org/"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:241(title) 
+#: /tmp/cicero-lyhk/external-projects.xml:241(title) 
 msgid "Extensions"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:244(primary) 
+#: /tmp/cicero-lyhk/external-projects.xml:244(primary) 
 msgid "extension"
 msgstr ""
 
-#: /tmp/cicero-LTnd/external-projects.xml:248(para) 
+#: /tmp/cicero-lyhk/external-projects.xml:248(para) 
 msgid "<productname>PostgreSQL</productname> is designed to be easily extensible. For this reason, extensions loaded into the database can function just like features that are built in. The <filename>contrib/</filename> directory shipped with the source code contains several extensions, which are described in <xref linkend=\"contrib\"/>. Other extensions are developed independently, like <application><ulink url=\"http://www.postgis.org/\">PostGIS</ulink></application>. Even <productname>PostgreSQL</productname> replication solutions can be developed externally. For example, <application><ulink url=\"http://www.slony.info\">Slony-I</ulink></application> is a popular master/standby replication solution that is developed independently from the core project."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-LTnd/external-projects.xml:0(None) 
+#: /tmp/cicero-lyhk/external-projects.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

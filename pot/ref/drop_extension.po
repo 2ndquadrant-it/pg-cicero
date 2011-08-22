@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:01+0200\n"
+"POT-Creation-Date: 2011-08-22 18:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,102 +9,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:10(refentrytitle) /tmp/cicero-LTnd/ref/drop_extension.xml:16(refname) /tmp/cicero-LTnd/ref/drop_extension.xml:21(primary) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:10(refentrytitle) /tmp/cicero-lyhk/ref/drop_extension.xml:16(refname) /tmp/cicero-lyhk/ref/drop_extension.xml:21(primary) 
 msgid "DROP EXTENSION"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:11(manvolnum) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:12(refmiscinfo) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:17(refpurpose) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:17(refpurpose) 
 msgid "remove an extension"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:26(replaceable) /tmp/cicero-LTnd/ref/drop_extension.xml:59(replaceable) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:26(replaceable) /tmp/cicero-lyhk/ref/drop_extension.xml:59(replaceable) 
 msgid "extension_name"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:25(synopsis) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP EXTENSION [ IF EXISTS ] <placeholder-1/> [, ...] [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:31(title) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:33(para) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:33(para) 
 msgid "<command>DROP EXTENSION</command> removes extensions from the database. Dropping an extension causes its component objects to be dropped as well."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:38(para) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:38(para) 
 msgid "You must own the extension to use <command>DROP EXTENSION</command>."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:44(title) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:44(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:49(literal) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:49(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:51(para) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:51(para) 
 msgid "Do not throw an error if the extension does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:61(para) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:61(para) 
 msgid "The name of an installed extension."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:68(literal) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:68(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:70(para) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:70(para) 
 msgid "Automatically drop objects that depend on the extension."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:77(literal) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:77(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:79(para) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:79(para) 
 msgid "Refuse to drop the extension if any objects depend on it (other than its own member objects and other extensions listed in the same <command>DROP</command> command). This is the default."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:90(title) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:90(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:95(programlisting) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:95(programlisting) 
 #, no-wrap
 msgid "\nDROP EXTENSION hstore;\n"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:92(para) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:92(para) 
 msgid "To remove the extension <literal>hstore</literal> from the current database: <placeholder-1/> This command will fail if any of <literal>hstore</literal>'s objects are in use in the database, for example if any tables have columns of the <type>hstore</type> type. Add the <literal>CASCADE</literal> option to forcibly remove those dependent objects as well."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:106(title) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:106(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:108(para) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:108(para) 
 msgid "<command>DROP EXTENSION</command> is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:115(title) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:115(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-LTnd/ref/drop_extension.xml:0(None) 
+#: /tmp/cicero-lyhk/ref/drop_extension.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
