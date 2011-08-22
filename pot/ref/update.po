@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 17:36+0200\n"
+"POT-Creation-Date: 2011-08-22 17:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,266 +9,266 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-burg/ref/update.xml:9(refentrytitle) /tmp/cicero-burg/ref/update.xml:15(refname) /tmp/cicero-burg/ref/update.xml:20(primary) 
+#: /tmp/cicero-VdKm/ref/update.xml:9(refentrytitle) /tmp/cicero-VdKm/ref/update.xml:15(refname) /tmp/cicero-VdKm/ref/update.xml:20(primary) 
 msgid "UPDATE"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:10(manvolnum) 
+#: /tmp/cicero-VdKm/ref/update.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:11(refmiscinfo) 
+#: /tmp/cicero-VdKm/ref/update.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:16(refpurpose) 
+#: /tmp/cicero-VdKm/ref/update.xml:16(refpurpose) 
 msgid "update rows of a table"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:25(replaceable) /tmp/cicero-burg/ref/update.xml:85(replaceable) 
+#: /tmp/cicero-VdKm/ref/update.xml:25(replaceable) /tmp/cicero-VdKm/ref/update.xml:85(replaceable) 
 msgid "with_query"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:26(replaceable) /tmp/cicero-burg/ref/update.xml:97(replaceable) 
+#: /tmp/cicero-VdKm/ref/update.xml:26(replaceable) /tmp/cicero-VdKm/ref/update.xml:97(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:26(replaceable) /tmp/cicero-burg/ref/update.xml:106(replaceable) 
+#: /tmp/cicero-VdKm/ref/update.xml:26(replaceable) /tmp/cicero-VdKm/ref/update.xml:106(replaceable) 
 msgid "alias"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:27(replaceable) /tmp/cicero-burg/ref/update.xml:28(replaceable) /tmp/cicero-burg/ref/update.xml:119(replaceable) 
+#: /tmp/cicero-VdKm/ref/update.xml:27(replaceable) /tmp/cicero-VdKm/ref/update.xml:28(replaceable) /tmp/cicero-VdKm/ref/update.xml:119(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:27(replaceable) /tmp/cicero-burg/ref/update.xml:28(replaceable) /tmp/cicero-burg/ref/update.xml:133(replaceable) 
+#: /tmp/cicero-VdKm/ref/update.xml:27(replaceable) /tmp/cicero-VdKm/ref/update.xml:28(replaceable) /tmp/cicero-VdKm/ref/update.xml:133(replaceable) 
 msgid "expression"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:29(replaceable) /tmp/cicero-burg/ref/update.xml:153(replaceable) 
+#: /tmp/cicero-VdKm/ref/update.xml:29(replaceable) /tmp/cicero-VdKm/ref/update.xml:153(replaceable) 
 msgid "from_list"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:30(replaceable) /tmp/cicero-burg/ref/update.xml:169(replaceable) 
+#: /tmp/cicero-VdKm/ref/update.xml:30(replaceable) /tmp/cicero-VdKm/ref/update.xml:169(replaceable) 
 msgid "condition"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:30(replaceable) /tmp/cicero-burg/ref/update.xml:180(replaceable) 
+#: /tmp/cicero-VdKm/ref/update.xml:30(replaceable) /tmp/cicero-VdKm/ref/update.xml:180(replaceable) 
 msgid "cursor_name"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:31(replaceable) /tmp/cicero-burg/ref/update.xml:197(replaceable) 
+#: /tmp/cicero-VdKm/ref/update.xml:31(replaceable) /tmp/cicero-VdKm/ref/update.xml:197(replaceable) 
 msgid "output_expression"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:31(replaceable) /tmp/cicero-burg/ref/update.xml:210(replaceable) 
+#: /tmp/cicero-VdKm/ref/update.xml:31(replaceable) /tmp/cicero-VdKm/ref/update.xml:210(replaceable) 
 msgid "output_name"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:24(synopsis) 
+#: /tmp/cicero-VdKm/ref/update.xml:24(synopsis) 
 #, no-wrap
 msgid "\n[ WITH [ RECURSIVE ] <placeholder-1/> [, ...] ]\nUPDATE [ ONLY ] <placeholder-2/> [ [ AS ] <placeholder-3/> ]\n    SET { <placeholder-4/> = { <placeholder-5/> | DEFAULT } |\n          ( <placeholder-6/> [, ...] ) = ( { <placeholder-7/> | DEFAULT } [, ...] ) } [, ...]\n    [ FROM <placeholder-8/> ]\n    [ WHERE <placeholder-9/> | WHERE CURRENT OF <placeholder-10/> ]\n    [ RETURNING * | <placeholder-11/> [ [ AS ] <placeholder-12/> ] [, ...] ]\n"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:36(title) 
+#: /tmp/cicero-VdKm/ref/update.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:38(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:38(para) 
 msgid "<command>UPDATE</command> changes the values of the specified columns in all rows that satisfy the condition. Only the columns to be modified need be mentioned in the <literal>SET</literal> clause; columns not explicitly modified retain their previous values."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:45(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:45(para) 
 msgid "By default, <command>UPDATE</command> will update rows in the specified table and all its subtables. If you wish to only update the specific table mentioned, you must use the <literal>ONLY</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:52(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:52(para) 
 msgid "There are two ways to modify a table using information contained in other tables in the database: using sub-selects, or specifying additional tables in the <literal>FROM</literal> clause. Which technique is more appropriate depends on the specific circumstances."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:60(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:60(para) 
 msgid "The optional <literal>RETURNING</literal> clause causes <command>UPDATE</command> to compute and return value(s) based on each row actually updated. Any expression using the table's columns, and/or columns of other tables mentioned in <literal>FROM</literal>, can be computed. The new (post-update) values of the table's columns are used. The syntax of the <literal>RETURNING</literal> list is identical to that of the output list of <command>SELECT</command>."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:70(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:70(para) 
 msgid "You must have the <literal>UPDATE</literal> privilege on the table, or at least on the column(s) that are listed to be updated. You must also have the <literal>SELECT</literal> privilege on any column whose values are read in the <replaceable class=\"parameter\">expressions</replaceable> or <replaceable class=\"parameter\">condition</replaceable>."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:81(title) 
+#: /tmp/cicero-VdKm/ref/update.xml:81(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:87(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:87(para) 
 msgid "The <literal>WITH</literal> clause allows you to specify one or more subqueries that can be referenced by name in the <command>UPDATE</command> query. See <xref linkend=\"queries-with\"/> and <xref linkend=\"sql-select\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:99(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:99(para) 
 msgid "The name (optionally schema-qualified) of the table to update."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:108(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:108(para) 
 msgid "A substitute name for the target table. When an alias is provided, it completely hides the actual name of the table. For example, given <literal>UPDATE foo AS f</literal>, the remainder of the <command>UPDATE</command> statement must refer to this table as <literal>f</literal> not <literal>foo</literal>."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:121(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:121(para) 
 msgid "The name of a column in <replaceable class=\"PARAMETER\">table</replaceable>. The column name can be qualified with a subfield name or array subscript, if needed. Do not include the table's name in the specification of a target column — for example, <literal>UPDATE tab SET tab.col = 1</literal> is invalid."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:135(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:135(para) 
 msgid "An expression to assign to the column. The expression can use the old values of this and other columns in the table."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:143(literal) 
+#: /tmp/cicero-VdKm/ref/update.xml:143(literal) 
 msgid "DEFAULT"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:145(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:145(para) 
 msgid "Set the column to its default value (which will be NULL if no specific default expression has been assigned to it)."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:155(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:155(para) 
 msgid "A list of table expressions, allowing columns from other tables to appear in the <literal>WHERE</literal> condition and the update expressions. This is similar to the list of tables that can be specified in the <xref linkend=\"sql-from\" endterm=\"sql-from-title\"/> of a <command>SELECT</command> statement. Note that the target table must not appear in the <replaceable>from_list</replaceable>, unless you intend a self-join (in which case it must appear with an alias in the <replaceable>from_list</replaceable>)."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:171(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:171(para) 
 msgid "An expression that returns a value of type <type>boolean</type>. Only rows for which this expression returns <literal>true</literal> will be updated."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:182(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:182(para) 
 msgid "The name of the cursor to use in a <literal>WHERE CURRENT OF</literal> condition. The row to be updated is the one most recently fetched from this cursor. The cursor must be a non-grouping query on the <command>UPDATE</command>'s target table. Note that <literal>WHERE CURRENT OF</literal> cannot be specified together with a Boolean condition. See <xref linkend=\"sql-declare\"/> for more information about using cursors with <literal>WHERE CURRENT OF</literal>."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:199(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:199(para) 
 msgid "An expression to be computed and returned by the <command>UPDATE</command> command after each row is updated. The expression can use any column names of the <replaceable class=\"PARAMETER\">table</replaceable> or table(s) listed in <literal>FROM</literal>. Write <literal>*</literal> to return all columns."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:212(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:212(para) 
 msgid "A name to use for a returned column."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:221(title) 
+#: /tmp/cicero-VdKm/ref/update.xml:221(title) 
 msgid "Outputs"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:223(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:223(para) 
 msgid "On successful completion, an <command>UPDATE</command> command returns a command tag of the form <screen>\nUPDATE <replaceable class=\"parameter\">count</replaceable>\n</screen> The <replaceable class=\"parameter\">count</replaceable> is the number of rows updated. If <replaceable class=\"parameter\">count</replaceable> is 0, no rows matched the <replaceable class=\"parameter\">condition</replaceable> (this is not considered an error)."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:236(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:236(para) 
 msgid "If the <command>UPDATE</command> command contains a <literal>RETURNING</literal> clause, the result will be similar to that of a <command>SELECT</command> statement containing the columns and values defined in the <literal>RETURNING</literal> list, computed over the row(s) updated by the command."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:246(title) 
+#: /tmp/cicero-VdKm/ref/update.xml:246(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:248(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:248(para) 
 msgid "When a <literal>FROM</literal> clause is present, what essentially happens is that the target table is joined to the tables mentioned in the <replaceable>from_list</replaceable>, and each output row of the join represents an update operation for the target table. When using <literal>FROM</literal> you should ensure that the join produces at most one output row for each row to be modified. In other words, a target row shouldn't join to more than one row from the other table(s). If it does, then only one of the join rows will be used to update the target row, but which one will be used is not readily predictable."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:261(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:261(para) 
 msgid "Because of this indeterminacy, referencing other tables only within sub-selects is safer, though often harder to read and slower than using a join."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:269(title) 
+#: /tmp/cicero-VdKm/ref/update.xml:269(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:275(programlisting) 
+#: /tmp/cicero-VdKm/ref/update.xml:275(programlisting) 
 #, no-wrap
 msgid "\nUPDATE films SET kind = 'Dramatic' WHERE kind = 'Drama';\n"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:271(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:271(para) 
 msgid "Change the word <literal>Drama</literal> to <literal>Dramatic</literal> in the column <structfield>kind</structfield> of the table <structname>films</structname>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:284(programlisting) 
+#: /tmp/cicero-VdKm/ref/update.xml:284(programlisting) 
 #, no-wrap
 msgid "\nUPDATE weather SET temp_lo = temp_lo+1, temp_hi = temp_lo+15, prcp = DEFAULT\n  WHERE city = 'San Francisco' AND date = '2003-07-03';\n"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:280(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:280(para) 
 msgid "Adjust temperature entries and reset precipitation to its default value in one row of the table <structname>weather</structname>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:293(programlisting) 
+#: /tmp/cicero-VdKm/ref/update.xml:293(programlisting) 
 #, no-wrap
 msgid "\nUPDATE weather SET temp_lo = temp_lo+1, temp_hi = temp_lo+15, prcp = DEFAULT\n  WHERE city = 'San Francisco' AND date = '2003-07-03'\n  RETURNING temp_lo, temp_hi, prcp;\n"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:290(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:290(para) 
 msgid "Perform the same operation and return the updated entries: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:302(programlisting) 
+#: /tmp/cicero-VdKm/ref/update.xml:302(programlisting) 
 #, no-wrap
 msgid "\nUPDATE weather SET (temp_lo, temp_hi, prcp) = (temp_lo+1, temp_lo+15, DEFAULT)\n  WHERE city = 'San Francisco' AND date = '2003-07-03';\n"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:300(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:300(para) 
 msgid "Use the alternative column-list syntax to do the same update: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:312(programlisting) 
+#: /tmp/cicero-VdKm/ref/update.xml:312(programlisting) 
 #, no-wrap
 msgid "\nUPDATE employees SET sales_count = sales_count + 1 FROM accounts\n  WHERE accounts.name = 'Acme Corporation'\n  AND employees.id = accounts.sales_person;\n"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:308(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:308(para) 
 msgid "Increment the sales count of the salesperson who manages the account for Acme Corporation, using the <literal>FROM</literal> clause syntax: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:322(programlisting) 
+#: /tmp/cicero-VdKm/ref/update.xml:322(programlisting) 
 #, no-wrap
 msgid "\nUPDATE employees SET sales_count = sales_count + 1 WHERE id =\n  (SELECT sales_person FROM accounts WHERE name = 'Acme Corporation');\n"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:319(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:319(para) 
 msgid "Perform the same operation, using a sub-select in the <literal>WHERE</literal> clause: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:332(programlisting) 
+#: /tmp/cicero-VdKm/ref/update.xml:332(programlisting) 
 #, no-wrap
 msgid "\nBEGIN;\n-- other operations\nSAVEPOINT sp1;\nINSERT INTO wines VALUES('Chateau Lafite 2003', '24');\n-- Assume the above fails because of a unique key violation,\n-- so now we issue these commands:\nROLLBACK TO sp1;\nUPDATE wines SET stock = stock + 24 WHERE winename = 'Chateau Lafite 2003';\n-- continue with other operations, and eventually\nCOMMIT;\n"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:328(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:328(para) 
 msgid "Attempt to insert a new stock item along with the quantity of stock. If the item already exists, instead update the stock count of the existing item. To do this without failing the entire transaction, use savepoints: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:350(programlisting) 
+#: /tmp/cicero-VdKm/ref/update.xml:350(programlisting) 
 #, no-wrap
 msgid "\nUPDATE films SET kind = 'Dramatic' WHERE CURRENT OF c_films;\n"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:346(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:346(para) 
 msgid "Change the <structfield>kind</structfield> column of the table <structname>films</structname> in the row on which the cursor <literal>c_films</literal> is currently positioned: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:356(title) 
+#: /tmp/cicero-VdKm/ref/update.xml:356(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:358(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:358(para) 
 msgid "This command conforms to the <acronym>SQL</acronym> standard, except that the <literal>FROM</literal> and <literal>RETURNING</literal> clauses are <productname>PostgreSQL</productname> extensions, as is the ability to use <literal>WITH</literal> with <command>UPDATE</command>."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:369(programlisting) 
+#: /tmp/cicero-VdKm/ref/update.xml:369(programlisting) 
 #, no-wrap
 msgid "\nUPDATE accounts SET (contact_last_name, contact_first_name) =\n    (SELECT last_name, first_name FROM salesmen\n     WHERE salesmen.id = accounts.sales_id);\n"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:365(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:365(para) 
 msgid "According to the standard, the column-list syntax should allow a list of columns to be assigned from a single row-valued expression, such as a sub-select: <placeholder-1/> This is not currently implemented — the source must be a list of independent expressions."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/update.xml:378(para) 
+#: /tmp/cicero-VdKm/ref/update.xml:378(para) 
 msgid "Some other database systems offer a <literal>FROM</literal> option in which the target table is supposed to be listed again within <literal>FROM</literal>. That is not how <productname>PostgreSQL</productname> interprets <literal>FROM</literal>. Be careful when porting applications that use this extension."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-burg/ref/update.xml:0(None) 
+#: /tmp/cicero-VdKm/ref/update.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 17:35+0200\n"
+"POT-Creation-Date: 2011-08-22 17:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,152 +9,152 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-burg/features.xml:5(title) 
+#: /tmp/cicero-VdKm/features.xml:5(title) 
 msgid "SQL Conformance"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:7(para) 
+#: /tmp/cicero-VdKm/features.xml:7(para) 
 msgid "This section attempts to outline to what extent <productname>PostgreSQL</productname> conforms to the current SQL standard. The following information is not a full statement of conformance, but it presents the main topics in as much detail as is both reasonable and useful for users."
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:15(para) 
+#: /tmp/cicero-VdKm/features.xml:15(para) 
 msgid "The formal name of the SQL standard is ISO/IEC 9075 <quote>Database Language SQL</quote>. A revised version of the standard is released from time to time; the most recent update appearing in 2008. The 2008 version is referred to as ISO/IEC 9075:2008, or simply as SQL:2008. The versions prior to that were SQL:2003, SQL:1999, and SQL-92. Each version replaces the previous one, so claims of conformance to earlier versions have no official merit. <productname>PostgreSQL</productname> development aims for conformance with the latest official version of the standard where such conformance does not contradict traditional features or common sense. Many of the features required by the SQL standard are supported, though sometimes with slightly differing syntax or function. Further moves towards conformance can be expected over time."
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:32(para) 
+#: /tmp/cicero-VdKm/features.xml:32(para) 
 msgid "<acronym>SQL-92</acronym> defined three feature sets for conformance: Entry, Intermediate, and Full. Most database management systems claiming <acronym>SQL</acronym> standard conformance were conforming at only the Entry level, since the entire set of features in the Intermediate and Full levels was either too voluminous or in conflict with legacy behaviors."
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:41(para) 
+#: /tmp/cicero-VdKm/features.xml:41(para) 
 msgid "Starting with <acronym>SQL:1999</acronym>, the SQL standard defines a large set of individual features rather than the ineffectively broad three levels found in <acronym>SQL-92</acronym>. A large subset of these features represents the <quote>Core</quote> features, which every conforming SQL implementation must supply. The rest of the features are purely optional. Some optional features are grouped together to form <quote>packages</quote>, which SQL implementations can claim conformance to, thus claiming conformance to particular groups of features."
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:60(para) 
+#: /tmp/cicero-VdKm/features.xml:60(para) 
 msgid "ISO/IEC 9075-1 Framework (SQL/Framework)"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:60(primary) 
+#: /tmp/cicero-VdKm/features.xml:60(primary) 
 msgid "SQL/Framework"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:61(para) 
+#: /tmp/cicero-VdKm/features.xml:61(para) 
 msgid "ISO/IEC 9075-2 Foundation (SQL/Foundation)"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:61(primary) 
+#: /tmp/cicero-VdKm/features.xml:61(primary) 
 msgid "SQL/Foundation"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:62(para) 
+#: /tmp/cicero-VdKm/features.xml:62(para) 
 msgid "ISO/IEC 9075-3 Call Level Interface (SQL/CLI)"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:62(primary) 
+#: /tmp/cicero-VdKm/features.xml:62(primary) 
 msgid "SQL/CLI"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:63(para) 
+#: /tmp/cicero-VdKm/features.xml:63(para) 
 msgid "ISO/IEC 9075-4 Persistent Stored Modules (SQL/PSM)"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:63(primary) 
+#: /tmp/cicero-VdKm/features.xml:63(primary) 
 msgid "SQL/PSM"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:64(para) 
+#: /tmp/cicero-VdKm/features.xml:64(para) 
 msgid "ISO/IEC 9075-9 Management of External Data (SQL/MED)"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:64(primary) 
+#: /tmp/cicero-VdKm/features.xml:64(primary) 
 msgid "SQL/MED"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:65(para) 
+#: /tmp/cicero-VdKm/features.xml:65(para) 
 msgid "ISO/IEC 9075-10 Object Language Bindings (SQL/OLB)"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:65(primary) 
+#: /tmp/cicero-VdKm/features.xml:65(primary) 
 msgid "SQL/OLB"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:66(para) 
+#: /tmp/cicero-VdKm/features.xml:66(para) 
 msgid "ISO/IEC 9075-11 Information and Definition Schemas (SQL/Schemata)"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:66(primary) 
+#: /tmp/cicero-VdKm/features.xml:66(primary) 
 msgid "SQL/Schemata"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:67(para) 
+#: /tmp/cicero-VdKm/features.xml:67(para) 
 msgid "ISO/IEC 9075-13 Routines and Types using the Java Language (SQL/JRT)"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:67(primary) 
+#: /tmp/cicero-VdKm/features.xml:67(primary) 
 msgid "SQL/JRT"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:68(para) 
+#: /tmp/cicero-VdKm/features.xml:68(para) 
 msgid "ISO/IEC 9075-14 XML-related specifications (SQL/XML)"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:68(primary) 
+#: /tmp/cicero-VdKm/features.xml:68(primary) 
 msgid "SQL/XML"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:53(para) 
+#: /tmp/cicero-VdKm/features.xml:53(para) 
 msgid "The <acronym>SQL:2008</acronym> and <acronym>SQL:2003</acronym> standard versions are also split into a number of parts. Each is known by a shorthand name. Note that these parts are not consecutively numbered. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:72(para) 
+#: /tmp/cicero-VdKm/features.xml:72(para) 
 msgid "The <productname>PostgreSQL</productname> core covers parts 1, 2, 9, 11, and 14. Part 3 is covered by the ODBC driver, and part 13 is covered by the PL/Java plug-in, but exact conformance is currently not being verified for these components. There are currently no implementations of parts 4 and 10 for <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:81(para) 
+#: /tmp/cicero-VdKm/features.xml:81(para) 
 msgid "PostgreSQL supports most of the major features of SQL:2008. Out of 179 mandatory features required for full Core conformance, PostgreSQL conforms to at least 160. In addition, there is a long list of supported optional features. It might be worth noting that at the time of writing, no current version of any database management system claims full conformance to Core SQL:2008."
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:90(para) 
+#: /tmp/cicero-VdKm/features.xml:90(para) 
 msgid "In the following two sections, we provide a list of those features that <productname>PostgreSQL</productname> supports, followed by a list of the features defined in <acronym>SQL:2008</acronym> which are not yet supported in <productname>PostgreSQL</productname>. Both of these lists are approximate: There might be minor details that are nonconforming for a feature that is listed as supported, and large parts of an unsupported feature might in fact be implemented. The main body of the documentation always contains the most accurate information about what does and does not work."
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:103(para) 
+#: /tmp/cicero-VdKm/features.xml:103(para) 
 msgid "Feature codes containing a hyphen are subfeatures. Therefore, if a particular subfeature is not supported, the main feature is listed as unsupported even if some other subfeatures are supported."
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:111(title) 
+#: /tmp/cicero-VdKm/features.xml:111(title) 
 msgid "Supported Features"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:118(entry) 
+#: /tmp/cicero-VdKm/features.xml:118(entry) 
 msgid "Identifier"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:119(entry) 
+#: /tmp/cicero-VdKm/features.xml:119(entry) 
 msgid "Package"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:120(entry) 
+#: /tmp/cicero-VdKm/features.xml:120(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:121(entry) 
+#: /tmp/cicero-VdKm/features.xml:121(entry) 
 msgid "Comment"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:115(tgroup) 
+#: /tmp/cicero-VdKm/features.xml:115(tgroup) 
 msgid "<thead><row><placeholder-1/><placeholder-2/><placeholder-3/><placeholder-4/></row></thead> &features-supported;"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:133(title) 
+#: /tmp/cicero-VdKm/features.xml:133(title) 
 msgid "Unsupported Features"
 msgstr ""
 
-#: /tmp/cicero-burg/features.xml:135(para) 
+#: /tmp/cicero-VdKm/features.xml:135(para) 
 msgid "The following features defined in <acronym>SQL:2008</acronym> are not implemented in this release of <productname>PostgreSQL</productname>. In a few cases, equivalent functionality is available. <informaltable><tgroup cols=\"4\"><thead><row><entry>Identifier</entry><entry>Package</entry><entry>Description</entry><entry>Comment</entry></row></thead> &features-unsupported; </tgroup></informaltable>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-burg/features.xml:0(None) 
+#: /tmp/cicero-VdKm/features.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

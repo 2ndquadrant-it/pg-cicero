@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 17:35+0200\n"
+"POT-Creation-Date: 2011-08-22 17:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,125 +9,125 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-burg/ref/analyze.xml:9(refentrytitle) /tmp/cicero-burg/ref/analyze.xml:15(refname) /tmp/cicero-burg/ref/analyze.xml:20(primary) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:9(refentrytitle) /tmp/cicero-VdKm/ref/analyze.xml:15(refname) /tmp/cicero-VdKm/ref/analyze.xml:20(primary) 
 msgid "ANALYZE"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:10(manvolnum) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:11(refmiscinfo) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:16(refpurpose) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:16(refpurpose) 
 msgid "collect statistics about a database"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:25(replaceable) /tmp/cicero-burg/ref/analyze.xml:63(replaceable) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:25(replaceable) /tmp/cicero-VdKm/ref/analyze.xml:63(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:25(replaceable) /tmp/cicero-burg/ref/analyze.xml:73(replaceable) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:25(replaceable) /tmp/cicero-VdKm/ref/analyze.xml:73(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:24(synopsis) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:24(synopsis) 
 #, no-wrap
 msgid "\nANALYZE [ VERBOSE ] [ <placeholder-1/> [ ( <placeholder-2/> [, ...] ) ] ]\n"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:30(title) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:32(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:32(para) 
 msgid "<command>ANALYZE</command> collects statistics about the contents of tables in the database, and stores the results in the <link linkend=\"catalog-pg-statistic\"><structname>pg_statistic</structname></link> system catalog. Subsequently, the query planner uses these statistics to help determine the most efficient execution plans for queries."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:41(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:41(para) 
 msgid "With no parameter, <command>ANALYZE</command> examines every table in the current database. With a parameter, <command>ANALYZE</command> examines only that table. It is further possible to give a list of column names, in which case only the statistics for those columns are collected."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:50(title) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:50(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:54(literal) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:54(literal) 
 msgid "VERBOSE"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:56(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:56(para) 
 msgid "Enables display of progress messages."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:65(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:65(para) 
 msgid "The name (possibly schema-qualified) of a specific table to analyze. Defaults to all tables in the current database."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:75(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:75(para) 
 msgid "The name of a specific column to analyze. Defaults to all columns."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:84(title) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:84(title) 
 msgid "Outputs"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:86(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:86(para) 
 msgid "When <literal>VERBOSE</literal> is specified, <command>ANALYZE</command> emits progress messages to indicate which table is currently being processed. Various statistics about the tables are printed as well."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:94(title) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:94(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:96(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:96(para) 
 msgid "In the default <productname>PostgreSQL</productname> configuration, the autovacuum daemon (see <xref linkend=\"autovacuum\"/>) takes care of automatic analyzing of tables when they are first loaded with data, and as they change throughout regular operation. When autovacuum is disabled, it is a good idea to run <command>ANALYZE</command> periodically, or just after making major changes in the contents of a table. Accurate statistics will help the planner to choose the most appropriate query plan, and thereby improve the speed of query processing. A common strategy is to run <xref linkend=\"sql-vacuum\"/> and <command>ANALYZE</command> once a day during a low-usage time of day."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:110(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:110(para) 
 msgid "<command>ANALYZE</command> requires only a read lock on the target table, so it can run in parallel with other activity on the table."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:116(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:116(para) 
 msgid "The statistics collected by <command>ANALYZE</command> usually include a list of some of the most common values in each column and a histogram showing the approximate data distribution in each column. One or both of these can be omitted if <command>ANALYZE</command> deems them uninteresting (for example, in a unique-key column, there are no common values) or if the column data type does not support the appropriate operators. There is more information about the statistics in <xref linkend=\"maintenance\"/>."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:128(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:128(para) 
 msgid "For large tables, <command>ANALYZE</command> takes a random sample of the table contents, rather than examining every row. This allows even very large tables to be analyzed in a small amount of time. Note, however, that the statistics are only approximate, and will change slightly each time <command>ANALYZE</command> is run, even if the actual table contents did not change. This might result in small changes in the planner's estimated costs shown by <xref linkend=\"sql-explain\"/>. In rare situations, this non-determinism will cause the planner's choices of query plans to change after <command>ANALYZE</command> is run. To avoid this, raise the amount of statistics collected by <command>ANALYZE</command>, as described below."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:143(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:143(para) 
 msgid "The extent of analysis can be controlled by adjusting the <xref linkend=\"guc-default-statistics-target\"/> configuration variable, or on a column-by-column basis by setting the per-column statistics target with <command>ALTER TABLE ... ALTER COLUMN ... SET STATISTICS</command> (see <xref linkend=\"sql-altertable\"/>). The target value sets the maximum number of entries in the most-common-value list and the maximum number of bins in the histogram. The default target value is 100, but this can be adjusted up or down to trade off accuracy of planner estimates against the time taken for <command>ANALYZE</command> and the amount of space occupied in <literal>pg_statistic</literal>. In particular, setting the statistics target to zero disables collection of statistics for that column. It might be useful to do that for columns that are never used as part of the <literal>WHERE</literal>, <literal>GROUP BY</literal>, or <literal>ORDER BY</literal> clauses of queries, since the planner will have no use for statistics on such columns."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:163(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:163(para) 
 msgid "The largest statistics target among the columns being analyzed determines the number of table rows sampled to prepare the statistics. Increasing the target causes a proportional increase in the time and space needed to do <command>ANALYZE</command>."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:170(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:170(para) 
 msgid "One of the values estimated by <command>ANALYZE</command> is the number of distinct values that appear in each column. Because only a subset of the rows are examined, this estimate can sometimes be quite inaccurate, even with the largest possible statistics target. If this inaccuracy leads to bad query plans, a more accurate value can be determined manually and then installed with <command>ALTER TABLE ... ALTER COLUMN ... SET (n_distinct = ...)</command> (see <xref linkend=\"sql-altertable\"/>)."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:181(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:181(para) 
 msgid "If the table being analyzed has one or more children, <command>ANALYZE</command> will gather statistics twice: once on the rows of the parent table only, and a second time on the rows of the parent table with all of its children. The autovacuum daemon, however, will only consider inserts or updates on the parent table when deciding whether to trigger an automatic analyze. If that table is rarely inserted into or updated, the inheritance statistics will not be up to date unless you run <command>ANALYZE</command> manually."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:194(title) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:194(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:196(para) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:196(para) 
 msgid "There is no <command>ANALYZE</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-burg/ref/analyze.xml:202(title) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:202(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-burg/ref/analyze.xml:0(None) 
+#: /tmp/cicero-VdKm/ref/analyze.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

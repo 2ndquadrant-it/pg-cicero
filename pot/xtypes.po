@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 17:36+0200\n"
+"POT-Creation-Date: 2011-08-22 17:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,108 +9,108 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-burg/xtypes.xml:5(title) 
+#: /tmp/cicero-VdKm/xtypes.xml:5(title) 
 msgid "User-defined Types"
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:8(primary) 
+#: /tmp/cicero-VdKm/xtypes.xml:8(primary) 
 msgid "data type"
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:9(secondary) 
+#: /tmp/cicero-VdKm/xtypes.xml:9(secondary) 
 msgid "user-defined"
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:12(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:12(para) 
 msgid "As described in <xref linkend=\"extend-type-system\"/>, <productname>PostgreSQL</productname> can be extended to support new data types. This section describes how to define new base types, which are data types defined below the level of the <acronym>SQL</acronym> language. Creating a new base type requires implementing functions to operate on the type in a low-level language, usually C."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:21(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:21(para) 
 msgid "The examples in this section can be found in <filename>complex.sql</filename> and <filename>complex.c</filename> in the <filename>src/tutorial</filename> directory of the source distribution. See the <filename>README</filename> file in that directory for instructions about running the examples."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:29(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:29(para) 
 msgid "<indexterm><primary>input function</primary></indexterm><indexterm><primary>output function</primary></indexterm> A user-defined type must always have input and output functions. These functions determine how the type appears in strings (for input by the user and output to the user) and how the type is organized in memory. The input function takes a null-terminated character string as its argument and returns the internal (in memory) representation of the type. The output function takes the internal representation of the type as argument and returns a null-terminated character string. If we want to do anything more with the type than merely store it, we must provide additional functions to implement whatever operations we'd like to have for the type."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:53(programlisting) 
+#: /tmp/cicero-VdKm/xtypes.xml:53(programlisting) 
 #, no-wrap
 msgid "\ntypedef struct Complex {\n    double      x;\n    double      y;\n} Complex;\n"
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:48(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:48(para) 
 msgid "Suppose we want to define a type <type>complex</type> that represents complex numbers. A natural way to represent a complex number in memory would be the following C structure: <placeholder-1/> We will need to make this a pass-by-reference type, since it's too large to fit into a single <type>Datum</type> value."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:64(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:64(para) 
 msgid "As the external string representation of the type, we choose a string of the form <literal>(x,y)</literal>."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:69(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:69(para) 
 msgid "The input and output functions are usually not hard to write, especially the output function. But when defining the external string representation of the type, remember that you must eventually write a complete and robust parser for that representation as your input function. For instance: <placeholder-1/> The output function can simply be: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:120(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:120(para) 
 msgid "You should be careful to make the input and output functions inverses of each other. If you do not, you will have severe problems when you need to dump your data into a file and then read it back in. This is a particularly common problem when floating-point numbers are involved."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:128(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:128(para) 
 msgid "Optionally, a user-defined type can provide binary input and output routines. Binary I/O is normally faster but less portable than textual I/O. As with textual I/O, it is up to you to define exactly what the external binary representation is. Most of the built-in data types try to provide a machine-independent binary representation. For <type>complex</type>, we will piggy-back on the binary I/O converters for type <type>float8</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:174(programlisting) 
+#: /tmp/cicero-VdKm/xtypes.xml:174(programlisting) 
 #, no-wrap
 msgid "\nCREATE TYPE complex;\n"
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:181(programlisting) 
+#: /tmp/cicero-VdKm/xtypes.xml:181(programlisting) 
 #, no-wrap
 msgid "\nCREATE FUNCTION complex_in(cstring)\n    RETURNS complex\n    AS '<replaceable>filename</replaceable>'\n    LANGUAGE C IMMUTABLE STRICT;\n\nCREATE FUNCTION complex_out(complex)\n    RETURNS cstring\n    AS '<replaceable>filename</replaceable>'\n    LANGUAGE C IMMUTABLE STRICT;\n\nCREATE FUNCTION complex_recv(internal)\n   RETURNS complex\n   AS '<replaceable>filename</replaceable>'\n   LANGUAGE C IMMUTABLE STRICT;\n\nCREATE FUNCTION complex_send(complex)\n   RETURNS bytea\n   AS '<replaceable>filename</replaceable>'\n   LANGUAGE C IMMUTABLE STRICT;\n"
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:169(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:169(para) 
 msgid "Once we have written the I/O functions and compiled them into a shared library, we can define the <type>complex</type> type in SQL. First we declare it as a shell type: <placeholder-1/> This serves as a placeholder that allows us to reference the type while defining its I/O functions. Now we can define the I/O functions: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:206(programlisting) 
+#: /tmp/cicero-VdKm/xtypes.xml:206(programlisting) 
 #, no-wrap
 msgid "\nCREATE TYPE complex (\n   internallength = 16,\n   input = complex_in,\n   output = complex_out,\n   receive = complex_recv,\n   send = complex_send,\n   alignment = double\n);\n"
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:204(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:204(para) 
 msgid "Finally, we can provide the full definition of the data type: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:218(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:218(para) 
 msgid "<indexterm><primary>array</primary><secondary>of user-defined type</secondary></indexterm> When you define a new base type, <productname>PostgreSQL</productname> automatically provides support for arrays of that type. The array type typically has the same name as the base type with the underscore character (<literal>_</literal>) prepended."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:230(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:230(para) 
 msgid "Once the data type exists, we can declare additional functions to provide useful operations on the data type. Operators can then be defined atop the functions, and if needed, operator classes can be created to support indexing of the data type. These additional layers are discussed in following sections."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:238(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:238(para) 
 msgid "<indexterm><primary>TOAST</primary><secondary>and user-defined types</secondary></indexterm> If the values of your data type vary in size (in internal form), you should make the data type <acronym>TOAST</acronym>-able (see <xref linkend=\"storage-toast\"/>). You should do this even if the data are always too small to be compressed or stored externally, because <acronym>TOAST</acronym> can save space on small data too, by reducing header overhead."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:251(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:251(para) 
 msgid "To do this, the internal representation must follow the standard layout for variable-length data: the first four bytes must be a <type>char[4]</type> field which is never accessed directly (customarily named <structfield>vl_len_</structfield>). You must use <function>SET_VARSIZE()</function> to store the size of the datum in this field and <function>VARSIZE()</function> to retrieve it. The C functions operating on the data type must always be careful to unpack any toasted values they are handed, by using <function>PG_DETOAST_DATUM</function>. (This detail is customarily hidden by defining type-specific <function>GETARG_DATATYPE_P</function> macros.) Then, when running the <command>CREATE TYPE</command> command, specify the internal length as <literal>variable</literal> and select the appropriate storage option."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:266(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:266(para) 
 msgid "If the alignment is unimportant (either just for a specific function or because the data type specifies byte alignment anyway) then it's possible to avoid some of the overhead of <function>PG_DETOAST_DATUM</function>. You can use <function>PG_DETOAST_DATUM_PACKED</function> instead (customarily hidden by defining a <function>GETARG_DATATYPE_PP</function> macro) and using the macros <function>VARSIZE_ANY_EXHDR</function> and <function>VARDATA_ANY</function> to access a potentially-packed datum. Again, the data returned by these macros is not aligned even if the data type definition specifies an alignment. If the alignment is important you must go through the regular <function>PG_DETOAST_DATUM</function> interface."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:280(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:280(para) 
 msgid "Older code frequently declares <structfield>vl_len_</structfield> as an <type>int32</type> field instead of <type>char[4]</type>. This is OK as long as the struct definition has other fields that have at least <type>int32</type> alignment. But it is dangerous to use such a struct definition when working with a potentially unaligned datum; the compiler may take it as license to assume the datum actually is aligned, leading to core dumps on architectures that are strict about alignment."
 msgstr ""
 
-#: /tmp/cicero-burg/xtypes.xml:291(para) 
+#: /tmp/cicero-VdKm/xtypes.xml:291(para) 
 msgid "For further details see the description of the <xref linkend=\"sql-createtype\"/> command."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-burg/xtypes.xml:0(None) 
+#: /tmp/cicero-VdKm/xtypes.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
