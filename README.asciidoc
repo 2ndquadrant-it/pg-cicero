@@ -6,6 +6,7 @@ PostgreSQL Documentation Translation Project using XML Docbook format.
 
 * Python
 * GIT
+* xml2po (gnome-doc-utils)
 
 == Installation
 
@@ -31,13 +32,15 @@ export PGCICERO_HOME=~/pg-cicero
 This operation is not necessary for translators.
 
 PG-Cicero has an automatic system that converts PostgreSQL documentation from SGML format
-to XML.  2ndQuadrant daily maintains an updated version of the master XML files for every stable
+to XML. Using +xml2po+ it is possible to generate template PO files compatible with GetText.
+2ndQuadrant maintains a daily updated version of the master XML and POT files for every stable
 release starting from PostgreSQL 9.1, in separate branches (e.g. +postgresql/REL9_1_STABLE+).
 
 However, if you want, you can update the documentation by yourself. All you need to do is:
 
 * checkout the PostgreSQL code (via GIT)
 * execute +pgc-update-branch.sh+
+* execute +pgc-update-pot.sh+
 
 === Checkout of the PostgreSQL repository
 
@@ -73,20 +76,32 @@ In case you have permissions to write on the main repository (or you want to wor
 you can push the changes as follows:
 
 ----
-git checkout -b REL9_1_STABLE
+git checkout REL9_1_STABLE
 git merge postgresql/REL9_1_STABLE
 # Perform any manual changes (if needed)
 git push origin REL9_1_STABLE
 ----
 
-=== Scripts ===
+=== Update of template files for GetText
 
-  * xml-update
-  * pot-update
+In order to generate POT files (templates for GetText) for a specific branch (e.g. REL9_1_STABLE), you can type:
+
+----
+cd $PGCICERO_HOME/scripts
+git checkout REL9_1_STABLE
+./pgc-update-pot.sh -p ../xml ../pot
+----
+
+Then commit your changes and - in case - push them.
 
 == Credits ==
 
+Authors::
+	Carlo Ascani <Carlo.Ascani@2ndQuadrant.it>
+	Gabriele Bartolini <Gabriele.Bartolini@2ndQuadrant.it>
+	Marco Nenciarini <Marco.Nenciarini@2ndQuadrant.it>
+
 License::
 	GPL v3 or later
-Author::
+Copyright::
 	(C) 2011 2ndQuadrant Italia <info@2ndquadrant.it>
