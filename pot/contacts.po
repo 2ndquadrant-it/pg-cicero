@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 17:58+0200\n"
+"POT-Creation-Date: 2011-08-22 18:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,12 +9,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-imzd/contacts.xml:5(title) 
+#: /tmp/cicero-zQNY/contacts.xml:5(title) 
 msgid "Contacts"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-imzd/contacts.xml:0(None) 
+#: /tmp/cicero-zQNY/contacts.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
