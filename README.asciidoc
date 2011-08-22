@@ -12,7 +12,6 @@ PostgreSQL Documentation Translation Project using XML Docbook format.
 You can install +pg-cicero+ in your home directory by simply checking out from
 our GitHub repository:
 
-[source,bash]
 ----
 git clone git://github.com/2ndquadrant-it/pg-cicero.git
 ----
@@ -20,7 +19,6 @@ git clone git://github.com/2ndquadrant-it/pg-cicero.git
 From now on, we refer to PG-Cicero's installation directory as +PGCICERO_HOME+.
 You can define this in your shell profile, for example:
 
-[source,bash]
 ----
 # Add this to your ~/.bash_profile (for bash users)
 export PGCICERO_HOME=~/pg-cicero
@@ -45,7 +43,6 @@ However, if you want, you can update the documentation by yourself. All you need
 
 A bare checkout is sufficient:
 
-[source,bash]
 ----
 git clone --bare git://git.postgresql.org/git/postgresql.git
 ----
@@ -53,7 +50,6 @@ git clone --bare git://git.postgresql.org/git/postgresql.git
 From now on, we refer to PostgreSQL local GIT repository as +PGCICERO_POSTGRESQL+.
 You can define this in your shell profile:
 
-[source,bash]
 ----
 # Add this to your ~/.bash_profile (for bash users)
 export PGCICERO_POSTGRESQL=~/postgresql.git
@@ -64,7 +60,6 @@ export PGCICERO_POSTGRESQL=~/postgresql.git
 You can refer to branches the same way you normally do in PostgreSQL. PG-Cicero adopts the same convention.
 For instance, stable 9.1 release is referred to with +REL9_1_STABLE+. Current development's branch is stored in +master+.
 
-[source,bash]
 ----
 cd $PGCICERO_HOME/scripts
 ./pgc-update-branch.sh -b REL9_1_STABLE -v $PGCICERO_POSTGRESQL
@@ -77,7 +72,6 @@ If you do not specify a branch with the +-b+ option, you will work directly on t
 In case you have permissions to write on the main repository (or you want to work on your own),
 you can push the changes as follows:
 
-[source,bash]
 ----
 git checkout -b REL9_1_STABLE
 git merge postgresql/REL9_1_STABLE
