@@ -1,0 +1,140 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-08-22 17:36+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /tmp/cicero-burg/release-8.0.xml:6(title) 
+msgid "Release 8.0.26"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:9(title) 
+msgid "Release Date"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:10(simpara) 
+msgid "2010-10-04"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:13(para) 
+msgid "This release contains a variety of fixes from 8.0.25. For information about new features in the 8.0 major release, see <xref linkend=\"release-8-0\"/>."
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:19(para) 
+msgid "This is expected to be the last <productname>PostgreSQL</productname> release in the 8.0.X series. Users are encouraged to update to a newer release branch soon."
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:26(title) 
+msgid "Migration to Version 8.0.26"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:28(para) 
+msgid "A dump/restore is not required for those running 8.0.X. However, if you are upgrading from a version earlier than 8.0.22, see the release notes for 8.0.22."
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:37(title) 
+msgid "Changes"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:42(para) 
+msgid "Use a separate interpreter for each calling SQL userid in PL/Perl and PL/Tcl (Tom Lane)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:47(para) 
+msgid "This change prevents security problems that can be caused by subverting Perl or Tcl code that will be executed later in the same session under another SQL user identity (for example, within a <literal>SECURITY DEFINER</literal> function). Most scripting languages offer numerous ways that that might be done, such as redefining standard functions or operators called by the target function. Without this change, any SQL user with Perl or Tcl language usage rights can do essentially anything with the SQL privileges of the target function's owner."
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:58(para) 
+msgid "The cost of this change is that intentional communication among Perl and Tcl functions becomes more difficult. To provide an escape hatch, PL/PerlU and PL/TclU functions continue to use only one interpreter per session. This is not considered a security issue since all such functions execute at the trust level of a database superuser already."
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:66(para) 
+msgid "It is likely that third-party procedural languages that claim to offer trusted execution have similar security issues. We advise contacting the authors of any PL you are depending on for security-critical purposes."
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:73(para) 
+msgid "Our thanks to Tim Bunce for pointing out this issue (CVE-2010-3433)."
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:79(para) 
+msgid "Prevent possible crashes in <function>pg_get_expr()</function> by disallowing it from being called with an argument that is not one of the system catalog columns it's intended to be used with (Heikki Linnakangas, Tom Lane)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:88(para) 
+msgid "Fix <quote>cannot handle unplanned sub-select</quote> error (Tom Lane)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:92(para) 
+msgid "This occurred when a sub-select contains a join alias reference that expands into an expression containing another sub-select."
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:99(para) 
+msgid "Defend against functions returning setof record where not all the returned rows are actually of the same rowtype (Tom Lane)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:106(para) 
+msgid "Take care to fsync the contents of lockfiles (both <filename>postmaster.pid</filename> and the socket lockfile) while writing them (Tom Lane)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:112(para) 
+msgid "This omission could result in corrupted lockfile contents if the machine crashes shortly after postmaster start. That could in turn prevent subsequent attempts to start the postmaster from succeeding, until the lockfile is manually removed."
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:121(para) 
+msgid "Avoid recursion while assigning XIDs to heavily-nested subtransactions (Andres Freund, Robert Haas)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:126(para) 
+msgid "The original coding could result in a crash if there was limited stack space."
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:133(para) 
+msgid "Fix <varname>log_line_prefix</varname>'s <literal>%i</literal> escape, which could produce junk early in backend startup (Tom Lane)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:140(para) 
+msgid "Fix possible data corruption in <command>ALTER TABLE ... SET TABLESPACE</command> when archiving is enabled (Jeff Davis)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:147(para) 
+msgid "Allow <command>CREATE DATABASE</command> and <command>ALTER DATABASE ... SET TABLESPACE</command> to be interrupted by query-cancel (Guillaume Lelarge)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:154(para) 
+msgid "In PL/Python, defend against null pointer results from <function>PyCObject_AsVoidPtr</function> and <function>PyCObject_FromVoidPtr</function> (Peter Eisentraut)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:162(para) 
+msgid "Improve <filename>contrib/dblink</filename>'s handling of tables containing dropped columns (Tom Lane)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:169(para) 
+msgid "Fix connection leak after <quote>duplicate connection name</quote> errors in <filename>contrib/dblink</filename> (Itagaki Takahiro)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:176(para) 
+msgid "Fix <filename>contrib/dblink</filename> to handle connection names longer than 62 bytes correctly (Itagaki Takahiro)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:183(para) 
+msgid "Update build infrastructure and documentation to reflect the source code repository's move from CVS to Git (Magnus Hagander and others)"
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:190(para) 
+msgid "Update time zone data files to <application>tzdata</application> release 2010l for DST law changes in Egypt and Palestine; also historical corrections for Finland."
+msgstr ""
+
+#: /tmp/cicero-burg/release-8.0.xml:196(para) 
+msgid "This change also adds new names for two Micronesian timezones: Pacific/Chuuk is now preferred over Pacific/Truk (and the preferred abbreviation is CHUT not TRUT) and Pacific/Pohnpei is preferred over Pacific/Ponape."
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: /tmp/cicero-burg/release-8.0.xml:0(None) 
+msgid "translator-credits"
+msgstr ""
+

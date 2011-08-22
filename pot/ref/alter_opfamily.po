@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-08-22 17:35+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:9(refentrytitle) /tmp/cicero-burg/ref/alter_opfamily.xml:15(refname) /tmp/cicero-burg/ref/alter_opfamily.xml:20(primary) 
+msgid "ALTER OPERATOR FAMILY"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:10(manvolnum) 
+msgid "7"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:11(refmiscinfo) 
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:16(refpurpose) 
+msgid "change the definition of an operator family"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:25(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:29(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:33(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:34(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:35(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:92(replaceable) 
+msgid "name"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:25(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:29(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:33(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:34(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:35(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:102(replaceable) 
+msgid "index_method"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:26(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:30(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:111(replaceable) 
+msgid "strategy_number"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:26(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:121(replaceable) 
+msgid "operator_name"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:26(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:26(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:27(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:27(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:30(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:30(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:31(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:31(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:131(replaceable) 
+msgid "op_type"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:26(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:160(replaceable) 
+msgid "sort_family_name"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:27(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:31(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:176(replaceable) 
+msgid "support_number"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:27(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:186(replaceable) 
+msgid "function_name"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:27(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:196(replaceable) 
+msgid "argument_type"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:33(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:205(replaceable) 
+msgid "new_name"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:34(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:214(replaceable) 
+msgid "new_owner"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:35(replaceable) /tmp/cicero-burg/ref/alter_opfamily.xml:223(replaceable) 
+msgid "new_schema"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:24(synopsis) 
+#, no-wrap
+msgid "\nALTER OPERATOR FAMILY <placeholder-1/> USING <placeholder-2/> ADD\n  {  OPERATOR <placeholder-3/> <placeholder-4/> ( <placeholder-5/>, <placeholder-6/> ) [ FOR SEARCH | FOR ORDER BY <placeholder-7/> ]\n   | FUNCTION <placeholder-8/> [ ( <placeholder-9/> [ , <placeholder-10/> ] ) ] <placeholder-11/> ( <placeholder-12/> [, ...] )\n  } [, ... ]\nALTER OPERATOR FAMILY <placeholder-13/> USING <placeholder-14/> DROP\n  {  OPERATOR <placeholder-15/> ( <placeholder-16/> [ , <placeholder-17/> ] )\n   | FUNCTION <placeholder-18/> ( <placeholder-19/> [ , <placeholder-20/> ] )\n  } [, ... ]\nALTER OPERATOR FAMILY <placeholder-21/> USING <placeholder-22/> RENAME TO <placeholder-23/>\nALTER OPERATOR FAMILY <placeholder-24/> USING <placeholder-25/> OWNER TO <placeholder-26/>\nALTER OPERATOR FAMILY <placeholder-27/> USING <placeholder-28/> SET SCHEMA <placeholder-29/>\n"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:40(title) 
+msgid "Description"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:42(para) 
+msgid "<command>ALTER OPERATOR FAMILY</command> changes the definition of an operator family. You can add operators and support functions to the family, remove them from the family, or change the family's name or owner."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:49(para) 
+msgid "When operators and support functions are added to a family with <command>ALTER OPERATOR FAMILY</command>, they are not part of any specific operator class within the family, but are just <quote>loose</quote> within the family. This indicates that these operators and functions are compatible with the family's semantics, but are not required for correct functioning of any specific index. (Operators and functions that are so required should be declared as part of an operator class, instead; see <xref linkend=\"sql-createopclass\"/>.) <productname>PostgreSQL</productname> will allow loose members of a family to be dropped from the family at any time, but members of an operator class cannot be dropped without dropping the whole class and any indexes that depend on it. Typically, single-data-type operators and functions are part of operator classes because they are needed to support an index on that specific data type, while cross-data-type operators and functions are made loose members of the family."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:68(para) 
+msgid "You must be a superuser to use <command>ALTER OPERATOR FAMILY</command>. (This restriction is made because an erroneous operator family definition could confuse or even crash the server.)"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:74(para) 
+msgid "<command>ALTER OPERATOR FAMILY</command> does not presently check whether the operator family definition includes all the operators and functions required by the index method, nor whether the operators and functions form a self-consistent set. It is the user's responsibility to define a valid operator family."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:82(para) 
+msgid "Refer to <xref linkend=\"xindex\"/> for further information."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:88(title) 
+msgid "Parameters"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:94(para) 
+msgid "The name (optionally schema-qualified) of an existing operator family."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:104(para) 
+msgid "The name of the index method this operator family is for."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:113(para) 
+msgid "The index method's strategy number for an operator associated with the operator family."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:123(para) 
+msgid "The name (optionally schema-qualified) of an operator associated with the operator family."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:133(para) 
+msgid "In an <literal>OPERATOR</literal> clause, the operand data type(s) of the operator, or <literal>NONE</literal> to signify a left-unary or right-unary operator. Unlike the comparable syntax in <command>CREATE OPERATOR CLASS</command>, the operand data types must always be specified."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:141(para) 
+msgid "In an <literal>ADD FUNCTION</literal> clause, the operand data type(s) the function is intended to support, if different from the input data type(s) of the function. For B-tree and hash indexes it is not necessary to specify <replaceable class=\"parameter\">op_type</replaceable> since the function's input data type(s) are always the correct ones to use. For GIN and GiST indexes it is necessary to specify the input data type the function is to be used with."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:152(para) 
+msgid "In a <literal>DROP FUNCTION</literal> clause, the operand data type(s) the function is intended to support must be specified."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:162(para) 
+msgid "The name (optionally schema-qualified) of an existing <literal>btree</literal> operator family that describes the sort ordering associated with an ordering operator."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:168(para) 
+msgid "If neither <literal>FOR SEARCH</literal> nor <literal>FOR ORDER BY</literal> is specified, <literal>FOR SEARCH</literal> is the default."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:178(para) 
+msgid "The index method's support procedure number for a function associated with the operator family."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:188(para) 
+msgid "The name (optionally schema-qualified) of a function that is an index method support procedure for the operator family."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:198(para) 
+msgid "The parameter data type(s) of the function."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:207(para) 
+msgid "The new name of the operator family."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:216(para) 
+msgid "The new owner of the operator family."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:225(para) 
+msgid "The new schema for the operator family."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:232(para) 
+msgid "The <literal>OPERATOR</literal> and <literal>FUNCTION</literal> clauses can appear in any order."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:240(title) 
+msgid "Notes"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:242(para) 
+msgid "Notice that the <literal>DROP</literal> syntax only specifies the <quote>slot</quote> in the operator family, by strategy or support number and input data type(s). The name of the operator or function occupying the slot is not mentioned. Also, for <literal>DROP FUNCTION</literal> the type(s) to specify are the input data type(s) the function is intended to support; for GIN and GiST indexes this might have nothing to do with the actual input argument types of the function."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:252(para) 
+msgid "Because the index machinery does not check access permissions on functions before using them, including a function or operator in an operator family is tantamount to granting public execute permission on it. This is usually not an issue for the sorts of functions that are useful in an operator family."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:260(para) 
+msgid "The operators should not be defined by SQL functions. A SQL function is likely to be inlined into the calling query, which will prevent the optimizer from recognizing that the query matches an index."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:266(para) 
+msgid "Before <productname>PostgreSQL</productname> 8.4, the <literal>OPERATOR</literal> clause could include a <literal>RECHECK</literal> option. This is no longer supported because whether an index operator is <quote>lossy</quote> is now determined on-the-fly at run time. This allows efficient handling of cases where an operator might or might not be lossy."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:276(title) 
+msgid "Examples"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:278(para) 
+msgid "The following example command adds cross-data-type operators and support functions to an operator family that already contains B-tree operator classes for data types <type>int4</type> and <type>int2</type>."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:284(programlisting) 
+#, no-wrap
+msgid "\nALTER OPERATOR FAMILY integer_ops USING btree ADD\n\n  -- int4 vs int2\n  OPERATOR 1 &lt; (int4, int2) ,\n  OPERATOR 2 &lt;= (int4, int2) ,\n  OPERATOR 3 = (int4, int2) ,\n  OPERATOR 4 &gt;= (int4, int2) ,\n  OPERATOR 5 &gt; (int4, int2) ,\n  FUNCTION 1 btint42cmp(int4, int2) ,\n\n  -- int2 vs int4\n  OPERATOR 1 &lt; (int2, int4) ,\n  OPERATOR 2 &lt;= (int2, int4) ,\n  OPERATOR 3 = (int2, int4) ,\n  OPERATOR 4 &gt;= (int2, int4) ,\n  OPERATOR 5 &gt; (int2, int4) ,\n  FUNCTION 1 btint24cmp(int2, int4) ;\n"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:304(para) 
+msgid "To remove these entries again:"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:308(programlisting) 
+#, no-wrap
+msgid "\nALTER OPERATOR FAMILY integer_ops USING btree DROP\n\n  -- int4 vs int2\n  OPERATOR 1 (int4, int2) ,\n  OPERATOR 2 (int4, int2) ,\n  OPERATOR 3 (int4, int2) ,\n  OPERATOR 4 (int4, int2) ,\n  OPERATOR 5 (int4, int2) ,\n  FUNCTION 1 (int4, int2) ,\n\n  -- int2 vs int4\n  OPERATOR 1 (int2, int4) ,\n  OPERATOR 2 (int2, int4) ,\n  OPERATOR 3 (int2, int4) ,\n  OPERATOR 4 (int2, int4) ,\n  OPERATOR 5 (int2, int4) ,\n  FUNCTION 1 (int2, int4) ;\n"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:330(title) 
+msgid "Compatibility"
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:332(para) 
+msgid "There is no <command>ALTER OPERATOR FAMILY</command> statement in the SQL standard."
+msgstr ""
+
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:339(title) 
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: /tmp/cicero-burg/ref/alter_opfamily.xml:0(None) 
+msgid "translator-credits"
+msgstr ""
+
