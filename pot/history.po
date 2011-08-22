@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-08-22 17:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /tmp/cicero-lkRf/history.xml:6(title) 
+msgid "A Brief History of <productname>PostgreSQL</productname>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:9(primary) 
+msgid "history"
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:10(secondary) 
+msgid "of PostgreSQL"
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:13(para) 
+msgid "The object-relational database management system now known as <productname>PostgreSQL</productname> is derived from the <productname>POSTGRES</productname> package written at the University of California at Berkeley. With over two decades of development behind it, <productname>PostgreSQL</productname> is now the most advanced open-source database available anywhere."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:23(title) 
+msgid "The Berkeley <productname>POSTGRES</productname> Project"
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:26(primary) 
+msgid "POSTGRES"
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:29(para) 
+msgid "The <productname>POSTGRES</productname> project, led by Professor Michael Stonebraker, was sponsored by the Defense Advanced Research Projects Agency (<acronym>DARPA</acronym>), the Army Research Office (<acronym>ARO</acronym>), the National Science Foundation (<acronym>NSF</acronym>), and ESL, Inc. The implementation of <productname>POSTGRES</productname> began in 1986. The initial concepts for the system were presented in <xref linkend=\"ston86\"/>, and the definition of the initial data model appeared in <xref linkend=\"rowe87\"/>. The design of the rule system at that time was described in <xref linkend=\"ston87a\"/>. The rationale and architecture of the storage manager were detailed in <xref linkend=\"ston87b\"/>."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:44(para) 
+msgid "<productname>POSTGRES</productname> has undergone several major releases since then. The first <quote>demoware</quote> system became operational in 1987 and was shown at the 1988 <acronym>ACM-SIGMOD</acronym> Conference. Version 1, described in <xref linkend=\"ston90a\"/>, was released to a few external users in June 1989. In response to a critique of the first rule system (<xref linkend=\"ston89\"/>), the rule system was redesigned (<xref linkend=\"ston90b\"/>), and Version 2 was released in June 1990 with the new rule system. Version 3 appeared in 1991 and added support for multiple storage managers, an improved query executor, and a rewritten rule system. For the most part, subsequent releases until <productname>Postgres95</productname> (see below) focused on portability and reliability."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:60(para) 
+msgid "<productname>POSTGRES</productname> has been used to implement many different research and production applications. These include: a financial data analysis system, a jet engine performance monitoring package, an asteroid tracking database, a medical information database, and several geographic information systems. <productname>POSTGRES</productname> has also been used as an educational tool at several universities. Finally, Illustra Information Technologies (later merged into <ulink url=\"http://www.informix.com/\"><productname>Informix</productname></ulink>, which is now owned by <ulink url=\"http://www.ibm.com/\">IBM</ulink>) picked up the code and commercialized it. In late 1992, <productname>POSTGRES</productname> became the primary data manager for the <ulink url=\"http://meteora.ucsd.edu/s2k/s2k_home.html\"> Sequoia 2000 scientific computing project</ulink>."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:79(para) 
+msgid "The size of the external user community nearly doubled during 1993. It became increasingly obvious that maintenance of the prototype code and support was taking up large amounts of time that should have been devoted to database research. In an effort to reduce this support burden, the Berkeley <productname>POSTGRES</productname> project officially ended with Version 4.2."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:91(productname) /tmp/cicero-lkRf/history.xml:94(primary) 
+msgid "Postgres95"
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:97(para) 
+msgid "In 1994, Andrew Yu and Jolly Chen added an SQL language interpreter to <productname>POSTGRES</productname>. Under a new name, <productname>Postgres95</productname> was subsequently released to the web to find its own way in the world as an open-source descendant of the original <productname>POSTGRES</productname> Berkeley code."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:117(para) 
+msgid "The query language PostQUEL was replaced with <acronym>SQL</acronym> (implemented in the server). Subqueries were not supported until <productname>PostgreSQL</productname> (see below), but they could be imitated in <productname>Postgres95</productname> with user-defined <acronym>SQL</acronym> functions. Aggregate functions were re-implemented. Support for the <literal>GROUP BY</literal> query clause was also added."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:130(para) 
+msgid "A new program (<application>psql</application>) was provided for interactive SQL queries, which used <acronym>GNU</acronym><application>Readline</application>. This largely superseded the old <application>monitor</application> program."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:140(para) 
+msgid "A new front-end library, <filename>libpgtcl</filename>, supported <acronym>Tcl</acronym>-based clients. A sample shell, <command>pgtclsh</command>, provided new Tcl commands to interface <application>Tcl</application> programs with the <productname>Postgres95</productname> server."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:150(para) 
+msgid "The large-object interface was overhauled. The inversion large objects were the only mechanism for storing large objects. (The inversion file system was removed.)"
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:158(para) 
+msgid "The instance-level rule system was removed. Rules were still available as rewrite rules."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:165(para) 
+msgid "A short tutorial introducing regular <acronym>SQL</acronym> features as well as those of <productname>Postgres95</productname> was distributed with the source code"
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:174(para) 
+msgid "<acronym>GNU</acronym> make (instead of <acronym>BSD</acronym> make) was used for the build. Also, <productname>Postgres95</productname> could be compiled with an unpatched <productname>GCC</productname> (data alignment of doubles was fixed)."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:106(para) 
+msgid "<productname>Postgres95</productname> code was completely ANSI C and trimmed in size by 25%. Many internal changes improved performance and maintainability. <productname>Postgres95</productname> release 1.0.x ran about 30-50% faster on the Wisconsin Benchmark compared to <productname>POSTGRES</productname>, Version 4.2. Apart from bug fixes, the following were the major enhancements: <placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:187(productname) 
+msgid "PostgreSQL"
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:189(para) 
+msgid "By 1996, it became clear that the name <quote>Postgres95</quote> would not stand the test of time. We chose a new name, <productname>PostgreSQL</productname>, to reflect the relationship between the original <productname>POSTGRES</productname> and the more recent versions with <acronym>SQL</acronym> capability. At the same time, we set the version numbering to start at 6.0, putting the numbers back into the sequence originally begun by the Berkeley <productname>POSTGRES</productname> project."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:200(para) 
+msgid "Many people continue to refer to <productname>PostgreSQL</productname> as <quote>Postgres</quote> (now rarely in all capital letters) because of tradition or because it is easier to pronounce. This usage is widely accepted as a nickname or alias."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:208(para) 
+msgid "The emphasis during development of <productname>Postgres95</productname> was on identifying and understanding existing problems in the server code. With <productname>PostgreSQL</productname>, the emphasis has shifted to augmenting features and capabilities, although work continues in all areas."
+msgstr ""
+
+#: /tmp/cicero-lkRf/history.xml:217(para) 
+msgid "Details about what has happened in <productname>PostgreSQL</productname> since then can be found in <xref linkend=\"release\"/>."
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: /tmp/cicero-lkRf/history.xml:0(None) 
+msgid "translator-credits"
+msgstr ""
+

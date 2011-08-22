@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-08-22 17:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:10(refentrytitle) /tmp/cicero-lkRf/ref/alter_large_object.xml:16(refname) /tmp/cicero-lkRf/ref/alter_large_object.xml:21(primary) 
+msgid "ALTER LARGE OBJECT"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:11(manvolnum) 
+msgid "7"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:12(refmiscinfo) 
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:17(refpurpose) 
+msgid "change the definition of a large object"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:26(replaceable) /tmp/cicero-lkRf/ref/alter_large_object.xml:46(replaceable) 
+msgid "large_object_oid"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:26(replaceable) /tmp/cicero-lkRf/ref/alter_large_object.xml:55(replaceable) 
+msgid "new_owner"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:25(synopsis) 
+#, no-wrap
+msgid "\nALTER LARGE OBJECT <placeholder-1/> OWNER TO <placeholder-2/>\n"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:31(title) 
+msgid "Description"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:33(para) 
+msgid "<command>ALTER LARGE OBJECT</command> changes the definition of a large object. The only functionality is to assign a new owner. You must be superuser or owner of the large object to use <command>ALTER LARGE OBJECT</command>."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:42(title) 
+msgid "Parameters"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:48(para) 
+msgid "OID of the large object to be altered"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:57(para) 
+msgid "The new owner of the large object"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:66(title) 
+msgid "Compatibility"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:68(para) 
+msgid "There is no <command>ALTER LARGE OBJECT</command> statement in the SQL standard."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:75(title) 
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: /tmp/cicero-lkRf/ref/alter_large_object.xml:0(None) 
+msgid "translator-credits"
+msgstr ""
+

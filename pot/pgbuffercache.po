@@ -1,0 +1,197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-08-22 17:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:6(title) /tmp/cicero-lkRf/pgbuffercache.xml:9(primary) 
+msgid "pg_buffercache"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:12(para) 
+msgid "The <filename>pg_buffercache</filename> module provides a means for examining what's happening in the shared buffer cache in real time."
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:17(para) 
+msgid "The module provides a C function <function>pg_buffercache_pages</function> that returns a set of records, plus a view <structname>pg_buffercache</structname> that wraps the function for convenient use."
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:24(para) 
+msgid "By default public access is revoked from both of these, just in case there are security issues lurking."
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:30(title) 
+msgid "The <structname>pg_buffercache</structname> View"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:32(para) 
+msgid "The definitions of the columns exposed by the view are shown in <xref linkend=\"pgbuffercache-columns\"/>."
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:37(title) 
+msgid "<structname>pg_buffercache</structname> Columns"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:42(entry) 
+msgid "Name"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:43(entry) 
+msgid "Type"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:44(entry) 
+msgid "References"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:45(entry) 
+msgid "Description"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:51(structfield) 
+msgid "bufferid"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:52(type) 
+msgid "integer"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:54(varname) 
+msgid "shared_buffers"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:54(entry) 
+msgid "ID, in the range 1..<placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:58(structfield) 
+msgid "relfilenode"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:59(type) /tmp/cicero-lkRf/pgbuffercache.xml:66(type) /tmp/cicero-lkRf/pgbuffercache.xml:73(type) 
+msgid "oid"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:60(literal) 
+msgid "pg_class.relfilenode"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:61(entry) 
+msgid "Filenode number of the relation"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:65(structfield) 
+msgid "reltablespace"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:67(literal) 
+msgid "pg_tablespace.oid"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:68(entry) 
+msgid "Tablespace OID of the relation"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:72(structfield) 
+msgid "reldatabase"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:74(literal) 
+msgid "pg_database.oid"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:75(entry) 
+msgid "Database OID of the relation"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:79(structfield) 
+msgid "relblocknumber"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:80(type) 
+msgid "bigint"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:82(entry) 
+msgid "Page number within the relation"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:86(structfield) 
+msgid "relforknumber"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:87(type) /tmp/cicero-lkRf/pgbuffercache.xml:101(type) 
+msgid "smallint"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:89(entry) 
+msgid "Fork number within the relation"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:93(structfield) 
+msgid "isdirty"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:94(type) 
+msgid "boolean"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:96(entry) 
+msgid "Is the page dirty?"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:100(structfield) 
+msgid "usagecount"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:103(entry) 
+msgid "Page LRU count"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:110(para) 
+msgid "There is one row for each buffer in the shared cache. Unused buffers are shown with all fields null except <structfield>bufferid</structfield>. Shared system catalogs are shown as belonging to database zero."
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:116(para) 
+msgid "Because the cache is shared by all the databases, there will normally be pages from relations not belonging to the current database. This means that there may not be matching join rows in <structname>pg_class</structname> for some rows, or that there could even be incorrect joins. If you are trying to join against <structname>pg_class</structname>, it's a good idea to restrict the join to rows having <structfield>reldatabase</structfield> equal to the current database's OID or zero."
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:126(para) 
+msgid "When the <structname>pg_buffercache</structname> view is accessed, internal buffer manager locks are taken for long enough to copy all the buffer state data that the view will display. This ensures that the view produces a consistent set of results, while not blocking normal buffer activity longer than necessary. Nonetheless there could be some impact on database performance if this view is read often."
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:137(title) 
+msgid "Sample Output"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:139(screen) 
+#, no-wrap
+msgid "\nregression=# SELECT c.relname, count(*) AS buffers\n             FROM pg_buffercache b INNER JOIN pg_class c\n             ON b.relfilenode = pg_relation_filenode(c.oid) AND\n                b.reldatabase IN (0, (SELECT oid FROM pg_database\n                                      WHERE datname = current_database()))\n             GROUP BY c.relname\n             ORDER BY 2 DESC\n             LIMIT 10;\n\n             relname             | buffers\n---------------------------------+---------\n tenk2                           |     345\n tenk1                           |     141\n pg_proc                         |      46\n pg_class                        |      45\n pg_attribute                    |      43\n pg_class_relname_nsp_index      |      30\n pg_proc_proname_args_nsp_index  |      28\n pg_attribute_relid_attnam_index |      26\n pg_depend                       |      22\n pg_depend_reference_index       |      20\n(10 rows)\n"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:166(title) 
+msgid "Authors"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:168(para) 
+msgid "Mark Kirkwood <email>markir@paradise.net.nz</email>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:172(para) 
+msgid "Design suggestions: Neil Conway <email>neilc@samurai.com</email>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgbuffercache.xml:176(para) 
+msgid "Debugging advice: Tom Lane <email>tgl@sss.pgh.pa.us</email>"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: /tmp/cicero-lkRf/pgbuffercache.xml:0(None) 
+msgid "translator-credits"
+msgstr ""
+

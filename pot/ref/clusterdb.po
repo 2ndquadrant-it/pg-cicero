@@ -1,0 +1,300 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-08-22 17:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:10(application) /tmp/cicero-lkRf/ref/clusterdb.xml:16(refname) /tmp/cicero-lkRf/ref/clusterdb.xml:21(primary) /tmp/cicero-lkRf/ref/clusterdb.xml:26(command) /tmp/cicero-lkRf/ref/clusterdb.xml:34(command) 
+msgid "clusterdb"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:11(manvolnum) 
+msgid "1"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:12(refmiscinfo) 
+msgid "Application"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:17(productname) 
+msgid "PostgreSQL"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:17(refpurpose) 
+msgid "cluster a <placeholder-1/> database"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:27(replaceable) /tmp/cicero-lkRf/ref/clusterdb.xml:35(replaceable) 
+msgid "connection-option"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:28(arg) /tmp/cicero-lkRf/ref/clusterdb.xml:36(arg) /tmp/cicero-lkRf/ref/clusterdb.xml:128(option) 
+msgid "--verbose"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:28(arg) /tmp/cicero-lkRf/ref/clusterdb.xml:36(arg) /tmp/cicero-lkRf/ref/clusterdb.xml:127(option) 
+msgid "-v"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:29(replaceable) /tmp/cicero-lkRf/ref/clusterdb.xml:117(replaceable) /tmp/cicero-lkRf/ref/clusterdb.xml:118(replaceable) 
+msgid "table"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:29(arg) 
+msgid "--table | -t <placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:30(replaceable) /tmp/cicero-lkRf/ref/clusterdb.xml:81(replaceable) /tmp/cicero-lkRf/ref/clusterdb.xml:82(replaceable) 
+msgid "dbname"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:37(arg) /tmp/cicero-lkRf/ref/clusterdb.xml:72(option) 
+msgid "--all"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:37(arg) /tmp/cicero-lkRf/ref/clusterdb.xml:71(option) 
+msgid "-a"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:43(title) 
+msgid "Description"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:45(para) 
+msgid "<application>clusterdb</application> is a utility for reclustering tables in a <productname>PostgreSQL</productname> database. It finds tables that have previously been clustered, and clusters them again on the same index that was last used. Tables that have never been clustered are not affected."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:53(para) 
+msgid "<application>clusterdb</application> is a wrapper around the SQL command <xref linkend=\"sql-cluster\"/>. There is no effective difference between clustering databases via this utility and via other methods for accessing the server."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:64(title) 
+msgid "Options"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:74(para) 
+msgid "Cluster all databases."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:81(optional) 
+msgid "-d"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:82(optional) 
+msgid "--dbname="
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:84(para) 
+msgid "Specifies the name of the database to be clustered. If this is not specified and <option>-a</option> (or <option>--all</option>) is not used, the database name is read from the environment variable <envar>PGDATABASE</envar>. If that is not set, the user name specified for the connection is used."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:96(option) 
+msgid "-e"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:97(option) 
+msgid "--echo"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:99(para) 
+msgid "Echo the commands that <application>clusterdb</application> generates and sends to the server."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:107(option) 
+msgid "-q"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:108(option) 
+msgid "--quiet"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:110(para) 
+msgid "Do not display progress messages."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:117(option) 
+msgid "-t <placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:118(option) 
+msgid "--table=<placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:120(para) 
+msgid "Cluster <replaceable class=\"parameter\">table</replaceable> only."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:130(para) 
+msgid "Print detailed information during processing."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:137(option) 
+msgid "-V"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:138(option) 
+msgid "--version"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:140(para) 
+msgid "Print the <application>clusterdb</application> version and exit."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:147(option) 
+msgid "-?"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:148(option) 
+msgid "--help"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:150(para) 
+msgid "Show help about <application>clusterdb</application> command line arguments, and exit."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:66(para) 
+msgid "<application>clusterdb</application> accepts the following command-line arguments: <placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:166(replaceable) /tmp/cicero-lkRf/ref/clusterdb.xml:167(replaceable) 
+msgid "host"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:166(option) 
+msgid "-h <placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:167(option) 
+msgid "--host=<placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:169(para) 
+msgid "Specifies the host name of the machine on which the server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:178(replaceable) /tmp/cicero-lkRf/ref/clusterdb.xml:179(replaceable) 
+msgid "port"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:178(option) 
+msgid "-p <placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:179(option) 
+msgid "--port=<placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:181(para) 
+msgid "Specifies the TCP port or local Unix domain socket file extension on which the server is listening for connections."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:190(replaceable) /tmp/cicero-lkRf/ref/clusterdb.xml:191(replaceable) 
+msgid "username"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:190(option) 
+msgid "-U <placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:191(option) 
+msgid "--username=<placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:193(para) 
+msgid "User name to connect as."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:200(option) 
+msgid "-w"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:201(option) 
+msgid "--no-password"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:203(para) 
+msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:215(option) 
+msgid "-W"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:216(option) 
+msgid "--password"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:218(para) 
+msgid "Force <application>clusterdb</application> to prompt for a password before connecting to a database."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:223(para) 
+msgid "This option is never essential, since <application>clusterdb</application> will automatically prompt for a password if the server demands password authentication. However, <application>clusterdb</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:160(para) 
+msgid "<application>clusterdb</application> also accepts the following command-line arguments for connection parameters: <placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:240(title) 
+msgid "Environment"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:244(envar) 
+msgid "PGDATABASE"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:245(envar) 
+msgid "PGHOST"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:246(envar) 
+msgid "PGPORT"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:247(envar) 
+msgid "PGUSER"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:250(para) 
+msgid "Default connection parameters"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:257(para) 
+msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:267(title) 
+msgid "Diagnostics"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:269(para) 
+msgid "In case of difficulty, see <xref linkend=\"sql-cluster\"/> and <xref linkend=\"app-psql\"/> for discussions of potential problems and error messages. The database server must be running at the targeted host. Also, any default connection settings and environment variables used by the <application>libpq</application> front-end library will apply."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:283(title) 
+msgid "Examples"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:285(para) 
+msgid "To cluster the database <literal>test</literal>: <screen>\n<prompt>$ </prompt><userinput>clusterdb test</userinput>\n</screen>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:292(para) 
+msgid "To cluster a single table <literal>foo</literal> in a database named <literal>xyzzy</literal>: <screen>\n<prompt>$ </prompt><userinput>clusterdb --table foo xyzzy</userinput>\n</screen>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:303(title) 
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: /tmp/cicero-lkRf/ref/clusterdb.xml:0(None) 
+msgid "translator-credits"
+msgstr ""
+

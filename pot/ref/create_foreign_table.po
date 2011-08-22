@@ -1,0 +1,158 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-08-22 17:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:7(refentrytitle) /tmp/cicero-lkRf/ref/create_foreign_table.xml:13(refname) /tmp/cicero-lkRf/ref/create_foreign_table.xml:18(primary) 
+msgid "CREATE FOREIGN TABLE"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:8(manvolnum) 
+msgid "7"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:9(refmiscinfo) 
+msgid "SQL - Language Statements"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:14(refpurpose) 
+msgid "define a new foreign table"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:23(replaceable) /tmp/cicero-lkRf/ref/create_foreign_table.xml:77(replaceable) 
+msgid "table_name"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:24(replaceable) /tmp/cicero-lkRf/ref/create_foreign_table.xml:86(replaceable) 
+msgid "column_name"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:24(replaceable) /tmp/cicero-lkRf/ref/create_foreign_table.xml:95(replaceable) 
+msgid "data_type"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:24(replaceable) /tmp/cicero-lkRf/ref/create_foreign_table.xml:28(replaceable) /tmp/cicero-lkRf/ref/create_foreign_table.xml:140(replaceable) 
+msgid "option"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:24(replaceable) /tmp/cicero-lkRf/ref/create_foreign_table.xml:28(replaceable) /tmp/cicero-lkRf/ref/create_foreign_table.xml:140(replaceable) 
+msgid "value"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:27(replaceable) /tmp/cicero-lkRf/ref/create_foreign_table.xml:131(replaceable) 
+msgid "server_name"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:22(synopsis) 
+#, no-wrap
+msgid "\nCREATE FOREIGN TABLE [ IF NOT EXISTS ] <placeholder-1/> ( [\n  { <placeholder-2/> <placeholder-3/> [ OPTIONS ( <placeholder-4/> '<placeholder-5/>' [, ... ] ) ] [ NULL | NOT NULL ] }\n    [, ... ]\n] )\n  SERVER <placeholder-6/>\n[ OPTIONS ( <placeholder-7/> '<placeholder-8/>' [, ... ] ) ]\n\n"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:34(title) 
+msgid "Description"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:36(para) 
+msgid "<command>CREATE FOREIGN TABLE</command> will create a new foreign table in the current database. The table will be owned by the user issuing the command."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:42(para) 
+msgid "If a schema name is given (for example, <literal>CREATE FOREIGN TABLE myschema.mytable ...</literal>) then the table is created in the specified schema. Otherwise it is created in the current schema. The name of the foreign table must be distinct from the name of any other foreign table, table, sequence, index, or view in the same schema."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:51(para) 
+msgid "<command>CREATE FOREIGN TABLE</command> also automatically creates a data type that represents the composite type corresponding to one row of the foreign table. Therefore, foreign tables cannot have the same name as any existing data type in the same schema."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:60(title) 
+msgid "Parameters"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:65(literal) 
+msgid "IF NOT EXISTS"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:67(para) 
+msgid "Do not throw an error if a relation with the same name already exists. A notice is issued in this case. Note that there is no guarantee that the existing relation is anything like the one that would have been created."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:79(para) 
+msgid "The name (optionally schema-qualified) of the table to be created."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:88(para) 
+msgid "The name of a column to be created in the new table."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:97(para) 
+msgid "The data type of the column. This can include array specifiers. For more information on the data types supported by <productname>PostgreSQL</productname>, refer to <xref linkend=\"datatype\"/>."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:107(literal) 
+msgid "NOT NULL"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:109(para) 
+msgid "The column is not allowed to contain null values."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:116(literal) 
+msgid "NULL"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:118(para) 
+msgid "The column is allowed to contain null values. This is the default."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:122(para) 
+msgid "This clause is only provided for compatibility with non-standard SQL databases. Its use is discouraged in new applications."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:133(para) 
+msgid "The name of an existing server for the foreign table."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:140(literal) 
+msgid "OPTIONS ( <placeholder-1/> '<placeholder-2/>' [, ...] )"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:142(para) 
+msgid "Options to be associated with the new foreign table or one of its columns. The allowed option names and values are specific to each foreign data wrapper and are validated using the foreign-data wrapper's validator function. Duplicate option names are not allowed (although it's OK for a table option and a column option to have the same name)."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:159(title) 
+msgid "Examples"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:164(programlisting) 
+#, no-wrap
+msgid "\nCREATE FOREIGN TABLE films (\n    code        char(5) NOT NULL,\n    title       varchar(40) NOT NULL,\n    did         integer NOT NULL,\n    date_prod   date,\n    kind        varchar(10),\n    len         interval hour to minute\n)\nSERVER film_server;\n"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:161(para) 
+msgid "Create foreign table <structname>films</structname> with <structname>film_server</structname>: <placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:179(title) 
+msgid "Compatibility"
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:181(para) 
+msgid "The <command>CREATE FOREIGN TABLE</command> command largely conforms to the <acronym>SQL</acronym> standard; however, much as with <link linkend=\"sql-createtable\"><command>CREATE TABLE</command></link>, <literal>NULL</literal> constraints and zero-column foreign tables are permitted."
+msgstr ""
+
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:191(title) 
+msgid "See Also"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: /tmp/cicero-lkRf/ref/create_foreign_table.xml:0(None) 
+msgid "translator-credits"
+msgstr ""
+

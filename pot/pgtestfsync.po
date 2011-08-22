@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-08-22 17:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:6(title) /tmp/cicero-lkRf/pgtestfsync.xml:9(primary) 
+msgid "pg_test_fsync"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:12(para) 
+msgid "<application>pg_test_fsync</application> is intended to give you a reasonable idea of what the fastest <xref linkend=\"guc-wal-sync-method\"/> is on your specific system, as well as supplying diagnostic information in the event of an identified I/O problem. However, differences shown by pg_test_fsync might not make any difference in real database throughput, especially since many database servers are not speed-limited by their transaction logs."
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:24(title) 
+msgid "Usage"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:26(synopsis) 
+#, no-wrap
+msgid "\npg_test_fsync [options]\n"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:37(option) 
+msgid "-f"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:38(option) 
+msgid "--filename"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:40(para) 
+msgid "Specifies the file name to write test data in. This file should be in the same file system that the <filename>pg_xlog</filename> directory is or will be placed in. (<filename>pg_xlog</filename> contains the <acronym>WAL</acronym> files.) The default is <filename>pg_test_fsync.out</filename> in the current directory."
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:52(option) 
+msgid "-o"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:53(option) 
+msgid "--ops-per-test"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:55(para) 
+msgid "Specifies the number of operations per test. The more operations per test, the greater the test's accuracy, but the longer it takes to run. The default is 2000."
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:30(para) 
+msgid "<application>pg_test_fsync</application> accepts the following command-line options: <placeholder-1/>"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:69(title) 
+msgid "Author"
+msgstr ""
+
+#: /tmp/cicero-lkRf/pgtestfsync.xml:71(para) 
+msgid "Bruce Momjian <email>bruce@momjian.us</email>"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: /tmp/cicero-lkRf/pgtestfsync.xml:0(None) 
+msgid "translator-credits"
+msgstr ""
+
