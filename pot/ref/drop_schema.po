@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:17+0200\n"
+"POT-Creation-Date: 2011-08-23 09:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,102 +9,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:10(refentrytitle) /tmp/cicero-lyhk/ref/drop_schema.xml:16(refname) /tmp/cicero-lyhk/ref/drop_schema.xml:21(primary) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:10(refentrytitle) /tmp/cicero-UbWe/ref/drop_schema.xml:16(refname) /tmp/cicero-UbWe/ref/drop_schema.xml:21(primary) 
 msgid "DROP SCHEMA"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:11(manvolnum) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:12(refmiscinfo) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:17(refpurpose) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:17(refpurpose) 
 msgid "remove a schema"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:26(replaceable) /tmp/cicero-lyhk/ref/drop_schema.xml:59(replaceable) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:26(replaceable) /tmp/cicero-UbWe/ref/drop_schema.xml:59(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:25(synopsis) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP SCHEMA [ IF EXISTS ] <placeholder-1/> [, ...] [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:31(title) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:33(para) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:33(para) 
 msgid "<command>DROP SCHEMA</command> removes schemas from the database."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:37(para) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:37(para) 
 msgid "A schema can only be dropped by its owner or a superuser. Note that the owner can drop the schema (and thereby all contained objects) even if he does not own some of the objects within the schema."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:45(title) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:45(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:49(literal) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:49(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:51(para) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:51(para) 
 msgid "Do not throw an error if the schema does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:61(para) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:61(para) 
 msgid "The name of a schema."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:68(literal) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:68(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:70(para) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:70(para) 
 msgid "Automatically drop objects (tables, functions, etc.) that are contained in the schema."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:78(literal) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:78(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:80(para) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:80(para) 
 msgid "Refuse to drop the schema if it contains any objects. This is the default."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:90(title) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:90(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:96(programlisting) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:96(programlisting) 
 #, no-wrap
 msgid "\nDROP SCHEMA mystuff CASCADE;\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:92(para) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:92(para) 
 msgid "To remove schema <literal>mystuff</literal> from the database, along with everything it contains: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:102(title) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:102(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:104(para) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:104(para) 
 msgid "<command>DROP SCHEMA</command> is fully conforming with the SQL standard, except that the standard only allows one schema to be dropped per command, and apart from the <literal>IF EXISTS</literal> option, which is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:114(title) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:114(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lyhk/ref/drop_schema.xml:0(None) 
+#: /tmp/cicero-UbWe/ref/drop_schema.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

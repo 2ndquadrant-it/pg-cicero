@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:17+0200\n"
+"POT-Creation-Date: 2011-08-23 09:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,715 +9,715 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:7(refentrytitle) /tmp/cicero-lyhk/ref/pg_restore.xml:13(refname) /tmp/cicero-lyhk/ref/pg_restore.xml:22(primary) /tmp/cicero-lyhk/ref/pg_restore.xml:27(command) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:7(refentrytitle) /tmp/cicero-UbWe/ref/pg_restore.xml:13(refname) /tmp/cicero-UbWe/ref/pg_restore.xml:22(primary) /tmp/cicero-UbWe/ref/pg_restore.xml:27(command) 
 msgid "pg_restore"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:8(manvolnum) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:8(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:9(refmiscinfo) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:9(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:16(productname) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:16(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:17(application) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:17(application) 
 msgid "pg_dump"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:15(refpurpose) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:15(refpurpose) 
 msgid "restore a <placeholder-1/> database from an archive file created by <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:28(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:28(replaceable) 
 msgid "connection-option"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:29(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:29(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:30(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:81(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:150(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:151(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:30(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:81(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:150(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:151(replaceable) 
 msgid "filename"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:36(title) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:38(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:38(para) 
 msgid "<application>pg_restore</application> is a utility for restoring a <productname>PostgreSQL</productname> database from an archive created by <xref linkend=\"app-pgdump\"/> in one of the non-plain-text formats. It will issue the commands necessary to reconstruct the database to the state it was in at the time it was saved. The archive files also allow <application>pg_restore</application> to be selective about what is restored, or even to reorder the items prior to being restored. The archive files are designed to be portable across architectures."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:50(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:50(para) 
 msgid "<application>pg_restore</application> can operate in two modes. If a database name is specified, <application>pg_restore</application> connects to that database and restores archive contents directly into the database. Otherwise, a script containing the SQL commands necessary to rebuild the database is created and written to a file or standard output. This script output is equivalent to the plain text output format of <application>pg_dump</application>. Some of the options controlling the output are therefore analogous to <application>pg_dump</application> options."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:62(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:62(para) 
 msgid "Obviously, <application>pg_restore</application> cannot restore information that is not present in the archive file. For instance, if the archive was made using the <quote>dump data as <command>INSERT</command> commands</quote> option, <application>pg_restore</application> will not be able to load the data using <command>COPY</command> statements."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:73(title) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:73(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:83(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:83(para) 
 msgid "Specifies the location of the archive file (or directory, for a directory-format archive) to be restored. If not specified, the standard input is used."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:92(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:92(option) 
 msgid "-a"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:93(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:93(option) 
 msgid "--data-only"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:95(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:95(para) 
 msgid "Restore only the data, not the schema (data definitions)."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:102(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:102(option) 
 msgid "-c"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:103(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:103(option) 
 msgid "--clean"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:105(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:105(para) 
 msgid "Clean (drop) database objects before recreating them."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:112(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:112(option) 
 msgid "-C"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:113(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:113(option) 
 msgid "--create"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:115(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:115(para) 
 msgid "Create the database before restoring into it. (When this option is used, the database named with <option>-d</option> is used only to issue the initial <command>CREATE DATABASE</command> command. All data is restored into the database name that appears in the archive.)"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:126(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:127(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:126(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:127(replaceable) 
 msgid "dbname"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:126(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:126(option) 
 msgid "-d <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:127(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:127(option) 
 msgid "--dbname=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:129(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:129(para) 
 msgid "Connect to database <replaceable class=\"parameter\">dbname</replaceable> and restore directly into the database."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:138(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:138(option) 
 msgid "-e"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:139(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:139(option) 
 msgid "--exit-on-error"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:141(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:141(para) 
 msgid "Exit if an error is encountered while sending SQL commands to the database. The default is to continue and to display a count of errors at the end of the restoration."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:150(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:150(option) 
 msgid "-f <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:151(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:151(option) 
 msgid "--file=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:153(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:153(para) 
 msgid "Specify output file for generated script, or for the listing when used with <option>-l</option>. Default is the standard output."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:162(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:163(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:162(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:163(replaceable) 
 msgid "format"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:162(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:162(option) 
 msgid "-F <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:163(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:163(option) 
 msgid "--format=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:173(literal) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:173(literal) 
 msgid "c"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:174(literal) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:174(literal) 
 msgid "custom"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:176(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:176(para) 
 msgid "The archive is in the custom format of <application>pg_dump</application>."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:184(literal) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:184(literal) 
 msgid "d"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:185(literal) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:185(literal) 
 msgid "directory"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:187(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:187(para) 
 msgid "The archive is a directory archive."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:194(literal) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:194(literal) 
 msgid "t"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:195(literal) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:195(literal) 
 msgid "tar"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:197(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:197(para) 
 msgid "The archive is a <command>tar</command> archive."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:165(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:165(para) 
 msgid "Specify format of the archive. It is not necessary to specify the format, since <application>pg_restore</application> will determine the format automatically. If specified, it can be one of the following: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:207(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:207(option) 
 msgid "-i"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:208(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:208(option) 
 msgid "--ignore-version"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:210(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:210(para) 
 msgid "A deprecated option that is now ignored."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:217(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:218(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:217(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:218(replaceable) 
 msgid "index"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:217(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:217(option) 
 msgid "-I <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:218(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:218(option) 
 msgid "--index=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:220(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:220(para) 
 msgid "Restore definition of named index only."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:227(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:228(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:227(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:228(replaceable) 
 msgid "number-of-jobs"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:227(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:227(option) 
 msgid "-j <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:228(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:228(option) 
 msgid "--jobs=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:230(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:230(para) 
 msgid "Run the most time-consuming parts of <application>pg_restore</application> — those which load data, create indexes, or create constraints — using multiple concurrent jobs. This option can dramatically reduce the time to restore a large database to a server running on a multiprocessor machine."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:239(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:239(para) 
 msgid "Each job is one process or one thread, depending on the operating system, and uses a separate connection to the server."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:245(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:245(para) 
 msgid "The optimal value for this option depends on the hardware setup of the server, of the client, and of the network. Factors include the number of CPU cores and the disk setup. A good place to start is the number of CPU cores on the server, but values larger than that can also lead to faster restore times in many cases. Of course, values that are too high will lead to decreased performance because of thrashing."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:255(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:255(para) 
 msgid "Only the custom archive format is supported with this option. The input file must be a regular file (not, for example, a pipe). This option is ignored when emitting a script rather than connecting directly to a database server. Also, multiple jobs cannot be used together with the option <option>--single-transaction</option>."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:267(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:267(option) 
 msgid "-l"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:268(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:268(option) 
 msgid "--list"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:270(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:270(para) 
 msgid "List the contents of the archive. The output of this operation can be used as input to the <option>-L</option> option. Note that if filtering switches such as <option>-n</option> or <option>-t</option> are used with <option>-l</option>, they will restrict the items listed."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:280(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:281(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:280(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:281(replaceable) 
 msgid "list-file"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:280(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:280(option) 
 msgid "-L <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:281(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:281(option) 
 msgid "--use-list=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:283(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:283(para) 
 msgid "Restore only those archive elements that are listed in <replaceable class=\"PARAMETER\">list-file</replaceable>, and restore them in the order they appear in the file. Note that if filtering switches such as <option>-n</option> or <option>-t</option> are used with <option>-L</option>, they will further restrict the items restored."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:290(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:290(para) 
 msgid "<replaceable class=\"PARAMETER\">list-file</replaceable> is normally created by editing the output of a previous <option>-l</option> operation. Lines can be moved or removed, and can also be commented out by placing a semicolon (<literal>;</literal>) at the start of the line. See below for examples."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:300(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:300(replaceable) 
 msgid "namespace"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:300(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:300(option) 
 msgid "-n <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:301(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:301(replaceable) 
 msgid "schema"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:301(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:301(option) 
 msgid "--schema=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:303(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:303(para) 
 msgid "Restore only objects that are in the named schema. This can be combined with the <option>-t</option> option to restore just a specific table."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:312(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:312(option) 
 msgid "-O"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:313(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:313(option) 
 msgid "--no-owner"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:315(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:315(para) 
 msgid "Do not output commands to set ownership of objects to match the original database. By default, <application>pg_restore</application> issues <command>ALTER OWNER</command> or <command>SET SESSION AUTHORIZATION</command> statements to set ownership of created schema elements. These statements will fail unless the initial connection to the database is made by a superuser (or the same user that owns all of the objects in the script). With <option>-O</option>, any user name can be used for the initial connection, and this user will own all the created objects."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:332(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:333(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:332(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:333(replaceable) 
 msgid "function-name(argtype [, ...])"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:332(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:332(option) 
 msgid "-P <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:333(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:333(option) 
 msgid "--function=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:335(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:335(para) 
 msgid "Restore the named function only. Be careful to spell the function name and arguments exactly as they appear in the dump file's table of contents."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:344(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:344(option) 
 msgid "-R"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:345(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:345(option) 
 msgid "--no-reconnect"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:347(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:347(para) 
 msgid "This option is obsolete but still accepted for backwards compatibility."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:355(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:355(option) 
 msgid "-s"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:356(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:356(option) 
 msgid "--schema-only"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:358(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:358(para) 
 msgid "Restore only the schema (data definitions), not the data (table contents). Current sequence values will not be restored, either. (Do not confuse this with the <option>--schema</option> option, which uses the word <quote>schema</quote> in a different meaning.)"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:368(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:369(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:569(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:570(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:368(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:369(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:569(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:570(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:368(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:368(option) 
 msgid "-S <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:369(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:369(option) 
 msgid "--superuser=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:371(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:371(para) 
 msgid "Specify the superuser user name to use when disabling triggers. This is only relevant if <option>--disable-triggers</option> is used."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:379(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:380(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:379(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:380(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:379(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:379(option) 
 msgid "-t <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:380(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:380(option) 
 msgid "--table=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:382(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:382(para) 
 msgid "Restore definition and/or data of named table only. This can be combined with the <option>-n</option> option to specify a schema."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:390(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:391(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:390(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:391(replaceable) 
 msgid "trigger"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:390(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:390(option) 
 msgid "-T <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:391(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:391(option) 
 msgid "--trigger=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:393(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:393(para) 
 msgid "Restore named trigger only."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:400(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:400(option) 
 msgid "-v"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:401(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:401(option) 
 msgid "--verbose"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:403(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:403(para) 
 msgid "Specifies verbose mode."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:410(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:410(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:411(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:411(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:413(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:413(para) 
 msgid "Print the <application>pg_restore</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:420(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:420(option) 
 msgid "-x"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:421(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:421(option) 
 msgid "--no-privileges"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:422(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:422(option) 
 msgid "--no-acl"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:424(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:424(para) 
 msgid "Prevent restoration of access privileges (grant/revoke commands)."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:431(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:431(option) 
 msgid "-1"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:432(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:432(option) 
 msgid "--single-transaction"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:434(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:434(para) 
 msgid "Execute the restore as a single transaction (that is, wrap the emitted commands in <command>BEGIN</command>/<command>COMMIT</command>). This ensures that either all the commands complete successfully, or no changes are applied. This option implies <option>--exit-on-error</option>."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:445(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:445(option) 
 msgid "--disable-triggers"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:447(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:447(para) 
 msgid "This option is only relevant when performing a data-only restore. It instructs <application>pg_restore</application> to execute commands to temporarily disable triggers on the target tables while the data is reloaded. Use this if you have referential integrity checks or other triggers on the tables that you do not want to invoke during data reload."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:456(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:456(para) 
 msgid "Presently, the commands emitted for <option>--disable-triggers</option> must be done as superuser. So, you should also specify a superuser name with <option>-S</option>, or preferably run <application>pg_restore</application> as a <productname>PostgreSQL</productname> superuser."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:467(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:467(option) 
 msgid "--no-data-for-failed-tables"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:469(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:469(para) 
 msgid "By default, table data is restored even if the creation command for the table failed (e.g., because it already exists). With this option, data for such a table is skipped. This behavior is useful if the target database already contains the desired table contents. For example, auxiliary tables for <productname>PostgreSQL</productname> extensions such as <productname>PostGIS</productname> might already be loaded in the target database; specifying this option prevents duplicate or obsolete data from being loaded into them."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:481(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:481(para) 
 msgid "This option is effective only when restoring directly into a database, not when producing SQL script output."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:489(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:489(option) 
 msgid "--no-security-labels"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:491(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:491(para) 
 msgid "Do not output commands to restore security labels, even if the archive contains them."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:499(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:499(option) 
 msgid "--no-tablespaces"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:501(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:501(para) 
 msgid "Do not output commands to select tablespaces. With this option, all objects will be created in whichever tablespace is the default during restore."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:510(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:510(option) 
 msgid "--use-set-session-authorization"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:512(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:512(para) 
 msgid "Output SQL-standard <command>SET SESSION AUTHORIZATION</command> commands instead of <command>ALTER OWNER</command> commands to determine object ownership. This makes the dump more standards-compatible, but depending on the history of the objects in the dump, might not restore properly."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:523(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:523(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:524(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:524(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:526(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:526(para) 
 msgid "Show help about <application>pg_restore</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:75(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:75(para) 
 msgid "<application>pg_restore</application> accepts the following command line arguments. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:542(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:543(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:542(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:543(replaceable) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:542(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:542(option) 
 msgid "-h <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:543(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:543(option) 
 msgid "--host=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:545(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:545(para) 
 msgid "Specifies the host name of the machine on which the server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket. The default is taken from the <envar>PGHOST</envar> environment variable, if set, else a Unix domain socket connection is attempted."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:556(replaceable) /tmp/cicero-lyhk/ref/pg_restore.xml:557(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:556(replaceable) /tmp/cicero-UbWe/ref/pg_restore.xml:557(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:556(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:556(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:557(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:557(option) 
 msgid "--port=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:559(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:559(para) 
 msgid "Specifies the TCP port or local Unix domain socket file extension on which the server is listening for connections. Defaults to the <envar>PGPORT</envar> environment variable, if set, or a compiled-in default."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:569(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:569(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:570(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:570(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:572(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:572(para) 
 msgid "User name to connect as."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:579(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:579(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:580(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:580(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:582(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:582(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:594(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:594(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:595(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:595(option) 
 msgid "--password"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:597(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:597(para) 
 msgid "Force <application>pg_restore</application> to prompt for a password before connecting to a database."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:602(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:602(para) 
 msgid "This option is never essential, since <application>pg_restore</application> will automatically prompt for a password if the server demands password authentication. However, <application>pg_restore</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:615(replaceable) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:615(replaceable) 
 msgid "rolename"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:615(option) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:615(option) 
 msgid "--role=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:617(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:617(para) 
 msgid "Specifies a role name to be used to perform the restore. This option causes <application>pg_restore</application> to issue a <command>SET ROLE</command><replaceable class=\"parameter\">rolename</replaceable> command after connecting to the database. It is useful when the authenticated user (specified by <option>-U</option>) lacks privileges needed by <application>pg_restore</application>, but can switch to a role with the required rights. Some installations have a policy against logging in directly as a superuser, and use of this option allows restores to be performed without violating the policy."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:536(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:536(para) 
 msgid "<application>pg_restore</application> also accepts the following command line arguments for connection parameters: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:637(title) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:637(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:641(envar) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:641(envar) 
 msgid "PGHOST"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:642(envar) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:642(envar) 
 msgid "PGOPTIONS"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:643(envar) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:643(envar) 
 msgid "PGPORT"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:644(envar) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:644(envar) 
 msgid "PGUSER"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:647(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:647(para) 
 msgid "Default connection parameters"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:654(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:654(para) 
 msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:664(title) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:664(title) 
 msgid "Diagnostics"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:666(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:666(para) 
 msgid "When a direct database connection is specified using the <option>-d</option> option, <application>pg_restore</application> internally executes <acronym>SQL</acronym> statements. If you have problems running <application>pg_restore</application>, make sure you are able to select information from the database using, for example, <xref linkend=\"app-psql\"/>. Also, any default connection settings and environment variables used by the <application>libpq</application> front-end library will apply."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:680(title) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:680(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:689(programlisting) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:689(programlisting) 
 #, no-wrap
 msgid "\nCREATE DATABASE foo WITH TEMPLATE template0;\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:682(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:682(para) 
 msgid "If your installation has any local additions to the <literal>template1</literal> database, be careful to load the output of <application>pg_restore</application> into a truly empty database; otherwise you are likely to get errors due to duplicate definitions of the added objects. To make an empty database without any local additions, copy from <literal>template0</literal> not <literal>template1</literal>, for example: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:699(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:699(para) 
 msgid "When restoring data to a pre-existing table and the option <option>--disable-triggers</option> is used, <application>pg_restore</application> emits commands to disable triggers on user tables before inserting the data, then emits commands to re-enable them after the data has been inserted. If the restore is stopped in the middle, the system catalogs might be left in the wrong state."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:710(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:710(para) 
 msgid "<application>pg_restore</application> cannot restore large objects selectively; for instance, only those for a specific table. If an archive contains large objects, then all large objects will be restored, or none of them if they are excluded via <option>-L</option>, <option>-t</option>, or other options."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:694(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:694(para) 
 msgid "The limitations of <application>pg_restore</application> are detailed below. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:721(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:721(para) 
 msgid "See also the <xref linkend=\"app-pgdump\"/> documentation for details on limitations of <application>pg_dump</application>."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:726(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:726(para) 
 msgid "Once restored, it is wise to run <command>ANALYZE</command> on each restored table so the optimizer has useful statistics; see <xref linkend=\"vacuum-for-statistics\"/> and <xref linkend=\"autovacuum\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:737(title) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:737(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:739(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:739(para) 
 msgid "Assume we have dumped a database called <literal>mydb</literal> into a custom-format dump file: <screen>\n<prompt>$</prompt> <userinput>pg_dump -Fc mydb &gt; db.dump</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:748(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:748(para) 
 msgid "To drop the database and recreate it from the dump: <screen>\n<prompt>$</prompt> <userinput>dropdb mydb</userinput>\n<prompt>$</prompt> <userinput>pg_restore -C -d postgres db.dump</userinput>\n</screen> The database named in the <option>-d</option> switch can be any database existing in the cluster; <application>pg_restore</application> only uses it to issue the <command>CREATE DATABASE</command> command for <literal>mydb</literal>. With <option>-C</option>, data is always restored into the database name that appears in the dump file."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:763(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:763(para) 
 msgid "To reload the dump into a new database called <literal>newdb</literal>: <screen>\n<prompt>$</prompt> <userinput>createdb -T template0 newdb</userinput>\n<prompt>$</prompt> <userinput>pg_restore -d newdb db.dump</userinput>\n</screen> Notice we don't use <option>-C</option>, and instead connect directly to the database to be restored into. Also note that we clone the new database from <literal>template0</literal> not <literal>template1</literal>, to ensure it is initially empty."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:784(programlisting) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:784(programlisting) 
 #, no-wrap
 msgid "\n;\n; Archive created at Mon Sep 14 13:55:39 2009\n;     dbname: DBDEMOS\n;     TOC Entries: 81\n;     Compression: 9\n;     Dump Version: 1.10-0\n;     Format: CUSTOM\n;     Integer: 4 bytes\n;     Offset: 8 bytes\n;     Dumped from database version: 8.3.5\n;     Dumped by pg_dump version: 8.3.8\n;\n;\n; Selected TOC Entries:\n;\n3; 2615 2200 SCHEMA - public pasha\n1861; 0 0 COMMENT - SCHEMA public pasha\n1862; 0 0 ACL - public pasha\n317; 1247 17715 TYPE public composite pasha\n319; 1247 25899 DOMAIN public domain0 pasha\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:777(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:777(para) 
 msgid "To reorder database items, it is first necessary to dump the table of contents of the archive: <screen>\n<prompt>$</prompt> <userinput>pg_restore -l db.dump &gt; db.list</userinput>\n</screen> The listing file consists of a header and one line for each item, e.g.: <placeholder-1/> Semicolons start a comment, and the numbers at the start of lines refer to the internal archive ID assigned to each item."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:812(programlisting) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:812(programlisting) 
 #, no-wrap
 msgid "\n10; 145433 TABLE map_resolutions postgres\n;2; 145344 TABLE species postgres\n;4; 145359 TABLE nt_header postgres\n6; 145402 TABLE species_records postgres\n;8; 145416 TABLE ss_old postgres\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:810(para) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:810(para) 
 msgid "Lines in the file can be commented out, deleted, and reordered. For example: <placeholder-1/> could be used as input to <application>pg_restore</application> and would only restore items 10 and 6, in that order: <screen>\n<prompt>$</prompt> <userinput>pg_restore -L db.list db.dump</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:828(title) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:828(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lyhk/ref/pg_restore.xml:0(None) 
+#: /tmp/cicero-UbWe/ref/pg_restore.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

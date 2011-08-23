@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:17+0200\n"
+"POT-Creation-Date: 2011-08-23 09:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,98 +9,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:7(refentrytitle) /tmp/cicero-lyhk/ref/drop_foreign_table.xml:13(refname) /tmp/cicero-lyhk/ref/drop_foreign_table.xml:18(primary) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:7(refentrytitle) /tmp/cicero-UbWe/ref/drop_foreign_table.xml:13(refname) /tmp/cicero-UbWe/ref/drop_foreign_table.xml:18(primary) 
 msgid "DROP FOREIGN TABLE"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:8(manvolnum) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:8(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:9(refmiscinfo) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:9(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:14(refpurpose) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:14(refpurpose) 
 msgid "remove a foreign table"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:23(replaceable) /tmp/cicero-lyhk/ref/drop_foreign_table.xml:51(replaceable) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:23(replaceable) /tmp/cicero-UbWe/ref/drop_foreign_table.xml:51(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:22(synopsis) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:22(synopsis) 
 #, no-wrap
 msgid "\nDROP FOREIGN TABLE [ IF EXISTS ] <placeholder-1/> [, ...] [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:28(title) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:28(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:30(para) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:30(para) 
 msgid "<command>DROP FOREIGN TABLE</command> removes a foreign table. Only the owner of a foreign table can remove it."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:37(title) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:37(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:41(literal) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:41(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:43(para) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:43(para) 
 msgid "Do not throw an error if the foreign table does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:53(para) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:53(para) 
 msgid "The name (optionally schema-qualified) of the foreign table to drop."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:60(literal) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:60(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:62(para) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:62(para) 
 msgid "Automatically drop objects that depend on the foreign table (such as views)."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:70(literal) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:70(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:72(para) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:72(para) 
 msgid "Refuse to drop the foreign table if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:82(title) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:82(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:88(programlisting) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:88(programlisting) 
 #, no-wrap
 msgid "\nDROP FOREIGN TABLE films, distributors;\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:84(para) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:84(para) 
 msgid "To destroy two foreign tables, <literal>films</literal> and <literal>distributors</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:94(title) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:94(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:96(para) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:96(para) 
 msgid "This command conforms to the ISO/IEC 9075-9 (SQL/MED), except that the standard only allows one foreign table to be dropped per command, and apart from the <literal>IF EXISTS</literal> option, which is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:105(title) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:105(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lyhk/ref/drop_foreign_table.xml:0(None) 
+#: /tmp/cicero-UbWe/ref/drop_foreign_table.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

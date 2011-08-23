@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:17+0200\n"
+"POT-Creation-Date: 2011-08-23 09:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,97 +9,97 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:10(refentrytitle) /tmp/cicero-lyhk/ref/alter_opclass.xml:16(refname) /tmp/cicero-lyhk/ref/alter_opclass.xml:21(primary) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:10(refentrytitle) /tmp/cicero-UbWe/ref/alter_opclass.xml:16(refname) /tmp/cicero-UbWe/ref/alter_opclass.xml:21(primary) 
 msgid "ALTER OPERATOR CLASS"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:11(manvolnum) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:12(refmiscinfo) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:17(refpurpose) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:17(refpurpose) 
 msgid "change the definition of an operator class"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:26(replaceable) /tmp/cicero-lyhk/ref/alter_opclass.xml:27(replaceable) /tmp/cicero-lyhk/ref/alter_opclass.xml:28(replaceable) /tmp/cicero-lyhk/ref/alter_opclass.xml:56(replaceable) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:26(replaceable) /tmp/cicero-UbWe/ref/alter_opclass.xml:27(replaceable) /tmp/cicero-UbWe/ref/alter_opclass.xml:28(replaceable) /tmp/cicero-UbWe/ref/alter_opclass.xml:56(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:26(replaceable) /tmp/cicero-lyhk/ref/alter_opclass.xml:27(replaceable) /tmp/cicero-lyhk/ref/alter_opclass.xml:28(replaceable) /tmp/cicero-lyhk/ref/alter_opclass.xml:66(replaceable) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:26(replaceable) /tmp/cicero-UbWe/ref/alter_opclass.xml:27(replaceable) /tmp/cicero-UbWe/ref/alter_opclass.xml:28(replaceable) /tmp/cicero-UbWe/ref/alter_opclass.xml:66(replaceable) 
 msgid "index_method"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:26(replaceable) /tmp/cicero-lyhk/ref/alter_opclass.xml:75(replaceable) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:26(replaceable) /tmp/cicero-UbWe/ref/alter_opclass.xml:75(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:27(replaceable) /tmp/cicero-lyhk/ref/alter_opclass.xml:84(replaceable) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:27(replaceable) /tmp/cicero-UbWe/ref/alter_opclass.xml:84(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:28(replaceable) /tmp/cicero-lyhk/ref/alter_opclass.xml:93(replaceable) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:28(replaceable) /tmp/cicero-UbWe/ref/alter_opclass.xml:93(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:25(synopsis) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:25(synopsis) 
 #, no-wrap
 msgid "\nALTER OPERATOR CLASS <placeholder-1/> USING <placeholder-2/> RENAME TO <placeholder-3/>\nALTER OPERATOR CLASS <placeholder-4/> USING <placeholder-5/> OWNER TO <placeholder-6/>\nALTER OPERATOR CLASS <placeholder-7/> USING <placeholder-8/> SET SCHEMA <placeholder-9/>\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:33(title) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:35(para) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:35(para) 
 msgid "<command>ALTER OPERATOR CLASS</command> changes the definition of an operator class."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:40(para) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:40(para) 
 msgid "You must own the operator class to use <command>ALTER OPERATOR CLASS</command>. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the operator class's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the operator class. However, a superuser can alter ownership of any operator class anyway.)"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:52(title) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:52(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:58(para) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:58(para) 
 msgid "The name (optionally schema-qualified) of an existing operator class."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:68(para) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:68(para) 
 msgid "The name of the index method this operator class is for."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:77(para) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:77(para) 
 msgid "The new name of the operator class."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:86(para) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:86(para) 
 msgid "The new owner of the operator class."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:95(para) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:95(para) 
 msgid "The new schema for the operator class."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:104(title) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:104(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:106(para) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:106(para) 
 msgid "There is no <command>ALTER OPERATOR CLASS</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:113(title) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:113(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lyhk/ref/alter_opclass.xml:0(None) 
+#: /tmp/cicero-UbWe/ref/alter_opclass.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:17+0200\n"
+"POT-Creation-Date: 2011-08-23 09:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,90 +9,90 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lyhk/ref/commit.xml:10(refentrytitle) /tmp/cicero-lyhk/ref/commit.xml:16(refname) /tmp/cicero-lyhk/ref/commit.xml:21(primary) 
+#: /tmp/cicero-UbWe/ref/commit.xml:10(refentrytitle) /tmp/cicero-UbWe/ref/commit.xml:16(refname) /tmp/cicero-UbWe/ref/commit.xml:21(primary) 
 msgid "COMMIT"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:11(manvolnum) 
+#: /tmp/cicero-UbWe/ref/commit.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:12(refmiscinfo) 
+#: /tmp/cicero-UbWe/ref/commit.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:17(refpurpose) 
+#: /tmp/cicero-UbWe/ref/commit.xml:17(refpurpose) 
 msgid "commit the current transaction"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:25(synopsis) 
+#: /tmp/cicero-UbWe/ref/commit.xml:25(synopsis) 
 #, no-wrap
 msgid "\nCOMMIT [ WORK | TRANSACTION ]\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:31(title) 
+#: /tmp/cicero-UbWe/ref/commit.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:33(para) 
+#: /tmp/cicero-UbWe/ref/commit.xml:33(para) 
 msgid "<command>COMMIT</command> commits the current transaction. All changes made by the transaction become visible to others and are guaranteed to be durable if a crash occurs."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:41(title) 
+#: /tmp/cicero-UbWe/ref/commit.xml:41(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:45(literal) 
+#: /tmp/cicero-UbWe/ref/commit.xml:45(literal) 
 msgid "WORK"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:46(literal) 
+#: /tmp/cicero-UbWe/ref/commit.xml:46(literal) 
 msgid "TRANSACTION"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:48(para) 
+#: /tmp/cicero-UbWe/ref/commit.xml:48(para) 
 msgid "Optional key words. They have no effect."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:57(title) 
+#: /tmp/cicero-UbWe/ref/commit.xml:57(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:59(para) 
+#: /tmp/cicero-UbWe/ref/commit.xml:59(para) 
 msgid "Use <xref linkend=\"sql-rollback\"/> to abort a transaction."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:64(para) 
+#: /tmp/cicero-UbWe/ref/commit.xml:64(para) 
 msgid "Issuing <command>COMMIT</command> when not inside a transaction does no harm, but it will provoke a warning message."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:71(title) 
+#: /tmp/cicero-UbWe/ref/commit.xml:71(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:75(programlisting) 
+#: /tmp/cicero-UbWe/ref/commit.xml:75(programlisting) 
 #, no-wrap
 msgid "\nCOMMIT;\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:73(para) 
+#: /tmp/cicero-UbWe/ref/commit.xml:73(para) 
 msgid "To commit the current transaction and make all changes permanent: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:81(title) 
+#: /tmp/cicero-UbWe/ref/commit.xml:81(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:83(para) 
+#: /tmp/cicero-UbWe/ref/commit.xml:83(para) 
 msgid "The SQL standard only specifies the two forms <literal>COMMIT</literal> and <literal>COMMIT WORK</literal>. Otherwise, this command is fully conforming."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/commit.xml:91(title) 
+#: /tmp/cicero-UbWe/ref/commit.xml:91(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lyhk/ref/commit.xml:0(None) 
+#: /tmp/cicero-UbWe/ref/commit.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

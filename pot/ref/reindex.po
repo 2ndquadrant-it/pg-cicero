@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:17+0200\n"
+"POT-Creation-Date: 2011-08-23 09:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,180 +9,180 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:10(refentrytitle) /tmp/cicero-lyhk/ref/reindex.xml:16(refname) /tmp/cicero-lyhk/ref/reindex.xml:21(primary) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:10(refentrytitle) /tmp/cicero-UbWe/ref/reindex.xml:16(refname) /tmp/cicero-UbWe/ref/reindex.xml:21(primary) 
 msgid "REINDEX"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:11(manvolnum) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:12(refmiscinfo) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:17(refpurpose) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:17(refpurpose) 
 msgid "rebuild indexes"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:26(replaceable) /tmp/cicero-lyhk/ref/reindex.xml:131(replaceable) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:26(replaceable) /tmp/cicero-UbWe/ref/reindex.xml:131(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:25(synopsis) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:25(synopsis) 
 #, no-wrap
 msgid "\nREINDEX { INDEX | TABLE | DATABASE | SYSTEM } <placeholder-1/> [ FORCE ]\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:31(title) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:40(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:40(para) 
 msgid "An index has become corrupted, and no longer contains valid data. Although in theory this should never happen, in practice indexes can become corrupted due to software bugs or hardware failures. <command>REINDEX</command> provides a recovery method."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:50(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:50(para) 
 msgid "An index has become <quote>bloated</quote>, that it is contains many empty or nearly-empty pages. This can occur with B-tree indexes in <productname>PostgreSQL</productname> under certain uncommon access patterns. <command>REINDEX</command> provides a way to reduce the space consumption of the index by writing a new version of the index without the dead pages. See <xref linkend=\"routine-reindex\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:62(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:62(para) 
 msgid "You have altered a storage parameter (such as fillfactor) for an index, and wish to ensure that the change has taken full effect."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:69(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:69(para) 
 msgid "An index build with the <literal>CONCURRENTLY</literal> option failed, leaving an <quote>invalid</quote> index. Such indexes are useless but it can be convenient to use <command>REINDEX</command> to rebuild them. Note that <command>REINDEX</command> will not perform a concurrent build. To build the index without interfering with production you should drop the index and reissue the <command>CREATE INDEX CONCURRENTLY</command> command."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:33(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:33(para) 
 msgid "<command>REINDEX</command> rebuilds an index using the data stored in the index's table, replacing the old copy of the index. There are several scenarios in which to use <command>REINDEX</command>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:83(title) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:83(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:87(literal) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:87(literal) 
 msgid "INDEX"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:89(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:89(para) 
 msgid "Recreate the specified index."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:96(literal) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:96(literal) 
 msgid "TABLE"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:98(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:98(para) 
 msgid "Recreate all indexes of the specified table. If the table has a secondary <quote>TOAST</quote> table, that is reindexed as well."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:106(literal) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:106(literal) 
 msgid "DATABASE"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:108(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:108(para) 
 msgid "Recreate all indexes within the current database. Indexes on shared system catalogs are also processed. This form of <command>REINDEX</command> cannot be executed inside a transaction block."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:118(literal) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:118(literal) 
 msgid "SYSTEM"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:120(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:120(para) 
 msgid "Recreate all indexes on system catalogs within the current database. Indexes on shared system catalogs are included. Indexes on user tables are not processed. This form of <command>REINDEX</command> cannot be executed inside a transaction block."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:133(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:133(para) 
 msgid "The name of the specific index, table, or database to be reindexed. Index and table names can be schema-qualified. Presently, <command>REINDEX DATABASE</command> and <command>REINDEX SYSTEM</command> can only reindex the current database, so their parameter must match the current database's name."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:144(literal) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:144(literal) 
 msgid "FORCE"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:146(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:146(para) 
 msgid "This is an obsolete option; it is ignored if specified."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:155(title) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:155(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:157(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:157(para) 
 msgid "If you suspect corruption of an index on a user table, you can simply rebuild that index, or all indexes on the table, using <command>REINDEX INDEX</command> or <command>REINDEX TABLE</command>."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:163(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:163(para) 
 msgid "Things are more difficult if you need to recover from corruption of an index on a system table. In this case it's important for the system to not have used any of the suspect indexes itself. (Indeed, in this sort of scenario you might find that server processes are crashing immediately at start-up, due to reliance on the corrupted indexes.) To recover safely, the server must be started with the <option>-P</option> option, which prevents it from using indexes for system catalog lookups."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:174(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:174(para) 
 msgid "One way to do this is to shut down the server and start a single-user <productname>PostgreSQL</productname> server with the <option>-P</option> option included on its command line. Then, <command>REINDEX DATABASE</command>, <command>REINDEX SYSTEM</command>, <command>REINDEX TABLE</command>, or <command>REINDEX INDEX</command> can be issued, depending on how much you want to reconstruct. If in doubt, use <command>REINDEX SYSTEM</command> to select reconstruction of all system indexes in the database. Then quit the single-user server session and restart the regular server. See the <xref linkend=\"app-postgres\"/> reference page for more information about how to interact with the single-user server interface."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:189(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:189(para) 
 msgid "Alternatively, a regular server session can be started with <option>-P</option> included in its command line options. The method for doing this varies across clients, but in all <application>libpq</application>-based clients, it is possible to set the <envar>PGOPTIONS</envar> environment variable to <literal>-P</literal> before starting the client. Note that while this method does not require locking out other clients, it might still be wise to prevent other users from connecting to the damaged database until repairs have been completed."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:201(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:201(para) 
 msgid "<command>REINDEX</command> is similar to a drop and recreate of the index in that the index contents are rebuilt from scratch. However, the locking considerations are rather different. <command>REINDEX</command> locks out writes but not reads of the index's parent table. It also takes an exclusive lock on the specific index being processed, which will block reads that attempt to use that index. In contrast, <command>DROP INDEX</command> momentarily takes exclusive lock on the parent table, blocking both writes and reads. The subsequent <command>CREATE INDEX</command> locks out writes but not reads; since the index is not there, no read will attempt to use it, meaning that there will be no blocking but reads might be forced into expensive sequential scans."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:215(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:215(para) 
 msgid "Reindexing a single index or table requires being the owner of that index or table. Reindexing a database requires being the owner of the database (note that the owner can therefore rebuild indexes of tables owned by other users). Of course, superusers can always reindex anything."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:223(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:223(para) 
 msgid "Prior to <productname>PostgreSQL</productname> 8.1, <command>REINDEX DATABASE</command> processed only system indexes, not all indexes as one would expect from the name. This has been changed to reduce the surprise factor. The old behavior is available as <command>REINDEX SYSTEM</command>."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:230(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:230(para) 
 msgid "Prior to <productname>PostgreSQL</productname> 7.4, <command>REINDEX TABLE</command> did not automatically process TOAST tables, and so those had to be reindexed by separate commands. This is still possible, but redundant."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:239(title) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:239(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:244(programlisting) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:244(programlisting) 
 #, no-wrap
 msgid "\nREINDEX INDEX my_index;\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:241(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:241(para) 
 msgid "Rebuild a single index: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:252(programlisting) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:252(programlisting) 
 #, no-wrap
 msgid "\nREINDEX TABLE my_table;\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:249(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:249(para) 
 msgid "Rebuild all the indexes on the table <literal>my_table</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:261(programlisting) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:261(programlisting) 
 #, no-wrap
 msgid "\n$ <userinput>export PGOPTIONS=\"-P\"</userinput>\n$ <userinput>psql broken_db</userinput>\n...\nbroken_db=&gt; REINDEX DATABASE broken_db;\nbroken_db=&gt; \\q\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:257(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:257(para) 
 msgid "Rebuild all indexes in a particular database, without trusting the system indexes to be valid already: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:271(title) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:271(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/reindex.xml:273(para) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:273(para) 
 msgid "There is no <command>REINDEX</command> command in the SQL standard."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lyhk/ref/reindex.xml:0(None) 
+#: /tmp/cicero-UbWe/ref/reindex.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

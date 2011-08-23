@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:17+0200\n"
+"POT-Creation-Date: 2011-08-23 09:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,81 +9,81 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:6(refentrytitle) /tmp/cicero-lyhk/ref/set_constraints.xml:12(refname) /tmp/cicero-lyhk/ref/set_constraints.xml:17(primary) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:6(refentrytitle) /tmp/cicero-UbWe/ref/set_constraints.xml:12(refname) /tmp/cicero-UbWe/ref/set_constraints.xml:17(primary) 
 msgid "SET CONSTRAINTS"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:7(manvolnum) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:7(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:8(refmiscinfo) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:8(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:13(refpurpose) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:13(refpurpose) 
 msgid "set constraint check timing for the current transaction"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:22(replaceable) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:22(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:21(synopsis) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:21(synopsis) 
 #, no-wrap
 msgid "\nSET CONSTRAINTS { ALL | <placeholder-1/> [, ...] } { DEFERRED | IMMEDIATE }\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:27(title) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:27(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:29(para) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:29(para) 
 msgid "<command>SET CONSTRAINTS</command> sets the behavior of constraint checking within the current transaction. <literal>IMMEDIATE</literal> constraints are checked at the end of each statement. <literal>DEFERRED</literal> constraints are not checked until transaction commit. Each constraint has its own <literal>IMMEDIATE</literal> or <literal>DEFERRED</literal> mode."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:38(para) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:38(para) 
 msgid "Upon creation, a constraint is given one of three characteristics: <literal>DEFERRABLE INITIALLY DEFERRED</literal>, <literal>DEFERRABLE INITIALLY IMMEDIATE</literal>, or <literal>NOT DEFERRABLE</literal>. The third class is always <literal>IMMEDIATE</literal> and is not affected by the <command>SET CONSTRAINTS</command> command. The first two classes start every transaction in the indicated mode, but their behavior can be changed within a transaction by <command>SET CONSTRAINTS</command>."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:49(para) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:49(para) 
 msgid "<command>SET CONSTRAINTS</command> with a list of constraint names changes the mode of just those constraints (which must all be deferrable). Each constraint name can be schema-qualified. The current schema search path is used to find the first matching name if no schema name is specified. <command>SET CONSTRAINTS ALL</command> changes the mode of all deferrable constraints."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:58(para) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:58(para) 
 msgid "When <command>SET CONSTRAINTS</command> changes the mode of a constraint from <literal>DEFERRED</literal> to <literal>IMMEDIATE</literal>, the new mode takes effect retroactively: any outstanding data modifications that would have been checked at the end of the transaction are instead checked during the execution of the <command>SET CONSTRAINTS</command> command. If any such constraint is violated, the <command>SET CONSTRAINTS</command> fails (and does not change the constraint mode). Thus, <command>SET CONSTRAINTS</command> can be used to force checking of constraints to occur at a specific point in a transaction."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:71(para) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:71(para) 
 msgid "Currently, only <literal>UNIQUE</literal>, <literal>PRIMARY KEY</literal>, <literal>REFERENCES</literal> (foreign key), and <literal>EXCLUDE</literal> constraints are affected by this setting. <literal>NOT NULL</literal> and <literal>CHECK</literal> constraints are always checked immediately when a row is inserted or modified (<emphasis>not</emphasis> at the end of the statement). Uniqueness and exclusion constraints that have not been declared <literal>DEFERRABLE</literal> are also checked immediately."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:82(para) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:82(para) 
 msgid "The firing of triggers that are declared as <quote>constraint triggers</quote> is also controlled by this setting — they fire at the same time that the associated constraint should be checked."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:90(title) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:90(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:92(para) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:92(para) 
 msgid "Because <productname>PostgreSQL</productname> does not require constraint names to be unique within a schema (but only per-table), it is possible that there is more than one match for a specified constraint name. In this case <command>SET CONSTRAINTS</command> will act on all matches. For a non-schema-qualified name, once a match or matches have been found in some schema in the search path, schemas appearing later in the path are not searched."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:102(para) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:102(para) 
 msgid "This command only alters the behavior of constraints within the current transaction. Thus, if you execute this command outside of a transaction block (<command>BEGIN</command>/<command>COMMIT</command> pair), it will not appear to have any effect."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:112(title) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:112(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:114(para) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:114(para) 
 msgid "This command complies with the behavior defined in the SQL standard, except for the limitation that, in <productname>PostgreSQL</productname>, it does not apply to <literal>NOT NULL</literal> and <literal>CHECK</literal> constraints. Also, <productname>PostgreSQL</productname> checks non-deferrable uniqueness constraints immediately, not at end of statement as the standard would suggest."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lyhk/ref/set_constraints.xml:0(None) 
+#: /tmp/cicero-UbWe/ref/set_constraints.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:17+0200\n"
+"POT-Creation-Date: 2011-08-23 09:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,102 +9,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:10(refentrytitle) /tmp/cicero-lyhk/ref/alter_trigger.xml:16(refname) /tmp/cicero-lyhk/ref/alter_trigger.xml:21(primary) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:10(refentrytitle) /tmp/cicero-UbWe/ref/alter_trigger.xml:16(refname) /tmp/cicero-UbWe/ref/alter_trigger.xml:21(primary) 
 msgid "ALTER TRIGGER"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:11(manvolnum) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:12(refmiscinfo) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:17(refpurpose) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:17(refpurpose) 
 msgid "change the definition of a trigger"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:26(replaceable) /tmp/cicero-lyhk/ref/alter_trigger.xml:50(replaceable) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:26(replaceable) /tmp/cicero-UbWe/ref/alter_trigger.xml:50(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:26(replaceable) /tmp/cicero-lyhk/ref/alter_trigger.xml:59(replaceable) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:26(replaceable) /tmp/cicero-UbWe/ref/alter_trigger.xml:59(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:26(replaceable) /tmp/cicero-lyhk/ref/alter_trigger.xml:68(replaceable) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:26(replaceable) /tmp/cicero-UbWe/ref/alter_trigger.xml:68(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:25(synopsis) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:25(synopsis) 
 #, no-wrap
 msgid "\nALTER TRIGGER <placeholder-1/> ON <placeholder-2/> RENAME TO <placeholder-3/>\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:31(title) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:33(para) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:33(para) 
 msgid "<command>ALTER TRIGGER</command> changes properties of an existing trigger. The <literal>RENAME</literal> clause changes the name of the given trigger without otherwise changing the trigger definition."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:40(para) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:40(para) 
 msgid "You must own the table on which the trigger acts to be allowed to change its properties."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:46(title) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:46(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:52(para) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:52(para) 
 msgid "The name of an existing trigger to alter."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:61(para) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:61(para) 
 msgid "The name of the table on which this trigger acts."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:70(para) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:70(para) 
 msgid "The new name for the trigger."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:79(title) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:79(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:81(para) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:81(para) 
 msgid "The ability to temporarily enable or disable a trigger is provided by <xref linkend=\"sql-altertable\"/>, not by <command>ALTER TRIGGER</command>, because <command>ALTER TRIGGER</command> has no convenient way to express the option of enabling or disabling all of a table's triggers at once."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:91(title) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:91(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:95(programlisting) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:95(programlisting) 
 #, no-wrap
 msgid "\nALTER TRIGGER emp_stamp ON emp RENAME TO emp_track_chgs;\n"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:93(para) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:93(para) 
 msgid "To rename an existing trigger: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:101(title) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:101(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:103(para) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:103(para) 
 msgid "<command>ALTER TRIGGER</command> is a <productname>PostgreSQL</productname> extension of the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:110(title) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:110(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lyhk/ref/alter_trigger.xml:0(None) 
+#: /tmp/cicero-UbWe/ref/alter_trigger.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
