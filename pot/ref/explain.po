@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:16+0200\n"
+"POT-Creation-Date: 2011-08-23 09:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,237 +9,237 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-zQNY/ref/explain.xml:9(refentrytitle) /tmp/cicero-zQNY/ref/explain.xml:15(refname) /tmp/cicero-zQNY/ref/explain.xml:20(primary) 
+#: /tmp/cicero-FQJK/ref/explain.xml:9(refentrytitle) /tmp/cicero-FQJK/ref/explain.xml:15(refname) /tmp/cicero-FQJK/ref/explain.xml:20(primary) 
 msgid "EXPLAIN"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:10(manvolnum) 
+#: /tmp/cicero-FQJK/ref/explain.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:11(refmiscinfo) 
+#: /tmp/cicero-FQJK/ref/explain.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:16(refpurpose) 
+#: /tmp/cicero-FQJK/ref/explain.xml:16(refpurpose) 
 msgid "show the execution plan of a statement"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:24(primary) 
+#: /tmp/cicero-FQJK/ref/explain.xml:24(primary) 
 msgid "prepared statements"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:25(secondary) /tmp/cicero-zQNY/ref/explain.xml:30(secondary) 
+#: /tmp/cicero-FQJK/ref/explain.xml:25(secondary) /tmp/cicero-FQJK/ref/explain.xml:30(secondary) 
 msgid "showing the query plan"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:29(primary) 
+#: /tmp/cicero-FQJK/ref/explain.xml:29(primary) 
 msgid "cursor"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:35(replaceable) /tmp/cicero-zQNY/ref/explain.xml:38(replaceable) 
+#: /tmp/cicero-FQJK/ref/explain.xml:35(replaceable) /tmp/cicero-FQJK/ref/explain.xml:38(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:35(replaceable) /tmp/cicero-zQNY/ref/explain.xml:36(replaceable) /tmp/cicero-zQNY/ref/explain.xml:196(replaceable) 
+#: /tmp/cicero-FQJK/ref/explain.xml:35(replaceable) /tmp/cicero-FQJK/ref/explain.xml:36(replaceable) /tmp/cicero-FQJK/ref/explain.xml:196(replaceable) 
 msgid "statement"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:38(phrase) 
+#: /tmp/cicero-FQJK/ref/explain.xml:38(phrase) 
 msgid "where <placeholder-1/> can be one of:"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:40(replaceable) /tmp/cicero-zQNY/ref/explain.xml:41(replaceable) /tmp/cicero-zQNY/ref/explain.xml:42(replaceable) /tmp/cicero-zQNY/ref/explain.xml:43(replaceable) /tmp/cicero-zQNY/ref/explain.xml:182(replaceable) 
+#: /tmp/cicero-FQJK/ref/explain.xml:40(replaceable) /tmp/cicero-FQJK/ref/explain.xml:41(replaceable) /tmp/cicero-FQJK/ref/explain.xml:42(replaceable) /tmp/cicero-FQJK/ref/explain.xml:43(replaceable) /tmp/cicero-FQJK/ref/explain.xml:182(replaceable) 
 msgid "boolean"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:34(synopsis) 
+#: /tmp/cicero-FQJK/ref/explain.xml:34(synopsis) 
 #, no-wrap
 msgid "\nEXPLAIN [ ( <placeholder-1/> [, ...] ) ] <placeholder-2/>\nEXPLAIN [ ANALYZE ] [ VERBOSE ] <placeholder-3/>\n\n<placeholder-4/>\n\n    ANALYZE [ <placeholder-5/> ]\n    VERBOSE [ <placeholder-6/> ]\n    COSTS [ <placeholder-7/> ]\n    BUFFERS [ <placeholder-8/> ]\n    FORMAT { TEXT | XML | JSON | YAML }\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:49(title) 
+#: /tmp/cicero-FQJK/ref/explain.xml:49(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:51(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:51(para) 
 msgid "This command displays the execution plan that the <productname>PostgreSQL</productname> planner generates for the supplied statement. The execution plan shows how the table(s) referenced by the statement will be scanned — by plain sequential scan, index scan, etc. — and if multiple tables are referenced, what join algorithms will be used to bring together the required rows from each input table."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:61(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:61(para) 
 msgid "The most critical part of the display is the estimated statement execution cost, which is the planner's guess at how long it will take to run the statement (measured in units of disk page fetches). Actually two numbers are shown: the start-up time before the first row can be returned, and the total time to return all the rows. For most queries the total time is what matters, but in contexts such as a subquery in <literal>EXISTS</literal>, the planner will choose the smallest start-up time instead of the smallest total time (since the executor will stop after getting one row, anyway). Also, if you limit the number of rows to return with a <literal>LIMIT</literal> clause, the planner makes an appropriate interpolation between the endpoint costs to estimate which plan is really the cheapest."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:75(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:75(para) 
 msgid "The <literal>ANALYZE</literal> option causes the statement to be actually executed, not only planned. The total elapsed time expended within each plan node (in milliseconds) and total number of rows it actually returned are added to the display. This is useful for seeing whether the planner's estimates are close to reality."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:95(programlisting) 
+#: /tmp/cicero-FQJK/ref/explain.xml:95(programlisting) 
 #, no-wrap
 msgid "\nBEGIN;\nEXPLAIN ANALYZE ...;\nROLLBACK;\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:84(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:84(para) 
 msgid "Keep in mind that the statement is actually executed when the <literal>ANALYZE</literal> option is used. Although <command>EXPLAIN</command> will discard any output that a <command>SELECT</command> would return, other side effects of the statement will happen as usual. If you wish to use <command>EXPLAIN ANALYZE</command> on an <command>INSERT</command>, <command>UPDATE</command>, <command>DELETE</command>, <command>CREATE TABLE AS</command>, or <command>EXECUTE</command> statement without letting the command affect your data, use this approach: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:103(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:103(para) 
 msgid "Only the <literal>ANALYZE</literal> and <literal>VERBOSE</literal> options can be specified, and only in that order, without surrounding the option list in parentheses. Prior to <productname>PostgreSQL</productname> 9.0, the unparenthesized syntax was the only one supported. It is expected that all new options will be supported only in the parenthesized syntax."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:113(title) 
+#: /tmp/cicero-FQJK/ref/explain.xml:113(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:117(literal) 
+#: /tmp/cicero-FQJK/ref/explain.xml:117(literal) 
 msgid "ANALYZE"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:119(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:119(para) 
 msgid "Carry out the command and show the actual run times. This parameter defaults to <literal>FALSE</literal>."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:127(literal) 
+#: /tmp/cicero-FQJK/ref/explain.xml:127(literal) 
 msgid "VERBOSE"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:129(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:129(para) 
 msgid "Display additional information regarding the plan. Specifically, include the output column list for each node in the plan tree, schema-qualify table and function names, always label variables in expressions with their range table alias, and always print the name of each trigger for which statistics are displayed. This parameter defaults to <literal>FALSE</literal>."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:141(literal) 
+#: /tmp/cicero-FQJK/ref/explain.xml:141(literal) 
 msgid "COSTS"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:143(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:143(para) 
 msgid "Include information on the estimated startup and total cost of each plan node, as well as the estimated number of rows and the estimated width of each row. This parameter defaults to <literal>TRUE</literal>."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:152(literal) 
+#: /tmp/cicero-FQJK/ref/explain.xml:152(literal) 
 msgid "BUFFERS"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:154(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:154(para) 
 msgid "Include information on buffer usage. Specifically, include the number of shared blocks hits, reads, and writes, the number of local blocks hits, reads, and writes, and the number of temp blocks reads and writes. Shared blocks, local blocks, and temp blocks contain tables and indexes, temporary tables and temporary indexes, and disk blocks used in sort and materialized plans, respectively. The number of blocks shown for an upper-level node includes those used by all its child nodes. In text format, only non-zero values are printed. This parameter may only be used with <literal>ANALYZE</literal> parameter. It defaults to <literal>FALSE</literal>."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:170(literal) 
+#: /tmp/cicero-FQJK/ref/explain.xml:170(literal) 
 msgid "FORMAT"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:172(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:172(para) 
 msgid "Specify the output format, which can be TEXT, XML, JSON, or YAML. Non-text output contains the same information as the text output format, but is easier for programs to parse. This parameter defaults to <literal>TEXT</literal>."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:184(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:184(para) 
 msgid "Specifies whether the selected option should be turned on or off. You can write <literal>TRUE</literal>, <literal>ON</literal>, or <literal>1</literal> to enable the option, and <literal>FALSE</literal>, <literal>OFF</literal>, or <literal>0</literal> to disable it. The <replaceable class=\"parameter\">boolean</replaceable> value can also be omitted, in which case <literal>TRUE</literal> is assumed."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:198(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:198(para) 
 msgid "Any <command>SELECT</command>, <command>INSERT</command>, <command>UPDATE</command>, <command>DELETE</command>, <command>VALUES</command>, <command>EXECUTE</command>, <command>DECLARE</command>, or <command>CREATE TABLE AS</command> statement, whose execution plan you wish to see."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:210(title) 
+#: /tmp/cicero-FQJK/ref/explain.xml:210(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:212(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:212(para) 
 msgid "There is only sparse documentation on the optimizer's use of cost information in <productname>PostgreSQL</productname>. Refer to <xref linkend=\"using-explain\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:218(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:218(para) 
 msgid "In order to allow the <productname>PostgreSQL</productname> query planner to make reasonably informed decisions when optimizing queries, the <xref linkend=\"sql-analyze\"/> statement should be run to record statistics about the distribution of data within the table. If you have not done this (or if the statistical distribution of the data in the table has changed significantly since the last time <command>ANALYZE</command> was run), the estimated costs are unlikely to conform to the real properties of the query, and consequently an inferior query plan might be chosen."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:231(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:231(para) 
 msgid "In order to measure the run-time cost of each node in the execution plan, the current implementation of <command>EXPLAIN ANALYZE</command> can add considerable profiling overhead to query execution. As a result, running <command>EXPLAIN ANALYZE</command> on a query can sometimes take significantly longer than executing the query normally. The amount of overhead depends on the nature of the query."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:243(title) 
+#: /tmp/cicero-FQJK/ref/explain.xml:243(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:249(programlisting) 
+#: /tmp/cicero-FQJK/ref/explain.xml:249(programlisting) 
 #, no-wrap
 msgid "\nEXPLAIN SELECT * FROM foo;\n\n                       QUERY PLAN\n---------------------------------------------------------\n Seq Scan on foo  (cost=0.00..155.00 rows=10000 width=4)\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:245(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:245(para) 
 msgid "To show the plan for a simple query on a table with a single <type>integer</type> column and 10000 rows: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:261(programlisting) 
+#: /tmp/cicero-FQJK/ref/explain.xml:261(programlisting) 
 #, no-wrap
 msgid "\nEXPLAIN (FORMAT JSON) SELECT * FROM foo;\n           QUERY PLAN           \n--------------------------------\n [                             +\n   {                           +\n     \"Plan\": {                 +\n       \"Node Type\": \"Seq Scan\",+\n       \"Relation Name\": \"foo\", +\n       \"Alias\": \"foo\",         +\n       \"Startup Cost\": 0.00,   +\n       \"Total Cost\": 155.00,   +\n       \"Plan Rows\": 10000,     +\n       \"Plan Width\": 4         +\n     }                         +\n   }                           +\n ]\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:259(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:259(para) 
 msgid "Here is the same query, with JSON formatting: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:287(programlisting) 
+#: /tmp/cicero-FQJK/ref/explain.xml:287(programlisting) 
 #, no-wrap
 msgid "\nEXPLAIN SELECT * FROM foo WHERE i = 4;\n\n                         QUERY PLAN\n--------------------------------------------------------------\n Index Scan using fi on foo  (cost=0.00..5.98 rows=1 width=4)\n   Index Cond: (i = 4)\n(2 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:282(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:282(para) 
 msgid "If there is an index and we use a query with an indexable <literal>WHERE</literal> condition, <command>EXPLAIN</command> might show a different plan: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:300(programlisting) 
+#: /tmp/cicero-FQJK/ref/explain.xml:300(programlisting) 
 #, no-wrap
 msgid "\nEXPLAIN (FORMAT YAML) SELECT * FROM foo WHERE i='4';\n          QUERY PLAN           \n-------------------------------\n - Plan:                      +\n     Node Type: \"Index Scan\"  +\n     Scan Direction: \"Forward\"+\n     Index Name: \"fi\"         +\n     Relation Name: \"foo\"     +\n     Alias: \"foo\"             +\n     Startup Cost: 0.00       +\n     Total Cost: 5.98         +\n     Plan Rows: 1             +\n     Plan Width: 4            +\n     Index Cond: \"(i = 4)\"\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:298(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:298(para) 
 msgid "Here is the same query, but in YAML output: <placeholder-1/> XML output is left as an exercise to the reader."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:323(programlisting) 
+#: /tmp/cicero-FQJK/ref/explain.xml:323(programlisting) 
 #, no-wrap
 msgid "\nEXPLAIN (COSTS FALSE) SELECT * FROM foo WHERE i = 4;\n\n        QUERY PLAN\n----------------------------\n Index Scan using fi on foo\n   Index Cond: (i = 4)\n(2 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:320(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:320(para) 
 msgid "Here is the same plan with costs suppressed: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:338(programlisting) 
+#: /tmp/cicero-FQJK/ref/explain.xml:338(programlisting) 
 #, no-wrap
 msgid "\nEXPLAIN SELECT sum(i) FROM foo WHERE i &lt; 10;\n\n                             QUERY PLAN\n---------------------------------------------------------------------\n Aggregate  (cost=23.93..23.93 rows=1 width=4)\n   -&gt;  Index Scan using fi on foo  (cost=0.00..23.92 rows=6 width=4)\n         Index Cond: (i &lt; 10)\n(3 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:334(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:334(para) 
 msgid "Here is an example of a query plan for a query using an aggregate function: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:354(programlisting) 
+#: /tmp/cicero-FQJK/ref/explain.xml:354(programlisting) 
 #, no-wrap
 msgid "\nPREPARE query(int, int) AS SELECT sum(bar) FROM test\n    WHERE id &gt; $1 AND id &lt; $2\n    GROUP BY foo;\n\nEXPLAIN ANALYZE EXECUTE query(100, 200);\n\n                                                       QUERY PLAN                                                        \n-------------------------------------------------------------------------------------------------------------------------\n HashAggregate  (cost=39.53..39.53 rows=1 width=8) (actual time=0.661..0.672 rows=7 loops=1)\n   -&gt;  Index Scan using test_pkey on test  (cost=0.00..32.97 rows=1311 width=8) (actual time=0.050..0.395 rows=99 loops=1)\n         Index Cond: ((id &gt; $1) AND (id &lt; $2))\n Total runtime: 0.851 ms\n(4 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:350(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:350(para) 
 msgid "Here is an example of using <command>EXPLAIN EXECUTE</command> to display the execution plan for a prepared query: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:371(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:371(para) 
 msgid "Of course, the specific numbers shown here depend on the actual contents of the tables involved. Also note that the numbers, and even the selected query strategy, might vary between <productname>PostgreSQL</productname> releases due to planner improvements. In addition, the <command>ANALYZE</command> command uses random sampling to estimate data statistics; therefore, it is possible for cost estimates to change after a fresh run of <command>ANALYZE</command>, even if the actual distribution of data in the table has not changed."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:385(title) 
+#: /tmp/cicero-FQJK/ref/explain.xml:385(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:387(para) 
+#: /tmp/cicero-FQJK/ref/explain.xml:387(para) 
 msgid "There is no <command>EXPLAIN</command> statement defined in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/explain.xml:393(title) 
+#: /tmp/cicero-FQJK/ref/explain.xml:393(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-zQNY/ref/explain.xml:0(None) 
+#: /tmp/cicero-FQJK/ref/explain.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

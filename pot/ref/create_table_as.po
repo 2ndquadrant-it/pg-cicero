@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-22 18:16+0200\n"
+"POT-Creation-Date: 2011-08-23 09:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,248 +9,248 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:9(refentrytitle) /tmp/cicero-zQNY/ref/create_table_as.xml:15(refname) /tmp/cicero-zQNY/ref/create_table_as.xml:20(primary) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:9(refentrytitle) /tmp/cicero-FQJK/ref/create_table_as.xml:15(refname) /tmp/cicero-FQJK/ref/create_table_as.xml:20(primary) 
 msgid "CREATE TABLE AS"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:10(manvolnum) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:11(refmiscinfo) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:16(refpurpose) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:16(refpurpose) 
 msgid "define a new table from the results of a query"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:25(replaceable) /tmp/cicero-zQNY/ref/create_table_as.xml:96(replaceable) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:25(replaceable) /tmp/cicero-FQJK/ref/create_table_as.xml:96(replaceable) 
 msgid "table_name"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:26(replaceable) /tmp/cicero-zQNY/ref/create_table_as.xml:105(replaceable) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:26(replaceable) /tmp/cicero-FQJK/ref/create_table_as.xml:105(replaceable) 
 msgid "column_name"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:27(replaceable) /tmp/cicero-zQNY/ref/create_table_as.xml:118(replaceable) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:27(replaceable) /tmp/cicero-FQJK/ref/create_table_as.xml:118(replaceable) 
 msgid "storage_parameter"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:27(replaceable) /tmp/cicero-zQNY/ref/create_table_as.xml:118(replaceable) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:27(replaceable) /tmp/cicero-FQJK/ref/create_table_as.xml:118(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:29(replaceable) /tmp/cicero-zQNY/ref/create_table_as.xml:192(replaceable) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:29(replaceable) /tmp/cicero-FQJK/ref/create_table_as.xml:192(replaceable) 
 msgid "tablespace"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:30(replaceable) /tmp/cicero-zQNY/ref/create_table_as.xml:205(replaceable) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:30(replaceable) /tmp/cicero-FQJK/ref/create_table_as.xml:205(replaceable) 
 msgid "query"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:24(synopsis) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE [ [ GLOBAL | LOCAL ] { TEMPORARY | TEMP } | UNLOGGED ] TABLE <placeholder-1/>\n    [ (<placeholder-2/> [, ...] ) ]\n    [ WITH ( <placeholder-3/> [= <placeholder-4/>] [, ... ] ) | WITH OIDS | WITHOUT OIDS ]\n    [ ON COMMIT { PRESERVE ROWS | DELETE ROWS | DROP } ]\n    [ TABLESPACE <placeholder-5/> ]\n    AS <placeholder-6/>\n    [ WITH [ NO ] DATA ]\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:36(title) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:38(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:38(para) 
 msgid "<command>CREATE TABLE AS</command> creates a table and fills it with data computed by a <command>SELECT</command> command. The table columns have the names and data types associated with the output columns of the <command>SELECT</command> (except that you can override the column names by giving an explicit list of new column names)."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:47(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:47(para) 
 msgid "<command>CREATE TABLE AS</command> bears some resemblance to creating a view, but it is really quite different: it creates a new table and evaluates the query just once to fill the new table initially. The new table will not track subsequent changes to the source tables of the query. In contrast, a view re-evaluates its defining <command>SELECT</command> statement whenever it is queried."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:59(title) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:59(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:63(term) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:63(term) 
 msgid "<literal>GLOBAL</literal> or <literal>LOCAL</literal>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:65(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:65(para) 
 msgid "Ignored for compatibility. Refer to <xref linkend=\"sql-createtable\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:76(term) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:76(term) 
 msgid "<literal>TEMPORARY</literal> or <literal>TEMP</literal>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:78(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:78(para) 
 msgid "If specified, the table is created as a temporary table. Refer to <xref linkend=\"sql-createtable\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:86(literal) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:86(literal) 
 msgid "UNLOGGED"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:88(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:88(para) 
 msgid "If specified, the table is created as an unlogged table. Refer to <xref linkend=\"sql-createtable\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:98(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:98(para) 
 msgid "The name (optionally schema-qualified) of the table to be created."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:107(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:107(para) 
 msgid "The name of a column in the new table. If column names are not provided, they are taken from the output column names of the query. If the table is created from an <command>EXECUTE</command> command, a column name list cannot be specified."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:118(literal) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:118(literal) 
 msgid "WITH ( <placeholder-1/> [= <placeholder-2/>] [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:120(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:120(para) 
 msgid "This clause specifies optional storage parameters for the new table; see <xref linkend=\"sql-createtable-storage-parameters\" endterm=\"sql-createtable-storage-parameters-title\"/> for more information. The <literal>WITH</literal> clause can also include <literal>OIDS=TRUE</literal> (or just <literal>OIDS</literal>) to specify that rows of the new table should have OIDs (object identifiers) assigned to them, or <literal>OIDS=FALSE</literal> to specify that the rows should not have OIDs. See <xref linkend=\"sql-createtable\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:135(literal) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:135(literal) 
 msgid "WITH OIDS"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:136(literal) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:136(literal) 
 msgid "WITHOUT OIDS"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:138(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:138(para) 
 msgid "These are obsolescent syntaxes equivalent to <literal>WITH (OIDS)</literal> and <literal>WITH (OIDS=FALSE)</literal>, respectively. If you wish to give both an <literal>OIDS</literal> setting and storage parameters, you must use the <literal>WITH ( ... )</literal> syntax; see above."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:148(literal) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:148(literal) 
 msgid "ON COMMIT"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:157(literal) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:157(literal) 
 msgid "PRESERVE ROWS"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:159(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:159(para) 
 msgid "No special action is taken at the ends of transactions. This is the default behavior."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:167(literal) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:167(literal) 
 msgid "DELETE ROWS"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:169(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:169(para) 
 msgid "All rows in the temporary table will be deleted at the end of each transaction block. Essentially, an automatic <xref linkend=\"sql-truncate\"/> is done at each commit."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:179(literal) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:179(literal) 
 msgid "DROP"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:181(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:181(para) 
 msgid "The temporary table will be dropped at the end of the current transaction block."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:150(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:150(para) 
 msgid "The behavior of temporary tables at the end of a transaction block can be controlled using <literal>ON COMMIT</literal>. The three options are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:192(literal) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:192(literal) 
 msgid "TABLESPACE <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:194(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:194(para) 
 msgid "The <replaceable class=\"PARAMETER\">tablespace</replaceable> is the name of the tablespace in which the new table is to be created. If not specified, <xref linkend=\"guc-default-tablespace\"/> is consulted, or <xref linkend=\"guc-temp-tablespaces\"/> if the table is temporary."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:207(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:207(para) 
 msgid "A <xref linkend=\"sql-select\"/>, <link linkend=\"sql-table\">TABLE</link>, or <xref linkend=\"sql-values\"/> command, or an <xref linkend=\"sql-execute\"/> command that runs a prepared <command>SELECT</command>, <command>TABLE</command>, or <command>VALUES</command> query."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:219(literal) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:219(literal) 
 msgid "WITH [ NO ] DATA"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:221(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:221(para) 
 msgid "This clause specifies whether or not the data produced by the query should be copied into the new table. If not, only the table structure is copied. The default is to copy the data."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:233(title) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:233(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:235(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:235(para) 
 msgid "This command is functionally similar to <xref linkend=\"sql-selectinto\"/>, but it is preferred since it is less likely to be confused with other uses of the <command>SELECT INTO</command> syntax. Furthermore, <command>CREATE TABLE AS</command> offers a superset of the functionality offered by <command>SELECT INTO</command>."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:244(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:244(para) 
 msgid "Prior to <productname>PostgreSQL</productname> 8.0, <command>CREATE TABLE AS</command> always included OIDs in the table it created. As of <productname>PostgreSQL</productname> 8.0, the <command>CREATE TABLE AS</command> command allows the user to explicitly specify whether OIDs should be included. If the presence of OIDs is not explicitly specified, the <xref linkend=\"guc-default-with-oids\"/> configuration variable is used. As of <productname>PostgreSQL</productname> 8.1, this variable is false by default, so the default behavior is not identical to pre-8.0 releases. Applications that require OIDs in the table created by <command>CREATE TABLE AS</command> should explicitly specify <literal>WITH (OIDS)</literal> to ensure proper behavior."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:262(title) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:262(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:268(programlisting) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:268(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE films_recent AS\n  SELECT * FROM films WHERE date_prod &gt;= '2002-01-01';\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:264(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:264(para) 
 msgid "Create a new table <literal>films_recent</literal> consisting of only recent entries from the table <literal>films</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:278(programlisting) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:278(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE films2 AS\n  TABLE films;\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:274(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:274(para) 
 msgid "To copy a table completely, the short form using the <literal>TABLE</literal> command can also be used: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:289(programlisting) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:289(programlisting) 
 #, no-wrap
 msgid "\nPREPARE recentfilms(date) AS\n  SELECT * FROM films WHERE date_prod &gt; $1;\nCREATE TEMP TABLE films_recent WITH (OIDS) ON COMMIT DROP AS\n  EXECUTE recentfilms('2002-01-01');\n"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:284(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:284(para) 
 msgid "Create a new temporary table <literal>films_recent</literal>, consisting of only recent entries from the table <literal>films</literal>, using a prepared statement. The new table has OIDs and will be dropped at commit: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:298(title) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:298(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:306(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:306(para) 
 msgid "The standard requires parentheses around the subquery clause; in <productname>PostgreSQL</productname>, these parentheses are optional."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:314(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:314(para) 
 msgid "In the standard, the <literal>WITH [ NO ] DATA</literal> clause is required; in PostgreSQL it is optional."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:321(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:321(para) 
 msgid "<productname>PostgreSQL</productname> handles temporary tables in a way rather different from the standard; see <xref linkend=\"sql-createtable\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:329(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:329(para) 
 msgid "The <literal>WITH</literal> clause is a <productname>PostgreSQL</productname> extension; neither storage parameters nor OIDs are in the standard."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:336(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:336(para) 
 msgid "The <productname>PostgreSQL</productname> concept of tablespaces is not part of the standard. Hence, the clause <literal>TABLESPACE</literal> is an extension."
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:300(para) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:300(para) 
 msgid "<command>CREATE TABLE AS</command> conforms to the <acronym>SQL</acronym> standard. The following are nonstandard extensions: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:346(title) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:346(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-zQNY/ref/create_table_as.xml:0(None) 
+#: /tmp/cicero-FQJK/ref/create_table_as.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
