@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:43+0200\n"
+"POT-Creation-Date: 2011-08-23 09:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,77 +9,77 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:9(refentrytitle) /tmp/cicero-FQJK/ref/start_transaction.xml:15(refname) /tmp/cicero-FQJK/ref/start_transaction.xml:20(primary) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:9(refentrytitle) /tmp/cicero-eNgk/ref/start_transaction.xml:15(refname) /tmp/cicero-eNgk/ref/start_transaction.xml:20(primary) 
 msgid "START TRANSACTION"
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:10(manvolnum) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:11(refmiscinfo) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:16(refpurpose) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:16(refpurpose) 
 msgid "start a transaction block"
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:25(replaceable) /tmp/cicero-FQJK/ref/start_transaction.xml:27(replaceable) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:25(replaceable) /tmp/cicero-eNgk/ref/start_transaction.xml:27(replaceable) 
 msgid "transaction_mode"
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:27(phrase) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:27(phrase) 
 msgid "where <placeholder-1/> is one of:"
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:24(synopsis) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:24(synopsis) 
 #, no-wrap
 msgid "\nSTART TRANSACTION [ <placeholder-1/> [, ...] ]\n\n<placeholder-2/>\n\n    ISOLATION LEVEL { SERIALIZABLE | REPEATABLE READ | READ COMMITTED | READ UNCOMMITTED }\n    READ WRITE | READ ONLY\n    [ NOT ] DEFERRABLE\n"
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:36(title) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:38(para) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:38(para) 
 msgid "This command begins a new transaction block. If the isolation level, read/write mode, or deferrable mode is specified, the new transaction has those characteristics, as if <xref linkend=\"sql-set-transaction\"/> was executed. This is the same as the <xref linkend=\"sql-begin\"/> command."
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:47(title) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:47(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:49(para) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:49(para) 
 msgid "Refer to <xref linkend=\"sql-set-transaction\"/> for information on the meaning of the parameters to this statement."
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:56(title) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:56(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:58(para) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:58(para) 
 msgid "In the standard, it is not necessary to issue <command>START TRANSACTION</command> to start a transaction block: any SQL command implicitly begins a block. <productname>PostgreSQL</productname>'s behavior can be seen as implicitly issuing a <command>COMMIT</command> after each command that does not follow <command>START TRANSACTION</command> (or <command>BEGIN</command>), and it is therefore often called <quote>autocommit</quote>. Other relational database systems might offer an autocommit feature as a convenience."
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:69(para) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:69(para) 
 msgid "The <literal>DEFERRABLE</literal><replaceable class=\"parameter\">transaction_mode</replaceable> is a <productname>PostgreSQL</productname> language extension."
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:75(para) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:75(para) 
 msgid "The SQL standard requires commas between successive <replaceable class=\"parameter\">transaction_modes</replaceable>, but for historical reasons <productname>PostgreSQL</productname> allows the commas to be omitted."
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:82(para) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:82(para) 
 msgid "See also the compatibility section of <xref linkend=\"sql-set-transaction\"/>."
 msgstr ""
 
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:88(title) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:88(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-FQJK/ref/start_transaction.xml:0(None) 
+#: /tmp/cicero-eNgk/ref/start_transaction.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

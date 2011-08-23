@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:43+0200\n"
+"POT-Creation-Date: 2011-08-23 09:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,74 +9,74 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-FQJK/intagg.xml:5(title) /tmp/cicero-FQJK/intagg.xml:8(primary) 
+#: /tmp/cicero-eNgk/intagg.xml:5(title) /tmp/cicero-eNgk/intagg.xml:8(primary) 
 msgid "intagg"
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:11(para) 
+#: /tmp/cicero-eNgk/intagg.xml:11(para) 
 msgid "The <filename>intagg</filename> module provides an integer aggregator and an enumerator. <filename>intagg</filename> is now obsolete, because there are built-in functions that provide a superset of its capabilities. However, the module is still provided as a compatibility wrapper around the built-in functions."
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:20(title) 
+#: /tmp/cicero-eNgk/intagg.xml:20(title) 
 msgid "Functions"
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:22(para) 
+#: /tmp/cicero-eNgk/intagg.xml:22(para) 
 msgid "The aggregator is an aggregate function <function>int_array_aggregate(integer)</function> that produces an integer array containing exactly the integers it is fed. This is a wrapper around <function>array_agg</function>, which does the same thing for any array type."
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:31(para) 
+#: /tmp/cicero-eNgk/intagg.xml:31(para) 
 msgid "The enumerator is a function <function>int_array_enum(integer[])</function> that returns <type>setof integer</type>. It is essentially the reverse operation of the aggregator: given an array of integers, expand it into a set of rows. This is a wrapper around <function>unnest</function>, which does the same thing for any array type."
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:43(title) 
+#: /tmp/cicero-eNgk/intagg.xml:43(title) 
 msgid "Sample Uses"
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:49(programlisting) 
+#: /tmp/cicero-eNgk/intagg.xml:49(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE left (id INT PRIMARY KEY, ...);\nCREATE TABLE right (id INT PRIMARY KEY, ...);\nCREATE TABLE one_to_many(left INT REFERENCES left, right INT REFERENCES right);\n"
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:57(programlisting) 
+#: /tmp/cicero-eNgk/intagg.xml:57(programlisting) 
 #, no-wrap
 msgid "\nSELECT right.* from right JOIN one_to_many ON (right.id = one_to_many.right)\n  WHERE one_to_many.left = <replaceable>item</replaceable>;\n"
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:45(para) 
+#: /tmp/cicero-eNgk/intagg.xml:45(para) 
 msgid "Many database systems have the notion of a one to many table. Such a table usually sits between two indexed tables, for example: <placeholder-1/> It is typically used like this: <placeholder-2/> This will return all the items in the right hand table for an entry in the left hand table. This is a very common construct in SQL."
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:75(programlisting) 
+#: /tmp/cicero-eNgk/intagg.xml:75(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE summary AS\n  SELECT left, int_array_aggregate(right) AS right\n  FROM one_to_many\n  GROUP BY left;\n"
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:86(programlisting) 
+#: /tmp/cicero-eNgk/intagg.xml:86(programlisting) 
 #, no-wrap
 msgid "\nSELECT left, int_array_enum(right) FROM summary WHERE left = <replaceable>item</replaceable>;\n"
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:93(programlisting) 
+#: /tmp/cicero-eNgk/intagg.xml:93(programlisting) 
 #, no-wrap
 msgid "\nSELECT left, right FROM one_to_many WHERE left = <replaceable>item</replaceable>;\n"
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:66(para) 
+#: /tmp/cicero-eNgk/intagg.xml:66(para) 
 msgid "Now, this methodology can be cumbersome with a very large number of entries in the <structname>one_to_many</structname> table. Often, a join like this would result in an index scan and a fetch for each right hand entry in the table for a particular left hand entry. If you have a very dynamic system, there is not much you can do. However, if you have some data which is fairly static, you can create a summary table with the aggregator. <placeholder-1/> This will create a table with one row per left item, and an array of right items. Now this is pretty useless without some way of using the array; that's why there is an array enumerator. You can do <placeholder-2/> The above query using <function>int_array_enum</function> produces the same results as <placeholder-3/> The difference is that the query against the summary table has to get only one row from the table, whereas the direct query against <structname>one_to_many</structname> must index scan and fetch a row for each entry."
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:107(programlisting) 
+#: /tmp/cicero-eNgk/intagg.xml:107(programlisting) 
 #, no-wrap
 msgid "\nSELECT right, count(right) FROM\n  ( SELECT left, int_array_enum(right) AS right\n    FROM summary JOIN (SELECT left FROM left_table WHERE left = <replaceable>item</replaceable>) AS lefts\n         ON (summary.left = lefts.left)\n  ) AS list\n  GROUP BY right\n  ORDER BY count DESC;\n"
 msgstr ""
 
-#: /tmp/cicero-FQJK/intagg.xml:102(para) 
+#: /tmp/cicero-eNgk/intagg.xml:102(para) 
 msgid "On one system, an <command>EXPLAIN</command> showed a query with a cost of 8488 was reduced to a cost of 329. The original query was a join involving the <structname>one_to_many</structname> table, which was replaced by: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-FQJK/intagg.xml:0(None) 
+#: /tmp/cicero-eNgk/intagg.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
