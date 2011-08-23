@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:46+0200\n"
+"POT-Creation-Date: 2011-08-23 10:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,133 +9,133 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-UbWe/sslinfo.xml:6(title) /tmp/cicero-UbWe/sslinfo.xml:9(primary) 
+#: /tmp/cicero-RtQO/sslinfo.xml:6(title) /tmp/cicero-RtQO/sslinfo.xml:9(primary) 
 msgid "sslinfo"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:12(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:12(para) 
 msgid "The <filename>sslinfo</filename> module provides information about the SSL certificate that the current client provided when connecting to <productname>PostgreSQL</productname>. The module is useless (most functions will return NULL) if the current connection does not use SSL."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:19(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:19(para) 
 msgid "This extension won't build at all unless the installation was configured with <literal>--with-openssl</literal>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:25(title) 
+#: /tmp/cicero-RtQO/sslinfo.xml:25(title) 
 msgid "Functions Provided"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:29(function) 
+#: /tmp/cicero-RtQO/sslinfo.xml:29(function) 
 msgid "ssl_is_used() returns boolean"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:33(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:33(para) 
 msgid "Returns TRUE if current connection to server uses SSL, and FALSE otherwise."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:41(function) 
+#: /tmp/cicero-RtQO/sslinfo.xml:41(function) 
 msgid "ssl_version() returns text"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:45(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:45(para) 
 msgid "Returns the name of the protocol used for the SSL connection (e.g. SSLv2, SSLv3, or TLSv1)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:53(function) 
+#: /tmp/cicero-RtQO/sslinfo.xml:53(function) 
 msgid "ssl_cipher() returns text"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:57(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:57(para) 
 msgid "Returns the name of the cipher used for the SSL connection (e.g. DHE-RSA-AES256-SHA)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:65(function) 
+#: /tmp/cicero-RtQO/sslinfo.xml:65(function) 
 msgid "ssl_client_cert_present() returns boolean"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:69(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:69(para) 
 msgid "Returns TRUE if current client has presented a valid SSL client certificate to the server, and FALSE otherwise. (The server might or might not be configured to require a client certificate.)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:78(function) 
+#: /tmp/cicero-RtQO/sslinfo.xml:78(function) 
 msgid "ssl_client_serial() returns numeric"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:82(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:82(para) 
 msgid "Returns serial number of current client certificate. The combination of certificate serial number and certificate issuer is guaranteed to uniquely identify a certificate (but not its owner — the owner ought to regularly change his keys, and get new certificates from the issuer)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:90(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:90(para) 
 msgid "So, if you run your own CA and allow only certificates from this CA to be accepted by the server, the serial number is the most reliable (albeit not very mnemonic) means to identify a user."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:99(function) 
+#: /tmp/cicero-RtQO/sslinfo.xml:99(function) 
 msgid "ssl_client_dn() returns text"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:103(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:103(para) 
 msgid "Returns the full subject of the current client certificate, converting character data into the current database encoding. It is assumed that if you use non-ASCII characters in the certificate names, your database is able to represent these characters, too. If your database uses the SQL_ASCII encoding, non-ASCII characters in the name will be represented as UTF-8 sequences."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:112(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:112(para) 
 msgid "The result looks like <literal>/CN=Somebody /C=Some country/O=Some organization</literal>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:119(function) 
+#: /tmp/cicero-RtQO/sslinfo.xml:119(function) 
 msgid "ssl_issuer_dn() returns text"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:123(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:123(para) 
 msgid "Returns the full issuer name of the current client certificate, converting character data into the current database encoding. Encoding conversions are handled the same as for <function>ssl_client_dn</function>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:128(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:128(para) 
 msgid "The combination of the return value of this function with the certificate serial number uniquely identifies the certificate."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:132(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:132(para) 
 msgid "This function is really useful only if you have more than one trusted CA certificate in your server's <filename>root.crt</filename> file, or if this CA has issued some intermediate certificate authority certificates."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:141(function) 
+#: /tmp/cicero-RtQO/sslinfo.xml:141(function) 
 msgid "ssl_client_dn_field(fieldname text) returns text"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:145(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:145(para) 
 msgid "This function returns the value of the specified field in the certificate subject, or NULL if the field is not present. Field names are string constants that are converted into ASN1 object identifiers using the OpenSSL object database. The following values are acceptable:"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:152(literallayout) 
+#: /tmp/cicero-RtQO/sslinfo.xml:152(literallayout) 
 #, no-wrap
 msgid "\ncommonName (alias CN)\nsurname (alias SN)\nname\ngivenName (alias GN)\ncountryName (alias C)\nlocalityName (alias L)\nstateOrProvinceName (alias ST)\norganizationName (alias O)\norganizationUnitName (alias OU)\ntitle\ndescription\ninitials\npostalCode\nstreetAddress\ngenerationQualifier\ndescription\ndnQualifier\nx500UniqueIdentifier\npseudonym\nrole\nemailAddress\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:175(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:175(para) 
 msgid "All of these fields are optional, except <structfield>commonName</structfield>. It depends entirely on your CA's policy which of them would be included and which wouldn't. The meaning of these fields, however, is strictly defined by the X.500 and X.509 standards, so you cannot just assign arbitrary meaning to them."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:187(function) 
+#: /tmp/cicero-RtQO/sslinfo.xml:187(function) 
 msgid "ssl_issuer_field(fieldname text) returns text"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:191(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:191(para) 
 msgid "Same as <function>ssl_client_dn_field</function>, but for the certificate issuer rather than the certificate subject."
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:201(title) 
+#: /tmp/cicero-RtQO/sslinfo.xml:201(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:203(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:203(para) 
 msgid "Victor Wagner <email>vitus@cryptocom.ru</email>, Cryptocom LTD"
 msgstr ""
 
-#: /tmp/cicero-UbWe/sslinfo.xml:207(para) 
+#: /tmp/cicero-RtQO/sslinfo.xml:207(para) 
 msgid "E-Mail of Cryptocom OpenSSL development group: <email>openssl@cryptocom.ru</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-UbWe/sslinfo.xml:0(None) 
+#: /tmp/cicero-RtQO/sslinfo.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

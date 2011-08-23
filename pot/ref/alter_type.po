@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:46+0200\n"
+"POT-Creation-Date: 2011-08-23 09:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,278 +9,278 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:10(refentrytitle) /tmp/cicero-UbWe/ref/alter_type.xml:16(refname) /tmp/cicero-UbWe/ref/alter_type.xml:23(primary) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:10(refentrytitle) /tmp/cicero-RtQO/ref/alter_type.xml:16(refname) /tmp/cicero-RtQO/ref/alter_type.xml:23(primary) 
 msgid "ALTER TYPE"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:11(manvolnum) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:12(refmiscinfo) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:17(refpurpose) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:17(refpurpose) 
 msgid "change the definition of a type"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:28(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:29(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:30(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:31(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:32(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:33(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:170(replaceable) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:28(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:29(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:30(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:31(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:32(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:33(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:170(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:28(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:35(replaceable) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:28(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:35(replaceable) 
 msgid "action"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:29(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:189(replaceable) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:29(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:189(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:30(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:37(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:38(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:39(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:207(replaceable) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:30(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:37(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:38(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:39(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:207(replaceable) 
 msgid "attribute_name"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:30(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:216(replaceable) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:30(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:216(replaceable) 
 msgid "new_attribute_name"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:31(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:180(replaceable) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:31(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:180(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:32(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:198(replaceable) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:32(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:198(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:33(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:235(replaceable) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:33(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:235(replaceable) 
 msgid "new_enum_value"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:33(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:245(replaceable) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:33(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:245(replaceable) 
 msgid "existing_enum_value"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:35(phrase) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:35(phrase) 
 msgid "where <placeholder-1/> is one of:"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:37(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:39(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:225(replaceable) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:37(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:39(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:225(replaceable) 
 msgid "data_type"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:37(replaceable) /tmp/cicero-UbWe/ref/alter_type.xml:39(replaceable) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:37(replaceable) /tmp/cicero-RtQO/ref/alter_type.xml:39(replaceable) 
 msgid "collation"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:27(synopsis) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:27(synopsis) 
 #, no-wrap
 msgid "\nALTER TYPE <placeholder-1/> <placeholder-2/> [, ... ]\nALTER TYPE <placeholder-3/> OWNER TO <placeholder-4/>\nALTER TYPE <placeholder-5/> RENAME ATTRIBUTE <placeholder-6/> TO <placeholder-7/>\nALTER TYPE <placeholder-8/> RENAME TO <placeholder-9/> [ CASCADE | RESTRICT ]\nALTER TYPE <placeholder-10/> SET SCHEMA <placeholder-11/>\nALTER TYPE <placeholder-12/> ADD VALUE <placeholder-13/> [ { BEFORE | AFTER } <placeholder-14/> ]\n\n<placeholder-15/>\n\n    ADD ATTRIBUTE <placeholder-16/> <placeholder-17/> [ COLLATE <placeholder-18/> ] [ CASCADE | RESTRICT ]\n    DROP ATTRIBUTE [ IF EXISTS ] <placeholder-19/> [ CASCADE | RESTRICT ]\n    ALTER ATTRIBUTE <placeholder-20/> [ SET DATA ] TYPE <placeholder-21/> [ COLLATE <placeholder-22/> ] [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:44(title) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:44(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:52(literal) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:52(literal) 
 msgid "ADD ATTRIBUTE"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:54(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:54(para) 
 msgid "This form adds a new attribute to a composite type, using the same syntax as <xref linkend=\"sql-createtype\"/>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:62(literal) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:62(literal) 
 msgid "DROP ATTRIBUTE [ IF EXISTS ]"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:64(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:64(para) 
 msgid "This form drops an attribute from a composite type. If <literal>IF EXISTS</literal> is specified and the attribute does not exist, no error is thrown. In this case a notice is issued instead."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:74(literal) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:74(literal) 
 msgid "SET DATA TYPE"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:76(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:76(para) 
 msgid "This form changes the type of an attribute of a composite type."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:83(literal) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:83(literal) 
 msgid "OWNER"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:85(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:85(para) 
 msgid "This form changes the owner of the type."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:92(literal) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:92(literal) 
 msgid "RENAME"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:94(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:94(para) 
 msgid "This form changes the name of the type or the name of an individual attribute of a composite type."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:102(literal) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:102(literal) 
 msgid "SET SCHEMA"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:104(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:104(para) 
 msgid "This form moves the type into another schema."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:111(literal) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:111(literal) 
 msgid "ADD VALUE [ BEFORE | AFTER ]"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:113(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:113(para) 
 msgid "This form adds a new value to an enum type. If the new value's place in the enum's ordering is not specified using <literal>BEFORE</literal> or <literal>AFTER</literal>, then the new item is placed at the end of the list of values."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:123(literal) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:123(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:125(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:125(para) 
 msgid "Automatically propagate the operation to typed tables of the type being altered, and their descendants."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:133(literal) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:133(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:135(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:135(para) 
 msgid "Refuse the operation if the type being altered is the type of a typed table. This is the default."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:46(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:46(para) 
 msgid "<command>ALTER TYPE</command> changes the definition of an existing type. There are several subforms: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:144(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:144(para) 
 msgid "The <literal>ADD ATTRIBUTE</literal>, <literal>DROP ATTRIBUTE</literal>, and <literal>ALTER ATTRIBUTE</literal> actions can be combined into a list of multiple alterations to apply in parallel. For example, it is possible to add several attributes and/or alter the type of several attributes in a single command."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:152(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:152(para) 
 msgid "You must own the type to use <command>ALTER TYPE</command>. To change the schema of a type, you must also have <literal>CREATE</literal> privilege on the new schema. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the type's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the type. However, a superuser can alter ownership of any type anyway.)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:165(title) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:165(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:172(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:172(para) 
 msgid "The name (possibly schema-qualified) of an existing type to alter."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:182(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:182(para) 
 msgid "The new name for the type."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:191(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:191(para) 
 msgid "The user name of the new owner of the type."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:200(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:200(para) 
 msgid "The new schema for the type."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:209(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:209(para) 
 msgid "The name of the attribute to add, alter, or drop."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:218(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:218(para) 
 msgid "The new name of the attribute to be renamed."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:227(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:227(para) 
 msgid "The data type of the attribute to add, or the new type of the attribute to alter."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:237(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:237(para) 
 msgid "The new value to be added to an enum type's list of values. Like all enum literals, it needs to be quoted."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:247(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:247(para) 
 msgid "The existing enum value that the new value should be added immediately before or after in the enum type's sort ordering. Like all enum literals, it needs to be quoted."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:260(title) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:260(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:262(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:262(para) 
 msgid "<command>ALTER TYPE ... ADD VALUE</command> (the form that adds a new value to an enum type) cannot be executed inside a transaction block."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:267(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:267(para) 
 msgid "Comparisons involving an added enum value will sometimes be slower than comparisons involving only original members of the enum type. This will usually only occur if <literal>BEFORE</literal> or <literal>AFTER</literal> is used to set the new value's sort position somewhere other than at the end of the list. However, sometimes it will happen even though the new value is added at the end (this occurs if the OID counter <quote>wrapped around</quote> since the original creation of the enum type). The slowdown is usually insignificant; but if it matters, optimal performance can be regained by dropping and recreating the enum type, or by dumping and reloading the database."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:282(title) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:282(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:286(programlisting) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:286(programlisting) 
 #, no-wrap
 msgid "\nALTER TYPE electronic_mail RENAME TO email;\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:284(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:284(para) 
 msgid "To rename a data type: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:294(programlisting) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:294(programlisting) 
 #, no-wrap
 msgid "\nALTER TYPE email OWNER TO joe;\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:291(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:291(para) 
 msgid "To change the owner of the type <literal>email</literal> to <literal>joe</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:302(programlisting) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:302(programlisting) 
 #, no-wrap
 msgid "\nALTER TYPE email SET SCHEMA customers;\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:299(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:299(para) 
 msgid "To change the schema of the type <literal>email</literal> to <literal>customers</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:309(programlisting) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:309(programlisting) 
 #, no-wrap
 msgid "\nALTER TYPE compfoo ADD ATTRIBUTE f3 int;\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:307(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:307(para) 
 msgid "To add a new attribute to a type: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:316(programlisting) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:316(programlisting) 
 #, no-wrap
 msgid "\nALTER TYPE colors ADD VALUE 'orange' AFTER 'red';\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:314(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:314(para) 
 msgid "To add a new value to an enum type in a particular sort position: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:322(title) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:322(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:324(para) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:324(para) 
 msgid "The variants to add and drop attributes are part of the SQL standard; the other variants are PostgreSQL extensions."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/alter_type.xml:331(title) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:331(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-UbWe/ref/alter_type.xml:0(None) 
+#: /tmp/cicero-RtQO/ref/alter_type.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

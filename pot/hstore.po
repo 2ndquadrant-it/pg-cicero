@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:45+0200\n"
+"POT-Creation-Date: 2011-08-23 09:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,741 +9,741 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-UbWe/hstore.xml:6(title) /tmp/cicero-UbWe/hstore.xml:9(primary) /tmp/cicero-UbWe/hstore.xml:111(type) /tmp/cicero-UbWe/hstore.xml:118(type) /tmp/cicero-UbWe/hstore.xml:126(type) /tmp/cicero-UbWe/hstore.xml:132(type) /tmp/cicero-UbWe/hstore.xml:132(type) /tmp/cicero-UbWe/hstore.xml:133(type) /tmp/cicero-UbWe/hstore.xml:139(type) /tmp/cicero-UbWe/hstore.xml:140(type) /tmp/cicero-UbWe/hstore.xml:146(type) /tmp/cicero-UbWe/hstore.xml:147(type) /tmp/cicero-UbWe/hstore.xml:153(type) /tmp/cicero-UbWe/hstore.xml:154(type) /tmp/cicero-UbWe/hstore.xml:160(type) /tmp/cicero-UbWe/hstore.xml:160(type) /tmp/cicero-UbWe/hstore.xml:167(type) /tmp/cicero-UbWe/hstore.xml:167(type) /tmp/cicero-UbWe/hstore.xml:174(type) /tmp/cicero-UbWe/hstore.xml:181(type) /tmp/cicero-UbWe/hstore.xml:188(type) /tmp/cicero-UbWe/hstore.xml:188(type) /tmp/cicero-UbWe/hstore.xml:195(type) /tmp/cicero-UbWe/hstore.xml:196(type) /tmp/cicero-UbWe/hstore.xml:202(type) /tmp/cicero-UbWe/hstore.xml:203(type) /tmp/cicero-UbWe/hstore.xml:209(type) /tmp/cicero-UbWe/hstore.xml:210(type) /tmp/cicero-UbWe/hstore.xml:254(type) /tmp/cicero-UbWe/hstore.xml:255(type) /tmp/cicero-UbWe/hstore.xml:262(type) /tmp/cicero-UbWe/hstore.xml:263(type) /tmp/cicero-UbWe/hstore.xml:271(type) /tmp/cicero-UbWe/hstore.xml:272(type) /tmp/cicero-UbWe/hstore.xml:279(type) /tmp/cicero-UbWe/hstore.xml:280(type) /tmp/cicero-UbWe/hstore.xml:288(type) /tmp/cicero-UbWe/hstore.xml:296(type) /tmp/cicero-UbWe/hstore.xml:308(type) /tmp/cicero-UbWe/hstore.xml:316(type) /tmp/cicero-UbWe/hstore.xml:328(type) /tmp/cicero-UbWe/hstore.xml:337(type) /tmp/cicero-UbWe/hstore.xml:344(type) /tmp/cicero-UbWe/hstore.xml:345(type) /tmp/cicero-UbWe/hstore.xml:353(type) /tmp/cicero-UbWe/hstore.xml:367(type) /tmp/cicero-UbWe/hstore.xml:375(type) /tmp/cicero-UbWe/hstore.xml:382(type) /tmp/cicero-UbWe/hstore.xml:390(type) /tmp/cicero-UbWe/hstore.xml:398(type) /tmp/cicero-UbWe/hstore.xml:407(type) 
+#: /tmp/cicero-RtQO/hstore.xml:6(title) /tmp/cicero-RtQO/hstore.xml:9(primary) /tmp/cicero-RtQO/hstore.xml:111(type) /tmp/cicero-RtQO/hstore.xml:118(type) /tmp/cicero-RtQO/hstore.xml:126(type) /tmp/cicero-RtQO/hstore.xml:132(type) /tmp/cicero-RtQO/hstore.xml:132(type) /tmp/cicero-RtQO/hstore.xml:133(type) /tmp/cicero-RtQO/hstore.xml:139(type) /tmp/cicero-RtQO/hstore.xml:140(type) /tmp/cicero-RtQO/hstore.xml:146(type) /tmp/cicero-RtQO/hstore.xml:147(type) /tmp/cicero-RtQO/hstore.xml:153(type) /tmp/cicero-RtQO/hstore.xml:154(type) /tmp/cicero-RtQO/hstore.xml:160(type) /tmp/cicero-RtQO/hstore.xml:160(type) /tmp/cicero-RtQO/hstore.xml:167(type) /tmp/cicero-RtQO/hstore.xml:167(type) /tmp/cicero-RtQO/hstore.xml:174(type) /tmp/cicero-RtQO/hstore.xml:181(type) /tmp/cicero-RtQO/hstore.xml:188(type) /tmp/cicero-RtQO/hstore.xml:188(type) /tmp/cicero-RtQO/hstore.xml:195(type) /tmp/cicero-RtQO/hstore.xml:196(type) /tmp/cicero-RtQO/hstore.xml:202(type) /tmp/cicero-RtQO/hstore.xml:203(type) /tmp/cicero-RtQO/hstore.xml:209(type) /tmp/cicero-RtQO/hstore.xml:210(type) /tmp/cicero-RtQO/hstore.xml:254(type) /tmp/cicero-RtQO/hstore.xml:255(type) /tmp/cicero-RtQO/hstore.xml:262(type) /tmp/cicero-RtQO/hstore.xml:263(type) /tmp/cicero-RtQO/hstore.xml:271(type) /tmp/cicero-RtQO/hstore.xml:272(type) /tmp/cicero-RtQO/hstore.xml:279(type) /tmp/cicero-RtQO/hstore.xml:280(type) /tmp/cicero-RtQO/hstore.xml:288(type) /tmp/cicero-RtQO/hstore.xml:296(type) /tmp/cicero-RtQO/hstore.xml:308(type) /tmp/cicero-RtQO/hstore.xml:316(type) /tmp/cicero-RtQO/hstore.xml:328(type) /tmp/cicero-RtQO/hstore.xml:337(type) /tmp/cicero-RtQO/hstore.xml:344(type) /tmp/cicero-RtQO/hstore.xml:345(type) /tmp/cicero-RtQO/hstore.xml:353(type) /tmp/cicero-RtQO/hstore.xml:367(type) /tmp/cicero-RtQO/hstore.xml:375(type) /tmp/cicero-RtQO/hstore.xml:382(type) /tmp/cicero-RtQO/hstore.xml:390(type) /tmp/cicero-RtQO/hstore.xml:398(type) /tmp/cicero-RtQO/hstore.xml:407(type) 
 msgid "hstore"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:12(para) 
+#: /tmp/cicero-RtQO/hstore.xml:12(para) 
 msgid "This module implements the <type>hstore</type> data type for storing sets of key/value pairs within a single <productname>PostgreSQL</productname> value. This can be useful in various scenarios, such as rows with many attributes that are rarely examined, or semi-structured data. Keys and values are simply text strings."
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:21(title) 
+#: /tmp/cicero-RtQO/hstore.xml:21(title) 
 msgid "<type>hstore</type> External Representation"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:23(para) 
+#: /tmp/cicero-RtQO/hstore.xml:23(para) 
 msgid "The text representation of an <type>hstore</type>, used for input and output, includes zero or more <replaceable>key</replaceable><literal>=&gt;</literal><replaceable>value</replaceable> pairs separated by commas. Some examples: <synopsis>\nk =&gt; v\nfoo =&gt; bar, baz =&gt; whatever\n\"1-a\" =&gt; \"anything at all\"\n</synopsis> The order of the pairs is not significant (and may not be reproduced on output). Whitespace between pairs or around the <literal>=&gt;</literal> sign is ignored. Double-quote keys and values that include whitespace, commas, <literal>=</literal>s or <literal>&gt;</literal>s. To include a double quote or a backslash in a key or value, escape it with a backslash."
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:47(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:47(programlisting) 
 #, no-wrap
 msgid "\nSELECT 'a=&gt;1,a=&gt;2'::hstore;\n  hstore\n----------\n \"a\"=&gt;\"1\"\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:42(para) 
+#: /tmp/cicero-RtQO/hstore.xml:42(para) 
 msgid "Each key in an <type>hstore</type> is unique. If you declare an <type>hstore</type> with duplicate keys, only one will be stored in the <type>hstore</type> and there is no guarantee as to which will be kept: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:58(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:58(programlisting) 
 #, no-wrap
 msgid "\nkey =&gt; NULL\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:55(para) 
+#: /tmp/cicero-RtQO/hstore.xml:55(para) 
 msgid "A value (but not a key) can be an SQL <literal>NULL</literal>. For example: <placeholder-1/> The <literal>NULL</literal> keyword is case-insensitive. Double-quote the <literal>NULL</literal> to treat it as the ordinary string <quote>NULL</quote>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:67(para) 
+#: /tmp/cicero-RtQO/hstore.xml:67(para) 
 msgid "Keep in mind that the <type>hstore</type> text format, when used for input, applies <emphasis>before</emphasis> any required quoting or escaping. If you are passing an <type>hstore</type> literal via a parameter, then no additional processing is needed. But if you're passing it as a quoted literal constant, then any single-quote characters and (depending on the setting of the <varname>standard_conforming_strings</varname> configuration parameter) backslash characters need to be escaped correctly. See <xref linkend=\"sql-syntax-strings\"/> for more on the handling of string constants."
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:80(para) 
+#: /tmp/cicero-RtQO/hstore.xml:80(para) 
 msgid "On output, double quotes always surround keys and values, even when it's not strictly necessary."
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:88(title) 
+#: /tmp/cicero-RtQO/hstore.xml:88(title) 
 msgid "<type>hstore</type> Operators and Functions"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:90(para) 
+#: /tmp/cicero-RtQO/hstore.xml:90(para) 
 msgid "The operators provided by the <literal>hstore</literal> module are shown in <xref linkend=\"hstore-op-table\"/>, the functions in <xref linkend=\"hstore-func-table\"/>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:97(title) 
+#: /tmp/cicero-RtQO/hstore.xml:97(title) 
 msgid "<type>hstore</type> Operators"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:102(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:102(entry) 
 msgid "Operator"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:103(entry) /tmp/cicero-UbWe/hstore.xml:245(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:103(entry) /tmp/cicero-RtQO/hstore.xml:245(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:104(entry) /tmp/cicero-UbWe/hstore.xml:246(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:104(entry) /tmp/cicero-RtQO/hstore.xml:246(entry) 
 msgid "Example"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:105(entry) /tmp/cicero-UbWe/hstore.xml:247(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:105(entry) /tmp/cicero-RtQO/hstore.xml:247(entry) 
 msgid "Result"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:111(literal) /tmp/cicero-UbWe/hstore.xml:118(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:111(literal) /tmp/cicero-RtQO/hstore.xml:118(literal) 
 msgid "-&gt;"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:111(type) /tmp/cicero-UbWe/hstore.xml:125(type) /tmp/cicero-UbWe/hstore.xml:125(type) /tmp/cicero-UbWe/hstore.xml:139(type) /tmp/cicero-UbWe/hstore.xml:174(type) 
+#: /tmp/cicero-RtQO/hstore.xml:111(type) /tmp/cicero-RtQO/hstore.xml:125(type) /tmp/cicero-RtQO/hstore.xml:125(type) /tmp/cicero-RtQO/hstore.xml:139(type) /tmp/cicero-RtQO/hstore.xml:174(type) 
 msgid "text"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:112(literal) /tmp/cicero-UbWe/hstore.xml:119(literal) /tmp/cicero-UbWe/hstore.xml:375(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:112(literal) /tmp/cicero-RtQO/hstore.xml:119(literal) /tmp/cicero-RtQO/hstore.xml:375(literal) 
 msgid "NULL"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:112(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:112(entry) 
 msgid "get value for key (<placeholder-1/> if not present)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:113(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:113(literal) 
 msgid "'a=&gt;x, b=&gt;y'::hstore -&gt; 'a'"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:114(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:114(literal) 
 msgid "x"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:118(type) /tmp/cicero-UbWe/hstore.xml:146(type) /tmp/cicero-UbWe/hstore.xml:153(type) /tmp/cicero-UbWe/hstore.xml:181(type) /tmp/cicero-UbWe/hstore.xml:287(type) /tmp/cicero-UbWe/hstore.xml:307(type) /tmp/cicero-UbWe/hstore.xml:327(type) /tmp/cicero-UbWe/hstore.xml:336(type) 
+#: /tmp/cicero-RtQO/hstore.xml:118(type) /tmp/cicero-RtQO/hstore.xml:146(type) /tmp/cicero-RtQO/hstore.xml:153(type) /tmp/cicero-RtQO/hstore.xml:181(type) /tmp/cicero-RtQO/hstore.xml:287(type) /tmp/cicero-RtQO/hstore.xml:307(type) /tmp/cicero-RtQO/hstore.xml:327(type) /tmp/cicero-RtQO/hstore.xml:336(type) 
 msgid "text[]"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:119(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:119(entry) 
 msgid "get values for keys (<placeholder-1/> if not present)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:120(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:120(literal) 
 msgid "'a=&gt;x, b=&gt;y, c=&gt;z'::hstore -&gt; ARRAY['c','a']"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:121(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:121(literal) 
 msgid "{\"z\",\"x\"}"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:125(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:125(literal) 
 msgid "=&gt;"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:126(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:126(entry) 
 msgid "make single-pair <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:127(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:127(literal) 
 msgid "'a' =&gt; 'b'"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:128(literal) /tmp/cicero-UbWe/hstore.xml:282(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:128(literal) /tmp/cicero-RtQO/hstore.xml:282(literal) 
 msgid "\"a\"=&gt;\"b\""
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:132(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:132(literal) 
 msgid "||"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:133(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:133(entry) 
 msgid "concatenate <placeholder-1/>s"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:134(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:134(literal) 
 msgid "'a=&gt;b, c=&gt;d'::hstore || 'c=&gt;x, d=&gt;q'::hstore"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:135(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:135(literal) 
 msgid "\"a\"=&gt;\"b\", \"c\"=&gt;\"x\", \"d\"=&gt;\"q\""
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:139(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:139(literal) 
 msgid "?"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:140(entry) /tmp/cicero-UbWe/hstore.xml:367(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:140(entry) /tmp/cicero-RtQO/hstore.xml:367(entry) 
 msgid "does <placeholder-1/> contain key?"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:141(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:141(literal) 
 msgid "'a=&gt;1'::hstore ? 'a'"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:142(literal) /tmp/cicero-UbWe/hstore.xml:149(literal) /tmp/cicero-UbWe/hstore.xml:156(literal) /tmp/cicero-UbWe/hstore.xml:163(literal) /tmp/cicero-UbWe/hstore.xml:369(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:142(literal) /tmp/cicero-RtQO/hstore.xml:149(literal) /tmp/cicero-RtQO/hstore.xml:156(literal) /tmp/cicero-RtQO/hstore.xml:163(literal) /tmp/cicero-RtQO/hstore.xml:369(literal) 
 msgid "t"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:146(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:146(literal) 
 msgid "?&amp;"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:147(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:147(entry) 
 msgid "does <placeholder-1/> contain all specified keys?"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:148(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:148(literal) 
 msgid "'a=&gt;1,b=&gt;2'::hstore ?&amp; ARRAY['a','b']"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:153(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:153(literal) 
 msgid "?|"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:154(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:154(entry) 
 msgid "does <placeholder-1/> contain any of the specified keys?"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:155(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:155(literal) 
 msgid "'a=&gt;1,b=&gt;2'::hstore ?| ARRAY['b','c']"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:160(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:160(literal) 
 msgid "@&gt;"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:161(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:161(entry) 
 msgid "does left operand contain right?"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:162(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:162(literal) 
 msgid "'a=&gt;b, b=&gt;1, c=&gt;NULL'::hstore @&gt; 'b=&gt;1'"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:167(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:167(literal) 
 msgid "&lt;@"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:168(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:168(entry) 
 msgid "is left operand contained in right?"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:169(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:169(literal) 
 msgid "'a=&gt;c'::hstore &lt;@ 'a=&gt;b, b=&gt;1, c=&gt;NULL'"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:170(literal) /tmp/cicero-UbWe/hstore.xml:377(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:170(literal) /tmp/cicero-RtQO/hstore.xml:377(literal) 
 msgid "f"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:174(literal) /tmp/cicero-UbWe/hstore.xml:181(literal) /tmp/cicero-UbWe/hstore.xml:188(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:174(literal) /tmp/cicero-RtQO/hstore.xml:181(literal) /tmp/cicero-RtQO/hstore.xml:188(literal) 
 msgid "-"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:175(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:175(entry) 
 msgid "delete key from left operand"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:176(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:176(literal) 
 msgid "'a=&gt;1, b=&gt;2, c=&gt;3'::hstore - 'b'::text"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:177(literal) /tmp/cicero-UbWe/hstore.xml:191(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:177(literal) /tmp/cicero-RtQO/hstore.xml:191(literal) 
 msgid "\"a\"=&gt;\"1\", \"c\"=&gt;\"3\""
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:182(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:182(entry) 
 msgid "delete keys from left operand"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:183(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:183(literal) 
 msgid "'a=&gt;1, b=&gt;2, c=&gt;3'::hstore - ARRAY['a','b']"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:184(literal) /tmp/cicero-UbWe/hstore.xml:393(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:184(literal) /tmp/cicero-RtQO/hstore.xml:393(literal) 
 msgid "\"c\"=&gt;\"3\""
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:189(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:189(entry) 
 msgid "delete matching pairs from left operand"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:190(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:190(literal) 
 msgid "'a=&gt;1, b=&gt;2, c=&gt;3'::hstore - 'a=&gt;4, b=&gt;2'::hstore"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:195(type) /tmp/cicero-UbWe/hstore.xml:196(type) /tmp/cicero-UbWe/hstore.xml:406(type) /tmp/cicero-UbWe/hstore.xml:407(type) 
+#: /tmp/cicero-RtQO/hstore.xml:195(type) /tmp/cicero-RtQO/hstore.xml:196(type) /tmp/cicero-RtQO/hstore.xml:406(type) /tmp/cicero-RtQO/hstore.xml:407(type) 
 msgid "record"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:195(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:195(literal) 
 msgid "#="
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:196(entry) /tmp/cicero-UbWe/hstore.xml:407(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:196(entry) /tmp/cicero-RtQO/hstore.xml:407(entry) 
 msgid "replace fields in <placeholder-1/> with matching values from <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:197(entry) /tmp/cicero-UbWe/hstore.xml:408(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:197(entry) /tmp/cicero-RtQO/hstore.xml:408(entry) 
 msgid "see Examples section"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:202(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:202(literal) 
 msgid "%%"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:203(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:203(entry) 
 msgid "convert <placeholder-1/> to array of alternating keys and values"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:204(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:204(literal) 
 msgid "%% 'a=&gt;foo, b=&gt;bar'::hstore"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:205(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:205(literal) 
 msgid "{a,foo,b,bar}"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:209(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:209(literal) 
 msgid "%#"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:210(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:210(entry) 
 msgid "convert <placeholder-1/> to two-dimensional key/value array"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:211(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:211(literal) 
 msgid "%# 'a=&gt;foo, b=&gt;bar'::hstore"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:212(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:212(literal) 
 msgid "{{a,foo},{b,bar}}"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:220(para) 
+#: /tmp/cicero-RtQO/hstore.xml:220(para) 
 msgid "Prior to PostgreSQL 8.2, the containment operators <literal>@&gt;</literal> and <literal>&lt;@</literal> were called <literal>@</literal> and <literal>~</literal>, respectively. These names are still available, but are deprecated and will eventually be removed. Notice that the old names are reversed from the convention formerly followed by the core geometric data types!"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:230(para) 
+#: /tmp/cicero-RtQO/hstore.xml:230(para) 
 msgid "The <literal>=&gt;</literal> operator is deprecated and may be removed in a future release. Use the <literal>hstore(text, text)</literal> function instead."
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:238(title) 
+#: /tmp/cicero-RtQO/hstore.xml:238(title) 
 msgid "<type>hstore</type> Functions"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:243(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:243(entry) 
 msgid "Function"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:244(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:244(entry) 
 msgid "Return Type"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:253(function) 
+#: /tmp/cicero-RtQO/hstore.xml:253(function) 
 msgid "hstore(record)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:255(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:255(entry) 
 msgid "construct an <placeholder-1/> from a record or row"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:256(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:256(literal) 
 msgid "hstore(ROW(1,2))"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:257(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:257(literal) 
 msgid "f1=&gt;1,f2=&gt;2"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:261(function) 
+#: /tmp/cicero-RtQO/hstore.xml:261(function) 
 msgid "hstore(text[])"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:263(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:263(entry) 
 msgid "construct an <placeholder-1/> from an array, which may be either a key/value array, or a two-dimensional array"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:265(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:265(literal) 
 msgid "hstore(ARRAY['a','1','b','2']) || hstore(ARRAY[['c','3'],['d','4']])"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:266(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:266(literal) 
 msgid "a=&gt;1, b=&gt;2, c=&gt;3, d=&gt;4"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:270(function) 
+#: /tmp/cicero-RtQO/hstore.xml:270(function) 
 msgid "hstore(text[], text[])"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:272(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:272(entry) 
 msgid "construct an <placeholder-1/> from separate key and value arrays"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:273(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:273(literal) 
 msgid "hstore(ARRAY['a','b'], ARRAY['1','2'])"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:274(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:274(literal) 
 msgid "\"a\"=&gt;\"1\",\"b\"=&gt;\"2\""
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:278(function) 
+#: /tmp/cicero-RtQO/hstore.xml:278(function) 
 msgid "hstore(text, text)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:280(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:280(entry) 
 msgid "make single-item <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:281(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:281(literal) 
 msgid "hstore('a', 'b')"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:286(function) 
+#: /tmp/cicero-RtQO/hstore.xml:286(function) 
 msgid "akeys(hstore)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:288(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:288(entry) 
 msgid "get <placeholder-1/>'s keys as an array"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:289(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:289(literal) 
 msgid "akeys('a=&gt;1,b=&gt;2')"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:290(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:290(literal) 
 msgid "{a,b}"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:294(function) 
+#: /tmp/cicero-RtQO/hstore.xml:294(function) 
 msgid "skeys(hstore)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:295(type) /tmp/cicero-UbWe/hstore.xml:315(type) 
+#: /tmp/cicero-RtQO/hstore.xml:295(type) /tmp/cicero-RtQO/hstore.xml:315(type) 
 msgid "setof text"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:296(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:296(entry) 
 msgid "get <placeholder-1/>'s keys as a set"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:297(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:297(literal) 
 msgid "skeys('a=&gt;1,b=&gt;2')"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:299(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:299(programlisting) 
 #, no-wrap
 msgid "\na\nb\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:306(function) 
+#: /tmp/cicero-RtQO/hstore.xml:306(function) 
 msgid "avals(hstore)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:308(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:308(entry) 
 msgid "get <placeholder-1/>'s values as an array"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:309(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:309(literal) 
 msgid "avals('a=&gt;1,b=&gt;2')"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:310(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:310(literal) 
 msgid "{1,2}"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:314(function) 
+#: /tmp/cicero-RtQO/hstore.xml:314(function) 
 msgid "svals(hstore)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:316(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:316(entry) 
 msgid "get <placeholder-1/>'s values as a set"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:317(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:317(literal) 
 msgid "svals('a=&gt;1,b=&gt;2')"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:319(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:319(programlisting) 
 #, no-wrap
 msgid "\n1\n2\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:326(function) 
+#: /tmp/cicero-RtQO/hstore.xml:326(function) 
 msgid "hstore_to_array(hstore)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:328(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:328(entry) 
 msgid "get <placeholder-1/>'s keys and values as an array of alternating keys and values"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:330(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:330(literal) 
 msgid "hstore_to_array('a=&gt;1,b=&gt;2')"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:331(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:331(literal) 
 msgid "{a,1,b,2}"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:335(function) 
+#: /tmp/cicero-RtQO/hstore.xml:335(function) 
 msgid "hstore_to_matrix(hstore)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:337(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:337(entry) 
 msgid "get <placeholder-1/>'s keys and values as a two-dimensional array"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:338(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:338(literal) 
 msgid "hstore_to_matrix('a=&gt;1,b=&gt;2')"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:339(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:339(literal) 
 msgid "{{a,1},{b,2}}"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:343(function) 
+#: /tmp/cicero-RtQO/hstore.xml:343(function) 
 msgid "slice(hstore, text[])"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:345(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:345(entry) 
 msgid "extract a subset of an <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:346(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:346(literal) 
 msgid "slice('a=&gt;1,b=&gt;2,c=&gt;3'::hstore, ARRAY['b','c','x'])"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:347(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:347(literal) 
 msgid "\"b\"=&gt;\"2\", \"c\"=&gt;\"3\""
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:351(function) 
+#: /tmp/cicero-RtQO/hstore.xml:351(function) 
 msgid "each(hstore)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:352(type) 
+#: /tmp/cicero-RtQO/hstore.xml:352(type) 
 msgid "setof(key text, value text)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:353(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:353(entry) 
 msgid "get <placeholder-1/>'s keys and values as a set"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:354(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:354(literal) 
 msgid "select * from each('a=&gt;1,b=&gt;2')"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:356(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:356(programlisting) 
 #, no-wrap
 msgid "\n key | value\n-----+-------\n a   | 1\n b   | 2\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:365(function) 
+#: /tmp/cicero-RtQO/hstore.xml:365(function) 
 msgid "exist(hstore,text)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:366(type) /tmp/cicero-UbWe/hstore.xml:374(type) 
+#: /tmp/cicero-RtQO/hstore.xml:366(type) /tmp/cicero-RtQO/hstore.xml:374(type) 
 msgid "boolean"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:368(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:368(literal) 
 msgid "exist('a=&gt;1','a')"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:373(function) 
+#: /tmp/cicero-RtQO/hstore.xml:373(function) 
 msgid "defined(hstore,text)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:375(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:375(entry) 
 msgid "does <placeholder-1/> contain non-<placeholder-2/> value for key?"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:376(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:376(literal) 
 msgid "defined('a=&gt;NULL','a')"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:381(function) 
+#: /tmp/cicero-RtQO/hstore.xml:381(function) 
 msgid "delete(hstore,text)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:383(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:383(entry) 
 msgid "delete pair with matching key"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:384(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:384(literal) 
 msgid "delete('a=&gt;1,b=&gt;2','b')"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:385(literal) /tmp/cicero-UbWe/hstore.xml:401(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:385(literal) /tmp/cicero-RtQO/hstore.xml:401(literal) 
 msgid "\"a\"=&gt;\"1\""
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:389(function) 
+#: /tmp/cicero-RtQO/hstore.xml:389(function) 
 msgid "delete(hstore,text[])"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:391(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:391(entry) 
 msgid "delete pairs with matching keys"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:392(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:392(literal) 
 msgid "delete('a=&gt;1,b=&gt;2,c=&gt;3',ARRAY['a','b'])"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:397(function) 
+#: /tmp/cicero-RtQO/hstore.xml:397(function) 
 msgid "delete(hstore,hstore)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:399(entry) 
+#: /tmp/cicero-RtQO/hstore.xml:399(entry) 
 msgid "delete pairs matching those in the second argument"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:400(literal) 
+#: /tmp/cicero-RtQO/hstore.xml:400(literal) 
 msgid "delete('a=&gt;1,b=&gt;2','a=&gt;4,b=&gt;2'::hstore)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:405(function) 
+#: /tmp/cicero-RtQO/hstore.xml:405(function) 
 msgid "populate_record(record,hstore)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:417(para) 
+#: /tmp/cicero-RtQO/hstore.xml:417(para) 
 msgid "The function <function>populate_record</function> is actually declared with <type>anyelement</type>, not <type>record</type>, as its first argument, but it will reject non-record types with a run-time error."
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:426(title) 
+#: /tmp/cicero-RtQO/hstore.xml:426(title) 
 msgid "Indexes"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:428(para) 
+#: /tmp/cicero-RtQO/hstore.xml:428(para) 
 msgid "<type>hstore</type> has GiST and GIN index support for the <literal>@&gt;</literal>, <literal>?</literal>, <literal>?&amp;</literal> and <literal>?|</literal> operators. For example:"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:432(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:432(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX hidx ON testhstore USING GIST (h);\n\nCREATE INDEX hidx ON testhstore USING GIN (h);\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:438(para) 
+#: /tmp/cicero-RtQO/hstore.xml:438(para) 
 msgid "<type>hstore</type> also supports <type>btree</type> or <type>hash</type> indexes for the <literal>=</literal> operator. This allows <type>hstore</type> columns to be declared <literal>UNIQUE</literal>, or to be used in <literal>GROUP BY</literal>, <literal>ORDER BY</literal> or <literal>DISTINCT</literal> expressions. The sort ordering for <type>hstore</type> values is not particularly useful, but these indexes may be useful for equivalence lookups. Create indexes for <literal>=</literal> comparisons as follows:"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:447(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:447(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX hidx ON testhstore USING BTREE (h);\n\nCREATE INDEX hidx ON testhstore USING HASH (h);\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:455(title) 
+#: /tmp/cicero-RtQO/hstore.xml:455(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:459(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:459(programlisting) 
 #, no-wrap
 msgid "\nUPDATE tab SET h = h || ('c' =&gt; '3');\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:457(para) 
+#: /tmp/cicero-RtQO/hstore.xml:457(para) 
 msgid "Add a key, or update an existing key with a new value: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:466(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:466(programlisting) 
 #, no-wrap
 msgid "\nUPDATE tab SET h = delete(h, 'k1');\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:464(para) 
+#: /tmp/cicero-RtQO/hstore.xml:464(para) 
 msgid "Delete a key: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:473(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:473(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE test (col1 integer, col2 text, col3 text);\nINSERT INTO test VALUES (123, 'foo', 'bar');\n\nSELECT hstore(t) FROM test AS t;\n                   hstore                    \n---------------------------------------------\n \"col1\"=&gt;\"123\", \"col2\"=&gt;\"foo\", \"col3\"=&gt;\"bar\"\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:471(para) 
+#: /tmp/cicero-RtQO/hstore.xml:471(para) 
 msgid "Convert a <type>record</type> to an <type>hstore</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:487(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:487(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE test (col1 integer, col2 text, col3 text);\n\nSELECT * FROM populate_record(null::test,\n                              '\"col1\"=&gt;\"456\", \"col2\"=&gt;\"zzz\"');\n col1 | col2 | col3 \n------+------+------\n  456 | zzz  | \n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:485(para) 
+#: /tmp/cicero-RtQO/hstore.xml:485(para) 
 msgid "Convert an <type>hstore</type> to a predefined <type>record</type> type: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:501(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:501(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE test (col1 integer, col2 text, col3 text);\nINSERT INTO test VALUES (123, 'foo', 'bar');\n\nSELECT (r).* FROM (SELECT t #= '\"col3\"=&gt;\"baz\"' AS r FROM test t) s;\n col1 | col2 | col3 \n------+------+------\n  123 | foo  | baz\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:499(para) 
+#: /tmp/cicero-RtQO/hstore.xml:499(para) 
 msgid "Modify an existing record using the values from an <type>hstore</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:515(title) 
+#: /tmp/cicero-RtQO/hstore.xml:515(title) 
 msgid "Statistics"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:517(para) 
+#: /tmp/cicero-RtQO/hstore.xml:517(para) 
 msgid "The <type>hstore</type> type, because of its intrinsic liberality, could contain a lot of different keys. Checking for valid keys is the task of the application. The following examples demonstrate several techniques for checking keys and obtaining statistics."
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:526(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:526(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM each('aaa=&gt;bq, b=&gt;NULL, \"\"=&gt;1');\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:524(para) 
+#: /tmp/cicero-RtQO/hstore.xml:524(para) 
 msgid "Simple example: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:533(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:533(programlisting) 
 #, no-wrap
 msgid "\nSELECT (each(h)).key, (each(h)).value INTO stat FROM testhstore;\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:531(para) 
+#: /tmp/cicero-RtQO/hstore.xml:531(para) 
 msgid "Using a table: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:540(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:540(programlisting) 
 #, no-wrap
 msgid "\nSELECT key, count(*) FROM\n  (SELECT (each(h)).key FROM testhstore) AS stat\n  GROUP BY key\n  ORDER BY count DESC, key;\n    key    | count\n-----------+-------\n line      |   883\n query     |   207\n pos       |   203\n node      |   202\n space     |   197\n status    |   195\n public    |   194\n title     |   190\n org       |   189\n...................\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:538(para) 
+#: /tmp/cicero-RtQO/hstore.xml:538(para) 
 msgid "Online statistics: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:562(title) 
+#: /tmp/cicero-RtQO/hstore.xml:562(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:564(para) 
+#: /tmp/cicero-RtQO/hstore.xml:564(para) 
 msgid "As of PostgreSQL 9.0, <type>hstore</type> uses a different internal representation than previous versions. This presents no obstacle for dump/restore upgrades since the text representation (used in the dump) is unchanged."
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:577(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:577(programlisting) 
 #, no-wrap
 msgid "\nUPDATE tablename SET hstorecol = hstorecol || '';\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:571(para) 
+#: /tmp/cicero-RtQO/hstore.xml:571(para) 
 msgid "In the event of a binary upgrade, upward compatibility is maintained by having the new code recognize old-format data. This will entail a slight performance penalty when processing data that has not yet been modified by the new code. It is possible to force an upgrade of all values in a table column by doing an <literal>UPDATE</literal> statement as follows: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:584(programlisting) 
+#: /tmp/cicero-RtQO/hstore.xml:584(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE tablename ALTER hstorecol TYPE hstore USING hstorecol || '';\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:582(para) 
+#: /tmp/cicero-RtQO/hstore.xml:582(para) 
 msgid "Another way to do it is: <placeholder-1/> The <command>ALTER TABLE</command> method requires an exclusive lock on the table, but does not result in bloating the table with old row versions."
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:594(title) 
+#: /tmp/cicero-RtQO/hstore.xml:594(title) 
 msgid "Authors"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:596(para) 
+#: /tmp/cicero-RtQO/hstore.xml:596(para) 
 msgid "Oleg Bartunov <email>oleg@sai.msu.su</email>, Moscow, Moscow University, Russia"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:600(para) 
+#: /tmp/cicero-RtQO/hstore.xml:600(para) 
 msgid "Teodor Sigaev <email>teodor@sigaev.ru</email>, Moscow, Delta-Soft Ltd., Russia"
 msgstr ""
 
-#: /tmp/cicero-UbWe/hstore.xml:604(para) 
+#: /tmp/cicero-RtQO/hstore.xml:604(para) 
 msgid "Additional enhancements by Andrew Gierth <email>andrew@tao11.riddles.org.uk</email>, United Kingdom"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-UbWe/hstore.xml:0(None) 
+#: /tmp/cicero-RtQO/hstore.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

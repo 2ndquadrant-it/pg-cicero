@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:46+0200\n"
+"POT-Creation-Date: 2011-08-23 09:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,98 +9,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:10(refentrytitle) /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:16(refname) /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:21(primary) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:10(refentrytitle) /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:16(refname) /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:21(primary) 
 msgid "DROP FOREIGN DATA WRAPPER"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:11(manvolnum) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:12(refmiscinfo) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:17(refpurpose) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:17(refpurpose) 
 msgid "remove a foreign-data wrapper"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:26(replaceable) /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:55(replaceable) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:26(replaceable) /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:55(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:25(synopsis) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP FOREIGN DATA WRAPPER [ IF EXISTS ] <placeholder-1/> [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:31(title) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:33(para) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:33(para) 
 msgid "<command>DROP FOREIGN DATA WRAPPER</command> removes an existing foreign-data wrapper. To execute this command, the current user must be the owner of the foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:41(title) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:41(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:45(literal) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:45(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:47(para) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:47(para) 
 msgid "Do not throw an error if the foreign-data wrapper does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:57(para) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:57(para) 
 msgid "The name of an existing foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:64(literal) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:64(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:66(para) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:66(para) 
 msgid "Automatically drop objects that depend on the foreign-data wrapper (such as servers)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:74(literal) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:74(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:76(para) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:76(para) 
 msgid "Refuse to drop the foreign-data wrappers if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:86(title) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:86(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:90(programlisting) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:90(programlisting) 
 #, no-wrap
 msgid "\nDROP FOREIGN DATA WRAPPER dbi;\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:88(para) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:88(para) 
 msgid "Drop the foreign-data wrapper <literal>dbi</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:96(title) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:96(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:98(para) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:98(para) 
 msgid "<command>DROP FOREIGN DATA WRAPPER</command> conforms to ISO/IEC 9075-9 (SQL/MED). The <literal>IF EXISTS</literal> clause is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:106(title) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:106(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-UbWe/ref/drop_foreign_data_wrapper.xml:0(None) 
+#: /tmp/cicero-RtQO/ref/drop_foreign_data_wrapper.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:46+0200\n"
+"POT-Creation-Date: 2011-08-23 10:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,152 +9,152 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:10(refentrytitle) /tmp/cicero-UbWe/ref/truncate.xml:16(refname) /tmp/cicero-UbWe/ref/truncate.xml:21(primary) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:10(refentrytitle) /tmp/cicero-RtQO/ref/truncate.xml:16(refname) /tmp/cicero-RtQO/ref/truncate.xml:21(primary) 
 msgid "TRUNCATE"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:11(manvolnum) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:12(refmiscinfo) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:17(refpurpose) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:17(refpurpose) 
 msgid "empty a table or set of tables"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:26(replaceable) /tmp/cicero-UbWe/ref/truncate.xml:49(replaceable) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:26(replaceable) /tmp/cicero-RtQO/ref/truncate.xml:49(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:25(synopsis) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:25(synopsis) 
 #, no-wrap
 msgid "\nTRUNCATE [ TABLE ] [ ONLY ] <placeholder-1/> [, ... ]\n    [ RESTART IDENTITY | CONTINUE IDENTITY ] [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:32(title) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:34(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:34(para) 
 msgid "<command>TRUNCATE</command> quickly removes all rows from a set of tables. It has the same effect as an unqualified <command>DELETE</command> on each table, but since it does not actually scan the tables it is faster. Furthermore, it reclaims disk space immediately, rather than requiring a subsequent <command>VACUUM</command> operation. This is most useful on large tables."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:45(title) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:45(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:51(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:51(para) 
 msgid "The name (optionally schema-qualified) of a table to be truncated. If <literal>ONLY</literal> is specified, only that table is truncated. If <literal>ONLY</literal> is not specified, the table and all its descendant tables (if any) are truncated."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:61(literal) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:61(literal) 
 msgid "RESTART IDENTITY"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:63(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:63(para) 
 msgid "Automatically restart sequences owned by columns of the truncated table(s)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:71(literal) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:71(literal) 
 msgid "CONTINUE IDENTITY"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:73(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:73(para) 
 msgid "Do not change the values of sequences. This is the default."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:80(literal) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:80(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:82(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:82(para) 
 msgid "Automatically truncate all tables that have foreign-key references to any of the named tables, or to any tables added to the group due to <literal>CASCADE</literal>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:91(literal) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:91(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:93(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:93(para) 
 msgid "Refuse to truncate if any of the tables have foreign-key references from tables that are not listed in the command. This is the default."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:103(title) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:103(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:105(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:105(para) 
 msgid "You must have the <literal>TRUNCATE</literal> privilege on a table to truncate it."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:110(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:110(para) 
 msgid "<command>TRUNCATE</command> acquires an <literal>ACCESS EXCLUSIVE</literal> lock on each table it operates on, which blocks all other concurrent operations on the table. When <literal>RESTART IDENTITY</literal> is specified, any sequences that are to be restarted are likewise locked exclusively. If concurrent access to a table is required, then the <command>DELETE</command> command should be used instead."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:119(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:119(para) 
 msgid "<command>TRUNCATE</command> cannot be used on a table that has foreign-key references from other tables, unless all such tables are also truncated in the same command. Checking validity in such cases would require table scans, and the whole point is not to do one. The <literal>CASCADE</literal> option can be used to automatically include all dependent tables — but be very careful when using this option, or else you might lose data you did not intend to!"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:129(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:129(para) 
 msgid "<command>TRUNCATE</command> will not fire any <literal>ON DELETE</literal> triggers that might exist for the tables. But it will fire <literal>ON TRUNCATE</literal> triggers. If <literal>ON TRUNCATE</literal> triggers are defined for any of the tables, then all <literal>BEFORE TRUNCATE</literal> triggers are fired before any truncation happens, and all <literal>AFTER TRUNCATE</literal> triggers are fired after the last truncation is performed and any sequences are reset. The triggers will fire in the order that the tables are to be processed (first those listed in the command, and then any that were added due to cascading)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:144(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:144(para) 
 msgid "<command>TRUNCATE</command> is not MVCC-safe (see <xref linkend=\"mvcc\"/> for general information about MVCC). After truncation, the table will appear empty to all concurrent transactions, even if they are using a snapshot taken before the truncation occurred. This will only be an issue for a transaction that did not access the truncated table before the truncation happened — any transaction that has done so would hold at least an <literal>ACCESS SHARE</literal> lock, which would block <command>TRUNCATE</command> until that transaction completes. So truncation will not cause any apparent inconsistency in the table contents for successive queries on the same table, but it could cause visible inconsistency between the contents of the truncated table and other tables in the database."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:161(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:161(para) 
 msgid "<command>TRUNCATE</command> is transaction-safe with respect to the data in the tables: the truncation will be safely rolled back if the surrounding transaction does not commit."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:167(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:167(para) 
 msgid "When <literal>RESTART IDENTITY</literal> is specified, the implied <command>ALTER SEQUENCE RESTART</command> operations are also done transactionally; that is, they will be rolled back if the surrounding transaction does not commit. This is unlike the normal behavior of <command>ALTER SEQUENCE RESTART</command>. Be aware that if any additional sequence operations are done on the restarted sequences before the transaction rolls back, the effects of these operations on the sequences will be rolled back, but not their effects on <function>currval()</function>; that is, after the transaction <function>currval()</function> will continue to reflect the last sequence value obtained inside the failed transaction, even though the sequence itself may no longer be consistent with that. This is similar to the usual behavior of <function>currval()</function> after a failed transaction."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:185(title) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:185(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:191(programlisting) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:191(programlisting) 
 #, no-wrap
 msgid "\nTRUNCATE bigtable, fattable;\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:187(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:187(para) 
 msgid "Truncate the tables <literal>bigtable</literal> and <literal>fattable</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:199(programlisting) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:199(programlisting) 
 #, no-wrap
 msgid "\nTRUNCATE bigtable, fattable RESTART IDENTITY;\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:196(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:196(para) 
 msgid "The same, and also reset any associated sequence generators: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:209(programlisting) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:209(programlisting) 
 #, no-wrap
 msgid "\nTRUNCATE othertable CASCADE;\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:204(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:204(para) 
 msgid "Truncate the table <literal>othertable</literal>, and cascade to any tables that reference <literal>othertable</literal> via foreign-key constraints: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:215(title) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:215(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/truncate.xml:217(para) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:217(para) 
 msgid "The SQL:2008 standard includes a <command>TRUNCATE</command> command with the syntax <literal>TRUNCATE TABLE <replaceable>tablename</replaceable></literal>. The clauses <literal>CONTINUE IDENTITY</literal>/<literal>RESTART IDENTITY</literal> also appear in that standard, but have slightly different though related meanings. Some of the concurrency behavior of this command is left implementation-defined by the standard, so the above notes should be considered and compared with other implementations if necessary."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-UbWe/ref/truncate.xml:0(None) 
+#: /tmp/cicero-RtQO/ref/truncate.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

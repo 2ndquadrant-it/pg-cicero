@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:46+0200\n"
+"POT-Creation-Date: 2011-08-23 10:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,2481 +9,2481 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-UbWe/release-9.0.xml:7(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:7(title) 
 msgid "Release 9.0.4"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:10(title) /tmp/cicero-UbWe/release-9.0.xml:354(title) /tmp/cicero-UbWe/release-9.0.xml:530(title) /tmp/cicero-UbWe/release-9.0.xml:977(title) /tmp/cicero-UbWe/release-9.0.xml:1119(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:10(title) /tmp/cicero-RtQO/release-9.0.xml:354(title) /tmp/cicero-RtQO/release-9.0.xml:530(title) /tmp/cicero-RtQO/release-9.0.xml:977(title) /tmp/cicero-RtQO/release-9.0.xml:1119(title) 
 msgid "Release Date"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:11(simpara) 
+#: /tmp/cicero-RtQO/release-9.0.xml:11(simpara) 
 msgid "2011-04-18"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:14(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:14(para) 
 msgid "This release contains a variety of fixes from 9.0.3. For information about new features in the 9.0 major release, see <xref linkend=\"release-9-0\"/>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:21(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:21(title) 
 msgid "Migration to Version 9.0.4"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:23(para) /tmp/cicero-UbWe/release-9.0.xml:367(para) /tmp/cicero-UbWe/release-9.0.xml:543(para) /tmp/cicero-UbWe/release-9.0.xml:990(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:23(para) /tmp/cicero-RtQO/release-9.0.xml:367(para) /tmp/cicero-RtQO/release-9.0.xml:543(para) /tmp/cicero-RtQO/release-9.0.xml:990(para) 
 msgid "A dump/restore is not required for those running 9.0.X."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:27(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:27(para) 
 msgid "However, if your installation was upgraded from a previous major release by running <application>pg_upgrade</application>, you should take action to prevent possible data loss due to a now-fixed bug in <application>pg_upgrade</application>. The recommended solution is to run <command>VACUUM FREEZE</command> on all TOAST tables. More information is available at <ulink url=\"http://wiki.postgresql.org/wiki/20110408pg_upgrade_fix\"> http://wiki.postgresql.org/wiki/20110408pg_upgrade_fix</ulink>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:41(title) /tmp/cicero-UbWe/release-9.0.xml:374(title) /tmp/cicero-UbWe/release-9.0.xml:550(title) /tmp/cicero-UbWe/release-9.0.xml:997(title) /tmp/cicero-UbWe/release-9.0.xml:1624(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:41(title) /tmp/cicero-RtQO/release-9.0.xml:374(title) /tmp/cicero-RtQO/release-9.0.xml:550(title) /tmp/cicero-RtQO/release-9.0.xml:997(title) /tmp/cicero-RtQO/release-9.0.xml:1624(title) 
 msgid "Changes"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:46(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:46(para) 
 msgid "Fix <application>pg_upgrade</application>'s handling of TOAST tables (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:51(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:51(para) 
 msgid "The <structname>pg_class</structname>.<structfield>relfrozenxid</structfield> value for TOAST tables was not correctly copied into the new installation during <application>pg_upgrade</application>. This could later result in <literal>pg_clog</literal> files being discarded while they were still needed to validate tuples in the TOAST tables, leading to <quote>could not access status of transaction</quote> failures."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:60(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:60(para) 
 msgid "This error poses a significant risk of data loss for installations that have been upgraded with <application>pg_upgrade</application>. This patch corrects the problem for future uses of <application>pg_upgrade</application>, but does not in itself cure the issue in installations that have been processed with a buggy version of <application>pg_upgrade</application>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:70(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:70(para) 
 msgid "Suppress incorrect <quote>PD_ALL_VISIBLE flag was incorrectly set</quote> warning (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:75(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:75(para) 
 msgid "<command>VACUUM</command> would sometimes issue this warning in cases that are actually valid."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:82(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:82(para) 
 msgid "Use better SQLSTATE error codes for hot standby conflict cases (Tatsuo Ishii and Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:87(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:87(para) 
 msgid "All retryable conflict errors now have an error code that indicates that a retry is possible. Also, session closure due to the database being dropped on the master is now reported as <literal>ERRCODE_DATABASE_DROPPED</literal>, rather than <literal>ERRCODE_ADMIN_SHUTDOWN</literal>, so that connection poolers can handle the situation correctly."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:98(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:98(para) 
 msgid "Prevent intermittent hang in interactions of startup process with bgwriter process (Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:103(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:103(para) 
 msgid "This affected recovery in non-hot-standby cases."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:109(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:109(para) 
 msgid "Disallow including a composite type in itself (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:113(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:113(para) 
 msgid "This prevents scenarios wherein the server could recurse infinitely while processing the composite type. While there are some possible uses for such a structure, they don't seem compelling enough to justify the effort required to make sure it always works safely."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:122(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:122(para) 
 msgid "Avoid potential deadlock during catalog cache initialization (Nikhil Sontakke)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:127(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:127(para) 
 msgid "In some cases the cache loading code would acquire share lock on a system index before locking the index's catalog. This could deadlock against processes trying to acquire exclusive locks in the other, more standard order."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:136(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:136(para) 
 msgid "Fix dangling-pointer problem in <literal>BEFORE ROW UPDATE</literal> trigger handling when there was a concurrent update to the target tuple (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:142(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:142(para) 
 msgid "This bug has been observed to result in intermittent <quote>cannot extract system attribute from virtual tuple</quote> failures while trying to do <literal>UPDATE RETURNING ctid</literal>. There is a very small probability of more serious errors, such as generating incorrect index entries for the updated tuple."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:152(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:152(para) 
 msgid "Disallow <command>DROP TABLE</command> when there are pending deferred trigger events for the table (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:157(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:157(para) 
 msgid "Formerly the <command>DROP</command> would go through, leading to <quote>could not open relation with OID nnn</quote> errors when the triggers were eventually fired."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:165(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:165(para) 
 msgid "Allow <quote>replication</quote> as a user name in <filename>pg_hba.conf</filename> (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:170(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:170(para) 
 msgid "<quote>replication</quote> is special in the database name column, but it was mistakenly also treated as special in the user name column."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:177(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:177(para) 
 msgid "Prevent crash triggered by constant-false WHERE conditions during GEQO optimization (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:187(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:187(para) 
 msgid "Improve planner's handling of semi-join and anti-join cases (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:194(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:194(para) 
 msgid "Fix handling of <literal>SELECT FOR UPDATE</literal> in a sub-SELECT (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:199(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:199(para) 
 msgid "This bug typically led to <quote>cannot extract system attribute from virtual tuple</quote> errors."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:206(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:206(para) 
 msgid "Fix selectivity estimation for text search to account for NULLs (Jesper Krogh)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:213(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:213(para) 
 msgid "Fix get_actual_variable_range() to support hypothetical indexes injected by an index adviser plugin (Gurjeet Singh)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:220(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:220(para) 
 msgid "Fix PL/Python memory leak involving array slices (Daniel Popowich)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:226(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:226(para) 
 msgid "Allow <application>libpq</application>'s SSL initialization to succeed when user's home directory is unavailable (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:231(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:231(para) 
 msgid "If the SSL mode is such that a root certificate file is not required, there is no need to fail. This change restores the behavior to what it was in pre-9.0 releases."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:239(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:239(para) 
 msgid "Fix <application>libpq</application> to return a useful error message for errors detected in <function>conninfo_array_parse</function> (Joseph Adams)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:244(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:244(para) 
 msgid "A typo caused the library to return NULL, rather than the <structname>PGconn</structname> structure containing the error message, to the application."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:252(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:252(para) 
 msgid "Fix <application>ecpg</application> preprocessor's handling of float constants (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:259(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:259(para) 
 msgid "Fix parallel <application>pg_restore</application> to handle comments on POST_DATA items correctly (Arnd Hannemann)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:266(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:266(para) 
 msgid "Fix <application>pg_restore</application> to cope with long lines (over 1KB) in TOC files (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:273(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:273(para) 
 msgid "Put in more safeguards against crashing due to division-by-zero with overly enthusiastic compiler optimization (Aurelien Jarno)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:280(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:280(para) 
 msgid "Support use of dlopen() in FreeBSD and OpenBSD on MIPS (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:284(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:284(para) 
 msgid "There was a hard-wired assumption that this system function was not available on MIPS hardware on these systems. Use a compile-time test instead, since more recent versions have it."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:292(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:292(para) 
 msgid "Fix compilation failures on HP-UX (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:298(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:298(para) 
 msgid "Avoid crash when trying to write to the Windows console very early in process startup (Rushabh Lathia)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:305(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:305(para) 
 msgid "Support building with MinGW 64 bit compiler for Windows (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:312(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:312(para) 
 msgid "Fix version-incompatibility problem with <application>libintl</application> on Windows (Hiroshi Inoue)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:319(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:319(para) 
 msgid "Fix usage of <application>xcopy</application> in Windows build scripts to work correctly under Windows 7 (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:324(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:324(para) 
 msgid "This affects the build scripts only, not installation or usage."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:330(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:330(para) 
 msgid "Fix path separator used by <application>pg_regress</application> on Cygwin (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:337(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:337(para) 
 msgid "Update time zone data files to <application>tzdata</application> release 2011f for DST law changes in Chile, Cuba, Falkland Islands, Morocco, Samoa, and Turkey; also historical corrections for South Australia, Alaska, and Hawaii."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:351(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:351(title) 
 msgid "Release 9.0.3"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:355(simpara) 
+#: /tmp/cicero-RtQO/release-9.0.xml:355(simpara) 
 msgid "2011-01-31"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:358(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:358(para) 
 msgid "This release contains a variety of fixes from 9.0.2. For information about new features in the 9.0 major release, see <xref linkend=\"release-9-0\"/>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:365(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:365(title) 
 msgid "Migration to Version 9.0.3"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:379(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:379(para) 
 msgid "Before exiting <application>walreceiver</application>, ensure all the received WAL is fsync'd to disk (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:384(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:384(para) 
 msgid "Otherwise the standby server could replay some un-synced WAL, conceivably leading to data corruption if the system crashes just at that point."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:391(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:391(para) 
 msgid "Avoid excess fsync activity in <application>walreceiver</application> (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:398(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:398(para) 
 msgid "Make <command>ALTER TABLE</command> revalidate uniqueness and exclusion constraints when needed (Noah Misch)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:403(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:403(para) 
 msgid "This was broken in 9.0 by a change that was intended to suppress revalidation during <command>VACUUM FULL</command> and <command>CLUSTER</command>, but unintentionally affected <command>ALTER TABLE</command> as well."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:411(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:411(para) 
 msgid "Fix EvalPlanQual for <command>UPDATE</command> of an inheritance tree in which the tables are not all alike (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:416(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:416(para) 
 msgid "Any variation in the table row types (including dropped columns present in only some child tables) would confuse the EvalPlanQual code, leading to misbehavior or even crashes. Since EvalPlanQual is only executed during concurrent updates to the same row, the problem was only seen intermittently."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:426(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:426(para) 
 msgid "Avoid failures when <command>EXPLAIN</command> tries to display a simple-form <literal>CASE</literal> expression (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:431(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:431(para) 
 msgid "If the <literal>CASE</literal>'s test expression was a constant, the planner could simplify the <literal>CASE</literal> into a form that confused the expression-display code, resulting in <quote>unexpected CASE WHEN clause</quote> errors."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:440(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:440(para) 
 msgid "Fix assignment to an array slice that is before the existing range of subscripts (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:445(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:445(para) 
 msgid "If there was a gap between the newly added subscripts and the first pre-existing subscript, the code miscalculated how many entries needed to be copied from the old array's null bitmap, potentially leading to data corruption or crash."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:454(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:454(para) 
 msgid "Avoid unexpected conversion overflow in planner for very distant date values (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:459(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:459(para) 
 msgid "The <type>date</type> type supports a wider range of dates than can be represented by the <type>timestamp</type> types, but the planner assumed it could always convert a date to timestamp with impunity."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:467(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:467(para) 
 msgid "Fix PL/Python crash when an array contains null entries (Alex Hunsaker)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:473(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:473(para) 
 msgid "Remove <application>ecpg</application>'s fixed length limit for constants defining an array dimension (Michael Meskes)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:480(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:480(para) 
 msgid "Fix erroneous parsing of <type>tsquery</type> values containing <literal>... &amp; !(subexpression) | ...</literal> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:485(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:485(para) 
 msgid "Queries containing this combination of operators were not executed correctly. The same error existed in <filename>contrib/intarray</filename>'s <type>query_int</type> type and <filename>contrib/ltree</filename>'s <type>ltxtquery</type> type."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:494(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:494(para) 
 msgid "Fix buffer overrun in <filename>contrib/intarray</filename>'s input function for the <type>query_int</type> type (Apple)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:499(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:499(para) 
 msgid "This bug is a security risk since the function's return address could be overwritten. Thanks to Apple Inc's security team for reporting this issue and supplying the fix. (CVE-2010-4015)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:507(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:507(para) 
 msgid "Fix bug in <filename>contrib/seg</filename>'s GiST picksplit algorithm (Alexander Korotkov)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:512(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:512(para) 
 msgid "This could result in considerable inefficiency, though not actually incorrect answers, in a GiST index on a <type>seg</type> column. If you have such an index, consider <command>REINDEX</command>ing it after installing this update. (This is identical to the bug that was fixed in <filename>contrib/cube</filename> in the previous update.)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:527(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:527(title) 
 msgid "Release 9.0.2"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:531(simpara) 
+#: /tmp/cicero-RtQO/release-9.0.xml:531(simpara) 
 msgid "2010-12-16"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:534(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:534(para) 
 msgid "This release contains a variety of fixes from 9.0.1. For information about new features in the 9.0 major release, see <xref linkend=\"release-9-0\"/>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:541(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:541(title) 
 msgid "Migration to Version 9.0.2"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:555(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:555(para) 
 msgid "Force the default <link linkend=\"guc-wal-sync-method\"><varname>wal_sync_method</varname></link> to be <literal>fdatasync</literal> on Linux (Tom Lane, Marti Raudsepp)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:561(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:561(para) 
 msgid "The default on Linux has actually been <literal>fdatasync</literal> for many years, but recent kernel changes caused <productname>PostgreSQL</productname> to choose <literal>open_datasync</literal> instead. This choice did not result in any performance improvement, and caused outright failures on certain filesystems, notably <literal>ext4</literal> with the <literal>data=journal</literal> mount option."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:572(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:572(para) 
 msgid "Fix <quote>too many KnownAssignedXids</quote> error during Hot Standby replay (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:579(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:579(para) 
 msgid "Fix race condition in lock acquisition during Hot Standby (Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:585(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:585(para) 
 msgid "Avoid unnecessary conflicts during Hot Standby (Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:589(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:589(para) 
 msgid "This fixes some cases where replay was considered to conflict with standby queries (causing delay of replay or possibly cancellation of the queries), but there was no real conflict."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:597(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:597(para) 
 msgid "Fix assorted bugs in WAL replay logic for GIN indexes (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:601(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:601(para) 
 msgid "This could result in <quote>bad buffer id: 0</quote> failures or corruption of index contents during replication."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:608(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:608(para) 
 msgid "Fix recovery from base backup when the starting checkpoint WAL record is not in the same WAL segment as its redo point (Jeff Davis)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:615(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:615(para) 
 msgid "Fix corner-case bug when streaming replication is enabled immediately after creating the master database cluster (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:622(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:622(para) 
 msgid "Fix persistent slowdown of autovacuum workers when multiple workers remain active for a long time (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:627(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:627(para) 
 msgid "The effective <varname>vacuum_cost_limit</varname> for an autovacuum worker could drop to nearly zero if it processed enough tables, causing it to run extremely slowly."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:635(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:635(para) 
 msgid "Fix long-term memory leak in autovacuum launcher (Alvaro Herrera)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:641(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:641(para) 
 msgid "Avoid failure when trying to report an impending transaction wraparound condition from outside a transaction (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:646(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:646(para) 
 msgid "This oversight prevented recovery after transaction wraparound got too close, because database startup processing would fail."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:653(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:653(para) 
 msgid "Add support for detecting register-stack overrun on <literal>IA64</literal> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:658(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:658(para) 
 msgid "The <literal>IA64</literal> architecture has two hardware stacks. Full prevention of stack-overrun failures requires checking both."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:665(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:665(para) 
 msgid "Add a check for stack overflow in <function>copyObject()</function> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:669(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:669(para) 
 msgid "Certain code paths could crash due to stack overflow given a sufficiently complex query."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:676(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:676(para) 
 msgid "Fix detection of page splits in temporary GiST indexes (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:681(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:681(para) 
 msgid "It is possible to have a <quote>concurrent</quote> page split in a temporary index, if for example there is an open cursor scanning the index when an insertion is done. GiST failed to detect this case and hence could deliver wrong results when execution of the cursor continued."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:691(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:691(para) 
 msgid "Fix error checking during early connection processing (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:695(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:695(para) 
 msgid "The check for too many child processes was skipped in some cases, possibly leading to postmaster crash when attempting to add the new child process to fixed-size arrays."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:703(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:703(para) 
 msgid "Improve efficiency of window functions (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:707(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:707(para) 
 msgid "Certain cases where a large number of tuples needed to be read in advance, but <varname>work_mem</varname> was large enough to allow them all to be held in memory, were unexpectedly slow. <function>percent_rank()</function>, <function>cume_dist()</function> and <function>ntile()</function> in particular were subject to this problem."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:717(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:717(para) 
 msgid "Avoid memory leakage while <command>ANALYZE</command>'ing complex index expressions (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:724(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:724(para) 
 msgid "Ensure an index that uses a whole-row Var still depends on its table (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:729(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:729(para) 
 msgid "An index declared like <literal>create index i on t (foo(t.*))</literal> would not automatically get dropped when its table was dropped."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:736(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:736(para) 
 msgid "Add missing support in <command>DROP OWNED BY</command> for removing foreign data wrapper/server privileges belonging to a user (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:743(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:743(para) 
 msgid "Do not <quote>inline</quote> a SQL function with multiple <literal>OUT</literal> parameters (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:748(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:748(para) 
 msgid "This avoids a possible crash due to loss of information about the expected result rowtype."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:755(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:755(para) 
 msgid "Fix crash when inline-ing a set-returning function whose argument list contains a reference to an inline-able user function (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:762(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:762(para) 
 msgid "Behave correctly if <literal>ORDER BY</literal>, <literal>LIMIT</literal>, <literal>FOR UPDATE</literal>, or <literal>WITH</literal> is attached to the <literal>VALUES</literal> part of <literal>INSERT ... VALUES</literal> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:770(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:770(para) 
 msgid "Make the <literal>OFF</literal> keyword unreserved (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:774(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:774(para) 
 msgid "This prevents problems with using <literal>off</literal> as a variable name in <application>PL/pgSQL</application>. That worked before 9.0, but was now broken because <application>PL/pgSQL</application> now treats all core reserved words as reserved."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:783(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:783(para) 
 msgid "Fix constant-folding of <literal>COALESCE()</literal> expressions (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:787(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:787(para) 
 msgid "The planner would sometimes attempt to evaluate sub-expressions that in fact could never be reached, possibly leading to unexpected errors."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:794(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:794(para) 
 msgid "Fix <quote>could not find pathkey item to sort</quote> planner failure with comparison of whole-row Vars (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:801(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:801(para) 
 msgid "Fix postmaster crash when connection acceptance (<function>accept()</function> or one of the calls made immediately after it) fails, and the postmaster was compiled with GSSAPI support (Alexander Chernikov)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:810(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:810(para) 
 msgid "Retry after receiving an invalid response packet from a RADIUS authentication server (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:815(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:815(para) 
 msgid "This fixes a low-risk potential denial of service condition."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:821(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:821(para) 
 msgid "Fix missed unlink of temporary files when <varname>log_temp_files</varname> is active (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:826(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:826(para) 
 msgid "If an error occurred while attempting to emit the log message, the unlink was not done, resulting in accumulation of temp files."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:833(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:833(para) 
 msgid "Add print functionality for <structname>InhRelation</structname> nodes (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:837(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:837(para) 
 msgid "This avoids a failure when <varname>debug_print_parse</varname> is enabled and certain types of query are executed."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:844(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:844(para) 
 msgid "Fix incorrect calculation of distance from a point to a horizontal line segment (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:849(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:849(para) 
 msgid "This bug affected several different geometric distance-measurement operators."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:856(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:856(para) 
 msgid "Fix incorrect calculation of transaction status in <application>ecpg</application> (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:863(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:863(para) 
 msgid "Fix errors in <application>psql</application>'s Unicode-escape support (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:869(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:869(para) 
 msgid "Speed up parallel <application>pg_restore</application> when the archive contains many large objects (blobs) (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:876(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:876(para) 
 msgid "Fix <application>PL/pgSQL</application>'s handling of <quote>simple</quote> expressions to not fail in recursion or error-recovery cases (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:883(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:883(para) 
 msgid "Fix <application>PL/pgSQL</application>'s error reporting for no-such-column cases (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:888(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:888(para) 
 msgid "As of 9.0, it would sometimes report <quote>missing FROM-clause entry for table foo</quote> when <quote>record foo has no field bar</quote> would be more appropriate."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:896(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:896(para) 
 msgid "Fix <application>PL/Python</application> to honor typmod (i.e., length or precision restrictions) when assigning to tuple fields (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:901(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:901(para) 
 msgid "This fixes a regression from 8.4."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:907(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:907(para) 
 msgid "Fix <application>PL/Python</application>'s handling of set-returning functions (Jan Urbanski)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:912(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:912(para) 
 msgid "Attempts to call SPI functions within the iterator generating a set result would fail."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:919(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:919(para) 
 msgid "Fix bug in <filename>contrib/cube</filename>'s GiST picksplit algorithm (Alexander Korotkov)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:924(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:924(para) 
 msgid "This could result in considerable inefficiency, though not actually incorrect answers, in a GiST index on a <type>cube</type> column. If you have such an index, consider <command>REINDEX</command>ing it after installing this update."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:933(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:933(para) 
 msgid "Don't emit <quote>identifier will be truncated</quote> notices in <filename>contrib/dblink</filename> except when creating new connections (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:941(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:941(para) 
 msgid "Fix potential coredump on missing public key in <filename>contrib/pgcrypto</filename> (Marti Raudsepp)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:948(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:948(para) 
 msgid "Fix buffer overrun in <filename>contrib/pg_upgrade</filename> (Hernan Gonzalez)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:954(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:954(para) 
 msgid "Fix memory leak in <filename>contrib/xml2</filename>'s XPath query functions (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:961(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:961(para) 
 msgid "Update time zone data files to <application>tzdata</application> release 2010o for DST law changes in Fiji and Samoa; also historical corrections for Hong Kong."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:974(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:974(title) 
 msgid "Release 9.0.1"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:978(simpara) 
+#: /tmp/cicero-RtQO/release-9.0.xml:978(simpara) 
 msgid "2010-10-04"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:981(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:981(para) 
 msgid "This release contains a variety of fixes from 9.0.0. For information about new features in the 9.0 major release, see <xref linkend=\"release-9-0\"/>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:988(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:988(title) 
 msgid "Migration to Version 9.0.1"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1002(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1002(para) 
 msgid "Use a separate interpreter for each calling SQL userid in PL/Perl and PL/Tcl (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1007(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1007(para) 
 msgid "This change prevents security problems that can be caused by subverting Perl or Tcl code that will be executed later in the same session under another SQL user identity (for example, within a <literal>SECURITY DEFINER</literal> function). Most scripting languages offer numerous ways that that might be done, such as redefining standard functions or operators called by the target function. Without this change, any SQL user with Perl or Tcl language usage rights can do essentially anything with the SQL privileges of the target function's owner."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1018(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1018(para) 
 msgid "The cost of this change is that intentional communication among Perl and Tcl functions becomes more difficult. To provide an escape hatch, PL/PerlU and PL/TclU functions continue to use only one interpreter per session. This is not considered a security issue since all such functions execute at the trust level of a database superuser already."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1026(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1026(para) 
 msgid "It is likely that third-party procedural languages that claim to offer trusted execution have similar security issues. We advise contacting the authors of any PL you are depending on for security-critical purposes."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1033(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1033(para) 
 msgid "Our thanks to Tim Bunce for pointing out this issue (CVE-2010-3433)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1039(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1039(para) 
 msgid "Improve <function>pg_get_expr()</function> security fix so that the function can still be used on the output of a sub-select (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1046(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1046(para) 
 msgid "Fix incorrect placement of placeholder evaluation (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1050(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1050(para) 
 msgid "This bug could result in query outputs being non-null when they should be null, in cases where the inner side of an outer join is a sub-select with non-strict expressions in its output list."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1058(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1058(para) 
 msgid "Fix join removal's handling of placeholder expressions (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1064(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1064(para) 
 msgid "Fix possible duplicate scans of <literal>UNION ALL</literal> member relations (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1071(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1071(para) 
 msgid "Prevent infinite loop in ProcessIncomingNotify() after unlistening (Jeff Davis)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1078(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1078(para) 
 msgid "Prevent show_session_authorization() from crashing within autovacuum processes (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1085(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1085(para) 
 msgid "Re-allow input of Julian dates prior to 0001-01-01 AD (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1089(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1089(para) 
 msgid "Input such as <literal>'J100000'::date</literal> worked before 8.4, but was unintentionally broken by added error-checking."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1096(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1096(para) 
 msgid "Make psql recognize <command>DISCARD ALL</command> as a command that should not be encased in a transaction block in autocommit-off mode (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1104(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1104(para) 
 msgid "Update build infrastructure and documentation to reflect the source code repository's move from CVS to Git (Magnus Hagander and others)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1116(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1116(title) 
 msgid "Release 9.0"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1120(simpara) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1120(simpara) 
 msgid "2010-09-20"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1124(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1124(title) 
 msgid "Overview"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1126(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1126(para) 
 msgid "This release of <productname>PostgreSQL</productname> adds features that have been requested for years, such as easy-to-use replication, a mass permission-changing facility, and anonymous code blocks. While past major releases have been conservative in their scope, this release shows a bold new desire to provide facilities that new and existing users of <productname>PostgreSQL</productname> will embrace. This has all been done with few incompatibilities. Major enhancements include:"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1143(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1143(para) 
 msgid "Built-in replication based on log shipping. This advance consists of two features: Streaming Replication, allowing continuous archive (<acronym>WAL</acronym>) files to be streamed over a network connection to a standby server, and Hot Standby, allowing continuous archive standby servers to execute read-only queries. The net effect is to support a single master with multiple read-only slave servers."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1154(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1154(para) 
 msgid "Easier database object permissions management. <link linkend=\"sql-grant\"><command>GRANT</command>/<command>REVOKE IN SCHEMA</command></link> supports mass permissions changes on existing objects, while <link linkend=\"sql-alterdefaultprivileges\"><command>ALTER DEFAULT PRIVILEGES</command></link> allows control of privileges for objects created in the future. Large objects (BLOBs) now support permissions management as well."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1166(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1166(para) 
 msgid "Broadly enhanced stored procedure support. The <link linkend=\"sql-do\"><command>DO</command></link> statement supports ad-hoc or <quote>anonymous</quote> code blocks. Functions can now be called using named parameters. <link linkend=\"plpgsql\">PL/pgSQL</link> is now installed by default, and <link linkend=\"plperl\">PL/Perl</link> and <link linkend=\"plpython\">PL/Python</link> have been enhanced in several ways, including support for Python3."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1179(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1179(para) 
 msgid "Full support for <link linkend=\"install-windows\">64-bit <productname>Windows</productname></link>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1186(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1186(para) 
 msgid "More advanced reporting queries, including additional windowing options (<literal>PRECEDING</literal> and <literal>FOLLOWING</literal>) and the ability to control the order in which values are fed to aggregate functions."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1194(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1194(para) 
 msgid "New trigger features, including SQL-standard-compliant <link linkend=\"sql-createtrigger\">per-column triggers</link> and conditional trigger execution."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1203(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1203(para) 
 msgid "<link linkend=\"sql-createtable-compatibility\">Deferrable unique constraints</link>. Mass updates to unique keys are now possible without trickery."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1211(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1211(para) 
 msgid "<link linkend=\"ddl-constraints-exclusion\">Exclusion constraints</link>. These provide a generalized version of unique constraints, allowing enforcement of complex conditions."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1219(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1219(para) 
 msgid "New and enhanced security features, including RADIUS authentication, LDAP authentication improvements, and a new contrib module <link linkend=\"passwordcheck\"><filename>passwordcheck</filename></link> for testing password strength."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1228(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1228(para) 
 msgid "New high-performance implementation of the <link linkend=\"sql-listen\"><command>LISTEN</command></link>/<link linkend=\"sql-notify\"><command>NOTIFY</command></link> feature. Pending events are now stored in a memory-based queue rather than a table. Also, a <quote>payload</quote> string can be sent with each event, rather than transmitting just an event name as before."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1239(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1239(para) 
 msgid "New implementation of <link linkend=\"sql-vacuum\"><command>VACUUM FULL</command></link>. This command now rewrites the entire table and indexes, rather than moving individual rows to compact space. It is substantially faster in most cases, and no longer results in index bloat."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1249(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1249(para) 
 msgid "New contrib module <link linkend=\"pgupgrade\"><filename>pg_upgrade</filename></link> to support in-place upgrades from 8.3 or 8.4 to 9.0."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1257(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1257(para) 
 msgid "Multiple performance enhancements for specific types of queries, including elimination of unnecessary joins. This helps optimize some automatically-generated queries, such as those produced by object-relational mappers (ORMs)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1266(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1266(para) 
 msgid "<link linkend=\"sql-explain \"><command>EXPLAIN</command></link> enhancements. The output is now available in JSON, XML, or YAML format, and includes buffer utilization and other data not previously available."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1274(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1274(para) 
 msgid "<link linkend=\"hstore\"><filename>hstore</filename></link> improvements, including new functions and greater data capacity."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1282(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1282(para) 
 msgid "The above items are explained in more detail in the sections below."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1290(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1290(title) 
 msgid "Migration to Version 9.0"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1292(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1292(para) 
 msgid "A dump/restore using <application>pg_dump</application>, or use of <application>pg_upgrade</application>, is required for those wishing to migrate data from any previous release."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1299(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1299(para) 
 msgid "Version 9.0 contains a number of changes that selectively break backwards compatibility in order to support new features and code quality improvements. In particular, users who make extensive use of PL/pgSQL, Point-In-Time Recovery (PITR), or Warm Standby should test their applications because of slight user-visible changes in those areas. Observe the following incompatibilities:"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1309(title) /tmp/cicero-UbWe/release-9.0.xml:2012(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1309(title) /tmp/cicero-RtQO/release-9.0.xml:2012(title) 
 msgid "Server Settings"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1314(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1314(para) 
 msgid "Remove server parameter <varname>add_missing_from</varname>, which was defaulted to off for many years (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1321(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1321(para) 
 msgid "Remove server parameter <varname>regex_flavor</varname>, which was defaulted to <link linkend=\"posix-syntax-details\"><literal>advanced</literal></link> for many years (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1330(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1330(para) 
 msgid "<link linkend=\"guc-archive-mode\"><varname>archive_mode</varname></link> now only affects <link linkend=\"guc-archive-command\"><varname>archive_command</varname></link>; a new setting, <link linkend=\"guc-wal-level\"><varname>wal_level</varname></link>, affects the contents of the write-ahead log (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1341(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1341(para) 
 msgid "<link linkend=\"guc-log-temp-files\"><varname>log_temp_files</varname></link> now uses default file size units of kilobytes (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1352(title) /tmp/cicero-UbWe/release-9.0.xml:2115(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1352(title) /tmp/cicero-RtQO/release-9.0.xml:2115(title) 
 msgid "Queries"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1357(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1357(para) 
 msgid "When querying a <link linkend=\"ddl-inherit\">parent table</link>, do not do any separate permission checks on child tables scanned as part of the query (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1363(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1363(para) 
 msgid "The SQL standard specifies this behavior, and it is also much more convenient in practice than the former behavior of checking permissions on each child as well as the parent."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1375(title) /tmp/cicero-UbWe/release-9.0.xml:2675(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1375(title) /tmp/cicero-RtQO/release-9.0.xml:2675(title) 
 msgid "Data Types"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1380(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1380(para) 
 msgid "<link linkend=\"datatype-binary\"><type>bytea</type></link> output now appears in hex format by default (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1385(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1385(para) 
 msgid "The server parameter <link linkend=\"guc-bytea-output\"><varname>bytea_output</varname></link> can be used to select the traditional output format if needed for compatibility."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1394(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1394(para) 
 msgid "Array input now considers only plain ASCII whitespace characters to be potentially ignorable; it will never ignore non-ASCII characters, even if they are whitespace according to some locales (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1400(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1400(para) 
 msgid "This avoids some corner cases where array values could be interpreted differently depending on the server's locale settings."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1407(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1407(para) 
 msgid "Improve standards compliance of <link linkend=\"functions-similarto-regexp\"><literal>SIMILAR TO</literal></link> patterns and SQL-style <function>substring()</function> patterns (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1413(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1413(para) 
 msgid "This includes treating <literal>?</literal> and <literal>{...}</literal> as pattern metacharacters, while they were simple literal characters before; that corresponds to new features added in SQL:2008. Also, <literal>^</literal> and <literal>$</literal> are now treated as simple literal characters; formerly they were treated as metacharacters, as if the pattern were following POSIX rather than SQL rules. Also, in SQL-standard <function>substring()</function>, use of parentheses for nesting no longer interferes with capturing of a substring. Also, processing of bracket expressions (character classes) is now more standards-compliant."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1428(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1428(para) 
 msgid "Reject negative length values in 3-parameter <link linkend=\"functions-string-sql\"><function>substring()</function></link> for bit strings, per the SQL standard (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1436(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1436(para) 
 msgid "Make <function>date_trunc</function> truncate rather than round when reducing precision of fractional seconds (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1441(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1441(para) 
 msgid "The code always acted this way for integer-based dates/times. Now float-based dates/times behave similarly."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1452(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1452(title) 
 msgid "Object Renaming"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1457(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1457(para) 
 msgid "Tighten enforcement of column name consistency during <command>RENAME</command> when a child table inherits the same column from multiple unrelated parents (KaiGai Kohei)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1465(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1465(para) 
 msgid "No longer automatically rename indexes and index columns when the underlying table columns are renamed (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1470(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1470(para) 
 msgid "Administrators can still rename such indexes and columns manually. This change will require an update of the JDBC driver, and possibly other drivers, so that unique indexes are correctly recognized after a rename."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1478(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1478(para) 
 msgid "<command>CREATE OR REPLACE FUNCTION</command> can no longer change the declared names of function parameters (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1483(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1483(para) 
 msgid "In order to avoid creating ambiguity in named-parameter calls, it is no longer allowed to change the aliases for input parameters in the declaration of an existing function (although names can still be assigned to previously unnamed parameters). You now have to <command>DROP</command> and recreate the function to do that."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1497(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1497(title) 
 msgid "PL/pgSQL"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1502(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1502(para) 
 msgid "PL/pgSQL now throws an error if a variable name conflicts with a column name used in a query (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1507(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1507(para) 
 msgid "The former behavior was to bind ambiguous names to PL/pgSQL variables in preference to query columns, which often resulted in surprising misbehavior. Throwing an error allows easy detection of ambiguous situations. Although it's recommended that functions encountering this type of error be modified to remove the conflict, the old behavior can be restored if necessary via the configuration parameter <link linkend=\"plpgsql-var-subst\"><varname>plpgsql.variable_conflict</varname></link>, or via the per-function option <literal>#variable_conflict</literal>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1520(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1520(para) 
 msgid "PL/pgSQL no longer allows variable names that match certain SQL reserved words (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1525(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1525(para) 
 msgid "This is a consequence of aligning the PL/pgSQL parser to match the core SQL parser more closely. If necessary, variable names can be double-quoted to avoid this restriction."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1533(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1533(para) 
 msgid "PL/pgSQL now requires columns of composite results to match the expected type modifier as well as base type (Pavel Stehule, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1538(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1538(para) 
 msgid "For example, if a column of the result type is declared as <literal>NUMERIC(30,2)</literal>, it is no longer acceptable to return a <literal>NUMERIC</literal> of some other precision in that column. Previous versions neglected to check the type modifier and would thus allow result rows that didn't actually conform to the declared restrictions."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1548(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1548(para) 
 msgid "PL/pgSQL now treats selection into composite fields more consistently (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1553(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1553(para) 
 msgid "Formerly, a statement like <literal>SELECT ... INTO <replaceable>rec</replaceable>.<replaceable>fld</replaceable> FROM ...</literal> was treated as a scalar assignment even if the record field <replaceable>fld</replaceable> was of composite type. Now it is treated as a record assignment, the same as when the <literal>INTO</literal> target is a regular variable of composite type. So the values to be assigned to the field's subfields should be written as separate columns of the <command>SELECT</command> list, not as a <literal>ROW(...)</literal> construct as in previous versions."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1565(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1565(para) 
 msgid "If you need to do this in a way that will work in both 9.0 and previous releases, you can write something like <literal><replaceable>rec</replaceable>.<replaceable>fld</replaceable> := ROW(...) FROM ...</literal>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1573(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1573(para) 
 msgid "Remove PL/pgSQL's <literal>RENAME</literal> declaration (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1577(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1577(para) 
 msgid "Instead of <literal>RENAME</literal>, use <link linkend=\"plpgsql-declaration-alias\"><literal>ALIAS</literal></link>, which can now create an alias for any variable, not only dollar sign parameter names (such as <literal>$1</literal>) as before."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1589(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1589(title) 
 msgid "Other Incompatibilities"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1594(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1594(para) 
 msgid "Deprecate use of <literal>=&gt;</literal> as an operator name (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1598(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1598(para) 
 msgid "Future versions of <productname>PostgreSQL</productname> will probably reject this operator name entirely, in order to support the SQL-standard notation for named function parameters. For the moment, it is still allowed, but a warning is emitted when such an operator is defined."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1608(para) /tmp/cicero-UbWe/release-9.0.xml:4179(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1608(para) /tmp/cicero-RtQO/release-9.0.xml:4179(para) 
 msgid "Remove support for platforms that don't have a working 64-bit integer data type (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1613(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1613(para) 
 msgid "It is believed all still-supported platforms have working 64-bit integer data types."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1625(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1625(para) 
 msgid "Version 9.0 has an unprecedented number of new major features, and over 200 enhancements, improvements, new commands, new functions, and other changes."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1632(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1632(title) 
 msgid "Server"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1635(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1635(title) 
 msgid "Continuous Archiving and Streaming Replication"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1637(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1637(para) 
 msgid "PostgreSQL's existing standby-server capability has been expanded both to support read-only queries on standby servers and to greatly reduce the lag between master and standby servers. For many users, this will be a useful and low-administration form of replication, either for high availability or for horizontal scalability."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1647(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1647(para) 
 msgid "Allow a standby server to accept read-only queries (Simon Riggs, Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1652(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1652(para) 
 msgid "This feature is called Hot Standby. There are new <filename>postgresql.conf</filename> and <filename>recovery.conf</filename> settings to control this feature, as well as extensive <link linkend=\"hot-standby\">documentation</link>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1661(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1661(para) 
 msgid "Allow write-ahead log (<acronym>WAL</acronym>) data to be streamed to a standby server (Fujii Masao, Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1666(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1666(para) 
 msgid "This feature is called Streaming Replication. Previously <acronym>WAL</acronym> data could be sent to standby servers only in units of entire <acronym>WAL</acronym> files (normally 16 megabytes each). Streaming Replication eliminates this inefficiency and allows updates on the master to be propagated to standby servers with very little delay. There are new <filename>postgresql.conf</filename> and <filename>recovery.conf</filename> settings to control this feature, as well as extensive <link linkend=\"streaming-replication\">documentation</link>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1679(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1679(para) 
 msgid "Add <link linkend=\"functions-recovery-info-table\"><function>pg_last_xlog_receive_location()</function></link> and <function>pg_last_xlog_replay_location()</function>, which can be used to monitor standby server <acronym>WAL</acronym> activity (Simon Riggs, Fujii Masao, Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1693(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1693(title) 
 msgid "Performance"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1698(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1698(para) 
 msgid "Allow per-tablespace values to be set for sequential and random page cost estimates (<varname>seq_page_cost</varname>/<varname>random_page_cost</varname>) via <link linkend=\"sql-altertablespace\"><command>ALTER TABLESPACE ... SET/RESET</command></link> (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1707(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1707(para) 
 msgid "Improve performance and reliability of EvalPlanQual rechecks in join queries (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1712(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1712(para) 
 msgid "<command>UPDATE</command>, <command>DELETE</command>, and <command>SELECT FOR UPDATE/SHARE</command> queries that involve joins will now behave much better when encountering freshly-updated rows."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1720(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1720(para) 
 msgid "Improve performance of <link linkend=\"sql-truncate\"><command>TRUNCATE</command></link> when the table was created or truncated earlier in the same transaction (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1729(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1729(para) 
 msgid "Improve performance of finding inheritance child tables (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1739(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1739(title) 
 msgid "Optimizer"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1744(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1744(para) 
 msgid "Remove unnecessary <link linkend=\"queries-join\">outer joins</link> (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1749(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1749(para) 
 msgid "Outer joins where the inner side is unique and not referenced above the join are unnecessary and are therefore now removed. This will accelerate many automatically generated queries, such as those created by object-relational mappers (ORMs)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1758(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1758(para) 
 msgid "Allow <literal>IS NOT NULL</literal> restrictions to use indexes (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1762(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1762(para) 
 msgid "This is particularly useful for finding <function>MAX()</function>/<function>MIN()</function> values in indexes that contain many null values."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1770(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1770(para) 
 msgid "Improve the optimizer's choices about when to use materialize nodes, and when to use sorting versus hashing for <literal>DISTINCT</literal> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1778(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1778(para) 
 msgid "Improve the optimizer's equivalence detection for expressions involving <type>boolean</type><literal>&lt;&gt;</literal> operators (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1787(link) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1787(link) 
 msgid "GEQO"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1792(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1792(para) 
 msgid "Use the same random seed every time GEQO plans a query (Andres Freund)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1797(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1797(para) 
 msgid "While the Genetic Query Optimizer (GEQO) still selects random plans, it now always selects the same random plans for identical queries, thus giving more consistent performance. You can modify <link linkend=\"guc-geqo-seed\"><varname>geqo_seed</varname></link> to experiment with alternative plans."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1807(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1807(para) 
 msgid "Improve GEQO plan selection (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1811(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1811(para) 
 msgid "This avoids the rare error <quote>failed to make a valid plan</quote>, and should also improve planning speed."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1822(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1822(title) 
 msgid "Optimizer Statistics"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1827(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1827(para) 
 msgid "Improve <link linkend=\"sql-analyze\"><command>ANALYZE</command></link> to support inheritance-tree statistics (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1832(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1832(para) 
 msgid "This is particularly useful for partitioned tables. However, autovacuum does not yet automatically re-analyze parent tables when child tables change."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1840(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1840(para) 
 msgid "Improve <link linkend=\"routine-vacuuming\">autovacuum</link>'s detection of when re-analyze is necessary (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1847(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1847(para) 
 msgid "Improve optimizer's estimation for greater/less-than comparisons (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1852(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1852(para) 
 msgid "When looking up statistics for greater/less-than comparisons, if the comparison value is in the first or last histogram bucket, use an index (if available) to fetch the current actual column minimum or maximum. This greatly improves the accuracy of estimates for comparison values near the ends of the data range, particularly if the range is constantly changing due to addition of new data."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1863(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1863(para) 
 msgid "Allow setting of number-of-distinct-values statistics using <link linkend=\"sql-altertable\"><command>ALTER TABLE</command></link> (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1869(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1869(para) 
 msgid "This allows users to override the estimated number or percentage of distinct values for a column. This statistic is normally computed by <command>ANALYZE</command>, but the estimate can be poor, especially on tables with very large numbers of rows."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1882(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1882(title) 
 msgid "Authentication"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1887(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1887(para) 
 msgid "Add support for <link linkend=\"auth-radius\"><acronym>RADIUS</acronym></link> (Remote Authentication Dial In User Service) authentication (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1896(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1896(para) 
 msgid "Allow <link linkend=\"auth-ldap\"><acronym>LDAP</acronym></link> (Lightweight Directory Access Protocol) authentication to operate in <quote>search/bind</quote> mode (Robert Fleming, Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1903(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1903(para) 
 msgid "This allows the user to be looked up first, then the system uses the <acronym>DN</acronym> (Distinguished Name) returned for that user."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1910(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1910(para) 
 msgid "Add <link linkend=\"auth-pg-hba-conf\"><literal>samehost</literal></link> and <literal>samenet</literal> designations to <filename>pg_hba.conf</filename> (Stef Walter)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1917(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1917(para) 
 msgid "These match the server's <acronym>IP</acronym> address and subnet address respectively."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1924(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1924(para) 
 msgid "Pass trusted SSL root certificate names to the client so the client can return an appropriate client certificate (Craig Ringer)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1935(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1935(title) 
 msgid "Monitoring"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1940(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1940(para) 
 msgid "Add the ability for clients to set an <link linkend=\"libpq-connect-application-name\">application name</link>, which is displayed in <structname>pg_stat_activity</structname> (Dave Page)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1947(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1947(para) 
 msgid "This allows administrators to characterize database traffic and troubleshoot problems by source application."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1954(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1954(para) 
 msgid "Add a SQLSTATE option (<literal>%e</literal>) to <link linkend=\"guc-log-line-prefix\"><varname>log_line_prefix</varname></link> (Guillaume Smet)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1960(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1960(para) 
 msgid "This allows users to compile statistics on errors and messages by error code number."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1968(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1968(para) 
 msgid "Write to the Windows event log in <acronym>UTF16</acronym> encoding (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1973(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1973(para) 
 msgid "Now there is true multilingual support for PostgreSQL log messages on Windows."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1984(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1984(title) 
 msgid "Statistics Counters"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1989(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1989(para) 
 msgid "Add <link linkend=\"monitoring-stats-funcs-table\"><function>pg_stat_reset_shared('bgwriter')</function></link> to reset the cluster-wide shared statistics for the background writer (Greg Smith)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:1998(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:1998(para) 
 msgid "Add <link linkend=\"monitoring-stats-funcs-table\"><function>pg_stat_reset_single_table_counters()</function></link> and <function>pg_stat_reset_single_function_counters()</function> to allow resetting the statistics counters for individual tables and functions (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2017(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2017(para) 
 msgid "Allow setting of configuration parameters based on <link linkend=\"sql-alterrole\">database/role combinations</link> (Alvaro Herrera)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2023(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2023(para) 
 msgid "Previously only per-database and per-role settings were possible, not combinations. All role and database settings are now stored in the new <structname>pg_db_role_setting</structname> system catalog. A new <application>psql</application> command <literal>\\drds</literal> shows these settings. The legacy system views <structname>pg_roles</structname>, <structname>pg_shadow</structname>, and <structname>pg_user</structname> do not show combination settings, and therefore no longer completely represent the configuration for a user or database."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2036(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2036(para) 
 msgid "Add server parameter <link linkend=\"guc-bonjour\"><varname>bonjour</varname></link>, which controls whether a Bonjour-enabled server advertises itself via <productname>Bonjour</productname> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2043(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2043(para) 
 msgid "The default is off, meaning it does not advertise. This allows packagers to distribute Bonjour-enabled builds without worrying that individual users might not want the feature."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2051(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2051(para) 
 msgid "Add server parameter <link linkend=\"guc-enable-material\"><varname>enable_material</varname></link>, which controls the use of materialize nodes in the optimizer (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2058(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2058(para) 
 msgid "The default is on. When off, the optimizer will not add materialize nodes purely for performance reasons, though they will still be used when necessary for correctness."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2066(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2066(para) 
 msgid "Change server parameter <link linkend=\"guc-log-temp-files\"><varname>log_temp_files</varname></link> to use default file size units of kilobytes (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2072(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2072(para) 
 msgid "Previously this setting was interpreted in bytes if no units were specified."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2079(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2079(para) 
 msgid "Log changes of parameter values when <filename>postgresql.conf</filename> is reloaded (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2084(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2084(para) 
 msgid "This lets administrators and security staff audit changes of database settings, and is also very convenient for checking the effects of <filename>postgresql.conf</filename> edits."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2092(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2092(para) 
 msgid "Properly enforce superuser permissions for custom server parameters (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2097(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2097(para) 
 msgid "Non-superusers can no longer issue <command>ALTER ROLE</command>/<command>DATABASE SET</command> for parameters that are not currently known to the server. This allows the server to correctly check that superuser-only parameters are only set by superusers. Previously, the <literal>SET</literal> would be allowed and then ignored at session start, making superuser-only custom parameters much less useful than they should be."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2120(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2120(para) 
 msgid "Perform <link linkend=\"sql-for-update-share\"><command>SELECT FOR UPDATE</command>/<literal>SHARE</literal></link> processing after applying <literal>LIMIT</literal>, so the number of rows returned is always predictable (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2127(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2127(para) 
 msgid "Previously, changes made by concurrent transactions could cause a <command>SELECT FOR UPDATE</command> to unexpectedly return fewer rows than specified by its <literal>LIMIT</literal>. <literal>FOR UPDATE</literal> in combination with <literal>ORDER BY</literal> can still produce surprising results, but that can be corrected by placing <literal>FOR UPDATE</literal> in a subquery."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2137(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2137(para) 
 msgid "Allow mixing of traditional and SQL-standard <link linkend=\"sql-limit\"><literal>LIMIT</literal>/<literal>OFFSET</literal></link> syntax (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2145(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2145(para) 
 msgid "Extend the supported frame options in <link linkend=\"sql-window\">window functions</link> (Hitoshi Harada)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2151(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2151(para) 
 msgid "Frames can now start with <literal>CURRENT ROW</literal>, and the <literal>ROWS <replaceable>n</replaceable> PRECEDING</literal>/<literal>FOLLOWING</literal> options are now supported."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2159(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2159(para) 
 msgid "Make <command>SELECT INTO</command> and <command>CREATE TABLE AS</command> return row counts to the client in their command tags (Boszormenyi Zoltan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2165(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2165(para) 
 msgid "This can save an entire round-trip to the client, allowing result counts and pagination to be calculated without an additional <command>COUNT</command> query."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2175(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2175(title) 
 msgid "Unicode Strings"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2180(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2180(para) 
 msgid "Support Unicode surrogate pairs (dual 16-bit representation) in <link linkend=\"sql-syntax-strings-uescape\"><literal>U&amp;</literal></link> strings and identifiers (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2189(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2189(para) 
 msgid "Support Unicode escapes in <link linkend=\"sql-syntax-strings-escape\"><literal>E'...'</literal></link> strings (Marko Kreen)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2203(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2203(title) 
 msgid "Object Manipulation"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2208(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2208(para) 
 msgid "Speed up <link linkend=\"sql-createdatabase\"><command>CREATE DATABASE</command></link> by deferring flushes to disk (Andres Freund, Greg Stark)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2216(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2216(para) 
 msgid "Allow <link linkend=\"sql-comment\">comments</link> on columns of tables, views, and composite types only, not other relation types such as indexes and <acronym>TOAST</acronym> tables (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2224(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2224(para) 
 msgid "Allow the creation of <link linkend=\"sql-createtype-enum\">enumerated types</link> containing no values (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2232(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2232(para) 
 msgid "Let values of columns having storage type <literal>MAIN</literal> remain on the main heap page unless the row cannot fit on a page (Kevin Grittner)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2237(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2237(para) 
 msgid "Previously <literal>MAIN</literal> values were forced out to <acronym>TOAST</acronym> tables until the row size was less than one-quarter of the page size."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2246(command) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2246(command) 
 msgid "ALTER TABLE"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2251(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2251(para) 
 msgid "Implement <literal>IF EXISTS</literal> for <literal>ALTER TABLE DROP COLUMN</literal> and <literal>ALTER TABLE DROP CONSTRAINT </literal> (Andres Freund)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2258(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2258(para) 
 msgid "Allow <command>ALTER TABLE</command> commands that rewrite tables to skip <acronym>WAL</acronym> logging (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2263(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2263(para) 
 msgid "Such operations either produce a new copy of the table or are rolled back, so <acronym>WAL</acronym> archiving can be skipped, unless running in continuous archiving mode. This reduces I/O overhead and improves performance."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2272(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2272(para) 
 msgid "Fix failure of <literal>ALTER TABLE <replaceable>table</replaceable> ADD COLUMN <replaceable>col</replaceable> serial</literal> when done by non-owner of table (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2284(command) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2284(command) 
 msgid "CREATE TABLE"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2289(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2289(para) 
 msgid "Add support for copying <literal>COMMENTS</literal> and <literal>STORAGE</literal> settings in <command>CREATE TABLE ... LIKE</command> commands (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2297(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2297(para) 
 msgid "Add a shortcut for copying all properties in <command>CREATE TABLE ... LIKE</command> commands (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2304(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2304(para) 
 msgid "Add the SQL-standard <literal>CREATE TABLE ... OF <replaceable>type</replaceable></literal> command (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2310(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2310(para) 
 msgid "This allows creation of a table that matches an existing composite type. Additional constraints and defaults can be specified in the command."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2322(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2322(title) 
 msgid "Constraints"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2327(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2327(para) 
 msgid "Add <link linkend=\"sql-createtable-compatibility\">deferrable unique constraints</link> (Dean Rasheed)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2332(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2332(para) 
 msgid "This allows mass updates, such as <literal>UPDATE tab SET col = col + 1</literal>, to work reliably on columns that have unique indexes or are marked as primary keys. If the constraint is specified as <literal>DEFERRABLE</literal> it will be checked at the end of the statement, rather than after each row is updated. The constraint check can also be deferred until the end of the current transaction, allowing such updates to be spread over multiple SQL commands."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2346(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2346(para) 
 msgid "Add <link linkend=\"ddl-constraints-exclusion\">exclusion constraints</link> (Jeff Davis)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2352(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2352(para) 
 msgid "Exclusion constraints generalize uniqueness constraints by allowing arbitrary comparison operators, not just equality. They are created with the <link linkend=\"sql-createtable-exclude\"><command>CREATE TABLE CONSTRAINT ... EXCLUDE</command></link> clause. The most common use of exclusion constraints is to specify that column entries must not overlap, rather than simply not be equal. This is useful for time periods and other ranges, as well as arrays. This feature enhances checking of data integrity for many calendaring, time-management, and scientific applications."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2366(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2366(para) 
 msgid "Improve uniqueness-constraint violation error messages to report the values causing the failure (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2371(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2371(para) 
 msgid "For example, a uniqueness constraint violation might now report <literal>Key (x)=(2) already exists</literal>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2382(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2382(title) 
 msgid "Object Permissions"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2387(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2387(para) 
 msgid "Add the ability to make mass permission changes across a whole schema using the new <link linkend=\"sql-grant\"><command>GRANT</command>/<command>REVOKE IN SCHEMA</command></link> clause (Petr Jelinek)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2394(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2394(para) 
 msgid "This simplifies management of object permissions and makes it easier to utilize database roles for application data security."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2402(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2402(para) 
 msgid "Add <link linkend=\"sql-alterdefaultprivileges\"><command>ALTER DEFAULT PRIVILEGES</command></link> command to control privileges of objects created later (Petr Jelinek)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2408(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2408(para) 
 msgid "This greatly simplifies the assignment of object privileges in a complex database application. Default privileges can be set for tables, views, sequences, and functions. Defaults may be assigned on a per-schema basis, or database-wide."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2417(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2417(para) 
 msgid "Add the ability to control large object (BLOB) permissions with <command>GRANT</command>/<command>REVOKE</command> (KaiGai Kohei)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2422(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2422(para) 
 msgid "Formerly, any database user could read or modify any large object. Read and write permissions can now be granted and revoked per large object, and the ownership of large objects is tracked."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2436(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2436(title) 
 msgid "Utility Operations"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2441(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2441(para) 
 msgid "Make <link linkend=\"sql-listen\"><command>LISTEN</command></link>/<link linkend=\"sql-notify\"><command>NOTIFY</command></link> store pending events in a memory queue, rather than in a system table (Joachim Wieland)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2448(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2448(para) 
 msgid "This substantially improves performance, while retaining the existing features of transactional support and guaranteed delivery."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2455(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2455(para) 
 msgid "Allow <link linkend=\"sql-notify\"><command>NOTIFY</command></link> to pass an optional <quote>payload</quote> string to listeners (Joachim Wieland)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2461(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2461(para) 
 msgid "This greatly improves the usefulness of <command>LISTEN</command>/<command>NOTIFY</command> as a general-purpose event queue system."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2469(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2469(para) 
 msgid "Allow <link linkend=\"sql-cluster\"><command>CLUSTER</command></link> on all per-database system catalogs (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2474(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2474(para) 
 msgid "Shared catalogs still cannot be clustered."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2482(command) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2482(command) 
 msgid "COPY"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2487(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2487(para) 
 msgid "Accept <literal>COPY ... CSV FORCE QUOTE *</literal> (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2492(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2492(para) 
 msgid "Now <literal>*</literal> can be used as shorthand for <quote>all columns</quote> in the <literal>FORCE QUOTE</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2499(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2499(para) 
 msgid "Add new <command>COPY</command> syntax that allows options to be specified inside parentheses (Robert Haas, Emmanuel Cecchet)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2504(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2504(para) 
 msgid "This allows greater flexibility for future <command>COPY</command> options. The old syntax is still supported, but only for pre-existing options."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2515(command) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2515(command) 
 msgid "EXPLAIN"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2520(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2520(para) 
 msgid "Allow <command>EXPLAIN</command> to output in <acronym>XML</acronym>, <acronym>JSON</acronym>, or <acronym>YAML</acronym> format (Robert Haas, Greg Sabino Mullane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2526(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2526(para) 
 msgid "The new output formats are easily machine-readable, supporting the development of new tools for analysis of <command>EXPLAIN</command> output."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2533(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2533(para) 
 msgid "Add new <literal>BUFFERS</literal> option to report query buffer usage during <command>EXPLAIN ANALYZE</command> (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2538(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2538(para) 
 msgid "This allows better query profiling for individual queries. Buffer usage is no longer reported in the output for <link linkend=\"runtime-config-statistics-monitor\">log_statement_stats</link> and related settings."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2547(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2547(para) 
 msgid "Add hash usage information to <command>EXPLAIN</command> output (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2554(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2554(para) 
 msgid "Add new <command>EXPLAIN</command> syntax that allows options to be specified inside parentheses (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2559(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2559(para) 
 msgid "This allows greater flexibility for future <command>EXPLAIN</command> options. The old syntax is still supported, but only for pre-existing options."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2570(command) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2570(command) 
 msgid "VACUUM"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2575(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2575(para) 
 msgid "Change <command>VACUUM FULL</command> to rewrite the entire table and rebuild its indexes, rather than moving individual rows around to compact space (Itagaki Takahiro, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2581(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2581(para) 
 msgid "The previous method was usually slower and caused index bloat. Note that the new method will use more disk space transiently during <command>VACUUM FULL</command>; potentially as much as twice the space normally occupied by the table and its indexes."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2591(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2591(para) 
 msgid "Add new <command>VACUUM</command> syntax that allows options to be specified inside parentheses (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2596(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2596(para) 
 msgid "This allows greater flexibility for future <command>VACUUM</command> options. The old syntax is still supported, but only for pre-existing options."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2607(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2607(title) 
 msgid "Indexes"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2612(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2612(para) 
 msgid "Allow an index to be named automatically by omitting the index name in <link linkend=\"sql-createindex\"><command>CREATE INDEX</command></link> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2620(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2620(para) 
 msgid "By default, multicolumn indexes are now named after all their columns; and index expression columns are now named based on their expressions (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2628(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2628(para) 
 msgid "Reindexing shared system catalogs is now fully transactional and crash-safe (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2633(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2633(para) 
 msgid "Formerly, reindexing a shared index was only allowed in standalone mode, and a crash during the operation could leave the index in worse condition than it was before."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2641(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2641(para) 
 msgid "Add <literal>point_ops</literal> operator class for <acronym>GiST</acronym> (Teodor Sigaev)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2646(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2646(para) 
 msgid "This feature permits <acronym>GiST</acronym> indexing of <type>point</type> columns. The index can be used for several types of queries such as <replaceable>point</replaceable><literal>&lt;@</literal><replaceable>polygon</replaceable> (point is in polygon). This should make many <productname>PostGIS</productname> queries faster."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2656(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2656(para) 
 msgid "Use red-black binary trees for <acronym>GIN</acronym> index creation (Teodor Sigaev)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2661(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2661(para) 
 msgid "Red-black trees are self-balancing. This avoids slowdowns in cases where the input is in nonrandom order."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2680(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2680(para) 
 msgid "Allow <link linkend=\"datatype-binary\"><type>bytea</type></link> values to be written in hex notation (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2685(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2685(para) 
 msgid "The server parameter <link linkend=\"guc-bytea-output\"><varname>bytea_output</varname></link> controls whether hex or traditional format is used for <type>bytea</type> output. Libpq's <function>PQescapeByteaConn()</function> function automatically uses the hex format when connected to <productname>PostgreSQL</productname> 9.0 or newer servers. However, pre-9.0 libpq versions will not correctly process hex format from newer servers."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2695(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2695(para) 
 msgid "The new hex format will be directly compatible with more applications that use binary data, allowing them to store and retrieve it without extra conversion. It is also significantly faster to read and write than the traditional format."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2704(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2704(para) 
 msgid "Allow server parameter <link linkend=\"guc-extra-float-digits\">extra_float_digits</link> to be increased to <literal>3</literal> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2710(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2710(para) 
 msgid "The previous maximum <varname>extra_float_digits</varname> setting was <literal>2</literal>. There are cases where 3 digits are needed to dump and restore <type>float4</type> values exactly. <application>pg_dump</application> will now use the setting of 3 when dumping from a server that allows it."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2719(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2719(para) 
 msgid "Tighten input checking for <type>int2vector</type> values (Caleb Welton)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2728(link) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2728(link) 
 msgid "Full Text Search"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2733(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2733(para) 
 msgid "Add prefix support in <literal>synonym</literal> dictionaries (Teodor Sigaev)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2740(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2740(para) 
 msgid "Add <firstterm>filtering</firstterm> dictionaries (Teodor Sigaev)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2744(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2744(para) 
 msgid "Filtering dictionaries allow tokens to be modified then passed to subsequent dictionaries."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2751(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2751(para) 
 msgid "Allow underscores in email-address tokens (Teodor Sigaev)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2757(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2757(para) 
 msgid "Use more standards-compliant rules for parsing <acronym>URL</acronym> tokens (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2770(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2770(title) 
 msgid "Functions"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2775(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2775(para) 
 msgid "Allow function calls to supply parameter names and match them to named parameters in the function definition (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2780(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2780(para) 
 msgid "For example, if a function is defined to take parameters <literal>a</literal> and <literal>b</literal>, it can be called with <literal>func(a := 7, b := 12)</literal> or <literal>func(b := 12, a := 7)</literal>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2788(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2788(para) 
 msgid "Support locale-specific <link linkend=\"functions-posix-regexp\">regular expression</link> processing with <acronym>UTF-8</acronym> server encoding (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2794(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2794(para) 
 msgid "Locale-specific regular expression functionality includes case-insensitive matching and locale-specific character classes. Previously, these features worked correctly for non-<acronym>ASCII</acronym> characters only if the database used a single-byte server encoding (such as LATIN1). They will still misbehave in multi-byte encodings other than <acronym>UTF-8</acronym>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2805(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2805(para) 
 msgid "Add support for scientific notation in <link linkend=\"functions-formatting\"><function>to_char()</function></link> (<link linkend=\"functions-formatting-numeric-table\"><literal>EEEE</literal> specification</link>) (Pavel Stehule, Brendan Jurd)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2815(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2815(para) 
 msgid "Make <function>to_char()</function> honor <link linkend=\"functions-formatting-datetimemod-table\"><literal>FM</literal></link> (fill mode) in <literal>Y</literal>, <literal>YY</literal>, and <literal>YYY</literal> specifications (Bruce Momjian, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2822(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2822(para) 
 msgid "It was already honored by <literal>YYYY</literal>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2828(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2828(para) 
 msgid "Fix <function>to_char()</function> to output localized numeric and monetary strings in the correct encoding on <productname>Windows</productname> (Hiroshi Inoue, Itagaki Takahiro, Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2836(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2836(para) 
 msgid "Correct calculations of <link linkend=\"functions-geometry-op-table\"><quote>overlaps</quote></link> and <quote>contains</quote> operations for polygons (Teodor Sigaev)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2842(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2842(para) 
 msgid "The polygon <literal>&amp;&amp;</literal> (overlaps) operator formerly just checked to see if the two polygons' bounding boxes overlapped. It now does a more correct check. The polygon <literal>@&gt;</literal> and <literal>&lt;@</literal> (contains/contained by) operators formerly checked to see if one polygon's vertexes were all contained in the other; this can wrongly report <quote>true</quote> for some non-convex polygons. Now they check that all line segments of one polygon are contained in the other."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2857(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2857(title) 
 msgid "Aggregates"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2862(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2862(para) 
 msgid "Allow aggregate functions to use <link linkend=\"syntax-aggregates\"><literal>ORDER BY</literal></link> (Andrew Gierth)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2867(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2867(para) 
 msgid "For example, this is now supported: <literal>array_agg(a ORDER BY b)</literal>. This is useful with aggregates for which the order of input values is significant, and eliminates the need to use a nonstandard subquery to determine the ordering."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2876(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2876(para) 
 msgid "Multi-argument aggregate functions can now use <literal>DISTINCT</literal> (Andrew Gierth)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2883(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2883(para) 
 msgid "Add the <link linkend=\"functions-aggregate-table\"><function>string_agg()</function></link> aggregate function to combine values into a single string (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2892(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2892(para) 
 msgid "Aggregate functions that are called with <literal>DISTINCT</literal> are now passed NULL values if the aggregate transition function is not marked as <literal>STRICT</literal> (Andrew Gierth)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2898(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2898(para) 
 msgid "For example, <literal>agg(DISTINCT x)</literal> might pass a NULL <literal>x</literal> value to <function>agg()</function>. This is more consistent with the behavior in non-<literal>DISTINCT</literal> cases."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2910(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2910(title) 
 msgid "Bit Strings"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2915(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2915(para) 
 msgid "Add <link linkend=\"functions-binarystring-other\"><function>get_bit()</function></link> and <function>set_bit()</function> functions for <type>bit</type> strings, mirroring those for <type>bytea</type> (Leonardo F)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2925(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2925(para) 
 msgid "Implement <link linkend=\"functions-string-sql\"><function>OVERLAY()</function></link> (replace) for <type>bit</type> strings and <type>bytea</type> (Leonardo F)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2938(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2938(title) 
 msgid "Object Information Functions"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2943(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2943(para) 
 msgid "Add <link linkend=\"functions-admin-dbsize\"><function>pg_table_size()</function></link> and <function>pg_indexes_size()</function> to provide a more user-friendly interface to the <function>pg_relation_size()</function> function (Bernd Helmle)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2953(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2953(para) 
 msgid "Add <link linkend=\"functions-info-access-table\"><function>has_sequence_privilege()</function></link> for sequence permission checking (Abhijit Menon-Sen)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2961(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2961(para) 
 msgid "Update the <link linkend=\"information-schema\">information_schema</link> views to conform to SQL:2008 (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2969(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2969(para) 
 msgid "Make the <literal>information_schema</literal> views correctly display maximum octet lengths for <type>char</type> and <type>varchar</type> columns (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2977(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2977(para) 
 msgid "Speed up <literal>information_schema</literal> privilege views (Joachim Wieland)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2988(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2988(title) 
 msgid "Function and Trigger Creation"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2993(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2993(para) 
 msgid "Support execution of anonymous code blocks using the <link linkend=\"sql-do\"><command>DO</command></link> statement (Petr Jelinek, Joshua Tolley, Hannu Valtonen)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:2999(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:2999(para) 
 msgid "This allows execution of server-side code without the need to create and delete a temporary function definition. Code can be executed in any language for which the user has permissions to define a function."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3007(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3007(para) 
 msgid "Implement SQL-standard-compliant <link linkend=\"sql-createtrigger\">per-column triggers</link> (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3013(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3013(para) 
 msgid "Such triggers are fired only when the specified column(s) are affected by the query, e.g. appear in an <command>UPDATE</command>'s <literal>SET</literal> list."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3021(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3021(para) 
 msgid "Add the <literal>WHEN</literal> clause to <link linkend=\"sql-createtrigger\"><command>CREATE TRIGGER</command></link> to allow control over whether a trigger is fired (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3028(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3028(para) 
 msgid "While the same type of check can always be performed inside the trigger, doing it in an external <literal>WHEN</literal> clause can have performance benefits."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3042(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3042(title) 
 msgid "Server-Side Languages"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3047(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3047(para) 
 msgid "Add the <literal>OR REPLACE</literal> clause to <link linkend=\"sql-createlanguage\"><command>CREATE LANGUAGE</command></link> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3053(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3053(para) 
 msgid "This is helpful to optionally install a language if it does not already exist, and is particularly helpful now that PL/pgSQL is installed by default."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3063(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3063(title) 
 msgid "<link linkend=\"plpgsql\">PL/pgSQL</link> Server-Side Language"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3069(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3069(para) 
 msgid "Install PL/pgSQL by default (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3073(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3073(para) 
 msgid "The language can still be removed from a particular database if the administrator has security or performance concerns about making it available."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3081(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3081(para) 
 msgid "Improve handling of cases where PL/pgSQL variable names conflict with identifiers used in queries within a function (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3087(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3087(para) 
 msgid "The default behavior is now to throw an error when there is a conflict, so as to avoid surprising behaviors. This can be modified, via the configuration parameter <link linkend=\"plpgsql-var-subst\"><varname>plpgsql.variable_conflict</varname></link> or the per-function option <literal>#variable_conflict</literal>, to allow either the variable or the query-supplied column to be used. In any case PL/pgSQL will no longer attempt to substitute variables in places where they would not be syntactically valid."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3100(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3100(para) 
 msgid "Make PL/pgSQL use the main lexer, rather than its own version (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3105(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3105(para) 
 msgid "This ensures accurate tracking of the main system's behavior for details such as string escaping. Some user-visible details, such as the set of keywords considered reserved in PL/pgSQL, have changed in consequence."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3114(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3114(para) 
 msgid "Avoid throwing an unnecessary error for an invalid record reference (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3123(programlisting) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3123(programlisting) 
 #, no-wrap
 msgid "\nif TG_OP = 'INSERT' and NEW.col1 = ... then\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3119(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3119(para) 
 msgid "An error is now thrown only if the reference is actually fetched, rather than whenever the enclosing expression is reached. For example, many people have tried to do this in triggers: <placeholder-1/> This will now actually work as expected."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3131(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3131(para) 
 msgid "Improve PL/pgSQL's ability to handle row types with dropped columns (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3138(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3138(para) 
 msgid "Allow input parameters to be assigned values within PL/pgSQL functions (Steve Prentice)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3143(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3143(para) 
 msgid "Formerly, input parameters were treated as being declared <literal>CONST</literal>, so the function's code could not change their values. This restriction has been removed to simplify porting of functions from other DBMSes that do not impose the equivalent restriction. An input parameter now acts like a local variable initialized to the passed-in value."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3154(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3154(para) 
 msgid "Improve error location reporting in PL/pgSQL (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3160(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3160(para) 
 msgid "Add <replaceable>count</replaceable> and <literal>ALL</literal> options to <command>MOVE FORWARD</command>/<literal>BACKWARD</literal> in PL/pgSQL (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3167(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3167(para) 
 msgid "Allow PL/pgSQL's <literal>WHERE CURRENT OF</literal> to use a cursor variable (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3174(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3174(para) 
 msgid "Allow PL/pgSQL's <command>OPEN <replaceable>cursor</replaceable> FOR EXECUTE</command> to use parameters (Pavel Stehule, Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3179(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3179(para) 
 msgid "This is accomplished with a new <literal>USING</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3189(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3189(title) 
 msgid "<link linkend=\"plperl\">PL/Perl</link> Server-Side Language"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3194(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3194(para) 
 msgid "Add new PL/Perl functions: <link linkend=\"plperl-utility-functions\"><function>quote_literal()</function></link>, <function>quote_nullable()</function>, <function>quote_ident()</function>, <function>encode_bytea()</function>, <function>decode_bytea()</function>, <function>looks_like_number()</function>, <function>encode_array_literal()</function>, <function>encode_array_constructor()</function> (Tim Bunce)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3206(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3206(para) 
 msgid "Add server parameter <link linkend=\"guc-plperl-on-init\"><varname>plperl.on_init</varname></link> to specify a PL/Perl initialization function (Tim Bunce)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3213(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3213(para) 
 msgid "<link linkend=\"guc-plperl-on-plperl-init\"><varname>plperl.on_plperl_init</varname></link> and <link linkend=\"guc-plperl-on-plperl-init\"><varname>plperl.on_plperlu_init</varname></link> are also available for initialization that is specific to the trusted or untrusted language respectively."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3224(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3224(para) 
 msgid "Support <command>END</command> blocks in PL/Perl (Tim Bunce)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3228(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3228(para) 
 msgid "<command>END</command> blocks do not currently allow database access."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3234(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3234(para) 
 msgid "Allow <command>use strict</command> in PL/Perl (Tim Bunce)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3238(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3238(para) 
 msgid "Perl <literal>strict</literal> checks can also be globally enabled with the new server parameter <link linkend=\"guc-plperl-use-strict\"><varname>plperl.use_strict</varname></link>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3246(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3246(para) 
 msgid "Allow <command>require</command> in PL/Perl (Tim Bunce)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3250(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3250(para) 
 msgid "This basically tests to see if the module is loaded, and if not, generates an error. It will not allow loading of modules that the administrator has not preloaded via the initialization parameters."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3258(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3258(para) 
 msgid "Allow <command>use feature</command> in PL/Perl if Perl version 5.10 or later is used (Tim Bunce)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3265(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3265(para) 
 msgid "Verify that PL/Perl return values are valid in the server encoding (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3276(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3276(title) 
 msgid "<link linkend=\"plpython\">PL/Python</link> Server-Side Language"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3281(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3281(para) 
 msgid "Add Unicode support in PL/Python (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3285(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3285(para) 
 msgid "Strings are automatically converted from/to the server encoding as necessary."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3292(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3292(para) 
 msgid "Improve <type>bytea</type> support in PL/Python (Caleb Welton)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3296(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3296(para) 
 msgid "<type>Bytea</type> values passed into PL/Python are now represented as binary, rather than the PostgreSQL <type>bytea</type> text format. <type>Bytea</type> values containing null bytes are now also output properly from PL/Python. Passing of boolean, integer, and float values was also improved."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3306(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3306(para) 
 msgid "Support <link linkend=\"plpython-arrays\">arrays</link> as parameters and return values in PL/Python (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3313(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3313(para) 
 msgid "Improve mapping of SQL domains to Python types (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3319(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3319(para) 
 msgid "Add <application>Python</application> 3 support to PL/Python (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3323(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3323(para) 
 msgid "The new server-side language is called <link linkend=\"plpython-python23\"><literal>plpython3u</literal></link>. This cannot be used in the same session with the <application>Python</application> 2 server-side language."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3332(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3332(para) 
 msgid "Improve error location and exception reporting in PL/Python (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3344(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3344(title) 
 msgid "Client Applications"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3349(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3349(para) 
 msgid "Add an <option>--analyze-only</option> option to <link linkend=\"app-vacuumdb\"><command>vacuumdb</command></link>, to analyze without vacuuming (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3359(application) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3359(application) 
 msgid "psql"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3364(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3364(para) 
 msgid "Add support for quoting/escaping the values of <application>psql</application><link linkend=\"app-psql-variables\">variables</link> as SQL strings or identifiers (Pavel Stehule, Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3370(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3370(para) 
 msgid "For example, <literal>:'var'</literal> will produce the value of <literal>var</literal> quoted and properly escaped as a literal string, while <literal>:\"var\"</literal> will produce its value quoted and escaped as an identifier."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3379(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3379(para) 
 msgid "Ignore a leading UTF-8-encoded Unicode byte-order marker in script files read by <application>psql</application> (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3384(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3384(para) 
 msgid "This is enabled when the client encoding is <acronym>UTF-8</acronym>. It improves compatibility with certain editors, mostly on Windows, that insist on inserting such markers."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3392(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3392(para) 
 msgid "Fix <command>psql --file -</command> to properly honor <link linkend=\"r1-app-psql-3\"><option>--single-transaction</option></link> (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3400(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3400(para) 
 msgid "Avoid overwriting of <application>psql</application>'s command-line history when two <application>psql</application> sessions are run concurrently (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3407(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3407(para) 
 msgid "Improve <application>psql</application>'s tab completion support (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3414(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3414(para) 
 msgid "Show <literal>\\timing</literal> output when it is enabled, regardless of <quote>quiet</quote> mode (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3423(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3423(title) 
 msgid "<application>psql</application> Display"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3428(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3428(para) 
 msgid "Improve display of wrapped columns in <application>psql</application> (Roger Leigh)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3433(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3433(para) 
 msgid "This behavior is now the default. The previous formatting is available by using <command>\\pset linestyle old-ascii</command>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3441(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3441(para) 
 msgid "Allow <application>psql</application> to use fancy Unicode line-drawing characters via <command>\\pset linestyle unicode</command> (Roger Leigh)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3452(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3452(title) 
 msgid "<application>psql</application><link linkend=\"app-psql-meta-commands\"><command>\\d</command></link> Commands"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3459(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3459(para) 
 msgid "Make <command>\\d</command> show child tables that inherit from the specified parent (Damien Clochard)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3464(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3464(para) 
 msgid "<command>\\d</command> shows only the number of child tables, while <command>\\d+</command> shows the names of all child tables."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3471(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3471(para) 
 msgid "Show definitions of index columns in <command>\\d index_name</command> (Khee Chin)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3476(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3476(para) 
 msgid "The definition is useful for expression indexes."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3482(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3482(para) 
 msgid "Show a view's defining query only in <command>\\d+</command>, not in <command>\\d</command> (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3487(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3487(para) 
 msgid "Always including the query was deemed overly verbose."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3498(application) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3498(application) 
 msgid "pg_dump"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3503(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3503(para) 
 msgid "Make <application>pg_dump</application>/<application>pg_restore</application><link linkend=\"pg-dump-options\"><option>--clean</option></link> also remove large objects (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3511(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3511(para) 
 msgid "Fix <application>pg_dump</application> to properly dump large objects when <literal>standard_conforming_strings</literal> is enabled (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3516(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3516(para) 
 msgid "The previous coding could fail when dumping to an archive file and then generating script output from <application>pg_restore</application>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3523(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3523(para) 
 msgid "<application>pg_restore</application> now emits large-object data in hex format when generating script output (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3528(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3528(para) 
 msgid "This could cause compatibility problems if the script is then loaded into a pre-9.0 server. To work around that, restore directly to the server, instead."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3536(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3536(para) 
 msgid "Allow <application>pg_dump</application> to dump comments attached to columns of composite types (Taro Minowa (Higepon))"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3543(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3543(para) 
 msgid "Make <application>pg_dump</application><link linkend=\"pg-dump-options\"><option>--verbose</option></link> output the <application>pg_dump</application> and server versions in text output mode (Jim Cox, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3550(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3550(para) 
 msgid "These were already provided in custom output mode."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3556(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3556(para) 
 msgid "<application>pg_restore</application> now complains if any command-line arguments remain after the switches and optional file name (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3561(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3561(para) 
 msgid "Previously, it silently ignored any such arguments."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3572(application) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3572(application) 
 msgid "pg_ctl"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3577(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3577(para) 
 msgid "Allow <application>pg_ctl</application> to be used safely to start the <application>postmaster</application> during a system reboot (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3582(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3582(para) 
 msgid "Previously, <application>pg_ctl</application>'s parent process could have been mistakenly identified as a running <application>postmaster</application> based on a stale <application>postmaster</application> lock file, resulting in a transient failure to start the database."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3591(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3591(para) 
 msgid "Give <application>pg_ctl</application> the ability to initialize the database (by invoking <application>initdb</application>) (Zdenek Kotala)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3604(application) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3604(application) 
 msgid "Development Tools"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3607(application) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3607(application) 
 msgid "libpq"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3612(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3612(para) 
 msgid "Add new <application>libpq</application> functions <link linkend=\"libpq-connect\"><function>PQconnectdbParams()</function></link> and <function>PQconnectStartParams()</function> (Guillaume Lelarge)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3620(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3620(para) 
 msgid "These functions are similar to <function>PQconnectdb()</function> and <function>PQconnectStart()</function> except that they accept a null-terminated array of connection options, rather than requiring all options to be provided in a single string."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3629(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3629(para) 
 msgid "Add <application>libpq</application> functions <link linkend=\"libpq-exec-escape-string\"><function>PQescapeLiteral()</function></link> and <function>PQescapeIdentifier()</function> (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3635(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3635(para) 
 msgid "These functions return appropriately quoted and escaped SQL string literals and identifiers. The caller is not required to pre-allocate the string result, as is required by <function>PQescapeStringConn()</function>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3643(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3643(para) 
 msgid "Add support for a per-user service file (<link linkend=\"libpq-pgservice\"><filename>.pg_service.conf</filename></link>), which is checked before the site-wide service file (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3652(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3652(para) 
 msgid "Properly report an error if the specified <application>libpq</application> service cannot be found (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3659(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3659(para) 
 msgid "Add <link linkend=\"libpq-keepalives\">TCP keepalive settings</link> in libpq (Tollef Fog Heen, Fujii Masao, Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3664(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3664(para) 
 msgid "Keepalive settings were already supported on the server end of TCP connections."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3671(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3671(para) 
 msgid "Avoid extra system calls to block and unblock <literal>SIGPIPE</literal> in <application>libpq</application>, on platforms that offer alternative methods (Jeremy Kerr)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3679(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3679(para) 
 msgid "When a <link linkend=\"libpq-pgpass\"><filename>.pgpass</filename></link>-supplied password fails, mention where the password came from in the error message (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3687(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3687(para) 
 msgid "Load all SSL certificates given in the client certificate file (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3692(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3692(para) 
 msgid "This improves support for indirectly-signed SSL certificates."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3702(application) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3702(application) 
 msgid "ecpg"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3707(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3707(para) 
 msgid "Add <link linkend=\"ecpg-descriptors\"><acronym>SQLDA</acronym></link> (SQL Descriptor Area) support to <application>ecpg</application> (Boszormenyi Zoltan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3715(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3715(para) 
 msgid "Add the <link linkend=\"ecpg-descriptors\"><command>DESCRIBE</command> [ <literal>OUTPUT</literal> ]</link> statement to <application>ecpg</application> (Boszormenyi Zoltan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3723(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3723(para) 
 msgid "Add an <link linkend=\"ecpg-library\">ECPGtransactionStatus</link> function to return the current transaction status (Bernd Helmle)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3730(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3730(para) 
 msgid "Add the <literal>string</literal> data type in <application>ecpg</application> Informix-compatibility mode (Boszormenyi Zoltan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3737(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3737(para) 
 msgid "Allow <application>ecpg</application> to use <literal>new</literal> and <literal>old</literal> variable names without restriction (Michael Meskes)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3744(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3744(para) 
 msgid "Allow <application>ecpg</application> to use variable names in <function>free()</function> (Michael Meskes)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3751(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3751(para) 
 msgid "Make <function>ecpg_dynamic_type()</function> return zero for non-SQL3 data types (Michael Meskes)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3756(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3756(para) 
 msgid "Previously it returned the negative of the data type OID. This could be confused with valid type OIDs, however."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3763(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3763(para) 
 msgid "Support <type>long long</type> types on platforms that already have 64-bit <type>long</type> (Michael Meskes)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3772(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3772(title) 
 msgid "<application>ecpg</application> Cursors"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3777(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3777(para) 
 msgid "Add out-of-scope cursor support in <application>ecpg</application>'s native mode (Boszormenyi Zoltan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3782(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3782(para) 
 msgid "This allows <command>DECLARE</command> to use variables that are not in scope when <command>OPEN</command> is called. This facility already existed in <application>ecpg</application>'s Informix-compatibility mode."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3790(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3790(para) 
 msgid "Allow dynamic cursor names in <application>ecpg</application> (Boszormenyi Zoltan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3796(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3796(para) 
 msgid "Allow <application>ecpg</application> to use noise words <literal>FROM</literal> and <literal>IN</literal> in <command>FETCH</command> and <command>MOVE</command> (Boszormenyi Zoltan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3812(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3812(title) 
 msgid "Build Options"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3817(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3817(para) 
 msgid "Enable client thread safety by default (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3821(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3821(para) 
 msgid "The thread-safety option can be disabled with <link linkend=\"configure\"><literal>configure</literal></link><option>--disable-thread-safety</option>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3829(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3829(para) 
 msgid "Add support for controlling the Linux out-of-memory killer (Alex Hunsaker, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3834(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3834(para) 
 msgid "Now that <filename>/proc/self/oom_adj</filename> allows disabling of the <productname>Linux</productname> out-of-memory (<acronym>OOM</acronym>) killer, it's recommendable to disable OOM kills for the postmaster. It may then be desirable to re-enable OOM kills for the postmaster's child processes. The new compile-time option <link linkend=\"linux-memory-overcommit\"><literal>LINUX_OOM_ADJ</literal></link> allows the killer to be reactivated for child processes."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3848(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3848(title) 
 msgid "Makefiles"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3853(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3853(para) 
 msgid "New <filename>Makefile</filename> targets <link linkend=\"build\"><literal>world</literal></link>, <literal>install-world</literal>, and <literal>installcheck-world</literal> (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3860(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3860(para) 
 msgid "These are similar to the existing <literal>all</literal>, <literal>install</literal>, and <literal>installcheck</literal> targets, but they also build the <acronym>HTML</acronym> documentation, build and test <filename>contrib</filename>, and test server-side languages and <application>ecpg</application>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3869(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3869(para) 
 msgid "Add data and documentation installation location control to <acronym>PGXS</acronym> Makefiles (Mark Cave-Ayland)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3876(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3876(para) 
 msgid "Add Makefile rules to build the <productname>PostgreSQL</productname> documentation as a single <acronym>HTML</acronym> file or as a single plain-text file (Peter Eisentraut, Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3888(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3888(title) 
 msgid "Windows"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3893(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3893(para) 
 msgid "Support compiling on <link linkend=\"install-windows\">64-bit <productname>Windows</productname></link> and running in 64-bit mode (Tsutomu Yamada, Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3900(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3900(para) 
 msgid "This allows for large shared memory sizes on <productname>Windows</productname>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3906(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3906(para) 
 msgid "Support server builds using <link linkend=\"install-windows-full\"><productname>Visual Studio 2008</productname></link> (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3920(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3920(title) 
 msgid "Source Code"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3925(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3925(para) 
 msgid "Distribute prebuilt documentation in a subdirectory tree, rather than as tar archive files inside the distribution tarball (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3931(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3931(para) 
 msgid "For example, the prebuilt <acronym>HTML</acronym> documentation is now in <filename>doc/src/sgml/html/</filename>; the manual pages are packaged similarly."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3939(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3939(para) 
 msgid "Make the server's lexer reentrant (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3943(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3943(para) 
 msgid "This was needed for use of the lexer by PL/pgSQL."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3949(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3949(para) 
 msgid "Improve speed of memory allocation (Tom Lane, Greg Stark)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3955(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3955(para) 
 msgid "User-defined constraint triggers now have entries in <structname>pg_constraint</structname> as well as <structname>pg_trigger</structname> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3961(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3961(para) 
 msgid "Because of this change, <structname>pg_constraint</structname>.<structfield>pgconstrname</structfield> is now redundant and has been removed."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3969(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3969(para) 
 msgid "Add system catalog columns <structname>pg_constraint</structname>.<structfield>conindid</structfield> and <structname>pg_trigger</structname>.<structfield>tgconstrindid</structfield> to better document the use of indexes for constraint enforcement (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3979(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3979(para) 
 msgid "Allow multiple conditions to be communicated to backends using a single operating system signal (Fujii Masao)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3984(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3984(para) 
 msgid "This allows new features to be added without a platform-specific constraint on the number of signal conditions."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3991(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3991(para) 
 msgid "Improve source code test coverage, including <filename>contrib</filename>, PL/Python, and PL/Perl (Peter Eisentraut, Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:3998(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:3998(para) 
 msgid "Remove the use of flat files for system table bootstrapping (Tom Lane, Alvaro Herrera)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4003(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4003(para) 
 msgid "This improves performance when using many roles or databases, and eliminates some possible failure conditions."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4010(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4010(para) 
 msgid "Automatically generate the initial contents of <structname>pg_attribute</structname> for <quote>bootstrapped</quote> catalogs (John Naylor)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4016(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4016(para) 
 msgid "This greatly simplifies changes to these catalogs."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4022(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4022(para) 
 msgid "Split the processing of <command>INSERT</command>/<command>UPDATE</command>/<command>DELETE</command> operations out of <filename>execMain.c</filename> (Marko Tiikkaja)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4028(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4028(para) 
 msgid "Updates are now executed in a separate ModifyTable node. This change is necessary infrastructure for future improvements."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4035(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4035(para) 
 msgid "Simplify translation of <application>psql</application>'s SQL help text (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4042(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4042(para) 
 msgid "Reduce the lengths of some file names so that all file paths in the distribution tarball are less than 100 characters (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4047(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4047(para) 
 msgid "Some decompression programs have problems with longer file paths."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4053(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4053(para) 
 msgid "Add a new <link linkend=\"errcodes-table\"><literal>ERRCODE_INVALID_PASSWORD</literal></link><literal>SQLSTATE</literal> error code (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4061(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4061(para) 
 msgid "With authors' permissions, remove the few remaining personal source code copyright notices (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4066(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4066(para) 
 msgid "The personal copyright notices were insignificant but the community occasionally had to answer questions about them."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4073(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4073(para) 
 msgid "Add new documentation <link linkend=\"non-durability\">section</link> about running <productname>PostgreSQL</productname> in non-durable mode to improve performance (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4081(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4081(para) 
 msgid "Restructure the <acronym>HTML</acronym> documentation <filename>Makefile</filename> rules to make their dependency checks work correctly, avoiding unnecessary rebuilds (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4089(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4089(para) 
 msgid "Use <productname>DocBook</productname><acronym>XSL</acronym> stylesheets for man page building, rather than <productname>Docbook2X</productname> (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4094(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4094(para) 
 msgid "This changes the set of tools needed to build the man pages."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4100(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4100(para) 
 msgid "Improve PL/Perl code structure (Tim Bunce)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4106(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4106(para) 
 msgid "Improve error context reports in PL/Perl (Alexey Klyukin)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4114(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4114(title) 
 msgid "New Build Requirements"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4116(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4116(para) 
 msgid "Note that these requirements do not apply when building from a distribution tarball, since tarballs include the files that these programs are used to build."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4124(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4124(para) 
 msgid "Require <application>Autoconf</application> 2.63 to build <application>configure</application> (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4131(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4131(para) 
 msgid "Require <application>Flex</application> 2.5.31 or later to build from a <acronym>CVS</acronym> checkout (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4138(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4138(para) 
 msgid "Require <application>Perl</application> version 5.8 or later to build from a <acronym>CVS</acronym> checkout (John Naylor, Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4149(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4149(title) 
 msgid "Portability"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4154(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4154(para) 
 msgid "Use a more modern <acronym>API</acronym> for <application>Bonjour</application> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4158(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4158(para) 
 msgid "Bonjour support now requires <productname>OS X</productname> 10.3 or later. The older API has been deprecated by Apple."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4165(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4165(para) 
 msgid "Add spinlock support for the <productname>SuperH</productname> architecture (Nobuhiro Iwamatsu)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4172(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4172(para) 
 msgid "Allow non-<application>GCC</application> compilers to use inline functions if they support them (Kurt Harriman)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4186(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4186(para) 
 msgid "Restructure use of <literal>LDFLAGS</literal> to be more consistent across platforms (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4191(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4191(para) 
 msgid "<literal>LDFLAGS</literal> is now used for linking both executables and shared libraries, and we add on <literal>LDFLAGS_EX</literal> when linking executables, or <literal>LDFLAGS_SL</literal> when linking shared libraries."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4203(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4203(title) 
 msgid "Server Programming"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4208(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4208(para) 
 msgid "Make backend header files safe to include in <productname>C++</productname> (Kurt Harriman, Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4213(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4213(para) 
 msgid "These changes remove keyword conflicts that previously made <productname>C++</productname> usage difficult in backend code. However, there are still other complexities when using <productname>C++</productname> for backend functions. <literal>extern \"C\" { }</literal> is still necessary in appropriate places, and memory management and error handling are still problematic."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4224(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4224(para) 
 msgid "Add <link linkend=\"xaggr\"><function>AggCheckCallContext()</function></link> for use in detecting if a <productname>C</productname> function is being called as an aggregate (Hitoshi Harada)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4233(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4233(para) 
 msgid "Change calling convention for <function>SearchSysCache()</function> and related functions to avoid hard-wiring the maximum number of cache keys (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4239(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4239(para) 
 msgid "Existing calls will still work for the moment, but can be expected to break in 9.1 or later if not converted to the new style."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4246(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4246(para) 
 msgid "Require calls of <function>fastgetattr()</function> and <function>heap_getattr()</function> backend macros to provide a non-NULL fourth argument (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4254(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4254(para) 
 msgid "Custom typanalyze functions should no longer rely on <structname>VacAttrStats</structname>.<structfield>attr</structfield> to determine the type of data they will be passed (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4260(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4260(para) 
 msgid "This was changed to allow collection of statistics on index columns for which the storage type is different from the underlying column data type. There are new fields that tell the actual datatype being analyzed."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4273(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4273(title) 
 msgid "Server Hooks"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4278(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4278(para) 
 msgid "Add parser hooks for processing ColumnRef and ParamRef nodes (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4285(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4285(para) 
 msgid "Add a ProcessUtility hook so loadable modules can control utility commands (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4296(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4296(title) 
 msgid "Binary Upgrade Support"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4301(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4301(para) 
 msgid "Add <link linkend=\"pgupgrade\"><filename>contrib/pg_upgrade</filename></link> to support in-place upgrades (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4306(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4306(para) 
 msgid "This avoids the requirement of dumping/reloading the database when upgrading to a new major release of PostgreSQL, thus reducing downtime by orders of magnitude. It supports upgrades to 9.0 from PostgreSQL 8.3 and 8.4."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4315(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4315(para) 
 msgid "Add support for preserving relation <link linkend=\"catalog-pg-class\"><structname>relfilenode</structname></link> values during binary upgrades (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4323(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4323(para) 
 msgid "Add support for preserving <structname>pg_type</structname> and <structname>pg_enum</structname> OIDs during binary upgrades (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4331(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4331(para) 
 msgid "Move data files within tablespaces into <productname>PostgreSQL</productname>-version-specific subdirectories (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4337(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4337(para) 
 msgid "This simplifies binary upgrades."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4349(title) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4349(title) 
 msgid "Contrib"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4354(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4354(para) 
 msgid "Add multithreading option (<option>-j</option>) to <link linkend=\"pgbench\"><filename>contrib/pgbench</filename></link> (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4360(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4360(para) 
 msgid "This allows multiple <acronym>CPU</acronym>s to be used by pgbench, reducing the risk of pgbench itself becoming the test bottleneck."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4367(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4367(para) 
 msgid "Add <command>\\shell</command> and <command>\\setshell</command> meta commands to <link linkend=\"pgbench\"><filename>contrib/pgbench</filename></link> (Michael Paquier)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4376(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4376(para) 
 msgid "New features for <link linkend=\"dict-xsyn\"><filename>contrib/dict_xsyn</filename></link> (Sergey Karpov)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4382(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4382(para) 
 msgid "The new options are <literal>matchorig</literal>, <literal>matchsynonyms</literal>, and <literal>keepsynonyms</literal>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4389(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4389(para) 
 msgid "Add full text dictionary <link linkend=\"unaccent\"><filename>contrib/unaccent</filename></link> (Teodor Sigaev)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4395(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4395(para) 
 msgid "This filtering dictionary removes accents from letters, which makes full-text searches over multiple languages much easier."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4402(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4402(para) 
 msgid "Add <link linkend=\"contrib-dblink-get-notify\"><function>dblink_get_notify()</function></link> to <filename>contrib/dblink</filename> (Marcus Kempe)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4408(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4408(para) 
 msgid "This allows asynchronous notifications in <productname>dblink</productname>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4414(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4414(para) 
 msgid "Improve <filename>contrib/dblink</filename>'s handling of dropped columns (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4419(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4419(para) 
 msgid "This affects <link linkend=\"contrib-dblink-build-sql-insert\"><function>dblink_build_sql_insert()</function></link> and related functions. These functions now number columns according to logical not physical column numbers."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4428(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4428(para) 
 msgid "Greatly increase <link linkend=\"hstore\"><filename>contrib/hstore</filename></link>'s data length limit, and add B-tree and hash support so <literal>GROUP BY</literal> and <literal>DISTINCT</literal> operations are possible on <type>hstore</type> columns (Andrew Gierth)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4436(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4436(para) 
 msgid "New functions and operators were also added. These improvements make <type>hstore</type> a full-function key-value store embedded in <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4444(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4444(para) 
 msgid "Add <link linkend=\"passwordcheck\"><filename>contrib/passwordcheck</filename></link> to support site-specific password strength policies (Laurenz Albe)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4451(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4451(para) 
 msgid "The source code of this module should be modified to implement site-specific password policies."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4458(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4458(para) 
 msgid "Add <link linkend=\"pgarchivecleanup\"><filename>contrib/pg_archivecleanup</filename></link> tool (Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4464(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4464(para) 
 msgid "This is designed to be used in the <literal>archive_cleanup_command</literal> server parameter, to remove no-longer-needed archive files."
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4472(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4472(para) 
 msgid "Add query text to <link linkend=\"auto-explain\"><filename>contrib/auto_explain</filename></link> output (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4480(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4480(para) 
 msgid "Add buffer access counters to <link linkend=\"pgstatstatements\"><filename>contrib/pg_stat_statements</filename></link> (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/release-9.0.xml:4488(para) 
+#: /tmp/cicero-RtQO/release-9.0.xml:4488(para) 
 msgid "Update <link linkend=\"server-start\"><filename>contrib/start-scripts/linux</filename></link> to use <filename>/proc/self/oom_adj</filename> to disable the <link linkend=\"linux-memory-overcommit\"><productname>Linux</productname> out-of-memory</link> (<acronym>OOM</acronym>) killer (Alex Hunsaker, Tom Lane)"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-UbWe/release-9.0.xml:0(None) 
+#: /tmp/cicero-RtQO/release-9.0.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

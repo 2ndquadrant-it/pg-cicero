@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:46+0200\n"
+"POT-Creation-Date: 2011-08-23 09:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,403 +9,403 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:10(refentrytitle) /tmp/cicero-UbWe/ref/create_index.xml:16(refname) /tmp/cicero-UbWe/ref/create_index.xml:21(primary) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:10(refentrytitle) /tmp/cicero-RtQO/ref/create_index.xml:16(refname) /tmp/cicero-RtQO/ref/create_index.xml:21(primary) 
 msgid "CREATE INDEX"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:11(manvolnum) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:12(refmiscinfo) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:17(refpurpose) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:17(refpurpose) 
 msgid "define a new index"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:26(replaceable) /tmp/cicero-UbWe/ref/create_index.xml:132(replaceable) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:26(replaceable) /tmp/cicero-RtQO/ref/create_index.xml:132(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:26(replaceable) /tmp/cicero-UbWe/ref/create_index.xml:145(replaceable) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:26(replaceable) /tmp/cicero-RtQO/ref/create_index.xml:145(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:26(replaceable) /tmp/cicero-UbWe/ref/create_index.xml:154(replaceable) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:26(replaceable) /tmp/cicero-RtQO/ref/create_index.xml:154(replaceable) 
 msgid "method"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:27(replaceable) /tmp/cicero-UbWe/ref/create_index.xml:166(replaceable) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:27(replaceable) /tmp/cicero-RtQO/ref/create_index.xml:166(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:27(replaceable) /tmp/cicero-UbWe/ref/create_index.xml:175(replaceable) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:27(replaceable) /tmp/cicero-RtQO/ref/create_index.xml:175(replaceable) 
 msgid "expression"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:27(replaceable) /tmp/cicero-UbWe/ref/create_index.xml:187(replaceable) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:27(replaceable) /tmp/cicero-RtQO/ref/create_index.xml:187(replaceable) 
 msgid "collation"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:27(replaceable) /tmp/cicero-UbWe/ref/create_index.xml:200(replaceable) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:27(replaceable) /tmp/cicero-RtQO/ref/create_index.xml:200(replaceable) 
 msgid "opclass"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:28(replaceable) /tmp/cicero-UbWe/ref/create_index.xml:247(replaceable) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:28(replaceable) /tmp/cicero-RtQO/ref/create_index.xml:247(replaceable) 
 msgid "storage_parameter"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:28(replaceable) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:28(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:29(replaceable) /tmp/cicero-UbWe/ref/create_index.xml:258(replaceable) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:29(replaceable) /tmp/cicero-RtQO/ref/create_index.xml:258(replaceable) 
 msgid "tablespace"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:30(replaceable) /tmp/cicero-UbWe/ref/create_index.xml:270(replaceable) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:30(replaceable) /tmp/cicero-RtQO/ref/create_index.xml:270(replaceable) 
 msgid "predicate"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:25(synopsis) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:25(synopsis) 
 #, no-wrap
 msgid "\nCREATE [ UNIQUE ] INDEX [ CONCURRENTLY ] [ <placeholder-1/> ] ON <placeholder-2/> [ USING <placeholder-3/> ]\n    ( { <placeholder-4/> | ( <placeholder-5/> ) } [ COLLATE <placeholder-6/> ] [ <placeholder-7/> ] [ ASC | DESC ] [ NULLS { FIRST | LAST } ] [, ...] )\n    [ WITH ( <placeholder-8/> = <placeholder-9/> [, ... ] ) ]\n    [ TABLESPACE <placeholder-10/> ]\n    [ WHERE <placeholder-11/> ]\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:35(title) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:35(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:37(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:37(para) 
 msgid "<command>CREATE INDEX</command> constructs an index on the specified column(s) of the specified table. Indexes are primarily used to enhance database performance (though inappropriate use can result in slower performance)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:44(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:44(para) 
 msgid "The key field(s) for the index are specified as column names, or alternatively as expressions written in parentheses. Multiple fields can be specified if the index method supports multicolumn indexes."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:51(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:51(para) 
 msgid "An index field can be an expression computed from the values of one or more columns of the table row. This feature can be used to obtain fast access to data based on some transformation of the basic data. For example, an index computed on <literal>upper(col)</literal> would allow the clause <literal>WHERE upper(col) = 'JIM'</literal> to use an index."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:60(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:60(para) 
 msgid "<productname>PostgreSQL</productname> provides the index methods B-tree, hash, GiST, and GIN. Users can also define their own index methods, but that is fairly complicated."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:66(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:66(para) 
 msgid "When the <literal>WHERE</literal> clause is present, a <firstterm>partial index</firstterm> is created. A partial index is an index that contains entries for only a portion of a table, usually a portion that is more useful for indexing than the rest of the table. For example, if you have a table that contains both billed and unbilled orders where the unbilled orders take up a small fraction of the total table and yet that is an often used section, you can improve performance by creating an index on just that portion. Another possible application is to use <literal>WHERE</literal> with <literal>UNIQUE</literal> to enforce uniqueness over a subset of a table. See <xref linkend=\"indexes-partial\"/> for more discussion."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:80(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:80(para) 
 msgid "The expression used in the <literal>WHERE</literal> clause can refer only to columns of the underlying table, but it can use all columns, not just the ones being indexed. Presently, subqueries and aggregate expressions are also forbidden in <literal>WHERE</literal>. The same restrictions apply to index fields that are expressions."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:88(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:88(para) 
 msgid "All functions and operators used in an index definition must be <quote>immutable</quote>, that is, their results must depend only on their arguments and never on any outside influence (such as the contents of another table or the current time). This restriction ensures that the behavior of the index is well-defined. To use a user-defined function in an index expression or <literal>WHERE</literal> clause, remember to mark the function immutable when you create it."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:100(title) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:100(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:104(literal) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:104(literal) 
 msgid "UNIQUE"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:106(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:106(para) 
 msgid "Causes the system to check for duplicate values in the table when the index is created (if data already exist) and each time data is added. Attempts to insert or update data which would result in duplicate entries will generate an error."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:117(literal) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:117(literal) 
 msgid "CONCURRENTLY"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:119(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:119(para) 
 msgid "When this option is used, <productname>PostgreSQL</productname> will build the index without taking any locks that prevent concurrent inserts, updates, or deletes on the table; whereas a standard index build locks out writes (but not reads) on the table until it's done. There are several caveats to be aware of when using this option — see <xref linkend=\"sql-createindex-concurrently\" endterm=\"SQL-CREATEINDEX-CONCURRENTLY-title\"/>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:134(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:134(para) 
 msgid "The name of the index to be created. No schema name can be included here; the index is always created in the same schema as its parent table. If the name is omitted, <productname>PostgreSQL</productname> chooses a suitable name based on the parent table's name and the indexed column name(s)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:147(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:147(para) 
 msgid "The name (possibly schema-qualified) of the table to be indexed."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:156(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:156(para) 
 msgid "The name of the index method to be used. Choices are <literal>btree</literal>, <literal>hash</literal>, <literal>gist</literal>, and <literal>gin</literal>. The default method is <literal>btree</literal>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:168(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:168(para) 
 msgid "The name of a column of the table."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:177(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:177(para) 
 msgid "An expression based on one or more columns of the table. The expression usually must be written with surrounding parentheses, as shown in the syntax. However, the parentheses can be omitted if the expression has the form of a function call."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:189(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:189(para) 
 msgid "The name of the collation to use for the index. By default, the index uses the collation declared for the column to be indexed or the result collation of the expression to be indexed. Indexes with non-default collations can be useful for queries that involve expressions using non-default collations."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:202(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:202(para) 
 msgid "The name of an operator class. See below for details."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:209(literal) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:209(literal) 
 msgid "ASC"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:211(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:211(para) 
 msgid "Specifies ascending sort order (which is the default)."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:218(literal) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:218(literal) 
 msgid "DESC"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:220(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:220(para) 
 msgid "Specifies descending sort order."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:227(literal) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:227(literal) 
 msgid "NULLS FIRST"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:229(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:229(para) 
 msgid "Specifies that nulls sort before non-nulls. This is the default when <literal>DESC</literal> is specified."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:237(literal) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:237(literal) 
 msgid "NULLS LAST"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:239(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:239(para) 
 msgid "Specifies that nulls sort after non-nulls. This is the default when <literal>DESC</literal> is not specified."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:249(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:249(para) 
 msgid "The name of an index-method-specific storage parameter. See <xref linkend=\"sql-createindex-storage-parameters\" endterm=\"sql-createindex-storage-parameters-title\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:260(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:260(para) 
 msgid "The tablespace in which to create the index. If not specified, <xref linkend=\"guc-default-tablespace\"/> is consulted, or <xref linkend=\"guc-temp-tablespaces\"/> for indexes on temporary tables."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:272(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:272(para) 
 msgid "The constraint expression for a partial index."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:281(title) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:281(title) 
 msgid "Index Storage Parameters"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:283(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:283(para) 
 msgid "The optional <literal>WITH</literal> clause specifies <firstterm>storage parameters</firstterm> for the index. Each index method has its own set of allowed storage parameters. The B-tree, hash and GiST index methods all accept a single parameter:"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:293(literal) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:293(literal) 
 msgid "FILLFACTOR"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:295(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:295(para) 
 msgid "The fillfactor for an index is a percentage that determines how full the index method will try to pack index pages. For B-trees, leaf pages are filled to this percentage during initial index build, and also when extending the index at the right (adding new largest key values). If pages subsequently become completely full, they will be split, leading to gradual degradation in the index's efficiency. B-trees use a default fillfactor of 90, but any integer value from 10 to 100 can be selected. If the table is static then fillfactor 100 is best to minimize the index's physical size, but for heavily updated tables a smaller fillfactor is better to minimize the need for page splits. The other index methods use fillfactor in different but roughly analogous ways; the default fillfactor varies between methods."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:315(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:315(para) 
 msgid "GIN indexes accept a different parameter:"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:322(literal) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:322(literal) 
 msgid "FASTUPDATE"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:324(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:324(para) 
 msgid "This setting controls usage of the fast update technique described in <xref linkend=\"gin-fast-update\"/>. It is a Boolean parameter: <literal>ON</literal> enables fast update, <literal>OFF</literal> disables it. (Alternative spellings of <literal>ON</literal> and <literal>OFF</literal> are allowed as described in <xref linkend=\"config-setting\"/>.) The default is <literal>ON</literal>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:334(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:334(para) 
 msgid "Turning <literal>FASTUPDATE</literal> off via <command>ALTER INDEX</command> prevents future insertions from going into the list of pending index entries, but does not in itself flush previous entries. You might want to <command>VACUUM</command> the table afterward to ensure the pending list is emptied."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:349(title) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:349(title) 
 msgid "Building Indexes Concurrently"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:352(primary) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:352(primary) 
 msgid "index"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:353(secondary) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:353(secondary) 
 msgid "building concurrently"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:356(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:356(para) 
 msgid "Creating an index can interfere with regular operation of a database. Normally <productname>PostgreSQL</productname> locks the table to be indexed against writes and performs the entire index build with a single scan of the table. Other transactions can still read the table, but if they try to insert, update, or delete rows in the table they will block until the index build is finished. This could have a severe effect if the system is a live production database. Very large tables can take many hours to be indexed, and even for smaller tables, an index build can lock out writers for periods that are unacceptably long for a production system."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:368(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:368(para) 
 msgid "<productname>PostgreSQL</productname> supports building indexes without locking out writes. This method is invoked by specifying the <literal>CONCURRENTLY</literal> option of <command>CREATE INDEX</command>. When this option is used, <productname>PostgreSQL</productname> must perform two scans of the table, and in addition it must wait for all existing transactions that could potentially use the index to terminate. Thus this method requires more total work than a standard index build and takes significantly longer to complete. However, since it allows normal operations to continue while the index is built, this method is useful for adding new indexes in a production environment. Of course, the extra CPU and I/O load imposed by the index creation might slow other operations."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:383(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:383(para) 
 msgid "In a concurrent index build, the index is actually entered into the system catalogs in one transaction, then the two table scans occur in a second and third transaction. All active transactions at the time the second table scan starts, not just ones that already involve the table, have the potential to block the concurrent index creation until they finish. When checking for transactions that could still use the original index, concurrent index creation advances through potentially interfering older transactions one at a time, obtaining shared locks on their virtual transaction identifiers to wait for them to complete."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:403(programlisting) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:403(programlisting) 
 #, no-wrap
 msgid "\npostgres=# \\d tab\n       Table \"public.tab\"\n Column |  Type   | Modifiers \n--------+---------+-----------\n col    | integer | \nIndexes:\n    \"idx\" btree (col) INVALID\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:395(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:395(para) 
 msgid "If a problem arises while scanning the table, such as a uniqueness violation in a unique index, the <command>CREATE INDEX</command> command will fail but leave behind an <quote>invalid</quote> index. This index will be ignored for querying purposes because it might be incomplete; however it will still consume update overhead. The <application>psql</application><command>\\d</command> command will report such an index as <literal>INVALID</literal>: <placeholder-1/> The recommended recovery method in such cases is to drop the index and try again to perform <command>CREATE INDEX CONCURRENTLY</command>. (Another possibility is to rebuild the index with <command>REINDEX</command>. However, since <command>REINDEX</command> does not support concurrent builds, this option is unlikely to seem attractive.)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:421(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:421(para) 
 msgid "Another caveat when building a unique index concurrently is that the uniqueness constraint is already being enforced against other transactions when the second table scan begins. This means that constraint violations could be reported in other queries prior to the index becoming available for use, or even in cases where the index build eventually fails. Also, if a failure does occur in the second scan, the <quote>invalid</quote> index continues to enforce its uniqueness constraint afterwards."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:431(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:431(para) 
 msgid "Concurrent builds of expression indexes and partial indexes are supported. Errors occurring in the evaluation of these expressions could cause behavior similar to that described above for unique constraint violations."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:437(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:437(para) 
 msgid "Regular index builds permit other regular index builds on the same table to occur in parallel, but only one concurrent index build can occur on a table at a time. In both cases, no other types of schema modification on the table are allowed meanwhile. Another difference is that a regular <command>CREATE INDEX</command> command can be performed within a transaction block, but <command>CREATE INDEX CONCURRENTLY</command> cannot."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:449(title) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:449(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:451(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:451(para) 
 msgid "See <xref linkend=\"indexes\"/> for information about when indexes can be used, when they are not used, and in which particular situations they can be useful."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:457(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:457(para) 
 msgid "Currently, only the B-tree, GiST and GIN index methods support multicolumn indexes. Up to 32 fields can be specified by default. (This limit can be altered when building <productname>PostgreSQL</productname>.) Only B-tree currently supports unique indexes."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:465(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:465(para) 
 msgid "An <firstterm>operator class</firstterm> can be specified for each column of an index. The operator class identifies the operators to be used by the index for that column. For example, a B-tree index on four-byte integers would use the <literal>int4_ops</literal> class; this operator class includes comparison functions for four-byte integers. In practice the default operator class for the column's data type is usually sufficient. The main point of having operator classes is that for some data types, there could be more than one meaningful ordering. For example, we might want to sort a complex-number data type either by absolute value or by real part. We could do this by defining two operator classes for the data type and then selecting the proper class when making an index. More information about operator classes is in <xref linkend=\"indexes-opclass\"/> and in <xref linkend=\"xindex\"/>."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:482(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:482(para) 
 msgid "For index methods that support ordered scans (currently, only B-tree), the optional clauses <literal>ASC</literal>, <literal>DESC</literal>, <literal>NULLS FIRST</literal>, and/or <literal>NULLS LAST</literal> can be specified to modify the sort ordering of the index. Since an ordered index can be scanned either forward or backward, it is not normally useful to create a single-column <literal>DESC</literal> index — that sort ordering is already available with a regular index. The value of these options is that multicolumn indexes can be created that match the sort ordering requested by a mixed-ordering query, such as <literal>SELECT ... ORDER BY x ASC, y DESC</literal>. The <literal>NULLS</literal> options are useful if you need to support <quote>nulls sort low</quote> behavior, rather than the default <quote>nulls sort high</quote>, in queries that depend on indexes to avoid sorting steps."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:497(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:497(para) 
 msgid "For most index methods, the speed of creating an index is dependent on the setting of <xref linkend=\"guc-maintenance-work-mem\"/>. Larger values will reduce the time needed for index creation, so long as you don't make it larger than the amount of memory really available, which would drive the machine into swapping. For hash indexes, the value of <xref linkend=\"guc-effective-cache-size\"/> is also relevant to index creation time: <productname>PostgreSQL</productname> will use one of two different hash index creation methods depending on whether the estimated index size is more or less than <varname>effective_cache_size</varname>. For best results, make sure that this parameter is also set to something reflective of available memory, and be careful that the sum of <varname>maintenance_work_mem</varname> and <varname>effective_cache_size</varname> is less than the machine's RAM less whatever space is needed by other programs."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:514(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:514(para) 
 msgid "Use <xref linkend=\"sql-dropindex\"/> to remove an index."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:519(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:519(para) 
 msgid "Prior releases of <productname>PostgreSQL</productname> also had an R-tree index method. This method has been removed because it had no significant advantages over the GiST method. If <literal>USING rtree</literal> is specified, <command>CREATE INDEX</command> will interpret it as <literal>USING gist</literal>, to simplify conversion of old databases to GiST."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:530(title) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:530(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:535(programlisting) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:535(programlisting) 
 #, no-wrap
 msgid "\nCREATE UNIQUE INDEX title_idx ON films (title);\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:532(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:532(para) 
 msgid "To create a B-tree index on the column <literal>title</literal> in the table <literal>films</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:543(programlisting) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:543(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX ON films ((lower(title)));\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:540(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:540(para) 
 msgid "To create an index on the expression <literal>lower(title)</literal>, allowing efficient case-insensitive searches: <placeholder-1/> (In this example we have chosen to omit the index name, so the system will choose a name, typically <literal>films_lower_idx</literal>.)"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:552(programlisting) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:552(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX title_idx_german ON films (title COLLATE \"de_DE\");\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:550(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:550(para) 
 msgid "To create an index with non-default collation: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:559(programlisting) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:559(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX title_idx_nulls_low ON films (title NULLS FIRST);\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:557(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:557(para) 
 msgid "To create an index with non-default sort ordering of nulls: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:566(programlisting) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:566(programlisting) 
 #, no-wrap
 msgid "\nCREATE UNIQUE INDEX title_idx ON films (title) WITH (fillfactor = 70);\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:564(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:564(para) 
 msgid "To create an index with non-default fill factor: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:573(programlisting) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:573(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX gin_idx ON documents_table USING gin (locations) WITH (fastupdate = off);\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:571(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:571(para) 
 msgid "To create a <acronym>GIN</acronym> index with fast updates disabled: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:582(programlisting) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:582(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX code_idx ON films (code) TABLESPACE indexspace;\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:578(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:578(para) 
 msgid "To create an index on the column <literal>code</literal> in the table <literal>films</literal> and have the index reside in the tablespace <literal>indexspace</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:591(programlisting) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:591(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX pointloc\n    ON points USING gist (box(location,location));\nSELECT * FROM points\n    WHERE box(location,location) &amp;&amp; '(0,0),(1,1)'::box;\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:587(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:587(para) 
 msgid "To create a GiST index on a point attribute so that we can efficiently use box operators on the result of the conversion function: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:601(programlisting) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:601(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX CONCURRENTLY sales_quantity_index ON sales_table (quantity);\n"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:599(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:599(para) 
 msgid "To create an index without locking out writes to the table: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:608(title) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:608(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:610(para) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:610(para) 
 msgid "<command>CREATE INDEX</command> is a <productname>PostgreSQL</productname> language extension. There are no provisions for indexes in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-UbWe/ref/create_index.xml:618(title) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:618(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-UbWe/ref/create_index.xml:0(None) 
+#: /tmp/cicero-RtQO/ref/create_index.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
