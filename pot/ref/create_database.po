@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:59+0200\n"
+"POT-Creation-Date: 2011-08-24 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,204 +9,204 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:10(refentrytitle) /tmp/cicero-RtQO/ref/create_database.xml:16(refname) /tmp/cicero-RtQO/ref/create_database.xml:21(primary) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:10(refentrytitle) /tmp/cicero-EpiG/ref/create_database.xml:16(refname) /tmp/cicero-EpiG/ref/create_database.xml:21(primary) 
 msgid "CREATE DATABASE"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:11(manvolnum) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:12(refmiscinfo) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:17(refpurpose) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:17(refpurpose) 
 msgid "create a new database"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:26(replaceable) /tmp/cicero-RtQO/ref/create_database.xml:78(replaceable) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:26(replaceable) /tmp/cicero-EpiG/ref/create_database.xml:78(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:27(replaceable) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:27(replaceable) 
 msgid "user_name"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:28(replaceable) /tmp/cicero-RtQO/ref/create_database.xml:96(replaceable) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:28(replaceable) /tmp/cicero-EpiG/ref/create_database.xml:96(replaceable) 
 msgid "template"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:29(replaceable) /tmp/cicero-RtQO/ref/create_database.xml:106(replaceable) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:29(replaceable) /tmp/cicero-EpiG/ref/create_database.xml:106(replaceable) 
 msgid "encoding"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:30(replaceable) /tmp/cicero-RtQO/ref/create_database.xml:121(replaceable) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:30(replaceable) /tmp/cicero-EpiG/ref/create_database.xml:121(replaceable) 
 msgid "lc_collate"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:31(replaceable) /tmp/cicero-RtQO/ref/create_database.xml:133(replaceable) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:31(replaceable) /tmp/cicero-EpiG/ref/create_database.xml:133(replaceable) 
 msgid "lc_ctype"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:32(replaceable) /tmp/cicero-RtQO/ref/create_database.xml:144(replaceable) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:32(replaceable) /tmp/cicero-EpiG/ref/create_database.xml:144(replaceable) 
 msgid "tablespace"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:33(replaceable) /tmp/cicero-RtQO/ref/create_database.xml:159(replaceable) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:33(replaceable) /tmp/cicero-EpiG/ref/create_database.xml:159(replaceable) 
 msgid "connlimit"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:25(synopsis) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:25(synopsis) 
 #, no-wrap
 msgid "\nCREATE DATABASE <placeholder-1/>\n    [ [ WITH ] [ OWNER [=] <placeholder-2/> ]\n           [ TEMPLATE [=] <placeholder-3/> ]\n           [ ENCODING [=] <placeholder-4/> ]\n           [ LC_COLLATE [=] <placeholder-5/> ]\n           [ LC_CTYPE [=] <placeholder-6/> ]\n           [ TABLESPACE [=] <placeholder-7/> ]\n           [ CONNECTION LIMIT [=] <placeholder-8/> ] ]\n"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:38(title) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:38(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:40(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:40(para) 
 msgid "<command>CREATE DATABASE</command> creates a new <productname>PostgreSQL</productname> database."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:45(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:45(para) 
 msgid "To create a database, you must be a superuser or have the special <literal>CREATEDB</literal> privilege. See <xref linkend=\"sql-createuser\"/>."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:51(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:51(para) 
 msgid "Normally, the creator becomes the owner of the new database. Superusers can create databases owned by other users, by using the <literal>OWNER</literal> clause. They can even create databases owned by users with no special privileges. Non-superusers with <literal>CREATEDB</literal> privilege can only create databases owned by themselves."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:59(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:59(para) 
 msgid "By default, the new database will be created by cloning the standard system database <literal>template1</literal>. A different template can be specified by writing <literal>TEMPLATE <replaceable class=\"parameter\">name</replaceable></literal>. In particular, by writing <literal>TEMPLATE template0</literal>, you can create a virgin database containing only the standard objects predefined by your version of <productname>PostgreSQL</productname>. This is useful if you wish to avoid copying any installation-local objects that might have been added to <literal>template1</literal>."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:74(title) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:74(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:80(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:80(para) 
 msgid "The name of a database to create."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:86(replaceable) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:86(replaceable) 
 msgid "use_name"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:88(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:88(para) 
 msgid "The name of the database user who will own the new database, or <literal>DEFAULT</literal> to use the default (namely, the user executing the command)."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:98(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:98(para) 
 msgid "The name of the template from which to create the new database, or <literal>DEFAULT</literal> to use the default template (<literal>template1</literal>)."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:108(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:108(para) 
 msgid "Character set encoding to use in the new database. Specify a string constant (e.g., <literal>'SQL_ASCII'</literal>), or an integer encoding number, or <literal>DEFAULT</literal> to use the default encoding (namely, the encoding of the template database). The character sets supported by the <productname>PostgreSQL</productname> server are described in <xref linkend=\"multibyte-charset-supported\"/>. See below for additional restrictions."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:123(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:123(para) 
 msgid "Collation order (<literal>LC_COLLATE</literal>) to use in the new database. This affects the sort order applied to strings, e.g. in queries with ORDER BY, as well as the order used in indexes on text columns. The default is to use the collation order of the template database. See below for additional restrictions."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:135(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:135(para) 
 msgid "Character classification (<literal>LC_CTYPE</literal>) to use in the new database. This affects the categorization of characters, e.g. lower, upper and digit. The default is to use the character classification of the template database. See below for additional restrictions."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:146(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:146(para) 
 msgid "The name of the tablespace that will be associated with the new database, or <literal>DEFAULT</literal> to use the template database's tablespace. This tablespace will be the default tablespace used for objects created in this database. See <xref linkend=\"sql-createtablespace\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:161(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:161(para) 
 msgid "How many concurrent connections can be made to this database. -1 (the default) means no limit."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:169(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:169(para) 
 msgid "Optional parameters can be written in any order, not only the order illustrated above."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:176(title) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:176(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:178(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:178(para) 
 msgid "<command>CREATE DATABASE</command> cannot be executed inside a transaction block."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:183(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:183(para) 
 msgid "Errors along the line of <quote>could not initialize database directory</quote> are most likely related to insufficient permissions on the data directory, a full disk, or other file system problems."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:189(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:189(para) 
 msgid "Use <xref linkend=\"sql-dropdatabase\"/> to remove a database."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:193(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:193(para) 
 msgid "The program <xref linkend=\"app-createdb\"/> is a wrapper program around this command, provided for convenience."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:198(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:198(para) 
 msgid "Although it is possible to copy a database other than <literal>template1</literal> by specifying its name as the template, this is not (yet) intended as a general-purpose <quote><command>COPY DATABASE</command></quote> facility. The principal limitation is that no other sessions can be connected to the template database while it is being copied. <command>CREATE DATABASE</command> will fail if any other connection exists when it starts; otherwise, new connections to the template database are locked out until <command>CREATE DATABASE</command> completes. See <xref linkend=\"manage-ag-templatedbs\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:210(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:210(para) 
 msgid "The character set encoding specified for the new database must be compatible with the chosen locale settings (<literal>LC_COLLATE</literal> and <literal>LC_CTYPE</literal>). If the locale is <literal>C</literal> (or equivalently <literal>POSIX</literal>), then all encodings are allowed, but for other locale settings there is only one encoding that will work properly. (On Windows, however, UTF-8 encoding can be used with any locale.) <command>CREATE DATABASE</command> will allow superusers to specify <literal>SQL_ASCII</literal> encoding regardless of the locale settings, but this choice is deprecated and may result in misbehavior of character-string functions if data that is not encoding-compatible with the locale is stored in the database."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:224(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:224(para) 
 msgid "The encoding and locale settings must match those of the template database, except when <literal>template0</literal> is used as template. This is because other databases might contain data that does not match the specified encoding, or might contain indexes whose sort ordering is affected by <literal>LC_COLLATE</literal> and <literal>LC_CTYPE</literal>. Copying such data would result in a database that is corrupt according to the new settings. <literal>template0</literal>, however, is known to not contain any data or indexes that would be affected."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:235(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:235(para) 
 msgid "The <literal>CONNECTION LIMIT</literal> option is only enforced approximately; if two new sessions start at about the same time when just one connection <quote>slot</quote> remains for the database, it is possible that both will fail. Also, the limit is not enforced against superusers."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:244(title) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:244(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:249(programlisting) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:249(programlisting) 
 #, no-wrap
 msgid "\nCREATE DATABASE lusiadas;\n"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:246(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:246(para) 
 msgid "To create a new database: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:258(programlisting) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:258(programlisting) 
 #, no-wrap
 msgid "\nCREATE DATABASE sales OWNER salesapp TABLESPACE salesspace;\n"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:254(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:254(para) 
 msgid "To create a database <literal>sales</literal> owned by user <literal>salesapp</literal> with a default tablespace of <literal>salesspace</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:267(programlisting) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:267(programlisting) 
 #, no-wrap
 msgid "\nCREATE DATABASE music ENCODING 'LATIN1' TEMPLATE template0;\n"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:263(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:263(para) 
 msgid "To create a database <literal>music</literal> which supports the ISO-8859-1 character set: <placeholder-1/> In this example, the <literal>TEMPLATE template0</literal> clause would only be required if <literal>template1</literal>'s encoding is not ISO-8859-1. Note that changing encoding might require selecting new <literal>LC_COLLATE</literal> and <literal>LC_CTYPE</literal> settings as well."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:279(title) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:279(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:281(para) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:281(para) 
 msgid "There is no <command>CREATE DATABASE</command> statement in the SQL standard. Databases are equivalent to catalogs, whose creation is implementation-defined."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/create_database.xml:289(title) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:289(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-RtQO/ref/create_database.xml:0(None) 
+#: /tmp/cicero-EpiG/ref/create_database.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

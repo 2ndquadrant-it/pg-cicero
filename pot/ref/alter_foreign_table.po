@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:59+0200\n"
+"POT-Creation-Date: 2011-08-24 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,251 +9,251 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:10(refentrytitle) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:16(refname) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:21(primary) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:10(refentrytitle) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:16(refname) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:21(primary) 
 msgid "ALTER FOREIGN TABLE"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:11(manvolnum) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:12(refmiscinfo) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:17(refpurpose) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:17(refpurpose) 
 msgid "change the definition of a foreign table"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:26(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:28(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:30(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:32(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:171(replaceable) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:26(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:28(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:30(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:32(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:171(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:27(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:35(replaceable) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:27(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:35(replaceable) 
 msgid "action"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:29(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:37(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:38(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:39(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:40(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:41(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:181(replaceable) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:29(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:37(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:38(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:39(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:40(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:41(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:181(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:29(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:190(replaceable) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:29(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:190(replaceable) 
 msgid "new_column"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:31(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:199(replaceable) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:31(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:199(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:33(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:247(replaceable) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:33(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:247(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:35(phrase) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:35(phrase) 
 msgid "where <placeholder-1/> is one of:"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:37(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:39(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:208(replaceable) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:37(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:39(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:208(replaceable) 
 msgid "type"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:41(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:43(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:128(replaceable) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:41(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:43(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:128(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:41(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:43(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:128(replaceable) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:41(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:43(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:128(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:42(replaceable) /tmp/cicero-RtQO/ref/alter_foreign_table.xml:238(replaceable) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:42(replaceable) /tmp/cicero-EpiG/ref/alter_foreign_table.xml:238(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:25(synopsis) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:25(synopsis) 
 #, no-wrap
 msgid "\nALTER FOREIGN TABLE <placeholder-1/>\n    <placeholder-2/> [, ... ]\nALTER FOREIGN TABLE <placeholder-3/>\n    RENAME [ COLUMN ] <placeholder-4/> TO <placeholder-5/>\nALTER FOREIGN TABLE <placeholder-6/>\n    RENAME TO <placeholder-7/>\nALTER FOREIGN TABLE <placeholder-8/>\n    SET SCHEMA <placeholder-9/>\n\n<placeholder-10/>\n\n    ADD [ COLUMN ] <placeholder-11/> <placeholder-12/> [ NULL | NOT NULL ]\n    DROP [ COLUMN ] [ IF EXISTS ] <placeholder-13/> [ RESTRICT | CASCADE ]\n    ALTER [ COLUMN ] <placeholder-14/> [ SET DATA ] TYPE <placeholder-15/>\n    ALTER [ COLUMN ] <placeholder-16/> { SET | DROP } NOT NULL\n    ALTER [ COLUMN ] <placeholder-17/> OPTIONS ( [ ADD | SET | DROP ] <placeholder-18/> ['<placeholder-19/>'] [, ... ])\n    OWNER TO <placeholder-20/>\n    OPTIONS ( [ ADD | SET | DROP ] <placeholder-21/> ['<placeholder-22/>'] [, ... ])\n"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:48(title) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:48(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:56(literal) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:56(literal) 
 msgid "ADD COLUMN"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:58(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:58(para) 
 msgid "This form adds a new column to the foreign table, using the same syntax as <xref linkend=\"sql-createforeigntable\"/>."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:66(literal) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:66(literal) 
 msgid "DROP COLUMN [ IF EXISTS ]"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:68(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:68(para) 
 msgid "This form drops a column from a foreign table. You will need to say <literal>CASCADE</literal> if anything outside the table depends on the column; for example, views. If <literal>IF EXISTS</literal> is specified and the column does not exist, no error is thrown. In this case a notice is issued instead."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:81(literal) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:81(literal) 
 msgid "SET DATA TYPE"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:83(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:83(para) 
 msgid "This form changes the type of a column of a foreign table."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:90(term) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:90(term) 
 msgid "<literal>SET</literal>/<literal>DROP NOT NULL</literal>"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:92(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:92(para) 
 msgid "Mark a column as allowing, or not allowing, null values."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:99(literal) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:99(literal) 
 msgid "OWNER"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:101(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:101(para) 
 msgid "This form changes the owner of the foreign table to the specified user."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:109(literal) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:109(literal) 
 msgid "RENAME"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:111(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:111(para) 
 msgid "The <literal>RENAME</literal> forms change the name of a foreign table or the name of an individual column in a foreign table."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:119(literal) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:119(literal) 
 msgid "SET SCHEMA"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:121(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:121(para) 
 msgid "This form moves the foreign table into another schema."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:128(literal) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:128(literal) 
 msgid "OPTIONS ( [ ADD | SET | DROP ] <placeholder-1/> ['<placeholder-2/>'] [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:130(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:130(para) 
 msgid "Change options for the foreign table or one of its columns. <literal>ADD</literal>, <literal>SET</literal>, and <literal>DROP</literal> specify the action to be performed. <literal>ADD</literal> is assumed if no operation is explicitly specified. Duplicate option names are not allowed (although it's OK for a table option and a column option to have the same name). Option names and values are also validated using the foreign data wrapper library."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:50(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:50(para) 
 msgid "<command>ALTER FOREIGN TABLE</command> changes the definition of an existing foreign table. There are several subforms: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:145(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:145(para) 
 msgid "All the actions except <literal>RENAME</literal> and <literal>SET SCHEMA</literal> can be combined into a list of multiple alterations to apply in parallel. For example, it is possible to add several columns and/or alter the type of several columns in a single command."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:153(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:153(para) 
 msgid "You must own the table to use <command>ALTER FOREIGN TABLE</command>. To change the schema of a foreign table, you must also have <literal>CREATE</literal> privilege on the new schema. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the table's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the table. However, a superuser can alter ownership of any table anyway.)"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:166(title) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:166(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:173(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:173(para) 
 msgid "The name (possibly schema-qualified) of an existing foreign table to alter."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:183(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:183(para) 
 msgid "Name of a new or existing column."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:192(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:192(para) 
 msgid "New name for an existing column."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:201(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:201(para) 
 msgid "New name for the table."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:210(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:210(para) 
 msgid "Data type of the new column, or new data type for an existing column."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:218(literal) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:218(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:220(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:220(para) 
 msgid "Automatically drop objects that depend on the dropped column (for example, views referencing the column)."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:228(literal) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:228(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:230(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:230(para) 
 msgid "Refuse to drop the column if there are any dependent objects. This is the default behavior."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:240(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:240(para) 
 msgid "The user name of the new owner of the table."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:249(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:249(para) 
 msgid "The name of the schema to which the table will be moved."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:258(title) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:258(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:260(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:260(para) 
 msgid "The key word <literal>COLUMN</literal> is noise and can be omitted."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:264(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:264(para) 
 msgid "Consistency with the foreign server is not checked when a column is added or removed with <literal>ADD COLUMN</literal> or <literal>DROP COLUMN</literal>, a <literal>NOT NULL</literal> constraint is added, or a column type is changed with <literal>SET DATA TYPE</literal>. It is the user's responsibility to ensure that the table definition matches the remote side."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:273(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:273(para) 
 msgid "Refer to <xref linkend=\"sql-createforeigntable\"/> for a further description of valid parameters."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:280(title) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:280(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:284(programlisting) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:284(programlisting) 
 #, no-wrap
 msgid "\nALTER FOREIGN TABLE distributors ALTER COLUMN street SET NOT NULL;\n"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:282(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:282(para) 
 msgid "To mark a column as not-null: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:291(programlisting) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:291(programlisting) 
 #, no-wrap
 msgid "\nALTER FOREIGN TABLE myschema.distributors OPTIONS (ADD opt1 'value', SET opt2, 'value2', DROP opt3 'value3');\n"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:289(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:289(para) 
 msgid "To change options of a foreign table: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:298(title) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:298(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:300(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:300(para) 
 msgid "The forms <literal>ADD</literal>, <literal>DROP</literal>, and <literal>SET DATA TYPE</literal> conform with the SQL standard. The other forms are <productname>PostgreSQL</productname> extensions of the SQL standard. Also, the ability to specify more than one manipulation in a single <command>ALTER FOREIGN TABLE</command> command is an extension."
 msgstr ""
 
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:309(para) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:309(para) 
 msgid "<command>ALTER FOREIGN TABLE DROP COLUMN</command> can be used to drop the only column of a foreign table, leaving a zero-column table. This is an extension of SQL, which disallows zero-column foreign tables."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-RtQO/ref/alter_foreign_table.xml:0(None) 
+#: /tmp/cicero-EpiG/ref/alter_foreign_table.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
