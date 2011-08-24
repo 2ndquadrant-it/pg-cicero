@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-23 09:57+0200\n"
+"POT-Creation-Date: 2011-08-24 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,209 +9,209 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-eNgk/oid2name.xml:5(title) /tmp/cicero-eNgk/oid2name.xml:8(primary) 
+#: /tmp/cicero-cRKz/oid2name.xml:5(title) /tmp/cicero-cRKz/oid2name.xml:8(primary) 
 msgid "oid2name"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:11(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:11(para) 
 msgid "<application>oid2name</application> is a utility program that helps administrators to examine the file structure used by PostgreSQL. To make use of it, you need to be familiar with the database file structure, which is described in <xref linkend=\"storage\"/>."
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:19(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:19(para) 
 msgid "The name <quote>oid2name</quote> is historical, and is actually rather misleading, since most of the time when you use it, you will really be concerned with tables' filenode numbers (which are the file names visible in the database directories). Be sure you understand the difference between table OIDs and table filenodes!"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:29(title) 
+#: /tmp/cicero-cRKz/oid2name.xml:29(title) 
 msgid "Overview"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:31(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:31(para) 
 msgid "<application>oid2name</application> connects to a target database and extracts OID, filenode, and/or table name information. You can also have it show database OIDs or tablespace OIDs."
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:40(title) 
+#: /tmp/cicero-cRKz/oid2name.xml:40(title) 
 msgid "<application>oid2name</application> Options"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:48(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:48(option) 
 msgid "-o"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:48(replaceable) 
+#: /tmp/cicero-cRKz/oid2name.xml:48(replaceable) 
 msgid "oid"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:49(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:49(para) 
 msgid "show info for table with OID <replaceable>oid</replaceable>"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:53(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:53(option) 
 msgid "-f"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:53(replaceable) 
+#: /tmp/cicero-cRKz/oid2name.xml:53(replaceable) 
 msgid "filenode"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:54(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:54(para) 
 msgid "show info for table with filenode <replaceable>filenode</replaceable>"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:58(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:58(option) 
 msgid "-t"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:58(replaceable) 
+#: /tmp/cicero-cRKz/oid2name.xml:58(replaceable) 
 msgid "tablename_pattern"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:59(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:59(para) 
 msgid "show info for table(s) matching <replaceable>tablename_pattern</replaceable>"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:63(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:63(option) 
 msgid "-s"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:64(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:64(para) 
 msgid "show tablespace OIDs"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:68(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:68(option) 
 msgid "-S"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:69(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:69(para) 
 msgid "include system objects (those in <option>information_schema</option>, <option>pg_toast</option> and <option>pg_catalog</option> schemas)"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:76(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:76(option) 
 msgid "-i"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:77(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:77(para) 
 msgid "include indexes and sequences in the listing"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:81(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:81(option) 
 msgid "-x"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:82(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:82(para) 
 msgid "display more information about each object shown: tablespace name, schema name, and OID"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:88(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:88(option) 
 msgid "-q"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:89(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:89(para) 
 msgid "omit headers (useful for scripting)"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:93(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:93(option) 
 msgid "-d"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:93(replaceable) 
+#: /tmp/cicero-cRKz/oid2name.xml:93(replaceable) 
 msgid "database"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:94(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:94(para) 
 msgid "database to connect to"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:98(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:98(option) 
 msgid "-H"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:98(replaceable) 
+#: /tmp/cicero-cRKz/oid2name.xml:98(replaceable) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:99(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:99(para) 
 msgid "database server's host"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:103(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:103(option) 
 msgid "-p"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:103(replaceable) 
+#: /tmp/cicero-cRKz/oid2name.xml:103(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:104(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:104(para) 
 msgid "database server's port"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:108(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:108(option) 
 msgid "-U"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:108(replaceable) 
+#: /tmp/cicero-cRKz/oid2name.xml:108(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:109(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:109(para) 
 msgid "user name to connect as"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:113(option) 
+#: /tmp/cicero-cRKz/oid2name.xml:113(option) 
 msgid "-P"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:113(replaceable) 
+#: /tmp/cicero-cRKz/oid2name.xml:113(replaceable) 
 msgid "password"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:114(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:114(para) 
 msgid "password (deprecated — putting this on the command line is a security hazard)"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:42(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:42(para) 
 msgid "<application>oid2name</application> accepts the following command-line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:121(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:121(para) 
 msgid "To display specific tables, select which tables to show by using <option>-o</option>, <option>-f</option> and/or <option>-t</option>. <option>-o</option> takes an OID, <option>-f</option> takes a filenode, and <option>-t</option> takes a table name (actually, it's a <literal>LIKE</literal> pattern, so you can use things like <literal>foo%</literal>). You can use as many of these options as you like, and the listing will include all objects matched by any of the options. But note that these options can only show objects in the database given by <option>-d</option>."
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:134(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:134(para) 
 msgid "If you don't give any of <option>-o</option>, <option>-f</option> or <option>-t</option>, but do give <option>-d</option>, it will list all tables in the database named by <option>-d</option>. In this mode, the <option>-S</option> and <option>-i</option> options control what gets listed."
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:141(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:141(para) 
 msgid "If you don't give <option>-d</option> either, it will show a listing of database OIDs. Alternatively you can give <option>-s</option> to get a tablespace listing."
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:149(title) 
+#: /tmp/cicero-cRKz/oid2name.xml:149(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:151(screen) 
+#: /tmp/cicero-cRKz/oid2name.xml:151(screen) 
 #, no-wrap
 msgid "\n$ # what's in this database server, anyway?\n$ oid2name\nAll databases:\n    Oid  Database Name  Tablespace\n----------------------------------\n  17228       alvherre  pg_default\n  17255     regression  pg_default\n  17227      template0  pg_default\n      1      template1  pg_default\n\n$ oid2name -s\nAll tablespaces:\n     Oid  Tablespace Name\n-------------------------\n    1663       pg_default\n    1664        pg_global\n  155151         fastdisk\n  155152          bigdisk\n\n$ # OK, let's look into database alvherre\n$ cd $PGDATA/base/17228\n\n$ # get top 10 db objects in the default tablespace, ordered by size\n$ ls -lS * | head -10\n-rw-------  1 alvherre alvherre 136536064 sep 14 09:51 155173\n-rw-------  1 alvherre alvherre  17965056 sep 14 09:51 1155291\n-rw-------  1 alvherre alvherre   1204224 sep 14 09:51 16717\n-rw-------  1 alvherre alvherre    581632 sep  6 17:51 1255\n-rw-------  1 alvherre alvherre    237568 sep 14 09:50 16674\n-rw-------  1 alvherre alvherre    212992 sep 14 09:51 1249\n-rw-------  1 alvherre alvherre    204800 sep 14 09:51 16684\n-rw-------  1 alvherre alvherre    196608 sep 14 09:50 16700\n-rw-------  1 alvherre alvherre    163840 sep 14 09:50 16699\n-rw-------  1 alvherre alvherre    122880 sep  6 17:51 16751\n\n$ # I wonder what file 155173 is ...\n$ oid2name -d alvherre -f 155173\nFrom database \"alvherre\":\n  Filenode  Table Name\n----------------------\n    155173    accounts\n\n$ # you can ask for more than one object\n$ oid2name -d alvherre -f 155173 -f 1155291\nFrom database \"alvherre\":\n  Filenode     Table Name\n-------------------------\n    155173       accounts\n   1155291  accounts_pkey\n\n$ # you can mix the options, and get more details with -x\n$ oid2name -d alvherre -t accounts -f 1155291 -x\nFrom database \"alvherre\":\n  Filenode     Table Name      Oid  Schema  Tablespace\n------------------------------------------------------\n    155173       accounts   155173  public  pg_default\n   1155291  accounts_pkey  1155291  public  pg_default\n\n$ # show disk space for every db object\n$ du [0-9]* |\n&gt; while read SIZE FILENODE\n&gt; do\n&gt;   echo \"$SIZE       `oid2name -q -d alvherre -i -f $FILENODE`\"\n&gt; done\n16            1155287  branches_pkey\n16            1155289  tellers_pkey\n17561            1155291  accounts_pkey\n...\n\n$ # same, but sort by size\n$ du [0-9]* | sort -rn | while read SIZE FN\n&gt; do\n&gt;   echo \"$SIZE   `oid2name -q -d alvherre -f $FN`\"\n&gt; done\n133466             155173    accounts\n17561            1155291  accounts_pkey\n1177              16717  pg_proc_proname_args_nsp_index\n...\n\n$ # If you want to see what's in tablespaces, use the pg_tblspc directory\n$ cd $PGDATA/pg_tblspc\n$ oid2name -s\nAll tablespaces:\n     Oid  Tablespace Name\n-------------------------\n    1663       pg_default\n    1664        pg_global\n  155151         fastdisk\n  155152          bigdisk\n\n$ # what databases have objects in tablespace \"fastdisk\"?\n$ ls -d 155151/*\n155151/17228/  155151/PG_VERSION\n\n$ # Oh, what was database 17228 again?\n$ oid2name\nAll databases:\n    Oid  Database Name  Tablespace\n----------------------------------\n  17228       alvherre  pg_default\n  17255     regression  pg_default\n  17227      template0  pg_default\n      1      template1  pg_default\n\n$ # Let's see what objects does this database have in the tablespace.\n$ cd 155151/17228\n$ ls -l\ntotal 0\n-rw-------  1 postgres postgres 0 sep 13 23:20 155156\n\n$ # OK, this is a pretty small table ... but which one is it?\n$ oid2name -d alvherre -f 155156\nFrom database \"alvherre\":\n  Filenode  Table Name\n----------------------\n    155156         foo\n"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:272(title) 
+#: /tmp/cicero-cRKz/oid2name.xml:272(title) 
 msgid "Limitations"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:274(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:274(para) 
 msgid "<application>oid2name</application> requires a running database server with non-corrupt system catalogs. It is therefore of only limited use for recovering from catastrophic database corruption situations."
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:282(title) 
+#: /tmp/cicero-cRKz/oid2name.xml:282(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-eNgk/oid2name.xml:284(para) 
+#: /tmp/cicero-cRKz/oid2name.xml:284(para) 
 msgid "B. Palmer <email>bpalmer@crimelabs.net</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-eNgk/oid2name.xml:0(None) 
+#: /tmp/cicero-cRKz/oid2name.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
