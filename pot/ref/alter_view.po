@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-24 06:56+0200\n"
+"POT-Creation-Date: 2011-08-25 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,126 +9,126 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:9(refentrytitle) /tmp/cicero-cRKz/ref/alter_view.xml:15(refname) /tmp/cicero-cRKz/ref/alter_view.xml:20(primary) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:9(refentrytitle) /tmp/cicero-IcBs/ref/alter_view.xml:15(refname) /tmp/cicero-IcBs/ref/alter_view.xml:20(primary) 
 msgid "ALTER VIEW"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:10(manvolnum) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:11(refmiscinfo) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:16(refpurpose) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:16(refpurpose) 
 msgid "change the definition of a view"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:25(replaceable) /tmp/cicero-cRKz/ref/alter_view.xml:26(replaceable) /tmp/cicero-cRKz/ref/alter_view.xml:27(replaceable) /tmp/cicero-cRKz/ref/alter_view.xml:28(replaceable) /tmp/cicero-cRKz/ref/alter_view.xml:29(replaceable) /tmp/cicero-cRKz/ref/alter_view.xml:59(replaceable) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:25(replaceable) /tmp/cicero-IcBs/ref/alter_view.xml:26(replaceable) /tmp/cicero-IcBs/ref/alter_view.xml:27(replaceable) /tmp/cicero-IcBs/ref/alter_view.xml:28(replaceable) /tmp/cicero-IcBs/ref/alter_view.xml:29(replaceable) /tmp/cicero-IcBs/ref/alter_view.xml:59(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:25(replaceable) /tmp/cicero-cRKz/ref/alter_view.xml:26(replaceable) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:25(replaceable) /tmp/cicero-IcBs/ref/alter_view.xml:26(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:25(replaceable) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:25(replaceable) 
 msgid "expression"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:27(replaceable) /tmp/cicero-cRKz/ref/alter_view.xml:81(replaceable) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:27(replaceable) /tmp/cicero-IcBs/ref/alter_view.xml:81(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:28(replaceable) /tmp/cicero-cRKz/ref/alter_view.xml:90(replaceable) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:28(replaceable) /tmp/cicero-IcBs/ref/alter_view.xml:90(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:29(replaceable) /tmp/cicero-cRKz/ref/alter_view.xml:99(replaceable) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:29(replaceable) /tmp/cicero-IcBs/ref/alter_view.xml:99(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:24(synopsis) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER VIEW <placeholder-1/> ALTER [ COLUMN ] <placeholder-2/> SET DEFAULT <placeholder-3/>\nALTER VIEW <placeholder-4/> ALTER [ COLUMN ] <placeholder-5/> DROP DEFAULT\nALTER VIEW <placeholder-6/> OWNER TO <placeholder-7/>\nALTER VIEW <placeholder-8/> RENAME TO <placeholder-9/>\nALTER VIEW <placeholder-10/> SET SCHEMA <placeholder-11/>\n"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:34(title) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:34(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:36(para) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:36(para) 
 msgid "<command>ALTER VIEW</command> changes various auxiliary properties of a view. (If you want to modify the view's defining query, use <command>CREATE OR REPLACE VIEW</command>.)"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:42(para) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:42(para) 
 msgid "You must own the view to use <command>ALTER VIEW</command>. To change a view's schema, you must also have <literal>CREATE</literal> privilege on the new schema. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the view's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the view. However, a superuser can alter ownership of any view anyway.)"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:55(title) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:55(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:61(para) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:61(para) 
 msgid "The name (optionally schema-qualified) of an existing view."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:68(term) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:68(term) 
 msgid "<literal>SET</literal>/<literal>DROP DEFAULT</literal>"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:70(para) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:70(para) 
 msgid "These forms set or remove the default value for a column. A default value associated with a view column is inserted into <command>INSERT</command> statements on the view before the view's <literal>ON INSERT</literal> rule is applied, if the <command>INSERT</command> does not specify a value for the column."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:83(para) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:83(para) 
 msgid "The user name of the new owner of the view."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:92(para) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:92(para) 
 msgid "The new name for the view."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:101(para) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:101(para) 
 msgid "The new schema for the view."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:110(title) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:110(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:112(para) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:112(para) 
 msgid "For historical reasons, <command>ALTER TABLE</command> can be used with views too; but the only variants of <command>ALTER TABLE</command> that are allowed with views are equivalent to the ones shown above."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:120(title) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:120(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:125(programlisting) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:125(programlisting) 
 #, no-wrap
 msgid "\nALTER VIEW foo RENAME TO bar;\n"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:122(para) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:122(para) 
 msgid "To rename the view <literal>foo</literal> to <literal>bar</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:131(title) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:131(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:133(para) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:133(para) 
 msgid "<command>ALTER VIEW</command> is a <productname>PostgreSQL</productname> extension of the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/alter_view.xml:140(title) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:140(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-cRKz/ref/alter_view.xml:0(None) 
+#: /tmp/cicero-IcBs/ref/alter_view.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

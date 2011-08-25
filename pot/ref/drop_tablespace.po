@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-24 06:57+0200\n"
+"POT-Creation-Date: 2011-08-25 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,94 +9,94 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:9(refentrytitle) /tmp/cicero-cRKz/ref/drop_tablespace.xml:15(refname) /tmp/cicero-cRKz/ref/drop_tablespace.xml:20(primary) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:9(refentrytitle) /tmp/cicero-IcBs/ref/drop_tablespace.xml:15(refname) /tmp/cicero-IcBs/ref/drop_tablespace.xml:20(primary) 
 msgid "DROP TABLESPACE"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:10(manvolnum) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:11(refmiscinfo) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:16(refpurpose) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:16(refpurpose) 
 msgid "remove a tablespace"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:25(replaceable) /tmp/cicero-cRKz/ref/drop_tablespace.xml:64(replaceable) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:25(replaceable) /tmp/cicero-IcBs/ref/drop_tablespace.xml:64(replaceable) 
 msgid "tablespace_name"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:24(synopsis) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:24(synopsis) 
 #, no-wrap
 msgid "\nDROP TABLESPACE [ IF EXISTS ] <placeholder-1/>\n"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:30(title) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:32(para) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:32(para) 
 msgid "<command>DROP TABLESPACE</command> removes a tablespace from the system."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:36(para) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:36(para) 
 msgid "A tablespace can only be dropped by its owner or a superuser. The tablespace must be empty of all database objects before it can be dropped. It is possible that objects in other databases might still reside in the tablespace even if no objects in the current database are using the tablespace. Also, if the tablespace is listed in the <xref linkend=\"guc-temp-tablespaces\"/> setting of any active session, the <command>DROP</command> might fail due to temporary files residing in the tablespace."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:49(title) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:49(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:54(literal) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:54(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:56(para) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:56(para) 
 msgid "Do not throw an error if the tablespace does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:66(para) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:66(para) 
 msgid "The name of a tablespace."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:75(title) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:75(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:77(para) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:77(para) 
 msgid "<command>DROP TABLESPACE</command> cannot be executed inside a transaction block."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:84(title) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:84(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:88(programlisting) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:88(programlisting) 
 #, no-wrap
 msgid "\nDROP TABLESPACE mystuff;\n"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:86(para) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:86(para) 
 msgid "To remove tablespace <literal>mystuff</literal> from the system: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:94(title) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:94(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:96(para) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:96(para) 
 msgid "<command>DROP TABLESPACE</command> is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:103(title) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:103(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-cRKz/ref/drop_tablespace.xml:0(None) 
+#: /tmp/cicero-IcBs/ref/drop_tablespace.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

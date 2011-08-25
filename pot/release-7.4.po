@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-24 06:57+0200\n"
+"POT-Creation-Date: 2011-08-25 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,92 +9,92 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-cRKz/release-7.4.xml:6(title) 
+#: /tmp/cicero-IcBs/release-7.4.xml:6(title) 
 msgid "Release 7.4.30"
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:9(title) 
+#: /tmp/cicero-IcBs/release-7.4.xml:9(title) 
 msgid "Release Date"
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:10(simpara) 
+#: /tmp/cicero-IcBs/release-7.4.xml:10(simpara) 
 msgid "2010-10-04"
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:13(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:13(para) 
 msgid "This release contains a variety of fixes from 7.4.29. For information about new features in the 7.4 major release, see <xref linkend=\"release-7-4\"/>."
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:19(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:19(para) 
 msgid "This is expected to be the last <productname>PostgreSQL</productname> release in the 7.4.X series. Users are encouraged to update to a newer release branch soon."
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:26(title) 
+#: /tmp/cicero-IcBs/release-7.4.xml:26(title) 
 msgid "Migration to Version 7.4.30"
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:28(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:28(para) 
 msgid "A dump/restore is not required for those running 7.4.X. However, if you are upgrading from a version earlier than 7.4.26, see the release notes for 7.4.26."
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:37(title) 
+#: /tmp/cicero-IcBs/release-7.4.xml:37(title) 
 msgid "Changes"
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:42(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:42(para) 
 msgid "Use a separate interpreter for each calling SQL userid in PL/Perl and PL/Tcl (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:47(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:47(para) 
 msgid "This change prevents security problems that can be caused by subverting Perl or Tcl code that will be executed later in the same session under another SQL user identity (for example, within a <literal>SECURITY DEFINER</literal> function). Most scripting languages offer numerous ways that that might be done, such as redefining standard functions or operators called by the target function. Without this change, any SQL user with Perl or Tcl language usage rights can do essentially anything with the SQL privileges of the target function's owner."
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:58(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:58(para) 
 msgid "The cost of this change is that intentional communication among Perl and Tcl functions becomes more difficult. To provide an escape hatch, PL/PerlU and PL/TclU functions continue to use only one interpreter per session. This is not considered a security issue since all such functions execute at the trust level of a database superuser already."
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:66(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:66(para) 
 msgid "It is likely that third-party procedural languages that claim to offer trusted execution have similar security issues. We advise contacting the authors of any PL you are depending on for security-critical purposes."
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:73(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:73(para) 
 msgid "Our thanks to Tim Bunce for pointing out this issue (CVE-2010-3433)."
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:79(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:79(para) 
 msgid "Prevent possible crashes in <function>pg_get_expr()</function> by disallowing it from being called with an argument that is not one of the system catalog columns it's intended to be used with (Heikki Linnakangas, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:88(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:88(para) 
 msgid "Fix <quote>cannot handle unplanned sub-select</quote> error (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:92(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:92(para) 
 msgid "This occurred when a sub-select contains a join alias reference that expands into an expression containing another sub-select."
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:99(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:99(para) 
 msgid "Take care to fsync the contents of lockfiles (both <filename>postmaster.pid</filename> and the socket lockfile) while writing them (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:105(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:105(para) 
 msgid "This omission could result in corrupted lockfile contents if the machine crashes shortly after postmaster start. That could in turn prevent subsequent attempts to start the postmaster from succeeding, until the lockfile is manually removed."
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:114(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:114(para) 
 msgid "Improve <filename>contrib/dblink</filename>'s handling of tables containing dropped columns (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:121(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:121(para) 
 msgid "Fix connection leak after <quote>duplicate connection name</quote> errors in <filename>contrib/dblink</filename> (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-cRKz/release-7.4.xml:128(para) 
+#: /tmp/cicero-IcBs/release-7.4.xml:128(para) 
 msgid "Update build infrastructure and documentation to reflect the source code repository's move from CVS to Git (Magnus Hagander and others)"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-cRKz/release-7.4.xml:0(None) 
+#: /tmp/cicero-IcBs/release-7.4.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
