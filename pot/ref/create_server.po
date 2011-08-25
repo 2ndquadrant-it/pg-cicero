@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-24 06:59+0200\n"
+"POT-Creation-Date: 2011-08-25 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,143 +9,143 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:10(refentrytitle) /tmp/cicero-EpiG/ref/create_server.xml:16(refname) /tmp/cicero-EpiG/ref/create_server.xml:21(primary) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:10(refentrytitle) /tmp/cicero-hjxh/ref/create_server.xml:16(refname) /tmp/cicero-hjxh/ref/create_server.xml:21(primary) 
 msgid "CREATE SERVER"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:11(manvolnum) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:12(refmiscinfo) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:17(refpurpose) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:17(refpurpose) 
 msgid "define a new foreign server"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:26(replaceable) /tmp/cicero-EpiG/ref/create_server.xml:62(replaceable) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:26(replaceable) /tmp/cicero-hjxh/ref/create_server.xml:62(replaceable) 
 msgid "server_name"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:26(replaceable) /tmp/cicero-EpiG/ref/create_server.xml:71(replaceable) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:26(replaceable) /tmp/cicero-hjxh/ref/create_server.xml:71(replaceable) 
 msgid "server_type"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:26(replaceable) /tmp/cicero-EpiG/ref/create_server.xml:80(replaceable) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:26(replaceable) /tmp/cicero-hjxh/ref/create_server.xml:80(replaceable) 
 msgid "server_version"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:27(replaceable) /tmp/cicero-EpiG/ref/create_server.xml:89(replaceable) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:27(replaceable) /tmp/cicero-hjxh/ref/create_server.xml:89(replaceable) 
 msgid "fdw_name"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:28(replaceable) /tmp/cicero-EpiG/ref/create_server.xml:98(replaceable) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:28(replaceable) /tmp/cicero-hjxh/ref/create_server.xml:98(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:28(replaceable) /tmp/cicero-EpiG/ref/create_server.xml:98(replaceable) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:28(replaceable) /tmp/cicero-hjxh/ref/create_server.xml:98(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:25(synopsis) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:25(synopsis) 
 #, no-wrap
 msgid "\nCREATE SERVER <placeholder-1/> [ TYPE '<placeholder-2/>' ] [ VERSION '<placeholder-3/>' ]\n    FOREIGN DATA WRAPPER <placeholder-4/>\n    [ OPTIONS ( <placeholder-5/> '<placeholder-6/>' [, ... ] ) ]\n"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:33(title) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:35(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:35(para) 
 msgid "<command>CREATE SERVER</command> defines a new foreign server. The user who defines the server becomes its owner."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:40(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:40(para) 
 msgid "A foreign server typically encapsulates connection information that a foreign-data wrapper uses to access an external data resource. Additional user-specific connection information may be specified by means of user mappings."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:47(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:47(para) 
 msgid "The server name must be unique within the database."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:51(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:51(para) 
 msgid "Creating a server requires <literal>USAGE</literal> privilege on the foreign-data wrapper being used."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:58(title) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:58(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:64(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:64(para) 
 msgid "The name of the foreign server to be created."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:73(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:73(para) 
 msgid "Optional server type."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:82(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:82(para) 
 msgid "Optional server version."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:91(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:91(para) 
 msgid "The name of the foreign-data wrapper that manages the server."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:98(literal) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:98(literal) 
 msgid "OPTIONS ( <placeholder-1/> '<placeholder-2/>' [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:100(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:100(para) 
 msgid "This clause specifies the options for the server. The options typically define the connection details of the server, but the actual names and values are dependent on the server's foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:112(title) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:112(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:114(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:114(para) 
 msgid "When using the <application>dblink</application> module (see <xref linkend=\"dblink\"/>), the foreign server name can be used as an argument of the <xref linkend=\"contrib-dblink-connect\"/> function to indicate the connection parameters. See also there for more examples. It is necessary to have the <literal>USAGE</literal> privilege on the foreign server to be able to use it in this way."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:126(title) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:126(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:131(programlisting) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:131(programlisting) 
 #, no-wrap
 msgid "\nCREATE SERVER foo FOREIGN DATA WRAPPER \"default\";\n"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:128(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:128(para) 
 msgid "Create a server <literal>foo</literal> that uses the built-in foreign-data wrapper <literal>default</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:139(programlisting) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:139(programlisting) 
 #, no-wrap
 msgid "\nCREATE SERVER myserver FOREIGN DATA WRAPPER pgsql OPTIONS (host 'foo', dbname 'foodb', port '5432');\n"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:136(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:136(para) 
 msgid "Create a server <literal>myserver</literal> that uses the foreign-data wrapper <literal>pgsql</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:145(title) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:145(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:147(para) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:147(para) 
 msgid "<command>CREATE SERVER</command> conforms to ISO/IEC 9075-9 (SQL/MED)."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/create_server.xml:153(title) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:153(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-EpiG/ref/create_server.xml:0(None) 
+#: /tmp/cicero-hjxh/ref/create_server.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

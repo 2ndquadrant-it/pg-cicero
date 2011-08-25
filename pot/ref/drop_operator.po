@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-24 06:59+0200\n"
+"POT-Creation-Date: 2011-08-25 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,132 +9,132 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:10(refentrytitle) /tmp/cicero-EpiG/ref/drop_operator.xml:16(refname) /tmp/cicero-EpiG/ref/drop_operator.xml:21(primary) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:10(refentrytitle) /tmp/cicero-hjxh/ref/drop_operator.xml:16(refname) /tmp/cicero-hjxh/ref/drop_operator.xml:21(primary) 
 msgid "DROP OPERATOR"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:11(manvolnum) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:12(refmiscinfo) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:17(refpurpose) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:17(refpurpose) 
 msgid "remove an operator"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:26(replaceable) /tmp/cicero-EpiG/ref/drop_operator.xml:56(replaceable) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:26(replaceable) /tmp/cicero-hjxh/ref/drop_operator.xml:56(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:26(replaceable) /tmp/cicero-EpiG/ref/drop_operator.xml:65(replaceable) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:26(replaceable) /tmp/cicero-hjxh/ref/drop_operator.xml:65(replaceable) 
 msgid "left_type"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:26(replaceable) /tmp/cicero-EpiG/ref/drop_operator.xml:75(replaceable) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:26(replaceable) /tmp/cicero-hjxh/ref/drop_operator.xml:75(replaceable) 
 msgid "right_type"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:25(synopsis) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP OPERATOR [ IF EXISTS ] <placeholder-1/> ( { <placeholder-2/> | NONE } , { <placeholder-3/> | NONE } ) [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:31(title) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:33(para) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:33(para) 
 msgid "<command>DROP OPERATOR</command> drops an existing operator from the database system. To execute this command you must be the owner of the operator."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:41(title) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:41(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:46(literal) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:46(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:48(para) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:48(para) 
 msgid "Do not throw an error if the operator does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:58(para) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:58(para) 
 msgid "The name (optionally schema-qualified) of an existing operator."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:67(para) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:67(para) 
 msgid "The data type of the operator's left operand; write <literal>NONE</literal> if the operator has no left operand."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:77(para) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:77(para) 
 msgid "The data type of the operator's right operand; write <literal>NONE</literal> if the operator has no right operand."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:85(literal) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:85(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:87(para) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:87(para) 
 msgid "Automatically drop objects that depend on the operator."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:94(literal) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:94(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:96(para) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:96(para) 
 msgid "Refuse to drop the operator if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:106(title) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:106(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:110(programlisting) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:110(programlisting) 
 #, no-wrap
 msgid "\nDROP OPERATOR ^ (integer, integer);\n"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:108(para) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:108(para) 
 msgid "Remove the power operator <literal>a^b</literal> for type <type>integer</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:118(programlisting) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:118(programlisting) 
 #, no-wrap
 msgid "\nDROP OPERATOR ~ (none, bit);\n"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:115(para) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:115(para) 
 msgid "Remove the left unary bitwise complement operator <literal>~b</literal> for type <type>bit</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:126(programlisting) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:126(programlisting) 
 #, no-wrap
 msgid "\nDROP OPERATOR ! (bigint, none);\n"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:123(para) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:123(para) 
 msgid "Remove the right unary factorial operator <literal>x!</literal> for type <type>bigint</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:132(title) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:132(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:134(para) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:134(para) 
 msgid "There is no <command>DROP OPERATOR</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:140(title) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:140(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-EpiG/ref/drop_operator.xml:0(None) 
+#: /tmp/cicero-hjxh/ref/drop_operator.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
