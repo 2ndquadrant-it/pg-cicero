@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-25 06:57+0200\n"
+"POT-Creation-Date: 2011-08-26 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,154 +9,154 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:9(refentrytitle) /tmp/cicero-IcBs/ref/select_into.xml:15(refname) /tmp/cicero-IcBs/ref/select_into.xml:20(primary) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:9(refentrytitle) /tmp/cicero-EsTI/ref/select_into.xml:15(refname) /tmp/cicero-EsTI/ref/select_into.xml:20(primary) 
 msgid "SELECT INTO"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:10(manvolnum) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:11(refmiscinfo) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:16(refpurpose) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:16(refpurpose) 
 msgid "define a new table from the results of a query"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:25(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:25(replaceable) 
 msgid "with_query"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:26(replaceable) /tmp/cicero-IcBs/ref/select_into.xml:27(replaceable) /tmp/cicero-IcBs/ref/select_into.xml:31(replaceable) /tmp/cicero-IcBs/ref/select_into.xml:35(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:26(replaceable) /tmp/cicero-EsTI/ref/select_into.xml:27(replaceable) /tmp/cicero-EsTI/ref/select_into.xml:31(replaceable) /tmp/cicero-EsTI/ref/select_into.xml:35(replaceable) 
 msgid "expression"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:27(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:27(replaceable) 
 msgid "output_name"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:28(replaceable) /tmp/cicero-IcBs/ref/select_into.xml:80(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:28(replaceable) /tmp/cicero-EsTI/ref/select_into.xml:80(replaceable) 
 msgid "new_table"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:29(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:29(replaceable) 
 msgid "from_item"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:30(replaceable) /tmp/cicero-IcBs/ref/select_into.xml:32(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:30(replaceable) /tmp/cicero-EsTI/ref/select_into.xml:32(replaceable) 
 msgid "condition"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:33(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:33(replaceable) 
 msgid "window_name"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:33(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:33(replaceable) 
 msgid "window_definition"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:34(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:34(replaceable) 
 msgid "select"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:35(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:35(replaceable) 
 msgid "operator"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:36(replaceable) /tmp/cicero-IcBs/ref/select_into.xml:38(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:36(replaceable) /tmp/cicero-EsTI/ref/select_into.xml:38(replaceable) 
 msgid "count"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:37(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:37(replaceable) 
 msgid "start"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:39(replaceable) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:39(replaceable) 
 msgid "table_name"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:24(synopsis) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:24(synopsis) 
 #, no-wrap
 msgid "\n[ WITH [ RECURSIVE ] <placeholder-1/> [, ...] ]\nSELECT [ ALL | DISTINCT [ ON ( <placeholder-2/> [, ...] ) ] ]\n    * | <placeholder-3/> [ [ AS ] <placeholder-4/> ] [, ...]\n    INTO [ TEMPORARY | TEMP | UNLOGGED ] [ TABLE ] <placeholder-5/>\n    [ FROM <placeholder-6/> [, ...] ]\n    [ WHERE <placeholder-7/> ]\n    [ GROUP BY <placeholder-8/> [, ...] ]\n    [ HAVING <placeholder-9/> [, ...] ]\n    [ WINDOW <placeholder-10/> AS ( <placeholder-11/> ) [, ...] ]\n    [ { UNION | INTERSECT | EXCEPT } [ ALL | DISTINCT ] <placeholder-12/> ]\n    [ ORDER BY <placeholder-13/> [ ASC | DESC | USING <placeholder-14/> ] [ NULLS { FIRST | LAST } ] [, ...] ]\n    [ LIMIT { <placeholder-15/> | ALL } ]\n    [ OFFSET <placeholder-16/> [ ROW | ROWS ] ]\n    [ FETCH { FIRST | NEXT } [ <placeholder-17/> ] { ROW | ROWS } ONLY ]\n    [ FOR { UPDATE | SHARE } [ OF <placeholder-18/> [, ...] ] [ NOWAIT ] [...] ]\n"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:44(title) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:44(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:46(para) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:46(para) 
 msgid "<command>SELECT INTO</command> creates a new table and fills it with data computed by a query. The data is not returned to the client, as it is with a normal <command>SELECT</command>. The new table's columns have the names and data types associated with the output columns of the <command>SELECT</command>."
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:56(title) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:56(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:60(term) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:60(term) 
 msgid "<literal>TEMPORARY</literal> or <literal>TEMP</literal>"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:62(para) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:62(para) 
 msgid "If specified, the table is created as a temporary table. Refer to <xref linkend=\"sql-createtable\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:70(literal) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:70(literal) 
 msgid "UNLOGGED"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:72(para) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:72(para) 
 msgid "If specified, the table is created as an unlogged table. Refer to <xref linkend=\"sql-createtable\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:82(para) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:82(para) 
 msgid "The name (optionally schema-qualified) of the table to be created."
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:89(para) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:89(para) 
 msgid "All other parameters are described in detail under <xref linkend=\"sql-select\"/>."
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:96(title) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:96(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:98(para) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:98(para) 
 msgid "<xref linkend=\"sql-createtableas\"/> is functionally similar to <command>SELECT INTO</command>. <command>CREATE TABLE AS</command> is the recommended syntax, since this form of <command>SELECT INTO</command> is not available in <application>ECPG</application> or <application>PL/pgSQL</application>, because they interpret the <literal>INTO</literal> clause differently. Furthermore, <command>CREATE TABLE AS</command> offers a superset of the functionality provided by <command>SELECT INTO</command>."
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:109(para) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:109(para) 
 msgid "Prior to <productname>PostgreSQL</productname> 8.1, the table created by <command>SELECT INTO</command> included OIDs by default. In <productname>PostgreSQL</productname> 8.1, this is not the case — to include OIDs in the new table, the <xref linkend=\"guc-default-with-oids\"/> configuration variable must be enabled. Alternatively, <command>CREATE TABLE AS</command> can be used with the <literal>WITH OIDS</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:121(title) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:121(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:127(programlisting) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:127(programlisting) 
 #, no-wrap
 msgid "\nSELECT * INTO films_recent FROM films WHERE date_prod &gt;= '2002-01-01';\n"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:123(para) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:123(para) 
 msgid "Create a new table <literal>films_recent</literal> consisting of only recent entries from the table <literal>films</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:133(title) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:133(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:135(para) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:135(para) 
 msgid "The SQL standard uses <command>SELECT INTO</command> to represent selecting values into scalar variables of a host program, rather than creating a new table. This indeed is the usage found in <application>ECPG</application> (see <xref linkend=\"ecpg\"/>) and <application>PL/pgSQL</application> (see <xref linkend=\"plpgsql\"/>). The <productname>PostgreSQL</productname> usage of <command>SELECT INTO</command> to represent table creation is historical. It is best to use <command>CREATE TABLE AS</command> for this purpose in new code."
 msgstr ""
 
-#: /tmp/cicero-IcBs/ref/select_into.xml:149(title) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:149(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-IcBs/ref/select_into.xml:0(None) 
+#: /tmp/cicero-EsTI/ref/select_into.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
