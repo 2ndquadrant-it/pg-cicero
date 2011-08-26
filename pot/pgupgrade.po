@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-25 06:59+0200\n"
+"POT-Creation-Date: 2011-08-26 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,532 +9,532 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:6(title) /tmp/cicero-hjxh/pgupgrade.xml:9(primary) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:6(title) /tmp/cicero-Bcej/pgupgrade.xml:9(primary) 
 msgid "pg_upgrade"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:12(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:12(para) 
 msgid "<application>pg_upgrade</application> (formerly called <application>pg_migrator</application>) allows data stored in <productname>PostgreSQL</productname> data files to be upgraded to a later <productname>PostgreSQL</productname> major version without the data dump/reload typically required for major version upgrades, e.g. from 8.4.7 to the current major release of <productname>PostgreSQL</productname>. It is not required for minor version upgrades, e.g. from 9.0.1 to 9.0.4."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:21(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:21(para) 
 msgid "Major PostgreSQL releases regularly add new features that often change the layout of the system tables, but the internal data storage format rarely changes. <application>pg_upgrade</application> uses this fact to perform rapid upgrades by creating new system tables and simply reusing the old user data files. If a future major release ever changes the data storage format in a way that makes the old data format unreadable, <application>pg_upgrade</application> will not be usable for such upgrades. (The community will attempt to avoid such situations.)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:33(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:33(para) 
 msgid "<application>pg_upgrade</application> does its best to make sure the old and new clusters are binary-compatible, e.g. by checking for compatible compile-time settings, including 32/64-bit binaries. It is important that any external modules are also binary compatible, though this cannot be checked by <application>pg_upgrade</application>."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:43(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:43(title) 
 msgid "Supported Versions"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:45(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:45(para) 
 msgid "pg_upgrade supports upgrades from 8.3.X and later to the current major release of <productname>PostgreSQL</productname>, including snapshot and alpha releases."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:54(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:54(title) 
 msgid "<application>pg_upgrade</application> Options"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:62(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:62(option) 
 msgid "-b"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:62(replaceable) /tmp/cicero-hjxh/pgupgrade.xml:63(replaceable) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:62(replaceable) /tmp/cicero-Bcej/pgupgrade.xml:63(replaceable) 
 msgid "old_bindir"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:63(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:63(option) 
 msgid "--old-bindir="
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:64(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:64(para) 
 msgid "the old cluster executable directory; environment variable <envar>PGBINOLD</envar>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:69(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:69(option) 
 msgid "-B"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:69(replaceable) /tmp/cicero-hjxh/pgupgrade.xml:70(replaceable) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:69(replaceable) /tmp/cicero-Bcej/pgupgrade.xml:70(replaceable) 
 msgid "new_bindir"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:70(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:70(option) 
 msgid "--new-bindir="
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:71(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:71(para) 
 msgid "the new cluster executable directory; environment variable <envar>PGBINNEW</envar>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:76(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:76(option) 
 msgid "-c"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:77(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:77(option) 
 msgid "--check"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:78(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:78(para) 
 msgid "check clusters only, don't change any data"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:82(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:82(option) 
 msgid "-d"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:82(replaceable) /tmp/cicero-hjxh/pgupgrade.xml:83(replaceable) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:82(replaceable) /tmp/cicero-Bcej/pgupgrade.xml:83(replaceable) 
 msgid "old_datadir"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:83(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:83(option) 
 msgid "--old-datadir="
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:84(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:84(para) 
 msgid "the old cluster data directory; environment variable <envar>PGDATAOLD</envar>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:89(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:89(option) 
 msgid "-D"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:89(replaceable) /tmp/cicero-hjxh/pgupgrade.xml:90(replaceable) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:89(replaceable) /tmp/cicero-Bcej/pgupgrade.xml:90(replaceable) 
 msgid "new_datadir"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:90(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:90(option) 
 msgid "--new-datadir="
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:91(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:91(para) 
 msgid "the new cluster data directory; environment variable <envar>PGDATANEW</envar>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:96(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:96(option) 
 msgid "-g"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:97(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:97(option) 
 msgid "--debug"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:98(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:98(para) 
 msgid "enable debugging"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:102(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:102(option) 
 msgid "-G"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:102(replaceable) /tmp/cicero-hjxh/pgupgrade.xml:103(replaceable) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:102(replaceable) /tmp/cicero-Bcej/pgupgrade.xml:103(replaceable) 
 msgid "debug_filename"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:103(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:103(option) 
 msgid "--debugfile="
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:104(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:104(para) 
 msgid "output debugging activity to file"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:108(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:108(option) 
 msgid "-k"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:109(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:109(option) 
 msgid "--link"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:110(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:110(para) 
 msgid "use hard links instead of copying files to the new cluster"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:114(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:114(option) 
 msgid "-l"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:114(replaceable) /tmp/cicero-hjxh/pgupgrade.xml:115(replaceable) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:114(replaceable) /tmp/cicero-Bcej/pgupgrade.xml:115(replaceable) 
 msgid "log_filename"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:115(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:115(option) 
 msgid "--logfile="
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:116(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:116(para) 
 msgid "log session activity to file"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:120(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:120(option) 
 msgid "-p"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:120(replaceable) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:120(replaceable) 
 msgid "old_port_number"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:121(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:121(option) 
 msgid "--old-port="
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:121(replaceable) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:121(replaceable) 
 msgid "old_portnum"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:122(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:122(para) 
 msgid "the old cluster port number; environment variable <envar>PGPORTOLD</envar>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:127(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:127(option) 
 msgid "-P"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:127(replaceable) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:127(replaceable) 
 msgid "new_port_number"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:128(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:128(option) 
 msgid "--new-port="
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:128(replaceable) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:128(replaceable) 
 msgid "new_portnum"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:129(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:129(para) 
 msgid "the new cluster port number; environment variable <envar>PGPORTNEW</envar>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:134(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:134(option) 
 msgid "-u"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:134(replaceable) /tmp/cicero-hjxh/pgupgrade.xml:135(replaceable) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:134(replaceable) /tmp/cicero-Bcej/pgupgrade.xml:135(replaceable) 
 msgid "user_name"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:135(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:135(option) 
 msgid "--user="
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:136(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:136(para) 
 msgid "cluster's super user name; environment variable <envar>PGUSER</envar>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:141(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:141(option) 
 msgid "-v"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:142(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:142(option) 
 msgid "--verbose"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:143(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:143(para) 
 msgid "enable verbose output"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:147(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:147(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:148(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:148(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:149(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:149(para) 
 msgid "display version information, then exit"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:153(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:153(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:154(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:154(option) 
 msgid "-h"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:155(option) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:155(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:156(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:156(para) 
 msgid "show help, then exit"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:56(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:56(para) 
 msgid "<application>pg_upgrade</application> accepts the following command-line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:165(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:165(title) 
 msgid "Upgrade Steps"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:169(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:169(title) 
 msgid "Optionally move the old cluster"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:171(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:171(para) 
 msgid "If you are using a version-specific installation directory, e.g. <filename>/opt/PostgreSQL/8.4</filename>, you do not need to move the old cluster. The one-click installers all use version-specific installation directories."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:185(programlisting) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:185(programlisting) 
 #, no-wrap
 msgid "\nmv /usr/local/pgsql /usr/local/pgsql.old\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:177(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:177(para) 
 msgid "If your installation directory is not version-specific, e.g. <filename>/usr/local/pgsql</filename>, it is necessary to move the current PostgreSQL install directory so it does not interfere with the new <productname>PostgreSQL</productname> installation. Once the current <productname>PostgreSQL</productname> server is shut down, it is safe to rename the PostgreSQL installation directory; assuming the old directory is <filename>/usr/local/pgsql</filename>, you can do: <placeholder-1/> to rename the directory."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:193(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:193(title) 
 msgid "For source installs, build the new version"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:195(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:195(para) 
 msgid "Build the new PostgreSQL source with <command>configure</command> flags that are compatible with the old cluster. <application>pg_upgrade</application> will check <command>pg_controldata</command> to make sure all settings are compatible before starting the upgrade."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:203(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:203(title) 
 msgid "Install the new PostgreSQL binaries"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:205(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:205(para) 
 msgid "Install the new server's binaries and support files. You can use the same port numbers for both clusters, typically 5432, because the old and new clusters will not be running at the same time."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:215(programlisting) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:215(programlisting) 
 #, no-wrap
 msgid "\ngmake prefix=/usr/local/pgsql.new install\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:211(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:211(para) 
 msgid "For source installs, if you wish to install the new server in a custom location, use the <literal>prefix</literal> variable: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:222(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:222(title) 
 msgid "Install pg_upgrade and pg_upgrade_support"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:224(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:224(para) 
 msgid "Install the <application>pg_upgrade</application> binary and <application>pg_upgrade_support</application> library in the new PostgreSQL cluster."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:231(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:231(title) 
 msgid "Initialize the new PostgreSQL cluster"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:233(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:233(para) 
 msgid "Initialize the new cluster using <command>initdb</command>. Again, use compatible <command>initdb</command> flags that match the old cluster. Many prebuilt installers do this step automatically. There is no need to start the new cluster."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:243(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:243(title) 
 msgid "Install custom shared object files"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:245(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:245(para) 
 msgid "Install any custom shared object files (or DLLs) used by the old cluster into the new cluster, e.g. <filename>pgcrypto.so</filename>, whether they are from <filename>contrib</filename> or some other source. Do not install the schema definitions, e.g. <filename>pgcrypto.sql</filename>, because these will be upgraded from the old cluster."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:254(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:254(title) 
 msgid "Adjust authentication"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:256(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:256(para) 
 msgid "<command>pg_upgrade</command> will connect to the old and new servers several times, so you might want to set authentication to <literal>trust</literal> in <filename>pg_hba.conf</filename>, or if using <literal>md5</literal> authentication, use a <filename>~/.pgpass</filename> file (see <xref linkend=\"libpq-pgpass\"/>) to avoid being prompted repeatedly for a password."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:266(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:266(title) 
 msgid "Stop both servers"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:271(programlisting) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:271(programlisting) 
 #, no-wrap
 msgid "\npg_ctl -D /opt/PostgreSQL/8.4 stop\npg_ctl -D /opt/PostgreSQL/9.0 stop\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:278(programlisting) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:278(programlisting) 
 #, no-wrap
 msgid "\nNET STOP postgresql-8.4\nNET STOP postgresql-9.0\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:285(programlisting) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:285(programlisting) 
 #, no-wrap
 msgid "\nNET STOP pgsql-8.3  (<productname>PostgreSQL</productname> 8.3 and older used a different service name)\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:268(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:268(para) 
 msgid "Make sure both database servers are stopped using, on Unix, e.g.: <placeholder-1/> or on Windows, using the proper service names: <placeholder-2/> or <placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:292(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:292(title) 
 msgid "Run <application>pg_upgrade</application>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:294(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:294(para) 
 msgid "Always run the <application>pg_upgrade</application> binary of the new server, not the old one. <application>pg_upgrade</application> requires the specification of the old and new cluster's data and executable (<filename>bin</filename>) directories. You can also specify user and port values, and whether you want the data linked instead of copied (the default)."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:302(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:302(para) 
 msgid "If you use link mode, the upgrade will be much faster (no file copying), but you will not be able to access your old cluster once you start the new cluster after the upgrade. Link mode also requires that the old and new cluster data directories be in the same file system. See <literal>pg_upgrade --help</literal> for a full list of options."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:318(programlisting) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:318(programlisting) 
 #, no-wrap
 msgid "\nRUNAS /USER:postgres \"CMD.EXE\"\nSET PATH=%PATH%;C:\\Program Files\\PostgreSQL\\9.0\\bin;\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:325(programlisting) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:325(programlisting) 
 #, no-wrap
 msgid "\npg_upgrade.exe\n        --old-datadir \"C:/Program Files/PostgreSQL/8.4/data\"\n        --new-datadir \"C:/Program Files/PostgreSQL/9.0/data\"\n        --old-bindir \"C:/Program Files/PostgreSQL/8.4/bin\"\n        --new-bindir \"C:/Program Files/PostgreSQL/9.0/bin\"\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:314(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:314(para) 
 msgid "For Windows users, you must be logged into an administrative account, and then start a shell as the <literal>postgres</literal> user and set the proper path: <placeholder-1/> and then run <application>pg_upgrade</application> with quoted directories, e.g.: <placeholder-2/> Once started, <command>pg_upgrade</command> will verify the two clusters are compatible and then do the upgrade. You can use <command>pg_upgrade --check</command> to perform only the checks, even if the old server is still running. <command>pg_upgrade --check</command> will also outline any manual adjustments you will need to make after the upgrade. <command>pg_upgrade</command> requires write permission in the current directory."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:341(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:341(para) 
 msgid "Obviously, no one should be accessing the clusters during the upgrade. <application>pg_upgrade</application> defaults to running servers on port 50432 to avoid unintended client connections."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:347(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:347(para) 
 msgid "If an error occurs while restoring the database schema, <command>pg_upgrade</command> will exit and you will have to revert to the old cluster as outlined in <xref linkend=\"pgupgrade-step-revert\"/> below. To try <command>pg_upgrade</command> again, you will need to modify the old cluster so the pg_upgrade schema restore succeeds. If the problem is a contrib module, you might need to uninstall the contrib module from the old cluster and install it in the new cluster after the upgrade, assuming the module is not being used to store user data."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:359(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:359(title) 
 msgid "Restore <filename>pg_hba.conf</filename>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:361(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:361(para) 
 msgid "If you modified <filename>pg_hba.conf</filename> to use <literal>trust</literal>, restore its original authentication settings."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:368(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:368(title) 
 msgid "Post-Upgrade processing"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:377(programlisting) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:377(programlisting) 
 #, no-wrap
 msgid "\npsql --username postgres --file script.sql postgres\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:370(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:370(para) 
 msgid "If any post-upgrade processing is required, pg_upgrade will issue warnings as it completes. It will also generate script files that must be run by the administrator. The script files will connect to each database that needs post-upgrade processing. Each script should be run using: <placeholder-1/> The scripts can be run in any order and can be deleted once they have been run."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:386(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:386(para) 
 msgid "In general it is unsafe to access tables referenced in rebuild scripts until the rebuild scripts have run to completion; doing so could yield incorrect results or poor performance. Tables not referenced in rebuild scripts can be accessed immediately."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:396(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:396(title) 
 msgid "Statistics"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:398(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:398(para) 
 msgid "Because optimizer statistics are not transferred by <command>pg_upgrade</command>, you will be instructed to run a command to regenerate that information at the end of the upgrade."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:406(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:406(title) 
 msgid "Delete old cluster"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:408(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:408(para) 
 msgid "Once you are satisfied with the upgrade, you can delete the old cluster's data directories by running the script mentioned when <command>pg_upgrade</command> completes. You can also delete the old installation directories (e.g. <filename>bin</filename>, <filename>share</filename>)."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:418(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:418(title) 
 msgid "Reverting to old cluster"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:426(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:426(para) 
 msgid "If you ran <command>pg_upgrade</command> with <option>--check</option>, no modifications were made to the old cluster and you can re-use it anytime."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:434(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:434(para) 
 msgid "If you ran <command>pg_upgrade</command> with <option>--link</option>, the data files are shared between the old and new cluster. If you started the new cluster, the new server has written to those shared files and it is unsafe to use the old cluster."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:444(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:444(para) 
 msgid "If you ran <command>pg_upgrade</command><emphasis>without</emphasis><option>--link</option> or did not start the new server, the old cluster was not modified except that an <literal>.old</literal> suffix was appended to <filename>$PGDATA/global/pg_control</filename> and perhaps tablespace directories. To reuse the old cluster, remove the <filename>.old</filename> suffix from <filename>$PGDATA/global/pg_control</filename>. and, if upgrading to 8.4 or earlier, remove the tablespace directories created by the upgrade and remove the <filename>.old</filename> suffix from the tablespace directory names; then you can restart the old cluster."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:420(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:420(para) 
 msgid "If, after running <command>pg_upgrade</command>, you wish to revert to the old cluster, there are several options: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:467(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:467(title) 
 msgid "Limitations in Upgrading <emphasis>from</emphasis> PostgreSQL 8.3"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:476(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:476(para) 
 msgid "a <type>tsquery</type> data type"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:481(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:481(para) 
 msgid "data type <type>name</type> and is not the first column"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:469(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:469(para) 
 msgid "Upgrading from PostgreSQL 8.3 has additional restrictions not present when upgrading from later PostgreSQL releases. For example, pg_upgrade will not work for upgrading from 8.3 if a user column is defined as: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:488(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:488(para) 
 msgid "You must drop any such columns and upgrade them manually."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:496(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:496(para) 
 msgid "a user column is of data type <type>tsvector</type>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:492(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:492(para) 
 msgid "pg_upgrade will require a table rebuild if: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:507(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:507(para) 
 msgid "an index is of type hash or GIN"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:512(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:512(para) 
 msgid "an index uses <function>bpchar_pattern_ops</function>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:503(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:503(para) 
 msgid "pg_upgrade will require a reindex if: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:519(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:519(para) 
 msgid "Also, the default datetime storage format changed to integer after <productname>PostgreSQL</productname> 8.3. pg_upgrade will check that the datetime storage format used by the old and new clusters match. Make sure your new cluster is built with the configure flag <option>--disable-integer-datetimes</option>."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:526(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:526(para) 
 msgid "For Windows users, note that due to different integer datetimes settings used by the one-click installer and the MSI installer, it is only possible to upgrade from version 8.3 of the one-click distribution to version 8.4 or later of the one-click distribution. It is not possible to upgrade from the MSI installer to the one-click installer."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:537(title) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:537(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:539(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:539(para) 
 msgid "<application>pg_upgrade</application> does not support upgrading of databases containing these <type>reg*</type> OID-referencing system data types: <type>regproc</type>, <type>regprocedure</type>, <type>regoper</type>, <type>regoperator</type>, <type>regclass</type>, <type>regconfig</type>, and <type>regdictionary</type>. (<type>regtype</type> can be upgraded.)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:547(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:547(para) 
 msgid "All failure, rebuild, and reindex cases will be reported by <application>pg_upgrade</application> if they affect your installation; post-upgrade scripts to rebuild tables and indexes will be generated automatically."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:554(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:554(para) 
 msgid "For deployment testing, create a schema-only copy of the old cluster, insert dummy data, and upgrade that."
 msgstr ""
 
-#: /tmp/cicero-hjxh/pgupgrade.xml:559(para) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:559(para) 
 msgid "If you want to use link mode and you don't want your old cluster to be modified when the new cluster is started, make a copy of the old cluster and upgrade that with link mode. To make a valid copy of the old cluster, use <command>rsync</command> to create a dirty copy of the old cluster while the server is running, then shut down the old server and run <command>rsync</command> again to update the copy with any changes to make it consistent."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-hjxh/pgupgrade.xml:0(None) 
+#: /tmp/cicero-Bcej/pgupgrade.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-25 06:59+0200\n"
+"POT-Creation-Date: 2011-08-26 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,85 +9,85 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:10(refentrytitle) /tmp/cicero-hjxh/ref/drop_database.xml:16(refname) /tmp/cicero-hjxh/ref/drop_database.xml:21(primary) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:10(refentrytitle) /tmp/cicero-Bcej/ref/drop_database.xml:16(refname) /tmp/cicero-Bcej/ref/drop_database.xml:21(primary) 
 msgid "DROP DATABASE"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:11(manvolnum) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:12(refmiscinfo) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:17(refpurpose) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:17(refpurpose) 
 msgid "remove a database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:26(replaceable) /tmp/cicero-hjxh/ref/drop_database.xml:62(replaceable) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:26(replaceable) /tmp/cicero-Bcej/ref/drop_database.xml:62(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:25(synopsis) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP DATABASE [ IF EXISTS ] <placeholder-1/>\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:31(title) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:33(para) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:33(para) 
 msgid "<command>DROP DATABASE</command> drops a database. It removes the catalog entries for the database and deletes the directory containing the data. It can only be executed by the database owner. Also, it cannot be executed while you or anyone else are connected to the target database. (Connect to <literal>postgres</literal> or any other database to issue this command.)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:42(para) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:42(para) 
 msgid "<command>DROP DATABASE</command> cannot be undone. Use it with care!"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:48(title) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:48(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:52(literal) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:52(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:54(para) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:54(para) 
 msgid "Do not throw an error if the database does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:64(para) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:64(para) 
 msgid "The name of the database to remove."
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:73(title) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:73(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:75(para) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:75(para) 
 msgid "<command>DROP DATABASE</command> cannot be executed inside a transaction block."
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:80(para) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:80(para) 
 msgid "This command cannot be executed while connected to the target database. Thus, it might be more convenient to use the program <xref linkend=\"app-dropdb\"/> instead, which is a wrapper around this command."
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:89(title) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:89(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:91(para) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:91(para) 
 msgid "There is no <command>DROP DATABASE</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-hjxh/ref/drop_database.xml:97(title) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:97(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-hjxh/ref/drop_database.xml:0(None) 
+#: /tmp/cicero-Bcej/ref/drop_database.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

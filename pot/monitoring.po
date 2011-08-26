@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-25 06:59+0200\n"
+"POT-Creation-Date: 2011-08-26 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,1813 +9,1813 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-hjxh/monitoring.xml:6(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:6(title) 
 msgid "Monitoring Database Activity"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:9(primary) /tmp/cicero-hjxh/monitoring.xml:15(secondary) /tmp/cicero-hjxh/monitoring.xml:1267(secondary) 
+#: /tmp/cicero-Bcej/monitoring.xml:9(primary) /tmp/cicero-Bcej/monitoring.xml:15(secondary) /tmp/cicero-Bcej/monitoring.xml:1267(secondary) 
 msgid "monitoring"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:10(secondary) /tmp/cicero-hjxh/monitoring.xml:14(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:10(secondary) /tmp/cicero-Bcej/monitoring.xml:14(primary) 
 msgid "database activity"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:18(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:18(para) 
 msgid "A database administrator frequently wonders, <quote>What is the system doing right now?</quote> This chapter discusses how to find that out."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:24(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:24(para) 
 msgid "Several tools are available for monitoring database activity and analyzing performance. Most of this chapter is devoted to describing <productname>PostgreSQL</productname>'s statistics collector, but one should not neglect regular Unix monitoring programs such as <command>ps</command>, <command>top</command>, <command>iostat</command>, and <command>vmstat</command>. Also, once one has identified a poorly-performing query, further investigation might be needed using <productname>PostgreSQL</productname>'s <xref linkend=\"sql-explain\"/> command. <xref linkend=\"using-explain\"/> discusses <command>EXPLAIN</command> and other methods for understanding the behavior of an individual query."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:39(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:39(title) 
 msgid "Standard Unix Tools"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:42(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:42(primary) 
 msgid "ps"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:43(secondary) 
+#: /tmp/cicero-Bcej/monitoring.xml:43(secondary) 
 msgid "to monitor activity"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:46(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:46(para) 
 msgid "On most Unix platforms, <productname>PostgreSQL</productname> modifies its command title as reported by <command>ps</command>, so that individual server processes can readily be identified. A sample display is <screen>\n$ ps auxww | grep ^postgres\npostgres   960  0.0  1.1  6104 1480 pts/1    SN   13:17   0:00 postgres -i\npostgres   963  0.0  1.1  7084 1472 pts/1    SN   13:17   0:00 postgres: writer process\npostgres   965  0.0  1.1  6152 1512 pts/1    SN   13:17   0:00 postgres: stats collector process\npostgres   998  0.0  2.3  6532 2992 pts/1    SN   13:18   0:00 postgres: tgl runbug 127.0.0.1 idle\npostgres  1003  0.0  2.4  6532 3128 pts/1    SN   13:19   0:00 postgres: tgl regression [local] SELECT waiting\npostgres  1016  0.1  2.4  6532 3080 pts/1    SN   13:19   0:00 postgres: tgl regression [local] idle in transaction\n</screen> (The appropriate invocation of <command>ps</command> varies across different platforms, as do the details of what is shown. This example is from a recent Linux system.) The first process listed here is the master server process. The command arguments shown for it are the same ones used when it was launched. The next two processes are background worker processes automatically launched by the master process. (The <quote>stats collector</quote> process will not be present if you have set the system not to start the statistics collector.) Each of the remaining processes is a server process handling one client connection. Each such process sets its command line display in the form <screen>\npostgres: <replaceable>user</replaceable> <replaceable>database</replaceable> <replaceable>host</replaceable> <replaceable>activity</replaceable>\n</screen> The user, database, and (client) host items remain the same for the life of the client connection, but the activity indicator changes. The activity can be <literal>idle</literal> (i.e., waiting for a client command), <literal>idle in transaction</literal> (waiting for client inside a <command>BEGIN</command> block), or a command type name such as <literal>SELECT</literal>. Also, <literal>waiting</literal> is appended if the server process is presently waiting on a lock held by another session. In the above example we can infer that process 1003 is waiting for process 1016 to complete its transaction and thereby release some lock."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:88(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:88(para) 
 msgid "If you have turned off <xref linkend=\"guc-update-process-title\"/> then the activity indicator is not updated; the process title is set only once when a new process is launched. On some platforms this saves a measurable amount of per-command overhead; on others it's insignificant."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:96(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:96(para) 
 msgid "<productname>Solaris</productname> requires special handling. You must use <command>/usr/ucb/ps</command>, rather than <command>/bin/ps</command>. You also must use two <option>w</option> flags, not just one. In addition, your original invocation of the <command>postgres</command> command must have a shorter <command>ps</command> status display than that provided by each server process. If you fail to do all three things, the <command>ps</command> output for each server process will be the original <command>postgres</command> command line."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:111(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:111(title) 
 msgid "The Statistics Collector"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:114(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:114(primary) 
 msgid "statistics"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:117(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:117(para) 
 msgid "<productname>PostgreSQL</productname>'s <firstterm>statistics collector</firstterm> is a subsystem that supports collection and reporting of information about server activity. Presently, the collector can count accesses to tables and indexes in both disk-block and individual-row terms. It also tracks the total number of rows in each table, and information about vacuum and analyze actions for each table. It can also count calls to user-defined functions and the total time spent in each one."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:127(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:127(para) 
 msgid "<productname>PostgreSQL</productname> also supports reporting of the exact command currently being executed by other server processes. This facility is independent of the collector process."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:134(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:134(title) 
 msgid "Statistics Collection Configuration"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:136(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:136(para) 
 msgid "Since collection of statistics adds some overhead to query execution, the system can be configured to collect or not collect information. This is controlled by configuration parameters that are normally set in <filename>postgresql.conf</filename>. (See <xref linkend=\"runtime-config\"/> for details about setting configuration parameters.)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:144(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:144(para) 
 msgid "The parameter <xref linkend=\"guc-track-counts\"/> controls whether statistics are collected about table and index accesses."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:149(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:149(para) 
 msgid "The parameter <xref linkend=\"guc-track-functions\"/> enables tracking of usage of user-defined functions."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:154(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:154(para) 
 msgid "The parameter <xref linkend=\"guc-track-activities\"/> enables monitoring of the current command being executed by any server process."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:159(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:159(para) 
 msgid "Normally these parameters are set in <filename>postgresql.conf</filename> so that they apply to all server processes, but it is possible to turn them on or off in individual sessions using the <xref linkend=\"sql-set\"/> command. (To prevent ordinary users from hiding their activity from the administrator, only superusers are allowed to change these parameters with <command>SET</command>.)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:169(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:169(para) 
 msgid "The statistics collector transmits the collected information to backends (including autovacuum) through temporary files. These files are stored in the <filename>pg_stat_tmp</filename> subdirectory. When the postmaster shuts down, a permanent copy of the statistics data is stored in the <filename>global</filename> subdirectory. For increased performance, the parameter <xref linkend=\"guc-stats-temp-directory\"/> can be pointed at a RAM-based file system, decreasing physical I/O requirements."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:182(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:182(title) 
 msgid "Viewing Collected Statistics"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:184(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:184(para) 
 msgid "Several predefined views, listed in <xref linkend=\"monitoring-stats-views-table\"/>, are available to show the results of statistics collection. Alternatively, one can build custom views using the underlying statistics functions."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:191(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:191(para) 
 msgid "When using the statistics to monitor current activity, it is important to realize that the information does not update instantaneously. Each individual server process transmits new statistical counts to the collector just before going idle; so a query or transaction still in progress does not affect the displayed totals. Also, the collector itself emits a new report at most once per <varname>PGSTAT_STAT_INTERVAL</varname> milliseconds (500 unless altered while building the server). So the displayed information lags behind actual activity. However, current-query information collected by <varname>track_activities</varname> is always up-to-date."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:204(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:204(para) 
 msgid "Another important point is that when a server process is asked to display any of these statistics, it first fetches the most recent report emitted by the collector process and then continues to use this snapshot for all statistical views and functions until the end of its current transaction. So the statistics will show static information as long as you continue the current transaction. Similarly, information about the current queries of all sessions is collected when any such information is first requested within a transaction, and the same information will be displayed throughout the transaction. This is a feature, not a bug, because it allows you to perform several queries on the statistics and correlate the results without worrying that the numbers are changing underneath you. But if you want to see new results with each query, be sure to do the queries outside any transaction block. Alternatively, you can invoke <function>pg_stat_clear_snapshot</function>(), which will discard the current transaction's statistics snapshot (if any). The next use of statistical information will cause a new snapshot to be fetched."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:224(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:224(para) 
 msgid "A transaction can also see its own statistics (as yet untransmitted to the collector) in the views <structname>pg_stat_xact_all_tables</structname>, <structname>pg_stat_xact_sys_tables</structname>, <structname>pg_stat_xact_user_tables</structname>, and <structname>pg_stat_xact_user_functions</structname>, or via these views' underlying functions. These numbers do not act as stated above; instead they update continuously throughout the transaction."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:235(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:235(title) 
 msgid "Standard Statistics Views"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:240(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:240(entry) 
 msgid "View Name"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:241(entry) /tmp/cicero-hjxh/monitoring.xml:556(entry) /tmp/cicero-hjxh/monitoring.xml:1376(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:241(entry) /tmp/cicero-Bcej/monitoring.xml:556(entry) /tmp/cicero-Bcej/monitoring.xml:1376(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:247(structname) /tmp/cicero-hjxh/monitoring.xml:247(primary) /tmp/cicero-hjxh/monitoring.xml:943(structname) /tmp/cicero-hjxh/monitoring.xml:1460(structname) 
+#: /tmp/cicero-Bcej/monitoring.xml:247(structname) /tmp/cicero-Bcej/monitoring.xml:247(primary) /tmp/cicero-Bcej/monitoring.xml:943(structname) /tmp/cicero-Bcej/monitoring.xml:1460(structname) 
 msgid "pg_stat_activity"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:249(acronym) /tmp/cicero-hjxh/monitoring.xml:304(acronym) 
+#: /tmp/cicero-Bcej/monitoring.xml:249(acronym) /tmp/cicero-Bcej/monitoring.xml:304(acronym) 
 msgid "ID"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:254(varname) /tmp/cicero-hjxh/monitoring.xml:1040(varname) /tmp/cicero-hjxh/monitoring.xml:1051(varname) /tmp/cicero-hjxh/monitoring.xml:1063(varname) /tmp/cicero-hjxh/monitoring.xml:1075(varname) 
+#: /tmp/cicero-Bcej/monitoring.xml:254(varname) /tmp/cicero-Bcej/monitoring.xml:1040(varname) /tmp/cicero-Bcej/monitoring.xml:1051(varname) /tmp/cicero-Bcej/monitoring.xml:1063(varname) /tmp/cicero-Bcej/monitoring.xml:1075(varname) 
 msgid "track_activities"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:259(filename) /tmp/cicero-hjxh/monitoring.xml:318(filename) 
+#: /tmp/cicero-Bcej/monitoring.xml:259(filename) /tmp/cicero-Bcej/monitoring.xml:318(filename) 
 msgid "pg_hba.conf"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:248(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:248(entry) 
 msgid "One row per server process, showing database OID, database name, process <placeholder-1/>, user OID, user name, application name, client's address, host name (if available), and port number, times at which the server process, current transaction, and current query began execution, process's waiting status, and text of the current query. The columns that report data on the current query are available unless the parameter <placeholder-2/> has been turned off. Furthermore, these columns are only visible if the user examining the view is a superuser or the same as the user owning the process being reported on. The client's host name will be available only if <xref linkend=\"guc-log-hostname\"/> is set or if the user's host name needed to be looked up during <placeholder-3/> processing."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:265(structname) /tmp/cicero-hjxh/monitoring.xml:265(primary) /tmp/cicero-hjxh/monitoring.xml:1209(structname) 
+#: /tmp/cicero-Bcej/monitoring.xml:265(structname) /tmp/cicero-Bcej/monitoring.xml:265(primary) /tmp/cicero-Bcej/monitoring.xml:1209(structname) 
 msgid "pg_stat_bgwriter"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:266(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:266(entry) 
 msgid "One row only, showing cluster-wide statistics from the background writer: number of scheduled checkpoints, requested checkpoints, buffers written by checkpoints and cleaning scans, and the number of times the background writer stopped a cleaning scan because it had written too many buffers. Also includes statistics about the shared buffer pool, including buffers written by backends (that is, not by the background writer), how many times those backends had to execute their own fsync calls (normally the background writer handles those even when the backend does its own write), total buffers allocated, and time of last statistics reset."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:280(structname) /tmp/cicero-hjxh/monitoring.xml:280(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:280(structname) /tmp/cicero-Bcej/monitoring.xml:280(primary) 
 msgid "pg_stat_database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:281(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:281(entry) 
 msgid "One row per database, showing database OID, database name, number of active server processes connected to that database, number of transactions committed and rolled back in that database, total disk blocks read, total buffer hits (i.e., block read requests avoided by finding the block already in buffer cache), number of rows returned, fetched, inserted, updated and deleted, the total number of queries canceled due to conflict with recovery (on standby servers), and time of last statistics reset."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:293(structname) /tmp/cicero-hjxh/monitoring.xml:293(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:293(structname) /tmp/cicero-Bcej/monitoring.xml:293(primary) 
 msgid "pg_stat_database_conflicts"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:294(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:294(entry) 
 msgid "One row per database, showing database OID, database name and the number of queries that have been canceled in this database due to dropped tablespaces, lock timeouts, old snapshots, pinned buffers and deadlocks. Will only contain information on standby servers, since conflicts do not occur on master servers."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:303(structname) /tmp/cicero-hjxh/monitoring.xml:303(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:303(structname) /tmp/cicero-Bcej/monitoring.xml:303(primary) 
 msgid "pg_stat_replication"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:312(varname) 
+#: /tmp/cicero-Bcej/monitoring.xml:312(varname) 
 msgid "synchronous_standby_names"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:304(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:304(entry) 
 msgid "One row per WAL sender process, showing process <placeholder-1/>, user OID, user name, application name, client's address, host name (if available) and port number, time at which the server process began execution, and the current WAL sender state and transaction log location. In addition, the standby reports the last transaction log position it received and wrote, the last position it flushed to disk, and the last position it replayed, and this information is also displayed here. If the standby's application names matches one of the settings in <placeholder-2/> then the sync_priority is shown here also, that is the order in which standbys will become the synchronous standby. The columns detailing what exactly the connection is doing are only visible if the user examining the view is a superuser. The client's host name will be available only if <xref linkend=\"guc-log-hostname\"/> is set or if the user's host name needed to be looked up during <placeholder-3/> processing. Only directly connected standbys are listed; no information about downstream standby servers is recorded."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:325(structname) /tmp/cicero-hjxh/monitoring.xml:325(primary) /tmp/cicero-hjxh/monitoring.xml:347(structname) /tmp/cicero-hjxh/monitoring.xml:353(structname) /tmp/cicero-hjxh/monitoring.xml:359(structname) /tmp/cicero-hjxh/monitoring.xml:361(structname) 
+#: /tmp/cicero-Bcej/monitoring.xml:325(structname) /tmp/cicero-Bcej/monitoring.xml:325(primary) /tmp/cicero-Bcej/monitoring.xml:347(structname) /tmp/cicero-Bcej/monitoring.xml:353(structname) /tmp/cicero-Bcej/monitoring.xml:359(structname) /tmp/cicero-Bcej/monitoring.xml:361(structname) 
 msgid "pg_stat_all_tables"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:334(option) /tmp/cicero-hjxh/monitoring.xml:338(option) /tmp/cicero-hjxh/monitoring.xml:790(option) /tmp/cicero-hjxh/monitoring.xml:823(option) 
+#: /tmp/cicero-Bcej/monitoring.xml:334(option) /tmp/cicero-Bcej/monitoring.xml:338(option) /tmp/cicero-Bcej/monitoring.xml:790(option) /tmp/cicero-Bcej/monitoring.xml:823(option) 
 msgid "FULL"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:326(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:326(entry) 
 msgid "For each table in the current database (including TOAST tables), the table OID, schema and table name, number of sequential scans initiated, number of live rows fetched by sequential scans, number of index scans initiated (over all indexes belonging to the table), number of live rows fetched by index scans, numbers of row insertions, updates, and deletions, number of row updates that were HOT (i.e., no separate index update), numbers of live and dead rows, the last time the table was non-<placeholder-1/> vacuumed manually, the last time it was vacuumed by the autovacuum daemon, the last time it was analyzed manually, the last time it was analyzed by the autovacuum daemon, number of times it has been non-<placeholder-2/> vacuumed manually, number of times it has been vacuumed by the autovacuum daemon, number of times it has been analyzed manually, and the number of times it has been analyzed by the autovacuum daemon."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:346(structname) /tmp/cicero-hjxh/monitoring.xml:346(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:346(structname) /tmp/cicero-Bcej/monitoring.xml:346(primary) 
 msgid "pg_stat_sys_tables"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:347(entry) /tmp/cicero-hjxh/monitoring.xml:368(entry) /tmp/cicero-hjxh/monitoring.xml:414(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:347(entry) /tmp/cicero-Bcej/monitoring.xml:368(entry) /tmp/cicero-Bcej/monitoring.xml:414(entry) 
 msgid "Same as <placeholder-1/>, except that only system tables are shown."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:352(structname) /tmp/cicero-hjxh/monitoring.xml:352(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:352(structname) /tmp/cicero-Bcej/monitoring.xml:352(primary) 
 msgid "pg_stat_user_tables"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:353(entry) /tmp/cicero-hjxh/monitoring.xml:374(entry) /tmp/cicero-hjxh/monitoring.xml:420(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:353(entry) /tmp/cicero-Bcej/monitoring.xml:374(entry) /tmp/cicero-Bcej/monitoring.xml:420(entry) 
 msgid "Same as <placeholder-1/>, except that only user tables are shown."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:358(structname) /tmp/cicero-hjxh/monitoring.xml:358(primary) /tmp/cicero-hjxh/monitoring.xml:368(structname) /tmp/cicero-hjxh/monitoring.xml:374(structname) 
+#: /tmp/cicero-Bcej/monitoring.xml:358(structname) /tmp/cicero-Bcej/monitoring.xml:358(primary) /tmp/cicero-Bcej/monitoring.xml:368(structname) /tmp/cicero-Bcej/monitoring.xml:374(structname) 
 msgid "pg_stat_xact_all_tables"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:360(emphasis) /tmp/cicero-hjxh/monitoring.xml:477(emphasis) 
+#: /tmp/cicero-Bcej/monitoring.xml:360(emphasis) /tmp/cicero-Bcej/monitoring.xml:477(emphasis) 
 msgid "not"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:359(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:359(entry) 
 msgid "Similar to <placeholder-1/>, but counts actions taken so far within the current transaction (which are <placeholder-2/> yet included in <placeholder-3/> and related views). The columns for numbers of live and dead rows and vacuum and analyze actions are not present in this view."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:367(structname) /tmp/cicero-hjxh/monitoring.xml:367(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:367(structname) /tmp/cicero-Bcej/monitoring.xml:367(primary) 
 msgid "pg_stat_xact_sys_tables"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:373(structname) /tmp/cicero-hjxh/monitoring.xml:373(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:373(structname) /tmp/cicero-Bcej/monitoring.xml:373(primary) 
 msgid "pg_stat_xact_user_tables"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:379(structname) /tmp/cicero-hjxh/monitoring.xml:379(primary) /tmp/cicero-hjxh/monitoring.xml:390(structname) /tmp/cicero-hjxh/monitoring.xml:396(structname) 
+#: /tmp/cicero-Bcej/monitoring.xml:379(structname) /tmp/cicero-Bcej/monitoring.xml:379(primary) /tmp/cicero-Bcej/monitoring.xml:390(structname) /tmp/cicero-Bcej/monitoring.xml:396(structname) 
 msgid "pg_stat_all_indexes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:380(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:380(entry) 
 msgid "For each index in the current database, the table and index OID, schema, table and index name, number of index scans initiated on that index, number of index entries returned by index scans, and number of live table rows fetched by simple index scans using that index."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:389(structname) /tmp/cicero-hjxh/monitoring.xml:389(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:389(structname) /tmp/cicero-Bcej/monitoring.xml:389(primary) 
 msgid "pg_stat_sys_indexes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:390(entry) /tmp/cicero-hjxh/monitoring.xml:434(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:390(entry) /tmp/cicero-Bcej/monitoring.xml:434(entry) 
 msgid "Same as <placeholder-1/>, except that only indexes on system tables are shown."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:395(structname) /tmp/cicero-hjxh/monitoring.xml:395(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:395(structname) /tmp/cicero-Bcej/monitoring.xml:395(primary) 
 msgid "pg_stat_user_indexes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:396(entry) /tmp/cicero-hjxh/monitoring.xml:440(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:396(entry) /tmp/cicero-Bcej/monitoring.xml:440(entry) 
 msgid "Same as <placeholder-1/>, except that only indexes on user tables are shown."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:401(structname) /tmp/cicero-hjxh/monitoring.xml:401(primary) /tmp/cicero-hjxh/monitoring.xml:414(structname) /tmp/cicero-hjxh/monitoring.xml:420(structname) 
+#: /tmp/cicero-Bcej/monitoring.xml:401(structname) /tmp/cicero-Bcej/monitoring.xml:401(primary) /tmp/cicero-Bcej/monitoring.xml:414(structname) /tmp/cicero-Bcej/monitoring.xml:420(structname) 
 msgid "pg_statio_all_tables"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:402(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:402(entry) 
 msgid "For each table in the current database (including TOAST tables), the table OID, schema and table name, number of disk blocks read from that table, number of buffer hits, numbers of disk blocks read and buffer hits in all indexes of that table, numbers of disk blocks read and buffer hits from that table's auxiliary TOAST table (if any), and numbers of disk blocks read and buffer hits for the TOAST table's index."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:413(structname) /tmp/cicero-hjxh/monitoring.xml:413(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:413(structname) /tmp/cicero-Bcej/monitoring.xml:413(primary) 
 msgid "pg_statio_sys_tables"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:419(structname) /tmp/cicero-hjxh/monitoring.xml:419(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:419(structname) /tmp/cicero-Bcej/monitoring.xml:419(primary) 
 msgid "pg_statio_user_tables"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:425(structname) /tmp/cicero-hjxh/monitoring.xml:425(primary) /tmp/cicero-hjxh/monitoring.xml:434(structname) /tmp/cicero-hjxh/monitoring.xml:440(structname) 
+#: /tmp/cicero-Bcej/monitoring.xml:425(structname) /tmp/cicero-Bcej/monitoring.xml:425(primary) /tmp/cicero-Bcej/monitoring.xml:434(structname) /tmp/cicero-Bcej/monitoring.xml:440(structname) 
 msgid "pg_statio_all_indexes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:426(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:426(entry) 
 msgid "For each index in the current database, the table and index OID, schema, table and index name, numbers of disk blocks read and buffer hits in that index."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:433(structname) /tmp/cicero-hjxh/monitoring.xml:433(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:433(structname) /tmp/cicero-Bcej/monitoring.xml:433(primary) 
 msgid "pg_statio_sys_indexes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:439(structname) /tmp/cicero-hjxh/monitoring.xml:439(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:439(structname) /tmp/cicero-Bcej/monitoring.xml:439(primary) 
 msgid "pg_statio_user_indexes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:445(structname) /tmp/cicero-hjxh/monitoring.xml:445(primary) /tmp/cicero-hjxh/monitoring.xml:454(structname) /tmp/cicero-hjxh/monitoring.xml:461(structname) 
+#: /tmp/cicero-Bcej/monitoring.xml:445(structname) /tmp/cicero-Bcej/monitoring.xml:445(primary) /tmp/cicero-Bcej/monitoring.xml:454(structname) /tmp/cicero-Bcej/monitoring.xml:461(structname) 
 msgid "pg_statio_all_sequences"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:446(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:446(entry) 
 msgid "For each sequence object in the current database, the sequence OID, schema and sequence name, numbers of disk blocks read and buffer hits in that sequence."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:453(structname) /tmp/cicero-hjxh/monitoring.xml:453(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:453(structname) /tmp/cicero-Bcej/monitoring.xml:453(primary) 
 msgid "pg_statio_sys_sequences"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:454(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:454(entry) 
 msgid "Same as <placeholder-1/>, except that only system sequences are shown. (Presently, no system sequences are defined, so this view is always empty.)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:460(structname) /tmp/cicero-hjxh/monitoring.xml:460(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:460(structname) /tmp/cicero-Bcej/monitoring.xml:460(primary) 
 msgid "pg_statio_user_sequences"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:461(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:461(entry) 
 msgid "Same as <placeholder-1/>, except that only user sequences are shown."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:466(structname) /tmp/cicero-hjxh/monitoring.xml:466(primary) /tmp/cicero-hjxh/monitoring.xml:476(structname) /tmp/cicero-hjxh/monitoring.xml:478(structname) 
+#: /tmp/cicero-Bcej/monitoring.xml:466(structname) /tmp/cicero-Bcej/monitoring.xml:466(primary) /tmp/cicero-Bcej/monitoring.xml:476(structname) /tmp/cicero-Bcej/monitoring.xml:478(structname) 
 msgid "pg_stat_user_functions"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:467(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:467(entry) 
 msgid "For all tracked functions, function OID, schema, name, number of calls, total time, and self time. Self time is the amount of time spent in the function itself, total time includes the time spent in functions it called. Time values are in milliseconds."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:475(structname) /tmp/cicero-hjxh/monitoring.xml:475(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:475(structname) /tmp/cicero-Bcej/monitoring.xml:475(primary) 
 msgid "pg_stat_xact_user_functions"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:476(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:476(entry) 
 msgid "Similar to <placeholder-1/>, but counts only calls during the current transaction (which are <placeholder-2/> yet included in <placeholder-3/>)."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:485(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:485(para) 
 msgid "The per-index statistics are particularly useful to determine which indexes are being used and how effective they are."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:490(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:490(para) 
 msgid "Indexes can be used either directly or via <quote>bitmap scans</quote>. In a bitmap scan the output of several indexes can be combined via AND or OR rules; so it is difficult to associate individual heap row fetches with specific indexes when a bitmap scan is used. Therefore, a bitmap scan increments the <structname>pg_stat_all_indexes</structname>.<structfield>idx_tup_read</structfield> count(s) for the index(es) it uses, and it increments the <structname>pg_stat_all_tables</structname>.<structfield>idx_tup_fetch</structfield> count for the table, but it does not affect <structname>pg_stat_all_indexes</structname>.<structfield>idx_tup_fetch</structfield>."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:505(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:505(para) 
 msgid "Before <productname>PostgreSQL</productname> 8.1, the <structfield>idx_tup_read</structfield> and <structfield>idx_tup_fetch</structfield> counts were essentially always equal. Now they can be different even without considering bitmap scans, because <structfield>idx_tup_read</structfield> counts index entries retrieved from the index while <structfield>idx_tup_fetch</structfield> counts live rows fetched from the table; the latter will be less if any dead or not-yet-committed rows are fetched using the index."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:516(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:516(para) 
 msgid "The <structname>pg_statio_</structname> views are primarily useful to determine the effectiveness of the buffer cache. When the number of actual disk reads is much smaller than the number of buffer hits, then the cache is satisfying most read requests without invoking a kernel call. However, these statistics do not give the entire story: due to the way in which <productname>PostgreSQL</productname> handles disk I/O, data that is not in the <productname>PostgreSQL</productname> buffer cache might still reside in the kernel's I/O cache, and might therefore still be fetched without requiring a physical read. Users interested in obtaining more detailed information on <productname>PostgreSQL</productname> I/O behavior are advised to use the <productname>PostgreSQL</productname> statistics collector in combination with operating system utilities that allow insight into the kernel's handling of I/O."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:533(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:533(para) 
 msgid "Other ways of looking at the statistics can be set up by writing queries that use the same underlying statistics access functions as these standard views do. These functions are listed in <xref linkend=\"monitoring-stats-funcs-table\"/>. The per-database access functions take a database OID as argument to identify which database to report on. The per-table and per-index functions take a table or index OID. The functions for function-call statistics take a function OID. (Note that only tables, indexes, and functions in the current database can be seen with these functions.) The per-server-process access functions take a server process number, which ranges from one to the number of currently active server processes."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:549(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:549(title) 
 msgid "Statistics Access Functions"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:554(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:554(entry) 
 msgid "Function"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:555(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:555(entry) 
 msgid "Return Type"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:562(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:562(function) 
 msgid "pg_stat_get_db_numbackends"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:562(type) /tmp/cicero-hjxh/monitoring.xml:570(type) /tmp/cicero-hjxh/monitoring.xml:578(type) /tmp/cicero-hjxh/monitoring.xml:586(type) /tmp/cicero-hjxh/monitoring.xml:594(type) /tmp/cicero-hjxh/monitoring.xml:602(type) /tmp/cicero-hjxh/monitoring.xml:610(type) /tmp/cicero-hjxh/monitoring.xml:618(type) /tmp/cicero-hjxh/monitoring.xml:626(type) /tmp/cicero-hjxh/monitoring.xml:634(type) /tmp/cicero-hjxh/monitoring.xml:642(type) /tmp/cicero-hjxh/monitoring.xml:650(type) /tmp/cicero-hjxh/monitoring.xml:658(type) /tmp/cicero-hjxh/monitoring.xml:666(type) /tmp/cicero-hjxh/monitoring.xml:674(type) /tmp/cicero-hjxh/monitoring.xml:682(type) /tmp/cicero-hjxh/monitoring.xml:695(type) /tmp/cicero-hjxh/monitoring.xml:704(type) /tmp/cicero-hjxh/monitoring.xml:713(type) /tmp/cicero-hjxh/monitoring.xml:723(type) /tmp/cicero-hjxh/monitoring.xml:731(type) /tmp/cicero-hjxh/monitoring.xml:739(type) /tmp/cicero-hjxh/monitoring.xml:747(type) /tmp/cicero-hjxh/monitoring.xml:755(type) /tmp/cicero-hjxh/monitoring.xml:763(type) /tmp/cicero-hjxh/monitoring.xml:771(type) /tmp/cicero-hjxh/monitoring.xml:779(type) /tmp/cicero-hjxh/monitoring.xml:787(type) /tmp/cicero-hjxh/monitoring.xml:795(type) /tmp/cicero-hjxh/monitoring.xml:803(type) /tmp/cicero-hjxh/monitoring.xml:811(type) /tmp/cicero-hjxh/monitoring.xml:820(type) /tmp/cicero-hjxh/monitoring.xml:828(type) /tmp/cicero-hjxh/monitoring.xml:836(type) /tmp/cicero-hjxh/monitoring.xml:844(type) /tmp/cicero-hjxh/monitoring.xml:852(type) /tmp/cicero-hjxh/monitoring.xml:861(type) /tmp/cicero-hjxh/monitoring.xml:870(type) /tmp/cicero-hjxh/monitoring.xml:880(type) /tmp/cicero-hjxh/monitoring.xml:888(type) /tmp/cicero-hjxh/monitoring.xml:896(type) /tmp/cicero-hjxh/monitoring.xml:904(type) /tmp/cicero-hjxh/monitoring.xml:912(type) /tmp/cicero-hjxh/monitoring.xml:920(type) /tmp/cicero-hjxh/monitoring.xml:948(type) /tmp/cicero-hjxh/monitoring.xml:956(type) /tmp/cicero-hjxh/monitoring.xml:965(type) /tmp/cicero-hjxh/monitoring.xml:974(type) /tmp/cicero-hjxh/monitoring.xml:982(type) /tmp/cicero-hjxh/monitoring.xml:992(type) /tmp/cicero-hjxh/monitoring.xml:1019(type) /tmp/cicero-hjxh/monitoring.xml:1027(type) 
+#: /tmp/cicero-Bcej/monitoring.xml:562(type) /tmp/cicero-Bcej/monitoring.xml:570(type) /tmp/cicero-Bcej/monitoring.xml:578(type) /tmp/cicero-Bcej/monitoring.xml:586(type) /tmp/cicero-Bcej/monitoring.xml:594(type) /tmp/cicero-Bcej/monitoring.xml:602(type) /tmp/cicero-Bcej/monitoring.xml:610(type) /tmp/cicero-Bcej/monitoring.xml:618(type) /tmp/cicero-Bcej/monitoring.xml:626(type) /tmp/cicero-Bcej/monitoring.xml:634(type) /tmp/cicero-Bcej/monitoring.xml:642(type) /tmp/cicero-Bcej/monitoring.xml:650(type) /tmp/cicero-Bcej/monitoring.xml:658(type) /tmp/cicero-Bcej/monitoring.xml:666(type) /tmp/cicero-Bcej/monitoring.xml:674(type) /tmp/cicero-Bcej/monitoring.xml:682(type) /tmp/cicero-Bcej/monitoring.xml:695(type) /tmp/cicero-Bcej/monitoring.xml:704(type) /tmp/cicero-Bcej/monitoring.xml:713(type) /tmp/cicero-Bcej/monitoring.xml:723(type) /tmp/cicero-Bcej/monitoring.xml:731(type) /tmp/cicero-Bcej/monitoring.xml:739(type) /tmp/cicero-Bcej/monitoring.xml:747(type) /tmp/cicero-Bcej/monitoring.xml:755(type) /tmp/cicero-Bcej/monitoring.xml:763(type) /tmp/cicero-Bcej/monitoring.xml:771(type) /tmp/cicero-Bcej/monitoring.xml:779(type) /tmp/cicero-Bcej/monitoring.xml:787(type) /tmp/cicero-Bcej/monitoring.xml:795(type) /tmp/cicero-Bcej/monitoring.xml:803(type) /tmp/cicero-Bcej/monitoring.xml:811(type) /tmp/cicero-Bcej/monitoring.xml:820(type) /tmp/cicero-Bcej/monitoring.xml:828(type) /tmp/cicero-Bcej/monitoring.xml:836(type) /tmp/cicero-Bcej/monitoring.xml:844(type) /tmp/cicero-Bcej/monitoring.xml:852(type) /tmp/cicero-Bcej/monitoring.xml:861(type) /tmp/cicero-Bcej/monitoring.xml:870(type) /tmp/cicero-Bcej/monitoring.xml:880(type) /tmp/cicero-Bcej/monitoring.xml:888(type) /tmp/cicero-Bcej/monitoring.xml:896(type) /tmp/cicero-Bcej/monitoring.xml:904(type) /tmp/cicero-Bcej/monitoring.xml:912(type) /tmp/cicero-Bcej/monitoring.xml:920(type) /tmp/cicero-Bcej/monitoring.xml:948(type) /tmp/cicero-Bcej/monitoring.xml:956(type) /tmp/cicero-Bcej/monitoring.xml:965(type) /tmp/cicero-Bcej/monitoring.xml:974(type) /tmp/cicero-Bcej/monitoring.xml:982(type) /tmp/cicero-Bcej/monitoring.xml:992(type) /tmp/cicero-Bcej/monitoring.xml:1019(type) /tmp/cicero-Bcej/monitoring.xml:1027(type) 
 msgid "oid"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:562(literal) /tmp/cicero-hjxh/monitoring.xml:570(literal) /tmp/cicero-hjxh/monitoring.xml:578(literal) /tmp/cicero-hjxh/monitoring.xml:586(literal) /tmp/cicero-hjxh/monitoring.xml:594(literal) /tmp/cicero-hjxh/monitoring.xml:602(literal) /tmp/cicero-hjxh/monitoring.xml:610(literal) /tmp/cicero-hjxh/monitoring.xml:618(literal) /tmp/cicero-hjxh/monitoring.xml:626(literal) /tmp/cicero-hjxh/monitoring.xml:634(literal) /tmp/cicero-hjxh/monitoring.xml:642(literal) /tmp/cicero-hjxh/monitoring.xml:650(literal) /tmp/cicero-hjxh/monitoring.xml:658(literal) /tmp/cicero-hjxh/monitoring.xml:666(literal) /tmp/cicero-hjxh/monitoring.xml:674(literal) /tmp/cicero-hjxh/monitoring.xml:682(literal) /tmp/cicero-hjxh/monitoring.xml:695(literal) /tmp/cicero-hjxh/monitoring.xml:704(literal) /tmp/cicero-hjxh/monitoring.xml:713(literal) /tmp/cicero-hjxh/monitoring.xml:723(literal) /tmp/cicero-hjxh/monitoring.xml:731(literal) /tmp/cicero-hjxh/monitoring.xml:739(literal) /tmp/cicero-hjxh/monitoring.xml:747(literal) /tmp/cicero-hjxh/monitoring.xml:755(literal) /tmp/cicero-hjxh/monitoring.xml:763(literal) /tmp/cicero-hjxh/monitoring.xml:771(literal) /tmp/cicero-hjxh/monitoring.xml:779(literal) /tmp/cicero-hjxh/monitoring.xml:787(literal) /tmp/cicero-hjxh/monitoring.xml:795(literal) /tmp/cicero-hjxh/monitoring.xml:803(literal) /tmp/cicero-hjxh/monitoring.xml:811(literal) /tmp/cicero-hjxh/monitoring.xml:820(literal) /tmp/cicero-hjxh/monitoring.xml:828(literal) /tmp/cicero-hjxh/monitoring.xml:836(literal) /tmp/cicero-hjxh/monitoring.xml:844(literal) /tmp/cicero-hjxh/monitoring.xml:852(literal) /tmp/cicero-hjxh/monitoring.xml:861(literal) /tmp/cicero-hjxh/monitoring.xml:870(literal) /tmp/cicero-hjxh/monitoring.xml:880(literal) /tmp/cicero-hjxh/monitoring.xml:888(literal) /tmp/cicero-hjxh/monitoring.xml:896(literal) /tmp/cicero-hjxh/monitoring.xml:904(literal) /tmp/cicero-hjxh/monitoring.xml:912(literal) /tmp/cicero-hjxh/monitoring.xml:920(literal) /tmp/cicero-hjxh/monitoring.xml:937(literal) /tmp/cicero-hjxh/monitoring.xml:948(literal) /tmp/cicero-hjxh/monitoring.xml:956(literal) /tmp/cicero-hjxh/monitoring.xml:965(literal) /tmp/cicero-hjxh/monitoring.xml:974(literal) /tmp/cicero-hjxh/monitoring.xml:982(literal) /tmp/cicero-hjxh/monitoring.xml:992(literal) /tmp/cicero-hjxh/monitoring.xml:1010(literal) /tmp/cicero-hjxh/monitoring.xml:1018(literal) /tmp/cicero-hjxh/monitoring.xml:1026(literal) /tmp/cicero-hjxh/monitoring.xml:1034(literal) /tmp/cicero-hjxh/monitoring.xml:1045(literal) /tmp/cicero-hjxh/monitoring.xml:1056(literal) /tmp/cicero-hjxh/monitoring.xml:1068(literal) /tmp/cicero-hjxh/monitoring.xml:1080(literal) /tmp/cicero-hjxh/monitoring.xml:1090(literal) /tmp/cicero-hjxh/monitoring.xml:1101(literal) 
+#: /tmp/cicero-Bcej/monitoring.xml:562(literal) /tmp/cicero-Bcej/monitoring.xml:570(literal) /tmp/cicero-Bcej/monitoring.xml:578(literal) /tmp/cicero-Bcej/monitoring.xml:586(literal) /tmp/cicero-Bcej/monitoring.xml:594(literal) /tmp/cicero-Bcej/monitoring.xml:602(literal) /tmp/cicero-Bcej/monitoring.xml:610(literal) /tmp/cicero-Bcej/monitoring.xml:618(literal) /tmp/cicero-Bcej/monitoring.xml:626(literal) /tmp/cicero-Bcej/monitoring.xml:634(literal) /tmp/cicero-Bcej/monitoring.xml:642(literal) /tmp/cicero-Bcej/monitoring.xml:650(literal) /tmp/cicero-Bcej/monitoring.xml:658(literal) /tmp/cicero-Bcej/monitoring.xml:666(literal) /tmp/cicero-Bcej/monitoring.xml:674(literal) /tmp/cicero-Bcej/monitoring.xml:682(literal) /tmp/cicero-Bcej/monitoring.xml:695(literal) /tmp/cicero-Bcej/monitoring.xml:704(literal) /tmp/cicero-Bcej/monitoring.xml:713(literal) /tmp/cicero-Bcej/monitoring.xml:723(literal) /tmp/cicero-Bcej/monitoring.xml:731(literal) /tmp/cicero-Bcej/monitoring.xml:739(literal) /tmp/cicero-Bcej/monitoring.xml:747(literal) /tmp/cicero-Bcej/monitoring.xml:755(literal) /tmp/cicero-Bcej/monitoring.xml:763(literal) /tmp/cicero-Bcej/monitoring.xml:771(literal) /tmp/cicero-Bcej/monitoring.xml:779(literal) /tmp/cicero-Bcej/monitoring.xml:787(literal) /tmp/cicero-Bcej/monitoring.xml:795(literal) /tmp/cicero-Bcej/monitoring.xml:803(literal) /tmp/cicero-Bcej/monitoring.xml:811(literal) /tmp/cicero-Bcej/monitoring.xml:820(literal) /tmp/cicero-Bcej/monitoring.xml:828(literal) /tmp/cicero-Bcej/monitoring.xml:836(literal) /tmp/cicero-Bcej/monitoring.xml:844(literal) /tmp/cicero-Bcej/monitoring.xml:852(literal) /tmp/cicero-Bcej/monitoring.xml:861(literal) /tmp/cicero-Bcej/monitoring.xml:870(literal) /tmp/cicero-Bcej/monitoring.xml:880(literal) /tmp/cicero-Bcej/monitoring.xml:888(literal) /tmp/cicero-Bcej/monitoring.xml:896(literal) /tmp/cicero-Bcej/monitoring.xml:904(literal) /tmp/cicero-Bcej/monitoring.xml:912(literal) /tmp/cicero-Bcej/monitoring.xml:920(literal) /tmp/cicero-Bcej/monitoring.xml:937(literal) /tmp/cicero-Bcej/monitoring.xml:948(literal) /tmp/cicero-Bcej/monitoring.xml:956(literal) /tmp/cicero-Bcej/monitoring.xml:965(literal) /tmp/cicero-Bcej/monitoring.xml:974(literal) /tmp/cicero-Bcej/monitoring.xml:982(literal) /tmp/cicero-Bcej/monitoring.xml:992(literal) /tmp/cicero-Bcej/monitoring.xml:1010(literal) /tmp/cicero-Bcej/monitoring.xml:1018(literal) /tmp/cicero-Bcej/monitoring.xml:1026(literal) /tmp/cicero-Bcej/monitoring.xml:1034(literal) /tmp/cicero-Bcej/monitoring.xml:1045(literal) /tmp/cicero-Bcej/monitoring.xml:1056(literal) /tmp/cicero-Bcej/monitoring.xml:1068(literal) /tmp/cicero-Bcej/monitoring.xml:1080(literal) /tmp/cicero-Bcej/monitoring.xml:1090(literal) /tmp/cicero-Bcej/monitoring.xml:1101(literal) 
 msgid "<placeholder-1/>(<placeholder-2/>)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:563(type) /tmp/cicero-hjxh/monitoring.xml:930(type) /tmp/cicero-hjxh/monitoring.xml:937(type) /tmp/cicero-hjxh/monitoring.xml:1010(type) /tmp/cicero-hjxh/monitoring.xml:1011(type) /tmp/cicero-hjxh/monitoring.xml:1018(type) /tmp/cicero-hjxh/monitoring.xml:1026(type) /tmp/cicero-hjxh/monitoring.xml:1034(type) /tmp/cicero-hjxh/monitoring.xml:1045(type) /tmp/cicero-hjxh/monitoring.xml:1056(type) /tmp/cicero-hjxh/monitoring.xml:1068(type) /tmp/cicero-hjxh/monitoring.xml:1080(type) /tmp/cicero-hjxh/monitoring.xml:1090(type) /tmp/cicero-hjxh/monitoring.xml:1101(type) /tmp/cicero-hjxh/monitoring.xml:1102(type) 
+#: /tmp/cicero-Bcej/monitoring.xml:563(type) /tmp/cicero-Bcej/monitoring.xml:930(type) /tmp/cicero-Bcej/monitoring.xml:937(type) /tmp/cicero-Bcej/monitoring.xml:1010(type) /tmp/cicero-Bcej/monitoring.xml:1011(type) /tmp/cicero-Bcej/monitoring.xml:1018(type) /tmp/cicero-Bcej/monitoring.xml:1026(type) /tmp/cicero-Bcej/monitoring.xml:1034(type) /tmp/cicero-Bcej/monitoring.xml:1045(type) /tmp/cicero-Bcej/monitoring.xml:1056(type) /tmp/cicero-Bcej/monitoring.xml:1068(type) /tmp/cicero-Bcej/monitoring.xml:1080(type) /tmp/cicero-Bcej/monitoring.xml:1090(type) /tmp/cicero-Bcej/monitoring.xml:1101(type) /tmp/cicero-Bcej/monitoring.xml:1102(type) 
 msgid "integer"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:564(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:564(entry) 
 msgid "Number of active server processes for database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:570(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:570(function) 
 msgid "pg_stat_get_db_xact_commit"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:571(type) /tmp/cicero-hjxh/monitoring.xml:579(type) /tmp/cicero-hjxh/monitoring.xml:587(type) /tmp/cicero-hjxh/monitoring.xml:595(type) /tmp/cicero-hjxh/monitoring.xml:603(type) /tmp/cicero-hjxh/monitoring.xml:611(type) /tmp/cicero-hjxh/monitoring.xml:619(type) /tmp/cicero-hjxh/monitoring.xml:627(type) /tmp/cicero-hjxh/monitoring.xml:635(type) /tmp/cicero-hjxh/monitoring.xml:643(type) /tmp/cicero-hjxh/monitoring.xml:651(type) /tmp/cicero-hjxh/monitoring.xml:659(type) /tmp/cicero-hjxh/monitoring.xml:667(type) /tmp/cicero-hjxh/monitoring.xml:675(type) /tmp/cicero-hjxh/monitoring.xml:696(type) /tmp/cicero-hjxh/monitoring.xml:705(type) /tmp/cicero-hjxh/monitoring.xml:714(type) /tmp/cicero-hjxh/monitoring.xml:724(type) /tmp/cicero-hjxh/monitoring.xml:732(type) /tmp/cicero-hjxh/monitoring.xml:740(type) /tmp/cicero-hjxh/monitoring.xml:748(type) /tmp/cicero-hjxh/monitoring.xml:756(type) /tmp/cicero-hjxh/monitoring.xml:764(type) /tmp/cicero-hjxh/monitoring.xml:772(type) /tmp/cicero-hjxh/monitoring.xml:780(type) /tmp/cicero-hjxh/monitoring.xml:821(type) /tmp/cicero-hjxh/monitoring.xml:829(type) /tmp/cicero-hjxh/monitoring.xml:837(type) /tmp/cicero-hjxh/monitoring.xml:845(type) /tmp/cicero-hjxh/monitoring.xml:853(type) /tmp/cicero-hjxh/monitoring.xml:862(type) /tmp/cicero-hjxh/monitoring.xml:871(type) /tmp/cicero-hjxh/monitoring.xml:881(type) /tmp/cicero-hjxh/monitoring.xml:889(type) /tmp/cicero-hjxh/monitoring.xml:897(type) /tmp/cicero-hjxh/monitoring.xml:905(type) /tmp/cicero-hjxh/monitoring.xml:913(type) /tmp/cicero-hjxh/monitoring.xml:921(type) /tmp/cicero-hjxh/monitoring.xml:949(type) /tmp/cicero-hjxh/monitoring.xml:957(type) /tmp/cicero-hjxh/monitoring.xml:966(type) /tmp/cicero-hjxh/monitoring.xml:975(type) /tmp/cicero-hjxh/monitoring.xml:983(type) /tmp/cicero-hjxh/monitoring.xml:993(type) /tmp/cicero-hjxh/monitoring.xml:1113(type) /tmp/cicero-hjxh/monitoring.xml:1122(type) /tmp/cicero-hjxh/monitoring.xml:1133(type) /tmp/cicero-hjxh/monitoring.xml:1141(type) /tmp/cicero-hjxh/monitoring.xml:1150(type) /tmp/cicero-hjxh/monitoring.xml:1170(type) /tmp/cicero-hjxh/monitoring.xml:1179(type) 
+#: /tmp/cicero-Bcej/monitoring.xml:571(type) /tmp/cicero-Bcej/monitoring.xml:579(type) /tmp/cicero-Bcej/monitoring.xml:587(type) /tmp/cicero-Bcej/monitoring.xml:595(type) /tmp/cicero-Bcej/monitoring.xml:603(type) /tmp/cicero-Bcej/monitoring.xml:611(type) /tmp/cicero-Bcej/monitoring.xml:619(type) /tmp/cicero-Bcej/monitoring.xml:627(type) /tmp/cicero-Bcej/monitoring.xml:635(type) /tmp/cicero-Bcej/monitoring.xml:643(type) /tmp/cicero-Bcej/monitoring.xml:651(type) /tmp/cicero-Bcej/monitoring.xml:659(type) /tmp/cicero-Bcej/monitoring.xml:667(type) /tmp/cicero-Bcej/monitoring.xml:675(type) /tmp/cicero-Bcej/monitoring.xml:696(type) /tmp/cicero-Bcej/monitoring.xml:705(type) /tmp/cicero-Bcej/monitoring.xml:714(type) /tmp/cicero-Bcej/monitoring.xml:724(type) /tmp/cicero-Bcej/monitoring.xml:732(type) /tmp/cicero-Bcej/monitoring.xml:740(type) /tmp/cicero-Bcej/monitoring.xml:748(type) /tmp/cicero-Bcej/monitoring.xml:756(type) /tmp/cicero-Bcej/monitoring.xml:764(type) /tmp/cicero-Bcej/monitoring.xml:772(type) /tmp/cicero-Bcej/monitoring.xml:780(type) /tmp/cicero-Bcej/monitoring.xml:821(type) /tmp/cicero-Bcej/monitoring.xml:829(type) /tmp/cicero-Bcej/monitoring.xml:837(type) /tmp/cicero-Bcej/monitoring.xml:845(type) /tmp/cicero-Bcej/monitoring.xml:853(type) /tmp/cicero-Bcej/monitoring.xml:862(type) /tmp/cicero-Bcej/monitoring.xml:871(type) /tmp/cicero-Bcej/monitoring.xml:881(type) /tmp/cicero-Bcej/monitoring.xml:889(type) /tmp/cicero-Bcej/monitoring.xml:897(type) /tmp/cicero-Bcej/monitoring.xml:905(type) /tmp/cicero-Bcej/monitoring.xml:913(type) /tmp/cicero-Bcej/monitoring.xml:921(type) /tmp/cicero-Bcej/monitoring.xml:949(type) /tmp/cicero-Bcej/monitoring.xml:957(type) /tmp/cicero-Bcej/monitoring.xml:966(type) /tmp/cicero-Bcej/monitoring.xml:975(type) /tmp/cicero-Bcej/monitoring.xml:983(type) /tmp/cicero-Bcej/monitoring.xml:993(type) /tmp/cicero-Bcej/monitoring.xml:1113(type) /tmp/cicero-Bcej/monitoring.xml:1122(type) /tmp/cicero-Bcej/monitoring.xml:1133(type) /tmp/cicero-Bcej/monitoring.xml:1141(type) /tmp/cicero-Bcej/monitoring.xml:1150(type) /tmp/cicero-Bcej/monitoring.xml:1170(type) /tmp/cicero-Bcej/monitoring.xml:1179(type) 
 msgid "bigint"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:572(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:572(entry) 
 msgid "Number of transactions committed in database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:578(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:578(function) 
 msgid "pg_stat_get_db_xact_rollback"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:580(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:580(entry) 
 msgid "Number of transactions rolled back in database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:586(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:586(function) 
 msgid "pg_stat_get_db_blocks_fetched"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:588(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:588(entry) 
 msgid "Number of disk block fetch requests for database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:594(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:594(function) 
 msgid "pg_stat_get_db_blocks_hit"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:596(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:596(entry) 
 msgid "Number of disk block fetch requests found in cache for database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:602(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:602(function) 
 msgid "pg_stat_get_db_tuples_returned"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:604(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:604(entry) 
 msgid "Number of tuples returned for database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:610(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:610(function) 
 msgid "pg_stat_get_db_tuples_fetched"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:612(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:612(entry) 
 msgid "Number of tuples fetched for database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:618(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:618(function) 
 msgid "pg_stat_get_db_tuples_inserted"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:620(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:620(entry) 
 msgid "Number of tuples inserted in database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:626(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:626(function) 
 msgid "pg_stat_get_db_tuples_updated"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:628(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:628(entry) 
 msgid "Number of tuples updated in database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:634(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:634(function) 
 msgid "pg_stat_get_db_tuples_deleted"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:636(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:636(entry) 
 msgid "Number of tuples deleted in database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:642(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:642(function) 
 msgid "pg_stat_get_db_conflict_tablespace"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:644(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:644(entry) 
 msgid "Number of queries canceled because of recovery conflict with dropped tablespaces in database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:650(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:650(function) 
 msgid "pg_stat_get_db_conflict_lock"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:652(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:652(entry) 
 msgid "Number of queries canceled because of recovery conflict with locks in database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:658(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:658(function) 
 msgid "pg_stat_get_db_conflict_snapshot"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:660(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:660(entry) 
 msgid "Number of queries canceled because of recovery conflict with old snapshots in database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:666(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:666(function) 
 msgid "pg_stat_get_db_conflict_bufferpin"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:668(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:668(entry) 
 msgid "Number of queries canceled because of recovery conflict with pinned buffers in database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:674(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:674(function) 
 msgid "pg_stat_get_db_conflict_startup_deadlock"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:676(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:676(entry) 
 msgid "Number of queries canceled because of recovery conflict with deadlocks in database"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:682(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:682(function) 
 msgid "pg_stat_get_db_stat_reset_time"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:683(type) /tmp/cicero-hjxh/monitoring.xml:788(type) /tmp/cicero-hjxh/monitoring.xml:796(type) /tmp/cicero-hjxh/monitoring.xml:804(type) /tmp/cicero-hjxh/monitoring.xml:812(type) /tmp/cicero-hjxh/monitoring.xml:1160(type) 
+#: /tmp/cicero-Bcej/monitoring.xml:683(type) /tmp/cicero-Bcej/monitoring.xml:788(type) /tmp/cicero-Bcej/monitoring.xml:796(type) /tmp/cicero-Bcej/monitoring.xml:804(type) /tmp/cicero-Bcej/monitoring.xml:812(type) /tmp/cicero-Bcej/monitoring.xml:1160(type) 
 msgid "timestamptz"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:687(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:687(function) 
 msgid "pg_stat_reset"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:689(function) /tmp/cicero-hjxh/monitoring.xml:1214(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:689(function) /tmp/cicero-Bcej/monitoring.xml:1214(function) 
 msgid "pg_stat_reset_single_table_counters"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:684(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:684(entry) 
 msgid "Time of the last statistics reset for the database. Initialized to the system time during the first connection to each database. The reset time is updated when you call <placeholder-1/> on the database, as well as upon execution of <placeholder-2/> against any table or index in it."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:695(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:695(function) 
 msgid "pg_stat_get_numscans"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:697(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:697(entry) 
 msgid "Number of sequential scans done when argument is a table, or number of index scans done when argument is an index"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:704(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:704(function) 
 msgid "pg_stat_get_tuples_returned"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:706(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:706(entry) 
 msgid "Number of rows read by sequential scans when argument is a table, or number of index entries returned when argument is an index"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:713(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:713(function) 
 msgid "pg_stat_get_tuples_fetched"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:715(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:715(entry) 
 msgid "Number of table rows fetched by bitmap scans when argument is a table, or table rows fetched by simple index scans using the index when argument is an index"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:723(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:723(function) 
 msgid "pg_stat_get_tuples_inserted"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:725(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:725(entry) 
 msgid "Number of rows inserted into table"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:731(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:731(function) 
 msgid "pg_stat_get_tuples_updated"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:733(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:733(entry) 
 msgid "Number of rows updated in table (includes HOT updates)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:739(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:739(function) 
 msgid "pg_stat_get_tuples_deleted"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:741(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:741(entry) 
 msgid "Number of rows deleted from table"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:747(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:747(function) 
 msgid "pg_stat_get_tuples_hot_updated"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:749(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:749(entry) 
 msgid "Number of rows HOT-updated in table"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:755(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:755(function) 
 msgid "pg_stat_get_live_tuples"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:757(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:757(entry) 
 msgid "Number of live rows in table"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:763(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:763(function) 
 msgid "pg_stat_get_dead_tuples"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:765(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:765(entry) 
 msgid "Number of dead rows in table"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:771(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:771(function) 
 msgid "pg_stat_get_blocks_fetched"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:773(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:773(entry) 
 msgid "Number of disk block fetch requests for table or index"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:779(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:779(function) 
 msgid "pg_stat_get_blocks_hit"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:781(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:781(entry) 
 msgid "Number of disk block requests found in cache for table or index"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:787(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:787(function) 
 msgid "pg_stat_get_last_vacuum_time"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:789(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:789(entry) 
 msgid "Time of the last non-<placeholder-1/> vacuum initiated by the user on this table"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:795(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:795(function) 
 msgid "pg_stat_get_last_autovacuum_time"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:797(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:797(entry) 
 msgid "Time of the last vacuum initiated by the autovacuum daemon on this table"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:803(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:803(function) 
 msgid "pg_stat_get_last_analyze_time"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:805(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:805(entry) 
 msgid "Time of the last analyze initiated by the user on this table"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:811(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:811(function) 
 msgid "pg_stat_get_last_autoanalyze_time"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:813(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:813(entry) 
 msgid "Time of the last analyze initiated by the autovacuum daemon on this table"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:820(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:820(function) 
 msgid "pg_stat_get_vacuum_count"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:822(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:822(entry) 
 msgid "The number of times this table has been non-<placeholder-1/> vacuumed manually"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:828(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:828(function) 
 msgid "pg_stat_get_autovacuum_count"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:830(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:830(entry) 
 msgid "The number of times this table has been vacuumed by the autovacuum daemon"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:836(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:836(function) 
 msgid "pg_stat_get_analyze_count"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:838(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:838(entry) 
 msgid "The number of times this table has been analyzed manually"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:844(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:844(function) 
 msgid "pg_stat_get_autoanalyze_count"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:846(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:846(entry) 
 msgid "The number of times this table has been analyzed by the autovacuum daemon"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:852(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:852(function) 
 msgid "pg_stat_get_xact_numscans"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:854(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:854(entry) 
 msgid "Number of sequential scans done when argument is a table, or number of index scans done when argument is an index, in the current transaction"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:861(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:861(function) 
 msgid "pg_stat_get_xact_tuples_returned"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:863(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:863(entry) 
 msgid "Number of rows read by sequential scans when argument is a table, or number of index entries returned when argument is an index, in the current transaction"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:870(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:870(function) 
 msgid "pg_stat_get_xact_tuples_fetched"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:872(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:872(entry) 
 msgid "Number of table rows fetched by bitmap scans when argument is a table, or table rows fetched by simple index scans using the index when argument is an index, in the current transaction"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:880(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:880(function) 
 msgid "pg_stat_get_xact_tuples_inserted"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:882(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:882(entry) 
 msgid "Number of rows inserted into table, in the current transaction"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:888(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:888(function) 
 msgid "pg_stat_get_xact_tuples_updated"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:890(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:890(entry) 
 msgid "Number of rows updated in table (includes HOT updates), in the current transaction"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:896(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:896(function) 
 msgid "pg_stat_get_xact_tuples_deleted"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:898(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:898(entry) 
 msgid "Number of rows deleted from table, in the current transaction"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:904(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:904(function) 
 msgid "pg_stat_get_xact_tuples_hot_updated"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:906(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:906(entry) 
 msgid "Number of rows HOT-updated in table, in the current transaction"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:912(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:912(function) 
 msgid "pg_stat_get_xact_blocks_fetched"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:914(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:914(entry) 
 msgid "Number of disk block fetch requests for table or index, in the current transaction"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:920(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:920(function) 
 msgid "pg_stat_get_xact_blocks_hit"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:922(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:922(entry) 
 msgid "Number of disk block requests found in cache for table or index, in the current transaction"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:929(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:929(function) 
 msgid "pg_backend_pid()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:931(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:931(entry) 
 msgid "Process ID of the server process attached to the current session"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:937(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:937(function) 
 msgid "pg_stat_get_activity"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:938(type) 
+#: /tmp/cicero-Bcej/monitoring.xml:938(type) 
 msgid "setof record"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:941(symbol) 
+#: /tmp/cicero-Bcej/monitoring.xml:941(symbol) 
 msgid "NULL"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:939(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:939(entry) 
 msgid "Returns a record of information about the backend with the specified PID, or one record for each active backend in the system if <placeholder-1/> is specified. The fields returned are a subset of those in the <placeholder-2/> view."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:948(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:948(function) 
 msgid "pg_stat_get_function_calls"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:950(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:950(entry) 
 msgid "Number of times the function has been called"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:956(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:956(function) 
 msgid "pg_stat_get_function_time"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:958(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:958(entry) 
 msgid "Total wall clock time spent in the function, in microseconds. Includes the time spent in functions called by this one."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:965(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:965(function) 
 msgid "pg_stat_get_function_self_time"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:967(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:967(entry) 
 msgid "Time spent in only this function. Time spent in called functions is excluded."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:974(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:974(function) 
 msgid "pg_stat_get_xact_function_calls"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:976(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:976(entry) 
 msgid "Number of times the function has been called, in the current transaction."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:982(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:982(function) 
 msgid "pg_stat_get_xact_function_time"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:984(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:984(entry) 
 msgid "Total wall clock time spent in the function, in microseconds, in the current transaction. Includes the time spent in functions called by this one."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:992(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:992(function) 
 msgid "pg_stat_get_xact_function_self_time"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:994(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:994(entry) 
 msgid "Time spent in only this function, in the current transaction. Time spent in called functions is excluded."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1001(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1001(function) 
 msgid "pg_stat_get_backend_idset()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1002(type) 
+#: /tmp/cicero-Bcej/monitoring.xml:1002(type) 
 msgid "setof integer"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1003(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1003(entry) 
 msgid "Set of currently active server process numbers (from 1 to the number of active server processes). See usage example in the text."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1010(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1010(function) 
 msgid "pg_stat_get_backend_pid"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1012(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1012(entry) 
 msgid "Process ID of the given server process"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1018(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1018(function) 
 msgid "pg_stat_get_backend_dbid"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1020(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1020(entry) 
 msgid "Database ID of the given server process"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1026(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1026(function) 
 msgid "pg_stat_get_backend_userid"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1028(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1028(entry) 
 msgid "User ID of the given server process"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1034(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1034(function) 
 msgid "pg_stat_get_backend_activity"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1035(type) 
+#: /tmp/cicero-Bcej/monitoring.xml:1035(type) 
 msgid "text"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1036(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1036(entry) 
 msgid "Active command of the given server process, but only if the current user is a superuser or the same user as that of the session being queried (and <placeholder-1/> is on)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1045(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1045(function) 
 msgid "pg_stat_get_backend_waiting"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1046(type) 
+#: /tmp/cicero-Bcej/monitoring.xml:1046(type) 
 msgid "boolean"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1047(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1047(entry) 
 msgid "True if the given server process is waiting for a lock, but only if the current user is a superuser or the same user as that of the session being queried (and <placeholder-1/> is on)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1056(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1056(function) 
 msgid "pg_stat_get_backend_activity_start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1057(type) /tmp/cicero-hjxh/monitoring.xml:1069(type) /tmp/cicero-hjxh/monitoring.xml:1081(type) 
+#: /tmp/cicero-Bcej/monitoring.xml:1057(type) /tmp/cicero-Bcej/monitoring.xml:1069(type) /tmp/cicero-Bcej/monitoring.xml:1081(type) 
 msgid "timestamp with time zone"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1058(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1058(entry) 
 msgid "The time at which the given server process' currently executing query was started, but only if the current user is a superuser or the same user as that of the session being queried (and <placeholder-1/> is on)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1068(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1068(function) 
 msgid "pg_stat_get_backend_xact_start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1070(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1070(entry) 
 msgid "The time at which the given server process' currently executing transaction was started, but only if the current user is a superuser or the same user as that of the session being queried (and <placeholder-1/> is on)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1080(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1080(function) 
 msgid "pg_stat_get_backend_start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1082(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1082(entry) 
 msgid "The time at which the given server process was started, or null if the current user is not a superuser nor the same user as that of the session being queried"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1090(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1090(function) 
 msgid "pg_stat_get_backend_client_addr"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1091(type) 
+#: /tmp/cicero-Bcej/monitoring.xml:1091(type) 
 msgid "inet"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1092(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1092(entry) 
 msgid "The IP address of the client connected to the given server process; null if the connection is over a Unix domain socket, also null if the current user is not a superuser nor the same user as that of the session being queried"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1101(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1101(function) 
 msgid "pg_stat_get_backend_client_port"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1103(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1103(entry) 
 msgid "The TCP port number of the client connected to the given server process; -1 if the connection is over a Unix domain socket, null if the current user is not a superuser nor the same user as that of the session being queried"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1112(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1112(function) 
 msgid "pg_stat_get_bgwriter_timed_checkpoints()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1116(varname) 
+#: /tmp/cicero-Bcej/monitoring.xml:1116(varname) 
 msgid "checkpoint_timeout"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1114(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1114(entry) 
 msgid "Number of times the background writer has started timed checkpoints (because the <placeholder-1/> time has expired)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1121(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1121(function) 
 msgid "pg_stat_get_bgwriter_requested_checkpoints()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1125(varname) 
+#: /tmp/cicero-Bcej/monitoring.xml:1125(varname) 
 msgid "checkpoint_segments"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1126(command) 
+#: /tmp/cicero-Bcej/monitoring.xml:1126(command) 
 msgid "CHECKPOINT"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1123(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1123(entry) 
 msgid "Number of times the background writer has started checkpoints based on requests from backends because the <placeholder-1/> has been exceeded or because the <placeholder-2/> command has been issued"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1132(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1132(function) 
 msgid "pg_stat_get_bgwriter_buf_written_checkpoints()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1134(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1134(entry) 
 msgid "Number of buffers written by the background writer during checkpoints"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1140(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1140(function) 
 msgid "pg_stat_get_bgwriter_buf_written_clean()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1142(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1142(entry) 
 msgid "Number of buffers written by the background writer for routine cleaning of dirty pages"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1149(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1149(function) 
 msgid "pg_stat_get_bgwriter_maxwritten_clean()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1154(varname) 
+#: /tmp/cicero-Bcej/monitoring.xml:1154(varname) 
 msgid "bgwriter_lru_maxpages"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1151(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1151(entry) 
 msgid "Number of times the background writer has stopped its cleaning scan because it has written more buffers than specified in the <placeholder-1/> parameter"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1159(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1159(function) 
 msgid "pg_stat_get_bgwriter_stat_reset_time()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1163(function) /tmp/cicero-hjxh/monitoring.xml:1208(literal) 
+#: /tmp/cicero-Bcej/monitoring.xml:1163(function) /tmp/cicero-Bcej/monitoring.xml:1208(literal) 
 msgid "pg_stat_reset_shared('bgwriter')"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1161(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1161(entry) 
 msgid "Time of the last statistics reset for the background writer, updated when executing <placeholder-1/> on the database cluster."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1169(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1169(function) 
 msgid "pg_stat_get_buf_written_backend()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1171(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1171(entry) 
 msgid "Number of buffers written by backends because they needed to allocate a new buffer"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1178(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1178(function) 
 msgid "pg_stat_get_buf_alloc()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1180(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1180(entry) 
 msgid "Total number of buffer allocations"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1186(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1186(function) 
 msgid "pg_stat_clear_snapshot()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1187(type) /tmp/cicero-hjxh/monitoring.xml:1195(type) /tmp/cicero-hjxh/monitoring.xml:1204(type) /tmp/cicero-hjxh/monitoring.xml:1215(type) /tmp/cicero-hjxh/monitoring.xml:1224(type) 
+#: /tmp/cicero-Bcej/monitoring.xml:1187(type) /tmp/cicero-Bcej/monitoring.xml:1195(type) /tmp/cicero-Bcej/monitoring.xml:1204(type) /tmp/cicero-Bcej/monitoring.xml:1215(type) /tmp/cicero-Bcej/monitoring.xml:1224(type) 
 msgid "void"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1188(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1188(entry) 
 msgid "Discard the current statistics snapshot"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1194(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1194(function) 
 msgid "pg_stat_reset()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1196(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1196(entry) 
 msgid "Reset all statistics counters for the current database to zero (requires superuser privileges)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1203(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1203(function) 
 msgid "pg_stat_reset_shared"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1203(literal) 
+#: /tmp/cicero-Bcej/monitoring.xml:1203(literal) 
 msgid "<placeholder-1/>(text)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1205(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1205(entry) 
 msgid "Reset some of the shared statistics counters for the database cluster to zero (requires superuser privileges). Calling <placeholder-1/> will zero all the values shown by <placeholder-2/>."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1214(literal) /tmp/cicero-hjxh/monitoring.xml:1223(literal) 
+#: /tmp/cicero-Bcej/monitoring.xml:1214(literal) /tmp/cicero-Bcej/monitoring.xml:1223(literal) 
 msgid "<placeholder-1/>(oid)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1216(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1216(entry) 
 msgid "Reset statistics for a single table or index in the current database to zero (requires superuser privileges)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1223(function) 
+#: /tmp/cicero-Bcej/monitoring.xml:1223(function) 
 msgid "pg_stat_reset_single_function_counters"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1225(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1225(entry) 
 msgid "Reset statistics for a single function in the current database to zero (requires superuser privileges)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1235(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1235(para) 
 msgid "<function>pg_stat_get_blocks_fetched</function> minus <function>pg_stat_get_blocks_hit</function> gives the number of kernel <function>read()</function> calls issued for the table, index, or database; the number of actual physical reads is usually lower due to kernel-level buffering. The <literal>*_blks_read</literal> statistics columns use this subtraction, i.e., fetched minus hit."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1252(programlisting) 
+#: /tmp/cicero-Bcej/monitoring.xml:1252(programlisting) 
 #, no-wrap
 msgid "\nSELECT pg_stat_get_backend_pid(s.backendid) AS procpid,\n       pg_stat_get_backend_activity(s.backendid) AS current_query\n    FROM (SELECT pg_stat_get_backend_idset() AS backendid) AS s;\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1245(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1245(para) 
 msgid "All functions to access information about backends are indexed by backend id number, except <function>pg_stat_get_activity</function> which is indexed by PID. The function <function>pg_stat_get_backend_idset</function> provides a convenient way to generate one row for each active server process. For example, to show the <acronym>PID</acronym>s and current queries of all server processes: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1263(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:1263(title) 
 msgid "Viewing Locks"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1266(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:1266(primary) 
 msgid "lock"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1279(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1279(para) 
 msgid "View all the locks currently outstanding, all the locks on relations in a particular database, all the locks on a particular relation, or all the locks held by a particular <productname>PostgreSQL</productname> session."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1288(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1288(para) 
 msgid "Determine the relation in the current database with the most ungranted locks (which might be a source of contention among database clients)."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1296(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1296(para) 
 msgid "Determine the effect of lock contention on overall database performance, as well as the extent to which contention varies with overall database traffic."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1270(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1270(para) 
 msgid "Another useful tool for monitoring database activity is the <structname>pg_locks</structname> system table. It allows the database administrator to view information about the outstanding locks in the lock manager. For example, this capability can be used to: <placeholder-1/> Details of the <structname>pg_locks</structname> view appear in <xref linkend=\"view-pg-locks\"/>. For more information on locking and managing concurrency with <productname>PostgreSQL</productname>, refer to <xref linkend=\"mvcc\"/>."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1312(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:1312(title) 
 msgid "Dynamic Tracing"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1315(primary) 
+#: /tmp/cicero-Bcej/monitoring.xml:1315(primary) 
 msgid "DTrace"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1318(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1318(para) 
 msgid "<productname>PostgreSQL</productname> provides facilities to support dynamic tracing of the database server. This allows an external utility to be called at specific points in the code and thereby trace execution."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1325(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1325(para) 
 msgid "A number of probes or trace points are already inserted into the source code. These probes are intended to be used by database developers and administrators. By default the probes are not compiled into <productname>PostgreSQL</productname>; the user needs to explicitly tell the configure script to make the probes available."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1333(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1333(para) 
 msgid "Currently, only the <ulink url=\"http://opensolaris.org/os/community/dtrace/\">DTrace</ulink> utility is supported, which is available on OpenSolaris, Solaris 10, and Mac OS X Leopard. It is expected that DTrace will be available in the future on FreeBSD and possibly other operating systems. The <ulink url=\"http://sourceware.org/systemtap/\">SystemTap</ulink> project for Linux also provides a DTrace equivalent. Supporting other dynamic tracing utilities is theoretically possible by changing the definitions for the macros in <filename>src/include/utils/probes.h</filename>."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1347(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:1347(title) 
 msgid "Compiling for Dynamic Tracing"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1349(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1349(para) 
 msgid "By default, probes are not available, so you will need to explicitly tell the configure script to make the probes available in <productname>PostgreSQL</productname>. To include DTrace support specify <option>--enable-dtrace</option> to configure. See <xref linkend=\"install-procedure\"/> for further information."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1359(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:1359(title) 
 msgid "Built-in Probes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1361(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1361(para) 
 msgid "A number of standard probes are provided in the source code, as shown in <xref linkend=\"dtrace-probe-point-table\"/>; <xref linkend=\"typedefs-table\"/> shows the types used in the probes. More probes can certainly be added to enhance <productname>PostgreSQL</productname>'s observability."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1370(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:1370(title) 
 msgid "Built-in DTrace Probes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1374(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1374(entry) 
 msgid "Name"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1375(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1375(entry) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1383(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1383(entry) 
 msgid "transaction-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1384(entry) /tmp/cicero-hjxh/monitoring.xml:1390(entry) /tmp/cicero-hjxh/monitoring.xml:1396(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1384(entry) /tmp/cicero-Bcej/monitoring.xml:1390(entry) /tmp/cicero-Bcej/monitoring.xml:1396(entry) 
 msgid "(LocalTransactionId)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1385(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1385(entry) 
 msgid "Probe that fires at the start of a new transaction. arg0 is the transaction ID."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1389(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1389(entry) 
 msgid "transaction-commit"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1391(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1391(entry) 
 msgid "Probe that fires when a transaction completes successfully. arg0 is the transaction ID."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1395(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1395(entry) 
 msgid "transaction-abort"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1397(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1397(entry) 
 msgid "Probe that fires when a transaction completes unsuccessfully. arg0 is the transaction ID."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1401(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1401(entry) 
 msgid "query-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1402(entry) /tmp/cicero-hjxh/monitoring.xml:1408(entry) /tmp/cicero-hjxh/monitoring.xml:1414(entry) /tmp/cicero-hjxh/monitoring.xml:1420(entry) /tmp/cicero-hjxh/monitoring.xml:1426(entry) /tmp/cicero-hjxh/monitoring.xml:1432(entry) /tmp/cicero-hjxh/monitoring.xml:1458(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1402(entry) /tmp/cicero-Bcej/monitoring.xml:1408(entry) /tmp/cicero-Bcej/monitoring.xml:1414(entry) /tmp/cicero-Bcej/monitoring.xml:1420(entry) /tmp/cicero-Bcej/monitoring.xml:1426(entry) /tmp/cicero-Bcej/monitoring.xml:1432(entry) /tmp/cicero-Bcej/monitoring.xml:1458(entry) 
 msgid "(const char *)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1403(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1403(entry) 
 msgid "Probe that fires when the processing of a query is started. arg0 is the query string."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1407(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1407(entry) 
 msgid "query-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1409(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1409(entry) 
 msgid "Probe that fires when the processing of a query is complete. arg0 is the query string."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1413(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1413(entry) 
 msgid "query-parse-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1415(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1415(entry) 
 msgid "Probe that fires when the parsing of a query is started. arg0 is the query string."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1419(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1419(entry) 
 msgid "query-parse-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1421(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1421(entry) 
 msgid "Probe that fires when the parsing of a query is complete. arg0 is the query string."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1425(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1425(entry) 
 msgid "query-rewrite-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1427(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1427(entry) 
 msgid "Probe that fires when the rewriting of a query is started. arg0 is the query string."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1431(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1431(entry) 
 msgid "query-rewrite-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1433(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1433(entry) 
 msgid "Probe that fires when the rewriting of a query is complete. arg0 is the query string."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1437(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1437(entry) 
 msgid "query-plan-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1438(entry) /tmp/cicero-hjxh/monitoring.xml:1443(entry) /tmp/cicero-hjxh/monitoring.xml:1448(entry) /tmp/cicero-hjxh/monitoring.xml:1453(entry) /tmp/cicero-hjxh/monitoring.xml:1556(entry) /tmp/cicero-hjxh/monitoring.xml:1562(entry) /tmp/cicero-hjxh/monitoring.xml:1568(entry) /tmp/cicero-hjxh/monitoring.xml:1574(entry) /tmp/cicero-hjxh/monitoring.xml:1642(entry) /tmp/cicero-hjxh/monitoring.xml:1650(entry) /tmp/cicero-hjxh/monitoring.xml:1662(entry) /tmp/cicero-hjxh/monitoring.xml:1791(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1438(entry) /tmp/cicero-Bcej/monitoring.xml:1443(entry) /tmp/cicero-Bcej/monitoring.xml:1448(entry) /tmp/cicero-Bcej/monitoring.xml:1453(entry) /tmp/cicero-Bcej/monitoring.xml:1556(entry) /tmp/cicero-Bcej/monitoring.xml:1562(entry) /tmp/cicero-Bcej/monitoring.xml:1568(entry) /tmp/cicero-Bcej/monitoring.xml:1574(entry) /tmp/cicero-Bcej/monitoring.xml:1642(entry) /tmp/cicero-Bcej/monitoring.xml:1650(entry) /tmp/cicero-Bcej/monitoring.xml:1662(entry) /tmp/cicero-Bcej/monitoring.xml:1791(entry) 
 msgid "()"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1439(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1439(entry) 
 msgid "Probe that fires when the planning of a query is started."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1442(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1442(entry) 
 msgid "query-plan-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1444(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1444(entry) 
 msgid "Probe that fires when the planning of a query is complete."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1447(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1447(entry) 
 msgid "query-execute-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1449(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1449(entry) 
 msgid "Probe that fires when the execution of a query is started."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1452(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1452(entry) 
 msgid "query-execute-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1454(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1454(entry) 
 msgid "Probe that fires when the execution of a query is complete."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1457(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1457(entry) 
 msgid "statement-status"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1460(structfield) 
+#: /tmp/cicero-Bcej/monitoring.xml:1460(structfield) 
 msgid "current_query"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1459(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1459(entry) 
 msgid "Probe that fires anytime the server process updates its <placeholder-1/>.<placeholder-2/> status. arg0 is the new status string."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1464(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1464(entry) 
 msgid "checkpoint-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1465(entry) /tmp/cicero-hjxh/monitoring.xml:1524(entry) /tmp/cicero-hjxh/monitoring.xml:1540(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1465(entry) /tmp/cicero-Bcej/monitoring.xml:1524(entry) /tmp/cicero-Bcej/monitoring.xml:1540(entry) 
 msgid "(int)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1466(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1466(entry) 
 msgid "Probe that fires when a checkpoint is started. arg0 holds the bitwise flags used to distinguish different checkpoint types, such as shutdown, immediate or force."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1471(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1471(entry) 
 msgid "checkpoint-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1472(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1472(entry) 
 msgid "(int, int, int, int, int)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1473(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1473(entry) 
 msgid "Probe that fires when a checkpoint is complete. (The probes listed next fire in sequence during checkpoint processing.) arg0 is the number of buffers written. arg1 is the total number of buffers. arg2, arg3 and arg4 contain the number of xlog file(s) added, removed and recycled respectively."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1480(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1480(entry) 
 msgid "clog-checkpoint-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1481(entry) /tmp/cicero-hjxh/monitoring.xml:1488(entry) /tmp/cicero-hjxh/monitoring.xml:1494(entry) /tmp/cicero-hjxh/monitoring.xml:1502(entry) /tmp/cicero-hjxh/monitoring.xml:1509(entry) /tmp/cicero-hjxh/monitoring.xml:1517(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1481(entry) /tmp/cicero-Bcej/monitoring.xml:1488(entry) /tmp/cicero-Bcej/monitoring.xml:1494(entry) /tmp/cicero-Bcej/monitoring.xml:1502(entry) /tmp/cicero-Bcej/monitoring.xml:1509(entry) /tmp/cicero-Bcej/monitoring.xml:1517(entry) 
 msgid "(bool)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1482(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1482(entry) 
 msgid "Probe that fires when the CLOG portion of a checkpoint is started. arg0 is true for normal checkpoint, false for shutdown checkpoint."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1487(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1487(entry) 
 msgid "clog-checkpoint-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1489(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1489(entry) 
 msgid "Probe that fires when the CLOG portion of a checkpoint is complete. arg0 has the same meaning as for clog-checkpoint-start."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1493(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1493(entry) 
 msgid "subtrans-checkpoint-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1495(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1495(entry) 
 msgid "Probe that fires when the SUBTRANS portion of a checkpoint is started. arg0 is true for normal checkpoint, false for shutdown checkpoint."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1501(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1501(entry) 
 msgid "subtrans-checkpoint-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1503(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1503(entry) 
 msgid "Probe that fires when the SUBTRANS portion of a checkpoint is complete. arg0 has the same meaning as for subtrans-checkpoint-start."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1508(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1508(entry) 
 msgid "multixact-checkpoint-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1510(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1510(entry) 
 msgid "Probe that fires when the MultiXact portion of a checkpoint is started. arg0 is true for normal checkpoint, false for shutdown checkpoint."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1516(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1516(entry) 
 msgid "multixact-checkpoint-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1518(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1518(entry) 
 msgid "Probe that fires when the MultiXact portion of a checkpoint is complete. arg0 has the same meaning as for multixact-checkpoint-start."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1523(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1523(entry) 
 msgid "buffer-checkpoint-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1525(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1525(entry) 
 msgid "Probe that fires when the buffer-writing portion of a checkpoint is started. arg0 holds the bitwise flags used to distinguish different checkpoint types, such as shutdown, immediate or force."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1531(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1531(entry) 
 msgid "buffer-sync-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1532(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1532(entry) 
 msgid "(int, int)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1533(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1533(entry) 
 msgid "Probe that fires when we begin to write dirty buffers during checkpoint (after identifying which buffers must be written). arg0 is the total number of buffers. arg1 is the number that are currently dirty and need to be written."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1539(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1539(entry) 
 msgid "buffer-sync-written"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1541(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1541(entry) 
 msgid "Probe that fires after each buffer is written during checkpoint. arg0 is the ID number of the buffer."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1545(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1545(entry) 
 msgid "buffer-sync-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1546(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1546(entry) 
 msgid "(int, int, int)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1547(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1547(entry) 
 msgid "Probe that fires when all dirty buffers have been written. arg0 is the total number of buffers. arg1 is the number of buffers actually written by the checkpoint process. arg2 is the number that were expected to be written (arg1 of buffer-sync-start); any difference reflects other processes flushing buffers during the checkpoint."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1555(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1555(entry) 
 msgid "buffer-checkpoint-sync-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1557(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1557(entry) 
 msgid "Probe that fires after dirty buffers have been written to the kernel, and before starting to issue fsync requests."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1561(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1561(entry) 
 msgid "buffer-checkpoint-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1563(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1563(entry) 
 msgid "Probe that fires when syncing of buffers to disk is complete."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1567(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1567(entry) 
 msgid "twophase-checkpoint-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1569(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1569(entry) 
 msgid "Probe that fires when the two-phase portion of a checkpoint is started."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1573(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1573(entry) 
 msgid "twophase-checkpoint-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1575(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1575(entry) 
 msgid "Probe that fires when the two-phase portion of a checkpoint is complete."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1579(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1579(entry) 
 msgid "buffer-read-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1580(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1580(entry) 
 msgid "(ForkNumber, BlockNumber, Oid, Oid, Oid, int, bool)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1581(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1581(entry) 
 msgid "Probe that fires when a buffer read is started. arg0 and arg1 contain the fork and block numbers of the page (but arg1 will be -1 if this is a relation extension request). arg2, arg3, and arg4 contain the tablespace, database, and relation OIDs identifying the relation. arg5 is the ID of the backend which created the temporary relation for a local buffer, or InvalidBackendId (-1) for a shared buffer. arg6 is true for a relation extension request, false for normal read."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1592(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1592(entry) 
 msgid "buffer-read-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1593(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1593(entry) 
 msgid "(ForkNumber, BlockNumber, Oid, Oid, Oid, int, bool, bool)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1594(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1594(entry) 
 msgid "Probe that fires when a buffer read is complete. arg0 and arg1 contain the fork and block numbers of the page (if this is a relation extension request, arg1 now contains the block number of the newly added block). arg2, arg3, and arg4 contain the tablespace, database, and relation OIDs identifying the relation. arg5 is the ID of the backend which created the temporary relation for a local buffer, or InvalidBackendId (-1) for a shared buffer. arg6 is true for a relation extension request, false for normal read. arg7 is true if the buffer was found in the pool, false if not."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1607(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1607(entry) 
 msgid "buffer-flush-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1608(entry) /tmp/cicero-hjxh/monitoring.xml:1617(entry) /tmp/cicero-hjxh/monitoring.xml:1625(entry) /tmp/cicero-hjxh/monitoring.xml:1636(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1608(entry) /tmp/cicero-Bcej/monitoring.xml:1617(entry) /tmp/cicero-Bcej/monitoring.xml:1625(entry) /tmp/cicero-Bcej/monitoring.xml:1636(entry) 
 msgid "(ForkNumber, BlockNumber, Oid, Oid, Oid)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1609(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1609(entry) 
 msgid "Probe that fires before issuing any write request for a shared buffer. arg0 and arg1 contain the fork and block numbers of the page. arg2, arg3, and arg4 contain the tablespace, database, and relation OIDs identifying the relation."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1616(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1616(entry) 
 msgid "buffer-flush-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1618(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1618(entry) 
 msgid "Probe that fires when a write request is complete. (Note that this just reflects the time to pass the data to the kernel; it's typically not actually been written to disk yet.) The arguments are the same as for buffer-flush-start."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1624(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1624(entry) 
 msgid "buffer-write-dirty-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1626(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1626(entry) 
 msgid "Probe that fires when a server process begins to write a dirty buffer. (If this happens often, it implies that <xref linkend=\"guc-shared-buffers\"/> is too small or the bgwriter control parameters need adjustment.) arg0 and arg1 contain the fork and block numbers of the page. arg2, arg3, and arg4 contain the tablespace, database, and relation OIDs identifying the relation."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1635(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1635(entry) 
 msgid "buffer-write-dirty-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1637(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1637(entry) 
 msgid "Probe that fires when a dirty-buffer write is complete. The arguments are the same as for buffer-write-dirty-start."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1641(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1641(entry) 
 msgid "wal-buffer-write-dirty-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1643(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1643(entry) 
 msgid "Probe that fires when when a server process begins to write a dirty WAL buffer because no more WAL buffer space is available. (If this happens often, it implies that <xref linkend=\"guc-wal-buffers\"/> is too small.)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1649(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1649(entry) 
 msgid "wal-buffer-write-dirty-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1651(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1651(entry) 
 msgid "Probe that fires when a dirty WAL buffer write is complete."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1654(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1654(entry) 
 msgid "xlog-insert"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1655(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1655(entry) 
 msgid "(unsigned char, unsigned char)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1656(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1656(entry) 
 msgid "Probe that fires when a WAL record is inserted. arg0 is the resource manager (rmid) for the record. arg1 contains the info flags."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1661(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1661(entry) 
 msgid "xlog-switch"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1663(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1663(entry) 
 msgid "Probe that fires when a WAL segment switch is requested."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1666(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1666(entry) 
 msgid "smgr-md-read-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1667(entry) /tmp/cicero-hjxh/monitoring.xml:1689(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1667(entry) /tmp/cicero-Bcej/monitoring.xml:1689(entry) 
 msgid "(ForkNumber, BlockNumber, Oid, Oid, Oid, int)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1668(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1668(entry) 
 msgid "Probe that fires when beginning to read a block from a relation. arg0 and arg1 contain the fork and block numbers of the page. arg2, arg3, and arg4 contain the tablespace, database, and relation OIDs identifying the relation. arg5 is the ID of the backend which created the temporary relation for a local buffer, or InvalidBackendId (-1) for a shared buffer."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1676(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1676(entry) 
 msgid "smgr-md-read-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1677(entry) /tmp/cicero-hjxh/monitoring.xml:1699(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1677(entry) /tmp/cicero-Bcej/monitoring.xml:1699(entry) 
 msgid "(ForkNumber, BlockNumber, Oid, Oid, Oid, int, int, int)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1678(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1678(entry) 
 msgid "Probe that fires when a block read is complete. arg0 and arg1 contain the fork and block numbers of the page. arg2, arg3, and arg4 contain the tablespace, database, and relation OIDs identifying the relation. arg5 is the ID of the backend which created the temporary relation for a local buffer, or InvalidBackendId (-1) for a shared buffer. arg6 is the number of bytes actually read, while arg7 is the number requested (if these are different it indicates trouble)."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1688(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1688(entry) 
 msgid "smgr-md-write-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1690(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1690(entry) 
 msgid "Probe that fires when beginning to write a block to a relation. arg0 and arg1 contain the fork and block numbers of the page. arg2, arg3, and arg4 contain the tablespace, database, and relation OIDs identifying the relation. arg5 is the ID of the backend which created the temporary relation for a local buffer, or InvalidBackendId (-1) for a shared buffer."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1698(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1698(entry) 
 msgid "smgr-md-write-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1700(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1700(entry) 
 msgid "Probe that fires when a block write is complete. arg0 and arg1 contain the fork and block numbers of the page. arg2, arg3, and arg4 contain the tablespace, database, and relation OIDs identifying the relation. arg5 is the ID of the backend which created the temporary relation for a local buffer, or InvalidBackendId (-1) for a shared buffer. arg6 is the number of bytes actually written, while arg7 is the number requested (if these are different it indicates trouble)."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1710(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1710(entry) 
 msgid "sort-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1711(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1711(entry) 
 msgid "(int, bool, int, int, bool)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1712(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1712(entry) 
 msgid "Probe that fires when a sort operation is started. arg0 indicates heap, index or datum sort. arg1 is true for unique-value enforcement. arg2 is the number of key columns. arg3 is the number of kilobytes of work memory allowed. arg4 is true if random access to the sort result is required."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1720(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1720(entry) 
 msgid "sort-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1721(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1721(entry) 
 msgid "(bool, long)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1722(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1722(entry) 
 msgid "Probe that fires when a sort is complete. arg0 is true for external sort, false for internal sort. arg1 is the number of disk blocks used for an external sort, or kilobytes of memory used for an internal sort."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1728(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1728(entry) 
 msgid "lwlock-acquire"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1729(entry) /tmp/cicero-hjxh/monitoring.xml:1743(entry) /tmp/cicero-hjxh/monitoring.xml:1751(entry) /tmp/cicero-hjxh/monitoring.xml:1759(entry) /tmp/cicero-hjxh/monitoring.xml:1767(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1729(entry) /tmp/cicero-Bcej/monitoring.xml:1743(entry) /tmp/cicero-Bcej/monitoring.xml:1751(entry) /tmp/cicero-Bcej/monitoring.xml:1759(entry) /tmp/cicero-Bcej/monitoring.xml:1767(entry) 
 msgid "(LWLockId, LWLockMode)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1730(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1730(entry) 
 msgid "Probe that fires when an LWLock has been acquired. arg0 is the LWLock's ID. arg1 is the requested lock mode, either exclusive or shared."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1735(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1735(entry) 
 msgid "lwlock-release"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1736(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1736(entry) 
 msgid "(LWLockId)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1737(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1737(entry) 
 msgid "Probe that fires when an LWLock has been released (but note that any released waiters have not yet been awakened). arg0 is the LWLock's ID."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1742(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1742(entry) 
 msgid "lwlock-wait-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1744(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1744(entry) 
 msgid "Probe that fires when an LWLock was not immediately available and a server process has begun to wait for the lock to become available. arg0 is the LWLock's ID. arg1 is the requested lock mode, either exclusive or shared."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1750(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1750(entry) 
 msgid "lwlock-wait-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1752(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1752(entry) 
 msgid "Probe that fires when a server process has been released from its wait for an LWLock (it does not actually have the lock yet). arg0 is the LWLock's ID. arg1 is the requested lock mode, either exclusive or shared."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1758(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1758(entry) 
 msgid "lwlock-condacquire"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1760(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1760(entry) 
 msgid "Probe that fires when an LWLock was successfully acquired when the caller specified no waiting. arg0 is the LWLock's ID. arg1 is the requested lock mode, either exclusive or shared."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1766(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1766(entry) 
 msgid "lwlock-condacquire-fail"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1768(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1768(entry) 
 msgid "Probe that fires when an LWLock was not successfully acquired when the caller specified no waiting. arg0 is the LWLock's ID. arg1 is the requested lock mode, either exclusive or shared."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1774(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1774(entry) 
 msgid "lock-wait-start"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1775(entry) /tmp/cicero-hjxh/monitoring.xml:1784(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1775(entry) /tmp/cicero-Bcej/monitoring.xml:1784(entry) 
 msgid "(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, LOCKMODE)"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1776(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1776(entry) 
 msgid "Probe that fires when a request for a heavyweight lock (lmgr lock) has begun to wait because the lock is not available. arg0 through arg3 are the tag fields identifying the object being locked. arg4 indicates the type of object being locked. arg5 indicates the lock type being requested."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1783(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1783(entry) 
 msgid "lock-wait-done"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1785(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1785(entry) 
 msgid "Probe that fires when a request for a heavyweight lock (lmgr lock) has finished waiting (i.e., has acquired the lock). The arguments are the same as for lock-wait-start."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1790(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1790(entry) 
 msgid "deadlock-found"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1792(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1792(entry) 
 msgid "Probe that fires when a deadlock is found by the deadlock detector."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1801(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:1801(title) 
 msgid "Defined Types Used in Probe Parameters"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1805(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1805(entry) 
 msgid "Type"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1806(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1806(entry) 
 msgid "Definition"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1813(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1813(entry) 
 msgid "LocalTransactionId"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1814(entry) /tmp/cicero-hjxh/monitoring.xml:1830(entry) /tmp/cicero-hjxh/monitoring.xml:1834(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1814(entry) /tmp/cicero-Bcej/monitoring.xml:1830(entry) /tmp/cicero-Bcej/monitoring.xml:1834(entry) 
 msgid "unsigned int"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1817(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1817(entry) 
 msgid "LWLockId"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1818(entry) /tmp/cicero-hjxh/monitoring.xml:1822(entry) /tmp/cicero-hjxh/monitoring.xml:1826(entry) /tmp/cicero-hjxh/monitoring.xml:1838(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1818(entry) /tmp/cicero-Bcej/monitoring.xml:1822(entry) /tmp/cicero-Bcej/monitoring.xml:1826(entry) /tmp/cicero-Bcej/monitoring.xml:1838(entry) 
 msgid "int"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1821(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1821(entry) 
 msgid "LWLockMode"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1825(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1825(entry) 
 msgid "LOCKMODE"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1829(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1829(entry) 
 msgid "BlockNumber"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1833(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1833(entry) 
 msgid "Oid"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1837(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1837(entry) 
 msgid "ForkNumber"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1841(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1841(entry) 
 msgid "bool"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1842(entry) 
+#: /tmp/cicero-Bcej/monitoring.xml:1842(entry) 
 msgid "char"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1853(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:1853(title) 
 msgid "Using Probes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1859(programlisting) 
+#: /tmp/cicero-Bcej/monitoring.xml:1859(programlisting) 
 #, no-wrap
 msgid "\n#!/usr/sbin/dtrace -qs\n\npostgresql$1:::transaction-start\n{\n      @start[\"Start\"] = count();\n      self-&gt;ts  = timestamp;\n}\n\npostgresql$1:::transaction-abort\n{\n      @abort[\"Abort\"] = count();\n}\n\npostgresql$1:::transaction-commit\n/self-&gt;ts/\n{\n      @commit[\"Commit\"] = count();\n      @time[\"Total time (ns)\"] = sum(timestamp - self-&gt;ts);\n      self-&gt;ts=0;\n}\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1855(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1855(para) 
 msgid "The example below shows a DTrace script for analyzing transaction counts in the system, as an alternative to snapshotting <structname>pg_stat_database</structname> before and after a performance test: <placeholder-1/> When executed, the example D script gives output such as: <screen>\n# ./txn_count.d `pgrep -n postgres` or ./txn_count.d &lt;PID&gt;\n^C\n\nStart                                          71\nCommit                                         70\nTotal time (ns)                        2312105013\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1893(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1893(para) 
 msgid "SystemTap uses a different notation for trace scripts than DTrace does, even though the underlying trace points are compatible. One point worth noting is that at this writing, SystemTap scripts must reference probe names using double underscores in place of hyphens. This is expected to be fixed in future SystemTap releases."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1902(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1902(para) 
 msgid "You should remember that DTrace scripts need to be carefully written and debugged, otherwise the trace information collected might be meaningless. In most cases where problems are found it is the instrumentation that is at fault, not the underlying system. When discussing information found using dynamic tracing, be sure to enclose the script used to allow that too to be checked and discussed."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1911(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1911(para) 
 msgid "More example scripts can be found in the PgFoundry <ulink url=\"http://pgfoundry.org/projects/dtrace/\">dtrace project</ulink>."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1918(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:1918(title) 
 msgid "Defining New Probes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1920(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1920(para) 
 msgid "New probes can be defined within the code wherever the developer desires, though this will require a recompilation. Below are the steps for inserting new probes:"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1928(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1928(para) 
 msgid "Decide on probe names and data to be made available through the probes"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1934(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1934(para) 
 msgid "Add the probe definitions to <filename>src/backend/utils/probes.d</filename>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1940(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1940(para) 
 msgid "Include <filename>pg_trace.h</filename> if it is not already present in the module(s) containing the probe points, and insert <literal>TRACE_POSTGRESQL</literal> probe macros at the desired locations in the source code"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1949(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1949(para) 
 msgid "Recompile and verify that the new probes are available"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1956(title) 
+#: /tmp/cicero-Bcej/monitoring.xml:1956(title) 
 msgid "Example:"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1957(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1957(para) 
 msgid "Here is an example of how you would add a probe to trace all new transactions by transaction ID."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1965(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1965(para) 
 msgid "Decide that the probe will be named <literal>transaction-start</literal> and requires a parameter of type LocalTransactionId"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1974(programlisting) 
+#: /tmp/cicero-Bcej/monitoring.xml:1974(programlisting) 
 #, no-wrap
 msgid "\nprobe transaction__start(LocalTransactionId);\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1972(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1972(para) 
 msgid "Add the probe definition to <filename>src/backend/utils/probes.d</filename>: <placeholder-1/> Note the use of the double underline in the probe name. In a DTrace script using the probe, the double underline needs to be replaced with a hyphen, so <literal>transaction-start</literal> is the name to document for users."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1992(programlisting) 
+#: /tmp/cicero-Bcej/monitoring.xml:1992(programlisting) 
 #, no-wrap
 msgid "\nTRACE_POSTGRESQL_TRANSACTION_START(vxid.localTransactionId);\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1985(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1985(para) 
 msgid "At compile time, <literal>transaction__start</literal> is converted to a macro called <literal>TRACE_POSTGRESQL_TRANSACTION_START</literal> (notice the underscores are single here), which is available by including <filename>pg_trace.h</filename>. Add the macro call to the appropriate location in the source code. In this case, it looks like the following: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:1999(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:1999(para) 
 msgid "After recompiling and running the new binary, check that your newly added probe is available by executing the following DTrace command. You should see similar output: <screen>\n# dtrace -ln transaction-start\n   ID    PROVIDER          MODULE           FUNCTION NAME\n18705 postgresql49878     postgres     StartTransactionCommand transaction-start\n18755 postgresql49877     postgres     StartTransactionCommand transaction-start\n18805 postgresql49876     postgres     StartTransactionCommand transaction-start\n18855 postgresql49875     postgres     StartTransactionCommand transaction-start\n18986 postgresql49873     postgres     StartTransactionCommand transaction-start\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:2022(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:2022(para) 
 msgid "You should take care that the data types specified for a probe's parameters match the data types of the variables used in the macro. Otherwise, you will get compilation errors."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:2042(programlisting) 
+#: /tmp/cicero-Bcej/monitoring.xml:2042(programlisting) 
 #, no-wrap
 msgid "\nif (TRACE_POSTGRESQL_TRANSACTION_START_ENABLED())\n    TRACE_POSTGRESQL_TRANSACTION_START(some_function(...));\n"
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:2031(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:2031(para) 
 msgid "On most platforms, if <productname>PostgreSQL</productname> is built with <option>--enable-dtrace</option>, the arguments to a trace macro will be evaluated whenever control passes through the macro, <emphasis>even if no tracing is being done</emphasis>. This is usually not worth worrying about if you are just reporting the values of a few local variables. But beware of putting expensive function calls into the arguments. If you need to do that, consider protecting the macro with a check to see if the trace is actually enabled: <placeholder-1/> Each trace macro has a corresponding <literal>ENABLED</literal> macro."
 msgstr ""
 
-#: /tmp/cicero-hjxh/monitoring.xml:2016(para) 
+#: /tmp/cicero-Bcej/monitoring.xml:2016(para) 
 msgid "There are a few things to be careful about when adding trace macros to the C code: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-hjxh/monitoring.xml:0(None) 
+#: /tmp/cicero-Bcej/monitoring.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
