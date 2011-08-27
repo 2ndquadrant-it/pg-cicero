@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-26 06:59+0200\n"
+"POT-Creation-Date: 2011-08-27 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,244 +9,244 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:10(refentrytitle) /tmp/cicero-Bcej/ref/alter_extension.xml:16(refname) /tmp/cicero-Bcej/ref/alter_extension.xml:23(primary) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:10(refentrytitle) /tmp/cicero-RKYt/ref/alter_extension.xml:16(refname) /tmp/cicero-RKYt/ref/alter_extension.xml:23(primary) 
 msgid "ALTER EXTENSION"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:11(manvolnum) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:12(refmiscinfo) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:17(refpurpose) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:17(refpurpose) 
 msgid "change the definition of an extension"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:28(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:29(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:30(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:31(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:131(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:28(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:29(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:30(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:31(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:131(replaceable) 
 msgid "extension_name"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:28(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:140(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:28(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:140(replaceable) 
 msgid "new_version"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:29(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:152(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:29(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:152(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:30(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:31(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:33(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:91(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:103(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:30(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:31(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:33(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:91(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:103(replaceable) 
 msgid "member_object"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:33(phrase) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:33(phrase) 
 msgid "where <placeholder-1/> is:"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:35(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:162(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:35(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:162(replaceable) 
 msgid "agg_name"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:35(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:177(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:35(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:177(replaceable) 
 msgid "agg_type"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:36(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:188(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:36(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:188(replaceable) 
 msgid "source_type"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:36(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:197(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:36(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:197(replaceable) 
 msgid "target_type"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:37(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:38(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:39(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:40(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:41(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:44(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:45(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:46(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:47(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:48(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:49(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:50(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:51(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:52(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:53(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:54(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:55(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:56(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:161(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:37(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:38(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:39(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:40(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:41(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:44(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:45(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:46(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:47(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:48(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:49(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:50(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:51(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:52(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:53(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:54(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:55(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:56(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:161(replaceable) 
 msgid "object_name"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:42(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:163(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:42(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:163(replaceable) 
 msgid "function_name"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:42(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:206(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:42(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:206(replaceable) 
 msgid "argmode"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:42(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:223(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:42(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:223(replaceable) 
 msgid "argname"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:42(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:236(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:42(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:236(replaceable) 
 msgid "argtype"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:43(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:164(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:43(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:164(replaceable) 
 msgid "operator_name"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:43(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:247(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:43(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:247(replaceable) 
 msgid "left_type"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:43(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:248(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:43(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:248(replaceable) 
 msgid "right_type"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:44(replaceable) /tmp/cicero-Bcej/ref/alter_extension.xml:45(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:44(replaceable) /tmp/cicero-RKYt/ref/alter_extension.xml:45(replaceable) 
 msgid "index_method"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:27(synopsis) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:27(synopsis) 
 #, no-wrap
 msgid "\nALTER EXTENSION <placeholder-1/> UPDATE [ TO <placeholder-2/> ]\nALTER EXTENSION <placeholder-3/> SET SCHEMA <placeholder-4/>\nALTER EXTENSION <placeholder-5/> ADD <placeholder-6/>\nALTER EXTENSION <placeholder-7/> DROP <placeholder-8/>\n\n<placeholder-9/>\n\n  AGGREGATE <placeholder-10/> (<placeholder-11/> [, ...] ) |\n  CAST (<placeholder-12/> AS <placeholder-13/>) |\n  COLLATION <placeholder-14/> |\n  CONVERSION <placeholder-15/> |\n  DOMAIN <placeholder-16/> |\n  FOREIGN DATA WRAPPER <placeholder-17/> |\n  FOREIGN TABLE <placeholder-18/> |\n  FUNCTION <placeholder-19/> ( [ [ <placeholder-20/> ] [ <placeholder-21/> ] <placeholder-22/> [, ...] ] ) |\n  OPERATOR <placeholder-23/> (<placeholder-24/>, <placeholder-25/>) |\n  OPERATOR CLASS <placeholder-26/> USING <placeholder-27/> |\n  OPERATOR FAMILY <placeholder-28/> USING <placeholder-29/> |\n  [ PROCEDURAL ] LANGUAGE <placeholder-30/> |\n  SCHEMA <placeholder-31/> |\n  SEQUENCE <placeholder-32/> |\n  SERVER <placeholder-33/> |\n  TABLE <placeholder-34/> |\n  TEXT SEARCH CONFIGURATION <placeholder-35/> |\n  TEXT SEARCH DICTIONARY <placeholder-36/> |\n  TEXT SEARCH PARSER <placeholder-37/> |\n  TEXT SEARCH TEMPLATE <placeholder-38/> |\n  TYPE <placeholder-39/> |\n  VIEW <placeholder-40/>\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:61(title) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:61(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:69(literal) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:69(literal) 
 msgid "UPDATE"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:71(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:71(para) 
 msgid "This form updates the extension to a newer version. The extension must supply a suitable update script (or series of scripts) that can modify the currently-installed version into the requested version."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:80(literal) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:80(literal) 
 msgid "SET SCHEMA"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:82(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:82(para) 
 msgid "This form moves the extension's objects into another schema. The extension has to be <firstterm>relocatable</firstterm> for this command to succeed."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:91(literal) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:91(literal) 
 msgid "ADD <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:93(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:93(para) 
 msgid "This form adds an existing object to the extension. This is mainly useful in extension update scripts. The object will subsequently be treated as a member of the extension; notably, it can only be dropped by dropping the extension."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:103(literal) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:103(literal) 
 msgid "DROP <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:105(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:105(para) 
 msgid "This form removes a member object from the extension. This is mainly useful in extension update scripts. The object is not dropped, only disassociated from the extension."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:63(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:63(para) 
 msgid "<command>ALTER EXTENSION</command> changes the definition of an installed extension. There are several subforms: <placeholder-1/> See <xref linkend=\"extend-extensions\"/> for more information about these operations."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:118(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:118(para) 
 msgid "You must own the extension to use <command>ALTER EXTENSION</command>. The <literal>ADD</literal>/<literal>DROP</literal> forms require ownership of the added/dropped object as well."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:126(title) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:126(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:133(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:133(para) 
 msgid "The name of an installed extension."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:142(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:142(para) 
 msgid "The desired new version of the extension. This can be written as either an identifier or a string literal. If not specified, <command>ALTER EXTENSION UPDATE</command> attempts to update to whatever is shown as the default version in the extension's control file."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:154(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:154(para) 
 msgid "The new schema for the extension."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:166(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:166(para) 
 msgid "The name of an object to be added to or removed from the extension. Names of tables, aggregates, domains, foreign tables, functions, operators, operator classes, operator families, sequences, text search objects, types, and views can be schema-qualified."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:179(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:179(para) 
 msgid "An input data type on which the aggregate function operates. To reference a zero-argument aggregate function, write <literal>*</literal> in place of the list of input data types."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:190(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:190(para) 
 msgid "The name of the source data type of the cast."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:199(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:199(para) 
 msgid "The name of the target data type of the cast."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:209(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:209(para) 
 msgid "The mode of a function argument: <literal>IN</literal>, <literal>OUT</literal>, <literal>INOUT</literal>, or <literal>VARIADIC</literal>. If omitted, the default is <literal>IN</literal>. Note that <command>ALTER EXTENSION</command> does not actually pay any attention to <literal>OUT</literal> arguments, since only the input arguments are needed to determine the function's identity. So it is sufficient to list the <literal>IN</literal>, <literal>INOUT</literal>, and <literal>VARIADIC</literal> arguments."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:226(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:226(para) 
 msgid "The name of a function argument. Note that <command>ALTER EXTENSION</command> does not actually pay any attention to argument names, since only the argument data types are needed to determine the function's identity."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:239(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:239(para) 
 msgid "The data type(s) of the function's arguments (optionally schema-qualified), if any."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:250(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:250(para) 
 msgid "The data type(s) of the operator's arguments (optionally schema-qualified). Write <literal>NONE</literal> for the missing argument of a prefix or postfix operator."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:259(literal) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:259(literal) 
 msgid "PROCEDURAL"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:262(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:262(para) 
 msgid "This is a noise word."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:272(title) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:272(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:276(programlisting) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:276(programlisting) 
 #, no-wrap
 msgid "\nALTER EXTENSION hstore UPDATE TO '2.0';\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:274(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:274(para) 
 msgid "To update the <literal>hstore</literal> extension to version 2.0: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:284(programlisting) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:284(programlisting) 
 #, no-wrap
 msgid "\nALTER EXTENSION hstore SET SCHEMA utils;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:281(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:281(para) 
 msgid "To change the schema of the <literal>hstore</literal> extension to <literal>utils</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:291(programlisting) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:291(programlisting) 
 #, no-wrap
 msgid "\nALTER EXTENSION hstore ADD FUNCTION populate_record(anyelement, hstore);\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:289(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:289(para) 
 msgid "To add an existing function to the <literal>hstore</literal> extension: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:297(title) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:297(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:299(para) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:299(para) 
 msgid "<command>ALTER EXTENSION</command> is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:306(title) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:306(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-Bcej/ref/alter_extension.xml:0(None) 
+#: /tmp/cicero-RKYt/ref/alter_extension.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

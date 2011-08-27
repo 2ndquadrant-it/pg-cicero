@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-26 06:59+0200\n"
+"POT-Creation-Date: 2011-08-27 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,282 +9,282 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:6(title) /tmp/cicero-Bcej/pgstatstatements.xml:9(primary) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:6(title) /tmp/cicero-RKYt/pgstatstatements.xml:9(primary) 
 msgid "pg_stat_statements"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:12(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:12(para) 
 msgid "The <filename>pg_stat_statements</filename> module provides a means for tracking execution statistics of all SQL statements executed by a server."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:17(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:17(para) 
 msgid "The module must be loaded by adding <literal>pg_stat_statements</literal> to <xref linkend=\"guc-shared-preload-libraries\"/> in <filename>postgresql.conf</filename>, because it requires additional shared memory. This means that a server restart is needed to add or remove the module."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:25(title) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:25(title) 
 msgid "The <structname>pg_stat_statements</structname> View"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:27(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:27(para) 
 msgid "The statistics gathered by the module are made available via a system view named <structname>pg_stat_statements</structname>. This view contains one row for each distinct query text, database ID, and user ID (up to the maximum number of distinct statements that the module can track). The columns of the view are shown in <xref linkend=\"pgstatstatements-columns\"/>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:36(title) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:36(title) 
 msgid "<structname>pg_stat_statements</structname> Columns"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:41(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:41(entry) 
 msgid "Name"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:42(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:42(entry) 
 msgid "Type"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:43(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:43(entry) 
 msgid "References"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:44(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:44(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:49(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:49(structfield) 
 msgid "userid"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:50(type) /tmp/cicero-Bcej/pgstatstatements.xml:57(type) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:50(type) /tmp/cicero-RKYt/pgstatstatements.xml:57(type) 
 msgid "oid"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:51(structname) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:51(structname) 
 msgid "pg_authid"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:51(literal) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:51(literal) 
 msgid "<link linkend=\"catalog-pg-authid\"><placeholder-1/></link>.oid"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:52(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:52(entry) 
 msgid "OID of user who executed the statement"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:56(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:56(structfield) 
 msgid "dbid"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:58(structname) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:58(structname) 
 msgid "pg_database"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:58(literal) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:58(literal) 
 msgid "<link linkend=\"catalog-pg-database\"><placeholder-1/></link>.oid"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:59(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:59(entry) 
 msgid "OID of database in which the statement was executed"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:63(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:63(structfield) 
 msgid "query"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:64(type) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:64(type) 
 msgid "text"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:66(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:66(entry) 
 msgid "Text of the statement (up to <xref linkend=\"guc-track-activity-query-size\"/> bytes)"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:70(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:70(structfield) 
 msgid "calls"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:71(type) /tmp/cicero-Bcej/pgstatstatements.xml:85(type) /tmp/cicero-Bcej/pgstatstatements.xml:92(type) /tmp/cicero-Bcej/pgstatstatements.xml:99(type) /tmp/cicero-Bcej/pgstatstatements.xml:106(type) /tmp/cicero-Bcej/pgstatstatements.xml:113(type) /tmp/cicero-Bcej/pgstatstatements.xml:120(type) /tmp/cicero-Bcej/pgstatstatements.xml:127(type) /tmp/cicero-Bcej/pgstatstatements.xml:134(type) /tmp/cicero-Bcej/pgstatstatements.xml:141(type) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:71(type) /tmp/cicero-RKYt/pgstatstatements.xml:85(type) /tmp/cicero-RKYt/pgstatstatements.xml:92(type) /tmp/cicero-RKYt/pgstatstatements.xml:99(type) /tmp/cicero-RKYt/pgstatstatements.xml:106(type) /tmp/cicero-RKYt/pgstatstatements.xml:113(type) /tmp/cicero-RKYt/pgstatstatements.xml:120(type) /tmp/cicero-RKYt/pgstatstatements.xml:127(type) /tmp/cicero-RKYt/pgstatstatements.xml:134(type) /tmp/cicero-RKYt/pgstatstatements.xml:141(type) 
 msgid "bigint"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:73(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:73(entry) 
 msgid "Number of times executed"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:77(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:77(structfield) 
 msgid "total_time"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:78(type) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:78(type) 
 msgid "double precision"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:80(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:80(entry) 
 msgid "Total time spent in the statement, in seconds"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:84(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:84(structfield) 
 msgid "rows"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:87(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:87(entry) 
 msgid "Total number of rows retrieved or affected by the statement"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:91(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:91(structfield) 
 msgid "shared_blks_hit"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:94(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:94(entry) 
 msgid "Total number of shared blocks hits by the statement"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:98(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:98(structfield) 
 msgid "shared_blks_read"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:101(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:101(entry) 
 msgid "Total number of shared blocks reads by the statement"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:105(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:105(structfield) 
 msgid "shared_blks_written"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:108(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:108(entry) 
 msgid "Total number of shared blocks writes by the statement"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:112(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:112(structfield) 
 msgid "local_blks_hit"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:115(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:115(entry) 
 msgid "Total number of local blocks hits by the statement"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:119(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:119(structfield) 
 msgid "local_blks_read"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:122(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:122(entry) 
 msgid "Total number of local blocks reads by the statement"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:126(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:126(structfield) 
 msgid "local_blks_written"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:129(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:129(entry) 
 msgid "Total number of local blocks writes by the statement"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:133(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:133(structfield) 
 msgid "temp_blks_read"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:136(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:136(entry) 
 msgid "Total number of temp blocks reads by the statement"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:140(structfield) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:140(structfield) 
 msgid "temp_blks_written"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:143(entry) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:143(entry) 
 msgid "Total number of temp blocks writes by the statement"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:150(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:150(para) 
 msgid "This view, and the function <function>pg_stat_statements_reset</function>, are available only in databases they have been specifically installed into by installing the <literal>pg_stat_statements</literal> extension. However, statistics are tracked across all databases of the server whenever the <filename>pg_stat_statements</filename> module is loaded into the server, regardless of presence of the view."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:159(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:159(para) 
 msgid "For security reasons, non-superusers are not allowed to see the text of queries executed by other users. They can see the statistics, however, if the view has been installed in their database."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:165(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:165(para) 
 msgid "Note that statements are considered the same if they have the same text, regardless of the values of any out-of-line parameters used in the statement. Using out-of-line parameters will help to group statements together and may make the statistics more useful."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:174(title) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:174(title) 
 msgid "Functions"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:179(function) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:179(function) 
 msgid "pg_stat_statements_reset() returns void"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:183(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:183(para) 
 msgid "<function>pg_stat_statements_reset</function> discards all statistics gathered so far by <filename>pg_stat_statements</filename>. By default, this function can only be executed by superusers."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:195(title) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:195(title) 
 msgid "Configuration Parameters"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:199(term) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:199(term) 
 msgid "<varname>pg_stat_statements.max</varname> (<type>integer</type>)"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:204(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:204(para) 
 msgid "<varname>pg_stat_statements.max</varname> is the maximum number of statements tracked by the module (i.e., the maximum number of rows in the <structname>pg_stat_statements</structname> view). If more distinct statements than that are observed, information about the least-executed statements is discarded. The default value is 1000. This parameter can only be set at server start."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:217(term) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:217(term) 
 msgid "<varname>pg_stat_statements.track</varname> (<type>enum</type>)"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:222(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:222(para) 
 msgid "<varname>pg_stat_statements.track</varname> controls which statements are counted by the module. Specify <literal>top</literal> to track top-level statements (those issued directly by clients), <literal>all</literal> to also track nested statements (such as statements invoked within functions), or <literal>none</literal> to disable. The default value is <literal>top</literal>. Only superusers can change this setting."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:236(term) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:236(term) 
 msgid "<varname>pg_stat_statements.track_utility</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:241(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:241(para) 
 msgid "<varname>pg_stat_statements.track_utility</varname> controls whether utility commands are tracked by the module. Utility commands are all those other than <command>SELECT</command>, <command>INSERT</command>, <command>UPDATE</command> and <command>DELETE</command>. The default value is <literal>on</literal>. Only superusers can change this setting."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:253(term) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:253(term) 
 msgid "<varname>pg_stat_statements.save</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:258(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:258(para) 
 msgid "<varname>pg_stat_statements.save</varname> specifies whether to save statement statistics across server shutdowns. If it is <literal>off</literal> then statistics are not saved at shutdown nor reloaded at server start. The default value is <literal>on</literal>. This parameter can only be set in the <filename>postgresql.conf</filename> file or on the server command line."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:271(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:271(para) 
 msgid "The module requires additional shared memory amounting to about <varname>pg_stat_statements.max</varname><literal>*</literal><xref linkend=\"guc-track-activity-query-size\"/> bytes. Note that this memory is consumed whenever the module is loaded, even if <varname>pg_stat_statements.track</varname> is set to <literal>none</literal>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:285(programlisting) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:285(programlisting) 
 #, no-wrap
 msgid "\n# postgresql.conf\nshared_preload_libraries = 'pg_stat_statements'\n\ncustom_variable_classes = 'pg_stat_statements'\npg_stat_statements.max = 10000\npg_stat_statements.track = all\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:279(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:279(para) 
 msgid "In order to set any of these parameters in your <filename>postgresql.conf</filename> file, you will need to add <literal>pg_stat_statements</literal> to <xref linkend=\"guc-custom-variable-classes\"/>. Typical usage might be: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:297(title) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:297(title) 
 msgid "Sample Output"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:299(screen) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:299(screen) 
 #, no-wrap
 msgid "\nbench=# SELECT pg_stat_statements_reset();\n\n$ pgbench -i bench\n$ pgbench -c10 -t300 -M prepared bench\n\nbench=# \\x\nbench=# SELECT query, calls, total_time, rows, 100.0 * shared_blks_hit /\n               nullif(shared_blks_hit + shared_blks_read, 0) AS hit_percent\n          FROM pg_stat_statements ORDER BY total_time DESC LIMIT 5;\n-[ RECORD 1 ]---------------------------------------------------------------------\nquery       | UPDATE pgbench_branches SET bbalance = bbalance + $1 WHERE bid = $2;\ncalls       | 3000\ntotal_time  | 9.60900100000002\nrows        | 2836\nhit_percent | 99.9778970000200936\n-[ RECORD 2 ]---------------------------------------------------------------------\nquery       | UPDATE pgbench_tellers SET tbalance = tbalance + $1 WHERE tid = $2;\ncalls       | 3000\ntotal_time  | 8.015156\nrows        | 2990\nhit_percent | 99.9731126579631345\n-[ RECORD 3 ]---------------------------------------------------------------------\nquery       | copy pgbench_accounts from stdin\ncalls       | 1\ntotal_time  | 0.310624\nrows        | 100000\nhit_percent | 0.30395136778115501520\n-[ RECORD 4 ]---------------------------------------------------------------------\nquery       | UPDATE pgbench_accounts SET abalance = abalance + $1 WHERE aid = $2;\ncalls       | 3000\ntotal_time  | 0.271741999999997\nrows        | 3000\nhit_percent | 93.7968855088209426\n-[ RECORD 5 ]---------------------------------------------------------------------\nquery       | alter table pgbench_accounts add primary key (aid)\ncalls       | 1\ntotal_time  | 0.08142\nrows        | 0\nhit_percent | 34.4947735191637631\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:343(title) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:343(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-Bcej/pgstatstatements.xml:345(para) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:345(para) 
 msgid "Takahiro Itagaki <email>itagaki.takahiro@oss.ntt.co.jp</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-Bcej/pgstatstatements.xml:0(None) 
+#: /tmp/cicero-RKYt/pgstatstatements.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

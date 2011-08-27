@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-26 06:58+0200\n"
+"POT-Creation-Date: 2011-08-27 06:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,639 +9,639 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-Bcej/indices.xml:6(title) 
+#: /tmp/cicero-RKYt/indices.xml:6(title) 
 msgid "Indexes"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:9(primary) /tmp/cicero-Bcej/indices.xml:297(primary) /tmp/cicero-Bcej/indices.xml:390(primary) /tmp/cicero-Bcej/indices.xml:473(primary) /tmp/cicero-Bcej/indices.xml:555(primary) /tmp/cicero-Bcej/indices.xml:601(primary) /tmp/cicero-Bcej/indices.xml:670(primary) /tmp/cicero-Bcej/indices.xml:1050(primary) 
+#: /tmp/cicero-RKYt/indices.xml:9(primary) /tmp/cicero-RKYt/indices.xml:297(primary) /tmp/cicero-RKYt/indices.xml:390(primary) /tmp/cicero-RKYt/indices.xml:473(primary) /tmp/cicero-RKYt/indices.xml:555(primary) /tmp/cicero-RKYt/indices.xml:601(primary) /tmp/cicero-RKYt/indices.xml:670(primary) /tmp/cicero-RKYt/indices.xml:1050(primary) 
 msgid "index"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:12(para) 
+#: /tmp/cicero-RKYt/indices.xml:12(para) 
 msgid "Indexes are a common way to enhance database performance. An index allows the database server to find and retrieve specific rows much faster than it could do without an index. But indexes also add overhead to the database system as a whole, so they should be used sensibly."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:22(title) 
+#: /tmp/cicero-RKYt/indices.xml:22(title) 
 msgid "Introduction"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:26(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:26(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE test1 (\n    id integer,\n    content varchar\n);\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:33(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:33(programlisting) 
 #, no-wrap
 msgid "\nSELECT content FROM test1 WHERE id = <replaceable>constant</replaceable>;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:24(para) 
+#: /tmp/cicero-RKYt/indices.xml:24(para) 
 msgid "Suppose we have a table similar to this: <placeholder-1/> and the application issues many queries of the form: <placeholder-2/> With no advance preparation, the system would have to scan the entire <structname>test1</structname> table, row by row, to find all matching entries. If there are many rows in <structname>test1</structname> and only a few rows (perhaps zero or one) that would be returned by such a query, this is clearly an inefficient method. But if the system has been instructed to maintain an index on the <structfield>id</structfield> column, it can use a more efficient method for locating matching rows. For instance, it might only have to walk a few levels deep into a search tree."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:47(para) 
+#: /tmp/cicero-RKYt/indices.xml:47(para) 
 msgid "A similar approach is used in most non-fiction books: terms and concepts that are frequently looked up by readers are collected in an alphabetic index at the end of the book. The interested reader can scan the index relatively quickly and flip to the appropriate page(s), rather than having to read the entire book to find the material of interest. Just as it is the task of the author to anticipate the items that readers are likely to look up, it is the task of the database programmer to foresee which indexes will be useful."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:62(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:62(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX test1_id_index ON test1 (id);\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:59(para) 
+#: /tmp/cicero-RKYt/indices.xml:59(para) 
 msgid "The following command can be used to create an index on the <structfield>id</structfield> column, as discussed: <placeholder-1/> The name <structname>test1_id_index</structname> can be chosen freely, but you should pick something that enables you to remember later what the index was for."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:70(para) 
+#: /tmp/cicero-RKYt/indices.xml:70(para) 
 msgid "To remove an index, use the <command>DROP INDEX</command> command. Indexes can be added to and removed from tables at any time."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:75(para) 
+#: /tmp/cicero-RKYt/indices.xml:75(para) 
 msgid "Once an index is created, no further intervention is required: the system will update the index when the table is modified, and it will use the index in queries when it thinks doing so would be more efficient than a sequential table scan. But you might have to run the <command>ANALYZE</command> command regularly to update statistics to allow the query planner to make educated decisions. See <xref linkend=\"performance-tips\"/> for information about how to find out whether an index is used and when and why the planner might choose <emphasis>not</emphasis> to use an index."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:87(para) 
+#: /tmp/cicero-RKYt/indices.xml:87(para) 
 msgid "Indexes can also benefit <command>UPDATE</command> and <command>DELETE</command> commands with search conditions. Indexes can moreover be used in join searches. Thus, an index defined on a column that is part of a join condition can also significantly speed up queries with joins."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:95(para) 
+#: /tmp/cicero-RKYt/indices.xml:95(para) 
 msgid "Creating an index on a large table can take a long time. By default, <productname>PostgreSQL</productname> allows reads (<command>SELECT</command> statements) to occur on the table in parallel with index creation, but writes (<command>INSERT</command>, <command>UPDATE</command>, <command>DELETE</command>) are blocked until the index build is finished. In production environments this is often unacceptable. It is possible to allow writes to occur in parallel with index creation, but there are several caveats to be aware of — for more information see <xref linkend=\"sql-createindex-concurrently\" endterm=\"SQL-CREATEINDEX-CONCURRENTLY-title\"/>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:107(para) 
+#: /tmp/cicero-RKYt/indices.xml:107(para) 
 msgid "After an index is created, the system has to keep it synchronized with the table. This adds overhead to data manipulation operations. Therefore indexes that are seldom or never used in queries should be removed."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:117(title) 
+#: /tmp/cicero-RKYt/indices.xml:117(title) 
 msgid "Index Types"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:119(para) 
+#: /tmp/cicero-RKYt/indices.xml:119(para) 
 msgid "<productname>PostgreSQL</productname> provides several index types: B-tree, Hash, GiST and GIN. Each index type uses a different algorithm that is best suited to different types of queries. By default, the <command>CREATE INDEX</command> command creates B-tree indexes, which fit the most common situations."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:143(literal) 
+#: /tmp/cicero-RKYt/indices.xml:143(literal) 
 msgid "&lt;"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:144(literal) 
+#: /tmp/cicero-RKYt/indices.xml:144(literal) 
 msgid "&lt;="
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:145(literal) /tmp/cicero-Bcej/indices.xml:280(literal) 
+#: /tmp/cicero-RKYt/indices.xml:145(literal) /tmp/cicero-RKYt/indices.xml:280(literal) 
 msgid "="
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:146(literal) 
+#: /tmp/cicero-RKYt/indices.xml:146(literal) 
 msgid "&gt;="
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:147(literal) 
+#: /tmp/cicero-RKYt/indices.xml:147(literal) 
 msgid "&gt;"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:127(para) 
+#: /tmp/cicero-RKYt/indices.xml:127(para) 
 msgid "<indexterm><primary>index</primary><secondary>B-tree</secondary></indexterm><indexterm><primary>B-tree</primary><see>index</see></indexterm> B-trees can handle equality and range queries on data that can be sorted into some ordering. In particular, the <productname>PostgreSQL</productname> query planner will consider using a B-tree index whenever an indexed column is involved in a comparison using one of these operators: <placeholder-1/> Constructs equivalent to combinations of these operators, such as <literal>BETWEEN</literal> and <literal>IN</literal>, can also be implemented with a B-tree index search. Also, an <literal>IS NULL</literal> or <literal>IS NOT NULL</literal> condition on an index column can be used with a B-tree index."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:156(para) 
+#: /tmp/cicero-RKYt/indices.xml:156(para) 
 msgid "The optimizer can also use a B-tree index for queries involving the pattern matching operators <literal>LIKE</literal> and <literal>~</literal><emphasis>if</emphasis> the pattern is a constant and is anchored to the beginning of the string — for example, <literal>col LIKE 'foo%'</literal> or <literal>col ~ '^foo'</literal>, but not <literal>col LIKE '%bar'</literal>. However, if your database does not use the C locale you will need to create the index with a special operator class to support indexing of pattern-matching queries; see <xref linkend=\"indexes-opclass\"/> below. It is also possible to use B-tree indexes for <literal>ILIKE</literal> and <literal>~*</literal>, but only if the pattern starts with non-alphabetic characters, i.e., characters that are not affected by upper/lower case conversion."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:172(para) 
+#: /tmp/cicero-RKYt/indices.xml:172(para) 
 msgid "B-tree indexes can also be used to retrieve data in sorted order. This is not always faster than a simple scan and sort, but it is often helpful."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:178(para) 
+#: /tmp/cicero-RKYt/indices.xml:178(para) 
 msgid "<indexterm><primary>index</primary><secondary>hash</secondary></indexterm><indexterm><primary>hash</primary><see>index</see></indexterm> Hash indexes can only handle simple equality comparisons. The query planner will consider using a hash index whenever an indexed column is involved in a comparison using the <literal>=</literal> operator. The following command is used to create a hash index: <synopsis>\nCREATE INDEX <replaceable>name</replaceable> ON <replaceable>table</replaceable> USING hash (<replaceable>column</replaceable>);\n</synopsis>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:198(para) 
+#: /tmp/cicero-RKYt/indices.xml:198(para) 
 msgid "Hash index operations are not presently WAL-logged, so hash indexes might need to be rebuilt with <command>REINDEX</command> after a database crash. They are also not replicated over streaming or file-based replication. For these reasons, hash index use is presently discouraged."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:226(literal) 
+#: /tmp/cicero-RKYt/indices.xml:226(literal) 
 msgid "&lt;&lt;"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:227(literal) 
+#: /tmp/cicero-RKYt/indices.xml:227(literal) 
 msgid "&amp;&lt;"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:228(literal) 
+#: /tmp/cicero-RKYt/indices.xml:228(literal) 
 msgid "&amp;&gt;"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:229(literal) 
+#: /tmp/cicero-RKYt/indices.xml:229(literal) 
 msgid "&gt;&gt;"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:230(literal) 
+#: /tmp/cicero-RKYt/indices.xml:230(literal) 
 msgid "&lt;&lt;|"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:231(literal) 
+#: /tmp/cicero-RKYt/indices.xml:231(literal) 
 msgid "&amp;&lt;|"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:232(literal) 
+#: /tmp/cicero-RKYt/indices.xml:232(literal) 
 msgid "|&amp;&gt;"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:233(literal) 
+#: /tmp/cicero-RKYt/indices.xml:233(literal) 
 msgid "|&gt;&gt;"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:234(literal) /tmp/cicero-Bcej/indices.xml:279(literal) 
+#: /tmp/cicero-RKYt/indices.xml:234(literal) /tmp/cicero-RKYt/indices.xml:279(literal) 
 msgid "@&gt;"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:235(literal) /tmp/cicero-Bcej/indices.xml:278(literal) 
+#: /tmp/cicero-RKYt/indices.xml:235(literal) /tmp/cicero-RKYt/indices.xml:278(literal) 
 msgid "&lt;@"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:236(literal) 
+#: /tmp/cicero-RKYt/indices.xml:236(literal) 
 msgid "~="
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:237(literal) /tmp/cicero-Bcej/indices.xml:281(literal) 
+#: /tmp/cicero-RKYt/indices.xml:237(literal) /tmp/cicero-RKYt/indices.xml:281(literal) 
 msgid "&amp;&amp;"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:207(para) 
+#: /tmp/cicero-RKYt/indices.xml:207(para) 
 msgid "<indexterm><primary>index</primary><secondary>GiST</secondary></indexterm><indexterm><primary>GiST</primary><see>index</see></indexterm> GiST indexes are not a single kind of index, but rather an infrastructure within which many different indexing strategies can be implemented. Accordingly, the particular operators with which a GiST index can be used vary depending on the indexing strategy (the <firstterm>operator class</firstterm>). As an example, the standard distribution of <productname>PostgreSQL</productname> includes GiST operator classes for several two-dimensional geometric data types, which support indexed queries using these operators: <placeholder-1/> (See <xref linkend=\"functions-geometry\"/> for the meaning of these operators.) Many other GiST operator classes are available in the <literal>contrib</literal> collection or as separate projects. For more information see <xref linkend=\"gist\"/>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:247(para) 
+#: /tmp/cicero-RKYt/indices.xml:247(para) 
 msgid "GiST indexes are also capable of optimizing <quote>nearest-neighbor</quote> searches, such as <placeholder-1/> which finds the ten places closest to a given target point. The ability to do this is again dependent on the particular operator class being used."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:258(para) 
+#: /tmp/cicero-RKYt/indices.xml:258(para) 
 msgid "<indexterm><primary>index</primary><secondary>GIN</secondary></indexterm><indexterm><primary>GIN</primary><see>index</see></indexterm> GIN indexes are inverted indexes which can handle values that contain more than one key, arrays for example. Like GiST, GIN can support many different user-defined indexing strategies and the particular operators with which a GIN index can be used vary depending on the indexing strategy. As an example, the standard distribution of <productname>PostgreSQL</productname> includes GIN operator classes for one-dimensional arrays, which support indexed queries using these operators: <placeholder-1/> (See <xref linkend=\"functions-array\"/> for the meaning of these operators.) Many other GIN operator classes are available in the <literal>contrib</literal> collection or as separate projects. For more information see <xref linkend=\"gin\"/>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:294(title) 
+#: /tmp/cicero-RKYt/indices.xml:294(title) 
 msgid "Multicolumn Indexes"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:298(secondary) 
+#: /tmp/cicero-RKYt/indices.xml:298(secondary) 
 msgid "multicolumn"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:304(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:304(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE test2 (\n  major int,\n  minor int,\n  name varchar\n);\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:313(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:313(programlisting) 
 #, no-wrap
 msgid "\nSELECT name FROM test2 WHERE major = <replaceable>constant</replaceable> AND minor = <replaceable>constant</replaceable>;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:319(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:319(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX test2_mm_idx ON test2 (major, minor);\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:301(para) 
+#: /tmp/cicero-RKYt/indices.xml:301(para) 
 msgid "An index can be defined on more than one column of a table. For example, if you have a table of this form: <placeholder-1/> (say, you keep your <filename class=\"directory\">/dev</filename> directory in a database...) and you frequently issue queries like: <placeholder-2/> then it might be appropriate to define an index on the columns <structfield>major</structfield> and <structfield>minor</structfield> together, e.g.: <placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:324(para) 
+#: /tmp/cicero-RKYt/indices.xml:324(para) 
 msgid "Currently, only the B-tree, GiST and GIN index types support multicolumn indexes. Up to 32 columns can be specified. (This limit can be altered when building <productname>PostgreSQL</productname>; see the file <filename>pg_config_manual.h</filename>.)"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:331(para) 
+#: /tmp/cicero-RKYt/indices.xml:331(para) 
 msgid "A multicolumn B-tree index can be used with query conditions that involve any subset of the index's columns, but the index is most efficient when there are constraints on the leading (leftmost) columns. The exact rule is that equality constraints on leading columns, plus any inequality constraints on the first column that does not have an equality constraint, will be used to limit the portion of the index that is scanned. Constraints on columns to the right of these columns are checked in the index, so they save visits to the table proper, but they do not reduce the portion of the index that has to be scanned. For example, given an index on <literal>(a, b, c)</literal> and a query condition <literal>WHERE a = 5 AND b &gt;= 42 AND c &lt; 77</literal>, the index would have to be scanned from the first entry with <literal>a</literal> = 5 and <literal>b</literal> = 42 up through the last entry with <literal>a</literal> = 5. Index entries with <literal>c</literal> &gt;= 77 would be skipped, but they'd still have to be scanned through. This index could in principle be used for queries that have constraints on <literal>b</literal> and/or <literal>c</literal> with no constraint on <literal>a</literal> — but the entire index would have to be scanned, so in most cases the planner would prefer a sequential table scan over using the index."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:353(para) 
+#: /tmp/cicero-RKYt/indices.xml:353(para) 
 msgid "A multicolumn GiST index can be used with query conditions that involve any subset of the index's columns. Conditions on additional columns restrict the entries returned by the index, but the condition on the first column is the most important one for determining how much of the index needs to be scanned. A GiST index will be relatively ineffective if its first column has only a few distinct values, even if there are many distinct values in additional columns."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:363(para) 
+#: /tmp/cicero-RKYt/indices.xml:363(para) 
 msgid "A multicolumn GIN index can be used with query conditions that involve any subset of the index's columns. Unlike B-tree or GiST, index search effectiveness is the same regardless of which index column(s) the query conditions use."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:370(para) 
+#: /tmp/cicero-RKYt/indices.xml:370(para) 
 msgid "Of course, each column must be used with operators appropriate to the index type; clauses that involve other operators will not be considered."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:375(para) 
+#: /tmp/cicero-RKYt/indices.xml:375(para) 
 msgid "Multicolumn indexes should be used sparingly. In most situations, an index on a single column is sufficient and saves space and time. Indexes with more than three columns are unlikely to be helpful unless the usage of the table is extremely stylized. See also <xref linkend=\"indexes-bitmap-scans\"/> for some discussion of the merits of different index configurations."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:387(title) 
+#: /tmp/cicero-RKYt/indices.xml:387(title) 
 msgid "Indexes and <literal>ORDER BY</literal>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:391(literal) 
+#: /tmp/cicero-RKYt/indices.xml:391(literal) 
 msgid "ORDER BY"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:391(secondary) 
+#: /tmp/cicero-RKYt/indices.xml:391(secondary) 
 msgid "and <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:394(para) 
+#: /tmp/cicero-RKYt/indices.xml:394(para) 
 msgid "In addition to simply finding the rows to be returned by a query, an index may be able to deliver them in a specific sorted order. This allows a query's <literal>ORDER BY</literal> specification to be honored without a separate sorting step. Of the index types currently supported by <productname>PostgreSQL</productname>, only B-tree can produce sorted output — the other index types return matching rows in an unspecified, implementation-dependent order."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:404(para) 
+#: /tmp/cicero-RKYt/indices.xml:404(para) 
 msgid "The planner will consider satisfying an <literal>ORDER BY</literal> specification either by scanning an available index that matches the specification, or by scanning the table in physical order and doing an explicit sort. For a query that requires scanning a large fraction of the table, an explicit sort is likely to be faster than using an index because it requires less disk I/O due to following a sequential access pattern. Indexes are more useful when only a few rows need be fetched. An important special case is <literal>ORDER BY</literal> in combination with <literal>LIMIT</literal><replaceable>n</replaceable>: an explicit sort will have to process all the data to identify the first <replaceable>n</replaceable> rows, but if there is an index matching the <literal>ORDER BY</literal>, the first <replaceable>n</replaceable> rows can be retrieved directly, without scanning the remainder at all."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:420(para) 
+#: /tmp/cicero-RKYt/indices.xml:420(para) 
 msgid "By default, B-tree indexes store their entries in ascending order with nulls last. This means that a forward scan of an index on column <literal>x</literal> produces output satisfying <literal>ORDER BY x</literal> (or more verbosely, <literal>ORDER BY x ASC NULLS LAST</literal>). The index can also be scanned backward, producing output satisfying <literal>ORDER BY x DESC</literal> (or more verbosely, <literal>ORDER BY x DESC NULLS FIRST</literal>, since <literal>NULLS FIRST</literal> is the default for <literal>ORDER BY DESC</literal>)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:435(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:435(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX test2_info_nulls_low ON test2 (info NULLS FIRST);\nCREATE INDEX test3_desc_index ON test3 (id DESC NULLS LAST);\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:431(para) 
+#: /tmp/cicero-RKYt/indices.xml:431(para) 
 msgid "You can adjust the ordering of a B-tree index by including the options <literal>ASC</literal>, <literal>DESC</literal>, <literal>NULLS FIRST</literal>, and/or <literal>NULLS LAST</literal> when creating the index; for example: <placeholder-1/> An index stored in ascending order with nulls first can satisfy either <literal>ORDER BY x ASC NULLS FIRST</literal> or <literal>ORDER BY x DESC NULLS LAST</literal> depending on which direction it is scanned in."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:445(para) 
+#: /tmp/cicero-RKYt/indices.xml:445(para) 
 msgid "You might wonder why bother providing all four options, when two options together with the possibility of backward scan would cover all the variants of <literal>ORDER BY</literal>. In single-column indexes the options are indeed redundant, but in multicolumn indexes they can be useful. Consider a two-column index on <literal>(x, y)</literal>: this can satisfy <literal>ORDER BY x, y</literal> if we scan forward, or <literal>ORDER BY x DESC, y DESC</literal> if we scan backward. But it might be that the application frequently needs to use <literal>ORDER BY x ASC, y DESC</literal>. There is no way to get that ordering from a plain index, but it is possible if the index is defined as <literal>(x ASC, y DESC)</literal> or <literal>(x DESC, y ASC)</literal>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:459(para) 
+#: /tmp/cicero-RKYt/indices.xml:459(para) 
 msgid "Obviously, indexes with non-default sort orderings are a fairly specialized feature, but sometimes they can produce tremendous speedups for certain queries. Whether it's worth maintaining such an index depends on how often you use queries that require a special sort ordering."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:470(title) 
+#: /tmp/cicero-RKYt/indices.xml:470(title) 
 msgid "Combining Multiple Indexes"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:474(secondary) 
+#: /tmp/cicero-RKYt/indices.xml:474(secondary) 
 msgid "combining multiple indexes"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:478(primary) 
+#: /tmp/cicero-RKYt/indices.xml:478(primary) 
 msgid "bitmap scan"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:481(para) 
+#: /tmp/cicero-RKYt/indices.xml:481(para) 
 msgid "A single index scan can only use query clauses that use the index's columns with operators of its operator class and are joined with <literal>AND</literal>. For example, given an index on <literal>(a, b)</literal> a query condition like <literal>WHERE a = 5 AND b = 6</literal> could use the index, but a query like <literal>WHERE a = 5 OR b = 6</literal> could not directly use the index."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:490(para) 
+#: /tmp/cicero-RKYt/indices.xml:490(para) 
 msgid "Fortunately, <productname>PostgreSQL</productname> has the ability to combine multiple indexes (including multiple uses of the same index) to handle cases that cannot be implemented by single index scans. The system can form <literal>AND</literal> and <literal>OR</literal> conditions across several index scans. For example, a query like <literal>WHERE x = 42 OR x = 47 OR x = 53 OR x = 99</literal> could be broken down into four separate scans of an index on <literal>x</literal>, each scan using one of the query clauses. The results of these scans are then ORed together to produce the result. Another example is that if we have separate indexes on <literal>x</literal> and <literal>y</literal>, one possible implementation of a query like <literal>WHERE x = 5 AND y = 6</literal> is to use each index with the appropriate query clause and then AND together the index results to identify the result rows."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:506(para) 
+#: /tmp/cicero-RKYt/indices.xml:506(para) 
 msgid "To combine multiple indexes, the system scans each needed index and prepares a <firstterm>bitmap</firstterm> in memory giving the locations of table rows that are reported as matching that index's conditions. The bitmaps are then ANDed and ORed together as needed by the query. Finally, the actual table rows are visited and returned. The table rows are visited in physical order, because that is how the bitmap is laid out; this means that any ordering of the original indexes is lost, and so a separate sort step will be needed if the query has an <literal>ORDER BY</literal> clause. For this reason, and because each additional index scan adds extra time, the planner will sometimes choose to use a simple index scan even though additional indexes are available that could have been used as well."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:521(para) 
+#: /tmp/cicero-RKYt/indices.xml:521(para) 
 msgid "In all but the simplest applications, there are various combinations of indexes that might be useful, and the database developer must make trade-offs to decide which indexes to provide. Sometimes multicolumn indexes are best, but sometimes it's better to create separate indexes and rely on the index-combination feature. For example, if your workload includes a mix of queries that sometimes involve only column <literal>x</literal>, sometimes only column <literal>y</literal>, and sometimes both columns, you might choose to create two separate indexes on <literal>x</literal> and <literal>y</literal>, relying on index combination to process the queries that use both columns. You could also create a multicolumn index on <literal>(x, y)</literal>. This index would typically be more efficient than index combination for queries involving both columns, but as discussed in <xref linkend=\"indexes-multicolumn\"/>, it would be almost useless for queries involving only <literal>y</literal>, so it should not be the only index. A combination of the multicolumn index and a separate index on <literal>y</literal> would serve reasonably well. For queries involving only <literal>x</literal>, the multicolumn index could be used, though it would be larger and hence slower than an index on <literal>x</literal> alone. The last alternative is to create all three indexes, but this is probably only reasonable if the table is searched much more often than it is updated and all three types of query are common. If one of the types of query is much less common than the others, you'd probably settle for creating just the two indexes that best match the common types."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:552(title) 
+#: /tmp/cicero-RKYt/indices.xml:552(title) 
 msgid "Unique Indexes"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:556(secondary) 
+#: /tmp/cicero-RKYt/indices.xml:556(secondary) 
 msgid "unique"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:559(para) 
+#: /tmp/cicero-RKYt/indices.xml:559(para) 
 msgid "Indexes can also be used to enforce uniqueness of a column's value, or the uniqueness of the combined values of more than one column. <synopsis>\nCREATE UNIQUE INDEX <replaceable>name</replaceable> ON <replaceable>table</replaceable> (<replaceable>column</replaceable> <optional>, ...</optional>);\n</synopsis> Currently, only B-tree indexes can be declared unique."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:568(para) 
+#: /tmp/cicero-RKYt/indices.xml:568(para) 
 msgid "When an index is declared unique, multiple table rows with equal indexed values are not allowed. Null values are not considered equal. A multicolumn unique index will only reject cases where all indexed columns are equal in multiple rows."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:575(para) 
+#: /tmp/cicero-RKYt/indices.xml:575(para) 
 msgid "<productname>PostgreSQL</productname> automatically creates a unique index when a unique constraint or primary key is defined for a table. The index covers the columns that make up the primary key or unique constraint (a multicolumn index, if appropriate), and is the mechanism that enforces the constraint."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:584(para) 
+#: /tmp/cicero-RKYt/indices.xml:584(para) 
 msgid "The preferred way to add a unique constraint to a table is <literal>ALTER TABLE ... ADD CONSTRAINT</literal>. The use of indexes to enforce unique constraints could be considered an implementation detail that should not be accessed directly. One should, however, be aware that there's no need to manually create indexes on unique columns; doing so would just duplicate the automatically-created index."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:598(title) 
+#: /tmp/cicero-RKYt/indices.xml:598(title) 
 msgid "Indexes on Expressions"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:602(secondary) 
+#: /tmp/cicero-RKYt/indices.xml:602(secondary) 
 msgid "on expressions"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:605(para) 
+#: /tmp/cicero-RKYt/indices.xml:605(para) 
 msgid "An index column need not be just a column of the underlying table, but can be a function or scalar expression computed from one or more columns of the table. This feature is useful to obtain fast access to tables based on the results of computations."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:615(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:615(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM test1 WHERE lower(col1) = 'value';\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:621(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:621(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX test1_lower_col1_idx ON test1 (lower(col1));\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:612(para) 
+#: /tmp/cicero-RKYt/indices.xml:612(para) 
 msgid "For example, a common way to do case-insensitive comparisons is to use the <function>lower</function> function: <placeholder-1/> This query can use an index if one has been defined on the result of the <literal>lower(col1)</literal> function: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:626(para) 
+#: /tmp/cicero-RKYt/indices.xml:626(para) 
 msgid "If we were to declare this index <literal>UNIQUE</literal>, it would prevent creation of rows whose <literal>col1</literal> values differ only in case, as well as rows whose <literal>col1</literal> values are actually identical. Thus, indexes on expressions can be used to enforce constraints that are not definable as simple unique constraints."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:636(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:636(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM people WHERE (first_name || ' ' || last_name) = 'John Smith';\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:640(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:640(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX people_names ON people ((first_name || ' ' || last_name));\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:634(para) 
+#: /tmp/cicero-RKYt/indices.xml:634(para) 
 msgid "As another example, if one often does queries like: <placeholder-1/> then it might be worth creating an index like this: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:645(para) 
+#: /tmp/cicero-RKYt/indices.xml:645(para) 
 msgid "The syntax of the <command>CREATE INDEX</command> command normally requires writing parentheses around index expressions, as shown in the second example. The parentheses can be omitted when the expression is just a function call, as in the first example."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:652(para) 
+#: /tmp/cicero-RKYt/indices.xml:652(para) 
 msgid "Index expressions are relatively expensive to maintain, because the derived expression(s) must be computed for each row upon insertion and whenever it is updated. However, the index expressions are <emphasis>not</emphasis> recomputed during an indexed search, since they are already stored in the index. In both examples above, the system sees the query as just <literal>WHERE indexedcolumn = 'constant'</literal> and so the speed of the search is equivalent to any other simple index query. Thus, indexes on expressions are useful when retrieval speed is more important than insertion and update speed."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:667(title) 
+#: /tmp/cicero-RKYt/indices.xml:667(title) 
 msgid "Partial Indexes"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:671(secondary) 
+#: /tmp/cicero-RKYt/indices.xml:671(secondary) 
 msgid "partial"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:674(para) 
+#: /tmp/cicero-RKYt/indices.xml:674(para) 
 msgid "A <firstterm>partial index</firstterm> is an index built over a subset of a table; the subset is defined by a conditional expression (called the <firstterm>predicate</firstterm> of the partial index). The index contains entries only for those table rows that satisfy the predicate. Partial indexes are a specialized feature, but there are several situations in which they are useful."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:683(para) 
+#: /tmp/cicero-RKYt/indices.xml:683(para) 
 msgid "One major reason for using a partial index is to avoid indexing common values. Since a query searching for a common value (one that accounts for more than a few percent of all the table rows) will not use the index anyway, there is no point in keeping those rows in the index at all. This reduces the size of the index, which will speed up those queries that do use the index. It will also speed up many table update operations because the index does not need to be updated in all cases. <xref linkend=\"indexes-partial-ex1\"/> shows a possible application of this idea."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:696(title) 
+#: /tmp/cicero-RKYt/indices.xml:696(title) 
 msgid "Setting up a Partial Index to Exclude Common Values"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:698(para) 
+#: /tmp/cicero-RKYt/indices.xml:698(para) 
 msgid "Suppose you are storing web server access logs in a database. Most accesses originate from the IP address range of your organization but some are from elsewhere (say, employees on dial-up connections). If your searches by IP are primarily for outside accesses, you probably do not need to index the IP range that corresponds to your organization's subnet."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:709(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:709(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE access_log (\n    url varchar,\n    client_ip inet,\n    ...\n);\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:707(para) 
+#: /tmp/cicero-RKYt/indices.xml:707(para) 
 msgid "Assume a table like this: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:721(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:721(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX access_log_client_ip_ix ON access_log (client_ip)\nWHERE NOT (client_ip &gt; inet '192.168.100.0' AND\n           client_ip &lt; inet '192.168.100.255');\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:718(para) 
+#: /tmp/cicero-RKYt/indices.xml:718(para) 
 msgid "To create a partial index that suits our example, use a command such as this: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:730(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:730(programlisting) 
 #, no-wrap
 msgid "\nSELECT *\nFROM access_log\nWHERE url = '/index.html' AND client_ip = inet '212.78.10.32';\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:736(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:736(programlisting) 
 #, no-wrap
 msgid "\nSELECT *\nFROM access_log\nWHERE client_ip = inet '192.168.100.23';\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:728(para) 
+#: /tmp/cicero-RKYt/indices.xml:728(para) 
 msgid "A typical query that can use this index would be: <placeholder-1/> A query that cannot use this index is: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:743(para) 
+#: /tmp/cicero-RKYt/indices.xml:743(para) 
 msgid "Observe that this kind of partial index requires that the common values be predetermined, so such partial indexes are best used for data distributions that do not change. The indexes can be recreated occasionally to adjust for new data distributions, but this adds maintenance effort."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:752(para) 
+#: /tmp/cicero-RKYt/indices.xml:752(para) 
 msgid "Another possible use for a partial index is to exclude values from the index that the typical query workload is not interested in; this is shown in <xref linkend=\"indexes-partial-ex2\"/>. This results in the same advantages as listed above, but it prevents the <quote>uninteresting</quote> values from being accessed via that index, even if an index scan might be profitable in that case. Obviously, setting up partial indexes for this kind of scenario will require a lot of care and experimentation."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:765(title) 
+#: /tmp/cicero-RKYt/indices.xml:765(title) 
 msgid "Setting up a Partial Index to Exclude Uninteresting Values"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:773(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:773(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX orders_unbilled_index ON orders (order_nr)\n    WHERE billed is not true;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:767(para) 
+#: /tmp/cicero-RKYt/indices.xml:767(para) 
 msgid "If you have a table that contains both billed and unbilled orders, where the unbilled orders take up a small fraction of the total table and yet those are the most-accessed rows, you can improve performance by creating an index on just the unbilled rows. The command to create the index would look like this: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:781(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:781(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM orders WHERE billed is not true AND order_nr &lt; 10000;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:786(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:786(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM orders WHERE billed is not true AND amount &gt; 5000.00;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:779(para) 
+#: /tmp/cicero-RKYt/indices.xml:779(para) 
 msgid "A possible query to use this index would be: <placeholder-1/> However, the index can also be used in queries that do not involve <structfield>order_nr</structfield> at all, e.g.: <placeholder-2/> This is not as efficient as a partial index on the <structfield>amount</structfield> column would be, since the system has to scan the entire index. Yet, if there are relatively few unbilled orders, using this partial index just to find the unbilled orders could be a win."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:798(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:798(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM orders WHERE order_nr = 3501;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:796(para) 
+#: /tmp/cicero-RKYt/indices.xml:796(para) 
 msgid "Note that this query cannot use this index: <placeholder-1/> The order 3501 might be among the billed or unbilled orders."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:806(para) 
+#: /tmp/cicero-RKYt/indices.xml:806(para) 
 msgid "<xref linkend=\"indexes-partial-ex2\"/> also illustrates that the indexed column and the column used in the predicate do not need to match. <productname>PostgreSQL</productname> supports partial indexes with arbitrary predicates, so long as only columns of the table being indexed are involved. However, keep in mind that the predicate must match the conditions used in the queries that are supposed to benefit from the index. To be precise, a partial index can be used in a query only if the system can recognize that the <literal>WHERE</literal> condition of the query mathematically implies the predicate of the index. <productname>PostgreSQL</productname> does not have a sophisticated theorem prover that can recognize mathematically equivalent expressions that are written in different forms. (Not only is such a general theorem prover extremely difficult to create, it would probably be too slow to be of any real use.) The system can recognize simple inequality implications, for example <quote>x &lt; 1</quote> implies <quote>x &lt; 2</quote>; otherwise the predicate condition must exactly match part of the query's <literal>WHERE</literal> condition or the index will not be recognized as usable. Matching takes place at query planning time, not at run time. As a result, parameterized query clauses do not work with a partial index. For example a prepared query with a parameter might specify <quote>x &lt; ?</quote> which will never imply <quote>x &lt; 2</quote> for all possible values of the parameter."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:834(para) 
+#: /tmp/cicero-RKYt/indices.xml:834(para) 
 msgid "A third possible use for partial indexes does not require the index to be used in queries at all. The idea here is to create a unique index over a subset of a table, as in <xref linkend=\"indexes-partial-ex3\"/>. This enforces uniqueness among the rows that satisfy the index predicate, without constraining those that do not."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:844(title) 
+#: /tmp/cicero-RKYt/indices.xml:844(title) 
 msgid "Setting up a Partial Unique Index"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:851(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:851(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE tests (\n    subject text,\n    target text,\n    success boolean,\n    ...\n);\n\nCREATE UNIQUE INDEX tests_success_constraint ON tests (subject, target)\n    WHERE success;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:846(para) 
+#: /tmp/cicero-RKYt/indices.xml:846(para) 
 msgid "Suppose that we have a table describing test outcomes. We wish to ensure that there is only one <quote>successful</quote> entry for a given subject and target combination, but there might be any number of <quote>unsuccessful</quote> entries. Here is one way to do it: <placeholder-1/> This is a particularly efficient approach when there are few successful tests and many unsuccessful ones."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:867(para) 
+#: /tmp/cicero-RKYt/indices.xml:867(para) 
 msgid "Finally, a partial index can also be used to override the system's query plan choices. Also, data sets with peculiar distributions might cause the system to use an index when it really should not. In that case the index can be set up so that it is not available for the offending query. Normally, <productname>PostgreSQL</productname> makes reasonable choices about index usage (e.g., it avoids them when retrieving common values, so the earlier example really only saves index size, it is not required to avoid index usage), and grossly incorrect plan choices are cause for a bug report."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:880(para) 
+#: /tmp/cicero-RKYt/indices.xml:880(para) 
 msgid "Keep in mind that setting up a partial index indicates that you know at least as much as the query planner knows, in particular you know when an index might be profitable. Forming this knowledge requires experience and understanding of how indexes in <productname>PostgreSQL</productname> work. In most cases, the advantage of a partial index over a regular index will be minimal."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:889(para) 
+#: /tmp/cicero-RKYt/indices.xml:889(para) 
 msgid "More information about partial indexes can be found in <xref linkend=\"ston89b\"/>, <xref linkend=\"olson93\"/>, and <xref linkend=\"seshadri95\"/>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:898(title) 
+#: /tmp/cicero-RKYt/indices.xml:898(title) 
 msgid "Operator Classes and Operator Families"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:901(primary) 
+#: /tmp/cicero-RKYt/indices.xml:901(primary) 
 msgid "operator class"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:905(primary) 
+#: /tmp/cicero-RKYt/indices.xml:905(primary) 
 msgid "operator family"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:908(para) 
+#: /tmp/cicero-RKYt/indices.xml:908(para) 
 msgid "An index definition can specify an <firstterm>operator class</firstterm> for each column of an index. <synopsis>\nCREATE INDEX <replaceable>name</replaceable> ON <replaceable>table</replaceable> (<replaceable>column</replaceable> <replaceable>opclass</replaceable> <optional><replaceable>sort options</replaceable></optional> <optional>, ...</optional>);\n</synopsis> The operator class identifies the operators to be used by the index for that column. For example, a B-tree index on the type <type>int4</type> would use the <literal>int4_ops</literal> class; this operator class includes comparison functions for values of type <type>int4</type>. In practice the default operator class for the column's data type is usually sufficient. The main reason for having operator classes is that for some data types, there could be more than one meaningful index behavior. For example, we might want to sort a complex-number data type either by absolute value or by real part. We could do this by defining two operator classes for the data type and then selecting the proper class when making an index. The operator class determines the basic sort ordering (which can then be modified by adding sort options <literal>COLLATE</literal>, <literal>ASC</literal>/<literal>DESC</literal> and/or <literal>NULLS FIRST</literal>/<literal>NULLS LAST</literal>)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:950(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:950(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX test_index ON test_table (col varchar_pattern_ops);\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:936(para) 
+#: /tmp/cicero-RKYt/indices.xml:936(para) 
 msgid "The operator classes <literal>text_pattern_ops</literal>, <literal>varchar_pattern_ops</literal>, and <literal>bpchar_pattern_ops</literal> support B-tree indexes on the types <type>text</type>, <type>varchar</type>, and <type>char</type> respectively. The difference from the default operator classes is that the values are compared strictly character by character rather than according to the locale-specific collation rules. This makes these operator classes suitable for use by queries involving pattern matching expressions (<literal>LIKE</literal> or POSIX regular expressions) when the database does not use the standard <quote>C</quote> locale. As an example, you might index a <type>varchar</type> column like this: <placeholder-1/> Note that you should also create an index with the default operator class if you want queries involving ordinary <literal>&lt;</literal>, <literal>&lt;=</literal>, <literal>&gt;</literal>, or <literal>&gt;=</literal> comparisons to use an index. Such queries cannot use the <literal><replaceable>xxx</replaceable>_pattern_ops</literal> operator classes. (Ordinary equality comparisons can use these operator classes, however.) It is possible to create multiple indexes on the same column with different operator classes. If you do use the C locale, you do not need the <literal><replaceable>xxx</replaceable>_pattern_ops</literal> operator classes, because an index with the default operator class is usable for pattern-matching queries in the C locale."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:931(para) 
+#: /tmp/cicero-RKYt/indices.xml:931(para) 
 msgid "There are also some built-in operator classes besides the default ones: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:973(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:973(programlisting) 
 #, no-wrap
 msgid "\nSELECT am.amname AS index_method,\n       opc.opcname AS opclass_name\n    FROM pg_am am, pg_opclass opc\n    WHERE opc.opcmethod = am.oid\n    ORDER BY index_method, opclass_name;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:970(para) 
+#: /tmp/cicero-RKYt/indices.xml:970(para) 
 msgid "The following query shows all defined operator classes: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:982(para) 
+#: /tmp/cicero-RKYt/indices.xml:982(para) 
 msgid "An operator class is actually just a subset of a larger structure called an <firstterm>operator family</firstterm>. In cases where several data types have similar behaviors, it is frequently useful to define cross-data-type operators and allow these to work with indexes. To do this, the operator classes for each of the types must be grouped into the same operator family. The cross-type operators are members of the family, but are not associated with any single class within the family."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:995(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:995(programlisting) 
 #, no-wrap
 msgid "\nSELECT am.amname AS index_method,\n       opf.opfname AS opfamily_name,\n       amop.amopopr::regoperator AS opfamily_operator\n    FROM pg_am am, pg_opfamily opf, pg_amop amop\n    WHERE opf.opfmethod = am.oid AND\n          amop.amopfamily = opf.oid\n    ORDER BY index_method, opfamily_name, opfamily_operator;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:992(para) 
+#: /tmp/cicero-RKYt/indices.xml:992(para) 
 msgid "This query shows all defined operator families and all the operators included in each family: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1009(title) 
+#: /tmp/cicero-RKYt/indices.xml:1009(title) 
 msgid "Indexes and Collations"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1011(para) 
+#: /tmp/cicero-RKYt/indices.xml:1011(para) 
 msgid "An index can support only one collation per index column. If multiple collations are of interest, multiple indexes may be needed."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1018(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:1018(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE test1c (\n    id integer,\n    content varchar COLLATE \"x\"\n);\n\nCREATE INDEX test1c_content_index ON test1c (content);\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1028(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:1028(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM test1c WHERE content &gt; <replaceable>constant</replaceable>;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1034(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:1034(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM test1c WHERE content &gt; <replaceable>constant</replaceable> COLLATE \"y\";\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1039(programlisting) 
+#: /tmp/cicero-RKYt/indices.xml:1039(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX test1c_content_y_index ON test1c (content COLLATE \"y\");\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1016(para) 
+#: /tmp/cicero-RKYt/indices.xml:1016(para) 
 msgid "Consider these statements: <placeholder-1/> The index automatically uses the collation of the underlying column. So a query of the form <placeholder-2/> could use the index, because the comparison will by default use the collation of the column. However, this index cannot accelerate queries that involve some other collation. So if queries of the form, say, <placeholder-3/> are also of interest, an additional index could be created that supports the <literal>\"y\"</literal> collation, like this: <placeholder-4/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1047(title) 
+#: /tmp/cicero-RKYt/indices.xml:1047(title) 
 msgid "Examining Index Usage"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1051(secondary) 
+#: /tmp/cicero-RKYt/indices.xml:1051(secondary) 
 msgid "examining usage"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1054(para) 
+#: /tmp/cicero-RKYt/indices.xml:1054(para) 
 msgid "Although indexes in <productname>PostgreSQL</productname> do not need maintenance or tuning, it is still important to check which indexes are actually used by the real-life query workload. Examining index usage for an individual query is done with the <xref linkend=\"sql-explain\"/> command; its application for this purpose is illustrated in <xref linkend=\"using-explain\"/>. It is also possible to gather overall statistics about index usage in a running server, as described in <xref linkend=\"monitoring-stats\"/>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1066(para) 
+#: /tmp/cicero-RKYt/indices.xml:1066(para) 
 msgid "It is difficult to formulate a general procedure for determining which indexes to create. There are a number of typical cases that have been shown in the examples throughout the previous sections. A good deal of experimentation is often necessary. The rest of this section gives some tips for that:"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1076(para) 
+#: /tmp/cicero-RKYt/indices.xml:1076(para) 
 msgid "Always run <xref linkend=\"sql-analyze\"/> first. This command collects statistics about the distribution of the values in the table. This information is required to estimate the number of rows returned by a query, which is needed by the planner to assign realistic costs to each possible query plan. In absence of any real statistics, some default values are assumed, which are almost certain to be inaccurate. Examining an application's index usage without having run <command>ANALYZE</command> is therefore a lost cause. See <xref linkend=\"vacuum-for-statistics\"/> and <xref linkend=\"autovacuum\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1093(para) 
+#: /tmp/cicero-RKYt/indices.xml:1093(para) 
 msgid "Use real data for experimentation. Using test data for setting up indexes will tell you what indexes you need for the test data, but that is all."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1099(para) 
+#: /tmp/cicero-RKYt/indices.xml:1099(para) 
 msgid "It is especially fatal to use very small test data sets. While selecting 1000 out of 100000 rows could be a candidate for an index, selecting 1 out of 100 rows will hardly be, because the 100 rows probably fit within a single disk page, and there is no plan that can beat sequentially fetching 1 disk page."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1107(para) 
+#: /tmp/cicero-RKYt/indices.xml:1107(para) 
 msgid "Also be careful when making up test data, which is often unavoidable when the application is not yet in production. Values that are very similar, completely random, or inserted in sorted order will skew the statistics away from the distribution that real data would have."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1117(para) 
+#: /tmp/cicero-RKYt/indices.xml:1117(para) 
 msgid "When indexes are not used, it can be useful for testing to force their use. There are run-time parameters that can turn off various plan types (see <xref linkend=\"runtime-config-query-enable\"/>). For instance, turning off sequential scans (<varname>enable_seqscan</varname>) and nested-loop joins (<varname>enable_nestloop</varname>), which are the most basic plans, will force the system to use a different plan. If the system still chooses a sequential scan or nested-loop join then there is probably a more fundamental reason why the index is not being used; for example, the query condition does not match the index. (What kind of query can use what kind of index is explained in the previous sections.)"
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1134(para) 
+#: /tmp/cicero-RKYt/indices.xml:1134(para) 
 msgid "If forcing index usage does use the index, then there are two possibilities: Either the system is right and using the index is indeed not appropriate, or the cost estimates of the query plans are not reflecting reality. So you should time your query with and without indexes. The <command>EXPLAIN ANALYZE</command> command can be useful here."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1145(para) 
+#: /tmp/cicero-RKYt/indices.xml:1145(para) 
 msgid "If it turns out that the cost estimates are wrong, there are, again, two possibilities. The total cost is computed from the per-row costs of each plan node times the selectivity estimate of the plan node. The costs estimated for the plan nodes can be adjusted via run-time parameters (described in <xref linkend=\"runtime-config-query-constants\"/>). An inaccurate selectivity estimate is due to insufficient statistics. It might be possible to improve this by tuning the statistics-gathering parameters (see <xref linkend=\"sql-altertable\"/>)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/indices.xml:1158(para) 
+#: /tmp/cicero-RKYt/indices.xml:1158(para) 
 msgid "If you do not succeed in adjusting the costs to be more appropriate, then you might have to resort to forcing index usage explicitly. You might also want to contact the <productname>PostgreSQL</productname> developers to examine the issue."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-Bcej/indices.xml:0(None) 
+#: /tmp/cicero-RKYt/indices.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-26 06:59+0200\n"
+"POT-Creation-Date: 2011-08-27 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,102 +9,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:10(refentrytitle) /tmp/cicero-Bcej/ref/drop_language.xml:16(refname) /tmp/cicero-Bcej/ref/drop_language.xml:21(primary) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:10(refentrytitle) /tmp/cicero-RKYt/ref/drop_language.xml:16(refname) /tmp/cicero-RKYt/ref/drop_language.xml:21(primary) 
 msgid "DROP LANGUAGE"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:11(manvolnum) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:12(refmiscinfo) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:17(refpurpose) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:17(refpurpose) 
 msgid "remove a procedural language"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:26(replaceable) /tmp/cicero-Bcej/ref/drop_language.xml:65(replaceable) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:26(replaceable) /tmp/cicero-RKYt/ref/drop_language.xml:65(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:25(synopsis) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP [ PROCEDURAL ] LANGUAGE [ IF EXISTS ] <placeholder-1/> [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:31(title) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:33(para) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:33(para) 
 msgid "<command>DROP LANGUAGE</command> removes the definition of a previously registered procedural language. You must be a superuser or the owner of the language to use <command>DROP LANGUAGE</command>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:40(para) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:40(para) 
 msgid "As of <productname>PostgreSQL</productname> 9.1, most procedural languages have been made into <quote>extensions</quote>, and should therefore be removed with <xref linkend=\"sql-dropextension\"/> not <command>DROP LANGUAGE</command>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:50(title) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:50(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:55(literal) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:55(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:57(para) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:57(para) 
 msgid "Do not throw an error if the language does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:67(para) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:67(para) 
 msgid "The name of an existing procedural language. For backward compatibility, the name can be enclosed by single quotes."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:75(literal) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:75(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:77(para) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:77(para) 
 msgid "Automatically drop objects that depend on the language (such as functions in the language)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:85(literal) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:85(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:87(para) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:87(para) 
 msgid "Refuse to drop the language if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:97(title) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:97(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:103(programlisting) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:103(programlisting) 
 #, no-wrap
 msgid "\nDROP LANGUAGE plsample;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:99(para) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:99(para) 
 msgid "This command removes the procedural language <literal>plsample</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:109(title) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:109(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:111(para) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:111(para) 
 msgid "There is no <command>DROP LANGUAGE</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/drop_language.xml:118(title) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:118(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-Bcej/ref/drop_language.xml:0(None) 
+#: /tmp/cicero-RKYt/ref/drop_language.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

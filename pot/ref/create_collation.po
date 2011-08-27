@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-26 06:59+0200\n"
+"POT-Creation-Date: 2011-08-27 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,131 +9,131 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:7(refentrytitle) /tmp/cicero-Bcej/ref/create_collation.xml:13(refname) /tmp/cicero-Bcej/ref/create_collation.xml:18(primary) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:7(refentrytitle) /tmp/cicero-RKYt/ref/create_collation.xml:13(refname) /tmp/cicero-RKYt/ref/create_collation.xml:18(primary) 
 msgid "CREATE COLLATION"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:8(manvolnum) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:8(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:9(refmiscinfo) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:9(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:14(refpurpose) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:14(refpurpose) 
 msgid "define a new collation"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:23(replaceable) /tmp/cicero-Bcej/ref/create_collation.xml:28(replaceable) /tmp/cicero-Bcej/ref/create_collation.xml:53(replaceable) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:23(replaceable) /tmp/cicero-RKYt/ref/create_collation.xml:28(replaceable) /tmp/cicero-RKYt/ref/create_collation.xml:53(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:24(replaceable) /tmp/cicero-Bcej/ref/create_collation.xml:68(replaceable) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:24(replaceable) /tmp/cicero-RKYt/ref/create_collation.xml:68(replaceable) 
 msgid "locale"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:25(replaceable) /tmp/cicero-Bcej/ref/create_collation.xml:80(replaceable) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:25(replaceable) /tmp/cicero-RKYt/ref/create_collation.xml:80(replaceable) 
 msgid "lc_collate"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:26(replaceable) /tmp/cicero-Bcej/ref/create_collation.xml:94(replaceable) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:26(replaceable) /tmp/cicero-RKYt/ref/create_collation.xml:94(replaceable) 
 msgid "lc_ctype"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:28(replaceable) /tmp/cicero-Bcej/ref/create_collation.xml:108(replaceable) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:28(replaceable) /tmp/cicero-RKYt/ref/create_collation.xml:108(replaceable) 
 msgid "existing_collation"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:22(synopsis) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:22(synopsis) 
 #, no-wrap
 msgid "\nCREATE COLLATION <placeholder-1/> (\n    [ LOCALE = <placeholder-2/>, ]\n    [ LC_COLLATE = <placeholder-3/>, ]\n    [ LC_CTYPE = <placeholder-4/> ]\n)\nCREATE COLLATION <placeholder-5/> FROM <placeholder-6/>\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:33(title) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:35(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:35(para) 
 msgid "<command>CREATE COLLATION</command> defines a new collation using the specified operating system locale settings, or by copying an existing collation."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:41(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:41(para) 
 msgid "To be able to create a collation, you must have <literal>CREATE</literal> privilege on the destination schema."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:49(title) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:49(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:56(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:56(para) 
 msgid "The name of the collation. The collation name can be schema-qualified. If it is not, the collation is defined in the current schema. The collation name must be unique within that schema. (The system catalogs can contain collations with the same name for other encodings, but these are ignored if the database encoding does not match.)"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:71(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:71(para) 
 msgid "This is a shortcut for setting <symbol>LC_COLLATE</symbol> and <symbol>LC_CTYPE</symbol> at once. If you specify this, you cannot specify either of those parameters."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:83(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:83(para) 
 msgid "Use the specified operating system locale for the <symbol>LC_COLLATE</symbol> locale category. The locale must be applicable to the current database encoding. (See <xref linkend=\"sql-createdatabase\"/> for the precise rules.)"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:97(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:97(para) 
 msgid "Use the specified operating system locale for the <symbol>LC_CTYPE</symbol> locale category. The locale must be applicable to the current database encoding. (See <xref linkend=\"sql-createdatabase\"/> for the precise rules.)"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:111(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:111(para) 
 msgid "The name of an existing collation to copy. The new collation will have the same properties as the existing one, but it will be an independent object."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:123(title) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:123(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:125(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:125(para) 
 msgid "Use <command>DROP COLLATION</command> to remove user-defined collations."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:129(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:129(para) 
 msgid "See <xref linkend=\"collation\"/> for more information about collation support in PostgreSQL."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:136(title) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:136(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:142(programlisting) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:142(programlisting) 
 #, no-wrap
 msgid "\nCREATE COLLATION french (LOCALE = 'fr_FR.utf8');\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:138(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:138(para) 
 msgid "To create a collation from the operating system locale <literal>fr_FR.utf8</literal> (assuming the current database encoding is <literal>UTF8</literal>): <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:149(programlisting) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:149(programlisting) 
 #, no-wrap
 msgid "\nCREATE COLLATION german FROM \"de_DE\";\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:147(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:147(para) 
 msgid "To create a collation from an existing collation: <placeholder-1/> This can be convenient to be able to use operating-system-independent collation names in applications."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:159(title) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:159(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:161(para) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:161(para) 
 msgid "There is a <command>CREATE COLLATION</command> statement in the SQL standard, but it is limited to copying an existing collation. The syntax to create a new collation is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/create_collation.xml:171(title) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:171(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-Bcej/ref/create_collation.xml:0(None) 
+#: /tmp/cicero-RKYt/ref/create_collation.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

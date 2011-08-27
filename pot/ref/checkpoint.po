@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-26 06:59+0200\n"
+"POT-Creation-Date: 2011-08-27 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,57 +9,57 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:7(refentrytitle) /tmp/cicero-Bcej/ref/checkpoint.xml:13(refname) /tmp/cicero-Bcej/ref/checkpoint.xml:18(primary) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:7(refentrytitle) /tmp/cicero-RKYt/ref/checkpoint.xml:13(refname) /tmp/cicero-RKYt/ref/checkpoint.xml:18(primary) 
 msgid "CHECKPOINT"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:8(manvolnum) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:8(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:9(refmiscinfo) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:9(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:14(refpurpose) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:14(refpurpose) 
 msgid "force a transaction log checkpoint"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:22(synopsis) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:22(synopsis) 
 #, no-wrap
 msgid "\nCHECKPOINT\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:28(title) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:28(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:30(para) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:30(para) 
 msgid "Write-Ahead Logging (WAL) puts a checkpoint in the transaction log every so often. (To adjust the automatic checkpoint interval, see the run-time configuration options <xref linkend=\"guc-checkpoint-segments\"/> and <xref linkend=\"guc-checkpoint-timeout\"/>.) The <command>CHECKPOINT</command> command forces an immediate checkpoint when the command is issued, without waiting for a scheduled checkpoint."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:40(para) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:40(para) 
 msgid "A checkpoint is a point in the transaction log sequence at which all data files have been updated to reflect the information in the log. All data files will be flushed to disk. Refer to <xref linkend=\"wal\"/> for more information about the WAL system."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:47(para) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:47(para) 
 msgid "If executed during recovery, the <command>CHECKPOINT</command> command will force a restartpoint rather than writing a new checkpoint."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:52(para) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:52(para) 
 msgid "Only superusers can call <command>CHECKPOINT</command>. The command is not intended for use during normal operation."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:59(title) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:59(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:61(para) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:61(para) 
 msgid "The <command>CHECKPOINT</command> command is a <productname>PostgreSQL</productname> language extension."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-Bcej/ref/checkpoint.xml:0(None) 
+#: /tmp/cicero-RKYt/ref/checkpoint.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

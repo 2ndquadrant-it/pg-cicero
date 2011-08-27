@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-26 06:59+0200\n"
+"POT-Creation-Date: 2011-08-27 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,77 +9,77 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:10(refentrytitle) /tmp/cicero-Bcej/ref/alter_language.xml:16(refname) /tmp/cicero-Bcej/ref/alter_language.xml:21(primary) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:10(refentrytitle) /tmp/cicero-RKYt/ref/alter_language.xml:16(refname) /tmp/cicero-RKYt/ref/alter_language.xml:21(primary) 
 msgid "ALTER LANGUAGE"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:11(manvolnum) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:12(refmiscinfo) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:17(refpurpose) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:17(refpurpose) 
 msgid "change the definition of a procedural language"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:26(replaceable) /tmp/cicero-Bcej/ref/alter_language.xml:27(replaceable) /tmp/cicero-Bcej/ref/alter_language.xml:47(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:26(replaceable) /tmp/cicero-RKYt/ref/alter_language.xml:27(replaceable) /tmp/cicero-RKYt/ref/alter_language.xml:47(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:26(replaceable) /tmp/cicero-Bcej/ref/alter_language.xml:56(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:26(replaceable) /tmp/cicero-RKYt/ref/alter_language.xml:56(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:27(replaceable) /tmp/cicero-Bcej/ref/alter_language.xml:65(replaceable) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:27(replaceable) /tmp/cicero-RKYt/ref/alter_language.xml:65(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:25(synopsis) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:25(synopsis) 
 #, no-wrap
 msgid "\nALTER [ PROCEDURAL ] LANGUAGE <placeholder-1/> RENAME TO <placeholder-2/>\nALTER [ PROCEDURAL ] LANGUAGE <placeholder-3/> OWNER TO <placeholder-4/>\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:32(title) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:34(para) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:34(para) 
 msgid "<command>ALTER LANGUAGE</command> changes the definition of a procedural language. The only functionality is to rename the language or assign a new owner. You must be superuser or owner of the language to use <command>ALTER LANGUAGE</command>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:43(title) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:43(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:49(para) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:49(para) 
 msgid "Name of a language"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:58(para) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:58(para) 
 msgid "The new name of the language"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:67(para) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:67(para) 
 msgid "The new owner of the language"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:76(title) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:76(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:78(para) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:78(para) 
 msgid "There is no <command>ALTER LANGUAGE</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/alter_language.xml:85(title) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:85(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-Bcej/ref/alter_language.xml:0(None) 
+#: /tmp/cicero-RKYt/ref/alter_language.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

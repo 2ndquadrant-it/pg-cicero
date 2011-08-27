@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-26 06:59+0200\n"
+"POT-Creation-Date: 2011-08-27 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,259 +9,259 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:10(refentrytitle) /tmp/cicero-Bcej/ref/fetch.xml:16(refname) /tmp/cicero-Bcej/ref/fetch.xml:21(primary) /tmp/cicero-Bcej/ref/fetch.xml:26(secondary) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:10(refentrytitle) /tmp/cicero-RKYt/ref/fetch.xml:16(refname) /tmp/cicero-RKYt/ref/fetch.xml:21(primary) /tmp/cicero-RKYt/ref/fetch.xml:26(secondary) 
 msgid "FETCH"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:11(manvolnum) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:12(refmiscinfo) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:17(refpurpose) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:17(refpurpose) 
 msgid "retrieve rows from a query using a cursor"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:25(primary) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:25(primary) 
 msgid "cursor"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:32(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:34(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:114(replaceable) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:32(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:34(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:114(replaceable) 
 msgid "direction"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:32(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:288(replaceable) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:32(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:288(replaceable) 
 msgid "cursor_name"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:34(phrase) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:34(phrase) 
 msgid "where <placeholder-1/> can be empty or one of:"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:40(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:41(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:42(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:45(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:48(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:159(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:177(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:192(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:222(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:251(replaceable) /tmp/cicero-Bcej/ref/fetch.xml:275(replaceable) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:40(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:41(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:42(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:45(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:48(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:159(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:177(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:192(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:222(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:251(replaceable) /tmp/cicero-RKYt/ref/fetch.xml:275(replaceable) 
 msgid "count"
 msgstr ""
 
 #. Note the "direction" bit is also in ref/move.sgml
-#: /tmp/cicero-Bcej/ref/fetch.xml:31(synopsis) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:31(synopsis) 
 #, no-wrap
 msgid "\nFETCH [ <placeholder-1/> [ FROM | IN ] ] <placeholder-2/>\n\n<placeholder-3/>\n\n    NEXT\n    PRIOR\n    FIRST\n    LAST\n    ABSOLUTE <placeholder-4/>\n    RELATIVE <placeholder-5/>\n    <placeholder-6/>\n    ALL\n    FORWARD\n    FORWARD <placeholder-7/>\n    FORWARD ALL\n    BACKWARD\n    BACKWARD <placeholder-8/>\n    BACKWARD ALL\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:54(title) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:54(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:56(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:56(para) 
 msgid "<command>FETCH</command> retrieves rows using a previously-created cursor."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:60(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:60(para) 
 msgid "A cursor has an associated position, which is used by <command>FETCH</command>. The cursor position can be before the first row of the query result, on any particular row of the result, or after the last row of the result. When created, a cursor is positioned before the first row. After fetching some rows, the cursor is positioned on the row most recently retrieved. If <command>FETCH</command> runs off the end of the available rows then the cursor is left positioned after the last row, or before the first row if fetching backward. <command>FETCH ALL</command> or <command>FETCH BACKWARD ALL</command> will always leave the cursor positioned after the last row or before the first row."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:73(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:73(para) 
 msgid "The forms <literal>NEXT</literal>, <literal>PRIOR</literal>, <literal>FIRST</literal>, <literal>LAST</literal>, <literal>ABSOLUTE</literal>, <literal>RELATIVE</literal> fetch a single row after moving the cursor appropriately. If there is no such row, an empty result is returned, and the cursor is left positioned before the first row or after the last row as appropriate."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:82(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:82(para) 
 msgid "The forms using <literal>FORWARD</literal> and <literal>BACKWARD</literal> retrieve the indicated number of rows moving in the forward or backward direction, leaving the cursor positioned on the last-returned row (or after/before all rows, if the <replaceable class=\"PARAMETER\">count</replaceable> exceeds the number of rows available)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:91(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:91(para) 
 msgid "<literal>RELATIVE 0</literal>, <literal>FORWARD 0</literal>, and <literal>BACKWARD 0</literal> all request fetching the current row without moving the cursor, that is, re-fetching the most recently fetched row. This will succeed unless the cursor is positioned before the first row or after the last row; in which case, no row is returned."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:100(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:100(para) 
 msgid "This page describes usage of cursors at the SQL command level. If you are trying to use cursors inside a <application>PL/pgSQL</application> function, the rules are different — see <xref linkend=\"plpgsql-cursors\"/>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:110(title) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:110(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:122(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:122(literal) 
 msgid "NEXT"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:124(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:124(para) 
 msgid "Fetch the next row. This is the default if <replaceable class=\"PARAMETER\">direction</replaceable> is omitted."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:132(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:132(literal) 
 msgid "PRIOR"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:134(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:134(para) 
 msgid "Fetch the prior row."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:141(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:141(literal) 
 msgid "FIRST"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:143(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:143(para) 
 msgid "Fetch the first row of the query (same as <literal>ABSOLUTE 1</literal>)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:150(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:150(literal) 
 msgid "LAST"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:152(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:152(para) 
 msgid "Fetch the last row of the query (same as <literal>ABSOLUTE -1</literal>)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:159(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:159(literal) 
 msgid "ABSOLUTE <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:161(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:161(para) 
 msgid "Fetch the <replaceable class=\"PARAMETER\">count</replaceable>'th row of the query, or the <literal>abs(<replaceable class=\"PARAMETER\">count</replaceable>)</literal>'th row from the end if <replaceable class=\"PARAMETER\">count</replaceable> is negative. Position before first row or after last row if <replaceable class=\"PARAMETER\">count</replaceable> is out of range; in particular, <literal>ABSOLUTE 0</literal> positions before the first row."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:177(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:177(literal) 
 msgid "RELATIVE <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:179(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:179(para) 
 msgid "Fetch the <replaceable class=\"PARAMETER\">count</replaceable>'th succeeding row, or the <literal>abs(<replaceable class=\"PARAMETER\">count</replaceable>)</literal>'th prior row if <replaceable class=\"PARAMETER\">count</replaceable> is negative. <literal>RELATIVE 0</literal> re-fetches the current row, if any."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:194(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:194(para) 
 msgid "Fetch the next <replaceable class=\"PARAMETER\">count</replaceable> rows (same as <literal>FORWARD <replaceable class=\"PARAMETER\">count</replaceable></literal>)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:204(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:204(literal) 
 msgid "ALL"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:206(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:206(para) 
 msgid "Fetch all remaining rows (same as <literal>FORWARD ALL</literal>)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:213(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:213(literal) 
 msgid "FORWARD"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:215(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:215(para) 
 msgid "Fetch the next row (same as <literal>NEXT</literal>)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:222(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:222(literal) 
 msgid "FORWARD <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:224(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:224(para) 
 msgid "Fetch the next <replaceable class=\"PARAMETER\">count</replaceable> rows. <literal>FORWARD 0</literal> re-fetches the current row."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:233(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:233(literal) 
 msgid "FORWARD ALL"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:235(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:235(para) 
 msgid "Fetch all remaining rows."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:242(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:242(literal) 
 msgid "BACKWARD"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:244(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:244(para) 
 msgid "Fetch the prior row (same as <literal>PRIOR</literal>)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:251(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:251(literal) 
 msgid "BACKWARD <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:253(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:253(para) 
 msgid "Fetch the prior <replaceable class=\"PARAMETER\">count</replaceable> rows (scanning backwards). <literal>BACKWARD 0</literal> re-fetches the current row."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:263(literal) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:263(literal) 
 msgid "BACKWARD ALL"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:265(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:265(para) 
 msgid "Fetch all prior rows (scanning backwards)."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:116(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:116(para) 
 msgid "<replaceable class=\"PARAMETER\">direction</replaceable> defines the fetch direction and number of rows to fetch. It can be one of the following: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:277(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:277(para) 
 msgid "<replaceable class=\"PARAMETER\">count</replaceable> is a possibly-signed integer constant, determining the location or number of rows to fetch. For <literal>FORWARD</literal> and <literal>BACKWARD</literal> cases, specifying a negative <replaceable class=\"PARAMETER\">count</replaceable> is equivalent to changing the sense of <literal>FORWARD</literal> and <literal>BACKWARD</literal>."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:290(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:290(para) 
 msgid "An open cursor's name."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:299(title) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:299(title) 
 msgid "Outputs"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:301(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:301(para) 
 msgid "On successful completion, a <command>FETCH</command> command returns a command tag of the form <screen>\nFETCH <replaceable class=\"parameter\">count</replaceable>\n</screen> The <replaceable class=\"parameter\">count</replaceable> is the number of rows fetched (possibly zero). Note that in <application>psql</application>, the command tag will not actually be displayed, since <application>psql</application> displays the fetched rows instead."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:316(title) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:316(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:318(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:318(para) 
 msgid "The cursor should be declared with the <literal>SCROLL</literal> option if one intends to use any variants of <command>FETCH</command> other than <command>FETCH NEXT</command> or <command>FETCH FORWARD</command> with a positive count. For simple queries <productname>PostgreSQL</productname> will allow backwards fetch from cursors not declared with <literal>SCROLL</literal>, but this behavior is best not relied on. If the cursor is declared with <literal>NO SCROLL</literal>, no backward fetches are allowed."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:329(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:329(para) 
 msgid "<literal>ABSOLUTE</literal> fetches are not any faster than navigating to the desired row with a relative move: the underlying implementation must traverse all the intermediate rows anyway. Negative absolute fetches are even worse: the query must be read to the end to find the last row, and then traversed backward from there. However, rewinding to the start of the query (as with <literal>FETCH ABSOLUTE 0</literal>) is fast."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:339(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:339(para) 
 msgid "<xref linkend=\"sql-declare\"/> is used to define a cursor. Use <xref linkend=\"sql-move\"/> to change cursor position without retrieving data."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:348(title) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:348(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:353(programlisting) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:353(programlisting) 
 #, no-wrap
 msgid "\nBEGIN WORK;\n\n-- Set up a cursor:\nDECLARE liahona SCROLL CURSOR FOR SELECT * FROM films;\n\n-- Fetch the first 5 rows in the cursor liahona:\nFETCH FORWARD 5 FROM liahona;\n\n code  |          title          | did | date_prod  |   kind   |  len\n-------+-------------------------+-----+------------+----------+-------\n BL101 | The Third Man           | 101 | 1949-12-23 | Drama    | 01:44\n BL102 | The African Queen       | 101 | 1951-08-11 | Romantic | 01:43\n JL201 | Une Femme est une Femme | 102 | 1961-03-12 | Romantic | 01:25\n P_301 | Vertigo                 | 103 | 1958-11-14 | Action   | 02:08\n P_302 | Becket                  | 103 | 1964-02-03 | Drama    | 02:28\n\n-- Fetch the previous row:\nFETCH PRIOR FROM liahona;\n\n code  |  title  | did | date_prod  |  kind  |  len\n-------+---------+-----+------------+--------+-------\n P_301 | Vertigo | 103 | 1958-11-14 | Action | 02:08\n\n-- Close the cursor and end the transaction:\nCLOSE liahona;\nCOMMIT WORK;\n"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:350(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:350(para) 
 msgid "The following example traverses a table using a cursor: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:384(title) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:384(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:386(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:386(para) 
 msgid "The SQL standard defines <command>FETCH</command> for use in embedded SQL only. The variant of <command>FETCH</command> described here returns the data as if it were a <command>SELECT</command> result rather than placing it in host variables. Other than this point, <command>FETCH</command> is fully upward-compatible with the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:395(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:395(para) 
 msgid "The <command>FETCH</command> forms involving <literal>FORWARD</literal> and <literal>BACKWARD</literal>, as well as the forms <literal>FETCH <replaceable class=\"PARAMETER\">count</replaceable></literal> and <literal>FETCH ALL</literal>, in which <literal>FORWARD</literal> is implicit, are <productname>PostgreSQL</productname> extensions."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:404(para) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:404(para) 
 msgid "The SQL standard allows only <literal>FROM</literal> preceding the cursor name; the option to use <literal>IN</literal>, or to leave them out altogether, is an extension."
 msgstr ""
 
-#: /tmp/cicero-Bcej/ref/fetch.xml:412(title) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:412(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-Bcej/ref/fetch.xml:0(None) 
+#: /tmp/cicero-RKYt/ref/fetch.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
