@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-27 06:59+0200\n"
+"POT-Creation-Date: 2011-08-28 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,143 +9,143 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:10(refentrytitle) /tmp/cicero-RKYt/ref/create_extension.xml:16(refname) /tmp/cicero-RKYt/ref/create_extension.xml:21(primary) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:10(refentrytitle) /tmp/cicero-EpGA/ref/create_extension.xml:16(refname) /tmp/cicero-EpGA/ref/create_extension.xml:21(primary) 
 msgid "CREATE EXTENSION"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:11(manvolnum) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:12(refmiscinfo) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:17(refpurpose) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:17(refpurpose) 
 msgid "install an extension"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:26(replaceable) /tmp/cicero-RKYt/ref/create_extension.xml:78(replaceable) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:26(replaceable) /tmp/cicero-EpGA/ref/create_extension.xml:78(replaceable) 
 msgid "extension_name"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:27(replaceable) /tmp/cicero-RKYt/ref/create_extension.xml:90(replaceable) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:27(replaceable) /tmp/cicero-EpGA/ref/create_extension.xml:90(replaceable) 
 msgid "schema"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:28(replaceable) /tmp/cicero-RKYt/ref/create_extension.xml:103(replaceable) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:28(replaceable) /tmp/cicero-EpGA/ref/create_extension.xml:103(replaceable) 
 msgid "version"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:29(replaceable) /tmp/cicero-RKYt/ref/create_extension.xml:114(replaceable) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:29(replaceable) /tmp/cicero-EpGA/ref/create_extension.xml:114(replaceable) 
 msgid "old_version"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:25(synopsis) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:25(synopsis) 
 #, no-wrap
 msgid "\nCREATE EXTENSION [ IF NOT EXISTS ] <placeholder-1/>\n    [ WITH ] [ SCHEMA <placeholder-2/> ]\n             [ VERSION <placeholder-3/> ]\n             [ FROM <placeholder-4/> ]\n"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:34(title) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:34(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:36(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:36(para) 
 msgid "<command>CREATE EXTENSION</command> loads a new extension into the current database. There must not be an extension of the same name already loaded."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:41(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:41(para) 
 msgid "Loading an extension essentially amounts to running the extension's script file. The script will typically create new <acronym>SQL</acronym> objects such as functions, data types, operators and index support methods. <command>CREATE EXTENSION</command> additionally records the identities of all the created objects, so that they can be dropped again if <command>DROP EXTENSION</command> is issued."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:50(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:50(para) 
 msgid "Loading an extension requires the same privileges that would be required to create its component objects. For most extensions this means superuser or database owner privileges are needed. The user who runs <command>CREATE EXTENSION</command> becomes the owner of the extension for purposes of later privilege checks, as well as the owner of any objects created by the extension's script."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:62(title) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:62(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:66(literal) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:66(literal) 
 msgid "IF NOT EXISTS"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:68(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:68(para) 
 msgid "Do not throw an error if an extension with the same name already exists. A notice is issued in this case. Note that there is no guarantee that the existing extension is anything like the one that would have been created from the currently-available script file."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:80(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:80(para) 
 msgid "The name of the extension to be installed. <productname>PostgreSQL</productname> will create the extension using details from the file <literal>SHAREDIR/extension/</literal><replaceable class=\"parameter\">extension_name</replaceable><literal>.control</literal>."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:92(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:92(para) 
 msgid "The name of the schema in which to install the extension's objects, given that the extension allows its contents to be relocated. The named schema must already exist. If not specified, and the extension's control file does not specify a schema either, the current default object creation schema is used."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:105(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:105(para) 
 msgid "The version of the extension to install. This can be written as either an identifier or a string literal. The default version is whatever is specified in the extension's control file."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:116(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:116(para) 
 msgid "<literal>FROM</literal><replaceable class=\"parameter\">old_version</replaceable> must be specified when, and only when, you are attempting to install an extension that replaces an <quote>old style</quote> module that is just a collection of objects not packaged into an extension. This option causes <command>CREATE EXTENSION</command> to run an alternative installation script that absorbs the existing objects into the extension, instead of creating new objects. Be careful that <literal>SCHEMA</literal> specifies the schema containing these pre-existing objects."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:126(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:126(para) 
 msgid "The value to use for <replaceable class=\"parameter\">old_version</replaceable> is determined by the extension's author, and might vary if there is more than one version of the old-style module that can be upgraded into an extension. For the standard additional modules supplied with pre-9.1 <productname>PostgreSQL</productname>, use <literal>unpackaged</literal> for <replaceable class=\"parameter\">old_version</replaceable> when updating a module to extension style."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:142(title) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:142(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:144(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:144(para) 
 msgid "Before you can use <command>CREATE EXTENSION</command> to load an extension into a database, the extension's supporting files must be installed. Information about installing the extensions supplied with <productname>PostgreSQL</productname> can be found in <link linkend=\"contrib\">Additional Supplied Modules</link>."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:152(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:152(para) 
 msgid "The extensions currently available for loading can be identified from the <link linkend=\"view-pg-available-extensions\"><structname>pg_available_extensions</structname></link> or <link linkend=\"view-pg-available-extension-versions\"><structname>pg_available_extension_versions</structname></link> system views."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:160(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:160(para) 
 msgid "For information about writing new extensions, see <xref linkend=\"extend-extensions\"/>."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:167(title) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:167(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:172(programlisting) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:172(programlisting) 
 #, no-wrap
 msgid "\nCREATE EXTENSION hstore;\n"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:169(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:169(para) 
 msgid "Install the <link linkend=\"hstore\">hstore</link> extension into the current database: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:180(programlisting) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:180(programlisting) 
 #, no-wrap
 msgid "\nCREATE EXTENSION hstore SCHEMA public FROM unpackaged;\n"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:177(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:177(para) 
 msgid "Update a pre-9.1 installation of <literal>hstore</literal> into extension style: <placeholder-1/> Be careful to specify the schema in which you installed the existing <literal>hstore</literal> objects."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:189(title) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:189(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:191(para) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:191(para) 
 msgid "<command>CREATE EXTENSION</command> is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/create_extension.xml:198(title) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:198(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-RKYt/ref/create_extension.xml:0(None) 
+#: /tmp/cicero-EpGA/ref/create_extension.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

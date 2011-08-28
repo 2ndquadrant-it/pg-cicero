@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-27 06:59+0200\n"
+"POT-Creation-Date: 2011-08-28 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,96 +9,96 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-RKYt/pageinspect.xml:6(title) /tmp/cicero-RKYt/pageinspect.xml:9(primary) 
+#: /tmp/cicero-EpGA/pageinspect.xml:6(title) /tmp/cicero-EpGA/pageinspect.xml:9(primary) 
 msgid "pageinspect"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:12(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:12(para) 
 msgid "The <filename>pageinspect</filename> module provides functions that allow you to inspect the contents of database pages at a low level, which is useful for debugging purposes. All of these functions may be used only by superusers."
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:19(title) 
+#: /tmp/cicero-EpGA/pageinspect.xml:19(title) 
 msgid "Functions"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:24(function) 
+#: /tmp/cicero-EpGA/pageinspect.xml:24(function) 
 msgid "get_raw_page(relname text, fork text, blkno int) returns bytea"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:28(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:28(para) 
 msgid "<function>get_raw_page</function> reads the specified block of the named table and returns a copy as a <type>bytea</type> value. This allows a single time-consistent copy of the block to be obtained. <replaceable>fork</replaceable> should be <literal>'main'</literal> for the main data fork, or <literal>'fsm'</literal> for the free space map, or <literal>'vm'</literal> for the visibility map."
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:41(function) 
+#: /tmp/cicero-EpGA/pageinspect.xml:41(function) 
 msgid "get_raw_page(relname text, blkno int) returns bytea"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:45(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:45(para) 
 msgid "A shorthand version of <function>get_raw_page</function>, for reading from the main fork. Equivalent to <literal>get_raw_page(relname, 'main', blkno)</literal>"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:55(function) 
+#: /tmp/cicero-EpGA/pageinspect.xml:55(function) 
 msgid "page_header(page bytea) returns record"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:59(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:59(para) 
 msgid "<function>page_header</function> shows fields that are common to all <productname>PostgreSQL</productname> heap and index pages."
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:64(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:64(para) 
 msgid "A page image obtained with <function>get_raw_page</function> should be passed as argument. For example: <screen>\ntest=# SELECT * FROM page_header(get_raw_page('pg_class', 0));\n    lsn    | tli | flags | lower | upper | special | pagesize | version | prune_xid\n-----------+-----+-------+-------+-------+---------+----------+---------+-----------\n 0/24A1B50 |   1 |     1 |   232 |   368 |    8192 |     8192 |       4 |         0\n</screen> The returned columns correspond to the fields in the <structname>PageHeaderData</structname> struct. See <filename>src/include/storage/bufpage.h</filename> for details."
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:82(function) 
+#: /tmp/cicero-EpGA/pageinspect.xml:82(function) 
 msgid "heap_page_items(page bytea) returns setof record"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:86(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:86(para) 
 msgid "<function>heap_page_items</function> shows all line pointers on a heap page. For those line pointers that are in use, tuple headers are also shown. All tuples are shown, whether or not the tuples were visible to an MVCC snapshot at the time the raw page was copied."
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:92(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:92(para) 
 msgid "A heap page image obtained with <function>get_raw_page</function> should be passed as argument. For example: <screen>\ntest=# SELECT * FROM heap_page_items(get_raw_page('pg_class', 0));\n</screen> See <filename>src/include/storage/itemid.h</filename> and <filename>src/include/access/htup.h</filename> for explanations of the fields returned."
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:107(function) 
+#: /tmp/cicero-EpGA/pageinspect.xml:107(function) 
 msgid "bt_metap(relname text) returns record"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:111(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:111(para) 
 msgid "<function>bt_metap</function> returns information about a B-tree index's metapage. For example: <screen>\ntest=# SELECT * FROM bt_metap('pg_cast_oid_index');\n-[ RECORD 1 ]-----\nmagic     | 340322\nversion   | 2\nroot      | 1\nlevel     | 0\nfastroot  | 1\nfastlevel | 0\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:130(function) 
+#: /tmp/cicero-EpGA/pageinspect.xml:130(function) 
 msgid "bt_page_stats(relname text, blkno int) returns record"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:134(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:134(para) 
 msgid "<function>bt_page_stats</function> returns summary information about single pages of B-tree indexes. For example: <screen>\ntest=# SELECT * FROM bt_page_stats('pg_cast_oid_index', 1);\n-[ RECORD 1 ]-+-----\nblkno         | 1\ntype          | l\nlive_items    | 256\ndead_items    | 0\navg_item_size | 12\npage_size     | 8192\nfree_size     | 4056\nbtpo_prev     | 0\nbtpo_next     | 0\nbtpo          | 0\nbtpo_flags    | 3\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:158(function) 
+#: /tmp/cicero-EpGA/pageinspect.xml:158(function) 
 msgid "bt_page_items(relname text, blkno int) returns setof record"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:162(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:162(para) 
 msgid "<function>bt_page_items</function> returns detailed information about all of the items on a B-tree index page. For example: <screen>\ntest=# SELECT * FROM bt_page_items('pg_cast_oid_index', 1);\n itemoffset |  ctid   | itemlen | nulls | vars |    data\n------------+---------+---------+-------+------+-------------\n          1 | (0,1)   |      12 | f     | f    | 23 27 00 00\n          2 | (0,2)   |      12 | f     | f    | 24 27 00 00\n          3 | (0,3)   |      12 | f     | f    | 25 27 00 00\n          4 | (0,4)   |      12 | f     | f    | 26 27 00 00\n          5 | (0,5)   |      12 | f     | f    | 27 27 00 00\n          6 | (0,6)   |      12 | f     | f    | 28 27 00 00\n          7 | (0,7)   |      12 | f     | f    | 29 27 00 00\n          8 | (0,8)   |      12 | f     | f    | 2a 27 00 00\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:184(function) 
+#: /tmp/cicero-EpGA/pageinspect.xml:184(function) 
 msgid "fsm_page_contents(page bytea) returns text"
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:188(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:188(para) 
 msgid "<function>fsm_page_contents</function> shows the internal node structure of a FSM page. The output is a multiline string, with one line per node in the binary tree within the page. Only those nodes that are not zero are printed. The so-called \"next\" pointer, which points to the next slot to be returned from the page, is also printed."
 msgstr ""
 
-#: /tmp/cicero-RKYt/pageinspect.xml:195(para) 
+#: /tmp/cicero-EpGA/pageinspect.xml:195(para) 
 msgid "See <filename>src/backend/storage/freespace/README</filename> for more information on the structure of an FSM page."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-RKYt/pageinspect.xml:0(None) 
+#: /tmp/cicero-EpGA/pageinspect.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

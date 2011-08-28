@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-27 06:59+0200\n"
+"POT-Creation-Date: 2011-08-28 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,261 +9,261 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:7(refentrytitle) /tmp/cicero-RKYt/ref/pg_config-ref.xml:13(refname) /tmp/cicero-RKYt/ref/pg_config-ref.xml:18(primary) /tmp/cicero-RKYt/ref/pg_config-ref.xml:23(command) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:7(refentrytitle) /tmp/cicero-EpGA/ref/pg_config-ref.xml:13(refname) /tmp/cicero-EpGA/ref/pg_config-ref.xml:18(primary) /tmp/cicero-EpGA/ref/pg_config-ref.xml:23(command) 
 msgid "pg_config"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:8(manvolnum) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:8(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:9(refmiscinfo) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:9(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:14(productname) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:14(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:14(refpurpose) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:14(refpurpose) 
 msgid "retrieve information about the installed version of <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:24(replaceable) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:24(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:29(title) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:29(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:30(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:30(para) 
 msgid "The <application>pg_config</application> utility prints configuration parameters of the currently installed version of <productname>PostgreSQL</productname>. It is intended, for example, to be used by software packages that want to interface to <productname>PostgreSQL</productname> to facilitate finding the required header files and libraries."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:41(title) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:41(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:48(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:48(option) 
 msgid "--bindir"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:50(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:50(para) 
 msgid "Print the location of user executables. Use this, for example, to find the <command>psql</command> program. This is normally also the location where the <filename>pg_config</filename> program resides."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:59(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:59(option) 
 msgid "--docdir"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:61(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:61(para) 
 msgid "Print the location of documentation files."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:68(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:68(option) 
 msgid "--htmldir"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:70(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:70(para) 
 msgid "Print the location of HTML documentation files."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:77(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:77(option) 
 msgid "--includedir"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:79(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:79(para) 
 msgid "Print the location of C header files of the client interfaces."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:86(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:86(option) 
 msgid "--pkgincludedir"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:88(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:88(para) 
 msgid "Print the location of other C header files."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:95(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:95(option) 
 msgid "--includedir-server"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:97(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:97(para) 
 msgid "Print the location of C header files for server programming."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:104(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:104(option) 
 msgid "--libdir"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:106(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:106(para) 
 msgid "Print the location of object code libraries."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:113(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:113(option) 
 msgid "--pkglibdir"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:115(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:115(para) 
 msgid "Print the location of dynamically loadable modules, or where the server would search for them. (Other architecture-dependent data files might also be installed in this directory.)"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:125(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:125(option) 
 msgid "--localedir"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:127(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:127(para) 
 msgid "Print the location of locale support files. (This will be an empty string if locale support was not configured when <productname>PostgreSQL</productname> was built.)"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:136(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:136(option) 
 msgid "--mandir"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:138(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:138(para) 
 msgid "Print the location of manual pages."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:145(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:145(option) 
 msgid "--sharedir"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:147(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:147(para) 
 msgid "Print the location of architecture-independent support files."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:154(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:154(option) 
 msgid "--sysconfdir"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:156(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:156(para) 
 msgid "Print the location of system-wide configuration files."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:163(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:163(option) 
 msgid "--pgxs"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:165(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:165(para) 
 msgid "Print the location of extension makefiles."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:172(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:172(option) 
 msgid "--configure"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:174(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:174(para) 
 msgid "Print the options that were given to the <filename>configure</filename> script when <productname>PostgreSQL</productname> was configured for building. This can be used to reproduce the identical configuration, or to find out with what options a binary package was built. (Note however that binary packages often contain vendor-specific custom patches.) See also the examples below."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:186(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:186(option) 
 msgid "--cc"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:188(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:188(para) 
 msgid "Print the value of the <varname>CC</varname> variable that was used for building <productname>PostgreSQL</productname>. This shows the C compiler used."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:196(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:196(option) 
 msgid "--cppflags"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:198(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:198(para) 
 msgid "Print the value of the <varname>CPPFLAGS</varname> variable that was used for building <productname>PostgreSQL</productname>. This shows C compiler switches needed at preprocessing time (typically, <literal>-I</literal> switches)."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:207(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:207(option) 
 msgid "--cflags"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:209(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:209(para) 
 msgid "Print the value of the <varname>CFLAGS</varname> variable that was used for building <productname>PostgreSQL</productname>. This shows C compiler switches."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:217(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:217(option) 
 msgid "--cflags_sl"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:219(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:219(para) 
 msgid "Print the value of the <varname>CFLAGS_SL</varname> variable that was used for building <productname>PostgreSQL</productname>. This shows extra C compiler switches used for building shared libraries."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:228(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:228(option) 
 msgid "--ldflags"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:230(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:230(para) 
 msgid "Print the value of the <varname>LDFLAGS</varname> variable that was used for building <productname>PostgreSQL</productname>. This shows linker switches."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:238(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:238(option) 
 msgid "--ldflags_ex"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:240(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:240(para) 
 msgid "Print the value of the <varname>LDFLAGS_EX</varname> variable that was used for building <productname>PostgreSQL</productname>. This shows linker switches used for building executables only."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:249(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:249(option) 
 msgid "--ldflags_sl"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:251(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:251(para) 
 msgid "Print the value of the <varname>LDFLAGS_SL</varname> variable that was used for building <productname>PostgreSQL</productname>. This shows linker switches used for building shared libraries only."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:260(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:260(option) 
 msgid "--libs"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:262(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:262(para) 
 msgid "Print the value of the <varname>LIBS</varname> variable that was used for building <productname>PostgreSQL</productname>. This normally contains <literal>-l</literal> switches for external libraries linked into <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:271(option) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:271(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:273(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:273(para) 
 msgid "Print the version of <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:43(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:43(para) 
 msgid "To use <application>pg_config</application>, supply one or more of the following options: <placeholder-1/> If more than one option is given, the information is printed in that order, one item per line. If no options are given, all available information is printed, with labels."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:288(title) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:288(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:290(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:290(para) 
 msgid "The option <option>--includedir-server</option> was added in <productname>PostgreSQL</productname> 7.2. In prior releases, the server include files were installed in the same location as the client headers, which could be queried with the option <option>--includedir</option>. To make your package handle both cases, try the newer option first and test the exit status to see whether it succeeded."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:299(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:299(para) 
 msgid "The options <option>--docdir</option>, <option>--pkgincludedir</option>, <option>--localedir</option>, <option>--mandir</option>, <option>--sharedir</option>, <option>--sysconfdir</option>, <option>--cc</option>, <option>--cppflags</option>, <option>--cflags</option>, <option>--cflags_sl</option>, <option>--ldflags</option>, <option>--ldflags_sl</option>, and <option>--libs</option> were added in <productname>PostgreSQL</productname> 8.1. The option <option>--htmldir</option> was added in <productname>PostgreSQL</productname> 8.4. The option <option>--ldflags_ex</option> was added in <productname>PostgreSQL</productname> 9.0."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:311(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:311(para) 
 msgid "In releases prior to <productname>PostgreSQL</productname> 7.1, before <command>pg_config</command> came to be, a method for finding the equivalent configuration information did not exist."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:320(title) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:320(title) 
 msgid "Example"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:325(programlisting) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:325(programlisting) 
 #, no-wrap
 msgid "\neval ./configure `pg_config --configure`\n"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:322(para) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:322(para) 
 msgid "To reproduce the build configuration of the current PostgreSQL installation, run the following command: <placeholder-1/> The output of <literal>pg_config --configure</literal> contains shell quotation marks so arguments with spaces are represented correctly. Therefore, using <literal>eval</literal> is required for proper results."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-RKYt/ref/pg_config-ref.xml:0(None) 
+#: /tmp/cicero-EpGA/ref/pg_config-ref.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

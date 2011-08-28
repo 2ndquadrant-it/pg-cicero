@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-27 06:59+0200\n"
+"POT-Creation-Date: 2011-08-28 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,98 +9,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:10(refentrytitle) /tmp/cicero-RKYt/ref/drop_type.xml:16(refname) /tmp/cicero-RKYt/ref/drop_type.xml:21(primary) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:10(refentrytitle) /tmp/cicero-EpGA/ref/drop_type.xml:16(refname) /tmp/cicero-EpGA/ref/drop_type.xml:21(primary) 
 msgid "DROP TYPE"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:11(manvolnum) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:12(refmiscinfo) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:17(refpurpose) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:17(refpurpose) 
 msgid "remove a data type"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:26(replaceable) /tmp/cicero-RKYt/ref/drop_type.xml:54(replaceable) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:26(replaceable) /tmp/cicero-EpGA/ref/drop_type.xml:54(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:25(synopsis) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP TYPE [ IF EXISTS ] <placeholder-1/> [, ...] [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:31(title) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:33(para) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:33(para) 
 msgid "<command>DROP TYPE</command> removes a user-defined data type. Only the owner of a type can remove it."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:40(title) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:40(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:44(literal) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:44(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:46(para) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:46(para) 
 msgid "Do not throw an error if the type does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:56(para) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:56(para) 
 msgid "The name (optionally schema-qualified) of the data type to remove."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:63(literal) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:63(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:65(para) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:65(para) 
 msgid "Automatically drop objects that depend on the type (such as table columns, functions, operators)."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:73(literal) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:73(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:75(para) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:75(para) 
 msgid "Refuse to drop the type if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:85(title) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:85(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:89(programlisting) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:89(programlisting) 
 #, no-wrap
 msgid "\nDROP TYPE box;\n"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:87(para) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:87(para) 
 msgid "To remove the data type <type>box</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:95(title) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:95(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:97(para) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:97(para) 
 msgid "This command is similar to the corresponding command in the SQL standard, apart from the <literal>IF EXISTS</literal> option, which is a <productname>PostgreSQL</productname> extension. But note that much of the <command>CREATE TYPE</command> command and the data type extension mechanisms in <productname>PostgreSQL</productname> differ from the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-RKYt/ref/drop_type.xml:108(title) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:108(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-RKYt/ref/drop_type.xml:0(None) 
+#: /tmp/cicero-EpGA/ref/drop_type.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
