@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-27 06:56+0200\n"
+"POT-Creation-Date: 2011-08-28 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,163 +9,163 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:5(title) /tmp/cicero-gBbq/pgrowlocks.xml:8(primary) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:5(title) /tmp/cicero-TfQb/pgrowlocks.xml:8(primary) 
 msgid "pgrowlocks"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:11(para) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:11(para) 
 msgid "The <filename>pgrowlocks</filename> module provides a function to show row locking information for a specified table."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:17(title) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:17(title) 
 msgid "Overview"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:19(synopsis) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:19(synopsis) 
 #, no-wrap
 msgid "\npgrowlocks(text) returns setof record\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:23(para) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:23(para) 
 msgid "The parameter is the name of a table. The result is a set of records, with one row for each locked row within the table. The output columns are shown in <xref linkend=\"pgrowlocks-columns\"/>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:30(title) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:30(title) 
 msgid "<function>pgrowlocks</function> Output Columns"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:35(entry) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:35(entry) 
 msgid "Name"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:36(entry) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:36(entry) 
 msgid "Type"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:37(entry) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:37(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:43(structfield) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:43(structfield) 
 msgid "locked_row"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:44(type) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:44(type) 
 msgid "tid"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:45(entry) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:45(entry) 
 msgid "Tuple ID (TID) of locked row"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:48(structfield) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:48(structfield) 
 msgid "lock_type"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:49(type) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:49(type) 
 msgid "text"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:50(literal) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:50(literal) 
 msgid "Shared"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:51(literal) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:51(literal) 
 msgid "Exclusive"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:50(entry) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:50(entry) 
 msgid "<placeholder-1/> for shared lock, or <placeholder-2/> for exclusive lock"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:54(structfield) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:54(structfield) 
 msgid "locker"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:55(type) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:55(type) 
 msgid "xid"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:56(entry) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:56(entry) 
 msgid "Transaction ID of locker, or multixact ID if multi-transaction"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:59(structfield) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:59(structfield) 
 msgid "multi"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:60(type) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:60(type) 
 msgid "boolean"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:61(entry) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:61(entry) 
 msgid "True if locker is a multi-transaction"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:64(structfield) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:64(structfield) 
 msgid "xids"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:65(type) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:65(type) 
 msgid "xid[]"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:66(entry) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:66(entry) 
 msgid "Transaction IDs of lockers (more than one if multi-transaction)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:69(structfield) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:69(structfield) 
 msgid "pids"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:70(type) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:70(type) 
 msgid "integer[]"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:71(entry) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:71(entry) 
 msgid "Process IDs of locking backends (more than one if multi-transaction)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:78(para) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:78(para) 
 msgid "<function>pgrowlocks</function> takes <literal>AccessShareLock</literal> for the target table and reads each row one by one to collect the row locking information. This is not very speedy for a large table. Note that:"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:86(para) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:86(para) 
 msgid "If the table as a whole is exclusive-locked by someone else, <function>pgrowlocks</function> will be blocked."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:92(para) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:92(para) 
 msgid "<function>pgrowlocks</function> is not guaranteed to produce a self-consistent snapshot. It is possible that a new row lock is taken, or an old lock is freed, during its execution."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:105(programlisting) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:105(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM accounts AS a, pgrowlocks('accounts') AS p\n  WHERE p.locked_row = a.ctid;\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:100(para) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:100(para) 
 msgid "<function>pgrowlocks</function> does not show the contents of locked rows. If you want to take a look at the row contents at the same time, you could do something like this: <placeholder-1/> Be aware however that (as of <productname>PostgreSQL</productname> 8.3) such a query will be very inefficient."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:116(title) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:116(title) 
 msgid "Sample Output"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:118(screen) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:118(screen) 
 #, no-wrap
 msgid "\ntest=# SELECT * FROM pgrowlocks('t1');\n locked_row | lock_type | locker | multi |   xids    |     pids\n------------+-----------+--------+-------+-----------+---------------\n      (0,1) | Shared    |     19 | t     | {804,805} | {29066,29068}\n      (0,2) | Shared    |     19 | t     | {804,805} | {29066,29068}\n      (0,3) | Exclusive |    804 | f     | {804}     | {29066}\n      (0,4) | Exclusive |    804 | f     | {804}     | {29066}\n(4 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:131(title) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:131(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgrowlocks.xml:133(para) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:133(para) 
 msgid "Tatsuo Ishii"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-gBbq/pgrowlocks.xml:0(None) 
+#: /tmp/cicero-TfQb/pgrowlocks.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

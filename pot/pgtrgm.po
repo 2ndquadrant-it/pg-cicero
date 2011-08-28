@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-27 06:56+0200\n"
+"POT-Creation-Date: 2011-08-28 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,255 +9,255 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:5(title) /tmp/cicero-gBbq/pgtrgm.xml:8(primary) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:5(title) /tmp/cicero-TfQb/pgtrgm.xml:8(primary) 
 msgid "pg_trgm"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:11(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:11(para) 
 msgid "The <filename>pg_trgm</filename> module provides functions and operators for determining the similarity of text based on trigram matching, as well as index operator classes that support fast searching for similar strings."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:19(title) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:19(title) 
 msgid "Trigram (or Trigraph) Concepts"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:21(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:21(para) 
 msgid "A trigram is a group of three consecutive characters taken from a string. We can measure the similarity of two strings by counting the number of trigrams they share. This simple idea turns out to be very effective for measuring the similarity of words in many natural languages."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:30(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:30(para) 
 msgid "A string is considered to have two spaces prefixed and one space suffixed when determining the set of trigrams contained in the string. For example, the set of trigrams in the string <quote><literal>cat</literal></quote> is <quote><literal> c</literal></quote>, <quote><literal> ca</literal></quote>, <quote><literal>cat</literal></quote>, and <quote><literal>at </literal></quote>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:45(title) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:45(title) 
 msgid "Functions and Operators"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:47(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:47(para) 
 msgid "The functions provided by the <filename>pg_trgm</filename> module are shown in <xref linkend=\"pgtrgm-func-table\"/>, the operators in <xref linkend=\"pgtrgm-op-table\"/>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:54(title) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:54(title) 
 msgid "<filename>pg_trgm</filename> Functions"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:58(entry) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:58(entry) 
 msgid "Function"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:59(entry) /tmp/cicero-gBbq/pgtrgm.xml:112(entry) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:59(entry) /tmp/cicero-TfQb/pgtrgm.xml:112(entry) 
 msgid "Returns"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:60(entry) /tmp/cicero-gBbq/pgtrgm.xml:113(entry) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:60(entry) /tmp/cicero-TfQb/pgtrgm.xml:113(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:66(function) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:66(function) 
 msgid "similarity(text, text)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:67(type) /tmp/cicero-gBbq/pgtrgm.xml:85(type) /tmp/cicero-gBbq/pgtrgm.xml:95(type) /tmp/cicero-gBbq/pgtrgm.xml:129(type) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:67(type) /tmp/cicero-TfQb/pgtrgm.xml:85(type) /tmp/cicero-TfQb/pgtrgm.xml:95(type) /tmp/cicero-TfQb/pgtrgm.xml:129(type) 
 msgid "real"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:68(entry) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:68(entry) 
 msgid "Returns a number that indicates how similar the two arguments are. The range of the result is zero (indicating that the two strings are completely dissimilar) to one (indicating that the two strings are identical)."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:76(function) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:76(function) 
 msgid "show_trgm(text)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:77(type) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:77(type) 
 msgid "text[]"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:78(entry) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:78(entry) 
 msgid "Returns an array of all the trigrams in the given string. (In practice this is seldom useful except for debugging.)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:84(function) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:84(function) 
 msgid "show_limit()"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:87(literal) /tmp/cicero-gBbq/pgtrgm.xml:97(literal) /tmp/cicero-gBbq/pgtrgm.xml:119(literal) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:87(literal) /tmp/cicero-TfQb/pgtrgm.xml:97(literal) /tmp/cicero-TfQb/pgtrgm.xml:119(literal) 
 msgid "%"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:86(entry) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:86(entry) 
 msgid "Returns the current similarity threshold used by the <placeholder-1/> operator. This sets the minimum similarity between two words for them to be considered similar enough to be misspellings of each other, for example."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:94(function) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:94(function) 
 msgid "set_limit(real)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:96(entry) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:96(entry) 
 msgid "Sets the current similarity threshold that is used by the <placeholder-1/> operator. The threshold must be between 0 and 1 (default is 0.3). Returns the same value passed in."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:107(title) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:107(title) 
 msgid "<filename>pg_trgm</filename> Operators"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:111(entry) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:111(entry) 
 msgid "Operator"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:119(type) /tmp/cicero-gBbq/pgtrgm.xml:119(type) /tmp/cicero-gBbq/pgtrgm.xml:128(type) /tmp/cicero-gBbq/pgtrgm.xml:128(type) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:119(type) /tmp/cicero-TfQb/pgtrgm.xml:119(type) /tmp/cicero-TfQb/pgtrgm.xml:128(type) /tmp/cicero-TfQb/pgtrgm.xml:128(type) 
 msgid "text"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:120(type) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:120(type) 
 msgid "boolean"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:122(literal) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:122(literal) 
 msgid "true"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:124(function) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:124(function) 
 msgid "set_limit"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:121(entry) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:121(entry) 
 msgid "Returns <placeholder-1/> if its arguments have a similarity that is greater than the current similarity threshold set by <placeholder-2/>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:128(literal) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:128(literal) 
 msgid "&lt;-&gt;"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:131(quote) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:131(quote) 
 msgid "distance"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:132(function) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:132(function) 
 msgid "similarity()"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:130(entry) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:130(entry) 
 msgid "Returns the <placeholder-1/> between the arguments, that is one minus the <placeholder-2/> value."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:141(title) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:141(title) 
 msgid "Index Support"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:143(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:143(para) 
 msgid "The <filename>pg_trgm</filename> module provides GiST and GIN index operator classes that allow you to create an index over a text column for the purpose of very fast similarity searches. These index types support the above-described similarity operators, and additionally support trigram-based index searches for <literal>LIKE</literal> and <literal>ILIKE</literal> queries. (These indexes do not support equality nor simple comparison operators, so you may need a regular B-tree index too.)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:156(programlisting) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:156(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE test_trgm (t text);\nCREATE INDEX trgm_idx ON test_trgm USING gist (t gist_trgm_ops);\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:161(programlisting) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:161(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX trgm_idx ON test_trgm USING gin (t gin_trgm_ops);\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:153(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:153(para) 
 msgid "Example: <placeholder-1/> or <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:169(programlisting) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:169(programlisting) 
 #, no-wrap
 msgid "\nSELECT t, similarity(t, '<replaceable>word</replaceable>') AS sml\n  FROM test_trgm\n  WHERE t % '<replaceable>word</replaceable>'\n  ORDER BY sml DESC, t;\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:166(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:166(para) 
 msgid "At this point, you will have an index on the <structfield>t</structfield> column that you can use for similarity searching. A typical query is <placeholder-1/> This will return all values in the text column that are sufficiently similar to <replaceable>word</replaceable>, sorted from best match to worst. The index will be used to make this a fast operation even over very large data sets."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:183(programlisting) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:183(programlisting) 
 #, no-wrap
 msgid "\nSELECT t, t &lt;-&gt; '<replaceable>word</replaceable>' AS dist\n  FROM test_trgm\n  ORDER BY dist LIMIT 10;\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:181(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:181(para) 
 msgid "A variant of the above query is <placeholder-1/> This can be implemented quite efficiently by GiST indexes, but not by GIN indexes. It will usually beat the first formulation when only a small number of the closest matches is wanted."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:196(programlisting) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:196(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM test_trgm WHERE t LIKE '%foo%bar';\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:193(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:193(para) 
 msgid "Beginning in <productname>PostgreSQL</productname> 9.1, these index types also support index searches for <literal>LIKE</literal> and <literal>ILIKE</literal>, for example <placeholder-1/> The index search works by extracting trigrams from the search string and then looking these up in the index. The more trigrams in the search string, the more effective the index search is. Unlike B-tree based searches, the search string need not be left-anchored."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:205(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:205(para) 
 msgid "The choice between GiST and GIN indexing depends on the relative performance characteristics of GiST and GIN, which are discussed elsewhere. As a rule of thumb, a GIN index is faster to search than a GiST index, but slower to build or update; so GIN is better suited for static data and GiST for often-updated data."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:215(title) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:215(title) 
 msgid "Text Search Integration"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:217(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:217(para) 
 msgid "Trigram matching is a very useful tool when used in conjunction with a full text index. In particular it can help to recognize misspelled input words that will not be matched directly by the full text search mechanism."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:228(programlisting) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:228(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE words AS SELECT word FROM\n        ts_stat('SELECT to_tsvector(''simple'', bodytext) FROM documents');\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:224(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:224(para) 
 msgid "The first step is to generate an auxiliary table containing all the unique words in the documents: <placeholder-1/> where <structname>documents</structname> is a table that has a text field <structfield>bodytext</structfield> that we wish to search. The reason for using the <literal>simple</literal> configuration with the <function>to_tsvector</function> function, instead of using a language-specific configuration, is that we want a list of the original (unstemmed) words."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:243(programlisting) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:243(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX words_idx ON words USING gin(word gin_trgm_ops);\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:240(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:240(para) 
 msgid "Next, create a trigram index on the word column: <placeholder-1/> Now, a <command>SELECT</command> query similar to the previous example can be used to suggest spellings for misspelled words in user search terms. A useful extra test is to require that the selected words are also of similar length to the misspelled word."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:254(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:254(para) 
 msgid "Since the <structname>words</structname> table has been generated as a separate, static table, it will need to be periodically regenerated so that it remains reasonably up-to-date with the document collection. Keeping it exactly current is usually unnecessary."
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:264(title) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:264(title) 
 msgid "References"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:266(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:266(para) 
 msgid "GiST Development Site <ulink url=\"http://www.sai.msu.su/~megera/postgres/gist/\"/>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:270(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:270(para) 
 msgid "Tsearch2 Development Site <ulink url=\"http://www.sai.msu.su/~megera/postgres/gist/tsearch/V2/\"/>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:277(title) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:277(title) 
 msgid "Authors"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:279(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:279(para) 
 msgid "Oleg Bartunov <email>oleg@sai.msu.su</email>, Moscow, Moscow University, Russia"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:282(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:282(para) 
 msgid "Teodor Sigaev <email>teodor@sigaev.ru</email>, Moscow, Delta-Soft Ltd.,Russia"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:285(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:285(para) 
 msgid "Documentation: Christopher Kings-Lynne"
 msgstr ""
 
-#: /tmp/cicero-gBbq/pgtrgm.xml:288(para) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:288(para) 
 msgid "This module is sponsored by Delta-Soft Ltd., Moscow, Russia."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-gBbq/pgtrgm.xml:0(None) 
+#: /tmp/cicero-TfQb/pgtrgm.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-27 06:57+0200\n"
+"POT-Creation-Date: 2011-08-28 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,359 +9,359 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-gBbq/sepgsql.xml:5(title) /tmp/cicero-gBbq/sepgsql.xml:8(primary) 
+#: /tmp/cicero-TfQb/sepgsql.xml:5(title) /tmp/cicero-TfQb/sepgsql.xml:8(primary) 
 msgid "sepgsql"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:11(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:11(para) 
 msgid "<filename>sepgsql</filename> is a loadable module which supports label-based mandatory access control (MAC) based on <productname>SELinux</productname> security policy."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:18(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:18(para) 
 msgid "This implementation has signification limitations, and does not enforce mandatory access control for all actions. See <xref linkend=\"sepgsql-limitations\"/>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:26(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:26(title) 
 msgid "Overview"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:28(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:28(para) 
 msgid "This module integrates with <productname>SELinux</productname> to provide an additional layer of security checking above and beyond what is normally provided by <productname>PostgreSQL</productname>. From the perspective of <productname>SELinux</productname>, this module allows <productname>PostgreSQL</productname> to function as a user-space object manager. Each table or function access initiated by a DML query will be checked against the system security policy. This check is an additional to the usual permissions checking performed by <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:40(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:40(para) 
 msgid "<productname>SELinux</productname> access control decisions are made using security labels, which are represented by strings such as <literal>system_u:object_r:sepgsql_table_t:s0</literal>. Each access control decision involves two labels: the label of the subject attempting to perform the action, and the label of the object on which the operation is to be performed. Since these labels can be applied to any sort of object, access control decisions for objects stored within the database can be (and, with this module, are) subjected to the same general criteria used for objects of any other type (e.g. files). This design is intended to allow a centralized security policy to protect information assets independent of the particulars of how those assets are stored."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:54(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:54(para) 
 msgid "The <xref linkend=\"sql-security-label\"/> statement allows assignment of a security label to a database object."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:61(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:61(title) 
 msgid "Installation"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:63(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:63(para) 
 msgid "This module can only be used on <productname>Linux</productname> 2.6.28 or higher with <productname>SELinux</productname> enabled. It is not available on any other platform, and must be explicitly enabled using <literal>--with-selinux</literal>. You will also need <productname>libselinux</productname> 2.0.93 or higher and <productname>selinux-policy</productname> 3.9.13 or higher (some distributions may backport the necessary rules into older policy versions)."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:73(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:73(para) 
 msgid "The <command>sestatus</command> command allows you to check the status of <productname>SELinux</productname>. <screen>\n$ sestatus\nSELinux status:                 enabled\nSELinuxfs mount:                /selinux\nCurrent mode:                   enforcing\nMode from config file:          enforcing\nPolicy version:                 24\nPolicy from config file:        targeted\n</screen> If <productname>SELinux</productname> is disabled or not installed, you must set that product up first before installing this module."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:89(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:89(para) 
 msgid "To use this module, you must add include <literal>sepgsql</literal> in <xref linkend=\"guc-shared-preload-libraries\"/>. The module will not function if loaded in any other manner. Once the module is loaded, you should execute <filename>sepgsql.sql</filename> in each database. This will install functions needed for security label management, and assign initial security labels."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:98(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:98(para) 
 msgid "The following instructions that assume your installation is under the <filename>/usr/local/pgsql</filename> directory and the database cluster is under the <filename>/path/to/database</filename> directory. Adjust the paths shown below as appropriate for your installation."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:105(screen) 
+#: /tmp/cicero-TfQb/sepgsql.xml:105(screen) 
 #, no-wrap
 msgid "\n$ export PGDATA=/path/to/database\n$ initdb\n$ vi $PGDATA/postgresql.conf\n$ for DBNAME in template0 template1 postgres; do\n  postgres --single -F -O -c exit_on_error=true $DBNAME \\\n      &lt; /usr/local/pgsql/share/contrib/sepgsql.sql &gt; /dev/null\n  done\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:115(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:115(para) 
 msgid "If the installation process completes without error, you can now start the server normally."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:120(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:120(para) 
 msgid "Please note that you may see the following notifications depending on the combination of a particular version of <productname>libselinux</productname> and <productname>selinux-policy</productname>. <screen>\n/etc/selinux/targeted/contexts/sepgsql_contexts:  line 33 has invalid object type db_blobs\n</screen> This message is harmless and may be safely ignored."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:132(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:132(title) 
 msgid "Regression Tests"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:133(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:133(para) 
 msgid "Due to the nature of <productname>SELinux</productname>, running the regression tests for this module requires several additional configuration steps."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:139(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:139(para) 
 msgid "First, set up <productname>sepgsql</productname> according to the <xref linkend=\"sepgsql-installation\"/>. The regression test is intended to be run on a system with a working SE-Linux implementation. The current operating system user must be able to connect to the database as superuser without authentication."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:147(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:147(para) 
 msgid "Second, build and install the policy package for the regression test. The <filename>sepgsql-regtest.pp</filename> is a special purpose policy package which provides a set of rules to be allowed during the regression tests. It should be built from the policy source file (<filename>sepgsql-regtest.te</filename>), which is normally done using <command>make</command>. You will need to locate the appropriate Makefile on your system; the path shown below is only an example. Once built, you can install this policy package using the <command>semodule</command> command, which links supplied policy packages and loads them into the kernel space. If this package is correctly installed, <literal><command>semodule</command> -l</literal> should list sepgsql-regtest as an available policy package."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:162(screen) 
+#: /tmp/cicero-TfQb/sepgsql.xml:162(screen) 
 #, no-wrap
 msgid "\n$ make -C ./contrib/sepgsql -f /usr/share/selinux/devel/Makefile\n$ su\n# semodule -u ./contrib/sepgsql/sepgsql-regtest.pp\n# semodule -l\n    :\nsepgsql-regtest 1.03\n    :\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:172(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:172(para) 
 msgid "Third, turn on <literal>sepgsql_regression_test_mode</literal>. We don't enable all the rules in the <filename>sepgsql-regtest.pp</filename> by default, for your system's safety. The <literal>sepgsql_regression_test_mode</literal> parameter is associated with rules to launch regression test. It can be turned on using <command>setsebool</command> command."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:181(screen) 
+#: /tmp/cicero-TfQb/sepgsql.xml:181(screen) 
 #, no-wrap
 msgid "\n$ su\n# setsebool sepgsql_regression_test_mode on\n# getsebool sepgsql_regression_test_mode\nsepgsql_regression_test_mode --&gt; on\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:188(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:188(para) 
 msgid "Last, kick the regression test from the <literal>unconfined_t</literal> domain."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:192(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:192(para) 
 msgid "The <command>id</command> command tells us the current working domain. Confirm your shell is now performing with the <literal>unconfined_t</literal> domain as follows."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:197(screen) 
+#: /tmp/cicero-TfQb/sepgsql.xml:197(screen) 
 #, no-wrap
 msgid "\n$ id -Z\nunconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:202(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:202(para) 
 msgid "See <xref linkend=\"sepgsql-resources\"/> for details on adjusting your working domain, if necessary."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:207(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:207(para) 
 msgid "If <command>pg_regress</command> fails to launch the <command>psql</command> command, you may need to ensure that the <command>psql</command> command is labeled as <literal>bin_t</literal>. If it is not, the <command>restorecon</command> command can often be used to fix up security labels within the <productname>PostgreSQL</productname> installation directory."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:215(screen) 
+#: /tmp/cicero-TfQb/sepgsql.xml:215(screen) 
 #, no-wrap
 msgid "\n$ restorecon -R /usr/local/pgsql/\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:221(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:221(title) 
 msgid "GUC Parameters"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:225(term) 
+#: /tmp/cicero-TfQb/sepgsql.xml:225(term) 
 msgid "<varname>sepgsql.permissive</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:227(varname) 
+#: /tmp/cicero-TfQb/sepgsql.xml:227(varname) 
 msgid "sepgsql.permissive"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:227(primary) /tmp/cicero-gBbq/sepgsql.xml:249(primary) 
+#: /tmp/cicero-TfQb/sepgsql.xml:227(primary) /tmp/cicero-TfQb/sepgsql.xml:249(primary) 
 msgid "<placeholder-1/> configuration parameter"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:230(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:230(para) 
 msgid "This parameter enables <productname>SE-PostgreSQL</productname> to function in permissive mode, regardless of the system setting. The default is off. This parameter can only be set in the <filename>postgresql.conf</filename> file or on the server command line."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:238(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:238(para) 
 msgid "When this parameter is on, <productname>SE-PostgreSQL</productname> functions in permissive mode, even if the platform system is working in enforcing mode. This parameter is primarily useful for testing purposes."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:247(term) 
+#: /tmp/cicero-TfQb/sepgsql.xml:247(term) 
 msgid "<varname>sepgsql.debug_audit</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:249(varname) 
+#: /tmp/cicero-TfQb/sepgsql.xml:249(varname) 
 msgid "sepgsql.debug_audit"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:252(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:252(para) 
 msgid "This parameter enables the printing of audit messages independent from the policy setting. The default is off (according to the security policy setting)."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:258(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:258(para) 
 msgid "The security policy of <productname>SELinux</productname> also has rules to control whether or not particular accesses are logged. By default, access violations are logged, but allowed accesses are not."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:265(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:265(para) 
 msgid "This parameter forces all possible logging to be turned on, regardless of the system policy."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:275(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:275(title) 
 msgid "Features"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:277(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:277(title) 
 msgid "Controlled Object Classes"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:278(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:278(para) 
 msgid "The security model of <productname>SELinux</productname> describes all the access control rules as a relationship between a subject entity (typically, it is a client of database) and an object entity, each of which is identified by a security label. If access to an unlabelled object is attempted, the object is treated as if it were assigned the label <literal>unlabeled_t</literal>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:287(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:287(para) 
 msgid "Currently, <productname>sepgsql</productname> allows security labels to be assigned to schemas, tables, columns, sequences, views, and functions. When <productname>sepgsql</productname> is in use, security labels are automatically assigned to supported database objects at creation time. This label is called as a default security label, being decided according to the system security policy, which takes as input the creator's label and the label assigned to the new object's parent object."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:297(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:297(para) 
 msgid "A new database object basically inherits the security label of the parent object, except when the security policy has special rules known as type-transition rules, in which case a different label may be applied. For schemas, the parent object is the current database; for columns, it is the corresponding table; for tables, sequences, views, and functions, it is the containing schema."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:308(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:308(title) 
 msgid "DML Permissions"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:310(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:310(para) 
 msgid "For tables, <literal>db_table:select</literal>, <literal>db_table:insert</literal>, <literal>db_table:update</literal> or <literal>db_table:delete</literal> is checked for all the referenced target tables depending on the sort of statement; in addition, <literal>db_table:select</literal> is also checked for all the tables that contain the columns referenced in the <literal>WHERE</literal> or <literal>RETURNING</literal> clause, as a data source of <literal>UPDATE</literal>, and so on."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:321(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:321(para) 
 msgid "<synopsis>\nUPDATE t1 SET x = 2, y = md5sum(y) WHERE z = 100;\n</synopsis> In this case, we must have <literal>db_table:select</literal> in addition to <literal>db_table:update</literal>, because <literal>t1.a</literal> is referenced within the <literal>WHERE</literal> clause. Column-level permissions will also be checked for each referenced column."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:332(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:332(para) 
 msgid "The client must be allowed to access all referenced tables and columns, even if they originated from views which were then expanded, so that we apply consistent access control rules independent of the manner in which the table contents are referenced."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:339(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:339(para) 
 msgid "For columns, <literal>db_column:select</literal> is checked on not only the columns being read using <literal>SELECT</literal>, but being referenced in other DML statements."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:345(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:345(para) 
 msgid "Of course, it also checks <literal>db_column:update</literal> or <literal>db_column:insert</literal> on the column being modified by <literal>UPDATE</literal> or <literal>INSERT</literal>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:351(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:351(para) 
 msgid "<synopsis>\nUPDATE t1 SET x = 2, y = md5sum(y) WHERE z = 100;\n</synopsis> In this case, it checks <literal>db_column:update</literal> on the <literal>t1.x</literal> being updated, <literal>db_column:{select update}</literal> on the <literal>t1.y</literal> being updated and referenced, and <literal>db_column:select</literal> on the <literal>t1.z</literal> being only referenced in the <literal>WHERE</literal> clause. <literal>db_table:{select update}</literal> will also be checked at the table level."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:364(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:364(para) 
 msgid "For sequences, <literal>db_sequence:get_value</literal> is checked when we reference a sequence object using <literal>SELECT</literal>; however, note that we do not currently check permissions on execution of corresponding functions such as <literal>lastval()</literal>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:371(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:371(para) 
 msgid "For views, <literal>db_view:expand</literal> shall be checked, then any other corresponding permissions shall be also checked on the objects being expanded from the view, individually."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:377(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:377(para) 
 msgid "For functions, <literal>db_procedure:{execute}</literal> is defined, but not checked in this version."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:382(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:382(para) 
 msgid "The default database privilege system allows database superusers to modify system catalogs using DML commands, and reference or modify toast tables. These operations are prohibited when <productname>sepgsql</productname> is enabled."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:391(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:391(title) 
 msgid "DDL Permissions"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:392(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:392(para) 
 msgid "On <xref linkend=\"sql-security-label\"/> command, <literal>setattr</literal> and <literal>relabelfrom</literal> shall be checked on the object being relabeled with an old security label, then <literal>relabelto</literal> on the supplied new security label."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:399(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:399(para) 
 msgid "In the case where multiple label providers are installed and the user tries to set a security label, but is not managed by <productname>SELinux</productname>, only <literal>setattr</literal> should be checked here. This is currently not checked due to implementation restrictions."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:408(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:408(title) 
 msgid "Trusted Procedure"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:409(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:409(para) 
 msgid "Trusted procedures are similar to security definer functions or set-uid commands. <productname>SELinux</productname> provides a feature to allow trusted code to run using a security label different from that of the client, generally for the purpose of providing highly controlled access to sensitive data (e.g. rows might be omitted, or the precision of stored values might be reduced). Whether or not a function acts as a trusted procedure is controlled by its security label and the operating system security policy. For example:"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:420(screen) 
+#: /tmp/cicero-TfQb/sepgsql.xml:420(screen) 
 #, no-wrap
 msgid "\npostgres=# CREATE TABLE customer (\n               cid     int primary key,\n               cname   text,\n               credit  text\n           );\nCREATE TABLE\npostgres=# SECURITY LABEL ON COLUMN customer.credit\n               IS 'system_u:object_r:sepgsql_secret_table_t:s0';\nSECURITY LABEL\npostgres=# CREATE FUNCTION show_credit(int) RETURNS text\n             AS 'SELECT regexp_replace(credit, ''-[0-9]+$'', ''-xxxx'', ''g'')\n                        FROM customer WHERE cid = $1'\n           LANGUAGE sql;\nCREATE FUNCTION\npostgres=# SECURITY LABEL ON FUNCTION show_credit(int)\n               IS 'system_u:object_r:sepgsql_trusted_proc_exec_t:s0';\nSECURITY LABEL\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:440(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:440(para) 
 msgid "The above operations should be performed by an administrative user."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:444(screen) 
+#: /tmp/cicero-TfQb/sepgsql.xml:444(screen) 
 #, no-wrap
 msgid "\npostgres=# SELECT * FROM customer;\nERROR:  SELinux: security policy violation\npostgres=# SELECT cid, cname, show_credit(cid) FROM customer;\n cid | cname  |     show_credit\n-----+--------+---------------------\n   1 | taro   | 1111-2222-3333-xxxx\n   2 | hanako | 5555-6666-7777-xxxx\n(2 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:455(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:455(para) 
 msgid "In this case, a regular user cannot reference <literal>customer.credit</literal> directly, but a trusted procedure <literal>show_credit</literal> enables us to print the credit card number of customers with some of the digits masked out."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:464(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:464(title) 
 msgid "Miscellaneous"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:465(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:465(para) 
 msgid "We reject the <xref linkend=\"sql-load\"/> command across the board, because any module loaded could easily circumvent security policy enforcement."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:474(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:474(title) 
 msgid "Limitations"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:478(term) 
+#: /tmp/cicero-TfQb/sepgsql.xml:478(term) 
 msgid "Userspace access vector cache"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:480(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:480(para) 
 msgid "<productname>sepgsql</productname> does not yet support an access vector cache. This would likely improve performance."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:488(term) 
+#: /tmp/cicero-TfQb/sepgsql.xml:488(term) 
 msgid "Data Definition Language (DDL) Permissions"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:490(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:490(para) 
 msgid "Due to implementation restrictions, DDL permissions are not checked."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:497(term) 
+#: /tmp/cicero-TfQb/sepgsql.xml:497(term) 
 msgid "Data Control Language (DCL) Permissions"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:499(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:499(para) 
 msgid "Due to implementation restrictions, DCL permissions are not checked."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:506(term) 
+#: /tmp/cicero-TfQb/sepgsql.xml:506(term) 
 msgid "Row-level access control"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:508(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:508(para) 
 msgid "<productname>PostgreSQL</productname> does not support row-level access; therefore, <productname>sepgsql</productname> does not support it either."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:516(term) 
+#: /tmp/cicero-TfQb/sepgsql.xml:516(term) 
 msgid "Covert channels"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:518(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:518(para) 
 msgid "<productname>sepgsql</productname> never tries to hide existence of a certain object, even if the user is not allowed to the reference. For example, we can infer the existence of an invisible object as a result of primary key conflicts, foreign key violations, and so on, even if we cannot reference contents of these objects. The existence of a top secret table cannot be hidden; we only hope to conceal its contents."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:533(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:533(title) 
 msgid "External Resources"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:536(ulink) 
+#: /tmp/cicero-TfQb/sepgsql.xml:536(ulink) 
 msgid "SE-PostgreSQL Introduction"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:538(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:538(para) 
 msgid "This wiki page provides a brief-overview, security design, architecture, administration and upcoming features."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:545(ulink) 
+#: /tmp/cicero-TfQb/sepgsql.xml:545(ulink) 
 msgid "Fedora SELinux User Guide"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:547(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:547(para) 
 msgid "This document provides a wide spectrum of knowledge to administer <productname>SELinux</productname> on your systems. It focuses primarily on Fedora, but is not limited to Fedora."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:555(ulink) 
+#: /tmp/cicero-TfQb/sepgsql.xml:555(ulink) 
 msgid "Fedora SELinux FAQ"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:557(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:557(para) 
 msgid "This document answers frequently asked questions about <productname>SELinux</productname>. It focuses primarily on Fedora, but is not limited to Fedora."
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:568(title) 
+#: /tmp/cicero-TfQb/sepgsql.xml:568(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-gBbq/sepgsql.xml:569(para) 
+#: /tmp/cicero-TfQb/sepgsql.xml:569(para) 
 msgid "KaiGai Kohei <email>kaigai@ak.jp.nec.com</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-gBbq/sepgsql.xml:0(None) 
+#: /tmp/cicero-TfQb/sepgsql.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

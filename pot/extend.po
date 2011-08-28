@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-27 06:56+0200\n"
+"POT-Creation-Date: 2011-08-28 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,628 +9,628 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-gBbq/extend.xml:5(title) 
+#: /tmp/cicero-TfQb/extend.xml:5(title) 
 msgid "Extending <acronym>SQL</acronym>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:8(primary) 
+#: /tmp/cicero-TfQb/extend.xml:8(primary) 
 msgid "extending SQL"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:18(para) 
+#: /tmp/cicero-TfQb/extend.xml:18(para) 
 msgid "functions (starting in <xref linkend=\"xfunc\"/>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:23(para) 
+#: /tmp/cicero-TfQb/extend.xml:23(para) 
 msgid "aggregates (starting in <xref linkend=\"xaggr\"/>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:28(para) 
+#: /tmp/cicero-TfQb/extend.xml:28(para) 
 msgid "data types (starting in <xref linkend=\"xtypes\"/>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:33(para) 
+#: /tmp/cicero-TfQb/extend.xml:33(para) 
 msgid "operators (starting in <xref linkend=\"xoper\"/>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:38(para) 
+#: /tmp/cicero-TfQb/extend.xml:38(para) 
 msgid "operator classes for indexes (starting in <xref linkend=\"xindex\"/>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:43(para) 
+#: /tmp/cicero-TfQb/extend.xml:43(para) 
 msgid "packages of related objects (starting in <xref linkend=\"extend-extensions\"/>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:11(para) 
+#: /tmp/cicero-TfQb/extend.xml:11(para) 
 msgid "In the sections that follow, we will discuss how you can extend the <productname>PostgreSQL</productname><acronym>SQL</acronym> query language by adding: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:51(title) 
+#: /tmp/cicero-TfQb/extend.xml:51(title) 
 msgid "How Extensibility Works"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:53(para) 
+#: /tmp/cicero-TfQb/extend.xml:53(para) 
 msgid "<productname>PostgreSQL</productname> is extensible because its operation is catalog-driven. If you are familiar with standard relational database systems, you know that they store information about databases, tables, columns, etc., in what are commonly known as system catalogs. (Some systems call this the data dictionary.) The catalogs appear to the user as tables like any other, but the <acronym>DBMS</acronym> stores its internal bookkeeping in them. One key difference between <productname>PostgreSQL</productname> and standard relational database systems is that <productname>PostgreSQL</productname> stores much more information in its catalogs: not only information about tables and columns, but also information about data types, functions, access methods, and so on. These tables can be modified by the user, and since <productname>PostgreSQL</productname> bases its operation on these tables, this means that <productname>PostgreSQL</productname> can be extended by users. By comparison, conventional database systems can only be extended by changing hardcoded procedures in the source code or by loading modules specially written by the <acronym>DBMS</acronym> vendor."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:75(para) 
+#: /tmp/cicero-TfQb/extend.xml:75(para) 
 msgid "The <productname>PostgreSQL</productname> server can moreover incorporate user-written code into itself through dynamic loading. That is, the user can specify an object code file (e.g., a shared library) that implements a new type or function, and <productname>PostgreSQL</productname> will load it as required. Code written in <acronym>SQL</acronym> is even more trivial to add to the server. This ability to modify its operation <quote>on the fly</quote> makes <productname>PostgreSQL</productname> uniquely suited for rapid prototyping of new applications and storage structures."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:90(title) 
+#: /tmp/cicero-TfQb/extend.xml:90(title) 
 msgid "The <productname>PostgreSQL</productname> Type System"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:93(primary) 
+#: /tmp/cicero-TfQb/extend.xml:93(primary) 
 msgid "base type"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:97(primary) /tmp/cicero-gBbq/extend.xml:106(primary) 
+#: /tmp/cicero-TfQb/extend.xml:97(primary) /tmp/cicero-TfQb/extend.xml:106(primary) 
 msgid "data type"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:98(secondary) 
+#: /tmp/cicero-TfQb/extend.xml:98(secondary) 
 msgid "base"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:102(primary) 
+#: /tmp/cicero-TfQb/extend.xml:102(primary) 
 msgid "composite type"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:107(secondary) 
+#: /tmp/cicero-TfQb/extend.xml:107(secondary) 
 msgid "composite"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:110(para) 
+#: /tmp/cicero-TfQb/extend.xml:110(para) 
 msgid "<productname>PostgreSQL</productname> data types are divided into base types, composite types, domains, and pseudo-types."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:116(title) 
+#: /tmp/cicero-TfQb/extend.xml:116(title) 
 msgid "Base Types"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:118(para) 
+#: /tmp/cicero-TfQb/extend.xml:118(para) 
 msgid "Base types are those, like <type>int4</type>, that are implemented below the level of the <acronym>SQL</acronym> language (typically in a low-level language such as C). They generally correspond to what are often known as abstract data types. <productname>PostgreSQL</productname> can only operate on such types through functions provided by the user and only understands the behavior of such types to the extent that the user describes them. Base types are further subdivided into scalar and array types. For each scalar type, a corresponding array type is automatically created that can hold variable-size arrays of that scalar type."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:134(title) 
+#: /tmp/cicero-TfQb/extend.xml:134(title) 
 msgid "Composite Types"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:136(para) 
+#: /tmp/cicero-TfQb/extend.xml:136(para) 
 msgid "Composite types, or row types, are created whenever the user creates a table. It is also possible to use <xref linkend=\"sql-createtype\"/> to define a <quote>stand-alone</quote> composite type with no associated table. A composite type is simply a list of types with associated field names. A value of a composite type is a row or record of field values. The user can access the component fields from <acronym>SQL</acronym> queries. Refer to <xref linkend=\"rowtypes\"/> for more information on composite types."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:150(title) 
+#: /tmp/cicero-TfQb/extend.xml:150(title) 
 msgid "Domains"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:152(para) 
+#: /tmp/cicero-TfQb/extend.xml:152(para) 
 msgid "A domain is based on a particular base type and for many purposes is interchangeable with its base type. However, a domain can have constraints that restrict its valid values to a subset of what the underlying base type would allow."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:159(para) 
+#: /tmp/cicero-TfQb/extend.xml:159(para) 
 msgid "Domains can be created using the <acronym>SQL</acronym> command <xref linkend=\"sql-createdomain\"/>. Their creation and use is not discussed in this chapter."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:167(title) 
+#: /tmp/cicero-TfQb/extend.xml:167(title) 
 msgid "Pseudo-Types"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:169(para) 
+#: /tmp/cicero-TfQb/extend.xml:169(para) 
 msgid "There are a few <quote>pseudo-types</quote> for special purposes. Pseudo-types cannot appear as columns of tables or attributes of composite types, but they can be used to declare the argument and result types of functions. This provides a mechanism within the type system to identify special classes of functions. <xref linkend=\"datatype-pseudotypes-table\"/> lists the existing pseudo-types."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:181(title) 
+#: /tmp/cicero-TfQb/extend.xml:181(title) 
 msgid "Polymorphic Types"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:184(primary) 
+#: /tmp/cicero-TfQb/extend.xml:184(primary) 
 msgid "polymorphic type"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:188(primary) 
+#: /tmp/cicero-TfQb/extend.xml:188(primary) 
 msgid "polymorphic function"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:192(primary) 
+#: /tmp/cicero-TfQb/extend.xml:192(primary) 
 msgid "type"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:193(secondary) /tmp/cicero-gBbq/extend.xml:198(secondary) 
+#: /tmp/cicero-TfQb/extend.xml:193(secondary) /tmp/cicero-TfQb/extend.xml:198(secondary) 
 msgid "polymorphic"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:197(primary) 
+#: /tmp/cicero-TfQb/extend.xml:197(primary) 
 msgid "function"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:201(para) 
+#: /tmp/cicero-TfQb/extend.xml:201(para) 
 msgid "Four pseudo-types of special interest are <type>anyelement</type>, <type>anyarray</type>, <type>anynonarray</type>, and <type>anyenum</type>, which are collectively called <firstterm>polymorphic types</firstterm>. Any function declared using these types is said to be a <firstterm>polymorphic function</firstterm>. A polymorphic function can operate on many different data types, with the specific data type(s) being determined by the data types actually passed to it in a particular call."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:212(para) 
+#: /tmp/cicero-TfQb/extend.xml:212(para) 
 msgid "Polymorphic arguments and results are tied to each other and are resolved to a specific data type when a query calling a polymorphic function is parsed. Each position (either argument or return value) declared as <type>anyelement</type> is allowed to have any specific actual data type, but in any given call they must all be the <emphasis>same</emphasis> actual type. Each position declared as <type>anyarray</type> can have any array data type, but similarly they must all be the same type. If there are positions declared <type>anyarray</type> and others declared <type>anyelement</type>, the actual array type in the <type>anyarray</type> positions must be an array whose elements are the same type appearing in the <type>anyelement</type> positions. <type>anynonarray</type> is treated exactly the same as <type>anyelement</type>, but adds the additional constraint that the actual type must not be an array type. <type>anyenum</type> is treated exactly the same as <type>anyelement</type>, but adds the additional constraint that the actual type must be an enum type."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:233(para) 
+#: /tmp/cicero-TfQb/extend.xml:233(para) 
 msgid "Thus, when more than one argument position is declared with a polymorphic type, the net effect is that only certain combinations of actual argument types are allowed. For example, a function declared as <literal>equal(anyelement, anyelement)</literal> will take any two input values, so long as they are of the same data type."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:241(para) 
+#: /tmp/cicero-TfQb/extend.xml:241(para) 
 msgid "When the return value of a function is declared as a polymorphic type, there must be at least one argument position that is also polymorphic, and the actual data type supplied as the argument determines the actual result type for that call. For example, if there were not already an array subscripting mechanism, one could define a function that implements subscripting as <literal>subscript(anyarray, integer) returns anyelement</literal>. This declaration constrains the actual first argument to be an array type, and allows the parser to infer the correct result type from the actual first argument's type. Another example is that a function declared as <literal>f(anyarray) returns anyenum</literal> will only accept arrays of enum types."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:255(para) 
+#: /tmp/cicero-TfQb/extend.xml:255(para) 
 msgid "Note that <type>anynonarray</type> and <type>anyenum</type> do not represent separate type variables; they are the same type as <type>anyelement</type>, just with an additional constraint. For example, declaring a function as <literal>f(anyelement, anyenum)</literal> is equivalent to declaring it as <literal>f(anyenum, anyenum)</literal>: both actual arguments have to be the same enum type."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:264(para) 
+#: /tmp/cicero-TfQb/extend.xml:264(para) 
 msgid "A variadic function (one taking a variable number of arguments, as in <xref linkend=\"xfunc-sql-variadic-functions\"/>) can be polymorphic: this is accomplished by declaring its last parameter as <literal>VARIADIC</literal><type>anyarray</type>. For purposes of argument matching and determining the actual result type, such a function behaves the same as if you had written the appropriate number of <type>anynonarray</type> parameters."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:284(title) 
+#: /tmp/cicero-TfQb/extend.xml:284(title) 
 msgid "Packaging Related Objects into an Extension"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:287(primary) 
+#: /tmp/cicero-TfQb/extend.xml:287(primary) 
 msgid "extension"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:290(para) 
+#: /tmp/cicero-TfQb/extend.xml:290(para) 
 msgid "A useful extension to <productname>PostgreSQL</productname> typically includes multiple SQL objects; for example, a new data type will require new functions, new operators, and probably new index operator classes. It is helpful to collect all these objects into a single package to simplify database management. <productname>PostgreSQL</productname> calls such a package an <firstterm>extension</firstterm>. To define an extension, you need at least a <firstterm>script file</firstterm> that contains the <acronym>SQL</acronym> commands to create the extension's objects, and a <firstterm>control file</firstterm> that specifies a few basic properties of the extension itself. If the extension includes C code, there will typically also be a shared library file into which the C code has been built. Once you have these files, a simple <xref linkend=\"sql-createextension\"/> command loads the objects into your database."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:307(para) 
+#: /tmp/cicero-TfQb/extend.xml:307(para) 
 msgid "The main advantage of using an extension, rather than just running the <acronym>SQL</acronym> script to load a bunch of <quote>loose</quote> objects into your database, is that <productname>PostgreSQL</productname> will then understand that the objects of the extension go together. You can drop all the objects with a single <xref linkend=\"sql-dropextension\"/> command (no need to maintain a separate <quote>uninstall</quote> script). Even more useful, <application>pg_dump</application> knows that it should not dump the individual member objects of the extension — it will just include a <command>CREATE EXTENSION</command> command in dumps, instead. This vastly simplifies migration to a new version of the extension that might contain more or different objects than the old version. Note however that you must have the extension's control, script, and other files available when loading such a dump into a new database."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:323(para) 
+#: /tmp/cicero-TfQb/extend.xml:323(para) 
 msgid "<productname>PostgreSQL</productname> will not let you drop an individual object contained in an extension, except by dropping the whole extension. Also, while you can change the definition of an extension member object (for example, via <command>CREATE OR REPLACE FUNCTION</command> for a function), bear in mind that the modified definition will not be dumped by <application>pg_dump</application>. Such a change is usually only sensible if you concurrently make the same change in the extension's script file. (But there are special provisions for tables containing configuration data; see below.)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:335(para) 
+#: /tmp/cicero-TfQb/extend.xml:335(para) 
 msgid "The extension mechanism also has provisions for packaging modification scripts that adjust the definitions of the SQL objects contained in an extension. For example, if version 1.1 of an extension adds one function and changes the body of another function compared to 1.0, the extension author can provide an <firstterm>update script</firstterm> that makes just those two changes. The <command>ALTER EXTENSION UPDATE</command> command can then be used to apply these changes and track which version of the extension is actually installed in a given database."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:346(para) 
+#: /tmp/cicero-TfQb/extend.xml:346(para) 
 msgid "The kinds of SQL objects that can be members of an extension are shown in the description of <xref linkend=\"sql-alterextension\"/>. Notably, objects that are database-cluster-wide, such as databases, roles, and tablespaces, cannot be extension members since an extension is only known within one database. (Although an extension script is not prohibited from creating such objects, if it does so they will not be tracked as part of the extension.) Also notice that while a table can be a member of an extension, its subsidiary objects such as indexes are not directly considered members of the extension."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:359(title) 
+#: /tmp/cicero-TfQb/extend.xml:359(title) 
 msgid "Extension Files"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:362(primary) 
+#: /tmp/cicero-TfQb/extend.xml:362(primary) 
 msgid "control file"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:365(para) 
+#: /tmp/cicero-TfQb/extend.xml:365(para) 
 msgid "The <xref linkend=\"sql-createextension\"/> command relies on a control file for each extension, which must be named the same as the extension with a suffix of <literal>.control</literal>, and must be placed in the installation's <literal>SHAREDIR/extension</literal> directory. There must also be at least one <acronym>SQL</acronym> script file, which follows the naming pattern <literal><replaceable>extension</replaceable>--<replaceable>version</replaceable>.sql</literal> (for example, <literal>foo--1.0.sql</literal> for version <literal>1.0</literal> of extension <literal>foo</literal>). By default, the script file(s) are also placed in the <literal>SHAREDIR/extension</literal> directory; but the control file can specify a different directory for the script file(s)."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:379(para) 
+#: /tmp/cicero-TfQb/extend.xml:379(para) 
 msgid "The file format for an extension control file is the same as for the <filename>postgresql.conf</filename> file, namely a list of <replaceable>parameter_name</replaceable><literal>=</literal><replaceable>value</replaceable> assignments, one per line. Blank lines and comments introduced by <literal>#</literal> are allowed. Be sure to quote any value that is not a single word or number."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:388(para) 
+#: /tmp/cicero-TfQb/extend.xml:388(para) 
 msgid "A control file can set the following parameters:"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:394(term) 
+#: /tmp/cicero-TfQb/extend.xml:394(term) 
 msgid "<varname>directory</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:396(para) 
+#: /tmp/cicero-TfQb/extend.xml:396(para) 
 msgid "The directory containing the extension's <acronym>SQL</acronym> script file(s). Unless an absolute path is given, the name is relative to the installation's <literal>SHAREDIR</literal> directory. The default behavior is equivalent to specifying <literal>directory = 'extension'</literal>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:407(term) 
+#: /tmp/cicero-TfQb/extend.xml:407(term) 
 msgid "<varname>default_version</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:409(para) 
+#: /tmp/cicero-TfQb/extend.xml:409(para) 
 msgid "The default version of the extension (the one that will be installed if no version is specified in <command>CREATE EXTENSION</command>). Although this can be omitted, that will result in <command>CREATE EXTENSION</command> failing if no <literal>VERSION</literal> option appears, so you generally don't want to do that."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:420(term) 
+#: /tmp/cicero-TfQb/extend.xml:420(term) 
 msgid "<varname>comment</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:422(para) 
+#: /tmp/cicero-TfQb/extend.xml:422(para) 
 msgid "A comment (any string) about the extension. Alternatively, the comment can be set by means of the <xref linkend=\"sql-comment\"/> command in the script file."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:431(term) 
+#: /tmp/cicero-TfQb/extend.xml:431(term) 
 msgid "<varname>encoding</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:433(para) 
+#: /tmp/cicero-TfQb/extend.xml:433(para) 
 msgid "The character set encoding used by the script file(s). This should be specified if the script files contain any non-ASCII characters. Otherwise the files will be assumed to be in the database encoding."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:442(term) 
+#: /tmp/cicero-TfQb/extend.xml:442(term) 
 msgid "<varname>module_pathname</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:444(para) 
+#: /tmp/cicero-TfQb/extend.xml:444(para) 
 msgid "The value of this parameter will be substituted for each occurrence of <literal>MODULE_PATHNAME</literal> in the script file(s). If it is not set, no substitution is made. Typically, this is set to <literal>$libdir/<replaceable>shared_library_name</replaceable></literal> and then <literal>MODULE_PATHNAME</literal> is used in <command>CREATE FUNCTION</command> commands for C-language functions, so that the script files do not need to hard-wire the name of the shared library."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:457(term) 
+#: /tmp/cicero-TfQb/extend.xml:457(term) 
 msgid "<varname>requires</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:459(para) 
+#: /tmp/cicero-TfQb/extend.xml:459(para) 
 msgid "A list of names of extensions that this extension depends on, for example <literal>requires = 'foo, bar'</literal>. Those extensions must be installed before this one can be installed."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:468(term) 
+#: /tmp/cicero-TfQb/extend.xml:468(term) 
 msgid "<varname>superuser</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:470(para) 
+#: /tmp/cicero-TfQb/extend.xml:470(para) 
 msgid "If this parameter is <literal>true</literal> (which is the default), only superusers can create the extension or update it to a new version. If it is set to <literal>false</literal>, just the privileges required to execute the commands in the installation or update script are required."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:481(term) 
+#: /tmp/cicero-TfQb/extend.xml:481(term) 
 msgid "<varname>relocatable</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:483(para) 
+#: /tmp/cicero-TfQb/extend.xml:483(para) 
 msgid "An extension is <firstterm>relocatable</firstterm> if it is possible to move its contained objects into a different schema after initial creation of the extension. The default is <literal>false</literal>, i.e. the extension is not relocatable. See below for more information."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:494(term) 
+#: /tmp/cicero-TfQb/extend.xml:494(term) 
 msgid "<varname>schema</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:496(para) 
+#: /tmp/cicero-TfQb/extend.xml:496(para) 
 msgid "This parameter can only be set for non-relocatable extensions. It forces the extension to be loaded into exactly the named schema and not any other. See below for more information."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:505(para) 
+#: /tmp/cicero-TfQb/extend.xml:505(para) 
 msgid "In addition to the primary control file <literal><replaceable>extension</replaceable>.control</literal>, an extension can have secondary control files named in the style <literal><replaceable>extension</replaceable>--<replaceable>version</replaceable>.control</literal>. If supplied, these must be located in the script file directory. Secondary control files follow the same format as the primary control file. Any parameters set in a secondary control file override the primary control file when installing or updating to that version of the extension. However, the parameters <varname>directory</varname> and <varname>default_version</varname> cannot be set in a secondary control file."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:518(para) 
+#: /tmp/cicero-TfQb/extend.xml:518(para) 
 msgid "An extension's <acronym>SQL</acronym> script files can contain any SQL commands, except for transaction control commands (<command>BEGIN</command>, <command>COMMIT</command>, etc) and commands that cannot be executed inside a transaction block (such as <command>VACUUM</command>). This is because the script files are implicitly executed within a transaction block."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:526(para) 
+#: /tmp/cicero-TfQb/extend.xml:526(para) 
 msgid "While the script files can contain any characters allowed by the specified encoding, control files should contain only plain ASCII, because there is no way for <productname>PostgreSQL</productname> to know what encoding a control file is in. In practice this is only an issue if you want to use non-ASCII characters in the extension's comment. Recommended practice in that case is to not use the control file <varname>comment</varname> parameter, but instead use <command>COMMENT ON EXTENSION</command> within a script file to set the comment."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:540(title) 
+#: /tmp/cicero-TfQb/extend.xml:540(title) 
 msgid "Extension Relocatability"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:542(para) 
+#: /tmp/cicero-TfQb/extend.xml:542(para) 
 msgid "Users often wish to load the objects contained in an extension into a different schema than the extension's author had in mind. There are three supported levels of relocatability:"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:550(para) 
+#: /tmp/cicero-TfQb/extend.xml:550(para) 
 msgid "A fully relocatable extension can be moved into another schema at any time, even after it's been loaded into a database. This is done with the <command>ALTER EXTENSION SET SCHEMA</command> command, which automatically renames all the member objects into the new schema. Normally, this is only possible if the extension contains no internal assumptions about what schema any of its objects are in. Also, the extension's objects must all be in one schema to begin with (ignoring objects that do not belong to any schema, such as procedural languages). Mark a fully relocatable extension by setting <literal>relocatable = true</literal> in its control file."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:566(para) 
+#: /tmp/cicero-TfQb/extend.xml:566(para) 
 msgid "An extension might be relocatable during installation but not afterwards. This is typically the case if the extension's script file needs to reference the target schema explicitly, for example in setting <literal>search_path</literal> properties for SQL functions. For such an extension, set <literal>relocatable = false</literal> in its control file, and use <literal>@extschema@</literal> to refer to the target schema in the script file. All occurrences of this string will be replaced by the actual target schema's name before the script is executed. The user can set the target schema using the <literal>SCHEMA</literal> option of <command>CREATE EXTENSION</command>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:581(para) 
+#: /tmp/cicero-TfQb/extend.xml:581(para) 
 msgid "If the extension does not support relocation at all, set <literal>relocatable = false</literal> in its control file, and also set <literal>schema</literal> to the name of the intended target schema. This will prevent use of the <literal>SCHEMA</literal> option of <command>CREATE EXTENSION</command>, unless it specifies the same schema named in the control file. This choice is typically necessary if the extension contains internal assumptions about schema names that can't be replaced by uses of <literal>@extschema@</literal>. The <literal>@extschema@</literal> substitution mechanism is available in this case too, although it is of limited use since the schema name is determined by the control file."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:601(programlisting) 
+#: /tmp/cicero-TfQb/extend.xml:601(programlisting) 
 #, no-wrap
 msgid "\nSET LOCAL search_path TO @extschema@;\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:596(para) 
+#: /tmp/cicero-TfQb/extend.xml:596(para) 
 msgid "In all cases, the script file will be executed with <xref linkend=\"guc-search-path\"/> initially set to point to the target schema; that is, <command>CREATE EXTENSION</command> does the equivalent of this: <placeholder-1/> This allows the objects created by the script file to go into the target schema. The script file can change <varname>search_path</varname> if it wishes, but that is generally undesirable. <varname>search_path</varname> is restored to its previous setting upon completion of <command>CREATE EXTENSION</command>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:610(para) 
+#: /tmp/cicero-TfQb/extend.xml:610(para) 
 msgid "The target schema is determined by the <varname>schema</varname> parameter in the control file if that is given, otherwise by the <literal>SCHEMA</literal> option of <command>CREATE EXTENSION</command> if that is given, otherwise the current default object creation schema (the first one in the caller's <varname>search_path</varname>). When the control file <varname>schema</varname> parameter is used, the target schema will be created if it doesn't already exist, but in the other two cases it must already exist."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:620(para) 
+#: /tmp/cicero-TfQb/extend.xml:620(para) 
 msgid "If any prerequisite extensions are listed in <varname>requires</varname> in the control file, their target schemas are appended to the initial setting of <varname>search_path</varname>. This allows their objects to be visible to the new extension's script file."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:627(para) 
+#: /tmp/cicero-TfQb/extend.xml:627(para) 
 msgid "Although a non-relocatable extension can contain objects spread across multiple schemas, it is usually desirable to place all the objects meant for external use into a single schema, which is considered the extension's target schema. Such an arrangement works conveniently with the default setting of <varname>search_path</varname> during creation of dependent extensions."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:638(title) 
+#: /tmp/cicero-TfQb/extend.xml:638(title) 
 msgid "Extension Configuration Tables"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:640(para) 
+#: /tmp/cicero-TfQb/extend.xml:640(para) 
 msgid "Some extensions include configuration tables, which contain data that might be added or changed by the user after installation of the extension. Ordinarily, if a table is part of an extension, neither the table's definition nor its content will be dumped by <application>pg_dump</application>. But that behavior is undesirable for a configuration table; any data changes made by the user need to be included in dumps, or the extension will behave differently after a dump and reload."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:658(programlisting) 
+#: /tmp/cicero-TfQb/extend.xml:658(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE my_config (key text, value text);\n\nSELECT pg_catalog.pg_extension_config_dump('my_config', '');\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:651(para) 
+#: /tmp/cicero-TfQb/extend.xml:651(para) 
 msgid "To solve this problem, an extension's script file can mark a table it has created as a configuration table, which will cause <application>pg_dump</application> to include the table's contents (not its definition) in dumps. To do that, call the function <function>pg_extension_config_dump(regclass, text)</function> after creating the table, for example <placeholder-1/> Any number of tables can be marked this way."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:675(programlisting) 
+#: /tmp/cicero-TfQb/extend.xml:675(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE my_config (key text, value text, standard_entry boolean);\n\nSELECT pg_catalog.pg_extension_config_dump('my_config', 'WHERE NOT standard_entry');\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:666(para) 
+#: /tmp/cicero-TfQb/extend.xml:666(para) 
 msgid "When the second argument of <function>pg_extension_config_dump</function> is an empty string, the entire contents of the table are dumped by <application>pg_dump</application>. This is usually only correct if the table is initially empty as created by the extension script. If there is a mixture of initial data and user-provided data in the table, the second argument of <function>pg_extension_config_dump</function> provides a <literal>WHERE</literal> condition that selects the data to be dumped. For example, you might do <placeholder-1/> and then make sure that <structfield>standard_entry</structfield> is true only in the rows created by the extension's script."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:684(para) 
+#: /tmp/cicero-TfQb/extend.xml:684(para) 
 msgid "More complicated situations, such as initially-provided rows that might be modified by users, can be handled by creating triggers on the configuration table to ensure that modified rows are marked correctly."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:692(title) 
+#: /tmp/cicero-TfQb/extend.xml:692(title) 
 msgid "Extension Updates"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:694(para) 
+#: /tmp/cicero-TfQb/extend.xml:694(para) 
 msgid "One advantage of the extension mechanism is that it provides convenient ways to manage updates to the SQL commands that define an extension's objects. This is done by associating a version name or number with each released version of the extension's installation script. In addition, if you want users to be able to update their databases dynamically from one version to the next, you should provide <firstterm>update scripts</firstterm> that make the necessary changes to go from one version to the next. Update scripts have names following the pattern <literal><replaceable>extension</replaceable>--<replaceable>oldversion</replaceable>--<replaceable>newversion</replaceable>.sql</literal> (for example, <literal>foo--1.0--1.1.sql</literal> contains the commands to modify version <literal>1.0</literal> of extension <literal>foo</literal> into version <literal>1.1</literal>)."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:709(para) 
+#: /tmp/cicero-TfQb/extend.xml:709(para) 
 msgid "Given that a suitable update script is available, the command <command>ALTER EXTENSION UPDATE</command> will update an installed extension to the specified new version. The update script is run in the same environment that <command>CREATE EXTENSION</command> provides for installation scripts: in particular, <varname>search_path</varname> is set up in the same way, and any new objects created by the script are automatically added to the extension."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:719(para) 
+#: /tmp/cicero-TfQb/extend.xml:719(para) 
 msgid "If an extension has secondary control files, the control parameters that are used for an update script are those associated with the script's target (new) version."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:725(para) 
+#: /tmp/cicero-TfQb/extend.xml:725(para) 
 msgid "The update mechanism can be used to solve an important special case: converting a <quote>loose</quote> collection of objects into an extension. Before the extension mechanism was added to <productname>PostgreSQL</productname> (in 9.1), many people wrote extension modules that simply created assorted unpackaged objects. Given an existing database containing such objects, how can we convert the objects into a properly packaged extension? Dropping them and then doing a plain <command>CREATE EXTENSION</command> is one way, but it's not desirable if the objects have dependencies (for example, if there are table columns of a data type created by the extension). The way to fix this situation is to create an empty extension, then use <command>ALTER EXTENSION ADD</command> to attach each pre-existing object to the extension, then finally create any new objects that are in the current extension version but were not in the unpackaged release. <command>CREATE EXTENSION</command> supports this case with its <literal>FROM</literal><replaceable class=\"parameter\">old_version</replaceable> option, which causes it to not run the normal installation script for the target version, but instead the update script named <literal><replaceable>extension</replaceable>--<replaceable>old_version</replaceable>--<replaceable>target_version</replaceable>.sql</literal>. The choice of the dummy version name to use as <replaceable class=\"parameter\">old_version</replaceable> is up to the extension author, though <literal>unpackaged</literal> is a common convention. If you have multiple prior versions you need to be able to update into extension style, use multiple dummy version names to identify them."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:752(para) 
+#: /tmp/cicero-TfQb/extend.xml:752(para) 
 msgid "<command>ALTER EXTENSION</command> is able to execute sequences of update script files to achieve a requested update. For example, if only <literal>foo--1.0--1.1.sql</literal> and <literal>foo--1.1--2.0.sql</literal> are available, <command>ALTER EXTENSION</command> will apply them in sequence if an update to version <literal>2.0</literal> is requested when <literal>1.0</literal> is currently installed."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:761(para) 
+#: /tmp/cicero-TfQb/extend.xml:761(para) 
 msgid "<productname>PostgreSQL</productname> doesn't assume anything about the properties of version names: for example, it does not know whether <literal>1.1</literal> follows <literal>1.0</literal>. It just matches up the available version names and follows the path that requires applying the fewest update scripts. (A version name can actually be any string that doesn't contain <literal>--</literal> or leading or trailing <literal>-</literal>.)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:770(para) 
+#: /tmp/cicero-TfQb/extend.xml:770(para) 
 msgid "Sometimes it is useful to provide <quote>downgrade</quote> scripts, for example <literal>foo--1.1--1.0.sql</literal> to allow reverting the changes associated with version <literal>1.1</literal>. If you do that, be careful of the possibility that a downgrade script might unexpectedly get applied because it yields a shorter path. The risky case is where there is a <quote>fast path</quote> update script that jumps ahead several versions as well as a downgrade script to the fast path's start point. It might take fewer steps to apply the downgrade and then the fast path than to move ahead one version at a time. If the downgrade script drops any irreplaceable objects, this will yield undesirable results."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:785(programlisting) 
+#: /tmp/cicero-TfQb/extend.xml:785(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM pg_extension_update_paths('<replaceable>extension_name</replaceable>');\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:783(para) 
+#: /tmp/cicero-TfQb/extend.xml:783(para) 
 msgid "To check for unexpected update paths, use this command: <placeholder-1/> This shows each pair of distinct known version names for the specified extension, together with the update path sequence that would be taken to get from the source version to the target version, or <literal>NULL</literal> if there is no available update path. The path is shown in textual form with <literal>--</literal> separators. You can use <literal>regexp_split_to_array(path,'--')</literal> if you prefer an array format."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:799(title) 
+#: /tmp/cicero-TfQb/extend.xml:799(title) 
 msgid "Extension Example"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:801(para) 
+#: /tmp/cicero-TfQb/extend.xml:801(para) 
 msgid "Here is a complete example of an <acronym>SQL</acronym>-only extension, a two-element composite type that can store any type of value in its slots, which are named <quote>k</quote> and <quote>v</quote>. Non-text values are automatically coerced to text for storage."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:808(para) 
+#: /tmp/cicero-TfQb/extend.xml:808(para) 
 msgid "The script file <filename>pair--1.0.sql</filename> looks like this: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:837(programlisting) 
+#: /tmp/cicero-TfQb/extend.xml:837(programlisting) 
 #, no-wrap
 msgid "\n# pair extension\ncomment = 'A key/value pair data type'\ndefault_version = '1.0'\nrelocatable = true\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:834(para) 
+#: /tmp/cicero-TfQb/extend.xml:834(para) 
 msgid "The control file <filename>pair.control</filename> looks like this: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:849(programlisting) 
+#: /tmp/cicero-TfQb/extend.xml:849(programlisting) 
 #, no-wrap
 msgid "\nEXTENSION = pair\nDATA = pair--1.0.sql\n\nPG_CONFIG = pg_config\nPGXS := $(shell $(PG_CONFIG) --pgxs)\ninclude $(PGXS)\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:845(para) 
+#: /tmp/cicero-TfQb/extend.xml:845(para) 
 msgid "While you hardly need a makefile to install these two files into the correct directory, you could use a <filename>Makefile</filename> containing this: <placeholder-1/> This makefile relies on <acronym>PGXS</acronym>, which is described in <xref linkend=\"extend-pgxs\"/>. The command <literal>make install</literal> will install the control and script files into the correct directory as reported by <application>pg_config</application>."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:864(para) 
+#: /tmp/cicero-TfQb/extend.xml:864(para) 
 msgid "Once the files are installed, use the <xref linkend=\"sql-createextension\"/> command to load the objects into any particular database."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:873(title) 
+#: /tmp/cicero-TfQb/extend.xml:873(title) 
 msgid "Extension Building Infrastructure"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:876(primary) 
+#: /tmp/cicero-TfQb/extend.xml:876(primary) 
 msgid "pgxs"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:879(para) 
+#: /tmp/cicero-TfQb/extend.xml:879(para) 
 msgid "If you are thinking about distributing your <productname>PostgreSQL</productname> extension modules, setting up a portable build system for them can be fairly difficult. Therefore the <productname>PostgreSQL</productname> installation provides a build infrastructure for extensions, called <acronym>PGXS</acronym>, so that simple extension modules can be built simply against an already installed server. <acronym>PGXS</acronym> is mainly intended for extensions that include C code, although it can be used for pure-SQL extensions too. Note that <acronym>PGXS</acronym> is not intended to be a universal build system framework that can be used to build any software interfacing to <productname>PostgreSQL</productname>; it simply automates common build rules for simple server extension modules. For more complicated packages, you might need to write your own build system."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:905(programlisting) 
+#: /tmp/cicero-TfQb/extend.xml:905(programlisting) 
 #, no-wrap
 msgid "\nMODULES = isbn_issn\nEXTENSION = isbn_issn\nDATA = isbn_issn--1.0.sql\nDOCS = README.isbn_issn\n\nPG_CONFIG = pg_config\nPGXS := $(shell $(PG_CONFIG) --pgxs)\ninclude $(PGXS)\n"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:896(para) 
+#: /tmp/cicero-TfQb/extend.xml:896(para) 
 msgid "To use the <acronym>PGXS</acronym> infrastructure for your extension, you must write a simple makefile. In the makefile, you need to set some variables and finally include the global <acronym>PGXS</acronym> makefile. Here is an example that builds an extension module named <literal>isbn_issn</literal>, consisting of a shared library containing some C code, an extension control file, a SQL script, and a documentation text file: <placeholder-1/> The last three lines should always be the same. Earlier in the file, you assign variables or add custom <application>make</application> rules."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:925(varname) 
+#: /tmp/cicero-TfQb/extend.xml:925(varname) 
 msgid "MODULES"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:927(para) 
+#: /tmp/cicero-TfQb/extend.xml:927(para) 
 msgid "list of shared-library objects to be built from source files with same stem (do not include library suffixes in this list)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:935(varname) 
+#: /tmp/cicero-TfQb/extend.xml:935(varname) 
 msgid "MODULE_big"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:937(para) 
+#: /tmp/cicero-TfQb/extend.xml:937(para) 
 msgid "a shared library to build from multiple source files (list object files in <varname>OBJS</varname>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:945(varname) 
+#: /tmp/cicero-TfQb/extend.xml:945(varname) 
 msgid "PROGRAM"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:947(para) 
+#: /tmp/cicero-TfQb/extend.xml:947(para) 
 msgid "an executable program to build (list object files in <varname>OBJS</varname>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:959(varname) 
+#: /tmp/cicero-TfQb/extend.xml:959(varname) 
 msgid "EXTENSION"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:961(para) 
+#: /tmp/cicero-TfQb/extend.xml:961(para) 
 msgid "extension name(s); for each name you must provide an <literal><replaceable>extension</replaceable>.control</literal> file, which will be installed into <literal><replaceable>prefix</replaceable>/share/extension</literal>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:971(varname) 
+#: /tmp/cicero-TfQb/extend.xml:971(varname) 
 msgid "MODULEDIR"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:973(para) 
+#: /tmp/cicero-TfQb/extend.xml:973(para) 
 msgid "subdirectory of <literal><replaceable>prefix</replaceable>/share</literal> into which DATA and DOCS files should be installed (if not set, default is <literal>extension</literal> if <varname>EXTENSION</varname> is set, or <literal>contrib</literal> if not)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:984(varname) 
+#: /tmp/cicero-TfQb/extend.xml:984(varname) 
 msgid "DATA"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:986(para) 
+#: /tmp/cicero-TfQb/extend.xml:986(para) 
 msgid "random files to install into <literal><replaceable>prefix</replaceable>/share/$MODULEDIR</literal>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:993(varname) 
+#: /tmp/cicero-TfQb/extend.xml:993(varname) 
 msgid "DATA_built"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:995(para) 
+#: /tmp/cicero-TfQb/extend.xml:995(para) 
 msgid "random files to install into <literal><replaceable>prefix</replaceable>/share/$MODULEDIR</literal>, which need to be built first"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1004(varname) 
+#: /tmp/cicero-TfQb/extend.xml:1004(varname) 
 msgid "DATA_TSEARCH"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1006(para) 
+#: /tmp/cicero-TfQb/extend.xml:1006(para) 
 msgid "random files to install under <literal><replaceable>prefix</replaceable>/share/tsearch_data</literal>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1014(varname) 
+#: /tmp/cicero-TfQb/extend.xml:1014(varname) 
 msgid "DOCS"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1016(para) 
+#: /tmp/cicero-TfQb/extend.xml:1016(para) 
 msgid "random files to install under <literal><replaceable>prefix</replaceable>/doc/$MODULEDIR</literal>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1024(varname) 
+#: /tmp/cicero-TfQb/extend.xml:1024(varname) 
 msgid "SCRIPTS"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1026(para) 
+#: /tmp/cicero-TfQb/extend.xml:1026(para) 
 msgid "script files (not binaries) to install into <literal><replaceable>prefix</replaceable>/bin</literal>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1034(varname) 
+#: /tmp/cicero-TfQb/extend.xml:1034(varname) 
 msgid "SCRIPTS_built"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1036(para) 
+#: /tmp/cicero-TfQb/extend.xml:1036(para) 
 msgid "script files (not binaries) to install into <literal><replaceable>prefix</replaceable>/bin</literal>, which need to be built first"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1045(varname) 
+#: /tmp/cicero-TfQb/extend.xml:1045(varname) 
 msgid "REGRESS"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1047(para) 
+#: /tmp/cicero-TfQb/extend.xml:1047(para) 
 msgid "list of regression test cases (without suffix), see below"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1054(varname) 
+#: /tmp/cicero-TfQb/extend.xml:1054(varname) 
 msgid "EXTRA_CLEAN"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1056(para) 
+#: /tmp/cicero-TfQb/extend.xml:1056(para) 
 msgid "extra files to remove in <literal>make clean</literal>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1063(varname) 
+#: /tmp/cicero-TfQb/extend.xml:1063(varname) 
 msgid "PG_CPPFLAGS"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1065(para) 
+#: /tmp/cicero-TfQb/extend.xml:1065(para) 
 msgid "will be added to <varname>CPPFLAGS</varname>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1072(varname) 
+#: /tmp/cicero-TfQb/extend.xml:1072(varname) 
 msgid "PG_LIBS"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1074(para) 
+#: /tmp/cicero-TfQb/extend.xml:1074(para) 
 msgid "will be added to <varname>PROGRAM</varname> link line"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1081(varname) 
+#: /tmp/cicero-TfQb/extend.xml:1081(varname) 
 msgid "SHLIB_LINK"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1083(para) 
+#: /tmp/cicero-TfQb/extend.xml:1083(para) 
 msgid "will be added to <varname>MODULE_big</varname> link line"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1090(varname) 
+#: /tmp/cicero-TfQb/extend.xml:1090(varname) 
 msgid "PG_CONFIG"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1092(para) 
+#: /tmp/cicero-TfQb/extend.xml:1092(para) 
 msgid "path to <application>pg_config</application> program for the <productname>PostgreSQL</productname> installation to build against (typically just <literal>pg_config</literal> to use the first one in your <varname>PATH</varname>)"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:920(para) 
+#: /tmp/cicero-TfQb/extend.xml:920(para) 
 msgid "Set one of these three variables to specify what is built: <placeholder-1/> The following variables can also be set: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1103(para) 
+#: /tmp/cicero-TfQb/extend.xml:1103(para) 
 msgid "Put this makefile as <literal>Makefile</literal> in the directory which holds your extension. Then you can do <literal>make</literal> to compile, and then <literal>make install</literal> to install your module. By default, the extension is compiled and installed for the <productname>PostgreSQL</productname> installation that corresponds to the first <command>pg_config</command> program found in your <varname>PATH</varname>. You can use a different installation by setting <varname>PG_CONFIG</varname> to point to its <command>pg_config</command> program, either within the makefile or on the <literal>make</literal> command line."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1118(para) 
+#: /tmp/cicero-TfQb/extend.xml:1118(para) 
 msgid "Changing <varname>PG_CONFIG</varname> only works when building against <productname>PostgreSQL</productname> 8.3 or later. With older releases it does not work to set it to anything except <literal>pg_config</literal>; you must alter your <varname>PATH</varname> to select the installation to build against."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1127(para) 
+#: /tmp/cicero-TfQb/extend.xml:1127(para) 
 msgid "The scripts listed in the <varname>REGRESS</varname> variable are used for regression testing of your module, which can be invoked by <literal>make installcheck</literal> after doing <literal>make install</literal>. For this to work you must have a running <productname>PostgreSQL</productname> server. The script files listed in <varname>REGRESS</varname> must appear in a subdirectory named <literal>sql/</literal> in your extension's directory. These files must have extension <literal>.sql</literal>, which must not be included in the <varname>REGRESS</varname> list in the makefile. For each test there should also be a file containing the expected output in a subdirectory named <literal>expected/</literal>, with the same stem and extension <literal>.out</literal>. <literal>make installcheck</literal> executes each test script with <application>psql</application>, and compares the resulting output to the matching expected file. Any differences will be written to the file <literal>regression.diffs</literal> in <command>diff -c</command> format. Note that trying to run a test that is missing its expected file will be reported as <quote>trouble</quote>, so make sure you have all expected files."
 msgstr ""
 
-#: /tmp/cicero-gBbq/extend.xml:1148(para) 
+#: /tmp/cicero-TfQb/extend.xml:1148(para) 
 msgid "The easiest way to create the expected files is to create empty files, then do a test run (which will of course report differences). Inspect the actual result files found in the <literal>results/</literal> directory, then copy them to <literal>expected/</literal> if they match what you expect from the test."
 msgstr ""
 
 #. doc/src/sgml/extend.sgml
-#: /tmp/cicero-gBbq/extend.xml:4(chapter) 
+#: /tmp/cicero-TfQb/extend.xml:4(chapter) 
 msgid "<placeholder-1/><indexterm zone=\"extend\"><placeholder-2/></indexterm><placeholder-3/><placeholder-4/><sect1 id=\"extend-type-system\"><placeholder-5/><indexterm zone=\"extend-type-system\"><placeholder-6/></indexterm><indexterm zone=\"extend-type-system\"><placeholder-7/><placeholder-8/></indexterm><indexterm zone=\"extend-type-system\"><placeholder-9/></indexterm><indexterm zone=\"extend-type-system\"><placeholder-10/><placeholder-11/></indexterm><placeholder-12/><placeholder-13/><placeholder-14/><placeholder-15/><placeholder-16/><sect2 id=\"extend-types-polymorphic\"><placeholder-17/><indexterm zone=\"extend-types-polymorphic\"><placeholder-18/></indexterm><indexterm zone=\"extend-types-polymorphic\"><placeholder-19/></indexterm><indexterm zone=\"extend-types-polymorphic\"><placeholder-20/><placeholder-21/></indexterm><indexterm zone=\"extend-types-polymorphic\"><placeholder-22/><placeholder-23/></indexterm><placeholder-24/><placeholder-25/><placeholder-26/><placeholder-27/><placeholder-28/><placeholder-29/></sect2></sect1> &xfunc; &xaggr; &xtypes; &xoper; &xindex; <sect1 id=\"extend-extensions\"><placeholder-30/><indexterm zone=\"extend-extensions\"><placeholder-31/></indexterm><placeholder-32/><placeholder-33/><placeholder-34/><placeholder-35/><placeholder-36/><sect2><placeholder-37/><indexterm><placeholder-38/></indexterm><placeholder-39/><placeholder-40/><placeholder-41/><placeholder-42/><placeholder-43/><placeholder-44/><placeholder-45/></sect2><placeholder-46/><placeholder-47/><placeholder-48/><placeholder-49/></sect1><sect1 id=\"extend-pgxs\"><placeholder-50/><indexterm zone=\"extend-pgxs\"><placeholder-51/></indexterm><placeholder-52/><placeholder-53/><placeholder-54/><placeholder-55/><placeholder-56/><placeholder-57/><placeholder-58/></sect1>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-gBbq/extend.xml:0(None) 
+#: /tmp/cicero-TfQb/extend.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
