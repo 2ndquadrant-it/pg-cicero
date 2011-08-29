@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-28 06:59+0200\n"
+"POT-Creation-Date: 2011-08-29 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,60 +9,60 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:10(application) /tmp/cicero-EpGA/ref/pg_controldata.xml:16(refname) /tmp/cicero-EpGA/ref/pg_controldata.xml:21(primary) /tmp/cicero-EpGA/ref/pg_controldata.xml:26(command) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:10(application) /tmp/cicero-qMnb/ref/pg_controldata.xml:16(refname) /tmp/cicero-qMnb/ref/pg_controldata.xml:21(primary) /tmp/cicero-qMnb/ref/pg_controldata.xml:26(command) 
 msgid "pg_controldata"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:11(manvolnum) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:11(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:12(refmiscinfo) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:12(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:17(productname) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:17(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:17(refpurpose) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:17(refpurpose) 
 msgid "display control information of a <placeholder-1/> database cluster"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:27(replaceable) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:27(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:28(replaceable) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:28(replaceable) 
 msgid "datadir"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:33(title) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:34(para) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:34(para) 
 msgid "<command>pg_controldata</command> prints information initialized during <command>initdb</command>, such as the catalog version. It also shows information about write-ahead logging and checkpoint processing. This information is cluster-wide, and not specific to any one database."
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:42(para) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:42(para) 
 msgid "This utility can only be run by the user who initialized the cluster because it requires read access to the data directory. You can specify the data directory on the command line, or use the environment variable <envar>PGDATA</envar>. This utility supports the options <literal>-V</literal> and <literal>--version</literal>, which print the <application>pg_controldata</application> version and exit. It also supports options <literal>-?</literal> and <literal>--help</literal>, which output the supported arguments."
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:55(title) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:55(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:59(envar) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:59(envar) 
 msgid "PGDATA"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:62(para) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:62(para) 
 msgid "Default data directory location"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-EpGA/ref/pg_controldata.xml:0(None) 
+#: /tmp/cicero-qMnb/ref/pg_controldata.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

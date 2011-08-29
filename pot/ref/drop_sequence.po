@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-28 06:59+0200\n"
+"POT-Creation-Date: 2011-08-29 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,98 +9,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:10(refentrytitle) /tmp/cicero-EpGA/ref/drop_sequence.xml:16(refname) /tmp/cicero-EpGA/ref/drop_sequence.xml:21(primary) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:10(refentrytitle) /tmp/cicero-qMnb/ref/drop_sequence.xml:16(refname) /tmp/cicero-qMnb/ref/drop_sequence.xml:21(primary) 
 msgid "DROP SEQUENCE"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:11(manvolnum) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:12(refmiscinfo) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:17(refpurpose) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:17(refpurpose) 
 msgid "remove a sequence"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:26(replaceable) /tmp/cicero-EpGA/ref/drop_sequence.xml:54(replaceable) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:26(replaceable) /tmp/cicero-qMnb/ref/drop_sequence.xml:54(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:25(synopsis) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP SEQUENCE [ IF EXISTS ] <placeholder-1/> [, ...] [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:31(title) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:33(para) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:33(para) 
 msgid "<command>DROP SEQUENCE</command> removes sequence number generators. A sequence can only be dropped by its owner or a superuser."
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:40(title) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:40(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:44(literal) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:44(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:46(para) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:46(para) 
 msgid "Do not throw an error if the sequence does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:56(para) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:56(para) 
 msgid "The name (optionally schema-qualified) of a sequence."
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:63(literal) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:63(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:65(para) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:65(para) 
 msgid "Automatically drop objects that depend on the sequence."
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:72(literal) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:72(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:74(para) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:74(para) 
 msgid "Refuse to drop the sequence if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:84(title) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:84(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:89(programlisting) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:89(programlisting) 
 #, no-wrap
 msgid "\nDROP SEQUENCE serial;\n"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:86(para) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:86(para) 
 msgid "To remove the sequence <literal>serial</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:95(title) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:95(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:97(para) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:97(para) 
 msgid "<command>DROP SEQUENCE</command> conforms to the <acronym>SQL</acronym> standard, except that the standard only allows one sequence to be dropped per command, and apart from the <literal>IF EXISTS</literal> option, which is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:107(title) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:107(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-EpGA/ref/drop_sequence.xml:0(None) 
+#: /tmp/cicero-qMnb/ref/drop_sequence.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-28 06:58+0200\n"
+"POT-Creation-Date: 2011-08-29 06:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,656 +9,656 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-EpGA/biblio.xml:6(title) 
+#: /tmp/cicero-qMnb/biblio.xml:6(title) 
 msgid "Bibliography"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:8(para) 
+#: /tmp/cicero-qMnb/biblio.xml:8(para) 
 msgid "Selected references and readings for <acronym>SQL</acronym> and <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:13(para) 
+#: /tmp/cicero-qMnb/biblio.xml:13(para) 
 msgid "Some white papers and technical reports from the original <productname>POSTGRES</productname> development team are available at the University of California, Berkeley, Computer Science Department <ulink url=\"http://db.cs.berkeley.edu/papers/\"> web site</ulink>."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:22(title) 
+#: /tmp/cicero-qMnb/biblio.xml:22(title) 
 msgid "<acronym>SQL</acronym> Reference Books"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:23(para) 
+#: /tmp/cicero-qMnb/biblio.xml:23(para) 
 msgid "Reference texts for <acronym>SQL</acronym> features."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:26(title) 
+#: /tmp/cicero-qMnb/biblio.xml:26(title) 
 msgid "The Practical <acronym>SQL</acronym> Handbook"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:27(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:27(titleabbrev) 
 msgid "Bowman et al, 2001"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:28(subtitle) 
+#: /tmp/cicero-qMnb/biblio.xml:28(subtitle) 
 msgid "Using SQL Variants"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:29(edition) /tmp/cicero-EpGA/biblio.xml:58(edition) /tmp/cicero-EpGA/biblio.xml:103(edition) 
+#: /tmp/cicero-qMnb/biblio.xml:29(edition) /tmp/cicero-qMnb/biblio.xml:58(edition) /tmp/cicero-qMnb/biblio.xml:103(edition) 
 msgid "Fourth Edition"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:32(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:32(firstname) 
 msgid "Judith"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:33(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:33(surname) 
 msgid "Bowman"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:36(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:36(firstname) 
 msgid "Sandra"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:37(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:37(surname) 
 msgid "Emerson"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:40(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:40(firstname) 
 msgid "Marcy"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:41(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:41(surname) 
 msgid "Darnovsky"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:44(isbn) 
+#: /tmp/cicero-qMnb/biblio.xml:44(isbn) 
 msgid "0-201-70309-2"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:45(pubdate) /tmp/cicero-EpGA/biblio.xml:50(year) 
+#: /tmp/cicero-qMnb/biblio.xml:45(pubdate) /tmp/cicero-qMnb/biblio.xml:50(year) 
 msgid "2001"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:47(publishername) 
+#: /tmp/cicero-qMnb/biblio.xml:47(publishername) 
 msgid "Addison-Wesley Professional"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:55(title) 
+#: /tmp/cicero-qMnb/biblio.xml:55(title) 
 msgid "A Guide to the <acronym>SQL</acronym> Standard"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:56(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:56(titleabbrev) 
 msgid "Date and Darwen, 1997"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:57(acronym) 
+#: /tmp/cicero-qMnb/biblio.xml:57(acronym) 
 msgid "SQL"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:57(subtitle) 
+#: /tmp/cicero-qMnb/biblio.xml:57(subtitle) 
 msgid "A user's guide to the standard database language <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:61(firstname) /tmp/cicero-EpGA/biblio.xml:86(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:61(firstname) /tmp/cicero-qMnb/biblio.xml:86(firstname) 
 msgid "C. J."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:62(surname) /tmp/cicero-EpGA/biblio.xml:87(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:62(surname) /tmp/cicero-qMnb/biblio.xml:87(surname) 
 msgid "Date"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:65(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:65(firstname) 
 msgid "Hugh"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:66(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:66(surname) 
 msgid "Darwen"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:69(isbn) 
+#: /tmp/cicero-qMnb/biblio.xml:69(isbn) 
 msgid "0-201-96426-0"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:70(pubdate) /tmp/cicero-EpGA/biblio.xml:75(year) 
+#: /tmp/cicero-qMnb/biblio.xml:70(pubdate) /tmp/cicero-qMnb/biblio.xml:75(year) 
 msgid "1997"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:72(publishername) /tmp/cicero-EpGA/biblio.xml:93(publishername) /tmp/cicero-EpGA/biblio.xml:117(publishername) 
+#: /tmp/cicero-qMnb/biblio.xml:72(publishername) /tmp/cicero-qMnb/biblio.xml:93(publishername) /tmp/cicero-qMnb/biblio.xml:117(publishername) 
 msgid "Addison-Wesley"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:76(holder) 
+#: /tmp/cicero-qMnb/biblio.xml:76(holder) 
 msgid "Addison-Wesley Longman, Inc."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:81(title) 
+#: /tmp/cicero-qMnb/biblio.xml:81(title) 
 msgid "An Introduction to Database Systems"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:82(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:82(titleabbrev) 
 msgid "Date, 2004"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:83(edition) 
+#: /tmp/cicero-qMnb/biblio.xml:83(edition) 
 msgid "Eighth Edition"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:90(isbn) 
+#: /tmp/cicero-qMnb/biblio.xml:90(isbn) 
 msgid "0-321-19784-4"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:91(pubdate) /tmp/cicero-EpGA/biblio.xml:115(pubdate) 
+#: /tmp/cicero-qMnb/biblio.xml:91(pubdate) /tmp/cicero-qMnb/biblio.xml:115(pubdate) 
 msgid "2003"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:96(year) /tmp/cicero-EpGA/biblio.xml:120(year) 
+#: /tmp/cicero-qMnb/biblio.xml:96(year) /tmp/cicero-qMnb/biblio.xml:120(year) 
 msgid "2004"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:97(holder) 
+#: /tmp/cicero-qMnb/biblio.xml:97(holder) 
 msgid "Pearson Education, Inc."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:102(title) 
+#: /tmp/cicero-qMnb/biblio.xml:102(title) 
 msgid "Fundamentals of Database Systems"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:106(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:106(firstname) 
 msgid "Ramez"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:107(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:107(surname) 
 msgid "Elmasri"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:110(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:110(firstname) 
 msgid "Shamkant"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:111(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:111(surname) 
 msgid "Navathe"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:114(isbn) 
+#: /tmp/cicero-qMnb/biblio.xml:114(isbn) 
 msgid "0-321-12226-7"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:125(title) 
+#: /tmp/cicero-qMnb/biblio.xml:125(title) 
 msgid "Understanding the New <acronym>SQL</acronym>"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:126(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:126(titleabbrev) 
 msgid "Melton and Simon, 1993"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:127(subtitle) 
+#: /tmp/cicero-qMnb/biblio.xml:127(subtitle) 
 msgid "A complete guide"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:130(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:130(firstname) 
 msgid "Jim"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:131(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:131(surname) 
 msgid "Melton"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:134(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:134(firstname) 
 msgid "Alan R."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:135(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:135(surname) 
 msgid "Simon"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:138(isbn) 
+#: /tmp/cicero-qMnb/biblio.xml:138(isbn) 
 msgid "1-55860-245-3"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:139(pubdate) /tmp/cicero-EpGA/biblio.xml:144(year) /tmp/cicero-EpGA/biblio.xml:272(pubdate) 
+#: /tmp/cicero-qMnb/biblio.xml:139(pubdate) /tmp/cicero-qMnb/biblio.xml:144(year) /tmp/cicero-qMnb/biblio.xml:272(pubdate) 
 msgid "1993"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:141(publishername) 
+#: /tmp/cicero-qMnb/biblio.xml:141(publishername) 
 msgid "Morgan Kaufmann"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:145(holder) 
+#: /tmp/cicero-qMnb/biblio.xml:145(holder) 
 msgid "Morgan Kaufmann Publishers, Inc."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:150(title) 
+#: /tmp/cicero-qMnb/biblio.xml:150(title) 
 msgid "Principles of Database and Knowledge"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:151(subtitle) 
+#: /tmp/cicero-qMnb/biblio.xml:151(subtitle) 
 msgid "Base Systems"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:152(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:152(titleabbrev) 
 msgid "Ullman, 1988"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:155(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:155(firstname) 
 msgid "Jeffrey D."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:156(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:156(surname) 
 msgid "Ullman"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:159(volumenum) 
+#: /tmp/cicero-qMnb/biblio.xml:159(volumenum) 
 msgid "Volume 1"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:161(publishername) 
+#: /tmp/cicero-qMnb/biblio.xml:161(publishername) 
 msgid "Computer Science Press"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:163(pubdate) 
+#: /tmp/cicero-qMnb/biblio.xml:163(pubdate) 
 msgid "1988"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:169(title) 
+#: /tmp/cicero-qMnb/biblio.xml:169(title) 
 msgid "PostgreSQL-specific Documentation"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:170(para) 
+#: /tmp/cicero-qMnb/biblio.xml:170(para) 
 msgid "This section is for related documentation."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:173(title) 
+#: /tmp/cicero-qMnb/biblio.xml:173(title) 
 msgid "Enhancement of the ANSI SQL Implementation of PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:174(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:174(titleabbrev) 
 msgid "Simkovics, 1998"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:177(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:177(firstname) 
 msgid "Stefan"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:178(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:178(surname) 
 msgid "Simkovics"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:201(para) 
+#: /tmp/cicero-qMnb/biblio.xml:201(para) 
 msgid "Discusses SQL history and syntax, and describes the addition of <literal>INTERSECT</literal> and <literal>EXCEPT</literal> constructs into <productname>PostgreSQL</productname>. Prepared as a Master's Thesis with the support of O. Univ. Prof. Dr. Georg Gottlob and Univ. Ass. Mag. Katrin Seyr at Vienna University of Technology."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:210(pubdate) 
+#: /tmp/cicero-qMnb/biblio.xml:210(pubdate) 
 msgid "November 29, 1998"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:212(publishername) 
+#: /tmp/cicero-qMnb/biblio.xml:212(publishername) 
 msgid "Department of Information Systems, Vienna University of Technology"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:213(address) 
+#: /tmp/cicero-qMnb/biblio.xml:213(address) 
 msgid "Vienna, Austria"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:218(title) 
+#: /tmp/cicero-qMnb/biblio.xml:218(title) 
 msgid "The <productname>Postgres95</productname> User Manual"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:219(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:219(titleabbrev) 
 msgid "Yu and Chen, 1995"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:222(firstname) /tmp/cicero-EpGA/biblio.xml:345(firstname) /tmp/cicero-EpGA/biblio.xml:523(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:222(firstname) /tmp/cicero-qMnb/biblio.xml:345(firstname) /tmp/cicero-qMnb/biblio.xml:523(firstname) 
 msgid "A."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:223(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:223(surname) 
 msgid "Yu"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:226(firstname) /tmp/cicero-EpGA/biblio.xml:290(firstname) /tmp/cicero-EpGA/biblio.xml:527(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:226(firstname) /tmp/cicero-qMnb/biblio.xml:290(firstname) /tmp/cicero-qMnb/biblio.xml:527(firstname) 
 msgid "J."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:227(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:227(surname) 
 msgid "Chen"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:232(collabname) 
+#: /tmp/cicero-qMnb/biblio.xml:232(collabname) 
 msgid "The POSTGRES Group"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:236(pubdate) 
+#: /tmp/cicero-qMnb/biblio.xml:236(pubdate) 
 msgid "Sept. 5, 1995"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:238(publishername) /tmp/cicero-EpGA/biblio.xml:275(publishername) /tmp/cicero-EpGA/biblio.xml:299(publishername) 
+#: /tmp/cicero-qMnb/biblio.xml:238(publishername) /tmp/cicero-qMnb/biblio.xml:275(publishername) /tmp/cicero-qMnb/biblio.xml:299(publishername) 
 msgid "University of California"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:239(address) /tmp/cicero-EpGA/biblio.xml:276(address) 
+#: /tmp/cicero-qMnb/biblio.xml:239(address) /tmp/cicero-qMnb/biblio.xml:276(address) 
 msgid "Berkeley, California"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:246(productname) /tmp/cicero-EpGA/biblio.xml:308(productname) /tmp/cicero-EpGA/biblio.xml:367(productname) /tmp/cicero-EpGA/biblio.xml:417(productname) /tmp/cicero-EpGA/biblio.xml:437(productname) /tmp/cicero-EpGA/biblio.xml:484(productname) 
+#: /tmp/cicero-qMnb/biblio.xml:246(productname) /tmp/cicero-qMnb/biblio.xml:308(productname) /tmp/cicero-qMnb/biblio.xml:367(productname) /tmp/cicero-qMnb/biblio.xml:417(productname) /tmp/cicero-qMnb/biblio.xml:437(productname) /tmp/cicero-qMnb/biblio.xml:484(productname) 
 msgid "POSTGRES"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:245(ulink) 
+#: /tmp/cicero-qMnb/biblio.xml:245(ulink) 
 msgid "The design and implementation of the <placeholder-1/> query optimizer"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:249(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:249(firstname) 
 msgid "Zelaine"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:250(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:250(surname) 
 msgid "Fong"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:253(publishername) 
+#: /tmp/cicero-qMnb/biblio.xml:253(publishername) 
 msgid "University of California, Berkeley, Computer Science Department"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:260(title) 
+#: /tmp/cicero-qMnb/biblio.xml:260(title) 
 msgid "Proceedings and Articles"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:261(para) 
+#: /tmp/cicero-qMnb/biblio.xml:261(para) 
 msgid "This section is for articles and newsletters."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:264(title) 
+#: /tmp/cicero-qMnb/biblio.xml:264(title) 
 msgid "Partial indexing in POSTGRES: research project"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:265(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:265(titleabbrev) 
 msgid "Olson, 1993"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:268(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:268(firstname) 
 msgid "Nels"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:269(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:269(surname) 
 msgid "Olson"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:273(pubsnumber) 
+#: /tmp/cicero-qMnb/biblio.xml:273(pubsnumber) 
 msgid "UCB Engin T7.49.1993 O676"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:282(title) 
+#: /tmp/cicero-qMnb/biblio.xml:282(title) 
 msgid "A Unified Framework for Version Modeling Using Production Rules in a Database System"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:283(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:283(titleabbrev) 
 msgid "Ong and Goh, 1990"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:286(firstname) /tmp/cicero-EpGA/biblio.xml:313(firstname) /tmp/cicero-EpGA/biblio.xml:376(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:286(firstname) /tmp/cicero-qMnb/biblio.xml:313(firstname) /tmp/cicero-qMnb/biblio.xml:376(firstname) 
 msgid "L."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:287(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:287(surname) 
 msgid "Ong"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:291(surname) /tmp/cicero-EpGA/biblio.xml:528(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:291(surname) /tmp/cicero-qMnb/biblio.xml:528(surname) 
 msgid "Goh"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:296(title) 
+#: /tmp/cicero-qMnb/biblio.xml:296(title) 
 msgid "ERL Technical Memorandum M90/33"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:297(pubdate) 
+#: /tmp/cicero-qMnb/biblio.xml:297(pubdate) 
 msgid "April, 1990"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:300(address) 
+#: /tmp/cicero-qMnb/biblio.xml:300(address) 
 msgid "Berkely, California"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:307(ulink) 
+#: /tmp/cicero-qMnb/biblio.xml:307(ulink) 
 msgid "The <placeholder-1/> data model"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:310(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:310(titleabbrev) 
 msgid "Rowe and Stonebraker, 1987"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:314(surname) /tmp/cicero-EpGA/biblio.xml:377(surname) /tmp/cicero-EpGA/biblio.xml:494(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:314(surname) /tmp/cicero-qMnb/biblio.xml:377(surname) /tmp/cicero-qMnb/biblio.xml:494(surname) 
 msgid "Rowe"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:317(firstname) /tmp/cicero-EpGA/biblio.xml:372(firstname) /tmp/cicero-EpGA/biblio.xml:394(firstname) /tmp/cicero-EpGA/biblio.xml:422(firstname) /tmp/cicero-EpGA/biblio.xml:442(firstname) /tmp/cicero-EpGA/biblio.xml:446(firstname) /tmp/cicero-EpGA/biblio.xml:469(firstname) /tmp/cicero-EpGA/biblio.xml:489(firstname) /tmp/cicero-EpGA/biblio.xml:497(firstname) /tmp/cicero-EpGA/biblio.xml:519(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:317(firstname) /tmp/cicero-qMnb/biblio.xml:372(firstname) /tmp/cicero-qMnb/biblio.xml:394(firstname) /tmp/cicero-qMnb/biblio.xml:422(firstname) /tmp/cicero-qMnb/biblio.xml:442(firstname) /tmp/cicero-qMnb/biblio.xml:446(firstname) /tmp/cicero-qMnb/biblio.xml:469(firstname) /tmp/cicero-qMnb/biblio.xml:489(firstname) /tmp/cicero-qMnb/biblio.xml:497(firstname) /tmp/cicero-qMnb/biblio.xml:519(firstname) 
 msgid "M."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:318(surname) /tmp/cicero-EpGA/biblio.xml:373(surname) /tmp/cicero-EpGA/biblio.xml:395(surname) /tmp/cicero-EpGA/biblio.xml:423(surname) /tmp/cicero-EpGA/biblio.xml:443(surname) /tmp/cicero-EpGA/biblio.xml:470(surname) /tmp/cicero-EpGA/biblio.xml:490(surname) /tmp/cicero-EpGA/biblio.xml:520(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:318(surname) /tmp/cicero-qMnb/biblio.xml:373(surname) /tmp/cicero-qMnb/biblio.xml:395(surname) /tmp/cicero-qMnb/biblio.xml:423(surname) /tmp/cicero-qMnb/biblio.xml:443(surname) /tmp/cicero-qMnb/biblio.xml:470(surname) /tmp/cicero-qMnb/biblio.xml:490(surname) /tmp/cicero-qMnb/biblio.xml:520(surname) 
 msgid "Stonebraker"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:323(conftitle) /tmp/cicero-EpGA/biblio.xml:428(conftitle) 
+#: /tmp/cicero-qMnb/biblio.xml:323(conftitle) /tmp/cicero-qMnb/biblio.xml:428(conftitle) 
 msgid "VLDB Conference"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:324(confdates) /tmp/cicero-EpGA/biblio.xml:429(confdates) 
+#: /tmp/cicero-qMnb/biblio.xml:324(confdates) /tmp/cicero-qMnb/biblio.xml:429(confdates) 
 msgid "Sept. 1987"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:325(address) /tmp/cicero-EpGA/biblio.xml:430(address) 
+#: /tmp/cicero-qMnb/biblio.xml:325(address) /tmp/cicero-qMnb/biblio.xml:430(address) 
 msgid "Brighton, England"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:331(title) 
+#: /tmp/cicero-qMnb/biblio.xml:331(title) 
 msgid "Generalized Partial Indexes <ulink url=\"http://citeseer.ist.psu.edu/seshadri95generalized.html\">(cached version) </ulink>"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:338(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:338(titleabbrev) 
 msgid "Seshardri, 1995"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:341(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:341(firstname) 
 msgid "P."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:342(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:342(surname) 
 msgid "Seshadri"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:346(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:346(surname) 
 msgid "Swami"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:351(conftitle) 
+#: /tmp/cicero-qMnb/biblio.xml:351(conftitle) 
 msgid "Eleventh International Conference on Data Engineering"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:352(confdates) 
+#: /tmp/cicero-qMnb/biblio.xml:352(confdates) 
 msgid "6-10 March 1995"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:353(address) 
+#: /tmp/cicero-qMnb/biblio.xml:353(address) 
 msgid "Taipeh, Taiwan"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:355(pubdate) 
+#: /tmp/cicero-qMnb/biblio.xml:355(pubdate) 
 msgid "1995"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:356(pubsnumber) 
+#: /tmp/cicero-qMnb/biblio.xml:356(pubsnumber) 
 msgid "Cat. No.95CH35724"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:358(publishername) 
+#: /tmp/cicero-qMnb/biblio.xml:358(publishername) 
 msgid "IEEE Computer Society Press"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:359(address) 
+#: /tmp/cicero-qMnb/biblio.xml:359(address) 
 msgid "Los Alamitos, California"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:361(pagenums) 
+#: /tmp/cicero-qMnb/biblio.xml:361(pagenums) 
 msgid "420-7"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:366(ulink) 
+#: /tmp/cicero-qMnb/biblio.xml:366(ulink) 
 msgid "The design of <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:369(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:369(titleabbrev) 
 msgid "Stonebraker and Rowe, 1986"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:382(conftitle) /tmp/cicero-EpGA/biblio.xml:537(conftitle) 
+#: /tmp/cicero-qMnb/biblio.xml:382(conftitle) /tmp/cicero-qMnb/biblio.xml:537(conftitle) 
 msgid "ACM-SIGMOD Conference on Management of Data"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:383(confdates) 
+#: /tmp/cicero-qMnb/biblio.xml:383(confdates) 
 msgid "May 1986"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:384(address) 
+#: /tmp/cicero-qMnb/biblio.xml:384(address) 
 msgid "Washington, DC"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:390(title) 
+#: /tmp/cicero-qMnb/biblio.xml:390(title) 
 msgid "The design of the <productname>POSTGRES</productname> rules system"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:391(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:391(titleabbrev) 
 msgid "Stonebraker, Hanson, Hong, 1987"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:398(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:398(firstname) 
 msgid "E."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:399(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:399(surname) 
 msgid "Hanson"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:402(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:402(firstname) 
 msgid "C. H."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:403(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:403(surname) 
 msgid "Hong"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:408(conftitle) 
+#: /tmp/cicero-qMnb/biblio.xml:408(conftitle) 
 msgid "IEEE Conference on Data Engineering"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:409(confdates) 
+#: /tmp/cicero-qMnb/biblio.xml:409(confdates) 
 msgid "Feb. 1987"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:410(address) 
+#: /tmp/cicero-qMnb/biblio.xml:410(address) 
 msgid "Los Angeles, California"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:416(ulink) 
+#: /tmp/cicero-qMnb/biblio.xml:416(ulink) 
 msgid "The design of the <placeholder-1/> storage system"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:419(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:419(titleabbrev) 
 msgid "Stonebraker, 1987"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:436(ulink) 
+#: /tmp/cicero-qMnb/biblio.xml:436(ulink) 
 msgid "A commentary on the <placeholder-1/> rules system"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:439(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:439(titleabbrev) 
 msgid "Stonebraker et al, 1989"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:447(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:447(surname) 
 msgid "Hearst"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:450(firstname) /tmp/cicero-EpGA/biblio.xml:531(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:450(firstname) /tmp/cicero-qMnb/biblio.xml:531(firstname) 
 msgid "S."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:451(surname) /tmp/cicero-EpGA/biblio.xml:532(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:451(surname) /tmp/cicero-qMnb/biblio.xml:532(surname) 
 msgid "Potamianos"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:456(title) 
+#: /tmp/cicero-qMnb/biblio.xml:456(title) 
 msgid "SIGMOD Record 18(3)"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:457(date) 
+#: /tmp/cicero-qMnb/biblio.xml:457(date) 
 msgid "Sept. 1989"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:463(ulink) 
+#: /tmp/cicero-qMnb/biblio.xml:463(ulink) 
 msgid "The case for partial indexes"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:466(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:466(titleabbrev) 
 msgid "Stonebraker, M, 1989b"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:475(title) 
+#: /tmp/cicero-qMnb/biblio.xml:475(title) 
 msgid "SIGMOD Record 18(4)"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:476(pagenums) 
+#: /tmp/cicero-qMnb/biblio.xml:476(pagenums) 
 msgid "4-11"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:477(date) 
+#: /tmp/cicero-qMnb/biblio.xml:477(date) 
 msgid "Dec. 1989"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:483(ulink) 
+#: /tmp/cicero-qMnb/biblio.xml:483(ulink) 
 msgid "The implementation of <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:486(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:486(titleabbrev) 
 msgid "Stonebraker, Rowe, Hirohama, 1990"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:493(firstname) 
+#: /tmp/cicero-qMnb/biblio.xml:493(firstname) 
 msgid "L. A."
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:498(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:498(surname) 
 msgid "Hirohama"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:503(title) 
+#: /tmp/cicero-qMnb/biblio.xml:503(title) 
 msgid "Transactions on Knowledge and Data Engineering 2(1)"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:505(publishername) 
+#: /tmp/cicero-qMnb/biblio.xml:505(publishername) 
 msgid "IEEE"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:507(date) 
+#: /tmp/cicero-qMnb/biblio.xml:507(date) 
 msgid "March 1990"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:513(ulink) 
+#: /tmp/cicero-qMnb/biblio.xml:513(ulink) 
 msgid "On Rules, Procedures, Caching and Views in Database Systems"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:516(titleabbrev) 
+#: /tmp/cicero-qMnb/biblio.xml:516(titleabbrev) 
 msgid "Stonebraker et al, ACM, 1990"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:524(surname) 
+#: /tmp/cicero-qMnb/biblio.xml:524(surname) 
 msgid "Jhingran"
 msgstr ""
 
-#: /tmp/cicero-EpGA/biblio.xml:538(confdates) 
+#: /tmp/cicero-qMnb/biblio.xml:538(confdates) 
 msgid "June 1990"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-EpGA/biblio.xml:0(None) 
+#: /tmp/cicero-qMnb/biblio.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
