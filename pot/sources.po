@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-28 06:57+0200\n"
+"POT-Creation-Date: 2011-08-29 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,516 +9,516 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-TfQb/sources.xml:5(title) 
+#: /tmp/cicero-QcwG/sources.xml:5(title) 
 msgid "PostgreSQL Coding Conventions"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:8(title) /tmp/cicero-TfQb/sources.xml:382(title) 
+#: /tmp/cicero-QcwG/sources.xml:8(title) /tmp/cicero-QcwG/sources.xml:382(title) 
 msgid "Formatting"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:10(para) 
+#: /tmp/cicero-QcwG/sources.xml:10(para) 
 msgid "Source code formatting uses 4 column tab spacing, with tabs preserved (i.e., tabs are not expanded to spaces). Each logical indentation level is one additional tab stop."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:16(para) 
+#: /tmp/cicero-QcwG/sources.xml:16(para) 
 msgid "Layout rules (brace positioning, etc) follow BSD conventions. In particular, curly braces for the controlled blocks of <literal>if</literal>, <literal>while</literal>, <literal>switch</literal>, etc go on their own lines."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:22(para) 
+#: /tmp/cicero-QcwG/sources.xml:22(para) 
 msgid "Limit line lengths so that the code is readable in an 80-column window. (This doesn't mean that you must never go past 80 columns. For instance, breaking a long error message string in arbitrary places just to keep the code within 80 columns is probably not a net gain in readability.)"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:29(para) 
+#: /tmp/cicero-QcwG/sources.xml:29(para) 
 msgid "Do not use C++ style comments (<literal>//</literal> comments). Strict ANSI C compilers do not accept them. For the same reason, do not use C++ extensions such as declaring new variables mid-block."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:37(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:37(programlisting) 
 #, no-wrap
 msgid "\n/*\n * comment text begins here\n * and continues here\n */\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:47(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:47(programlisting) 
 #, no-wrap
 msgid "\n    /*----------\n     * comment text begins here\n     * and continues here\n     *----------\n     */\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:35(para) 
+#: /tmp/cicero-QcwG/sources.xml:35(para) 
 msgid "The preferred style for multi-line comment blocks is <placeholder-1/> Note that comment blocks that begin in column 1 will be preserved as-is by <application>pgindent</application>, but it will re-flow indented comment blocks as though they were plain text. If you want to preserve the line breaks in an indented block, add dashes like this: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:56(para) 
+#: /tmp/cicero-QcwG/sources.xml:56(para) 
 msgid "While submitted patches do not absolutely have to follow these formatting rules, it's a good idea to do so. Your code will get run through <application>pgindent</application> before the next release, so there's no point in making it look nice under some other set of formatting conventions. A good rule of thumb for patches is <quote>make the new code look like the existing code around it</quote>."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:65(para) 
+#: /tmp/cicero-QcwG/sources.xml:65(para) 
 msgid "The <filename>src/tools</filename> directory contains sample settings files that can be used with the <productname>emacs</productname>, <productname>xemacs</productname> or <productname>vim</productname> editors to help ensure that they format code according to these conventions."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:76(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:76(programlisting) 
 #, no-wrap
 msgid "\nmore -x4\nless -x4\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:73(para) 
+#: /tmp/cicero-QcwG/sources.xml:73(para) 
 msgid "The text browsing tools <application>more</application> and <application>less</application> can be invoked as: <placeholder-1/> to make them show tabs appropriately."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:85(title) 
+#: /tmp/cicero-QcwG/sources.xml:85(title) 
 msgid "Reporting Errors Within the Server"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:88(primary) 
+#: /tmp/cicero-QcwG/sources.xml:88(primary) 
 msgid "ereport"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:91(primary) 
+#: /tmp/cicero-QcwG/sources.xml:91(primary) 
 msgid "elog"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:94(para) 
+#: /tmp/cicero-QcwG/sources.xml:94(para) 
 msgid "Error, warning, and log messages generated within the server code should be created using <function>ereport</function>, or its older cousin <function>elog</function>. The use of this function is complex enough to require some explanation."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:101(para) 
+#: /tmp/cicero-QcwG/sources.xml:101(para) 
 msgid "There are two required elements for every message: a severity level (ranging from <literal>DEBUG</literal> to <literal>PANIC</literal>) and a primary message text. In addition there are optional elements, the most common of which is an error identifier code that follows the SQL spec's SQLSTATE conventions. <function>ereport</function> itself is just a shell function, that exists mainly for the syntactic convenience of making message generation look like a function call in the C source code. The only parameter accepted directly by <function>ereport</function> is the severity level. The primary message text and any optional message elements are generated by calling auxiliary functions, such as <function>errmsg</function>, within the <function>ereport</function> call."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:118(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:118(programlisting) 
 #, no-wrap
 msgid "\nereport(ERROR,\n        (errcode(ERRCODE_DIVISION_BY_ZERO),\n         errmsg(\"division by zero\")));\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:116(para) 
+#: /tmp/cicero-QcwG/sources.xml:116(para) 
 msgid "A typical call to <function>ereport</function> might look like this: <placeholder-1/> This specifies error severity level <literal>ERROR</literal> (a run-of-the-mill error). The <function>errcode</function> call specifies the SQLSTATE error code using a macro defined in <filename>src/include/utils/errcodes.h</filename>. The <function>errmsg</function> call provides the primary message text. Notice the extra set of parentheses surrounding the auxiliary function calls — these are annoying but syntactically necessary."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:133(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:133(programlisting) 
 #, no-wrap
 msgid "\nereport(ERROR,\n        (errcode(ERRCODE_AMBIGUOUS_FUNCTION),\n         errmsg(\"function %s is not unique\",\n                func_signature_string(funcname, nargs,\n                                      NIL, actual_arg_types)),\n         errhint(\"Unable to choose a best candidate function. \"\n                 \"You might need to add explicit typecasts.\")));\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:131(para) 
+#: /tmp/cicero-QcwG/sources.xml:131(para) 
 msgid "Here is a more complex example: <placeholder-1/> This illustrates the use of format codes to embed run-time values into a message text. Also, an optional <quote>hint</quote> message is provided."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:150(para) 
+#: /tmp/cicero-QcwG/sources.xml:150(para) 
 msgid "<function>errcode(sqlerrcode)</function> specifies the SQLSTATE error identifier code for the condition. If this routine is not called, the error identifier defaults to <literal>ERRCODE_INTERNAL_ERROR</literal> when the error severity level is <literal>ERROR</literal> or higher, <literal>ERRCODE_WARNING</literal> when the error level is <literal>WARNING</literal>, otherwise (for <literal>NOTICE</literal> and below) <literal>ERRCODE_SUCCESSFUL_COMPLETION</literal>. While these defaults are often convenient, always think whether they are appropriate before omitting the <function>errcode()</function> call."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:171(para) 
+#: /tmp/cicero-QcwG/sources.xml:171(para) 
 msgid "That is, the value that was current when the <function>ereport</function> call was reached; changes of <literal>errno</literal> within the auxiliary reporting routines will not affect it. That would not be true if you were to write <literal>strerror(errno)</literal> explicitly in <function>errmsg</function>'s parameter list; accordingly, do not do so."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:163(para) 
+#: /tmp/cicero-QcwG/sources.xml:163(para) 
 msgid "<function>errmsg(const char *msg, ...)</function> specifies the primary error message text, and possibly run-time values to insert into it. Insertions are specified by <function>sprintf</function>-style format codes. In addition to the standard format codes accepted by <function>sprintf</function>, the format code <literal>%m</literal> can be used to insert the error message returned by <function>strerror</function> for the current value of <literal>errno</literal>. <placeholder-1/><literal>%m</literal> does not require any corresponding entry in the parameter list for <function>errmsg</function>. Note that the message string will be run through <function>gettext</function> for possible localization before format codes are processed."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:186(para) 
+#: /tmp/cicero-QcwG/sources.xml:186(para) 
 msgid "<function>errmsg_internal(const char *msg, ...)</function> is the same as <function>errmsg</function>, except that the message string will not be translated nor included in the internationalization message dictionary. This should be used for <quote>cannot happen</quote> cases that are probably not worth expending translation effort on."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:195(para) 
+#: /tmp/cicero-QcwG/sources.xml:195(para) 
 msgid "<function>errmsg_plural(const char *fmt_singular, const char *fmt_plural, unsigned long n, ...)</function> is like <function>errmsg</function>, but with support for various plural forms of the message. <replaceable>fmt_singular</replaceable> is the English singular format, <replaceable>fmt_plural</replaceable> is the English plural format, <replaceable>n</replaceable> is the integer value that determines which plural form is needed, and the remaining arguments are formatted according to the selected format string. For more information see <xref linkend=\"nls-guidelines\"/>."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:208(para) 
+#: /tmp/cicero-QcwG/sources.xml:208(para) 
 msgid "<function>errdetail(const char *msg, ...)</function> supplies an optional <quote>detail</quote> message; this is to be used when there is additional information that seems inappropriate to put in the primary message. The message string is processed in just the same way as for <function>errmsg</function>."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:217(para) 
+#: /tmp/cicero-QcwG/sources.xml:217(para) 
 msgid "<function>errdetail_internal(const char *msg, ...)</function> is the same as <function>errdetail</function>, except that the message string will not be translated nor included in the internationalization message dictionary. This should be used for detail messages that are not worth expending translation effort on, for instance because they are too technical to be useful to most users."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:227(para) 
+#: /tmp/cicero-QcwG/sources.xml:227(para) 
 msgid "<function>errdetail_plural(const char *fmt_singular, const char *fmt_plural, unsigned long n, ...)</function> is like <function>errdetail</function>, but with support for various plural forms of the message. For more information see <xref linkend=\"nls-guidelines\"/>."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:235(para) 
+#: /tmp/cicero-QcwG/sources.xml:235(para) 
 msgid "<function>errdetail_log(const char *msg, ...)</function> is the same as <function>errdetail</function> except that this string goes only to the server log, never to the client. If both <function>errdetail</function> (or one of its equivalents above) and <function>errdetail_log</function> are used then one string goes to the client and the other to the log. This is useful for error details that are too security-sensitive or too bulky to include in the report sent to the client."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:247(para) 
+#: /tmp/cicero-QcwG/sources.xml:247(para) 
 msgid "<function>errhint(const char *msg, ...)</function> supplies an optional <quote>hint</quote> message; this is to be used when offering suggestions about how to fix the problem, as opposed to factual details about what went wrong. The message string is processed in just the same way as for <function>errmsg</function>."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:257(para) 
+#: /tmp/cicero-QcwG/sources.xml:257(para) 
 msgid "<function>errcontext(const char *msg, ...)</function> is not normally called directly from an <function>ereport</function> message site; rather it is used in <literal>error_context_stack</literal> callback functions to provide information about the context in which an error occurred, such as the current location in a PL function. The message string is processed in just the same way as for <function>errmsg</function>. Unlike the other auxiliary functions, this can be called more than once per <function>ereport</function> call; the successive strings thus supplied are concatenated with separating newlines."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:270(para) 
+#: /tmp/cicero-QcwG/sources.xml:270(para) 
 msgid "<function>errposition(int cursorpos)</function> specifies the textual location of an error within a query string. Currently it is only useful for errors detected in the lexical and syntactic analysis phases of query processing."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:278(para) 
+#: /tmp/cicero-QcwG/sources.xml:278(para) 
 msgid "<function>errcode_for_file_access()</function> is a convenience function that selects an appropriate SQLSTATE error identifier for a failure in a file-access-related system call. It uses the saved <literal>errno</literal> to determine which error code to generate. Usually this should be used in combination with <literal>%m</literal> in the primary error message text."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:288(para) 
+#: /tmp/cicero-QcwG/sources.xml:288(para) 
 msgid "<function>errcode_for_socket_access()</function> is a convenience function that selects an appropriate SQLSTATE error identifier for a failure in a socket-related system call."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:295(para) 
+#: /tmp/cicero-QcwG/sources.xml:295(para) 
 msgid "<function>errhidestmt(bool hide_stmt)</function> can be called to specify suppression of the <literal>STATEMENT:</literal> portion of a message in the postmaster log. Generally this is appropriate if the message text includes the current statement already."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:146(para) 
+#: /tmp/cicero-QcwG/sources.xml:146(para) 
 msgid "The available auxiliary routines for <function>ereport</function> are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:308(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:308(programlisting) 
 #, no-wrap
 msgid "\nelog(level, \"format string\", ...);\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:312(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:312(programlisting) 
 #, no-wrap
 msgid "\nereport(level, (errmsg_internal(\"format string\", ...)));\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:305(para) 
+#: /tmp/cicero-QcwG/sources.xml:305(para) 
 msgid "There is an older function <function>elog</function> that is still heavily used. An <function>elog</function> call: <placeholder-1/> is exactly equivalent to: <placeholder-2/> Notice that the SQLSTATE error code is always defaulted, and the message string is not subject to translation. Therefore, <function>elog</function> should be used only for internal errors and low-level debug logging. Any message that is likely to be of interest to ordinary users should go through <function>ereport</function>. Nonetheless, there are enough internal <quote>cannot happen</quote> error checks in the system that <function>elog</function> is still widely used; it is preferred for those messages for its notational simplicity."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:325(para) 
+#: /tmp/cicero-QcwG/sources.xml:325(para) 
 msgid "Advice about writing good error messages can be found in <xref linkend=\"error-style-guide\"/>."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:332(title) 
+#: /tmp/cicero-QcwG/sources.xml:332(title) 
 msgid "Error Message Style Guide"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:334(para) 
+#: /tmp/cicero-QcwG/sources.xml:334(para) 
 msgid "This style guide is offered in the hope of maintaining a consistent, user-friendly style throughout all the messages generated by <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:341(title) 
+#: /tmp/cicero-QcwG/sources.xml:341(title) 
 msgid "What Goes Where"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:343(para) 
+#: /tmp/cicero-QcwG/sources.xml:343(para) 
 msgid "The primary message should be short, factual, and avoid reference to implementation details such as specific function names. <quote>Short</quote> means <quote>should fit on one line under normal conditions</quote>. Use a detail message if needed to keep the primary message short, or if you feel a need to mention implementation details such as the particular system call that failed. Both primary and detail messages should be factual. Use a hint message for suggestions about what to do to fix the problem, especially if the suggestion might not always be applicable."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:357(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:357(programlisting) 
 #, no-wrap
 msgid "\nIpcMemoryCreate: shmget(key=%d, size=%u, 0%o) failed: %m\n(plus a long addendum that is basically a hint)\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:362(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:362(programlisting) 
 #, no-wrap
 msgid "\nPrimary:    could not create shared memory segment: %m\nDetail:     Failed syscall was shmget(key=%d, size=%u, 0%o).\nHint:       the addendum\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:355(para) 
+#: /tmp/cicero-QcwG/sources.xml:355(para) 
 msgid "For example, instead of: <placeholder-1/> write: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:369(para) 
+#: /tmp/cicero-QcwG/sources.xml:369(para) 
 msgid "Rationale: keeping the primary message short helps keep it to the point, and lets clients lay out screen space on the assumption that one line is enough for error messages. Detail and hint messages can be relegated to a verbose mode, or perhaps a pop-up error-details window. Also, details and hints would normally be suppressed from the server log to save space. Reference to implementation details is best avoided since users don't know the details anyway."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:384(para) 
+#: /tmp/cicero-QcwG/sources.xml:384(para) 
 msgid "Don't put any specific assumptions about formatting into the message texts. Expect clients and the server log to wrap lines to fit their own needs. In long messages, newline characters (\\n) can be used to indicate suggested paragraph breaks. Don't end a message with a newline. Don't use tabs or other formatting characters. (In error context displays, newlines are automatically added to separate levels of context such as function calls.)"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:394(para) 
+#: /tmp/cicero-QcwG/sources.xml:394(para) 
 msgid "Rationale: Messages are not necessarily displayed on terminal-type displays. In GUI displays or browsers these formatting instructions are at best ignored."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:403(title) 
+#: /tmp/cicero-QcwG/sources.xml:403(title) 
 msgid "Quotation Marks"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:405(para) 
+#: /tmp/cicero-QcwG/sources.xml:405(para) 
 msgid "English text should use double quotes when quoting is appropriate. Text in other languages should consistently use one kind of quotes that is consistent with publishing customs and computer output of other programs."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:411(para) 
+#: /tmp/cicero-QcwG/sources.xml:411(para) 
 msgid "Rationale: The choice of double quotes over single quotes is somewhat arbitrary, but tends to be the preferred use. Some have suggested choosing the kind of quotes depending on the type of object according to SQL conventions (namely, strings single quoted, identifiers double quoted). But this is a language-internal technical issue that many users aren't even familiar with, it won't scale to other kinds of quoted terms, it doesn't translate to other languages, and it's pretty pointless, too."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:424(title) 
+#: /tmp/cicero-QcwG/sources.xml:424(title) 
 msgid "Use of Quotes"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:426(para) 
+#: /tmp/cicero-QcwG/sources.xml:426(para) 
 msgid "Use quotes always to delimit file names, user-supplied identifiers, and other variables that might contain words. Do not use them to mark up variables that will not contain words (for example, operator names)."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:432(para) 
+#: /tmp/cicero-QcwG/sources.xml:432(para) 
 msgid "There are functions in the backend that will double-quote their own output at need (for example, <function>format_type_be()</function>). Do not put additional quotes around the output of such functions."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:438(para) 
+#: /tmp/cicero-QcwG/sources.xml:438(para) 
 msgid "Rationale: Objects can have names that create ambiguity when embedded in a message. Be consistent about denoting where a plugged-in name starts and ends. But don't clutter messages with unnecessary or duplicate quote marks."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:448(title) 
+#: /tmp/cicero-QcwG/sources.xml:448(title) 
 msgid "Grammar and Punctuation"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:450(para) 
+#: /tmp/cicero-QcwG/sources.xml:450(para) 
 msgid "The rules are different for primary error messages and for detail/hint messages:"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:455(para) 
+#: /tmp/cicero-QcwG/sources.xml:455(para) 
 msgid "Primary error messages: Do not capitalize the first letter. Do not end a message with a period. Do not even think about ending a message with an exclamation point."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:461(para) 
+#: /tmp/cicero-QcwG/sources.xml:461(para) 
 msgid "Detail and hint messages: Use complete sentences, and end each with a period. Capitalize the first word of sentences. Put two spaces after the period if another sentence follows (for English text; might be inappropriate in other languages)."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:468(para) 
+#: /tmp/cicero-QcwG/sources.xml:468(para) 
 msgid "Error context strings: Do not capitalize the first letter and do not end the string with a period. Context strings should normally not be complete sentences."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:474(para) 
+#: /tmp/cicero-QcwG/sources.xml:474(para) 
 msgid "Rationale: Avoiding punctuation makes it easier for client applications to embed the message into a variety of grammatical contexts. Often, primary messages are not grammatically complete sentences anyway. (And if they're long enough to be more than one sentence, they should be split into primary and detail parts.) However, detail and hint messages are longer and might need to include multiple sentences. For consistency, they should follow complete-sentence style even when there's only one sentence."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:487(title) 
+#: /tmp/cicero-QcwG/sources.xml:487(title) 
 msgid "Upper Case vs. Lower Case"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:489(para) 
+#: /tmp/cicero-QcwG/sources.xml:489(para) 
 msgid "Use lower case for message wording, including the first letter of a primary error message. Use upper case for SQL commands and key words if they appear in the message."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:495(para) 
+#: /tmp/cicero-QcwG/sources.xml:495(para) 
 msgid "Rationale: It's easier to make everything look more consistent this way, since some messages are complete sentences and some not."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:503(title) 
+#: /tmp/cicero-QcwG/sources.xml:503(title) 
 msgid "Avoid Passive Voice"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:505(para) 
+#: /tmp/cicero-QcwG/sources.xml:505(para) 
 msgid "Use the active voice. Use complete sentences when there is an acting subject (<quote>A could not do B</quote>). Use telegram style without subject if the subject would be the program itself; do not use <quote>I</quote> for the program."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:512(para) 
+#: /tmp/cicero-QcwG/sources.xml:512(para) 
 msgid "Rationale: The program is not human. Don't pretend otherwise."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:519(title) 
+#: /tmp/cicero-QcwG/sources.xml:519(title) 
 msgid "Present vs. Past Tense"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:521(para) 
+#: /tmp/cicero-QcwG/sources.xml:521(para) 
 msgid "Use past tense if an attempt to do something failed, but could perhaps succeed next time (perhaps after fixing some problem). Use present tense if the failure is certainly permanent."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:529(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:529(programlisting) 
 #, no-wrap
 msgid "\ncould not open file \"%s\": %m\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:533(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:533(programlisting) 
 #, no-wrap
 msgid "\ncannot open file \"%s\"\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:527(para) 
+#: /tmp/cicero-QcwG/sources.xml:527(para) 
 msgid "There is a nontrivial semantic difference between sentences of the form: <placeholder-1/> and: <placeholder-2/> The first one means that the attempt to open the file failed. The message should give a reason, such as <quote>disk full</quote> or <quote>file doesn't exist</quote>. The past tense is appropriate because next time the disk might not be full anymore or the file in question might exist."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:543(para) 
+#: /tmp/cicero-QcwG/sources.xml:543(para) 
 msgid "The second form indicates that the functionality of opening the named file does not exist at all in the program, or that it's conceptually impossible. The present tense is appropriate because the condition will persist indefinitely."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:550(para) 
+#: /tmp/cicero-QcwG/sources.xml:550(para) 
 msgid "Rationale: Granted, the average user will not be able to draw great conclusions merely from the tense of the message, but since the language provides us with a grammar we should use it correctly."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:559(title) 
+#: /tmp/cicero-QcwG/sources.xml:559(title) 
 msgid "Type of the Object"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:561(para) 
+#: /tmp/cicero-QcwG/sources.xml:561(para) 
 msgid "When citing the name of an object, state what kind of object it is."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:565(para) 
+#: /tmp/cicero-QcwG/sources.xml:565(para) 
 msgid "Rationale: Otherwise no one will know what <quote>foo.bar.baz</quote> refers to."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:573(title) 
+#: /tmp/cicero-QcwG/sources.xml:573(title) 
 msgid "Brackets"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:575(para) 
+#: /tmp/cicero-QcwG/sources.xml:575(para) 
 msgid "Square brackets are only to be used (1) in command synopses to denote optional arguments, or (2) to denote an array subscript."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:580(para) 
+#: /tmp/cicero-QcwG/sources.xml:580(para) 
 msgid "Rationale: Anything else does not correspond to widely-known customary usage and will confuse people."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:588(title) 
+#: /tmp/cicero-QcwG/sources.xml:588(title) 
 msgid "Assembling Error Messages"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:593(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:593(programlisting) 
 #, no-wrap
 msgid "\ncould not open file %s: %m\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:590(para) 
+#: /tmp/cicero-QcwG/sources.xml:590(para) 
 msgid "When a message includes text that is generated elsewhere, embed it in this style: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:598(para) 
+#: /tmp/cicero-QcwG/sources.xml:598(para) 
 msgid "Rationale: It would be difficult to account for all possible error codes to paste this into a single smooth sentence, so some sort of punctuation is needed. Putting the embedded text in parentheses has also been suggested, but it's unnatural if the embedded text is likely to be the most important part of the message, as is often the case."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:609(title) 
+#: /tmp/cicero-QcwG/sources.xml:609(title) 
 msgid "Reasons for Errors"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:614(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:614(programlisting) 
 #, no-wrap
 msgid "\nBAD:    could not open file %s\nBETTER: could not open file %s (I/O failure)\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:611(para) 
+#: /tmp/cicero-QcwG/sources.xml:611(para) 
 msgid "Messages should always state the reason why an error occurred. For example: <placeholder-1/> If no reason is known you better fix the code."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:624(title) 
+#: /tmp/cicero-QcwG/sources.xml:624(title) 
 msgid "Function Names"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:631(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:631(programlisting) 
 #, no-wrap
 msgid "\nBAD:    pg_atoi: error in \"z\": cannot parse \"z\"\nBETTER: invalid input syntax for integer: \"z\"\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:626(para) 
+#: /tmp/cicero-QcwG/sources.xml:626(para) 
 msgid "Don't include the name of the reporting routine in the error text. We have other mechanisms for finding that out when needed, and for most users it's not helpful information. If the error text doesn't make as much sense without the function name, reword it. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:640(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:640(programlisting) 
 #, no-wrap
 msgid "\nBAD:    open() failed: %m\nBETTER: could not open file %s: %m\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:637(para) 
+#: /tmp/cicero-QcwG/sources.xml:637(para) 
 msgid "Avoid mentioning called function names, either; instead say what the code was trying to do: <placeholder-1/> If it really seems necessary, mention the system call in the detail message. (In some cases, providing the actual values passed to the system call might be appropriate information for the detail message.)"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:649(para) 
+#: /tmp/cicero-QcwG/sources.xml:649(para) 
 msgid "Rationale: Users don't know what all those functions do."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:656(title) 
+#: /tmp/cicero-QcwG/sources.xml:656(title) 
 msgid "Tricky Words to Avoid"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:659(title) 
+#: /tmp/cicero-QcwG/sources.xml:659(title) 
 msgid "Unable"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:660(para) 
+#: /tmp/cicero-QcwG/sources.xml:660(para) 
 msgid "<quote>Unable</quote> is nearly the passive voice. Better use <quote>cannot</quote> or <quote>could not</quote>, as appropriate."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:667(title) 
+#: /tmp/cicero-QcwG/sources.xml:667(title) 
 msgid "Bad"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:668(para) 
+#: /tmp/cicero-QcwG/sources.xml:668(para) 
 msgid "Error messages like <quote>bad result</quote> are really hard to interpret intelligently. It's better to write why the result is <quote>bad</quote>, e.g., <quote>invalid format</quote>."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:676(title) 
+#: /tmp/cicero-QcwG/sources.xml:676(title) 
 msgid "Illegal"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:677(para) 
+#: /tmp/cicero-QcwG/sources.xml:677(para) 
 msgid "<quote>Illegal</quote> stands for a violation of the law, the rest is <quote>invalid</quote>. Better yet, say why it's invalid."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:684(title) 
+#: /tmp/cicero-QcwG/sources.xml:684(title) 
 msgid "Unknown"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:690(programlisting) 
+#: /tmp/cicero-QcwG/sources.xml:690(programlisting) 
 #, no-wrap
 msgid "\nBAD:    unknown node type\nBETTER: unrecognized node type: 42\n"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:685(para) 
+#: /tmp/cicero-QcwG/sources.xml:685(para) 
 msgid "Try to avoid <quote>unknown</quote>. Consider <quote>error: unknown response</quote>. If you don't know what the response is, how do you know it's erroneous? <quote>Unrecognized</quote> is often a better choice. Also, be sure to include the value being complained of. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:698(title) 
+#: /tmp/cicero-QcwG/sources.xml:698(title) 
 msgid "Find vs. Exists"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:699(para) 
+#: /tmp/cicero-QcwG/sources.xml:699(para) 
 msgid "If the program uses a nontrivial algorithm to locate a resource (e.g., a path search) and that algorithm fails, it is fair to say that the program couldn't <quote>find</quote> the resource. If, on the other hand, the expected location of the resource is known but the program cannot access it there then say that the resource doesn't <quote>exist</quote>. Using <quote>find</quote> in this case sounds weak and confuses the issue."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:710(title) 
+#: /tmp/cicero-QcwG/sources.xml:710(title) 
 msgid "May vs. Can vs. Might"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:711(para) 
+#: /tmp/cicero-QcwG/sources.xml:711(para) 
 msgid "<quote>May</quote> suggests permission (e.g., \"You may borrow my rake.\"), and has little use in documentation or error messages. <quote>Can</quote> suggests ability (e.g., \"I can lift that log.\"), and <quote>might</quote> suggests possibility (e.g., \"It might rain today.\"). Using the proper word clarifies meaning and assists translation."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:722(title) 
+#: /tmp/cicero-QcwG/sources.xml:722(title) 
 msgid "Contractions"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:723(para) 
+#: /tmp/cicero-QcwG/sources.xml:723(para) 
 msgid "Avoid contractions, like <quote>can't</quote>; use <quote>cannot</quote> instead."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:732(title) 
+#: /tmp/cicero-QcwG/sources.xml:732(title) 
 msgid "Proper Spelling"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:738(para) 
+#: /tmp/cicero-QcwG/sources.xml:738(para) 
 msgid "spec"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:743(para) 
+#: /tmp/cicero-QcwG/sources.xml:743(para) 
 msgid "stats"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:748(para) 
+#: /tmp/cicero-QcwG/sources.xml:748(para) 
 msgid "parens"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:753(para) 
+#: /tmp/cicero-QcwG/sources.xml:753(para) 
 msgid "auth"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:758(para) 
+#: /tmp/cicero-QcwG/sources.xml:758(para) 
 msgid "xact"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:734(para) 
+#: /tmp/cicero-QcwG/sources.xml:734(para) 
 msgid "Spell out words in full. For instance, avoid: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:765(para) 
+#: /tmp/cicero-QcwG/sources.xml:765(para) 
 msgid "Rationale: This will improve consistency."
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:772(title) 
+#: /tmp/cicero-QcwG/sources.xml:772(title) 
 msgid "Localization"
 msgstr ""
 
-#: /tmp/cicero-TfQb/sources.xml:774(para) 
+#: /tmp/cicero-QcwG/sources.xml:774(para) 
 msgid "Keep in mind that error message texts need to be translated into other languages. Follow the guidelines in <xref linkend=\"nls-guidelines\"/> to avoid making life difficult for translators."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-TfQb/sources.xml:0(None) 
+#: /tmp/cicero-QcwG/sources.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
