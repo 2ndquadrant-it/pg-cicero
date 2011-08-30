@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-29 06:57+0200\n"
+"POT-Creation-Date: 2011-08-30 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,166 +9,166 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:9(refentrytitle) /tmp/cicero-QcwG/ref/create_domain.xml:15(refname) /tmp/cicero-QcwG/ref/create_domain.xml:20(primary) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:9(refentrytitle) /tmp/cicero-vKlc/ref/create_domain.xml:15(refname) /tmp/cicero-vKlc/ref/create_domain.xml:20(primary) 
 msgid "CREATE DOMAIN"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:10(manvolnum) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:11(refmiscinfo) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:16(refpurpose) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:16(refpurpose) 
 msgid "define a new domain"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:25(replaceable) /tmp/cicero-QcwG/ref/create_domain.xml:70(replaceable) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:25(replaceable) /tmp/cicero-vKlc/ref/create_domain.xml:70(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:25(replaceable) /tmp/cicero-QcwG/ref/create_domain.xml:79(replaceable) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:25(replaceable) /tmp/cicero-vKlc/ref/create_domain.xml:79(replaceable) 
 msgid "data_type"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:26(replaceable) /tmp/cicero-QcwG/ref/create_domain.xml:89(replaceable) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:26(replaceable) /tmp/cicero-vKlc/ref/create_domain.xml:89(replaceable) 
 msgid "collation"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:27(replaceable) /tmp/cicero-QcwG/ref/create_domain.xml:33(replaceable) /tmp/cicero-QcwG/ref/create_domain.xml:101(replaceable) /tmp/cicero-QcwG/ref/create_domain.xml:164(replaceable) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:27(replaceable) /tmp/cicero-vKlc/ref/create_domain.xml:33(replaceable) /tmp/cicero-vKlc/ref/create_domain.xml:101(replaceable) /tmp/cicero-vKlc/ref/create_domain.xml:164(replaceable) 
 msgid "expression"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:28(replaceable) /tmp/cicero-QcwG/ref/create_domain.xml:30(replaceable) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:28(replaceable) /tmp/cicero-vKlc/ref/create_domain.xml:30(replaceable) 
 msgid "constraint"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:30(phrase) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:30(phrase) 
 msgid "where <placeholder-1/> is:"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:32(replaceable) /tmp/cicero-QcwG/ref/create_domain.xml:125(replaceable) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:32(replaceable) /tmp/cicero-vKlc/ref/create_domain.xml:125(replaceable) 
 msgid "constraint_name"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:24(synopsis) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE DOMAIN <placeholder-1/> [ AS ] <placeholder-2/>\n    [ COLLATE <placeholder-3/> ]\n    [ DEFAULT <placeholder-4/> ]\n    [ <placeholder-5/> [ ... ] ]\n\n<placeholder-6/>\n\n[ CONSTRAINT <placeholder-7/> ]\n{ NOT NULL | NULL | CHECK (<placeholder-8/>) }\n"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:38(title) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:38(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:40(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:40(para) 
 msgid "<command>CREATE DOMAIN</command> creates a new domain. A domain is essentially a data type with optional constraints (restrictions on the allowed set of values). The user who defines a domain becomes its owner."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:47(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:47(para) 
 msgid "If a schema name is given (for example, <literal>CREATE DOMAIN myschema.mydomain ...</literal>) then the domain is created in the specified schema. Otherwise it is created in the current schema. The domain name must be unique among the types and domains existing in its schema."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:55(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:55(para) 
 msgid "Domains are useful for abstracting common constraints on fields into a single location for maintenance. For example, several tables might contain email address columns, all requiring the same CHECK constraint to verify the address syntax. Define a domain rather than setting up each table's constraint individually."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:66(title) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:66(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:72(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:72(para) 
 msgid "The name (optionally schema-qualified) of a domain to be created."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:81(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:81(para) 
 msgid "The underlying data type of the domain. This can include array specifiers."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:91(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:91(para) 
 msgid "An optional collation for the domain. If no collation is specified, the underlying data type's default collation is used. The underlying type must be collatable if <literal>COLLATE</literal> is specified."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:101(literal) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:101(literal) 
 msgid "DEFAULT <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:104(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:104(para) 
 msgid "The <literal>DEFAULT</literal> clause specifies a default value for columns of the domain data type. The value is any variable-free expression (but subqueries are not allowed). The data type of the default expression must match the data type of the domain. If no default value is specified, then the default value is the null value."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:113(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:113(para) 
 msgid "The default expression will be used in any insert operation that does not specify a value for the column. If a default value is defined for a particular column, it overrides any default associated with the domain. In turn, the domain default overrides any default value associated with the underlying data type."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:125(literal) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:125(literal) 
 msgid "CONSTRAINT <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:127(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:127(para) 
 msgid "An optional name for a constraint. If not specified, the system generates a name."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:135(literal) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:135(literal) 
 msgid "NOT NULL"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:137(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:137(para) 
 msgid "Values of this domain are normally prevented from being null. However, it is still possible for a domain with this constraint to take a null value if it is assigned a matching domain type that has become null, e.g. via a LEFT OUTER JOIN, or <command>INSERT INTO tab (domcol) VALUES ((SELECT domcol FROM tab WHERE false))</command>."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:149(literal) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:149(literal) 
 msgid "NULL"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:151(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:151(para) 
 msgid "Values of this domain are allowed to be null. This is the default."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:155(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:155(para) 
 msgid "This clause is only intended for compatibility with nonstandard SQL databases. Its use is discouraged in new applications."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:164(literal) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:164(literal) 
 msgid "CHECK (<placeholder-1/>)"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:166(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:166(para) 
 msgid "<literal>CHECK</literal> clauses specify integrity constraints or tests which values of the domain must satisfy. Each constraint must be an expression producing a Boolean result. It should use the key word <literal>VALUE</literal> to refer to the value being tested."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:173(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:173(para) 
 msgid "Currently, <literal>CHECK</literal> expressions cannot contain subqueries nor refer to variables other than <literal>VALUE</literal>."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:183(title) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:183(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:190(programlisting) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:190(programlisting) 
 #, no-wrap
 msgid "\nCREATE DOMAIN us_postal_code AS TEXT\nCHECK(\n   VALUE ~ '^\\\\d{5}$'\nOR VALUE ~ '^\\\\d{5}-\\\\d{4}$'\n);\n\nCREATE TABLE us_snail_addy (\n  address_id SERIAL PRIMARY KEY,\n  street1 TEXT NOT NULL,\n  street2 TEXT,\n  street3 TEXT,\n  city TEXT NOT NULL,\n  postal us_postal_code NOT NULL\n);\n"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:185(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:185(para) 
 msgid "This example creates the <type>us_postal_code</type> data type and then uses the type in a table definition. A regular expression test is used to verify that the value looks like a valid US postal code: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:209(title) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:209(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:211(para) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:211(para) 
 msgid "The command <command>CREATE DOMAIN</command> conforms to the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-QcwG/ref/create_domain.xml:218(title) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:218(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QcwG/ref/create_domain.xml:0(None) 
+#: /tmp/cicero-vKlc/ref/create_domain.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
