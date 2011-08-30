@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-29 06:59+0200\n"
+"POT-Creation-Date: 2011-08-30 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,85 +9,85 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-qMnb/ref/reset.xml:10(refentrytitle) /tmp/cicero-qMnb/ref/reset.xml:16(refname) /tmp/cicero-qMnb/ref/reset.xml:21(primary) 
+#: /tmp/cicero-IAZA/ref/reset.xml:10(refentrytitle) /tmp/cicero-IAZA/ref/reset.xml:16(refname) /tmp/cicero-IAZA/ref/reset.xml:21(primary) 
 msgid "RESET"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:11(manvolnum) 
+#: /tmp/cicero-IAZA/ref/reset.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:12(refmiscinfo) 
+#: /tmp/cicero-IAZA/ref/reset.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:17(refpurpose) 
+#: /tmp/cicero-IAZA/ref/reset.xml:17(refpurpose) 
 msgid "restore the value of a run-time parameter to the default value"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:26(replaceable) /tmp/cicero-qMnb/ref/reset.xml:68(replaceable) 
+#: /tmp/cicero-IAZA/ref/reset.xml:26(replaceable) /tmp/cicero-IAZA/ref/reset.xml:68(replaceable) 
 msgid "configuration_parameter"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:25(synopsis) 
+#: /tmp/cicero-IAZA/ref/reset.xml:25(synopsis) 
 #, no-wrap
 msgid "\nRESET <placeholder-1/>\nRESET ALL\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:32(title) 
+#: /tmp/cicero-IAZA/ref/reset.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:34(para) 
+#: /tmp/cicero-IAZA/ref/reset.xml:34(para) 
 msgid "<command>RESET</command> restores run-time parameters to their default values. <command>RESET</command> is an alternative spelling for <synopsis>\nSET <replaceable class=\"parameter\">configuration_parameter</replaceable> TO DEFAULT\n</synopsis> Refer to <xref linkend=\"sql-set\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:45(para) 
+#: /tmp/cicero-IAZA/ref/reset.xml:45(para) 
 msgid "The default value is defined as the value that the parameter would have had, if no <command>SET</command> had ever been issued for it in the current session. The actual source of this value might be a compiled-in default, the configuration file, command-line options, or per-database or per-user default settings. This is subtly different from defining it as <quote>the value that the parameter had at session start</quote>, because if the value came from the configuration file, it will be reset to whatever is specified by the configuration file now. See <xref linkend=\"runtime-config\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:57(para) 
+#: /tmp/cicero-IAZA/ref/reset.xml:57(para) 
 msgid "The transactional behavior of <command>RESET</command> is the same as <command>SET</command>: its effects will be undone by transaction rollback."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:64(title) 
+#: /tmp/cicero-IAZA/ref/reset.xml:64(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:70(para) 
+#: /tmp/cicero-IAZA/ref/reset.xml:70(para) 
 msgid "Name of a settable run-time parameter. Available parameters are documented in <xref linkend=\"runtime-config\"/> and on the <xref linkend=\"sql-set\"/> reference page."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:79(literal) 
+#: /tmp/cicero-IAZA/ref/reset.xml:79(literal) 
 msgid "ALL"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:81(para) 
+#: /tmp/cicero-IAZA/ref/reset.xml:81(para) 
 msgid "Resets all settable run-time parameters to default values."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:90(title) 
+#: /tmp/cicero-IAZA/ref/reset.xml:90(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:92(para) 
+#: /tmp/cicero-IAZA/ref/reset.xml:92(para) 
 msgid "Set the <varname>timezone</varname> configuration variable to its default value: <screen>\nRESET timezone;\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:100(title) 
+#: /tmp/cicero-IAZA/ref/reset.xml:100(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:102(para) 
+#: /tmp/cicero-IAZA/ref/reset.xml:102(para) 
 msgid "<command>RESET</command> is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/reset.xml:108(title) 
+#: /tmp/cicero-IAZA/ref/reset.xml:108(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-qMnb/ref/reset.xml:0(None) 
+#: /tmp/cicero-IAZA/ref/reset.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

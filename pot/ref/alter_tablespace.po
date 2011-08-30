@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-29 06:59+0200\n"
+"POT-Creation-Date: 2011-08-30 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,119 +9,119 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:10(refentrytitle) /tmp/cicero-qMnb/ref/alter_tablespace.xml:16(refname) /tmp/cicero-qMnb/ref/alter_tablespace.xml:21(primary) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:10(refentrytitle) /tmp/cicero-IAZA/ref/alter_tablespace.xml:16(refname) /tmp/cicero-IAZA/ref/alter_tablespace.xml:21(primary) 
 msgid "ALTER TABLESPACE"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:11(manvolnum) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:12(refmiscinfo) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:17(refpurpose) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:17(refpurpose) 
 msgid "change the definition of a tablespace"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:26(replaceable) /tmp/cicero-qMnb/ref/alter_tablespace.xml:27(replaceable) /tmp/cicero-qMnb/ref/alter_tablespace.xml:28(replaceable) /tmp/cicero-qMnb/ref/alter_tablespace.xml:29(replaceable) /tmp/cicero-qMnb/ref/alter_tablespace.xml:54(replaceable) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:26(replaceable) /tmp/cicero-IAZA/ref/alter_tablespace.xml:27(replaceable) /tmp/cicero-IAZA/ref/alter_tablespace.xml:28(replaceable) /tmp/cicero-IAZA/ref/alter_tablespace.xml:29(replaceable) /tmp/cicero-IAZA/ref/alter_tablespace.xml:54(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:26(replaceable) /tmp/cicero-qMnb/ref/alter_tablespace.xml:63(replaceable) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:26(replaceable) /tmp/cicero-IAZA/ref/alter_tablespace.xml:63(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:27(replaceable) /tmp/cicero-qMnb/ref/alter_tablespace.xml:74(replaceable) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:27(replaceable) /tmp/cicero-IAZA/ref/alter_tablespace.xml:74(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:28(replaceable) /tmp/cicero-qMnb/ref/alter_tablespace.xml:29(replaceable) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:28(replaceable) /tmp/cicero-IAZA/ref/alter_tablespace.xml:29(replaceable) 
 msgid "tablespace_option"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:28(replaceable) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:28(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:25(synopsis) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:25(synopsis) 
 #, no-wrap
 msgid "\nALTER TABLESPACE <placeholder-1/> RENAME TO <placeholder-2/>\nALTER TABLESPACE <placeholder-3/> OWNER TO <placeholder-4/>\nALTER TABLESPACE <placeholder-5/> SET ( <placeholder-6/> = <placeholder-7/> [, ... ] )\nALTER TABLESPACE <placeholder-8/> RESET ( <placeholder-9/> [, ... ] )\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:34(title) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:34(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:36(para) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:36(para) 
 msgid "<command>ALTER TABLESPACE</command> changes the definition of a tablespace."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:41(para) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:41(para) 
 msgid "You must own the tablespace to use <command>ALTER TABLESPACE</command>. To alter the owner, you must also be a direct or indirect member of the new owning role. (Note that superusers have these privileges automatically.)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:50(title) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:50(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:56(para) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:56(para) 
 msgid "The name of an existing tablespace."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:65(para) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:65(para) 
 msgid "The new name of the tablespace. The new name cannot begin with <literal>pg_</literal>, as such names are reserved for system tablespaces."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:76(para) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:76(para) 
 msgid "The new owner of the tablespace."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:83(replaceable) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:83(replaceable) 
 msgid "tablespace_parameter"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:85(para) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:85(para) 
 msgid "A tablespace parameter to be set or reset. Currently, the only available parameters are <varname>seq_page_cost</varname> and <varname>random_page_cost</varname>. Setting either value for a particular tablespace will override the planner's usual estimate of the cost of reading pages from tables in that tablespace, as established by the configuration parameters of the same name (see <xref linkend=\"guc-seq-page-cost\"/>, <xref linkend=\"guc-random-page-cost\"/>). This may be useful if one tablespace is located on a disk which is faster or slower than the remainder of the I/O subsystem."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:103(title) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:103(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:107(programlisting) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:107(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLESPACE index_space RENAME TO fast_raid;\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:105(para) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:105(para) 
 msgid "Rename tablespace <literal>index_space</literal> to <literal>fast_raid</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:114(programlisting) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:114(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLESPACE index_space OWNER TO mary;\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:112(para) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:112(para) 
 msgid "Change the owner of tablespace <literal>index_space</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:120(title) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:120(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:122(para) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:122(para) 
 msgid "There is no <command>ALTER TABLESPACE</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:129(title) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:129(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-qMnb/ref/alter_tablespace.xml:0(None) 
+#: /tmp/cicero-IAZA/ref/alter_tablespace.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

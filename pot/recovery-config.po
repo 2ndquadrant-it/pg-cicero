@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-29 06:59+0200\n"
+"POT-Creation-Date: 2011-08-30 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,230 +9,230 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-qMnb/recovery-config.xml:6(title) 
+#: /tmp/cicero-IAZA/recovery-config.xml:6(title) 
 msgid "Recovery Configuration"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:9(primary) 
+#: /tmp/cicero-IAZA/recovery-config.xml:9(primary) 
 msgid "configuration"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:10(secondary) 
+#: /tmp/cicero-IAZA/recovery-config.xml:10(secondary) 
 msgid "of recovery"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:11(tertiary) 
+#: /tmp/cicero-IAZA/recovery-config.xml:11(tertiary) 
 msgid "of a standby server"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:14(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:14(para) 
 msgid "This chapter describes the settings available in the <filename>recovery.conf</filename> file. They apply only for the duration of the recovery. They must be reset for any subsequent recovery you wish to perform. They cannot be changed once recovery has begun."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:21(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:21(para) 
 msgid "Settings in <filename>recovery.conf</filename> are specified in the format <literal>name = 'value'</literal>. One parameter is specified per line. Hash marks (<literal>#</literal>) designate the rest of the line as a comment. To embed a single quote in a parameter value, write two quotes (<literal>''</literal>)."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:29(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:29(para) 
 msgid "A sample file, <filename>share/recovery.conf.sample</filename>, is provided in the installation's <filename>share/</filename> directory."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:36(title) 
+#: /tmp/cicero-IAZA/recovery-config.xml:36(title) 
 msgid "Archive Recovery Settings"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:40(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:40(term) 
 msgid "<varname>restore_command</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:42(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:42(varname) 
 msgid "restore_command"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:42(primary) /tmp/cicero-qMnb/recovery-config.xml:81(primary) /tmp/cicero-qMnb/recovery-config.xml:119(primary) /tmp/cicero-qMnb/recovery-config.xml:153(primary) /tmp/cicero-qMnb/recovery-config.xml:172(primary) /tmp/cicero-qMnb/recovery-config.xml:191(primary) /tmp/cicero-qMnb/recovery-config.xml:217(primary) /tmp/cicero-qMnb/recovery-config.xml:239(primary) /tmp/cicero-qMnb/recovery-config.xml:261(primary) /tmp/cicero-qMnb/recovery-config.xml:295(primary) /tmp/cicero-qMnb/recovery-config.xml:312(primary) /tmp/cicero-qMnb/recovery-config.xml:349(primary) 
+#: /tmp/cicero-IAZA/recovery-config.xml:42(primary) /tmp/cicero-IAZA/recovery-config.xml:81(primary) /tmp/cicero-IAZA/recovery-config.xml:119(primary) /tmp/cicero-IAZA/recovery-config.xml:153(primary) /tmp/cicero-IAZA/recovery-config.xml:172(primary) /tmp/cicero-IAZA/recovery-config.xml:191(primary) /tmp/cicero-IAZA/recovery-config.xml:217(primary) /tmp/cicero-IAZA/recovery-config.xml:239(primary) /tmp/cicero-IAZA/recovery-config.xml:261(primary) /tmp/cicero-IAZA/recovery-config.xml:295(primary) /tmp/cicero-IAZA/recovery-config.xml:312(primary) /tmp/cicero-IAZA/recovery-config.xml:349(primary) 
 msgid "<placeholder-1/> recovery parameter"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:45(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:45(para) 
 msgid "The shell command to execute to retrieve an archived segment of the WAL file series. This parameter is required for archive recovery, but optional for streaming replication. Any <literal>%f</literal> in the string is replaced by the name of the file to retrieve from the archive, and any <literal>%p</literal> is replaced by the copy destination path name on the server. (The path name is relative to the current working directory, i.e., the cluster's data directory.) Any <literal>%r</literal> is replaced by the name of the file containing the last valid restart point. That is the earliest file that must be kept to allow a restore to be restartable, so this information can be used to truncate the archive to just the minimum required to support restarting from the current restore. <literal>%r</literal> is typically only used by warm-standby configurations (see <xref linkend=\"warm-standby\"/>). Write <literal>%%</literal> to embed an actual <literal>%</literal> character."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:70(programlisting) 
+#: /tmp/cicero-IAZA/recovery-config.xml:70(programlisting) 
 #, no-wrap
 msgid "\nrestore_command = 'cp /mnt/server/archivedir/%f \"%p\"'\nrestore_command = 'copy \"C:\\\\server\\\\archivedir\\\\%f\" \"%p\"'  # Windows\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:65(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:65(para) 
 msgid "It is important for the command to return a zero exit status only if it succeeds. The command <emphasis>will</emphasis> be asked for file names that are not present in the archive; it must return nonzero when so asked. Examples: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:79(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:79(term) 
 msgid "<varname>archive_cleanup_command</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:81(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:81(varname) 
 msgid "archive_cleanup_command"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:100(programlisting) 
+#: /tmp/cicero-IAZA/recovery-config.xml:100(programlisting) 
 #, no-wrap
 msgid "archive_cleanup_command = 'pg_archivecleanup /mnt/server/archivedir %r'"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:84(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:84(para) 
 msgid "This optional parameter specifies a shell command that will be executed at every restartpoint. The purpose of <varname>archive_cleanup_command</varname> is to provide a mechanism for cleaning up old archived WAL files that are no longer needed by the standby server. Any <literal>%r</literal> is replaced by the name of the file containing the last valid restart point. That is the earliest file that must be <emphasis>kept</emphasis> to allow a restore to be restartable, and so all files earlier than <literal>%r</literal> may be safely removed. This information can be used to truncate the archive to just the minimum required to support restart from the current restore. The <xref linkend=\"pgarchivecleanup\"/> module is often used in <varname>archive_cleanup_command</varname> for single-standby configurations, for example: <placeholder-1/> Note however that if multiple standby servers are restoring from the same archive directory, you will need to ensure that you do not delete WAL files until they are no longer needed by any of the servers. <varname>archive_cleanup_command</varname> would typically be used in a warm-standby configuration (see <xref linkend=\"warm-standby\"/>). Write <literal>%%</literal> to embed an actual <literal>%</literal> character in the command."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:109(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:109(para) 
 msgid "If the command returns a non-zero exit status then a WARNING log message will be written."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:117(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:117(term) 
 msgid "<varname>recovery_end_command</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:119(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:119(varname) 
 msgid "recovery_end_command"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:122(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:122(para) 
 msgid "This parameter specifies a shell command that will be executed once only at the end of recovery. This parameter is optional. The purpose of the <varname>recovery_end_command</varname> is to provide a mechanism for cleanup following replication or recovery. Any <literal>%r</literal> is replaced by the name of the file containing the last valid restart point, like in <xref linkend=\"archive-cleanup-command\"/>."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:130(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:130(para) 
 msgid "If the command returns a non-zero exit status then a WARNING log message will be written and the database will proceed to start up anyway. An exception is that if the command was terminated by a signal, the database will not proceed with startup."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:145(title) 
+#: /tmp/cicero-IAZA/recovery-config.xml:145(title) 
 msgid "Recovery Target Settings"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:149(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:149(term) 
 msgid "<varname>recovery_target_name</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:153(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:153(varname) 
 msgid "recovery_target_name"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:156(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:156(para) 
 msgid "This parameter specifies the named restore point, created with <function>pg_create_restore_point()</function> to which recovery will proceed. At most one of <varname>recovery_target_name</varname>, <xref linkend=\"recovery-target-time\"/> or <xref linkend=\"recovery-target-xid\"/> can be specified. The default is to recover to the end of the WAL log."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:168(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:168(term) 
 msgid "<varname>recovery_target_time</varname> (<type>timestamp</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:172(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:172(varname) 
 msgid "recovery_target_time"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:175(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:175(para) 
 msgid "This parameter specifies the time stamp up to which recovery will proceed. At most one of <varname>recovery_target_time</varname>, <xref linkend=\"recovery-target-name\"/> or <xref linkend=\"recovery-target-xid\"/> can be specified. The default is to recover to the end of the WAL log. The precise stopping point is also influenced by <xref linkend=\"recovery-target-inclusive\"/>."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:189(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:189(term) 
 msgid "<varname>recovery_target_xid</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:191(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:191(varname) 
 msgid "recovery_target_xid"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:194(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:194(para) 
 msgid "This parameter specifies the transaction ID up to which recovery will proceed. Keep in mind that while transaction IDs are assigned sequentially at transaction start, transactions can complete in a different numeric order. The transactions that will be recovered are those that committed before (and optionally including) the specified one. At most one of <varname>recovery_target_xid</varname>, <xref linkend=\"recovery-target-name\"/> or <xref linkend=\"recovery-target-time\"/> can be specified. The default is to recover to the end of the WAL log. The precise stopping point is also influenced by <xref linkend=\"recovery-target-inclusive\"/>."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:213(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:213(term) 
 msgid "<varname>recovery_target_inclusive</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:217(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:217(varname) 
 msgid "recovery_target_inclusive"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:220(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:220(para) 
 msgid "Specifies whether we stop just after the specified recovery target (<literal>true</literal>), or just before the recovery target (<literal>false</literal>). Applies to both <xref linkend=\"recovery-target-time\"/> and <xref linkend=\"recovery-target-xid\"/>, whichever one is specified for this recovery. This indicates whether transactions having exactly the target commit time or ID, respectively, will be included in the recovery. Default is <literal>true</literal>."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:235(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:235(term) 
 msgid "<varname>recovery_target_timeline</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:239(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:239(varname) 
 msgid "recovery_target_timeline"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:242(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:242(para) 
 msgid "Specifies recovering into a particular timeline. The default is to recover along the same timeline that was current when the base backup was taken. Setting this to <literal>latest</literal> recovers to the latest timeline found in the archive, which is useful in a standby server. Other than that you only need to set this parameter in complex re-recovery situations, where you need to return to a state that itself was reached after a point-in-time recovery. See <xref linkend=\"backup-timelines\"/> for discussion."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:257(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:257(term) 
 msgid "<varname>pause_at_recovery_target</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:261(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:261(varname) 
 msgid "pause_at_recovery_target"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:264(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:264(para) 
 msgid "Specifies whether recovery should pause when the recovery target is reached. The default is true. This is intended to allow queries to be executed against the database to check if this recovery target is the most desirable point for recovery. The paused state can be resumed by using <function>pg_xlog_replay_resume()</function> (See <xref linkend=\"functions-recovery-control-table\"/>), which then causes recovery to end. If this recovery target is not the desired stopping point, then shutdown the server, change the recovery target settings to a later target and restart to continue recovery."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:277(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:277(para) 
 msgid "This setting has no effect if <xref linkend=\"guc-hot-standby\"/> is not enabled, or if no recovery target is set."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:289(title) 
+#: /tmp/cicero-IAZA/recovery-config.xml:289(title) 
 msgid "Standby Server Settings"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:293(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:293(term) 
 msgid "<varname>standby_mode</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:295(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:295(varname) 
 msgid "standby_mode"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:298(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:298(para) 
 msgid "Specifies whether to start the <productname>PostgreSQL</productname> server as a standby. If this parameter is <literal>on</literal>, the server will not stop recovery when the end of archived WAL is reached, but will keep trying to continue recovery by fetching new WAL segments using <varname>restore_command</varname> and/or by connecting to the primary server as specified by the <varname>primary_conninfo</varname> setting."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:310(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:310(term) 
 msgid "<varname>primary_conninfo</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:312(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:312(varname) 
 msgid "primary_conninfo"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:315(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:315(para) 
 msgid "Specifies a connection string to be used for the standby server to connect with the primary. This string is in the format accepted by the libpq <function>PQconnectdb</function> function, described in <xref linkend=\"libpq-connect\"/>. If any option is unspecified in this string, then the corresponding environment variable (see <xref linkend=\"libpq-envars\"/>) is checked. If the environment variable is not set either, then defaults are used."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:325(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:325(para) 
 msgid "The connection string should specify the host name (or address) of the primary server, as well as the port number if it is not the same as the standby server's default. Also specify a user name corresponding to a role that has the <literal>SUPERUSER</literal> and <literal>LOGIN</literal> privileges on the primary (see <xref linkend=\"streaming-replication-authentication\"/>). A password needs to be provided too, if the primary demands password authentication. It can be provided in the <varname>primary_conninfo</varname> string, or in a separate <filename>~/.pgpass</filename> file on the standby server (use <literal>replication</literal> as the database name). Do not specify a database name in the <varname>primary_conninfo</varname> string."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:341(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:341(para) 
 msgid "This setting has no effect if <varname>standby_mode</varname> is <literal>off</literal>."
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:347(term) 
+#: /tmp/cicero-IAZA/recovery-config.xml:347(term) 
 msgid "<varname>trigger_file</varname> (<type>string</type>)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:349(varname) 
+#: /tmp/cicero-IAZA/recovery-config.xml:349(varname) 
 msgid "trigger_file"
 msgstr ""
 
-#: /tmp/cicero-qMnb/recovery-config.xml:352(para) 
+#: /tmp/cicero-IAZA/recovery-config.xml:352(para) 
 msgid "Specifies a trigger file whose presence ends recovery in the standby. Even if this value is not set, you can still promote the standby using <command>pg_ctl promote</command>. This setting has no effect if <varname>standby_mode</varname> is <literal>off</literal>."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-qMnb/recovery-config.xml:0(None) 
+#: /tmp/cicero-IAZA/recovery-config.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-29 06:59+0200\n"
+"POT-Creation-Date: 2011-08-30 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,106 +9,106 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-qMnb/ref/close.xml:10(refentrytitle) /tmp/cicero-qMnb/ref/close.xml:16(refname) /tmp/cicero-qMnb/ref/close.xml:21(primary) /tmp/cicero-qMnb/ref/close.xml:26(secondary) 
+#: /tmp/cicero-IAZA/ref/close.xml:10(refentrytitle) /tmp/cicero-IAZA/ref/close.xml:16(refname) /tmp/cicero-IAZA/ref/close.xml:21(primary) /tmp/cicero-IAZA/ref/close.xml:26(secondary) 
 msgid "CLOSE"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:11(manvolnum) 
+#: /tmp/cicero-IAZA/ref/close.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:12(refmiscinfo) 
+#: /tmp/cicero-IAZA/ref/close.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:17(refpurpose) 
+#: /tmp/cicero-IAZA/ref/close.xml:17(refpurpose) 
 msgid "close a cursor"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:25(primary) 
+#: /tmp/cicero-IAZA/ref/close.xml:25(primary) 
 msgid "cursor"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:31(replaceable) /tmp/cicero-qMnb/ref/close.xml:62(replaceable) 
+#: /tmp/cicero-IAZA/ref/close.xml:31(replaceable) /tmp/cicero-IAZA/ref/close.xml:62(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:30(synopsis) 
+#: /tmp/cicero-IAZA/ref/close.xml:30(synopsis) 
 #, no-wrap
 msgid "\nCLOSE { <placeholder-1/> | ALL }\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:36(title) 
+#: /tmp/cicero-IAZA/ref/close.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:38(para) 
+#: /tmp/cicero-IAZA/ref/close.xml:38(para) 
 msgid "<command>CLOSE</command> frees the resources associated with an open cursor. After the cursor is closed, no subsequent operations are allowed on it. A cursor should be closed when it is no longer needed."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:45(para) 
+#: /tmp/cicero-IAZA/ref/close.xml:45(para) 
 msgid "Every non-holdable open cursor is implicitly closed when a transaction is terminated by <command>COMMIT</command> or <command>ROLLBACK</command>. A holdable cursor is implicitly closed if the transaction that created it aborts via <command>ROLLBACK</command>. If the creating transaction successfully commits, the holdable cursor remains open until an explicit <command>CLOSE</command> is executed, or the client disconnects."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:58(title) 
+#: /tmp/cicero-IAZA/ref/close.xml:58(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:64(para) 
+#: /tmp/cicero-IAZA/ref/close.xml:64(para) 
 msgid "The name of an open cursor to close."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:71(literal) 
+#: /tmp/cicero-IAZA/ref/close.xml:71(literal) 
 msgid "ALL"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:73(para) 
+#: /tmp/cicero-IAZA/ref/close.xml:73(para) 
 msgid "Close all open cursors."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:83(title) 
+#: /tmp/cicero-IAZA/ref/close.xml:83(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:85(para) 
+#: /tmp/cicero-IAZA/ref/close.xml:85(para) 
 msgid "<productname>PostgreSQL</productname> does not have an explicit <command>OPEN</command> cursor statement; a cursor is considered open when it is declared. Use the <xref linkend=\"sql-declare\"/> statement to declare a cursor."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:93(para) 
+#: /tmp/cicero-IAZA/ref/close.xml:93(para) 
 msgid "You can see all available cursors by querying the <link linkend=\"view-pg-cursors\"><structname>pg_cursors</structname></link> system view."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:98(para) 
+#: /tmp/cicero-IAZA/ref/close.xml:98(para) 
 msgid "If a cursor is closed after a savepoint which is later rolled back, the <command>CLOSE</command> is not rolled back; that is, the cursor remains closed."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:106(title) 
+#: /tmp/cicero-IAZA/ref/close.xml:106(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:110(programlisting) 
+#: /tmp/cicero-IAZA/ref/close.xml:110(programlisting) 
 #, no-wrap
 msgid "\nCLOSE liahona;\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:108(para) 
+#: /tmp/cicero-IAZA/ref/close.xml:108(para) 
 msgid "Close the cursor <literal>liahona</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:116(title) 
+#: /tmp/cicero-IAZA/ref/close.xml:116(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:118(para) 
+#: /tmp/cicero-IAZA/ref/close.xml:118(para) 
 msgid "<command>CLOSE</command> is fully conforming with the SQL standard. <command>CLOSE ALL</command> is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/close.xml:126(title) 
+#: /tmp/cicero-IAZA/ref/close.xml:126(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-qMnb/ref/close.xml:0(None) 
+#: /tmp/cicero-IAZA/ref/close.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

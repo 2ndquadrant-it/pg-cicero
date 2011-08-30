@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-29 06:59+0200\n"
+"POT-Creation-Date: 2011-08-30 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,290 +9,290 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-qMnb/xml2.xml:6(title) /tmp/cicero-qMnb/xml2.xml:9(primary) 
+#: /tmp/cicero-IAZA/xml2.xml:6(title) /tmp/cicero-IAZA/xml2.xml:9(primary) 
 msgid "xml2"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:12(para) 
+#: /tmp/cicero-IAZA/xml2.xml:12(para) 
 msgid "The <filename>xml2</filename> module provides XPath querying and XSLT functionality."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:18(title) 
+#: /tmp/cicero-IAZA/xml2.xml:18(title) 
 msgid "Deprecation Notice"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:20(para) 
+#: /tmp/cicero-IAZA/xml2.xml:20(para) 
 msgid "From <productname>PostgreSQL</productname> 8.3 on, there is XML-related functionality based on the SQL/XML standard in the core server. That functionality covers XML syntax checking and XPath queries, which is what this module does, and more, but the API is not at all compatible. It is planned that this module will be removed in PostgreSQL 8.4 in favor of the newer standard API, so you are encouraged to try converting your applications. If you find that some of the functionality of this module is not available in an adequate form with the newer API, please explain your issue to pgsql-hackers@postgresql.org so that the deficiency can be addressed."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:36(title) 
+#: /tmp/cicero-IAZA/xml2.xml:36(title) 
 msgid "Description of Functions"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:38(para) 
+#: /tmp/cicero-IAZA/xml2.xml:38(para) 
 msgid "<xref linkend=\"xml2-functions-table\"/> shows the functions provided by this module. These functions provide straightforward XML parsing and XPath queries. All arguments are of type <type>text</type>, so for brevity that is not shown."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:45(title) 
+#: /tmp/cicero-IAZA/xml2.xml:45(title) 
 msgid "Functions"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:49(entry) 
+#: /tmp/cicero-IAZA/xml2.xml:49(entry) 
 msgid "Function"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:50(entry) 
+#: /tmp/cicero-IAZA/xml2.xml:50(entry) 
 msgid "Returns"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:51(entry) /tmp/cicero-qMnb/xml2.xml:221(entry) 
+#: /tmp/cicero-IAZA/xml2.xml:51(entry) /tmp/cicero-IAZA/xml2.xml:221(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:57(function) 
+#: /tmp/cicero-IAZA/xml2.xml:57(function) 
 msgid "xml_is_well_formed(document)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:62(type) /tmp/cicero-qMnb/xml2.xml:107(type) 
+#: /tmp/cicero-IAZA/xml2.xml:62(type) /tmp/cicero-IAZA/xml2.xml:107(type) 
 msgid "bool"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:65(para) 
+#: /tmp/cicero-IAZA/xml2.xml:65(para) 
 msgid "This parses the document text in its parameter and returns true if the document is well-formed XML. (Note: before PostgreSQL 8.2, this function was called <function>xml_valid()</function>. That is the wrong name since validity and well-formedness have different meanings in XML. The old name is still available, but is deprecated.)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:76(function) 
+#: /tmp/cicero-IAZA/xml2.xml:76(function) 
 msgid "xpath_string(document, query)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:81(type) /tmp/cicero-qMnb/xml2.xml:117(type) /tmp/cicero-qMnb/xml2.xml:140(type) /tmp/cicero-qMnb/xml2.xml:155(type) /tmp/cicero-qMnb/xml2.xml:170(type) /tmp/cicero-qMnb/xml2.xml:187(type) 
+#: /tmp/cicero-IAZA/xml2.xml:81(type) /tmp/cicero-IAZA/xml2.xml:117(type) /tmp/cicero-IAZA/xml2.xml:140(type) /tmp/cicero-IAZA/xml2.xml:155(type) /tmp/cicero-IAZA/xml2.xml:170(type) /tmp/cicero-IAZA/xml2.xml:187(type) 
 msgid "text"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:84(para) 
+#: /tmp/cicero-IAZA/xml2.xml:84(para) 
 msgid "These functions evaluate the XPath query on the supplied document, and cast the result to the specified type."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:92(function) 
+#: /tmp/cicero-IAZA/xml2.xml:92(function) 
 msgid "xpath_number(document, query)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:97(type) 
+#: /tmp/cicero-IAZA/xml2.xml:97(type) 
 msgid "float4"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:102(function) 
+#: /tmp/cicero-IAZA/xml2.xml:102(function) 
 msgid "xpath_bool(document, query)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:112(function) 
+#: /tmp/cicero-IAZA/xml2.xml:112(function) 
 msgid "xpath_nodeset(document, query, toptag, itemtag)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:120(para) 
+#: /tmp/cicero-IAZA/xml2.xml:120(para) 
 msgid "This evaluates query on document and wraps the result in XML tags. If the result is multivalued, the output will look like: <synopsis>\n&lt;toptag&gt;\n&lt;itemtag&gt;Value 1 which could be an XML fragment&lt;/itemtag&gt;\n&lt;itemtag&gt;Value 2....&lt;/itemtag&gt;\n&lt;/toptag&gt;\n</synopsis> If either <literal>toptag</literal> or <literal>itemtag</literal> is an empty string, the relevant tag is omitted."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:135(function) 
+#: /tmp/cicero-IAZA/xml2.xml:135(function) 
 msgid "xpath_nodeset(document, query)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:143(para) 
+#: /tmp/cicero-IAZA/xml2.xml:143(para) 
 msgid "Like <function>xpath_nodeset(document, query, toptag, itemtag)</function> but result omits both tags."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:150(function) 
+#: /tmp/cicero-IAZA/xml2.xml:150(function) 
 msgid "xpath_nodeset(document, query, itemtag)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:158(para) 
+#: /tmp/cicero-IAZA/xml2.xml:158(para) 
 msgid "Like <function>xpath_nodeset(document, query, toptag, itemtag)</function> but result omits toptag."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:165(function) 
+#: /tmp/cicero-IAZA/xml2.xml:165(function) 
 msgid "xpath_list(document, query, separator)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:173(para) 
+#: /tmp/cicero-IAZA/xml2.xml:173(para) 
 msgid "This function returns multiple values separated by the specified separator, for example <literal>Value 1,Value 2,Value 3</literal> if separator is <literal>,</literal>."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:182(function) 
+#: /tmp/cicero-IAZA/xml2.xml:182(function) 
 msgid "xpath_list(document, query)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:190(literal) 
+#: /tmp/cicero-IAZA/xml2.xml:190(literal) 
 msgid ","
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:189(entry) 
+#: /tmp/cicero-IAZA/xml2.xml:189(entry) 
 msgid "This is a wrapper for the above function that uses <placeholder-1/> as the separator."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:200(literal) 
+#: /tmp/cicero-IAZA/xml2.xml:200(literal) 
 msgid "xpath_table"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:202(synopsis) 
+#: /tmp/cicero-IAZA/xml2.xml:202(synopsis) 
 #, no-wrap
 msgid "\nxpath_table(text key, text document, text relation, text xpaths, text criteria) returns setof record\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:206(para) 
+#: /tmp/cicero-IAZA/xml2.xml:206(para) 
 msgid "<function>xpath_table</function> is a table function that evaluates a set of XPath queries on each of a set of documents and returns the results as a table. The primary key field from the original document table is returned as the first column of the result so that the result set can readily be used in joins. The parameters are described in <xref linkend=\"xml2-xpath-table-parameters\"/>."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:216(title) 
+#: /tmp/cicero-IAZA/xml2.xml:216(title) 
 msgid "<function>xpath_table</function> Parameters"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:220(entry) 
+#: /tmp/cicero-IAZA/xml2.xml:220(entry) 
 msgid "Parameter"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:226(parameter) 
+#: /tmp/cicero-IAZA/xml2.xml:226(parameter) 
 msgid "key"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:228(para) 
+#: /tmp/cicero-IAZA/xml2.xml:228(para) 
 msgid "the name of the <quote>key</quote> field — this is just a field to be used as the first column of the output table, i.e., it identifies the record from which each output row came (see note below about multiple values)"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:236(parameter) 
+#: /tmp/cicero-IAZA/xml2.xml:236(parameter) 
 msgid "document"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:238(para) 
+#: /tmp/cicero-IAZA/xml2.xml:238(para) 
 msgid "the name of the field containing the XML document"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:244(parameter) 
+#: /tmp/cicero-IAZA/xml2.xml:244(parameter) 
 msgid "relation"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:246(para) 
+#: /tmp/cicero-IAZA/xml2.xml:246(para) 
 msgid "the name of the table or view containing the documents"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:252(parameter) 
+#: /tmp/cicero-IAZA/xml2.xml:252(parameter) 
 msgid "xpaths"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:254(para) 
+#: /tmp/cicero-IAZA/xml2.xml:254(para) 
 msgid "one or more XPath expressions, separated by <literal>|</literal>"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:260(parameter) 
+#: /tmp/cicero-IAZA/xml2.xml:260(parameter) 
 msgid "criteria"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:262(para) 
+#: /tmp/cicero-IAZA/xml2.xml:262(para) 
 msgid "the contents of the WHERE clause. This cannot be omitted, so use <literal>true</literal> or <literal>1=1</literal> if you want to process all the rows in the relation"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:273(para) 
+#: /tmp/cicero-IAZA/xml2.xml:273(para) 
 msgid "These parameters (except the XPath strings) are just substituted into a plain SQL SELECT statement, so you have some flexibility — the statement is"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:280(literal) 
+#: /tmp/cicero-IAZA/xml2.xml:280(literal) 
 msgid "SELECT &lt;key&gt;, &lt;document&gt; FROM &lt;relation&gt; WHERE &lt;criteria&gt;"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:285(para) 
+#: /tmp/cicero-IAZA/xml2.xml:285(para) 
 msgid "so those parameters can be <emphasis>anything</emphasis> valid in those particular locations. The result from this SELECT needs to return exactly two columns (which it will unless you try to list multiple fields for key or document). Beware that this simplistic approach requires that you validate any user-supplied values to avoid SQL injection attacks."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:296(programlisting) 
+#: /tmp/cicero-IAZA/xml2.xml:296(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM\nxpath_table('article_id',\n            'article_xml',\n            'articles',\n            '/article/author|/article/pages|/article/title',\n            'date_entered &gt; ''2003-01-01'' ')\nAS t(article_id integer, author text, page_count integer, title text);\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:293(para) 
+#: /tmp/cicero-IAZA/xml2.xml:293(para) 
 msgid "The function has to be used in a <literal>FROM</literal> expression, with an <literal>AS</literal> clause to specify the output columns; for example <placeholder-1/> The <literal>AS</literal> clause defines the names and types of the columns in the output table. The first is the <quote>key</quote> field and the rest correspond to the XPath queries. If there are more XPath queries than result columns, the extra queries will be ignored. If there are more result columns than XPath queries, the extra columns will be NULL."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:313(para) 
+#: /tmp/cicero-IAZA/xml2.xml:313(para) 
 msgid "Notice that this example defines the <structname>page_count</structname> result column as an integer. The function deals internally with string representations, so when you say you want an integer in the output, it will take the string representation of the XPath result and use PostgreSQL input functions to transform it into an integer (or whatever type the <type>AS</type> clause requests). An error will result if it can't do this — for example if the result is empty — so you may wish to just stick to <type>text</type> as the column type if you think your data has any problems."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:330(programlisting) 
+#: /tmp/cicero-IAZA/xml2.xml:330(programlisting) 
 #, no-wrap
 msgid "\nSELECT t.title, p.fullname, p.email\nFROM xpath_table('article_id', 'article_xml', 'articles',\n                 '/article/title|/article/author/@id',\n                 'xpath_string(article_xml,''/article/@date'') &gt; ''2003-03-20'' ')\n       AS t(article_id integer, title text, author_id integer),\n     tblPeopleInfo AS p\nWHERE t.author_id = p.person_id;\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:324(para) 
+#: /tmp/cicero-IAZA/xml2.xml:324(para) 
 msgid "The calling <command>SELECT</command> statement doesn't necessarily have be be just <literal>SELECT *</literal> — it can reference the output columns by name or join them to other tables. The function produces a virtual table with which you can perform any operation you wish (e.g. aggregation, joining, sorting etc). So we could also have: <placeholder-1/> as a more complicated example. Of course, you could wrap all of this in a view for convenience."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:344(title) 
+#: /tmp/cicero-IAZA/xml2.xml:344(title) 
 msgid "Multivalued Results"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:346(para) 
+#: /tmp/cicero-IAZA/xml2.xml:346(para) 
 msgid "The <function>xpath_table</function> function assumes that the results of each XPath query might be multivalued, so the number of rows returned by the function may not be the same as the number of input documents. The first row returned contains the first result from each query, the second row the second result from each query. If one of the queries has fewer values than the others, null values will be returned instead."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:363(programlisting) 
+#: /tmp/cicero-IAZA/xml2.xml:363(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE test (\n    id int PRIMARY KEY,\n    xml text\n);\n\nINSERT INTO test VALUES (1, '&lt;doc num=\"C1\"&gt;\n&lt;line num=\"L1\"&gt;&lt;a&gt;1&lt;/a&gt;&lt;b&gt;2&lt;/b&gt;&lt;c&gt;3&lt;/c&gt;&lt;/line&gt;\n&lt;line num=\"L2\"&gt;&lt;a&gt;11&lt;/a&gt;&lt;b&gt;22&lt;/b&gt;&lt;c&gt;33&lt;/c&gt;&lt;/line&gt;\n&lt;/doc&gt;');\n\nINSERT INTO test VALUES (2, '&lt;doc num=\"C2\"&gt;\n&lt;line num=\"L1\"&gt;&lt;a&gt;111&lt;/a&gt;&lt;b&gt;222&lt;/b&gt;&lt;c&gt;333&lt;/c&gt;&lt;/line&gt;\n&lt;line num=\"L2\"&gt;&lt;a&gt;111&lt;/a&gt;&lt;b&gt;222&lt;/b&gt;&lt;c&gt;333&lt;/c&gt;&lt;/line&gt;\n&lt;/doc&gt;');\n\nSELECT * FROM\n  xpath_table('id','xml','test',\n              '/doc/@num|/doc/line/@num|/doc/line/a|/doc/line/b|/doc/line/c',\n              'true')\n  AS t(id int, doc_num varchar(10), line_num varchar(10), val1 int, val2 int, val3 int)\nWHERE id = 1 ORDER BY doc_num, line_num\n\n id | doc_num | line_num | val1 | val2 | val3\n----+---------+----------+------+------+------\n  1 | C1      | L1       |    1 |    2 |    3\n  1 |         | L2       |   11 |   22 |   33\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:355(para) 
+#: /tmp/cicero-IAZA/xml2.xml:355(para) 
 msgid "In some cases, a user will know that a given XPath query will return only a single result (perhaps a unique document identifier) — if used alongside an XPath query returning multiple results, the single-valued result will appear only on the first row of the result. The solution to this is to use the key field as part of a join against a simpler XPath query. As an example: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:397(programlisting) 
+#: /tmp/cicero-IAZA/xml2.xml:397(programlisting) 
 #, no-wrap
 msgid "\nSELECT t.*,i.doc_num FROM\n  xpath_table('id', 'xml', 'test',\n              '/doc/line/@num|/doc/line/a|/doc/line/b|/doc/line/c',\n              'true')\n    AS t(id int, line_num varchar(10), val1 int, val2 int, val3 int),\n  xpath_table('id', 'xml', 'test', '/doc/@num', 'true')\n    AS i(id int, doc_num varchar(10))\nWHERE i.id=t.id AND i.id=1\nORDER BY doc_num, line_num;\n\n id | line_num | val1 | val2 | val3 | doc_num\n----+----------+------+------+------+---------\n  1 | L1       |    1 |    2 |    3 | C1\n  1 | L2       |   11 |   22 |   33 | C1\n(2 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:393(para) 
+#: /tmp/cicero-IAZA/xml2.xml:393(para) 
 msgid "To get <literal>doc_num</literal> on every line, the solution is to use two invocations of <function>xpath_table</function> and join the results: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:419(title) 
+#: /tmp/cicero-IAZA/xml2.xml:419(title) 
 msgid "XSLT Functions"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:421(para) 
+#: /tmp/cicero-IAZA/xml2.xml:421(para) 
 msgid "The following functions are available if libxslt is installed:"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:426(literal) 
+#: /tmp/cicero-IAZA/xml2.xml:426(literal) 
 msgid "xslt_process"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:428(synopsis) 
+#: /tmp/cicero-IAZA/xml2.xml:428(synopsis) 
 #, no-wrap
 msgid "\nxslt_process(text document, text stylesheet, text paramlist) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:432(para) 
+#: /tmp/cicero-IAZA/xml2.xml:432(para) 
 msgid "This function applies the XSL stylesheet to the document and returns the transformed result. The <literal>paramlist</literal> is a list of parameter assignments to be used in the transformation, specified in the form <literal>a=1,b=2</literal>. Note that the parameter parsing is very simple-minded: parameter values cannot contain commas!"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:441(para) 
+#: /tmp/cicero-IAZA/xml2.xml:441(para) 
 msgid "Also note that if either the document or stylesheet values do not begin with a &lt; then they will be treated as URLs and libxslt will fetch them. It follows that you can use <function>xslt_process</function> as a means to fetch the contents of URLs — you should be aware of the security implications of this."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:449(para) 
+#: /tmp/cicero-IAZA/xml2.xml:449(para) 
 msgid "There is also a two-parameter version of <function>xslt_process</function> which does not pass any parameters to the transformation."
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:457(title) 
+#: /tmp/cicero-IAZA/xml2.xml:457(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:459(para) 
+#: /tmp/cicero-IAZA/xml2.xml:459(para) 
 msgid "John Gray <email>jgray@azuli.co.uk</email>"
 msgstr ""
 
-#: /tmp/cicero-qMnb/xml2.xml:463(para) 
+#: /tmp/cicero-IAZA/xml2.xml:463(para) 
 msgid "Development of this module was sponsored by Torchbox Ltd. (www.torchbox.com). It has the same BSD licence as PostgreSQL."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-qMnb/xml2.xml:0(None) 
+#: /tmp/cicero-IAZA/xml2.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

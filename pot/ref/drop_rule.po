@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-29 06:59+0200\n"
+"POT-Creation-Date: 2011-08-30 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,106 +9,106 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:10(refentrytitle) /tmp/cicero-qMnb/ref/drop_rule.xml:16(refname) /tmp/cicero-qMnb/ref/drop_rule.xml:21(primary) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:10(refentrytitle) /tmp/cicero-IAZA/ref/drop_rule.xml:16(refname) /tmp/cicero-IAZA/ref/drop_rule.xml:21(primary) 
 msgid "DROP RULE"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:11(manvolnum) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:12(refmiscinfo) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:17(refpurpose) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:17(refpurpose) 
 msgid "remove a rewrite rule"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:26(replaceable) /tmp/cicero-qMnb/ref/drop_rule.xml:54(replaceable) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:26(replaceable) /tmp/cicero-IAZA/ref/drop_rule.xml:54(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:26(replaceable) /tmp/cicero-qMnb/ref/drop_rule.xml:63(replaceable) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:26(replaceable) /tmp/cicero-IAZA/ref/drop_rule.xml:63(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:25(synopsis) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP RULE [ IF EXISTS ] <placeholder-1/> ON <placeholder-2/> [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:31(title) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:33(para) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:33(para) 
 msgid "<command>DROP RULE</command> drops a rewrite rule."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:39(title) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:39(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:44(literal) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:44(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:46(para) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:46(para) 
 msgid "Do not throw an error if the rule does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:56(para) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:56(para) 
 msgid "The name of the rule to drop."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:65(para) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:65(para) 
 msgid "The name (optionally schema-qualified) of the table or view that the rule applies to."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:73(literal) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:73(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:75(para) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:75(para) 
 msgid "Automatically drop objects that depend on the rule."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:82(literal) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:82(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:84(para) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:84(para) 
 msgid "Refuse to drop the rule if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:94(title) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:94(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:99(programlisting) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:99(programlisting) 
 #, no-wrap
 msgid "\nDROP RULE newrule ON mytable;\n"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:96(para) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:96(para) 
 msgid "To drop the rewrite rule <literal>newrule</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:105(title) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:105(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:107(para) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:107(para) 
 msgid "There is no <command>DROP RULE</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:113(title) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:113(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-qMnb/ref/drop_rule.xml:0(None) 
+#: /tmp/cicero-IAZA/ref/drop_rule.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
