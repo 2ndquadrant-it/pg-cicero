@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-30 06:59+0200\n"
+"POT-Creation-Date: 2011-08-31 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,106 +9,106 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-IAZA/ref/do.xml:10(refentrytitle) /tmp/cicero-IAZA/ref/do.xml:16(refname) /tmp/cicero-IAZA/ref/do.xml:21(primary) 
+#: /tmp/cicero-QnGh/ref/do.xml:10(refentrytitle) /tmp/cicero-QnGh/ref/do.xml:16(refname) /tmp/cicero-QnGh/ref/do.xml:21(primary) 
 msgid "DO"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:11(manvolnum) 
+#: /tmp/cicero-QnGh/ref/do.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:12(refmiscinfo) 
+#: /tmp/cicero-QnGh/ref/do.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:17(refpurpose) 
+#: /tmp/cicero-QnGh/ref/do.xml:17(refpurpose) 
 msgid "execute an anonymous code block"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:25(primary) 
+#: /tmp/cicero-QnGh/ref/do.xml:25(primary) 
 msgid "anonymous code blocks"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:30(replaceable) /tmp/cicero-IAZA/ref/do.xml:70(replaceable) 
+#: /tmp/cicero-QnGh/ref/do.xml:30(replaceable) /tmp/cicero-QnGh/ref/do.xml:70(replaceable) 
 msgid "lang_name"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:30(replaceable) /tmp/cicero-IAZA/ref/do.xml:59(replaceable) 
+#: /tmp/cicero-QnGh/ref/do.xml:30(replaceable) /tmp/cicero-QnGh/ref/do.xml:59(replaceable) 
 msgid "code"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:29(synopsis) 
+#: /tmp/cicero-QnGh/ref/do.xml:29(synopsis) 
 #, no-wrap
 msgid "\nDO [ LANGUAGE <placeholder-1/> ] <placeholder-2/>\n"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:35(title) 
+#: /tmp/cicero-QnGh/ref/do.xml:35(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:37(para) 
+#: /tmp/cicero-QnGh/ref/do.xml:37(para) 
 msgid "<command>DO</command> executes an anonymous code block, or in other words a transient anonymous function in a procedural language."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:42(para) 
+#: /tmp/cicero-QnGh/ref/do.xml:42(para) 
 msgid "The code block is treated as though it were the body of a function with no parameters, returning <type>void</type>. It is parsed and executed a single time."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:48(para) 
+#: /tmp/cicero-QnGh/ref/do.xml:48(para) 
 msgid "The optional <literal>LANGUAGE</literal> clause can be written either before or after the code block."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:55(title) 
+#: /tmp/cicero-QnGh/ref/do.xml:55(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:61(para) 
+#: /tmp/cicero-QnGh/ref/do.xml:61(para) 
 msgid "The procedural language code to be executed. This must be specified as a string literal, just as in <command>CREATE FUNCTION</command>. Use of a dollar-quoted literal is recommended."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:72(para) 
+#: /tmp/cicero-QnGh/ref/do.xml:72(para) 
 msgid "The name of the procedural language the code is written in. If omitted, the default is <literal>plpgsql</literal>."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:82(title) 
+#: /tmp/cicero-QnGh/ref/do.xml:82(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:84(para) 
+#: /tmp/cicero-QnGh/ref/do.xml:84(para) 
 msgid "The procedural language to be used must already have been installed into the current database by means of <command>CREATE LANGUAGE</command>. <literal>plpgsql</literal> is installed by default, but other languages are not."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:90(para) 
+#: /tmp/cicero-QnGh/ref/do.xml:90(para) 
 msgid "The user must have <literal>USAGE</literal> privilege for the procedural language, or must be a superuser if the language is untrusted. This is the same privilege requirement as for creating a function in the language."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:99(title) 
+#: /tmp/cicero-QnGh/ref/do.xml:99(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:103(programlisting) 
+#: /tmp/cicero-QnGh/ref/do.xml:103(programlisting) 
 #, no-wrap
 msgid "\nDO $$DECLARE r record;\nBEGIN\n    FOR r IN SELECT table_schema, table_name FROM information_schema.tables\n             WHERE table_type = 'VIEW' AND table_schema = 'public'\n    LOOP\n        EXECUTE 'GRANT ALL ON ' || quote_ident(r.table_schema) || '.' || quote_ident(r.table_name) || ' TO webuser';\n    END LOOP;\nEND$$;\n"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:100(para) 
+#: /tmp/cicero-QnGh/ref/do.xml:100(para) 
 msgid "Grant all privileges on all views in schema <literal>public</literal> to role <literal>webuser</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:116(title) 
+#: /tmp/cicero-QnGh/ref/do.xml:116(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:118(para) 
+#: /tmp/cicero-QnGh/ref/do.xml:118(para) 
 msgid "There is no <command>DO</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/do.xml:124(title) 
+#: /tmp/cicero-QnGh/ref/do.xml:124(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-IAZA/ref/do.xml:0(None) 
+#: /tmp/cicero-QnGh/ref/do.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

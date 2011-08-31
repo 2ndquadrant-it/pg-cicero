@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-30 06:59+0200\n"
+"POT-Creation-Date: 2011-08-31 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,328 +9,328 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:10(application) /tmp/cicero-IAZA/ref/reindexdb.xml:16(refname) /tmp/cicero-IAZA/ref/reindexdb.xml:21(primary) /tmp/cicero-IAZA/ref/reindexdb.xml:26(command) /tmp/cicero-IAZA/ref/reindexdb.xml:34(command) /tmp/cicero-IAZA/ref/reindexdb.xml:40(command) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:10(application) /tmp/cicero-QnGh/ref/reindexdb.xml:16(refname) /tmp/cicero-QnGh/ref/reindexdb.xml:21(primary) /tmp/cicero-QnGh/ref/reindexdb.xml:26(command) /tmp/cicero-QnGh/ref/reindexdb.xml:34(command) /tmp/cicero-QnGh/ref/reindexdb.xml:40(command) 
 msgid "reindexdb"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:11(manvolnum) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:11(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:12(refmiscinfo) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:12(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:17(productname) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:17(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:17(refpurpose) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:17(refpurpose) 
 msgid "reindex a <placeholder-1/> database"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:27(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:35(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:41(replaceable) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:27(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:35(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:41(replaceable) 
 msgid "connection-option"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:28(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:140(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:141(replaceable) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:28(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:140(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:141(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:28(arg) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:28(arg) 
 msgid "--table | -t <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:29(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:110(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:111(replaceable) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:29(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:110(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:111(replaceable) 
 msgid "index"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:29(arg) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:29(arg) 
 msgid "--index | -i <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:30(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:43(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:84(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:85(replaceable) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:30(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:43(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:84(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:85(replaceable) 
 msgid "dbname"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:36(arg) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:36(arg) 
 msgid "--all | -a"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:42(arg) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:42(arg) 
 msgid "--system | -s"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:49(title) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:49(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:51(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:51(para) 
 msgid "<application>reindexdb</application> is a utility for rebuilding indexes in a <productname>PostgreSQL</productname> database."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:56(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:56(para) 
 msgid "<application>reindexdb</application> is a wrapper around the SQL command <xref linkend=\"sql-reindex\"/>. There is no effective difference between reindexing databases via this utility and via other methods for accessing the server."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:67(title) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:67(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:74(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:74(option) 
 msgid "-a"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:75(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:75(option) 
 msgid "--all"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:77(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:77(para) 
 msgid "Reindex all databases."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:84(optional) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:84(optional) 
 msgid "-d"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:85(optional) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:85(optional) 
 msgid "--dbname="
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:87(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:87(para) 
 msgid "Specifies the name of the database to be reindexed. If this is not specified and <option>-a</option> (or <option>--all</option>) is not used, the database name is read from the environment variable <envar>PGDATABASE</envar>. If that is not set, the user name specified for the connection is used."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:99(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:99(option) 
 msgid "-e"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:100(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:100(option) 
 msgid "--echo"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:102(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:102(para) 
 msgid "Echo the commands that <application>reindexdb</application> generates and sends to the server."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:110(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:110(option) 
 msgid "-i <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:111(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:111(option) 
 msgid "--index=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:113(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:113(para) 
 msgid "Recreate <replaceable class=\"parameter\">index</replaceable> only."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:120(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:120(option) 
 msgid "-q"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:121(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:121(option) 
 msgid "--quiet"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:123(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:123(para) 
 msgid "Do not display progress messages."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:130(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:130(option) 
 msgid "-s"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:131(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:131(option) 
 msgid "--system"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:133(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:133(para) 
 msgid "Reindex database's system catalogs."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:140(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:140(option) 
 msgid "-t <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:141(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:141(option) 
 msgid "--table=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:143(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:143(para) 
 msgid "Reindex <replaceable class=\"parameter\">table</replaceable> only."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:150(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:150(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:151(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:151(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:153(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:153(para) 
 msgid "Print the <application>reindexdb</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:160(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:160(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:161(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:161(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:163(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:163(para) 
 msgid "Show help about <application>reindexdb</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:69(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:69(para) 
 msgid "<application>reindexdb</application> accepts the following command-line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:180(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:181(replaceable) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:180(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:181(replaceable) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:180(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:180(option) 
 msgid "-h <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:181(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:181(option) 
 msgid "--host=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:183(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:183(para) 
 msgid "Specifies the host name of the machine on which the server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:192(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:193(replaceable) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:192(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:193(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:192(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:192(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:193(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:193(option) 
 msgid "--port=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:195(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:195(para) 
 msgid "Specifies the TCP port or local Unix domain socket file extension on which the server is listening for connections."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:204(replaceable) /tmp/cicero-IAZA/ref/reindexdb.xml:205(replaceable) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:204(replaceable) /tmp/cicero-QnGh/ref/reindexdb.xml:205(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:204(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:204(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:205(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:205(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:207(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:207(para) 
 msgid "User name to connect as."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:214(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:214(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:215(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:215(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:217(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:217(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:229(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:229(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:230(option) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:230(option) 
 msgid "--password"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:232(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:232(para) 
 msgid "Force <application>reindexdb</application> to prompt for a password before connecting to a database."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:237(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:237(para) 
 msgid "This option is never essential, since <application>reindexdb</application> will automatically prompt for a password if the server demands password authentication. However, <application>reindexdb</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:174(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:174(para) 
 msgid "<application>reindexdb</application> also accepts the following command-line arguments for connection parameters: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:254(title) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:254(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:258(envar) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:258(envar) 
 msgid "PGDATABASE"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:259(envar) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:259(envar) 
 msgid "PGHOST"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:260(envar) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:260(envar) 
 msgid "PGPORT"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:261(envar) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:261(envar) 
 msgid "PGUSER"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:264(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:264(para) 
 msgid "Default connection parameters"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:271(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:271(para) 
 msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:281(title) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:281(title) 
 msgid "Diagnostics"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:283(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:283(para) 
 msgid "In case of difficulty, see <xref linkend=\"sql-reindex\"/> and <xref linkend=\"app-psql\"/> for discussions of potential problems and error messages. The database server must be running at the targeted host. Also, any default connection settings and environment variables used by the <application>libpq</application> front-end library will apply."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:297(title) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:297(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:299(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:299(para) 
 msgid "<application>reindexdb</application> might need to connect several times to the <productname>PostgreSQL</productname> server, asking for a password each time. It is convenient to have a <filename>~/.pgpass</filename> file in such cases. See <xref linkend=\"libpq-pgpass\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:310(title) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:310(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:312(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:312(para) 
 msgid "To reindex the database <literal>test</literal>: <screen>\n<prompt>$ </prompt><userinput>reindexdb test</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:319(para) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:319(para) 
 msgid "To reindex the table <literal>foo</literal> and the index <literal>bar</literal> in a database named <literal>abcd</literal>: <screen>\n<prompt>$ </prompt><userinput>reindexdb --table foo --index bar abcd</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:329(title) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:329(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-IAZA/ref/reindexdb.xml:0(None) 
+#: /tmp/cicero-QnGh/ref/reindexdb.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

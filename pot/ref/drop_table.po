@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-30 06:59+0200\n"
+"POT-Creation-Date: 2011-08-31 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,102 +9,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:10(refentrytitle) /tmp/cicero-IAZA/ref/drop_table.xml:16(refname) /tmp/cicero-IAZA/ref/drop_table.xml:21(primary) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:10(refentrytitle) /tmp/cicero-QnGh/ref/drop_table.xml:16(refname) /tmp/cicero-QnGh/ref/drop_table.xml:21(primary) 
 msgid "DROP TABLE"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:11(manvolnum) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:12(refmiscinfo) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:17(refpurpose) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:17(refpurpose) 
 msgid "remove a table"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:26(replaceable) /tmp/cicero-IAZA/ref/drop_table.xml:66(replaceable) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:26(replaceable) /tmp/cicero-QnGh/ref/drop_table.xml:66(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:25(synopsis) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP TABLE [ IF EXISTS ] <placeholder-1/> [, ...] [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:31(title) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:33(para) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:33(para) 
 msgid "<command>DROP TABLE</command> removes tables from the database. Only its owner can drop a table. To empty a table of rows without destroying the table, use <xref linkend=\"sql-delete\"/> or <xref linkend=\"sql-truncate\"/>."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:40(para) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:40(para) 
 msgid "<command>DROP TABLE</command> always removes any indexes, rules, triggers, and constraints that exist for the target table. However, to drop a table that is referenced by a view or a foreign-key constraint of another table, <literal>CASCADE</literal> must be specified. (<literal>CASCADE</literal> will remove a dependent view entirely, but in the foreign-key case it will only remove the foreign-key constraint, not the other table entirely.)"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:52(title) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:52(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:56(literal) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:56(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:58(para) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:58(para) 
 msgid "Do not throw an error if the table does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:68(para) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:68(para) 
 msgid "The name (optionally schema-qualified) of the table to drop."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:75(literal) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:75(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:77(para) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:77(para) 
 msgid "Automatically drop objects that depend on the table (such as views)."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:85(literal) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:85(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:87(para) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:87(para) 
 msgid "Refuse to drop the table if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:97(title) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:97(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:103(programlisting) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:103(programlisting) 
 #, no-wrap
 msgid "\nDROP TABLE films, distributors;\n"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:99(para) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:99(para) 
 msgid "To destroy two tables, <literal>films</literal> and <literal>distributors</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:109(title) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:109(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:111(para) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:111(para) 
 msgid "This command conforms to the SQL standard, except that the standard only allows one table to be dropped per command, and apart from the <literal>IF EXISTS</literal> option, which is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_table.xml:120(title) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:120(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-IAZA/ref/drop_table.xml:0(None) 
+#: /tmp/cicero-QnGh/ref/drop_table.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

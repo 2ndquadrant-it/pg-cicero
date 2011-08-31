@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-30 06:59+0200\n"
+"POT-Creation-Date: 2011-08-31 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,388 +9,388 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:10(refentrytitle) /tmp/cicero-IAZA/ref/pg_basebackup.xml:16(refname) /tmp/cicero-IAZA/ref/pg_basebackup.xml:21(primary) /tmp/cicero-IAZA/ref/pg_basebackup.xml:26(command) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:10(refentrytitle) /tmp/cicero-QnGh/ref/pg_basebackup.xml:16(refname) /tmp/cicero-QnGh/ref/pg_basebackup.xml:21(primary) /tmp/cicero-QnGh/ref/pg_basebackup.xml:26(command) 
 msgid "pg_basebackup"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:11(manvolnum) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:11(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:12(refmiscinfo) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:12(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:17(productname) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:17(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:17(refpurpose) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:17(refpurpose) 
 msgid "take a base backup of a <placeholder-1/> cluster"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:27(replaceable) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:27(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:32(title) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:35(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:35(para) 
 msgid "<application>pg_basebackup</application> is used to take base backups of a running <productname>PostgreSQL</productname> database cluster. These are taken without affecting other clients to the database, and can be used both for point-in-time recovery (see <xref linkend=\"continuous-archiving\"/>) and as the starting point for a log shipping or streaming replication standby servers (see <xref linkend=\"warm-standby\"/>)."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:44(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:44(para) 
 msgid "<application>pg_basebackup</application> makes a binary copy of the database cluster files, while making sure the system is automatically put in and out of backup mode automatically. Backups are always taken of the entire database cluster, it is not possible to back up individual databases or database objects. For individual database backups, a tool such as <xref linkend=\"app-pgdump\"/> must be used."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:53(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:53(para) 
 msgid "The backup is made over a regular <productname>PostgreSQL</productname> connection, and uses the replication protocol. The connection must be made with a user having <literal>REPLICATION</literal> permissions (see <xref linkend=\"role-attributes\"/>), and the user must be granted explicit permissions in <filename>pg_hba.conf</filename>. The server must also be configured with <xref linkend=\"guc-max-wal-senders\"/> set high enough to leave at least one session available for the backup."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:63(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:63(para) 
 msgid "There can be multiple <command>pg_basebackup</command>s running at the same time, but it is better from a performance point of view to take only one backup, and copy the result."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:71(title) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:71(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:79(replaceable) /tmp/cicero-IAZA/ref/pg_basebackup.xml:80(replaceable) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:79(replaceable) /tmp/cicero-QnGh/ref/pg_basebackup.xml:80(replaceable) 
 msgid "directory"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:79(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:79(option) 
 msgid "-D <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:80(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:80(option) 
 msgid "--pgdata=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:82(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:82(para) 
 msgid "Directory to write the output to."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:85(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:85(para) 
 msgid "When the backup is in tar mode, and the directory is specified as <literal>-</literal> (dash), the tar file will be written to <literal>stdout</literal>."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:90(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:90(para) 
 msgid "This parameter is required."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:97(replaceable) /tmp/cicero-IAZA/ref/pg_basebackup.xml:98(replaceable) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:97(replaceable) /tmp/cicero-QnGh/ref/pg_basebackup.xml:98(replaceable) 
 msgid "format"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:97(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:97(option) 
 msgid "-F <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:98(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:98(option) 
 msgid "--format=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:106(literal) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:106(literal) 
 msgid "p"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:107(literal) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:107(literal) 
 msgid "plain"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:109(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:109(para) 
 msgid "Write the output as plain files, with the same layout as the current data directory and tablespaces. When the cluster has no additional tablespaces, the whole database will be placed in the target directory. If the cluster contains additional tablespaces, the main data directory will be placed in the target directory, but all other tablespaces will be placed in the same absolute path as they have on the server."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:118(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:118(para) 
 msgid "This is the default format."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:125(literal) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:125(literal) 
 msgid "t"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:126(literal) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:126(literal) 
 msgid "tar"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:128(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:128(para) 
 msgid "Write the output as tar files in the target directory. The main data directory will be written to a file named <filename>base.tar</filename>, and all other tablespaces will be named after the tablespace OID."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:134(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:134(para) 
 msgid "If the value <literal>-</literal> (dash) is specified as target directory, the tar contents will be written to standard output, suitable for piping to for example <productname>gzip</productname>. This is only possible if the cluster has no additional tablespaces."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:100(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:100(para) 
 msgid "Selects the format for the output. <replaceable>format</replaceable> can be one of the following: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:148(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:148(option) 
 msgid "-x"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:149(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:149(option) 
 msgid "--xlog"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:151(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:151(para) 
 msgid "Includes the required transaction log files (WAL files) in the backup. This will include all transaction logs generated during the backup. If this option is specified, it is possible to start a postmaster directly in the extracted directory without the need to consult the log archive, thus making this a completely standalone backup."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:160(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:160(para) 
 msgid "The transaction log files are collected at the end of the backup. Therefore, it is necessary for the <xref linkend=\"guc-wal-keep-segments\"/> parameter to be set high enough that the log is not removed before the end of the backup. If the log has been rotated when it's time to transfer it, the backup will fail and be unusable."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:173(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:173(option) 
 msgid "-z"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:174(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:174(option) 
 msgid "--gzip"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:176(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:176(para) 
 msgid "Enables gzip compression of tar file output, with the default compression level. Compression is only available when using the tar format."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:185(replaceable) /tmp/cicero-IAZA/ref/pg_basebackup.xml:186(replaceable) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:185(replaceable) /tmp/cicero-QnGh/ref/pg_basebackup.xml:186(replaceable) 
 msgid "level"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:185(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:185(option) 
 msgid "-Z <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:186(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:186(option) 
 msgid "--compress=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:188(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:188(para) 
 msgid "Enables gzip compression of tar file output, and specifies the compression level (1 through 9, 9 being best compression). Compression is only available when using the tar format."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:73(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:73(para) 
 msgid "The following command-line options control the location and format of the output. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:204(replaceable) /tmp/cicero-IAZA/ref/pg_basebackup.xml:205(replaceable) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:204(replaceable) /tmp/cicero-QnGh/ref/pg_basebackup.xml:205(replaceable) 
 msgid "fast|spread"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:204(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:204(option) 
 msgid "-c <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:205(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:205(option) 
 msgid "--checkpoint=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:207(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:207(para) 
 msgid "Sets checkpoint mode to fast or spread (default)."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:214(replaceable) /tmp/cicero-IAZA/ref/pg_basebackup.xml:215(replaceable) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:214(replaceable) /tmp/cicero-QnGh/ref/pg_basebackup.xml:215(replaceable) 
 msgid "label"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:214(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:214(option) 
 msgid "-l <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:215(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:215(option) 
 msgid "--label=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:217(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:217(para) 
 msgid "Sets the label for the backup. If none is specified, a default value of <literal>pg_basebackup base backup</literal> will be used."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:225(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:225(option) 
 msgid "-P"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:226(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:226(option) 
 msgid "--progress"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:228(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:228(para) 
 msgid "Enables progress reporting. Turning this on will deliver an approximate progress report during the backup. Since the database may change during the backup, this is only an approximation and may not end at exactly <literal>100%</literal>. In particular, when WAL log is included in the backup, the total amount of data cannot be estimated in advance, and in this case the estimated target size will increase once it passes the total estimate without WAL."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:237(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:237(para) 
 msgid "When this is enabled, the backup will start by enumerating the size of the entire database, and then go back and send the actual contents. This may make the backup take slightly longer, and in particular it will take longer before the first data is sent."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:247(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:247(option) 
 msgid "-v"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:248(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:248(option) 
 msgid "--verbose"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:250(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:250(para) 
 msgid "Enables verbose mode. Will output some extra steps during startup and shutdown, as well as show the exact file name that is currently being processed if progress reporting is also enabled."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:198(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:198(para) 
 msgid "The following command-line options control the generation of the backup and the running of the program. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:266(replaceable) /tmp/cicero-IAZA/ref/pg_basebackup.xml:267(replaceable) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:266(replaceable) /tmp/cicero-QnGh/ref/pg_basebackup.xml:267(replaceable) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:266(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:266(option) 
 msgid "-h <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:267(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:267(option) 
 msgid "--host=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:269(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:269(para) 
 msgid "Specifies the host name of the machine on which the server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket. The default is taken from the <envar>PGHOST</envar> environment variable, if set, else a Unix domain socket connection is attempted."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:280(replaceable) /tmp/cicero-IAZA/ref/pg_basebackup.xml:281(replaceable) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:280(replaceable) /tmp/cicero-QnGh/ref/pg_basebackup.xml:281(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:280(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:280(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:281(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:281(option) 
 msgid "--port=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:283(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:283(para) 
 msgid "Specifies the TCP port or local Unix domain socket file extension on which the server is listening for connections. Defaults to the <envar>PGPORT</envar> environment variable, if set, or a compiled-in default."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:293(replaceable) /tmp/cicero-IAZA/ref/pg_basebackup.xml:294(replaceable) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:293(replaceable) /tmp/cicero-QnGh/ref/pg_basebackup.xml:294(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:293(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:293(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:294(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:294(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:296(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:296(para) 
 msgid "User name to connect as."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:303(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:303(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:304(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:304(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:306(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:306(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:318(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:318(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:319(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:319(option) 
 msgid "--password"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:321(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:321(para) 
 msgid "Force <application>pg_basebackup</application> to prompt for a password before connecting to a database."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:326(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:326(para) 
 msgid "This option is never essential, since <application>pg_bsaebackup</application> will automatically prompt for a password if the server demands password authentication. However, <application>pg_basebackup</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:261(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:261(para) 
 msgid "The following command-line options control the database connection parameters. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:345(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:345(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:346(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:346(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:348(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:348(para) 
 msgid "Print the <application>pg_basebackup</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:355(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:355(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:356(option) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:356(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:358(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:358(para) 
 msgid "Show help about <application>pg_basebackup</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:340(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:340(para) 
 msgid "Other, less commonly used, parameters are also available: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:371(title) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:371(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:373(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:373(para) 
 msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:382(title) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:382(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:384(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:384(para) 
 msgid "The backup will include all files in the data directory and tablespaces, including the configuration files and any additional files placed in the directory by third parties. Only regular files and directories are allowed in the data directory, no symbolic links or special device files."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:391(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:391(para) 
 msgid "The way <productname>PostgreSQL</productname> manages tablespaces, the path for all additional tablespaces must be identical whenever a backup is restored. The main data directory, however, is relocatable to any location."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:399(title) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:399(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:401(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:401(para) 
 msgid "To create a base backup of the server at <literal>mydbserver</literal> and store it in the local directory <filename>/usr/local/pgsql/data</filename>: <screen>\n<prompt>$</prompt> <userinput>pg_basebackup -h mydbserver -D /usr/local/pgsql/data</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:410(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:410(para) 
 msgid "To create a backup of the local server with one compressed tar file for each tablespace, and store it in the directory <filename>backup</filename>, showing a progress report while running: <screen>\n<prompt>$</prompt> <userinput>pg_basebackup -D backup -Ft -z -P</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:419(para) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:419(para) 
 msgid "To create a backup of a single-tablespace local database and compress this with <productname>bzip2</productname>: <screen>\n<prompt>$</prompt> <userinput>pg_basebackup -D - -Ft | bzip2 &gt; backup.tar.bz2</userinput>\n</screen> (This command will fail if there are multiple tablespaces in the database.)"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:431(title) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:431(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-IAZA/ref/pg_basebackup.xml:0(None) 
+#: /tmp/cicero-QnGh/ref/pg_basebackup.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

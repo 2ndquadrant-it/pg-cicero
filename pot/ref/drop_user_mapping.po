@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-30 06:59+0200\n"
+"POT-Creation-Date: 2011-08-31 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,94 +9,94 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:10(refentrytitle) /tmp/cicero-IAZA/ref/drop_user_mapping.xml:16(refname) /tmp/cicero-IAZA/ref/drop_user_mapping.xml:21(primary) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:10(refentrytitle) /tmp/cicero-QnGh/ref/drop_user_mapping.xml:16(refname) /tmp/cicero-QnGh/ref/drop_user_mapping.xml:21(primary) 
 msgid "DROP USER MAPPING"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:11(manvolnum) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:12(refmiscinfo) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:17(refpurpose) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:17(refpurpose) 
 msgid "remove a user mapping for a foreign server"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:26(replaceable) /tmp/cicero-IAZA/ref/drop_user_mapping.xml:61(replaceable) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:26(replaceable) /tmp/cicero-QnGh/ref/drop_user_mapping.xml:61(replaceable) 
 msgid "user_name"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:26(replaceable) /tmp/cicero-IAZA/ref/drop_user_mapping.xml:73(replaceable) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:26(replaceable) /tmp/cicero-QnGh/ref/drop_user_mapping.xml:73(replaceable) 
 msgid "server_name"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:25(synopsis) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP USER MAPPING [ IF EXISTS ] FOR { <placeholder-1/> | USER | CURRENT_USER | PUBLIC } SERVER <placeholder-2/>\n"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:31(title) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:33(para) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:33(para) 
 msgid "<command>DROP USER MAPPING</command> removes an existing user mapping from foreign server."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:38(para) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:38(para) 
 msgid "The owner of a foreign server can drop user mappings for that server for any user. Also, a user can drop a user mapping for his own user name if <literal>USAGE</literal> privilege on the server has been granted to the user."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:47(title) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:47(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:51(literal) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:51(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:53(para) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:53(para) 
 msgid "Do not throw an error if the user mapping does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:63(para) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:63(para) 
 msgid "User name of the mapping. <literal>CURRENT_USER</literal> and <literal>USER</literal> match the name of the current user. <literal>PUBLIC</literal> is used to match all present and future user names in the system."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:75(para) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:75(para) 
 msgid "Server name of the user mapping."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:84(title) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:84(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:88(programlisting) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:88(programlisting) 
 #, no-wrap
 msgid "\nDROP USER MAPPING IF EXISTS FOR bob SERVER foo;\n"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:86(para) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:86(para) 
 msgid "Drop a user mapping <literal>bob</literal>, server <literal>foo</literal> if it exists: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:94(title) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:94(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:96(para) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:96(para) 
 msgid "<command>DROP USER MAPPING</command> conforms to ISO/IEC 9075-9 (SQL/MED). The <literal>IF EXISTS</literal> clause is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:104(title) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:104(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-IAZA/ref/drop_user_mapping.xml:0(None) 
+#: /tmp/cicero-QnGh/ref/drop_user_mapping.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
