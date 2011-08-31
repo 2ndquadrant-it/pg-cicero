@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-30 06:57+0200\n"
+"POT-Creation-Date: 2011-08-31 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,308 +9,308 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:9(refentrytitle) /tmp/cicero-vKlc/ref/initdb.xml:15(refname) /tmp/cicero-vKlc/ref/initdb.xml:20(primary) /tmp/cicero-vKlc/ref/initdb.xml:25(command) 
+#: /tmp/cicero-ieik/ref/initdb.xml:9(refentrytitle) /tmp/cicero-ieik/ref/initdb.xml:15(refname) /tmp/cicero-ieik/ref/initdb.xml:20(primary) /tmp/cicero-ieik/ref/initdb.xml:25(command) 
 msgid "initdb"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:10(manvolnum) 
+#: /tmp/cicero-ieik/ref/initdb.xml:10(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:11(refmiscinfo) 
+#: /tmp/cicero-ieik/ref/initdb.xml:11(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:16(productname) 
+#: /tmp/cicero-ieik/ref/initdb.xml:16(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:16(refpurpose) 
+#: /tmp/cicero-ieik/ref/initdb.xml:16(refpurpose) 
 msgid "create a new <placeholder-1/> database cluster"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:26(replaceable) 
+#: /tmp/cicero-ieik/ref/initdb.xml:26(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:28(arg) 
+#: /tmp/cicero-ieik/ref/initdb.xml:28(arg) 
 msgid "--pgdata"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:29(arg) 
+#: /tmp/cicero-ieik/ref/initdb.xml:29(arg) 
 msgid "-D"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:30(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:131(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:132(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:228(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:229(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:260(replaceable) 
+#: /tmp/cicero-ieik/ref/initdb.xml:30(replaceable) /tmp/cicero-ieik/ref/initdb.xml:131(replaceable) /tmp/cicero-ieik/ref/initdb.xml:132(replaceable) /tmp/cicero-ieik/ref/initdb.xml:228(replaceable) /tmp/cicero-ieik/ref/initdb.xml:229(replaceable) /tmp/cicero-ieik/ref/initdb.xml:260(replaceable) 
 msgid "directory"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:36(title) 
+#: /tmp/cicero-ieik/ref/initdb.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:39(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:39(para) 
 msgid "<command>initdb</command> creates a new <productname>PostgreSQL</productname> database cluster. A database cluster is a collection of databases that are managed by a single server instance."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:46(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:46(para) 
 msgid "Creating a database cluster consists of creating the directories in which the database data will live, generating the shared catalog tables (tables that belong to the whole cluster rather than to any particular database), and creating the <literal>template1</literal> and <literal>postgres</literal> databases. When you later create a new database, everything in the <literal>template1</literal> database is copied. (Therefore, anything installed in <literal>template1</literal> is automatically copied into each database created later.) The <literal>postgres</literal> database is a default database meant for use by users, utilities and third party applications."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:59(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:59(para) 
 msgid "Although <command>initdb</command> will attempt to create the specified data directory, it might not have permission if the parent directory of the desired data directory is root-owned. To initialize in such a setup, create an empty data directory as root, then use <command>chown</command> to assign ownership of that directory to the database user account, then <command>su</command> to become the database user to run <command>initdb</command>."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:69(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:69(para) 
 msgid "<command>initdb</command> must be run as the user that will own the server process, because the server needs to have access to the files and directories that <command>initdb</command> creates. Since the server cannot be run as root, you must not run <command>initdb</command> as root either. (It will in fact refuse to do so.)"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:78(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:78(para) 
 msgid "<command>initdb</command> initializes the database cluster's default locale and character set encoding. The character set encoding, collation order (<literal>LC_COLLATE</literal>) and character set classes (<literal>LC_CTYPE</literal>, e.g. upper, lower, digit) can be set separately for a database when it is created. <command>initdb</command> determines those settings for the <literal>template1</literal> database, which will serve as the default for all other databases."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:88(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:88(para) 
 msgid "To alter the default collation order or character set classes, use the <option>--lc-collate</option> and <option>--lc-ctype</option> options. Collation orders other than <literal>C</literal> or <literal>POSIX</literal> also have a performance penalty. For these reasons it is important to choose the right locale when running <command>initdb</command>."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:96(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:96(para) 
 msgid "The remaining locale categories can be changed later when the server is started. You can also use <option>--locale</option> to set the default for all locale categories, including collation order and character set classes. All server locale values (<literal>lc_*</literal>) can be displayed via <command>SHOW ALL</command>. More details can be found in <xref linkend=\"locale\"/>."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:105(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:105(para) 
 msgid "To alter the default encoding, use the <option>--encoding</option>. More details can be found in <xref linkend=\"multibyte\"/>."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:113(title) 
+#: /tmp/cicero-ieik/ref/initdb.xml:113(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:118(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:119(replaceable) 
+#: /tmp/cicero-ieik/ref/initdb.xml:118(replaceable) /tmp/cicero-ieik/ref/initdb.xml:119(replaceable) 
 msgid "authmethod"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:118(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:118(option) 
 msgid "-A <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:119(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:119(option) 
 msgid "--auth=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:121(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:121(para) 
 msgid "This option specifies the authentication method for local users used in <filename>pg_hba.conf</filename>. Do not use <literal>trust</literal> unless you trust all local users on your system. <literal>Trust</literal> is the default for ease of installation."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:131(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:131(option) 
 msgid "-D <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:132(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:132(option) 
 msgid "--pgdata=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:134(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:134(para) 
 msgid "This option specifies the directory where the database cluster should be stored. This is the only information required by <command>initdb</command>, but you can avoid writing it by setting the <envar>PGDATA</envar> environment variable, which can be convenient since the database server (<command>postgres</command>) can find the database directory later by the same variable."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:147(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:148(replaceable) 
+#: /tmp/cicero-ieik/ref/initdb.xml:147(replaceable) /tmp/cicero-ieik/ref/initdb.xml:148(replaceable) 
 msgid "encoding"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:147(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:147(option) 
 msgid "-E <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:148(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:148(option) 
 msgid "--encoding=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:150(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:150(para) 
 msgid "Selects the encoding of the template database. This will also be the default encoding of any database you create later, unless you override it there. The default is derived from the locale, or <literal>SQL_ASCII</literal> if that does not work. The character sets supported by the <productname>PostgreSQL</productname> server are described in <xref linkend=\"multibyte-charset-supported\"/>."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:162(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:174(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:175(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:176(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:177(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:178(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:179(replaceable) 
+#: /tmp/cicero-ieik/ref/initdb.xml:162(replaceable) /tmp/cicero-ieik/ref/initdb.xml:174(replaceable) /tmp/cicero-ieik/ref/initdb.xml:175(replaceable) /tmp/cicero-ieik/ref/initdb.xml:176(replaceable) /tmp/cicero-ieik/ref/initdb.xml:177(replaceable) /tmp/cicero-ieik/ref/initdb.xml:178(replaceable) /tmp/cicero-ieik/ref/initdb.xml:179(replaceable) 
 msgid "locale"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:162(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:162(option) 
 msgid "--locale=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:164(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:164(para) 
 msgid "Sets the default locale for the database cluster. If this option is not specified, the locale is inherited from the environment that <command>initdb</command> runs in. Locale support is described in <xref linkend=\"locale\"/>."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:174(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:174(option) 
 msgid "--lc-collate=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:175(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:175(option) 
 msgid "--lc-ctype=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:176(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:176(option) 
 msgid "--lc-messages=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:177(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:177(option) 
 msgid "--lc-monetary=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:178(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:178(option) 
 msgid "--lc-numeric=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:179(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:179(option) 
 msgid "--lc-time=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:182(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:182(para) 
 msgid "Like <option>--locale</option>, but only sets the locale in the specified category."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:190(replaceable) 
+#: /tmp/cicero-ieik/ref/initdb.xml:190(replaceable) 
 msgid "filename"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:190(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:190(option) 
 msgid "--pwfile=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:192(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:192(para) 
 msgid "Makes <command>initdb</command> read the database superuser's password from a file. The first line of the file is taken as the password."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:199(replaceable) /tmp/cicero-vKlc/ref/initdb.xml:200(replaceable) 
+#: /tmp/cicero-ieik/ref/initdb.xml:199(replaceable) /tmp/cicero-ieik/ref/initdb.xml:200(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:199(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:199(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:200(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:200(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:202(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:202(para) 
 msgid "Selects the user name of the database superuser. This defaults to the name of the effective user running <command>initdb</command>. It is really not important what the superuser's name is, but one might choose to keep the customary name <systemitem>postgres</systemitem>, even if the operating system user's name is different."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:214(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:214(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:215(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:215(option) 
 msgid "--pwprompt"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:217(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:217(para) 
 msgid "Makes <command>initdb</command> prompt for a password to give the database superuser. If you don't plan on using password authentication, this is not important. Otherwise you won't be able to use password authentication until you have a password set up."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:228(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:228(option) 
 msgid "-X <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:229(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:229(option) 
 msgid "--xlogdir=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:231(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:231(para) 
 msgid "This option specifies the directory where the transaction log should be stored."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:246(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:246(option) 
 msgid "-d"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:247(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:247(option) 
 msgid "--debug"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:249(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:249(para) 
 msgid "Print debugging output from the bootstrap backend and a few other messages of lesser interest for the general public. The bootstrap backend is the program <command>initdb</command> uses to create the catalog tables. This option generates a tremendous amount of extremely boring output."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:260(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:260(option) 
 msgid "-L <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:262(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:262(para) 
 msgid "Specifies where <command>initdb</command> should find its input files to initialize the database cluster. This is normally not necessary. You will be told if you need to specify their location explicitly."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:272(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:272(option) 
 msgid "-n"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:273(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:273(option) 
 msgid "--noclean"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:275(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:275(para) 
 msgid "By default, when <command>initdb</command> determines that an error prevented it from completely creating the database cluster, it removes any files it might have created before discovering that it cannot finish the job. This option inhibits tidying-up and is thus useful for debugging."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:286(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:286(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:287(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:287(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:289(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:289(para) 
 msgid "Print the <application>initdb</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:296(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:296(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:297(option) 
+#: /tmp/cicero-ieik/ref/initdb.xml:297(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:299(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:299(para) 
 msgid "Show help about <application>initdb</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:241(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:241(para) 
 msgid "Other, less commonly used, parameters are also available: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:312(title) 
+#: /tmp/cicero-ieik/ref/initdb.xml:312(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:316(envar) 
+#: /tmp/cicero-ieik/ref/initdb.xml:316(envar) 
 msgid "PGDATA"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:319(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:319(para) 
 msgid "Specifies the directory where the database cluster is to be stored; can be overridden using the <option>-D</option> option."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:327(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:327(para) 
 msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:336(title) 
+#: /tmp/cicero-ieik/ref/initdb.xml:336(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:338(para) 
+#: /tmp/cicero-ieik/ref/initdb.xml:338(para) 
 msgid "<command>initdb</command> can also be invoked via <command>pg_ctl initdb</command>."
 msgstr ""
 
-#: /tmp/cicero-vKlc/ref/initdb.xml:345(title) 
+#: /tmp/cicero-ieik/ref/initdb.xml:345(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-vKlc/ref/initdb.xml:0(None) 
+#: /tmp/cicero-ieik/ref/initdb.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
