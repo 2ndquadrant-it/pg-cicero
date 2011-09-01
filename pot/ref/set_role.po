@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-31 06:59+0200\n"
+"POT-Creation-Date: 2011-09-01 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,98 +9,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:10(refentrytitle) /tmp/cicero-QnGh/ref/set_role.xml:16(refname) /tmp/cicero-QnGh/ref/set_role.xml:21(primary) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:10(refentrytitle) /tmp/cicero-dQiJ/ref/set_role.xml:16(refname) /tmp/cicero-dQiJ/ref/set_role.xml:21(primary) 
 msgid "SET ROLE"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:11(manvolnum) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:12(refmiscinfo) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:17(refpurpose) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:17(refpurpose) 
 msgid "set the current user identifier of the current session"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:26(replaceable) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:26(replaceable) 
 msgid "role_name"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:25(synopsis) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:25(synopsis) 
 #, no-wrap
 msgid "\nSET [ SESSION | LOCAL ] ROLE <placeholder-1/>\nSET [ SESSION | LOCAL ] ROLE NONE\nRESET ROLE\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:33(title) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:35(para) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:35(para) 
 msgid "This command sets the current user identifier of the current SQL session to be <replaceable class=\"parameter\">role_name</replaceable>. The role name can be written as either an identifier or a string literal. After <command>SET ROLE</command>, permissions checking for SQL commands is carried out as though the named role were the one that had logged in originally."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:45(para) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:45(para) 
 msgid "The specified <replaceable class=\"parameter\">role_name</replaceable> must be a role that the current session user is a member of. (If the session user is a superuser, any role can be selected.)"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:51(para) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:51(para) 
 msgid "The <literal>SESSION</literal> and <literal>LOCAL</literal> modifiers act the same as for the regular <xref linkend=\"sql-set\"/> command."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:57(para) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:57(para) 
 msgid "The <literal>NONE</literal> and <literal>RESET</literal> forms reset the current user identifier to be the current session user identifier. These forms can be executed by any user."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:65(title) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:65(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:67(para) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:67(para) 
 msgid "Using this command, it is possible to either add privileges or restrict one's privileges. If the session user role has the <literal>INHERITS</literal> attribute, then it automatically has all the privileges of every role that it could <command>SET ROLE</command> to; in this case <command>SET ROLE</command> effectively drops all the privileges assigned directly to the session user and to the other roles it is a member of, leaving only the privileges available to the named role. On the other hand, if the session user role has the <literal>NOINHERITS</literal> attribute, <command>SET ROLE</command> drops the privileges assigned directly to the session user and instead acquires the privileges available to the named role."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:80(para) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:80(para) 
 msgid "In particular, when a superuser chooses to <command>SET ROLE</command> to a non-superuser role, she loses her superuser privileges."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:85(para) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:85(para) 
 msgid "<command>SET ROLE</command> has effects comparable to <xref linkend=\"sql-set-session-authorization\"/>, but the privilege checks involved are quite different. Also, <command>SET SESSION AUTHORIZATION</command> determines which roles are allowable for later <command>SET ROLE</command> commands, whereas changing roles with <command>SET ROLE</command> does not change the set of roles allowed to a later <command>SET ROLE</command>."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:95(para) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:95(para) 
 msgid "<command>SET ROLE</command> does not process session variables as specified by the role's <xref linkend=\"sql-alterrole\"/> settings; this only happens during login."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:101(para) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:101(para) 
 msgid "<command>SET ROLE</command> cannot be used within a <literal>SECURITY DEFINER</literal> function."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:108(title) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:108(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:110(programlisting) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:110(programlisting) 
 #, no-wrap
 msgid "\nSELECT SESSION_USER, CURRENT_USER;\n\n session_user | current_user \n--------------+--------------\n peter        | peter\n\nSET ROLE 'paul';\n\nSELECT SESSION_USER, CURRENT_USER;\n\n session_user | current_user \n--------------+--------------\n peter        | paul\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:128(title) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:128(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:130(para) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:130(para) 
 msgid "<productname>PostgreSQL</productname> allows identifier syntax (<literal>\"rolename\"</literal>), while the SQL standard requires the role name to be written as a string literal. SQL does not allow this command during a transaction; <productname>PostgreSQL</productname> does not make this restriction because there is no reason to. The <literal>SESSION</literal> and <literal>LOCAL</literal> modifiers are a <productname>PostgreSQL</productname> extension, as is the <literal>RESET</literal> syntax."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/set_role.xml:144(title) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:144(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QnGh/ref/set_role.xml:0(None) 
+#: /tmp/cicero-dQiJ/ref/set_role.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

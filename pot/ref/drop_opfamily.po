@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-31 06:59+0200\n"
+"POT-Creation-Date: 2011-09-01 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,110 +9,110 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:10(refentrytitle) /tmp/cicero-QnGh/ref/drop_opfamily.xml:16(refname) /tmp/cicero-QnGh/ref/drop_opfamily.xml:21(primary) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:10(refentrytitle) /tmp/cicero-dQiJ/ref/drop_opfamily.xml:16(refname) /tmp/cicero-dQiJ/ref/drop_opfamily.xml:21(primary) 
 msgid "DROP OPERATOR FAMILY"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:11(manvolnum) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:12(refmiscinfo) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:17(refpurpose) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:17(refpurpose) 
 msgid "remove an operator family"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:26(replaceable) /tmp/cicero-QnGh/ref/drop_opfamily.xml:63(replaceable) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:26(replaceable) /tmp/cicero-dQiJ/ref/drop_opfamily.xml:63(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:26(replaceable) /tmp/cicero-QnGh/ref/drop_opfamily.xml:72(replaceable) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:26(replaceable) /tmp/cicero-dQiJ/ref/drop_opfamily.xml:72(replaceable) 
 msgid "index_method"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:25(synopsis) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP OPERATOR FAMILY [ IF EXISTS ] <placeholder-1/> USING <placeholder-2/> [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:31(title) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:33(para) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:33(para) 
 msgid "<command>DROP OPERATOR FAMILY</command> drops an existing operator family. To execute this command you must be the owner of the operator family."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:38(para) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:38(para) 
 msgid "<command>DROP OPERATOR FAMILY</command> includes dropping any operator classes contained in the family, but it does not drop any of the operators or functions referenced by the family. If there are any indexes depending on operator classes within the family, you will need to specify <literal>CASCADE</literal> for the drop to complete."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:48(title) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:48(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:53(literal) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:53(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:55(para) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:55(para) 
 msgid "Do not throw an error if the operator family does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:65(para) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:65(para) 
 msgid "The name (optionally schema-qualified) of an existing operator family."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:74(para) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:74(para) 
 msgid "The name of the index access method the operator family is for."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:81(literal) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:81(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:83(para) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:83(para) 
 msgid "Automatically drop objects that depend on the operator family."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:90(literal) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:90(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:92(para) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:92(para) 
 msgid "Refuse to drop the operator family if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:102(title) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:102(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:107(programlisting) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:107(programlisting) 
 #, no-wrap
 msgid "\nDROP OPERATOR FAMILY float_ops USING btree;\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:104(para) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:104(para) 
 msgid "Remove the B-tree operator family <literal>float_ops</literal>: <placeholder-1/> This command will not succeed if there are any existing indexes that use operator classes within the family. Add <literal>CASCADE</literal> to drop such indexes along with the operator family."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:118(title) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:118(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:120(para) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:120(para) 
 msgid "There is no <command>DROP OPERATOR FAMILY</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:127(title) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:127(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QnGh/ref/drop_opfamily.xml:0(None) 
+#: /tmp/cicero-dQiJ/ref/drop_opfamily.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

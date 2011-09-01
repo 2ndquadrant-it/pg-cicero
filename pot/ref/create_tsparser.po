@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-31 06:59+0200\n"
+"POT-Creation-Date: 2011-09-01 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,121 +9,121 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:10(refentrytitle) /tmp/cicero-QnGh/ref/create_tsparser.xml:16(refname) /tmp/cicero-QnGh/ref/create_tsparser.xml:21(primary) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:10(refentrytitle) /tmp/cicero-dQiJ/ref/create_tsparser.xml:16(refname) /tmp/cicero-dQiJ/ref/create_tsparser.xml:21(primary) 
 msgid "CREATE TEXT SEARCH PARSER"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:11(manvolnum) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:12(refmiscinfo) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:17(refpurpose) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:17(refpurpose) 
 msgid "define a new text search parser"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:26(replaceable) /tmp/cicero-QnGh/ref/create_tsparser.xml:69(replaceable) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:26(replaceable) /tmp/cicero-dQiJ/ref/create_tsparser.xml:69(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:27(replaceable) /tmp/cicero-QnGh/ref/create_tsparser.xml:79(replaceable) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:27(replaceable) /tmp/cicero-dQiJ/ref/create_tsparser.xml:79(replaceable) 
 msgid "start_function"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:28(replaceable) /tmp/cicero-QnGh/ref/create_tsparser.xml:88(replaceable) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:28(replaceable) /tmp/cicero-dQiJ/ref/create_tsparser.xml:88(replaceable) 
 msgid "gettoken_function"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:29(replaceable) /tmp/cicero-QnGh/ref/create_tsparser.xml:97(replaceable) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:29(replaceable) /tmp/cicero-dQiJ/ref/create_tsparser.xml:97(replaceable) 
 msgid "end_function"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:30(replaceable) /tmp/cicero-QnGh/ref/create_tsparser.xml:106(replaceable) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:30(replaceable) /tmp/cicero-dQiJ/ref/create_tsparser.xml:106(replaceable) 
 msgid "lextypes_function"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:31(replaceable) /tmp/cicero-QnGh/ref/create_tsparser.xml:116(replaceable) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:31(replaceable) /tmp/cicero-dQiJ/ref/create_tsparser.xml:116(replaceable) 
 msgid "headline_function"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:25(synopsis) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:25(synopsis) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH PARSER <placeholder-1/> (\n    START = <placeholder-2/> ,\n    GETTOKEN = <placeholder-3/> ,\n    END = <placeholder-4/> ,\n    LEXTYPES = <placeholder-5/>\n    [, HEADLINE = <placeholder-6/> ]\n)\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:37(title) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:37(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:39(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:39(para) 
 msgid "<command>CREATE TEXT SEARCH PARSER</command> creates a new text search parser. A text search parser defines a method for splitting a text string into tokens and assigning types (categories) to the tokens. A parser is not particularly useful by itself, but must be bound into a text search configuration along with some text search dictionaries to be used for searching."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:48(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:48(para) 
 msgid "If a schema name is given then the text search parser is created in the specified schema. Otherwise it is created in the current schema."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:53(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:53(para) 
 msgid "You must be a superuser to use <command>CREATE TEXT SEARCH PARSER</command>. (This restriction is made because an erroneous text search parser definition could confuse or even crash the server.)"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:59(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:59(para) 
 msgid "Refer to <xref linkend=\"textsearch\"/> for further information."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:65(title) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:65(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:71(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:71(para) 
 msgid "The name of the text search parser to be created. The name can be schema-qualified."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:81(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:81(para) 
 msgid "The name of the start function for the parser."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:90(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:90(para) 
 msgid "The name of the get-next-token function for the parser."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:99(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:99(para) 
 msgid "The name of the end function for the parser."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:108(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:108(para) 
 msgid "The name of the lextypes function for the parser (a function that returns information about the set of token types it produces)."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:118(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:118(para) 
 msgid "The name of the headline function for the parser (a function that summarizes a set of tokens)."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:126(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:126(para) 
 msgid "The function names can be schema-qualified if necessary. Argument types are not given, since the argument list for each type of function is predetermined. All except the headline function are required."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:132(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:132(para) 
 msgid "The arguments can appear in any order, not only the one shown above."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:138(title) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:138(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:140(para) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:140(para) 
 msgid "There is no <command>CREATE TEXT SEARCH PARSER</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:148(title) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:148(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QnGh/ref/create_tsparser.xml:0(None) 
+#: /tmp/cicero-dQiJ/ref/create_tsparser.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

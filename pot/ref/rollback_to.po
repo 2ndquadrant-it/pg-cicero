@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-31 06:59+0200\n"
+"POT-Creation-Date: 2011-09-01 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,111 +9,111 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:10(refentrytitle) /tmp/cicero-QnGh/ref/rollback_to.xml:16(refname) /tmp/cicero-QnGh/ref/rollback_to.xml:21(primary) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:10(refentrytitle) /tmp/cicero-dQiJ/ref/rollback_to.xml:16(refname) /tmp/cicero-dQiJ/ref/rollback_to.xml:21(primary) 
 msgid "ROLLBACK TO SAVEPOINT"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:11(manvolnum) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:12(refmiscinfo) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:17(refpurpose) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:17(refpurpose) 
 msgid "roll back to a savepoint"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:25(primary) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:25(primary) 
 msgid "savepoints"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:26(secondary) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:26(secondary) 
 msgid "rolling back"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:31(replaceable) /tmp/cicero-QnGh/ref/rollback_to.xml:55(replaceable) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:31(replaceable) /tmp/cicero-dQiJ/ref/rollback_to.xml:55(replaceable) 
 msgid "savepoint_name"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:30(synopsis) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:30(synopsis) 
 #, no-wrap
 msgid "\nROLLBACK [ WORK | TRANSACTION ] TO [ SAVEPOINT ] <placeholder-1/>\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:36(title) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:38(para) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:38(para) 
 msgid "Roll back all commands that were executed after the savepoint was established. The savepoint remains valid and can be rolled back to again later, if needed."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:44(para) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:44(para) 
 msgid "<command>ROLLBACK TO SAVEPOINT</command> implicitly destroys all savepoints that were established after the named savepoint."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:51(title) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:51(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:57(para) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:57(para) 
 msgid "The savepoint to roll back to."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:66(title) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:66(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:68(para) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:68(para) 
 msgid "Use <xref linkend=\"sql-release-savepoint\"/> to destroy a savepoint without discarding the effects of commands executed after it was established."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:74(para) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:74(para) 
 msgid "Specifying a savepoint name that has not been established is an error."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:78(para) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:78(para) 
 msgid "Cursors have somewhat non-transactional behavior with respect to savepoints. Any cursor that is opened inside a savepoint will be closed when the savepoint is rolled back. If a previously opened cursor is affected by a <command>FETCH</command> or <command>MOVE</command> command inside a savepoint that is later rolled back, the cursor remains at the position that <command>FETCH</command> left it pointing to (that is, the cursor motion caused by <command>FETCH</command> is not rolled back). Closing a cursor is not undone by rolling back, either. However, other side-effects caused by the cursor's query (such as side-effects of volatile functions called by the query) <emphasis>are</emphasis> rolled back if they occur during a savepoint that is later rolled back. A cursor whose execution causes a transaction to abort is put in a cannot-execute state, so while the transaction can be restored using <command>ROLLBACK TO SAVEPOINT</command>, the cursor can no longer be used."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:97(title) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:97(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:102(programlisting) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:102(programlisting) 
 #, no-wrap
 msgid "\nROLLBACK TO SAVEPOINT my_savepoint;\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:99(para) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:99(para) 
 msgid "To undo the effects of the commands executed after <literal>my_savepoint</literal> was established: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:109(programlisting) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:109(programlisting) 
 #, no-wrap
 msgid "\nBEGIN;\n\nDECLARE foo CURSOR FOR SELECT 1 UNION SELECT 2;\n\nSAVEPOINT foo;\n\nFETCH 1 FROM foo;\n ?column? \n----------\n        1\n\nROLLBACK TO SAVEPOINT foo;\n\nFETCH 1 FROM foo;\n ?column? \n----------\n        2\n\nCOMMIT;\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:107(para) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:107(para) 
 msgid "Cursor positions are not affected by savepoint rollback: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:135(title) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:135(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:137(para) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:137(para) 
 msgid "The <acronym>SQL</acronym> standard specifies that the key word <literal>SAVEPOINT</literal> is mandatory, but <productname>PostgreSQL</productname> and <productname>Oracle</productname> allow it to be omitted. SQL allows only <literal>WORK</literal>, not <literal>TRANSACTION</literal>, as a noise word after <literal>ROLLBACK</literal>. Also, SQL has an optional clause <literal>AND [ NO ] CHAIN</literal> which is not currently supported by <productname>PostgreSQL</productname>. Otherwise, this command conforms to the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:150(title) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:150(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QnGh/ref/rollback_to.xml:0(None) 
+#: /tmp/cicero-dQiJ/ref/rollback_to.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

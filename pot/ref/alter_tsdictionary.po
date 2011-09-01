@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-31 06:59+0200\n"
+"POT-Creation-Date: 2011-09-01 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,140 +9,140 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:10(refentrytitle) /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:16(refname) /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:21(primary) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:10(refentrytitle) /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:16(refname) /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:21(primary) 
 msgid "ALTER TEXT SEARCH DICTIONARY"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:11(manvolnum) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:12(refmiscinfo) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:17(refpurpose) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:17(refpurpose) 
 msgid "change the definition of a text search dictionary"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:26(replaceable) /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:29(replaceable) /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:30(replaceable) /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:31(replaceable) /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:55(replaceable) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:26(replaceable) /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:29(replaceable) /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:30(replaceable) /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:31(replaceable) /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:55(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:27(replaceable) /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:65(replaceable) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:27(replaceable) /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:65(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:27(replaceable) /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:74(replaceable) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:27(replaceable) /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:74(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:29(replaceable) /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:86(replaceable) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:29(replaceable) /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:86(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:30(replaceable) /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:95(replaceable) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:30(replaceable) /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:95(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:31(replaceable) /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:104(replaceable) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:31(replaceable) /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:104(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:25(synopsis) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:25(synopsis) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH DICTIONARY <placeholder-1/> (\n    <placeholder-2/> [ = <placeholder-3/> ] [, ... ]\n)\nALTER TEXT SEARCH DICTIONARY <placeholder-4/> RENAME TO <placeholder-5/>\nALTER TEXT SEARCH DICTIONARY <placeholder-6/> OWNER TO <placeholder-7/>\nALTER TEXT SEARCH DICTIONARY <placeholder-8/> SET SCHEMA <placeholder-9/>\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:36(title) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:38(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:38(para) 
 msgid "<command>ALTER TEXT SEARCH DICTIONARY</command> changes the definition of a text search dictionary. You can change the dictionary's template-specific options, or change the dictionary's name or owner."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:44(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:44(para) 
 msgid "You must be the owner of the dictionary to use <command>ALTER TEXT SEARCH DICTIONARY</command>."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:51(title) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:51(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:57(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:57(para) 
 msgid "The name (optionally schema-qualified) of an existing text search dictionary."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:67(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:67(para) 
 msgid "The name of a template-specific option to be set for this dictionary."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:76(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:76(para) 
 msgid "The new value to use for a template-specific option. If the equal sign and value are omitted, then any previous setting for the option is removed from the dictionary, allowing the default to be used."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:88(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:88(para) 
 msgid "The new name of the text search dictionary."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:97(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:97(para) 
 msgid "The new owner of the text search dictionary."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:106(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:106(para) 
 msgid "The new schema for the text search dictionary."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:113(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:113(para) 
 msgid "Template-specific options can appear in any order."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:119(title) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:119(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:121(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:121(para) 
 msgid "The following example command changes the stopword list for a Snowball-based dictionary. Other parameters remain unchanged."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:126(programlisting) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:126(programlisting) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH DICTIONARY my_dict ( StopWords = newrussian );\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:130(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:130(para) 
 msgid "The following example command changes the language option to dutch, and removes the stopword option entirely."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:135(programlisting) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:135(programlisting) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH DICTIONARY my_dict ( language = dutch, StopWords );\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:143(programlisting) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:143(programlisting) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH DICTIONARY my_dict ( dummy );\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:139(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:139(para) 
 msgid "The following example command <quote>updates</quote> the dictionary's definition without actually changing anything. <placeholder-1/> (The reason this works is that the option removal code doesn't complain if there is no such option.) This trick is useful when changing configuration files for the dictionary: the <command>ALTER</command> will force existing database sessions to re-read the configuration files, which otherwise they would never do if they had read them earlier."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:156(title) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:156(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:158(para) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:158(para) 
 msgid "There is no <command>ALTER TEXT SEARCH DICTIONARY</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:165(title) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:165(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QnGh/ref/alter_tsdictionary.xml:0(None) 
+#: /tmp/cicero-dQiJ/ref/alter_tsdictionary.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

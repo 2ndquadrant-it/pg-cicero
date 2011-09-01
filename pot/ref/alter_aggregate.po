@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-31 06:59+0200\n"
+"POT-Creation-Date: 2011-09-01 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,128 +9,128 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:10(refentrytitle) /tmp/cicero-QnGh/ref/alter_aggregate.xml:16(refname) /tmp/cicero-QnGh/ref/alter_aggregate.xml:21(primary) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:10(refentrytitle) /tmp/cicero-dQiJ/ref/alter_aggregate.xml:16(refname) /tmp/cicero-dQiJ/ref/alter_aggregate.xml:21(primary) 
 msgid "ALTER AGGREGATE"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:11(manvolnum) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:12(refmiscinfo) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:17(refpurpose) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:17(refpurpose) 
 msgid "change the definition of an aggregate function"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:26(replaceable) /tmp/cicero-QnGh/ref/alter_aggregate.xml:27(replaceable) /tmp/cicero-QnGh/ref/alter_aggregate.xml:28(replaceable) /tmp/cicero-QnGh/ref/alter_aggregate.xml:58(replaceable) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:26(replaceable) /tmp/cicero-dQiJ/ref/alter_aggregate.xml:27(replaceable) /tmp/cicero-dQiJ/ref/alter_aggregate.xml:28(replaceable) /tmp/cicero-dQiJ/ref/alter_aggregate.xml:58(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:26(replaceable) /tmp/cicero-QnGh/ref/alter_aggregate.xml:27(replaceable) /tmp/cicero-QnGh/ref/alter_aggregate.xml:28(replaceable) /tmp/cicero-QnGh/ref/alter_aggregate.xml:67(replaceable) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:26(replaceable) /tmp/cicero-dQiJ/ref/alter_aggregate.xml:27(replaceable) /tmp/cicero-dQiJ/ref/alter_aggregate.xml:28(replaceable) /tmp/cicero-dQiJ/ref/alter_aggregate.xml:67(replaceable) 
 msgid "type"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:26(replaceable) /tmp/cicero-QnGh/ref/alter_aggregate.xml:78(replaceable) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:26(replaceable) /tmp/cicero-dQiJ/ref/alter_aggregate.xml:78(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:27(replaceable) /tmp/cicero-QnGh/ref/alter_aggregate.xml:87(replaceable) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:27(replaceable) /tmp/cicero-dQiJ/ref/alter_aggregate.xml:87(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:28(replaceable) /tmp/cicero-QnGh/ref/alter_aggregate.xml:96(replaceable) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:28(replaceable) /tmp/cicero-dQiJ/ref/alter_aggregate.xml:96(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:25(synopsis) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:25(synopsis) 
 #, no-wrap
 msgid "\nALTER AGGREGATE <placeholder-1/> ( <placeholder-2/> [ , ... ] ) RENAME TO <placeholder-3/>\nALTER AGGREGATE <placeholder-4/> ( <placeholder-5/> [ , ... ] ) OWNER TO <placeholder-6/>\nALTER AGGREGATE <placeholder-7/> ( <placeholder-8/> [ , ... ] ) SET SCHEMA <placeholder-9/>\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:33(title) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:35(para) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:35(para) 
 msgid "<command>ALTER AGGREGATE</command> changes the definition of an aggregate function."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:40(para) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:40(para) 
 msgid "You must own the aggregate function to use <command>ALTER AGGREGATE</command>. To change the schema of an aggregate function, you must also have <literal>CREATE</literal> privilege on the new schema. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the aggregate function's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the aggregate function. However, a superuser can alter ownership of any aggregate function anyway.)"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:54(title) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:54(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:60(para) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:60(para) 
 msgid "The name (optionally schema-qualified) of an existing aggregate function."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:69(para) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:69(para) 
 msgid "An input data type on which the aggregate function operates. To reference a zero-argument aggregate function, write <literal>*</literal> in place of the list of input data types."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:80(para) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:80(para) 
 msgid "The new name of the aggregate function."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:89(para) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:89(para) 
 msgid "The new owner of the aggregate function."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:98(para) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:98(para) 
 msgid "The new schema for the aggregate function."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:107(title) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:107(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:112(programlisting) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:112(programlisting) 
 #, no-wrap
 msgid "\nALTER AGGREGATE myavg(integer) RENAME TO my_average;\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:109(para) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:109(para) 
 msgid "To rename the aggregate function <literal>myavg</literal> for type <type>integer</type> to <literal>my_average</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:120(programlisting) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:120(programlisting) 
 #, no-wrap
 msgid "\nALTER AGGREGATE myavg(integer) OWNER TO joe;\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:117(para) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:117(para) 
 msgid "To change the owner of the aggregate function <literal>myavg</literal> for type <type>integer</type> to <literal>joe</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:128(programlisting) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:128(programlisting) 
 #, no-wrap
 msgid "\nALTER AGGREGATE myavg(integer) SET SCHEMA myschema;\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:125(para) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:125(para) 
 msgid "To move the aggregate function <literal>myavg</literal> for type <type>integer</type> into schema <literal>myschema</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:134(title) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:134(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:136(para) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:136(para) 
 msgid "There is no <command>ALTER AGGREGATE</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:143(title) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:143(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QnGh/ref/alter_aggregate.xml:0(None) 
+#: /tmp/cicero-dQiJ/ref/alter_aggregate.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-31 06:58+0200\n"
+"POT-Creation-Date: 2011-09-01 06:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,412 +9,412 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QnGh/cube.xml:6(title) /tmp/cicero-QnGh/cube.xml:9(primary) 
+#: /tmp/cicero-dQiJ/cube.xml:6(title) /tmp/cicero-dQiJ/cube.xml:9(primary) 
 msgid "cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:12(para) 
+#: /tmp/cicero-dQiJ/cube.xml:12(para) 
 msgid "This module implements a data type <type>cube</type> for representing multidimensional cubes."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:18(title) 
+#: /tmp/cicero-dQiJ/cube.xml:18(title) 
 msgid "Syntax"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:20(para) 
+#: /tmp/cicero-dQiJ/cube.xml:20(para) 
 msgid "<xref linkend=\"cube-repr-table\"/> shows the valid external representations for the <type>cube</type> type. <replaceable>x</replaceable>, <replaceable>y</replaceable>, etc. denote floating-point numbers."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:28(title) 
+#: /tmp/cicero-dQiJ/cube.xml:28(title) 
 msgid "Cube External Representations"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:32(replaceable) /tmp/cicero-QnGh/cube.xml:38(replaceable) /tmp/cicero-QnGh/cube.xml:52(replaceable) /tmp/cicero-QnGh/cube.xml:53(replaceable) /tmp/cicero-QnGh/cube.xml:58(replaceable) 
+#: /tmp/cicero-dQiJ/cube.xml:32(replaceable) /tmp/cicero-dQiJ/cube.xml:38(replaceable) /tmp/cicero-dQiJ/cube.xml:52(replaceable) /tmp/cicero-dQiJ/cube.xml:53(replaceable) /tmp/cicero-dQiJ/cube.xml:58(replaceable) 
 msgid "x"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:33(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:33(entry) 
 msgid "A one-dimensional point (or, zero-length one-dimensional interval)"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:38(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:38(literal) 
 msgid "(<placeholder-1/>)"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:39(entry) /tmp/cicero-QnGh/cube.xml:49(entry) /tmp/cicero-QnGh/cube.xml:59(entry) /tmp/cicero-QnGh/cube.xml:69(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:39(entry) /tmp/cicero-dQiJ/cube.xml:49(entry) /tmp/cicero-dQiJ/cube.xml:59(entry) /tmp/cicero-dQiJ/cube.xml:69(entry) 
 msgid "Same as above"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:42(replaceable) /tmp/cicero-QnGh/cube.xml:48(replaceable) /tmp/cicero-QnGh/cube.xml:62(replaceable) /tmp/cicero-QnGh/cube.xml:68(replaceable) 
+#: /tmp/cicero-dQiJ/cube.xml:42(replaceable) /tmp/cicero-dQiJ/cube.xml:48(replaceable) /tmp/cicero-dQiJ/cube.xml:62(replaceable) /tmp/cicero-dQiJ/cube.xml:68(replaceable) 
 msgid "x1"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:42(replaceable) /tmp/cicero-QnGh/cube.xml:48(replaceable) 
+#: /tmp/cicero-dQiJ/cube.xml:42(replaceable) /tmp/cicero-dQiJ/cube.xml:48(replaceable) 
 msgid "x2"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:42(replaceable) /tmp/cicero-QnGh/cube.xml:48(replaceable) /tmp/cicero-QnGh/cube.xml:62(replaceable) /tmp/cicero-QnGh/cube.xml:68(replaceable) 
+#: /tmp/cicero-dQiJ/cube.xml:42(replaceable) /tmp/cicero-dQiJ/cube.xml:48(replaceable) /tmp/cicero-dQiJ/cube.xml:62(replaceable) /tmp/cicero-dQiJ/cube.xml:68(replaceable) 
 msgid "xn"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:42(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:42(literal) 
 msgid "<placeholder-1/>,<placeholder-2/>,...,<placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:43(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:43(entry) 
 msgid "A point in n-dimensional space, represented internally as a zero-volume cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:48(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:48(literal) 
 msgid "(<placeholder-1/>,<placeholder-2/>,...,<placeholder-3/>)"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:52(replaceable) /tmp/cicero-QnGh/cube.xml:53(replaceable) /tmp/cicero-QnGh/cube.xml:58(replaceable) 
+#: /tmp/cicero-dQiJ/cube.xml:52(replaceable) /tmp/cicero-dQiJ/cube.xml:53(replaceable) /tmp/cicero-dQiJ/cube.xml:58(replaceable) 
 msgid "y"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:52(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:52(literal) 
 msgid "(<placeholder-1/>),(<placeholder-2/>)"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:53(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:53(entry) 
 msgid "A one-dimensional interval starting at <placeholder-1/> and ending at <placeholder-2/> or vice versa; the order does not matter"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:58(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:58(literal) 
 msgid "[(<placeholder-1/>),(<placeholder-2/>)]"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:62(replaceable) /tmp/cicero-QnGh/cube.xml:68(replaceable) 
+#: /tmp/cicero-dQiJ/cube.xml:62(replaceable) /tmp/cicero-dQiJ/cube.xml:68(replaceable) 
 msgid "y1"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:62(replaceable) /tmp/cicero-QnGh/cube.xml:68(replaceable) 
+#: /tmp/cicero-dQiJ/cube.xml:62(replaceable) /tmp/cicero-dQiJ/cube.xml:68(replaceable) 
 msgid "yn"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:62(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:62(literal) 
 msgid "(<placeholder-1/>,...,<placeholder-2/>),(<placeholder-3/>,...,<placeholder-4/>)"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:63(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:63(entry) 
 msgid "An n-dimensional cube represented by a pair of its diagonally opposite corners"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:68(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:68(literal) 
 msgid "[(<placeholder-1/>,...,<placeholder-2/>),(<placeholder-3/>,...,<placeholder-4/>)]"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:75(para) 
+#: /tmp/cicero-dQiJ/cube.xml:75(para) 
 msgid "It does not matter which order the opposite corners of a cube are entered in. The <type>cube</type> functions automatically swap values if needed to create a uniform <quote>lower left — upper right</quote> internal representation."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:82(para) 
+#: /tmp/cicero-dQiJ/cube.xml:82(para) 
 msgid "White space is ignored, so <literal>[(<replaceable>x</replaceable>),(<replaceable>y</replaceable>)]</literal> is the same as <literal>[ ( <replaceable>x</replaceable> ), ( <replaceable>y</replaceable> ) ]</literal>."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:89(title) 
+#: /tmp/cicero-dQiJ/cube.xml:89(title) 
 msgid "Precision"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:91(para) 
+#: /tmp/cicero-dQiJ/cube.xml:91(para) 
 msgid "Values are stored internally as 64-bit floating point numbers. This means that numbers with more than about 16 significant digits will be truncated."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:98(title) 
+#: /tmp/cicero-dQiJ/cube.xml:98(title) 
 msgid "Usage"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:100(para) 
+#: /tmp/cicero-dQiJ/cube.xml:100(para) 
 msgid "The <filename>cube</filename> module includes a GiST index operator class for <type>cube</type> values. The operators supported by the GiST operator class are shown in <xref linkend=\"cube-gist-operators\"/>."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:107(title) 
+#: /tmp/cicero-dQiJ/cube.xml:107(title) 
 msgid "Cube GiST Operators"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:111(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:111(entry) 
 msgid "Operator"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:112(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:112(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:118(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:118(literal) 
 msgid "a = b"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:119(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:119(entry) 
 msgid "The cubes a and b are identical."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:123(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:123(literal) 
 msgid "a &amp;&amp; b"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:124(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:124(entry) 
 msgid "The cubes a and b overlap."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:128(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:128(literal) 
 msgid "a @&gt; b"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:129(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:129(entry) 
 msgid "The cube a contains the cube b."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:133(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:133(literal) 
 msgid "a &lt;@ b"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:134(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:134(entry) 
 msgid "The cube a is contained in the cube b."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:140(para) 
+#: /tmp/cicero-dQiJ/cube.xml:140(para) 
 msgid "(Before PostgreSQL 8.2, the containment operators <literal>@&gt;</literal> and <literal>&lt;@</literal> were respectively called <literal>@</literal> and <literal>~</literal>. These names are still available, but are deprecated and will eventually be retired. Notice that the old names are reversed from the convention formerly followed by the core geometric data types!)"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:148(para) 
+#: /tmp/cicero-dQiJ/cube.xml:148(para) 
 msgid "The standard B-tree operators are also provided, for example <informaltable><tgroup cols=\"2\"><thead><row><entry>Operator</entry><entry>Description</entry></row></thead><tbody><row><entry><literal>[a, b] &lt; [c, d]</literal></entry><entry>Less than</entry></row><row><entry><literal>[a, b] &gt; [c, d]</literal></entry><entry>Greater than</entry></row></tbody></tgroup></informaltable> These operators do not make a lot of sense for any practical purpose but sorting. These operators first compare (a) to (c), and if these are equal, compare (b) to (d). That results in reasonably good sorting in most cases, which is useful if you want to use ORDER BY with this type."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:181(para) 
+#: /tmp/cicero-dQiJ/cube.xml:181(para) 
 msgid "<xref linkend=\"cube-functions-table\"/> shows the available functions."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:186(title) 
+#: /tmp/cicero-dQiJ/cube.xml:186(title) 
 msgid "Cube Functions"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:190(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:190(literal) 
 msgid "cube(float8) returns cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:192(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:192(literal) 
 msgid "cube(1) == '(1)'"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:191(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:191(entry) 
 msgid "Makes a one dimensional cube with both coordinates the same. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:197(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:197(literal) 
 msgid "cube(float8, float8) returns cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:199(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:199(literal) 
 msgid "cube(1,2) == '(1),(2)'"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:198(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:198(entry) 
 msgid "Makes a one dimensional cube. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:204(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:204(literal) 
 msgid "cube(float8[]) returns cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:207(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:207(literal) 
 msgid "cube(ARRAY[1,2]) == '(1,2)'"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:205(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:205(entry) 
 msgid "Makes a zero-volume cube using the coordinates defined by the array. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:212(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:212(literal) 
 msgid "cube(float8[], float8[]) returns cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:216(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:216(literal) 
 msgid "cube('{1,2}'::float[], '{3,4}'::float[]) == '(1,2),(3,4)'"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:213(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:213(entry) 
 msgid "Makes a cube with upper right and lower left coordinates as defined by the two arrays, which must be of the same length. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:222(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:222(literal) 
 msgid "cube(cube, float8) returns cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:226(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:226(literal) 
 msgid "cube('(1)',2) == '(1,2),(1,2)'"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:223(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:223(entry) 
 msgid "Makes a new cube by adding a dimension on to an existing cube with the same values for both parts of the new coordinate. This is useful for building cubes piece by piece from calculated values. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:231(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:231(literal) 
 msgid "cube(cube, float8, float8) returns cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:234(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:234(literal) 
 msgid "cube('(1,2)',3,4) == '(1,3),(2,4)'"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:232(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:232(entry) 
 msgid "Makes a new cube by adding a dimension on to an existing cube. This is useful for building cubes piece by piece from calculated values. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:239(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:239(literal) 
 msgid "cube_dim(cube) returns int"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:240(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:240(entry) 
 msgid "Returns the number of dimensions of the cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:245(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:245(literal) 
 msgid "cube_ll_coord(cube, int) returns double"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:246(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:246(entry) 
 msgid "Returns the n'th coordinate value for the lower left corner of a cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:252(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:252(literal) 
 msgid "cube_ur_coord(cube, int) returns double"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:254(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:254(entry) 
 msgid "Returns the n'th coordinate value for the upper right corner of a cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:260(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:260(literal) 
 msgid "cube_is_point(cube) returns bool"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:261(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:261(entry) 
 msgid "Returns true if a cube is a point, that is, the two defining corners are the same."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:266(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:266(literal) 
 msgid "cube_distance(cube, cube) returns double"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:267(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:267(entry) 
 msgid "Returns the distance between two cubes. If both cubes are points, this is the normal distance function."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:273(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:273(literal) 
 msgid "cube_subset(cube, int[]) returns cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:278(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:278(literal) 
 msgid "cube_subset(cube('(1,3,5),(6,7,8)'), ARRAY[2]) = '(3),(7)'"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:280(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:280(literal) 
 msgid "cube_subset(cube('(1,3,5),(6,7,8)'), ARRAY[3,2,1,1]) = '(5, 3, 1, 1),(8, 7, 6, 6)'"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:275(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:275(entry) 
 msgid "Makes a new cube from an existing cube, using a list of dimension indexes from an array. Can be used to find both the LL and UR coordinates of a single dimension, e.g. <placeholder-1/>. Or can be used to drop dimensions, or reorder them as desired, e.g. <placeholder-2/>."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:286(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:286(literal) 
 msgid "cube_union(cube, cube) returns cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:287(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:287(entry) 
 msgid "Produces the union of two cubes"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:292(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:292(literal) 
 msgid "cube_inter(cube, cube) returns cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:293(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:293(entry) 
 msgid "Produces the intersection of two cubes"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:298(literal) 
+#: /tmp/cicero-dQiJ/cube.xml:298(literal) 
 msgid "cube_enlarge(cube c, double r, int n) returns cube"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:299(entry) 
+#: /tmp/cicero-dQiJ/cube.xml:299(entry) 
 msgid "Increases the size of a cube by a specified radius in at least n dimensions. If the radius is negative the cube is shrunk instead. This is useful for creating bounding boxes around a point for searching for nearby points. All defined dimensions are changed by the radius r. LL coordinates are decreased by r and UR coordinates are increased by r. If a LL coordinate is increased to larger than the corresponding UR coordinate (this can only happen when r &lt; 0) than both coordinates are set to their average. If n is greater than the number of defined dimensions and the cube is being increased (r &gt;= 0) then 0 is used as the base for the extra coordinates."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:317(title) 
+#: /tmp/cicero-dQiJ/cube.xml:317(title) 
 msgid "Defaults"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:319(para) 
+#: /tmp/cicero-dQiJ/cube.xml:319(para) 
 msgid "I believe this union:"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:322(programlisting) 
+#: /tmp/cicero-dQiJ/cube.xml:322(programlisting) 
 #, no-wrap
 msgid "\nselect cube_union('(0,5,2),(2,3,1)', '0');\ncube_union\n-------------------\n(0, 0, 0),(2, 5, 2)\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:330(para) 
+#: /tmp/cicero-dQiJ/cube.xml:330(para) 
 msgid "does not contradict common sense, neither does the intersection"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:334(programlisting) 
+#: /tmp/cicero-dQiJ/cube.xml:334(programlisting) 
 #, no-wrap
 msgid "\nselect cube_inter('(0,-1),(1,1)', '(-2),(2)');\ncube_inter\n-------------\n(0, 0),(1, 0)\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:342(para) 
+#: /tmp/cicero-dQiJ/cube.xml:342(para) 
 msgid "In all binary operations on differently-dimensioned cubes, I assume the lower-dimensional one to be a Cartesian projection, i. e., having zeroes in place of coordinates omitted in the string representation. The above examples are equivalent to:"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:349(programlisting) 
+#: /tmp/cicero-dQiJ/cube.xml:349(programlisting) 
 #, no-wrap
 msgid "\ncube_union('(0,5,2),(2,3,1)','(0,0,0),(0,0,0)');\ncube_inter('(0,-1),(1,1)','(-2,0),(2,0)');\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:354(para) 
+#: /tmp/cicero-dQiJ/cube.xml:354(para) 
 msgid "The following containment predicate uses the point syntax, while in fact the second argument is internally represented by a box. This syntax makes it unnecessary to define a separate point type and functions for (box,point) predicates."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:361(programlisting) 
+#: /tmp/cicero-dQiJ/cube.xml:361(programlisting) 
 #, no-wrap
 msgid "\nselect cube_contains('(0,0),(1,1)', '0.5,0.5');\ncube_contains\n--------------\nt\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:371(title) 
+#: /tmp/cicero-dQiJ/cube.xml:371(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:373(para) 
+#: /tmp/cicero-dQiJ/cube.xml:373(para) 
 msgid "For examples of usage, see the regression test <filename>sql/cube.sql</filename>."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:377(para) 
+#: /tmp/cicero-dQiJ/cube.xml:377(para) 
 msgid "To make it harder for people to break things, there is a limit of 100 on the number of dimensions of cubes. This is set in <filename>cubedata.h</filename> if you need something bigger."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:385(title) 
+#: /tmp/cicero-dQiJ/cube.xml:385(title) 
 msgid "Credits"
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:387(para) 
+#: /tmp/cicero-dQiJ/cube.xml:387(para) 
 msgid "Original author: Gene Selkov, Jr. <email>selkovjr@mcs.anl.gov</email>, Mathematics and Computer Science Division, Argonne National Laboratory."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:392(para) 
+#: /tmp/cicero-dQiJ/cube.xml:392(para) 
 msgid "My thanks are primarily to Prof. Joe Hellerstein (<ulink url=\"http://db.cs.berkeley.edu/jmh/\"/>) for elucidating the gist of the GiST (<ulink url=\"http://gist.cs.berkeley.edu/\"/>), and to his former student, Andy Dong (<ulink url=\"http://best.me.berkeley.edu/~adong/\"/>), for his example written for Illustra, <ulink url=\"http://best.berkeley.edu/~adong/rtree/index.html\"/>. I am also grateful to all Postgres developers, present and past, for enabling myself to create my own world and live undisturbed in it. And I would like to acknowledge my gratitude to Argonne Lab and to the U.S. Department of Energy for the years of faithful support of my database research."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:407(para) 
+#: /tmp/cicero-dQiJ/cube.xml:407(para) 
 msgid "Minor updates to this package were made by Bruno Wolff III <email>bruno@wolff.to</email> in August/September of 2002. These include changing the precision from single precision to double precision and adding some new functions."
 msgstr ""
 
-#: /tmp/cicero-QnGh/cube.xml:414(para) 
+#: /tmp/cicero-dQiJ/cube.xml:414(para) 
 msgid "Additional updates were made by Joshua Reich <email>josh@root.net</email> in July 2006. These include <literal>cube(float8[], float8[])</literal> and cleaning up the code to use the V1 call protocol instead of the deprecated V0 protocol."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QnGh/cube.xml:0(None) 
+#: /tmp/cicero-dQiJ/cube.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
