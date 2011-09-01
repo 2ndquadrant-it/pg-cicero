@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-31 06:57+0200\n"
+"POT-Creation-Date: 2011-09-01 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,56 +9,56 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ieik/xfunc.xml:5(title) 
+#: /tmp/cicero-yKZa/xfunc.xml:5(title) 
 msgid "User-defined Functions"
 msgstr ""
 
-#: /tmp/cicero-ieik/xfunc.xml:8(primary) 
+#: /tmp/cicero-yKZa/xfunc.xml:8(primary) 
 msgid "function"
 msgstr ""
 
-#: /tmp/cicero-ieik/xfunc.xml:9(secondary) 
+#: /tmp/cicero-yKZa/xfunc.xml:9(secondary) 
 msgid "user-defined"
 msgstr ""
 
-#: /tmp/cicero-ieik/xfunc.xml:18(para) 
+#: /tmp/cicero-yKZa/xfunc.xml:18(para) 
 msgid "query language functions (functions written in <acronym>SQL</acronym>) (<xref linkend=\"xfunc-sql\"/>)"
 msgstr ""
 
-#: /tmp/cicero-ieik/xfunc.xml:24(para) 
+#: /tmp/cicero-yKZa/xfunc.xml:24(para) 
 msgid "procedural language functions (functions written in, for example, <application>PL/pgSQL</application> or <application>PL/Tcl</application>) (<xref linkend=\"xfunc-pl\"/>)"
 msgstr ""
 
-#: /tmp/cicero-ieik/xfunc.xml:31(para) 
+#: /tmp/cicero-yKZa/xfunc.xml:31(para) 
 msgid "internal functions (<xref linkend=\"xfunc-internal\"/>)"
 msgstr ""
 
-#: /tmp/cicero-ieik/xfunc.xml:36(para) 
+#: /tmp/cicero-yKZa/xfunc.xml:36(para) 
 msgid "C-language functions (<xref linkend=\"xfunc-c\"/>)"
 msgstr ""
 
-#: /tmp/cicero-ieik/xfunc.xml:12(para) 
+#: /tmp/cicero-yKZa/xfunc.xml:12(para) 
 msgid "<productname>PostgreSQL</productname> provides four kinds of functions: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ieik/xfunc.xml:43(para) 
+#: /tmp/cicero-yKZa/xfunc.xml:43(para) 
 msgid "Every kind of function can take base types, composite types, or combinations of these as arguments (parameters). In addition, every kind of function can return a base type or a composite type. Functions can also be defined to return sets of base or composite values."
 msgstr ""
 
-#: /tmp/cicero-ieik/xfunc.xml:52(para) 
+#: /tmp/cicero-yKZa/xfunc.xml:52(para) 
 msgid "Many kinds of functions can take or return certain pseudo-types (such as polymorphic types), but the available facilities vary. Consult the description of each kind of function for more details."
 msgstr ""
 
-#: /tmp/cicero-ieik/xfunc.xml:58(para) 
+#: /tmp/cicero-yKZa/xfunc.xml:58(para) 
 msgid "It's easiest to define <acronym>SQL</acronym> functions, so we'll start by discussing those. Most of the concepts presented for <acronym>SQL</acronym> functions will carry over to the other types of functions."
 msgstr ""
 
-#: /tmp/cicero-ieik/xfunc.xml:65(para) 
+#: /tmp/cicero-yKZa/xfunc.xml:65(para) 
 msgid "Throughout this chapter, it can be useful to look at the reference page of the <xref linkend=\"sql-createfunction\"/> command to understand the examples better. Some examples from this chapter can be found in <filename>funcs.sql</filename> and <filename>funcs.c</filename> in the <filename>src/tutorial</filename> directory in the <productname>PostgreSQL</productname> source distribution."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ieik/xfunc.xml:0(None) 
+#: /tmp/cicero-yKZa/xfunc.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

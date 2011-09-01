@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-31 06:56+0200\n"
+"POT-Creation-Date: 2011-09-01 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,85 +9,85 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ieik/lo.xml:5(title) /tmp/cicero-ieik/lo.xml:8(primary) 
+#: /tmp/cicero-yKZa/lo.xml:5(title) /tmp/cicero-yKZa/lo.xml:8(primary) 
 msgid "lo"
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:11(para) 
+#: /tmp/cicero-yKZa/lo.xml:11(para) 
 msgid "The <filename>lo</filename> module provides support for managing Large Objects (also called LOs or BLOBs). This includes a data type <type>lo</type> and a trigger <function>lo_manage</function>."
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:18(title) 
+#: /tmp/cicero-yKZa/lo.xml:18(title) 
 msgid "Rationale"
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:20(para) 
+#: /tmp/cicero-yKZa/lo.xml:20(para) 
 msgid "One of the problems with the JDBC driver (and this affects the ODBC driver also), is that the specification assumes that references to BLOBs (Binary Large OBjects) are stored within a table, and if that entry is changed, the associated BLOB is deleted from the database."
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:27(para) 
+#: /tmp/cicero-yKZa/lo.xml:27(para) 
 msgid "As <productname>PostgreSQL</productname> stands, this doesn't occur. Large objects are treated as objects in their own right; a table entry can reference a large object by OID, but there can be multiple table entries referencing the same large object OID, so the system doesn't delete the large object just because you change or remove one such entry."
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:35(para) 
+#: /tmp/cicero-yKZa/lo.xml:35(para) 
 msgid "Now this is fine for <productname>PostgreSQL</productname>-specific applications, but standard code using JDBC or ODBC won't delete the objects, resulting in orphan objects — objects that are not referenced by anything, and simply occupy disk space."
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:42(para) 
+#: /tmp/cicero-yKZa/lo.xml:42(para) 
 msgid "The <filename>lo</filename> module allows fixing this by attaching a trigger to tables that contain LO reference columns. The trigger essentially just does a <function>lo_unlink</function> whenever you delete or modify a value referencing a large object. When you use this trigger, you are assuming that there is only one database reference to any large object that is referenced in a trigger-controlled column!"
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:51(para) 
+#: /tmp/cicero-yKZa/lo.xml:51(para) 
 msgid "The module also provides a data type <type>lo</type>, which is really just a domain of the <type>oid</type> type. This is useful for differentiating database columns that hold large object references from those that are OIDs of other things. You don't have to use the <type>lo</type> type to use the trigger, but it may be convenient to use it to keep track of which columns in your database represent large objects that you are managing with the trigger. It is also rumored that the ODBC driver gets confused if you don't use <type>lo</type> for BLOB columns."
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:64(title) 
+#: /tmp/cicero-yKZa/lo.xml:64(title) 
 msgid "How to Use It"
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:66(para) 
+#: /tmp/cicero-yKZa/lo.xml:66(para) 
 msgid "Here's a simple example of usage:"
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:70(programlisting) 
+#: /tmp/cicero-yKZa/lo.xml:70(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE image (title TEXT, raster lo);\n\nCREATE TRIGGER t_raster BEFORE UPDATE OR DELETE ON image\n    FOR EACH ROW EXECUTE PROCEDURE lo_manage(raster);\n"
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:77(para) 
+#: /tmp/cicero-yKZa/lo.xml:77(para) 
 msgid "For each column that will contain unique references to large objects, create a <literal>BEFORE UPDATE OR DELETE</literal> trigger, and give the column name as the sole trigger argument. If you need multiple <type>lo</type> columns in the same table, create a separate trigger for each one, remembering to give a different name to each trigger on the same table."
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:87(title) 
+#: /tmp/cicero-yKZa/lo.xml:87(title) 
 msgid "Limitations"
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:91(para) 
+#: /tmp/cicero-yKZa/lo.xml:91(para) 
 msgid "Dropping a table will still orphan any objects it contains, as the trigger is not executed. You can avoid this by preceding the <command>DROP TABLE</command> with <command>DELETE FROM <replaceable>table</replaceable></command>."
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:97(para) 
+#: /tmp/cicero-yKZa/lo.xml:97(para) 
 msgid "<command>TRUNCATE</command> has the same hazard."
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:101(para) 
+#: /tmp/cicero-yKZa/lo.xml:101(para) 
 msgid "If you already have, or suspect you have, orphaned large objects, see the <xref linkend=\"vacuumlo\"/> module to help you clean them up. It's a good idea to run <application>vacuumlo</application> occasionally as a back-stop to the <function>lo_manage</function> trigger."
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:110(para) 
+#: /tmp/cicero-yKZa/lo.xml:110(para) 
 msgid "Some frontends may create their own tables, and will not create the associated trigger(s). Also, users may not remember (or know) to create the triggers."
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:120(title) 
+#: /tmp/cicero-yKZa/lo.xml:120(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-ieik/lo.xml:122(para) 
+#: /tmp/cicero-yKZa/lo.xml:122(para) 
 msgid "Peter Mount <email>peter@retep.org.uk</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ieik/lo.xml:0(None) 
+#: /tmp/cicero-yKZa/lo.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
