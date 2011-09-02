@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:21+0200\n"
+"POT-Creation-Date: 2011-09-02 11:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,101 +9,101 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:10(refentrytitle) /tmp/cicero-NXtK/ref/create_tsconfig.xml:16(refname) /tmp/cicero-NXtK/ref/create_tsconfig.xml:21(primary) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:10(refentrytitle) /tmp/cicero-hapq/ref/create_tsconfig.xml:16(refname) /tmp/cicero-hapq/ref/create_tsconfig.xml:21(primary) 
 msgid "CREATE TEXT SEARCH CONFIGURATION"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:11(manvolnum) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:12(refmiscinfo) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:17(refpurpose) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:17(refpurpose) 
 msgid "define a new text search configuration"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:26(replaceable) /tmp/cicero-NXtK/ref/create_tsconfig.xml:71(replaceable) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:26(replaceable) /tmp/cicero-hapq/ref/create_tsconfig.xml:71(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:27(replaceable) /tmp/cicero-NXtK/ref/create_tsconfig.xml:81(replaceable) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:27(replaceable) /tmp/cicero-hapq/ref/create_tsconfig.xml:81(replaceable) 
 msgid "parser_name"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:28(replaceable) /tmp/cicero-NXtK/ref/create_tsconfig.xml:90(replaceable) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:28(replaceable) /tmp/cicero-hapq/ref/create_tsconfig.xml:90(replaceable) 
 msgid "source_config"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:25(synopsis) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:25(synopsis) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH CONFIGURATION <placeholder-1/> (\n    PARSER = <placeholder-2/> |\n    COPY = <placeholder-3/>\n)\n"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:34(title) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:34(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:36(para) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:36(para) 
 msgid "<command>CREATE TEXT SEARCH CONFIGURATION</command> creates a new text search configuration. A text search configuration specifies a text search parser that can divide a string into tokens, plus dictionaries that can be used to determine which tokens are of interest for searching."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:43(para) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:43(para) 
 msgid "If only the parser is specified, then the new text search configuration initially has no mappings from token types to dictionaries, and therefore will ignore all words. Subsequent <command>ALTER TEXT SEARCH CONFIGURATION</command> commands must be used to create mappings to make the configuration useful. Alternatively, an existing text search configuration can be copied."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:52(para) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:52(para) 
 msgid "If a schema name is given then the text search configuration is created in the specified schema. Otherwise it is created in the current schema."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:57(para) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:57(para) 
 msgid "The user who defines a text search configuration becomes its owner."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:61(para) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:61(para) 
 msgid "Refer to <xref linkend=\"textsearch\"/> for further information."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:67(title) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:67(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:73(para) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:73(para) 
 msgid "The name of the text search configuration to be created. The name can be schema-qualified."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:83(para) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:83(para) 
 msgid "The name of the text search parser to use for this configuration."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:92(para) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:92(para) 
 msgid "The name of an existing text search configuration to copy."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:101(title) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:101(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:103(para) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:103(para) 
 msgid "The <literal>PARSER</literal> and <literal>COPY</literal> options are mutually exclusive, because when an existing configuration is copied, its parser selection is copied too."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:112(title) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:112(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:114(para) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:114(para) 
 msgid "There is no <command>CREATE TEXT SEARCH CONFIGURATION</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:121(title) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:121(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-NXtK/ref/create_tsconfig.xml:0(None) 
+#: /tmp/cicero-hapq/ref/create_tsconfig.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

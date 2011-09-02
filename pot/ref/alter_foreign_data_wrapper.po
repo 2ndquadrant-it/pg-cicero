@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:21+0200\n"
+"POT-Creation-Date: 2011-09-02 11:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,155 +9,155 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:10(refentrytitle) /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:16(refname) /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:21(primary) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:10(refentrytitle) /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:16(refname) /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:21(primary) 
 msgid "ALTER FOREIGN DATA WRAPPER"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:11(manvolnum) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:12(refmiscinfo) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:17(refpurpose) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:17(refpurpose) 
 msgid "change the definition of a foreign-data wrapper"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:26(replaceable) /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:30(replaceable) /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:56(replaceable) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:26(replaceable) /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:30(replaceable) /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:56(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:27(replaceable) /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:65(replaceable) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:27(replaceable) /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:65(replaceable) 
 msgid "handler_function"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:28(replaceable) /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:88(replaceable) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:28(replaceable) /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:88(replaceable) 
 msgid "validator_function"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:29(replaceable) /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:115(replaceable) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:29(replaceable) /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:115(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:29(replaceable) /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:115(replaceable) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:29(replaceable) /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:115(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:30(replaceable) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:30(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:25(synopsis) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:25(synopsis) 
 #, no-wrap
 msgid "\nALTER FOREIGN DATA WRAPPER <placeholder-1/>\n    [ HANDLER <placeholder-2/> | NO HANDLER ]\n    [ VALIDATOR <placeholder-3/> | NO VALIDATOR ]\n    [ OPTIONS ( [ ADD | SET | DROP ] <placeholder-4/> ['<placeholder-5/>'] [, ... ]) ]\nALTER FOREIGN DATA WRAPPER <placeholder-6/> OWNER TO <placeholder-7/>\n"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:35(title) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:35(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:37(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:37(para) 
 msgid "<command>ALTER FOREIGN DATA WRAPPER</command> changes the definition of a foreign-data wrapper. The first form of the command changes the support functions or the generic options of the foreign-data wrapper (at least one clause is required). The second form changes the owner of the foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:45(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:45(para) 
 msgid "Only superusers can alter foreign-data wrappers. Additionally, only superusers can own foreign-data wrappers."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:52(title) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:52(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:58(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:58(para) 
 msgid "The name of an existing foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:65(literal) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:65(literal) 
 msgid "HANDLER <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:67(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:67(para) 
 msgid "Specifies a new handler function for the foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:74(literal) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:74(literal) 
 msgid "NO HANDLER"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:76(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:76(para) 
 msgid "This is used to specify that the foreign-data wrapper should no longer have a handler function."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:80(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:80(para) 
 msgid "Note that foreign tables that use a foreign-data wrapper with no handler cannot be accessed."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:88(literal) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:88(literal) 
 msgid "VALIDATOR <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:90(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:90(para) 
 msgid "Specifies a new validator function for the foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:94(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:94(para) 
 msgid "Note that it is possible that after changing the validator the options to the foreign-data wrapper, servers, and user mappings have become invalid. It is up to the user to make sure that these options are correct before using the foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:105(literal) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:105(literal) 
 msgid "NO VALIDATOR"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:107(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:107(para) 
 msgid "This is used to specify that the foreign-data wrapper should no longer have a validator function."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:115(literal) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:115(literal) 
 msgid "OPTIONS ( [ ADD | SET | DROP ] <placeholder-1/> ['<placeholder-2/>'] [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:117(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:117(para) 
 msgid "Change options for the foreign-data wrapper. <literal>ADD</literal>, <literal>SET</literal>, and <literal>DROP</literal> specify the action to be performed. <literal>ADD</literal> is assumed if no operation is explicitly specified. Option names must be unique; names and values are also validated using the foreign data wrapper's validator function, if any."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:131(title) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:131(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:136(programlisting) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:136(programlisting) 
 #, no-wrap
 msgid "\nALTER FOREIGN DATA WRAPPER dbi OPTIONS (ADD foo '1', DROP 'bar');\n"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:133(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:133(para) 
 msgid "Change a foreign-data wrapper <literal>dbi</literal>, add option <literal>foo</literal>, drop <literal>bar</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:144(programlisting) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:144(programlisting) 
 #, no-wrap
 msgid "\nALTER FOREIGN DATA WRAPPER dbi VALIDATOR bob.myvalidator;\n"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:141(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:141(para) 
 msgid "Change the foreign-data wrapper <literal>dbi</literal> validator to <literal>bob.myvalidator</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:150(title) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:150(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:152(para) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:152(para) 
 msgid "<command>ALTER FOREIGN DATA WRAPPER</command> conforms to ISO/IEC 9075-9 (SQL/MED), except that the <literal>HANDLER</literal>, <literal>VALIDATOR</literal> and <literal>OWNER TO</literal> clauses are extensions."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:160(title) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:160(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-NXtK/ref/alter_foreign_data_wrapper.xml:0(None) 
+#: /tmp/cicero-hapq/ref/alter_foreign_data_wrapper.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

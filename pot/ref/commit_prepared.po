@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:21+0200\n"
+"POT-Creation-Date: 2011-09-02 11:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,82 +9,82 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:10(refentrytitle) /tmp/cicero-NXtK/ref/commit_prepared.xml:16(refname) /tmp/cicero-NXtK/ref/commit_prepared.xml:21(primary) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:10(refentrytitle) /tmp/cicero-hapq/ref/commit_prepared.xml:16(refname) /tmp/cicero-hapq/ref/commit_prepared.xml:21(primary) 
 msgid "COMMIT PREPARED"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:11(manvolnum) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:12(refmiscinfo) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:17(refpurpose) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:17(refpurpose) 
 msgid "commit a transaction that was earlier prepared for two-phase commit"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:26(replaceable) /tmp/cicero-NXtK/ref/commit_prepared.xml:44(replaceable) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:26(replaceable) /tmp/cicero-hapq/ref/commit_prepared.xml:44(replaceable) 
 msgid "transaction_id"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:25(synopsis) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:25(synopsis) 
 #, no-wrap
 msgid "\nCOMMIT PREPARED <placeholder-1/>\n"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:31(title) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:33(para) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:33(para) 
 msgid "<command>COMMIT PREPARED</command> commits a transaction that is in prepared state."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:40(title) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:40(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:46(para) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:46(para) 
 msgid "The transaction identifier of the transaction that is to be committed."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:56(title) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:56(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:58(para) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:58(para) 
 msgid "To commit a prepared transaction, you must be either the same user that executed the transaction originally, or a superuser. But you do not have to be in the same session that executed the transaction."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:64(para) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:64(para) 
 msgid "This command cannot be executed inside a transaction block. The prepared transaction is committed immediately."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:69(para) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:69(para) 
 msgid "All currently available prepared transactions are listed in the <link linkend=\"view-pg-prepared-xacts\"><structname>pg_prepared_xacts</structname></link> system view."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:77(title) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:77(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:82(programlisting) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:82(programlisting) 
 #, no-wrap
 msgid "\nCOMMIT PREPARED 'foobar';\n"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:78(para) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:78(para) 
 msgid "Commit the transaction identified by the transaction identifier <literal>foobar</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:89(title) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:89(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-NXtK/ref/commit_prepared.xml:0(None) 
+#: /tmp/cicero-hapq/ref/commit_prepared.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:21+0200\n"
+"POT-Creation-Date: 2011-09-02 11:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,90 +9,90 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-NXtK/ref/discard.xml:10(refentrytitle) /tmp/cicero-NXtK/ref/discard.xml:16(refname) /tmp/cicero-NXtK/ref/discard.xml:21(primary) 
+#: /tmp/cicero-hapq/ref/discard.xml:10(refentrytitle) /tmp/cicero-hapq/ref/discard.xml:16(refname) /tmp/cicero-hapq/ref/discard.xml:21(primary) 
 msgid "DISCARD"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:11(manvolnum) 
+#: /tmp/cicero-hapq/ref/discard.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:12(refmiscinfo) 
+#: /tmp/cicero-hapq/ref/discard.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:17(refpurpose) 
+#: /tmp/cicero-hapq/ref/discard.xml:17(refpurpose) 
 msgid "discard session state"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:25(synopsis) 
+#: /tmp/cicero-hapq/ref/discard.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDISCARD { ALL | PLANS | TEMPORARY | TEMP }\n"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:31(title) 
+#: /tmp/cicero-hapq/ref/discard.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:33(para) 
+#: /tmp/cicero-hapq/ref/discard.xml:33(para) 
 msgid "<command>DISCARD</command> releases internal resources associated with a database session. These resources are normally released at the end of the session."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:39(para) 
+#: /tmp/cicero-hapq/ref/discard.xml:39(para) 
 msgid "<command>DISCARD TEMP</command> drops all temporary tables created in the current session. <command>DISCARD PLANS</command> releases all internally cached query plans. <command>DISCARD ALL</command> resets a session to its original state, discarding temporary resources and resetting session-local configuration changes."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:49(title) 
+#: /tmp/cicero-hapq/ref/discard.xml:49(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:54(term) 
+#: /tmp/cicero-hapq/ref/discard.xml:54(term) 
 msgid "<literal>TEMPORARY</literal> or <literal>TEMP</literal>"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:56(para) 
+#: /tmp/cicero-hapq/ref/discard.xml:56(para) 
 msgid "Drops all temporary tables created in the current session."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:63(literal) 
+#: /tmp/cicero-hapq/ref/discard.xml:63(literal) 
 msgid "PLANS"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:65(para) 
+#: /tmp/cicero-hapq/ref/discard.xml:65(para) 
 msgid "Releases all cached query plans."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:72(literal) 
+#: /tmp/cicero-hapq/ref/discard.xml:72(literal) 
 msgid "ALL"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:79(programlisting) 
+#: /tmp/cicero-hapq/ref/discard.xml:79(programlisting) 
 #, no-wrap
 msgid "\nSET SESSION AUTHORIZATION DEFAULT;\nRESET ALL;\nDEALLOCATE ALL;\nCLOSE ALL;\nUNLISTEN *;\nSELECT pg_advisory_unlock_all();\nDISCARD PLANS;\nDISCARD TEMP;\n"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:74(para) 
+#: /tmp/cicero-hapq/ref/discard.xml:74(para) 
 msgid "Releases all temporary resources associated with the current session and resets the session to its initial state. Currently, this has the same effect as executing the following sequence of statements: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:96(title) 
+#: /tmp/cicero-hapq/ref/discard.xml:96(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:98(para) 
+#: /tmp/cicero-hapq/ref/discard.xml:98(para) 
 msgid "<command>DISCARD ALL</command> cannot be executed inside a transaction block."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:104(title) 
+#: /tmp/cicero-hapq/ref/discard.xml:104(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/discard.xml:106(para) 
+#: /tmp/cicero-hapq/ref/discard.xml:106(para) 
 msgid "<command>DISCARD</command> is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-NXtK/ref/discard.xml:0(None) 
+#: /tmp/cicero-hapq/ref/discard.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

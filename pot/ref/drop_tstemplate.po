@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:21+0200\n"
+"POT-Creation-Date: 2011-09-02 11:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,98 +9,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:10(refentrytitle) /tmp/cicero-NXtK/ref/drop_tstemplate.xml:16(refname) /tmp/cicero-NXtK/ref/drop_tstemplate.xml:21(primary) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:10(refentrytitle) /tmp/cicero-hapq/ref/drop_tstemplate.xml:16(refname) /tmp/cicero-hapq/ref/drop_tstemplate.xml:21(primary) 
 msgid "DROP TEXT SEARCH TEMPLATE"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:11(manvolnum) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:12(refmiscinfo) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:17(refpurpose) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:17(refpurpose) 
 msgid "remove a text search template"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:26(replaceable) /tmp/cicero-NXtK/ref/drop_tstemplate.xml:55(replaceable) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:26(replaceable) /tmp/cicero-hapq/ref/drop_tstemplate.xml:55(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:25(synopsis) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP TEXT SEARCH TEMPLATE [ IF EXISTS ] <placeholder-1/> [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:31(title) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:33(para) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:33(para) 
 msgid "<command>DROP TEXT SEARCH TEMPLATE</command> drops an existing text search template. You must be a superuser to use this command."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:40(title) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:40(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:45(literal) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:45(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:47(para) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:47(para) 
 msgid "Do not throw an error if the text search template does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:57(para) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:57(para) 
 msgid "The name (optionally schema-qualified) of an existing text search template."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:65(literal) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:65(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:67(para) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:67(para) 
 msgid "Automatically drop objects that depend on the text search template."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:74(literal) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:74(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:76(para) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:76(para) 
 msgid "Refuse to drop the text search template if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:86(title) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:86(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:91(programlisting) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:91(programlisting) 
 #, no-wrap
 msgid "\nDROP TEXT SEARCH TEMPLATE thesaurus;\n"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:88(para) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:88(para) 
 msgid "Remove the text search template <literal>thesaurus</literal>: <placeholder-1/> This command will not succeed if there are any existing text search dictionaries that use the template. Add <literal>CASCADE</literal> to drop such dictionaries along with the template."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:102(title) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:102(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:104(para) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:104(para) 
 msgid "There is no <command>DROP TEXT SEARCH TEMPLATE</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:111(title) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:111(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-NXtK/ref/drop_tstemplate.xml:0(None) 
+#: /tmp/cicero-hapq/ref/drop_tstemplate.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

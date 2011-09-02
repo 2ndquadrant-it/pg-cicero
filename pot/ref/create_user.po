@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:21+0200\n"
+"POT-Creation-Date: 2011-09-02 11:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,81 +9,81 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:10(refentrytitle) /tmp/cicero-NXtK/ref/create_user.xml:16(refname) /tmp/cicero-NXtK/ref/create_user.xml:21(primary) 
+#: /tmp/cicero-hapq/ref/create_user.xml:10(refentrytitle) /tmp/cicero-hapq/ref/create_user.xml:16(refname) /tmp/cicero-hapq/ref/create_user.xml:21(primary) 
 msgid "CREATE USER"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:11(manvolnum) 
+#: /tmp/cicero-hapq/ref/create_user.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:12(refmiscinfo) 
+#: /tmp/cicero-hapq/ref/create_user.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:17(refpurpose) 
+#: /tmp/cicero-hapq/ref/create_user.xml:17(refpurpose) 
 msgid "define a new database role"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:26(replaceable) 
+#: /tmp/cicero-hapq/ref/create_user.xml:26(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:26(replaceable) /tmp/cicero-NXtK/ref/create_user.xml:28(replaceable) 
+#: /tmp/cicero-hapq/ref/create_user.xml:26(replaceable) /tmp/cicero-hapq/ref/create_user.xml:28(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:28(phrase) 
+#: /tmp/cicero-hapq/ref/create_user.xml:28(phrase) 
 msgid "where <placeholder-1/> can be:"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:37(replaceable) 
+#: /tmp/cicero-hapq/ref/create_user.xml:37(replaceable) 
 msgid "connlimit"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:38(replaceable) 
+#: /tmp/cicero-hapq/ref/create_user.xml:38(replaceable) 
 msgid "password"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:39(replaceable) 
+#: /tmp/cicero-hapq/ref/create_user.xml:39(replaceable) 
 msgid "timestamp"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:40(replaceable) /tmp/cicero-NXtK/ref/create_user.xml:41(replaceable) /tmp/cicero-NXtK/ref/create_user.xml:42(replaceable) /tmp/cicero-NXtK/ref/create_user.xml:43(replaceable) /tmp/cicero-NXtK/ref/create_user.xml:44(replaceable) 
+#: /tmp/cicero-hapq/ref/create_user.xml:40(replaceable) /tmp/cicero-hapq/ref/create_user.xml:41(replaceable) /tmp/cicero-hapq/ref/create_user.xml:42(replaceable) /tmp/cicero-hapq/ref/create_user.xml:43(replaceable) /tmp/cicero-hapq/ref/create_user.xml:44(replaceable) 
 msgid "role_name"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:45(replaceable) 
+#: /tmp/cicero-hapq/ref/create_user.xml:45(replaceable) 
 msgid "uid"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:25(synopsis) 
+#: /tmp/cicero-hapq/ref/create_user.xml:25(synopsis) 
 #, no-wrap
 msgid "\nCREATE USER <placeholder-1/> [ [ WITH ] <placeholder-2/> [ ... ] ]\n\n<placeholder-3/>\n\n      SUPERUSER | NOSUPERUSER\n    | CREATEDB | NOCREATEDB\n    | CREATEROLE | NOCREATEROLE\n    | CREATEUSER | NOCREATEUSER\n    | INHERIT | NOINHERIT\n    | LOGIN | NOLOGIN\n    | REPLICATION | NOREPLICATION\n    | CONNECTION LIMIT <placeholder-4/>\n    | [ ENCRYPTED | UNENCRYPTED ] PASSWORD '<placeholder-5/>'\n    | VALID UNTIL '<placeholder-6/>'\n    | IN ROLE <placeholder-7/> [, ...]\n    | IN GROUP <placeholder-8/> [, ...]\n    | ROLE <placeholder-9/> [, ...]\n    | ADMIN <placeholder-10/> [, ...]\n    | USER <placeholder-11/> [, ...]\n    | SYSID <placeholder-12/>\n"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:50(title) 
+#: /tmp/cicero-hapq/ref/create_user.xml:50(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:52(para) 
+#: /tmp/cicero-hapq/ref/create_user.xml:52(para) 
 msgid "<command>CREATE USER</command> is now an alias for <xref linkend=\"sql-createrole\"/>. The only difference is that when the command is spelled <command>CREATE USER</command>, <literal>LOGIN</literal> is assumed by default, whereas <literal>NOLOGIN</literal> is assumed when the command is spelled <command>CREATE ROLE</command>."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:64(title) 
+#: /tmp/cicero-hapq/ref/create_user.xml:64(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:66(para) 
+#: /tmp/cicero-hapq/ref/create_user.xml:66(para) 
 msgid "The <command>CREATE USER</command> statement is a <productname>PostgreSQL</productname> extension. The SQL standard leaves the definition of users to the implementation."
 msgstr ""
 
-#: /tmp/cicero-NXtK/ref/create_user.xml:74(title) 
+#: /tmp/cicero-hapq/ref/create_user.xml:74(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-NXtK/ref/create_user.xml:0(None) 
+#: /tmp/cicero-hapq/ref/create_user.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
