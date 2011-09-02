@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:40+0200\n"
+"POT-Creation-Date: 2011-09-02 12:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,1773 +9,1773 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-yNeh/spi.xml:5(title) 
+#: /tmp/cicero-BGQN/spi.xml:5(title) 
 msgid "Server Programming Interface"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:8(primary) 
+#: /tmp/cicero-BGQN/spi.xml:8(primary) 
 msgid "SPI"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:11(para) 
+#: /tmp/cicero-BGQN/spi.xml:11(para) 
 msgid "The <firstterm>Server Programming Interface</firstterm> (<acronym>SPI</acronym>) gives writers of user-defined <acronym>C</acronym> functions the ability to run <acronym>SQL</acronym> commands inside their functions. <acronym>SPI</acronym> is a set of interface functions to simplify access to the parser, planner, and executor. <acronym>SPI</acronym> also does some memory management."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:23(para) 
+#: /tmp/cicero-BGQN/spi.xml:23(para) 
 msgid "The available procedural languages provide various means to execute SQL commands from procedures. Most of these facilities are based on SPI, so this documentation might be of use for users of those languages as well."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:31(para) 
+#: /tmp/cicero-BGQN/spi.xml:31(para) 
 msgid "To avoid misunderstanding we'll use the term <quote>function</quote> when we speak of <acronym>SPI</acronym> interface functions and <quote>procedure</quote> for a user-defined C-function that is using <acronym>SPI</acronym>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:38(para) 
+#: /tmp/cicero-BGQN/spi.xml:38(para) 
 msgid "Note that if a command invoked via SPI fails, then control will not be returned to your procedure. Rather, the transaction or subtransaction in which your procedure executes will be rolled back. (This might seem surprising given that the SPI functions mostly have documented error-return conventions. Those conventions only apply for errors detected within the SPI functions themselves, however.) It is possible to recover control after an error by establishing your own subtransaction surrounding SPI calls that might fail. This is not currently documented because the mechanisms required are still in flux."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:50(para) 
+#: /tmp/cicero-BGQN/spi.xml:50(para) 
 msgid "<acronym>SPI</acronym> functions return a nonnegative result on success (either via a returned integer value or in the global variable <varname>SPI_result</varname>, as described below). On error, a negative result or <symbol>NULL</symbol> will be returned."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:57(para) 
+#: /tmp/cicero-BGQN/spi.xml:57(para) 
 msgid "Source code files that use SPI must include the header file <filename>executor/spi.h</filename>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:64(title) 
+#: /tmp/cicero-BGQN/spi.xml:64(title) 
 msgid "Interface Functions"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:68(refentrytitle) /tmp/cicero-yNeh/spi.xml:73(refname) /tmp/cicero-yNeh/spi.xml:77(primary) 
+#: /tmp/cicero-BGQN/spi.xml:68(refentrytitle) /tmp/cicero-BGQN/spi.xml:73(refname) /tmp/cicero-BGQN/spi.xml:77(primary) 
 msgid "SPI_connect"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:69(manvolnum) /tmp/cicero-yNeh/spi.xml:141(manvolnum) /tmp/cicero-yNeh/spi.xml:207(manvolnum) /tmp/cicero-yNeh/spi.xml:255(manvolnum) /tmp/cicero-yNeh/spi.xml:287(manvolnum) /tmp/cicero-yNeh/spi.xml:631(manvolnum) /tmp/cicero-yNeh/spi.xml:696(manvolnum) /tmp/cicero-yNeh/spi.xml:839(manvolnum) /tmp/cicero-yNeh/spi.xml:963(manvolnum) /tmp/cicero-yNeh/spi.xml:1063(manvolnum) /tmp/cicero-yNeh/spi.xml:1151(manvolnum) /tmp/cicero-yNeh/spi.xml:1208(manvolnum) /tmp/cicero-yNeh/spi.xml:1278(manvolnum) /tmp/cicero-yNeh/spi.xml:1347(manvolnum) /tmp/cicero-yNeh/spi.xml:1478(manvolnum) /tmp/cicero-yNeh/spi.xml:1572(manvolnum) /tmp/cicero-yNeh/spi.xml:1672(manvolnum) /tmp/cicero-yNeh/spi.xml:1793(manvolnum) /tmp/cicero-yNeh/spi.xml:1938(manvolnum) /tmp/cicero-yNeh/spi.xml:2034(manvolnum) /tmp/cicero-yNeh/spi.xml:2090(manvolnum) /tmp/cicero-yNeh/spi.xml:2175(manvolnum) /tmp/cicero-yNeh/spi.xml:2250(manvolnum) /tmp/cicero-yNeh/spi.xml:2349(manvolnum) /tmp/cicero-yNeh/spi.xml:2450(manvolnum) /tmp/cicero-yNeh/spi.xml:2502(manvolnum) /tmp/cicero-yNeh/spi.xml:2614(manvolnum) /tmp/cicero-yNeh/spi.xml:2681(manvolnum) /tmp/cicero-yNeh/spi.xml:2755(manvolnum) /tmp/cicero-yNeh/spi.xml:2839(manvolnum) /tmp/cicero-yNeh/spi.xml:2934(manvolnum) /tmp/cicero-yNeh/spi.xml:3000(manvolnum) /tmp/cicero-yNeh/spi.xml:3066(manvolnum) /tmp/cicero-yNeh/spi.xml:3119(manvolnum) /tmp/cicero-yNeh/spi.xml:3254(manvolnum) /tmp/cicero-yNeh/spi.xml:3308(manvolnum) /tmp/cicero-yNeh/spi.xml:3378(manvolnum) /tmp/cicero-yNeh/spi.xml:3431(manvolnum) /tmp/cicero-yNeh/spi.xml:3488(manvolnum) /tmp/cicero-yNeh/spi.xml:3563(manvolnum) /tmp/cicero-yNeh/spi.xml:3699(manvolnum) /tmp/cicero-yNeh/spi.xml:3751(manvolnum) /tmp/cicero-yNeh/spi.xml:3808(manvolnum) 
+#: /tmp/cicero-BGQN/spi.xml:69(manvolnum) /tmp/cicero-BGQN/spi.xml:141(manvolnum) /tmp/cicero-BGQN/spi.xml:207(manvolnum) /tmp/cicero-BGQN/spi.xml:255(manvolnum) /tmp/cicero-BGQN/spi.xml:287(manvolnum) /tmp/cicero-BGQN/spi.xml:631(manvolnum) /tmp/cicero-BGQN/spi.xml:696(manvolnum) /tmp/cicero-BGQN/spi.xml:839(manvolnum) /tmp/cicero-BGQN/spi.xml:963(manvolnum) /tmp/cicero-BGQN/spi.xml:1063(manvolnum) /tmp/cicero-BGQN/spi.xml:1151(manvolnum) /tmp/cicero-BGQN/spi.xml:1208(manvolnum) /tmp/cicero-BGQN/spi.xml:1278(manvolnum) /tmp/cicero-BGQN/spi.xml:1347(manvolnum) /tmp/cicero-BGQN/spi.xml:1478(manvolnum) /tmp/cicero-BGQN/spi.xml:1572(manvolnum) /tmp/cicero-BGQN/spi.xml:1672(manvolnum) /tmp/cicero-BGQN/spi.xml:1793(manvolnum) /tmp/cicero-BGQN/spi.xml:1938(manvolnum) /tmp/cicero-BGQN/spi.xml:2034(manvolnum) /tmp/cicero-BGQN/spi.xml:2090(manvolnum) /tmp/cicero-BGQN/spi.xml:2175(manvolnum) /tmp/cicero-BGQN/spi.xml:2250(manvolnum) /tmp/cicero-BGQN/spi.xml:2349(manvolnum) /tmp/cicero-BGQN/spi.xml:2450(manvolnum) /tmp/cicero-BGQN/spi.xml:2502(manvolnum) /tmp/cicero-BGQN/spi.xml:2614(manvolnum) /tmp/cicero-BGQN/spi.xml:2681(manvolnum) /tmp/cicero-BGQN/spi.xml:2755(manvolnum) /tmp/cicero-BGQN/spi.xml:2839(manvolnum) /tmp/cicero-BGQN/spi.xml:2934(manvolnum) /tmp/cicero-BGQN/spi.xml:3000(manvolnum) /tmp/cicero-BGQN/spi.xml:3066(manvolnum) /tmp/cicero-BGQN/spi.xml:3119(manvolnum) /tmp/cicero-BGQN/spi.xml:3254(manvolnum) /tmp/cicero-BGQN/spi.xml:3308(manvolnum) /tmp/cicero-BGQN/spi.xml:3378(manvolnum) /tmp/cicero-BGQN/spi.xml:3431(manvolnum) /tmp/cicero-BGQN/spi.xml:3488(manvolnum) /tmp/cicero-BGQN/spi.xml:3563(manvolnum) /tmp/cicero-BGQN/spi.xml:3699(manvolnum) /tmp/cicero-BGQN/spi.xml:3751(manvolnum) /tmp/cicero-BGQN/spi.xml:3808(manvolnum) 
 msgid "3"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:74(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:74(refpurpose) 
 msgid "connect a procedure to the SPI manager"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:80(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:80(synopsis) 
 #, no-wrap
 msgid "\nint SPI_connect(void)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:86(title) /tmp/cicero-yNeh/spi.xml:158(title) /tmp/cicero-yNeh/spi.xml:224(title) /tmp/cicero-yNeh/spi.xml:272(title) /tmp/cicero-yNeh/spi.xml:304(title) /tmp/cicero-yNeh/spi.xml:648(title) /tmp/cicero-yNeh/spi.xml:716(title) /tmp/cicero-yNeh/spi.xml:856(title) /tmp/cicero-yNeh/spi.xml:981(title) /tmp/cicero-yNeh/spi.xml:1083(title) /tmp/cicero-yNeh/spi.xml:1169(title) /tmp/cicero-yNeh/spi.xml:1226(title) /tmp/cicero-yNeh/spi.xml:1297(title) /tmp/cicero-yNeh/spi.xml:1365(title) /tmp/cicero-yNeh/spi.xml:1498(title) /tmp/cicero-yNeh/spi.xml:1589(title) /tmp/cicero-yNeh/spi.xml:1691(title) /tmp/cicero-yNeh/spi.xml:1814(title) /tmp/cicero-yNeh/spi.xml:1958(title) /tmp/cicero-yNeh/spi.xml:2051(title) /tmp/cicero-yNeh/spi.xml:2107(title) /tmp/cicero-yNeh/spi.xml:2192(title) /tmp/cicero-yNeh/spi.xml:2268(title) /tmp/cicero-yNeh/spi.xml:2367(title) /tmp/cicero-yNeh/spi.xml:2467(title) /tmp/cicero-yNeh/spi.xml:2519(title) /tmp/cicero-yNeh/spi.xml:2631(title) /tmp/cicero-yNeh/spi.xml:2698(title) /tmp/cicero-yNeh/spi.xml:2772(title) /tmp/cicero-yNeh/spi.xml:2857(title) /tmp/cicero-yNeh/spi.xml:2951(title) /tmp/cicero-yNeh/spi.xml:3017(title) /tmp/cicero-yNeh/spi.xml:3083(title) /tmp/cicero-yNeh/spi.xml:3136(title) /tmp/cicero-yNeh/spi.xml:3271(title) /tmp/cicero-yNeh/spi.xml:3325(title) /tmp/cicero-yNeh/spi.xml:3395(title) /tmp/cicero-yNeh/spi.xml:3448(title) /tmp/cicero-yNeh/spi.xml:3505(title) /tmp/cicero-yNeh/spi.xml:3581(title) /tmp/cicero-yNeh/spi.xml:3716(title) /tmp/cicero-yNeh/spi.xml:3769(title) /tmp/cicero-yNeh/spi.xml:3825(title) 
+#: /tmp/cicero-BGQN/spi.xml:86(title) /tmp/cicero-BGQN/spi.xml:158(title) /tmp/cicero-BGQN/spi.xml:224(title) /tmp/cicero-BGQN/spi.xml:272(title) /tmp/cicero-BGQN/spi.xml:304(title) /tmp/cicero-BGQN/spi.xml:648(title) /tmp/cicero-BGQN/spi.xml:716(title) /tmp/cicero-BGQN/spi.xml:856(title) /tmp/cicero-BGQN/spi.xml:981(title) /tmp/cicero-BGQN/spi.xml:1083(title) /tmp/cicero-BGQN/spi.xml:1169(title) /tmp/cicero-BGQN/spi.xml:1226(title) /tmp/cicero-BGQN/spi.xml:1297(title) /tmp/cicero-BGQN/spi.xml:1365(title) /tmp/cicero-BGQN/spi.xml:1498(title) /tmp/cicero-BGQN/spi.xml:1589(title) /tmp/cicero-BGQN/spi.xml:1691(title) /tmp/cicero-BGQN/spi.xml:1814(title) /tmp/cicero-BGQN/spi.xml:1958(title) /tmp/cicero-BGQN/spi.xml:2051(title) /tmp/cicero-BGQN/spi.xml:2107(title) /tmp/cicero-BGQN/spi.xml:2192(title) /tmp/cicero-BGQN/spi.xml:2268(title) /tmp/cicero-BGQN/spi.xml:2367(title) /tmp/cicero-BGQN/spi.xml:2467(title) /tmp/cicero-BGQN/spi.xml:2519(title) /tmp/cicero-BGQN/spi.xml:2631(title) /tmp/cicero-BGQN/spi.xml:2698(title) /tmp/cicero-BGQN/spi.xml:2772(title) /tmp/cicero-BGQN/spi.xml:2857(title) /tmp/cicero-BGQN/spi.xml:2951(title) /tmp/cicero-BGQN/spi.xml:3017(title) /tmp/cicero-BGQN/spi.xml:3083(title) /tmp/cicero-BGQN/spi.xml:3136(title) /tmp/cicero-BGQN/spi.xml:3271(title) /tmp/cicero-BGQN/spi.xml:3325(title) /tmp/cicero-BGQN/spi.xml:3395(title) /tmp/cicero-BGQN/spi.xml:3448(title) /tmp/cicero-BGQN/spi.xml:3505(title) /tmp/cicero-BGQN/spi.xml:3581(title) /tmp/cicero-BGQN/spi.xml:3716(title) /tmp/cicero-BGQN/spi.xml:3769(title) /tmp/cicero-BGQN/spi.xml:3825(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:88(para) 
+#: /tmp/cicero-BGQN/spi.xml:88(para) 
 msgid "<function>SPI_connect</function> opens a connection from a procedure invocation to the SPI manager. You must call this function if you want to execute commands through SPI. Some utility SPI functions can be called from unconnected procedures."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:95(para) 
+#: /tmp/cicero-BGQN/spi.xml:95(para) 
 msgid "If your procedure is already connected, <function>SPI_connect</function> will return the error code <returnvalue>SPI_ERROR_CONNECT</returnvalue>. This could happen if a procedure that has called <function>SPI_connect</function> directly calls another procedure that calls <function>SPI_connect</function>. While recursive calls to the <acronym>SPI</acronym> manager are permitted when an SQL command called through SPI invokes another function that uses <acronym>SPI</acronym>, directly nested calls to <function>SPI_connect</function> and <function>SPI_finish</function> are forbidden. (But see <function>SPI_push</function> and <function>SPI_pop</function>.)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:112(title) /tmp/cicero-yNeh/spi.xml:178(title) /tmp/cicero-yNeh/spi.xml:444(title) /tmp/cicero-yNeh/spi.xml:683(title) /tmp/cicero-yNeh/spi.xml:820(title) /tmp/cicero-yNeh/spi.xml:925(title) /tmp/cicero-yNeh/spi.xml:1037(title) /tmp/cicero-yNeh/spi.xml:1137(title) /tmp/cicero-yNeh/spi.xml:1193(title) /tmp/cicero-yNeh/spi.xml:1260(title) /tmp/cicero-yNeh/spi.xml:1328(title) /tmp/cicero-yNeh/spi.xml:1436(title) /tmp/cicero-yNeh/spi.xml:1553(title) /tmp/cicero-yNeh/spi.xml:1653(title) /tmp/cicero-yNeh/spi.xml:1779(title) /tmp/cicero-yNeh/spi.xml:1924(title) /tmp/cicero-yNeh/spi.xml:2020(title) /tmp/cicero-yNeh/spi.xml:2076(title) /tmp/cicero-yNeh/spi.xml:2151(title) /tmp/cicero-yNeh/spi.xml:2317(title) /tmp/cicero-yNeh/spi.xml:2417(title) /tmp/cicero-yNeh/spi.xml:2547(title) /tmp/cicero-yNeh/spi.xml:2665(title) /tmp/cicero-yNeh/spi.xml:2740(title) /tmp/cicero-yNeh/spi.xml:2821(title) /tmp/cicero-yNeh/spi.xml:2914(title) /tmp/cicero-yNeh/spi.xml:2985(title) /tmp/cicero-yNeh/spi.xml:3050(title) /tmp/cicero-yNeh/spi.xml:3108(title) /tmp/cicero-yNeh/spi.xml:3163(title) /tmp/cicero-yNeh/spi.xml:3295(title) /tmp/cicero-yNeh/spi.xml:3364(title) /tmp/cicero-yNeh/spi.xml:3474(title) /tmp/cicero-yNeh/spi.xml:3547(title) /tmp/cicero-yNeh/spi.xml:3656(title) /tmp/cicero-yNeh/spi.xml:3850(title) 
+#: /tmp/cicero-BGQN/spi.xml:112(title) /tmp/cicero-BGQN/spi.xml:178(title) /tmp/cicero-BGQN/spi.xml:444(title) /tmp/cicero-BGQN/spi.xml:683(title) /tmp/cicero-BGQN/spi.xml:820(title) /tmp/cicero-BGQN/spi.xml:925(title) /tmp/cicero-BGQN/spi.xml:1037(title) /tmp/cicero-BGQN/spi.xml:1137(title) /tmp/cicero-BGQN/spi.xml:1193(title) /tmp/cicero-BGQN/spi.xml:1260(title) /tmp/cicero-BGQN/spi.xml:1328(title) /tmp/cicero-BGQN/spi.xml:1436(title) /tmp/cicero-BGQN/spi.xml:1553(title) /tmp/cicero-BGQN/spi.xml:1653(title) /tmp/cicero-BGQN/spi.xml:1779(title) /tmp/cicero-BGQN/spi.xml:1924(title) /tmp/cicero-BGQN/spi.xml:2020(title) /tmp/cicero-BGQN/spi.xml:2076(title) /tmp/cicero-BGQN/spi.xml:2151(title) /tmp/cicero-BGQN/spi.xml:2317(title) /tmp/cicero-BGQN/spi.xml:2417(title) /tmp/cicero-BGQN/spi.xml:2547(title) /tmp/cicero-BGQN/spi.xml:2665(title) /tmp/cicero-BGQN/spi.xml:2740(title) /tmp/cicero-BGQN/spi.xml:2821(title) /tmp/cicero-BGQN/spi.xml:2914(title) /tmp/cicero-BGQN/spi.xml:2985(title) /tmp/cicero-BGQN/spi.xml:3050(title) /tmp/cicero-BGQN/spi.xml:3108(title) /tmp/cicero-BGQN/spi.xml:3163(title) /tmp/cicero-BGQN/spi.xml:3295(title) /tmp/cicero-BGQN/spi.xml:3364(title) /tmp/cicero-BGQN/spi.xml:3474(title) /tmp/cicero-BGQN/spi.xml:3547(title) /tmp/cicero-BGQN/spi.xml:3656(title) /tmp/cicero-BGQN/spi.xml:3850(title) 
 msgid "Return Value"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:116(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:116(symbol) 
 msgid "SPI_OK_CONNECT"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:118(para) 
+#: /tmp/cicero-BGQN/spi.xml:118(para) 
 msgid "on success"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:125(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:125(symbol) 
 msgid "SPI_ERROR_CONNECT"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:127(para) 
+#: /tmp/cicero-BGQN/spi.xml:127(para) 
 msgid "on error"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:140(refentrytitle) /tmp/cicero-yNeh/spi.xml:145(refname) /tmp/cicero-yNeh/spi.xml:149(primary) 
+#: /tmp/cicero-BGQN/spi.xml:140(refentrytitle) /tmp/cicero-BGQN/spi.xml:145(refname) /tmp/cicero-BGQN/spi.xml:149(primary) 
 msgid "SPI_finish"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:146(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:146(refpurpose) 
 msgid "disconnect a procedure from the SPI manager"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:152(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:152(synopsis) 
 #, no-wrap
 msgid "\nint SPI_finish(void)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:160(para) 
+#: /tmp/cicero-BGQN/spi.xml:160(para) 
 msgid "<function>SPI_finish</function> closes an existing connection to the SPI manager. You must call this function after completing the SPI operations needed during your procedure's current invocation. You do not need to worry about making this happen, however, if you abort the transaction via <literal>elog(ERROR)</literal>. In that case SPI will clean itself up automatically."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:169(para) 
+#: /tmp/cicero-BGQN/spi.xml:169(para) 
 msgid "If <function>SPI_finish</function> is called without having a valid connection, it will return <symbol>SPI_ERROR_UNCONNECTED</symbol>. There is no fundamental problem with this; it means that the SPI manager has nothing to do."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:182(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:182(symbol) 
 msgid "SPI_OK_FINISH"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:184(para) 
+#: /tmp/cicero-BGQN/spi.xml:184(para) 
 msgid "if properly disconnected"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:191(symbol) /tmp/cicero-yNeh/spi.xml:597(symbol) /tmp/cicero-yNeh/spi.xml:2564(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:191(symbol) /tmp/cicero-BGQN/spi.xml:597(symbol) /tmp/cicero-BGQN/spi.xml:2564(symbol) 
 msgid "SPI_ERROR_UNCONNECTED"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:193(para) /tmp/cicero-yNeh/spi.xml:599(para) /tmp/cicero-yNeh/spi.xml:2566(para) 
+#: /tmp/cicero-BGQN/spi.xml:193(para) /tmp/cicero-BGQN/spi.xml:599(para) /tmp/cicero-BGQN/spi.xml:2566(para) 
 msgid "if called from an unconnected procedure"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:206(refentrytitle) /tmp/cicero-yNeh/spi.xml:211(refname) /tmp/cicero-yNeh/spi.xml:215(primary) 
+#: /tmp/cicero-BGQN/spi.xml:206(refentrytitle) /tmp/cicero-BGQN/spi.xml:211(refname) /tmp/cicero-BGQN/spi.xml:215(primary) 
 msgid "SPI_push"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:212(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:212(refpurpose) 
 msgid "push SPI stack to allow recursive SPI usage"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:218(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:218(synopsis) 
 #, no-wrap
 msgid "\nvoid SPI_push(void)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:226(para) 
+#: /tmp/cicero-BGQN/spi.xml:226(para) 
 msgid "<function>SPI_push</function> should be called before executing another procedure that might itself wish to use SPI. After <function>SPI_push</function>, SPI is no longer in a <quote>connected</quote> state, and SPI function calls will be rejected unless a fresh <function>SPI_connect</function> is done. This ensures a clean separation between your procedure's SPI state and that of another procedure you call. After the other procedure returns, call <function>SPI_pop</function> to restore access to your own SPI state."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:237(para) 
+#: /tmp/cicero-BGQN/spi.xml:237(para) 
 msgid "Note that <function>SPI_execute</function> and related functions automatically do the equivalent of <function>SPI_push</function> before passing control back to the SQL execution engine, so it is not necessary for you to worry about this when using those functions. Only when you are directly calling arbitrary code that might contain <function>SPI_connect</function> calls do you need to issue <function>SPI_push</function> and <function>SPI_pop</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:254(refentrytitle) /tmp/cicero-yNeh/spi.xml:259(refname) /tmp/cicero-yNeh/spi.xml:263(primary) 
+#: /tmp/cicero-BGQN/spi.xml:254(refentrytitle) /tmp/cicero-BGQN/spi.xml:259(refname) /tmp/cicero-BGQN/spi.xml:263(primary) 
 msgid "SPI_pop"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:260(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:260(refpurpose) 
 msgid "pop SPI stack to return from recursive SPI usage"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:266(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:266(synopsis) 
 #, no-wrap
 msgid "\nvoid SPI_pop(void)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:274(para) 
+#: /tmp/cicero-BGQN/spi.xml:274(para) 
 msgid "<function>SPI_pop</function> pops the previous environment from the SPI call stack. See <function>SPI_push</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:286(refentrytitle) /tmp/cicero-yNeh/spi.xml:291(refname) /tmp/cicero-yNeh/spi.xml:295(primary) /tmp/cicero-yNeh/spi.xml:3756(function) 
+#: /tmp/cicero-BGQN/spi.xml:286(refentrytitle) /tmp/cicero-BGQN/spi.xml:291(refname) /tmp/cicero-BGQN/spi.xml:295(primary) /tmp/cicero-BGQN/spi.xml:3756(function) 
 msgid "SPI_execute"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:292(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:292(refpurpose) 
 msgid "execute a command"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:299(parameter) /tmp/cicero-yNeh/spi.xml:417(parameter) /tmp/cicero-yNeh/spi.xml:643(parameter) /tmp/cicero-yNeh/spi.xml:663(parameter) /tmp/cicero-yNeh/spi.xml:708(parameter) /tmp/cicero-yNeh/spi.xml:750(parameter) /tmp/cicero-yNeh/spi.xml:851(parameter) /tmp/cicero-yNeh/spi.xml:895(parameter) /tmp/cicero-yNeh/spi.xml:975(parameter) /tmp/cicero-yNeh/spi.xml:998(parameter) /tmp/cicero-yNeh/spi.xml:1075(parameter) /tmp/cicero-yNeh/spi.xml:1099(parameter) /tmp/cicero-yNeh/spi.xml:1806(parameter) /tmp/cicero-yNeh/spi.xml:1854(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:299(parameter) /tmp/cicero-BGQN/spi.xml:417(parameter) /tmp/cicero-BGQN/spi.xml:643(parameter) /tmp/cicero-BGQN/spi.xml:663(parameter) /tmp/cicero-BGQN/spi.xml:708(parameter) /tmp/cicero-BGQN/spi.xml:750(parameter) /tmp/cicero-BGQN/spi.xml:851(parameter) /tmp/cicero-BGQN/spi.xml:895(parameter) /tmp/cicero-BGQN/spi.xml:975(parameter) /tmp/cicero-BGQN/spi.xml:998(parameter) /tmp/cicero-BGQN/spi.xml:1075(parameter) /tmp/cicero-BGQN/spi.xml:1099(parameter) /tmp/cicero-BGQN/spi.xml:1806(parameter) /tmp/cicero-BGQN/spi.xml:1854(parameter) 
 msgid "command"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:299(parameter) /tmp/cicero-yNeh/spi.xml:426(parameter) /tmp/cicero-yNeh/spi.xml:711(parameter) /tmp/cicero-yNeh/spi.xml:802(parameter) /tmp/cicero-yNeh/spi.xml:1360(parameter) /tmp/cicero-yNeh/spi.xml:1418(parameter) /tmp/cicero-yNeh/spi.xml:1492(parameter) /tmp/cicero-yNeh/spi.xml:1535(parameter) /tmp/cicero-yNeh/spi.xml:1686(parameter) /tmp/cicero-yNeh/spi.xml:1770(parameter) /tmp/cicero-yNeh/spi.xml:1809(parameter) /tmp/cicero-yNeh/spi.xml:1906(parameter) /tmp/cicero-yNeh/spi.xml:1953(parameter) /tmp/cicero-yNeh/spi.xml:2011(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:299(parameter) /tmp/cicero-BGQN/spi.xml:426(parameter) /tmp/cicero-BGQN/spi.xml:711(parameter) /tmp/cicero-BGQN/spi.xml:802(parameter) /tmp/cicero-BGQN/spi.xml:1360(parameter) /tmp/cicero-BGQN/spi.xml:1418(parameter) /tmp/cicero-BGQN/spi.xml:1492(parameter) /tmp/cicero-BGQN/spi.xml:1535(parameter) /tmp/cicero-BGQN/spi.xml:1686(parameter) /tmp/cicero-BGQN/spi.xml:1770(parameter) /tmp/cicero-BGQN/spi.xml:1809(parameter) /tmp/cicero-BGQN/spi.xml:1906(parameter) /tmp/cicero-BGQN/spi.xml:1953(parameter) /tmp/cicero-BGQN/spi.xml:2011(parameter) 
 msgid "read_only"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:299(parameter) /tmp/cicero-yNeh/spi.xml:433(parameter) /tmp/cicero-yNeh/spi.xml:643(parameter) /tmp/cicero-yNeh/spi.xml:672(parameter) /tmp/cicero-yNeh/spi.xml:711(parameter) /tmp/cicero-yNeh/spi.xml:809(parameter) /tmp/cicero-yNeh/spi.xml:1360(parameter) /tmp/cicero-yNeh/spi.xml:1425(parameter) /tmp/cicero-yNeh/spi.xml:1493(parameter) /tmp/cicero-yNeh/spi.xml:1542(parameter) /tmp/cicero-yNeh/spi.xml:1584(parameter) /tmp/cicero-yNeh/spi.xml:1642(parameter) /tmp/cicero-yNeh/spi.xml:2102(parameter) /tmp/cicero-yNeh/spi.xml:2140(parameter) /tmp/cicero-yNeh/spi.xml:2187(parameter) /tmp/cicero-yNeh/spi.xml:2225(parameter) /tmp/cicero-yNeh/spi.xml:2263(parameter) /tmp/cicero-yNeh/spi.xml:2302(parameter) /tmp/cicero-yNeh/spi.xml:2362(parameter) /tmp/cicero-yNeh/spi.xml:2402(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:299(parameter) /tmp/cicero-BGQN/spi.xml:433(parameter) /tmp/cicero-BGQN/spi.xml:643(parameter) /tmp/cicero-BGQN/spi.xml:672(parameter) /tmp/cicero-BGQN/spi.xml:711(parameter) /tmp/cicero-BGQN/spi.xml:809(parameter) /tmp/cicero-BGQN/spi.xml:1360(parameter) /tmp/cicero-BGQN/spi.xml:1425(parameter) /tmp/cicero-BGQN/spi.xml:1493(parameter) /tmp/cicero-BGQN/spi.xml:1542(parameter) /tmp/cicero-BGQN/spi.xml:1584(parameter) /tmp/cicero-BGQN/spi.xml:1642(parameter) /tmp/cicero-BGQN/spi.xml:2102(parameter) /tmp/cicero-BGQN/spi.xml:2140(parameter) /tmp/cicero-BGQN/spi.xml:2187(parameter) /tmp/cicero-BGQN/spi.xml:2225(parameter) /tmp/cicero-BGQN/spi.xml:2263(parameter) /tmp/cicero-BGQN/spi.xml:2302(parameter) /tmp/cicero-BGQN/spi.xml:2362(parameter) /tmp/cicero-BGQN/spi.xml:2402(parameter) 
 msgid "count"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:298(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:298(synopsis) 
 #, no-wrap
 msgid "\nint SPI_execute(const char * <placeholder-1/>, bool <placeholder-2/>, long <placeholder-3/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:306(para) 
+#: /tmp/cicero-BGQN/spi.xml:306(para) 
 msgid "<function>SPI_execute</function> executes the specified SQL command for <parameter>count</parameter> rows. If <parameter>read_only</parameter> is <literal>true</literal>, the command must be read-only, and execution overhead is somewhat reduced."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:313(para) 
+#: /tmp/cicero-BGQN/spi.xml:313(para) 
 msgid "This function can only be called from a connected procedure."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:323(programlisting) 
+#: /tmp/cicero-BGQN/spi.xml:323(programlisting) 
 #, no-wrap
 msgid "\nSPI_execute(\"INSERT INTO foo SELECT * FROM bar\", false, 5);\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:317(para) 
+#: /tmp/cicero-BGQN/spi.xml:317(para) 
 msgid "If <parameter>count</parameter> is zero then the command is executed for all rows that it applies to. If <parameter>count</parameter> is greater than 0, then the number of rows for which the command will be executed is restricted (much like a <literal>LIMIT</literal> clause). For example: <placeholder-1/> will allow at most 5 rows to be inserted into the table."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:329(para) 
+#: /tmp/cicero-BGQN/spi.xml:329(para) 
 msgid "You can pass multiple commands in one string, but later commands cannot depend on the creation of objects earlier in the string, because the whole string will be parsed and planned before execution begins. <function>SPI_execute</function> returns the result for the command executed last. The <parameter>count</parameter> limit applies to each command separately, but it is not applied to hidden commands generated by rules."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:339(para) 
+#: /tmp/cicero-BGQN/spi.xml:339(para) 
 msgid "When <parameter>read_only</parameter> is <literal>false</literal>, <function>SPI_execute</function> increments the command counter and computes a new <firstterm>snapshot</firstterm> before executing each command in the string. The snapshot does not actually change if the current transaction isolation level is <literal>SERIALIZABLE</literal> or <literal>REPEATABLE READ</literal>, but in <literal>READ COMMITTED</literal> mode the snapshot update allows each command to see the results of newly committed transactions from other sessions. This is essential for consistent behavior when the commands are modifying the database."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:351(para) 
+#: /tmp/cicero-BGQN/spi.xml:351(para) 
 msgid "When <parameter>read_only</parameter> is <literal>true</literal>, <function>SPI_execute</function> does not update either the snapshot or the command counter, and it allows only plain <command>SELECT</command> commands to appear in the command string. The commands are executed using the snapshot previously established for the surrounding query. This execution mode is somewhat faster than the read/write mode due to eliminating per-command overhead. It also allows genuinely <firstterm>stable</firstterm> functions to be built: since successive executions will all use the same snapshot, there will be no change in the results."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:363(para) 
+#: /tmp/cicero-BGQN/spi.xml:363(para) 
 msgid "It is generally unwise to mix read-only and read-write commands within a single function using SPI; that could result in very confusing behavior, since the read-only queries would not see the results of any database updates done by the read-write queries."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:370(para) 
+#: /tmp/cicero-BGQN/spi.xml:370(para) 
 msgid "The actual number of rows for which the (last) command was executed is returned in the global variable <varname>SPI_processed</varname>. If the return value of the function is <symbol>SPI_OK_SELECT</symbol>, <symbol>SPI_OK_INSERT_RETURNING</symbol>, <symbol>SPI_OK_DELETE_RETURNING</symbol>, or <symbol>SPI_OK_UPDATE_RETURNING</symbol>, then you can use the global pointer <literal>SPITupleTable *SPI_tuptable</literal> to access the result rows. Some utility commands (such as <command>EXPLAIN</command>) also return row sets, and <literal>SPI_tuptable</literal> will contain the result in these cases too."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:387(programlisting) 
+#: /tmp/cicero-BGQN/spi.xml:387(programlisting) 
 #, no-wrap
 msgid "\ntypedef struct\n{\n    MemoryContext tuptabcxt;    /* memory context of result table */\n    uint32      alloced;        /* number of alloced vals */\n    uint32      free;           /* number of free vals */\n    TupleDesc   tupdesc;        /* row descriptor */\n    HeapTuple  *vals;           /* rows */\n} SPITupleTable;\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:384(para) 
+#: /tmp/cicero-BGQN/spi.xml:384(para) 
 msgid "The structure <structname>SPITupleTable</structname> is defined thus: <placeholder-1/><structfield>vals</structfield> is an array of pointers to rows. (The number of valid entries is given by <varname>SPI_processed</varname>.) <structfield>tupdesc</structfield> is a row descriptor which you can pass to SPI functions dealing with rows. <structfield>tuptabcxt</structfield>, <structfield>alloced</structfield>, and <structfield>free</structfield> are internal fields not intended for use by SPI callers."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:404(para) 
+#: /tmp/cicero-BGQN/spi.xml:404(para) 
 msgid "<function>SPI_finish</function> frees all <structname>SPITupleTable</structname>s allocated during the current procedure. You can free a particular result table earlier, if you are done with it, by calling <function>SPI_freetuptable</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:413(title) /tmp/cicero-yNeh/spi.xml:659(title) /tmp/cicero-yNeh/spi.xml:746(title) /tmp/cicero-yNeh/spi.xml:891(title) /tmp/cicero-yNeh/spi.xml:994(title) /tmp/cicero-yNeh/spi.xml:1095(title) /tmp/cicero-yNeh/spi.xml:1178(title) /tmp/cicero-yNeh/spi.xml:1236(title) /tmp/cicero-yNeh/spi.xml:1313(title) /tmp/cicero-yNeh/spi.xml:1376(title) /tmp/cicero-yNeh/spi.xml:1513(title) /tmp/cicero-yNeh/spi.xml:1600(title) /tmp/cicero-yNeh/spi.xml:1718(title) /tmp/cicero-yNeh/spi.xml:1840(title) /tmp/cicero-yNeh/spi.xml:1979(title) /tmp/cicero-yNeh/spi.xml:2061(title) /tmp/cicero-yNeh/spi.xml:2118(title) /tmp/cicero-yNeh/spi.xml:2203(title) /tmp/cicero-yNeh/spi.xml:2277(title) /tmp/cicero-yNeh/spi.xml:2377(title) /tmp/cicero-yNeh/spi.xml:2482(title) /tmp/cicero-yNeh/spi.xml:2532(title) /tmp/cicero-yNeh/spi.xml:2641(title) /tmp/cicero-yNeh/spi.xml:2716(title) /tmp/cicero-yNeh/spi.xml:2788(title) /tmp/cicero-yNeh/spi.xml:2872(title) /tmp/cicero-yNeh/spi.xml:2961(title) /tmp/cicero-yNeh/spi.xml:3026(title) /tmp/cicero-yNeh/spi.xml:3093(title) /tmp/cicero-yNeh/spi.xml:3148(title) /tmp/cicero-yNeh/spi.xml:3280(title) /tmp/cicero-yNeh/spi.xml:3340(title) /tmp/cicero-yNeh/spi.xml:3411(title) /tmp/cicero-yNeh/spi.xml:3459(title) /tmp/cicero-yNeh/spi.xml:3522(title) /tmp/cicero-yNeh/spi.xml:3591(title) /tmp/cicero-yNeh/spi.xml:3731(title) /tmp/cicero-yNeh/spi.xml:3788(title) /tmp/cicero-yNeh/spi.xml:3835(title) 
+#: /tmp/cicero-BGQN/spi.xml:413(title) /tmp/cicero-BGQN/spi.xml:659(title) /tmp/cicero-BGQN/spi.xml:746(title) /tmp/cicero-BGQN/spi.xml:891(title) /tmp/cicero-BGQN/spi.xml:994(title) /tmp/cicero-BGQN/spi.xml:1095(title) /tmp/cicero-BGQN/spi.xml:1178(title) /tmp/cicero-BGQN/spi.xml:1236(title) /tmp/cicero-BGQN/spi.xml:1313(title) /tmp/cicero-BGQN/spi.xml:1376(title) /tmp/cicero-BGQN/spi.xml:1513(title) /tmp/cicero-BGQN/spi.xml:1600(title) /tmp/cicero-BGQN/spi.xml:1718(title) /tmp/cicero-BGQN/spi.xml:1840(title) /tmp/cicero-BGQN/spi.xml:1979(title) /tmp/cicero-BGQN/spi.xml:2061(title) /tmp/cicero-BGQN/spi.xml:2118(title) /tmp/cicero-BGQN/spi.xml:2203(title) /tmp/cicero-BGQN/spi.xml:2277(title) /tmp/cicero-BGQN/spi.xml:2377(title) /tmp/cicero-BGQN/spi.xml:2482(title) /tmp/cicero-BGQN/spi.xml:2532(title) /tmp/cicero-BGQN/spi.xml:2641(title) /tmp/cicero-BGQN/spi.xml:2716(title) /tmp/cicero-BGQN/spi.xml:2788(title) /tmp/cicero-BGQN/spi.xml:2872(title) /tmp/cicero-BGQN/spi.xml:2961(title) /tmp/cicero-BGQN/spi.xml:3026(title) /tmp/cicero-BGQN/spi.xml:3093(title) /tmp/cicero-BGQN/spi.xml:3148(title) /tmp/cicero-BGQN/spi.xml:3280(title) /tmp/cicero-BGQN/spi.xml:3340(title) /tmp/cicero-BGQN/spi.xml:3411(title) /tmp/cicero-BGQN/spi.xml:3459(title) /tmp/cicero-BGQN/spi.xml:3522(title) /tmp/cicero-BGQN/spi.xml:3591(title) /tmp/cicero-BGQN/spi.xml:3731(title) /tmp/cicero-BGQN/spi.xml:3788(title) /tmp/cicero-BGQN/spi.xml:3835(title) 
 msgid "Arguments"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:417(literal) /tmp/cicero-yNeh/spi.xml:663(literal) /tmp/cicero-yNeh/spi.xml:750(literal) /tmp/cicero-yNeh/spi.xml:787(literal) /tmp/cicero-yNeh/spi.xml:895(literal) /tmp/cicero-yNeh/spi.xml:998(literal) /tmp/cicero-yNeh/spi.xml:1099(literal) /tmp/cicero-yNeh/spi.xml:1399(literal) /tmp/cicero-yNeh/spi.xml:1623(literal) /tmp/cicero-yNeh/spi.xml:1722(literal) /tmp/cicero-yNeh/spi.xml:1751(literal) /tmp/cicero-yNeh/spi.xml:1844(literal) /tmp/cicero-yNeh/spi.xml:1854(literal) /tmp/cicero-yNeh/spi.xml:1891(literal) /tmp/cicero-yNeh/spi.xml:1983(literal) /tmp/cicero-yNeh/spi.xml:2065(literal) /tmp/cicero-yNeh/spi.xml:2729(literal) /tmp/cicero-yNeh/spi.xml:3644(literal) 
+#: /tmp/cicero-BGQN/spi.xml:417(literal) /tmp/cicero-BGQN/spi.xml:663(literal) /tmp/cicero-BGQN/spi.xml:750(literal) /tmp/cicero-BGQN/spi.xml:787(literal) /tmp/cicero-BGQN/spi.xml:895(literal) /tmp/cicero-BGQN/spi.xml:998(literal) /tmp/cicero-BGQN/spi.xml:1099(literal) /tmp/cicero-BGQN/spi.xml:1399(literal) /tmp/cicero-BGQN/spi.xml:1623(literal) /tmp/cicero-BGQN/spi.xml:1722(literal) /tmp/cicero-BGQN/spi.xml:1751(literal) /tmp/cicero-BGQN/spi.xml:1844(literal) /tmp/cicero-BGQN/spi.xml:1854(literal) /tmp/cicero-BGQN/spi.xml:1891(literal) /tmp/cicero-BGQN/spi.xml:1983(literal) /tmp/cicero-BGQN/spi.xml:2065(literal) /tmp/cicero-BGQN/spi.xml:2729(literal) /tmp/cicero-BGQN/spi.xml:3644(literal) 
 msgid "const char * <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:419(para) /tmp/cicero-yNeh/spi.xml:665(para) 
+#: /tmp/cicero-BGQN/spi.xml:419(para) /tmp/cicero-BGQN/spi.xml:665(para) 
 msgid "string containing command to execute"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:426(literal) /tmp/cicero-yNeh/spi.xml:802(literal) /tmp/cicero-yNeh/spi.xml:1418(literal) /tmp/cicero-yNeh/spi.xml:1535(literal) /tmp/cicero-yNeh/spi.xml:1770(literal) /tmp/cicero-yNeh/spi.xml:1906(literal) /tmp/cicero-yNeh/spi.xml:2011(literal) /tmp/cicero-yNeh/spi.xml:2131(literal) /tmp/cicero-yNeh/spi.xml:2216(literal) 
+#: /tmp/cicero-BGQN/spi.xml:426(literal) /tmp/cicero-BGQN/spi.xml:802(literal) /tmp/cicero-BGQN/spi.xml:1418(literal) /tmp/cicero-BGQN/spi.xml:1535(literal) /tmp/cicero-BGQN/spi.xml:1770(literal) /tmp/cicero-BGQN/spi.xml:1906(literal) /tmp/cicero-BGQN/spi.xml:2011(literal) /tmp/cicero-BGQN/spi.xml:2131(literal) /tmp/cicero-BGQN/spi.xml:2216(literal) 
 msgid "bool <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:428(para) /tmp/cicero-yNeh/spi.xml:804(para) /tmp/cicero-yNeh/spi.xml:1420(para) /tmp/cicero-yNeh/spi.xml:1537(para) /tmp/cicero-yNeh/spi.xml:1772(para) /tmp/cicero-yNeh/spi.xml:1908(para) /tmp/cicero-yNeh/spi.xml:2013(para) 
+#: /tmp/cicero-BGQN/spi.xml:428(para) /tmp/cicero-BGQN/spi.xml:804(para) /tmp/cicero-BGQN/spi.xml:1420(para) /tmp/cicero-BGQN/spi.xml:1537(para) /tmp/cicero-BGQN/spi.xml:1772(para) /tmp/cicero-BGQN/spi.xml:1908(para) /tmp/cicero-BGQN/spi.xml:2013(para) 
 msgid "<literal>true</literal> for read-only execution"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:433(literal) /tmp/cicero-yNeh/spi.xml:672(literal) /tmp/cicero-yNeh/spi.xml:809(literal) /tmp/cicero-yNeh/spi.xml:1425(literal) /tmp/cicero-yNeh/spi.xml:1542(literal) /tmp/cicero-yNeh/spi.xml:1642(literal) /tmp/cicero-yNeh/spi.xml:2140(literal) /tmp/cicero-yNeh/spi.xml:2225(literal) /tmp/cicero-yNeh/spi.xml:2302(literal) /tmp/cicero-yNeh/spi.xml:2402(literal) 
+#: /tmp/cicero-BGQN/spi.xml:433(literal) /tmp/cicero-BGQN/spi.xml:672(literal) /tmp/cicero-BGQN/spi.xml:809(literal) /tmp/cicero-BGQN/spi.xml:1425(literal) /tmp/cicero-BGQN/spi.xml:1542(literal) /tmp/cicero-BGQN/spi.xml:1642(literal) /tmp/cicero-BGQN/spi.xml:2140(literal) /tmp/cicero-BGQN/spi.xml:2225(literal) /tmp/cicero-BGQN/spi.xml:2302(literal) /tmp/cicero-BGQN/spi.xml:2402(literal) 
 msgid "long <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:435(para) /tmp/cicero-yNeh/spi.xml:674(para) /tmp/cicero-yNeh/spi.xml:811(para) /tmp/cicero-yNeh/spi.xml:1427(para) /tmp/cicero-yNeh/spi.xml:1544(para) /tmp/cicero-yNeh/spi.xml:1644(para) 
+#: /tmp/cicero-BGQN/spi.xml:435(para) /tmp/cicero-BGQN/spi.xml:674(para) /tmp/cicero-BGQN/spi.xml:811(para) /tmp/cicero-BGQN/spi.xml:1427(para) /tmp/cicero-BGQN/spi.xml:1544(para) /tmp/cicero-BGQN/spi.xml:1644(para) 
 msgid "maximum number of rows to process or return"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:452(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:452(symbol) 
 msgid "SPI_OK_SELECT"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:454(para) 
+#: /tmp/cicero-BGQN/spi.xml:454(para) 
 msgid "if a <command>SELECT</command> (but not <command>SELECT INTO</command>) was executed"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:462(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:462(symbol) 
 msgid "SPI_OK_SELINTO"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:464(para) 
+#: /tmp/cicero-BGQN/spi.xml:464(para) 
 msgid "if a <command>SELECT INTO</command> was executed"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:471(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:471(symbol) 
 msgid "SPI_OK_INSERT"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:473(para) 
+#: /tmp/cicero-BGQN/spi.xml:473(para) 
 msgid "if an <command>INSERT</command> was executed"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:480(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:480(symbol) 
 msgid "SPI_OK_DELETE"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:482(para) 
+#: /tmp/cicero-BGQN/spi.xml:482(para) 
 msgid "if a <command>DELETE</command> was executed"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:489(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:489(symbol) 
 msgid "SPI_OK_UPDATE"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:491(para) 
+#: /tmp/cicero-BGQN/spi.xml:491(para) 
 msgid "if an <command>UPDATE</command> was executed"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:498(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:498(symbol) 
 msgid "SPI_OK_INSERT_RETURNING"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:500(para) 
+#: /tmp/cicero-BGQN/spi.xml:500(para) 
 msgid "if an <command>INSERT RETURNING</command> was executed"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:507(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:507(symbol) 
 msgid "SPI_OK_DELETE_RETURNING"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:509(para) 
+#: /tmp/cicero-BGQN/spi.xml:509(para) 
 msgid "if a <command>DELETE RETURNING</command> was executed"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:516(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:516(symbol) 
 msgid "SPI_OK_UPDATE_RETURNING"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:518(para) 
+#: /tmp/cicero-BGQN/spi.xml:518(para) 
 msgid "if an <command>UPDATE RETURNING</command> was executed"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:525(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:525(symbol) 
 msgid "SPI_OK_UTILITY"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:527(para) 
+#: /tmp/cicero-BGQN/spi.xml:527(para) 
 msgid "if a utility command (e.g., <command>CREATE TABLE</command>) was executed"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:535(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:535(symbol) 
 msgid "SPI_OK_REWRITTEN"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:537(para) 
+#: /tmp/cicero-BGQN/spi.xml:537(para) 
 msgid "if the command was rewritten into another kind of command (e.g., <command>UPDATE</command> became an <command>INSERT</command>) by a <link linkend=\"rules\">rule</link>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:446(para) 
+#: /tmp/cicero-BGQN/spi.xml:446(para) 
 msgid "If the execution of the command was successful then one of the following (nonnegative) values will be returned: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:551(symbol) /tmp/cicero-yNeh/spi.xml:1444(symbol) /tmp/cicero-yNeh/spi.xml:2555(symbol) /tmp/cicero-yNeh/spi.xml:3668(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:551(symbol) /tmp/cicero-BGQN/spi.xml:1444(symbol) /tmp/cicero-BGQN/spi.xml:2555(symbol) /tmp/cicero-BGQN/spi.xml:3668(symbol) 
 msgid "SPI_ERROR_ARGUMENT"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:553(para) 
+#: /tmp/cicero-BGQN/spi.xml:553(para) 
 msgid "if <parameter>command</parameter> is <symbol>NULL</symbol> or <parameter>count</parameter> is less than 0"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:561(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:561(symbol) 
 msgid "SPI_ERROR_COPY"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:563(para) 
+#: /tmp/cicero-BGQN/spi.xml:563(para) 
 msgid "if <command>COPY TO stdout</command> or <command>COPY FROM stdin</command> was attempted"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:571(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:571(symbol) 
 msgid "SPI_ERROR_TRANSACTION"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:573(para) 
+#: /tmp/cicero-BGQN/spi.xml:573(para) 
 msgid "if a transaction manipulation command was attempted (<command>BEGIN</command>, <command>COMMIT</command>, <command>ROLLBACK</command>, <command>SAVEPOINT</command>, <command>PREPARE TRANSACTION</command>, <command>COMMIT PREPARED</command>, <command>ROLLBACK PREPARED</command>, or any variant thereof)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:588(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:588(symbol) 
 msgid "SPI_ERROR_OPUNKNOWN"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:590(para) 
+#: /tmp/cicero-BGQN/spi.xml:590(para) 
 msgid "if the command type is unknown (shouldn't happen)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:546(para) 
+#: /tmp/cicero-BGQN/spi.xml:546(para) 
 msgid "On error, one of the following negative values is returned: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:609(title) /tmp/cicero-yNeh/spi.xml:940(title) /tmp/cicero-yNeh/spi.xml:1046(title) /tmp/cicero-yNeh/spi.xml:2161(title) /tmp/cicero-yNeh/spi.xml:2236(title) /tmp/cicero-yNeh/spi.xml:2327(title) /tmp/cicero-yNeh/spi.xml:2428(title) /tmp/cicero-yNeh/spi.xml:2576(title) 
+#: /tmp/cicero-BGQN/spi.xml:609(title) /tmp/cicero-BGQN/spi.xml:940(title) /tmp/cicero-BGQN/spi.xml:1046(title) /tmp/cicero-BGQN/spi.xml:2161(title) /tmp/cicero-BGQN/spi.xml:2236(title) /tmp/cicero-BGQN/spi.xml:2327(title) /tmp/cicero-BGQN/spi.xml:2428(title) /tmp/cicero-BGQN/spi.xml:2576(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:611(para) 
+#: /tmp/cicero-BGQN/spi.xml:611(para) 
 msgid "The functions <function>SPI_execute</function>, <function>SPI_exec</function>, <function>SPI_execute_plan</function>, and <function>SPI_execp</function> change both <varname>SPI_processed</varname> and <varname>SPI_tuptable</varname> (just the pointer, not the contents of the structure). Save these two global variables into local procedure variables if you need to access the result table of <function>SPI_execute</function> or a related function across later calls."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:630(refentrytitle) /tmp/cicero-yNeh/spi.xml:635(refname) /tmp/cicero-yNeh/spi.xml:639(primary) 
+#: /tmp/cicero-BGQN/spi.xml:630(refentrytitle) /tmp/cicero-BGQN/spi.xml:635(refname) /tmp/cicero-BGQN/spi.xml:639(primary) 
 msgid "SPI_exec"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:636(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:636(refpurpose) 
 msgid "execute a read/write command"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:642(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:642(synopsis) 
 #, no-wrap
 msgid "\nint SPI_exec(const char * <placeholder-1/>, long <placeholder-2/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:650(para) 
+#: /tmp/cicero-BGQN/spi.xml:650(para) 
 msgid "<function>SPI_exec</function> is the same as <function>SPI_execute</function>, with the latter's <parameter>read_only</parameter> parameter always taken as <literal>false</literal>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:685(para) 
+#: /tmp/cicero-BGQN/spi.xml:685(para) 
 msgid "See <function>SPI_execute</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:695(refentrytitle) /tmp/cicero-yNeh/spi.xml:700(refname) /tmp/cicero-yNeh/spi.xml:704(primary) 
+#: /tmp/cicero-BGQN/spi.xml:695(refentrytitle) /tmp/cicero-BGQN/spi.xml:700(refname) /tmp/cicero-BGQN/spi.xml:704(primary) 
 msgid "SPI_execute_with_args"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:701(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:701(refpurpose) 
 msgid "execute a command with out-of-line parameters"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:709(parameter) /tmp/cicero-yNeh/spi.xml:759(parameter) /tmp/cicero-yNeh/spi.xml:851(parameter) /tmp/cicero-yNeh/spi.xml:904(parameter) /tmp/cicero-yNeh/spi.xml:975(parameter) /tmp/cicero-yNeh/spi.xml:1007(parameter) /tmp/cicero-yNeh/spi.xml:1807(parameter) /tmp/cicero-yNeh/spi.xml:1863(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:709(parameter) /tmp/cicero-BGQN/spi.xml:759(parameter) /tmp/cicero-BGQN/spi.xml:851(parameter) /tmp/cicero-BGQN/spi.xml:904(parameter) /tmp/cicero-BGQN/spi.xml:975(parameter) /tmp/cicero-BGQN/spi.xml:1007(parameter) /tmp/cicero-BGQN/spi.xml:1807(parameter) /tmp/cicero-BGQN/spi.xml:1863(parameter) 
 msgid "nargs"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:709(parameter) /tmp/cicero-yNeh/spi.xml:768(parameter) /tmp/cicero-yNeh/spi.xml:851(parameter) /tmp/cicero-yNeh/spi.xml:913(parameter) /tmp/cicero-yNeh/spi.xml:976(parameter) /tmp/cicero-yNeh/spi.xml:1016(parameter) /tmp/cicero-yNeh/spi.xml:1807(parameter) /tmp/cicero-yNeh/spi.xml:1872(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:709(parameter) /tmp/cicero-BGQN/spi.xml:768(parameter) /tmp/cicero-BGQN/spi.xml:851(parameter) /tmp/cicero-BGQN/spi.xml:913(parameter) /tmp/cicero-BGQN/spi.xml:976(parameter) /tmp/cicero-BGQN/spi.xml:1016(parameter) /tmp/cicero-BGQN/spi.xml:1807(parameter) /tmp/cicero-BGQN/spi.xml:1872(parameter) 
 msgid "argtypes"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:710(parameter) /tmp/cicero-yNeh/spi.xml:778(parameter) /tmp/cicero-yNeh/spi.xml:1359(parameter) /tmp/cicero-yNeh/spi.xml:1389(parameter) /tmp/cicero-yNeh/spi.xml:1584(parameter) /tmp/cicero-yNeh/spi.xml:1613(parameter) /tmp/cicero-yNeh/spi.xml:1685(parameter) /tmp/cicero-yNeh/spi.xml:1741(parameter) /tmp/cicero-yNeh/spi.xml:1808(parameter) /tmp/cicero-yNeh/spi.xml:1882(parameter) /tmp/cicero-yNeh/spi.xml:3576(parameter) /tmp/cicero-yNeh/spi.xml:3635(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:710(parameter) /tmp/cicero-BGQN/spi.xml:778(parameter) /tmp/cicero-BGQN/spi.xml:1359(parameter) /tmp/cicero-BGQN/spi.xml:1389(parameter) /tmp/cicero-BGQN/spi.xml:1584(parameter) /tmp/cicero-BGQN/spi.xml:1613(parameter) /tmp/cicero-BGQN/spi.xml:1685(parameter) /tmp/cicero-BGQN/spi.xml:1741(parameter) /tmp/cicero-BGQN/spi.xml:1808(parameter) /tmp/cicero-BGQN/spi.xml:1882(parameter) /tmp/cicero-BGQN/spi.xml:3576(parameter) /tmp/cicero-BGQN/spi.xml:3635(parameter) 
 msgid "values"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:710(parameter) /tmp/cicero-yNeh/spi.xml:787(parameter) /tmp/cicero-yNeh/spi.xml:1359(parameter) /tmp/cicero-yNeh/spi.xml:1399(parameter) /tmp/cicero-yNeh/spi.xml:1584(parameter) /tmp/cicero-yNeh/spi.xml:1623(parameter) /tmp/cicero-yNeh/spi.xml:1685(parameter) /tmp/cicero-yNeh/spi.xml:1751(parameter) /tmp/cicero-yNeh/spi.xml:1808(parameter) /tmp/cicero-yNeh/spi.xml:1891(parameter) /tmp/cicero-yNeh/spi.xml:3576(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:710(parameter) /tmp/cicero-BGQN/spi.xml:787(parameter) /tmp/cicero-BGQN/spi.xml:1359(parameter) /tmp/cicero-BGQN/spi.xml:1399(parameter) /tmp/cicero-BGQN/spi.xml:1584(parameter) /tmp/cicero-BGQN/spi.xml:1623(parameter) /tmp/cicero-BGQN/spi.xml:1685(parameter) /tmp/cicero-BGQN/spi.xml:1751(parameter) /tmp/cicero-BGQN/spi.xml:1808(parameter) /tmp/cicero-BGQN/spi.xml:1891(parameter) /tmp/cicero-BGQN/spi.xml:3576(parameter) 
 msgid "nulls"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:707(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:707(synopsis) 
 #, no-wrap
 msgid "\nint SPI_execute_with_args(const char *<placeholder-1/>,\n                          int <placeholder-2/>, Oid *<placeholder-3/>,\n                          Datum *<placeholder-4/>, const char *<placeholder-5/>,\n                          bool <placeholder-6/>, long <placeholder-7/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:718(para) 
+#: /tmp/cicero-BGQN/spi.xml:718(para) 
 msgid "<function>SPI_execute_with_args</function> executes a command that might include references to externally supplied parameters. The command text refers to a parameter as <literal>$<replaceable>n</replaceable></literal>, and the call specifies data types and values for each such symbol. <parameter>read_only</parameter> and <parameter>count</parameter> have the same interpretation as in <function>SPI_execute</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:727(para) 
+#: /tmp/cicero-BGQN/spi.xml:727(para) 
 msgid "The main advantage of this routine compared to <function>SPI_execute</function> is that data values can be inserted into the command without tedious quoting/escaping, and thus with much less risk of SQL-injection attacks."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:734(para) 
+#: /tmp/cicero-BGQN/spi.xml:734(para) 
 msgid "Similar results can be achieved with <function>SPI_prepare</function> followed by <function>SPI_execute_plan</function>; however, when using this function the query plan is customized to the specific parameter values provided. For one-time query execution, this function should be preferred. If the same command is to be executed with many different parameters, either method might be faster, depending on the cost of re-planning versus the benefit of custom plans."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:752(para) /tmp/cicero-yNeh/spi.xml:897(para) /tmp/cicero-yNeh/spi.xml:1000(para) /tmp/cicero-yNeh/spi.xml:1101(para) /tmp/cicero-yNeh/spi.xml:1856(para) 
+#: /tmp/cicero-BGQN/spi.xml:752(para) /tmp/cicero-BGQN/spi.xml:897(para) /tmp/cicero-BGQN/spi.xml:1000(para) /tmp/cicero-BGQN/spi.xml:1101(para) /tmp/cicero-BGQN/spi.xml:1856(para) 
 msgid "command string"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:759(literal) /tmp/cicero-yNeh/spi.xml:904(literal) /tmp/cicero-yNeh/spi.xml:1007(literal) /tmp/cicero-yNeh/spi.xml:1026(literal) /tmp/cicero-yNeh/spi.xml:1126(literal) /tmp/cicero-yNeh/spi.xml:1249(literal) /tmp/cicero-yNeh/spi.xml:1863(literal) /tmp/cicero-yNeh/spi.xml:1913(literal) /tmp/cicero-yNeh/spi.xml:2654(literal) /tmp/cicero-yNeh/spi.xml:2810(literal) /tmp/cicero-yNeh/spi.xml:2894(literal) /tmp/cicero-yNeh/spi.xml:2974(literal) /tmp/cicero-yNeh/spi.xml:3039(literal) /tmp/cicero-yNeh/spi.xml:3615(literal) 
+#: /tmp/cicero-BGQN/spi.xml:759(literal) /tmp/cicero-BGQN/spi.xml:904(literal) /tmp/cicero-BGQN/spi.xml:1007(literal) /tmp/cicero-BGQN/spi.xml:1026(literal) /tmp/cicero-BGQN/spi.xml:1126(literal) /tmp/cicero-BGQN/spi.xml:1249(literal) /tmp/cicero-BGQN/spi.xml:1863(literal) /tmp/cicero-BGQN/spi.xml:1913(literal) /tmp/cicero-BGQN/spi.xml:2654(literal) /tmp/cicero-BGQN/spi.xml:2810(literal) /tmp/cicero-BGQN/spi.xml:2894(literal) /tmp/cicero-BGQN/spi.xml:2974(literal) /tmp/cicero-BGQN/spi.xml:3039(literal) /tmp/cicero-BGQN/spi.xml:3615(literal) 
 msgid "int <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:761(para) /tmp/cicero-yNeh/spi.xml:906(para) /tmp/cicero-yNeh/spi.xml:1009(para) /tmp/cicero-yNeh/spi.xml:1865(para) 
+#: /tmp/cicero-BGQN/spi.xml:761(para) /tmp/cicero-BGQN/spi.xml:906(para) /tmp/cicero-BGQN/spi.xml:1009(para) /tmp/cicero-BGQN/spi.xml:1865(para) 
 msgid "number of input parameters (<literal>$1</literal>, <literal>$2</literal>, etc.)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:768(literal) /tmp/cicero-yNeh/spi.xml:913(literal) /tmp/cicero-yNeh/spi.xml:1016(literal) /tmp/cicero-yNeh/spi.xml:1872(literal) 
+#: /tmp/cicero-BGQN/spi.xml:768(literal) /tmp/cicero-BGQN/spi.xml:913(literal) /tmp/cicero-BGQN/spi.xml:1016(literal) /tmp/cicero-BGQN/spi.xml:1872(literal) 
 msgid "Oid * <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:770(para) /tmp/cicero-yNeh/spi.xml:1874(para) 
+#: /tmp/cicero-BGQN/spi.xml:770(para) /tmp/cicero-BGQN/spi.xml:1874(para) 
 msgid "an array containing the <acronym>OID</acronym>s of the data types of the parameters"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:778(literal) /tmp/cicero-yNeh/spi.xml:1389(literal) /tmp/cicero-yNeh/spi.xml:1613(literal) /tmp/cicero-yNeh/spi.xml:1741(literal) /tmp/cicero-yNeh/spi.xml:1882(literal) /tmp/cicero-yNeh/spi.xml:3635(literal) 
+#: /tmp/cicero-BGQN/spi.xml:778(literal) /tmp/cicero-BGQN/spi.xml:1389(literal) /tmp/cicero-BGQN/spi.xml:1613(literal) /tmp/cicero-BGQN/spi.xml:1741(literal) /tmp/cicero-BGQN/spi.xml:1882(literal) /tmp/cicero-BGQN/spi.xml:3635(literal) 
 msgid "Datum * <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:780(para) /tmp/cicero-yNeh/spi.xml:1884(para) 
+#: /tmp/cicero-BGQN/spi.xml:780(para) /tmp/cicero-BGQN/spi.xml:1884(para) 
 msgid "an array of actual parameter values"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:789(para) /tmp/cicero-yNeh/spi.xml:1893(para) 
+#: /tmp/cicero-BGQN/spi.xml:789(para) /tmp/cicero-BGQN/spi.xml:1893(para) 
 msgid "an array describing which parameters are null"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:793(para) 
+#: /tmp/cicero-BGQN/spi.xml:793(para) 
 msgid "If <parameter>nulls</parameter> is <symbol>NULL</symbol> then <function>SPI_execute_with_args</function> assumes that no parameters are null."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:822(para) 
+#: /tmp/cicero-BGQN/spi.xml:822(para) 
 msgid "The return value is the same as for <function>SPI_execute</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:826(para) /tmp/cicero-yNeh/spi.xml:1465(para) /tmp/cicero-yNeh/spi.xml:1659(para) /tmp/cicero-yNeh/spi.xml:2153(para) /tmp/cicero-yNeh/spi.xml:2319(para) 
+#: /tmp/cicero-BGQN/spi.xml:826(para) /tmp/cicero-BGQN/spi.xml:1465(para) /tmp/cicero-BGQN/spi.xml:1659(para) /tmp/cicero-BGQN/spi.xml:2153(para) /tmp/cicero-BGQN/spi.xml:2319(para) 
 msgid "<varname>SPI_processed</varname> and <varname>SPI_tuptable</varname> are set as in <function>SPI_execute</function> if successful."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:838(refentrytitle) /tmp/cicero-yNeh/spi.xml:843(refname) /tmp/cicero-yNeh/spi.xml:847(primary) /tmp/cicero-yNeh/spi.xml:1157(function) /tmp/cicero-yNeh/spi.xml:1214(function) /tmp/cicero-yNeh/spi.xml:1284(function) /tmp/cicero-yNeh/spi.xml:1352(function) /tmp/cicero-yNeh/spi.xml:1483(function) /tmp/cicero-yNeh/spi.xml:1677(function) 
+#: /tmp/cicero-BGQN/spi.xml:838(refentrytitle) /tmp/cicero-BGQN/spi.xml:843(refname) /tmp/cicero-BGQN/spi.xml:847(primary) /tmp/cicero-BGQN/spi.xml:1157(function) /tmp/cicero-BGQN/spi.xml:1214(function) /tmp/cicero-BGQN/spi.xml:1284(function) /tmp/cicero-BGQN/spi.xml:1352(function) /tmp/cicero-BGQN/spi.xml:1483(function) /tmp/cicero-BGQN/spi.xml:1677(function) 
 msgid "SPI_prepare"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:844(refpurpose) /tmp/cicero-yNeh/spi.xml:968(refpurpose) /tmp/cicero-yNeh/spi.xml:1068(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:844(refpurpose) /tmp/cicero-BGQN/spi.xml:968(refpurpose) /tmp/cicero-BGQN/spi.xml:1068(refpurpose) 
 msgid "prepare a plan for a command, without executing it yet"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:850(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:850(synopsis) 
 #, no-wrap
 msgid "\nSPIPlanPtr SPI_prepare(const char * <placeholder-1/>, int <placeholder-2/>, Oid * <placeholder-3/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:858(para) 
+#: /tmp/cicero-BGQN/spi.xml:858(para) 
 msgid "<function>SPI_prepare</function> creates and returns an execution plan for the specified command, but doesn't execute the command. This function should only be called from a connected procedure."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:864(para) 
+#: /tmp/cicero-BGQN/spi.xml:864(para) 
 msgid "When the same or a similar command is to be executed repeatedly, it might be advantageous to perform the planning only once. <function>SPI_prepare</function> converts a command string into an execution plan that can be executed repeatedly using <function>SPI_execute_plan</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:872(para) 
+#: /tmp/cicero-BGQN/spi.xml:872(para) 
 msgid "A prepared command can be generalized by writing parameters (<literal>$1</literal>, <literal>$2</literal>, etc.) in place of what would be constants in a normal command. The actual values of the parameters are then specified when <function>SPI_execute_plan</function> is called. This allows the prepared command to be used over a wider range of situations than would be possible without parameters."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:881(para) 
+#: /tmp/cicero-BGQN/spi.xml:881(para) 
 msgid "The plan returned by <function>SPI_prepare</function> can be used only in the current invocation of the procedure, since <function>SPI_finish</function> frees memory allocated for a plan. But a plan can be saved for longer using the function <function>SPI_saveplan</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:915(para) /tmp/cicero-yNeh/spi.xml:1018(para) 
+#: /tmp/cicero-BGQN/spi.xml:915(para) /tmp/cicero-BGQN/spi.xml:1018(para) 
 msgid "pointer to an array containing the <acronym>OID</acronym>s of the data types of the parameters"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:927(para) 
+#: /tmp/cicero-BGQN/spi.xml:927(para) 
 msgid "<function>SPI_prepare</function> returns a non-null pointer to an execution plan. On error, <symbol>NULL</symbol> will be returned, and <varname>SPI_result</varname> will be set to one of the same error codes used by <function>SPI_execute</function>, except that it is set to <symbol>SPI_ERROR_ARGUMENT</symbol> if <parameter>command</parameter> is <symbol>NULL</symbol>, or if <parameter>nargs</parameter> is less than 0, or if <parameter>nargs</parameter> is greater than 0 and <parameter>argtypes</parameter> is <symbol>NULL</symbol>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:942(para) 
+#: /tmp/cicero-BGQN/spi.xml:942(para) 
 msgid "<type>SPIPlanPtr</type> is declared as a pointer to an opaque struct type in <filename>spi.h</filename>. It is unwise to try to access its contents directly, as that makes your code much more likely to break in future revisions of <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:949(para) 
+#: /tmp/cicero-BGQN/spi.xml:949(para) 
 msgid "There is a disadvantage to using parameters: since the planner does not know the values that will be supplied for the parameters, it might make worse planning choices than it would make for a normal command with all constants visible."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:962(refentrytitle) /tmp/cicero-yNeh/spi.xml:967(refname) /tmp/cicero-yNeh/spi.xml:971(primary) 
+#: /tmp/cicero-BGQN/spi.xml:962(refentrytitle) /tmp/cicero-BGQN/spi.xml:967(refname) /tmp/cicero-BGQN/spi.xml:971(primary) 
 msgid "SPI_prepare_cursor"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:976(parameter) /tmp/cicero-yNeh/spi.xml:1026(parameter) /tmp/cicero-yNeh/spi.xml:1078(parameter) /tmp/cicero-yNeh/spi.xml:1126(parameter) /tmp/cicero-yNeh/spi.xml:1809(parameter) /tmp/cicero-yNeh/spi.xml:1913(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:976(parameter) /tmp/cicero-BGQN/spi.xml:1026(parameter) /tmp/cicero-BGQN/spi.xml:1078(parameter) /tmp/cicero-BGQN/spi.xml:1126(parameter) /tmp/cicero-BGQN/spi.xml:1809(parameter) /tmp/cicero-BGQN/spi.xml:1913(parameter) 
 msgid "cursorOptions"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:974(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:974(synopsis) 
 #, no-wrap
 msgid "\nSPIPlanPtr SPI_prepare_cursor(const char * <placeholder-1/>, int <placeholder-2/>,\n                              Oid * <placeholder-3/>, int <placeholder-4/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:983(para) 
+#: /tmp/cicero-BGQN/spi.xml:983(para) 
 msgid "<function>SPI_prepare_cursor</function> is identical to <function>SPI_prepare</function>, except that it also allows specification of the planner's <quote>cursor options</quote> parameter. This is a bit mask having the values shown in <filename>nodes/parsenodes.h</filename> for the <structfield>options</structfield> field of <structname>DeclareCursorStmt</structname>. <function>SPI_prepare</function> always takes the cursor options as zero."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1028(para) /tmp/cicero-yNeh/spi.xml:1128(para) /tmp/cicero-yNeh/spi.xml:1915(para) 
+#: /tmp/cicero-BGQN/spi.xml:1028(para) /tmp/cicero-BGQN/spi.xml:1128(para) /tmp/cicero-BGQN/spi.xml:1915(para) 
 msgid "integer bit mask of cursor options; zero produces default behavior"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1039(para) 
+#: /tmp/cicero-BGQN/spi.xml:1039(para) 
 msgid "<function>SPI_prepare_cursor</function> has the same return conventions as <function>SPI_prepare</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1048(para) 
+#: /tmp/cicero-BGQN/spi.xml:1048(para) 
 msgid "Useful bits to set in <parameter>cursorOptions</parameter> include <symbol>CURSOR_OPT_SCROLL</symbol>, <symbol>CURSOR_OPT_NO_SCROLL</symbol>, and <symbol>CURSOR_OPT_FAST_PLAN</symbol>. Note in particular that <symbol>CURSOR_OPT_HOLD</symbol> is ignored."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1062(refentrytitle) /tmp/cicero-yNeh/spi.xml:1067(refname) /tmp/cicero-yNeh/spi.xml:1071(primary) 
+#: /tmp/cicero-BGQN/spi.xml:1062(refentrytitle) /tmp/cicero-BGQN/spi.xml:1067(refname) /tmp/cicero-BGQN/spi.xml:1071(primary) 
 msgid "SPI_prepare_params"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1076(parameter) /tmp/cicero-yNeh/spi.xml:1108(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:1076(parameter) /tmp/cicero-BGQN/spi.xml:1108(parameter) 
 msgid "parserSetup"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1077(parameter) /tmp/cicero-yNeh/spi.xml:1117(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:1077(parameter) /tmp/cicero-BGQN/spi.xml:1117(parameter) 
 msgid "parserSetupArg"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1074(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:1074(synopsis) 
 #, no-wrap
 msgid "\nSPIPlanPtr SPI_prepare_params(const char * <placeholder-1/>,\n                              ParserSetupHook <placeholder-2/>,\n                              void * <placeholder-3/>,\n                              int <placeholder-4/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1085(para) 
+#: /tmp/cicero-BGQN/spi.xml:1085(para) 
 msgid "<function>SPI_prepare_params</function> creates and returns an execution plan for the specified command, but doesn't execute the command. This function is equivalent to <function>SPI_prepare_cursor</function>, with the addition that the caller can specify parser hook functions to control the parsing of external parameter references."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1108(literal) 
+#: /tmp/cicero-BGQN/spi.xml:1108(literal) 
 msgid "ParserSetupHook <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1110(para) 
+#: /tmp/cicero-BGQN/spi.xml:1110(para) 
 msgid "Parser hook setup function"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1117(literal) /tmp/cicero-yNeh/spi.xml:3344(literal) /tmp/cicero-yNeh/spi.xml:3415(literal) 
+#: /tmp/cicero-BGQN/spi.xml:1117(literal) /tmp/cicero-BGQN/spi.xml:3344(literal) /tmp/cicero-BGQN/spi.xml:3415(literal) 
 msgid "void * <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1119(para) 
+#: /tmp/cicero-BGQN/spi.xml:1119(para) 
 msgid "passthrough argument for <parameter>parserSetup</parameter>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1139(para) 
+#: /tmp/cicero-BGQN/spi.xml:1139(para) 
 msgid "<function>SPI_prepare_params</function> has the same return conventions as <function>SPI_prepare</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1150(refentrytitle) /tmp/cicero-yNeh/spi.xml:1155(refname) /tmp/cicero-yNeh/spi.xml:1160(primary) 
+#: /tmp/cicero-BGQN/spi.xml:1150(refentrytitle) /tmp/cicero-BGQN/spi.xml:1155(refname) /tmp/cicero-BGQN/spi.xml:1160(primary) 
 msgid "SPI_getargcount"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1156(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:1156(refpurpose) 
 msgid "return the number of arguments needed by a plan prepared by <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1164(parameter) /tmp/cicero-yNeh/spi.xml:1182(parameter) /tmp/cicero-yNeh/spi.xml:1221(parameter) /tmp/cicero-yNeh/spi.xml:1240(parameter) /tmp/cicero-yNeh/spi.xml:1292(parameter) /tmp/cicero-yNeh/spi.xml:1317(parameter) /tmp/cicero-yNeh/spi.xml:1359(parameter) /tmp/cicero-yNeh/spi.xml:1380(parameter) /tmp/cicero-yNeh/spi.xml:1490(parameter) /tmp/cicero-yNeh/spi.xml:1517(parameter) /tmp/cicero-yNeh/spi.xml:1584(parameter) /tmp/cicero-yNeh/spi.xml:1604(parameter) /tmp/cicero-yNeh/spi.xml:1684(parameter) /tmp/cicero-yNeh/spi.xml:1732(parameter) /tmp/cicero-yNeh/spi.xml:1951(parameter) /tmp/cicero-yNeh/spi.xml:1993(parameter) /tmp/cicero-yNeh/spi.xml:2514(parameter) /tmp/cicero-yNeh/spi.xml:2536(parameter) /tmp/cicero-yNeh/spi.xml:3820(parameter) /tmp/cicero-yNeh/spi.xml:3839(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:1164(parameter) /tmp/cicero-BGQN/spi.xml:1182(parameter) /tmp/cicero-BGQN/spi.xml:1221(parameter) /tmp/cicero-BGQN/spi.xml:1240(parameter) /tmp/cicero-BGQN/spi.xml:1292(parameter) /tmp/cicero-BGQN/spi.xml:1317(parameter) /tmp/cicero-BGQN/spi.xml:1359(parameter) /tmp/cicero-BGQN/spi.xml:1380(parameter) /tmp/cicero-BGQN/spi.xml:1490(parameter) /tmp/cicero-BGQN/spi.xml:1517(parameter) /tmp/cicero-BGQN/spi.xml:1584(parameter) /tmp/cicero-BGQN/spi.xml:1604(parameter) /tmp/cicero-BGQN/spi.xml:1684(parameter) /tmp/cicero-BGQN/spi.xml:1732(parameter) /tmp/cicero-BGQN/spi.xml:1951(parameter) /tmp/cicero-BGQN/spi.xml:1993(parameter) /tmp/cicero-BGQN/spi.xml:2514(parameter) /tmp/cicero-BGQN/spi.xml:2536(parameter) /tmp/cicero-BGQN/spi.xml:3820(parameter) /tmp/cicero-BGQN/spi.xml:3839(parameter) 
 msgid "plan"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1163(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:1163(synopsis) 
 #, no-wrap
 msgid "\nint SPI_getargcount(SPIPlanPtr <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1171(para) 
+#: /tmp/cicero-BGQN/spi.xml:1171(para) 
 msgid "<function>SPI_getargcount</function> returns the number of arguments needed to execute a plan prepared by <function>SPI_prepare</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1182(literal) /tmp/cicero-yNeh/spi.xml:1240(literal) /tmp/cicero-yNeh/spi.xml:1317(literal) /tmp/cicero-yNeh/spi.xml:1380(literal) /tmp/cicero-yNeh/spi.xml:1517(literal) /tmp/cicero-yNeh/spi.xml:1604(literal) /tmp/cicero-yNeh/spi.xml:1732(literal) /tmp/cicero-yNeh/spi.xml:1993(literal) /tmp/cicero-yNeh/spi.xml:2536(literal) /tmp/cicero-yNeh/spi.xml:3839(literal) 
+#: /tmp/cicero-BGQN/spi.xml:1182(literal) /tmp/cicero-BGQN/spi.xml:1240(literal) /tmp/cicero-BGQN/spi.xml:1317(literal) /tmp/cicero-BGQN/spi.xml:1380(literal) /tmp/cicero-BGQN/spi.xml:1517(literal) /tmp/cicero-BGQN/spi.xml:1604(literal) /tmp/cicero-BGQN/spi.xml:1732(literal) /tmp/cicero-BGQN/spi.xml:1993(literal) /tmp/cicero-BGQN/spi.xml:2536(literal) /tmp/cicero-BGQN/spi.xml:3839(literal) 
 msgid "SPIPlanPtr <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1184(para) /tmp/cicero-yNeh/spi.xml:1242(para) /tmp/cicero-yNeh/spi.xml:1319(para) /tmp/cicero-yNeh/spi.xml:1382(para) /tmp/cicero-yNeh/spi.xml:1519(para) /tmp/cicero-yNeh/spi.xml:1606(para) /tmp/cicero-yNeh/spi.xml:1734(para) /tmp/cicero-yNeh/spi.xml:1995(para) 
+#: /tmp/cicero-BGQN/spi.xml:1184(para) /tmp/cicero-BGQN/spi.xml:1242(para) /tmp/cicero-BGQN/spi.xml:1319(para) /tmp/cicero-BGQN/spi.xml:1382(para) /tmp/cicero-BGQN/spi.xml:1519(para) /tmp/cicero-BGQN/spi.xml:1606(para) /tmp/cicero-BGQN/spi.xml:1734(para) /tmp/cicero-BGQN/spi.xml:1995(para) 
 msgid "execution plan (returned by <function>SPI_prepare</function>)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1194(para) 
+#: /tmp/cicero-BGQN/spi.xml:1194(para) 
 msgid "The count of expected arguments for the <parameter>plan</parameter>. If the <parameter>plan</parameter> is <symbol>NULL</symbol> or invalid, <varname>SPI_result</varname> is set to <symbol>SPI_ERROR_ARGUMENT</symbol> and -1 is returned."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1207(refentrytitle) /tmp/cicero-yNeh/spi.xml:1212(refname) /tmp/cicero-yNeh/spi.xml:1217(primary) 
+#: /tmp/cicero-BGQN/spi.xml:1207(refentrytitle) /tmp/cicero-BGQN/spi.xml:1212(refname) /tmp/cicero-BGQN/spi.xml:1217(primary) 
 msgid "SPI_getargtypeid"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1213(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:1213(refpurpose) 
 msgid "return the data type OID for an argument of a plan prepared by <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1221(parameter) /tmp/cicero-yNeh/spi.xml:1249(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:1221(parameter) /tmp/cicero-BGQN/spi.xml:1249(parameter) 
 msgid "argIndex"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1220(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:1220(synopsis) 
 #, no-wrap
 msgid "\nOid SPI_getargtypeid(SPIPlanPtr <placeholder-1/>, int <placeholder-2/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1228(para) 
+#: /tmp/cicero-BGQN/spi.xml:1228(para) 
 msgid "<function>SPI_getargtypeid</function> returns the OID representing the type for the <parameter>argIndex</parameter>'th argument of a plan prepared by <function>SPI_prepare</function>. First argument is at index zero."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1251(para) 
+#: /tmp/cicero-BGQN/spi.xml:1251(para) 
 msgid "zero based index of the argument"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1261(para) 
+#: /tmp/cicero-BGQN/spi.xml:1261(para) 
 msgid "The type OID of the argument at the given index. If the <parameter>plan</parameter> is <symbol>NULL</symbol> or invalid, or <parameter>argIndex</parameter> is less than 0 or not less than the number of arguments declared for the <parameter>plan</parameter>, <varname>SPI_result</varname> is set to <symbol>SPI_ERROR_ARGUMENT</symbol> and <symbol>InvalidOid</symbol> is returned."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1277(refentrytitle) /tmp/cicero-yNeh/spi.xml:1282(refname) /tmp/cicero-yNeh/spi.xml:1288(primary) 
+#: /tmp/cicero-BGQN/spi.xml:1277(refentrytitle) /tmp/cicero-BGQN/spi.xml:1282(refname) /tmp/cicero-BGQN/spi.xml:1288(primary) 
 msgid "SPI_is_cursor_plan"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1283(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:1283(symbol) 
 msgid "true"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1285(function) /tmp/cicero-yNeh/spi.xml:1671(refentrytitle) /tmp/cicero-yNeh/spi.xml:1676(refname) /tmp/cicero-yNeh/spi.xml:1680(primary) 
+#: /tmp/cicero-BGQN/spi.xml:1285(function) /tmp/cicero-BGQN/spi.xml:1671(refentrytitle) /tmp/cicero-BGQN/spi.xml:1676(refname) /tmp/cicero-BGQN/spi.xml:1680(primary) 
 msgid "SPI_cursor_open"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1283(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:1283(refpurpose) 
 msgid "return <placeholder-1/> if a plan prepared by <placeholder-2/> can be used with <placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1291(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:1291(synopsis) 
 #, no-wrap
 msgid "\nbool SPI_is_cursor_plan(SPIPlanPtr <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1299(para) 
+#: /tmp/cicero-BGQN/spi.xml:1299(para) 
 msgid "<function>SPI_is_cursor_plan</function> returns <symbol>true</symbol> if a plan prepared by <function>SPI_prepare</function> can be passed as an argument to <function>SPI_cursor_open</function>, or <symbol>false</symbol> if that is not the case. The criteria are that the <parameter>plan</parameter> represents one single command and that this command returns tuples to the caller; for example, <command>SELECT</command> is allowed unless it contains an <literal>INTO</literal> clause, and <command>UPDATE</command> is allowed only if it contains a <literal>RETURNING</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1329(para) 
+#: /tmp/cicero-BGQN/spi.xml:1329(para) 
 msgid "<symbol>true</symbol> or <symbol>false</symbol> to indicate if the <parameter>plan</parameter> can produce a cursor or not, with <varname>SPI_result</varname> set to zero. If it is not possible to determine the answer (for example, if the <parameter>plan</parameter> is <symbol>NULL</symbol> or invalid, or if called when not connected to SPI), then <varname>SPI_result</varname> is set to a suitable error code and <symbol>false</symbol> is returned."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1346(refentrytitle) /tmp/cicero-yNeh/spi.xml:1351(refname) /tmp/cicero-yNeh/spi.xml:1355(primary) 
+#: /tmp/cicero-BGQN/spi.xml:1346(refentrytitle) /tmp/cicero-BGQN/spi.xml:1351(refname) /tmp/cicero-BGQN/spi.xml:1355(primary) 
 msgid "SPI_execute_plan"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1352(refpurpose) /tmp/cicero-yNeh/spi.xml:1483(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:1352(refpurpose) /tmp/cicero-BGQN/spi.xml:1483(refpurpose) 
 msgid "execute a plan prepared by <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1358(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:1358(synopsis) 
 #, no-wrap
 msgid "\nint SPI_execute_plan(SPIPlanPtr <placeholder-1/>, Datum * <placeholder-2/>, const char * <placeholder-3/>,\n                     bool <placeholder-4/>, long <placeholder-5/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1367(para) 
+#: /tmp/cicero-BGQN/spi.xml:1367(para) 
 msgid "<function>SPI_execute_plan</function> executes a plan prepared by <function>SPI_prepare</function>. <parameter>read_only</parameter> and <parameter>count</parameter> have the same interpretation as in <function>SPI_execute</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1391(para) /tmp/cicero-yNeh/spi.xml:1615(para) /tmp/cicero-yNeh/spi.xml:1743(para) 
+#: /tmp/cicero-BGQN/spi.xml:1391(para) /tmp/cicero-BGQN/spi.xml:1615(para) /tmp/cicero-BGQN/spi.xml:1743(para) 
 msgid "An array of actual parameter values. Must have same length as the plan's number of arguments."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1401(para) /tmp/cicero-yNeh/spi.xml:1625(para) /tmp/cicero-yNeh/spi.xml:1753(para) 
+#: /tmp/cicero-BGQN/spi.xml:1401(para) /tmp/cicero-BGQN/spi.xml:1625(para) /tmp/cicero-BGQN/spi.xml:1753(para) 
 msgid "An array describing which parameters are null. Must have same length as the plan's number of arguments. <literal>n</literal> indicates a null value (entry in <parameter>values</parameter> will be ignored); a space indicates a nonnull value (entry in <parameter>values</parameter> is valid)."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1409(para) 
+#: /tmp/cicero-BGQN/spi.xml:1409(para) 
 msgid "If <parameter>nulls</parameter> is <symbol>NULL</symbol> then <function>SPI_execute_plan</function> assumes that no parameters are null."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1446(para) 
+#: /tmp/cicero-BGQN/spi.xml:1446(para) 
 msgid "if <parameter>plan</parameter> is <symbol>NULL</symbol> or invalid, or <parameter>count</parameter> is less than 0"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1454(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:1454(symbol) 
 msgid "SPI_ERROR_PARAM"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1456(para) 
+#: /tmp/cicero-BGQN/spi.xml:1456(para) 
 msgid "if <parameter>values</parameter> is <symbol>NULL</symbol> and <parameter>plan</parameter> was prepared with some parameters"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1438(para) 
+#: /tmp/cicero-BGQN/spi.xml:1438(para) 
 msgid "The return value is the same as for <function>SPI_execute</function>, with the following additional possible error (negative) results: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1477(refentrytitle) /tmp/cicero-yNeh/spi.xml:1482(refname) /tmp/cicero-yNeh/spi.xml:1486(primary) 
+#: /tmp/cicero-BGQN/spi.xml:1477(refentrytitle) /tmp/cicero-BGQN/spi.xml:1482(refname) /tmp/cicero-BGQN/spi.xml:1486(primary) 
 msgid "SPI_execute_plan_with_paramlist"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1491(parameter) /tmp/cicero-yNeh/spi.xml:1526(parameter) /tmp/cicero-yNeh/spi.xml:1952(parameter) /tmp/cicero-yNeh/spi.xml:2002(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:1491(parameter) /tmp/cicero-BGQN/spi.xml:1526(parameter) /tmp/cicero-BGQN/spi.xml:1952(parameter) /tmp/cicero-BGQN/spi.xml:2002(parameter) 
 msgid "params"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1489(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:1489(synopsis) 
 #, no-wrap
 msgid "\nint SPI_execute_plan_with_paramlist(SPIPlanPtr <placeholder-1/>,\n                                    ParamListInfo <placeholder-2/>,\n                                    bool <placeholder-3/>,\n                                    long <placeholder-4/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1500(para) 
+#: /tmp/cicero-BGQN/spi.xml:1500(para) 
 msgid "<function>SPI_execute_plan_with_paramlist</function> executes a plan prepared by <function>SPI_prepare</function>. This function is equivalent to <function>SPI_execute_plan</function> except that information about the parameter values to be passed to the query is presented differently. The <literal>ParamListInfo</literal> representation can be convenient for passing down values that are already available in that format. It also supports use of dynamic parameter sets via hook functions specified in <literal>ParamListInfo</literal>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1526(literal) /tmp/cicero-yNeh/spi.xml:2002(literal) 
+#: /tmp/cicero-BGQN/spi.xml:1526(literal) /tmp/cicero-BGQN/spi.xml:2002(literal) 
 msgid "ParamListInfo <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1528(para) /tmp/cicero-yNeh/spi.xml:2004(para) 
+#: /tmp/cicero-BGQN/spi.xml:1528(para) /tmp/cicero-BGQN/spi.xml:2004(para) 
 msgid "data structure containing parameter types and values; NULL if none"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1555(para) 
+#: /tmp/cicero-BGQN/spi.xml:1555(para) 
 msgid "The return value is the same as for <function>SPI_execute_plan</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1559(para) 
+#: /tmp/cicero-BGQN/spi.xml:1559(para) 
 msgid "<varname>SPI_processed</varname> and <varname>SPI_tuptable</varname> are set as in <function>SPI_execute_plan</function> if successful."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1571(refentrytitle) /tmp/cicero-yNeh/spi.xml:1576(refname) /tmp/cicero-yNeh/spi.xml:1580(primary) 
+#: /tmp/cicero-BGQN/spi.xml:1571(refentrytitle) /tmp/cicero-BGQN/spi.xml:1576(refname) /tmp/cicero-BGQN/spi.xml:1580(primary) 
 msgid "SPI_execp"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1577(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:1577(refpurpose) 
 msgid "execute a plan in read/write mode"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1583(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:1583(synopsis) 
 #, no-wrap
 msgid "\nint SPI_execp(SPIPlanPtr <placeholder-1/>, Datum * <placeholder-2/>, const char * <placeholder-3/>, long <placeholder-4/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1591(para) 
+#: /tmp/cicero-BGQN/spi.xml:1591(para) 
 msgid "<function>SPI_execp</function> is the same as <function>SPI_execute_plan</function>, with the latter's <parameter>read_only</parameter> parameter always taken as <literal>false</literal>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1633(para) 
+#: /tmp/cicero-BGQN/spi.xml:1633(para) 
 msgid "If <parameter>nulls</parameter> is <symbol>NULL</symbol> then <function>SPI_execp</function> assumes that no parameters are null."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1655(para) 
+#: /tmp/cicero-BGQN/spi.xml:1655(para) 
 msgid "See <function>SPI_execute_plan</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1677(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:1677(refpurpose) 
 msgid "set up a cursor using a plan created with <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1684(parameter) /tmp/cicero-yNeh/spi.xml:1722(parameter) /tmp/cicero-yNeh/spi.xml:1805(parameter) /tmp/cicero-yNeh/spi.xml:1844(parameter) /tmp/cicero-yNeh/spi.xml:1950(parameter) /tmp/cicero-yNeh/spi.xml:1983(parameter) /tmp/cicero-yNeh/spi.xml:2046(parameter) /tmp/cicero-yNeh/spi.xml:2065(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:1684(parameter) /tmp/cicero-BGQN/spi.xml:1722(parameter) /tmp/cicero-BGQN/spi.xml:1805(parameter) /tmp/cicero-BGQN/spi.xml:1844(parameter) /tmp/cicero-BGQN/spi.xml:1950(parameter) /tmp/cicero-BGQN/spi.xml:1983(parameter) /tmp/cicero-BGQN/spi.xml:2046(parameter) /tmp/cicero-BGQN/spi.xml:2065(parameter) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1683(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:1683(synopsis) 
 #, no-wrap
 msgid "\nPortal SPI_cursor_open(const char * <placeholder-1/>, SPIPlanPtr <placeholder-2/>,\n                       Datum * <placeholder-3/>, const char * <placeholder-4/>,\n                       bool <placeholder-5/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1693(para) 
+#: /tmp/cicero-BGQN/spi.xml:1693(para) 
 msgid "<function>SPI_cursor_open</function> sets up a cursor (internally, a portal) that will execute a plan prepared by <function>SPI_prepare</function>. The parameters have the same meanings as the corresponding parameters to <function>SPI_execute_plan</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1701(para) 
+#: /tmp/cicero-BGQN/spi.xml:1701(para) 
 msgid "Using a cursor instead of executing the plan directly has two benefits. First, the result rows can be retrieved a few at a time, avoiding memory overrun for queries that return many rows. Second, a portal can outlive the current procedure (it can, in fact, live to the end of the current transaction). Returning the portal name to the procedure's caller provides a way of returning a row set as result."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1711(para) /tmp/cicero-yNeh/spi.xml:1833(para) /tmp/cicero-yNeh/spi.xml:1972(para) 
+#: /tmp/cicero-BGQN/spi.xml:1711(para) /tmp/cicero-BGQN/spi.xml:1833(para) /tmp/cicero-BGQN/spi.xml:1972(para) 
 msgid "The passed-in parameter data will be copied into the cursor's portal, so it can be freed while the cursor still exists."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1724(para) /tmp/cicero-yNeh/spi.xml:1846(para) /tmp/cicero-yNeh/spi.xml:1985(para) 
+#: /tmp/cicero-BGQN/spi.xml:1724(para) /tmp/cicero-BGQN/spi.xml:1846(para) /tmp/cicero-BGQN/spi.xml:1985(para) 
 msgid "name for portal, or <symbol>NULL</symbol> to let the system select a name"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1761(para) 
+#: /tmp/cicero-BGQN/spi.xml:1761(para) 
 msgid "If <parameter>nulls</parameter> is <symbol>NULL</symbol> then <function>SPI_cursor_open</function> assumes that no parameters are null."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1781(para) /tmp/cicero-yNeh/spi.xml:1926(para) /tmp/cicero-yNeh/spi.xml:2022(para) 
+#: /tmp/cicero-BGQN/spi.xml:1781(para) /tmp/cicero-BGQN/spi.xml:1926(para) /tmp/cicero-BGQN/spi.xml:2022(para) 
 msgid "Pointer to portal containing the cursor. Note there is no error return convention; any error will be reported via <function>elog</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1792(refentrytitle) /tmp/cicero-yNeh/spi.xml:1797(refname) /tmp/cicero-yNeh/spi.xml:1801(primary) 
+#: /tmp/cicero-BGQN/spi.xml:1792(refentrytitle) /tmp/cicero-BGQN/spi.xml:1797(refname) /tmp/cicero-BGQN/spi.xml:1801(primary) 
 msgid "SPI_cursor_open_with_args"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1798(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:1798(refpurpose) 
 msgid "set up a cursor using a query and parameters"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1804(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:1804(synopsis) 
 #, no-wrap
 msgid "\nPortal SPI_cursor_open_with_args(const char *<placeholder-1/>,\n                                 const char *<placeholder-2/>,\n                                 int <placeholder-3/>, Oid *<placeholder-4/>,\n                                 Datum *<placeholder-5/>, const char *<placeholder-6/>,\n                                 bool <placeholder-7/>, int <placeholder-8/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1816(para) 
+#: /tmp/cicero-BGQN/spi.xml:1816(para) 
 msgid "<function>SPI_cursor_open_with_args</function> sets up a cursor (internally, a portal) that will execute the specified query. Most of the parameters have the same meanings as the corresponding parameters to <function>SPI_prepare_cursor</function> and <function>SPI_cursor_open</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1824(para) 
+#: /tmp/cicero-BGQN/spi.xml:1824(para) 
 msgid "For one-time query execution, this function should be preferred over <function>SPI_prepare_cursor</function> followed by <function>SPI_cursor_open</function>. If the same command is to be executed with many different parameters, either method might be faster, depending on the cost of re-planning versus the benefit of custom plans."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1897(para) 
+#: /tmp/cicero-BGQN/spi.xml:1897(para) 
 msgid "If <parameter>nulls</parameter> is <symbol>NULL</symbol> then <function>SPI_cursor_open_with_args</function> assumes that no parameters are null."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1937(refentrytitle) /tmp/cicero-yNeh/spi.xml:1942(refname) /tmp/cicero-yNeh/spi.xml:1946(primary) 
+#: /tmp/cicero-BGQN/spi.xml:1937(refentrytitle) /tmp/cicero-BGQN/spi.xml:1942(refname) /tmp/cicero-BGQN/spi.xml:1946(primary) 
 msgid "SPI_cursor_open_with_paramlist"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1943(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:1943(refpurpose) 
 msgid "set up a cursor using parameters"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1949(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:1949(synopsis) 
 #, no-wrap
 msgid "\nPortal SPI_cursor_open_with_paramlist(const char *<placeholder-1/>,\n                                      SPIPlanPtr <placeholder-2/>,\n                                      ParamListInfo <placeholder-3/>,\n                                      bool <placeholder-4/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:1960(para) 
+#: /tmp/cicero-BGQN/spi.xml:1960(para) 
 msgid "<function>SPI_cursor_open_with_paramlist</function> sets up a cursor (internally, a portal) that will execute a plan prepared by <function>SPI_prepare</function>. This function is equivalent to <function>SPI_cursor_open</function> except that information about the parameter values to be passed to the query is presented differently. The <literal>ParamListInfo</literal> representation can be convenient for passing down values that are already available in that format. It also supports use of dynamic parameter sets via hook functions specified in <literal>ParamListInfo</literal>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2033(refentrytitle) /tmp/cicero-yNeh/spi.xml:2038(refname) /tmp/cicero-yNeh/spi.xml:2042(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2033(refentrytitle) /tmp/cicero-BGQN/spi.xml:2038(refname) /tmp/cicero-BGQN/spi.xml:2042(primary) 
 msgid "SPI_cursor_find"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2039(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:2039(refpurpose) 
 msgid "find an existing cursor by name"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2045(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2045(synopsis) 
 #, no-wrap
 msgid "\nPortal SPI_cursor_find(const char * <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2053(para) 
+#: /tmp/cicero-BGQN/spi.xml:2053(para) 
 msgid "<function>SPI_cursor_find</function> finds an existing portal by name. This is primarily useful to resolve a cursor name returned as text by some other function."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2067(para) 
+#: /tmp/cicero-BGQN/spi.xml:2067(para) 
 msgid "name of the portal"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2078(para) 
+#: /tmp/cicero-BGQN/spi.xml:2078(para) 
 msgid "pointer to the portal with the specified name, or <symbol>NULL</symbol> if none was found"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2089(refentrytitle) /tmp/cicero-yNeh/spi.xml:2094(refname) /tmp/cicero-yNeh/spi.xml:2098(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2089(refentrytitle) /tmp/cicero-BGQN/spi.xml:2094(refname) /tmp/cicero-BGQN/spi.xml:2098(primary) 
 msgid "SPI_cursor_fetch"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2095(refpurpose) /tmp/cicero-yNeh/spi.xml:2255(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:2095(refpurpose) /tmp/cicero-BGQN/spi.xml:2255(refpurpose) 
 msgid "fetch some rows from a cursor"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2102(parameter) /tmp/cicero-yNeh/spi.xml:2122(parameter) /tmp/cicero-yNeh/spi.xml:2187(parameter) /tmp/cicero-yNeh/spi.xml:2207(parameter) /tmp/cicero-yNeh/spi.xml:2262(parameter) /tmp/cicero-yNeh/spi.xml:2281(parameter) /tmp/cicero-yNeh/spi.xml:2361(parameter) /tmp/cicero-yNeh/spi.xml:2381(parameter) /tmp/cicero-yNeh/spi.xml:2462(parameter) /tmp/cicero-yNeh/spi.xml:2486(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:2102(parameter) /tmp/cicero-BGQN/spi.xml:2122(parameter) /tmp/cicero-BGQN/spi.xml:2187(parameter) /tmp/cicero-BGQN/spi.xml:2207(parameter) /tmp/cicero-BGQN/spi.xml:2262(parameter) /tmp/cicero-BGQN/spi.xml:2281(parameter) /tmp/cicero-BGQN/spi.xml:2361(parameter) /tmp/cicero-BGQN/spi.xml:2381(parameter) /tmp/cicero-BGQN/spi.xml:2462(parameter) /tmp/cicero-BGQN/spi.xml:2486(parameter) 
 msgid "portal"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2102(parameter) /tmp/cicero-yNeh/spi.xml:2131(parameter) /tmp/cicero-yNeh/spi.xml:2187(parameter) /tmp/cicero-yNeh/spi.xml:2216(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:2102(parameter) /tmp/cicero-BGQN/spi.xml:2131(parameter) /tmp/cicero-BGQN/spi.xml:2187(parameter) /tmp/cicero-BGQN/spi.xml:2216(parameter) 
 msgid "forward"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2101(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2101(synopsis) 
 #, no-wrap
 msgid "\nvoid SPI_cursor_fetch(Portal <placeholder-1/>, bool <placeholder-2/>, long <placeholder-3/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2109(para) 
+#: /tmp/cicero-BGQN/spi.xml:2109(para) 
 msgid "<function>SPI_cursor_fetch</function> fetches some rows from a cursor. This is equivalent to a subset of the SQL command <command>FETCH</command> (see <function>SPI_scroll_cursor_fetch</function> for more functionality)."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2122(literal) /tmp/cicero-yNeh/spi.xml:2207(literal) /tmp/cicero-yNeh/spi.xml:2281(literal) /tmp/cicero-yNeh/spi.xml:2381(literal) /tmp/cicero-yNeh/spi.xml:2486(literal) 
+#: /tmp/cicero-BGQN/spi.xml:2122(literal) /tmp/cicero-BGQN/spi.xml:2207(literal) /tmp/cicero-BGQN/spi.xml:2281(literal) /tmp/cicero-BGQN/spi.xml:2381(literal) /tmp/cicero-BGQN/spi.xml:2486(literal) 
 msgid "Portal <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2124(para) /tmp/cicero-yNeh/spi.xml:2209(para) /tmp/cicero-yNeh/spi.xml:2283(para) /tmp/cicero-yNeh/spi.xml:2383(para) /tmp/cicero-yNeh/spi.xml:2488(para) 
+#: /tmp/cicero-BGQN/spi.xml:2124(para) /tmp/cicero-BGQN/spi.xml:2209(para) /tmp/cicero-BGQN/spi.xml:2283(para) /tmp/cicero-BGQN/spi.xml:2383(para) /tmp/cicero-BGQN/spi.xml:2488(para) 
 msgid "portal containing the cursor"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2133(para) 
+#: /tmp/cicero-BGQN/spi.xml:2133(para) 
 msgid "true for fetch forward, false for fetch backward"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2142(para) 
+#: /tmp/cicero-BGQN/spi.xml:2142(para) 
 msgid "maximum number of rows to fetch"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2163(para) 
+#: /tmp/cicero-BGQN/spi.xml:2163(para) 
 msgid "Fetching backward may fail if the cursor's plan was not created with the <symbol>CURSOR_OPT_SCROLL</symbol> option."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2174(refentrytitle) /tmp/cicero-yNeh/spi.xml:2179(refname) /tmp/cicero-yNeh/spi.xml:2183(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2174(refentrytitle) /tmp/cicero-BGQN/spi.xml:2179(refname) /tmp/cicero-BGQN/spi.xml:2183(primary) 
 msgid "SPI_cursor_move"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2180(refpurpose) /tmp/cicero-yNeh/spi.xml:2354(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:2180(refpurpose) /tmp/cicero-BGQN/spi.xml:2354(refpurpose) 
 msgid "move a cursor"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2186(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2186(synopsis) 
 #, no-wrap
 msgid "\nvoid SPI_cursor_move(Portal <placeholder-1/>, bool <placeholder-2/>, long <placeholder-3/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2194(para) 
+#: /tmp/cicero-BGQN/spi.xml:2194(para) 
 msgid "<function>SPI_cursor_move</function> skips over some number of rows in a cursor. This is equivalent to a subset of the SQL command <command>MOVE</command> (see <function>SPI_scroll_cursor_move</function> for more functionality)."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2218(para) 
+#: /tmp/cicero-BGQN/spi.xml:2218(para) 
 msgid "true for move forward, false for move backward"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2227(para) 
+#: /tmp/cicero-BGQN/spi.xml:2227(para) 
 msgid "maximum number of rows to move"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2238(para) 
+#: /tmp/cicero-BGQN/spi.xml:2238(para) 
 msgid "Moving backward may fail if the cursor's plan was not created with the <symbol>CURSOR_OPT_SCROLL</symbol> option."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2249(refentrytitle) /tmp/cicero-yNeh/spi.xml:2254(refname) /tmp/cicero-yNeh/spi.xml:2258(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2249(refentrytitle) /tmp/cicero-BGQN/spi.xml:2254(refname) /tmp/cicero-BGQN/spi.xml:2258(primary) 
 msgid "SPI_scroll_cursor_fetch"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2262(parameter) /tmp/cicero-yNeh/spi.xml:2290(parameter) /tmp/cicero-yNeh/spi.xml:2361(parameter) /tmp/cicero-yNeh/spi.xml:2390(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:2262(parameter) /tmp/cicero-BGQN/spi.xml:2290(parameter) /tmp/cicero-BGQN/spi.xml:2361(parameter) /tmp/cicero-BGQN/spi.xml:2390(parameter) 
 msgid "direction"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2261(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2261(synopsis) 
 #, no-wrap
 msgid "\nvoid SPI_scroll_cursor_fetch(Portal <placeholder-1/>, FetchDirection <placeholder-2/>,\n                             long <placeholder-3/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2270(para) 
+#: /tmp/cicero-BGQN/spi.xml:2270(para) 
 msgid "<function>SPI_scroll_cursor_fetch</function> fetches some rows from a cursor. This is equivalent to the SQL command <command>FETCH</command>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2290(literal) /tmp/cicero-yNeh/spi.xml:2390(literal) 
+#: /tmp/cicero-BGQN/spi.xml:2290(literal) /tmp/cicero-BGQN/spi.xml:2390(literal) 
 msgid "FetchDirection <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2292(para) /tmp/cicero-yNeh/spi.xml:2392(para) 
+#: /tmp/cicero-BGQN/spi.xml:2292(para) /tmp/cicero-BGQN/spi.xml:2392(para) 
 msgid "one of <symbol>FETCH_FORWARD</symbol>, <symbol>FETCH_BACKWARD</symbol>, <symbol>FETCH_ABSOLUTE</symbol> or <symbol>FETCH_RELATIVE</symbol>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2304(para) 
+#: /tmp/cicero-BGQN/spi.xml:2304(para) 
 msgid "number of rows to fetch for <symbol>FETCH_FORWARD</symbol> or <symbol>FETCH_BACKWARD</symbol>; absolute row number to fetch for <symbol>FETCH_ABSOLUTE</symbol>; or relative row number to fetch for <symbol>FETCH_RELATIVE</symbol>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2329(para) /tmp/cicero-yNeh/spi.xml:2430(para) 
+#: /tmp/cicero-BGQN/spi.xml:2329(para) /tmp/cicero-BGQN/spi.xml:2430(para) 
 msgid "See the SQL <xref linkend=\"sql-fetch\"/> command for details of the interpretation of the <parameter>direction</parameter> and <parameter>count</parameter> parameters."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2336(para) /tmp/cicero-yNeh/spi.xml:2437(para) 
+#: /tmp/cicero-BGQN/spi.xml:2336(para) /tmp/cicero-BGQN/spi.xml:2437(para) 
 msgid "Direction values other than <symbol>FETCH_FORWARD</symbol> may fail if the cursor's plan was not created with the <symbol>CURSOR_OPT_SCROLL</symbol> option."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2348(refentrytitle) /tmp/cicero-yNeh/spi.xml:2353(refname) /tmp/cicero-yNeh/spi.xml:2357(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2348(refentrytitle) /tmp/cicero-BGQN/spi.xml:2353(refname) /tmp/cicero-BGQN/spi.xml:2357(primary) 
 msgid "SPI_scroll_cursor_move"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2360(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2360(synopsis) 
 #, no-wrap
 msgid "\nvoid SPI_scroll_cursor_move(Portal <placeholder-1/>, FetchDirection <placeholder-2/>,\n                            long <placeholder-3/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2369(para) 
+#: /tmp/cicero-BGQN/spi.xml:2369(para) 
 msgid "<function>SPI_scroll_cursor_move</function> skips over some number of rows in a cursor. This is equivalent to the SQL command <command>MOVE</command>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2404(para) 
+#: /tmp/cicero-BGQN/spi.xml:2404(para) 
 msgid "number of rows to move for <symbol>FETCH_FORWARD</symbol> or <symbol>FETCH_BACKWARD</symbol>; absolute row number to move to for <symbol>FETCH_ABSOLUTE</symbol>; or relative row number to move to for <symbol>FETCH_RELATIVE</symbol>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2419(para) 
+#: /tmp/cicero-BGQN/spi.xml:2419(para) 
 msgid "<varname>SPI_processed</varname> is set as in <function>SPI_execute</function> if successful. <varname>SPI_tuptable</varname> is set to <symbol>NULL</symbol>, since no rows are returned by this function."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2449(refentrytitle) /tmp/cicero-yNeh/spi.xml:2454(refname) /tmp/cicero-yNeh/spi.xml:2458(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2449(refentrytitle) /tmp/cicero-BGQN/spi.xml:2454(refname) /tmp/cicero-BGQN/spi.xml:2458(primary) 
 msgid "SPI_cursor_close"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2455(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:2455(refpurpose) 
 msgid "close a cursor"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2461(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2461(synopsis) 
 #, no-wrap
 msgid "\nvoid SPI_cursor_close(Portal <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2469(para) 
+#: /tmp/cicero-BGQN/spi.xml:2469(para) 
 msgid "<function>SPI_cursor_close</function> closes a previously created cursor and releases its portal storage."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2474(para) 
+#: /tmp/cicero-BGQN/spi.xml:2474(para) 
 msgid "All open cursors are closed automatically at the end of a transaction. <function>SPI_cursor_close</function> need only be invoked if it is desirable to release resources sooner."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2501(refentrytitle) /tmp/cicero-yNeh/spi.xml:2506(refname) /tmp/cicero-yNeh/spi.xml:2510(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2501(refentrytitle) /tmp/cicero-BGQN/spi.xml:2506(refname) /tmp/cicero-BGQN/spi.xml:2510(primary) 
 msgid "SPI_saveplan"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2507(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:2507(refpurpose) 
 msgid "save a plan"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2513(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2513(synopsis) 
 #, no-wrap
 msgid "\nSPIPlanPtr SPI_saveplan(SPIPlanPtr <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2521(para) 
+#: /tmp/cicero-BGQN/spi.xml:2521(para) 
 msgid "<function>SPI_saveplan</function> saves a passed plan (prepared by <function>SPI_prepare</function>) in memory that will not be freed by <function>SPI_finish</function> nor by the transaction manager, and returns a pointer to the saved plan. This gives you the ability to reuse prepared plans in the subsequent invocations of your procedure in the current session."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2538(para) 
+#: /tmp/cicero-BGQN/spi.xml:2538(para) 
 msgid "the plan to be saved"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2557(para) 
+#: /tmp/cicero-BGQN/spi.xml:2557(para) 
 msgid "if <parameter>plan</parameter> is <symbol>NULL</symbol> or invalid"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2549(para) 
+#: /tmp/cicero-BGQN/spi.xml:2549(para) 
 msgid "Pointer to the saved plan; <symbol>NULL</symbol> if unsuccessful. On error, <varname>SPI_result</varname> is set thus: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2578(para) 
+#: /tmp/cicero-BGQN/spi.xml:2578(para) 
 msgid "The passed-in plan is not freed, so you might wish to do <function>SPI_freeplan</function> on it to avoid leaking memory until <function>SPI_finish</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2584(para) 
+#: /tmp/cicero-BGQN/spi.xml:2584(para) 
 msgid "If one of the objects (a table, function, etc.) referenced by the prepared plan is dropped or redefined, then future executions of <function>SPI_execute_plan</function> may fail or return different results than the plan initially indicates."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2596(title) 
+#: /tmp/cicero-BGQN/spi.xml:2596(title) 
 msgid "Interface Support Functions"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2598(para) 
+#: /tmp/cicero-BGQN/spi.xml:2598(para) 
 msgid "The functions described here provide an interface for extracting information from result sets returned by <function>SPI_execute</function> and other SPI functions."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2604(para) 
+#: /tmp/cicero-BGQN/spi.xml:2604(para) 
 msgid "All functions described in this section can be used by both connected and unconnected procedures."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2613(refentrytitle) /tmp/cicero-yNeh/spi.xml:2618(refname) /tmp/cicero-yNeh/spi.xml:2622(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2613(refentrytitle) /tmp/cicero-BGQN/spi.xml:2618(refname) /tmp/cicero-BGQN/spi.xml:2622(primary) 
 msgid "SPI_fname"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2619(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:2619(refpurpose) 
 msgid "determine the column name for the specified column number"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2626(parameter) /tmp/cicero-yNeh/spi.xml:2645(parameter) /tmp/cicero-yNeh/spi.xml:2693(parameter) /tmp/cicero-yNeh/spi.xml:2720(parameter) /tmp/cicero-yNeh/spi.xml:2767(parameter) /tmp/cicero-yNeh/spi.xml:2801(parameter) /tmp/cicero-yNeh/spi.xml:2851(parameter) /tmp/cicero-yNeh/spi.xml:2885(parameter) /tmp/cicero-yNeh/spi.xml:2946(parameter) /tmp/cicero-yNeh/spi.xml:2965(parameter) /tmp/cicero-yNeh/spi.xml:3012(parameter) /tmp/cicero-yNeh/spi.xml:3030(parameter) /tmp/cicero-yNeh/spi.xml:3500(parameter) /tmp/cicero-yNeh/spi.xml:3535(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:2626(parameter) /tmp/cicero-BGQN/spi.xml:2645(parameter) /tmp/cicero-BGQN/spi.xml:2693(parameter) /tmp/cicero-BGQN/spi.xml:2720(parameter) /tmp/cicero-BGQN/spi.xml:2767(parameter) /tmp/cicero-BGQN/spi.xml:2801(parameter) /tmp/cicero-BGQN/spi.xml:2851(parameter) /tmp/cicero-BGQN/spi.xml:2885(parameter) /tmp/cicero-BGQN/spi.xml:2946(parameter) /tmp/cicero-BGQN/spi.xml:2965(parameter) /tmp/cicero-BGQN/spi.xml:3012(parameter) /tmp/cicero-BGQN/spi.xml:3030(parameter) /tmp/cicero-BGQN/spi.xml:3500(parameter) /tmp/cicero-BGQN/spi.xml:3535(parameter) 
 msgid "rowdesc"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2626(parameter) /tmp/cicero-yNeh/spi.xml:2654(parameter) /tmp/cicero-yNeh/spi.xml:2767(parameter) /tmp/cicero-yNeh/spi.xml:2810(parameter) /tmp/cicero-yNeh/spi.xml:2851(parameter) /tmp/cicero-yNeh/spi.xml:2894(parameter) /tmp/cicero-yNeh/spi.xml:2946(parameter) /tmp/cicero-yNeh/spi.xml:2974(parameter) /tmp/cicero-yNeh/spi.xml:3012(parameter) /tmp/cicero-yNeh/spi.xml:3039(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:2626(parameter) /tmp/cicero-BGQN/spi.xml:2654(parameter) /tmp/cicero-BGQN/spi.xml:2767(parameter) /tmp/cicero-BGQN/spi.xml:2810(parameter) /tmp/cicero-BGQN/spi.xml:2851(parameter) /tmp/cicero-BGQN/spi.xml:2894(parameter) /tmp/cicero-BGQN/spi.xml:2946(parameter) /tmp/cicero-BGQN/spi.xml:2974(parameter) /tmp/cicero-BGQN/spi.xml:3012(parameter) /tmp/cicero-BGQN/spi.xml:3039(parameter) 
 msgid "colnumber"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2625(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2625(synopsis) 
 #, no-wrap
 msgid "\nchar * SPI_fname(TupleDesc <placeholder-1/>, int <placeholder-2/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2633(para) 
+#: /tmp/cicero-BGQN/spi.xml:2633(para) 
 msgid "<function>SPI_fname</function> returns a copy of the column name of the specified column. (You can use <function>pfree</function> to release the copy of the name when you don't need it anymore.)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2645(literal) /tmp/cicero-yNeh/spi.xml:2720(literal) /tmp/cicero-yNeh/spi.xml:2801(literal) /tmp/cicero-yNeh/spi.xml:2885(literal) /tmp/cicero-yNeh/spi.xml:2965(literal) /tmp/cicero-yNeh/spi.xml:3030(literal) /tmp/cicero-yNeh/spi.xml:3535(literal) 
+#: /tmp/cicero-BGQN/spi.xml:2645(literal) /tmp/cicero-BGQN/spi.xml:2720(literal) /tmp/cicero-BGQN/spi.xml:2801(literal) /tmp/cicero-BGQN/spi.xml:2885(literal) /tmp/cicero-BGQN/spi.xml:2965(literal) /tmp/cicero-BGQN/spi.xml:3030(literal) /tmp/cicero-BGQN/spi.xml:3535(literal) 
 msgid "TupleDesc <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2647(para) /tmp/cicero-yNeh/spi.xml:2722(para) /tmp/cicero-yNeh/spi.xml:2803(para) /tmp/cicero-yNeh/spi.xml:2887(para) /tmp/cicero-yNeh/spi.xml:2967(para) /tmp/cicero-yNeh/spi.xml:3032(para) 
+#: /tmp/cicero-BGQN/spi.xml:2647(para) /tmp/cicero-BGQN/spi.xml:2722(para) /tmp/cicero-BGQN/spi.xml:2803(para) /tmp/cicero-BGQN/spi.xml:2887(para) /tmp/cicero-BGQN/spi.xml:2967(para) /tmp/cicero-BGQN/spi.xml:3032(para) 
 msgid "input row description"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2656(para) /tmp/cicero-yNeh/spi.xml:2812(para) /tmp/cicero-yNeh/spi.xml:2896(para) /tmp/cicero-yNeh/spi.xml:2976(para) /tmp/cicero-yNeh/spi.xml:3041(para) 
+#: /tmp/cicero-BGQN/spi.xml:2656(para) /tmp/cicero-BGQN/spi.xml:2812(para) /tmp/cicero-BGQN/spi.xml:2896(para) /tmp/cicero-BGQN/spi.xml:2976(para) /tmp/cicero-BGQN/spi.xml:3041(para) 
 msgid "column number (count starts at 1)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2667(para) 
+#: /tmp/cicero-BGQN/spi.xml:2667(para) 
 msgid "The column name; <symbol>NULL</symbol> if <parameter>colnumber</parameter> is out of range. <varname>SPI_result</varname> set to <symbol>SPI_ERROR_NOATTRIBUTE</symbol> on error."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2680(refentrytitle) /tmp/cicero-yNeh/spi.xml:2685(refname) /tmp/cicero-yNeh/spi.xml:2689(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2680(refentrytitle) /tmp/cicero-BGQN/spi.xml:2685(refname) /tmp/cicero-BGQN/spi.xml:2689(primary) 
 msgid "SPI_fnumber"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2686(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:2686(refpurpose) 
 msgid "determine the column number for the specified column name"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2693(parameter) /tmp/cicero-yNeh/spi.xml:2729(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:2693(parameter) /tmp/cicero-BGQN/spi.xml:2729(parameter) 
 msgid "colname"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2692(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2692(synopsis) 
 #, no-wrap
 msgid "\nint SPI_fnumber(TupleDesc <placeholder-1/>, const char * <placeholder-2/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2700(para) 
+#: /tmp/cicero-BGQN/spi.xml:2700(para) 
 msgid "<function>SPI_fnumber</function> returns the column number for the column with the specified name."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2705(para) 
+#: /tmp/cicero-BGQN/spi.xml:2705(para) 
 msgid "If <parameter>colname</parameter> refers to a system column (e.g., <literal>oid</literal>) then the appropriate negative column number will be returned. The caller should be careful to test the return value for exact equality to <symbol>SPI_ERROR_NOATTRIBUTE</symbol> to detect an error; testing the result for less than or equal to 0 is not correct unless system columns should be rejected."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2731(para) 
+#: /tmp/cicero-BGQN/spi.xml:2731(para) 
 msgid "column name"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2742(para) 
+#: /tmp/cicero-BGQN/spi.xml:2742(para) 
 msgid "Column number (count starts at 1), or <symbol>SPI_ERROR_NOATTRIBUTE</symbol> if the named column was not found."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2754(refentrytitle) /tmp/cicero-yNeh/spi.xml:2759(refname) /tmp/cicero-yNeh/spi.xml:2763(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2754(refentrytitle) /tmp/cicero-BGQN/spi.xml:2759(refname) /tmp/cicero-BGQN/spi.xml:2763(primary) 
 msgid "SPI_getvalue"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2760(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:2760(refpurpose) 
 msgid "return the string value of the specified column"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2767(parameter) /tmp/cicero-yNeh/spi.xml:2792(parameter) /tmp/cicero-yNeh/spi.xml:2851(parameter) /tmp/cicero-yNeh/spi.xml:2876(parameter) /tmp/cicero-yNeh/spi.xml:3443(parameter) /tmp/cicero-yNeh/spi.xml:3463(parameter) /tmp/cicero-yNeh/spi.xml:3500(parameter) /tmp/cicero-yNeh/spi.xml:3526(parameter) /tmp/cicero-yNeh/spi.xml:3575(parameter) /tmp/cicero-yNeh/spi.xml:3606(parameter) /tmp/cicero-yNeh/spi.xml:3711(parameter) /tmp/cicero-yNeh/spi.xml:3735(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:2767(parameter) /tmp/cicero-BGQN/spi.xml:2792(parameter) /tmp/cicero-BGQN/spi.xml:2851(parameter) /tmp/cicero-BGQN/spi.xml:2876(parameter) /tmp/cicero-BGQN/spi.xml:3443(parameter) /tmp/cicero-BGQN/spi.xml:3463(parameter) /tmp/cicero-BGQN/spi.xml:3500(parameter) /tmp/cicero-BGQN/spi.xml:3526(parameter) /tmp/cicero-BGQN/spi.xml:3575(parameter) /tmp/cicero-BGQN/spi.xml:3606(parameter) /tmp/cicero-BGQN/spi.xml:3711(parameter) /tmp/cicero-BGQN/spi.xml:3735(parameter) 
 msgid "row"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2766(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2766(synopsis) 
 #, no-wrap
 msgid "\nchar * SPI_getvalue(HeapTuple <placeholder-1/>, TupleDesc <placeholder-2/>, int <placeholder-3/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2774(para) 
+#: /tmp/cicero-BGQN/spi.xml:2774(para) 
 msgid "<function>SPI_getvalue</function> returns the string representation of the value of the specified column."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2779(para) 
+#: /tmp/cicero-BGQN/spi.xml:2779(para) 
 msgid "The result is returned in memory allocated using <function>palloc</function>. (You can use <function>pfree</function> to release the memory when you don't need it anymore.)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2792(literal) /tmp/cicero-yNeh/spi.xml:2876(literal) /tmp/cicero-yNeh/spi.xml:3463(literal) /tmp/cicero-yNeh/spi.xml:3526(literal) /tmp/cicero-yNeh/spi.xml:3606(literal) /tmp/cicero-yNeh/spi.xml:3735(literal) 
+#: /tmp/cicero-BGQN/spi.xml:2792(literal) /tmp/cicero-BGQN/spi.xml:2876(literal) /tmp/cicero-BGQN/spi.xml:3463(literal) /tmp/cicero-BGQN/spi.xml:3526(literal) /tmp/cicero-BGQN/spi.xml:3606(literal) /tmp/cicero-BGQN/spi.xml:3735(literal) 
 msgid "HeapTuple <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2794(para) /tmp/cicero-yNeh/spi.xml:2878(para) 
+#: /tmp/cicero-BGQN/spi.xml:2794(para) /tmp/cicero-BGQN/spi.xml:2878(para) 
 msgid "input row to be examined"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2823(para) 
+#: /tmp/cicero-BGQN/spi.xml:2823(para) 
 msgid "Column value, or <symbol>NULL</symbol> if the column is null, <parameter>colnumber</parameter> is out of range (<varname>SPI_result</varname> is set to <symbol>SPI_ERROR_NOATTRIBUTE</symbol>), or no output function is available (<varname>SPI_result</varname> is set to <symbol>SPI_ERROR_NOOUTFUNC</symbol>)."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2838(refentrytitle) /tmp/cicero-yNeh/spi.xml:2843(refname) /tmp/cicero-yNeh/spi.xml:2847(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2838(refentrytitle) /tmp/cicero-BGQN/spi.xml:2843(refname) /tmp/cicero-BGQN/spi.xml:2847(primary) 
 msgid "SPI_getbinval"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2844(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:2844(refpurpose) 
 msgid "return the binary value of the specified column"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2852(parameter) /tmp/cicero-yNeh/spi.xml:2903(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:2852(parameter) /tmp/cicero-BGQN/spi.xml:2903(parameter) 
 msgid "isnull"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2850(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2850(synopsis) 
 #, no-wrap
 msgid "\nDatum SPI_getbinval(HeapTuple <placeholder-1/>, TupleDesc <placeholder-2/>, int <placeholder-3/>,\n                    bool * <placeholder-4/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2859(para) 
+#: /tmp/cicero-BGQN/spi.xml:2859(para) 
 msgid "<function>SPI_getbinval</function> returns the value of the specified column in the internal form (as type <type>Datum</type>)."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2864(para) 
+#: /tmp/cicero-BGQN/spi.xml:2864(para) 
 msgid "This function does not allocate new space for the datum. In the case of a pass-by-reference data type, the return value will be a pointer into the passed row."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2903(literal) 
+#: /tmp/cicero-BGQN/spi.xml:2903(literal) 
 msgid "bool * <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2905(para) 
+#: /tmp/cicero-BGQN/spi.xml:2905(para) 
 msgid "flag for a null value in the column"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2916(para) 
+#: /tmp/cicero-BGQN/spi.xml:2916(para) 
 msgid "The binary value of the column is returned. The variable pointed to by <parameter>isnull</parameter> is set to true if the column is null, else to false."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2922(para) 
+#: /tmp/cicero-BGQN/spi.xml:2922(para) 
 msgid "<varname>SPI_result</varname> is set to <symbol>SPI_ERROR_NOATTRIBUTE</symbol> on error."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2933(refentrytitle) /tmp/cicero-yNeh/spi.xml:2938(refname) /tmp/cicero-yNeh/spi.xml:2942(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2933(refentrytitle) /tmp/cicero-BGQN/spi.xml:2938(refname) /tmp/cicero-BGQN/spi.xml:2942(primary) 
 msgid "SPI_gettype"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2939(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:2939(refpurpose) 
 msgid "return the data type name of the specified column"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2945(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:2945(synopsis) 
 #, no-wrap
 msgid "\nchar * SPI_gettype(TupleDesc <placeholder-1/>, int <placeholder-2/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2953(para) 
+#: /tmp/cicero-BGQN/spi.xml:2953(para) 
 msgid "<function>SPI_gettype</function> returns a copy of the data type name of the specified column. (You can use <function>pfree</function> to release the copy of the name when you don't need it anymore.)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2987(para) 
+#: /tmp/cicero-BGQN/spi.xml:2987(para) 
 msgid "The data type name of the specified column, or <symbol>NULL</symbol> on error. <varname>SPI_result</varname> is set to <symbol>SPI_ERROR_NOATTRIBUTE</symbol> on error."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:2999(refentrytitle) /tmp/cicero-yNeh/spi.xml:3004(refname) /tmp/cicero-yNeh/spi.xml:3008(primary) 
+#: /tmp/cicero-BGQN/spi.xml:2999(refentrytitle) /tmp/cicero-BGQN/spi.xml:3004(refname) /tmp/cicero-BGQN/spi.xml:3008(primary) 
 msgid "SPI_gettypeid"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3005(acronym) 
+#: /tmp/cicero-BGQN/spi.xml:3005(acronym) 
 msgid "OID"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3005(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3005(refpurpose) 
 msgid "return the data type <placeholder-1/> of the specified column"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3011(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3011(synopsis) 
 #, no-wrap
 msgid "\nOid SPI_gettypeid(TupleDesc <placeholder-1/>, int <placeholder-2/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3019(para) 
+#: /tmp/cicero-BGQN/spi.xml:3019(para) 
 msgid "<function>SPI_gettypeid</function> returns the <acronym>OID</acronym> of the data type of the specified column."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3052(para) 
+#: /tmp/cicero-BGQN/spi.xml:3052(para) 
 msgid "The <acronym>OID</acronym> of the data type of the specified column or <symbol>InvalidOid</symbol> on error. On error, <varname>SPI_result</varname> is set to <symbol>SPI_ERROR_NOATTRIBUTE</symbol>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3065(refentrytitle) /tmp/cicero-yNeh/spi.xml:3070(refname) /tmp/cicero-yNeh/spi.xml:3074(primary) 
+#: /tmp/cicero-BGQN/spi.xml:3065(refentrytitle) /tmp/cicero-BGQN/spi.xml:3070(refname) /tmp/cicero-BGQN/spi.xml:3074(primary) 
 msgid "SPI_getrelname"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3071(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3071(refpurpose) 
 msgid "return the name of the specified relation"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3078(parameter) /tmp/cicero-yNeh/spi.xml:3097(parameter) /tmp/cicero-yNeh/spi.xml:3131(parameter) /tmp/cicero-yNeh/spi.xml:3152(parameter) /tmp/cicero-yNeh/spi.xml:3575(parameter) /tmp/cicero-yNeh/spi.xml:3595(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:3078(parameter) /tmp/cicero-BGQN/spi.xml:3097(parameter) /tmp/cicero-BGQN/spi.xml:3131(parameter) /tmp/cicero-BGQN/spi.xml:3152(parameter) /tmp/cicero-BGQN/spi.xml:3575(parameter) /tmp/cicero-BGQN/spi.xml:3595(parameter) 
 msgid "rel"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3077(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3077(synopsis) 
 #, no-wrap
 msgid "\nchar * SPI_getrelname(Relation <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3085(para) 
+#: /tmp/cicero-BGQN/spi.xml:3085(para) 
 msgid "<function>SPI_getrelname</function> returns a copy of the name of the specified relation. (You can use <function>pfree</function> to release the copy of the name when you don't need it anymore.)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3097(literal) /tmp/cicero-yNeh/spi.xml:3152(literal) /tmp/cicero-yNeh/spi.xml:3595(literal) 
+#: /tmp/cicero-BGQN/spi.xml:3097(literal) /tmp/cicero-BGQN/spi.xml:3152(literal) /tmp/cicero-BGQN/spi.xml:3595(literal) 
 msgid "Relation <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3099(para) /tmp/cicero-yNeh/spi.xml:3154(para) 
+#: /tmp/cicero-BGQN/spi.xml:3099(para) /tmp/cicero-BGQN/spi.xml:3154(para) 
 msgid "input relation"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3110(para) 
+#: /tmp/cicero-BGQN/spi.xml:3110(para) 
 msgid "The name of the specified relation."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3118(refentrytitle) /tmp/cicero-yNeh/spi.xml:3123(refname) /tmp/cicero-yNeh/spi.xml:3127(primary) 
+#: /tmp/cicero-BGQN/spi.xml:3118(refentrytitle) /tmp/cicero-BGQN/spi.xml:3123(refname) /tmp/cicero-BGQN/spi.xml:3127(primary) 
 msgid "SPI_getnspname"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3124(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3124(refpurpose) 
 msgid "return the namespace of the specified relation"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3130(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3130(synopsis) 
 #, no-wrap
 msgid "\nchar * SPI_getnspname(Relation <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3138(para) 
+#: /tmp/cicero-BGQN/spi.xml:3138(para) 
 msgid "<function>SPI_getnspname</function> returns a copy of the name of the namespace that the specified <structname>Relation</structname> belongs to. This is equivalent to the relation's schema. You should <function>pfree</function> the return value of this function when you are finished with it."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3165(para) 
+#: /tmp/cicero-BGQN/spi.xml:3165(para) 
 msgid "The name of the specified relation's namespace."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3174(title) 
+#: /tmp/cicero-BGQN/spi.xml:3174(title) 
 msgid "Memory Management"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3176(para) 
+#: /tmp/cicero-BGQN/spi.xml:3176(para) 
 msgid "<indexterm><primary>memory context</primary><secondary>in SPI</secondary></indexterm><productname>PostgreSQL</productname> allocates memory within <firstterm>memory contexts</firstterm>, which provide a convenient method of managing allocations made in many different places that need to live for differing amounts of time. Destroying a context releases all the memory that was allocated in it. Thus, it is not necessary to keep track of individual objects to avoid memory leaks; instead only a relatively small number of contexts have to be managed. <function>palloc</function> and related functions allocate memory from the <quote>current</quote> context."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3192(para) 
+#: /tmp/cicero-BGQN/spi.xml:3192(para) 
 msgid "<function>SPI_connect</function> creates a new memory context and makes it current. <function>SPI_finish</function> restores the previous current memory context and destroys the context created by <function>SPI_connect</function>. These actions ensure that transient memory allocations made inside your procedure are reclaimed at procedure exit, avoiding memory leakage."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3201(para) 
+#: /tmp/cicero-BGQN/spi.xml:3201(para) 
 msgid "However, if your procedure needs to return an object in allocated memory (such as a value of a pass-by-reference data type), you cannot allocate that memory using <function>palloc</function>, at least not while you are connected to SPI. If you try, the object will be deallocated by <function>SPI_finish</function>, and your procedure will not work reliably. To solve this problem, use <function>SPI_palloc</function> to allocate memory for your return object. <function>SPI_palloc</function> allocates memory in the <quote>upper executor context</quote>, that is, the memory context that was current when <function>SPI_connect</function> was called, which is precisely the right context for a value returned from your procedure."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3216(para) 
+#: /tmp/cicero-BGQN/spi.xml:3216(para) 
 msgid "If <function>SPI_palloc</function> is called while the procedure is not connected to SPI, then it acts the same as a normal <function>palloc</function>. Before a procedure connects to the SPI manager, the current memory context is the upper executor context, so all allocations made by the procedure via <function>palloc</function> or by SPI utility functions are made in this context."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3226(para) 
+#: /tmp/cicero-BGQN/spi.xml:3226(para) 
 msgid "When <function>SPI_connect</function> is called, the private context of the procedure, which is created by <function>SPI_connect</function>, is made the current context. All allocations made by <function>palloc</function>, <function>repalloc</function>, or SPI utility functions (except for <function>SPI_copytuple</function>, <function>SPI_returntuple</function>, <function>SPI_modifytuple</function>, and <function>SPI_palloc</function>) are made in this context. When a procedure disconnects from the SPI manager (via <function>SPI_finish</function>) the current context is restored to the upper executor context, and all allocations made in the procedure memory context are freed and cannot be used any more."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3242(para) 
+#: /tmp/cicero-BGQN/spi.xml:3242(para) 
 msgid "All functions described in this section can be used by both connected and unconnected procedures. In an unconnected procedure, they act the same as the underlying ordinary server functions (<function>palloc</function>, etc.)."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3253(refentrytitle) /tmp/cicero-yNeh/spi.xml:3258(refname) /tmp/cicero-yNeh/spi.xml:3262(primary) 
+#: /tmp/cicero-BGQN/spi.xml:3253(refentrytitle) /tmp/cicero-BGQN/spi.xml:3258(refname) /tmp/cicero-BGQN/spi.xml:3262(primary) 
 msgid "SPI_palloc"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3259(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3259(refpurpose) 
 msgid "allocate memory in the upper executor context"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3266(parameter) /tmp/cicero-yNeh/spi.xml:3284(parameter) /tmp/cicero-yNeh/spi.xml:3320(parameter) /tmp/cicero-yNeh/spi.xml:3353(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:3266(parameter) /tmp/cicero-BGQN/spi.xml:3284(parameter) /tmp/cicero-BGQN/spi.xml:3320(parameter) /tmp/cicero-BGQN/spi.xml:3353(parameter) 
 msgid "size"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3265(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3265(synopsis) 
 #, no-wrap
 msgid "\nvoid * SPI_palloc(Size <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3273(para) 
+#: /tmp/cicero-BGQN/spi.xml:3273(para) 
 msgid "<function>SPI_palloc</function> allocates memory in the upper executor context."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3284(literal) /tmp/cicero-yNeh/spi.xml:3353(literal) 
+#: /tmp/cicero-BGQN/spi.xml:3284(literal) /tmp/cicero-BGQN/spi.xml:3353(literal) 
 msgid "Size <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3286(para) /tmp/cicero-yNeh/spi.xml:3355(para) 
+#: /tmp/cicero-BGQN/spi.xml:3286(para) /tmp/cicero-BGQN/spi.xml:3355(para) 
 msgid "size in bytes of storage to allocate"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3297(para) 
+#: /tmp/cicero-BGQN/spi.xml:3297(para) 
 msgid "pointer to new storage space of the specified size"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3307(refentrytitle) /tmp/cicero-yNeh/spi.xml:3312(refname) /tmp/cicero-yNeh/spi.xml:3316(primary) 
+#: /tmp/cicero-BGQN/spi.xml:3307(refentrytitle) /tmp/cicero-BGQN/spi.xml:3312(refname) /tmp/cicero-BGQN/spi.xml:3316(primary) 
 msgid "SPI_repalloc"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3313(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3313(refpurpose) 
 msgid "reallocate memory in the upper executor context"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3320(parameter) /tmp/cicero-yNeh/spi.xml:3344(parameter) /tmp/cicero-yNeh/spi.xml:3390(parameter) /tmp/cicero-yNeh/spi.xml:3415(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:3320(parameter) /tmp/cicero-BGQN/spi.xml:3344(parameter) /tmp/cicero-BGQN/spi.xml:3390(parameter) /tmp/cicero-BGQN/spi.xml:3415(parameter) 
 msgid "pointer"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3319(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3319(synopsis) 
 #, no-wrap
 msgid "\nvoid * SPI_repalloc(void * <placeholder-1/>, Size <placeholder-2/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3327(para) 
+#: /tmp/cicero-BGQN/spi.xml:3327(para) 
 msgid "<function>SPI_repalloc</function> changes the size of a memory segment previously allocated using <function>SPI_palloc</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3332(para) 
+#: /tmp/cicero-BGQN/spi.xml:3332(para) 
 msgid "This function is no longer different from plain <function>repalloc</function>. It's kept just for backward compatibility of existing code."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3346(para) 
+#: /tmp/cicero-BGQN/spi.xml:3346(para) 
 msgid "pointer to existing storage to change"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3366(para) 
+#: /tmp/cicero-BGQN/spi.xml:3366(para) 
 msgid "pointer to new storage space of specified size with the contents copied from the existing area"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3377(refentrytitle) /tmp/cicero-yNeh/spi.xml:3382(refname) /tmp/cicero-yNeh/spi.xml:3386(primary) 
+#: /tmp/cicero-BGQN/spi.xml:3377(refentrytitle) /tmp/cicero-BGQN/spi.xml:3382(refname) /tmp/cicero-BGQN/spi.xml:3386(primary) 
 msgid "SPI_pfree"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3383(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3383(refpurpose) 
 msgid "free memory in the upper executor context"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3389(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3389(synopsis) 
 #, no-wrap
 msgid "\nvoid SPI_pfree(void * <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3397(para) 
+#: /tmp/cicero-BGQN/spi.xml:3397(para) 
 msgid "<function>SPI_pfree</function> frees memory previously allocated using <function>SPI_palloc</function> or <function>SPI_repalloc</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3403(para) 
+#: /tmp/cicero-BGQN/spi.xml:3403(para) 
 msgid "This function is no longer different from plain <function>pfree</function>. It's kept just for backward compatibility of existing code."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3417(para) 
+#: /tmp/cicero-BGQN/spi.xml:3417(para) 
 msgid "pointer to existing storage to free"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3430(refentrytitle) /tmp/cicero-yNeh/spi.xml:3435(refname) /tmp/cicero-yNeh/spi.xml:3439(primary) 
+#: /tmp/cicero-BGQN/spi.xml:3430(refentrytitle) /tmp/cicero-BGQN/spi.xml:3435(refname) /tmp/cicero-BGQN/spi.xml:3439(primary) 
 msgid "SPI_copytuple"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3436(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3436(refpurpose) 
 msgid "make a copy of a row in the upper executor context"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3442(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3442(synopsis) 
 #, no-wrap
 msgid "\nHeapTuple SPI_copytuple(HeapTuple <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3450(para) 
+#: /tmp/cicero-BGQN/spi.xml:3450(para) 
 msgid "<function>SPI_copytuple</function> makes a copy of a row in the upper executor context. This is normally used to return a modified row from a trigger. In a function declared to return a composite type, use <function>SPI_returntuple</function> instead."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3465(para) /tmp/cicero-yNeh/spi.xml:3528(para) 
+#: /tmp/cicero-BGQN/spi.xml:3465(para) /tmp/cicero-BGQN/spi.xml:3528(para) 
 msgid "row to be copied"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3476(para) 
+#: /tmp/cicero-BGQN/spi.xml:3476(para) 
 msgid "the copied row; <symbol>NULL</symbol> only if <parameter>tuple</parameter> is <symbol>NULL</symbol>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3487(refentrytitle) /tmp/cicero-yNeh/spi.xml:3492(refname) /tmp/cicero-yNeh/spi.xml:3496(primary) 
+#: /tmp/cicero-BGQN/spi.xml:3487(refentrytitle) /tmp/cicero-BGQN/spi.xml:3492(refname) /tmp/cicero-BGQN/spi.xml:3496(primary) 
 msgid "SPI_returntuple"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3493(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3493(refpurpose) 
 msgid "prepare to return a tuple as a Datum"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3499(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3499(synopsis) 
 #, no-wrap
 msgid "\nHeapTupleHeader SPI_returntuple(HeapTuple <placeholder-1/>, TupleDesc <placeholder-2/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3507(para) 
+#: /tmp/cicero-BGQN/spi.xml:3507(para) 
 msgid "<function>SPI_returntuple</function> makes a copy of a row in the upper executor context, returning it in the form of a row type <type>Datum</type>. The returned pointer need only be converted to <type>Datum</type> via <function>PointerGetDatum</function> before returning."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3514(para) 
+#: /tmp/cicero-BGQN/spi.xml:3514(para) 
 msgid "Note that this should be used for functions that are declared to return composite types. It is not used for triggers; use <function>SPI_copytuple</function> for returning a modified row in a trigger."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3537(para) 
+#: /tmp/cicero-BGQN/spi.xml:3537(para) 
 msgid "descriptor for row (pass the same descriptor each time for most effective caching)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3549(para) 
+#: /tmp/cicero-BGQN/spi.xml:3549(para) 
 msgid "<type>HeapTupleHeader</type> pointing to copied row; <symbol>NULL</symbol> only if <parameter>row</parameter> or <parameter>rowdesc</parameter> is <symbol>NULL</symbol>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3562(refentrytitle) /tmp/cicero-yNeh/spi.xml:3567(refname) /tmp/cicero-yNeh/spi.xml:3571(primary) 
+#: /tmp/cicero-BGQN/spi.xml:3562(refentrytitle) /tmp/cicero-BGQN/spi.xml:3567(refname) /tmp/cicero-BGQN/spi.xml:3571(primary) 
 msgid "SPI_modifytuple"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3568(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3568(refpurpose) 
 msgid "create a row by replacing selected fields of a given row"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3575(parameter) /tmp/cicero-yNeh/spi.xml:3615(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:3575(parameter) /tmp/cicero-BGQN/spi.xml:3615(parameter) 
 msgid "ncols"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3576(parameter) /tmp/cicero-yNeh/spi.xml:3625(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:3576(parameter) /tmp/cicero-BGQN/spi.xml:3625(parameter) 
 msgid "colnum"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3574(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3574(synopsis) 
 #, no-wrap
 msgid "\nHeapTuple SPI_modifytuple(Relation <placeholder-1/>, HeapTuple <placeholder-2/>, int <placeholder-3/>,\n                          int * <placeholder-4/>, Datum * <placeholder-5/>, const char * <placeholder-6/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3583(para) 
+#: /tmp/cicero-BGQN/spi.xml:3583(para) 
 msgid "<function>SPI_modifytuple</function> creates a new row by substituting new values for selected columns, copying the original row's columns at other positions. The input row is not modified."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3597(para) 
+#: /tmp/cicero-BGQN/spi.xml:3597(para) 
 msgid "Used only as the source of the row descriptor for the row. (Passing a relation rather than a row descriptor is a misfeature.)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3608(para) 
+#: /tmp/cicero-BGQN/spi.xml:3608(para) 
 msgid "row to be modified"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3617(para) 
+#: /tmp/cicero-BGQN/spi.xml:3617(para) 
 msgid "number of column numbers in the array <parameter>colnum</parameter>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3625(literal) 
+#: /tmp/cicero-BGQN/spi.xml:3625(literal) 
 msgid "int * <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3627(para) 
+#: /tmp/cicero-BGQN/spi.xml:3627(para) 
 msgid "array of the numbers of the columns that are to be changed (column numbers start at 1)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3637(para) 
+#: /tmp/cicero-BGQN/spi.xml:3637(para) 
 msgid "new values for the specified columns"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3644(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:3644(parameter) 
 msgid "Nulls"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3646(para) 
+#: /tmp/cicero-BGQN/spi.xml:3646(para) 
 msgid "which new values are null, if any (see <function>SPI_execute_plan</function> for the format)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3658(para) 
+#: /tmp/cicero-BGQN/spi.xml:3658(para) 
 msgid "new row with modifications, allocated in the upper executor context; <symbol>NULL</symbol> only if <parameter>row</parameter> is <symbol>NULL</symbol>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3670(para) 
+#: /tmp/cicero-BGQN/spi.xml:3670(para) 
 msgid "if <parameter>rel</parameter> is <symbol>NULL</symbol>, or if <parameter>row</parameter> is <symbol>NULL</symbol>, or if <parameter>ncols</parameter> is less than or equal to 0, or if <parameter>colnum</parameter> is <symbol>NULL</symbol>, or if <parameter>values</parameter> is <symbol>NULL</symbol>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3680(symbol) 
+#: /tmp/cicero-BGQN/spi.xml:3680(symbol) 
 msgid "SPI_ERROR_NOATTRIBUTE"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3682(para) 
+#: /tmp/cicero-BGQN/spi.xml:3682(para) 
 msgid "if <parameter>colnum</parameter> contains an invalid column number (less than or equal to 0 or greater than the number of column in <parameter>row</parameter>)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3664(para) 
+#: /tmp/cicero-BGQN/spi.xml:3664(para) 
 msgid "On error, <varname>SPI_result</varname> is set as follows: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3698(refentrytitle) /tmp/cicero-yNeh/spi.xml:3703(refname) /tmp/cicero-yNeh/spi.xml:3707(primary) 
+#: /tmp/cicero-BGQN/spi.xml:3698(refentrytitle) /tmp/cicero-BGQN/spi.xml:3703(refname) /tmp/cicero-BGQN/spi.xml:3707(primary) 
 msgid "SPI_freetuple"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3704(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3704(refpurpose) 
 msgid "free a row allocated in the upper executor context"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3710(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3710(synopsis) 
 #, no-wrap
 msgid "\nvoid SPI_freetuple(HeapTuple <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3718(para) 
+#: /tmp/cicero-BGQN/spi.xml:3718(para) 
 msgid "<function>SPI_freetuple</function> frees a row previously allocated in the upper executor context."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3723(para) 
+#: /tmp/cicero-BGQN/spi.xml:3723(para) 
 msgid "This function is no longer different from plain <function>heap_freetuple</function>. It's kept just for backward compatibility of existing code."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3737(para) 
+#: /tmp/cicero-BGQN/spi.xml:3737(para) 
 msgid "row to free"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3750(refentrytitle) /tmp/cicero-yNeh/spi.xml:3755(refname) /tmp/cicero-yNeh/spi.xml:3760(primary) 
+#: /tmp/cicero-BGQN/spi.xml:3750(refentrytitle) /tmp/cicero-BGQN/spi.xml:3755(refname) /tmp/cicero-BGQN/spi.xml:3760(primary) 
 msgid "SPI_freetuptable"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3756(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3756(refpurpose) 
 msgid "free a row set created by <placeholder-1/> or a similar function"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3764(parameter) /tmp/cicero-yNeh/spi.xml:3792(parameter) 
+#: /tmp/cicero-BGQN/spi.xml:3764(parameter) /tmp/cicero-BGQN/spi.xml:3792(parameter) 
 msgid "tuptable"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3763(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3763(synopsis) 
 #, no-wrap
 msgid "\nvoid SPI_freetuptable(SPITupleTable * <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3771(para) 
+#: /tmp/cicero-BGQN/spi.xml:3771(para) 
 msgid "<function>SPI_freetuptable</function> frees a row set created by a prior SPI command execution function, such as <function>SPI_execute</function>. Therefore, this function is usually called with the global variable <varname>SPI_tupletable</varname> as argument."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3779(para) 
+#: /tmp/cicero-BGQN/spi.xml:3779(para) 
 msgid "This function is useful if a SPI procedure needs to execute multiple commands and does not want to keep the results of earlier commands around until it ends. Note that any unfreed row sets will be freed anyway at <function>SPI_finish</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3792(literal) 
+#: /tmp/cicero-BGQN/spi.xml:3792(literal) 
 msgid "SPITupleTable * <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3794(para) 
+#: /tmp/cicero-BGQN/spi.xml:3794(para) 
 msgid "pointer to row set to free"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3807(refentrytitle) /tmp/cicero-yNeh/spi.xml:3812(refname) /tmp/cicero-yNeh/spi.xml:3816(primary) 
+#: /tmp/cicero-BGQN/spi.xml:3807(refentrytitle) /tmp/cicero-BGQN/spi.xml:3812(refname) /tmp/cicero-BGQN/spi.xml:3816(primary) 
 msgid "SPI_freeplan"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3813(refpurpose) 
+#: /tmp/cicero-BGQN/spi.xml:3813(refpurpose) 
 msgid "free a previously saved plan"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3819(synopsis) 
+#: /tmp/cicero-BGQN/spi.xml:3819(synopsis) 
 #, no-wrap
 msgid "\nint SPI_freeplan(SPIPlanPtr <placeholder-1/>)\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3827(para) 
+#: /tmp/cicero-BGQN/spi.xml:3827(para) 
 msgid "<function>SPI_freeplan</function> releases a command execution plan previously returned by <function>SPI_prepare</function> or saved by <function>SPI_saveplan</function>."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3841(para) 
+#: /tmp/cicero-BGQN/spi.xml:3841(para) 
 msgid "pointer to plan to free"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3852(para) 
+#: /tmp/cicero-BGQN/spi.xml:3852(para) 
 msgid "<symbol>SPI_ERROR_ARGUMENT</symbol> if <parameter>plan</parameter> is <symbol>NULL</symbol> or invalid"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3862(title) 
+#: /tmp/cicero-BGQN/spi.xml:3862(title) 
 msgid "Visibility of Data Changes"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3874(programlisting) 
+#: /tmp/cicero-BGQN/spi.xml:3874(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO a SELECT * FROM a;\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3870(para) 
+#: /tmp/cicero-BGQN/spi.xml:3870(para) 
 msgid "During the execution of an SQL command, any data changes made by the command are invisible to the command itself. For example, in: <placeholder-1/> the inserted rows are invisible to the <command>SELECT</command> part."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3883(para) 
+#: /tmp/cicero-BGQN/spi.xml:3883(para) 
 msgid "Changes made by a command C are visible to all commands that are started after C, no matter whether they are started inside C (during the execution of C) or after C is done."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3891(para) 
+#: /tmp/cicero-BGQN/spi.xml:3891(para) 
 msgid "Commands executed via SPI inside a function called by an SQL command (either an ordinary function or a trigger) follow one or the other of the above rules depending on the read/write flag passed to SPI. Commands executed in read-only mode follow the first rule: they cannot see changes of the calling command. Commands executed in read-write mode follow the second rule: they can see all changes made so far."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3903(para) 
+#: /tmp/cicero-BGQN/spi.xml:3903(para) 
 msgid "All standard procedural languages set the SPI read-write mode depending on the volatility attribute of the function. Commands of <literal>STABLE</literal> and <literal>IMMUTABLE</literal> functions are done in read-only mode, while commands of <literal>VOLATILE</literal> functions are done in read-write mode. While authors of C functions are able to violate this convention, it's unlikely to be a good idea to do so."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3864(para) 
+#: /tmp/cicero-BGQN/spi.xml:3864(para) 
 msgid "The following rules govern the visibility of data changes in functions that use SPI (or any other C function): <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3915(para) 
+#: /tmp/cicero-BGQN/spi.xml:3915(para) 
 msgid "The next section contains an example that illustrates the application of these rules."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3922(title) 
+#: /tmp/cicero-BGQN/spi.xml:3922(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3924(para) 
+#: /tmp/cicero-BGQN/spi.xml:3924(para) 
 msgid "This section contains a very simple example of SPI usage. The procedure <function>execq</function> takes an SQL command as its first argument and a row count as its second, executes the command using <function>SPI_exec</function> and returns the number of rows that were processed by the command. You can find more complex examples for SPI in the source tree in <filename>src/test/regress/regress.c</filename> and in the <xref linkend=\"contrib-spi\"/> module."
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3935(programlisting) 
+#: /tmp/cicero-BGQN/spi.xml:3935(programlisting) 
 #, no-wrap
 msgid "\n#include \"postgres.h\"\n\n#include \"executor/spi.h\"\n#include \"utils/builtins.h\"\n\n#ifdef PG_MODULE_MAGIC\nPG_MODULE_MAGIC;\n#endif\n\nint execq(text *sql, int cnt);\n\nint\nexecq(text *sql, int cnt)\n{\n    char *command;\n    int ret;\n    int proc;\n\n    /* Convert given text object to a C string */\n    command = text_to_cstring(sql);\n\n    SPI_connect();\n\n    ret = SPI_exec(command, cnt);\n\n    proc = SPI_processed;\n    /*\n     * If some rows were fetched, print them via elog(INFO).\n     */\n    if (ret &gt; 0 &amp;&amp; SPI_tuptable != NULL)\n    {\n        TupleDesc tupdesc = SPI_tuptable-&gt;tupdesc;\n        SPITupleTable *tuptable = SPI_tuptable;\n        char buf[8192];\n        int i, j;\n\n        for (j = 0; j &lt; proc; j++)\n        {\n            HeapTuple tuple = tuptable-&gt;vals[j];\n\n            for (i = 1, buf[0] = 0; i &lt;= tupdesc-&gt;natts; i++)\n                snprintf(buf + strlen (buf), sizeof(buf) - strlen(buf), \" %s%s\",\n                        SPI_getvalue(tuple, tupdesc, i),\n                        (i == tupdesc-&gt;natts) ? \" \" : \" |\");\n            elog(INFO, \"EXECQ: %s\", buf);\n        }\n    }\n\n    SPI_finish();\n    pfree(command);\n\n    return (proc);\n}\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3991(para) 
+#: /tmp/cicero-BGQN/spi.xml:3991(para) 
 msgid "(This function uses call convention version 0, to make the example easier to understand. In real applications you should use the new version 1 interface.)"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:4001(programlisting) 
+#: /tmp/cicero-BGQN/spi.xml:4001(programlisting) 
 #, no-wrap
 msgid "\nCREATE FUNCTION execq(text, integer) RETURNS integer\n    AS '<replaceable>filename</replaceable>'\n    LANGUAGE C;\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:3997(para) 
+#: /tmp/cicero-BGQN/spi.xml:3997(para) 
 msgid "This is how you declare the function after having compiled it into a shared library (details are in <xref linkend=\"dfunc\"/>.): <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:4011(programlisting) 
+#: /tmp/cicero-BGQN/spi.xml:4011(programlisting) 
 #, no-wrap
 msgid "\n=&gt; SELECT execq('CREATE TABLE a (x integer)', 0);\n execq\n-------\n     0\n(1 row)\n\n=&gt; INSERT INTO a VALUES (execq('INSERT INTO a VALUES (0)', 0));\nINSERT 0 1\n=&gt; SELECT execq('SELECT * FROM a', 0);\nINFO:  EXECQ:  0    -- inserted by execq\nINFO:  EXECQ:  1    -- returned by execq and inserted by upper INSERT\n\n execq\n-------\n     2\n(1 row)\n\n=&gt; SELECT execq('INSERT INTO a SELECT x + 2 FROM a', 1);\n execq\n-------\n     1\n(1 row)\n\n=&gt; SELECT execq('SELECT * FROM a', 10);\nINFO:  EXECQ:  0\nINFO:  EXECQ:  1\nINFO:  EXECQ:  2    -- 0 + 2, only one row inserted - as specified\n\n execq\n-------\n     3              -- 10 is the max value only, 3 is the real number of rows\n(1 row)\n\n=&gt; DELETE FROM a;\nDELETE 3\n=&gt; INSERT INTO a VALUES (execq('SELECT * FROM a', 0) + 1);\nINSERT 0 1\n=&gt; SELECT * FROM a;\n x\n---\n 1                  -- no rows in a (0) + 1\n(1 row)\n\n=&gt; INSERT INTO a VALUES (execq('SELECT * FROM a', 0) + 1);\nINFO:  EXECQ:  1\nINSERT 0 1\n=&gt; SELECT * FROM a;\n x\n---\n 1\n 2                  -- there was one row in a + 1\n(2 rows)\n\n-- This demonstrates the data changes visibility rule:\n\n=&gt; INSERT INTO a SELECT execq('SELECT * FROM a', 0) * x FROM a;\nINFO:  EXECQ:  1\nINFO:  EXECQ:  2\nINFO:  EXECQ:  1\nINFO:  EXECQ:  2\nINFO:  EXECQ:  2\nINSERT 0 2\n=&gt; SELECT * FROM a;\n x\n---\n 1\n 2\n 2                  -- 2 rows * 1 (x in first row)\n 6                  -- 3 rows (2 + 1 just inserted) * 2 (x in second row)\n(4 rows)               ^^^^^^\n                       rows visible to execq() in different invocations\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/spi.xml:4008(para) 
+#: /tmp/cicero-BGQN/spi.xml:4008(para) 
 msgid "Here is a sample session: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-yNeh/spi.xml:0(None) 
+#: /tmp/cicero-BGQN/spi.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

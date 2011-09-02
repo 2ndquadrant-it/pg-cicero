@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:40+0200\n"
+"POT-Creation-Date: 2011-09-02 12:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,131 +9,131 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:6(refentrytitle) /tmp/cicero-yNeh/ref/create_conversion.xml:12(refname) /tmp/cicero-yNeh/ref/create_conversion.xml:17(primary) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:6(refentrytitle) /tmp/cicero-BGQN/ref/create_conversion.xml:12(refname) /tmp/cicero-BGQN/ref/create_conversion.xml:17(primary) 
 msgid "CREATE CONVERSION"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:7(manvolnum) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:7(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:8(refmiscinfo) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:8(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:13(refpurpose) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:13(refpurpose) 
 msgid "define a new encoding conversion"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:22(replaceable) /tmp/cicero-yNeh/ref/create_conversion.xml:64(replaceable) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:22(replaceable) /tmp/cicero-BGQN/ref/create_conversion.xml:64(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:23(replaceable) /tmp/cicero-yNeh/ref/create_conversion.xml:77(replaceable) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:23(replaceable) /tmp/cicero-BGQN/ref/create_conversion.xml:77(replaceable) 
 msgid "source_encoding"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:23(replaceable) /tmp/cicero-yNeh/ref/create_conversion.xml:87(replaceable) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:23(replaceable) /tmp/cicero-BGQN/ref/create_conversion.xml:87(replaceable) 
 msgid "dest_encoding"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:23(replaceable) /tmp/cicero-yNeh/ref/create_conversion.xml:97(replaceable) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:23(replaceable) /tmp/cicero-BGQN/ref/create_conversion.xml:97(replaceable) 
 msgid "function_name"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:21(synopsis) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:21(synopsis) 
 #, no-wrap
 msgid "\nCREATE [ DEFAULT ] CONVERSION <placeholder-1/>\n    FOR <placeholder-2/> TO <placeholder-3/> FROM <placeholder-4/>\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:28(title) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:28(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:30(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:30(para) 
 msgid "<command>CREATE CONVERSION</command> defines a new conversion between character set encodings. Also, conversions that are marked <literal>DEFAULT</literal> can be used for automatic encoding conversion between client and server. For this purpose, two conversions, from encoding A to B <emphasis>and</emphasis> from encoding B to A, must be defined."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:39(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:39(para) 
 msgid "To be able to create a conversion, you must have <literal>EXECUTE</literal> privilege on the function and <literal>CREATE</literal> privilege on the destination schema."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:47(title) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:47(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:51(literal) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:51(literal) 
 msgid "DEFAULT"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:54(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:54(para) 
 msgid "The <literal>DEFAULT</literal> clause indicates that this conversion is the default for this particular source to destination encoding. There should be only one default encoding in a schema for the encoding pair."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:67(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:67(para) 
 msgid "The name of the conversion. The conversion name can be schema-qualified. If it is not, the conversion is defined in the current schema. The conversion name must be unique within a schema."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:80(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:80(para) 
 msgid "The source encoding name."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:90(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:90(para) 
 msgid "The destination encoding name."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:100(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:100(para) 
 msgid "The function used to perform the conversion. The function name can be schema-qualified. If it is not, the function will be looked up in the path."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:109(programlisting) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:109(programlisting) 
 #, no-wrap
 msgid "\nconv_proc(\n    integer,  -- source encoding ID\n    integer,  -- destination encoding ID\n    cstring,  -- source string (null terminated C string)\n    internal, -- destination (fill with a null terminated C string)\n    integer   -- source string length\n) RETURNS void;\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:106(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:106(para) 
 msgid "The function must have the following signature: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:124(title) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:124(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:126(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:126(para) 
 msgid "Use <command>DROP CONVERSION</command> to remove user-defined conversions."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:130(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:130(para) 
 msgid "The privileges required to create a conversion might be changed in a future release."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:137(title) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:137(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:142(programlisting) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:142(programlisting) 
 #, no-wrap
 msgid "\nCREATE CONVERSION myconv FOR 'UTF8' TO 'LATIN1' FROM myfunc;\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:139(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:139(para) 
 msgid "To create a conversion from encoding <literal>UTF8</literal> to <literal>LATIN1</literal> using <function>myfunc</function>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:149(title) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:149(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:151(para) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:151(para) 
 msgid "<command>CREATE CONVERSION</command> is a <productname>PostgreSQL</productname> extension. There is no <command>CREATE CONVERSION</command> statement in the SQL standard, but a <command>CREATE TRANSLATION</command> statement that is very similar in purpose and syntax."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:162(title) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:162(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-yNeh/ref/create_conversion.xml:0(None) 
+#: /tmp/cicero-BGQN/ref/create_conversion.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:40+0200\n"
+"POT-Creation-Date: 2011-09-02 12:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,98 +9,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:9(refentrytitle) /tmp/cicero-yNeh/ref/drop_view.xml:15(refname) /tmp/cicero-yNeh/ref/drop_view.xml:20(primary) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:9(refentrytitle) /tmp/cicero-BGQN/ref/drop_view.xml:15(refname) /tmp/cicero-BGQN/ref/drop_view.xml:20(primary) 
 msgid "DROP VIEW"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:10(manvolnum) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:11(refmiscinfo) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:16(refpurpose) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:16(refpurpose) 
 msgid "remove a view"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:25(replaceable) /tmp/cicero-yNeh/ref/drop_view.xml:53(replaceable) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:25(replaceable) /tmp/cicero-BGQN/ref/drop_view.xml:53(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:24(synopsis) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:24(synopsis) 
 #, no-wrap
 msgid "\nDROP VIEW [ IF EXISTS ] <placeholder-1/> [, ...] [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:30(title) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:32(para) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:32(para) 
 msgid "<command>DROP VIEW</command> drops an existing view. To execute this command you must be the owner of the view."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:39(title) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:39(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:43(literal) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:43(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:45(para) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:45(para) 
 msgid "Do not throw an error if the view does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:55(para) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:55(para) 
 msgid "The name (optionally schema-qualified) of the view to remove."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:62(literal) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:62(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:64(para) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:64(para) 
 msgid "Automatically drop objects that depend on the view (such as other views)."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:72(literal) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:72(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:74(para) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:74(para) 
 msgid "Refuse to drop the view if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:84(title) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:84(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:88(programlisting) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:88(programlisting) 
 #, no-wrap
 msgid "\nDROP VIEW kinds;\n"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:86(para) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:86(para) 
 msgid "This command will remove the view called <literal>kinds</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:94(title) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:94(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:96(para) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:96(para) 
 msgid "This command conforms to the SQL standard, except that the standard only allows one view to be dropped per command, and apart from the <literal>IF EXISTS</literal> option, which is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-yNeh/ref/drop_view.xml:105(title) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:105(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-yNeh/ref/drop_view.xml:0(None) 
+#: /tmp/cicero-BGQN/ref/drop_view.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
