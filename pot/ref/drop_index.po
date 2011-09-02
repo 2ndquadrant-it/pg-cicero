@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 09:48+0200\n"
+"POT-Creation-Date: 2011-09-02 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,98 +9,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:9(refentrytitle) /tmp/cicero-OGqM/ref/drop_index.xml:15(refname) /tmp/cicero-OGqM/ref/drop_index.xml:20(primary) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:9(refentrytitle) /tmp/cicero-AgyC/ref/drop_index.xml:15(refname) /tmp/cicero-AgyC/ref/drop_index.xml:20(primary) 
 msgid "DROP INDEX"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:10(manvolnum) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:11(refmiscinfo) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:16(refpurpose) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:16(refpurpose) 
 msgid "remove an index"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:25(replaceable) /tmp/cicero-OGqM/ref/drop_index.xml:54(replaceable) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:25(replaceable) /tmp/cicero-AgyC/ref/drop_index.xml:54(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:24(synopsis) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:24(synopsis) 
 #, no-wrap
 msgid "\nDROP INDEX [ IF EXISTS ] <placeholder-1/> [, ...] [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:30(title) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:32(para) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:32(para) 
 msgid "<command>DROP INDEX</command> drops an existing index from the database system. To execute this command you must be the owner of the index."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:40(title) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:40(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:44(literal) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:44(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:46(para) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:46(para) 
 msgid "Do not throw an error if the index does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:56(para) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:56(para) 
 msgid "The name (optionally schema-qualified) of an index to remove."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:63(literal) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:63(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:65(para) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:65(para) 
 msgid "Automatically drop objects that depend on the index."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:72(literal) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:72(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:74(para) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:74(para) 
 msgid "Refuse to drop the index if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:84(title) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:84(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:89(programlisting) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:89(programlisting) 
 #, no-wrap
 msgid "\nDROP INDEX title_idx;\n"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:86(para) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:86(para) 
 msgid "This command will remove the index <literal>title_idx</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:95(title) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:95(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:97(para) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:97(para) 
 msgid "<command>DROP INDEX</command> is a <productname>PostgreSQL</productname> language extension. There are no provisions for indexes in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/drop_index.xml:105(title) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:105(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-OGqM/ref/drop_index.xml:0(None) 
+#: /tmp/cicero-AgyC/ref/drop_index.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

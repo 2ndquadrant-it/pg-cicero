@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 09:48+0200\n"
+"POT-Creation-Date: 2011-09-02 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,51 +9,51 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-OGqM/test-parser.xml:5(title) /tmp/cicero-OGqM/test-parser.xml:8(primary) 
+#: /tmp/cicero-AgyC/test-parser.xml:5(title) /tmp/cicero-AgyC/test-parser.xml:8(primary) 
 msgid "test_parser"
 msgstr ""
 
-#: /tmp/cicero-OGqM/test-parser.xml:11(para) 
+#: /tmp/cicero-AgyC/test-parser.xml:11(para) 
 msgid "<filename>test_parser</filename> is an example of a custom parser for full-text search. It doesn't do anything especially useful, but can serve as a starting point for developing your own parser."
 msgstr ""
 
-#: /tmp/cicero-OGqM/test-parser.xml:21(programlisting) 
+#: /tmp/cicero-AgyC/test-parser.xml:21(programlisting) 
 #, no-wrap
 msgid "\nmydb=# SELECT * FROM ts_token_type('testparser');\n tokid | alias |  description\n-------+-------+---------------\n     3 | word  | Word\n    12 | blank | Space symbols\n(2 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-OGqM/test-parser.xml:17(para) 
+#: /tmp/cicero-AgyC/test-parser.xml:17(para) 
 msgid "<filename>test_parser</filename> recognizes words separated by white space, and returns just two token types: <placeholder-1/> These token numbers have been chosen to be compatible with the default parser's numbering. This allows us to use its <function>headline()</function> function, thus keeping the example simple."
 msgstr ""
 
-#: /tmp/cicero-OGqM/test-parser.xml:36(title) 
+#: /tmp/cicero-AgyC/test-parser.xml:36(title) 
 msgid "Usage"
 msgstr ""
 
-#: /tmp/cicero-OGqM/test-parser.xml:38(para) 
+#: /tmp/cicero-AgyC/test-parser.xml:38(para) 
 msgid "Installing the <literal>test_parser</literal> extension creates a text search parser <literal>testparser</literal>. It has no user-configurable parameters."
 msgstr ""
 
-#: /tmp/cicero-OGqM/test-parser.xml:46(programlisting) 
+#: /tmp/cicero-AgyC/test-parser.xml:46(programlisting) 
 #, no-wrap
 msgid "\nmydb=# SELECT * FROM ts_parse('testparser', 'That''s my first own parser');\n tokid | token\n-------+--------\n     3 | That's\n    12 |\n     3 | my\n    12 |\n     3 | first\n    12 |\n     3 | own\n    12 |\n     3 | parser\n"
 msgstr ""
 
-#: /tmp/cicero-OGqM/test-parser.xml:43(para) 
+#: /tmp/cicero-AgyC/test-parser.xml:43(para) 
 msgid "You can test the parser with, for example, <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OGqM/test-parser.xml:66(programlisting) 
+#: /tmp/cicero-AgyC/test-parser.xml:66(programlisting) 
 #, no-wrap
 msgid "\nmydb=# CREATE TEXT SEARCH CONFIGURATION testcfg ( PARSER = testparser );\nCREATE TEXT SEARCH CONFIGURATION\n\nmydb=# ALTER TEXT SEARCH CONFIGURATION testcfg\nmydb-#   ADD MAPPING FOR word WITH english_stem;\nALTER TEXT SEARCH CONFIGURATION\n\nmydb=#  SELECT to_tsvector('testcfg', 'That''s my first own parser');\n          to_tsvector\n-------------------------------\n 'that':1 'first':3 'parser':5\n(1 row)\n\nmydb=# SELECT ts_headline('testcfg', 'Supernovae stars are the brightest phenomena in galaxies',\nmydb(#                    to_tsquery('testcfg', 'star'));\n                           ts_headline\n-----------------------------------------------------------------\n Supernovae &lt;b&gt;stars&lt;/b&gt; are the brightest phenomena in galaxies\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-OGqM/test-parser.xml:62(para) 
+#: /tmp/cicero-AgyC/test-parser.xml:62(para) 
 msgid "Real-world use requires setting up a text search configuration that uses the parser. For example, <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-OGqM/test-parser.xml:0(None) 
+#: /tmp/cicero-AgyC/test-parser.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

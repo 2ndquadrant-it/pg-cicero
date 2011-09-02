@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 09:48+0200\n"
+"POT-Creation-Date: 2011-09-02 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,114 +9,114 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:9(refentrytitle) /tmp/cicero-OGqM/ref/create_tsdictionary.xml:15(refname) /tmp/cicero-OGqM/ref/create_tsdictionary.xml:20(primary) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:9(refentrytitle) /tmp/cicero-AgyC/ref/create_tsdictionary.xml:15(refname) /tmp/cicero-AgyC/ref/create_tsdictionary.xml:20(primary) 
 msgid "CREATE TEXT SEARCH DICTIONARY"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:10(manvolnum) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:11(refmiscinfo) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:16(refpurpose) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:16(refpurpose) 
 msgid "define a new text search dictionary"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:25(replaceable) /tmp/cicero-OGqM/ref/create_tsdictionary.xml:63(replaceable) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:25(replaceable) /tmp/cicero-AgyC/ref/create_tsdictionary.xml:63(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:26(replaceable) /tmp/cicero-OGqM/ref/create_tsdictionary.xml:73(replaceable) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:26(replaceable) /tmp/cicero-AgyC/ref/create_tsdictionary.xml:73(replaceable) 
 msgid "template"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:27(replaceable) /tmp/cicero-OGqM/ref/create_tsdictionary.xml:83(replaceable) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:27(replaceable) /tmp/cicero-AgyC/ref/create_tsdictionary.xml:83(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:27(replaceable) /tmp/cicero-OGqM/ref/create_tsdictionary.xml:92(replaceable) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:27(replaceable) /tmp/cicero-AgyC/ref/create_tsdictionary.xml:92(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:24(synopsis) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH DICTIONARY <placeholder-1/> (\n    TEMPLATE = <placeholder-2/>\n    [, <placeholder-3/> = <placeholder-4/> [, ... ]]\n)\n"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:33(title) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:35(para) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:35(para) 
 msgid "<command>CREATE TEXT SEARCH DICTIONARY</command> creates a new text search dictionary. A text search dictionary specifies a way of recognizing interesting or uninteresting words for searching. A dictionary depends on a text search template, which specifies the functions that actually perform the work. Typically the dictionary provides some options that control the detailed behavior of the template's functions."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:44(para) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:44(para) 
 msgid "If a schema name is given then the text search dictionary is created in the specified schema. Otherwise it is created in the current schema."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:49(para) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:49(para) 
 msgid "The user who defines a text search dictionary becomes its owner."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:53(para) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:53(para) 
 msgid "Refer to <xref linkend=\"textsearch\"/> for further information."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:59(title) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:59(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:65(para) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:65(para) 
 msgid "The name of the text search dictionary to be created. The name can be schema-qualified."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:75(para) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:75(para) 
 msgid "The name of the text search template that will define the basic behavior of this dictionary."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:85(para) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:85(para) 
 msgid "The name of a template-specific option to be set for this dictionary."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:94(para) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:94(para) 
 msgid "The value to use for a template-specific option. If the value is not a simple identifier or number, it must be quoted (but you can always quote it, if you wish)."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:103(para) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:103(para) 
 msgid "The options can appear in any order."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:109(title) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:109(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:111(para) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:111(para) 
 msgid "The following example command creates a Snowball-based dictionary with a nonstandard list of stop words."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:116(programlisting) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:116(programlisting) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH DICTIONARY my_russian (\n    template = snowball,\n    language = russian,\n    stopwords = myrussian\n);\n"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:126(title) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:126(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:128(para) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:128(para) 
 msgid "There is no <command>CREATE TEXT SEARCH DICTIONARY</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:135(title) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:135(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-OGqM/ref/create_tsdictionary.xml:0(None) 
+#: /tmp/cicero-AgyC/ref/create_tsdictionary.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
