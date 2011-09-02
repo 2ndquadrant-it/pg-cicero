@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:28+0200\n"
+"POT-Creation-Date: 2011-09-02 11:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,90 +9,90 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:5(refentrytitle) /tmp/cicero-HQuM/ref/set_session_auth.xml:11(refname) /tmp/cicero-HQuM/ref/set_session_auth.xml:16(primary) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:5(refentrytitle) /tmp/cicero-yNeh/ref/set_session_auth.xml:11(refname) /tmp/cicero-yNeh/ref/set_session_auth.xml:16(primary) 
 msgid "SET SESSION AUTHORIZATION"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:6(manvolnum) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:6(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:7(refmiscinfo) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:7(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:12(refpurpose) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:12(refpurpose) 
 msgid "set the session user identifier and the current user identifier of the current session"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:21(replaceable) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:21(replaceable) 
 msgid "user_name"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:20(synopsis) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:20(synopsis) 
 #, no-wrap
 msgid "\nSET [ SESSION | LOCAL ] SESSION AUTHORIZATION <placeholder-1/>\nSET [ SESSION | LOCAL ] SESSION AUTHORIZATION DEFAULT\nRESET SESSION AUTHORIZATION\n"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:28(title) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:28(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:30(para) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:30(para) 
 msgid "This command sets the session user identifier and the current user identifier of the current SQL session to be <replaceable class=\"parameter\">user_name</replaceable>. The user name can be written as either an identifier or a string literal. Using this command, it is possible, for example, to temporarily become an unprivileged user and later switch back to being a superuser."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:39(para) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:39(para) 
 msgid "The session user identifier is initially set to be the (possibly authenticated) user name provided by the client. The current user identifier is normally equal to the session user identifier, but might change temporarily in the context of <literal>SECURITY DEFINER</literal> functions and similar mechanisms; it can also be changed by <xref linkend=\"sql-set-role\"/>. The current user identifier is relevant for permission checking."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:49(para) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:49(para) 
 msgid "The session user identifier can be changed only if the initial session user (the <firstterm>authenticated user</firstterm>) had the superuser privilege. Otherwise, the command is accepted only if it specifies the authenticated user name."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:56(para) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:56(para) 
 msgid "The <literal>SESSION</literal> and <literal>LOCAL</literal> modifiers act the same as for the regular <xref linkend=\"sql-set\"/> command."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:62(para) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:62(para) 
 msgid "The <literal>DEFAULT</literal> and <literal>RESET</literal> forms reset the session and current user identifiers to be the originally authenticated user name. These forms can be executed by any user."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:70(title) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:70(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:72(para) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:72(para) 
 msgid "<command>SET SESSION AUTHORIZATION</command> cannot be used within a <literal>SECURITY DEFINER</literal> function."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:79(title) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:79(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:81(programlisting) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:81(programlisting) 
 #, no-wrap
 msgid "\nSELECT SESSION_USER, CURRENT_USER;\n\n session_user | current_user \n--------------+--------------\n peter        | peter\n\nSET SESSION AUTHORIZATION 'paul';\n\nSELECT SESSION_USER, CURRENT_USER;\n\n session_user | current_user \n--------------+--------------\n paul         | paul\n"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:99(title) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:99(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:101(para) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:101(para) 
 msgid "The SQL standard allows some other expressions to appear in place of the literal <replaceable>user_name</replaceable>, but these options are not important in practice. <productname>PostgreSQL</productname> allows identifier syntax (<literal>\"username\"</literal>), which SQL does not. SQL does not allow this command during a transaction; <productname>PostgreSQL</productname> does not make this restriction because there is no reason to. The <literal>SESSION</literal> and <literal>LOCAL</literal> modifiers are a <productname>PostgreSQL</productname> extension, as is the <literal>RESET</literal> syntax."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:114(para) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:114(para) 
 msgid "The privileges necessary to execute this command are left implementation-defined by the standard."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:121(title) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:121(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-HQuM/ref/set_session_auth.xml:0(None) 
+#: /tmp/cicero-yNeh/ref/set_session_auth.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

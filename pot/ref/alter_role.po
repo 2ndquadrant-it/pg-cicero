@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:28+0200\n"
+"POT-Creation-Date: 2011-09-02 11:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,296 +9,296 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:9(refentrytitle) /tmp/cicero-HQuM/ref/alter_role.xml:15(refname) /tmp/cicero-HQuM/ref/alter_role.xml:20(primary) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:9(refentrytitle) /tmp/cicero-yNeh/ref/alter_role.xml:15(refname) /tmp/cicero-yNeh/ref/alter_role.xml:20(primary) 
 msgid "ALTER ROLE"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:10(manvolnum) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:11(refmiscinfo) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:16(refpurpose) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:16(refpurpose) 
 msgid "change a database role"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:25(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:40(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:42(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:43(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:44(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:45(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:111(replaceable) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:25(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:40(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:42(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:43(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:44(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:45(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:111(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:25(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:27(replaceable) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:25(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:27(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:27(phrase) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:27(phrase) 
 msgid "where <placeholder-1/> can be:"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:36(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:134(replaceable) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:36(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:134(replaceable) 
 msgid "connlimit"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:37(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:135(replaceable) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:37(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:135(replaceable) 
 msgid "password"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:38(replaceable) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:38(replaceable) 
 msgid "timestamp"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:40(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:149(replaceable) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:40(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:149(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:42(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:43(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:44(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:45(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:158(replaceable) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:42(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:43(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:44(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:45(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:158(replaceable) 
 msgid "database_name"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:42(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:43(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:44(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:167(replaceable) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:42(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:43(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:44(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:167(replaceable) 
 msgid "configuration_parameter"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:42(replaceable) /tmp/cicero-HQuM/ref/alter_role.xml:168(replaceable) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:42(replaceable) /tmp/cicero-yNeh/ref/alter_role.xml:168(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:24(synopsis) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER ROLE <placeholder-1/> [ [ WITH ] <placeholder-2/> [ ... ] ]\n\n<placeholder-3/>\n\n      SUPERUSER | NOSUPERUSER\n    | CREATEDB | NOCREATEDB\n    | CREATEROLE | NOCREATEROLE\n    | CREATEUSER | NOCREATEUSER\n    | INHERIT | NOINHERIT\n    | LOGIN | NOLOGIN\n    | REPLICATION | NOREPLICATION\n    | CONNECTION LIMIT <placeholder-4/>\n    | [ ENCRYPTED | UNENCRYPTED ] PASSWORD '<placeholder-5/>'\n    | VALID UNTIL '<placeholder-6/>'\n\nALTER ROLE <placeholder-7/> RENAME TO <placeholder-8/>\n\nALTER ROLE <placeholder-9/> [ IN DATABASE <placeholder-10/> ] SET <placeholder-11/> { TO | = } { <placeholder-12/> | DEFAULT }\nALTER ROLE <placeholder-13/> [ IN DATABASE <placeholder-14/> ] SET <placeholder-15/> FROM CURRENT\nALTER ROLE <placeholder-16/> [ IN DATABASE <placeholder-17/> ] RESET <placeholder-18/>\nALTER ROLE <placeholder-19/> [ IN DATABASE <placeholder-20/> ] RESET ALL\n"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:50(title) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:50(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:52(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:52(para) 
 msgid "<command>ALTER ROLE</command> changes the attributes of a <productname>PostgreSQL</productname> role."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:57(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:57(para) 
 msgid "The first variant of this command listed in the synopsis can change many of the role attributes that can be specified in <xref linkend=\"sql-createrole\"/>. (All the possible attributes are covered, except that there are no options for adding or removing memberships; use <xref linkend=\"sql-grant\"/> and <xref linkend=\"sql-revoke\"/> for that.) Attributes not mentioned in the command retain their previous settings. Database superusers can change any of these settings for any role. Roles having <literal>CREATEROLE</literal> privilege can change any of these settings, but only for non-superuser and non-replication roles. Ordinary roles can only change their own password."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:72(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:72(para) 
 msgid "The second variant changes the name of the role. Database superusers can rename any role. Roles having <literal>CREATEROLE</literal> privilege can rename non-superuser roles. The current session user cannot be renamed. (Connect as a different user if you need to do that.) Because <literal>MD5</literal>-encrypted passwords use the role name as cryptographic salt, renaming a role clears its password if the password is <literal>MD5</literal>-encrypted."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:84(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:84(para) 
 msgid "The remaining variants change a role's session default for a configuration variable, either for all databases or, when the <literal>IN DATABASE</literal> clause is specified, only for sessions in the named database. Whenever the role subsequently starts a new session, the specified value becomes the session default, overriding whatever setting is present in <filename>postgresql.conf</filename> or has been received from the <command>postgres</command> command line. This only happens at login time; executing <xref linkend=\"sql-set-role\"/> or <xref linkend=\"sql-set-session-authorization\"/> does not cause new configuration values to be set. Settings set for all databases are overridden by database-specific settings attached to a role. Superusers can change anyone's session defaults. Roles having <literal>CREATEROLE</literal> privilege can change defaults for non-superuser roles. Ordinary roles can only set defaults for themselves. Certain configuration variables cannot be set this way, or can only be set if a superuser issues the command."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:107(title) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:107(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:113(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:113(para) 
 msgid "The name of the role whose attributes are to be altered."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:120(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:120(literal) 
 msgid "SUPERUSER"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:121(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:121(literal) 
 msgid "NOSUPERUSER"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:122(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:122(literal) 
 msgid "CREATEDB"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:123(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:123(literal) 
 msgid "NOCREATEDB"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:124(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:124(literal) 
 msgid "CREATEROLE"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:125(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:125(literal) 
 msgid "NOCREATEROLE"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:126(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:126(literal) 
 msgid "CREATEUSER"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:127(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:127(literal) 
 msgid "NOCREATEUSER"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:128(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:128(literal) 
 msgid "INHERIT"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:129(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:129(literal) 
 msgid "NOINHERIT"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:130(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:130(literal) 
 msgid "LOGIN"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:131(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:131(literal) 
 msgid "NOLOGIN"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:132(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:132(literal) 
 msgid "REPLICATION"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:133(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:133(literal) 
 msgid "NOREPLICATION"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:134(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:134(literal) 
 msgid "CONNECTION LIMIT"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:135(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:135(literal) 
 msgid "PASSWORD"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:136(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:136(literal) 
 msgid "ENCRYPTED"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:137(literal) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:137(literal) 
 msgid "UNENCRYPTED"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:138(term) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:138(term) 
 msgid "<literal>VALID UNTIL</literal> '<replaceable class=\"parameter\">timestamp</replaceable>'"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:140(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:140(para) 
 msgid "These clauses alter attributes originally set by <xref linkend=\"sql-createrole\"/>. For more information, see the <command>CREATE ROLE</command> reference page."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:151(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:151(para) 
 msgid "The new name of the role."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:160(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:160(para) 
 msgid "The name of the database the configuration variable should be set in."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:170(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:170(para) 
 msgid "Set this role's session default for the specified configuration parameter to the given value. If <replaceable>value</replaceable> is <literal>DEFAULT</literal> or, equivalently, <literal>RESET</literal> is used, the role-specific variable setting is removed, so the role will inherit the system-wide default setting in new sessions. Use <literal>RESET ALL</literal> to clear all role-specific settings. <literal>SET FROM CURRENT</literal> saves the session's current value of the parameter as the role-specific value. If <literal>IN DATABASE</literal> is specified, the configuration parameter is set or removed for the given role and database only."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:184(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:184(para) 
 msgid "Role-specific variable settings take effect only at login; <xref linkend=\"sql-set-role\"/> and <xref linkend=\"sql-set-session-authorization\"/> do not process role-specific variable settings."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:191(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:191(para) 
 msgid "See <xref linkend=\"sql-set\"/> and <xref linkend=\"runtime-config\"/> for more information about allowed parameter names and values."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:202(title) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:202(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:204(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:204(para) 
 msgid "Use <xref linkend=\"sql-createrole\"/> to add new roles, and <xref linkend=\"sql-droprole\"/> to remove a role."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:209(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:209(para) 
 msgid "<command>ALTER ROLE</command> cannot change a role's memberships. Use <xref linkend=\"sql-grant\"/> and <xref linkend=\"sql-revoke\"/> to do that."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:216(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:216(para) 
 msgid "Caution must be exercised when specifying an unencrypted password with this command. The password will be transmitted to the server in cleartext, and it might also be logged in the client's command history or the server log. <xref linkend=\"app-psql\"/> contains a command <command>\\password</command> that can be used to change a role's password without exposing the cleartext password."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:226(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:226(para) 
 msgid "It is also possible to tie a session default to a specific database rather than to a role; see <xref linkend=\"sql-alterdatabase\"/>. If there is a conflict, database-role-specific settings override role-specific ones, which in turn override database-specific ones."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:236(title) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:236(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:241(programlisting) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:241(programlisting) 
 #, no-wrap
 msgid "\nALTER ROLE davide WITH PASSWORD 'hu8jmn3';\n"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:238(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:238(para) 
 msgid "Change a role's password: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:249(programlisting) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:249(programlisting) 
 #, no-wrap
 msgid "\nALTER ROLE davide WITH PASSWORD NULL;\n"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:246(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:246(para) 
 msgid "Remove a role's password: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:258(programlisting) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:258(programlisting) 
 #, no-wrap
 msgid "\nALTER ROLE chris VALID UNTIL 'May 4 12:00:00 2015 +1';\n"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:254(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:254(para) 
 msgid "Change a password expiration date, specifying that the password should expire at midday on 4th May 2015 using the time zone which is one hour ahead of <acronym>UTC</acronym>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:265(programlisting) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:265(programlisting) 
 #, no-wrap
 msgid "\nALTER ROLE fred VALID UNTIL 'infinity';\n"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:263(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:263(para) 
 msgid "Make a password valid forever: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:273(programlisting) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:273(programlisting) 
 #, no-wrap
 msgid "\nALTER ROLE miriam CREATEROLE CREATEDB;\n"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:270(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:270(para) 
 msgid "Give a role the ability to create other roles and new databases: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:282(programlisting) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:282(programlisting) 
 #, no-wrap
 msgid "\nALTER ROLE worker_bee SET maintenance_work_mem = 100000;\n"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:278(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:278(para) 
 msgid "Give a role a non-default setting of the <xref linkend=\"guc-maintenance-work-mem\"/> parameter: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:291(programlisting) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:291(programlisting) 
 #, no-wrap
 msgid "\nALTER ROLE fred IN DATABASE devel SET client_min_messages = DEBUG;\n"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:287(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:287(para) 
 msgid "Give a role a non-default, database-specific setting of the <xref linkend=\"guc-client-min-messages\"/> parameter: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:297(title) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:297(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:299(para) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:299(para) 
 msgid "The <command>ALTER ROLE</command> statement is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-HQuM/ref/alter_role.xml:306(title) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:306(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-HQuM/ref/alter_role.xml:0(None) 
+#: /tmp/cicero-yNeh/ref/alter_role.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
