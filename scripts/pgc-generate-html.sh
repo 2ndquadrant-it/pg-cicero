@@ -99,7 +99,6 @@ cp -r $SRC_DIR/* $WORKDIR
 for f in $BLACKLIST
 do
 	mkdir -p `dirname $WORKDIR/$f`
-	cp $ORIG_DIR/$f $WORKDIR/$f
 done
 
 sed -i -e 's/&bookindex;/<!-- \&bookindex; -->/' $WORKDIR/postgres.xml
@@ -117,8 +116,8 @@ if [ -n "$4" ]
 then
 	mkdir -p $OUT_DIR/stylesheets
 	mkdir -p $OUT_DIR/images
-	cp $STYLESHEET_DIR/*.css $OUT_DIR/stylesheets/ 
-	cp $STYLESHEET_DIR/img/*.png $OUT_DIR/images/ 
+	cp $STYLESHEET_DIR/*.css $OUT_DIR/stylesheets/
+	cp $STYLESHEET_DIR/img/*.png $OUT_DIR/images/
 	sed -i -e "s|../stylesheets|stylesheets|g" $OUT_DIR/*.html
 	sed -i -e "s|../images|images|g" $OUT_DIR/*.html
 fi

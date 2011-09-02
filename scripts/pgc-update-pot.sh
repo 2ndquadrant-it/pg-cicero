@@ -92,7 +92,7 @@ do
 
 	mkdir -p `dirname $OUTPUT_FILE`
 	mkdir -p `dirname $WORKDIR/$INPUT_FILE`
-	
+
 	cp $SRC_DIR/$INPUT_FILE $WORKDIR/$INPUT_FILE
 
 	sed -i -e 's/&/&amp;/g' $WORKDIR/$INPUT_FILE
@@ -108,7 +108,7 @@ do
 	[ "$PROGRESSBAR" ] && echo -ne "$(progressbar_step $i)\r"
 
 	rm $WORKDIR/$INPUT_FILE
-	
+
 	sed -i -e 's/&amp;/\&/g' $OUTPUT_FILE
 
 	tot=$tot+1
