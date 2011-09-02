@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 09:50+0200\n"
+"POT-Creation-Date: 2011-09-02 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,98 +9,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:10(refentrytitle) /tmp/cicero-ywdq/ref/drop_domain.xml:16(refname) /tmp/cicero-ywdq/ref/drop_domain.xml:21(primary) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:10(refentrytitle) /tmp/cicero-mzvS/ref/drop_domain.xml:16(refname) /tmp/cicero-mzvS/ref/drop_domain.xml:21(primary) 
 msgid "DROP DOMAIN"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:11(manvolnum) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:12(refmiscinfo) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:17(refpurpose) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:17(refpurpose) 
 msgid "remove a domain"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:26(replaceable) /tmp/cicero-ywdq/ref/drop_domain.xml:54(replaceable) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:26(replaceable) /tmp/cicero-mzvS/ref/drop_domain.xml:54(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:25(synopsis) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:25(synopsis) 
 #, no-wrap
 msgid "\nDROP DOMAIN [ IF EXISTS ] <placeholder-1/> [, ...] [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:31(title) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:33(para) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:33(para) 
 msgid "<command>DROP DOMAIN</command> removes a domain. Only the owner of a domain can remove it."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:40(title) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:40(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:44(literal) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:44(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:46(para) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:46(para) 
 msgid "Do not throw an error if the domain does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:56(para) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:56(para) 
 msgid "The name (optionally schema-qualified) of an existing domain."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:63(literal) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:63(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:65(para) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:65(para) 
 msgid "Automatically drop objects that depend on the domain (such as table columns)."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:73(literal) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:73(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:75(para) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:75(para) 
 msgid "Refuse to drop the domain if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:85(title) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:85(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:90(programlisting) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:90(programlisting) 
 #, no-wrap
 msgid "\nDROP DOMAIN box;\n"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:87(para) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:87(para) 
 msgid "To remove the domain <type>box</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:96(title) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:96(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:98(para) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:98(para) 
 msgid "This command conforms to the SQL standard, except for the <literal>IF EXISTS</literal> option, which is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:106(title) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:106(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ywdq/ref/drop_domain.xml:0(None) 
+#: /tmp/cicero-mzvS/ref/drop_domain.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

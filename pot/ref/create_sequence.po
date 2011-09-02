@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 09:50+0200\n"
+"POT-Creation-Date: 2011-09-02 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,251 +9,251 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:10(refentrytitle) /tmp/cicero-ywdq/ref/create_sequence.xml:16(refname) /tmp/cicero-ywdq/ref/create_sequence.xml:21(primary) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:10(refentrytitle) /tmp/cicero-mzvS/ref/create_sequence.xml:16(refname) /tmp/cicero-mzvS/ref/create_sequence.xml:21(primary) 
 msgid "CREATE SEQUENCE"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:11(manvolnum) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:12(refmiscinfo) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:17(refpurpose) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:17(refpurpose) 
 msgid "define a new sequence generator"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:26(replaceable) /tmp/cicero-ywdq/ref/create_sequence.xml:95(replaceable) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:26(replaceable) /tmp/cicero-mzvS/ref/create_sequence.xml:95(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:26(replaceable) /tmp/cicero-ywdq/ref/create_sequence.xml:104(replaceable) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:26(replaceable) /tmp/cicero-mzvS/ref/create_sequence.xml:104(replaceable) 
 msgid "increment"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:27(replaceable) /tmp/cicero-ywdq/ref/create_sequence.xml:117(replaceable) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:27(replaceable) /tmp/cicero-mzvS/ref/create_sequence.xml:117(replaceable) 
 msgid "minvalue"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:27(replaceable) /tmp/cicero-ywdq/ref/create_sequence.xml:133(replaceable) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:27(replaceable) /tmp/cicero-mzvS/ref/create_sequence.xml:133(replaceable) 
 msgid "maxvalue"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:28(replaceable) /tmp/cicero-ywdq/ref/create_sequence.xml:149(replaceable) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:28(replaceable) /tmp/cicero-mzvS/ref/create_sequence.xml:149(replaceable) 
 msgid "start"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:28(replaceable) /tmp/cicero-ywdq/ref/create_sequence.xml:163(replaceable) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:28(replaceable) /tmp/cicero-mzvS/ref/create_sequence.xml:163(replaceable) 
 msgid "cache"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:29(replaceable) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:29(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:29(replaceable) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:29(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:25(synopsis) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:25(synopsis) 
 #, no-wrap
 msgid "\nCREATE [ TEMPORARY | TEMP ] SEQUENCE <placeholder-1/> [ INCREMENT [ BY ] <placeholder-2/> ]\n    [ MINVALUE <placeholder-3/> | NO MINVALUE ] [ MAXVALUE <placeholder-4/> | NO MAXVALUE ]\n    [ START [ WITH ] <placeholder-5/> ] [ CACHE <placeholder-6/> ] [ [ NO ] CYCLE ]\n    [ OWNED BY { <placeholder-7/>.<placeholder-8/> | NONE } ]\n"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:34(title) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:34(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:36(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:36(para) 
 msgid "<command>CREATE SEQUENCE</command> creates a new sequence number generator. This involves creating and initializing a new special single-row table with the name <replaceable class=\"parameter\">name</replaceable>. The generator will be owned by the user issuing the command."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:44(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:44(para) 
 msgid "If a schema name is given then the sequence is created in the specified schema. Otherwise it is created in the current schema. Temporary sequences exist in a special schema, so a schema name cannot be given when creating a temporary sequence. The sequence name must be distinct from the name of any other sequence, table, index, view, or foreign table in the same schema."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:53(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:53(para) 
 msgid "After a sequence is created, you use the functions <function>nextval</function>, <function>currval</function>, and <function>setval</function> to operate on the sequence. These functions are documented in <xref linkend=\"functions-sequence\"/>."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:65(programlisting) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:65(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM <replaceable>name</replaceable>;\n"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:62(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:62(para) 
 msgid "Although you cannot update a sequence directly, you can use a query like: <placeholder-1/> to examine the parameters and current state of a sequence. In particular, the <literal>last_value</literal> field of the sequence shows the last value allocated by any session. (Of course, this value might be obsolete by the time it's printed, if other sessions are actively doing <function>nextval</function> calls.)"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:78(title) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:78(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:82(term) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:82(term) 
 msgid "<literal>TEMPORARY</literal> or <literal>TEMP</literal>"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:84(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:84(para) 
 msgid "If specified, the sequence object is created only for this session, and is automatically dropped on session exit. Existing permanent sequences with the same name are not visible (in this session) while the temporary sequence exists, unless they are referenced with schema-qualified names."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:97(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:97(para) 
 msgid "The name (optionally schema-qualified) of the sequence to be created."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:106(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:106(para) 
 msgid "The optional clause <literal>INCREMENT BY <replaceable class=\"parameter\">increment</replaceable></literal> specifies which value is added to the current sequence value to create a new value. A positive value will make an ascending sequence, a negative one a descending sequence. The default value is 1."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:118(literal) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:118(literal) 
 msgid "NO MINVALUE"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:120(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:120(para) 
 msgid "The optional clause <literal>MINVALUE <replaceable class=\"parameter\">minvalue</replaceable></literal> determines the minimum value a sequence can generate. If this clause is not supplied or <option>NO MINVALUE</option> is specified, then defaults will be used. The defaults are 1 and -2<superscript>63</superscript>-1 for ascending and descending sequences, respectively."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:134(literal) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:134(literal) 
 msgid "NO MAXVALUE"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:136(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:136(para) 
 msgid "The optional clause <literal>MAXVALUE <replaceable class=\"parameter\">maxvalue</replaceable></literal> determines the maximum value for the sequence. If this clause is not supplied or <option>NO MAXVALUE</option> is specified, then default values will be used. The defaults are 2<superscript>63</superscript>-1 and -1 for ascending and descending sequences, respectively."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:151(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:151(para) 
 msgid "The optional clause <literal>START WITH <replaceable class=\"parameter\">start</replaceable></literal> allows the sequence to begin anywhere. The default starting value is <replaceable class=\"parameter\">minvalue</replaceable> for ascending sequences and <replaceable class=\"parameter\">maxvalue</replaceable> for descending ones."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:165(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:165(para) 
 msgid "The optional clause <literal>CACHE <replaceable class=\"parameter\">cache</replaceable></literal> specifies how many sequence numbers are to be preallocated and stored in memory for faster access. The minimum value is 1 (only one value can be generated at a time, i.e., no cache), and this is also the default."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:177(literal) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:177(literal) 
 msgid "CYCLE"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:178(literal) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:178(literal) 
 msgid "NO CYCLE"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:180(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:180(para) 
 msgid "The <literal>CYCLE</literal> option allows the sequence to wrap around when the <replaceable class=\"parameter\">maxvalue</replaceable> or <replaceable class=\"parameter\">minvalue</replaceable> has been reached by an ascending or descending sequence respectively. If the limit is reached, the next number generated will be the <replaceable class=\"parameter\">minvalue</replaceable> or <replaceable class=\"parameter\">maxvalue</replaceable>, respectively."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:191(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:191(para) 
 msgid "If <literal>NO CYCLE</literal> is specified, any calls to <function>nextval</function> after the sequence has reached its maximum value will return an error. If neither <literal>CYCLE</literal> or <literal>NO CYCLE</literal> are specified, <literal>NO CYCLE</literal> is the default."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:202(term) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:202(term) 
 msgid "<literal>OWNED BY</literal><replaceable class=\"parameter\">table</replaceable>.<replaceable class=\"parameter\">column</replaceable>"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:203(literal) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:203(literal) 
 msgid "OWNED BY NONE"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:205(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:205(para) 
 msgid "The <literal>OWNED BY</literal> option causes the sequence to be associated with a specific table column, such that if that column (or its whole table) is dropped, the sequence will be automatically dropped as well. The specified table must have the same owner and be in the same schema as the sequence. <literal>OWNED BY NONE</literal>, the default, specifies that there is no such association."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:220(title) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:220(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:222(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:222(para) 
 msgid "Use <command>DROP SEQUENCE</command> to remove a sequence."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:226(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:226(para) 
 msgid "Sequences are based on <type>bigint</type> arithmetic, so the range cannot exceed the range of an eight-byte integer (-9223372036854775808 to 9223372036854775807). On some older platforms, there might be no compiler support for eight-byte integers, in which case sequences use regular <type>integer</type> arithmetic (range -2147483648 to +2147483647)."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:235(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:235(para) 
 msgid "Unexpected results might be obtained if a <replaceable class=\"parameter\">cache</replaceable> setting greater than one is used for a sequence object that will be used concurrently by multiple sessions. Each session will allocate and cache successive sequence values during one access to the sequence object and increase the sequence object's <literal>last_value</literal> accordingly. Then, the next <replaceable class=\"parameter\">cache</replaceable>-1 uses of <function>nextval</function> within that session simply return the preallocated values without touching the sequence object. So, any numbers allocated but not used within a session will be lost when that session ends, resulting in <quote>holes</quote> in the sequence."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:250(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:250(para) 
 msgid "Furthermore, although multiple sessions are guaranteed to allocate distinct sequence values, the values might be generated out of sequence when all the sessions are considered. For example, with a <replaceable class=\"parameter\">cache</replaceable> setting of 10, session A might reserve values 1..10 and return <function>nextval</function>=1, then session B might reserve values 11..20 and return <function>nextval</function>=11 before session A has generated <literal>nextval</literal>=2. Thus, with a <replaceable class=\"parameter\">cache</replaceable> setting of one it is safe to assume that <function>nextval</function> values are generated sequentially; with a <replaceable class=\"parameter\">cache</replaceable> setting greater than one you should only assume that the <function>nextval</function> values are all distinct, not that they are generated purely sequentially. Also, <literal>last_value</literal> will reflect the latest value reserved by any session, whether or not it has yet been returned by <function>nextval</function>."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:270(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:270(para) 
 msgid "Another consideration is that a <function>setval</function> executed on such a sequence will not be noticed by other sessions until they have used up any preallocated values they have cached."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:278(title) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:278(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:282(programlisting) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:282(programlisting) 
 #, no-wrap
 msgid "\nCREATE SEQUENCE serial START 101;\n"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:280(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:280(para) 
 msgid "Create an ascending sequence called <literal>serial</literal>, starting at 101: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:289(programlisting) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:289(programlisting) 
 #, no-wrap
 msgid "\nSELECT nextval('serial');\n\n nextval\n---------\n     101\n"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:287(para) /tmp/cicero-ywdq/ref/create_sequence.xml:298(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:287(para) /tmp/cicero-mzvS/ref/create_sequence.xml:298(para) 
 msgid "Select the next number from this sequence: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:300(programlisting) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:300(programlisting) 
 #, no-wrap
 msgid "\nSELECT nextval('serial');\n\n nextval\n---------\n     102\n"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:311(programlisting) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:311(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO distributors VALUES (nextval('serial'), 'nothing');\n"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:309(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:309(para) 
 msgid "Use this sequence in an <command>INSERT</command> command: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:318(programlisting) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:318(programlisting) 
 #, no-wrap
 msgid "\nBEGIN;\nCOPY distributors FROM 'input_file';\nSELECT setval('serial', max(id)) FROM distributors;\nEND;\n"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:316(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:316(para) 
 msgid "Update the sequence value after a <command>COPY FROM</command>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:327(title) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:327(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:334(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:334(para) 
 msgid "The standard's <literal>AS &lt;data type&gt;</literal> expression is not supported."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:340(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:340(para) 
 msgid "Obtaining the next value is done using the <function>nextval()</function> function instead of the standard's <command>NEXT VALUE FOR</command> expression."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:347(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:347(para) 
 msgid "The <literal>OWNED BY</literal> clause is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:329(para) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:329(para) 
 msgid "<command>CREATE SEQUENCE</command> conforms to the <acronym>SQL</acronym> standard, with the following exceptions: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:356(title) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:356(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ywdq/ref/create_sequence.xml:0(None) 
+#: /tmp/cicero-mzvS/ref/create_sequence.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
