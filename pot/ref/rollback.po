@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:30+0200\n"
+"POT-Creation-Date: 2011-09-02 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,90 +9,90 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-hapq/ref/rollback.xml:10(refentrytitle) /tmp/cicero-hapq/ref/rollback.xml:16(refname) /tmp/cicero-hapq/ref/rollback.xml:21(primary) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:9(refentrytitle) /tmp/cicero-GNkR/ref/rollback.xml:15(refname) /tmp/cicero-GNkR/ref/rollback.xml:20(primary) 
 msgid "ROLLBACK"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:11(manvolnum) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:12(refmiscinfo) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:17(refpurpose) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:16(refpurpose) 
 msgid "abort the current transaction"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:25(synopsis) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:24(synopsis) 
 #, no-wrap
 msgid "\nROLLBACK [ WORK | TRANSACTION ]\n"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:31(title) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:33(para) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:32(para) 
 msgid "<command>ROLLBACK</command> rolls back the current transaction and causes all the updates made by the transaction to be discarded."
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:40(title) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:39(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:44(literal) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:43(literal) 
 msgid "WORK"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:45(literal) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:44(literal) 
 msgid "TRANSACTION"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:47(para) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:46(para) 
 msgid "Optional key words. They have no effect."
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:56(title) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:55(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:58(para) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:57(para) 
 msgid "Use <xref linkend=\"sql-commit\"/> to successfully terminate a transaction."
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:63(para) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:62(para) 
 msgid "Issuing <command>ROLLBACK</command> when not inside a transaction does no harm, but it will provoke a warning message."
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:70(title) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:69(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:74(programlisting) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:73(programlisting) 
 #, no-wrap
 msgid "\nROLLBACK;\n"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:72(para) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:71(para) 
 msgid "To abort all changes: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:80(title) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:79(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:82(para) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:81(para) 
 msgid "The SQL standard only specifies the two forms <literal>ROLLBACK</literal> and <literal>ROLLBACK WORK</literal>. Otherwise, this command is fully conforming."
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/rollback.xml:90(title) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:89(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-hapq/ref/rollback.xml:0(None) 
+#: /tmp/cicero-GNkR/ref/rollback.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

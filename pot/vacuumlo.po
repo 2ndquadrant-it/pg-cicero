@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:31+0200\n"
+"POT-Creation-Date: 2011-09-02 11:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,145 +9,145 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-hapq/vacuumlo.xml:6(title) /tmp/cicero-hapq/vacuumlo.xml:9(primary) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:5(title) /tmp/cicero-GNkR/vacuumlo.xml:8(primary) 
 msgid "vacuumlo"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:12(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:11(para) 
 msgid "<application>vacuumlo</application> is a simple utility program that will remove any <quote>orphaned</quote> large objects from a <productname>PostgreSQL</productname> database. An orphaned large object (LO) is considered to be any LO whose OID does not appear in any <type>oid</type> or <type>lo</type> data column of the database."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:20(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:19(para) 
 msgid "If you use this, you may also be interested in the <function>lo_manage</function> trigger in the <xref linkend=\"lo\"/> module. <function>lo_manage</function> is useful to try to avoid creating orphaned LOs in the first place."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:28(title) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:27(title) 
 msgid "Usage"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:30(synopsis) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:29(synopsis) 
 #, no-wrap
 msgid "\nvacuumlo [options] database [database2 ... databaseN]\n"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:34(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:33(para) 
 msgid "All databases named on the command line are processed. Available options include:"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:41(option) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:40(option) 
 msgid "-v"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:43(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:42(para) 
 msgid "Write a lot of progress messages."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:48(option) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:47(option) 
 msgid "-n"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:50(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:49(para) 
 msgid "Don't remove anything, just show what would be done."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:55(option) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:54(option) 
 msgid "-U"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:55(replaceable) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:54(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:57(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:56(para) 
 msgid "User name to connect as."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:62(option) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:61(option) 
 msgid "-l"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:62(replaceable) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:61(replaceable) 
 msgid "limit"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:64(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:63(para) 
 msgid "Stop after removing LIMIT large objects. Useful to avoid exceeding <xref linkend=\"guc-max-locks-per-transaction\"/>."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:72(option) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:71(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:73(option) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:72(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:75(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:74(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:86(option) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:85(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:88(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:87(para) 
 msgid "Force <application>vacuumlo</application> to prompt for a password before connecting to a database."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:93(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:92(para) 
 msgid "This option is never essential, since <application>vacuumlo</application> will automatically prompt for a password if the server demands password authentication. However, <application>vacuumlo</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:106(option) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:105(option) 
 msgid "-h"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:106(replaceable) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:105(replaceable) 
 msgid "hostname"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:108(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:107(para) 
 msgid "Database server's host."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:113(option) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:112(option) 
 msgid "-p"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:113(replaceable) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:112(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:115(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:114(para) 
 msgid "Database server's port."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:122(title) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:121(title) 
 msgid "Method"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:124(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:123(para) 
 msgid "First, it builds a temporary table which contains all of the OIDs of the large objects in that database."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:129(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:128(para) 
 msgid "It then scans through all columns in the database that are of type <type>oid</type> or <type>lo</type>, and removes matching entries from the temporary table."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:135(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:134(para) 
 msgid "The remaining entries in the temp table identify orphaned LOs. These are removed."
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:142(title) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:141(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-hapq/vacuumlo.xml:144(para) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:143(para) 
 msgid "Peter Mount <email>peter@retep.org.uk</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-hapq/vacuumlo.xml:0(None) 
+#: /tmp/cicero-GNkR/vacuumlo.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:30+0200\n"
+"POT-Creation-Date: 2011-09-02 11:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,111 +9,111 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:10(refentrytitle) /tmp/cicero-hapq/ref/alter_conversion.xml:16(refname) /tmp/cicero-hapq/ref/alter_conversion.xml:21(primary) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:9(refentrytitle) /tmp/cicero-GNkR/ref/alter_conversion.xml:15(refname) /tmp/cicero-GNkR/ref/alter_conversion.xml:20(primary) 
 msgid "ALTER CONVERSION"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:11(manvolnum) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:12(refmiscinfo) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:17(refpurpose) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:16(refpurpose) 
 msgid "change the definition of a conversion"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:26(replaceable) /tmp/cicero-hapq/ref/alter_conversion.xml:27(replaceable) /tmp/cicero-hapq/ref/alter_conversion.xml:28(replaceable) /tmp/cicero-hapq/ref/alter_conversion.xml:56(replaceable) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:25(replaceable) /tmp/cicero-GNkR/ref/alter_conversion.xml:26(replaceable) /tmp/cicero-GNkR/ref/alter_conversion.xml:27(replaceable) /tmp/cicero-GNkR/ref/alter_conversion.xml:55(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:26(replaceable) /tmp/cicero-hapq/ref/alter_conversion.xml:65(replaceable) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:25(replaceable) /tmp/cicero-GNkR/ref/alter_conversion.xml:64(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:27(replaceable) /tmp/cicero-hapq/ref/alter_conversion.xml:74(replaceable) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:26(replaceable) /tmp/cicero-GNkR/ref/alter_conversion.xml:73(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:28(replaceable) /tmp/cicero-hapq/ref/alter_conversion.xml:83(replaceable) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:27(replaceable) /tmp/cicero-GNkR/ref/alter_conversion.xml:82(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:25(synopsis) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER CONVERSION <placeholder-1/> RENAME TO <placeholder-2/>\nALTER CONVERSION <placeholder-3/> OWNER TO <placeholder-4/>\nALTER CONVERSION <placeholder-5/> SET SCHEMA <placeholder-6/>\n"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:33(title) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:35(para) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:34(para) 
 msgid "<command>ALTER CONVERSION</command> changes the definition of a conversion."
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:40(para) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:39(para) 
 msgid "You must own the conversion to use <command>ALTER CONVERSION</command>. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the conversion's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the conversion. However, a superuser can alter ownership of any conversion anyway.)"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:52(title) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:51(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:58(para) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:57(para) 
 msgid "The name (optionally schema-qualified) of an existing conversion."
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:67(para) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:66(para) 
 msgid "The new name of the conversion."
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:76(para) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:75(para) 
 msgid "The new owner of the conversion."
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:85(para) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:84(para) 
 msgid "The new schema for the conversion."
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:94(title) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:93(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:99(programlisting) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:98(programlisting) 
 #, no-wrap
 msgid "\nALTER CONVERSION iso_8859_1_to_utf8 RENAME TO latin1_to_unicode;\n"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:96(para) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:95(para) 
 msgid "To rename the conversion <literal>iso_8859_1_to_utf8</literal> to <literal>latin1_to_unicode</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:107(programlisting) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:106(programlisting) 
 #, no-wrap
 msgid "\nALTER CONVERSION iso_8859_1_to_utf8 OWNER TO joe;\n"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:104(para) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:103(para) 
 msgid "To change the owner of the conversion <literal>iso_8859_1_to_utf8</literal> to <literal>joe</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:113(title) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:112(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:115(para) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:114(para) 
 msgid "There is no <command>ALTER CONVERSION</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:122(title) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:121(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-hapq/ref/alter_conversion.xml:0(None) 
+#: /tmp/cicero-GNkR/ref/alter_conversion.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
