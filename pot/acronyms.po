@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:17+0200\n"
+"POT-Creation-Date: 2011-09-02 11:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,604 +9,604 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-UeFp/acronyms.xml:5(title) 
+#: /tmp/cicero-HQuM/acronyms.xml:5(title) 
 msgid "Acronyms"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:14(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:14(acronym) 
 msgid "ANSI"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:17(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:17(ulink) 
 msgid "American National Standards Institute"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:24(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:24(acronym) 
 msgid "API"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:27(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:27(ulink) 
 msgid "Application Programming Interface"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:33(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:33(acronym) 
 msgid "ASCII"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:36(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:36(ulink) 
 msgid "American Standard Code for Information Interchange"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:43(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:43(acronym) 
 msgid "BKI"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:46(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:46(link) 
 msgid "Backend Interface"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:52(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:52(acronym) 
 msgid "CA"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:55(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:55(ulink) 
 msgid "Certificate Authority"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:61(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:61(acronym) 
 msgid "CIDR"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:65(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:65(ulink) 
 msgid "Classless Inter-Domain Routing"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:72(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:72(acronym) 
 msgid "CPAN"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:75(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:75(ulink) 
 msgid "Comprehensive Perl Archive Network"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:81(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:81(acronym) 
 msgid "CRL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:85(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:85(ulink) 
 msgid "Certificate Revocation List"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:92(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:92(acronym) 
 msgid "CSV"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:96(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:96(ulink) 
 msgid "Comma Separated Values"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:103(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:103(acronym) 
 msgid "CTE"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:106(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:106(link) 
 msgid "Common Table Expression"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:112(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:112(acronym) 
 msgid "CVE"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:115(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:115(ulink) 
 msgid "Common Vulnerabilities and Exposures"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:121(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:121(acronym) 
 msgid "DBA"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:125(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:125(ulink) 
 msgid "Database Administrator"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:132(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:132(acronym) 
 msgid "DBI"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:135(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:135(ulink) 
 msgid "Database Interface (Perl)"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:141(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:141(acronym) 
 msgid "DBMS"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:144(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:144(ulink) 
 msgid "Database Management System"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:151(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:151(acronym) 
 msgid "DDL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:153(para) 
+#: /tmp/cicero-HQuM/acronyms.xml:153(para) 
 msgid "<ulink url=\"http://en.wikipedia.org/wiki/Data_Definition_Language\">Data Definition Language</ulink>, SQL commands such as <command>CREATE TABLE</command>, <command>ALTER USER</command>"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:163(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:163(acronym) 
 msgid "DML"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:165(para) 
+#: /tmp/cicero-HQuM/acronyms.xml:165(para) 
 msgid "<ulink url=\"http://en.wikipedia.org/wiki/Data_Manipulation_Language\">Data Manipulation Language</ulink>, SQL commands such as <command>INSERT</command>, <command>UPDATE</command>, <command>DELETE</command>"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:175(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:175(acronym) 
 msgid "DST"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:179(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:179(ulink) 
 msgid "Daylight Saving Time"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:186(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:186(acronym) 
 msgid "ECPG"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:189(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:189(link) 
 msgid "Embedded C for PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:195(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:195(acronym) 
 msgid "ESQL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:198(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:198(ulink) 
 msgid "Embedded SQL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:205(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:205(acronym) 
 msgid "FAQ"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:208(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:208(ulink) 
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:215(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:215(acronym) 
 msgid "FSM"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:218(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:218(link) 
 msgid "Free Space Map"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:224(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:224(acronym) 
 msgid "GEQO"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:227(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:227(link) 
 msgid "Genetic Query Optimizer"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:233(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:233(acronym) 
 msgid "GIN"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:236(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:236(link) 
 msgid "Generalized Inverted Index"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:242(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:242(acronym) 
 msgid "GiST"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:245(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:245(link) 
 msgid "Generalized Search Tree"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:251(acronym) /tmp/cicero-UeFp/acronyms.xml:255(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:251(acronym) /tmp/cicero-HQuM/acronyms.xml:255(ulink) 
 msgid "Git"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:261(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:261(acronym) 
 msgid "GMT"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:264(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:264(ulink) 
 msgid "Greenwich Mean Time"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:270(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:270(acronym) 
 msgid "GSSAPI"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:274(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:274(ulink) 
 msgid "Generic Security Services Application Programming Interface"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:281(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:281(acronym) 
 msgid "GUC"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:283(para) 
+#: /tmp/cicero-HQuM/acronyms.xml:283(para) 
 msgid "<link linkend=\"config-setting\">Grand Unified Configuration</link>, the <productname>PostgreSQL</productname> subsystem that handles server configuration"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:291(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:291(acronym) 
 msgid "HBA"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:294(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:294(link) 
 msgid "Host-Based Authentication"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:300(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:300(acronym) 
 msgid "HOT"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:304(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:304(ulink) 
 msgid "Heap-Only Tuples"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:311(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:311(acronym) 
 msgid "IEC"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:315(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:315(ulink) 
 msgid "International Electrotechnical Commission"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:322(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:322(acronym) 
 msgid "IEEE"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:325(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:325(ulink) 
 msgid "Institute of Electrical and Electronics Engineers"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:332(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:332(acronym) 
 msgid "IPC"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:336(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:336(ulink) 
 msgid "Inter-Process Communication"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:343(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:343(acronym) 
 msgid "ISO"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:346(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:346(ulink) 
 msgid "International Organization for Standardization"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:353(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:353(acronym) 
 msgid "ISSN"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:356(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:356(ulink) 
 msgid "International Standard Serial Number"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:363(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:363(acronym) 
 msgid "JDBC"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:367(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:367(ulink) 
 msgid "Java Database Connectivity"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:374(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:374(acronym) 
 msgid "LDAP"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:378(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:378(ulink) 
 msgid "Lightweight Directory Access Protocol"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:385(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:385(acronym) 
 msgid "MSVC"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:389(productname) 
+#: /tmp/cicero-HQuM/acronyms.xml:389(productname) 
 msgid "Microsoft Visual C"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:396(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:396(acronym) 
 msgid "MVCC"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:399(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:399(link) 
 msgid "Multi-Version Concurrency Control"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:405(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:405(acronym) 
 msgid "NLS"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:409(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:409(ulink) 
 msgid "National Language Support"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:416(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:416(acronym) 
 msgid "ODBC"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:420(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:420(ulink) 
 msgid "Open Database Connectivity"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:427(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:427(acronym) 
 msgid "OID"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:430(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:430(link) 
 msgid "Object Identifier"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:436(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:436(acronym) 
 msgid "OLAP"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:439(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:439(ulink) 
 msgid "Online Analytical Processing"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:446(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:446(acronym) 
 msgid "OLTP"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:449(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:449(ulink) 
 msgid "Online Transaction Processing"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:456(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:456(acronym) 
 msgid "ORDBMS"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:459(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:459(ulink) 
 msgid "Object-Relational Database Management System"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:466(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:466(acronym) 
 msgid "PAM"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:470(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:470(ulink) 
 msgid "Pluggable Authentication Modules"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:477(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:477(acronym) 
 msgid "PGSQL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:480(productname) /tmp/cicero-UeFp/acronyms.xml:489(productname) 
+#: /tmp/cicero-HQuM/acronyms.xml:480(productname) /tmp/cicero-HQuM/acronyms.xml:489(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:486(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:486(acronym) 
 msgid "PGXS"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:489(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:489(link) 
 msgid "<placeholder-1/> Extension System"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:495(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:495(acronym) 
 msgid "PID"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:498(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:498(ulink) 
 msgid "Process Identifier"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:504(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:504(acronym) 
 msgid "PITR"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:506(para) 
+#: /tmp/cicero-HQuM/acronyms.xml:506(para) 
 msgid "<link linkend=\"continuous-archiving\">Point-In-Time Recovery</link> (Continuous Archiving)"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:514(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:514(acronym) 
 msgid "PL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:517(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:517(link) 
 msgid "Procedural Languages (server-side)"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:523(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:523(acronym) 
 msgid "POSIX"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:526(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:526(ulink) 
 msgid "Portable Operating System Interface"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:533(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:533(acronym) 
 msgid "RDBMS"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:537(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:537(ulink) 
 msgid "Relational Database Management System"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:544(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:544(acronym) 
 msgid "RFC"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:548(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:548(ulink) 
 msgid "Request For Comments"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:555(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:555(acronym) 
 msgid "SGML"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:558(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:558(ulink) 
 msgid "Standard Generalized Markup Language"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:565(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:565(acronym) 
 msgid "SPI"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:568(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:568(link) 
 msgid "Server Programming Interface"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:574(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:574(acronym) 
 msgid "SQL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:577(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:577(ulink) 
 msgid "Structured Query Language"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:583(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:583(acronym) 
 msgid "SRF"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:586(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:586(link) 
 msgid "Set-Returning Function"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:592(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:592(acronym) 
 msgid "SSH"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:595(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:595(ulink) 
 msgid "Secure Shell"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:602(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:602(acronym) 
 msgid "SSL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:605(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:605(ulink) 
 msgid "Secure Sockets Layer"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:611(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:611(acronym) 
 msgid "SSPI"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:614(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:614(ulink) 
 msgid "Security Support Provider Interface"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:621(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:621(acronym) 
 msgid "SYSV"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:624(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:624(ulink) 
 msgid "Unix System V"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:630(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:630(acronym) 
 msgid "TCP/IP"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:634(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:634(ulink) 
 msgid "Transmission Control Protocol (TCP) / Internet Protocol (IP)"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:641(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:641(acronym) 
 msgid "TID"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:644(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:644(link) 
 msgid "Tuple Identifier"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:650(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:650(acronym) 
 msgid "TOAST"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:653(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:653(link) 
 msgid "The Oversized-Attribute Storage Technique"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:659(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:659(acronym) 
 msgid "TPC"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:662(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:662(ulink) 
 msgid "Transaction Processing Performance Council"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:669(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:669(acronym) 
 msgid "URL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:672(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:672(ulink) 
 msgid "Uniform Resource Locator"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:679(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:679(acronym) 
 msgid "UTC"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:683(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:683(ulink) 
 msgid "Coordinated Universal Time"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:690(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:690(acronym) 
 msgid "UTF"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:693(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:693(ulink) 
 msgid "Unicode Transformation Format"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:700(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:700(acronym) 
 msgid "UTF8"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:703(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:703(ulink) 
 msgid "Eight-Bit Unicode Transformation Format"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:710(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:710(acronym) 
 msgid "UUID"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:713(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:713(link) 
 msgid "Universally Unique Identifier"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:719(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:719(acronym) 
 msgid "WAL"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:722(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:722(link) 
 msgid "Write-Ahead Log"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:728(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:728(acronym) 
 msgid "XID"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:731(link) 
+#: /tmp/cicero-HQuM/acronyms.xml:731(link) 
 msgid "Transaction Identifier"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:737(acronym) 
+#: /tmp/cicero-HQuM/acronyms.xml:737(acronym) 
 msgid "XML"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:740(ulink) 
+#: /tmp/cicero-HQuM/acronyms.xml:740(ulink) 
 msgid "Extensible Markup Language"
 msgstr ""
 
-#: /tmp/cicero-UeFp/acronyms.xml:7(para) 
+#: /tmp/cicero-HQuM/acronyms.xml:7(para) 
 msgid "This is a list of acronyms commonly used in the <productname>PostgreSQL</productname> documentation and in discussions about <productname>PostgreSQL</productname>. <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-UeFp/acronyms.xml:0(None) 
+#: /tmp/cicero-HQuM/acronyms.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
