@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-01 06:56+0200\n"
+"POT-Creation-Date: 2011-09-02 09:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,1097 +9,1097 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-yKZa/high-availability.xml:5(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:5(title) 
 msgid "High Availability, Load Balancing, and Replication"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:7(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:7(primary) 
 msgid "high availability"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:8(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:8(primary) 
 msgid "failover"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:9(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:9(primary) 
 msgid "replication"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:10(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:10(primary) 
 msgid "load balancing"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:11(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:11(primary) 
 msgid "clustering"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:12(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:12(primary) 
 msgid "data partitioning"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:14(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:14(para) 
 msgid "Database servers can work together to allow a second server to take over quickly if the primary server fails (high availability), or to allow several computers to serve the same data (load balancing). Ideally, database servers could work together seamlessly. Web servers serving static web pages can be combined quite easily by merely load-balancing web requests to multiple machines. In fact, read-only database servers can be combined relatively easily too. Unfortunately, most database servers have a read/write mix of requests, and read/write servers are much harder to combine. This is because though read-only data needs to be placed on each server only once, a write to any server has to be propagated to all servers so that future read requests to those servers return consistent results."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:30(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:30(para) 
 msgid "This synchronization problem is the fundamental difficulty for servers working together. Because there is no single solution that eliminates the impact of the sync problem for all use cases, there are multiple solutions. Each solution addresses this problem in a different way, and minimizes its impact for a specific workload."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:39(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:39(para) 
 msgid "Some solutions deal with synchronization by allowing only one server to modify the data. Servers that can modify data are called read/write, <firstterm>master</firstterm> or <firstterm>primary</firstterm> servers. Servers that track changes in the master are called <firstterm>standby</firstterm> or <firstterm>slave</firstterm> servers. A standby server that cannot be connected to until it is promoted to a master server is called a <firstterm>warm standby</firstterm> server, and one that can accept connections and serves read-only queries is called a <firstterm>hot standby</firstterm> server."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:50(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:50(para) 
 msgid "Some solutions are synchronous, meaning that a data-modifying transaction is not considered committed until all servers have committed the transaction. This guarantees that a failover will not lose any data and that all load-balanced servers will return consistent results no matter which server is queried. In contrast, asynchronous solutions allow some delay between the time of a commit and its propagation to the other servers, opening the possibility that some transactions might be lost in the switch to a backup server, and that load balanced servers might return slightly stale results. Asynchronous communication is used when synchronous would be too slow."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:64(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:64(para) 
 msgid "Solutions can also be categorized by their granularity. Some solutions can deal only with an entire database server, while others allow control at the per-table or per-database level."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:70(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:70(para) 
 msgid "Performance must be considered in any choice. There is usually a trade-off between functionality and performance. For example, a fully synchronous solution over a slow network might cut performance by more than half, while an asynchronous one might have a minimal performance impact."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:78(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:78(para) 
 msgid "The remainder of this section outlines various failover, replication, and load balancing solutions. A <ulink url=\"http://www.postgres-r.org/documentation/terms\">glossary</ulink> is also available."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:86(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:86(title) 
 msgid "Comparison of Different Solutions"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:91(term) /tmp/cicero-yKZa/high-availability.xml:293(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:91(term) /tmp/cicero-OGqM/high-availability.xml:293(entry) 
 msgid "Shared Disk Failover"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:94(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:94(para) 
 msgid "Shared disk failover avoids synchronization overhead by having only one copy of the database. It uses a single disk array that is shared by multiple servers. If the main database server fails, the standby server is able to mount and start the database as though it were recovering from a database crash. This allows rapid failover with no data loss."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:102(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:102(para) 
 msgid "Shared hardware functionality is common in network storage devices. Using a network file system is also possible, though care must be taken that the file system has full <acronym>POSIX</acronym> behavior (see <xref linkend=\"creating-cluster-nfs\"/>). One significant limitation of this method is that if the shared disk array fails or becomes corrupt, the primary and standby servers are both nonfunctional. Another issue is that the standby server should never access the shared storage while the primary server is running."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:117(term) 
+#: /tmp/cicero-OGqM/high-availability.xml:117(term) 
 msgid "File System (Block-Device) Replication"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:120(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:120(para) 
 msgid "A modified version of shared hardware functionality is file system replication, where all changes to a file system are mirrored to a file system residing on another computer. The only restriction is that the mirroring must be done in a way that ensures the standby server has a consistent copy of the file system — specifically, writes to the standby must be done in the same order as those on the master. <productname>DRBD</productname> is a popular file system replication solution for Linux."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:144(term) 
+#: /tmp/cicero-OGqM/high-availability.xml:144(term) 
 msgid "Warm and Hot Standby Using Point-In-Time Recovery (<acronym>PITR</acronym>)"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:147(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:147(para) 
 msgid "Warm and hot standby servers can be kept current by reading a stream of write-ahead log (<acronym>WAL</acronym>) records. If the main server fails, the standby contains almost all of the data of the main server, and can be quickly made the new master database server. This is asynchronous and can only be done for the entire database server."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:155(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:155(para) 
 msgid "A PITR standby server can be implemented using file-based log shipping (<xref linkend=\"warm-standby\"/>) or streaming replication (see <xref linkend=\"streaming-replication\"/>), or a combination of both. For information on hot standby, see <xref linkend=\"hot-standby\"/>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:165(term) /tmp/cicero-yKZa/high-availability.xml:296(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:165(term) /tmp/cicero-OGqM/high-availability.xml:296(entry) 
 msgid "Trigger-Based Master-Standby Replication"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:168(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:168(para) 
 msgid "A master-standby replication setup sends all data modification queries to the master server. The master server asynchronously sends data changes to the standby server. The standby can answer read-only queries while the master server is running. The standby server is ideal for data warehouse queries."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:176(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:176(para) 
 msgid "<productname>Slony-I</productname> is an example of this type of replication, with per-table granularity, and support for multiple standby servers. Because it updates the standby server asynchronously (in batches), there is possible data loss during fail over."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:186(term) /tmp/cicero-yKZa/high-availability.xml:297(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:186(term) /tmp/cicero-OGqM/high-availability.xml:297(entry) 
 msgid "Statement-Based Replication Middleware"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:189(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:189(para) 
 msgid "With statement-based replication middleware, a program intercepts every SQL query and sends it to one or all servers. Each server operates independently. Read-write queries must be sent to all servers, so that every server receives any changes. But read-only queries can be sent to just one server, allowing the read workload to be distributed among them."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:198(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:198(para) 
 msgid "If queries are simply broadcast unmodified, functions like <function>random()</function>, <function>CURRENT_TIMESTAMP</function>, and sequences can have different values on different servers. This is because each server operates independently, and because SQL queries are broadcast (and not actual modified rows). If this is unacceptable, either the middleware or the application must query such values from a single server and then use those values in write queries. Another option is to use this replication option with a traditional master-standby setup, i.e. data modification queries are sent only to the master and are propagated to the standby servers via master-standby replication, not by the replication middleware. Care must also be taken that all transactions either commit or abort on all servers, perhaps using two-phase commit (<xref linkend=\"sql-prepare-transaction\"/> and <xref linkend=\"sql-commit-prepared\"/>. <productname>Pgpool-II</productname> and <productname>Continuent Tungsten</productname> are examples of this type of replication."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:221(term) /tmp/cicero-yKZa/high-availability.xml:298(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:221(term) /tmp/cicero-OGqM/high-availability.xml:298(entry) 
 msgid "Asynchronous Multimaster Replication"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:224(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:224(para) 
 msgid "For servers that are not regularly connected, like laptops or remote servers, keeping data consistent among servers is a challenge. Using asynchronous multimaster replication, each server works independently, and periodically communicates with the other servers to identify conflicting transactions. The conflicts can be resolved by users or conflict resolution rules. Bucardo is an example of this type of replication."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:237(term) /tmp/cicero-yKZa/high-availability.xml:299(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:237(term) /tmp/cicero-OGqM/high-availability.xml:299(entry) 
 msgid "Synchronous Multimaster Replication"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:240(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:240(para) 
 msgid "In synchronous multimaster replication, each server can accept write requests, and modified data is transmitted from the original server to every other server before each transaction commits. Heavy write activity can cause excessive locking, leading to poor performance. In fact, write performance is often worse than that of a single server. Read requests can be sent to any server. Some implementations use shared disk to reduce the communication overhead. Synchronous multimaster replication is best for mostly read workloads, though its big advantage is that any server can accept write requests — there is no need to partition workloads between master and standby servers, and because the data changes are sent from one server to another, there is no problem with non-deterministic functions like <function>random()</function>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:257(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:257(para) 
 msgid "<productname>PostgreSQL</productname> does not offer this type of replication, though <productname>PostgreSQL</productname> two-phase commit (<xref linkend=\"sql-prepare-transaction\"/> and <xref linkend=\"sql-commit-prepared\"/>) can be used to implement this in application code or middleware."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:268(term) 
+#: /tmp/cicero-OGqM/high-availability.xml:268(term) 
 msgid "Commercial Solutions"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:271(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:271(para) 
 msgid "Because <productname>PostgreSQL</productname> is open source and easily extended, a number of companies have taken <productname>PostgreSQL</productname> and created commercial closed-source solutions with unique failover, replication, and load balancing capabilities."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:282(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:282(para) 
 msgid "<xref linkend=\"high-availability-matrix\"/> summarizes the capabilities of the various solutions listed above."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:288(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:288(title) 
 msgid "High Availability, Load Balancing, and Replication Feature Matrix"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:292(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:292(entry) 
 msgid "Feature"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:294(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:294(entry) 
 msgid "File System Replication"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:295(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:295(entry) 
 msgid "Hot/Warm Standby Using PITR"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:306(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:306(entry) 
 msgid "Most Common Implementation"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:307(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:307(entry) 
 msgid "NAS"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:308(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:308(entry) 
 msgid "DRBD"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:309(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:309(entry) 
 msgid "PITR"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:310(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:310(entry) 
 msgid "Slony"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:311(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:311(entry) 
 msgid "pgpool-II"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:312(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:312(entry) 
 msgid "Bucardo"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:317(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:317(entry) 
 msgid "Communication Method"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:318(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:318(entry) 
 msgid "shared disk"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:319(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:319(entry) 
 msgid "disk blocks"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:320(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:320(entry) 
 msgid "WAL"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:321(entry) /tmp/cicero-yKZa/high-availability.xml:323(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:321(entry) /tmp/cicero-OGqM/high-availability.xml:323(entry) 
 msgid "table rows"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:322(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:322(entry) 
 msgid "SQL"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:324(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:324(entry) 
 msgid "table rows and row locks"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:328(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:328(entry) 
 msgid "No special hardware required"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:330(entry) /tmp/cicero-yKZa/high-availability.xml:331(entry) /tmp/cicero-yKZa/high-availability.xml:332(entry) /tmp/cicero-yKZa/high-availability.xml:333(entry) /tmp/cicero-yKZa/high-availability.xml:334(entry) /tmp/cicero-yKZa/high-availability.xml:335(entry) /tmp/cicero-yKZa/high-availability.xml:344(entry) /tmp/cicero-yKZa/high-availability.xml:345(entry) /tmp/cicero-yKZa/high-availability.xml:346(entry) /tmp/cicero-yKZa/high-availability.xml:351(entry) /tmp/cicero-yKZa/high-availability.xml:353(entry) /tmp/cicero-yKZa/high-availability.xml:355(entry) /tmp/cicero-yKZa/high-availability.xml:362(entry) /tmp/cicero-yKZa/high-availability.xml:364(entry) /tmp/cicero-yKZa/high-availability.xml:365(entry) /tmp/cicero-yKZa/high-availability.xml:367(entry) /tmp/cicero-yKZa/high-availability.xml:373(entry) /tmp/cicero-yKZa/high-availability.xml:374(entry) /tmp/cicero-yKZa/high-availability.xml:377(entry) /tmp/cicero-yKZa/high-availability.xml:379(entry) /tmp/cicero-yKZa/high-availability.xml:387(entry) /tmp/cicero-yKZa/high-availability.xml:388(entry) /tmp/cicero-yKZa/high-availability.xml:389(entry) /tmp/cicero-yKZa/high-availability.xml:390(entry) /tmp/cicero-yKZa/high-availability.xml:398(entry) /tmp/cicero-yKZa/high-availability.xml:400(entry) /tmp/cicero-yKZa/high-availability.xml:401(entry) /tmp/cicero-yKZa/high-availability.xml:406(entry) /tmp/cicero-yKZa/high-availability.xml:407(entry) /tmp/cicero-yKZa/high-availability.xml:408(entry) /tmp/cicero-yKZa/high-availability.xml:409(entry) /tmp/cicero-yKZa/high-availability.xml:412(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:330(entry) /tmp/cicero-OGqM/high-availability.xml:331(entry) /tmp/cicero-OGqM/high-availability.xml:332(entry) /tmp/cicero-OGqM/high-availability.xml:333(entry) /tmp/cicero-OGqM/high-availability.xml:334(entry) /tmp/cicero-OGqM/high-availability.xml:335(entry) /tmp/cicero-OGqM/high-availability.xml:344(entry) /tmp/cicero-OGqM/high-availability.xml:345(entry) /tmp/cicero-OGqM/high-availability.xml:346(entry) /tmp/cicero-OGqM/high-availability.xml:351(entry) /tmp/cicero-OGqM/high-availability.xml:353(entry) /tmp/cicero-OGqM/high-availability.xml:355(entry) /tmp/cicero-OGqM/high-availability.xml:362(entry) /tmp/cicero-OGqM/high-availability.xml:364(entry) /tmp/cicero-OGqM/high-availability.xml:365(entry) /tmp/cicero-OGqM/high-availability.xml:367(entry) /tmp/cicero-OGqM/high-availability.xml:373(entry) /tmp/cicero-OGqM/high-availability.xml:374(entry) /tmp/cicero-OGqM/high-availability.xml:377(entry) /tmp/cicero-OGqM/high-availability.xml:379(entry) /tmp/cicero-OGqM/high-availability.xml:387(entry) /tmp/cicero-OGqM/high-availability.xml:388(entry) /tmp/cicero-OGqM/high-availability.xml:389(entry) /tmp/cicero-OGqM/high-availability.xml:390(entry) /tmp/cicero-OGqM/high-availability.xml:398(entry) /tmp/cicero-OGqM/high-availability.xml:400(entry) /tmp/cicero-OGqM/high-availability.xml:401(entry) /tmp/cicero-OGqM/high-availability.xml:406(entry) /tmp/cicero-OGqM/high-availability.xml:407(entry) /tmp/cicero-OGqM/high-availability.xml:408(entry) /tmp/cicero-OGqM/high-availability.xml:409(entry) /tmp/cicero-OGqM/high-availability.xml:412(entry) 
 msgid "•"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:339(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:339(entry) 
 msgid "Allows multiple master servers"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:350(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:350(entry) 
 msgid "No master server overhead"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:361(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:361(entry) 
 msgid "No waiting for multiple servers"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:372(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:372(entry) 
 msgid "Master failure will never lose data"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:383(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:383(entry) 
 msgid "Standby accept read-only queries"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:386(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:386(entry) 
 msgid "Hot only"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:394(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:394(entry) 
 msgid "Per-table granularity"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:405(entry) 
+#: /tmp/cicero-OGqM/high-availability.xml:405(entry) 
 msgid "No conflict resolution necessary"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:419(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:419(para) 
 msgid "There are a few solutions that do not fit into the above categories:"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:426(term) 
+#: /tmp/cicero-OGqM/high-availability.xml:426(term) 
 msgid "Data Partitioning"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:429(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:429(para) 
 msgid "Data partitioning splits tables into data sets. Each set can be modified by only one server. For example, data can be partitioned by offices, e.g., London and Paris, with a server in each office. If queries combining London and Paris data are necessary, an application can query both servers, or master/standby replication can be used to keep a read-only copy of the other office's data on each server."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:442(term) 
+#: /tmp/cicero-OGqM/high-availability.xml:442(term) 
 msgid "Multiple-Server Parallel Query Execution"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:445(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:445(para) 
 msgid "Many of the above solutions allow multiple servers to handle multiple queries, but none allow a single query to use multiple servers to complete faster. This solution allows multiple servers to work concurrently on a single query. It is usually accomplished by splitting the data among servers and having each server execute its part of the query and return results to a central server where they are combined and returned to the user. <productname>Pgpool-II</productname> has this capability. Also, this can be implemented using the <productname>PL/Proxy</productname> tool set."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:466(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:466(title) 
 msgid "Log-Shipping Standby Servers"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:469(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:469(para) 
 msgid "Continuous archiving can be used to create a <firstterm>high availability</firstterm> (HA) cluster configuration with one or more <firstterm>standby servers</firstterm> ready to take over operations if the primary server fails. This capability is widely referred to as <firstterm>warm standby</firstterm> or <firstterm>log shipping</firstterm>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:477(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:477(para) 
 msgid "The primary and standby server work together to provide this capability, though the servers are only loosely coupled. The primary server operates in continuous archiving mode, while each standby server operates in continuous recovery mode, reading the WAL files from the primary. No changes to the database tables are required to enable this capability, so it offers low administration overhead compared to some other replication solutions. This configuration also has relatively low performance impact on the primary server."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:488(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:488(para) 
 msgid "Directly moving WAL records from one database server to another is typically described as log shipping. <productname>PostgreSQL</productname> implements file-based log shipping by transferring WAL records one file (WAL segment) at a time. WAL files (16MB) can be shipped easily and cheaply over any distance, whether it be to an adjacent system, another system at the same site, or another system on the far side of the globe. The bandwidth required for this technique varies according to the transaction rate of the primary server. Record-based log shipping is more granular and streams WAL changes incrementally over a network connection (see <xref linkend=\"streaming-replication\"/>)."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:502(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:502(para) 
 msgid "It should be noted that log shipping is asynchronous, i.e., the WAL records are shipped after transaction commit. As a result, there is a window for data loss should the primary server suffer a catastrophic failure; transactions not yet shipped will be lost. The size of the data loss window in file-based log shipping can be limited by use of the <varname>archive_timeout</varname> parameter, which can be set as low as a few seconds. However such a low setting will substantially increase the bandwidth required for file shipping. Streaming replication (see <xref linkend=\"streaming-replication\"/>) allows a much smaller window of data loss."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:515(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:515(para) 
 msgid "Recovery performance is sufficiently good that the standby will typically be only moments away from full availability once it has been activated. As a result, this is called a warm standby configuration which offers high availability. Restoring a server from an archived base backup and rollforward will take considerably longer, so that technique only offers a solution for disaster recovery, not high availability. A standby server can also be used for read-only queries, in which case it is called a Hot Standby server. See <xref linkend=\"hot-standby\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:529(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:529(primary) 
 msgid "warm standby"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:533(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:533(primary) 
 msgid "PITR standby"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:537(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:537(primary) 
 msgid "standby server"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:541(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:541(primary) 
 msgid "log shipping"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:545(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:545(primary) 
 msgid "witness server"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:549(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:549(primary) 
 msgid "STONITH"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:553(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:553(title) 
 msgid "Planning"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:555(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:555(para) 
 msgid "It is usually wise to create the primary and standby servers so that they are as similar as possible, at least from the perspective of the database server. In particular, the path names associated with tablespaces will be passed across unmodified, so both primary and standby servers must have the same mount paths for tablespaces if that feature is used. Keep in mind that if <xref linkend=\"sql-createtablespace\"/> is executed on the primary, any new mount point needed for it must be created on the primary and all standby servers before the command is executed. Hardware need not be exactly the same, but experience shows that maintaining two identical systems is easier than maintaining two dissimilar ones over the lifetime of the application and system. In any case the hardware architecture must be the same — shipping from, say, a 32-bit to a 64-bit system will not work."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:572(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:572(para) 
 msgid "In general, log shipping between servers running different major <productname>PostgreSQL</productname> release levels is not possible. It is the policy of the PostgreSQL Global Development Group not to make changes to disk formats during minor release upgrades, so it is likely that running different minor release levels on primary and standby servers will work successfully. However, no formal support for that is offered and you are advised to keep primary and standby servers at the same release level as much as possible. When updating to a new minor release, the safest policy is to update the standby servers first — a new minor release is more likely to be able to read WAL files from a previous minor release than vice versa."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:590(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:590(title) 
 msgid "Standby Server Operation"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:592(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:592(para) 
 msgid "In standby mode, the server continuously applies WAL received from the master server. The standby server can read WAL from a WAL archive (see <xref linkend=\"restore-command\"/>) or directly from the master over a TCP connection (streaming replication). The standby server will also attempt to restore any WAL found in the standby cluster's <filename>pg_xlog</filename> directory. That typically happens after a server restart, when the standby replays again WAL that was streamed from the master before the restart, but you can also manually copy files to <filename>pg_xlog</filename> at any time to have them replayed."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:604(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:604(para) 
 msgid "At startup, the standby begins by restoring all WAL available in the archive location, calling <varname>restore_command</varname>. Once it reaches the end of WAL available there and <varname>restore_command</varname> fails, it tries to restore any WAL available in the <filename>pg_xlog</filename> directory. If that fails, and streaming replication has been configured, the standby tries to connect to the primary server and start streaming WAL from the last valid record found in archive or <filename>pg_xlog</filename>. If that fails or streaming replication is not configured, or if the connection is later disconnected, the standby goes back to step 1 and tries to restore the file from the archive again. This loop of retries from the archive, <filename>pg_xlog</filename>, and via streaming replication goes on until the server is stopped or failover is triggered by a trigger file."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:619(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:619(para) 
 msgid "Standby mode is exited and the server switches to normal operation when <command>pg_ctl promote</command> is run or a trigger file is found (<varname>trigger_file</varname>). Before failover, any WAL immediately available in the archive or in <filename>pg_xlog</filename> will be restored, but no attempt is made to connect to the master."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:629(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:629(title) 
 msgid "Preparing the Master for Standby Servers"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:631(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:631(para) 
 msgid "Set up continuous archiving on the primary to an archive directory accessible from the standby, as described in <xref linkend=\"continuous-archiving\"/>. The archive location should be accessible from the standby even when the master is down, i.e. it should reside on the standby server itself or another trusted server, not on the master server."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:640(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:640(para) 
 msgid "If you want to use streaming replication, set up authentication on the primary server to allow replication connections from the standby server(s); that is, create a role and provide a suitable entry or entries in <filename>pg_hba.conf</filename> with the database field set to <literal>replication</literal>. Also ensure <varname>max_wal_senders</varname> is set to a sufficiently large value in the configuration file of the primary server."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:650(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:650(para) 
 msgid "Take a base backup as described in <xref linkend=\"backup-base-backup\"/> to bootstrap the standby server."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:657(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:657(title) 
 msgid "Setting Up a Standby Server"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:659(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:659(para) 
 msgid "To set up the standby server, restore the base backup taken from primary server (see <xref linkend=\"backup-pitr-recovery\"/>). Create a recovery command file <filename>recovery.conf</filename> in the standby's cluster data directory, and turn on <varname>standby_mode</varname>. Set <varname>restore_command</varname> to a simple command to copy files from the WAL archive. If you plan to have multiple standby servers for high availability purposes, set <varname>recovery_target_timeline</varname> to <literal>latest</literal>, to make the standby server follow the timeline change that occurs at failover to another standby."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:672(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:672(para) 
 msgid "Do not use pg_standby or similar tools with the built-in standby mode described here. <varname>restore_command</varname> should return immediately if the file does not exist; the server will retry the command again if necessary. See <xref linkend=\"log-shipping-alternative\"/> for using tools like pg_standby."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:681(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:681(para) 
 msgid "If you want to use streaming replication, fill in <varname>primary_conninfo</varname> with a libpq connection string, including the host name (or IP address) and any additional details needed to connect to the primary server. If the primary needs a password for authentication, the password needs to be specified in <varname>primary_conninfo</varname> as well."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:690(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:690(para) 
 msgid "If you're setting up the standby server for high availability purposes, set up WAL archiving, connections and authentication like the primary server, because the standby server will work as a primary server after failover."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:697(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:697(para) 
 msgid "If you're using a WAL archive, its size can be minimized using the <xref linkend=\"archive-cleanup-command\"/> parameter to remove files that are no longer required by the standby server. The <application>pg_archivecleanup</application> utility is designed specifically to be used with <varname>archive_cleanup_command</varname> in typical single-standby configurations, see <xref linkend=\"pgarchivecleanup\"/>. Note however, that if you're using the archive for backup purposes, you need to retain files needed to recover from at least the latest base backup, even if they're no longer needed by the standby."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:711(programlisting) 
+#: /tmp/cicero-OGqM/high-availability.xml:711(programlisting) 
 #, no-wrap
 msgid "\nstandby_mode = 'on'\nprimary_conninfo = 'host=192.168.1.50 port=5432 user=foo password=foopass'\nrestore_command = 'cp /path/to/archive/%f %p'\narchive_cleanup_command = 'pg_archivecleanup /path/to/archive %r'\n"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:709(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:709(para) 
 msgid "A simple example of a <filename>recovery.conf</filename> is: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:719(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:719(para) 
 msgid "You can have any number of standby servers, but if you use streaming replication, make sure you set <varname>max_wal_senders</varname> high enough in the primary to allow them to be connected simultaneously."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:728(title) /tmp/cicero-yKZa/high-availability.xml:731(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:728(title) /tmp/cicero-OGqM/high-availability.xml:731(primary) 
 msgid "Streaming Replication"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:734(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:734(para) 
 msgid "Streaming replication allows a standby server to stay more up-to-date than is possible with file-based log shipping. The standby connects to the primary, which streams WAL records to the standby as they're generated, without waiting for the WAL file to be filled."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:741(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:741(para) 
 msgid "Streaming replication is asynchronous, so there is still a small delay between committing a transaction in the primary and for the changes to become visible in the standby. The delay is however much smaller than with file-based log shipping, typically under one second assuming the standby is powerful enough to keep up with the load. With streaming replication, <varname>archive_timeout</varname> is not required to reduce the data loss window."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:751(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:751(para) 
 msgid "If you use streaming replication without file-based continuous archiving, you have to set <varname>wal_keep_segments</varname> in the master to a value high enough to ensure that old WAL segments are not recycled too early, while the standby might still need them to catch up. If the standby falls behind too much, it needs to be reinitialized from a new base backup. If you set up a WAL archive that's accessible from the standby, <varname>wal_keep_segments</varname> is not required as the standby can always use the archive to catch up."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:762(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:762(para) 
 msgid "To use streaming replication, set up a file-based log-shipping standby server as described in <xref linkend=\"warm-standby\"/>. The step that turns a file-based log-shipping standby into streaming replication standby is setting <varname>primary_conninfo</varname> setting in the <filename>recovery.conf</filename> file to point to the primary server. Set <xref linkend=\"guc-listen-addresses\"/> and authentication options (see <filename>pg_hba.conf</filename>) on the primary so that the standby server can connect to the <literal>replication</literal> pseudo-database on the primary server (see <xref linkend=\"streaming-replication-authentication\"/>)."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:774(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:774(para) 
 msgid "On systems that support the keepalive socket option, setting <xref linkend=\"guc-tcp-keepalives-idle\"/>, <xref linkend=\"guc-tcp-keepalives-interval\"/> and <xref linkend=\"guc-tcp-keepalives-count\"/> helps the primary promptly notice a broken connection."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:782(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:782(para) 
 msgid "Set the maximum number of concurrent connections from the standby servers (see <xref linkend=\"guc-max-wal-senders\"/> for details)."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:787(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:787(para) 
 msgid "When the standby is started and <varname>primary_conninfo</varname> is set correctly, the standby will connect to the primary after replaying all WAL files available in the archive. If the connection is established successfully, you will see a walreceiver process in the standby, and a corresponding walsender process in the primary."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:796(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:796(title) 
 msgid "Authentication"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:797(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:797(para) 
 msgid "It is very important that the access privileges for replication be set up so that only trusted users can read the WAL stream, because it is easy to extract privileged information from it. Standby servers must authenticate to the primary as an account that has the <literal>REPLICATION</literal> privilege. So a role with the <literal>REPLICATION</literal> and <literal>LOGIN</literal> privileges needs to be created on the primary."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:808(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:808(para) 
 msgid "It is recommended that a dedicated user account is used for replication. While the <literal>REPLICATION</literal> privilege is granted to superuser accounts by default, it is not recommended to use superuser accounts for replication. While <literal>REPLICATION</literal> privilege gives very high permissions, it does not allow the user to modify any data on the primary system, which the <literal>SUPERUSER</literal> privilege does."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:826(programlisting) 
+#: /tmp/cicero-OGqM/high-availability.xml:826(programlisting) 
 #, no-wrap
 msgid "\n# Allow the user \"foo\" from host 192.168.1.100 to connect to the primary\n# as a replication standby if the user's password is correctly supplied.\n#\n# TYPE  DATABASE        USER            ADDRESS                 METHOD\nhost    replication     foo             192.168.1.100/32        md5\n"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:818(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:818(para) 
 msgid "Client authentication for replication is controlled by a <filename>pg_hba.conf</filename> record specifying <literal>replication</literal> in the <replaceable>database</replaceable> field. For example, if the standby is running on host IP <literal>192.168.1.100</literal> and the account name for replication is <literal>foo</literal>, the administrator can add the following line to the <filename>pg_hba.conf</filename> file on the primary: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:846(programlisting) 
+#: /tmp/cicero-OGqM/high-availability.xml:846(programlisting) 
 #, no-wrap
 msgid "\n# The standby connects to the primary that is running on host 192.168.1.50\n# and port 5432 as the user \"foo\" whose password is \"foopass\".\nprimary_conninfo = 'host=192.168.1.50 port=5432 user=foo password=foopass'\n"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:834(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:834(para) 
 msgid "The host name and port number of the primary, connection user name, and password are specified in the <filename>recovery.conf</filename> file. The password can also be set in the <filename>~/.pgpass</filename> file on the standby (specify <literal>replication</literal> in the <replaceable>database</replaceable> field). For example, if the primary is running on host IP <literal>192.168.1.50</literal>, port <literal>5432</literal>, the account name for replication is <literal>foo</literal>, and the password is <literal>foopass</literal>, the administrator can add the following line to the <filename>recovery.conf</filename> file on the standby: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:855(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:855(title) 
 msgid "Monitoring"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:856(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:856(para) 
 msgid "An important health indicator of streaming replication is the amount of WAL records generated in the primary, but not yet applied in the standby. You can calculate this lag by comparing the current WAL write location on the primary with the last WAL location received by the standby. They can be retrieved using <function>pg_current_xlog_location</function> on the primary and the <function>pg_last_xlog_receive_location</function> on the standby, respectively (see <xref linkend=\"functions-admin-backup-table\"/> and <xref linkend=\"functions-recovery-info-table\"/> for details). The last WAL receive location in the standby is also displayed in the process status of the WAL receiver process, displayed using the <command>ps</command> command (see <xref linkend=\"monitoring-ps\"/> for details)."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:870(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:870(para) 
 msgid "You can retrieve a list of WAL sender processes via the <link linkend=\"monitoring-stats-views-table\"><literal>pg_stat_replication</literal></link> view. Large differences between <function>pg_current_xlog_location</function> and <literal>sent_location</literal> field might indicate that the master server is under heavy load, while differences between <literal>sent_location</literal> and <function>pg_last_xlog_receive_location</function> on the standby might indicate network delay, or that the standby is under heavy load."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:884(title) /tmp/cicero-yKZa/high-availability.xml:887(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:884(title) /tmp/cicero-OGqM/high-availability.xml:887(primary) 
 msgid "Synchronous Replication"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:890(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:890(para) 
 msgid "<productname>PostgreSQL</productname> streaming replication is asynchronous by default. If the primary server crashes then some transactions that were committed may not have been replicated to the standby server, causing data loss. The amount of data loss is proportional to the replication delay at the time of failover."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:899(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:899(para) 
 msgid "Synchronous replication offers the ability to confirm that all changes made by a transaction have been transferred to one synchronous standby server. This extends the standard level of durability offered by a transaction commit. This level of protection is referred to as 2-safe replication in computer science theory."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:907(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:907(para) 
 msgid "When requesting synchronous replication, each commit of a write transaction will wait until confirmation is received that the commit has been written to the transaction log on disk of both the primary and standby server. The only possibility that data can be lost is if both the primary and the standby suffer crashes at the same time. This can provide a much higher level of durability, though only if the sysadmin is cautious about the placement and management of the two servers. Waiting for confirmation increases the user's confidence that the changes will not be lost in the event of server crashes but it also necessarily increases the response time for the requesting transaction. The minimum wait time is the roundtrip time between primary to standby."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:921(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:921(para) 
 msgid "Read only transactions and transaction rollbacks need not wait for replies from standby servers. Subtransaction commits do not wait for responses from standby servers, only top-level commits. Long running actions such as data loading or index building do not wait until the very final commit message. All two-phase commit actions require commit waits, including both prepare and commit."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:931(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:931(title) 
 msgid "Basic Configuration"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:933(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:933(para) 
 msgid "Once streaming replication has been configured, configuring synchronous replication requires only one additional configuration step: <xref linkend=\"guc-synchronous-standby-names\"/> must be set to a non-empty value. <varname>synchronous_commit</varname> must also be set to <literal>on</literal>, but since this is the default value, typically no change is required. This configuration will cause each commit to wait for confirmation that the standby has written the commit record to durable storage, even if that takes a very long time. <varname>synchronous_commit</varname> can be set by individual users, so can be configured in the configuration file, for particular users or databases, or dynamically by applications, in order to control the durability guarantee on a per-transaction basis."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:948(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:948(para) 
 msgid "After a commit record has been written to disk on the primary, the WAL record is then sent to the standby. The standby sends reply messages each time a new batch of WAL data is written to disk, unless <varname>wal_receiver_status_interval</varname> is set to zero on the standby. If the standby is the first matching standby, as specified in <varname>synchronous_standby_names</varname> on the primary, the reply messages from that standby will be used to wake users waiting for confirmation that the commit record has been received. These parameters allow the administrator to specify which standby servers should be synchronous standbys. Note that the configuration of synchronous replication is mainly on the master."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:962(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:962(para) 
 msgid "Users will stop waiting if a fast shutdown is requested. However, as when using asynchronous replication, the server will does not fully shutdown until all outstanding WAL records are transferred to the currently connected standby servers."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:972(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:972(title) 
 msgid "Planning for Performance"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:974(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:974(para) 
 msgid "Synchronous replication usually requires carefully planned and placed standby servers to ensure applications perform acceptably. Waiting doesn't utilise system resources, but transaction locks continue to be held until the transfer is confirmed. As a result, incautious use of synchronous replication will reduce performance for database applications because of increased response times and higher contention."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:983(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:983(para) 
 msgid "<productname>PostgreSQL</productname> allows the application developer to specify the durability level required via replication. This can be specified for the system overall, though it can also be specified for specific users or connections, or even individual transactions."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:990(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:990(para) 
 msgid "For example, an application workload might consist of: 10% of changes are important customer details, while 90% of changes are less important data that the business can more easily survive if it is lost, such as chat messages between users."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:997(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:997(para) 
 msgid "With synchronous replication options specified at the application level (on the primary) we can offer synchronous replication for the most important changes, without slowing down the bulk of the total workload. Application level options are an important and practical tool for allowing the benefits of synchronous replication for high performance applications."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1005(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1005(para) 
 msgid "You should consider that the network bandwidth must be higher than the rate of generation of WAL data."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1013(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:1013(title) 
 msgid "Planning for High Availability"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1015(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1015(para) 
 msgid "Commits made when <varname>synchronous_commit</varname> is set to <literal>on</literal> will wait until the sync standby responds. The response may never occur if the last, or only, standby should crash."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1021(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1021(para) 
 msgid "The best solution for avoiding data loss is to ensure you don't lose your last remaining sync standby. This can be achieved by naming multiple potential synchronous standbys using <varname>synchronous_standby_names</varname>. The first named standby will be used as the synchronous standby. Standbys listed after this will take over the role of synchronous standby if the first one should fail."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1030(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1030(para) 
 msgid "When a standby first attaches to the primary, it will not yet be properly synchronized. This is described as <literal>CATCHUP</literal> mode. Once the lag between standby and primary reaches zero for the first time we move to real-time <literal>STREAMING</literal> state. The catch-up duration may be long immediately after the standby has been created. If the standby is shut down, then the catch-up period will increase according to the length of time the standby has been down. The standby is only able to become a synchronous standby once it has reached <literal>STREAMING</literal> state."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1042(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1042(para) 
 msgid "If primary restarts while commits are waiting for acknowledgement, those waiting transactions will be marked fully committed once the primary database recovers. There is no way to be certain that all standbys have received all outstanding WAL data at time of the crash of the primary. Some transactions may not show as committed on the standby, even though they show as committed on the primary. The guarantee we offer is that the application will not receive explicit acknowledgement of the successful commit of a transaction until the WAL data is known to be safely received by the standby."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1055(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1055(para) 
 msgid "If you really do lose your last standby server then you should disable <varname>synchronous_standby_names</varname> and reload the configuration file on the primary server."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1061(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1061(para) 
 msgid "If the primary is isolated from remaining standby servers you should fail over to the best candidate of those other remaining standby servers."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1066(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1066(para) 
 msgid "If you need to re-create a standby server while transactions are waiting, make sure that the commands to run pg_start_backup() and pg_stop_backup() are run in a session with <varname>synchronous_commit</varname> = <literal>off</literal>, otherwise those requests will wait forever for the standby to appear."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1079(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:1079(title) 
 msgid "Failover"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1081(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1081(para) 
 msgid "If the primary server fails then the standby server should begin failover procedures."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1086(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1086(para) 
 msgid "If the standby server fails then no failover need take place. If the standby server can be restarted, even some time later, then the recovery process can also be restarted immediately, taking advantage of restartable recovery. If the standby server cannot be restarted, then a full new standby server instance should be created."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1094(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1094(para) 
 msgid "If the primary server fails and the standby server becomes the new primary, and then the old primary restarts, you must have a mechanism for informing the old primary that it is no longer the primary. This is sometimes known as <acronym>STONITH</acronym> (Shoot The Other Node In The Head), which is necessary to avoid situations where both systems think they are the primary, which will lead to confusion and ultimately data loss."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1103(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1103(para) 
 msgid "Many failover systems use just two systems, the primary and the standby, connected by some kind of heartbeat mechanism to continually verify the connectivity between the two and the viability of the primary. It is also possible to use a third system (called a witness server) to prevent some cases of inappropriate failover, but the additional complexity might not be worthwhile unless it is set up with sufficient care and rigorous testing."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1113(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1113(para) 
 msgid "<productname>PostgreSQL</productname> does not provide the system software required to identify a failure on the primary and notify the standby database server. Many such tools exist and are well integrated with the operating system facilities required for successful failover, such as IP address migration."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1121(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1121(para) 
 msgid "Once failover to the standby occurs, there is only a single server in operation. This is known as a degenerate state. The former standby is now the primary, but the former primary is down and might stay down. To return to normal operation, a standby server must be recreated, either on the former primary system when it comes up, or on a third, possibly new, system. Once complete, the primary and standby can be considered to have switched roles. Some people choose to use a third server to provide backup for the new primary until the new standby server is recreated, though clearly this complicates the system configuration and operational processes."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1136(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1136(para) 
 msgid "So, switching from primary to standby server can be fast but requires some time to re-prepare the failover cluster. Regular switching from primary to standby is useful, since it allows regular downtime on each system for maintenance. This also serves as a test of the failover mechanism to ensure that it will really work when you need it. Written administration procedures are advised."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1145(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1145(para) 
 msgid "To trigger failover of a log-shipping standby server, run <command>pg_ctl promote</command> or create a trigger file with the file name and path specified by the <varname>trigger_file</varname> setting in <filename>recovery.conf</filename>. If you're planning to use <command>pg_ctl promote</command> to fail over, <varname>trigger_file</varname> is not required. If you're setting up the reporting servers that are only used to offload read-only queries from the primary, not for high availability purposes, you don't need to promote it."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1158(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:1158(title) 
 msgid "Alternative Method for Log Shipping"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1160(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1160(para) 
 msgid "An alternative to the built-in standby mode described in the previous sections is to use a <varname>restore_command</varname> that polls the archive location. This was the only option available in versions 8.4 and below. In this setup, set <varname>standby_mode</varname> off, because you are implementing the polling required for standby operation yourself. See the <xref linkend=\"pgstandby\"/> module for a reference implementation of this."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1170(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1170(para) 
 msgid "Note that in this mode, the server will apply WAL one file at a time, so if you use the standby server for queries (see Hot Standby), there is a delay between an action in the master and when the action becomes visible in the standby, corresponding the time it takes to fill up the WAL file. <varname>archive_timeout</varname> can be used to make that delay shorter. Also note that you can't combine streaming replication with this method."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1180(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1180(para) 
 msgid "The operations that occur on both primary and standby servers are normal continuous archiving and recovery tasks. The only point of contact between the two database servers is the archive of WAL files that both share: primary writing to the archive, standby reading from the archive. Care must be taken to ensure that WAL archives from separate primary servers do not become mixed together or confused. The archive need not be large if it is only required for standby operation."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1190(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1190(para) 
 msgid "The magic that makes the two loosely coupled servers work together is simply a <varname>restore_command</varname> used on the standby that, when asked for the next WAL file, waits for it to become available from the primary. The <varname>restore_command</varname> is specified in the <filename>recovery.conf</filename> file on the standby server. Normal recovery processing would request a file from the WAL archive, reporting failure if the file was unavailable. For standby processing it is normal for the next WAL file to be unavailable, so the standby must wait for it to appear. For files ending in <literal>.backup</literal> or <literal>.history</literal> there is no need to wait, and a non-zero return code must be returned. A waiting <varname>restore_command</varname> can be written as a custom script that loops after polling for the existence of the next WAL file. There must also be some way to trigger failover, which should interrupt the <varname>restore_command</varname>, break the loop and return a file-not-found error to the standby server. This ends recovery and the standby will then come up as a normal server."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1211(programlisting) 
+#: /tmp/cicero-OGqM/high-availability.xml:1211(programlisting) 
 #, no-wrap
 msgid "\ntriggered = false;\nwhile (!NextWALFileReady() &amp;&amp; !triggered)\n{\n    sleep(100000L);         /* wait for ~0.1 sec */\n    if (CheckForExternalTrigger())\n        triggered = true;\n}\nif (!triggered)\n        CopyWALFileForRecovery();\n"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1209(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1209(para) 
 msgid "Pseudocode for a suitable <varname>restore_command</varname> is: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1224(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1224(para) 
 msgid "A working example of a waiting <varname>restore_command</varname> is provided in the <xref linkend=\"pgstandby\"/> module. It should be used as a reference on how to correctly implement the logic described above. It can also be extended as needed to support specific configurations and environments."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1232(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1232(para) 
 msgid "The method for triggering failover is an important part of planning and design. One potential option is the <varname>restore_command</varname> command. It is executed once for each WAL file, but the process running the <varname>restore_command</varname> is created and dies for each file, so there is no daemon or server process, and signals or a signal handler cannot be used. Therefore, the <varname>restore_command</varname> is not suitable to trigger failover. It is possible to use a simple timeout facility, especially if used in conjunction with a known <varname>archive_timeout</varname> setting on the primary. However, this is somewhat error prone since a network problem or busy primary server might be sufficient to initiate failover. A notification mechanism such as the explicit creation of a trigger file is ideal, if this can be arranged."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1249(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:1249(title) 
 msgid "Implementation"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1257(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1257(para) 
 msgid "Set up primary and standby systems as nearly identical as possible, including two identical copies of <productname>PostgreSQL</productname> at the same release level."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1264(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1264(para) 
 msgid "Set up continuous archiving from the primary to a WAL archive directory on the standby server. Ensure that <xref linkend=\"guc-archive-mode\"/>, <xref linkend=\"guc-archive-command\"/> and <xref linkend=\"guc-archive-timeout\"/> are set appropriately on the primary (see <xref linkend=\"backup-archiving-wal\"/>)."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1275(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1275(para) 
 msgid "Make a base backup of the primary server (see <xref linkend=\"backup-base-backup\"/>), and load this data onto the standby."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1281(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1281(para) 
 msgid "Begin recovery on the standby server from the local WAL archive, using a <filename>recovery.conf</filename> that specifies a <varname>restore_command</varname> that waits as described previously (see <xref linkend=\"backup-pitr-recovery\"/>)."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1251(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1251(para) 
 msgid "The short procedure for configuring a standby server using this alternative method is as follows. For full details of each step, refer to previous sections as noted. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1291(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1291(para) 
 msgid "Recovery treats the WAL archive as read-only, so once a WAL file has been copied to the standby system it can be copied to tape at the same time as it is being read by the standby database server. Thus, running a standby server for high availability can be performed at the same time as files are stored for longer term disaster recovery purposes."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1300(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1300(para) 
 msgid "For testing purposes, it is possible to run both primary and standby servers on the same system. This does not provide any worthwhile improvement in server robustness, nor would it be described as HA."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1308(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:1308(title) 
 msgid "Record-based Log Shipping"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1310(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1310(para) 
 msgid "It is also possible to implement record-based log shipping using this alternative method, though this requires custom development, and changes will still only become visible to hot standby queries after a full WAL file has been shipped."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1317(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1317(para) 
 msgid "An external program can call the <function>pg_xlogfile_name_offset()</function> function (see <xref linkend=\"functions-admin\"/>) to find out the file name and the exact byte offset within it of the current end of WAL. It can then access the WAL file directly and copy the data from the last known end of WAL through the current end over to the standby servers. With this approach, the window for data loss is the polling cycle time of the copying program, which can be very small, and there is no wasted bandwidth from forcing partially-used segment files to be archived. Note that the standby servers' <varname>restore_command</varname> scripts can only deal with whole WAL files, so the incrementally copied data is not ordinarily made available to the standby servers. It is of use only when the primary dies — then the last partial WAL file is fed to the standby before allowing it to come up. The correct implementation of this process requires cooperation of the <varname>restore_command</varname> script with the data copying program."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1336(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1336(para) 
 msgid "Starting with <productname>PostgreSQL</productname> version 9.0, you can use streaming replication (see <xref linkend=\"streaming-replication\"/>) to achieve the same benefits with less effort."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1345(title) /tmp/cicero-yKZa/high-availability.xml:1348(primary) 
+#: /tmp/cicero-OGqM/high-availability.xml:1345(title) /tmp/cicero-OGqM/high-availability.xml:1348(primary) 
 msgid "Hot Standby"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1351(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1351(para) 
 msgid "Hot Standby is the term used to describe the ability to connect to the server and run read-only queries while the server is in archive recovery or standby mode. This is useful both for replication purposes and for restoring a backup to a desired state with great precision. The term Hot Standby also refers to the ability of the server to move from recovery through to normal operation while users continue running queries and/or keep their connections open."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1362(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1362(para) 
 msgid "Running queries in hot standby mode is similar to normal query operation, though there are several usage and administrative differences explained below."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1369(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:1369(title) 
 msgid "User's Overview"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1371(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1371(para) 
 msgid "When the <xref linkend=\"guc-hot-standby\"/> parameter is set to true on a standby server, it will begin accepting connections once the recovery has brought the system to a consistent state. All such connections are strictly read-only; not even temporary tables may be written."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1378(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1378(para) 
 msgid "The data on the standby takes some time to arrive from the primary server so there will be a measurable delay between primary and standby. Running the same query nearly simultaneously on both primary and standby might therefore return differing results. We say that data on the standby is <firstterm>eventually consistent</firstterm> with the primary. Once the commit record for a transaction is replayed on the standby, the changes made by that transaction will be visible to any new snapshots taken on the standby. Snapshots may be taken at the start of each query or at the start of each transaction, depending on the current transaction isolation level. For more details, see <xref linkend=\"transaction-iso\"/>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1396(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1396(para) 
 msgid "Query access - <command>SELECT</command>, <command>COPY TO</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1401(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1401(para) 
 msgid "Cursor commands - <command>DECLARE</command>, <command>FETCH</command>, <command>CLOSE</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1406(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1406(para) 
 msgid "Parameters - <command>SHOW</command>, <command>SET</command>, <command>RESET</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1415(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1415(para) 
 msgid "<command>BEGIN</command>, <command>END</command>, <command>ABORT</command>, <command>START TRANSACTION</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1420(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1420(para) 
 msgid "<command>SAVEPOINT</command>, <command>RELEASE</command>, <command>ROLLBACK TO SAVEPOINT</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1425(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1425(para) 
 msgid "<command>EXCEPTION</command> blocks and other internal subtransactions"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1411(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1411(para) 
 msgid "Transaction management commands <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1433(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1433(para) 
 msgid "<command>LOCK TABLE</command>, though only when explicitly in one of these modes: <literal>ACCESS SHARE</literal>, <literal>ROW SHARE</literal> or <literal>ROW EXCLUSIVE</literal>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1439(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1439(para) 
 msgid "Plans and resources - <command>PREPARE</command>, <command>EXECUTE</command>, <command>DEALLOCATE</command>, <command>DISCARD</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1445(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1445(para) 
 msgid "Plugins and extensions - <command>LOAD</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1391(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1391(para) 
 msgid "Transactions started during hot standby may issue the following commands: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1459(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1459(para) 
 msgid "Data Manipulation Language (DML) - <command>INSERT</command>, <command>UPDATE</command>, <command>DELETE</command>, <command>COPY FROM</command>, <command>TRUNCATE</command>. Note that there are no allowed actions that result in a trigger being executed during recovery. This restriction applies even to temporary tables, because table rows cannot be read or written without assigning a transaction ID, which is currently not possible in a Hot Standby environment."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1471(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1471(para) 
 msgid "Data Definition Language (DDL) - <command>CREATE</command>, <command>DROP</command>, <command>ALTER</command>, <command>COMMENT</command>. This restriction applies even to temporary tables, because carrying out these operations would require updating the system catalog tables."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1479(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1479(para) 
 msgid "<command>SELECT ... FOR SHARE | UPDATE</command>, because row locks cannot be taken without updating the underlying data files."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1485(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1485(para) 
 msgid "Rules on <command>SELECT</command> statements that generate DML commands."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1490(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1490(para) 
 msgid "<command>LOCK</command> that explicitly requests a mode higher than <literal>ROW EXCLUSIVE MODE</literal>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1495(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1495(para) 
 msgid "<command>LOCK</command> in short default form, since it requests <literal>ACCESS EXCLUSIVE MODE</literal>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1504(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1504(para) 
 msgid "<command>BEGIN READ WRITE</command>, <command>START TRANSACTION READ WRITE</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1510(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1510(para) 
 msgid "<command>SET TRANSACTION READ WRITE</command>, <command>SET SESSION CHARACTERISTICS AS TRANSACTION READ WRITE</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1517(command) 
+#: /tmp/cicero-OGqM/high-availability.xml:1517(command) 
 msgid "SET transaction_read_only = off"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1500(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1500(para) 
 msgid "Transaction management commands that explicitly set non-read-only state: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1524(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1524(para) 
 msgid "Two-phase commit commands - <command>PREPARE TRANSACTION</command>, <command>COMMIT PREPARED</command>, <command>ROLLBACK PREPARED</command> because even read-only transactions need to write WAL in the prepare phase (the first phase of two phase commit)."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1532(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1532(para) 
 msgid "Sequence updates - <function>nextval()</function>, <function>setval()</function>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1537(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1537(para) 
 msgid "<command>LISTEN</command>, <command>UNLISTEN</command>, <command>NOTIFY</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1452(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1452(para) 
 msgid "Transactions started during hot standby will never be assigned a transaction ID and cannot write to the system write-ahead log. Therefore, the following actions will produce error messages: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1544(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1544(para) 
 msgid "In normal operation, <quote>read-only</quote> transactions are allowed to update sequences and to use <command>LISTEN</command>, <command>UNLISTEN</command>, and <command>NOTIFY</command>, so Hot Standby sessions operate under slightly tighter restrictions than ordinary read-only sessions. It is possible that some of these restrictions might be loosened in a future release."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1552(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1552(para) 
 msgid "During hot standby, the parameter <varname>transaction_read_only</varname> is always true and may not be changed. But as long as no attempt is made to modify the database, connections during hot standby will act much like any other database connection. If failover or switchover occurs, the database will switch to normal processing mode. Sessions will remain connected while the server changes mode. Once hot standby finishes, it will be possible to initiate read-write transactions (even from a session begun during hot standby)."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1563(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1563(para) 
 msgid "Users will be able to tell whether their session is read-only by issuing <command>SHOW transaction_read_only</command>. In addition, a set of functions (<xref linkend=\"functions-recovery-info-table\"/>) allow users to access information about the standby server. These allow you to write programs that are aware of the current state of the database. These can be used to monitor the progress of recovery, or to allow you to write complex programs that restore the database to particular states."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1575(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:1575(title) 
 msgid "Handling Query Conflicts"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1577(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1577(para) 
 msgid "The primary and standby servers are in many ways loosely connected. Actions on the primary will have an effect on the standby. As a result, there is potential for negative interactions or conflicts between them. The easiest conflict to understand is performance: if a huge data load is taking place on the primary then this will generate a similar stream of WAL records on the standby, so standby queries may contend for system resources, such as I/O."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1595(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1595(para) 
 msgid "Access Exclusive locks taken on the primary server, including both explicit <command>LOCK</command> commands and various <acronym>DDL</acronym> actions, conflict with table accesses in standby queries."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1602(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1602(para) 
 msgid "Dropping a tablespace on the primary conflicts with standby queries using that tablespace for temporary work files."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1608(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1608(para) 
 msgid "Dropping a database on the primary conflicts with sessions connected to that database on the standby."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1614(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1614(para) 
 msgid "Application of a vacuum cleanup record from WAL conflicts with standby transactions whose snapshots can still <quote>see</quote> any of the rows to be removed."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1621(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1621(para) 
 msgid "Application of a vacuum cleanup record from WAL conflicts with queries accessing the target page on the standby, whether or not the data to be removed is visible."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1586(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1586(para) 
 msgid "There are also additional types of conflict that can occur with Hot Standby. These conflicts are <emphasis>hard conflicts</emphasis> in the sense that queries might need to be canceled and, in some cases, sessions disconnected to resolve them. The user is provided with several ways to handle these conflicts. Conflict cases include: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1630(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1630(para) 
 msgid "On the primary server, these cases simply result in waiting; and the user might choose to cancel either of the conflicting actions. However, on the standby there is no choice: the WAL-logged action already occurred on the primary so the standby must not fail to apply it. Furthermore, allowing WAL application to wait indefinitely may be very undesirable, because the standby's state will become increasingly far behind the primary's. Therefore, a mechanism is provided to forcibly cancel standby queries that conflict with to-be-applied WAL records."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1641(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1641(para) 
 msgid "An example of the problem situation is an administrator on the primary server running <command>DROP TABLE</command> on a table that is currently being queried on the standby server. Clearly the standby query cannot continue if the <command>DROP TABLE</command> is applied on the standby. If this situation occurred on the primary, the <command>DROP TABLE</command> would wait until the other query had finished. But when <command>DROP TABLE</command> is run on the primary, the primary doesn't have information about what queries are running on the standby, so it will not wait for any such standby queries. The WAL change records come through to the standby while the standby query is still running, causing a conflict. The standby server must either delay application of the WAL records (and everything after them, too) or else cancel the conflicting query so that the <command>DROP TABLE</command> can be applied."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1657(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1657(para) 
 msgid "When a conflicting query is short, it's typically desirable to allow it to complete by delaying WAL application for a little bit; but a long delay in WAL application is usually not desirable. So the cancel mechanism has parameters, <xref linkend=\"guc-max-standby-archive-delay\"/> and <xref linkend=\"guc-max-standby-streaming-delay\"/>, that define the maximum allowed delay in WAL application. Conflicting queries will be canceled once it has taken longer than the relevant delay setting to apply any newly-received WAL data. There are two parameters so that different delay values can be specified for the case of reading WAL data from an archive (i.e., initial recovery from a base backup or <quote>catching up</quote> a standby server that has fallen far behind) versus reading WAL data via streaming replication."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1672(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1672(para) 
 msgid "In a standby server that exists primarily for high availability, it's best to set the delay parameters relatively short, so that the server cannot fall far behind the primary due to delays caused by standby queries. However, if the standby server is meant for executing long-running queries, then a high or even infinite delay value may be preferable. Keep in mind however that a long-running query could cause other sessions on the standby server to not see recent changes on the primary, if it delays application of WAL records."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1683(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1683(para) 
 msgid "Once the delay specified by <varname>max_standby_archive_delay</varname> or <varname>max_standby_streaming_delay</varname> has been exceeded, conflicting queries will be canceled. This usually results just in a cancellation error, although in the case of replaying a <command>DROP DATABASE</command> the entire conflicting session will be terminated. Also, if the conflict is over a lock held by an idle transaction, the conflicting session is terminated (this behavior might change in the future)."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1693(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1693(para) 
 msgid "Canceled queries may be retried immediately (after beginning a new transaction, of course). Since query cancellation depends on the nature of the WAL records being replayed, a query that was canceled may well succeed if it is executed again."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1700(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1700(para) 
 msgid "Keep in mind that the delay parameters are compared to the elapsed time since the WAL data was received by the standby server. Thus, the grace period allowed to any one query on the standby is never more than the delay parameter, and could be considerably less if the standby has already fallen behind as a result of waiting for previous queries to complete, or as a result of being unable to keep up with a heavy update load."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1709(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1709(para) 
 msgid "The most common reason for conflict between standby queries and WAL replay is <quote>early cleanup</quote>. Normally, <productname>PostgreSQL</productname> allows cleanup of old row versions when there are no transactions that need to see them to ensure correct visibility of data according to MVCC rules. However, this rule can only be applied for transactions executing on the master. So it is possible that cleanup on the master will remove row versions that are still visible to a transaction on the standby."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1719(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1719(para) 
 msgid "Experienced users should note that both row version cleanup and row version freezing will potentially conflict with standby queries. Running a manual <command>VACUUM FREEZE</command> is likely to cause conflicts even on tables with no updated or deleted rows."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1726(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1726(para) 
 msgid "Users should be clear that tables that are regularly and heavily updated on the primary server will quickly cause cancellation of longer running queries on the standby. In such cases the setting of a finite value for <varname>max_standby_archive_delay</varname> or <varname>max_standby_streaming_delay</varname> can be considered similar to setting <varname>statement_timeout</varname>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1735(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1735(para) 
 msgid "Remedial possibilities exist if the number of standby-query cancellations is found to be unacceptable. The first option is to set the parameter <varname>hot_standby_feedback</varname>, which prevents <command>VACUUM</command> from removing recently-dead rows and so cleanup conflicts do not occur. If you do this, you should note that this will delay cleanup of dead rows on the primary, which may result in undesirable table bloat. However, the cleanup situation will be no worse than if the standby queries were running directly on the primary server, and you are still getting the benefit of off-loading execution onto the standby. <varname>max_standby_archive_delay</varname> must be kept large in this case, because delayed WAL files might already contain entries that conflict with the desired standby queries."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1751(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1751(para) 
 msgid "Another option is to increase <xref linkend=\"guc-vacuum-defer-cleanup-age\"/> on the primary server, so that dead rows will not be cleaned up as quickly as they normally would be. This will allow more time for queries to execute before they are canceled on the standby, without having to set a high <varname>max_standby_streaming_delay</varname>. However it is difficult to guarantee any specific execution-time window with this approach, since <varname>vacuum_defer_cleanup_age</varname> is measured in transactions executed on the primary server."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1762(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1762(para) 
 msgid "The number of query cancels and the reason for them can be viewed using the <structname>pg_stat_database_conflicts</structname> system view on the standby server. The <structname>pg_stat_database</structname> system view also contains summary information."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1771(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:1771(title) 
 msgid "Administrator's Overview"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1785(programlisting) 
+#: /tmp/cicero-OGqM/high-availability.xml:1785(programlisting) 
 #, no-wrap
 msgid "\nLOG:  entering standby mode\n\n... then some time later ...\n\nLOG:  consistent recovery state reached\nLOG:  database system is ready to accept read only connections\n"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1802(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1802(para) 
 msgid "A write transaction has more than 64 subtransactions"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1807(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1807(para) 
 msgid "Very long-lived write transactions"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1773(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1773(para) 
 msgid "If <varname>hot_standby</varname> is turned <literal>on</literal> in <filename>postgresql.conf</filename> and there is a <filename>recovery.conf</filename> file present, the server will run in Hot Standby mode. However, it may take some time for Hot Standby connections to be allowed, because the server will not accept connections until it has completed sufficient recovery to provide a consistent state against which queries can run. During this period, clients that attempt to connect will be refused with an error message. To confirm the server has come up, either loop trying to connect from the application, or look for these messages in the server logs: <placeholder-1/> Consistency information is recorded once per checkpoint on the primary. It is not possible to enable hot standby when reading WAL written during a period when <varname>wal_level</varname> was not set to <literal>hot_standby</literal> on the primary. Reaching a consistent state can also be delayed in the presence of both of these conditions: <placeholder-2/> If you are running file-based log shipping (\"warm standby\"), you might need to wait until the next WAL file arrives, which could be as long as the <varname>archive_timeout</varname> setting on the primary."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1830(varname) 
+#: /tmp/cicero-OGqM/high-availability.xml:1830(varname) 
 msgid "max_connections"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1835(varname) 
+#: /tmp/cicero-OGqM/high-availability.xml:1835(varname) 
 msgid "max_prepared_transactions"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1840(varname) 
+#: /tmp/cicero-OGqM/high-availability.xml:1840(varname) 
 msgid "max_locks_per_transaction"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1818(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1818(para) 
 msgid "The setting of some parameters on the standby will need reconfiguration if they have been changed on the primary. For these parameters, the value on the standby must be equal to or greater than the value on the primary. If these parameters are not set high enough then the standby will refuse to start. Higher values can then be supplied and the server restarted to begin recovery again. These parameters are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1846(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1846(para) 
 msgid "It is important that the administrator select appropriate settings for <xref linkend=\"guc-max-standby-archive-delay\"/> and <xref linkend=\"guc-max-standby-streaming-delay\"/>. The best choices vary depending on business priorities. For example if the server is primarily tasked as a High Availability server, then you will want low delay settings, perhaps even zero, though that is a very aggressive setting. If the standby server is tasked as an additional server for decision support queries then it might be acceptable to set the maximum delay values to many hours, or even -1 which means wait forever for queries to complete."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1858(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1858(para) 
 msgid "Transaction status \"hint bits\" written on the primary are not WAL-logged, so data on the standby will likely re-write the hints again on the standby. Thus, the standby server will still perform disk writes even though all users are read-only; no changes occur to the data values themselves. Users will still write large sort temporary files and re-generate relcache info files, so no part of the database is truly read-only during hot standby mode. Note also that writes to remote databases using <application>dblink</application> module, and other operations outside the database using PL functions will still be possible, even though the transaction is read-only locally."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1878(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1878(para) 
 msgid "Data Definition Language (DDL) - e.g. <command>CREATE INDEX</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1883(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1883(para) 
 msgid "Privilege and Ownership - <command>GRANT</command>, <command>REVOKE</command>, <command>REASSIGN</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1889(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1889(para) 
 msgid "Maintenance commands - <command>ANALYZE</command>, <command>VACUUM</command>, <command>CLUSTER</command>, <command>REINDEX</command>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1872(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1872(para) 
 msgid "The following types of administration commands are not accepted during recovery mode: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1897(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1897(para) 
 msgid "Again, note that some of these commands are actually allowed during \"read only\" mode transactions on the primary."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1902(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1902(para) 
 msgid "As a result, you cannot create additional indexes that exist solely on the standby, nor statistics that exist solely on the standby. If these administration commands are needed, they should be executed on the primary, and eventually those changes will propagate to the standby."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1910(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1910(para) 
 msgid "<function>pg_cancel_backend()</function> will work on user backends, but not the Startup process, which performs recovery. <structname>pg_stat_activity</structname> does not show an entry for the Startup process, nor do recovering transactions show as active. As a result, <structname>pg_prepared_xacts</structname> is always empty during recovery. If you wish to resolve in-doubt prepared transactions, view <literal>pg_prepared_xacts</literal> on the primary and issue commands to resolve transactions there."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1920(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1920(para) 
 msgid "<structname>pg_locks</structname> will show locks held by backends, as normal. <structname>pg_locks</structname> also shows a virtual transaction managed by the Startup process that owns all <literal>AccessExclusiveLocks</literal> held by transactions being replayed by recovery. Note that the Startup process does not acquire locks to make database changes, and thus locks other than <literal>AccessExclusiveLocks</literal> do not show in <structname>pg_locks</structname> for the Startup process; they are just presumed to exist."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1931(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1931(para) 
 msgid "The <productname>Nagios</productname> plugin <productname>check_pgsql</productname> will work, because the simple information it checks for exists. The <productname>check_postgres</productname> monitoring script will also work, though some reported values could give different or confusing results. For example, last vacuum time will not be maintained, since no vacuum occurs on the standby. Vacuums running on the primary do still send their changes to the standby."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1941(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1941(para) 
 msgid "WAL file control commands will not work during recovery, e.g. <function>pg_start_backup</function>, <function>pg_switch_xlog</function> etc."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1946(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1946(para) 
 msgid "Dynamically loadable modules work, including <structname>pg_stat_statements</structname>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1950(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1950(para) 
 msgid "Advisory locks work normally in recovery, including deadlock detection. Note that advisory locks are never WAL logged, so it is impossible for an advisory lock on either the primary or the standby to conflict with WAL replay. Nor is it possible to acquire an advisory lock on the primary and have it initiate a similar advisory lock on the standby. Advisory locks relate only to the server on which they are acquired."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1959(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1959(para) 
 msgid "Trigger-based replication systems such as <productname>Slony</productname>, <productname>Londiste</productname> and <productname>Bucardo</productname> won't run on the standby at all, though they will run happily on the primary server as long as the changes are not sent to standby servers to be applied. WAL replay is not trigger-based so you cannot relay from the standby to any system that requires additional database writes or relies on the use of triggers."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1969(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1969(para) 
 msgid "New OIDs cannot be assigned, though some <acronym>UUID</acronym> generators may still work as long as they do not rely on writing new status to the database."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1974(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1974(para) 
 msgid "Currently, temporary table creation is not allowed during read only transactions, so in some cases existing scripts will not run correctly. This restriction might be relaxed in a later release. This is both a SQL Standard compliance issue and a technical issue."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1981(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1981(para) 
 msgid "<command>DROP TABLESPACE</command> can only succeed if the tablespace is empty. Some standby users may be actively using the tablespace via their <varname>temp_tablespaces</varname> parameter. If there are temporary files in the tablespace, all active queries are canceled to ensure that temporary files are removed, so the tablespace can be removed and WAL replay can continue."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:1990(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:1990(para) 
 msgid "Running <command>DROP DATABASE</command> or <command>ALTER DATABASE ... SET TABLESPACE</command> on the primary will generate a WAL entry that will cause all users connected to that database on the standby to be forcibly disconnected. This action occurs immediately, whatever the setting of <varname>max_standby_streaming_delay</varname>. Note that <command>ALTER DATABASE ... RENAME</command> does not disconnect users, which in most cases will go unnoticed, though might in some cases cause a program confusion if it depends in some way upon database name."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2002(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2002(para) 
 msgid "In normal (non-recovery) mode, if you issue <command>DROP USER</command> or <command>DROP ROLE</command> for a role with login capability while that user is still connected then nothing happens to the connected user - they remain connected. The user cannot reconnect however. This behavior applies in recovery also, so a <command>DROP USER</command> on the primary does not disconnect that user on the standby."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2010(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2010(para) 
 msgid "The statistics collector is active during recovery. All scans, reads, blocks, index usage, etc., will be recorded normally on the standby. Replayed actions will not duplicate their effects on primary, so replaying an insert will not increment the Inserts column of pg_stat_user_tables. The stats file is deleted at the start of recovery, so stats from primary and standby will differ; this is considered a feature, not a bug."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2019(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2019(para) 
 msgid "Autovacuum is not active during recovery. It will start normally at the end of recovery."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2024(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2024(para) 
 msgid "The background writer is active during recovery and will perform restartpoints (similar to checkpoints on the primary) and normal block cleaning activities. This can include updates of the hint bit information stored on the standby server. The <command>CHECKPOINT</command> command is accepted during recovery, though it performs a restartpoint rather than a new checkpoint."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2035(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:2035(title) 
 msgid "Hot Standby Parameter Reference"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2037(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2037(para) 
 msgid "Various parameters have been mentioned above in <xref linkend=\"hot-standby-conflict\"/> and <xref linkend=\"hot-standby-admin\"/>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2043(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2043(para) 
 msgid "On the primary, parameters <xref linkend=\"guc-wal-level\"/> and <xref linkend=\"guc-vacuum-defer-cleanup-age\"/> can be used. <xref linkend=\"guc-max-standby-archive-delay\"/> and <xref linkend=\"guc-max-standby-streaming-delay\"/> have no effect if set on the primary."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2051(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2051(para) 
 msgid "On the standby, parameters <xref linkend=\"guc-hot-standby\"/>, <xref linkend=\"guc-max-standby-archive-delay\"/> and <xref linkend=\"guc-max-standby-streaming-delay\"/> can be used. <xref linkend=\"guc-vacuum-defer-cleanup-age\"/> has no effect as long as the server remains in standby mode, though it will become relevant if the standby becomes primary."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2062(title) 
+#: /tmp/cicero-OGqM/high-availability.xml:2062(title) 
 msgid "Caveats"
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2070(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2070(para) 
 msgid "Operations on hash indexes are not presently WAL-logged, so replay will not update these indexes."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2076(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2076(para) 
 msgid "Full knowledge of running transactions is required before snapshots can be taken. Transactions that use large numbers of subtransactions (currently greater than 64) will delay the start of read only connections until the completion of the longest running write transaction. If this situation occurs, explanatory messages will be sent to the server log."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2085(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2085(para) 
 msgid "Valid starting points for standby queries are generated at each checkpoint on the master. If the standby is shut down while the master is in a shutdown state, it might not be possible to re-enter Hot Standby until the primary is started up, so that it generates further starting points in the WAL logs. This situation isn't a problem in the most common situations where it might happen. Generally, if the primary is shut down and not available anymore, that's likely due to a serious failure that requires the standby being converted to operate as the new primary anyway. And in situations where the primary is being intentionally taken down, coordinating to make sure the standby becomes the new primary smoothly is also standard procedure."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2100(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2100(para) 
 msgid "At the end of recovery, <literal>AccessExclusiveLocks</literal> held by prepared transactions will require twice the normal number of lock table entries. If you plan on running either a large number of concurrent prepared transactions that normally take <literal>AccessExclusiveLocks</literal>, or you plan on having one large transaction that takes many <literal>AccessExclusiveLocks</literal>, you are advised to select a larger value of <varname>max_locks_per_transaction</varname>, perhaps as much as twice the value of the parameter on the primary server. You need not consider this at all if your setting of <varname>max_prepared_transactions</varname> is 0."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2113(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2113(para) 
 msgid "The Serializable transaction isolation level is not yet available in hot standby. (See <xref linkend=\"xact-serializable\"/> and <xref linkend=\"serializable-consistency\"/> for details.) An attempt to set a transaction to the serializable isolation level in hot standby mode will generate an error."
 msgstr ""
 
-#: /tmp/cicero-yKZa/high-availability.xml:2064(para) 
+#: /tmp/cicero-OGqM/high-availability.xml:2064(para) 
 msgid "There are several limitations of Hot Standby. These can and probably will be fixed in future releases: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-yKZa/high-availability.xml:0(None) 
+#: /tmp/cicero-OGqM/high-availability.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

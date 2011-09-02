@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-01 06:57+0200\n"
+"POT-Creation-Date: 2011-09-02 09:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,44 +9,44 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-yKZa/ref/postmaster.xml:9(application) /tmp/cicero-yKZa/ref/postmaster.xml:15(refname) /tmp/cicero-yKZa/ref/postmaster.xml:20(primary) /tmp/cicero-yKZa/ref/postmaster.xml:25(command) 
+#: /tmp/cicero-OGqM/ref/postmaster.xml:9(application) /tmp/cicero-OGqM/ref/postmaster.xml:15(refname) /tmp/cicero-OGqM/ref/postmaster.xml:20(primary) /tmp/cicero-OGqM/ref/postmaster.xml:25(command) 
 msgid "postmaster"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/postmaster.xml:10(manvolnum) 
+#: /tmp/cicero-OGqM/ref/postmaster.xml:10(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/postmaster.xml:11(refmiscinfo) 
+#: /tmp/cicero-OGqM/ref/postmaster.xml:11(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/postmaster.xml:16(productname) 
+#: /tmp/cicero-OGqM/ref/postmaster.xml:16(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/postmaster.xml:16(refpurpose) 
+#: /tmp/cicero-OGqM/ref/postmaster.xml:16(refpurpose) 
 msgid "<placeholder-1/> database server"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/postmaster.xml:26(replaceable) 
+#: /tmp/cicero-OGqM/ref/postmaster.xml:26(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/postmaster.xml:31(title) 
+#: /tmp/cicero-OGqM/ref/postmaster.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/postmaster.xml:33(para) 
+#: /tmp/cicero-OGqM/ref/postmaster.xml:33(para) 
 msgid "<command>postmaster</command> is a deprecated alias of <command>postgres</command>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/postmaster.xml:39(title) 
+#: /tmp/cicero-OGqM/ref/postmaster.xml:39(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-yKZa/ref/postmaster.xml:0(None) 
+#: /tmp/cicero-OGqM/ref/postmaster.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-01 06:57+0200\n"
+"POT-Creation-Date: 2011-09-02 09:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,53 +9,53 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-yKZa/ref/drop_group.xml:9(refentrytitle) /tmp/cicero-yKZa/ref/drop_group.xml:15(refname) /tmp/cicero-yKZa/ref/drop_group.xml:20(primary) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:9(refentrytitle) /tmp/cicero-OGqM/ref/drop_group.xml:15(refname) /tmp/cicero-OGqM/ref/drop_group.xml:20(primary) 
 msgid "DROP GROUP"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/drop_group.xml:10(manvolnum) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/drop_group.xml:11(refmiscinfo) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/drop_group.xml:16(refpurpose) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:16(refpurpose) 
 msgid "remove a database role"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/drop_group.xml:25(replaceable) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:25(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/drop_group.xml:24(synopsis) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:24(synopsis) 
 #, no-wrap
 msgid "\nDROP GROUP [ IF EXISTS ] <placeholder-1/> [, ...]\n"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/drop_group.xml:30(title) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/drop_group.xml:32(para) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:32(para) 
 msgid "<command>DROP GROUP</command> is now an alias for <xref linkend=\"sql-droprole\"/>."
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/drop_group.xml:39(title) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:39(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/drop_group.xml:41(para) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:41(para) 
 msgid "There is no <command>DROP GROUP</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-yKZa/ref/drop_group.xml:47(title) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:47(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-yKZa/ref/drop_group.xml:0(None) 
+#: /tmp/cicero-OGqM/ref/drop_group.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
