@@ -39,3 +39,14 @@ function die () {
 	exit 128
 }
 
+function check_dir () {
+	if [ ! -d $1 ]; then
+		if [ $2 -eq 0 ]; then
+			mkdir -p $1
+		else
+			die "Directory $1 doesn't exist!"
+		fi
+	fi
+}
+
+BLACKLIST="version.xml filelist.xml ref/allfiles.xml standalone-install.xml"

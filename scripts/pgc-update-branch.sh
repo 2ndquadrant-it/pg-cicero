@@ -116,6 +116,7 @@ trap "rm -fr '$WORKDIR'" EXIT
 # extract the documentation from the source branch
 [ "$VERBOSE" ] && echo "[v] Extract the documentation from the PostgreSQL git repository from branch \"$BRANCH\""
 git --git-dir="$POSTGRESQL_GIT_DIR" archive --format=tar "$BRANCH_REF" "$DOCDIR"  | tar x -C "$WORKDIR"
+"$BASE/pgc-gen-version.sh" "$POSTGRESQL_GIT_DIR" "$BRANCH_REF" > "$WORKDIR/$DOCDIR/version.sgml"
 
 [ "$VERBOSE" ] && echo "[v] Convert the documentation from sgml to xml"
 $sgml2xml "$WORKDIR/$DOCDIR" "$WORKDIR/xml"
