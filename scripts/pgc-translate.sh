@@ -84,6 +84,7 @@ for srcfile in $( find "$SRC_DIR" -type f -name '*.xml' | sed -e "s|$SRC_DIR/||"
 do
 	grep -q "$srcfile" <<< $BLACKLIST
 	if [ $? -eq 0 ]; then
+		cp ${SRC_DIR}/${srcfile} $OUT_DIR
 		continue
 	fi
 
@@ -93,8 +94,8 @@ do
 
 	mkdir -p `dirname $OUTPUT_FILE`
 	mkdir -p `dirname $WORKDIR/$INPUT_FILE`
-	
-	cp $SRC_DIR/$INPUT_FILE $WORKDIR/$INPUT_FILE	
+
+	cp $SRC_DIR/$INPUT_FILE $WORKDIR/$INPUT_FILE
 
 	xml2po --po-file=$PO_FILE --output=$OUTPUT_FILE $WORKDIR/$INPUT_FILE
 

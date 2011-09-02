@@ -1,15 +1,107 @@
-== PG-Cicero ==
+= PG-Cicero
 
 PostgreSQL Documentation Translation Project using XML Docbook format.
 
-=== Scripts ===
+== Requirements
 
-  * xml-update
-  * pot-update
+* Python
+* GIT
+* xml2po (gnome-doc-utils)
+
+== Installation
+
+You can install +pg-cicero+ in your home directory by simply checking out from
+our GitHub repository:
+
+----
+git clone git://github.com/2ndquadrant-it/pg-cicero.git
+----
+
+From now on, we refer to PG-Cicero's installation directory as +PGCICERO_HOME+.
+You can define this in your shell profile, for example:
+
+----
+# Add this to your ~/.bash_profile (for bash users)
+export PGCICERO_HOME=~/pg-cicero
+----
+
+
+== PostgreSQL documentation update
+
+[IMPORTANT]
+This operation is not necessary for translators.
+
+PG-Cicero has an automatic system that converts PostgreSQL documentation from SGML format
+to XML. Using +xml2po+ it is possible to generate template PO files compatible with GetText.
+2ndQuadrant maintains a daily updated version of the master XML and POT files for every stable
+release starting from PostgreSQL 9.1, in separate branches (e.g. +postgresql/REL9_1_STABLE+).
+
+However, if you want, you can update the documentation by yourself. All you need to do is:
+
+* checkout the PostgreSQL code (via GIT)
+* execute +pgc-update-branch.sh+
+* execute +pgc-update-pot.sh+
+
+=== Checkout of the PostgreSQL repository
+
+A bare checkout is sufficient:
+
+----
+git clone --bare git://git.postgresql.org/git/postgresql.git
+----
+
+From now on, we refer to PostgreSQL local GIT repository as +PGCICERO_POSTGRESQL+.
+You can define this in your shell profile:
+
+----
+# Add this to your ~/.bash_profile (for bash users)
+export PGCICERO_POSTGRESQL=~/postgresql.git
+----
+
+=== Update of the branch
+
+You can refer to branches the same way you normally do in PostgreSQL. PG-Cicero adopts the same convention.
+For instance, stable 9.1 release is referred to with +REL9_1_STABLE+. Current development's branch is stored in +master+.
+
+----
+cd $PGCICERO_HOME/scripts
+./pgc-update-branch.sh -b REL9_1_STABLE -v $PGCICERO_POSTGRESQL
+----
+
+If you do not specify a branch with the +-b+ option, you will work directly on the master branch.
+
+==== Push of the branch
+
+In case you have permissions to write on the main repository (or you want to work on your own),
+you can push the changes as follows:
+
+----
+git checkout REL9_1_STABLE
+git merge postgresql/REL9_1_STABLE
+# Perform any manual changes (if needed)
+git push origin REL9_1_STABLE
+----
+
+=== Update of template files for GetText
+
+In order to generate POT files (templates for GetText) for a specific branch (e.g. REL9_1_STABLE), you can type:
+
+----
+cd $PGCICERO_HOME/scripts
+git checkout REL9_1_STABLE
+./pgc-update-pot.sh -p ../xml ../pot
+----
+
+Then commit your changes and - in case - push them.
 
 == Credits ==
 
+Authors::
+	Carlo Ascani <Carlo.Ascani@2ndQuadrant.it>
+	Gabriele Bartolini <Gabriele.Bartolini@2ndQuadrant.it>
+	Marco Nenciarini <Marco.Nenciarini@2ndQuadrant.it>
+
 License::
 	GPL v3 or later
-Author::
+Copyright::
 	(C) 2011 2ndQuadrant Italia <info@2ndquadrant.it>
