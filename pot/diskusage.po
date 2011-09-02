@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:05+0200\n"
+"POT-Creation-Date: 2011-09-02 11:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,88 +9,88 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-mzvS/diskusage.xml:6(title) 
+#: /tmp/cicero-NXtK/diskusage.xml:6(title) 
 msgid "Monitoring Disk Usage"
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:8(para) 
+#: /tmp/cicero-NXtK/diskusage.xml:8(para) 
 msgid "This chapter discusses how to monitor the disk usage of a <productname>PostgreSQL</productname> database system."
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:14(title) 
+#: /tmp/cicero-NXtK/diskusage.xml:14(title) 
 msgid "Determining Disk Usage"
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:17(primary) 
+#: /tmp/cicero-NXtK/diskusage.xml:17(primary) 
 msgid "disk usage"
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:20(para) 
+#: /tmp/cicero-NXtK/diskusage.xml:20(para) 
 msgid "Each table has a primary heap disk file where most of the data is stored. If the table has any columns with potentially-wide values, there also might be a <acronym>TOAST</acronym> file associated with the table, which is used to store values too wide to fit comfortably in the main table (see <xref linkend=\"storage-toast\"/>). There will be one index on the <acronym>TOAST</acronym> table, if present. There also might be indexes associated with the base table. Each table and index is stored in a separate disk file — possibly more than one file, if the file would exceed one gigabyte. Naming conventions for these files are described in <xref linkend=\"storage-file-layout\"/>."
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:33(para) 
+#: /tmp/cicero-NXtK/diskusage.xml:33(para) 
 msgid "You can monitor disk space in three ways: using the SQL functions listed in <xref linkend=\"functions-admin-dbsize\"/>, using the <xref linkend=\"oid2name\"/> module, or using manual inspection of the system catalogs. The SQL functions are the easiest to use and are generally recommended. The remainder of this section shows how to do it by inspection of the system catalogs."
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:46(programlisting) 
+#: /tmp/cicero-NXtK/diskusage.xml:46(programlisting) 
 #, no-wrap
 msgid "\nSELECT pg_relation_filepath(oid), relpages FROM pg_class WHERE relname = 'customer';\n\n pg_relation_filepath | relpages \n----------------------+----------\n base/16384/16806     |       60\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:43(para) 
+#: /tmp/cicero-NXtK/diskusage.xml:43(para) 
 msgid "Using <application>psql</application> on a recently vacuumed or analyzed database, you can issue queries to see the disk usage of any table: <placeholder-1/> Each page is typically 8 kilobytes. (Remember, <structfield>relpages</structfield> is only updated by <command>VACUUM</command>, <command>ANALYZE</command>, and a few DDL commands such as <command>CREATE INDEX</command>.) The file path name is of interest if you want to examine the table's disk file directly."
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:63(programlisting) 
+#: /tmp/cicero-NXtK/diskusage.xml:63(programlisting) 
 #, no-wrap
 msgid "\nSELECT relname, relpages\nFROM pg_class,\n     (SELECT reltoastrelid\n      FROM pg_class\n      WHERE relname = 'customer') AS ss\nWHERE oid = ss.reltoastrelid OR\n      oid = (SELECT reltoastidxid\n             FROM pg_class\n             WHERE oid = ss.reltoastrelid)\nORDER BY relname;\n\n       relname        | relpages \n----------------------+----------\n pg_toast_16806       |        0\n pg_toast_16806_index |        1\n"
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:60(para) 
+#: /tmp/cicero-NXtK/diskusage.xml:60(para) 
 msgid "To show the space used by <acronym>TOAST</acronym> tables, use a query like the following: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:84(programlisting) 
+#: /tmp/cicero-NXtK/diskusage.xml:84(programlisting) 
 #, no-wrap
 msgid "\nSELECT c2.relname, c2.relpages\nFROM pg_class c, pg_class c2, pg_index i\nWHERE c.relname = 'customer' AND\n      c.oid = i.indrelid AND\n      c2.oid = i.indexrelid\nORDER BY c2.relname;\n\n       relname        | relpages \n----------------------+----------\n customer_id_indexdex |       26\n"
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:82(para) 
+#: /tmp/cicero-NXtK/diskusage.xml:82(para) 
 msgid "You can easily display index sizes, too: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:101(programlisting) 
+#: /tmp/cicero-NXtK/diskusage.xml:101(programlisting) 
 #, no-wrap
 msgid "\nSELECT relname, relpages\nFROM pg_class\nORDER BY relpages DESC;\n\n       relname        | relpages \n----------------------+----------\n bigtable             |     3290\n customer             |     3144\n"
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:98(para) 
+#: /tmp/cicero-NXtK/diskusage.xml:98(para) 
 msgid "It is easy to find your largest tables and indexes using this information: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:115(title) 
+#: /tmp/cicero-NXtK/diskusage.xml:115(title) 
 msgid "Disk Full Failure"
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:117(para) 
+#: /tmp/cicero-NXtK/diskusage.xml:117(para) 
 msgid "The most important disk monitoring task of a database administrator is to make sure the disk doesn't become full. A filled data disk will not result in data corruption, but it might prevent useful activity from occurring. If the disk holding the WAL files grows full, database server panic and consequent shutdown might occur."
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:125(para) 
+#: /tmp/cicero-NXtK/diskusage.xml:125(para) 
 msgid "If you cannot free up additional space on the disk by deleting other things, you can move some of the database files to other file systems by making use of tablespaces. See <xref linkend=\"manage-ag-tablespaces\"/> for more information about that."
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:133(para) 
+#: /tmp/cicero-NXtK/diskusage.xml:133(para) 
 msgid "Some file systems perform badly when they are almost full, so do not wait until the disk is completely full to take action."
 msgstr ""
 
-#: /tmp/cicero-mzvS/diskusage.xml:139(para) 
+#: /tmp/cicero-NXtK/diskusage.xml:139(para) 
 msgid "If your system supports per-user disk quotas, then the database will naturally be subject to whatever quota is placed on the user the server runs as. Exceeding the quota will have the same bad effects as running out of disk space entirely."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-mzvS/diskusage.xml:0(None) 
+#: /tmp/cicero-NXtK/diskusage.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

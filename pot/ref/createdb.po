@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:06+0200\n"
+"POT-Creation-Date: 2011-09-02 11:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,348 +9,348 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:10(application) /tmp/cicero-mzvS/ref/createdb.xml:16(refname) /tmp/cicero-mzvS/ref/createdb.xml:21(primary) /tmp/cicero-mzvS/ref/createdb.xml:26(command) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:10(application) /tmp/cicero-NXtK/ref/createdb.xml:16(refname) /tmp/cicero-NXtK/ref/createdb.xml:21(primary) /tmp/cicero-NXtK/ref/createdb.xml:26(command) 
 msgid "createdb"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:11(manvolnum) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:11(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:12(refmiscinfo) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:12(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:17(productname) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:17(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:17(refpurpose) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:17(refpurpose) 
 msgid "create a new <placeholder-1/> database"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:27(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:27(replaceable) 
 msgid "connection-option"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:28(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:28(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:29(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:69(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:29(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:69(replaceable) 
 msgid "dbname"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:30(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:81(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:30(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:81(replaceable) 
 msgid "description"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:36(title) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:39(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:39(para) 
 msgid "<application>createdb</application> creates a new <productname>PostgreSQL</productname> database."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:44(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:44(para) 
 msgid "Normally, the database user who executes this command becomes the owner of the new database. However, a different owner can be specified via the <option>-O</option> option, if the executing user has appropriate privileges."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:51(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:51(para) 
 msgid "<application>createdb</application> is a wrapper around the <acronym>SQL</acronym> command <xref linkend=\"sql-createdatabase\"/>. There is no effective difference between creating databases via this utility and via other methods for accessing the server."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:62(title) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:62(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:71(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:71(para) 
 msgid "Specifies the name of the database to be created. The name must be unique among all <productname>PostgreSQL</productname> databases in this cluster. The default is to create a database with the same name as the current system user."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:83(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:83(para) 
 msgid "Specifies a comment to be associated with the newly created database."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:91(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:92(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:91(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:92(replaceable) 
 msgid "tablespace"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:91(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:91(option) 
 msgid "-D <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:92(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:92(option) 
 msgid "--tablespace=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:94(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:94(para) 
 msgid "Specifies the default tablespace for the database."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:101(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:101(option) 
 msgid "-e"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:102(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:102(option) 
 msgid "--echo"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:104(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:104(para) 
 msgid "Echo the commands that <application>createdb</application> generates and sends to the server."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:112(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:113(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:112(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:113(replaceable) 
 msgid "encoding"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:112(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:112(option) 
 msgid "-E <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:113(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:113(option) 
 msgid "--encoding=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:115(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:115(para) 
 msgid "Specifies the character encoding scheme to be used in this database. The character sets supported by the <productname>PostgreSQL</productname> server are described in <xref linkend=\"multibyte-charset-supported\"/>."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:125(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:126(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:136(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:145(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:125(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:126(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:136(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:145(replaceable) 
 msgid "locale"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:125(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:125(option) 
 msgid "-l <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:126(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:126(option) 
 msgid "--locale=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:128(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:128(para) 
 msgid "Specifies the locale to be used in this database. This is equivalent to specifying both <option>--lc-collate</option> and <option>--lc-ctype</option>."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:136(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:136(option) 
 msgid "--lc-collate=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:138(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:138(para) 
 msgid "Specifies the LC_COLLATE setting to be used in this database."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:145(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:145(option) 
 msgid "--lc-ctype=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:147(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:147(para) 
 msgid "Specifies the LC_CTYPE setting to be used in this database."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:154(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:155(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:154(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:155(replaceable) 
 msgid "owner"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:154(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:154(option) 
 msgid "-O <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:155(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:155(option) 
 msgid "--owner=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:157(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:157(para) 
 msgid "Specifies the database user who will own the new database."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:164(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:165(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:164(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:165(replaceable) 
 msgid "template"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:164(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:164(option) 
 msgid "-T <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:165(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:165(option) 
 msgid "--template=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:167(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:167(para) 
 msgid "Specifies the template database from which to build this database."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:174(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:174(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:175(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:175(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:177(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:177(para) 
 msgid "Print the <application>createdb</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:184(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:184(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:185(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:185(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:187(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:187(para) 
 msgid "Show help about <application>createdb</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:64(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:64(para) 
 msgid "<application>createdb</application> accepts the following command-line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:197(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:197(para) 
 msgid "The options <option>-D</option>, <option>-l</option>, <option>-E</option>, <option>-O</option>, and <option>-T</option> correspond to options of the underlying SQL command <xref linkend=\"sql-createdatabase\"/>; see there for more information about them."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:211(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:212(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:211(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:212(replaceable) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:211(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:211(option) 
 msgid "-h <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:212(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:212(option) 
 msgid "--host=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:214(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:214(para) 
 msgid "Specifies the host name of the machine on which the server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:223(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:224(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:223(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:224(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:223(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:223(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:224(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:224(option) 
 msgid "--port=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:226(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:226(para) 
 msgid "Specifies the TCP port or the local Unix domain socket file extension on which the server is listening for connections."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:234(replaceable) /tmp/cicero-mzvS/ref/createdb.xml:235(replaceable) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:234(replaceable) /tmp/cicero-NXtK/ref/createdb.xml:235(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:234(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:234(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:235(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:235(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:237(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:237(para) 
 msgid "User name to connect as."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:244(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:244(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:245(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:245(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:247(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:247(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:259(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:259(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:260(option) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:260(option) 
 msgid "--password"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:262(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:262(para) 
 msgid "Force <application>createdb</application> to prompt for a password before connecting to a database."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:267(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:267(para) 
 msgid "This option is never essential, since <application>createdb</application> will automatically prompt for a password if the server demands password authentication. However, <application>createdb</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:205(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:205(para) 
 msgid "<application>createdb</application> also accepts the following command-line arguments for connection parameters: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:285(title) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:285(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:289(envar) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:289(envar) 
 msgid "PGDATABASE"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:291(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:291(para) 
 msgid "If set, the name of the database to create, unless overridden on the command line."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:299(envar) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:299(envar) 
 msgid "PGHOST"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:300(envar) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:300(envar) 
 msgid "PGPORT"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:301(envar) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:301(envar) 
 msgid "PGUSER"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:304(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:304(para) 
 msgid "Default connection parameters. <envar>PGUSER</envar> also determines the name of the database to create, if it is not specified on the command line or by <envar>PGDATABASE</envar>."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:313(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:313(para) 
 msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:323(title) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:323(title) 
 msgid "Diagnostics"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:325(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:325(para) 
 msgid "In case of difficulty, see <xref linkend=\"sql-createdatabase\"/> and <xref linkend=\"app-psql\"/> for discussions of potential problems and error messages. The database server must be running at the targeted host. Also, any default connection settings and environment variables used by the <application>libpq</application> front-end library will apply."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:339(title) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:339(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:341(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:341(para) 
 msgid "To create the database <literal>demo</literal> using the default database server: <screen>\n<prompt>$ </prompt><userinput>createdb demo</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:349(para) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:349(para) 
 msgid "To create the database <literal>demo</literal> using the server on host <literal>eden</literal>, port 5000, using the <literal>LATIN1</literal> encoding scheme with a look at the underlying command: <screen>\n<prompt>$ </prompt><userinput>createdb -p 5000 -h eden -E LATIN1 -e demo</userinput>\n<computeroutput>CREATE DATABASE demo ENCODING 'LATIN1';</computeroutput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/createdb.xml:362(title) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:362(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-mzvS/ref/createdb.xml:0(None) 
+#: /tmp/cicero-NXtK/ref/createdb.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

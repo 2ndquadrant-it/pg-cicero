@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:06+0200\n"
+"POT-Creation-Date: 2011-09-02 11:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,240 +9,240 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:10(application) /tmp/cicero-mzvS/ref/dropdb.xml:16(refname) /tmp/cicero-mzvS/ref/dropdb.xml:21(primary) /tmp/cicero-mzvS/ref/dropdb.xml:26(command) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:10(application) /tmp/cicero-NXtK/ref/dropdb.xml:16(refname) /tmp/cicero-NXtK/ref/dropdb.xml:21(primary) /tmp/cicero-NXtK/ref/dropdb.xml:26(command) 
 msgid "dropdb"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:11(manvolnum) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:11(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:12(refmiscinfo) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:12(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:17(productname) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:17(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:17(refpurpose) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:17(refpurpose) 
 msgid "remove a <placeholder-1/> database"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:27(replaceable) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:27(replaceable) 
 msgid "connection-option"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:28(replaceable) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:28(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:29(replaceable) /tmp/cicero-mzvS/ref/dropdb.xml:62(replaceable) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:29(replaceable) /tmp/cicero-NXtK/ref/dropdb.xml:62(replaceable) 
 msgid "dbname"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:35(title) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:35(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:37(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:37(para) 
 msgid "<application>dropdb</application> destroys an existing <productname>PostgreSQL</productname> database. The user who executes this command must be a database superuser or the owner of the database."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:44(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:44(para) 
 msgid "<application>dropdb</application> is a wrapper around the <acronym>SQL</acronym> command <xref linkend=\"sql-dropdatabase\"/>. There is no effective difference between dropping databases via this utility and via other methods for accessing the server."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:55(title) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:55(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:64(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:64(para) 
 msgid "Specifies the name of the database to be removed."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:71(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:71(option) 
 msgid "-e"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:72(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:72(option) 
 msgid "--echo"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:74(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:74(para) 
 msgid "Echo the commands that <application>dropdb</application> generates and sends to the server."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:82(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:82(option) 
 msgid "-i"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:83(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:83(option) 
 msgid "--interactive"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:85(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:85(para) 
 msgid "Issues a verification prompt before doing anything destructive."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:92(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:92(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:93(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:93(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:95(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:95(para) 
 msgid "Print the <application>dropdb</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:102(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:102(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:103(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:103(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:105(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:105(para) 
 msgid "Show help about <application>dropdb</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:57(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:57(para) 
 msgid "<application>dropdb</application> accepts the following command-line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:122(replaceable) /tmp/cicero-mzvS/ref/dropdb.xml:123(replaceable) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:122(replaceable) /tmp/cicero-NXtK/ref/dropdb.xml:123(replaceable) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:122(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:122(option) 
 msgid "-h <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:123(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:123(option) 
 msgid "--host=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:125(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:125(para) 
 msgid "Specifies the host name of the machine on which the server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:135(replaceable) /tmp/cicero-mzvS/ref/dropdb.xml:136(replaceable) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:135(replaceable) /tmp/cicero-NXtK/ref/dropdb.xml:136(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:135(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:135(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:136(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:136(option) 
 msgid "--port=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:138(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:138(para) 
 msgid "Specifies the TCP port or local Unix domain socket file extension on which the server is listening for connections."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:147(replaceable) /tmp/cicero-mzvS/ref/dropdb.xml:148(replaceable) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:147(replaceable) /tmp/cicero-NXtK/ref/dropdb.xml:148(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:147(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:147(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:148(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:148(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:150(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:150(para) 
 msgid "User name to connect as."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:157(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:157(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:158(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:158(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:160(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:160(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:172(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:172(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:173(option) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:173(option) 
 msgid "--password"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:175(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:175(para) 
 msgid "Force <application>dropdb</application> to prompt for a password before connecting to a database."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:180(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:180(para) 
 msgid "This option is never essential, since <application>dropdb</application> will automatically prompt for a password if the server demands password authentication. However, <application>dropdb</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:116(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:116(para) 
 msgid "<application>dropdb</application> also accepts the following command-line arguments for connection parameters: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:197(title) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:197(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:201(envar) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:201(envar) 
 msgid "PGHOST"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:202(envar) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:202(envar) 
 msgid "PGPORT"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:203(envar) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:203(envar) 
 msgid "PGUSER"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:206(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:206(para) 
 msgid "Default connection parameters"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:213(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:213(para) 
 msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:223(title) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:223(title) 
 msgid "Diagnostics"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:225(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:225(para) 
 msgid "In case of difficulty, see <xref linkend=\"sql-dropdatabase\"/> and <xref linkend=\"app-psql\"/> for discussions of potential problems and error messages. The database server must be running at the targeted host. Also, any default connection settings and environment variables used by the <application>libpq</application> front-end library will apply."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:239(title) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:239(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:241(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:241(para) 
 msgid "To destroy the database <literal>demo</literal> on the default database server: <screen>\n<prompt>$ </prompt><userinput>dropdb demo</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:249(para) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:249(para) 
 msgid "To destroy the database <literal>demo</literal> using the server on host <literal>eden</literal>, port 5000, with verification and a peek at the underlying command: <screen>\n<prompt>$ </prompt><userinput>dropdb -p 5000 -h eden -i -e demo</userinput>\n<computeroutput>Database \"demo\" will be permanently deleted.\nAre you sure? (y/n) </computeroutput><userinput>y</userinput>\n<computeroutput>DROP DATABASE demo;</computeroutput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/dropdb.xml:263(title) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:263(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-mzvS/ref/dropdb.xml:0(None) 
+#: /tmp/cicero-NXtK/ref/dropdb.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

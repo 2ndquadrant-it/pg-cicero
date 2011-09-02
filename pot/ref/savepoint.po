@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:06+0200\n"
+"POT-Creation-Date: 2011-09-02 11:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,107 +9,107 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:10(refentrytitle) /tmp/cicero-mzvS/ref/savepoint.xml:16(refname) /tmp/cicero-mzvS/ref/savepoint.xml:21(primary) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:10(refentrytitle) /tmp/cicero-NXtK/ref/savepoint.xml:16(refname) /tmp/cicero-NXtK/ref/savepoint.xml:21(primary) 
 msgid "SAVEPOINT"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:11(manvolnum) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:12(refmiscinfo) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:17(refpurpose) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:17(refpurpose) 
 msgid "define a new savepoint within the current transaction"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:25(primary) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:25(primary) 
 msgid "savepoints"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:26(secondary) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:26(secondary) 
 msgid "defining"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:31(replaceable) /tmp/cicero-mzvS/ref/savepoint.xml:55(replaceable) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:31(replaceable) /tmp/cicero-NXtK/ref/savepoint.xml:55(replaceable) 
 msgid "savepoint_name"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:30(synopsis) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:30(synopsis) 
 #, no-wrap
 msgid "\nSAVEPOINT <placeholder-1/>\n"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:36(title) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:38(para) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:38(para) 
 msgid "<command>SAVEPOINT</command> establishes a new savepoint within the current transaction."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:43(para) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:43(para) 
 msgid "A savepoint is a special mark inside a transaction that allows all commands that are executed after it was established to be rolled back, restoring the transaction state to what it was at the time of the savepoint."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:51(title) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:51(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:57(para) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:57(para) 
 msgid "The name to give to the new savepoint."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:66(title) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:66(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:68(para) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:68(para) 
 msgid "Use <xref linkend=\"sql-rollback-to\"/> to rollback to a savepoint. Use <xref linkend=\"sql-release-savepoint\"/> to destroy a savepoint, keeping the effects of commands executed after it was established."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:75(para) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:75(para) 
 msgid "Savepoints can only be established when inside a transaction block. There can be multiple savepoints defined within a transaction."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:82(title) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:82(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:87(programlisting) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:87(programlisting) 
 #, no-wrap
 msgid "\nBEGIN;\n    INSERT INTO table1 VALUES (1);\n    SAVEPOINT my_savepoint;\n    INSERT INTO table1 VALUES (2);\n    ROLLBACK TO SAVEPOINT my_savepoint;\n    INSERT INTO table1 VALUES (3);\nCOMMIT;\n"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:84(para) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:84(para) 
 msgid "To establish a savepoint and later undo the effects of all commands executed after it was established: <placeholder-1/> The above transaction will insert the values 1 and 3, but not 2."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:101(programlisting) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:101(programlisting) 
 #, no-wrap
 msgid "\nBEGIN;\n    INSERT INTO table1 VALUES (3);\n    SAVEPOINT my_savepoint;\n    INSERT INTO table1 VALUES (4);\n    RELEASE SAVEPOINT my_savepoint;\nCOMMIT;\n"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:99(para) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:99(para) 
 msgid "To establish and later destroy a savepoint: <placeholder-1/> The above transaction will insert both 3 and 4."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:114(title) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:114(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:116(para) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:116(para) 
 msgid "SQL requires a savepoint to be destroyed automatically when another savepoint with the same name is established. In <productname>PostgreSQL</productname>, the old savepoint is kept, though only the more recent one will be used when rolling back or releasing. (Releasing the newer savepoint with <command>RELEASE SAVEPOINT</command> will cause the older one to again become accessible to <command>ROLLBACK TO SAVEPOINT</command> and <command>RELEASE SAVEPOINT</command>.) Otherwise, <command>SAVEPOINT</command> is fully SQL conforming."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/savepoint.xml:129(title) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:129(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-mzvS/ref/savepoint.xml:0(None) 
+#: /tmp/cicero-NXtK/ref/savepoint.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

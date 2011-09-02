@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:06+0200\n"
+"POT-Creation-Date: 2011-09-02 11:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,93 +9,93 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:10(refentrytitle) /tmp/cicero-mzvS/ref/reassign_owned.xml:16(refname) /tmp/cicero-mzvS/ref/reassign_owned.xml:21(primary) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:10(refentrytitle) /tmp/cicero-NXtK/ref/reassign_owned.xml:16(refname) /tmp/cicero-NXtK/ref/reassign_owned.xml:21(primary) 
 msgid "REASSIGN OWNED"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:11(manvolnum) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:12(refmiscinfo) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:17(refpurpose) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:17(refpurpose) 
 msgid "change the ownership of database objects owned by a database role"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:26(replaceable) /tmp/cicero-mzvS/ref/reassign_owned.xml:45(replaceable) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:26(replaceable) /tmp/cicero-NXtK/ref/reassign_owned.xml:45(replaceable) 
 msgid "old_role"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:26(replaceable) /tmp/cicero-mzvS/ref/reassign_owned.xml:56(replaceable) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:26(replaceable) /tmp/cicero-NXtK/ref/reassign_owned.xml:56(replaceable) 
 msgid "new_role"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:25(synopsis) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:25(synopsis) 
 #, no-wrap
 msgid "\nREASSIGN OWNED BY <placeholder-1/> [, ...] TO <placeholder-2/>\n"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:31(title) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:33(para) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:33(para) 
 msgid "<command>REASSIGN OWNED</command> instructs the system to change the ownership of the database objects owned by one of the old_roles, to new_role."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:41(title) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:41(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:47(para) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:47(para) 
 msgid "The name of a role. The ownership of all the objects in the current database owned by this role will be reassigned to <replaceable class=\"PARAMETER\">new_role</replaceable>."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:58(para) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:58(para) 
 msgid "The name of the role that will be made the new owner of the affected objects."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:68(title) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:68(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:70(para) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:70(para) 
 msgid "<command>REASSIGN OWNED</command> is often used to prepare for the removal of one or more roles. Because <command>REASSIGN OWNED</command> only affects the objects in the current database, it is usually necessary to execute this command in each database that contains objects owned by a role that is to be removed."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:78(para) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:78(para) 
 msgid "<command>REASSIGN OWNED</command> requires privileges on both the source role(s) and the target role."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:83(para) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:83(para) 
 msgid "The <xref linkend=\"sql-drop-owned\"/> command is an alternative that drops all the database objects owned by one or more roles. Note also that <command>DROP OWNED</command> requires privileges only on the source role(s)."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:90(para) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:90(para) 
 msgid "The <command>REASSIGN OWNED</command> command does not affect the privileges granted to the old_roles in objects that are not owned by them. Use <command>DROP OWNED</command> to revoke those privileges."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:97(para) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:97(para) 
 msgid "The <command>REASSIGN OWNED</command> command does not affect the ownership of any databases owned by the role. Use <xref linkend=\"sql-alterdatabase\"/> to reassign that ownership."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:106(title) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:106(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:108(para) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:108(para) 
 msgid "The <command>REASSIGN OWNED</command> statement is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:115(title) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:115(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-mzvS/ref/reassign_owned.xml:0(None) 
+#: /tmp/cicero-NXtK/ref/reassign_owned.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
