@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-01 06:59+0200\n"
+"POT-Creation-Date: 2011-09-02 09:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,77 +9,77 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:10(refentrytitle) /tmp/cicero-dQiJ/ref/create_group.xml:16(refname) /tmp/cicero-dQiJ/ref/create_group.xml:21(primary) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:10(refentrytitle) /tmp/cicero-ywdq/ref/create_group.xml:16(refname) /tmp/cicero-ywdq/ref/create_group.xml:21(primary) 
 msgid "CREATE GROUP"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:11(manvolnum) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:11(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:12(refmiscinfo) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:12(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:17(refpurpose) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:17(refpurpose) 
 msgid "define a new database role"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:26(replaceable) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:26(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:26(replaceable) /tmp/cicero-dQiJ/ref/create_group.xml:28(replaceable) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:26(replaceable) /tmp/cicero-ywdq/ref/create_group.xml:28(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:28(phrase) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:28(phrase) 
 msgid "where <placeholder-1/> can be:"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:36(replaceable) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:36(replaceable) 
 msgid "password"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:37(replaceable) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:37(replaceable) 
 msgid "timestamp"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:38(replaceable) /tmp/cicero-dQiJ/ref/create_group.xml:39(replaceable) /tmp/cicero-dQiJ/ref/create_group.xml:40(replaceable) /tmp/cicero-dQiJ/ref/create_group.xml:41(replaceable) /tmp/cicero-dQiJ/ref/create_group.xml:42(replaceable) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:38(replaceable) /tmp/cicero-ywdq/ref/create_group.xml:39(replaceable) /tmp/cicero-ywdq/ref/create_group.xml:40(replaceable) /tmp/cicero-ywdq/ref/create_group.xml:41(replaceable) /tmp/cicero-ywdq/ref/create_group.xml:42(replaceable) 
 msgid "role_name"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:43(replaceable) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:43(replaceable) 
 msgid "uid"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:25(synopsis) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:25(synopsis) 
 #, no-wrap
 msgid "\nCREATE GROUP <placeholder-1/> [ [ WITH ] <placeholder-2/> [ ... ] ]\n\n<placeholder-3/>\n\n      SUPERUSER | NOSUPERUSER\n    | CREATEDB | NOCREATEDB\n    | CREATEROLE | NOCREATEROLE\n    | CREATEUSER | NOCREATEUSER\n    | INHERIT | NOINHERIT\n    | LOGIN | NOLOGIN\n    | [ ENCRYPTED | UNENCRYPTED ] PASSWORD '<placeholder-4/>'\n    | VALID UNTIL '<placeholder-5/>'\n    | IN ROLE <placeholder-6/> [, ...]\n    | IN GROUP <placeholder-7/> [, ...]\n    | ROLE <placeholder-8/> [, ...]\n    | ADMIN <placeholder-9/> [, ...]\n    | USER <placeholder-10/> [, ...]\n    | SYSID <placeholder-11/>\n"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:48(title) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:48(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:50(para) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:50(para) 
 msgid "<command>CREATE GROUP</command> is now an alias for <xref linkend=\"sql-createrole\"/>."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:57(title) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:57(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:59(para) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:59(para) 
 msgid "There is no <command>CREATE GROUP</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ref/create_group.xml:66(title) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:66(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-dQiJ/ref/create_group.xml:0(None) 
+#: /tmp/cicero-ywdq/ref/create_group.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

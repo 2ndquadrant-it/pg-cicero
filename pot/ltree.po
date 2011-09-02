@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-01 06:59+0200\n"
+"POT-Creation-Date: 2011-09-02 09:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,526 +9,526 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-dQiJ/ltree.xml:6(title) /tmp/cicero-dQiJ/ltree.xml:9(primary) /tmp/cicero-dQiJ/ltree.xml:205(type) /tmp/cicero-dQiJ/ltree.xml:205(type) /tmp/cicero-dQiJ/ltree.xml:211(type) /tmp/cicero-dQiJ/ltree.xml:211(type) /tmp/cicero-dQiJ/ltree.xml:217(type) /tmp/cicero-dQiJ/ltree.xml:219(type) /tmp/cicero-dQiJ/ltree.xml:223(type) /tmp/cicero-dQiJ/ltree.xml:225(type) /tmp/cicero-dQiJ/ltree.xml:229(type) /tmp/cicero-dQiJ/ltree.xml:231(type) /tmp/cicero-dQiJ/ltree.xml:235(type) /tmp/cicero-dQiJ/ltree.xml:237(type) /tmp/cicero-dQiJ/ltree.xml:241(type) /tmp/cicero-dQiJ/ltree.xml:243(type) /tmp/cicero-dQiJ/ltree.xml:247(type) /tmp/cicero-dQiJ/ltree.xml:249(type) /tmp/cicero-dQiJ/ltree.xml:253(type) /tmp/cicero-dQiJ/ltree.xml:253(type) /tmp/cicero-dQiJ/ltree.xml:254(type) /tmp/cicero-dQiJ/ltree.xml:255(type) /tmp/cicero-dQiJ/ltree.xml:259(type) /tmp/cicero-dQiJ/ltree.xml:260(type) /tmp/cicero-dQiJ/ltree.xml:261(type) /tmp/cicero-dQiJ/ltree.xml:265(type) /tmp/cicero-dQiJ/ltree.xml:266(type) /tmp/cicero-dQiJ/ltree.xml:267(type) /tmp/cicero-dQiJ/ltree.xml:271(type) /tmp/cicero-dQiJ/ltree.xml:273(type) /tmp/cicero-dQiJ/ltree.xml:277(type) /tmp/cicero-dQiJ/ltree.xml:279(type) /tmp/cicero-dQiJ/ltree.xml:283(type) /tmp/cicero-dQiJ/ltree.xml:285(type) /tmp/cicero-dQiJ/ltree.xml:289(type) /tmp/cicero-dQiJ/ltree.xml:291(type) /tmp/cicero-dQiJ/ltree.xml:309(type) /tmp/cicero-dQiJ/ltree.xml:315(type) /tmp/cicero-dQiJ/ltree.xml:331(type) /tmp/cicero-dQiJ/ltree.xml:332(type) /tmp/cicero-dQiJ/ltree.xml:333(type) /tmp/cicero-dQiJ/ltree.xml:337(type) /tmp/cicero-dQiJ/ltree.xml:338(type) /tmp/cicero-dQiJ/ltree.xml:339(type) /tmp/cicero-dQiJ/ltree.xml:344(type) /tmp/cicero-dQiJ/ltree.xml:350(type) /tmp/cicero-dQiJ/ltree.xml:387(type) /tmp/cicero-dQiJ/ltree.xml:388(type) /tmp/cicero-dQiJ/ltree.xml:396(type) /tmp/cicero-dQiJ/ltree.xml:397(type) /tmp/cicero-dQiJ/ltree.xml:408(type) /tmp/cicero-dQiJ/ltree.xml:409(type) /tmp/cicero-dQiJ/ltree.xml:447(type) /tmp/cicero-dQiJ/ltree.xml:448(type) /tmp/cicero-dQiJ/ltree.xml:456(type) /tmp/cicero-dQiJ/ltree.xml:463(type) /tmp/cicero-dQiJ/ltree.xml:472(type) 
+#: /tmp/cicero-ywdq/ltree.xml:6(title) /tmp/cicero-ywdq/ltree.xml:9(primary) /tmp/cicero-ywdq/ltree.xml:205(type) /tmp/cicero-ywdq/ltree.xml:205(type) /tmp/cicero-ywdq/ltree.xml:211(type) /tmp/cicero-ywdq/ltree.xml:211(type) /tmp/cicero-ywdq/ltree.xml:217(type) /tmp/cicero-ywdq/ltree.xml:219(type) /tmp/cicero-ywdq/ltree.xml:223(type) /tmp/cicero-ywdq/ltree.xml:225(type) /tmp/cicero-ywdq/ltree.xml:229(type) /tmp/cicero-ywdq/ltree.xml:231(type) /tmp/cicero-ywdq/ltree.xml:235(type) /tmp/cicero-ywdq/ltree.xml:237(type) /tmp/cicero-ywdq/ltree.xml:241(type) /tmp/cicero-ywdq/ltree.xml:243(type) /tmp/cicero-ywdq/ltree.xml:247(type) /tmp/cicero-ywdq/ltree.xml:249(type) /tmp/cicero-ywdq/ltree.xml:253(type) /tmp/cicero-ywdq/ltree.xml:253(type) /tmp/cicero-ywdq/ltree.xml:254(type) /tmp/cicero-ywdq/ltree.xml:255(type) /tmp/cicero-ywdq/ltree.xml:259(type) /tmp/cicero-ywdq/ltree.xml:260(type) /tmp/cicero-ywdq/ltree.xml:261(type) /tmp/cicero-ywdq/ltree.xml:265(type) /tmp/cicero-ywdq/ltree.xml:266(type) /tmp/cicero-ywdq/ltree.xml:267(type) /tmp/cicero-ywdq/ltree.xml:271(type) /tmp/cicero-ywdq/ltree.xml:273(type) /tmp/cicero-ywdq/ltree.xml:277(type) /tmp/cicero-ywdq/ltree.xml:279(type) /tmp/cicero-ywdq/ltree.xml:283(type) /tmp/cicero-ywdq/ltree.xml:285(type) /tmp/cicero-ywdq/ltree.xml:289(type) /tmp/cicero-ywdq/ltree.xml:291(type) /tmp/cicero-ywdq/ltree.xml:309(type) /tmp/cicero-ywdq/ltree.xml:315(type) /tmp/cicero-ywdq/ltree.xml:331(type) /tmp/cicero-ywdq/ltree.xml:332(type) /tmp/cicero-ywdq/ltree.xml:333(type) /tmp/cicero-ywdq/ltree.xml:337(type) /tmp/cicero-ywdq/ltree.xml:338(type) /tmp/cicero-ywdq/ltree.xml:339(type) /tmp/cicero-ywdq/ltree.xml:344(type) /tmp/cicero-ywdq/ltree.xml:350(type) /tmp/cicero-ywdq/ltree.xml:387(type) /tmp/cicero-ywdq/ltree.xml:388(type) /tmp/cicero-ywdq/ltree.xml:396(type) /tmp/cicero-ywdq/ltree.xml:397(type) /tmp/cicero-ywdq/ltree.xml:408(type) /tmp/cicero-ywdq/ltree.xml:409(type) /tmp/cicero-ywdq/ltree.xml:447(type) /tmp/cicero-ywdq/ltree.xml:448(type) /tmp/cicero-ywdq/ltree.xml:456(type) /tmp/cicero-ywdq/ltree.xml:463(type) /tmp/cicero-ywdq/ltree.xml:472(type) 
 msgid "ltree"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:12(para) 
+#: /tmp/cicero-ywdq/ltree.xml:12(para) 
 msgid "This module implements a data type <type>ltree</type> for representing labels of data stored in a hierarchical tree-like structure. Extensive facilities for searching through label trees are provided."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:19(title) 
+#: /tmp/cicero-ywdq/ltree.xml:19(title) 
 msgid "Definitions"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:21(para) 
+#: /tmp/cicero-ywdq/ltree.xml:21(para) 
 msgid "A <firstterm>label</firstterm> is a sequence of alphanumeric characters and underscores (for example, in C locale the characters <literal>A-Za-z0-9_</literal> are allowed). Labels must be less than 256 bytes long."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:28(para) 
+#: /tmp/cicero-ywdq/ltree.xml:28(para) 
 msgid "Examples: <literal>42</literal>, <literal>Personal_Services</literal>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:32(para) 
+#: /tmp/cicero-ywdq/ltree.xml:32(para) 
 msgid "A <firstterm>label path</firstterm> is a sequence of zero or more labels separated by dots, for example <literal>L1.L2.L3</literal>, representing a path from the root of a hierarchical tree to a particular node. The length of a label path must be less than 65Kb, but keeping it under 2Kb is preferable. In practice this is not a major limitation; for example, the longest label path in the DMOZ catalogue (<ulink url=\"http://www.dmoz.org\"/>) is about 240 bytes."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:42(para) 
+#: /tmp/cicero-ywdq/ltree.xml:42(para) 
 msgid "Example: <literal>Top.Countries.Europe.Russia</literal>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:46(para) 
+#: /tmp/cicero-ywdq/ltree.xml:46(para) 
 msgid "The <filename>ltree</filename> module provides several data types:"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:52(para) 
+#: /tmp/cicero-ywdq/ltree.xml:52(para) 
 msgid "<type>ltree</type> stores a label path."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:58(para) 
+#: /tmp/cicero-ywdq/ltree.xml:58(para) 
 msgid "<type>lquery</type> represents a regular-expression-like pattern for matching <type>ltree</type> values. A simple word matches that label within a path. A star symbol (<literal>*</literal>) matches zero or more labels. For example: <synopsis>\nfoo         <lineannotation>Match the exact label path <literal>foo</literal></lineannotation>\n*.foo.*     <lineannotation>Match any label path containing the label <literal>foo</literal></lineannotation>\n*.foo       <lineannotation>Match any label path whose last label is <literal>foo</literal></lineannotation>\n</synopsis>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:70(para) 
+#: /tmp/cicero-ywdq/ltree.xml:70(para) 
 msgid "Star symbols can also be quantified to restrict how many labels they can match: <synopsis>\n*{<replaceable>n</replaceable>}        <lineannotation>Match exactly <replaceable>n</replaceable> labels</lineannotation>\n*{<replaceable>n</replaceable>,}       <lineannotation>Match at least <replaceable>n</replaceable> labels</lineannotation>\n*{<replaceable>n</replaceable>,<replaceable>m</replaceable>}      <lineannotation>Match at least <replaceable>n</replaceable> but not more than <replaceable>m</replaceable> labels</lineannotation>\n*{,<replaceable>m</replaceable>}       <lineannotation>Match at most <replaceable>m</replaceable> labels — same as </lineannotation> *{0,<replaceable>m</replaceable>}\n</synopsis>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:81(para) 
+#: /tmp/cicero-ywdq/ltree.xml:81(para) 
 msgid "There are several modifiers that can be put at the end of a non-star label in <type>lquery</type> to make it match more than just the exact match: <synopsis>\n@           <lineannotation>Match case-insensitively, for example <literal>a@</literal> matches <literal>A</literal></lineannotation>\n*           <lineannotation>Match any label with this prefix, for example <literal>foo*</literal> matches <literal>foobar</literal></lineannotation>\n%           <lineannotation>Match initial underscore-separated words</lineannotation>\n</synopsis> The behavior of <literal>%</literal> is a bit complicated. It tries to match words rather than the entire label. For example <literal>foo_bar%</literal> matches <literal>foo_bar_baz</literal> but not <literal>foo_barbaz</literal>. If combined with <literal>*</literal>, prefix matching applies to each word separately, for example <literal>foo_bar%*</literal> matches <literal>foo1_bar2_baz</literal> but not <literal>foo1_br2_baz</literal>."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:98(para) 
+#: /tmp/cicero-ywdq/ltree.xml:98(para) 
 msgid "Also, you can write several possibly-modified labels separated with <literal>|</literal> (OR) to match any of those labels, and you can put <literal>!</literal> (NOT) at the start to match any label that doesn't match any of the alternatives."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:107(programlisting) 
+#: /tmp/cicero-ywdq/ltree.xml:107(programlisting) 
 #, no-wrap
 msgid "\nTop.*{0,2}.sport*@.!football|tennis.Russ*|Spain\na.  b.     c.      d.               e.\n"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:105(para) 
+#: /tmp/cicero-ywdq/ltree.xml:105(para) 
 msgid "Here's an annotated example of <type>lquery</type>: <placeholder-1/> This query will match any label path that:"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:115(para) 
+#: /tmp/cicero-ywdq/ltree.xml:115(para) 
 msgid "begins with the label <literal>Top</literal>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:120(para) 
+#: /tmp/cicero-ywdq/ltree.xml:120(para) 
 msgid "and next has zero to two labels before"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:125(para) 
+#: /tmp/cicero-ywdq/ltree.xml:125(para) 
 msgid "a label beginning with the case-insensitive prefix <literal>sport</literal>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:130(para) 
+#: /tmp/cicero-ywdq/ltree.xml:130(para) 
 msgid "then a label not matching <literal>football</literal> nor <literal>tennis</literal>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:136(para) 
+#: /tmp/cicero-ywdq/ltree.xml:136(para) 
 msgid "and then ends with a label beginning with <literal>Russ</literal> or exactly matching <literal>Spain</literal>."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:145(para) 
+#: /tmp/cicero-ywdq/ltree.xml:145(para) 
 msgid "<type>ltxtquery</type> represents a full-text-search-like pattern for matching <type>ltree</type> values. An <type>ltxtquery</type> value contains words, possibly with the modifiers <literal>@</literal>, <literal>*</literal>, <literal>%</literal> at the end; the modifiers have the same meanings as in <type>lquery</type>. Words can be combined with <literal>&amp;</literal> (AND), <literal>|</literal> (OR), <literal>!</literal> (NOT), and parentheses. The key difference from <type>lquery</type> is that <type>ltxtquery</type> matches words without regard to their position in the label path."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:159(programlisting) 
+#: /tmp/cicero-ywdq/ltree.xml:159(programlisting) 
 #, no-wrap
 msgid "\nEurope &amp; Russia*@ &amp; !Transportation\n"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:157(para) 
+#: /tmp/cicero-ywdq/ltree.xml:157(para) 
 msgid "Here's an example <type>ltxtquery</type>: <placeholder-1/> This will match paths that contain the label <literal>Europe</literal> and any label beginning with <literal>Russia</literal> (case-insensitive), but not paths containing the label <literal>Transportation</literal>. The location of these words within the path is not important. Also, when <literal>%</literal> is used, the word can be matched to any underscore-separated word within a label, regardless of position."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:173(para) 
+#: /tmp/cicero-ywdq/ltree.xml:173(para) 
 msgid "Note: <type>ltxtquery</type> allows whitespace between symbols, but <type>ltree</type> and <type>lquery</type> do not."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:180(title) 
+#: /tmp/cicero-ywdq/ltree.xml:180(title) 
 msgid "Operators and Functions"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:182(para) 
+#: /tmp/cicero-ywdq/ltree.xml:182(para) 
 msgid "Type <type>ltree</type> has the usual comparison operators <literal>=</literal>, <literal>&lt;&gt;</literal>, <literal>&lt;</literal>, <literal>&gt;</literal>, <literal>&lt;=</literal>, <literal>&gt;=</literal>. Comparison sorts in the order of a tree traversal, with the children of a node sorted by label text. In addition, the specialized operators shown in <xref linkend=\"ltree-op-table\"/> are available."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:192(title) 
+#: /tmp/cicero-ywdq/ltree.xml:192(title) 
 msgid "<type>ltree</type> Operators"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:197(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:197(entry) 
 msgid "Operator"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:198(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:198(entry) 
 msgid "Returns"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:199(entry) /tmp/cicero-dQiJ/ltree.xml:378(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:199(entry) /tmp/cicero-ywdq/ltree.xml:378(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:205(literal) /tmp/cicero-dQiJ/ltree.xml:271(literal) /tmp/cicero-dQiJ/ltree.xml:289(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:205(literal) /tmp/cicero-ywdq/ltree.xml:271(literal) /tmp/cicero-ywdq/ltree.xml:289(literal) 
 msgid "@&gt;"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:206(type) /tmp/cicero-dQiJ/ltree.xml:212(type) /tmp/cicero-dQiJ/ltree.xml:218(type) /tmp/cicero-dQiJ/ltree.xml:224(type) /tmp/cicero-dQiJ/ltree.xml:230(type) /tmp/cicero-dQiJ/ltree.xml:236(type) /tmp/cicero-dQiJ/ltree.xml:242(type) /tmp/cicero-dQiJ/ltree.xml:248(type) /tmp/cicero-dQiJ/ltree.xml:272(type) /tmp/cicero-dQiJ/ltree.xml:278(type) /tmp/cicero-dQiJ/ltree.xml:284(type) /tmp/cicero-dQiJ/ltree.xml:290(type) /tmp/cicero-dQiJ/ltree.xml:296(type) /tmp/cicero-dQiJ/ltree.xml:302(type) /tmp/cicero-dQiJ/ltree.xml:308(type) /tmp/cicero-dQiJ/ltree.xml:314(type) /tmp/cicero-dQiJ/ltree.xml:320(type) /tmp/cicero-dQiJ/ltree.xml:326(type) 
+#: /tmp/cicero-ywdq/ltree.xml:206(type) /tmp/cicero-ywdq/ltree.xml:212(type) /tmp/cicero-ywdq/ltree.xml:218(type) /tmp/cicero-ywdq/ltree.xml:224(type) /tmp/cicero-ywdq/ltree.xml:230(type) /tmp/cicero-ywdq/ltree.xml:236(type) /tmp/cicero-ywdq/ltree.xml:242(type) /tmp/cicero-ywdq/ltree.xml:248(type) /tmp/cicero-ywdq/ltree.xml:272(type) /tmp/cicero-ywdq/ltree.xml:278(type) /tmp/cicero-ywdq/ltree.xml:284(type) /tmp/cicero-ywdq/ltree.xml:290(type) /tmp/cicero-ywdq/ltree.xml:296(type) /tmp/cicero-ywdq/ltree.xml:302(type) /tmp/cicero-ywdq/ltree.xml:308(type) /tmp/cicero-ywdq/ltree.xml:314(type) /tmp/cicero-ywdq/ltree.xml:320(type) /tmp/cicero-ywdq/ltree.xml:326(type) 
 msgid "boolean"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:207(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:207(entry) 
 msgid "is left argument an ancestor of right (or equal)?"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:211(literal) /tmp/cicero-dQiJ/ltree.xml:277(literal) /tmp/cicero-dQiJ/ltree.xml:283(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:211(literal) /tmp/cicero-ywdq/ltree.xml:277(literal) /tmp/cicero-ywdq/ltree.xml:283(literal) 
 msgid "&lt;@"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:213(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:213(entry) 
 msgid "is left argument a descendant of right (or equal)?"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:217(literal) /tmp/cicero-dQiJ/ltree.xml:223(literal) /tmp/cicero-dQiJ/ltree.xml:295(literal) /tmp/cicero-dQiJ/ltree.xml:301(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:217(literal) /tmp/cicero-ywdq/ltree.xml:223(literal) /tmp/cicero-ywdq/ltree.xml:295(literal) /tmp/cicero-ywdq/ltree.xml:301(literal) 
 msgid "~"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:217(type) /tmp/cicero-dQiJ/ltree.xml:219(type) /tmp/cicero-dQiJ/ltree.xml:223(type) /tmp/cicero-dQiJ/ltree.xml:225(type) /tmp/cicero-dQiJ/ltree.xml:231(type) /tmp/cicero-dQiJ/ltree.xml:237(type) /tmp/cicero-dQiJ/ltree.xml:295(type) /tmp/cicero-dQiJ/ltree.xml:297(type) /tmp/cicero-dQiJ/ltree.xml:301(type) /tmp/cicero-dQiJ/ltree.xml:303(type) /tmp/cicero-dQiJ/ltree.xml:309(type) /tmp/cicero-dQiJ/ltree.xml:315(type) /tmp/cicero-dQiJ/ltree.xml:343(type) /tmp/cicero-dQiJ/ltree.xml:345(type) 
+#: /tmp/cicero-ywdq/ltree.xml:217(type) /tmp/cicero-ywdq/ltree.xml:219(type) /tmp/cicero-ywdq/ltree.xml:223(type) /tmp/cicero-ywdq/ltree.xml:225(type) /tmp/cicero-ywdq/ltree.xml:231(type) /tmp/cicero-ywdq/ltree.xml:237(type) /tmp/cicero-ywdq/ltree.xml:295(type) /tmp/cicero-ywdq/ltree.xml:297(type) /tmp/cicero-ywdq/ltree.xml:301(type) /tmp/cicero-ywdq/ltree.xml:303(type) /tmp/cicero-ywdq/ltree.xml:309(type) /tmp/cicero-ywdq/ltree.xml:315(type) /tmp/cicero-ywdq/ltree.xml:343(type) /tmp/cicero-ywdq/ltree.xml:345(type) 
 msgid "lquery"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:219(entry) /tmp/cicero-dQiJ/ltree.xml:225(entry) /tmp/cicero-dQiJ/ltree.xml:243(entry) /tmp/cicero-dQiJ/ltree.xml:249(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:219(entry) /tmp/cicero-ywdq/ltree.xml:225(entry) /tmp/cicero-ywdq/ltree.xml:243(entry) /tmp/cicero-ywdq/ltree.xml:249(entry) 
 msgid "does <placeholder-1/> match <placeholder-2/>?"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:229(literal) /tmp/cicero-dQiJ/ltree.xml:235(literal) /tmp/cicero-dQiJ/ltree.xml:307(literal) /tmp/cicero-dQiJ/ltree.xml:313(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:229(literal) /tmp/cicero-ywdq/ltree.xml:235(literal) /tmp/cicero-ywdq/ltree.xml:307(literal) /tmp/cicero-ywdq/ltree.xml:313(literal) 
 msgid "?"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:229(type) /tmp/cicero-dQiJ/ltree.xml:235(type) /tmp/cicero-dQiJ/ltree.xml:307(type) /tmp/cicero-dQiJ/ltree.xml:313(type) 
+#: /tmp/cicero-ywdq/ltree.xml:229(type) /tmp/cicero-ywdq/ltree.xml:235(type) /tmp/cicero-ywdq/ltree.xml:307(type) /tmp/cicero-ywdq/ltree.xml:313(type) 
 msgid "lquery[]"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:231(entry) /tmp/cicero-dQiJ/ltree.xml:237(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:231(entry) /tmp/cicero-ywdq/ltree.xml:237(entry) 
 msgid "does <placeholder-1/> match any <placeholder-2/> in array?"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:241(literal) /tmp/cicero-dQiJ/ltree.xml:247(literal) /tmp/cicero-dQiJ/ltree.xml:319(literal) /tmp/cicero-dQiJ/ltree.xml:325(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:241(literal) /tmp/cicero-ywdq/ltree.xml:247(literal) /tmp/cicero-ywdq/ltree.xml:319(literal) /tmp/cicero-ywdq/ltree.xml:325(literal) 
 msgid "@"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:241(type) /tmp/cicero-dQiJ/ltree.xml:243(type) /tmp/cicero-dQiJ/ltree.xml:247(type) /tmp/cicero-dQiJ/ltree.xml:249(type) /tmp/cicero-dQiJ/ltree.xml:319(type) /tmp/cicero-dQiJ/ltree.xml:321(type) /tmp/cicero-dQiJ/ltree.xml:325(type) /tmp/cicero-dQiJ/ltree.xml:327(type) /tmp/cicero-dQiJ/ltree.xml:349(type) /tmp/cicero-dQiJ/ltree.xml:351(type) 
+#: /tmp/cicero-ywdq/ltree.xml:241(type) /tmp/cicero-ywdq/ltree.xml:243(type) /tmp/cicero-ywdq/ltree.xml:247(type) /tmp/cicero-ywdq/ltree.xml:249(type) /tmp/cicero-ywdq/ltree.xml:319(type) /tmp/cicero-ywdq/ltree.xml:321(type) /tmp/cicero-ywdq/ltree.xml:325(type) /tmp/cicero-ywdq/ltree.xml:327(type) /tmp/cicero-ywdq/ltree.xml:349(type) /tmp/cicero-ywdq/ltree.xml:351(type) 
 msgid "ltxtquery"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:253(literal) /tmp/cicero-dQiJ/ltree.xml:259(literal) /tmp/cicero-dQiJ/ltree.xml:265(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:253(literal) /tmp/cicero-ywdq/ltree.xml:259(literal) /tmp/cicero-ywdq/ltree.xml:265(literal) 
 msgid "||"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:255(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:255(entry) 
 msgid "concatenate <placeholder-1/> paths"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:259(type) /tmp/cicero-dQiJ/ltree.xml:265(type) /tmp/cicero-dQiJ/ltree.xml:448(type) /tmp/cicero-dQiJ/ltree.xml:455(type) /tmp/cicero-dQiJ/ltree.xml:456(type) 
+#: /tmp/cicero-ywdq/ltree.xml:259(type) /tmp/cicero-ywdq/ltree.xml:265(type) /tmp/cicero-ywdq/ltree.xml:448(type) /tmp/cicero-ywdq/ltree.xml:455(type) /tmp/cicero-ywdq/ltree.xml:456(type) 
 msgid "text"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:261(entry) /tmp/cicero-dQiJ/ltree.xml:267(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:261(entry) /tmp/cicero-ywdq/ltree.xml:267(entry) 
 msgid "convert text to <placeholder-1/> and concatenate"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:271(type) /tmp/cicero-dQiJ/ltree.xml:277(type) /tmp/cicero-dQiJ/ltree.xml:283(type) /tmp/cicero-dQiJ/ltree.xml:289(type) /tmp/cicero-dQiJ/ltree.xml:295(type) /tmp/cicero-dQiJ/ltree.xml:301(type) /tmp/cicero-dQiJ/ltree.xml:307(type) /tmp/cicero-dQiJ/ltree.xml:313(type) /tmp/cicero-dQiJ/ltree.xml:319(type) /tmp/cicero-dQiJ/ltree.xml:325(type) /tmp/cicero-dQiJ/ltree.xml:331(type) /tmp/cicero-dQiJ/ltree.xml:337(type) /tmp/cicero-dQiJ/ltree.xml:343(type) /tmp/cicero-dQiJ/ltree.xml:349(type) 
+#: /tmp/cicero-ywdq/ltree.xml:271(type) /tmp/cicero-ywdq/ltree.xml:277(type) /tmp/cicero-ywdq/ltree.xml:283(type) /tmp/cicero-ywdq/ltree.xml:289(type) /tmp/cicero-ywdq/ltree.xml:295(type) /tmp/cicero-ywdq/ltree.xml:301(type) /tmp/cicero-ywdq/ltree.xml:307(type) /tmp/cicero-ywdq/ltree.xml:313(type) /tmp/cicero-ywdq/ltree.xml:319(type) /tmp/cicero-ywdq/ltree.xml:325(type) /tmp/cicero-ywdq/ltree.xml:331(type) /tmp/cicero-ywdq/ltree.xml:337(type) /tmp/cicero-ywdq/ltree.xml:343(type) /tmp/cicero-ywdq/ltree.xml:349(type) 
 msgid "ltree[]"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:273(entry) /tmp/cicero-dQiJ/ltree.xml:279(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:273(entry) /tmp/cicero-ywdq/ltree.xml:279(entry) 
 msgid "does array contain an ancestor of <placeholder-1/>?"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:285(entry) /tmp/cicero-dQiJ/ltree.xml:291(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:285(entry) /tmp/cicero-ywdq/ltree.xml:291(entry) 
 msgid "does array contain a descendant of <placeholder-1/>?"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:297(entry) /tmp/cicero-dQiJ/ltree.xml:303(entry) /tmp/cicero-dQiJ/ltree.xml:321(entry) /tmp/cicero-dQiJ/ltree.xml:327(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:297(entry) /tmp/cicero-ywdq/ltree.xml:303(entry) /tmp/cicero-ywdq/ltree.xml:321(entry) /tmp/cicero-ywdq/ltree.xml:327(entry) 
 msgid "does array contain any path matching <placeholder-1/>?"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:309(entry) /tmp/cicero-dQiJ/ltree.xml:315(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:309(entry) /tmp/cicero-ywdq/ltree.xml:315(entry) 
 msgid "does <placeholder-1/> array contain any path matching any <placeholder-2/>?"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:331(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:331(literal) 
 msgid "?@&gt;"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:333(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:333(entry) 
 msgid "first array entry that is an ancestor of <placeholder-1/>; NULL if none"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:337(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:337(literal) 
 msgid "?&lt;@"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:339(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:339(entry) 
 msgid "first array entry that is a descendant of <placeholder-1/>; NULL if none"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:343(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:343(literal) 
 msgid "?~"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:345(entry) /tmp/cicero-dQiJ/ltree.xml:351(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:345(entry) /tmp/cicero-ywdq/ltree.xml:351(entry) 
 msgid "first array entry that matches <placeholder-1/>; NULL if none"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:349(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:349(literal) 
 msgid "?@"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:358(para) 
+#: /tmp/cicero-ywdq/ltree.xml:358(para) 
 msgid "The operators <literal>&lt;@</literal>, <literal>@&gt;</literal>, <literal>@</literal> and <literal>~</literal> have analogues <literal>^&lt;@</literal>, <literal>^@&gt;</literal>, <literal>^@</literal>, <literal>^~</literal>, which are the same except they do not use indexes. These are useful only for testing purposes."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:366(para) 
+#: /tmp/cicero-ywdq/ltree.xml:366(para) 
 msgid "The available functions are shown in <xref linkend=\"ltree-func-table\"/>."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:371(title) 
+#: /tmp/cicero-ywdq/ltree.xml:371(title) 
 msgid "<type>ltree</type> Functions"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:376(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:376(entry) 
 msgid "Function"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:377(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:377(entry) 
 msgid "Return Type"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:379(entry) /tmp/cicero-dQiJ/ltree.xml:533(title) 
+#: /tmp/cicero-ywdq/ltree.xml:379(entry) /tmp/cicero-ywdq/ltree.xml:533(title) 
 msgid "Example"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:380(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:380(entry) 
 msgid "Result"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:386(function) 
+#: /tmp/cicero-ywdq/ltree.xml:386(function) 
 msgid "subltree(ltree, int start, int end)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:388(parameter) 
+#: /tmp/cicero-ywdq/ltree.xml:388(parameter) 
 msgid "start"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:389(parameter) 
+#: /tmp/cicero-ywdq/ltree.xml:389(parameter) 
 msgid "end"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:388(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:388(entry) 
 msgid "subpath of <placeholder-1/> from position <placeholder-2/> to position <placeholder-3/>-1 (counting from 0)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:390(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:390(literal) 
 msgid "subltree('Top.Child1.Child2',1,2)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:391(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:391(literal) 
 msgid "Child1"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:395(function) 
+#: /tmp/cicero-ywdq/ltree.xml:395(function) 
 msgid "subpath(ltree, int offset, int len)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:398(parameter) /tmp/cicero-dQiJ/ltree.xml:399(parameter) /tmp/cicero-dQiJ/ltree.xml:410(parameter) /tmp/cicero-dQiJ/ltree.xml:411(parameter) /tmp/cicero-dQiJ/ltree.xml:438(parameter) /tmp/cicero-dQiJ/ltree.xml:439(parameter) 
+#: /tmp/cicero-ywdq/ltree.xml:398(parameter) /tmp/cicero-ywdq/ltree.xml:399(parameter) /tmp/cicero-ywdq/ltree.xml:410(parameter) /tmp/cicero-ywdq/ltree.xml:411(parameter) /tmp/cicero-ywdq/ltree.xml:438(parameter) /tmp/cicero-ywdq/ltree.xml:439(parameter) 
 msgid "offset"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:398(parameter) /tmp/cicero-dQiJ/ltree.xml:400(parameter) 
+#: /tmp/cicero-ywdq/ltree.xml:398(parameter) /tmp/cicero-ywdq/ltree.xml:400(parameter) 
 msgid "len"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:397(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:397(entry) 
 msgid "subpath of <placeholder-1/> starting at position <placeholder-2/>, length <placeholder-3/>. If <placeholder-4/> is negative, subpath starts that far from the end of the path. If <placeholder-5/> is negative, leaves that many labels off the end of the path."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:402(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:402(literal) 
 msgid "subpath('Top.Child1.Child2',0,2)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:403(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:403(literal) 
 msgid "Top.Child1"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:407(function) 
+#: /tmp/cicero-ywdq/ltree.xml:407(function) 
 msgid "subpath(ltree, int offset)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:409(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:409(entry) 
 msgid "subpath of <placeholder-1/> starting at position <placeholder-2/>, extending to end of path. If <placeholder-3/> is negative, subpath starts that far from the end of the path."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:413(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:413(literal) 
 msgid "subpath('Top.Child1.Child2',1)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:414(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:414(literal) 
 msgid "Child1.Child2"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:418(function) 
+#: /tmp/cicero-ywdq/ltree.xml:418(function) 
 msgid "nlevel(ltree)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:419(type) /tmp/cicero-dQiJ/ltree.xml:427(type) /tmp/cicero-dQiJ/ltree.xml:436(type) 
+#: /tmp/cicero-ywdq/ltree.xml:419(type) /tmp/cicero-ywdq/ltree.xml:427(type) /tmp/cicero-ywdq/ltree.xml:436(type) 
 msgid "integer"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:420(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:420(entry) 
 msgid "number of labels in path"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:421(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:421(literal) 
 msgid "nlevel('Top.Child1.Child2')"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:422(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:422(literal) 
 msgid "3"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:426(function) 
+#: /tmp/cicero-ywdq/ltree.xml:426(function) 
 msgid "index(ltree a, ltree b)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:428(parameter) /tmp/cicero-dQiJ/ltree.xml:437(parameter) 
+#: /tmp/cicero-ywdq/ltree.xml:428(parameter) /tmp/cicero-ywdq/ltree.xml:437(parameter) 
 msgid "b"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:429(parameter) /tmp/cicero-dQiJ/ltree.xml:438(parameter) 
+#: /tmp/cicero-ywdq/ltree.xml:429(parameter) /tmp/cicero-ywdq/ltree.xml:438(parameter) 
 msgid "a"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:428(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:428(entry) 
 msgid "position of first occurrence of <placeholder-1/> in <placeholder-2/>; -1 if not found"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:430(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:430(literal) 
 msgid "index('0.1.2.3.5.4.5.6.8.5.6.8','5.6')"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:431(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:431(literal) 
 msgid "6"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:435(function) 
+#: /tmp/cicero-ywdq/ltree.xml:435(function) 
 msgid "index(ltree a, ltree b, int offset)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:439(parameter) 
+#: /tmp/cicero-ywdq/ltree.xml:439(parameter) 
 msgid "-offset"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:437(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:437(entry) 
 msgid "position of first occurrence of <placeholder-1/> in <placeholder-2/>, searching starting at <placeholder-3/>; negative <placeholder-4/> means start <placeholder-5/> labels from the end of the path"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:441(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:441(literal) 
 msgid "index('0.1.2.3.5.4.5.6.8.5.6.8','5.6',-4)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:442(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:442(literal) 
 msgid "9"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:446(function) 
+#: /tmp/cicero-ywdq/ltree.xml:446(function) 
 msgid "text2ltree(text)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:448(entry) /tmp/cicero-dQiJ/ltree.xml:456(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:448(entry) /tmp/cicero-ywdq/ltree.xml:456(entry) 
 msgid "cast <placeholder-1/> to <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:454(function) 
+#: /tmp/cicero-ywdq/ltree.xml:454(function) 
 msgid "ltree2text(ltree)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:462(function) 
+#: /tmp/cicero-ywdq/ltree.xml:462(function) 
 msgid "lca(ltree, ltree, ...)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:464(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:464(entry) 
 msgid "lowest common ancestor, i.e., longest common prefix of paths (up to 8 arguments supported)"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:466(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:466(literal) 
 msgid "lca('1.2.2.3','1.2.3.4.5.6')"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:467(literal) /tmp/cicero-dQiJ/ltree.xml:475(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:467(literal) /tmp/cicero-ywdq/ltree.xml:475(literal) 
 msgid "1.2"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:471(function) 
+#: /tmp/cicero-ywdq/ltree.xml:471(function) 
 msgid "lca(ltree[])"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:473(entry) 
+#: /tmp/cicero-ywdq/ltree.xml:473(entry) 
 msgid "lowest common ancestor, i.e., longest common prefix of paths"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:474(literal) 
+#: /tmp/cicero-ywdq/ltree.xml:474(literal) 
 msgid "lca(array['1.2.2.3'::ltree,'1.2.3'])"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:484(title) 
+#: /tmp/cicero-ywdq/ltree.xml:484(title) 
 msgid "Indexes"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:485(para) 
+#: /tmp/cicero-ywdq/ltree.xml:485(para) 
 msgid "<filename>ltree</filename> supports several types of indexes that can speed up the indicated operators:"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:492(para) 
+#: /tmp/cicero-ywdq/ltree.xml:492(para) 
 msgid "B-tree index over <type>ltree</type>: <literal>&lt;</literal>, <literal>&lt;=</literal>, <literal>=</literal>, <literal>&gt;=</literal>, <literal>&gt;</literal>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:499(para) 
+#: /tmp/cicero-ywdq/ltree.xml:499(para) 
 msgid "GiST index over <type>ltree</type>: <literal>&lt;</literal>, <literal>&lt;=</literal>, <literal>=</literal>, <literal>&gt;=</literal>, <literal>&gt;</literal>, <literal>@&gt;</literal>, <literal>&lt;@</literal>, <literal>@</literal>, <literal>~</literal>, <literal>?</literal>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:506(para) /tmp/cicero-dQiJ/ltree.xml:519(para) 
+#: /tmp/cicero-ywdq/ltree.xml:506(para) /tmp/cicero-ywdq/ltree.xml:519(para) 
 msgid "Example of creating such an index:"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:509(programlisting) 
+#: /tmp/cicero-ywdq/ltree.xml:509(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX path_gist_idx ON test USING GIST (path);\n"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:514(para) 
+#: /tmp/cicero-ywdq/ltree.xml:514(para) 
 msgid "GiST index over <type>ltree[]</type>: <literal>ltree[] &lt;@ ltree</literal>, <literal>ltree @&gt; ltree[]</literal>, <literal>@</literal>, <literal>~</literal>, <literal>?</literal>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:522(programlisting) 
+#: /tmp/cicero-ywdq/ltree.xml:522(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX path_gist_idx ON test USING GIST (array_path);\n"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:525(para) 
+#: /tmp/cicero-ywdq/ltree.xml:525(para) 
 msgid "Note: This index type is lossy."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:535(para) 
+#: /tmp/cicero-ywdq/ltree.xml:535(para) 
 msgid "This example uses the following data (also available in file <filename>contrib/ltree/ltreetest.sql</filename> in the source distribution):"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:540(programlisting) 
+#: /tmp/cicero-ywdq/ltree.xml:540(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE test (path ltree);\nINSERT INTO test VALUES ('Top');\nINSERT INTO test VALUES ('Top.Science');\nINSERT INTO test VALUES ('Top.Science.Astronomy');\nINSERT INTO test VALUES ('Top.Science.Astronomy.Astrophysics');\nINSERT INTO test VALUES ('Top.Science.Astronomy.Cosmology');\nINSERT INTO test VALUES ('Top.Hobbies');\nINSERT INTO test VALUES ('Top.Hobbies.Amateurs_Astronomy');\nINSERT INTO test VALUES ('Top.Collections');\nINSERT INTO test VALUES ('Top.Collections.Pictures');\nINSERT INTO test VALUES ('Top.Collections.Pictures.Astronomy');\nINSERT INTO test VALUES ('Top.Collections.Pictures.Astronomy.Stars');\nINSERT INTO test VALUES ('Top.Collections.Pictures.Astronomy.Galaxies');\nINSERT INTO test VALUES ('Top.Collections.Pictures.Astronomy.Astronauts');\nCREATE INDEX path_gist_idx ON test USING gist(path);\nCREATE INDEX path_idx ON test USING btree(path);\n"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:559(para) 
+#: /tmp/cicero-ywdq/ltree.xml:559(para) 
 msgid "Now, we have a table <structname>test</structname> populated with data describing the hierarchy shown below:"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:564(literallayout) 
+#: /tmp/cicero-ywdq/ltree.xml:564(literallayout) 
 #, no-wrap
 msgid "\n                        Top\n                     /   |  \\\n             Science Hobbies Collections\n                 /       |              \\\n        Astronomy   Amateurs_Astronomy Pictures\n           /  \\                            |\nAstrophysics  Cosmology                Astronomy\n                                        /  |    \\\n                                 Galaxies Stars Astronauts\n"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:576(para) 
+#: /tmp/cicero-ywdq/ltree.xml:576(para) 
 msgid "We can do inheritance: <screen>\nltreetest=&gt; SELECT path FROM test WHERE path &lt;@ 'Top.Science';\n                path\n------------------------------------\n Top.Science\n Top.Science.Astronomy\n Top.Science.Astronomy.Astrophysics\n Top.Science.Astronomy.Cosmology\n(4 rows)\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:590(para) 
+#: /tmp/cicero-ywdq/ltree.xml:590(para) 
 msgid "Here are some examples of path matching: <screen>\nltreetest=&gt; SELECT path FROM test WHERE path ~ '*.Astronomy.*';\n                     path\n-----------------------------------------------\n Top.Science.Astronomy\n Top.Science.Astronomy.Astrophysics\n Top.Science.Astronomy.Cosmology\n Top.Collections.Pictures.Astronomy\n Top.Collections.Pictures.Astronomy.Stars\n Top.Collections.Pictures.Astronomy.Galaxies\n Top.Collections.Pictures.Astronomy.Astronauts\n(7 rows)\n\nltreetest=&gt; SELECT path FROM test WHERE path ~ '*.!pictures@.*.Astronomy.*';\n                path\n------------------------------------\n Top.Science.Astronomy\n Top.Science.Astronomy.Astrophysics\n Top.Science.Astronomy.Cosmology\n(3 rows)\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:615(para) 
+#: /tmp/cicero-ywdq/ltree.xml:615(para) 
 msgid "Here are some examples of full text search: <screen>\nltreetest=&gt; SELECT path FROM test WHERE path @ 'Astro*% &amp; !pictures@';\n                path\n------------------------------------\n Top.Science.Astronomy\n Top.Science.Astronomy.Astrophysics\n Top.Science.Astronomy.Cosmology\n Top.Hobbies.Amateurs_Astronomy\n(4 rows)\n\nltreetest=&gt; SELECT path FROM test WHERE path @ 'Astro* &amp; !pictures@';\n                path\n------------------------------------\n Top.Science.Astronomy\n Top.Science.Astronomy.Astrophysics\n Top.Science.Astronomy.Cosmology\n(3 rows)\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:637(para) 
+#: /tmp/cicero-ywdq/ltree.xml:637(para) 
 msgid "Path construction using functions: <screen>\nltreetest=&gt; SELECT subpath(path,0,2)||'Space'||subpath(path,2) FROM test WHERE path &lt;@ 'Top.Science.Astronomy';\n                 ?column?\n------------------------------------------\n Top.Science.Space.Astronomy\n Top.Science.Space.Astronomy.Astrophysics\n Top.Science.Space.Astronomy.Cosmology\n(3 rows)\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:650(para) 
+#: /tmp/cicero-ywdq/ltree.xml:650(para) 
 msgid "We could simplify this by creating a SQL function that inserts a label at a specified position in a path: <screen>\nCREATE FUNCTION ins_label(ltree, int, text) RETURNS ltree\n    AS 'select subpath($1,0,$2) || $3 || subpath($1,$2);'\n    LANGUAGE SQL IMMUTABLE;\n\nltreetest=&gt; SELECT ins_label(path,2,'Space') FROM test WHERE path &lt;@ 'Top.Science.Astronomy';\n                ins_label\n------------------------------------------\n Top.Science.Space.Astronomy\n Top.Science.Space.Astronomy.Astrophysics\n Top.Science.Space.Astronomy.Cosmology\n(3 rows)\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:670(title) 
+#: /tmp/cicero-ywdq/ltree.xml:670(title) 
 msgid "Authors"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/ltree.xml:672(para) 
+#: /tmp/cicero-ywdq/ltree.xml:672(para) 
 msgid "All work was done by Teodor Sigaev (<email>teodor@stack.net</email>) and Oleg Bartunov (<email>oleg@sai.msu.su</email>). See <ulink url=\"http://www.sai.msu.su/~megera/postgres/gist/\"/> for additional information. Authors would like to thank Eugeny Rodichev for helpful discussions. Comments and bug reports are welcome."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-dQiJ/ltree.xml:0(None) 
+#: /tmp/cicero-ywdq/ltree.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

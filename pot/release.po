@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-01 06:59+0200\n"
+"POT-Creation-Date: 2011-09-02 09:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,24 +9,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-dQiJ/release.xml:41(title) 
+#: /tmp/cicero-ywdq/release.xml:41(title) 
 msgid "Release Notes"
 msgstr ""
 
-#: /tmp/cicero-dQiJ/release.xml:43(para) 
+#: /tmp/cicero-ywdq/release.xml:43(para) 
 msgid "The release notes contain the significant changes in each <productname>PostgreSQL</productname> release, with major features and migration issues listed at the top. The release notes do not contain changes that affect only a few users or changes that are internal and therefore not user-visible. For example, the optimizer is improved in almost every release, but the improvements are usually observed by users as simply faster queries."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/release.xml:53(para) 
+#: /tmp/cicero-ywdq/release.xml:53(para) 
 msgid "A complete list of changes for each release can be obtained by viewing the <link linkend=\"git\">Git</link> logs for each release. The <ulink url=\"http://archives.postgresql.org/pgsql-committers/\"><literal>pgsql-committers</literal> email list</ulink> records all source code changes as well. There is also a <ulink url=\"http://git.postgresql.org/gitweb?p=postgresql.git;a=summary\">web interface</ulink> that shows changes to specific files."
 msgstr ""
 
-#: /tmp/cicero-dQiJ/release.xml:63(para) 
+#: /tmp/cicero-ywdq/release.xml:63(para) 
 msgid "The name appearing next to each item represents the major developer for that item. Of course all changes involve community discussion and patch review, so each item is truly a community effort."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-dQiJ/release.xml:0(None) 
+#: /tmp/cicero-ywdq/release.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
