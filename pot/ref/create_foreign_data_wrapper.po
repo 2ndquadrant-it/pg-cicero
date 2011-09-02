@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 11:42+0200\n"
+"POT-Creation-Date: 2011-09-02 12:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,160 +9,160 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:9(refentrytitle) /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:15(refname) /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:20(primary) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:9(refentrytitle) /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:15(refname) /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:20(primary) 
 msgid "CREATE FOREIGN DATA WRAPPER"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:10(manvolnum) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:11(refmiscinfo) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:16(refpurpose) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:16(refpurpose) 
 msgid "define a new foreign-data wrapper"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:25(replaceable) /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:55(replaceable) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:25(replaceable) /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:55(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:26(replaceable) /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:64(replaceable) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:26(replaceable) /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:64(replaceable) 
 msgid "handler_function"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:27(replaceable) /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:82(replaceable) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:27(replaceable) /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:82(replaceable) 
 msgid "validator_function"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:28(replaceable) /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:104(replaceable) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:28(replaceable) /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:104(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:28(replaceable) /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:104(replaceable) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:28(replaceable) /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:104(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:24(synopsis) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE FOREIGN DATA WRAPPER <placeholder-1/>\n    [ HANDLER <placeholder-2/> | NO HANDLER ]\n    [ VALIDATOR <placeholder-3/> | NO VALIDATOR ]\n    [ OPTIONS ( <placeholder-4/> '<placeholder-5/>' [, ... ] ) ]\n"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:33(title) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:35(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:35(para) 
 msgid "<command>CREATE FOREIGN DATA WRAPPER</command> creates a new foreign-data wrapper. The user who defines a foreign-data wrapper becomes its owner."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:41(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:41(para) 
 msgid "The foreign-data wrapper name must be unique within the database."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:45(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:45(para) 
 msgid "Only superusers can create foreign-data wrappers."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:51(title) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:51(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:57(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:57(para) 
 msgid "The name of the foreign-data wrapper to be created."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:64(literal) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:64(literal) 
 msgid "HANDLER <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:66(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:66(para) 
 msgid "<replaceable class=\"parameter\">handler_function</replaceable> is the name of a previously registered function that will be called to retrieve the execution functions for foreign tables. The handler function must take no arguments, and its return type must be <type>fdw_handler</type>."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:73(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:73(para) 
 msgid "It is possible to create a foreign-data wrapper with no handler function, but foreign tables using such a wrapper can only be declared, not accessed."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:82(literal) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:82(literal) 
 msgid "VALIDATOR <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:84(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:84(para) 
 msgid "<replaceable class=\"parameter\">validator_function</replaceable> is the name of a previously registered function that will be called to check the generic options given to the foreign-data wrapper, as well as options for foreign servers and user mappings using the foreign-data wrapper. If no validator function or <literal>NO VALIDATOR</literal> is specified, then options will not be checked at creation time. (Foreign-data wrappers will possibly ignore or reject invalid option specifications at run time, depending on the implementation.) The validator function must take two arguments: one of type <type>text[]</type>, which will contain the array of options as stored in the system catalogs, and one of type <type>oid</type>, which will be the OID of the system catalog containing the options. The return type is ignored; the function should report invalid options using the <function>ereport(ERROR)</function> function."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:104(literal) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:104(literal) 
 msgid "OPTIONS ( <placeholder-1/> '<placeholder-2/>' [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:106(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:106(para) 
 msgid "This clause specifies options for the new foreign-data wrapper. The allowed option names and values are specific to each foreign data wrapper and are validated using the foreign-data wrapper's validator function. Option names must be unique."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:118(title) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:118(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:120(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:120(para) 
 msgid "At the moment, the foreign-data wrapper functionality is rudimentary. There is no support for updating a foreign table, and optimization of queries is primitive (and mostly left to the wrapper, too)."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:126(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:126(para) 
 msgid "There is one built-in foreign-data wrapper validator function provided: <filename>postgresql_fdw_validator</filename>, which accepts options corresponding to <application>libpq</application> connection parameters."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:136(title) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:136(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:140(programlisting) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:140(programlisting) 
 #, no-wrap
 msgid "\nCREATE FOREIGN DATA WRAPPER dummy;\n"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:138(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:138(para) 
 msgid "Create a useless foreign-data wrapper <literal>dummy</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:148(programlisting) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:148(programlisting) 
 #, no-wrap
 msgid "\nCREATE FOREIGN DATA WRAPPER file HANDLER file_fdw_handler;\n"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:145(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:145(para) 
 msgid "Create a foreign-data wrapper <literal>file</literal> with handler function <literal>file_fdw_handler</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:156(programlisting) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:156(programlisting) 
 #, no-wrap
 msgid "\nCREATE FOREIGN DATA WRAPPER mywrapper\n    OPTIONS (debug 'true');\n"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:153(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:153(para) 
 msgid "Create a foreign-data wrapper <literal>mywrapper</literal> with some options: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:163(title) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:163(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:165(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:165(para) 
 msgid "<command>CREATE FOREIGN DATA WRAPPER</command> conforms to ISO/IEC 9075-9 (SQL/MED), with the exception that the <literal>HANDLER</literal> and <literal>VALIDATOR</literal> clauses are extensions and the standard clauses <literal>LIBRARY</literal> and <literal>LANGUAGE</literal> are not implemented in PostgreSQL."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:173(para) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:173(para) 
 msgid "Note, however, that the SQL/MED functionality as a whole is not yet conforming."
 msgstr ""
 
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:180(title) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:180(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-GNkR/ref/create_foreign_data_wrapper.xml:0(None) 
+#: /tmp/cicero-oFNz/ref/create_foreign_data_wrapper.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
