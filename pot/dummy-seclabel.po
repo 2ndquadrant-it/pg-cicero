@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 12:50+0200\n"
+"POT-Creation-Date: 2011-09-03 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,62 +9,62 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:5(title) /tmp/cicero-BGQN/dummy-seclabel.xml:8(primary) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:5(title) /tmp/cicero-irks/dummy-seclabel.xml:8(primary) 
 msgid "dummy_seclabel"
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:11(para) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:11(para) 
 msgid "The <filename>dummy_seclabel</filename> module exists only to support regression testing of the <command>SECURITY LABEL</command> statement. It is not intended to be used in production."
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:18(title) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:18(title) 
 msgid "Rationale"
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:20(para) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:20(para) 
 msgid "The <command>SECURITY LABEL</command> statement allows the user to assign security labels to database objects; however, security labels can only be assigned when specifically allowed by a loadable module, so this module is provided to allow proper regression testing."
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:27(para) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:27(para) 
 msgid "Security label providers intended to be used in production will typically be dependent on a platform-specific feature such as <productname>SE-Linux</productname>. This module is platform-independent, and therefore better-suited to regression testing."
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:36(title) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:36(title) 
 msgid "Usage"
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:38(para) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:38(para) 
 msgid "Here's a simple example of usage:"
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:42(programlisting) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:42(programlisting) 
 #, no-wrap
 msgid "\n# postgresql.conf\nshared_preload_libraries = 'dummy_label'\n"
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:47(programlisting) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:47(programlisting) 
 #, no-wrap
 msgid "\npostgres=# CREATE TABLE t (a int, b text);\nCREATE TABLE\npostgres=# SECURITY LABEL ON TABLE t IS 'classified';\nSECURITY LABEL\n"
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:54(para) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:54(para) 
 msgid "The <filename>dummy_seclabel</filename> module provides only four hardcoded labels: <literal>unclassified</literal>, <literal>classified</literal>, <literal>secret</literal>, and <literal>top secret</literal>. It does not allow any other strings as security labels."
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:60(para) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:60(para) 
 msgid "These labels are not used to enforce access controls. They are only used to check whether the <command>SECURITY LABEL</command> statement works as expected, or not."
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:68(title) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:68(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:70(para) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:70(para) 
 msgid "KaiGai Kohei <email>kaigai@ak.jp.nec.com</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-BGQN/dummy-seclabel.xml:0(None) 
+#: /tmp/cicero-irks/dummy-seclabel.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
