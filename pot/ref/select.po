@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 12:53+0200\n"
+"POT-Creation-Date: 2011-09-03 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,878 +9,878 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-oFNz/ref/select.xml:9(refentrytitle) /tmp/cicero-oFNz/ref/select.xml:15(refname) /tmp/cicero-oFNz/ref/select.xml:22(primary) 
+#: /tmp/cicero-CbEv/ref/select.xml:9(refentrytitle) /tmp/cicero-CbEv/ref/select.xml:15(refname) /tmp/cicero-CbEv/ref/select.xml:22(primary) 
 msgid "SELECT"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:10(manvolnum) 
+#: /tmp/cicero-CbEv/ref/select.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:11(refmiscinfo) 
+#: /tmp/cicero-CbEv/ref/select.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:16(refname) 
+#: /tmp/cicero-CbEv/ref/select.xml:16(refname) 
 msgid "TABLE"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:17(refname) /tmp/cicero-oFNz/ref/select.xml:30(primary) 
+#: /tmp/cicero-CbEv/ref/select.xml:17(refname) /tmp/cicero-CbEv/ref/select.xml:30(primary) 
 msgid "WITH"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:18(refpurpose) 
+#: /tmp/cicero-CbEv/ref/select.xml:18(refpurpose) 
 msgid "retrieve rows from a table or view"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:26(primary) 
+#: /tmp/cicero-CbEv/ref/select.xml:26(primary) 
 msgid "TABLE command"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:31(secondary) 
+#: /tmp/cicero-CbEv/ref/select.xml:31(secondary) 
 msgid "in SELECT"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:36(replaceable) /tmp/cicero-oFNz/ref/select.xml:60(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:36(replaceable) /tmp/cicero-CbEv/ref/select.xml:60(replaceable) 
 msgid "with_query"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:37(replaceable) /tmp/cicero-oFNz/ref/select.xml:38(replaceable) /tmp/cicero-oFNz/ref/select.xml:41(replaceable) /tmp/cicero-oFNz/ref/select.xml:45(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:37(replaceable) /tmp/cicero-CbEv/ref/select.xml:38(replaceable) /tmp/cicero-CbEv/ref/select.xml:41(replaceable) /tmp/cicero-CbEv/ref/select.xml:45(replaceable) 
 msgid "expression"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:38(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:38(replaceable) 
 msgid "output_name"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:39(replaceable) /tmp/cicero-oFNz/ref/select.xml:51(replaceable) /tmp/cicero-oFNz/ref/select.xml:58(replaceable) /tmp/cicero-oFNz/ref/select.xml:58(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:39(replaceable) /tmp/cicero-CbEv/ref/select.xml:51(replaceable) /tmp/cicero-CbEv/ref/select.xml:58(replaceable) /tmp/cicero-CbEv/ref/select.xml:58(replaceable) 
 msgid "from_item"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:40(replaceable) /tmp/cicero-oFNz/ref/select.xml:42(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:40(replaceable) /tmp/cicero-CbEv/ref/select.xml:42(replaceable) 
 msgid "condition"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:43(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:43(replaceable) 
 msgid "window_name"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:43(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:43(replaceable) 
 msgid "window_definition"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:44(replaceable) /tmp/cicero-oFNz/ref/select.xml:54(replaceable) /tmp/cicero-oFNz/ref/select.xml:62(replaceable) /tmp/cicero-oFNz/ref/select.xml:329(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:44(replaceable) /tmp/cicero-CbEv/ref/select.xml:54(replaceable) /tmp/cicero-CbEv/ref/select.xml:62(replaceable) /tmp/cicero-CbEv/ref/select.xml:329(replaceable) 
 msgid "select"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:45(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:45(replaceable) 
 msgid "operator"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:46(replaceable) /tmp/cicero-oFNz/ref/select.xml:48(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:46(replaceable) /tmp/cicero-CbEv/ref/select.xml:48(replaceable) 
 msgid "count"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:47(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:47(replaceable) 
 msgid "start"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:49(replaceable) /tmp/cicero-oFNz/ref/select.xml:53(replaceable) /tmp/cicero-oFNz/ref/select.xml:64(replaceable) /tmp/cicero-oFNz/ref/select.xml:299(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:49(replaceable) /tmp/cicero-CbEv/ref/select.xml:53(replaceable) /tmp/cicero-CbEv/ref/select.xml:64(replaceable) /tmp/cicero-CbEv/ref/select.xml:299(replaceable) 
 msgid "table_name"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:51(phrase) 
+#: /tmp/cicero-CbEv/ref/select.xml:51(phrase) 
 msgid "where <placeholder-1/> can be one of:"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:53(replaceable) /tmp/cicero-oFNz/ref/select.xml:54(replaceable) /tmp/cicero-oFNz/ref/select.xml:55(replaceable) /tmp/cicero-oFNz/ref/select.xml:56(replaceable) /tmp/cicero-oFNz/ref/select.xml:311(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:53(replaceable) /tmp/cicero-CbEv/ref/select.xml:54(replaceable) /tmp/cicero-CbEv/ref/select.xml:55(replaceable) /tmp/cicero-CbEv/ref/select.xml:56(replaceable) /tmp/cicero-CbEv/ref/select.xml:311(replaceable) 
 msgid "alias"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:53(replaceable) /tmp/cicero-oFNz/ref/select.xml:54(replaceable) /tmp/cicero-oFNz/ref/select.xml:55(replaceable) /tmp/cicero-oFNz/ref/select.xml:56(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:53(replaceable) /tmp/cicero-CbEv/ref/select.xml:54(replaceable) /tmp/cicero-CbEv/ref/select.xml:55(replaceable) /tmp/cicero-CbEv/ref/select.xml:56(replaceable) 
 msgid "column_alias"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:55(replaceable) /tmp/cicero-oFNz/ref/select.xml:62(replaceable) /tmp/cicero-oFNz/ref/select.xml:346(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:55(replaceable) /tmp/cicero-CbEv/ref/select.xml:62(replaceable) /tmp/cicero-CbEv/ref/select.xml:346(replaceable) 
 msgid "with_query_name"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:56(replaceable) /tmp/cicero-oFNz/ref/select.xml:57(replaceable) /tmp/cicero-oFNz/ref/select.xml:361(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:56(replaceable) /tmp/cicero-CbEv/ref/select.xml:57(replaceable) /tmp/cicero-CbEv/ref/select.xml:361(replaceable) 
 msgid "function_name"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:56(replaceable) /tmp/cicero-oFNz/ref/select.xml:57(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:56(replaceable) /tmp/cicero-CbEv/ref/select.xml:57(replaceable) 
 msgid "argument"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:56(replaceable) /tmp/cicero-oFNz/ref/select.xml:57(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:56(replaceable) /tmp/cicero-CbEv/ref/select.xml:57(replaceable) 
 msgid "column_definition"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:58(replaceable) /tmp/cicero-oFNz/ref/select.xml:385(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:58(replaceable) /tmp/cicero-CbEv/ref/select.xml:385(replaceable) 
 msgid "join_type"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:58(replaceable) /tmp/cicero-oFNz/ref/select.xml:465(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:58(replaceable) /tmp/cicero-CbEv/ref/select.xml:465(replaceable) 
 msgid "join_condition"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:58(replaceable) /tmp/cicero-oFNz/ref/select.xml:477(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:58(replaceable) /tmp/cicero-CbEv/ref/select.xml:477(replaceable) 
 msgid "join_column"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:60(phrase) 
+#: /tmp/cicero-CbEv/ref/select.xml:60(phrase) 
 msgid "and <placeholder-1/> is:"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:62(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:62(replaceable) 
 msgid "column_name"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:62(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:62(replaceable) 
 msgid "insert"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:62(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:62(replaceable) 
 msgid "update"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:62(replaceable) 
+#: /tmp/cicero-CbEv/ref/select.xml:62(replaceable) 
 msgid "delete"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:35(synopsis) 
+#: /tmp/cicero-CbEv/ref/select.xml:35(synopsis) 
 #, no-wrap
 msgid "\n[ WITH [ RECURSIVE ] <placeholder-1/> [, ...] ]\nSELECT [ ALL | DISTINCT [ ON ( <placeholder-2/> [, ...] ) ] ]\n    * | <placeholder-3/> [ [ AS ] <placeholder-4/> ] [, ...]\n    [ FROM <placeholder-5/> [, ...] ]\n    [ WHERE <placeholder-6/> ]\n    [ GROUP BY <placeholder-7/> [, ...] ]\n    [ HAVING <placeholder-8/> [, ...] ]\n    [ WINDOW <placeholder-9/> AS ( <placeholder-10/> ) [, ...] ]\n    [ { UNION | INTERSECT | EXCEPT } [ ALL | DISTINCT ] <placeholder-11/> ]\n    [ ORDER BY <placeholder-12/> [ ASC | DESC | USING <placeholder-13/> ] [ NULLS { FIRST | LAST } ] [, ...] ]\n    [ LIMIT { <placeholder-14/> | ALL } ]\n    [ OFFSET <placeholder-15/> [ ROW | ROWS ] ]\n    [ FETCH { FIRST | NEXT } [ <placeholder-16/> ] { ROW | ROWS } ONLY ]\n    [ FOR { UPDATE | SHARE } [ OF <placeholder-17/> [, ...] ] [ NOWAIT ] [...] ]\n\n<placeholder-18/>\n\n    [ ONLY ] <placeholder-19/> [ * ] [ [ AS ] <placeholder-20/> [ ( <placeholder-21/> [, ...] ) ] ]\n    ( <placeholder-22/> ) [ AS ] <placeholder-23/> [ ( <placeholder-24/> [, ...] ) ]\n    <placeholder-25/> [ [ AS ] <placeholder-26/> [ ( <placeholder-27/> [, ...] ) ] ]\n    <placeholder-28/> ( [ <placeholder-29/> [, ...] ] ) [ AS ] <placeholder-30/> [ ( <placeholder-31/> [, ...] | <placeholder-32/> [, ...] ) ]\n    <placeholder-33/> ( [ <placeholder-34/> [, ...] ] ) AS ( <placeholder-35/> [, ...] )\n    <placeholder-36/> [ NATURAL ] <placeholder-37/> <placeholder-38/> [ ON <placeholder-39/> | USING ( <placeholder-40/> [, ...] ) ]\n\n<placeholder-41/>\n\n    <placeholder-42/> [ ( <placeholder-43/> [, ...] ) ] AS ( <placeholder-44/> | <placeholder-45/> | <placeholder-46/> | <placeholder-47/> )\n\nTABLE [ ONLY ] <placeholder-48/> [ * ]\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:70(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:70(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:78(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:78(para) 
 msgid "All queries in the <literal>WITH</literal> list are computed. These effectively serve as temporary tables that can be referenced in the <literal>FROM</literal> list. A <literal>WITH</literal> query that is referenced more than once in <literal>FROM</literal> is computed only once. (See <xref linkend=\"sql-with\" endterm=\"sql-with-title\"/> below.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:89(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:89(para) 
 msgid "All elements in the <literal>FROM</literal> list are computed. (Each element in the <literal>FROM</literal> list is a real or virtual table.) If more than one element is specified in the <literal>FROM</literal> list, they are cross-joined together. (See <xref linkend=\"sql-from\" endterm=\"sql-from-title\"/> below.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:99(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:99(para) 
 msgid "If the <literal>WHERE</literal> clause is specified, all rows that do not satisfy the condition are eliminated from the output. (See <xref linkend=\"sql-where\" endterm=\"sql-where-title\"/> below.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:108(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:108(para) 
 msgid "If the <literal>GROUP BY</literal> clause is specified, the output is combined into groups of rows that match on one or more values. If the <literal>HAVING</literal> clause is present, it eliminates groups that do not satisfy the given condition. (See <xref linkend=\"sql-groupby\" endterm=\"sql-groupby-title\"/> and <xref linkend=\"sql-having\" endterm=\"sql-having-title\"/> below.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:119(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:119(para) 
 msgid "The actual output rows are computed using the <command>SELECT</command> output expressions for each selected row or row group. (See <xref linkend=\"sql-select-list\" endterm=\"sql-select-list-title\"/> below.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:129(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:129(para) 
 msgid "<literal>SELECT DISTINCT</literal> eliminates duplicate rows from the result. <literal>SELECT DISTINCT ON</literal> eliminates rows that match on all the specified expressions. <literal>SELECT ALL</literal> (the default) will return all candidate rows, including duplicates. (See <xref linkend=\"sql-distinct\" endterm=\"sql-distinct-title\"/> below.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:139(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:139(para) 
 msgid "Using the operators <literal>UNION</literal>, <literal>INTERSECT</literal>, and <literal>EXCEPT</literal>, the output of more than one <command>SELECT</command> statement can be combined to form a single result set. The <literal>UNION</literal> operator returns all rows that are in one or both of the result sets. The <literal>INTERSECT</literal> operator returns all rows that are strictly in both result sets. The <literal>EXCEPT</literal> operator returns the rows that are in the first result set but not in the second. In all three cases, duplicate rows are eliminated unless <literal>ALL</literal> is specified. The noise word <literal>DISTINCT</literal> can be added to explicitly specify eliminating duplicate rows. Notice that <literal>DISTINCT</literal> is the default behavior here, even though <literal>ALL</literal> is the default for <command>SELECT</command> itself. (See <xref linkend=\"sql-union\" endterm=\"sql-union-title\"/>, <xref linkend=\"sql-intersect\" endterm=\"sql-intersect-title\"/>, and <xref linkend=\"sql-except\" endterm=\"sql-except-title\"/> below.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:162(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:162(para) 
 msgid "If the <literal>ORDER BY</literal> clause is specified, the returned rows are sorted in the specified order. If <literal>ORDER BY</literal> is not given, the rows are returned in whatever order the system finds fastest to produce. (See <xref linkend=\"sql-orderby\" endterm=\"sql-orderby-title\"/> below.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:172(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:172(para) 
 msgid "If the <literal>LIMIT</literal> (or <literal>FETCH FIRST</literal>) or <literal>OFFSET</literal> clause is specified, the <command>SELECT</command> statement only returns a subset of the result rows. (See <xref linkend=\"sql-limit\" endterm=\"sql-limit-title\"/> below.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:181(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:181(para) 
 msgid "If <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal> is specified, the <command>SELECT</command> statement locks the selected rows against concurrent updates. (See <xref linkend=\"sql-for-update-share\" endterm=\"sql-for-update-share-title\"/> below.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:72(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:72(para) 
 msgid "<command>SELECT</command> retrieves rows from zero or more tables. The general processing of <command>SELECT</command> is as follows: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:192(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:192(para) 
 msgid "You must have <literal>SELECT</literal> privilege on each column used in a <command>SELECT</command> command. The use of <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal> requires <literal>UPDATE</literal> privilege as well (for at least one column of each table so selected)."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:202(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:202(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:205(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:205(title) 
 msgid "<literal>WITH</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:207(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:207(para) 
 msgid "The <literal>WITH</literal> clause allows you to specify one or more subqueries that can be referenced by name in the primary query. The subqueries effectively act as temporary tables or views for the duration of the primary query. Each subquery can be a <command>SELECT</command>, <command>INSERT</command>, <command>UPDATE</command> or <command>DELETE</command> statement. When writing a data-modifying statement (<command>INSERT</command>, <command>UPDATE</command> or <command>DELETE</command>) in <literal>WITH</literal>, it is usual to include a <literal>RETURNING</literal> clause. It is the output of <literal>RETURNING</literal>, <emphasis>not</emphasis> the underlying table that the statement modifies, that forms the temporary table that is read by the primary query. If <literal>RETURNING</literal> is omitted, the statement is still executed, but it produces no output so it cannot be referenced as a table by the primary query."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:225(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:225(para) 
 msgid "A name (without schema qualification) must be specified for each <literal>WITH</literal> query. Optionally, a list of column names can be specified; if this is omitted, the column names are inferred from the subquery."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:232(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:232(para) 
 msgid "If <literal>RECURSIVE</literal> is specified, it allows a <command>SELECT</command> subquery to reference itself by name. Such a subquery must have the form <synopsis>\n<replaceable class=\"parameter\">non_recursive_term</replaceable> UNION [ ALL | DISTINCT ] <replaceable class=\"parameter\">recursive_term</replaceable>\n</synopsis> where the recursive self-reference must appear on the right-hand side of the <literal>UNION</literal>. Only one recursive self-reference is permitted per query. Recursive data-modifying statements are not supported, but you can use the results of a recursive <command>SELECT</command> query in a data-modifying statement. See <xref linkend=\"queries-with\"/> for an example."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:248(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:248(para) 
 msgid "Another effect of <literal>RECURSIVE</literal> is that <literal>WITH</literal> queries need not be ordered: a query can reference another one that is later in the list. (However, circular references, or mutual recursion, are not implemented.) Without <literal>RECURSIVE</literal>, <literal>WITH</literal> queries can only reference sibling <literal>WITH</literal> queries that are earlier in the <literal>WITH</literal> list."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:258(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:258(para) 
 msgid "A key property of <literal>WITH</literal> queries is that they are evaluated only once per execution of the primary query, even if the primary query refers to them more than once. In particular, data-modifying statements are guaranteed to be executed once and only once, regardless of whether the primary query reads all or any of their output."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:267(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:267(para) 
 msgid "The primary query and the <literal>WITH</literal> queries are all (notionally) executed at the same time. This implies that the effects of a data-modifying statement in <literal>WITH</literal> cannot be seen from other parts of the query, other than by reading its <literal>RETURNING</literal> output. If two such data-modifying statements attempt to modify the same row, the results are unspecified."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:276(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:276(para) 
 msgid "See <xref linkend=\"queries-with\"/> for additional information."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:282(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:282(title) 
 msgid "<literal>FROM</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:284(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:284(para) 
 msgid "The <literal>FROM</literal> clause specifies one or more source tables for the <command>SELECT</command>. If multiple sources are specified, the result is the Cartesian product (cross join) of all the sources. But usually qualification conditions are added to restrict the returned rows to a small subset of the Cartesian product."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:301(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:301(para) 
 msgid "The name (optionally schema-qualified) of an existing table or view. If <literal>ONLY</literal> is specified, only that table is scanned. If <literal>ONLY</literal> is not specified, the table and any descendant tables are scanned."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:313(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:313(para) 
 msgid "A substitute name for the <literal>FROM</literal> item containing the alias. An alias is used for brevity or to eliminate ambiguity for self-joins (where the same table is scanned multiple times). When an alias is provided, it completely hides the actual name of the table or function; for example given <literal>FROM foo AS f</literal>, the remainder of the <command>SELECT</command> must refer to this <literal>FROM</literal> item as <literal>f</literal> not <literal>foo</literal>. If an alias is written, a column alias list can also be written to provide substitute names for one or more columns of the table."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:331(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:331(para) 
 msgid "A sub-<command>SELECT</command> can appear in the <literal>FROM</literal> clause. This acts as though its output were created as a temporary table for the duration of this single <command>SELECT</command> command. Note that the sub-<command>SELECT</command> must be surrounded by parentheses, and an alias <emphasis>must</emphasis> be provided for it. A <xref linkend=\"sql-values\"/> command can also be used here."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:348(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:348(para) 
 msgid "A <literal>WITH</literal> query is referenced by writing its name, just as though the query's name were a table name. (In fact, the <literal>WITH</literal> query hides any real table of the same name for the purposes of the primary query. If necessary, you can refer to a real table of the same name by schema-qualifying the table's name.) An alias can be provided in the same way as for a table."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:363(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:363(para) 
 msgid "Function calls can appear in the <literal>FROM</literal> clause. (This is especially useful for functions that return result sets, but any function can be used.) This acts as though its output were created as a temporary table for the duration of this single <command>SELECT</command> command. An alias can also be used. If an alias is written, a column alias list can also be written to provide substitute names for one or more attributes of the function's composite return type. If the function has been defined as returning the <type>record</type> data type, then an alias or the key word <literal>AS</literal> must be present, followed by a column definition list in the form <literal>( <replaceable class=\"parameter\">column_name</replaceable><replaceable class=\"parameter\">data_type</replaceable><optional>, ... </optional> )</literal>. The column definition list must match the actual number and types of columns returned by the function."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:391(literal) 
+#: /tmp/cicero-CbEv/ref/select.xml:391(literal) 
 msgid "[ INNER ] JOIN"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:394(literal) 
+#: /tmp/cicero-CbEv/ref/select.xml:394(literal) 
 msgid "LEFT [ OUTER ] JOIN"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:397(literal) 
+#: /tmp/cicero-CbEv/ref/select.xml:397(literal) 
 msgid "RIGHT [ OUTER ] JOIN"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:400(literal) 
+#: /tmp/cicero-CbEv/ref/select.xml:400(literal) 
 msgid "FULL [ OUTER ] JOIN"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:403(literal) 
+#: /tmp/cicero-CbEv/ref/select.xml:403(literal) 
 msgid "CROSS JOIN"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:387(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:387(para) 
 msgid "One of <placeholder-1/> For the <literal>INNER</literal> and <literal>OUTER</literal> join types, a join condition must be specified, namely exactly one of <literal>NATURAL</literal>, <literal>ON <replaceable class=\"parameter\">join_condition</replaceable></literal>, or <literal>USING (<replaceable class=\"parameter\">join_column</replaceable> [, ...])</literal>. See below for the meaning. For <literal>CROSS JOIN</literal>, none of these clauses can appear."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:417(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:417(para) 
 msgid "A <literal>JOIN</literal> clause combines two <literal>FROM</literal> items. Use parentheses if necessary to determine the order of nesting. In the absence of parentheses, <literal>JOIN</literal>s nest left-to-right. In any case <literal>JOIN</literal> binds more tightly than the commas separating <literal>FROM</literal> items."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:426(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:426(para) 
 msgid "<literal>CROSS JOIN</literal> and <literal>INNER JOIN</literal> produce a simple Cartesian product, the same result as you get from listing the two items at the top level of <literal>FROM</literal>, but restricted by the join condition (if any). <literal>CROSS JOIN</literal> is equivalent to <literal>INNER JOIN ON (TRUE)</literal>, that is, no rows are removed by qualification. These join types are just a notational convenience, since they do nothing you couldn't do with plain <literal>FROM</literal> and <literal>WHERE</literal>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:437(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:437(para) 
 msgid "<literal>LEFT OUTER JOIN</literal> returns all rows in the qualified Cartesian product (i.e., all combined rows that pass its join condition), plus one copy of each row in the left-hand table for which there was no right-hand row that passed the join condition. This left-hand row is extended to the full width of the joined table by inserting null values for the right-hand columns. Note that only the <literal>JOIN</literal> clause's own condition is considered while deciding which rows have matches. Outer conditions are applied afterwards."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:448(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:448(para) 
 msgid "Conversely, <literal>RIGHT OUTER JOIN</literal> returns all the joined rows, plus one row for each unmatched right-hand row (extended with nulls on the left). This is just a notational convenience, since you could convert it to a <literal>LEFT OUTER JOIN</literal> by switching the left and right inputs."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:456(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:456(para) 
 msgid "<literal>FULL OUTER JOIN</literal> returns all the joined rows, plus one row for each unmatched left-hand row (extended with nulls on the right), plus one row for each unmatched right-hand row (extended with nulls on the left)."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:465(literal) 
+#: /tmp/cicero-CbEv/ref/select.xml:465(literal) 
 msgid "ON <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:467(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:467(para) 
 msgid "<replaceable class=\"parameter\">join_condition</replaceable> is an expression resulting in a value of type <type>boolean</type> (similar to a <literal>WHERE</literal> clause) that specifies which rows in a join are considered to match."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:477(literal) 
+#: /tmp/cicero-CbEv/ref/select.xml:477(literal) 
 msgid "USING ( <placeholder-1/> [, ...] )"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:479(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:479(para) 
 msgid "A clause of the form <literal>USING ( a, b, ... )</literal> is shorthand for <literal>ON left_table.a = right_table.a AND left_table.b = right_table.b ...</literal>. Also, <literal>USING</literal> implies that only one of each pair of equivalent columns will be included in the join output, not both."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:491(literal) 
+#: /tmp/cicero-CbEv/ref/select.xml:491(literal) 
 msgid "NATURAL"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:493(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:493(para) 
 msgid "<literal>NATURAL</literal> is shorthand for a <literal>USING</literal> list that mentions all columns in the two tables that have the same names."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:293(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:293(para) 
 msgid "The <literal>FROM</literal> clause can contain the following elements: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:504(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:504(title) 
 msgid "<literal>WHERE</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:506(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:506(para) 
 msgid "The optional <literal>WHERE</literal> clause has the general form <synopsis>\nWHERE <replaceable class=\"parameter\">condition</replaceable>\n</synopsis> where <replaceable class=\"parameter\">condition</replaceable> is any expression that evaluates to a result of type <type>boolean</type>. Any row that does not satisfy this condition will be eliminated from the output. A row satisfies the condition if it returns true when the actual row values are substituted for any variable references."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:521(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:521(title) 
 msgid "<literal>GROUP BY</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:523(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:523(para) 
 msgid "The optional <literal>GROUP BY</literal> clause has the general form <synopsis>\nGROUP BY <replaceable class=\"parameter\">expression</replaceable> [, ...]\n</synopsis>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:530(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:530(para) 
 msgid "<literal>GROUP BY</literal> will condense into a single row all selected rows that share the same values for the grouped expressions. <replaceable class=\"parameter\">expression</replaceable> can be an input column name, or the name or ordinal number of an output column (<command>SELECT</command> list item), or an arbitrary expression formed from input-column values. In case of ambiguity, a <literal>GROUP BY</literal> name will be interpreted as an input-column name rather than an output column name."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:542(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:542(para) 
 msgid "Aggregate functions, if any are used, are computed across all rows making up each group, producing a separate value for each group (whereas without <literal>GROUP BY</literal>, an aggregate produces a single value computed across all the selected rows). When <literal>GROUP BY</literal> is present, it is not valid for the <command>SELECT</command> list expressions to refer to ungrouped columns except within aggregate functions or if the ungrouped column is functionally dependent on the grouped columns, since there would otherwise be more than one possible value to return for an ungrouped column. A functional dependency exists if the grouped columns (or a subset thereof) are the primary key of the table containing the ungrouped column."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:559(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:559(title) 
 msgid "<literal>HAVING</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:561(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:561(para) 
 msgid "The optional <literal>HAVING</literal> clause has the general form <synopsis>\nHAVING <replaceable class=\"parameter\">condition</replaceable>\n</synopsis> where <replaceable class=\"parameter\">condition</replaceable> is the same as specified for the <literal>WHERE</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:570(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:570(para) 
 msgid "<literal>HAVING</literal> eliminates group rows that do not satisfy the condition. <literal>HAVING</literal> is different from <literal>WHERE</literal>: <literal>WHERE</literal> filters individual rows before the application of <literal>GROUP BY</literal>, while <literal>HAVING</literal> filters group rows created by <literal>GROUP BY</literal>. Each column referenced in <replaceable class=\"parameter\">condition</replaceable> must unambiguously reference a grouping column, unless the reference appears within an aggregate function."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:582(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:582(para) 
 msgid "The presence of <literal>HAVING</literal> turns a query into a grouped query even if there is no <literal>GROUP BY</literal> clause. This is the same as what happens when the query contains aggregate functions but no <literal>GROUP BY</literal> clause. All the selected rows are considered to form a single group, and the <command>SELECT</command> list and <literal>HAVING</literal> clause can only reference table columns from within aggregate functions. Such a query will emit a single row if the <literal>HAVING</literal> condition is true, zero rows if it is not true."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:595(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:595(title) 
 msgid "<literal>WINDOW</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:597(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:597(para) 
 msgid "The optional <literal>WINDOW</literal> clause has the general form <synopsis>\nWINDOW <replaceable class=\"parameter\">window_name</replaceable> AS ( <replaceable class=\"parameter\">window_definition</replaceable> ) [, ...]\n</synopsis> where <replaceable class=\"parameter\">window_name</replaceable> is a name that can be referenced from subsequent window definitions or <literal>OVER</literal> clauses, and <replaceable class=\"parameter\">window_definition</replaceable> is <synopsis>\n[ <replaceable class=\"parameter\">existing_window_name</replaceable> ]\n[ PARTITION BY <replaceable class=\"parameter\">expression</replaceable> [, ...] ]\n[ ORDER BY <replaceable class=\"parameter\">expression</replaceable> [ ASC | DESC | USING <replaceable class=\"parameter\">operator</replaceable> ] [ NULLS { FIRST | LAST } ] [, ...] ]\n[ <replaceable class=\"parameter\">frame_clause</replaceable> ]\n</synopsis>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:614(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:614(para) 
 msgid "If an <replaceable class=\"parameter\">existing_window_name</replaceable> is specified it must refer to an earlier entry in the <literal>WINDOW</literal> list; the new window copies its partitioning clause from that entry, as well as its ordering clause if any. In this case the new window cannot specify its own <literal>PARTITION BY</literal> clause, and it can specify <literal>ORDER BY</literal> only if the copied window does not have one. The new window always uses its own frame clause; the copied window must not specify a frame clause."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:625(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:625(para) 
 msgid "The elements of the <literal>PARTITION BY</literal> list are interpreted in much the same fashion as elements of a <xref linkend=\"sql-groupby\" endterm=\"sql-groupby-title\"/>, except that they are always simple expressions and never the name or number of an output column. Another difference is that these expressions can contain aggregate function calls, which are not allowed in a regular <literal>GROUP BY</literal> clause. They are allowed here because windowing occurs after grouping and aggregation."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:637(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:637(para) 
 msgid "Similarly, the elements of the <literal>ORDER BY</literal> list are interpreted in much the same fashion as elements of an <xref linkend=\"sql-orderby\" endterm=\"sql-orderby-title\"/>, except that the expressions are always taken as simple expressions and never the name or number of an output column."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:645(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:645(para) 
 msgid "The optional <replaceable class=\"parameter\">frame_clause</replaceable> defines the <firstterm>window frame</firstterm> for window functions that depend on the frame (not all do). The window frame is a set of related rows for each row of the query (called the <firstterm>current row</firstterm>). The <replaceable class=\"parameter\">frame_clause</replaceable> can be one of <synopsis>\n[ RANGE | ROWS ] <replaceable>frame_start</replaceable>\n[ RANGE | ROWS ] BETWEEN <replaceable>frame_start</replaceable> AND <replaceable>frame_end</replaceable>\n</synopsis> where <replaceable>frame_start</replaceable> and <replaceable>frame_end</replaceable> can be one of <synopsis>\nUNBOUNDED PRECEDING\n<replaceable>value</replaceable> PRECEDING\nCURRENT ROW\n<replaceable>value</replaceable> FOLLOWING\nUNBOUNDED FOLLOWING\n</synopsis> If <replaceable>frame_end</replaceable> is omitted it defaults to <literal>CURRENT ROW</literal>. Restrictions are that <replaceable>frame_start</replaceable> cannot be <literal>UNBOUNDED FOLLOWING</literal>, <replaceable>frame_end</replaceable> cannot be <literal>UNBOUNDED PRECEDING</literal>, and the <replaceable>frame_end</replaceable> choice cannot appear earlier in the above list than the <replaceable>frame_start</replaceable> choice — for example <literal>RANGE BETWEEN CURRENT ROW AND <replaceable>value</replaceable> PRECEDING</literal> is not allowed."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:678(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:678(para) 
 msgid "The default framing option is <literal>RANGE UNBOUNDED PRECEDING</literal>, which is the same as <literal>RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW</literal>; it sets the frame to be all rows from the partition start up through the current row's last peer in the <literal>ORDER BY</literal> ordering (which means all rows if there is no <literal>ORDER BY</literal>). In general, <literal>UNBOUNDED PRECEDING</literal> means that the frame starts with the first row of the partition, and similarly <literal>UNBOUNDED FOLLOWING</literal> means that the frame ends with the last row of the partition (regardless of <literal>RANGE</literal> or <literal>ROWS</literal> mode). In <literal>ROWS</literal> mode, <literal>CURRENT ROW</literal> means that the frame starts or ends with the current row; but in <literal>RANGE</literal> mode it means that the frame starts or ends with the current row's first or last peer in the <literal>ORDER BY</literal> ordering. The <replaceable>value</replaceable><literal>PRECEDING</literal> and <replaceable>value</replaceable><literal>FOLLOWING</literal> cases are currently only allowed in <literal>ROWS</literal> mode. They indicate that the frame starts or ends with the row that many rows before or after the current row. <replaceable>value</replaceable> must be an integer expression not containing any variables, aggregate functions, or window functions. The value must not be null or negative; but it can be zero, which selects the current row itself."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:702(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:702(para) 
 msgid "Beware that the <literal>ROWS</literal> options can produce unpredictable results if the <literal>ORDER BY</literal> ordering does not order the rows uniquely. The <literal>RANGE</literal> options are designed to ensure that rows that are peers in the <literal>ORDER BY</literal> ordering are treated alike; any two peer rows will be both in or both not in the frame."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:710(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:710(para) 
 msgid "The purpose of a <literal>WINDOW</literal> clause is to specify the behavior of <firstterm>window functions</firstterm> appearing in the query's <xref linkend=\"sql-select-list\" endterm=\"sql-select-list-title\"/> or <xref linkend=\"sql-orderby\" endterm=\"sql-orderby-title\"/>. These functions can reference the <literal>WINDOW</literal> clause entries by name in their <literal>OVER</literal> clauses. A <literal>WINDOW</literal> clause entry does not have to be referenced anywhere, however; if it is not used in the query it is simply ignored. It is possible to use window functions without any <literal>WINDOW</literal> clause at all, since a window function call can specify its window definition directly in its <literal>OVER</literal> clause. However, the <literal>WINDOW</literal> clause saves typing when the same window definition is needed for more than one window function."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:726(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:726(para) 
 msgid "Window functions are described in detail in <xref linkend=\"tutorial-window\"/>, <xref linkend=\"syntax-window-functions\"/>, and <xref linkend=\"queries-window\"/>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:735(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:735(title) 
 msgid "<command>SELECT</command> List"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:737(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:737(para) 
 msgid "The <command>SELECT</command> list (between the key words <literal>SELECT</literal> and <literal>FROM</literal>) specifies expressions that form the output rows of the <command>SELECT</command> statement. The expressions can (and usually do) refer to columns computed in the <literal>FROM</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:745(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:745(para) 
 msgid "Just as in a table, every output column of a <command>SELECT</command> has a name. In a simple <command>SELECT</command> this name is just used to label the column for display, but when the <command>SELECT</command> is a sub-query of a larger query, the name is seen by the larger query as the column name of the virtual table produced by the sub-query. To specify the name to use for an output column, write <literal>AS</literal><replaceable class=\"parameter\">output_name</replaceable> after the column's expression. (You can omit <literal>AS</literal>, but only if the desired output name does not match any <productname>PostgreSQL</productname> keyword (see <xref linkend=\"sql-keywords-appendix\"/>). For protection against possible future keyword additions, it is recommended that you always either write <literal>AS</literal> or double-quote the output name.) If you do not specify a column name, a name is chosen automatically by <productname>PostgreSQL</productname>. If the column's expression is a simple column reference then the chosen name is the same as that column's name; in more complex cases a generated name looking like <literal>?column<replaceable>N</replaceable>?</literal> is usually chosen."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:766(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:766(para) 
 msgid "An output column's name can be used to refer to the column's value in <literal>ORDER BY</literal> and <literal>GROUP BY</literal> clauses, but not in the <literal>WHERE</literal> or <literal>HAVING</literal> clauses; there you must write out the expression instead."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:773(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:773(para) 
 msgid "Instead of an expression, <literal>*</literal> can be written in the output list as a shorthand for all the columns of the selected rows. Also, you can write <literal><replaceable class=\"parameter\">table_name</replaceable>.*</literal> as a shorthand for the columns coming from just that table. In these cases it is not possible to specify new names with <literal>AS</literal>; the output column names will be the same as the table columns' names."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:785(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:785(title) 
 msgid "<literal>DISTINCT</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:787(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:787(para) 
 msgid "If <literal>SELECT DISTINCT</literal> is specified, all duplicate rows are removed from the result set (one row is kept from each group of duplicates). <literal>SELECT ALL</literal> specifies the opposite: all rows are kept; that is the default."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:804(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:804(programlisting) 
 #, no-wrap
 msgid "\nSELECT DISTINCT ON (location) location, time, report\n    FROM weather_reports\n    ORDER BY location, time DESC;\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:794(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:794(para) 
 msgid "<literal>SELECT DISTINCT ON ( <replaceable class=\"parameter\">expression</replaceable> [, ...] )</literal> keeps only the first row of each set of rows where the given expressions evaluate to equal. The <literal>DISTINCT ON</literal> expressions are interpreted using the same rules as for <literal>ORDER BY</literal> (see above). Note that the <quote>first row</quote> of each set is unpredictable unless <literal>ORDER BY</literal> is used to ensure that the desired row appears first. For example: <placeholder-1/> retrieves the most recent weather report for each location. But if we had not used <literal>ORDER BY</literal> to force descending order of time values for each location, we'd have gotten a report from an unpredictable time for each location."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:815(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:815(para) 
 msgid "The <literal>DISTINCT ON</literal> expression(s) must match the leftmost <literal>ORDER BY</literal> expression(s). The <literal>ORDER BY</literal> clause will normally contain additional expression(s) that determine the desired precedence of rows within each <literal>DISTINCT ON</literal> group."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:824(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:824(title) 
 msgid "<literal>UNION</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:826(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:826(para) 
 msgid "The <literal>UNION</literal> clause has this general form: <synopsis>\n<replaceable class=\"parameter\">select_statement</replaceable> UNION [ ALL | DISTINCT ] <replaceable class=\"parameter\">select_statement</replaceable>\n</synopsis><replaceable class=\"parameter\">select_statement</replaceable> is any <command>SELECT</command> statement without an <literal>ORDER BY</literal>, <literal>LIMIT</literal>, <literal>FOR UPDATE</literal>, or <literal>FOR SHARE</literal> clause. (<literal>ORDER BY</literal> and <literal>LIMIT</literal> can be attached to a subexpression if it is enclosed in parentheses. Without parentheses, these clauses will be taken to apply to the result of the <literal>UNION</literal>, not to its right-hand input expression.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:841(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:841(para) 
 msgid "The <literal>UNION</literal> operator computes the set union of the rows returned by the involved <command>SELECT</command> statements. A row is in the set union of two result sets if it appears in at least one of the result sets. The two <command>SELECT</command> statements that represent the direct operands of the <literal>UNION</literal> must produce the same number of columns, and corresponding columns must be of compatible data types."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:852(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:852(para) 
 msgid "The result of <literal>UNION</literal> does not contain any duplicate rows unless the <literal>ALL</literal> option is specified. <literal>ALL</literal> prevents elimination of duplicates. (Therefore, <literal>UNION ALL</literal> is usually significantly quicker than <literal>UNION</literal>; use <literal>ALL</literal> when you can.) <literal>DISTINCT</literal> can be written to explicitly specify the default behavior of eliminating duplicate rows."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:862(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:862(para) 
 msgid "Multiple <literal>UNION</literal> operators in the same <command>SELECT</command> statement are evaluated left to right, unless otherwise indicated by parentheses."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:868(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:868(para) 
 msgid "Currently, <literal>FOR UPDATE</literal> and <literal>FOR SHARE</literal> cannot be specified either for a <literal>UNION</literal> result or for any input of a <literal>UNION</literal>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:876(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:876(title) 
 msgid "<literal>INTERSECT</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:878(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:878(para) 
 msgid "The <literal>INTERSECT</literal> clause has this general form: <synopsis>\n<replaceable class=\"parameter\">select_statement</replaceable> INTERSECT [ ALL | DISTINCT ] <replaceable class=\"parameter\">select_statement</replaceable>\n</synopsis><replaceable class=\"parameter\">select_statement</replaceable> is any <command>SELECT</command> statement without an <literal>ORDER BY</literal>, <literal>LIMIT</literal>, <literal>FOR UPDATE</literal>, or <literal>FOR SHARE</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:888(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:888(para) 
 msgid "The <literal>INTERSECT</literal> operator computes the set intersection of the rows returned by the involved <command>SELECT</command> statements. A row is in the intersection of two result sets if it appears in both result sets."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:895(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:895(para) 
 msgid "The result of <literal>INTERSECT</literal> does not contain any duplicate rows unless the <literal>ALL</literal> option is specified. With <literal>ALL</literal>, a row that has <replaceable>m</replaceable> duplicates in the left table and <replaceable>n</replaceable> duplicates in the right table will appear min(<replaceable>m</replaceable>,<replaceable>n</replaceable>) times in the result set. <literal>DISTINCT</literal> can be written to explicitly specify the default behavior of eliminating duplicate rows."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:905(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:905(para) 
 msgid "Multiple <literal>INTERSECT</literal> operators in the same <command>SELECT</command> statement are evaluated left to right, unless parentheses dictate otherwise. <literal>INTERSECT</literal> binds more tightly than <literal>UNION</literal>. That is, <literal>A UNION B INTERSECT C</literal> will be read as <literal>A UNION (B INTERSECT C)</literal>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:915(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:915(para) 
 msgid "Currently, <literal>FOR UPDATE</literal> and <literal>FOR SHARE</literal> cannot be specified either for an <literal>INTERSECT</literal> result or for any input of an <literal>INTERSECT</literal>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:923(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:923(title) 
 msgid "<literal>EXCEPT</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:925(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:925(para) 
 msgid "The <literal>EXCEPT</literal> clause has this general form: <synopsis>\n<replaceable class=\"parameter\">select_statement</replaceable> EXCEPT [ ALL | DISTINCT ] <replaceable class=\"parameter\">select_statement</replaceable>\n</synopsis><replaceable class=\"parameter\">select_statement</replaceable> is any <command>SELECT</command> statement without an <literal>ORDER BY</literal>, <literal>LIMIT</literal>, <literal>FOR UPDATE</literal>, or <literal>FOR SHARE</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:935(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:935(para) 
 msgid "The <literal>EXCEPT</literal> operator computes the set of rows that are in the result of the left <command>SELECT</command> statement but not in the result of the right one."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:941(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:941(para) 
 msgid "The result of <literal>EXCEPT</literal> does not contain any duplicate rows unless the <literal>ALL</literal> option is specified. With <literal>ALL</literal>, a row that has <replaceable>m</replaceable> duplicates in the left table and <replaceable>n</replaceable> duplicates in the right table will appear max(<replaceable>m</replaceable>-<replaceable>n</replaceable>,0) times in the result set. <literal>DISTINCT</literal> can be written to explicitly specify the default behavior of eliminating duplicate rows."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:951(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:951(para) 
 msgid "Multiple <literal>EXCEPT</literal> operators in the same <command>SELECT</command> statement are evaluated left to right, unless parentheses dictate otherwise. <literal>EXCEPT</literal> binds at the same level as <literal>UNION</literal>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:958(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:958(para) 
 msgid "Currently, <literal>FOR UPDATE</literal> and <literal>FOR SHARE</literal> cannot be specified either for an <literal>EXCEPT</literal> result or for any input of an <literal>EXCEPT</literal>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:966(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:966(title) 
 msgid "<literal>ORDER BY</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:968(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:968(para) 
 msgid "The optional <literal>ORDER BY</literal> clause has this general form: <synopsis>\nORDER BY <replaceable class=\"parameter\">expression</replaceable> [ ASC | DESC | USING <replaceable class=\"parameter\">operator</replaceable> ] [ NULLS { FIRST | LAST } ] [, ...]\n</synopsis> The <literal>ORDER BY</literal> clause causes the result rows to be sorted according to the specified expression(s). If two rows are equal according to the leftmost expression, they are compared according to the next expression and so on. If they are equal according to all specified expressions, they are returned in an implementation-dependent order."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:981(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:981(para) 
 msgid "Each <replaceable class=\"parameter\">expression</replaceable> can be the name or ordinal number of an output column (<command>SELECT</command> list item), or it can be an arbitrary expression formed from input-column values."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:988(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:988(para) 
 msgid "The ordinal number refers to the ordinal (left-to-right) position of the output column. This feature makes it possible to define an ordering on the basis of a column that does not have a unique name. This is never absolutely necessary because it is always possible to assign a name to an output column using the <literal>AS</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1002(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1002(programlisting) 
 #, no-wrap
 msgid "\nSELECT name FROM distributors ORDER BY code;\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:997(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:997(para) 
 msgid "It is also possible to use arbitrary expressions in the <literal>ORDER BY</literal> clause, including columns that do not appear in the <command>SELECT</command> output list. Thus the following statement is valid: <placeholder-1/> A limitation of this feature is that an <literal>ORDER BY</literal> clause applying to the result of a <literal>UNION</literal>, <literal>INTERSECT</literal>, or <literal>EXCEPT</literal> clause can only specify an output column name or number, not an expression."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1011(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1011(para) 
 msgid "If an <literal>ORDER BY</literal> expression is a simple name that matches both an output column name and an input column name, <literal>ORDER BY</literal> will interpret it as the output column name. This is the opposite of the choice that <literal>GROUP BY</literal> will make in the same situation. This inconsistency is made to be compatible with the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1020(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1020(para) 
 msgid "Optionally one can add the key word <literal>ASC</literal> (ascending) or <literal>DESC</literal> (descending) after any expression in the <literal>ORDER BY</literal> clause. If not specified, <literal>ASC</literal> is assumed by default. Alternatively, a specific ordering operator name can be specified in the <literal>USING</literal> clause. An ordering operator must be a less-than or greater-than member of some B-tree operator family. <literal>ASC</literal> is usually equivalent to <literal>USING &lt;</literal> and <literal>DESC</literal> is usually equivalent to <literal>USING &gt;</literal>. (But the creator of a user-defined data type can define exactly what the default sort ordering is, and it might correspond to operators with other names.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1035(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1035(para) 
 msgid "If <literal>NULLS LAST</literal> is specified, null values sort after all non-null values; if <literal>NULLS FIRST</literal> is specified, null values sort before all non-null values. If neither is specified, the default behavior is <literal>NULLS LAST</literal> when <literal>ASC</literal> is specified or implied, and <literal>NULLS FIRST</literal> when <literal>DESC</literal> is specified (thus, the default is to act as though nulls are larger than non-nulls). When <literal>USING</literal> is specified, the default nulls ordering depends on whether the operator is a less-than or greater-than operator."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1046(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1046(para) 
 msgid "Note that ordering options apply only to the expression they follow; for example <literal>ORDER BY x, y DESC</literal> does not mean the same thing as <literal>ORDER BY x DESC, y DESC</literal>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1052(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1052(para) 
 msgid "Character-string data is sorted according to the locale-specific collation order that was established when the database was created."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1059(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1059(title) 
 msgid "<literal>LIMIT</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1061(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1061(para) 
 msgid "The <literal>LIMIT</literal> clause consists of two independent sub-clauses: <synopsis>\nLIMIT { <replaceable class=\"parameter\">count</replaceable> | ALL }\nOFFSET <replaceable class=\"parameter\">start</replaceable>\n</synopsis><replaceable class=\"parameter\">count</replaceable> specifies the maximum number of rows to return, while <replaceable class=\"parameter\">start</replaceable> specifies the number of rows to skip before starting to return rows. When both are specified, <replaceable class=\"parameter\">start</replaceable> rows are skipped before starting to count the <replaceable class=\"parameter\">count</replaceable> rows to be returned."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1076(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1076(para) 
 msgid "If the <replaceable class=\"parameter\">count</replaceable> expression evaluates to NULL, it is treated as <literal>LIMIT ALL</literal>, i.e., no limit. If <replaceable class=\"parameter\">start</replaceable> evaluates to NULL, it is treated the same as <literal>OFFSET 0</literal>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1083(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1083(para) 
 msgid "SQL:2008 introduced a different syntax to achieve the same result, which <productname>PostgreSQL</productname> also supports. It is: <synopsis>\nOFFSET <replaceable class=\"parameter\">start</replaceable> { ROW | ROWS }\nFETCH { FIRST | NEXT } [ <replaceable class=\"parameter\">count</replaceable> ] { ROW | ROWS } ONLY\n</synopsis> According to the standard, the <literal>OFFSET</literal> clause must come before the <literal>FETCH</literal> clause if both are present; but <productname>PostgreSQL</productname> is laxer and allows either order. <literal>ROW</literal> and <literal>ROWS</literal> as well as <literal>FIRST</literal> and <literal>NEXT</literal> are noise words that don't influence the effects of these clauses. In this syntax, when using expressions other than simple constants for <replaceable class=\"parameter\">start</replaceable> or <replaceable class=\"parameter\">count</replaceable>, parentheses will be necessary in most cases. If <replaceable class=\"parameter\">count</replaceable> is omitted in <literal>FETCH</literal>, it defaults to 1."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1103(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1103(para) 
 msgid "When using <literal>LIMIT</literal>, it is a good idea to use an <literal>ORDER BY</literal> clause that constrains the result rows into a unique order. Otherwise you will get an unpredictable subset of the query's rows — you might be asking for the tenth through twentieth rows, but tenth through twentieth in what ordering? You don't know what ordering unless you specify <literal>ORDER BY</literal>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1112(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1112(para) 
 msgid "The query planner takes <literal>LIMIT</literal> into account when generating a query plan, so you are very likely to get different plans (yielding different row orders) depending on what you use for <literal>LIMIT</literal> and <literal>OFFSET</literal>. Thus, using different <literal>LIMIT</literal>/<literal>OFFSET</literal> values to select different subsets of a query result <emphasis>will give inconsistent results</emphasis> unless you enforce a predictable result ordering with <literal>ORDER BY</literal>. This is not a bug; it is an inherent consequence of the fact that SQL does not promise to deliver the results of a query in any particular order unless <literal>ORDER BY</literal> is used to constrain the order."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1126(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1126(para) 
 msgid "It is even possible for repeated executions of the same <literal>LIMIT</literal> query to return different subsets of the rows of a table, if there is not an <literal>ORDER BY</literal> to enforce selection of a deterministic subset. Again, this is not a bug; determinism of the results is simply not guaranteed in such a case."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1136(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1136(title) 
 msgid "<literal>FOR UPDATE</literal>/<literal>FOR SHARE</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1138(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1138(para) 
 msgid "The <literal>FOR UPDATE</literal> clause has this form: <synopsis>\nFOR UPDATE [ OF <replaceable class=\"parameter\">table_name</replaceable> [, ...] ] [ NOWAIT ]\n</synopsis>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1145(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1145(para) 
 msgid "The closely related <literal>FOR SHARE</literal> clause has this form: <synopsis>\nFOR SHARE [ OF <replaceable class=\"parameter\">table_name</replaceable> [, ...] ] [ NOWAIT ]\n</synopsis>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1152(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1152(para) 
 msgid "<literal>FOR UPDATE</literal> causes the rows retrieved by the <command>SELECT</command> statement to be locked as though for update. This prevents them from being modified or deleted by other transactions until the current transaction ends. That is, other transactions that attempt <command>UPDATE</command>, <command>DELETE</command>, or <command>SELECT FOR UPDATE</command> of these rows will be blocked until the current transaction ends. Also, if an <command>UPDATE</command>, <command>DELETE</command>, or <command>SELECT FOR UPDATE</command> from another transaction has already locked a selected row or rows, <command>SELECT FOR UPDATE</command> will wait for the other transaction to complete, and will then lock and return the updated row (or no row, if the row was deleted). Within a <literal>REPEATABLE READ</literal> or <literal>SERIALIZABLE</literal> transaction, however, an error will be thrown if a row to be locked has changed since the transaction started. For further discussion see <xref linkend=\"mvcc\"/>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1171(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1171(para) 
 msgid "<literal>FOR SHARE</literal> behaves similarly, except that it acquires a shared rather than exclusive lock on each retrieved row. A shared lock blocks other transactions from performing <command>UPDATE</command>, <command>DELETE</command>, or <command>SELECT FOR UPDATE</command> on these rows, but it does not prevent them from performing <command>SELECT FOR SHARE</command>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1180(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1180(para) 
 msgid "To prevent the operation from waiting for other transactions to commit, use the <literal>NOWAIT</literal> option. With <literal>NOWAIT</literal>, the statement reports an error, rather than waiting, if a selected row cannot be locked immediately. Note that <literal>NOWAIT</literal> applies only to the row-level lock(s) — the required <literal>ROW SHARE</literal> table-level lock is still taken in the ordinary way (see <xref linkend=\"mvcc\"/>). You can use <xref linkend=\"sql-lock\"/> with the <literal>NOWAIT</literal> option first, if you need to acquire the table-level lock without waiting."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1193(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1193(para) 
 msgid "If specific tables are named in <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal>, then only rows coming from those tables are locked; any other tables used in the <command>SELECT</command> are simply read as usual. A <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal> clause without a table list affects all tables used in the statement. If <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal> is applied to a view or sub-query, it affects all tables used in the view or sub-query. However, <literal>FOR UPDATE</literal>/<literal>FOR SHARE</literal> do not apply to <literal>WITH</literal> queries referenced by the primary query. If you want row locking to occur within a <literal>WITH</literal> query, specify <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal> within the <literal>WITH</literal> query."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1210(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1210(para) 
 msgid "Multiple <literal>FOR UPDATE</literal> and <literal>FOR SHARE</literal> clauses can be written if it is necessary to specify different locking behavior for different tables. If the same table is mentioned (or implicitly affected) by both <literal>FOR UPDATE</literal> and <literal>FOR SHARE</literal> clauses, then it is processed as <literal>FOR UPDATE</literal>. Similarly, a table is processed as <literal>NOWAIT</literal> if that is specified in any of the clauses affecting it."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1221(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1221(para) 
 msgid "<literal>FOR UPDATE</literal> and <literal>FOR SHARE</literal> cannot be used in contexts where returned rows cannot be clearly identified with individual table rows; for example they cannot be used with aggregation."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1227(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1227(para) 
 msgid "When <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal> appears at the top level of a <command>SELECT</command> query, the rows that are locked are exactly those that are returned by the query; in the case of a join query, the rows locked are those that contribute to returned join rows. In addition, rows that satisfied the query conditions as of the query snapshot will be locked, although they will not be returned if they were updated after the snapshot and no longer satisfy the query conditions. If a <literal>LIMIT</literal> is used, locking stops once enough rows have been returned to satisfy the limit (but note that rows skipped over by <literal>OFFSET</literal> will get locked). Similarly, if <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal> is used in a cursor's query, only rows actually fetched or stepped past by the cursor will be locked."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1251(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1251(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM (SELECT * FROM mytable FOR UPDATE) ss WHERE col1 = 5;\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1244(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1244(para) 
 msgid "When <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal> appears in a sub-<command>SELECT</command>, the rows locked are those returned to the outer query by the sub-query. This might involve fewer rows than inspection of the sub-query alone would suggest, since conditions from the outer query might be used to optimize execution of the sub-query. For example, <placeholder-1/> will lock only rows having <literal>col1 = 5</literal>, even though that condition is not textually within the sub-query."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1263(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1263(programlisting) 
 #, no-wrap
 msgid "\nBEGIN;\nSELECT * FROM mytable WHERE key = 1 FOR UPDATE;\nSAVEPOINT s;\nUPDATE mytable SET ... WHERE key = 1;\nROLLBACK TO s;\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1259(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1259(para) 
 msgid "Avoid locking a row and then modifying it within a later savepoint or <application>PL/pgSQL</application> exception block. A subsequent rollback would cause the lock to be lost. For example: <placeholder-1/> After the <command>ROLLBACK</command>, the row is effectively unlocked, rather than returned to its pre-savepoint state of being locked but not modified. This hazard occurs if a row locked in the current transaction is updated or deleted, or if a shared lock is upgraded to exclusive: in all these cases, the former lock state is forgotten. If the transaction is then rolled back to a state between the original locking command and the subsequent change, the row will appear not to be locked at all. This is an implementation deficiency which will be addressed in a future release of <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1294(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1294(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM (SELECT * FROM mytable FOR UPDATE) ss ORDER BY column1;\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1283(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1283(para) 
 msgid "It is possible for a <command>SELECT</command> command using <literal>ORDER BY</literal> and <literal>FOR UPDATE/SHARE</literal> to return rows out of order. This is because <literal>ORDER BY</literal> is applied first. The command sorts the result, but might then block trying to obtain a lock on one or more of the rows. Once the <literal>SELECT</literal> unblocks, some of the ordering column values might have been modified, leading to those rows appearing to be out of order (though they are in order in terms of the original column values). This can be worked around at need by placing the <literal>FOR UPDATE/SHARE</literal> clause in a sub-query, for example <placeholder-1/> Note that this will result in locking all rows of <structname>mytable</structname>, whereas <literal>FOR UPDATE</literal> at the top level would lock only the actually returned rows. This can make for a significant performance difference, particularly if the <literal>ORDER BY</literal> is combined with <literal>LIMIT</literal> or other restrictions. So this technique is recommended only if concurrent updates of the ordering columns are expected and a strictly sorted result is required."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1309(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1309(title) 
 msgid "<literal>TABLE</literal> Command"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1313(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1313(programlisting) 
 #, no-wrap
 msgid "\nTABLE <replaceable class=\"parameter\">name</replaceable>\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1317(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1317(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM <replaceable class=\"parameter\">name</replaceable>\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1311(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1311(para) 
 msgid "The command <placeholder-1/> is completely equivalent to <placeholder-2/> It can be used as a top-level command or as a space-saving syntax variant in parts of complex queries."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1327(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1327(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1333(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1333(programlisting) 
 #, no-wrap
 msgid "\nSELECT f.title, f.did, d.name, f.date_prod, f.kind\n    FROM distributors d, films f\n    WHERE f.did = d.did\n\n       title       | did |     name     | date_prod  |   kind\n-------------------+-----+--------------+------------+----------\n The Third Man     | 101 | British Lion | 1949-12-23 | Drama\n The African Queen | 101 | British Lion | 1951-08-11 | Romantic\n ...\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1329(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1329(para) 
 msgid "To join the table <literal>films</literal> with the table <literal>distributors</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1350(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1350(programlisting) 
 #, no-wrap
 msgid "\nSELECT kind, sum(len) AS total FROM films GROUP BY kind;\n\n   kind   | total\n----------+-------\n Action   | 07:34\n Comedy   | 02:58\n Drama    | 14:28\n Musical  | 06:42\n Romantic | 04:38\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1346(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1346(para) 
 msgid "To sum the column <literal>len</literal> of all films and group the results by <literal>kind</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1368(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1368(programlisting) 
 #, no-wrap
 msgid "\nSELECT kind, sum(len) AS total\n    FROM films\n    GROUP BY kind\n    HAVING sum(len) &lt; interval '5 hours';\n\n   kind   | total\n----------+-------\n Comedy   | 02:58\n Romantic | 04:38\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1363(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1363(para) 
 msgid "To sum the column <literal>len</literal> of all films, group the results by <literal>kind</literal> and show those group totals that are less than 5 hours: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1386(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1386(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM distributors ORDER BY name;\nSELECT * FROM distributors ORDER BY 2;\n\n did |       name\n-----+------------------\n 109 | 20th Century Fox\n 110 | Bavaria Atelier\n 101 | British Lion\n 107 | Columbia\n 102 | Jean Luc Godard\n 113 | Luso films\n 104 | Mosfilm\n 103 | Paramount\n 106 | Toho\n 105 | United Artists\n 111 | Walt Disney\n 112 | Warner Bros.\n 108 | Westward\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1381(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1381(para) 
 msgid "The following two examples are identical ways of sorting the individual results according to the contents of the second column (<literal>name</literal>): <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1415(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1415(programlisting) 
 #, no-wrap
 msgid "\ndistributors:               actors:\n did |     name              id |     name\n-----+--------------        ----+----------------\n 108 | Westward               1 | Woody Allen\n 111 | Walt Disney            2 | Warren Beatty\n 112 | Warner Bros.           3 | Walter Matthau\n ...                         ...\n\nSELECT distributors.name\n    FROM distributors\n    WHERE distributors.name LIKE 'W%'\nUNION\nSELECT actors.name\n    FROM actors\n    WHERE actors.name LIKE 'W%';\n\n      name\n----------------\n Walt Disney\n Walter Matthau\n Warner Bros.\n Warren Beatty\n Westward\n Woody Allen\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1408(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1408(para) 
 msgid "The next example shows how to obtain the union of the tables <literal>distributors</literal> and <literal>actors</literal>, restricting the results to those that begin with the letter W in each table. Only distinct rows are wanted, so the key word <literal>ALL</literal> is omitted. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1447(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1447(programlisting) 
 #, no-wrap
 msgid "\nCREATE FUNCTION distributors(int) RETURNS SETOF distributors AS $$\n    SELECT * FROM distributors WHERE did = $1;\n$$ LANGUAGE SQL;\n\nSELECT * FROM distributors(111);\n did |    name\n-----+-------------\n 111 | Walt Disney\n\nCREATE FUNCTION distributors_2(int) RETURNS SETOF record AS $$\n    SELECT * FROM distributors WHERE did = $1;\n$$ LANGUAGE SQL;\n\nSELECT * FROM distributors_2(111) AS (f1 int, f2 text);\n f1  |     f2\n-----+-------------\n 111 | Walt Disney\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1443(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1443(para) 
 msgid "This example shows how to use a function in the <literal>FROM</literal> clause, both with and without a column definition list: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1471(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1471(programlisting) 
 #, no-wrap
 msgid "\nWITH t AS (\n    SELECT random() as x FROM generate_series(1, 3)\n  )\nSELECT * FROM t\nUNION ALL\nSELECT * FROM t\n\n         x          \n--------------------\n  0.534150459803641\n  0.520092216785997\n 0.0735620250925422\n  0.534150459803641\n  0.520092216785997\n 0.0735620250925422\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1468(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1468(para) 
 msgid "This example shows how to use a simple <literal>WITH</literal> clause: <placeholder-1/> Notice that the <literal>WITH</literal> query was evaluated only once, so that we got two sets of the same three random values."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1499(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1499(programlisting) 
 #, no-wrap
 msgid "\nWITH RECURSIVE employee_recursive(distance, employee_name, manager_name) AS (\n    SELECT 1, employee_name, manager_name\n    FROM employee\n    WHERE manager_name = 'Mary'\n  UNION ALL\n    SELECT er.distance + 1, e.employee_name, e.manager_name\n    FROM employee_recursive er, employee e\n    WHERE er.employee_name = e.manager_name\n  )\nSELECT distance, employee_name FROM employee_recursive;\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1493(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1493(para) 
 msgid "This example uses <literal>WITH RECURSIVE</literal> to find all subordinates (direct or indirect) of the employee Mary, and their level of indirectness, from a table that shows only direct subordinates: <placeholder-1/> Notice the typical form of recursive queries: an initial condition, followed by <literal>UNION</literal>, followed by the recursive part of the query. Be sure that the recursive part of the query will eventually return no tuples, or else the query will loop indefinitely. (See <xref linkend=\"queries-with\"/> for more examples.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1522(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1522(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1524(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1524(para) 
 msgid "Of course, the <command>SELECT</command> statement is compatible with the SQL standard. But there are some extensions and some missing features."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1531(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1531(title) 
 msgid "Omitted <literal>FROM</literal> Clauses"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1537(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1537(programlisting) 
 #, no-wrap
 msgid "\nSELECT 2+2;\n\n ?column?\n----------\n        4\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1533(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1533(para) 
 msgid "<productname>PostgreSQL</productname> allows one to omit the <literal>FROM</literal> clause. It has a straightforward use to compute the results of simple expressions: <placeholder-1/> Some other <acronym>SQL</acronym> databases cannot do this except by introducing a dummy one-row table from which to do the <command>SELECT</command>."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1553(programlisting) 
+#: /tmp/cicero-CbEv/ref/select.xml:1553(programlisting) 
 #, no-wrap
 msgid "\nSELECT distributors.* WHERE distributors.name = 'Westward';\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1549(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1549(para) 
 msgid "Note that if a <literal>FROM</literal> clause is not specified, the query cannot reference any database tables. For example, the following query is invalid: <placeholder-1/><productname>PostgreSQL</productname> releases prior to 8.1 would accept queries of this form, and add an implicit entry to the query's <literal>FROM</literal> clause for each table referenced by the query. This is no longer allowed."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1563(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1563(title) 
 msgid "Omitting the <literal>AS</literal> Key Word"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1565(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1565(para) 
 msgid "In the SQL standard, the optional key word <literal>AS</literal> can be omitted before an output column name whenever the new column name is a valid column name (that is, not the same as any reserved keyword). <productname>PostgreSQL</productname> is slightly more restrictive: <literal>AS</literal> is required if the new column name matches any keyword at all, reserved or not. Recommended practice is to use <literal>AS</literal> or double-quote output column names, to prevent any possible conflict against future keyword additions."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1576(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1576(para) 
 msgid "In <literal>FROM</literal> items, both the standard and <productname>PostgreSQL</productname> allow <literal>AS</literal> to be omitted before an alias that is an unreserved keyword. But this is impractical for output column names, because of syntactic ambiguities."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1586(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1586(title) 
 msgid "<literal>ONLY</literal> and Parentheses"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1588(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1588(para) 
 msgid "The SQL standard requires parentheses around the table name after <literal>ONLY</literal>, as in <literal>SELECT * FROM ONLY (tab1), ONLY (tab2) WHERE ...</literal>. PostgreSQL supports that as well, but the parentheses are optional. (This point applies equally to all SQL commands supporting the <literal>ONLY</literal> option.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1599(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1599(title) 
 msgid "Namespace Available to <literal>GROUP BY</literal> and <literal>ORDER BY</literal>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1601(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1601(para) 
 msgid "In the SQL-92 standard, an <literal>ORDER BY</literal> clause can only use output column names or numbers, while a <literal>GROUP BY</literal> clause can only use expressions based on input column names. <productname>PostgreSQL</productname> extends each of these clauses to allow the other choice as well (but it uses the standard's interpretation if there is ambiguity). <productname>PostgreSQL</productname> also allows both clauses to specify arbitrary expressions. Note that names appearing in an expression will always be taken as input-column names, not as output-column names."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1614(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1614(para) 
 msgid "SQL:1999 and later use a slightly different definition which is not entirely upward compatible with SQL-92. In most cases, however, <productname>PostgreSQL</productname> will interpret an <literal>ORDER BY</literal> or <literal>GROUP BY</literal> expression the same way SQL:1999 does."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1624(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1624(title) 
 msgid "Functional Dependencies"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1626(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1626(para) 
 msgid "<productname>PostgreSQL</productname> recognizes functional dependency (allowing columns to be omitted from <literal>GROUP BY</literal>) only when a table's primary key is included in the <literal>GROUP BY</literal> list. The SQL standard specifies additional conditions that should be recognized."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1636(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1636(title) 
 msgid "<literal>WINDOW</literal> Clause Restrictions"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1638(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1638(para) 
 msgid "The SQL standard provides additional options for the window <replaceable class=\"parameter\">frame_clause</replaceable>. <productname>PostgreSQL</productname> currently supports only the options listed above."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1647(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1647(title) 
 msgid "<literal>LIMIT</literal> and <literal>OFFSET</literal>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1649(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1649(para) 
 msgid "The clauses <literal>LIMIT</literal> and <literal>OFFSET</literal> are <productname>PostgreSQL</productname>-specific syntax, also used by <productname>MySQL</productname>. The SQL:2008 standard has introduced the clauses <literal>OFFSET ... FETCH {FIRST|NEXT} ...</literal> for the same functionality, as shown above in <xref linkend=\"sql-limit\" endterm=\"sql-limit-title\"/>. This syntax is also used by <productname>IBM DB2</productname>. (Applications written for <productname>Oracle</productname> frequently use a workaround involving the automatically generated <literal>rownum</literal> column, which is not available in PostgreSQL, to implement the effects of these clauses.)"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1665(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1665(title) 
 msgid "<literal>FOR UPDATE</literal> and <literal>FOR SHARE</literal>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1667(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1667(para) 
 msgid "Although <literal>FOR UPDATE</literal> appears in the SQL standard, the standard allows it only as an option of <command>DECLARE CURSOR</command>. <productname>PostgreSQL</productname> allows it in any <command>SELECT</command> query as well as in sub-<command>SELECT</command>s, but this is an extension. The <literal>FOR SHARE</literal> variant, and the <literal>NOWAIT</literal> option, do not appear in the standard."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1678(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1678(title) 
 msgid "Data-Modifying Statements in <literal>WITH</literal>"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1680(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1680(para) 
 msgid "<productname>PostgreSQL</productname> allows <command>INSERT</command>, <command>UPDATE</command>, and <command>DELETE</command> to be used as <literal>WITH</literal> queries. This is not found in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1688(title) 
+#: /tmp/cicero-CbEv/ref/select.xml:1688(title) 
 msgid "Nonstandard Clauses"
 msgstr ""
 
-#: /tmp/cicero-oFNz/ref/select.xml:1690(para) 
+#: /tmp/cicero-CbEv/ref/select.xml:1690(para) 
 msgid "The clause <literal>DISTINCT ON</literal> is not defined in the SQL standard."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-oFNz/ref/select.xml:0(None) 
+#: /tmp/cicero-CbEv/ref/select.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

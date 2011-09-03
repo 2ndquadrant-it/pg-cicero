@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-02 12:52+0200\n"
+"POT-Creation-Date: 2011-09-03 06:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,59 +9,59 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-oFNz/dict-int.xml:5(title) /tmp/cicero-oFNz/dict-int.xml:8(primary) 
+#: /tmp/cicero-CbEv/dict-int.xml:5(title) /tmp/cicero-CbEv/dict-int.xml:8(primary) 
 msgid "dict_int"
 msgstr ""
 
-#: /tmp/cicero-oFNz/dict-int.xml:11(para) 
+#: /tmp/cicero-CbEv/dict-int.xml:11(para) 
 msgid "<filename>dict_int</filename> is an example of an add-on dictionary template for full-text search. The motivation for this example dictionary is to control the indexing of integers (signed and unsigned), allowing such numbers to be indexed while preventing excessive growth in the number of unique words, which greatly affects the performance of searching."
 msgstr ""
 
-#: /tmp/cicero-oFNz/dict-int.xml:20(title) 
+#: /tmp/cicero-CbEv/dict-int.xml:20(title) 
 msgid "Configuration"
 msgstr ""
 
-#: /tmp/cicero-oFNz/dict-int.xml:22(para) 
+#: /tmp/cicero-CbEv/dict-int.xml:22(para) 
 msgid "The dictionary accepts two options:"
 msgstr ""
 
-#: /tmp/cicero-oFNz/dict-int.xml:28(para) 
+#: /tmp/cicero-CbEv/dict-int.xml:28(para) 
 msgid "The <literal>maxlen</literal> parameter specifies the maximum number of digits allowed in an integer word. The default value is 6."
 msgstr ""
 
-#: /tmp/cicero-oFNz/dict-int.xml:34(para) 
+#: /tmp/cicero-CbEv/dict-int.xml:34(para) 
 msgid "The <literal>rejectlong</literal> parameter specifies whether an overlength integer should be truncated or ignored. If <literal>rejectlong</literal> is <literal>false</literal> (the default), the dictionary returns the first <literal>maxlen</literal> digits of the integer. If <literal>rejectlong</literal> is <literal>true</literal>, the dictionary treats an overlength integer as a stop word, so that it will not be indexed. Note that this also means that such an integer cannot be searched for."
 msgstr ""
 
-#: /tmp/cicero-oFNz/dict-int.xml:48(title) 
+#: /tmp/cicero-CbEv/dict-int.xml:48(title) 
 msgid "Usage"
 msgstr ""
 
-#: /tmp/cicero-oFNz/dict-int.xml:56(programlisting) 
+#: /tmp/cicero-CbEv/dict-int.xml:56(programlisting) 
 #, no-wrap
 msgid "\nmydb# ALTER TEXT SEARCH DICTIONARY intdict (MAXLEN = 4, REJECTLONG = true);\nALTER TEXT SEARCH DICTIONARY\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/dict-int.xml:50(para) 
+#: /tmp/cicero-CbEv/dict-int.xml:50(para) 
 msgid "Installing the <literal>dict_int</literal> extension creates a text search template <literal>intdict_template</literal> and a dictionary <literal>intdict</literal> based on it, with the default parameters. You can alter the parameters, for example <placeholder-1/> or create new dictionaries based on the template."
 msgstr ""
 
-#: /tmp/cicero-oFNz/dict-int.xml:67(programlisting) 
+#: /tmp/cicero-CbEv/dict-int.xml:67(programlisting) 
 #, no-wrap
 msgid "\nmydb# select ts_lexize('intdict', '12345678');\n ts_lexize\n-----------\n {123456}\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/dict-int.xml:78(programlisting) 
+#: /tmp/cicero-CbEv/dict-int.xml:78(programlisting) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH CONFIGURATION english\n    ALTER MAPPING FOR int, uint WITH intdict;\n"
 msgstr ""
 
-#: /tmp/cicero-oFNz/dict-int.xml:64(para) 
+#: /tmp/cicero-CbEv/dict-int.xml:64(para) 
 msgid "To test the dictionary, you can try <placeholder-1/> but real-world usage will involve including it in a text search configuration as described in <xref linkend=\"textsearch\"/>. That might look like this: <placeholder-2/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-oFNz/dict-int.xml:0(None) 
+#: /tmp/cicero-CbEv/dict-int.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
