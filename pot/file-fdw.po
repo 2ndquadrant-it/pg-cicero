@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-03 06:58+0200\n"
+"POT-Creation-Date: 2011-09-04 06:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,100 +9,100 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-CbEv/file-fdw.xml:5(title) /tmp/cicero-CbEv/file-fdw.xml:8(primary) 
+#: /tmp/cicero-CBcy/file-fdw.xml:5(title) /tmp/cicero-CBcy/file-fdw.xml:8(primary) 
 msgid "file_fdw"
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:11(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:11(para) 
 msgid "The <filename>file_fdw</filename> module provides the foreign-data wrapper <function>file_fdw</function>, which can be used to access data files in the server's file system. Data files must be in a format that can be read by <command>COPY FROM</command>; see <xref linkend=\"sql-copy\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:19(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:19(para) 
 msgid "A foreign table created using this wrapper can have the following options:"
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:26(literal) 
+#: /tmp/cicero-CBcy/file-fdw.xml:26(literal) 
 msgid "filename"
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:29(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:29(para) 
 msgid "Specifies the file to be read. Required. Must be an absolute path name."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:36(literal) 
+#: /tmp/cicero-CBcy/file-fdw.xml:36(literal) 
 msgid "format"
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:39(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:39(para) 
 msgid "Specifies the file's format, the same as <command>COPY</command>'s <literal>FORMAT</literal> option."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:47(literal) 
+#: /tmp/cicero-CBcy/file-fdw.xml:47(literal) 
 msgid "header"
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:50(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:50(para) 
 msgid "Specifies whether the file has a header line, the same as <command>COPY</command>'s <literal>HEADER</literal> option."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:58(literal) 
+#: /tmp/cicero-CBcy/file-fdw.xml:58(literal) 
 msgid "delimiter"
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:61(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:61(para) 
 msgid "Specifies the file's delimiter character, the same as <command>COPY</command>'s <literal>DELIMITER</literal> option."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:69(literal) 
+#: /tmp/cicero-CBcy/file-fdw.xml:69(literal) 
 msgid "quote"
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:72(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:72(para) 
 msgid "Specifies the file's quote character, the same as <command>COPY</command>'s <literal>QUOTE</literal> option."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:80(literal) 
+#: /tmp/cicero-CBcy/file-fdw.xml:80(literal) 
 msgid "escape"
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:83(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:83(para) 
 msgid "Specifies the file's escape character, the same as <command>COPY</command>'s <literal>ESCAPE</literal> option."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:91(literal) 
+#: /tmp/cicero-CBcy/file-fdw.xml:91(literal) 
 msgid "null"
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:94(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:94(para) 
 msgid "Specifies the file's null string, the same as <command>COPY</command>'s <literal>NULL</literal> option."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:102(literal) 
+#: /tmp/cicero-CBcy/file-fdw.xml:102(literal) 
 msgid "encoding"
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:105(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:105(para) 
 msgid "Specifies the file's encoding. the same as <command>COPY</command>'s <literal>ENCODING</literal> option."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:114(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:114(para) 
 msgid "<command>COPY</command>'s <literal>OIDS</literal>, <literal>FORCE_QUOTE</literal>, and <literal>FORCE_NOT_NULL</literal> options are currently not supported by <literal>file_fdw</literal>."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:120(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:120(para) 
 msgid "These options can only be specified for a foreign table, not in the options of the <literal>file_fdw</literal> foreign-data wrapper, nor in the options of a server or user mapping using the wrapper."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:126(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:126(para) 
 msgid "Changing table-level options requires superuser privileges, for security reasons: only a superuser should be able to determine which file is read. In principle non-superusers could be allowed to change the other options, but that's not supported at present."
 msgstr ""
 
-#: /tmp/cicero-CbEv/file-fdw.xml:133(para) 
+#: /tmp/cicero-CBcy/file-fdw.xml:133(para) 
 msgid "For a foreign table using <literal>file_fdw</literal>, <command>EXPLAIN</command> shows the name of the file to be read. Unless <literal>COSTS OFF</literal> is specified, the file size (in bytes) is shown as well."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-CbEv/file-fdw.xml:0(None) 
+#: /tmp/cicero-CBcy/file-fdw.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
