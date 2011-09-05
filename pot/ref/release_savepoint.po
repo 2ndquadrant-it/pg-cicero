@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-04 06:57+0200\n"
+"POT-Creation-Date: 2011-09-05 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,106 +9,106 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:9(refentrytitle) /tmp/cicero-SLJB/ref/release_savepoint.xml:15(refname) /tmp/cicero-SLJB/ref/release_savepoint.xml:20(primary) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:9(refentrytitle) /tmp/cicero-PnJu/ref/release_savepoint.xml:15(refname) /tmp/cicero-PnJu/ref/release_savepoint.xml:20(primary) 
 msgid "RELEASE SAVEPOINT"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:10(manvolnum) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:11(refmiscinfo) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:16(refpurpose) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:16(refpurpose) 
 msgid "destroy a previously defined savepoint"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:24(primary) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:24(primary) 
 msgid "savepoints"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:25(secondary) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:25(secondary) 
 msgid "releasing"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:30(replaceable) /tmp/cicero-SLJB/ref/release_savepoint.xml:63(replaceable) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:30(replaceable) /tmp/cicero-PnJu/ref/release_savepoint.xml:63(replaceable) 
 msgid "savepoint_name"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:29(synopsis) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:29(synopsis) 
 #, no-wrap
 msgid "\nRELEASE [ SAVEPOINT ] <placeholder-1/>\n"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:35(title) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:35(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:37(para) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:37(para) 
 msgid "<command>RELEASE SAVEPOINT</command> destroys a savepoint previously defined in the current transaction."
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:42(para) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:42(para) 
 msgid "Destroying a savepoint makes it unavailable as a rollback point, but it has no other user visible behavior. It does not undo the effects of commands executed after the savepoint was established. (To do that, see <xref linkend=\"sql-rollback-to\"/>.) Destroying a savepoint when it is no longer needed allows the system to reclaim some resources earlier than transaction end."
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:52(para) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:52(para) 
 msgid "<command>RELEASE SAVEPOINT</command> also destroys all savepoints that were established after the named savepoint was established."
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:59(title) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:59(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:65(para) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:65(para) 
 msgid "The name of the savepoint to destroy."
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:74(title) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:74(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:76(para) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:76(para) 
 msgid "Specifying a savepoint name that was not previously defined is an error."
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:80(para) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:80(para) 
 msgid "It is not possible to release a savepoint when the transaction is in an aborted state."
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:85(para) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:85(para) 
 msgid "If multiple savepoints have the same name, only the one that was most recently defined is released."
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:93(title) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:93(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:97(programlisting) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:97(programlisting) 
 #, no-wrap
 msgid "\nBEGIN;\n    INSERT INTO table1 VALUES (3);\n    SAVEPOINT my_savepoint;\n    INSERT INTO table1 VALUES (4);\n    RELEASE SAVEPOINT my_savepoint;\nCOMMIT;\n"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:95(para) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:95(para) 
 msgid "To establish and later destroy a savepoint: <placeholder-1/> The above transaction will insert both 3 and 4."
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:110(title) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:110(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:112(para) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:112(para) 
 msgid "This command conforms to the <acronym>SQL</acronym> standard. The standard specifies that the key word <literal>SAVEPOINT</literal> is mandatory, but <productname>PostgreSQL</productname> allows it to be omitted."
 msgstr ""
 
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:121(title) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:121(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-SLJB/ref/release_savepoint.xml:0(None) 
+#: /tmp/cicero-PnJu/ref/release_savepoint.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
