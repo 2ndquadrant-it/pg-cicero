@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-05 06:56+0200\n"
+"POT-Creation-Date: 2011-09-06 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,117 +9,117 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-PnJu/intro.xml:5(title) 
+#: /tmp/cicero-rCjz/intro.xml:5(title) 
 msgid "Preface"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:7(para) 
+#: /tmp/cicero-rCjz/intro.xml:7(para) 
 msgid "This book is the official documentation of <productname>PostgreSQL</productname>. It has been written by the <productname>PostgreSQL</productname> developers and other volunteers in parallel to the development of the <productname>PostgreSQL</productname> software. It describes all the functionality that the current version of <productname>PostgreSQL</productname> officially supports."
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:26(para) 
+#: /tmp/cicero-rCjz/intro.xml:26(para) 
 msgid "<xref linkend=\"tutorial\"/> is an informal introduction for new users."
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:32(para) 
+#: /tmp/cicero-rCjz/intro.xml:32(para) 
 msgid "<xref linkend=\"sql\"/> documents the <acronym>SQL</acronym> query language environment, including data types and functions, as well as user-level performance tuning. Every <productname>PostgreSQL</productname> user should read this."
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:41(para) 
+#: /tmp/cicero-rCjz/intro.xml:41(para) 
 msgid "<xref linkend=\"admin\"/> describes the installation and administration of the server. Everyone who runs a <productname>PostgreSQL</productname> server, be it for private use or for others, should read this part."
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:50(para) 
+#: /tmp/cicero-rCjz/intro.xml:50(para) 
 msgid "<xref linkend=\"client-interfaces\"/> describes the programming interfaces for <productname>PostgreSQL</productname> client programs."
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:59(para) 
+#: /tmp/cicero-rCjz/intro.xml:59(para) 
 msgid "<xref linkend=\"server-programming\"/> contains information for advanced users about the extensibility capabilities of the server. Topics include user-defined data types and functions."
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:68(para) 
+#: /tmp/cicero-rCjz/intro.xml:68(para) 
 msgid "<xref linkend=\"reference\"/> contains reference information about SQL commands, client and server programs. This part supports the other parts with structured information sorted by command or program."
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:77(para) 
+#: /tmp/cicero-rCjz/intro.xml:77(para) 
 msgid "<xref linkend=\"internals\"/> contains assorted information that might be of use to <productname>PostgreSQL</productname> developers."
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:17(para) 
+#: /tmp/cicero-rCjz/intro.xml:17(para) 
 msgid "To make the large amount of information about <productname>PostgreSQL</productname> manageable, this book has been organized in several parts. Each part is targeted at a different class of users, or at users in different stages of their <productname>PostgreSQL</productname> experience: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:86(title) 
+#: /tmp/cicero-rCjz/intro.xml:86(title) 
 msgid "What is <productname>PostgreSQL</productname>?"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:88(para) 
+#: /tmp/cicero-rCjz/intro.xml:88(para) 
 msgid "<productname>PostgreSQL</productname> is an object-relational database management system (<acronym>ORDBMS</acronym>) based on <ulink url=\"http://db.cs.berkeley.edu/postgres.html\"><productname>POSTGRES, Version 4.2</productname></ulink>, developed at the University of California at Berkeley Computer Science Department. POSTGRES pioneered many concepts that only became available in some commercial database systems much later."
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:105(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:105(simpara) 
 msgid "complex queries"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:108(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:108(simpara) 
 msgid "foreign keys"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:111(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:111(simpara) 
 msgid "triggers"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:114(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:114(simpara) 
 msgid "views"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:117(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:117(simpara) 
 msgid "transactional integrity"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:120(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:120(simpara) 
 msgid "multiversion concurrency control"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:129(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:129(simpara) 
 msgid "data types"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:132(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:132(simpara) 
 msgid "functions"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:135(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:135(simpara) 
 msgid "operators"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:138(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:138(simpara) 
 msgid "aggregate functions"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:141(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:141(simpara) 
 msgid "index methods"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:144(simpara) 
+#: /tmp/cicero-rCjz/intro.xml:144(simpara) 
 msgid "procedural languages"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:98(para) 
+#: /tmp/cicero-rCjz/intro.xml:98(para) 
 msgid "<productname>PostgreSQL</productname> is an open-source descendant of this original Berkeley code. It supports a large part of the SQL standard and offers many modern features: <placeholder-1/> Also, <productname>PostgreSQL</productname> can be extended by the user in many ways, for example by adding new <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/intro.xml:149(para) 
+#: /tmp/cicero-rCjz/intro.xml:149(para) 
 msgid "And because of the liberal license, <productname>PostgreSQL</productname> can be used, modified, and distributed by anyone free of charge for any purpose, be it private, commercial, or academic."
 msgstr ""
 
 #. doc/src/sgml/intro.sgml
-#: /tmp/cicero-PnJu/intro.xml:4(preface) 
+#: /tmp/cicero-rCjz/intro.xml:4(preface) 
 msgid "<placeholder-1/><placeholder-2/><placeholder-3/><placeholder-4/> &history; &notation; &info; &problems;"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-PnJu/intro.xml:0(None) 
+#: /tmp/cicero-rCjz/intro.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

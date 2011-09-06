@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-05 06:57+0200\n"
+"POT-Creation-Date: 2011-09-06 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,743 +9,743 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:9(refentrytitle) /tmp/cicero-PnJu/ref/alter_table.xml:15(refname) /tmp/cicero-PnJu/ref/alter_table.xml:20(primary) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:9(refentrytitle) /tmp/cicero-rCjz/ref/alter_table.xml:15(refname) /tmp/cicero-rCjz/ref/alter_table.xml:20(primary) 
 msgid "ALTER TABLE"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:10(manvolnum) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:11(refmiscinfo) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:16(refpurpose) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:16(refpurpose) 
 msgid "change the definition of a table"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:25(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:27(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:29(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:31(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:605(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:25(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:27(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:29(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:31(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:605(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:26(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:34(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:26(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:34(replaceable) 
 msgid "action"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:28(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:36(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:37(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:38(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:39(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:40(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:41(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:42(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:43(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:44(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:45(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:617(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:28(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:36(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:37(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:38(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:39(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:40(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:41(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:42(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:43(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:44(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:45(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:617(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:28(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:626(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:28(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:626(replaceable) 
 msgid "new_column"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:30(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:635(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:30(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:635(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:32(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:781(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:32(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:781(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:34(phrase) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:34(phrase) 
 msgid "where <placeholder-1/> is one of:"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:36(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:38(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:36(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:38(replaceable) 
 msgid "data_type"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:36(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:38(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:36(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:38(replaceable) 
 msgid "collation"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:36(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:36(replaceable) 
 msgid "column_constraint"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:38(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:39(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:38(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:39(replaceable) 
 msgid "expression"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:42(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:42(replaceable) 
 msgid "integer"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:43(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:44(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:177(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:178(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:43(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:44(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:177(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:178(replaceable) 
 msgid "attribute_option"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:43(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:62(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:177(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:430(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:744(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:43(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:62(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:177(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:430(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:744(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:46(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:238(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:654(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:46(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:238(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:654(replaceable) 
 msgid "table_constraint"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:47(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:71(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:258(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:47(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:71(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:258(replaceable) 
 msgid "table_constraint_using_index"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:48(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:49(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:73(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:663(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:48(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:49(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:73(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:663(replaceable) 
 msgid "constraint_name"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:50(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:51(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:52(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:53(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:692(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:50(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:51(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:52(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:53(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:692(replaceable) 
 msgid "trigger_name"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:54(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:55(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:56(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:57(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:54(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:55(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:56(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:57(replaceable) 
 msgid "rewrite_rule_name"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:58(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:74(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:726(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:58(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:74(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:726(replaceable) 
 msgid "index_name"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:62(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:63(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:430(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:458(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:735(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:62(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:63(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:430(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:458(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:735(replaceable) 
 msgid "storage_parameter"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:64(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:65(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:469(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:493(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:754(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:64(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:65(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:469(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:493(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:754(replaceable) 
 msgid "parent_table"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:66(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:505(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:66(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:505(replaceable) 
 msgid "type_name"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:68(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:763(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:68(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:763(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:69(replaceable) /tmp/cicero-PnJu/ref/alter_table.xml:772(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:69(replaceable) /tmp/cicero-rCjz/ref/alter_table.xml:772(replaceable) 
 msgid "new_tablespace"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:71(phrase) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:71(phrase) 
 msgid "and <placeholder-1/> is:"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:24(synopsis) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER TABLE [ ONLY ] <placeholder-1/> [ * ]\n    <placeholder-2/> [, ... ]\nALTER TABLE [ ONLY ] <placeholder-3/> [ * ]\n    RENAME [ COLUMN ] <placeholder-4/> TO <placeholder-5/>\nALTER TABLE <placeholder-6/>\n    RENAME TO <placeholder-7/>\nALTER TABLE <placeholder-8/>\n    SET SCHEMA <placeholder-9/>\n\n<placeholder-10/>\n\n    ADD [ COLUMN ] <placeholder-11/> <placeholder-12/> [ COLLATE <placeholder-13/> ] [ <placeholder-14/> [ ... ] ]\n    DROP [ COLUMN ] [ IF EXISTS ] <placeholder-15/> [ RESTRICT | CASCADE ]\n    ALTER [ COLUMN ] <placeholder-16/> [ SET DATA ] TYPE <placeholder-17/> [ COLLATE <placeholder-18/> ] [ USING <placeholder-19/> ]\n    ALTER [ COLUMN ] <placeholder-20/> SET DEFAULT <placeholder-21/>\n    ALTER [ COLUMN ] <placeholder-22/> DROP DEFAULT\n    ALTER [ COLUMN ] <placeholder-23/> { SET | DROP } NOT NULL\n    ALTER [ COLUMN ] <placeholder-24/> SET STATISTICS <placeholder-25/>\n    ALTER [ COLUMN ] <placeholder-26/> SET ( <placeholder-27/> = <placeholder-28/> [, ... ] )\n    ALTER [ COLUMN ] <placeholder-29/> RESET ( <placeholder-30/> [, ... ] )\n    ALTER [ COLUMN ] <placeholder-31/> SET STORAGE { PLAIN | EXTERNAL | EXTENDED | MAIN }\n    ADD <placeholder-32/> [ NOT VALID ]\n    ADD <placeholder-33/>\n    VALIDATE CONSTRAINT <placeholder-34/>\n    DROP CONSTRAINT [ IF EXISTS ]  <placeholder-35/> [ RESTRICT | CASCADE ]\n    DISABLE TRIGGER [ <placeholder-36/> | ALL | USER ]\n    ENABLE TRIGGER [ <placeholder-37/> | ALL | USER ]\n    ENABLE REPLICA TRIGGER <placeholder-38/>\n    ENABLE ALWAYS TRIGGER <placeholder-39/>\n    DISABLE RULE <placeholder-40/>\n    ENABLE RULE <placeholder-41/>\n    ENABLE REPLICA RULE <placeholder-42/>\n    ENABLE ALWAYS RULE <placeholder-43/>\n    CLUSTER ON <placeholder-44/>\n    SET WITHOUT CLUSTER\n    SET WITH OIDS\n    SET WITHOUT OIDS\n    SET ( <placeholder-45/> = <placeholder-46/> [, ... ] )\n    RESET ( <placeholder-47/> [, ... ] )\n    INHERIT <placeholder-48/>\n    NO INHERIT <placeholder-49/>\n    OF <placeholder-50/>\n    NOT OF\n    OWNER TO <placeholder-51/>\n    SET TABLESPACE <placeholder-52/>\n\n<placeholder-53/>\n\n    [ CONSTRAINT <placeholder-54/> ]\n    { UNIQUE | PRIMARY KEY } USING INDEX <placeholder-55/>\n    [ DEFERRABLE | NOT DEFERRABLE ] [ INITIALLY DEFERRED | INITIALLY IMMEDIATE ]\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:80(title) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:80(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:88(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:88(literal) 
 msgid "ADD COLUMN"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:90(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:90(para) 
 msgid "This form adds a new column to the table, using the same syntax as <xref linkend=\"sql-createtable\"/>."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:98(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:98(literal) 
 msgid "DROP COLUMN [ IF EXISTS ]"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:100(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:100(para) 
 msgid "This form drops a column from a table. Indexes and table constraints involving the column will be automatically dropped as well. You will need to say <literal>CASCADE</literal> if anything outside the table depends on the column, for example, foreign key references or views. If <literal>IF EXISTS</literal> is specified and the column does not exist, no error is thrown. In this case a notice is issued instead."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:114(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:114(literal) 
 msgid "SET DATA TYPE"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:116(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:116(para) 
 msgid "This form changes the type of a column of a table. Indexes and simple table constraints involving the column will be automatically converted to use the new column type by reparsing the originally supplied expression. The optional <literal>COLLATE</literal> clause specifies a collation for the new column; if omitted, the collation is the default for the new column type. The optional <literal>USING</literal> clause specifies how to compute the new column value from the old; if omitted, the default conversion is the same as an assignment cast from old data type to new. A <literal>USING</literal> clause must be provided if there is no implicit or assignment cast from old to new type."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:135(term) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:135(term) 
 msgid "<literal>SET</literal>/<literal>DROP DEFAULT</literal>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:137(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:137(para) 
 msgid "These forms set or remove the default value for a column. The default values only apply to subsequent <command>INSERT</command> commands; they do not cause rows already in the table to change. Defaults can also be created for views, in which case they are inserted into <command>INSERT</command> statements on the view before the view's <literal>ON INSERT</literal> rule is applied."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:149(term) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:149(term) 
 msgid "<literal>SET</literal>/<literal>DROP NOT NULL</literal>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:151(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:151(para) 
 msgid "These forms change whether a column is marked to allow null values or to reject null values. You can only use <literal>SET NOT NULL</literal> when the column contains no null values."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:160(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:160(literal) 
 msgid "SET STATISTICS"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:162(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:162(para) 
 msgid "This form sets the per-column statistics-gathering target for subsequent <xref linkend=\"sql-analyze\"/> operations. The target can be set in the range 0 to 10000; alternatively, set it to -1 to revert to using the system default statistics target (<xref linkend=\"guc-default-statistics-target\"/>). For more information on the use of statistics by the <productname>PostgreSQL</productname> query planner, refer to <xref linkend=\"planner-stats\"/>."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:177(literal) /tmp/cicero-PnJu/ref/alter_table.xml:430(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:177(literal) /tmp/cicero-rCjz/ref/alter_table.xml:430(literal) 
 msgid "SET ( <placeholder-1/> = <placeholder-2/> [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:178(literal) /tmp/cicero-PnJu/ref/alter_table.xml:458(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:178(literal) /tmp/cicero-rCjz/ref/alter_table.xml:458(literal) 
 msgid "RESET ( <placeholder-1/> [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:180(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:180(para) 
 msgid "This form sets or resets per-attribute options. Currently, the only defined per-attribute options are <literal>n_distinct</literal> and <literal>n_distinct_inherited</literal>, which override the number-of-distinct-values estimates made by subsequent <xref linkend=\"sql-analyze\"/> operations. <literal>n_distinct</literal> affects the statistics for the table itself, while <literal>n_distinct_inherited</literal> affects the statistics gathered for the table plus its inheritance children. When set to a positive value, <command>ANALYZE</command> will assume that the column contains exactly the specified number of distinct nonnull values. When set to a negative value, which must be greater than or equal to -1, <command>ANALYZE</command> will assume that the number of distinct nonnull values in the column is linear in the size of the table; the exact count is to be computed by multiplying the estimated table size by the absolute value of the given number. For example, a value of -1 implies that all values in the column are distinct, while a value of -0.5 implies that each value appears twice on the average. This can be useful when the size of the table changes over time, since the multiplication by the number of rows in the table is not performed until query planning time. Specify a value of 0 to revert to estimating the number of distinct values normally. For more information on the use of statistics by the <productname>PostgreSQL</productname> query planner, refer to <xref linkend=\"planner-stats\"/>."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:210(primary) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:210(primary) 
 msgid "TOAST"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:211(secondary) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:211(secondary) 
 msgid "per-column storage settings"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:214(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:214(literal) 
 msgid "SET STORAGE"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:216(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:216(para) 
 msgid "This form sets the storage mode for a column. This controls whether this column is held inline or in a secondary <acronym>TOAST</acronym> table, and whether the data should be compressed or not. <literal>PLAIN</literal> must be used for fixed-length values such as <type>integer</type> and is inline, uncompressed. <literal>MAIN</literal> is for inline, compressible data. <literal>EXTERNAL</literal> is for external, uncompressed data, and <literal>EXTENDED</literal> is for external, compressed data. <literal>EXTENDED</literal> is the default for most data types that support non-<literal>PLAIN</literal> storage. Use of <literal>EXTERNAL</literal> will make substring operations on very large <type>text</type> and <type>bytea</type> values run faster, at the penalty of increased storage space. Note that <literal>SET STORAGE</literal> doesn't itself change anything in the table, it just sets the strategy to be pursued during future table updates. See <xref linkend=\"storage-toast\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:238(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:238(literal) 
 msgid "ADD <placeholder-1/> [ NOT VALID ]"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:240(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:240(para) 
 msgid "This form adds a new constraint to a table using the same syntax as <xref linkend=\"sql-createtable\"/>, plus the option <literal>NOT VALID</literal>, which is currently only allowed for foreign key constraints. If the constraint is marked <literal>NOT VALID</literal>, the potentially-lengthy initial check to verify that all rows in the table satisfy the constraint is skipped. The constraint will still be enforced against subsequent inserts or updates (that is, they'll fail unless there is a matching row in the referenced table). But the database will not assume that the constraint holds for all rows in the table, until it is validated by using the <literal>VALIDATE CONSTRAINT</literal> option."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:258(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:258(literal) 
 msgid "ADD <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:260(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:260(para) 
 msgid "This form adds a new <literal>PRIMARY KEY</literal> or <literal>UNIQUE</literal> constraint to a table based on an existing unique index. All the columns of the index will be included in the constraint."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:266(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:266(para) 
 msgid "The index cannot have expression columns nor be a partial index. Also, it must be a b-tree index with default sort ordering. These restrictions ensure that the index is equivalent to one that would be built by a regular <literal>ADD PRIMARY KEY</literal> or <literal>ADD UNIQUE</literal> command."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:274(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:274(para) 
 msgid "If <literal>PRIMARY KEY</literal> is specified, and the index's columns are not already marked <literal>NOT NULL</literal>, then this command will attempt to do <literal>ALTER COLUMN SET NOT NULL</literal> against each such column. That requires a full table scan to verify the column(s) contain no nulls. In all other cases, this is a fast operation."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:282(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:282(para) 
 msgid "If a constraint name is provided then the index will be renamed to match the constraint name. Otherwise the constraint will be named the same as the index."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:288(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:288(para) 
 msgid "After this command is executed, the index is <quote>owned</quote> by the constraint, in the same way as if the index had been built by a regular <literal>ADD PRIMARY KEY</literal> or <literal>ADD UNIQUE</literal> command. In particular, dropping the constraint will make the index disappear too."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:297(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:297(para) 
 msgid "Adding a constraint using an existing index can be helpful in situations where a new constraint needs to be added without blocking table updates for a long time. To do that, create the index using <command>CREATE INDEX CONCURRENTLY</command>, and then install it as an official constraint using this syntax. See the example below."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:309(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:309(literal) 
 msgid "VALIDATE CONSTRAINT"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:311(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:311(para) 
 msgid "This form validates a foreign key constraint that was previously created as <literal>NOT VALID</literal>, by scanning the table to ensure there are no unmatched rows. Nothing happens if the constraint is already marked valid. The value of separating validation from initial creation of the constraint is that validation requires a lesser lock on the table than constraint creation does."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:324(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:324(literal) 
 msgid "DROP CONSTRAINT [ IF EXISTS ]"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:326(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:326(para) 
 msgid "This form drops the specified constraint on a table. If <literal>IF EXISTS</literal> is specified and the constraint does not exist, no error is thrown. In this case a notice is issued instead."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:335(term) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:335(term) 
 msgid "<literal>DISABLE</literal>/<literal>ENABLE [ REPLICA | ALWAYS ] TRIGGER</literal>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:337(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:337(para) 
 msgid "These forms configure the firing of trigger(s) belonging to the table. A disabled trigger is still known to the system, but is not executed when its triggering event occurs. For a deferred trigger, the enable status is checked when the event occurs, not when the trigger function is actually executed. One can disable or enable a single trigger specified by name, or all triggers on the table, or only user triggers (this option excludes internally generated constraint triggers such as those that are used to implement foreign key constraints or deferrable uniqueness and exclusion constraints). Disabling or enabling internally generated constraint triggers requires superuser privileges; it should be done with caution since of course the integrity of the constraint cannot be guaranteed if the triggers are not executed. The trigger firing mechanism is also affected by the configuration variable <xref linkend=\"guc-session-replication-role\"/>. Simply enabled triggers will fire when the replication role is <quote>origin</quote> (the default) or <quote>local</quote>. Triggers configured as <literal>ENABLE REPLICA</literal> will only fire if the session is in <quote>replica</quote> mode, and triggers configured as <literal>ENABLE ALWAYS</literal> will fire regardless of the current replication mode."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:363(term) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:363(term) 
 msgid "<literal>DISABLE</literal>/<literal>ENABLE [ REPLICA | ALWAYS ] RULE</literal>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:365(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:365(para) 
 msgid "These forms configure the firing of rewrite rules belonging to the table. A disabled rule is still known to the system, but is not applied during query rewriting. The semantics are as for disabled/enabled triggers. This configuration is ignored for <literal>ON SELECT</literal> rules, which are always applied in order to keep views working even if the current session is in a non-default replication role."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:377(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:377(literal) 
 msgid "CLUSTER"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:379(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:379(para) 
 msgid "This form selects the default index for future <xref linkend=\"sql-cluster\"/> operations. It does not actually re-cluster the table."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:388(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:388(literal) 
 msgid "SET WITHOUT CLUSTER"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:390(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:390(para) 
 msgid "This form removes the most recently used <xref linkend=\"sql-cluster\"/> index specification from the table. This affects future cluster operations that don't specify an index."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:400(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:400(literal) 
 msgid "SET WITH OIDS"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:402(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:402(para) 
 msgid "This form adds an <literal>oid</literal> system column to the table (see <xref linkend=\"ddl-system-columns\"/>). It does nothing if the table already has OIDs."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:408(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:408(para) 
 msgid "Note that this is not equivalent to <literal>ADD COLUMN oid oid</literal>; that would add a normal column that happened to be named <literal>oid</literal>, not a system column."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:417(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:417(literal) 
 msgid "SET WITHOUT OIDS"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:419(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:419(para) 
 msgid "This form removes the <literal>oid</literal> system column from the table. This is exactly equivalent to <literal>DROP COLUMN oid RESTRICT</literal>, except that it will not complain if there is already no <literal>oid</literal> column."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:432(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:432(para) 
 msgid "This form changes one or more storage parameters for the table. See <xref linkend=\"sql-createtable-storage-parameters\" endterm=\"SQL-CREATETABLE-storage-parameters-title\"/> for details on the available parameters. Note that the table contents will not be modified immediately by this command; depending on the parameter you might need to rewrite the table to get the desired effects. That can be done with <link linkend=\"sql-vacuum\">VACUUM FULL</link>, <xref linkend=\"sql-cluster\"/> or one of the forms of <command>ALTER TABLE</command> that forces a table rewrite."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:445(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:445(para) 
 msgid "While <command>CREATE TABLE</command> allows <literal>OIDS</literal> to be specified in the <literal>WITH (<replaceable class=\"PARAMETER\">storage_parameter</replaceable>)</literal> syntax, <command>ALTER TABLE</command> does not treat <literal>OIDS</literal> as a storage parameter. Instead use the <literal>SET WITH OIDS</literal> and <literal>SET WITHOUT OIDS</literal> forms to change OID status."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:460(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:460(para) 
 msgid "This form resets one or more storage parameters to their defaults. As with <literal>SET</literal>, a table rewrite might be needed to update the table entirely."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:469(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:469(literal) 
 msgid "INHERIT <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:471(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:471(para) 
 msgid "This form adds the target table as a new child of the specified parent table. Subsequently, queries against the parent will include records of the target table. To be added as a child, the target table must already contain all the same columns as the parent (it could have additional columns, too). The columns must have matching data types, and if they have <literal>NOT NULL</literal> constraints in the parent then they must also have <literal>NOT NULL</literal> constraints in the child."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:482(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:482(para) 
 msgid "There must also be matching child-table constraints for all <literal>CHECK</literal> constraints of the parent. Currently <literal>UNIQUE</literal>, <literal>PRIMARY KEY</literal>, and <literal>FOREIGN KEY</literal> constraints are not considered, but this might change in the future."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:493(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:493(literal) 
 msgid "NO INHERIT <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:495(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:495(para) 
 msgid "This form removes the target table from the list of children of the specified parent table. Queries against the parent table will no longer include records drawn from the target table."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:505(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:505(literal) 
 msgid "OF <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:507(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:507(para) 
 msgid "This form links the table to a composite type as though <command>CREATE TABLE OF</command> had formed it. The table's list of column names and types must precisely match that of the composite type; the presence of an <literal>oid</literal> system column is permitted to differ. The table must not inherit from any other table. These restrictions ensure that <command>CREATE TABLE OF</command> would permit an equivalent table definition."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:520(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:520(literal) 
 msgid "NOT OF"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:522(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:522(para) 
 msgid "This form dissociates a typed table from its type."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:529(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:529(literal) 
 msgid "OWNER"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:531(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:531(para) 
 msgid "This form changes the owner of the table, sequence, or view to the specified user."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:539(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:539(literal) 
 msgid "SET TABLESPACE"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:541(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:541(para) 
 msgid "This form changes the table's tablespace to the specified tablespace and moves the data file(s) associated with the table to the new tablespace. Indexes on the table, if any, are not moved; but they can be moved separately with additional <literal>SET TABLESPACE</literal> commands. See also <xref linkend=\"sql-createtablespace\"/>."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:553(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:553(literal) 
 msgid "RENAME"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:555(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:555(para) 
 msgid "The <literal>RENAME</literal> forms change the name of a table (or an index, sequence, or view) or the name of an individual column in a table. There is no effect on the stored data."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:564(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:564(literal) 
 msgid "SET SCHEMA"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:566(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:566(para) 
 msgid "This form moves the table into another schema. Associated indexes, constraints, and sequences owned by table columns are moved as well."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:82(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:82(para) 
 msgid "<command>ALTER TABLE</command> changes the definition of an existing table. There are several subforms: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:576(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:576(para) 
 msgid "All the actions except <literal>RENAME</literal> and <literal>SET SCHEMA</literal> can be combined into a list of multiple alterations to apply in parallel. For example, it is possible to add several columns and/or alter the type of several columns in a single command. This is particularly useful with large tables, since only one pass over the table need be made."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:585(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:585(para) 
 msgid "You must own the table to use <command>ALTER TABLE</command>. To change the schema of a table, you must also have <literal>CREATE</literal> privilege on the new schema. To add the table as a new child of a parent table, you must own the parent table as well. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the table's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the table. However, a superuser can alter ownership of any table anyway.)"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:600(title) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:600(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:607(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:607(para) 
 msgid "The name (possibly schema-qualified) of an existing table to alter. If <literal>ONLY</literal> is specified, only that table is altered. If <literal>ONLY</literal> is not specified, the table and any descendant tables are altered."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:619(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:619(para) 
 msgid "Name of a new or existing column."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:628(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:628(para) 
 msgid "New name for an existing column."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:637(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:637(para) 
 msgid "New name for the table."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:644(replaceable) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:644(replaceable) 
 msgid "type"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:646(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:646(para) 
 msgid "Data type of the new column, or new data type for an existing column."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:656(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:656(para) 
 msgid "New table constraint for the table."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:665(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:665(para) 
 msgid "Name of an existing constraint to drop."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:672(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:672(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:674(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:674(para) 
 msgid "Automatically drop objects that depend on the dropped column or constraint (for example, views referencing the column)."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:682(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:682(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:684(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:684(para) 
 msgid "Refuse to drop the column or constraint if there are any dependent objects. This is the default behavior."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:694(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:694(para) 
 msgid "Name of a single trigger to disable or enable."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:701(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:701(literal) 
 msgid "ALL"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:703(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:703(para) 
 msgid "Disable or enable all triggers belonging to the table. (This requires superuser privilege if any of the triggers are internally generated constraint triggers such as those that are used to implement foreign key constraints or deferrable uniqueness and exclusion constraints.)"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:714(literal) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:714(literal) 
 msgid "USER"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:716(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:716(para) 
 msgid "Disable or enable all triggers belonging to the table except for internally generated constraint triggers such as those that are used to implement foreign key constraints or deferrable uniqueness and exclusion constraints."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:728(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:728(para) 
 msgid "The index name on which the table should be marked for clustering."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:737(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:737(para) 
 msgid "The name of a table storage parameter."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:746(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:746(para) 
 msgid "The new value for a table storage parameter. This might be a number or a word depending on the parameter."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:756(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:756(para) 
 msgid "A parent table to associate or de-associate with this table."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:765(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:765(para) 
 msgid "The user name of the new owner of the table."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:774(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:774(para) 
 msgid "The name of the tablespace to which the table will be moved."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:783(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:783(para) 
 msgid "The name of the schema to which the table will be moved."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:793(title) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:793(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:795(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:795(para) 
 msgid "The key word <literal>COLUMN</literal> is noise and can be omitted."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:799(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:799(para) 
 msgid "When a column is added with <literal>ADD COLUMN</literal>, all existing rows in the table are initialized with the column's default value (NULL if no <literal>DEFAULT</literal> clause is specified)."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:805(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:805(para) 
 msgid "Adding a column with a non-null default or changing the type of an existing column will require the entire table and indexes to be rewritten. As an exception, if the <literal>USING</literal> clause does not change the column contents and the old type is either binary coercible to the new type or an unconstrained domain over the new type, a table rewrite is not needed, but any indexes on the affected columns must still be rebuilt. Adding or removing a system <literal>oid</literal> column also requires rewriting the entire table. Table and/or index rebuilds may take a significant amount of time for a large table; and will temporarily require as much as double the disk space."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:818(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:818(para) 
 msgid "Adding a <literal>CHECK</literal> or <literal>NOT NULL</literal> constraint requires scanning the table to verify that existing rows meet the constraint."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:823(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:823(para) 
 msgid "The main reason for providing the option to specify multiple changes in a single <command>ALTER TABLE</command> is that multiple table scans or rewrites can thereby be combined into a single pass over the table."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:829(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:829(para) 
 msgid "The <literal>DROP COLUMN</literal> form does not physically remove the column, but simply makes it invisible to SQL operations. Subsequent insert and update operations in the table will store a null value for the column. Thus, dropping a column is quick but it will not immediately reduce the on-disk size of your table, as the space occupied by the dropped column is not reclaimed. The space will be reclaimed over time as existing rows are updated. (These statements do not apply when dropping the system <literal>oid</literal> column; that is done with an immediate rewrite.)"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:841(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:841(para) 
 msgid "To force an immediate rewrite of the table, you can use <link linkend=\"sql-vacuum\">VACUUM FULL</link>, <xref linkend=\"sql-cluster\"/> or one of the forms of ALTER TABLE that forces a rewrite. This results in no semantically-visible change in the table, but gets rid of no-longer-useful data."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:849(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:849(para) 
 msgid "The <literal>USING</literal> option of <literal>SET DATA TYPE</literal> can actually specify any expression involving the old values of the row; that is, it can refer to other columns as well as the one being converted. This allows very general conversions to be done with the <literal>SET DATA TYPE</literal> syntax. Because of this flexibility, the <literal>USING</literal> expression is not applied to the column's default value (if any); the result might not be a constant expression as required for a default. This means that when there is no implicit or assignment cast from old to new type, <literal>SET DATA TYPE</literal> might fail to convert the default even though a <literal>USING</literal> clause is supplied. In such cases, drop the default with <literal>DROP DEFAULT</literal>, perform the <literal>ALTER TYPE</literal>, and then use <literal>SET DEFAULT</literal> to add a suitable new default. Similar considerations apply to indexes and constraints involving the column."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:866(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:866(para) 
 msgid "If a table has any descendant tables, it is not permitted to add, rename, or change the type of a column in the parent table without doing the same to the descendants. That is, <command>ALTER TABLE ONLY</command> will be rejected. This ensures that the descendants always have columns matching the parent."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:874(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:874(para) 
 msgid "A recursive <literal>DROP COLUMN</literal> operation will remove a descendant table's column only if the descendant does not inherit that column from any other parents and never had an independent definition of the column. A nonrecursive <literal>DROP COLUMN</literal> (i.e., <command>ALTER TABLE ONLY ... DROP COLUMN</command>) never removes any descendant columns, but instead marks them as independently defined rather than inherited."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:884(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:884(para) 
 msgid "The <literal>TRIGGER</literal>, <literal>CLUSTER</literal>, <literal>OWNER</literal>, and <literal>TABLESPACE</literal> actions never recurse to descendant tables; that is, they always act as though <literal>ONLY</literal> were specified. Adding a constraint can recurse only for <literal>CHECK</literal> constraints, and is required to do so for such constraints."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:892(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:892(para) 
 msgid "Changing any part of a system catalog table is not permitted."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:896(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:896(para) 
 msgid "Refer to <xref linkend=\"sql-createtable\"/> for a further description of valid parameters. <xref linkend=\"ddl\"/> has further information on inheritance."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:904(title) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:904(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:908(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:908(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors ADD COLUMN address varchar(30);\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:906(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:906(para) 
 msgid "To add a column of type <type>varchar</type> to a table: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:915(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:915(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors DROP COLUMN address RESTRICT;\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:913(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:913(para) 
 msgid "To drop a column from a table: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:922(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:922(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors\n    ALTER COLUMN address TYPE varchar(80),\n    ALTER COLUMN name TYPE varchar(100);\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:920(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:920(para) 
 msgid "To change the types of two existing columns in one operation: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:932(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:932(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE foo\n    ALTER COLUMN foo_timestamp SET DATA TYPE timestamp with time zone\n    USING\n        timestamp with time zone 'epoch' + foo_timestamp * interval '1 second';\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:929(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:929(para) 
 msgid "To change an integer column containing UNIX timestamps to <type>timestamp with time zone</type> via a <literal>USING</literal> clause: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:943(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:943(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE foo\n    ALTER COLUMN foo_timestamp DROP DEFAULT,\n    ALTER COLUMN foo_timestamp TYPE timestamp with time zone\n    USING\n        timestamp with time zone 'epoch' + foo_timestamp * interval '1 second',\n    ALTER COLUMN foo_timestamp SET DEFAULT now();\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:940(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:940(para) 
 msgid "The same, when the column has a default expression that won't automatically cast to the new data type: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:955(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:955(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors RENAME COLUMN address TO city;\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:953(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:953(para) 
 msgid "To rename an existing column: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:962(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:962(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors RENAME TO suppliers;\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:960(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:960(para) 
 msgid "To rename an existing table: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:969(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:969(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors ALTER COLUMN street SET NOT NULL;\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:973(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:973(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors ALTER COLUMN street DROP NOT NULL;\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:967(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:967(para) 
 msgid "To add a not-null constraint to a column: <placeholder-1/> To remove a not-null constraint from a column: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:980(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:980(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors ADD CONSTRAINT zipchk CHECK (char_length(zipcode) = 5);\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:978(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:978(para) 
 msgid "To add a check constraint to a table and all its children: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:987(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:987(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors DROP CONSTRAINT zipchk;\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:985(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:985(para) 
 msgid "To remove a check constraint from a table and all its children: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:994(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:994(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE ONLY distributors DROP CONSTRAINT zipchk;\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:992(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:992(para) 
 msgid "To remove a check constraint from a table only: <placeholder-1/> (The check constraint remains in place for any child tables.)"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1002(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1002(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors ADD CONSTRAINT distfk FOREIGN KEY (address) REFERENCES addresses (address) MATCH FULL;\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1000(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1000(para) 
 msgid "To add a foreign key constraint to a table: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1009(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1009(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors ADD CONSTRAINT dist_id_zipcode_key UNIQUE (dist_id, zipcode);\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1007(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1007(para) 
 msgid "To add a (multicolumn) unique constraint to a table: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1017(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1017(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors ADD PRIMARY KEY (dist_id);\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1014(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1014(para) 
 msgid "To add an automatically named primary key constraint to a table, noting that a table can only ever have one primary key: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1024(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1024(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE distributors SET TABLESPACE fasttablespace;\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1022(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1022(para) 
 msgid "To move a table to a different tablespace: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1031(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1031(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE myschema.distributors SET SCHEMA yourschema;\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1029(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1029(para) 
 msgid "To move a table to a different schema: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1039(programlisting) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1039(programlisting) 
 #, no-wrap
 msgid "\nCREATE UNIQUE INDEX CONCURRENTLY dist_id_temp_idx ON distributors (dist_id);\nALTER TABLE distributors DROP CONSTRAINT distributors_pkey,\n    ADD CONSTRAINT distributors_pkey PRIMARY KEY USING INDEX dist_id_temp_idx;\n"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1036(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1036(para) 
 msgid "To recreate a primary key constraint, without blocking updates while the index is rebuilt: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1048(title) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1048(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1050(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1050(para) 
 msgid "The forms <literal>ADD</literal> (without <literal>USING INDEX</literal>), <literal>DROP</literal>, <literal>SET DEFAULT</literal>, and <literal>SET DATA TYPE</literal> (without <literal>USING</literal>) conform with the SQL standard. The other forms are <productname>PostgreSQL</productname> extensions of the SQL standard. Also, the ability to specify more than one manipulation in a single <command>ALTER TABLE</command> command is an extension."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1060(para) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1060(para) 
 msgid "<command>ALTER TABLE DROP COLUMN</command> can be used to drop the only column of a table, leaving a zero-column table. This is an extension of SQL, which disallows zero-column tables."
 msgstr ""
 
-#: /tmp/cicero-PnJu/ref/alter_table.xml:1068(title) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:1068(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-PnJu/ref/alter_table.xml:0(None) 
+#: /tmp/cicero-rCjz/ref/alter_table.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
