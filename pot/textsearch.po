@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-05 06:59+0200\n"
+"POT-Creation-Date: 2011-09-06 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,2088 +9,2088 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-alnp/textsearch.xml:5(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:5(title) 
 msgid "Full Text Search"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:8(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:8(primary) 
 msgid "full text search"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:12(primary) /tmp/cicero-alnp/textsearch.xml:178(secondary) /tmp/cicero-alnp/textsearch.xml:3221(primary) /tmp/cicero-alnp/textsearch.xml:3239(tertiary) /tmp/cicero-alnp/textsearch.xml:3262(tertiary) 
+#: /tmp/cicero-nhvx/textsearch.xml:12(primary) /tmp/cicero-nhvx/textsearch.xml:178(secondary) /tmp/cicero-nhvx/textsearch.xml:3221(primary) /tmp/cicero-nhvx/textsearch.xml:3239(tertiary) /tmp/cicero-nhvx/textsearch.xml:3262(tertiary) 
 msgid "text search"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:16(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:16(title) 
 msgid "Introduction"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:18(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:18(para) 
 msgid "Full Text Searching (or just <firstterm>text search</firstterm>) provides the capability to identify natural-language <firstterm>documents</firstterm> that satisfy a <firstterm>query</firstterm>, and optionally to sort them by relevance to the query. The most common type of search is to find all documents containing given <firstterm>query terms</firstterm> and return them in order of their <firstterm>similarity</firstterm> to the query. Notions of <varname>query</varname> and <varname>similarity</varname> are very flexible and depend on the specific application. The simplest search considers <varname>query</varname> as a set of words and <varname>similarity</varname> as the frequency of query words in the document."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:32(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:32(para) 
 msgid "Textual search operators have existed in databases for years. <productname>PostgreSQL</productname> has <literal>~</literal>, <literal>~*</literal>, <literal>LIKE</literal>, and <literal>ILIKE</literal> operators for textual data types, but they lack many essential properties required by modern information systems:"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:42(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:42(para) 
 msgid "There is no linguistic support, even for English. Regular expressions are not sufficient because they cannot easily handle derived words, e.g., <literal>satisfies</literal> and <literal>satisfy</literal>. You might miss documents that contain <literal>satisfies</literal>, although you probably would like to find them when searching for <literal>satisfy</literal>. It is possible to use <literal>OR</literal> to search for multiple derived forms, but this is tedious and error-prone (some words can have several thousand derivatives)."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:55(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:55(para) 
 msgid "They provide no ordering (ranking) of search results, which makes them ineffective when thousands of matching documents are found."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:62(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:62(para) 
 msgid "They tend to be slow because there is no index support, so they must process all documents for every search."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:69(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:69(para) 
 msgid "Full text indexing allows documents to be <emphasis>preprocessed</emphasis> and an index saved for later rapid searching. Preprocessing includes:"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:76(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:76(para) 
 msgid "<emphasis>Parsing documents into <firstterm>tokens</firstterm></emphasis>. It is useful to identify various classes of tokens, e.g., numbers, words, complex words, email addresses, so that they can be processed differently. In principle token classes depend on the specific application, but for most purposes it is adequate to use a predefined set of classes. <productname>PostgreSQL</productname> uses a <firstterm>parser</firstterm> to perform this step. A standard parser is provided, and custom parsers can be created for specific needs."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:90(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:90(para) 
 msgid "<emphasis>Converting tokens into <firstterm>lexemes</firstterm></emphasis>. A lexeme is a string, just like a token, but it has been <firstterm>normalized</firstterm> so that different forms of the same word are made alike. For example, normalization almost always includes folding upper-case letters to lower-case, and often involves removal of suffixes (such as <literal>s</literal> or <literal>es</literal> in English). This allows searches to find variant forms of the same word, without tediously entering all the possible variants. Also, this step typically eliminates <firstterm>stop words</firstterm>, which are words that are so common that they are useless for searching. (In short, then, tokens are raw fragments of the document text, while lexemes are words that are believed useful for indexing and searching.) <productname>PostgreSQL</productname> uses <firstterm>dictionaries</firstterm> to perform this step. Various standard dictionaries are provided, and custom ones can be created for specific needs."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:110(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:110(para) 
 msgid "<emphasis>Storing preprocessed documents optimized for searching</emphasis>. For example, each document can be represented as a sorted array of normalized lexemes. Along with the lexemes it is often desirable to store positional information to use for <firstterm>proximity ranking</firstterm>, so that a document that contains a more <quote>dense</quote> region of query words is assigned a higher rank than one with scattered query words."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:122(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:122(para) 
 msgid "Dictionaries allow fine-grained control over how tokens are normalized. With appropriate dictionaries, you can:"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:129(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:129(para) 
 msgid "Define stop words that should not be indexed."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:135(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:135(para) 
 msgid "Map synonyms to a single word using <application>Ispell</application>."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:141(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:141(para) 
 msgid "Map phrases to a single word using a thesaurus."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:147(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:147(para) 
 msgid "Map different variations of a word to a canonical form using an <application>Ispell</application> dictionary."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:154(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:154(para) 
 msgid "Map different variations of a word to a canonical form using <application>Snowball</application> stemmer rules."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:161(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:161(para) 
 msgid "A data type <type>tsvector</type> is provided for storing preprocessed documents, along with a type <type>tsquery</type> for representing processed queries (<xref linkend=\"datatype-textsearch\"/>). There are many functions and operators available for these data types (<xref linkend=\"functions-textsearch\"/>), the most important of which is the match operator <literal>@@</literal>, which we introduce in <xref linkend=\"textsearch-matching\"/>. Full text searches can be accelerated using indexes (<xref linkend=\"textsearch-indexes\"/>)."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:174(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:174(title) 
 msgid "What Is a Document?"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:177(primary) /tmp/cicero-alnp/textsearch.xml:618(replaceable) /tmp/cicero-alnp/textsearch.xml:1068(replaceable) /tmp/cicero-alnp/textsearch.xml:2886(replaceable) /tmp/cicero-alnp/textsearch.xml:3069(replaceable) /tmp/cicero-alnp/textsearch.xml:3071(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:177(primary) /tmp/cicero-nhvx/textsearch.xml:618(replaceable) /tmp/cicero-nhvx/textsearch.xml:1068(replaceable) /tmp/cicero-nhvx/textsearch.xml:2886(replaceable) /tmp/cicero-nhvx/textsearch.xml:3069(replaceable) /tmp/cicero-nhvx/textsearch.xml:3071(replaceable) 
 msgid "document"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:181(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:181(para) 
 msgid "A <firstterm>document</firstterm> is the unit of searching in a full text search system; for example, a magazine article or email message. The text search engine must be able to parse documents and store associations of lexemes (key words) with their parent document. Later, these associations are used to search for documents that contain query words."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:197(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:197(programlisting) 
 #, no-wrap
 msgid "\nSELECT title || ' ' ||  author || ' ' ||  abstract || ' ' || body AS document\nFROM messages\nWHERE mid = 12;\n\nSELECT m.title || ' ' || m.author || ' ' || m.abstract || ' ' || d.body AS document\nFROM messages m, docs d\nWHERE mid = did AND mid = 12;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:189(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:189(para) 
 msgid "For searches within <productname>PostgreSQL</productname>, a document is normally a textual field within a row of a database table, or possibly a combination (concatenation) of such fields, perhaps stored in several tables or obtained dynamically. In other words, a document can be constructed from different parts for indexing and it might not be stored anywhere as a whole. For example: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:209(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:209(para) 
 msgid "Actually, in these example queries, <function>coalesce</function> should be used to prevent a single <literal>NULL</literal> attribute from causing a <literal>NULL</literal> result for the whole document."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:216(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:216(para) 
 msgid "Another possibility is to store the documents as simple text files in the file system. In this case, the database can be used to store the full text index and to execute searches, and some unique identifier can be used to retrieve the document from the file system. However, retrieving files from outside the database requires superuser permissions or special function support, so this is usually less convenient than keeping all the data inside <productname>PostgreSQL</productname>. Also, keeping everything inside the database allows easy access to document metadata to assist in indexing and display."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:228(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:228(para) 
 msgid "For text search purposes, each document must be reduced to the preprocessed <type>tsvector</type> format. Searching and ranking are performed entirely on the <type>tsvector</type> representation of a document — the original text need only be retrieved when the document has been selected for display to a user. We therefore often speak of the <type>tsvector</type> as being the document, but of course it is only a compact representation of the full document."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:241(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:241(title) 
 msgid "Basic Text Matching"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:250(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:250(programlisting) 
 #, no-wrap
 msgid "\nSELECT 'a fat cat sat on a mat and ate a fat rat'::tsvector @@ 'cat &amp; rat'::tsquery;\n ?column?\n----------\n t\n\nSELECT 'fat &amp; cow'::tsquery @@ 'a fat cat sat on a mat and ate a fat rat'::tsvector;\n ?column?\n----------\n f\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:243(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:243(para) 
 msgid "Full text searching in <productname>PostgreSQL</productname> is based on the match operator <literal>@@</literal>, which returns <literal>true</literal> if a <type>tsvector</type> (document) matches a <type>tsquery</type> (query). It doesn't matter which data type is written first: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:276(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:276(programlisting) 
 #, no-wrap
 msgid "\nSELECT to_tsvector('fat cats ate fat rats') @@ to_tsquery('fat &amp; rat');\n ?column? \n----------\n t\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:285(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:285(programlisting) 
 #, no-wrap
 msgid "\nSELECT 'fat cats ate fat rats'::tsvector @@ to_tsquery('fat &amp; rat');\n ?column? \n----------\n f\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:263(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:263(para) 
 msgid "As the above example suggests, a <type>tsquery</type> is not just raw text, any more than a <type>tsvector</type> is. A <type>tsquery</type> contains search terms, which must be already-normalized lexemes, and may combine multiple terms using AND, OR, and NOT operators. (For details see <xref linkend=\"datatype-textsearch\"/>.) There are functions <function>to_tsquery</function> and <function>plainto_tsquery</function> that are helpful in converting user-written text into a proper <type>tsquery</type>, for example by normalizing words appearing in the text. Similarly, <function>to_tsvector</function> is used to parse and normalize a document string. So in practice a text search match would look more like this: <placeholder-1/> Observe that this match would not succeed if written as <placeholder-2/> since here no normalization of the word <literal>rats</literal> will occur. The elements of a <type>tsvector</type> are lexemes, which are assumed already normalized, so <literal>rats</literal> does not match <literal>rat</literal>."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:303(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:303(programlisting) 
 #, no-wrap
 msgid "\ntsvector @@ tsquery\ntsquery  @@ tsvector\ntext @@ tsquery\ntext @@ text\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:297(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:297(para) 
 msgid "The <literal>@@</literal> operator also supports <type>text</type> input, allowing explicit conversion of a text string to <type>tsvector</type> or <type>tsquery</type> to be skipped in simple cases. The variants available are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:311(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:311(para) 
 msgid "The first two of these we saw already. The form <type>text</type><literal>@@</literal><type>tsquery</type> is equivalent to <literal>to_tsvector(x) @@ y</literal>. The form <type>text</type><literal>@@</literal><type>text</type> is equivalent to <literal>to_tsvector(x) @@ plainto_tsquery(y)</literal>."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:321(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:321(title) 
 msgid "Configurations"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:323(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:323(para) 
 msgid "The above are all simple text search examples. As mentioned before, full text search functionality includes the ability to do many more things: skip indexing certain words (stop words), process synonyms, and use sophisticated parsing, e.g., parse based on more than just white space. This functionality is controlled by <firstterm>text search configurations</firstterm>. <productname>PostgreSQL</productname> comes with predefined configurations for many languages, and you can easily create your own configurations. (<application>psql</application>'s <command>\\dF</command> command shows all available configurations.)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:335(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:335(para) 
 msgid "During installation an appropriate configuration is selected and <xref linkend=\"guc-default-text-search-config\"/> is set accordingly in <filename>postgresql.conf</filename>. If you are using the same text search configuration for the entire cluster you can use the value in <filename>postgresql.conf</filename>. To use different configurations throughout the cluster but the same configuration within any one database, use <command>ALTER DATABASE ... SET</command>. Otherwise, you can set <varname>default_text_search_config</varname> in each session."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:346(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:346(para) 
 msgid "Each text search function that depends on a configuration has an optional <type>regconfig</type> argument, so that the configuration to use can be specified explicitly. <varname>default_text_search_config</varname> is used only when this argument is omitted."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:353(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:353(para) 
 msgid "To make it easier to build custom text search configurations, a configuration is built up from simpler database objects. <productname>PostgreSQL</productname>'s text search facility provides four types of configuration-related database objects:"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:362(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:362(para) 
 msgid "<firstterm>Text search parsers</firstterm> break documents into tokens and classify each token (for example, as words or numbers)."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:369(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:369(para) 
 msgid "<firstterm>Text search dictionaries</firstterm> convert tokens to normalized form and reject stop words."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:376(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:376(para) 
 msgid "<firstterm>Text search templates</firstterm> provide the functions underlying dictionaries. (A dictionary simply specifies a template and a set of parameters for the template.)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:384(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:384(para) 
 msgid "<firstterm>Text search configurations</firstterm> select a parser and a set of dictionaries to use to normalize the tokens produced by the parser."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:391(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:391(para) 
 msgid "Text search parsers and templates are built from low-level C functions; therefore it requires C programming ability to develop new ones, and superuser privileges to install one into a database. (There are examples of add-on parsers and templates in the <filename>contrib/</filename> area of the <productname>PostgreSQL</productname> distribution.) Since dictionaries and configurations just parameterize and connect together some underlying parsers and templates, no special privilege is needed to create a new dictionary or configuration. Examples of creating custom dictionaries and configurations appear later in this chapter."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:408(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:408(title) 
 msgid "Tables and Indexes"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:410(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:410(para) 
 msgid "The examples in the previous section illustrated full text matching using simple constant strings. This section shows how to search table data, optionally using indexes."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:417(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:417(title) 
 msgid "Searching a Table"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:424(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:424(programlisting) 
 #, no-wrap
 msgid "\nSELECT title\nFROM pgweb\nWHERE to_tsvector('english', body) @@ to_tsquery('english', 'friend');\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:419(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:419(para) 
 msgid "It is possible to do a full text search without an index. A simple query to print the <structname>title</structname> of each row that contains the word <literal>friend</literal> in its <structfield>body</structfield> field is: <placeholder-1/> This will also find related words such as <literal>friends</literal> and <literal>friendly</literal>, since all these are reduced to the same normalized lexeme."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:440(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:440(programlisting) 
 #, no-wrap
 msgid "\nSELECT title\nFROM pgweb\nWHERE to_tsvector(body) @@ to_tsquery('friend');\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:435(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:435(para) 
 msgid "The query above specifies that the <literal>english</literal> configuration is to be used to parse and normalize the strings. Alternatively we could omit the configuration parameters: <placeholder-1/> This query will use the configuration set by <xref linkend=\"guc-default-text-search-config\"/>."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:455(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:455(programlisting) 
 #, no-wrap
 msgid "\nSELECT title\nFROM pgweb\nWHERE to_tsvector(title || ' ' || body) @@ to_tsquery('create &amp; table')\nORDER BY last_mod_date DESC\nLIMIT 10;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:450(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:450(para) 
 msgid "A more complex example is to select the ten most recent documents that contain <literal>create</literal> and <literal>table</literal> in the <structname>title</structname> or <structname>body</structname>: <placeholder-1/> For clarity we omitted the <function>coalesce</function> function calls which would be needed to find rows that contain <literal>NULL</literal> in one of the two fields."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:468(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:468(para) 
 msgid "Although these queries will work without an index, most applications will find this approach too slow, except perhaps for occasional ad-hoc searches. Practical use of text searching usually requires creating an index."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:478(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:478(title) 
 msgid "Creating Indexes"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:484(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:484(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX pgweb_idx ON pgweb USING gin(to_tsvector('english', body));\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:480(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:480(para) 
 msgid "We can create a <acronym>GIN</acronym> index (<xref linkend=\"textsearch-indexes\"/>) to speed up text searches: <placeholder-1/> Notice that the 2-argument version of <function>to_tsvector</function> is used. Only text search functions that specify a configuration name can be used in expression indexes (<xref linkend=\"indexes-expressional\"/>). This is because the index contents must be unaffected by <xref linkend=\"guc-default-text-search-config\"/>. If they were affected, the index contents might be inconsistent because different entries could contain <type>tsvector</type>s that were created with different text search configurations, and there would be no way to guess which was which. It would be impossible to dump and restore such an index correctly."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:499(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:499(para) 
 msgid "Because the two-argument version of <function>to_tsvector</function> was used in the index above, only a query reference that uses the 2-argument version of <function>to_tsvector</function> with the same configuration name will use that index. That is, <literal>WHERE to_tsvector('english', body) @@ 'a &amp; b'</literal> can use the index, but <literal>WHERE to_tsvector(body) @@ 'a &amp; b'</literal> cannot. This ensures that an index will be used only with the same configuration used to create the index entries."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:514(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:514(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX pgweb_idx ON pgweb USING gin(to_tsvector(config_name, body));\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:510(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:510(para) 
 msgid "It is possible to set up more complex expression indexes wherein the configuration name is specified by another column, e.g.: <placeholder-1/> where <literal>config_name</literal> is a column in the <literal>pgweb</literal> table. This allows mixed configurations in the same index while recording which configuration was used for each index entry. This would be useful, for example, if the document collection contained documents in different languages. Again, queries that are meant to use the index must be phrased to match, e.g., <literal>WHERE to_tsvector(config_name, body) @@ 'a &amp; b'</literal>."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:530(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:530(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX pgweb_idx ON pgweb USING gin(to_tsvector('english', title || ' ' || body));\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:527(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:527(para) 
 msgid "Indexes can even concatenate columns: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:542(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:542(programlisting) 
 #, no-wrap
 msgid "\nALTER TABLE pgweb ADD COLUMN textsearchable_index_col tsvector;\nUPDATE pgweb SET textsearchable_index_col =\n     to_tsvector('english', coalesce(title,'') || ' ' || coalesce(body,''));\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:550(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:550(programlisting) 
 #, no-wrap
 msgid "\nCREATE INDEX textsearch_idx ON pgweb USING gin(textsearchable_index_col);\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:556(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:556(programlisting) 
 #, no-wrap
 msgid "\nSELECT title\nFROM pgweb\nWHERE textsearchable_index_col @@ to_tsquery('create &amp; table')\nORDER BY last_mod_date DESC\nLIMIT 10;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:535(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:535(para) 
 msgid "Another approach is to create a separate <type>tsvector</type> column to hold the output of <function>to_tsvector</function>. This example is a concatenation of <literal>title</literal> and <literal>body</literal>, using <function>coalesce</function> to ensure that one field will still be indexed when the other is <literal>NULL</literal>: <placeholder-1/> Then we create a <acronym>GIN</acronym> index to speed up the search: <placeholder-2/> Now we are ready to perform a fast full text search: <placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:565(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:565(para) 
 msgid "When using a separate column to store the <type>tsvector</type> representation, it is necessary to create a trigger to keep the <type>tsvector</type> column current anytime <literal>title</literal> or <literal>body</literal> changes. <xref linkend=\"textsearch-update-triggers\"/> explains how to do that."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:573(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:573(para) 
 msgid "One advantage of the separate-column approach over an expression index is that it is not necessary to explicitly specify the text search configuration in queries in order to make use of the index. As shown in the example above, the query can depend on <varname>default_text_search_config</varname>. Another advantage is that searches will be faster, since it will not be necessary to redo the <function>to_tsvector</function> calls to verify index matches. (This is more important when using a GiST index than a GIN index; see <xref linkend=\"textsearch-indexes\"/>.) The expression-index approach is simpler to set up, however, and it requires less disk space since the <type>tsvector</type> representation is not stored explicitly."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:592(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:592(title) 
 msgid "Controlling Text Search"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:594(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:594(para) 
 msgid "To implement full text searching there must be a function to create a <type>tsvector</type> from a document and a <type>tsquery</type> from a user query. Also, we need to return results in a useful order, so we need a function that compares documents with respect to their relevance to the query. It's also important to be able to display the results nicely. <productname>PostgreSQL</productname> provides support for all of these functions."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:605(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:605(title) 
 msgid "Parsing Documents"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:607(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:607(para) 
 msgid "<productname>PostgreSQL</productname> provides the function <function>to_tsvector</function> for converting a document to the <type>tsvector</type> data type."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:614(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:614(primary) 
 msgid "to_tsvector"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:618(replaceable) /tmp/cicero-alnp/textsearch.xml:725(replaceable) /tmp/cicero-alnp/textsearch.xml:796(replaceable) /tmp/cicero-alnp/textsearch.xml:1068(replaceable) /tmp/cicero-alnp/textsearch.xml:2886(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:618(replaceable) /tmp/cicero-nhvx/textsearch.xml:725(replaceable) /tmp/cicero-nhvx/textsearch.xml:796(replaceable) /tmp/cicero-nhvx/textsearch.xml:1068(replaceable) /tmp/cicero-nhvx/textsearch.xml:2886(replaceable) 
 msgid "config"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:618(type) /tmp/cicero-alnp/textsearch.xml:725(type) /tmp/cicero-alnp/textsearch.xml:796(type) /tmp/cicero-alnp/textsearch.xml:1068(type) /tmp/cicero-alnp/textsearch.xml:2886(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:618(type) /tmp/cicero-nhvx/textsearch.xml:725(type) /tmp/cicero-nhvx/textsearch.xml:796(type) /tmp/cicero-nhvx/textsearch.xml:1068(type) /tmp/cicero-nhvx/textsearch.xml:2886(type) 
 msgid "regconfig"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:618(optional) /tmp/cicero-alnp/textsearch.xml:725(optional) /tmp/cicero-alnp/textsearch.xml:796(optional) /tmp/cicero-alnp/textsearch.xml:864(optional) /tmp/cicero-alnp/textsearch.xml:884(optional) /tmp/cicero-alnp/textsearch.xml:1068(optional) /tmp/cicero-alnp/textsearch.xml:1727(optional) /tmp/cicero-alnp/textsearch.xml:2886(optional) 
+#: /tmp/cicero-nhvx/textsearch.xml:618(optional) /tmp/cicero-nhvx/textsearch.xml:725(optional) /tmp/cicero-nhvx/textsearch.xml:796(optional) /tmp/cicero-nhvx/textsearch.xml:864(optional) /tmp/cicero-nhvx/textsearch.xml:884(optional) /tmp/cicero-nhvx/textsearch.xml:1068(optional) /tmp/cicero-nhvx/textsearch.xml:1727(optional) /tmp/cicero-nhvx/textsearch.xml:2886(optional) 
 msgid "<placeholder-1/><placeholder-2/>,"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:618(type) /tmp/cicero-alnp/textsearch.xml:725(type) /tmp/cicero-alnp/textsearch.xml:796(type) /tmp/cicero-alnp/textsearch.xml:1068(type) /tmp/cicero-alnp/textsearch.xml:1068(type) /tmp/cicero-alnp/textsearch.xml:1068(type) /tmp/cicero-alnp/textsearch.xml:1445(type) /tmp/cicero-alnp/textsearch.xml:1526(type) /tmp/cicero-alnp/textsearch.xml:1727(type) /tmp/cicero-alnp/textsearch.xml:1727(type) /tmp/cicero-alnp/textsearch.xml:1728(type) /tmp/cicero-alnp/textsearch.xml:2886(type) /tmp/cicero-alnp/textsearch.xml:2887(type) /tmp/cicero-alnp/textsearch.xml:2888(type) /tmp/cicero-alnp/textsearch.xml:2889(type) /tmp/cicero-alnp/textsearch.xml:3069(type) /tmp/cicero-alnp/textsearch.xml:3069(type) /tmp/cicero-alnp/textsearch.xml:3070(type) /tmp/cicero-alnp/textsearch.xml:3071(type) /tmp/cicero-alnp/textsearch.xml:3072(type) /tmp/cicero-alnp/textsearch.xml:3100(type) /tmp/cicero-alnp/textsearch.xml:3101(type) /tmp/cicero-alnp/textsearch.xml:3101(type) /tmp/cicero-alnp/textsearch.xml:3103(type) /tmp/cicero-alnp/textsearch.xml:3103(type) /tmp/cicero-alnp/textsearch.xml:3158(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:618(type) /tmp/cicero-nhvx/textsearch.xml:725(type) /tmp/cicero-nhvx/textsearch.xml:796(type) /tmp/cicero-nhvx/textsearch.xml:1068(type) /tmp/cicero-nhvx/textsearch.xml:1068(type) /tmp/cicero-nhvx/textsearch.xml:1068(type) /tmp/cicero-nhvx/textsearch.xml:1445(type) /tmp/cicero-nhvx/textsearch.xml:1526(type) /tmp/cicero-nhvx/textsearch.xml:1727(type) /tmp/cicero-nhvx/textsearch.xml:1727(type) /tmp/cicero-nhvx/textsearch.xml:1728(type) /tmp/cicero-nhvx/textsearch.xml:2886(type) /tmp/cicero-nhvx/textsearch.xml:2887(type) /tmp/cicero-nhvx/textsearch.xml:2888(type) /tmp/cicero-nhvx/textsearch.xml:2889(type) /tmp/cicero-nhvx/textsearch.xml:3069(type) /tmp/cicero-nhvx/textsearch.xml:3069(type) /tmp/cicero-nhvx/textsearch.xml:3070(type) /tmp/cicero-nhvx/textsearch.xml:3071(type) /tmp/cicero-nhvx/textsearch.xml:3072(type) /tmp/cicero-nhvx/textsearch.xml:3100(type) /tmp/cicero-nhvx/textsearch.xml:3101(type) /tmp/cicero-nhvx/textsearch.xml:3101(type) /tmp/cicero-nhvx/textsearch.xml:3103(type) /tmp/cicero-nhvx/textsearch.xml:3103(type) /tmp/cicero-nhvx/textsearch.xml:3158(type) 
 msgid "text"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:618(type) /tmp/cicero-alnp/textsearch.xml:864(type) /tmp/cicero-alnp/textsearch.xml:884(type) /tmp/cicero-alnp/textsearch.xml:1231(type) /tmp/cicero-alnp/textsearch.xml:1231(type) /tmp/cicero-alnp/textsearch.xml:1272(type) /tmp/cicero-alnp/textsearch.xml:1272(type) /tmp/cicero-alnp/textsearch.xml:1302(type) /tmp/cicero-alnp/textsearch.xml:1321(type) /tmp/cicero-alnp/textsearch.xml:1321(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:618(type) /tmp/cicero-nhvx/textsearch.xml:864(type) /tmp/cicero-nhvx/textsearch.xml:884(type) /tmp/cicero-nhvx/textsearch.xml:1231(type) /tmp/cicero-nhvx/textsearch.xml:1231(type) /tmp/cicero-nhvx/textsearch.xml:1272(type) /tmp/cicero-nhvx/textsearch.xml:1272(type) /tmp/cicero-nhvx/textsearch.xml:1302(type) /tmp/cicero-nhvx/textsearch.xml:1321(type) /tmp/cicero-nhvx/textsearch.xml:1321(type) 
 msgid "tsvector"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:617(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:617(synopsis) 
 #, no-wrap
 msgid "\nto_tsvector(<placeholder-1/> <placeholder-2/> <placeholder-3/>) returns <placeholder-4/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:621(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:621(para) 
 msgid "<function>to_tsvector</function> parses a textual document into tokens, reduces the tokens to lexemes, and returns a <type>tsvector</type> which lists the lexemes together with their positions in the document. The document is processed according to the specified or default text search configuration. Here is a simple example: <screen>\nSELECT to_tsvector('english', 'a fat  cat sat on a mat - it ate a fat rats');\n                  to_tsvector\n-----------------------------------------------------\n 'ate':9 'cat':3 'fat':2,11 'mat':7 'rat':12 'sat':4\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:637(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:637(para) 
 msgid "In the example above we see that the resulting <type>tsvector</type> does not contain the words <literal>a</literal>, <literal>on</literal>, or <literal>it</literal>, the word <literal>rats</literal> became <literal>rat</literal>, and the punctuation sign <literal>-</literal> was ignored."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:645(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:645(para) 
 msgid "The <function>to_tsvector</function> function internally calls a parser which breaks the document text into tokens and assigns a type to each token. For each token, a list of dictionaries (<xref linkend=\"textsearch-dictionaries\"/>) is consulted, where the list can vary depending on the token type. The first dictionary that <firstterm>recognizes</firstterm> the token emits one or more normalized <firstterm>lexemes</firstterm> to represent the token. For example, <literal>rats</literal> became <literal>rat</literal> because one of the dictionaries recognized that the word <literal>rats</literal> is a plural form of <literal>rat</literal>. Some words are recognized as <firstterm>stop words</firstterm> (<xref linkend=\"textsearch-stopwords\"/>), which causes them to be ignored since they occur too frequently to be useful in searching. In our example these are <literal>a</literal>, <literal>on</literal>, and <literal>it</literal>. If no dictionary in the list recognizes the token then it is also ignored. In this example that happened to the punctuation sign <literal>-</literal> because there are in fact no dictionaries assigned for its token type (<literal>Space symbols</literal>), meaning space tokens will never be indexed. The choices of parser, dictionaries and which types of tokens to index are determined by the selected text search configuration (<xref linkend=\"textsearch-configuration\"/>). It is possible to have many different configurations in the same database, and predefined configurations are available for various languages. In our example we used the default configuration <literal>english</literal> for the English language."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:673(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:673(para) 
 msgid "The function <function>setweight</function> can be used to label the entries of a <type>tsvector</type> with a given <firstterm>weight</firstterm>, where a weight is one of the letters <literal>A</literal>, <literal>B</literal>, <literal>C</literal>, or <literal>D</literal>. This is typically used to mark entries coming from different parts of a document, such as title versus body. Later, this information can be used for ranking of search results."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:690(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:690(programlisting) 
 #, no-wrap
 msgid "\nUPDATE tt SET ti =\n    setweight(to_tsvector(coalesce(title,'')), 'A')    ||\n    setweight(to_tsvector(coalesce(keyword,'')), 'B')  ||\n    setweight(to_tsvector(coalesce(abstract,'')), 'C') ||\n    setweight(to_tsvector(coalesce(body,'')), 'D');\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:683(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:683(para) 
 msgid "Because <function>to_tsvector</function>(<literal>NULL</literal>) will return <literal>NULL</literal>, it is recommended to use <function>coalesce</function> whenever a field might be null. Here is the recommended method for creating a <type>tsvector</type> from a structured document: <placeholder-1/> Here we have used <function>setweight</function> to label the source of each lexeme in the finished <type>tsvector</type>, and then merged the labeled <type>tsvector</type> values using the <type>tsvector</type> concatenation operator <literal>||</literal>. (<xref linkend=\"textsearch-manipulate-tsvector\"/> gives details about these operations.)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:709(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:709(title) 
 msgid "Parsing Queries"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:711(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:711(para) 
 msgid "<productname>PostgreSQL</productname> provides the functions <function>to_tsquery</function> and <function>plainto_tsquery</function> for converting a query to the <type>tsquery</type> data type. <function>to_tsquery</function> offers access to more features than <function>plainto_tsquery</function>, but is less forgiving about its input."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:721(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:721(primary) 
 msgid "to_tsquery"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:725(replaceable) /tmp/cicero-alnp/textsearch.xml:796(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:725(replaceable) /tmp/cicero-nhvx/textsearch.xml:796(replaceable) 
 msgid "querytext"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:725(type) /tmp/cicero-alnp/textsearch.xml:796(type) /tmp/cicero-alnp/textsearch.xml:865(type) /tmp/cicero-alnp/textsearch.xml:885(type) /tmp/cicero-alnp/textsearch.xml:1068(type) /tmp/cicero-alnp/textsearch.xml:1357(type) /tmp/cicero-alnp/textsearch.xml:1357(type) /tmp/cicero-alnp/textsearch.xml:1373(type) /tmp/cicero-alnp/textsearch.xml:1373(type) /tmp/cicero-alnp/textsearch.xml:1389(type) /tmp/cicero-alnp/textsearch.xml:1409(type) /tmp/cicero-alnp/textsearch.xml:1445(type) /tmp/cicero-alnp/textsearch.xml:1500(type) /tmp/cicero-alnp/textsearch.xml:1500(type) /tmp/cicero-alnp/textsearch.xml:1500(type) /tmp/cicero-alnp/textsearch.xml:1500(type) /tmp/cicero-alnp/textsearch.xml:1526(type) /tmp/cicero-alnp/textsearch.xml:1526(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:725(type) /tmp/cicero-nhvx/textsearch.xml:796(type) /tmp/cicero-nhvx/textsearch.xml:865(type) /tmp/cicero-nhvx/textsearch.xml:885(type) /tmp/cicero-nhvx/textsearch.xml:1068(type) /tmp/cicero-nhvx/textsearch.xml:1357(type) /tmp/cicero-nhvx/textsearch.xml:1357(type) /tmp/cicero-nhvx/textsearch.xml:1373(type) /tmp/cicero-nhvx/textsearch.xml:1373(type) /tmp/cicero-nhvx/textsearch.xml:1389(type) /tmp/cicero-nhvx/textsearch.xml:1409(type) /tmp/cicero-nhvx/textsearch.xml:1445(type) /tmp/cicero-nhvx/textsearch.xml:1500(type) /tmp/cicero-nhvx/textsearch.xml:1500(type) /tmp/cicero-nhvx/textsearch.xml:1500(type) /tmp/cicero-nhvx/textsearch.xml:1500(type) /tmp/cicero-nhvx/textsearch.xml:1526(type) /tmp/cicero-nhvx/textsearch.xml:1526(type) 
 msgid "tsquery"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:724(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:724(synopsis) 
 #, no-wrap
 msgid "\nto_tsquery(<placeholder-1/> <placeholder-2/> <placeholder-3/>) returns <placeholder-4/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:728(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:728(para) 
 msgid "<function>to_tsquery</function> creates a <type>tsquery</type> value from <replaceable>querytext</replaceable>, which must consist of single tokens separated by the Boolean operators <literal>&amp;</literal> (AND), <literal>|</literal> (OR) and <literal>!</literal> (NOT). These operators can be grouped using parentheses. In other words, the input to <function>to_tsquery</function> must already follow the general rules for <type>tsquery</type> input, as described in <xref linkend=\"datatype-textsearch\"/>. The difference is that while basic <type>tsquery</type> input takes the tokens at face value, <function>to_tsquery</function> normalizes each token to a lexeme using the specified or default configuration, and discards any tokens that are stop words according to the configuration. For example: <screen>\nSELECT to_tsquery('english', 'The &amp; Fat &amp; Rats');\n  to_tsquery   \n---------------\n 'fat' &amp; 'rat'\n</screen> As in basic <type>tsquery</type> input, weight(s) can be attached to each lexeme to restrict it to match only <type>tsvector</type> lexemes of those weight(s). For example: <screen>\nSELECT to_tsquery('english', 'Fat | Rats:AB');\n    to_tsquery    \n------------------\n 'fat' | 'rat':AB\n</screen> Also, <literal>*</literal> can be attached to a lexeme to specify prefix matching: <screen>\nSELECT to_tsquery('supern:*A &amp; star:A*B');\n        to_tsquery        \n--------------------------\n 'supern':*A &amp; 'star':*AB\n</screen> Such a lexeme will match any word in a <type>tsvector</type> that begins with the given string."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:773(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:773(para) 
 msgid "<function>to_tsquery</function> can also accept single-quoted phrases. This is primarily useful when the configuration includes a thesaurus dictionary that may trigger on such phrases. In the example below, a thesaurus contains the rule <literal>supernovae stars : sn</literal>: <screen>\nSELECT to_tsquery('''supernovae stars'' &amp; !crab');\n  to_tsquery\n---------------\n 'sn' &amp; !'crab'\n</screen> Without quotes, <function>to_tsquery</function> will generate a syntax error for tokens that are not separated by an AND or OR operator."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:792(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:792(primary) 
 msgid "plainto_tsquery"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:795(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:795(synopsis) 
 #, no-wrap
 msgid "\nplainto_tsquery(<placeholder-1/> <placeholder-2/> <placeholder-3/>) returns <placeholder-4/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:799(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:799(para) 
 msgid "<function>plainto_tsquery</function> transforms unformatted text <replaceable>querytext</replaceable> to <type>tsquery</type>. The text is parsed and normalized much as for <function>to_tsvector</function>, then the <literal>&amp;</literal> (AND) Boolean operator is inserted between surviving words."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:807(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:807(para) 
 msgid "Example: <screen>\nSELECT plainto_tsquery('english', 'The Fat Rats');\n plainto_tsquery \n-----------------\n 'fat' &amp; 'rat'\n</screen> Note that <function>plainto_tsquery</function> cannot recognize Boolean operators, weight labels, or prefix-match labels in its input: <screen>\nSELECT plainto_tsquery('english', 'The Fat &amp; Rats:C');\n   plainto_tsquery   \n---------------------\n 'fat' &amp; 'rat' &amp; 'c'\n</screen> Here, all the input punctuation was discarded as being space symbols."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:834(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:834(title) 
 msgid "Ranking Search Results"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:836(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:836(para) 
 msgid "Ranking attempts to measure how relevant documents are to a particular query, so that when there are many matches the most relevant ones can be shown first. <productname>PostgreSQL</productname> provides two predefined ranking functions, which take into account lexical, proximity, and structural information; that is, they consider how often the query terms appear in the document, how close together the terms are in the document, and how important is the part of the document where they occur. However, the concept of relevancy is vague and very application-specific. Different applications might require additional information for ranking, e.g., document modification time. The built-in ranking functions are only examples. You can write your own ranking functions and/or combine their results with additional factors to fit your specific needs."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:859(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:859(primary) 
 msgid "ts_rank"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:864(replaceable) /tmp/cicero-alnp/textsearch.xml:884(replaceable) /tmp/cicero-alnp/textsearch.xml:1727(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:864(replaceable) /tmp/cicero-nhvx/textsearch.xml:884(replaceable) /tmp/cicero-nhvx/textsearch.xml:1727(replaceable) 
 msgid "weights"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:864(type) /tmp/cicero-alnp/textsearch.xml:884(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:864(type) /tmp/cicero-nhvx/textsearch.xml:884(type) 
 msgid "float4[]"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:864(replaceable) /tmp/cicero-alnp/textsearch.xml:884(replaceable) /tmp/cicero-alnp/textsearch.xml:1272(replaceable) /tmp/cicero-alnp/textsearch.xml:1302(replaceable) /tmp/cicero-alnp/textsearch.xml:1321(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:864(replaceable) /tmp/cicero-nhvx/textsearch.xml:884(replaceable) /tmp/cicero-nhvx/textsearch.xml:1272(replaceable) /tmp/cicero-nhvx/textsearch.xml:1302(replaceable) /tmp/cicero-nhvx/textsearch.xml:1321(replaceable) 
 msgid "vector"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:865(replaceable) /tmp/cicero-alnp/textsearch.xml:885(replaceable) /tmp/cicero-alnp/textsearch.xml:1068(replaceable) /tmp/cicero-alnp/textsearch.xml:1409(replaceable) /tmp/cicero-alnp/textsearch.xml:1445(replaceable) /tmp/cicero-alnp/textsearch.xml:1500(replaceable) /tmp/cicero-alnp/textsearch.xml:1526(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:865(replaceable) /tmp/cicero-nhvx/textsearch.xml:885(replaceable) /tmp/cicero-nhvx/textsearch.xml:1068(replaceable) /tmp/cicero-nhvx/textsearch.xml:1409(replaceable) /tmp/cicero-nhvx/textsearch.xml:1445(replaceable) /tmp/cicero-nhvx/textsearch.xml:1500(replaceable) /tmp/cicero-nhvx/textsearch.xml:1526(replaceable) 
 msgid "query"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:865(replaceable) /tmp/cicero-alnp/textsearch.xml:885(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:865(replaceable) /tmp/cicero-nhvx/textsearch.xml:885(replaceable) 
 msgid "normalization"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:865(type) /tmp/cicero-alnp/textsearch.xml:885(type) /tmp/cicero-alnp/textsearch.xml:1302(type) /tmp/cicero-alnp/textsearch.xml:1409(type) /tmp/cicero-alnp/textsearch.xml:1728(type) /tmp/cicero-alnp/textsearch.xml:1729(type) /tmp/cicero-alnp/textsearch.xml:3070(type) /tmp/cicero-alnp/textsearch.xml:3072(type) /tmp/cicero-alnp/textsearch.xml:3100(type) /tmp/cicero-alnp/textsearch.xml:3102(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:865(type) /tmp/cicero-nhvx/textsearch.xml:885(type) /tmp/cicero-nhvx/textsearch.xml:1302(type) /tmp/cicero-nhvx/textsearch.xml:1409(type) /tmp/cicero-nhvx/textsearch.xml:1728(type) /tmp/cicero-nhvx/textsearch.xml:1729(type) /tmp/cicero-nhvx/textsearch.xml:3070(type) /tmp/cicero-nhvx/textsearch.xml:3072(type) /tmp/cicero-nhvx/textsearch.xml:3100(type) /tmp/cicero-nhvx/textsearch.xml:3102(type) 
 msgid "integer"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:865(optional) /tmp/cicero-alnp/textsearch.xml:885(optional) /tmp/cicero-alnp/textsearch.xml:1068(optional) 
+#: /tmp/cicero-nhvx/textsearch.xml:865(optional) /tmp/cicero-nhvx/textsearch.xml:885(optional) /tmp/cicero-nhvx/textsearch.xml:1068(optional) 
 msgid ", <placeholder-1/><placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:865(type) /tmp/cicero-alnp/textsearch.xml:885(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:865(type) /tmp/cicero-nhvx/textsearch.xml:885(type) 
 msgid "float4"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:863(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:863(synopsis) 
 #, no-wrap
 msgid "\nts_rank(<placeholder-1/> <placeholder-2/> <placeholder-3/>,\n        <placeholder-4/> <placeholder-5/> <placeholder-6/>) returns <placeholder-7/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:870(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:870(para) 
 msgid "Standard ranking function."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:879(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:879(primary) 
 msgid "ts_rank_cd"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:883(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:883(synopsis) 
 #, no-wrap
 msgid "\nts_rank_cd(<placeholder-1/> <placeholder-2/> <placeholder-3/>,\n           <placeholder-4/> <placeholder-5/> <placeholder-6/>) returns <placeholder-7/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:890(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:890(para) 
 msgid "This function computes the <firstterm>cover density</firstterm> ranking for the given document vector and query, as described in Clarke, Cormack, and Tudhope's \"Relevance Ranking for One to Three Term Queries\" in the journal \"Information Processing and Management\", 1999."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:898(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:898(para) 
 msgid "This function requires positional information in its input. Therefore it will not work on <quote>stripped</quote><type>tsvector</type> values — it will always return zero."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:851(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:851(para) 
 msgid "The two ranking functions currently available are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:924(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:924(programlisting) 
 #, no-wrap
 msgid "\n{0.1, 0.2, 0.4, 1.0}\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:910(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:910(para) 
 msgid "For both these functions, the optional <replaceable class=\"PARAMETER\">weights</replaceable> argument offers the ability to weigh word instances more or less heavily depending on how they are labeled. The weight arrays specify how heavily to weigh each category of word, in the order: <synopsis>\n{D-weight, C-weight, B-weight, A-weight}\n</synopsis> If no <replaceable class=\"PARAMETER\">weights</replaceable> are provided, then these defaults are used: <placeholder-1/> Typically weights are used to mark words from special areas of the document, like the title or an initial abstract, so they can be treated with more or less importance than words in the document body."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:946(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:946(para) 
 msgid "0 (the default) ignores the document length"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:951(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:951(para) 
 msgid "1 divides the rank by 1 + the logarithm of the document length"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:956(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:956(para) 
 msgid "2 divides the rank by the document length"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:961(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:961(para) 
 msgid "4 divides the rank by the mean harmonic distance between extents (this is implemented only by <function>ts_rank_cd</function>)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:967(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:967(para) 
 msgid "8 divides the rank by the number of unique words in document"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:972(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:972(para) 
 msgid "16 divides the rank by 1 + the logarithm of the number of unique words in document"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:978(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:978(para) 
 msgid "32 divides the rank by itself + 1"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:933(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:933(para) 
 msgid "Since a longer document has a greater chance of containing a query term it is reasonable to take into account document size, e.g., a hundred-word document with five instances of a search word is probably more relevant than a thousand-word document with five instances. Both ranking functions take an integer <replaceable>normalization</replaceable> option that specifies whether and how a document's length should impact its rank. The integer option controls several behaviors, so it is a bit mask: you can specify one or more behaviors using <literal>|</literal> (for example, <literal>2|4</literal>). <placeholder-1/> If more than one flag bit is specified, the transformations are applied in the order listed."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:988(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:988(para) 
 msgid "It is important to note that the ranking functions do not use any global information, so it is impossible to produce a fair normalization to 1% or 100% as sometimes desired. Normalization option 32 (<literal>rank/(rank+1)</literal>) can be applied to scale all ranks into the range zero to one, but of course this is just a cosmetic change; it will not affect the ordering of the search results."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:997(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:997(para) 
 msgid "Here is an example that selects only the ten highest-ranked matches: <screen>\nSELECT title, ts_rank_cd(textsearch, query) AS rank\nFROM apod, to_tsquery('neutrino|(dark &amp; matter)') query\nWHERE query @@ textsearch\nORDER BY rank DESC\nLIMIT 10;\n                     title                     |   rank\n-----------------------------------------------+----------\n Neutrinos in the Sun                          |      3.1\n The Sudbury Neutrino Detector                 |      2.4\n A MACHO View of Galactic Dark Matter          |  2.01317\n Hot Gas and Dark Matter                       |  1.91171\n The Virgo Cluster: Hot Plasma and Dark Matter |  1.90953\n Rafting for Solar Neutrinos                   |      1.9\n NGC 4650A: Strange Galaxy and Dark Matter     |  1.85774\n Hot Gas and Dark Matter                       |   1.6123\n Ice Fishing for Cosmic Neutrinos              |      1.6\n Weak Lensing Distorts the Universe            | 0.818218\n</screen> This is the same example using normalized ranking: <screen>\nSELECT title, ts_rank_cd(textsearch, query, 32 /* rank/(rank+1) */ ) AS rank\nFROM apod, to_tsquery('neutrino|(dark &amp; matter)') query\nWHERE  query @@ textsearch\nORDER BY rank DESC\nLIMIT 10;\n                     title                     |        rank\n-----------------------------------------------+-------------------\n Neutrinos in the Sun                          | 0.756097569485493\n The Sudbury Neutrino Detector                 | 0.705882361190954\n A MACHO View of Galactic Dark Matter          | 0.668123210574724\n Hot Gas and Dark Matter                       |  0.65655958650282\n The Virgo Cluster: Hot Plasma and Dark Matter | 0.656301290640973\n Rafting for Solar Neutrinos                   | 0.655172410958162\n NGC 4650A: Strange Galaxy and Dark Matter     | 0.650072921219637\n Hot Gas and Dark Matter                       | 0.617195790024749\n Ice Fishing for Cosmic Neutrinos              | 0.615384618911517\n Weak Lensing Distorts the Universe            | 0.450010798361481\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1043(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1043(para) 
 msgid "Ranking can be expensive since it requires consulting the <type>tsvector</type> of each matching document, which can be I/O bound and therefore slow. Unfortunately, it is almost impossible to avoid since practical queries often result in large numbers of matches."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1053(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:1053(title) 
 msgid "Highlighting Results"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1055(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1055(para) 
 msgid "To present search results it is ideal to show a part of each document and how it is related to the query. Usually, search engines show fragments of the document with marked search terms. <productname>PostgreSQL</productname> provides a function <function>ts_headline</function> that implements this functionality."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1064(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:1064(primary) 
 msgid "ts_headline"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1068(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1068(replaceable) 
 msgid "options"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1067(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1067(synopsis) 
 #, no-wrap
 msgid "\nts_headline(<placeholder-1/> <placeholder-2/> <placeholder-3/>, <placeholder-4/> <placeholder-5/> <placeholder-6/>) returns <placeholder-7/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1071(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1071(para) 
 msgid "<function>ts_headline</function> accepts a document along with a query, and returns an excerpt from the document in which terms from the query are highlighted. The configuration to be used to parse the document can be specified by <replaceable>config</replaceable>; if <replaceable>config</replaceable> is omitted, the <varname>default_text_search_config</varname> configuration is used."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1089(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1089(para) 
 msgid "<literal>StartSel</literal>, <literal>StopSel</literal>: the strings with which to delimit query words appearing in the document, to distinguish them from other excerpted words. You must double-quote these strings if they contain spaces or commas."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1097(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1097(para) 
 msgid "<literal>MaxWords</literal>, <literal>MinWords</literal>: these numbers determine the longest and shortest headlines to output."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1103(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1103(para) 
 msgid "<literal>ShortWord</literal>: words of this length or less will be dropped at the start and end of a headline. The default value of three eliminates common English articles."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1110(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1110(para) 
 msgid "<literal>HighlightAll</literal>: Boolean flag; if <literal>true</literal> the whole document will be used as the headline, ignoring the preceding three parameters."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1117(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1117(para) 
 msgid "<literal>MaxFragments</literal>: maximum number of text excerpts or fragments to display. The default value of zero selects a non-fragment-oriented headline generation method. A value greater than zero selects fragment-based headline generation. This method finds text fragments with as many query words as possible and stretches those fragments around the query words. As a result query words are close to the middle of each fragment and have words on each side. Each fragment will be of at most <literal>MaxWords</literal> and words of length <literal>ShortWord</literal> or less are dropped at the start and end of each fragment. If not all query words are found in the document, then a single fragment of the first <literal>MinWords</literal> in the document will be displayed."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1133(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1133(para) 
 msgid "<literal>FragmentDelimiter</literal>: When more than one fragment is displayed, the fragments will be separated by this string."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1142(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:1142(programlisting) 
 #, no-wrap
 msgid "\nStartSel=&lt;b&gt;, StopSel=&lt;/b&gt;,\nMaxWords=35, MinWords=15, ShortWord=3, HighlightAll=FALSE,\nMaxFragments=0, FragmentDelimiter=\" ... \"\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1081(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1081(para) 
 msgid "If an <replaceable>options</replaceable> string is specified it must consist of a comma-separated list of one or more <replaceable>option</replaceable><literal>=</literal><replaceable>value</replaceable> pairs. The available options are: <placeholder-1/> Any unspecified options receive these defaults: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1149(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1149(para) 
 msgid "For example: <screen>\nSELECT ts_headline('english',\n  'The most common type of search\nis to find all documents containing given query terms\nand return them in order of their similarity to the\nquery.',\n  to_tsquery('query &amp; similarity'));\n                        ts_headline                         \n------------------------------------------------------------\n containing given &lt;b&gt;query&lt;/b&gt; terms\n and return them in order of their &lt;b&gt;similarity&lt;/b&gt; to the\n &lt;b&gt;query&lt;/b&gt;.\n\nSELECT ts_headline('english',\n  'The most common type of search\nis to find all documents containing given query terms\nand return them in order of their similarity to the\nquery.',\n  to_tsquery('query &amp; similarity'),\n  'StartSel = &lt;, StopSel = &gt;');\n                      ts_headline                      \n-------------------------------------------------------\n containing given &lt;query&gt; terms\n and return them in order of their &lt;similarity&gt; to the\n &lt;query&gt;.\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1188(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:1188(programlisting) 
 #, no-wrap
 msgid "\nSELECT id, ts_headline(body, q), rank\nFROM (SELECT id, body, q, ts_rank_cd(ti, q) AS rank\n      FROM apod, to_tsquery('stars') q\n      WHERE ti @@ q\n      ORDER BY rank DESC\n      LIMIT 10) AS foo;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1180(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1180(para) 
 msgid "<function>ts_headline</function> uses the original document, not a <type>tsvector</type> summary, so it can be slow and should be used with care. A typical mistake is to call <function>ts_headline</function> for <emphasis>every</emphasis> matching document when only ten documents are to be shown. <acronym>SQL</acronym> subqueries can help; here is an example: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1203(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:1203(title) 
 msgid "Additional Features"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1205(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1205(para) 
 msgid "This section describes additional functions and operators that are useful in connection with text search."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1211(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:1211(title) 
 msgid "Manipulating Documents"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1213(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1213(para) 
 msgid "<xref linkend=\"textsearch-parsing-documents\"/> showed how raw textual documents can be converted into <type>tsvector</type> values. <productname>PostgreSQL</productname> also provides functions and operators that can be used to manipulate documents that are already in <type>tsvector</type> form."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1226(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:1226(primary) 
 msgid "tsvector concatenation"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1230(synopsis) /tmp/cicero-alnp/textsearch.xml:1372(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1230(synopsis) /tmp/cicero-nhvx/textsearch.xml:1372(synopsis) 
 #, no-wrap
 msgid "\n<placeholder-1/> || <placeholder-2/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1236(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1236(para) 
 msgid "The <type>tsvector</type> concatenation operator returns a vector which combines the lexemes and positional information of the two vectors given as arguments. Positions and weight labels are retained during the concatenation. Positions appearing in the right-hand vector are offset by the largest position mentioned in the left-hand vector, so that the result is nearly equivalent to the result of performing <function>to_tsvector</function> on the concatenation of the two original document strings. (The equivalence is not exact, because any stop-words removed from the end of the left-hand argument will not affect the result, whereas they would have affected the positions of the lexemes in the right-hand argument if textual concatenation were used.)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1251(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1251(para) 
 msgid "One advantage of using concatenation in the vector form, rather than concatenating text before applying <function>to_tsvector</function>, is that you can use different configurations to parse different sections of the document. Also, because the <function>setweight</function> function marks all lexemes of the given vector the same way, it is necessary to parse the text and do <function>setweight</function> before concatenating if you want to label different parts of the document with different weights."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1267(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:1267(primary) 
 msgid "setweight"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1272(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1272(replaceable) 
 msgid "weight"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1272(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:1272(type) 
 msgid "\"char\""
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1271(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1271(synopsis) 
 #, no-wrap
 msgid "\nsetweight(<placeholder-1/> <placeholder-2/>, <placeholder-3/> <placeholder-4/>) returns <placeholder-5/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1277(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1277(para) 
 msgid "<function>setweight</function> returns a copy of the input vector in which every position has been labeled with the given <replaceable>weight</replaceable>, either <literal>A</literal>, <literal>B</literal>, <literal>C</literal>, or <literal>D</literal>. (<literal>D</literal> is the default for new vectors and as such is not displayed on output.) These labels are retained when vectors are concatenated, allowing words from different parts of a document to be weighted differently by ranking functions."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1287(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1287(para) 
 msgid "Note that weight labels apply to <emphasis>positions</emphasis>, not <emphasis>lexemes</emphasis>. If the input vector has been stripped of positions then <function>setweight</function> does nothing."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1297(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:1297(primary) 
 msgid "length(tsvector)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1301(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1301(synopsis) 
 #, no-wrap
 msgid "\nlength(<placeholder-1/> <placeholder-2/>) returns <placeholder-3/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1307(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1307(para) 
 msgid "Returns the number of lexemes stored in the vector."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1316(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:1316(primary) 
 msgid "strip"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1320(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1320(synopsis) 
 #, no-wrap
 msgid "\nstrip(<placeholder-1/> <placeholder-2/>) returns <placeholder-3/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1326(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1326(para) 
 msgid "Returns a vector which lists the same lexemes as the given vector, but which lacks any position or weight information. While the returned vector is much less useful than an unstripped vector for relevance ranking, it will usually be much smaller."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1341(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:1341(title) 
 msgid "Manipulating Queries"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1343(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1343(para) 
 msgid "<xref linkend=\"textsearch-parsing-queries\"/> showed how raw textual queries can be converted into <type>tsquery</type> values. <productname>PostgreSQL</productname> also provides functions and operators that can be used to manipulate queries that are already in <type>tsquery</type> form."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1356(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1356(synopsis) 
 #, no-wrap
 msgid "\n<placeholder-1/> &amp;&amp; <placeholder-2/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1362(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1362(para) 
 msgid "Returns the AND-combination of the two given queries."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1378(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1378(para) 
 msgid "Returns the OR-combination of the two given queries."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1388(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1388(synopsis) 
 #, no-wrap
 msgid "\n!! <placeholder-1/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1394(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1394(para) 
 msgid "Returns the negation (NOT) of the given query."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1404(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:1404(primary) 
 msgid "numnode"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1408(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1408(synopsis) 
 #, no-wrap
 msgid "\nnumnode(<placeholder-1/> <placeholder-2/>) returns <placeholder-3/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1414(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1414(para) 
 msgid "Returns the number of nodes (lexemes plus operators) in a <type>tsquery</type>. This function is useful to determine if the <replaceable>query</replaceable> is meaningful (returns &gt; 0), or contains only stop words (returns 0). Examples: <screen>\nSELECT numnode(plainto_tsquery('the any'));\nNOTICE:  query contains only stopword(s) or doesn't contain lexeme(s), ignored\n numnode\n---------\n       0\n\nSELECT numnode('foo &amp; bar'::tsquery);\n numnode\n---------\n       3\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1440(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:1440(primary) 
 msgid "querytree"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1444(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1444(synopsis) 
 #, no-wrap
 msgid "\nquerytree(<placeholder-1/> <placeholder-2/>) returns <placeholder-3/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1450(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1450(para) 
 msgid "Returns the portion of a <type>tsquery</type> that can be used for searching an index. This function is useful for detecting unindexable queries, for example those containing only stop words or only negated terms. For example: <screen>\nSELECT querytree(to_tsquery('!defined'));\n querytree\n-----------\n\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1469(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:1469(title) 
 msgid "Query Rewriting"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1472(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:1472(primary) 
 msgid "ts_rewrite"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1475(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1475(para) 
 msgid "The <function>ts_rewrite</function> family of functions search a given <type>tsquery</type> for occurrences of a target subquery, and replace each occurrence with a substitute subquery. In essence this operation is a <type>tsquery</type>-specific version of substring replacement. A target and substitute combination can be thought of as a <firstterm>query rewrite rule</firstterm>. A collection of such rewrite rules can be a powerful search aid. For example, you can expand the search using synonyms (e.g., <literal>new york</literal>, <literal>big apple</literal>, <literal>nyc</literal>, <literal>gotham</literal>) or narrow the search to direct the user to some hot topic. There is some overlap in functionality between this feature and thesaurus dictionaries (<xref linkend=\"textsearch-thesaurus\"/>). However, you can modify a set of rewrite rules on-the-fly without reindexing, whereas updating a thesaurus requires reindexing to be effective."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1500(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1500(replaceable) 
 msgid "target"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1500(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1500(replaceable) 
 msgid "substitute"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1499(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1499(synopsis) 
 #, no-wrap
 msgid "\nts_rewrite (<placeholder-1/> <placeholder-2/>, <placeholder-3/> <placeholder-4/>, <placeholder-5/> <placeholder-6/>) returns <placeholder-7/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1505(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1505(para) 
 msgid "This form of <function>ts_rewrite</function> simply applies a single rewrite rule: <replaceable class=\"PARAMETER\">target</replaceable> is replaced by <replaceable class=\"PARAMETER\">substitute</replaceable> wherever it appears in <replaceable class=\"PARAMETER\">query</replaceable>. For example: <screen>\nSELECT ts_rewrite('a &amp; b'::tsquery, 'a'::tsquery, 'c'::tsquery);\n ts_rewrite\n------------\n 'b' &amp; 'c'\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1526(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1526(replaceable) 
 msgid "select"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1525(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1525(synopsis) 
 #, no-wrap
 msgid "\nts_rewrite (<placeholder-1/> <placeholder-2/>, <placeholder-3/> <placeholder-4/>) returns <placeholder-5/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1531(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1531(para) 
 msgid "This form of <function>ts_rewrite</function> accepts a starting <replaceable>query</replaceable> and a SQL <replaceable>select</replaceable> command, which is given as a text string. The <replaceable>select</replaceable> must yield two columns of <type>tsquery</type> type. For each row of the <replaceable>select</replaceable> result, occurrences of the first column value (the target) are replaced by the second column value (the substitute) within the current <replaceable>query</replaceable> value. For example: <screen>\nCREATE TABLE aliases (t tsquery PRIMARY KEY, s tsquery);\nINSERT INTO aliases VALUES('a', 'c');\n\nSELECT ts_rewrite('a &amp; b'::tsquery, 'SELECT t,s FROM aliases');\n ts_rewrite\n------------\n 'b' &amp; 'c'\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1551(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1551(para) 
 msgid "Note that when multiple rewrite rules are applied in this way, the order of application can be important; so in practice you will want the source query to <literal>ORDER BY</literal> some ordering key."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1561(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1561(para) 
 msgid "Let's consider a real-life astronomical example. We'll expand query <literal>supernovae</literal> using table-driven rewriting rules: <screen>\nCREATE TABLE aliases (t tsquery primary key, s tsquery);\nINSERT INTO aliases VALUES(to_tsquery('supernovae'), to_tsquery('supernovae|sn'));\n\nSELECT ts_rewrite(to_tsquery('supernovae &amp; crab'), 'SELECT * FROM aliases');\n           ts_rewrite            \n---------------------------------\n 'crab' &amp; ( 'supernova' | 'sn' )\n</screen> We can change the rewriting rules just by updating the table: <screen>\nUPDATE aliases\nSET s = to_tsquery('supernovae|sn &amp; !nebulae')\nWHERE t = to_tsquery('supernovae');\n\nSELECT ts_rewrite(to_tsquery('supernovae &amp; crab'), 'SELECT * FROM aliases');\n                 ts_rewrite                  \n---------------------------------------------\n 'crab' &amp; ( 'supernova' | 'sn' &amp; !'nebula' )\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1589(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1589(para) 
 msgid "Rewriting can be slow when there are many rewriting rules, since it checks every rule for a possible match. To filter out obvious non-candidate rules we can use the containment operators for the <type>tsquery</type> type. In the example below, we select only those rules which might match the original query: <screen>\nSELECT ts_rewrite('a &amp; b'::tsquery,\n                  'SELECT t,s FROM aliases WHERE ''a &amp; b''::tsquery @&gt; t');\n ts_rewrite\n------------\n 'b' &amp; 'c'\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1610(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:1610(title) 
 msgid "Triggers for Automatic Updates"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1613(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:1613(primary) 
 msgid "trigger"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1614(secondary) 
+#: /tmp/cicero-nhvx/textsearch.xml:1614(secondary) 
 msgid "for updating a derived tsvector column"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1617(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1617(para) 
 msgid "When using a separate column to store the <type>tsvector</type> representation of your documents, it is necessary to create a trigger to update the <type>tsvector</type> column when the document content columns change. Two built-in trigger functions are available for this, or you can write your own."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1626(replaceable) /tmp/cicero-alnp/textsearch.xml:1627(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1626(replaceable) /tmp/cicero-nhvx/textsearch.xml:1627(replaceable) 
 msgid "tsvector_column_name"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1626(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1626(replaceable) 
 msgid "config_name"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1626(replaceable) /tmp/cicero-alnp/textsearch.xml:1627(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1626(replaceable) /tmp/cicero-nhvx/textsearch.xml:1627(replaceable) 
 msgid "text_column_name"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1626(optional) /tmp/cicero-alnp/textsearch.xml:1627(optional) 
+#: /tmp/cicero-nhvx/textsearch.xml:1626(optional) /tmp/cicero-nhvx/textsearch.xml:1627(optional) 
 msgid ", ..."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1627(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1627(replaceable) 
 msgid "config_column_name"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1625(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1625(synopsis) 
 #, no-wrap
 msgid "\ntsvector_update_trigger(<placeholder-1/>, <placeholder-2/>, <placeholder-3/> <placeholder-4/>)\ntsvector_update_trigger_column(<placeholder-5/>, <placeholder-6/>, <placeholder-7/> <placeholder-8/>)\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1630(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1630(para) 
 msgid "These trigger functions automatically compute a <type>tsvector</type> column from one or more textual columns, under the control of parameters specified in the <command>CREATE TRIGGER</command> command. An example of their use is: <screen>\nCREATE TABLE messages (\n    title       text,\n    body        text,\n    tsv         tsvector\n);\n\nCREATE TRIGGER tsvectorupdate BEFORE INSERT OR UPDATE\nON messages FOR EACH ROW EXECUTE PROCEDURE\ntsvector_update_trigger(tsv, 'pg_catalog.english', title, body);\n\nINSERT INTO messages VALUES('title here', 'the body text is here');\n\nSELECT * FROM messages;\n   title    |         body          |            tsv             \n------------+-----------------------+----------------------------\n title here | the body text is here | 'bodi':4 'text':5 'titl':1\n\nSELECT title, body FROM messages WHERE tsv @@ to_tsquery('title &amp; body');\n   title    |         body          \n------------+-----------------------\n title here | the body text is here\n</screen> Having created this trigger, any change in <structfield>title</structfield> or <structfield>body</structfield> will automatically be reflected into <structfield>tsv</structfield>, without the application having to worry about it."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1665(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1665(para) 
 msgid "The first trigger argument must be the name of the <type>tsvector</type> column to be updated. The second argument specifies the text search configuration to be used to perform the conversion. For <function>tsvector_update_trigger</function>, the configuration name is simply given as the second trigger argument. It must be schema-qualified as shown above, so that the trigger behavior will not change with changes in <varname>search_path</varname>. For <function>tsvector_update_trigger_column</function>, the second trigger argument is the name of another table column, which must be of type <type>regconfig</type>. This allows a per-row selection of configuration to be made. The remaining argument(s) are the names of textual columns (of type <type>text</type>, <type>varchar</type>, or <type>char</type>). These will be included in the document in the order given. NULL values will be skipped (but the other columns will still be indexed)."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1689(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:1689(programlisting) 
 #, no-wrap
 msgid "\nCREATE FUNCTION messages_trigger() RETURNS trigger AS $$\nbegin\n  new.tsv :=\n     setweight(to_tsvector('pg_catalog.english', coalesce(new.title,'')), 'A') ||\n     setweight(to_tsvector('pg_catalog.english', coalesce(new.body,'')), 'D');\n  return new;\nend\n$$ LANGUAGE plpgsql;\n\nCREATE TRIGGER tsvectorupdate BEFORE INSERT OR UPDATE\n    ON messages FOR EACH ROW EXECUTE PROCEDURE messages_trigger();\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1682(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1682(para) 
 msgid "A limitation of these built-in triggers is that they treat all the input columns alike. To process columns differently — for example, to weight title differently from body — it is necessary to write a custom trigger. Here is an example using <application>PL/pgSQL</application> as the trigger language: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1704(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1704(para) 
 msgid "Keep in mind that it is important to specify the configuration name explicitly when creating <type>tsvector</type> values inside triggers, so that the column's contents will not be affected by changes to <varname>default_text_search_config</varname>. Failure to do this is likely to lead to problems such as search results changing after a dump and reload."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1715(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:1715(title) 
 msgid "Gathering Document Statistics"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1718(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:1718(primary) 
 msgid "ts_stat"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1721(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1721(para) 
 msgid "The function <function>ts_stat</function> is useful for checking your configuration and for finding stop-word candidates."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1727(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1727(replaceable) 
 msgid "sqlquery"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1728(replaceable) /tmp/cicero-alnp/textsearch.xml:1823(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1728(replaceable) /tmp/cicero-nhvx/textsearch.xml:1823(literal) 
 msgid "word"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1728(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1728(replaceable) 
 msgid "ndoc"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1729(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:1729(replaceable) 
 msgid "nentry"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1729(type) /tmp/cicero-alnp/textsearch.xml:3070(type) /tmp/cicero-alnp/textsearch.xml:3072(type) /tmp/cicero-alnp/textsearch.xml:3101(type) /tmp/cicero-alnp/textsearch.xml:3103(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:1729(type) /tmp/cicero-nhvx/textsearch.xml:3070(type) /tmp/cicero-nhvx/textsearch.xml:3072(type) /tmp/cicero-nhvx/textsearch.xml:3101(type) /tmp/cicero-nhvx/textsearch.xml:3103(type) 
 msgid "setof record"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1726(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:1726(synopsis) 
 #, no-wrap
 msgid "\nts_stat(<placeholder-1/> <placeholder-2/>, <placeholder-3/>\n        OUT <placeholder-4/> <placeholder-5/>, OUT <placeholder-6/> <placeholder-7/>,\n        OUT <placeholder-8/> <placeholder-9/>) returns <placeholder-10/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1741(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1741(para) 
 msgid "<replaceable>word</replaceable><type>text</type> — the value of a lexeme"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1746(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1746(para) 
 msgid "<replaceable>ndoc</replaceable><type>integer</type> — number of documents (<type>tsvector</type>s) the word occurred in"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1752(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1752(para) 
 msgid "<replaceable>nentry</replaceable><type>integer</type> — total number of occurrences of the word"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1732(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1732(para) 
 msgid "<replaceable>sqlquery</replaceable> is a text value containing an SQL query which must return a single <type>tsvector</type> column. <function>ts_stat</function> executes the query and returns statistics about each distinct lexeme (word) contained in the <type>tsvector</type> data. The columns returned are <placeholder-1/> If <replaceable>weights</replaceable> is supplied, only occurrences having one of those weights are counted."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1766(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:1766(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM ts_stat('SELECT vector FROM apod')\nORDER BY nentry DESC, ndoc DESC, word\nLIMIT 10;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1775(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:1775(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM ts_stat('SELECT vector FROM apod', 'ab')\nORDER BY nentry DESC, ndoc DESC, word\nLIMIT 10;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1763(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1763(para) 
 msgid "For example, to find the ten most frequent words in a document collection: <placeholder-1/> The same, but counting only word occurrences with weight <literal>A</literal> or <literal>B</literal>: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1787(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:1787(title) 
 msgid "Parsers"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1789(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1789(para) 
 msgid "Text search parsers are responsible for splitting raw document text into <firstterm>tokens</firstterm> and identifying each token's type, where the set of possible types is defined by the parser itself. Note that a parser does not modify the text at all — it simply identifies plausible word boundaries. Because of this limited scope, there is less need for application-specific custom parsers than there is for custom dictionaries. At present <productname>PostgreSQL</productname> provides just one built-in parser, which has been found to be useful for a wide range of applications."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1801(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1801(para) 
 msgid "The built-in parser is named <literal>pg_catalog.default</literal>. It recognizes 23 token types, shown in <xref linkend=\"textsearch-default-parser\"/>."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1807(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:1807(title) 
 msgid "Default Parser's Token Types"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1811(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1811(entry) 
 msgid "Alias"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1812(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1812(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1813(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1813(entry) 
 msgid "Example"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1818(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1818(literal) 
 msgid "asciiword"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1819(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1819(entry) 
 msgid "Word, all ASCII letters"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1820(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1820(literal) 
 msgid "elephant"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1824(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1824(entry) 
 msgid "Word, all letters"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1825(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1825(literal) 
 msgid "mañana"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1828(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1828(literal) 
 msgid "numword"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1829(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1829(entry) 
 msgid "Word, letters and digits"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1830(literal) /tmp/cicero-alnp/textsearch.xml:1861(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1830(literal) /tmp/cicero-nhvx/textsearch.xml:1861(literal) 
 msgid "beta1"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1833(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1833(literal) 
 msgid "asciihword"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1834(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1834(entry) 
 msgid "Hyphenated word, all ASCII"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1835(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1835(literal) 
 msgid "up-to-date"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1838(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1838(literal) 
 msgid "hword"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1839(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1839(entry) 
 msgid "Hyphenated word, all letters"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1840(literal) /tmp/cicero-alnp/textsearch.xml:1856(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1840(literal) /tmp/cicero-nhvx/textsearch.xml:1856(literal) 
 msgid "lógico-matemática"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1843(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1843(literal) 
 msgid "numhword"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1844(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1844(entry) 
 msgid "Hyphenated word, letters and digits"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1845(literal) /tmp/cicero-alnp/textsearch.xml:1850(literal) /tmp/cicero-alnp/textsearch.xml:1862(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1845(literal) /tmp/cicero-nhvx/textsearch.xml:1850(literal) /tmp/cicero-nhvx/textsearch.xml:1862(literal) 
 msgid "postgresql-beta1"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1848(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1848(literal) 
 msgid "hword_asciipart"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1849(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1849(entry) 
 msgid "Hyphenated word part, all ASCII"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1850(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1850(literal) 
 msgid "postgresql"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1850(entry) /tmp/cicero-alnp/textsearch.xml:1861(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1850(entry) /tmp/cicero-nhvx/textsearch.xml:1861(entry) 
 msgid "<placeholder-1/> in the context <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1853(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1853(literal) 
 msgid "hword_part"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1854(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1854(entry) 
 msgid "Hyphenated word part, all letters"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1855(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1855(literal) 
 msgid "lógico"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1855(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1855(literal) 
 msgid "matemática"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1855(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1855(entry) 
 msgid "<placeholder-1/> or <placeholder-2/> in the context <placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1859(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1859(literal) 
 msgid "hword_numpart"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1860(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1860(entry) 
 msgid "Hyphenated word part, letters and digits"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1865(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1865(literal) 
 msgid "email"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1866(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1866(entry) 
 msgid "Email address"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1867(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1867(literal) 
 msgid "foo@example.com"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1870(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1870(literal) 
 msgid "protocol"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1871(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1871(entry) 
 msgid "Protocol head"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1872(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1872(literal) 
 msgid "http://"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1875(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1875(literal) 
 msgid "url"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1876(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1876(entry) 
 msgid "URL"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1877(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1877(literal) 
 msgid "example.com/stuff/index.html"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1880(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1880(literal) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1881(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1881(entry) 
 msgid "Host"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1882(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1882(literal) 
 msgid "example.com"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1885(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1885(literal) 
 msgid "url_path"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1886(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1886(entry) 
 msgid "URL path"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1887(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1887(literal) 
 msgid "/stuff/index.html"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1887(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1887(entry) 
 msgid "<placeholder-1/>, in the context of a URL"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1890(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1890(literal) 
 msgid "file"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1891(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1891(entry) 
 msgid "File or path name"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1892(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1892(literal) 
 msgid "/usr/local/foo.txt"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1892(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1892(entry) 
 msgid "<placeholder-1/>, if not within a URL"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1895(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1895(literal) 
 msgid "sfloat"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1896(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1896(entry) 
 msgid "Scientific notation"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1897(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1897(literal) 
 msgid "-1.234e56"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1900(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1900(literal) 
 msgid "float"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1901(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1901(entry) 
 msgid "Decimal notation"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1902(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1902(literal) 
 msgid "-1.234"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1905(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1905(literal) 
 msgid "int"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1906(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1906(entry) 
 msgid "Signed integer"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1907(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1907(literal) 
 msgid "-1234"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1910(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1910(literal) 
 msgid "uint"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1911(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1911(entry) 
 msgid "Unsigned integer"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1912(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1912(literal) 
 msgid "1234"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1915(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1915(literal) 
 msgid "version"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1916(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1916(entry) 
 msgid "Version number"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1917(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1917(literal) 
 msgid "8.3.0"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1920(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1920(literal) 
 msgid "tag"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1921(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1921(entry) 
 msgid "XML tag"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1922(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1922(literal) 
 msgid "&lt;a href=\"dictionaries.html\"&gt;"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1925(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1925(literal) 
 msgid "entity"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1926(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1926(entry) 
 msgid "XML entity"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1927(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1927(literal) 
 msgid "&amp;amp;"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1930(literal) 
+#: /tmp/cicero-nhvx/textsearch.xml:1930(literal) 
 msgid "blank"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1931(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1931(entry) 
 msgid "Space symbols"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1932(entry) 
+#: /tmp/cicero-nhvx/textsearch.xml:1932(entry) 
 msgid "(any whitespace or punctuation not otherwise recognized)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1939(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1939(para) 
 msgid "The parser's notion of a <quote>letter</quote> is determined by the database's locale setting, specifically <varname>lc_ctype</varname>. Words containing only the basic ASCII letters are reported as a separate token type, since it is sometimes useful to distinguish them. In most European languages, token types <literal>word</literal> and <literal>asciiword</literal> should be treated alike."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1948(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1948(para) 
 msgid "<literal>email</literal> does not support all valid email characters as defined by RFC 5322. Specifically, the only non-alphanumeric characters supported for email user names are period, dash, and underscore."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1956(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1956(para) 
 msgid "It is possible for the parser to produce overlapping tokens from the same piece of text. As an example, a hyphenated word will be reported both as the entire word and as each component: <screen>\nSELECT alias, description, token FROM ts_debug('foo-bar-beta1');\n      alias      |               description                |     token     \n-----------------+------------------------------------------+---------------\n numhword        | Hyphenated word, letters and digits      | foo-bar-beta1\n hword_asciipart | Hyphenated word part, all ASCII          | foo\n blank           | Space symbols                            | -\n hword_asciipart | Hyphenated word part, all ASCII          | bar\n blank           | Space symbols                            | -\n hword_numpart   | Hyphenated word part, letters and digits | beta1\n</screen> This behavior is desirable since it allows searches to work for both the whole compound word and for components. Here is another instructive example: <screen>\nSELECT alias, description, token FROM ts_debug('http://example.com/stuff/index.html');\n  alias   |  description  |            token             \n----------+---------------+------------------------------\n protocol | Protocol head | http://\n url      | URL           | example.com/stuff/index.html\n host     | Host          | example.com\n url_path | URL path      | /stuff/index.html\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1991(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:1991(title) 
 msgid "Dictionaries"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:1993(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:1993(para) 
 msgid "Dictionaries are used to eliminate words that should not be considered in a search (<firstterm>stop words</firstterm>), and to <firstterm>normalize</firstterm> words so that different derived forms of the same word will match. A successfully normalized word is called a <firstterm>lexeme</firstterm>. Aside from improving search quality, normalization and removal of stop words reduce the size of the <type>tsvector</type> representation of a document, thereby improving performance. Normalization does not always have linguistic meaning and usually depends on application semantics."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2010(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2010(para) 
 msgid "Linguistic - Ispell dictionaries try to reduce input words to a normalized form; stemmer dictionaries remove word endings"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2022(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2022(para) 
 msgid "http://www.pgsql.ru/db/mw/index.html"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2027(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2027(para) 
 msgid "http://www.pgsql.ru/db/mw/"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2032(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2032(para) 
 msgid "http://www.pgsql.ru/db/../db/mw/index.html"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2016(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2016(para) 
 msgid "<acronym>URL</acronym> locations can be canonicalized to make equivalent URLs match: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2040(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2040(para) 
 msgid "Color names can be replaced by their hexadecimal values, e.g., <literal>red, green, blue, magenta -&gt; FF0000, 00FF00, 0000FF, FF00FF</literal>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2046(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2046(para) 
 msgid "If indexing numbers, we can remove some fractional digits to reduce the range of possible numbers, so for example <emphasis>3.14</emphasis>159265359, <emphasis>3.14</emphasis>15926, <emphasis>3.14</emphasis> will be the same after normalization if only two digits are kept after the decimal point."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2004(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2004(para) 
 msgid "Some examples of normalization: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2063(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2063(para) 
 msgid "an array of lexemes if the input token is known to the dictionary (notice that one token can produce more than one lexeme)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2069(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2069(para) 
 msgid "a single lexeme with the <literal>TSL_FILTER</literal> flag set, to replace the original token with a new token to be passed to subsequent dictionaries (a dictionary that does this is called a <firstterm>filtering dictionary</firstterm>)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2077(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2077(para) 
 msgid "an empty array if the dictionary knows the token, but it is a stop word"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2082(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2082(para) 
 msgid "<literal>NULL</literal> if the dictionary does not recognize the input token"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2058(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2058(para) 
 msgid "A dictionary is a program that accepts a token as input and returns: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2089(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2089(para) 
 msgid "<productname>PostgreSQL</productname> provides predefined dictionaries for many languages. There are also several predefined templates that can be used to create new dictionaries with custom parameters. Each predefined dictionary template is described below. If no existing template is suitable, it is possible to create new ones; see the <filename>contrib/</filename> area of the <productname>PostgreSQL</productname> distribution for examples."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2099(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2099(para) 
 msgid "A text search configuration binds a parser together with a set of dictionaries to process the parser's output tokens. For each token type that the parser can return, a separate list of dictionaries is specified by the configuration. When a token of that type is found by the parser, each dictionary in the list is consulted in turn, until some dictionary recognizes it as a known word. If it is identified as a stop word, or if no dictionary recognizes the token, it will be discarded and not indexed or searched for. Normally, the first dictionary that returns a non-<literal>NULL</literal> output determines the result, and any remaining dictionaries are not consulted; but a filtering dictionary can replace the given word with a modified word, which is then passed to subsequent dictionaries."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2125(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2125(programlisting) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH CONFIGURATION astro_en\n    ADD MAPPING FOR asciiword WITH astrosyn, english_ispell, english_stem;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2114(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2114(para) 
 msgid "The general rule for configuring a list of dictionaries is to place first the most narrow, most specific dictionary, then the more general dictionaries, finishing with a very general dictionary, like a <application>Snowball</application> stemmer or <literal>simple</literal>, which recognizes everything. For example, for an astronomy-specific search (<literal>astro_en</literal> configuration) one could bind token type <type>asciiword</type> (ASCII word) to a synonym dictionary of astronomical terms, a general English dictionary and a <application>Snowball</application> English stemmer: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2131(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2131(para) 
 msgid "A filtering dictionary can be placed anywhere in the list, except at the end where it'd be useless. Filtering dictionaries are useful to partially normalize words to simplify the task of later dictionaries. For example, a filtering dictionary could be used to remove accents from accented letters, as is done by the <xref linkend=\"unaccent\"/> module."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2140(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:2140(title) 
 msgid "Stop Words"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2142(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2142(para) 
 msgid "Stop words are words that are very common, appear in almost every document, and have no discrimination value. Therefore, they can be ignored in the context of full text searching. For example, every English text contains words like <literal>a</literal> and <literal>the</literal>, so it is useless to store them in an index. However, stop words do affect the positions in <type>tsvector</type>, which in turn affect ranking: <screen>\nSELECT to_tsvector('english','in the list of stop words');\n        to_tsvector\n----------------------------\n 'list':3 'stop':5 'word':6\n</screen> The missing positions 1,2,4 are because of stop words. Ranks calculated for documents with and without stop words are quite different: <screen>\nSELECT ts_rank_cd (to_tsvector('english','in the list of stop words'), to_tsquery('list &amp; stop'));\n ts_rank_cd\n------------\n       0.05\n\nSELECT ts_rank_cd (to_tsvector('english','list stop words'), to_tsquery('list &amp; stop'));\n ts_rank_cd\n------------\n        0.1\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2174(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2174(para) 
 msgid "It is up to the specific dictionary how it treats stop words. For example, <literal>ispell</literal> dictionaries first normalize words and then look at the list of stop words, while <literal>Snowball</literal> stemmers first check the list of stop words. The reason for the different behavior is an attempt to decrease noise."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2185(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:2185(title) 
 msgid "Simple Dictionary"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2187(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2187(para) 
 msgid "The <literal>simple</literal> dictionary template operates by converting the input token to lower case and checking it against a file of stop words. If it is found in the file then an empty array is returned, causing the token to be discarded. If not, the lower-cased form of the word is returned as the normalized lexeme. Alternatively, the dictionary can be configured to report non-stop-words as unrecognized, allowing them to be passed on to the next dictionary in the list."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2201(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2201(programlisting) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH DICTIONARY public.simple_dict (\n    TEMPLATE = pg_catalog.simple,\n    STOPWORDS = english\n);\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2197(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2197(para) 
 msgid "Here is an example of a dictionary definition using the <literal>simple</literal> template: <placeholder-1/> Here, <literal>english</literal> is the base name of a file of stop words. The file's full name will be <filename>$SHAREDIR/tsearch_data/english.stop</filename>, where <literal>$SHAREDIR</literal> means the <productname>PostgreSQL</productname> installation's shared-data directory, often <filename>/usr/local/share/postgresql</filename> (use <command>pg_config --sharedir</command> to determine it if you're not sure). The file format is simply a list of words, one per line. Blank lines and trailing spaces are ignored, and upper case is folded to lower case, but no other processing is done on the file contents."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2221(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2221(para) 
 msgid "Now we can test our dictionary: <screen>\nSELECT ts_lexize('public.simple_dict','YeS');\n ts_lexize\n-----------\n {yes}\n\nSELECT ts_lexize('public.simple_dict','The');\n ts_lexize\n-----------\n {}\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2237(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2237(para) 
 msgid "We can also choose to return <literal>NULL</literal>, instead of the lower-cased word, if it is not found in the stop words file. This behavior is selected by setting the dictionary's <literal>Accept</literal> parameter to <literal>false</literal>. Continuing the example: <screen>\nALTER TEXT SEARCH DICTIONARY public.simple_dict ( Accept = false );\n\nSELECT ts_lexize('public.simple_dict','YeS');\n ts_lexize\n-----------\n\n\nSELECT ts_lexize('public.simple_dict','The');\n ts_lexize\n-----------\n {}\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2258(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2258(para) 
 msgid "With the default setting of <literal>Accept</literal> = <literal>true</literal>, it is only useful to place a <literal>simple</literal> dictionary at the end of a list of dictionaries, since it will never pass on any token to a following dictionary. Conversely, <literal>Accept</literal> = <literal>false</literal> is only useful when there is at least one following dictionary."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2267(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2267(para) 
 msgid "Most types of dictionaries rely on configuration files, such as files of stop words. These files <emphasis>must</emphasis> be stored in UTF-8 encoding. They will be translated to the actual database encoding, if that is different, when they are read into the server."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2276(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2276(para) 
 msgid "Normally, a database session will read a dictionary configuration file only once, when it is first used within the session. If you modify a configuration file and want to force existing sessions to pick up the new contents, issue an <command>ALTER TEXT SEARCH DICTIONARY</command> command on the dictionary. This can be a <quote>dummy</quote> update that doesn't actually change any parameter values."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2289(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:2289(title) 
 msgid "Synonym Dictionary"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2291(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2291(para) 
 msgid "This dictionary template is used to create dictionaries that replace a word with a synonym. Phrases are not supported (use the thesaurus template (<xref linkend=\"textsearch-thesaurus\"/>) for that). A synonym dictionary can be used to overcome linguistic problems, for example, to prevent an English stemmer dictionary from reducing the word 'Paris' to 'pari'. It is enough to have a <literal>Paris paris</literal> line in the synonym dictionary and put it before the <literal>english_stem</literal> dictionary. For example: <screen>\nSELECT * FROM ts_debug('english', 'Paris');\n   alias   |   description   | token |  dictionaries  |  dictionary  | lexemes \n-----------+-----------------+-------+----------------+--------------+---------\n asciiword | Word, all ASCII | Paris | {english_stem} | english_stem | {pari}\n\nCREATE TEXT SEARCH DICTIONARY my_synonym (\n    TEMPLATE = synonym,\n    SYNONYMS = my_synonyms\n);\n\nALTER TEXT SEARCH CONFIGURATION english\n    ALTER MAPPING FOR asciiword\n    WITH my_synonym, english_stem;\n\nSELECT * FROM ts_debug('english', 'Paris');\n   alias   |   description   | token |       dictionaries        | dictionary | lexemes \n-----------+-----------------+-------+---------------------------+------------+---------\n asciiword | Word, all ASCII | Paris | {my_synonym,english_stem} | my_synonym | {paris}\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2323(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2323(para) 
 msgid "The only parameter required by the <literal>synonym</literal> template is <literal>SYNONYMS</literal>, which is the base name of its configuration file — <literal>my_synonyms</literal> in the above example. The file's full name will be <filename>$SHAREDIR/tsearch_data/my_synonyms.syn</filename> (where <literal>$SHAREDIR</literal> means the <productname>PostgreSQL</productname> installation's shared-data directory). The file format is just one line per word to be substituted, with the word followed by its synonym, separated by white space. Blank lines and trailing spaces are ignored."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2336(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2336(para) 
 msgid "The <literal>synonym</literal> template also has an optional parameter <literal>CaseSensitive</literal>, which defaults to <literal>false</literal>. When <literal>CaseSensitive</literal> is <literal>false</literal>, words in the synonym file are folded to lower case, as are input tokens. When it is <literal>true</literal>, words and tokens are not folded to lower case, but are compared as-is."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2355(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2355(programlisting) 
 #, no-wrap
 msgid "\npostgres        pgsql\npostgresql      pgsql\npostgre pgsql\ngogle   googl\nindices index*\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2345(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2345(para) 
 msgid "An asterisk (<literal>*</literal>) can be placed at the end of a synonym in the configuration file. This indicates that the synonym is a prefix. The asterisk is ignored when the entry is used in <function>to_tsvector()</function>, but when it is used in <function>to_tsquery()</function>, the result will be a query item with the prefix match marker (see <xref linkend=\"textsearch-parsing-queries\"/>). For example, suppose we have these entries in <filename>$SHAREDIR/tsearch_data/synonym_sample.syn</filename>: <placeholder-1/> Then we will get these results: <screen>\nmydb=# CREATE TEXT SEARCH DICTIONARY syn (template=synonym, synonyms='synonym_sample');\nmydb=# SELECT ts_lexize('syn','indices');\n ts_lexize\n-----------\n {index}\n(1 row)\n\nmydb=# CREATE TEXT SEARCH CONFIGURATION tst (copy=simple);\nmydb=# ALTER TEXT SEARCH CONFIGURATION tst ALTER MAPPING FOR asciiword WITH syn;\nmydb=# SELECT to_tsvector('tst','indices');\n to_tsvector\n-------------\n 'index':1\n(1 row)\n\nmydb=# SELECT to_tsquery('tst','indices');\n to_tsquery\n------------\n 'index':*\n(1 row)\n\nmydb=# SELECT 'indexes are very useful'::tsvector;\n            tsvector             \n---------------------------------\n 'are' 'indexes' 'useful' 'very'\n(1 row)\n\nmydb=# SELECT 'indexes are very useful'::tsvector @@ to_tsquery('tst','indices');\n ?column?\n----------\n t\n(1 row)\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2401(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:2401(title) 
 msgid "Thesaurus Dictionary"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2403(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2403(para) 
 msgid "A thesaurus dictionary (sometimes abbreviated as <acronym>TZ</acronym>) is a collection of words that includes information about the relationships of words and phrases, i.e., broader terms (<acronym>BT</acronym>), narrower terms (<acronym>NT</acronym>), preferred terms, non-preferred terms, related terms, etc."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2419(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2419(programlisting) 
 #, no-wrap
 msgid "\n# this is a comment\nsample word(s) : indexed word(s)\nmore sample word(s) : more indexed word(s)\n...\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2411(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2411(para) 
 msgid "Basically a thesaurus dictionary replaces all non-preferred terms by one preferred term and, optionally, preserves the original terms for indexing as well. <productname>PostgreSQL</productname>'s current implementation of the thesaurus dictionary is an extension of the synonym dictionary with added <firstterm>phrase</firstterm> support. A thesaurus dictionary requires a configuration file of the following format: <placeholder-1/> where the colon (<symbol>:</symbol>) symbol acts as a delimiter between a a phrase and its replacement."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2430(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2430(para) 
 msgid "A thesaurus dictionary uses a <firstterm>subdictionary</firstterm> (which is specified in the dictionary's configuration) to normalize the input text before checking for phrase matches. It is only possible to select one subdictionary. An error is reported if the subdictionary fails to recognize a word. In that case, you should remove the use of the word or teach the subdictionary about it. You can place an asterisk (<symbol>*</symbol>) at the beginning of an indexed word to skip applying the subdictionary to it, but all sample words <emphasis>must</emphasis> be known to the subdictionary."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2442(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2442(para) 
 msgid "The thesaurus dictionary chooses the longest match if there are multiple phrases matching the input, and ties are broken by using the last definition."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2454(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2454(programlisting) 
 #, no-wrap
 msgid "\n? one ? two : swsw\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2448(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2448(para) 
 msgid "Specific stop words recognized by the subdictionary cannot be specified; instead use <literal>?</literal> to mark the location where any stop word can appear. For example, assuming that <literal>a</literal> and <literal>the</literal> are stop words according to the subdictionary: <placeholder-1/> matches <literal>a one the two</literal> and <literal>the one a two</literal>; both would be replaced by <literal>swsw</literal>."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2462(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2462(para) 
 msgid "Since a thesaurus dictionary has the capability to recognize phrases it must remember its state and interact with the parser. A thesaurus dictionary uses these assignments to check if it should handle the next word or stop accumulation. The thesaurus dictionary must be configured carefully. For example, if the thesaurus dictionary is assigned to handle only the <literal>asciiword</literal> token, then a thesaurus dictionary definition like <literal>one 7</literal> will not work since token type <literal>uint</literal> is not assigned to the thesaurus dictionary."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2474(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2474(para) 
 msgid "Thesauruses are used during indexing so any change in the thesaurus dictionary's parameters <emphasis>requires</emphasis> reindexing. For most other dictionary types, small changes such as adding or removing stopwords does not force reindexing."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2483(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:2483(title) 
 msgid "Thesaurus Configuration"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2489(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2489(programlisting) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH DICTIONARY thesaurus_simple (\n    TEMPLATE = thesaurus,\n    DictFile = mythesaurus,\n    Dictionary = pg_catalog.english_stem\n);\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2500(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2500(para) 
 msgid "<literal>thesaurus_simple</literal> is the new dictionary's name"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2505(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2505(para) 
 msgid "<literal>mythesaurus</literal> is the base name of the thesaurus configuration file. (Its full name will be <filename>$SHAREDIR/tsearch_data/mythesaurus.ths</filename>, where <literal>$SHAREDIR</literal> means the installation shared-data directory.)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2514(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2514(para) 
 msgid "<literal>pg_catalog.english_stem</literal> is the subdictionary (here, a Snowball English stemmer) to use for thesaurus normalization. Notice that the subdictionary will have its own configuration (for example, stop words), which is not shown here."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2526(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2526(programlisting) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH CONFIGURATION russian\n    ALTER MAPPING FOR asciiword, asciihword, hword_asciipart\n    WITH thesaurus_simple;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2485(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2485(para) 
 msgid "To define a new thesaurus dictionary, use the <literal>thesaurus</literal> template. For example: <placeholder-1/> Here: <placeholder-2/> Now it is possible to bind the thesaurus dictionary <literal>thesaurus_simple</literal> to the desired token types in a configuration, for example: <placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2536(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:2536(title) 
 msgid "Thesaurus Example"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2542(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2542(programlisting) 
 #, no-wrap
 msgid "\nsupernovae stars : sn\ncrab nebulae : crab\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2550(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2550(programlisting) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH DICTIONARY thesaurus_astro (\n    TEMPLATE = thesaurus,\n    DictFile = thesaurus_astro,\n    Dictionary = english_stem\n);\n\nALTER TEXT SEARCH CONFIGURATION russian\n    ALTER MAPPING FOR asciiword, asciihword, hword_asciipart\n    WITH thesaurus_astro, english_stem;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2538(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2538(para) 
 msgid "Consider a simple astronomical thesaurus <literal>thesaurus_astro</literal>, which contains some astronomical word combinations: <placeholder-1/> Below we create a dictionary and bind some token types to an astronomical thesaurus and English stemmer: <placeholder-2/> Now we can see how it works. <function>ts_lexize</function> is not very useful for testing a thesaurus, because it treats its input as a single token. Instead we can use <function>plainto_tsquery</function> and <function>to_tsvector</function> which will break their input strings into multiple tokens: <screen>\nSELECT plainto_tsquery('supernova star');\n plainto_tsquery\n-----------------\n 'sn'\n\nSELECT to_tsvector('supernova star');\n to_tsvector\n-------------\n 'sn':1\n</screen> In principle, one can use <function>to_tsquery</function> if you quote the argument: <screen>\nSELECT to_tsquery('''supernova star''');\n to_tsquery\n------------\n 'sn'\n</screen> Notice that <literal>supernova star</literal> matches <literal>supernovae stars</literal> in <literal>thesaurus_astro</literal> because we specified the <literal>english_stem</literal> stemmer in the thesaurus definition. The stemmer removed the <literal>e</literal> and <literal>s</literal>."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2596(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2596(para) 
 msgid "To index the original phrase as well as the substitute, just include it in the right-hand part of the definition: <screen>\nsupernovae stars : sn supernovae stars\n\nSELECT plainto_tsquery('supernova star');\n       plainto_tsquery\n-----------------------------\n 'sn' &amp; 'supernova' &amp; 'star'\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2615(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:2615(title) 
 msgid "<application>Ispell</application> Dictionary"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2617(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2617(para) 
 msgid "The <application>Ispell</application> dictionary template supports <firstterm>morphological dictionaries</firstterm>, which can normalize many different linguistic forms of a word into the same lexeme. For example, an English <application>Ispell</application> dictionary can match all declensions and conjugations of the search term <literal>bank</literal>, e.g., <literal>banking</literal>, <literal>banked</literal>, <literal>banks</literal>, <literal>banks'</literal>, and <literal>bank's</literal>."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2627(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2627(para) 
 msgid "The standard <productname>PostgreSQL</productname> distribution does not include any <application>Ispell</application> configuration files. Dictionaries for a large number of languages are available from <ulink url=\"http://ficus-www.cs.ucla.edu/geoff/ispell.html\">Ispell</ulink>. Also, some more modern dictionary file formats are supported — <ulink url=\"http://en.wikipedia.org/wiki/MySpell\">MySpell</ulink> (OO &lt; 2.0.1) and <ulink url=\"http://sourceforge.net/projects/hunspell/\">Hunspell</ulink> (OO &gt;= 2.0.2). A large list of dictionaries is available on the <ulink url=\"http://wiki.services.openoffice.org/wiki/Dictionaries\">OpenOffice Wiki</ulink>."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2640(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2640(para) 
 msgid "To create an <application>Ispell</application> dictionary, use the built-in <literal>ispell</literal> template and specify several parameters:"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2645(programlisting) /tmp/cicero-alnp/textsearch.xml:2800(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2645(programlisting) /tmp/cicero-nhvx/textsearch.xml:2800(programlisting) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH DICTIONARY english_ispell (\n    TEMPLATE = ispell,\n    DictFile = english,\n    AffFile = english,\n    StopWords = english\n);\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2654(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2654(para) 
 msgid "Here, <literal>DictFile</literal>, <literal>AffFile</literal>, and <literal>StopWords</literal> specify the base names of the dictionary, affixes, and stop-words files. The stop-words file has the same format explained above for the <literal>simple</literal> dictionary type. The format of the other files is not specified here but is available from the above-mentioned web sites."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2662(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2662(para) 
 msgid "Ispell dictionaries usually recognize a limited set of words, so they should be followed by another broader dictionary; for example, a Snowball dictionary, which recognizes everything."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2675(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2675(programlisting) 
 #, no-wrap
 msgid "\ncompoundwords  controlled z\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2681(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2681(programlisting) 
 #, no-wrap
 msgid "\nSELECT ts_lexize('norwegian_ispell', 'overbuljongterningpakkmesterassistent');\n   {over,buljong,terning,pakk,mester,assistent}\nSELECT ts_lexize('norwegian_ispell', 'sjokoladefabrikk');\n   {sjokoladefabrikk,sjokolade,fabrikk}\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2668(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2668(para) 
 msgid "Ispell dictionaries support splitting compound words; a useful feature. Notice that the affix file should specify a special flag using the <literal>compoundwords controlled</literal> statement that marks dictionary words that can participate in compound formation: <placeholder-1/> Here are some examples for the Norwegian language: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2690(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2690(para) 
 msgid "<application>MySpell</application> does not support compound words. <application>Hunspell</application> has sophisticated support for compound words. At present, <productname>PostgreSQL</productname> implements only the basic compound word operations of Hunspell."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2701(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:2701(title) 
 msgid "<application>Snowball</application> Dictionary"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2717(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2717(programlisting) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH DICTIONARY english_stem (\n    TEMPLATE = snowball,\n    Language = english,\n    StopWords = english\n);\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2703(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2703(para) 
 msgid "The <application>Snowball</application> dictionary template is based on a project by Martin Porter, inventor of the popular Porter's stemming algorithm for the English language. Snowball now provides stemming algorithms for many languages (see the <ulink url=\"http://snowball.tartarus.org\">Snowball site</ulink> for more information). Each algorithm understands how to reduce common variant forms of words to a base, or stem, spelling within its language. A Snowball dictionary requires a <literal>language</literal> parameter to identify which stemmer to use, and optionally can specify a <literal>stopword</literal> file name that gives a list of words to eliminate. (<productname>PostgreSQL</productname>'s standard stopword lists are also provided by the Snowball project.) For example, there is a built-in definition equivalent to <placeholder-1/> The stopword file format is the same as already explained."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2728(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2728(para) 
 msgid "A <application>Snowball</application> dictionary recognizes everything, whether or not it is able to simplify the word, so it should be placed at the end of the dictionary list. It is useless to have it before any other dictionary because a token will never pass through it to the next dictionary."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2741(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:2741(title) 
 msgid "Configuration Example"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2743(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2743(para) 
 msgid "A text search configuration specifies all options necessary to transform a document into a <type>tsvector</type>: the parser to use to break text into tokens, and the dictionaries to use to transform each token into a lexeme. Every call of <function>to_tsvector</function> or <function>to_tsquery</function> needs a text search configuration to perform its processing. The configuration parameter <xref linkend=\"guc-default-text-search-config\"/> specifies the name of the default configuration, which is the one used by text search functions if an explicit configuration parameter is omitted. It can be set in <filename>postgresql.conf</filename>, or set for an individual session using the <command>SET</command> command."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2759(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2759(para) 
 msgid "Several predefined text search configurations are available, and you can create custom configurations easily. To facilitate management of text search objects, a set of <acronym>SQL</acronym> commands is available, and there are several <application>psql</application> commands that display information about text search objects (<xref linkend=\"textsearch-psql\"/>)."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2772(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2772(programlisting) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH CONFIGURATION public.pg ( COPY = pg_catalog.english );\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2767(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2767(para) 
 msgid "As an example we will create a configuration <literal>pg</literal>, starting by duplicating the built-in <literal>english</literal> configuration: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2782(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2782(programlisting) 
 #, no-wrap
 msgid "\npostgres    pg\npgsql       pg\npostgresql  pg\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2790(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2790(programlisting) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH DICTIONARY pg_dict (\n    TEMPLATE = synonym,\n    SYNONYMS = pg_dict\n);\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2812(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2812(programlisting) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH CONFIGURATION pg\n    ALTER MAPPING FOR asciiword, asciihword, hword_asciipart,\n                      word, hword, hword_part\n    WITH pg_dict, english_ispell, english_stem;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2822(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2822(programlisting) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH CONFIGURATION pg\n    DROP MAPPING FOR email, url, url_path, sfloat, float;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2777(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2777(para) 
 msgid "We will use a PostgreSQL-specific synonym list and store it in <filename>$SHAREDIR/tsearch_data/pg_dict.syn</filename>. The file contents look like: <placeholder-1/> We define the synonym dictionary like this: <placeholder-2/> Next we register the <productname>Ispell</productname> dictionary <literal>english_ispell</literal>, which has its own configuration files: <placeholder-3/> Now we can set up the mappings for words in configuration <literal>pg</literal>: <placeholder-4/> We choose not to index or search some token types that the built-in configuration does handle: <placeholder-5/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2831(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2831(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM ts_debug('public.pg', '\nPostgreSQL, the highly scalable, SQL compliant, open source object-relational\ndatabase management system, is now undergoing beta testing of the next\nversion of our software.\n');\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2828(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2828(para) 
 msgid "Now we can test our configuration: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2840(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2840(para) 
 msgid "The next step is to set the session to use the new configuration, which was created in the <literal>public</literal> schema: <screen>\n=&gt; \\dF\n   List of text search configurations\n Schema  | Name | Description\n---------+------+-------------\n public  | pg   |\n\nSET default_text_search_config = 'public.pg';\nSET\n\nSHOW default_text_search_config;\n default_text_search_config\n----------------------------\n public.pg\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2864(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:2864(title) 
 msgid "Testing and Debugging Text Search"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2866(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2866(para) 
 msgid "The behavior of a custom text search configuration can easily become confusing. The functions described in this section are useful for testing text search objects. You can test a complete configuration, or test parsers and dictionaries separately."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2874(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:2874(title) 
 msgid "Configuration Testing"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2876(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2876(para) 
 msgid "The function <function>ts_debug</function> allows easy testing of a text search configuration."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2882(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:2882(primary) 
 msgid "ts_debug"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2887(replaceable) /tmp/cicero-alnp/textsearch.xml:3101(replaceable) /tmp/cicero-alnp/textsearch.xml:3103(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:2887(replaceable) /tmp/cicero-nhvx/textsearch.xml:3101(replaceable) /tmp/cicero-nhvx/textsearch.xml:3103(replaceable) 
 msgid "alias"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2888(replaceable) /tmp/cicero-alnp/textsearch.xml:3101(replaceable) /tmp/cicero-alnp/textsearch.xml:3103(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:2888(replaceable) /tmp/cicero-nhvx/textsearch.xml:3101(replaceable) /tmp/cicero-nhvx/textsearch.xml:3103(replaceable) 
 msgid "description"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2889(replaceable) /tmp/cicero-alnp/textsearch.xml:3070(replaceable) /tmp/cicero-alnp/textsearch.xml:3072(replaceable) /tmp/cicero-alnp/textsearch.xml:3158(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:2889(replaceable) /tmp/cicero-nhvx/textsearch.xml:3070(replaceable) /tmp/cicero-nhvx/textsearch.xml:3072(replaceable) /tmp/cicero-nhvx/textsearch.xml:3158(replaceable) 
 msgid "token"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2890(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:2890(replaceable) 
 msgid "dictionaries"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2890(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:2890(type) 
 msgid "regdictionary[]"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2891(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:2891(replaceable) 
 msgid "dictionary"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2891(type) /tmp/cicero-alnp/textsearch.xml:3158(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:2891(type) /tmp/cicero-nhvx/textsearch.xml:3158(type) 
 msgid "regdictionary"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2892(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:2892(replaceable) 
 msgid "lexemes"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2892(type) /tmp/cicero-alnp/textsearch.xml:3158(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:2892(type) /tmp/cicero-nhvx/textsearch.xml:3158(type) 
 msgid "text[]"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2885(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:2885(synopsis) 
 #, no-wrap
 msgid "\nts_debug(<placeholder-1/> <placeholder-2/> <placeholder-3/>,\n         OUT <placeholder-4/> <placeholder-5/>,\n         OUT <placeholder-6/> <placeholder-7/>,\n         OUT <placeholder-8/> <placeholder-9/>,\n         OUT <placeholder-10/> <placeholder-11/>,\n         OUT <placeholder-12/> <placeholder-13/>,\n         OUT <placeholder-14/> <placeholder-15/>)\n         returns setof record\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2896(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2896(para) 
 msgid "<function>ts_debug</function> displays information about every token of <replaceable class=\"PARAMETER\">document</replaceable> as produced by the parser and processed by the configured dictionaries. It uses the configuration specified by <replaceable class=\"PARAMETER\">config</replaceable>, or <varname>default_text_search_config</varname> if that argument is omitted."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2912(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2912(para) 
 msgid "<replaceable>alias</replaceable><type>text</type> — short name of the token type"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2917(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2917(para) 
 msgid "<replaceable>description</replaceable><type>text</type> — description of the token type"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2923(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2923(para) 
 msgid "<replaceable>token</replaceable><type>text</type> — text of the token"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2928(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2928(para) 
 msgid "<replaceable>dictionaries</replaceable><type>regdictionary[]</type> — the dictionaries selected by the configuration for this token type"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2934(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2934(para) 
 msgid "<replaceable>dictionary</replaceable><type>regdictionary</type> — the dictionary that recognized the token, or <literal>NULL</literal> if none did"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2940(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2940(para) 
 msgid "<replaceable>lexemes</replaceable><type>text[]</type> — the lexeme(s) produced by the dictionary that recognized the token, or <literal>NULL</literal> if none did; an empty array (<literal>{}</literal>) means it was recognized as a stop word"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2906(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2906(para) 
 msgid "<function>ts_debug</function> returns one row for each token identified in the text by the parser. The columns returned are <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2950(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2950(para) 
 msgid "Here is a simple example: <screen>\nSELECT * FROM ts_debug('english','a fat  cat sat on a mat - it ate a fat rats');\n   alias   |   description   | token |  dictionaries  |  dictionary  | lexemes \n-----------+-----------------+-------+----------------+--------------+---------\n asciiword | Word, all ASCII | a     | {english_stem} | english_stem | {}\n blank     | Space symbols   |       | {}             |              | \n asciiword | Word, all ASCII | fat   | {english_stem} | english_stem | {fat}\n blank     | Space symbols   |       | {}             |              | \n asciiword | Word, all ASCII | cat   | {english_stem} | english_stem | {cat}\n blank     | Space symbols   |       | {}             |              | \n asciiword | Word, all ASCII | sat   | {english_stem} | english_stem | {sat}\n blank     | Space symbols   |       | {}             |              | \n asciiword | Word, all ASCII | on    | {english_stem} | english_stem | {}\n blank     | Space symbols   |       | {}             |              | \n asciiword | Word, all ASCII | a     | {english_stem} | english_stem | {}\n blank     | Space symbols   |       | {}             |              | \n asciiword | Word, all ASCII | mat   | {english_stem} | english_stem | {mat}\n blank     | Space symbols   |       | {}             |              | \n blank     | Space symbols   | -     | {}             |              | \n asciiword | Word, all ASCII | it    | {english_stem} | english_stem | {}\n blank     | Space symbols   |       | {}             |              | \n asciiword | Word, all ASCII | ate   | {english_stem} | english_stem | {ate}\n blank     | Space symbols   |       | {}             |              | \n asciiword | Word, all ASCII | a     | {english_stem} | english_stem | {}\n blank     | Space symbols   |       | {}             |              | \n asciiword | Word, all ASCII | fat   | {english_stem} | english_stem | {fat}\n blank     | Space symbols   |       | {}             |              | \n asciiword | Word, all ASCII | rats  | {english_stem} | english_stem | {rat}\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2984(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:2984(para) 
 msgid "For a more extensive demonstration, we first create a <literal>public.english</literal> configuration and Ispell dictionary for the English language:"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:2990(programlisting) 
+#: /tmp/cicero-nhvx/textsearch.xml:2990(programlisting) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH CONFIGURATION public.english ( COPY = pg_catalog.english );\n\nCREATE TEXT SEARCH DICTIONARY english_ispell (\n    TEMPLATE = ispell,\n    DictFile = english,\n    AffFile = english,\n    StopWords = english\n);\n\nALTER TEXT SEARCH CONFIGURATION public.english\n   ALTER MAPPING FOR asciiword WITH english_ispell, english_stem;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3004(screen) 
+#: /tmp/cicero-nhvx/textsearch.xml:3004(screen) 
 #, no-wrap
 msgid "\nSELECT * FROM ts_debug('public.english','The Brightest supernovaes');\n   alias   |   description   |    token    |         dictionaries          |   dictionary   |   lexemes   \n-----------+-----------------+-------------+-------------------------------+----------------+-------------\n asciiword | Word, all ASCII | The         | {english_ispell,english_stem} | english_ispell | {}\n blank     | Space symbols   |             | {}                            |                | \n asciiword | Word, all ASCII | Brightest   | {english_ispell,english_stem} | english_ispell | {bright}\n blank     | Space symbols   |             | {}                            |                | \n asciiword | Word, all ASCII | supernovaes | {english_ispell,english_stem} | english_stem   | {supernova}\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3015(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3015(para) 
 msgid "In this example, the word <literal>Brightest</literal> was recognized by the parser as an <literal>ASCII word</literal> (alias <literal>asciiword</literal>). For this token type the dictionary list is <literal>english_ispell</literal> and <literal>english_stem</literal>. The word was recognized by <literal>english_ispell</literal>, which reduced it to the noun <literal>bright</literal>. The word <literal>supernovaes</literal> is unknown to the <literal>english_ispell</literal> dictionary so it was passed to the next dictionary, and, fortunately, was recognized (in fact, <literal>english_stem</literal> is a Snowball dictionary which recognizes everything; that is why it was placed at the end of the dictionary list)."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3030(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3030(para) 
 msgid "The word <literal>The</literal> was recognized by the <literal>english_ispell</literal> dictionary as a stop word (<xref linkend=\"textsearch-stopwords\"/>) and will not be indexed. The spaces are discarded too, since the configuration provides no dictionaries at all for them."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3038(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3038(para) 
 msgid "You can reduce the width of the output by explicitly specifying which columns you want to see: <screen>\nSELECT alias, token, dictionary, lexemes\nFROM ts_debug('public.english','The Brightest supernovaes');\n   alias   |    token    |   dictionary   |   lexemes   \n-----------+-------------+----------------+-------------\n asciiword | The         | english_ispell | {}\n blank     |             |                | \n asciiword | Brightest   | english_ispell | {bright}\n blank     |             |                | \n asciiword | supernovaes | english_stem   | {supernova}\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3058(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:3058(title) 
 msgid "Parser Testing"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3060(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3060(para) 
 msgid "The following functions allow direct testing of a text search parser."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3065(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:3065(primary) 
 msgid "ts_parse"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3069(replaceable) /tmp/cicero-alnp/textsearch.xml:3100(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:3069(replaceable) /tmp/cicero-nhvx/textsearch.xml:3100(replaceable) 
 msgid "parser_name"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3070(replaceable) /tmp/cicero-alnp/textsearch.xml:3072(replaceable) /tmp/cicero-alnp/textsearch.xml:3100(replaceable) /tmp/cicero-alnp/textsearch.xml:3102(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:3070(replaceable) /tmp/cicero-nhvx/textsearch.xml:3072(replaceable) /tmp/cicero-nhvx/textsearch.xml:3100(replaceable) /tmp/cicero-nhvx/textsearch.xml:3102(replaceable) 
 msgid "tokid"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3071(replaceable) /tmp/cicero-alnp/textsearch.xml:3102(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:3071(replaceable) /tmp/cicero-nhvx/textsearch.xml:3102(replaceable) 
 msgid "parser_oid"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3071(type) /tmp/cicero-alnp/textsearch.xml:3102(type) 
+#: /tmp/cicero-nhvx/textsearch.xml:3071(type) /tmp/cicero-nhvx/textsearch.xml:3102(type) 
 msgid "oid"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3068(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:3068(synopsis) 
 #, no-wrap
 msgid "\nts_parse(<placeholder-1/> <placeholder-2/>, <placeholder-3/> <placeholder-4/>,\n         OUT <placeholder-5/> <placeholder-6/>, OUT <placeholder-7/> <placeholder-8/>) returns <placeholder-9/>\nts_parse(<placeholder-10/> <placeholder-11/>, <placeholder-12/> <placeholder-13/>,\n         OUT <placeholder-14/> <placeholder-15/>, OUT <placeholder-16/> <placeholder-17/>) returns <placeholder-18/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3075(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3075(para) 
 msgid "<function>ts_parse</function> parses the given <replaceable>document</replaceable> and returns a series of records, one for each token produced by parsing. Each record includes a <varname>tokid</varname> showing the assigned token type and a <varname>token</varname> which is the text of the token. For example: <screen>\nSELECT * FROM ts_parse('default', '123 - a number');\n tokid | token\n-------+--------\n    22 | 123\n    12 |\n    12 | -\n     1 | a\n    12 |\n     1 | number\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3096(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:3096(primary) 
 msgid "ts_token_type"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3099(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:3099(synopsis) 
 #, no-wrap
 msgid "\nts_token_type(<placeholder-1/> <placeholder-2/>, OUT <placeholder-3/> <placeholder-4/>,\n              OUT <placeholder-5/> <placeholder-6/>, OUT <placeholder-7/> <placeholder-8/>) returns <placeholder-9/>\nts_token_type(<placeholder-10/> <placeholder-11/>, OUT <placeholder-12/> <placeholder-13/>,\n              OUT <placeholder-14/> <placeholder-15/>, OUT <placeholder-16/> <placeholder-17/>) returns <placeholder-18/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3106(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3106(para) 
 msgid "<function>ts_token_type</function> returns a table which describes each type of token the specified parser can recognize. For each token type, the table gives the integer <varname>tokid</varname> that the parser uses to label a token of that type, the <varname>alias</varname> that names the token type in configuration commands, and a short <varname>description</varname>. For example: <screen>\nSELECT * FROM ts_token_type('default');\n tokid |      alias      |               description                \n-------+-----------------+------------------------------------------\n     1 | asciiword       | Word, all ASCII\n     2 | word            | Word, all letters\n     3 | numword         | Word, letters and digits\n     4 | email           | Email address\n     5 | url             | URL\n     6 | host            | Host\n     7 | sfloat          | Scientific notation\n     8 | version         | Version number\n     9 | hword_numpart   | Hyphenated word part, letters and digits\n    10 | hword_part      | Hyphenated word part, all letters\n    11 | hword_asciipart | Hyphenated word part, all ASCII\n    12 | blank           | Space symbols\n    13 | tag             | XML tag\n    14 | protocol        | Protocol head\n    15 | numhword        | Hyphenated word, letters and digits\n    16 | asciihword      | Hyphenated word, all ASCII\n    17 | hword           | Hyphenated word, all letters\n    18 | url_path        | URL path\n    19 | file            | File or path name\n    20 | float           | Decimal notation\n    21 | int             | Signed integer\n    22 | uint            | Unsigned integer\n    23 | entity          | XML entity\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3147(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:3147(title) 
 msgid "Dictionary Testing"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3149(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3149(para) 
 msgid "The <function>ts_lexize</function> function facilitates dictionary testing."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3154(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:3154(primary) 
 msgid "ts_lexize"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3158(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:3158(replaceable) 
 msgid "dict"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3157(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:3157(synopsis) 
 #, no-wrap
 msgid "\nts_lexize(<placeholder-1/> <placeholder-2/>, <placeholder-3/> <placeholder-4/>) returns <placeholder-5/>\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3161(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3161(para) 
 msgid "<function>ts_lexize</function> returns an array of lexemes if the input <replaceable>token</replaceable> is known to the dictionary, or an empty array if the token is known to the dictionary but it is a stop word, or <literal>NULL</literal> if it is an unknown word."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3169(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3169(para) 
 msgid "Examples: <screen>\nSELECT ts_lexize('english_stem', 'stars');\n ts_lexize\n-----------\n {star}\n\nSELECT ts_lexize('english_stem', 'a');\n ts_lexize\n-----------\n {}\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3186(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3186(para) 
 msgid "The <function>ts_lexize</function> function expects a single <emphasis>token</emphasis>, not text. Here is a case where this can be confusing: <screen>\nSELECT ts_lexize('thesaurus_astro','supernovae stars') is null;\n ?column?\n----------\n t\n</screen> The thesaurus dictionary <literal>thesaurus_astro</literal> does know the phrase <literal>supernovae stars</literal>, but <function>ts_lexize</function> fails since it does not parse the input text but treats it as a single token. Use <function>plainto_tsquery</function> or <function>to_tsvector</function> to test thesaurus dictionaries, for example: <screen>\nSELECT plainto_tsquery('supernovae stars');\n plainto_tsquery\n-----------------\n 'sn'\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3218(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:3218(title) 
 msgid "GiST and GIN Index Types"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3222(secondary) 
+#: /tmp/cicero-nhvx/textsearch.xml:3222(secondary) 
 msgid "indexes"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3237(primary) /tmp/cicero-alnp/textsearch.xml:3260(primary) 
+#: /tmp/cicero-nhvx/textsearch.xml:3237(primary) /tmp/cicero-nhvx/textsearch.xml:3260(primary) 
 msgid "index"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3238(secondary) 
+#: /tmp/cicero-nhvx/textsearch.xml:3238(secondary) 
 msgid "GiST"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3244(replaceable) /tmp/cicero-alnp/textsearch.xml:3267(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:3244(replaceable) /tmp/cicero-nhvx/textsearch.xml:3267(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3244(replaceable) /tmp/cicero-alnp/textsearch.xml:3267(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:3244(replaceable) /tmp/cicero-nhvx/textsearch.xml:3267(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3244(replaceable) /tmp/cicero-alnp/textsearch.xml:3267(replaceable) 
+#: /tmp/cicero-nhvx/textsearch.xml:3244(replaceable) /tmp/cicero-nhvx/textsearch.xml:3267(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3243(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:3243(synopsis) 
 #, no-wrap
 msgid "\nCREATE INDEX <placeholder-1/> ON <placeholder-2/> USING gist(<placeholder-3/>);\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3249(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3249(para) 
 msgid "Creates a GiST (Generalized Search Tree)-based index. The <replaceable>column</replaceable> can be of <type>tsvector</type> or <type>tsquery</type> type."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3261(secondary) 
+#: /tmp/cicero-nhvx/textsearch.xml:3261(secondary) 
 msgid "GIN"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3266(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:3266(synopsis) 
 #, no-wrap
 msgid "\nCREATE INDEX <placeholder-1/> ON <placeholder-2/> USING gin(<placeholder-3/>);\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3272(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3272(para) 
 msgid "Creates a GIN (Generalized Inverted Index)-based index. The <replaceable>column</replaceable> must be of <type>tsvector</type> type."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3225(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3225(para) 
 msgid "There are two kinds of indexes that can be used to speed up full text searches. Note that indexes are not mandatory for full text searching, but in cases where a column is searched on a regular basis, an index is usually desirable. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3282(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3282(para) 
 msgid "There are substantial performance differences between the two index types, so it is important to understand their characteristics."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3287(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3287(para) 
 msgid "A GiST index is <firstterm>lossy</firstterm>, meaning that the index may produce false matches, and it is necessary to check the actual table row to eliminate such false matches. (<productname>PostgreSQL</productname> does this automatically when needed.) GiST indexes are lossy because each document is represented in the index by a fixed-length signature. The signature is generated by hashing each word into a single bit in an n-bit string, with all these bits OR-ed together to produce an n-bit document signature. When two words hash to the same bit position there will be a false match. If all words in the query have matches (real or false) then the table row must be retrieved to see if the match is correct."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3301(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3301(para) 
 msgid "Lossiness causes performance degradation due to unnecessary fetches of table records that turn out to be false matches. Since random access to table records is slow, this limits the usefulness of GiST indexes. The likelihood of false matches depends on several factors, in particular the number of unique words, so using dictionaries to reduce this number is recommended."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3310(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3310(para) 
 msgid "GIN indexes are not lossy for standard queries, but their performance depends logarithmically on the number of unique words. (However, GIN indexes store only the words (lexemes) of <type>tsvector</type> values, and not their weight labels. Thus a table row recheck is needed when using a query that involves weights.)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3324(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3324(para) 
 msgid "GIN index lookups are about three times faster than GiST"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3329(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3329(para) 
 msgid "GIN indexes take about three times longer to build than GiST"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3334(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3334(para) 
 msgid "GIN indexes are moderately slower to update than GiST indexes, but about 10 times slower if fast-update support was disabled (see <xref linkend=\"gin-fast-update\"/> for details)"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3341(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3341(para) 
 msgid "GIN indexes are two-to-three times larger than GiST indexes"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3318(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3318(para) 
 msgid "In choosing which index type to use, GiST or GIN, consider these performance differences: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3348(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3348(para) 
 msgid "As a rule of thumb, <acronym>GIN</acronym> indexes are best for static data because lookups are faster. For dynamic data, GiST indexes are faster to update. Specifically, <acronym>GiST</acronym> indexes are very good for dynamic data and fast if the number of unique words (lexemes) is under 100,000, while <acronym>GIN</acronym> indexes will handle 100,000+ lexemes better but are slower to update."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3357(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3357(para) 
 msgid "Note that <acronym>GIN</acronym> index build time can often be improved by increasing <xref linkend=\"guc-maintenance-work-mem\"/>, while <acronym>GiST</acronym> index build time is not sensitive to that parameter."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3364(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3364(para) 
 msgid "Partitioning of big collections and the proper use of GiST and GIN indexes allows the implementation of very fast searches with online update. Partitioning can be done at the database level using table inheritance, or by distributing documents over servers and collecting search results using the <xref linkend=\"dblink\"/> module. The latter is possible because ranking functions use only local information."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3377(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:3377(title) 
 msgid "<application>psql</application> Support"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3379(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3379(para) 
 msgid "Information about text search configuration objects can be obtained in <application>psql</application> using a set of commands: <synopsis>\n\\dF{d,p,t}<optional>+</optional> <optional>PATTERN</optional>\n</synopsis> An optional <literal>+</literal> produces more details."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3388(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3388(para) 
 msgid "The optional parameter <literal>PATTERN</literal> can be the name of a text search object, optionally schema-qualified. If <literal>PATTERN</literal> is omitted then information about all visible objects will be displayed. <literal>PATTERN</literal> can be a regular expression and can provide <emphasis>separate</emphasis> patterns for the schema and object names. The following examples illustrate this: <screen>\n=&gt; \\dF *fulltext*\n       List of text search configurations\n Schema |  Name        | Description\n--------+--------------+-------------\n public | fulltext_cfg |\n</screen><screen>\n=&gt; \\dF *.fulltext*\n       List of text search configurations\n Schema   |  Name        | Description\n----------+----------------------------\n fulltext | fulltext_cfg |\n public   | fulltext_cfg |\n</screen> The available commands are:"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3418(optional) /tmp/cicero-alnp/textsearch.xml:3459(optional) /tmp/cicero-alnp/textsearch.xml:3490(optional) /tmp/cicero-alnp/textsearch.xml:3543(optional) 
+#: /tmp/cicero-nhvx/textsearch.xml:3418(optional) /tmp/cicero-nhvx/textsearch.xml:3459(optional) /tmp/cicero-nhvx/textsearch.xml:3490(optional) /tmp/cicero-nhvx/textsearch.xml:3543(optional) 
 msgid "+"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3418(optional) /tmp/cicero-alnp/textsearch.xml:3459(optional) /tmp/cicero-alnp/textsearch.xml:3490(optional) /tmp/cicero-alnp/textsearch.xml:3543(optional) 
+#: /tmp/cicero-nhvx/textsearch.xml:3418(optional) /tmp/cicero-nhvx/textsearch.xml:3459(optional) /tmp/cicero-nhvx/textsearch.xml:3490(optional) /tmp/cicero-nhvx/textsearch.xml:3543(optional) 
 msgid "PATTERN"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3418(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:3418(synopsis) 
 #, no-wrap
 msgid "\\dF<placeholder-1/> <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3420(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3420(para) 
 msgid "List text search configurations (add <literal>+</literal> for more detail). <screen>\n=&gt; \\dF russian\n            List of text search configurations\n   Schema   |  Name   |            Description             \n------------+---------+------------------------------------\n pg_catalog | russian | configuration for russian language\n\n=&gt; \\dF+ russian\nText search configuration \"pg_catalog.russian\"\nParser: \"pg_catalog.default\"\n      Token      | Dictionaries \n-----------------+--------------\n asciihword      | english_stem\n asciiword       | english_stem\n email           | simple\n file            | simple\n float           | simple\n host            | simple\n hword           | russian_stem\n hword_asciipart | english_stem\n hword_numpart   | simple\n hword_part      | russian_stem\n int             | simple\n numhword        | simple\n numword         | simple\n sfloat          | simple\n uint            | simple\n url             | simple\n url_path        | simple\n version         | simple\n word            | russian_stem\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3459(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:3459(synopsis) 
 #, no-wrap
 msgid "\\dFd<placeholder-1/> <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3461(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3461(para) 
 msgid "List text search dictionaries (add <literal>+</literal> for more detail). <screen>\n=&gt; \\dFd\n                            List of text search dictionaries\n   Schema   |      Name       |                        Description                        \n------------+-----------------+-----------------------------------------------------------\n pg_catalog | danish_stem     | snowball stemmer for danish language\n pg_catalog | dutch_stem      | snowball stemmer for dutch language\n pg_catalog | english_stem    | snowball stemmer for english language\n pg_catalog | finnish_stem    | snowball stemmer for finnish language\n pg_catalog | french_stem     | snowball stemmer for french language\n pg_catalog | german_stem     | snowball stemmer for german language\n pg_catalog | hungarian_stem  | snowball stemmer for hungarian language\n pg_catalog | italian_stem    | snowball stemmer for italian language\n pg_catalog | norwegian_stem  | snowball stemmer for norwegian language\n pg_catalog | portuguese_stem | snowball stemmer for portuguese language\n pg_catalog | romanian_stem   | snowball stemmer for romanian language\n pg_catalog | russian_stem    | snowball stemmer for russian language\n pg_catalog | simple          | simple dictionary: just lower case and check for stopword\n pg_catalog | spanish_stem    | snowball stemmer for spanish language\n pg_catalog | swedish_stem    | snowball stemmer for swedish language\n pg_catalog | turkish_stem    | snowball stemmer for turkish language\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3490(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:3490(synopsis) 
 #, no-wrap
 msgid "\\dFp<placeholder-1/> <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3492(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3492(para) 
 msgid "List text search parsers (add <literal>+</literal> for more detail). <screen>\n=&gt; \\dFp\n        List of text search parsers\n   Schema   |  Name   |     Description     \n------------+---------+---------------------\n pg_catalog | default | default word parser\n=&gt; \\dFp+\n    Text search parser \"pg_catalog.default\"\n     Method      |    Function    | Description \n-----------------+----------------+-------------\n Start parse     | prsd_start     | \n Get next token  | prsd_nexttoken | \n End parse       | prsd_end       | \n Get headline    | prsd_headline  | \n Get token types | prsd_lextype   | \n\n        Token types for parser \"pg_catalog.default\"\n   Token name    |               Description                \n-----------------+------------------------------------------\n asciihword      | Hyphenated word, all ASCII\n asciiword       | Word, all ASCII\n blank           | Space symbols\n email           | Email address\n entity          | XML entity\n file            | File or path name\n float           | Decimal notation\n host            | Host\n hword           | Hyphenated word, all letters\n hword_asciipart | Hyphenated word part, all ASCII\n hword_numpart   | Hyphenated word part, letters and digits\n hword_part      | Hyphenated word part, all letters\n int             | Signed integer\n numhword        | Hyphenated word, letters and digits\n numword         | Word, letters and digits\n protocol        | Protocol head\n sfloat          | Scientific notation\n tag             | XML tag\n uint            | Unsigned integer\n url             | URL\n url_path        | URL path\n version         | Version number\n word            | Word, all letters\n(23 rows)\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3543(synopsis) 
+#: /tmp/cicero-nhvx/textsearch.xml:3543(synopsis) 
 #, no-wrap
 msgid "\\dFt<placeholder-1/> <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3545(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3545(para) 
 msgid "List text search templates (add <literal>+</literal> for more detail). <screen>\n=&gt; \\dFt\n                           List of text search templates\n   Schema   |   Name    |                        Description                        \n------------+-----------+-----------------------------------------------------------\n pg_catalog | ispell    | ispell dictionary\n pg_catalog | simple    | simple dictionary: just lower case and check for stopword\n pg_catalog | snowball  | snowball stemmer\n pg_catalog | synonym   | synonym dictionary: replace word by its synonym\n pg_catalog | thesaurus | thesaurus dictionary: phrase by phrase substitution\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3566(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:3566(title) 
 msgid "Limitations"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3573(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3573(para) 
 msgid "The length of each lexeme must be less than 2K bytes"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3576(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3576(para) 
 msgid "The length of a <type>tsvector</type> (lexemes + positions) must be less than 1 megabyte"
 msgstr ""
 
 #. TODO: number of lexemes in what?  This is unclear
-#: /tmp/cicero-alnp/textsearch.xml:3581(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3581(para) 
 msgid "The number of lexemes must be less than 2<superscript>64</superscript>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3585(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3585(para) 
 msgid "Position values in <type>tsvector</type> must be greater than 0 and no more than 16,383"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3589(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3589(para) 
 msgid "No more than 256 positions per lexeme"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3592(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3592(para) 
 msgid "The number of nodes (lexemes + operators) in a <type>tsquery</type> must be less than 32,768"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3568(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3568(para) 
 msgid "The current limitations of <productname>PostgreSQL</productname>'s text search features are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3598(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3598(para) 
 msgid "For comparison, the <productname>PostgreSQL</productname> 8.1 documentation contained 10,441 unique words, a total of 335,420 words, and the most frequent word <quote>postgresql</quote> was mentioned 6,127 times in 655 documents."
 msgstr ""
 
 #. TODO we need to put a date on these numbers?
-#: /tmp/cicero-alnp/textsearch.xml:3606(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3606(para) 
 msgid "Another example — the <productname>PostgreSQL</productname> mailing list archives contained 910,989 unique words with 57,491,343 lexemes in 461,020 messages."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3615(title) 
+#: /tmp/cicero-nhvx/textsearch.xml:3615(title) 
 msgid "Migration from Pre-8.3 Text Search"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3617(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3617(para) 
 msgid "Applications that use the <xref linkend=\"tsearch2\"/> module for text searching will need some adjustments to work with the built-in features:"
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3626(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3626(para) 
 msgid "Some functions have been renamed or had small adjustments in their argument lists, and all of them are now in the <literal>pg_catalog</literal> schema, whereas in a previous installation they would have been in <literal>public</literal> or another non-system schema. There is a new version of <application>tsearch2</application> that provides a compatibility layer to solve most problems in this area."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3638(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3638(para) 
 msgid "The old <application>tsearch2</application> functions and other objects <emphasis>must</emphasis> be suppressed when loading <application>pg_dump</application> output from a pre-8.3 database. While many of them won't load anyway, a few will and then cause problems. One simple way to deal with this is to load the new <application>tsearch2</application> module before restoring the dump; then it will block the old objects from being loaded."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3649(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3649(para) 
 msgid "Text search configuration setup is completely different now. Instead of manually inserting rows into configuration tables, search is configured through the specialized SQL commands shown earlier in this chapter. There is no automated support for converting an existing custom configuration for 8.3; you're on your own here."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3667(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3667(para) 
 msgid "Configuration files now must be placed in a single specified directory (<filename>$SHAREDIR/tsearch_data</filename>), and must have a specific extension depending on the type of file, as noted previously in the descriptions of the various dictionary types. This restriction was added to forestall security problems."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3677(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3677(para) 
 msgid "Configuration files must be encoded in UTF-8 encoding, regardless of what database encoding is used."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3684(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3684(para) 
 msgid "In thesaurus configuration files, stop words must be marked with <literal>?</literal>."
 msgstr ""
 
-#: /tmp/cicero-alnp/textsearch.xml:3660(para) 
+#: /tmp/cicero-nhvx/textsearch.xml:3660(para) 
 msgid "Most types of dictionaries rely on some outside-the-database configuration files. These are largely compatible with pre-8.3 usage, but note the following differences: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-alnp/textsearch.xml:0(None) 
+#: /tmp/cicero-nhvx/textsearch.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

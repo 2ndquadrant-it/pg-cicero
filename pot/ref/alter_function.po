@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-05 06:59+0200\n"
+"POT-Creation-Date: 2011-09-06 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,266 +9,266 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:9(refentrytitle) /tmp/cicero-alnp/ref/alter_function.xml:15(refname) /tmp/cicero-alnp/ref/alter_function.xml:20(primary) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:9(refentrytitle) /tmp/cicero-nhvx/ref/alter_function.xml:15(refname) /tmp/cicero-nhvx/ref/alter_function.xml:20(primary) 
 msgid "ALTER FUNCTION"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:10(manvolnum) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:11(refmiscinfo) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:16(refpurpose) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:16(refpurpose) 
 msgid "change the definition of a function"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:25(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:27(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:29(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:31(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:73(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:25(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:27(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:29(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:31(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:73(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:25(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:27(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:29(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:31(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:82(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:25(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:27(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:29(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:31(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:82(replaceable) 
 msgid "argmode"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:25(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:27(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:29(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:31(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:99(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:25(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:27(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:29(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:31(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:99(replaceable) 
 msgid "argname"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:25(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:27(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:29(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:31(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:112(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:25(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:27(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:29(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:31(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:112(replaceable) 
 msgid "argtype"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:26(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:34(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:26(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:34(replaceable) 
 msgid "action"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:28(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:123(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:28(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:123(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:30(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:132(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:30(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:132(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:32(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:143(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:32(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:143(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:34(phrase) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:34(phrase) 
 msgid "where <placeholder-1/> is one of:"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:39(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:196(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:39(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:196(replaceable) 
 msgid "execution_cost"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:40(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:207(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:40(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:207(replaceable) 
 msgid "result_rows"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:41(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:42(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:43(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:218(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:41(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:42(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:43(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:218(replaceable) 
 msgid "configuration_parameter"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:41(replaceable) /tmp/cicero-alnp/ref/alter_function.xml:219(replaceable) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:41(replaceable) /tmp/cicero-nhvx/ref/alter_function.xml:219(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:24(synopsis) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER FUNCTION <placeholder-1/> ( [ [ <placeholder-2/> ] [ <placeholder-3/> ] <placeholder-4/> [, ...] ] )\n    <placeholder-5/> [ ... ] [ RESTRICT ]\nALTER FUNCTION <placeholder-6/> ( [ [ <placeholder-7/> ] [ <placeholder-8/> ] <placeholder-9/> [, ...] ] )\n    RENAME TO <placeholder-10/>\nALTER FUNCTION <placeholder-11/> ( [ [ <placeholder-12/> ] [ <placeholder-13/> ] <placeholder-14/> [, ...] ] )\n    OWNER TO <placeholder-15/>\nALTER FUNCTION <placeholder-16/> ( [ [ <placeholder-17/> ] [ <placeholder-18/> ] <placeholder-19/> [, ...] ] )\n    SET SCHEMA <placeholder-20/>\n\n<placeholder-21/>\n\n    CALLED ON NULL INPUT | RETURNS NULL ON NULL INPUT | STRICT\n    IMMUTABLE | STABLE | VOLATILE\n    [ EXTERNAL ] SECURITY INVOKER | [ EXTERNAL ] SECURITY DEFINER\n    COST <placeholder-22/>\n    ROWS <placeholder-23/>\n    SET <placeholder-24/> { TO | = } { <placeholder-25/> | DEFAULT }\n    SET <placeholder-26/> FROM CURRENT\n    RESET <placeholder-27/>\n    RESET ALL\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:49(title) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:49(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:51(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:51(para) 
 msgid "<command>ALTER FUNCTION</command> changes the definition of a function."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:56(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:56(para) 
 msgid "You must own the function to use <command>ALTER FUNCTION</command>. To change a function's schema, you must also have <literal>CREATE</literal> privilege on the new schema. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the function's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the function. However, a superuser can alter ownership of any function anyway.)"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:69(title) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:69(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:75(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:75(para) 
 msgid "The name (optionally schema-qualified) of an existing function."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:85(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:85(para) 
 msgid "The mode of an argument: <literal>IN</literal>, <literal>OUT</literal>, <literal>INOUT</literal>, or <literal>VARIADIC</literal>. If omitted, the default is <literal>IN</literal>. Note that <command>ALTER FUNCTION</command> does not actually pay any attention to <literal>OUT</literal> arguments, since only the input arguments are needed to determine the function's identity. So it is sufficient to list the <literal>IN</literal>, <literal>INOUT</literal>, and <literal>VARIADIC</literal> arguments."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:102(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:102(para) 
 msgid "The name of an argument. Note that <command>ALTER FUNCTION</command> does not actually pay any attention to argument names, since only the argument data types are needed to determine the function's identity."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:115(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:115(para) 
 msgid "The data type(s) of the function's arguments (optionally schema-qualified), if any."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:125(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:125(para) 
 msgid "The new name of the function."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:134(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:134(para) 
 msgid "The new owner of the function. Note that if the function is marked <literal>SECURITY DEFINER</literal>, it will subsequently execute as the new owner."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:145(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:145(para) 
 msgid "The new schema for the function."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:152(literal) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:152(literal) 
 msgid "CALLED ON NULL INPUT"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:153(literal) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:153(literal) 
 msgid "RETURNS NULL ON NULL INPUT"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:154(literal) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:154(literal) 
 msgid "STRICT"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:157(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:157(para) 
 msgid "<literal>CALLED ON NULL INPUT</literal> changes the function so that it will be invoked when some or all of its arguments are null. <literal>RETURNS NULL ON NULL INPUT</literal> or <literal>STRICT</literal> changes the function so that it is not invoked if any of its arguments are null; instead, a null result is assumed automatically. See <xref linkend=\"sql-createfunction\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:169(literal) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:169(literal) 
 msgid "IMMUTABLE"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:170(literal) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:170(literal) 
 msgid "STABLE"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:171(literal) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:171(literal) 
 msgid "VOLATILE"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:174(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:174(para) 
 msgid "Change the volatility of the function to the specified setting. See <xref linkend=\"sql-createfunction\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:182(optional) /tmp/cicero-alnp/ref/alter_function.xml:183(optional) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:182(optional) /tmp/cicero-nhvx/ref/alter_function.xml:183(optional) 
 msgid "EXTERNAL"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:182(literal) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:182(literal) 
 msgid "<placeholder-1/> SECURITY INVOKER"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:183(literal) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:183(literal) 
 msgid "<placeholder-1/> SECURITY DEFINER"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:186(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:186(para) 
 msgid "Change whether the function is a security definer or not. The key word <literal>EXTERNAL</literal> is ignored for SQL conformance. See <xref linkend=\"sql-createfunction\"/> for more information about this capability."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:196(literal) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:196(literal) 
 msgid "COST"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:199(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:199(para) 
 msgid "Change the estimated execution cost of the function. See <xref linkend=\"sql-createfunction\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:207(literal) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:207(literal) 
 msgid "ROWS"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:210(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:210(para) 
 msgid "Change the estimated number of rows returned by a set-returning function. See <xref linkend=\"sql-createfunction\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:221(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:221(para) 
 msgid "Add or change the assignment to be made to a configuration parameter when the function is called. If <replaceable>value</replaceable> is <literal>DEFAULT</literal> or, equivalently, <literal>RESET</literal> is used, the function-local setting is removed, so that the function executes with the value present in its environment. Use <literal>RESET ALL</literal> to clear all function-local settings. <literal>SET FROM CURRENT</literal> saves the session's current value of the parameter as the value to be applied when the function is entered."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:233(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:233(para) 
 msgid "See <xref linkend=\"sql-set\"/> and <xref linkend=\"runtime-config\"/> for more information about allowed parameter names and values."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:242(literal) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:242(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:245(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:245(para) 
 msgid "Ignored for conformance with the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:254(title) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:254(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:259(programlisting) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:259(programlisting) 
 #, no-wrap
 msgid "\nALTER FUNCTION sqrt(integer) RENAME TO square_root;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:256(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:256(para) 
 msgid "To rename the function <literal>sqrt</literal> for type <type>integer</type> to <literal>square_root</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:267(programlisting) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:267(programlisting) 
 #, no-wrap
 msgid "\nALTER FUNCTION sqrt(integer) OWNER TO joe;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:264(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:264(para) 
 msgid "To change the owner of the function <literal>sqrt</literal> for type <type>integer</type> to <literal>joe</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:275(programlisting) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:275(programlisting) 
 #, no-wrap
 msgid "\nALTER FUNCTION sqrt(integer) SET SCHEMA maths;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:272(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:272(para) 
 msgid "To change the schema of the function <literal>sqrt</literal> for type <type>integer</type> to <literal>maths</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:282(programlisting) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:282(programlisting) 
 #, no-wrap
 msgid "\nALTER FUNCTION check_password(text) SET search_path = admin, pg_temp;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:280(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:280(para) 
 msgid "To adjust the search path that is automatically set for a function: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:289(programlisting) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:289(programlisting) 
 #, no-wrap
 msgid "\nALTER FUNCTION check_password(text) RESET search_path;\n"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:287(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:287(para) 
 msgid "To disable automatic setting of <varname>search_path</varname> for a function: <placeholder-1/> The function will now execute with whatever search path is used by its caller."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:298(title) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:298(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:300(para) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:300(para) 
 msgid "This statement is partially compatible with the <command>ALTER FUNCTION</command> statement in the SQL standard. The standard allows more properties of a function to be modified, but does not provide the ability to rename a function, make a function a security definer, attach configuration parameter values to a function, or change the owner, schema, or volatility of a function. The standard also requires the <literal>RESTRICT</literal> key word, which is optional in <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-alnp/ref/alter_function.xml:313(title) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:313(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-alnp/ref/alter_function.xml:0(None) 
+#: /tmp/cicero-nhvx/ref/alter_function.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
