@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-06 06:57+0200\n"
+"POT-Creation-Date: 2011-09-07 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,214 +9,214 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:9(refentrytitle) /tmp/cicero-rCjz/ref/alter_sequence.xml:15(refname) /tmp/cicero-rCjz/ref/alter_sequence.xml:22(primary) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:9(refentrytitle) /tmp/cicero-alko/ref/alter_sequence.xml:15(refname) /tmp/cicero-alko/ref/alter_sequence.xml:22(primary) 
 msgid "ALTER SEQUENCE"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:10(manvolnum) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:11(refmiscinfo) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:16(refpurpose) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:16(refpurpose) 
 msgid "change the definition of a sequence generator"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:27(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:33(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:34(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:35(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:66(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:27(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:33(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:34(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:35(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:66(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:27(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:75(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:27(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:75(replaceable) 
 msgid "increment"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:28(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:88(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:28(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:88(replaceable) 
 msgid "minvalue"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:28(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:104(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:28(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:104(replaceable) 
 msgid "maxvalue"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:29(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:120(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:29(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:120(replaceable) 
 msgid "start"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:30(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:133(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:30(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:133(replaceable) 
 msgid "restart"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:31(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:151(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:31(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:151(replaceable) 
 msgid "cache"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:32(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:32(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:32(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:32(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:33(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:215(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:33(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:215(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:34(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:224(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:34(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:224(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:35(replaceable) /tmp/cicero-rCjz/ref/alter_sequence.xml:233(replaceable) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:35(replaceable) /tmp/cicero-alko/ref/alter_sequence.xml:233(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:26(synopsis) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:26(synopsis) 
 #, no-wrap
 msgid "\nALTER SEQUENCE <placeholder-1/> [ INCREMENT [ BY ] <placeholder-2/> ]\n    [ MINVALUE <placeholder-3/> | NO MINVALUE ] [ MAXVALUE <placeholder-4/> | NO MAXVALUE ]\n    [ START [ WITH ] <placeholder-5/> ]\n    [ RESTART [ [ WITH ] <placeholder-6/> ] ]\n    [ CACHE <placeholder-7/> ] [ [ NO ] CYCLE ]\n    [ OWNED BY { <placeholder-8/>.<placeholder-9/> | NONE } ]\nALTER SEQUENCE <placeholder-10/> OWNER TO <placeholder-11/>\nALTER SEQUENCE <placeholder-12/> RENAME TO <placeholder-13/>\nALTER SEQUENCE <placeholder-14/> SET SCHEMA <placeholder-15/>\n"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:40(title) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:40(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:42(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:42(para) 
 msgid "<command>ALTER SEQUENCE</command> changes the parameters of an existing sequence generator. Any parameters not specifically set in the <command>ALTER SEQUENCE</command> command retain their prior settings."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:48(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:48(para) 
 msgid "You must own the sequence to use <command>ALTER SEQUENCE</command>. To change a sequence's schema, you must also have <literal>CREATE</literal> privilege on the new schema. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the sequence's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the sequence. However, a superuser can alter ownership of any sequence anyway.)"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:61(title) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:61(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:68(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:68(para) 
 msgid "The name (optionally schema-qualified) of a sequence to be altered."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:77(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:77(para) 
 msgid "The clause <literal>INCREMENT BY <replaceable class=\"parameter\">increment</replaceable></literal> is optional. A positive value will make an ascending sequence, a negative one a descending sequence. If unspecified, the old increment value will be maintained."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:89(literal) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:89(literal) 
 msgid "NO MINVALUE"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:91(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:91(para) 
 msgid "The optional clause <literal>MINVALUE <replaceable class=\"parameter\">minvalue</replaceable></literal> determines the minimum value a sequence can generate. If <literal>NO MINVALUE</literal> is specified, the defaults of 1 and -2<superscript>63</superscript>-1 for ascending and descending sequences, respectively, will be used. If neither option is specified, the current minimum value will be maintained."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:105(literal) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:105(literal) 
 msgid "NO MAXVALUE"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:107(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:107(para) 
 msgid "The optional clause <literal>MAXVALUE <replaceable class=\"parameter\">maxvalue</replaceable></literal> determines the maximum value for the sequence. If <literal>NO MAXVALUE</literal> is specified, the defaults are 2<superscript>63</superscript>-1 and -1 for ascending and descending sequences, respectively, will be used. If neither option is specified, the current maximum value will be maintained."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:122(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:122(para) 
 msgid "The optional clause <literal>START WITH <replaceable class=\"parameter\">start</replaceable></literal> changes the recorded start value of the sequence. This has no effect on the <emphasis>current</emphasis> sequence value; it simply sets the value that future <command>ALTER SEQUENCE RESTART</command> commands will use."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:135(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:135(para) 
 msgid "The optional clause <literal>RESTART [ WITH <replaceable class=\"parameter\">restart</replaceable> ]</literal> changes the current value of the sequence. This is equivalent to calling the <function>setval</function> function with <literal>is_called</literal> = <literal>false</literal>: the specified value will be returned by the <emphasis>next</emphasis> call of <function>nextval</function>. Writing <literal>RESTART</literal> with no <replaceable class=\"parameter\">restart</replaceable> value is equivalent to supplying the start value that was recorded by <command>CREATE SEQUENCE</command> or last set by <command>ALTER SEQUENCE START WITH</command>."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:153(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:153(para) 
 msgid "The clause <literal>CACHE <replaceable class=\"parameter\">cache</replaceable></literal> enables sequence numbers to be preallocated and stored in memory for faster access. The minimum value is 1 (only one value can be generated at a time, i.e., no cache). If unspecified, the old cache value will be maintained."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:165(literal) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:165(literal) 
 msgid "CYCLE"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:167(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:167(para) 
 msgid "The optional <literal>CYCLE</literal> key word can be used to enable the sequence to wrap around when the <replaceable class=\"parameter\">maxvalue</replaceable> or <replaceable class=\"parameter\">minvalue</replaceable> has been reached by an ascending or descending sequence respectively. If the limit is reached, the next number generated will be the <replaceable class=\"parameter\">minvalue</replaceable> or <replaceable class=\"parameter\">maxvalue</replaceable>, respectively."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:183(literal) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:183(literal) 
 msgid "NO CYCLE"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:185(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:185(para) 
 msgid "If the optional <literal>NO CYCLE</literal> key word is specified, any calls to <function>nextval</function> after the sequence has reached its maximum value will return an error. If neither <literal>CYCLE</literal> or <literal>NO CYCLE</literal> are specified, the old cycle behavior will be maintained."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:197(term) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:197(term) 
 msgid "<literal>OWNED BY</literal><replaceable class=\"parameter\">table</replaceable>.<replaceable class=\"parameter\">column</replaceable>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:198(literal) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:198(literal) 
 msgid "OWNED BY NONE"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:200(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:200(para) 
 msgid "The <literal>OWNED BY</literal> option causes the sequence to be associated with a specific table column, such that if that column (or its whole table) is dropped, the sequence will be automatically dropped as well. If specified, this association replaces any previously specified association for the sequence. The specified table must have the same owner and be in the same schema as the sequence. Specifying <literal>OWNED BY NONE</literal> removes any existing association, making the sequence <quote>free-standing</quote>."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:217(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:217(para) 
 msgid "The user name of the new owner of the sequence."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:226(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:226(para) 
 msgid "The new name for the sequence."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:235(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:235(para) 
 msgid "The new schema for the sequence."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:246(title) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:246(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:248(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:248(para) 
 msgid "To avoid blocking of concurrent transactions that obtain numbers from the same sequence, <command>ALTER SEQUENCE</command>'s effects on the sequence generation parameters are never rolled back; those changes take effect immediately and are not reversible. However, the <literal>OWNED BY</literal>, <literal>OWNER TO</literal>, <literal>RENAME TO</literal>, and <literal>SET SCHEMA</literal> clauses cause ordinary catalog updates that can be rolled back."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:257(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:257(para) 
 msgid "<command>ALTER SEQUENCE</command> will not immediately affect <function>nextval</function> results in backends, other than the current one, that have preallocated (cached) sequence values. They will use up all cached values prior to noticing the changed sequence generation parameters. The current backend will be affected immediately."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:266(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:266(para) 
 msgid "<command>ALTER SEQUENCE</command> does not affect the <function>currval</function> status for the sequence. (Before <productname>PostgreSQL</productname> 8.3, it sometimes did.)"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:272(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:272(para) 
 msgid "For historical reasons, <command>ALTER TABLE</command> can be used with sequences too; but the only variants of <command>ALTER TABLE</command> that are allowed with sequences are equivalent to the forms shown above."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:280(title) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:280(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:284(programlisting) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:284(programlisting) 
 #, no-wrap
 msgid "\nALTER SEQUENCE serial RESTART WITH 105;\n"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:282(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:282(para) 
 msgid "Restart a sequence called <literal>serial</literal>, at 105: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:290(title) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:290(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:292(para) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:292(para) 
 msgid "<command>ALTER SEQUENCE</command> conforms to the <acronym>SQL</acronym> standard, except for the <literal>START WITH</literal>, <literal>OWNED BY</literal>, <literal>OWNER TO</literal>, <literal>RENAME TO</literal>, and <literal>SET SCHEMA</literal> clauses, which are <productname>PostgreSQL</productname> extensions."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:302(title) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:302(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-rCjz/ref/alter_sequence.xml:0(None) 
+#: /tmp/cicero-alko/ref/alter_sequence.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

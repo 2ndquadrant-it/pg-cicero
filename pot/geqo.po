@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-06 06:56+0200\n"
+"POT-Creation-Date: 2011-09-07 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,197 +9,197 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-rCjz/geqo.xml:7(firstname) 
+#: /tmp/cicero-alko/geqo.xml:7(firstname) 
 msgid "Martin"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:8(surname) 
+#: /tmp/cicero-alko/geqo.xml:8(surname) 
 msgid "Utesch"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:10(orgname) 
+#: /tmp/cicero-alko/geqo.xml:10(orgname) 
 msgid "University of Mining and Technology"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:13(orgdiv) 
+#: /tmp/cicero-alko/geqo.xml:13(orgdiv) 
 msgid "Institute of Automatic Control"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:17(city) 
+#: /tmp/cicero-alko/geqo.xml:17(city) 
 msgid "Freiberg"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:20(country) 
+#: /tmp/cicero-alko/geqo.xml:20(country) 
 msgid "Germany"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:26(date) 
+#: /tmp/cicero-alko/geqo.xml:26(date) 
 msgid "1997-10-02"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:29(title) 
+#: /tmp/cicero-alko/geqo.xml:29(title) 
 msgid "Genetic Query Optimizer"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:33(title) 
+#: /tmp/cicero-alko/geqo.xml:33(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:34(para) 
+#: /tmp/cicero-alko/geqo.xml:34(para) 
 msgid "Written by Martin Utesch (<email>utesch@aut.tu-freiberg.de</email>) for the Institute of Automatic Control at the University of Mining and Technology in Freiberg, Germany."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:42(title) 
+#: /tmp/cicero-alko/geqo.xml:42(title) 
 msgid "Query Handling as a Complex Optimization Problem"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:44(para) 
+#: /tmp/cicero-alko/geqo.xml:44(para) 
 msgid "Among all relational operators the most difficult one to process and optimize is the <firstterm>join</firstterm>. The number of possible query plans grows exponentially with the number of joins in the query. Further optimization effort is caused by the support of a variety of <firstterm>join methods</firstterm> (e.g., nested loop, hash join, merge join in <productname>PostgreSQL</productname>) to process individual joins and a diversity of <firstterm>indexes</firstterm> (e.g., B-tree, hash, GiST and GIN in <productname>PostgreSQL</productname>) as access paths for relations."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:57(para) 
+#: /tmp/cicero-alko/geqo.xml:57(para) 
 msgid "The normal <productname>PostgreSQL</productname> query optimizer performs a <firstterm>near-exhaustive search</firstterm> over the space of alternative strategies. This algorithm, first introduced in IBM's System R database, produces a near-optimal join order, but can take an enormous amount of time and memory space when the number of joins in the query grows large. This makes the ordinary <productname>PostgreSQL</productname> query optimizer inappropriate for queries that join a large number of tables."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:68(para) 
+#: /tmp/cicero-alko/geqo.xml:68(para) 
 msgid "The Institute of Automatic Control at the University of Mining and Technology, in Freiberg, Germany, encountered some problems when it wanted to use <productname>PostgreSQL</productname> as the backend for a decision support knowledge based system for the maintenance of an electrical power grid. The DBMS needed to handle large join queries for the inference machine of the knowledge based system. The number of joins in these queries made using the normal query optimizer infeasible."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:79(para) 
+#: /tmp/cicero-alko/geqo.xml:79(para) 
 msgid "In the following we describe the implementation of a <firstterm>genetic algorithm</firstterm> to solve the join ordering problem in a manner that is efficient for queries involving large numbers of joins."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:88(title) 
+#: /tmp/cicero-alko/geqo.xml:88(title) 
 msgid "Genetic Algorithms"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:90(para) 
+#: /tmp/cicero-alko/geqo.xml:90(para) 
 msgid "The genetic algorithm (<acronym>GA</acronym>) is a heuristic optimization method which operates through randomized search. The set of possible solutions for the optimization problem is considered as a <firstterm>population</firstterm> of <firstterm>individuals</firstterm>. The degree of adaptation of an individual to its environment is specified by its <firstterm>fitness</firstterm>."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:99(para) 
+#: /tmp/cicero-alko/geqo.xml:99(para) 
 msgid "The coordinates of an individual in the search space are represented by <firstterm>chromosomes</firstterm>, in essence a set of character strings. A <firstterm>gene</firstterm> is a subsection of a chromosome which encodes the value of a single parameter being optimized. Typical encodings for a gene could be <firstterm>binary</firstterm> or <firstterm>integer</firstterm>."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:108(para) 
+#: /tmp/cicero-alko/geqo.xml:108(para) 
 msgid "Through simulation of the evolutionary operations <firstterm>recombination</firstterm>, <firstterm>mutation</firstterm>, and <firstterm>selection</firstterm> new generations of search points are found that show a higher average fitness than their ancestors."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:115(para) 
+#: /tmp/cicero-alko/geqo.xml:115(para) 
 msgid "According to the <systemitem class=\"resource\">comp.ai.genetic</systemitem><acronym>FAQ</acronym> it cannot be stressed too strongly that a <acronym>GA</acronym> is not a pure random search for a solution to a problem. A <acronym>GA</acronym> uses stochastic processes, but the result is distinctly non-random (better than random)."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:123(title) 
+#: /tmp/cicero-alko/geqo.xml:123(title) 
 msgid "Structured Diagram of a Genetic Algorithm"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:129(entry) 
+#: /tmp/cicero-alko/geqo.xml:129(entry) 
 msgid "P(t)"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:130(entry) 
+#: /tmp/cicero-alko/geqo.xml:130(entry) 
 msgid "generation of ancestors at a time t"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:134(entry) 
+#: /tmp/cicero-alko/geqo.xml:134(entry) 
 msgid "P''(t)"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:135(entry) 
+#: /tmp/cicero-alko/geqo.xml:135(entry) 
 msgid "generation of descendants at a time t"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:141(literallayout) 
+#: /tmp/cicero-alko/geqo.xml:141(literallayout) 
 #, no-wrap
 msgid "\n+=========================================+\n|&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;  Algorithm GA  &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;|\n+=========================================+\n| INITIALIZE t := 0                       |\n+=========================================+\n| INITIALIZE P(t)                         |\n+=========================================+\n| evaluate FITNESS of P(t)                |\n+=========================================+\n| while not STOPPING CRITERION do         |\n|   +-------------------------------------+\n|   | P'(t)  := RECOMBINATION{P(t)}       |\n|   +-------------------------------------+\n|   | P''(t) := MUTATION{P'(t)}           |\n|   +-------------------------------------+\n|   | P(t+1) := SELECTION{P''(t) + P(t)}  |\n|   +-------------------------------------+\n|   | evaluate FITNESS of P''(t)          |\n|   +-------------------------------------+\n|   | t := t + 1                          |\n+===+=====================================+\n"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:168(title) 
+#: /tmp/cicero-alko/geqo.xml:168(title) 
 msgid "Genetic Query Optimization (<acronym>GEQO</acronym>) in PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:170(para) 
+#: /tmp/cicero-alko/geqo.xml:170(para) 
 msgid "The <acronym>GEQO</acronym> module approaches the query optimization problem as though it were the well-known traveling salesman problem (<acronym>TSP</acronym>). Possible query plans are encoded as integer strings. Each string represents the join order from one relation of the query to the next. For example, the join tree <literallayout class=\"monospaced\">\n   /\\\n  /\\ 2\n /\\ 3\n4  1\n</literallayout> is encoded by the integer string '4-1-3-2', which means, first join relation '4' and '1', then '3', and then '2', where 1, 2, 3, 4 are relation IDs within the <productname>PostgreSQL</productname> optimizer."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:196(para) 
+#: /tmp/cicero-alko/geqo.xml:196(para) 
 msgid "Usage of a <firstterm>steady state</firstterm><acronym>GA</acronym> (replacement of the least fit individuals in a population, not whole-generational replacement) allows fast convergence towards improved query plans. This is essential for query handling with reasonable time;"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:205(para) 
+#: /tmp/cicero-alko/geqo.xml:205(para) 
 msgid "Usage of <firstterm>edge recombination crossover</firstterm> which is especially suited to keep edge losses low for the solution of the <acronym>TSP</acronym> by means of a <acronym>GA</acronym>;"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:214(para) 
+#: /tmp/cicero-alko/geqo.xml:214(para) 
 msgid "Mutation as genetic operator is deprecated so that no repair mechanisms are needed to generate legal <acronym>TSP</acronym> tours."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:189(para) 
+#: /tmp/cicero-alko/geqo.xml:189(para) 
 msgid "Specific characteristics of the <acronym>GEQO</acronym> implementation in <productname>PostgreSQL</productname> are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:222(para) 
+#: /tmp/cicero-alko/geqo.xml:222(para) 
 msgid "Parts of the <acronym>GEQO</acronym> module are adapted from D. Whitley's Genitor algorithm."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:227(para) 
+#: /tmp/cicero-alko/geqo.xml:227(para) 
 msgid "The <acronym>GEQO</acronym> module allows the <productname>PostgreSQL</productname> query optimizer to support large join queries effectively through non-exhaustive search."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:235(title) 
+#: /tmp/cicero-alko/geqo.xml:235(title) 
 msgid "Generating Possible Plans with <acronym>GEQO</acronym>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:237(para) 
+#: /tmp/cicero-alko/geqo.xml:237(para) 
 msgid "The <acronym>GEQO</acronym> planning process uses the standard planner code to generate plans for scans of individual relations. Then join plans are developed using the genetic approach. As shown above, each candidate join plan is represented by a sequence in which to join the base relations. In the initial stage, the <acronym>GEQO</acronym> code simply generates some possible join sequences at random. For each join sequence considered, the standard planner code is invoked to estimate the cost of performing the query using that join sequence. (For each step of the join sequence, all three possible join strategies are considered; and all the initially-determined relation scan plans are available. The estimated cost is the cheapest of these possibilities.) Join sequences with lower estimated cost are considered <quote>more fit</quote> than those with higher cost. The genetic algorithm discards the least fit candidates. Then new candidates are generated by combining genes of more-fit candidates — that is, by using randomly-chosen portions of known low-cost join sequences to create new sequences for consideration. This process is repeated until a preset number of join sequences have been considered; then the best one found at any time during the search is used to generate the finished plan."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:260(para) 
+#: /tmp/cicero-alko/geqo.xml:260(para) 
 msgid "This process is inherently nondeterministic, because of the randomized choices made during both the initial population selection and subsequent <quote>mutation</quote> of the best candidates. To avoid surprising changes of the selected plan, each run of the GEQO algorithm restarts its random number generator with the current <xref linkend=\"guc-geqo-seed\"/> parameter setting. As long as <varname>geqo_seed</varname> and the other GEQO parameters are kept fixed, the same plan will be generated for a given query (and other planner inputs such as statistics). To experiment with different search paths, try changing <varname>geqo_seed</varname>."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:275(title) 
+#: /tmp/cicero-alko/geqo.xml:275(title) 
 msgid "Future Implementation Tasks for <productname>PostgreSQL</productname><acronym>GEQO</acronym>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:288(para) 
+#: /tmp/cicero-alko/geqo.xml:288(para) 
 msgid "Optimality of the query plan"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:293(para) 
+#: /tmp/cicero-alko/geqo.xml:293(para) 
 msgid "Computing time"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:278(para) 
+#: /tmp/cicero-alko/geqo.xml:278(para) 
 msgid "Work is still needed to improve the genetic algorithm parameter settings. In file <filename>src/backend/optimizer/geqo/geqo_main.c</filename>, routines <function>gimme_pool_size</function> and <function>gimme_number_generations</function>, we have to find a compromise for the parameter settings to satisfy two competing demands: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:300(para) 
+#: /tmp/cicero-alko/geqo.xml:300(para) 
 msgid "In the current implementation, the fitness of each candidate join sequence is estimated by running the standard planner's join selection and cost estimation code from scratch. To the extent that different candidates use similar sub-sequences of joins, a great deal of work will be repeated. This could be made significantly faster by retaining cost estimates for sub-joins. The problem is to avoid expending unreasonable amounts of memory on retaining that state."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:310(para) 
+#: /tmp/cicero-alko/geqo.xml:310(para) 
 msgid "At a more basic level, it is not clear that solving query optimization with a GA algorithm designed for TSP is appropriate. In the TSP case, the cost associated with any substring (partial tour) is independent of the rest of the tour, but this is certainly not true for query optimization. Thus it is questionable whether edge recombination crossover is the most effective mutation procedure."
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:323(title) 
+#: /tmp/cicero-alko/geqo.xml:323(title) 
 msgid "Further Reading"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:331(para) 
+#: /tmp/cicero-alko/geqo.xml:331(para) 
 msgid "<ulink url=\"http://www.aip.de/~ast/EvolCompFAQ/\"> The Hitch-Hiker's Guide to Evolutionary Computation</ulink>, (FAQ for <ulink url=\"news://comp.ai.genetic\"/>)"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:339(para) 
+#: /tmp/cicero-alko/geqo.xml:339(para) 
 msgid "<ulink url=\"http://www.red3d.com/cwr/evolve.html\"> Evolutionary Computation and its application to art and design</ulink>, by Craig Reynolds"
 msgstr ""
 
-#: /tmp/cicero-rCjz/geqo.xml:325(para) 
+#: /tmp/cicero-alko/geqo.xml:325(para) 
 msgid "The following resources contain additional information about genetic algorithms: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-rCjz/geqo.xml:0(None) 
+#: /tmp/cicero-alko/geqo.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

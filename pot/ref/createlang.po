@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-06 06:57+0200\n"
+"POT-Creation-Date: 2011-09-07 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,264 +9,264 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:9(application) /tmp/cicero-rCjz/ref/createlang.xml:15(refname) /tmp/cicero-rCjz/ref/createlang.xml:20(primary) /tmp/cicero-rCjz/ref/createlang.xml:25(command) /tmp/cicero-rCjz/ref/createlang.xml:32(command) 
+#: /tmp/cicero-alko/ref/createlang.xml:9(application) /tmp/cicero-alko/ref/createlang.xml:15(refname) /tmp/cicero-alko/ref/createlang.xml:20(primary) /tmp/cicero-alko/ref/createlang.xml:25(command) /tmp/cicero-alko/ref/createlang.xml:32(command) 
 msgid "createlang"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:10(manvolnum) 
+#: /tmp/cicero-alko/ref/createlang.xml:10(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:11(refmiscinfo) 
+#: /tmp/cicero-alko/ref/createlang.xml:11(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:16(productname) 
+#: /tmp/cicero-alko/ref/createlang.xml:16(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:16(refpurpose) 
+#: /tmp/cicero-alko/ref/createlang.xml:16(refpurpose) 
 msgid "install a <placeholder-1/> procedural language"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:26(replaceable) /tmp/cicero-rCjz/ref/createlang.xml:33(replaceable) 
+#: /tmp/cicero-alko/ref/createlang.xml:26(replaceable) /tmp/cicero-alko/ref/createlang.xml:33(replaceable) 
 msgid "connection-option"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:27(replaceable) /tmp/cicero-rCjz/ref/createlang.xml:71(replaceable) 
+#: /tmp/cicero-alko/ref/createlang.xml:27(replaceable) /tmp/cicero-alko/ref/createlang.xml:71(replaceable) 
 msgid "langname"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:28(replaceable) /tmp/cicero-rCjz/ref/createlang.xml:35(replaceable) /tmp/cicero-rCjz/ref/createlang.xml:80(replaceable) /tmp/cicero-rCjz/ref/createlang.xml:81(replaceable) 
+#: /tmp/cicero-alko/ref/createlang.xml:28(replaceable) /tmp/cicero-alko/ref/createlang.xml:35(replaceable) /tmp/cicero-alko/ref/createlang.xml:80(replaceable) /tmp/cicero-alko/ref/createlang.xml:81(replaceable) 
 msgid "dbname"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:34(arg) /tmp/cicero-rCjz/ref/createlang.xml:103(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:34(arg) /tmp/cicero-alko/ref/createlang.xml:103(option) 
 msgid "--list"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:34(arg) /tmp/cicero-rCjz/ref/createlang.xml:102(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:34(arg) /tmp/cicero-alko/ref/createlang.xml:102(option) 
 msgid "-l"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:41(title) 
+#: /tmp/cicero-alko/ref/createlang.xml:41(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:43(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:43(para) 
 msgid "<application>createlang</application> is a utility for adding a procedural language to a <productname>PostgreSQL</productname> database."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:48(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:48(para) 
 msgid "<application>createlang</application> is just a wrapper around the <xref linkend=\"sql-createextension\"/> SQL command."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:54(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:54(para) 
 msgid "<application>createlang</application> is deprecated and may be removed in a future <productname>PostgreSQL</productname> release. Direct use of the <command>CREATE EXTENSION</command> command is recommended instead."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:64(title) 
+#: /tmp/cicero-alko/ref/createlang.xml:64(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:73(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:73(para) 
 msgid "Specifies the name of the procedural language to be installed."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:80(optional) 
+#: /tmp/cicero-alko/ref/createlang.xml:80(optional) 
 msgid "-d"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:81(optional) 
+#: /tmp/cicero-alko/ref/createlang.xml:81(optional) 
 msgid "--dbname="
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:83(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:83(para) 
 msgid "Specifies the database to which the language should be added. The default is to use the database with the same name as the current system user."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:92(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:92(option) 
 msgid "-e"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:93(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:93(option) 
 msgid "--echo"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:95(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:95(para) 
 msgid "Display SQL commands as they are executed."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:105(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:105(para) 
 msgid "Show a list of already installed languages in the target database."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:112(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:112(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:113(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:113(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:115(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:115(para) 
 msgid "Print the <application>createlang</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:122(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:122(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:123(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:123(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:125(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:125(para) 
 msgid "Show help about <application>createlang</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:66(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:66(para) 
 msgid "<application>createlang</application> accepts the following command-line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:141(replaceable) /tmp/cicero-rCjz/ref/createlang.xml:142(replaceable) 
+#: /tmp/cicero-alko/ref/createlang.xml:141(replaceable) /tmp/cicero-alko/ref/createlang.xml:142(replaceable) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:141(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:141(option) 
 msgid "-h <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:142(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:142(option) 
 msgid "--host=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:144(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:144(para) 
 msgid "Specifies the host name of the machine on which the server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:154(replaceable) /tmp/cicero-rCjz/ref/createlang.xml:155(replaceable) 
+#: /tmp/cicero-alko/ref/createlang.xml:154(replaceable) /tmp/cicero-alko/ref/createlang.xml:155(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:154(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:154(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:155(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:155(option) 
 msgid "--port=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:157(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:157(para) 
 msgid "Specifies the TCP port or local Unix domain socket file extension on which the server is listening for connections."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:166(replaceable) /tmp/cicero-rCjz/ref/createlang.xml:167(replaceable) 
+#: /tmp/cicero-alko/ref/createlang.xml:166(replaceable) /tmp/cicero-alko/ref/createlang.xml:167(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:166(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:166(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:167(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:167(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:169(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:169(para) 
 msgid "User name to connect as."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:176(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:176(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:177(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:177(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:179(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:179(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:191(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:191(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:192(option) 
+#: /tmp/cicero-alko/ref/createlang.xml:192(option) 
 msgid "--password"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:194(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:194(para) 
 msgid "Force <application>createlang</application> to prompt for a password before connecting to a database."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:199(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:199(para) 
 msgid "This option is never essential, since <application>createlang</application> will automatically prompt for a password if the server demands password authentication. However, <application>createlang</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:135(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:135(para) 
 msgid "<application>createlang</application> also accepts the following command-line arguments for connection parameters: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:217(title) 
+#: /tmp/cicero-alko/ref/createlang.xml:217(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:221(envar) 
+#: /tmp/cicero-alko/ref/createlang.xml:221(envar) 
 msgid "PGDATABASE"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:222(envar) 
+#: /tmp/cicero-alko/ref/createlang.xml:222(envar) 
 msgid "PGHOST"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:223(envar) 
+#: /tmp/cicero-alko/ref/createlang.xml:223(envar) 
 msgid "PGPORT"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:224(envar) 
+#: /tmp/cicero-alko/ref/createlang.xml:224(envar) 
 msgid "PGUSER"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:227(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:227(para) 
 msgid "Default connection parameters"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:234(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:234(para) 
 msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:244(title) 
+#: /tmp/cicero-alko/ref/createlang.xml:244(title) 
 msgid "Diagnostics"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:246(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:246(para) 
 msgid "Most error messages are self-explanatory. If not, run <application>createlang</application> with the <option>--echo</option> option and see the respective <acronym>SQL</acronym> command for details. Also, any default connection settings and environment variables used by the <application>libpq</application> front-end library will apply."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:258(title) 
+#: /tmp/cicero-alko/ref/createlang.xml:258(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:260(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:260(para) 
 msgid "Use <xref linkend=\"app-droplang\"/> to remove a language."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:267(title) 
+#: /tmp/cicero-alko/ref/createlang.xml:267(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:269(para) 
+#: /tmp/cicero-alko/ref/createlang.xml:269(para) 
 msgid "To install the language <literal>pltcl</literal> into the database <literal>template1</literal>: <screen>\n<prompt>$ </prompt><userinput>createlang pltcl template1</userinput>\n</screen> Note that installing the language into <literal>template1</literal> will cause it to be automatically installed into subsequently-created databases as well."
 msgstr ""
 
-#: /tmp/cicero-rCjz/ref/createlang.xml:282(title) 
+#: /tmp/cicero-alko/ref/createlang.xml:282(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-rCjz/ref/createlang.xml:0(None) 
+#: /tmp/cicero-alko/ref/createlang.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
