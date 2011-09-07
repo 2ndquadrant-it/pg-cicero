@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-06 06:58+0200\n"
+"POT-Creation-Date: 2011-09-07 06:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,58 +9,58 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-nhvx/btree-gist.xml:5(title) /tmp/cicero-nhvx/btree-gist.xml:8(primary) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:5(title) /tmp/cicero-ZqRK/btree-gist.xml:8(primary) 
 msgid "btree_gist"
 msgstr ""
 
-#: /tmp/cicero-nhvx/btree-gist.xml:11(para) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:11(para) 
 msgid "<filename>btree_gist</filename> provides GiST index operator classes that implement B-tree equivalent behavior for the data types <type>int2</type>, <type>int4</type>, <type>int8</type>, <type>float4</type>, <type>float8</type>, <type>numeric</type>, <type>timestamp with time zone</type>, <type>timestamp without time zone</type>, <type>time with time zone</type>, <type>time without time zone</type>, <type>date</type>, <type>interval</type>, <type>oid</type>, <type>money</type>, <type>char</type>, <type>varchar</type>, <type>text</type>, <type>bytea</type>, <type>bit</type>, <type>varbit</type>, <type>macaddr</type>, <type>inet</type>, and <type>cidr</type>."
 msgstr ""
 
-#: /tmp/cicero-nhvx/btree-gist.xml:23(para) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:23(para) 
 msgid "In general, these operator classes will not outperform the equivalent standard B-tree index methods, and they lack one major feature of the standard B-tree code: the ability to enforce uniqueness. However, they provide some other features that are not available with a B-tree index, as described below. Also, these operator classes are useful when a multicolumn GiST index is needed, wherein some of the columns are of data types that are only indexable with GiST but other columns are just simple data types. Lastly, these operator classes are useful for GiST testing and as a base for developing other GiST operator classes."
 msgstr ""
 
-#: /tmp/cicero-nhvx/btree-gist.xml:35(para) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:35(para) 
 msgid "In addition to the typical B-tree search operators, <filename>btree_gist</filename> also provides index support for <literal>&lt;&gt;</literal> (<quote>not equals</quote>). This may be useful in combination with an <link linkend=\"sql-createtable-exclude\">exclusion constraint</link>, as described below."
 msgstr ""
 
-#: /tmp/cicero-nhvx/btree-gist.xml:43(para) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:43(para) 
 msgid "Also, for data types for which there is a natural distance metric, <filename>btree_gist</filename> defines a distance operator <literal>&lt;-&gt;</literal>, and provides GiST index support for nearest-neighbor searches using this operator. Distance operators are provided for <type>int2</type>, <type>int4</type>, <type>int8</type>, <type>float4</type>, <type>float8</type>, <type>timestamp with time zone</type>, <type>timestamp without time zone</type>, <type>time without time zone</type>, <type>date</type>, <type>interval</type>, <type>oid</type>, and <type>money</type>."
 msgstr ""
 
-#: /tmp/cicero-nhvx/btree-gist.xml:56(title) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:56(title) 
 msgid "Example Usage"
 msgstr ""
 
-#: /tmp/cicero-nhvx/btree-gist.xml:58(para) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:58(para) 
 msgid "Simple example using <literal>btree_gist</literal> instead of <literal>btree</literal>:"
 msgstr ""
 
-#: /tmp/cicero-nhvx/btree-gist.xml:62(programlisting) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:62(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE test (a int4);\n-- create index\nCREATE INDEX testidx ON test USING gist (a);\n-- query\nSELECT * FROM test WHERE a &lt; 10;\n-- nearest-neighbor search: find the ten entries closest to \"42\"\nSELECT *, a &lt;-&gt; 42 AS dist FROM test ORDER BY a &lt;-&gt; 42 LIMIT 10;\n"
 msgstr ""
 
-#: /tmp/cicero-nhvx/btree-gist.xml:72(para) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:72(para) 
 msgid "Use an <link linkend=\"sql-createtable-exclude\">exclusion constraint</link> to enforce the rule that a cage at a zoo can contain only one kind of animal:"
 msgstr ""
 
-#: /tmp/cicero-nhvx/btree-gist.xml:78(programlisting) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:78(programlisting) 
 #, no-wrap
 msgid "\n=&gt; CREATE TABLE zoo (\n  cage   INTEGER,\n  animal TEXT,\n  EXCLUDE USING gist (cage WITH =, animal WITH &lt;&gt;)\n);\n\n=&gt; INSERT INTO zoo VALUES(123, 'zebra');\nINSERT 0 1\n=&gt; INSERT INTO zoo VALUES(123, 'zebra');\nINSERT 0 1\n=&gt; INSERT INTO zoo VALUES(123, 'lion');\nERROR:  conflicting key value violates exclusion constraint \"zoo_cage_animal_excl\"\nDETAIL:  Key (cage, animal)=(123, lion) conflicts with existing key (cage, animal)=(123, zebra).\n=&gt; INSERT INTO zoo VALUES(124, 'lion');\nINSERT 0 1\n"
 msgstr ""
 
-#: /tmp/cicero-nhvx/btree-gist.xml:99(title) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:99(title) 
 msgid "Authors"
 msgstr ""
 
-#: /tmp/cicero-nhvx/btree-gist.xml:101(para) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:101(para) 
 msgid "Teodor Sigaev (<email>teodor@stack.net</email>) , Oleg Bartunov (<email>oleg@sai.msu.su</email>), and Janko Richter (<email>jankorichter@yahoo.de</email>). See <ulink url=\"http://www.sai.msu.su/~megera/postgres/gist/\"/> for additional information."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-nhvx/btree-gist.xml:0(None) 
+#: /tmp/cicero-ZqRK/btree-gist.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
