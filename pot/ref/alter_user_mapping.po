@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-07 06:59+0200\n"
+"POT-Creation-Date: 2011-09-08 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,102 +9,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:9(refentrytitle) /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:15(refname) /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:20(primary) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:9(refentrytitle) /tmp/cicero-krfh/ref/alter_user_mapping.xml:15(refname) /tmp/cicero-krfh/ref/alter_user_mapping.xml:20(primary) 
 msgid "ALTER USER MAPPING"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:10(manvolnum) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:11(refmiscinfo) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:16(refpurpose) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:16(refpurpose) 
 msgid "change the definition of a user mapping"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:25(replaceable) /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:52(replaceable) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:25(replaceable) /tmp/cicero-krfh/ref/alter_user_mapping.xml:52(replaceable) 
 msgid "user_name"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:26(replaceable) /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:64(replaceable) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:26(replaceable) /tmp/cicero-krfh/ref/alter_user_mapping.xml:64(replaceable) 
 msgid "server_name"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:27(replaceable) /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:73(replaceable) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:27(replaceable) /tmp/cicero-krfh/ref/alter_user_mapping.xml:73(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:27(replaceable) /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:73(replaceable) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:27(replaceable) /tmp/cicero-krfh/ref/alter_user_mapping.xml:73(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:24(synopsis) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER USER MAPPING FOR { <placeholder-1/> | USER | CURRENT_USER | PUBLIC }\n    SERVER <placeholder-2/>\n    OPTIONS ( [ ADD | SET | DROP ] <placeholder-3/> ['<placeholder-4/>'] [, ... ] )\n"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:32(title) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:34(para) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:34(para) 
 msgid "<command>ALTER USER MAPPING</command> changes the definition of a user mapping."
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:39(para) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:39(para) 
 msgid "The owner of a foreign server can alter user mappings for that server for any user. Also, a user can alter a user mapping for his own user name if <literal>USAGE</literal> privilege on the server has been granted to the user."
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:48(title) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:48(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:54(para) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:54(para) 
 msgid "User name of the mapping. <literal>CURRENT_USER</literal> and <literal>USER</literal> match the name of the current user. <literal>PUBLIC</literal> is used to match all present and future user names in the system."
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:66(para) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:66(para) 
 msgid "Server name of the user mapping."
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:73(literal) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:73(literal) 
 msgid "OPTIONS ( [ ADD | SET | DROP ] <placeholder-1/> ['<placeholder-2/>'] [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:75(para) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:75(para) 
 msgid "Change options for the user mapping. The new options override any previously specified options. <literal>ADD</literal>, <literal>SET</literal>, and <literal>DROP</literal> specify the action to be performed. <literal>ADD</literal> is assumed if no operation is explicitly specified. Option names must be unique; options are also validated by the server's foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:90(title) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:90(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:94(programlisting) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:94(programlisting) 
 #, no-wrap
 msgid "\nALTER USER MAPPING FOR bob SERVER foo OPTIONS (user 'bob', password 'public');\n"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:92(para) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:92(para) 
 msgid "Change the password for user mapping <literal>bob</literal>, server<literal> foo</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:101(title) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:101(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:103(para) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:103(para) 
 msgid "<command>ALTER USER MAPPING</command> conforms to ISO/IEC 9075-9 (SQL/MED). There is a subtle syntax issue: The standard omits the <literal>FOR</literal> key word. Since both <literal>CREATE USER MAPPING</literal> and <literal>DROP USER MAPPING</literal> use <literal>FOR</literal> in analogous positions, and IBM DB2 (being the other major SQL/MED implementation) also requires it for <literal>ALTER USER MAPPING</literal>, PostgreSQL diverges from the standard here in the interest of consistency and interoperability."
 msgstr ""
 
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:117(title) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:117(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ZqRK/ref/alter_user_mapping.xml:0(None) 
+#: /tmp/cicero-krfh/ref/alter_user_mapping.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
