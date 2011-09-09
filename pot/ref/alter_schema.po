@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-08 06:59+0200\n"
+"POT-Creation-Date: 2011-09-09 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,81 +9,81 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:9(refentrytitle) /tmp/cicero-krfh/ref/alter_schema.xml:15(refname) /tmp/cicero-krfh/ref/alter_schema.xml:20(primary) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:9(refentrytitle) /tmp/cicero-Vlsa/ref/alter_schema.xml:15(refname) /tmp/cicero-Vlsa/ref/alter_schema.xml:20(primary) 
 msgid "ALTER SCHEMA"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:10(manvolnum) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:11(refmiscinfo) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:16(refpurpose) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:16(refpurpose) 
 msgid "change the definition of a schema"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:25(replaceable) /tmp/cicero-krfh/ref/alter_schema.xml:26(replaceable) /tmp/cicero-krfh/ref/alter_schema.xml:53(replaceable) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:25(replaceable) /tmp/cicero-Vlsa/ref/alter_schema.xml:26(replaceable) /tmp/cicero-Vlsa/ref/alter_schema.xml:53(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:25(replaceable) /tmp/cicero-krfh/ref/alter_schema.xml:62(replaceable) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:25(replaceable) /tmp/cicero-Vlsa/ref/alter_schema.xml:62(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:26(replaceable) /tmp/cicero-krfh/ref/alter_schema.xml:73(replaceable) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:26(replaceable) /tmp/cicero-Vlsa/ref/alter_schema.xml:73(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:24(synopsis) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER SCHEMA <placeholder-1/> RENAME TO <placeholder-2/>\nALTER SCHEMA <placeholder-3/> OWNER TO <placeholder-4/>\n"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:31(title) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:33(para) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:33(para) 
 msgid "<command>ALTER SCHEMA</command> changes the definition of a schema."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:37(para) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:37(para) 
 msgid "You must own the schema to use <command>ALTER SCHEMA</command>. To rename a schema you must also have the <literal>CREATE</literal> privilege for the database. To alter the owner, you must also be a direct or indirect member of the new owning role, and you must have the <literal>CREATE</literal> privilege for the database. (Note that superusers have all these privileges automatically.)"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:49(title) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:49(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:55(para) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:55(para) 
 msgid "The name of an existing schema."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:64(para) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:64(para) 
 msgid "The new name of the schema. The new name cannot begin with <literal>pg_</literal>, as such names are reserved for system schemas."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:75(para) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:75(para) 
 msgid "The new owner of the schema."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:84(title) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:84(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:86(para) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:86(para) 
 msgid "There is no <command>ALTER SCHEMA</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/alter_schema.xml:93(title) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:93(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-krfh/ref/alter_schema.xml:0(None) 
+#: /tmp/cicero-Vlsa/ref/alter_schema.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

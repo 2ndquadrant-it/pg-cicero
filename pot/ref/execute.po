@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-08 06:59+0200\n"
+"POT-Creation-Date: 2011-09-09 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,101 +9,101 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-krfh/ref/execute.xml:9(refentrytitle) /tmp/cicero-krfh/ref/execute.xml:15(refname) /tmp/cicero-krfh/ref/execute.xml:20(primary) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:9(refentrytitle) /tmp/cicero-Vlsa/ref/execute.xml:15(refname) /tmp/cicero-Vlsa/ref/execute.xml:20(primary) 
 msgid "EXECUTE"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:10(manvolnum) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:11(refmiscinfo) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:16(refpurpose) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:16(refpurpose) 
 msgid "execute a prepared statement"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:24(primary) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:24(primary) 
 msgid "prepared statements"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:25(secondary) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:25(secondary) 
 msgid "executing"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:30(replaceable) /tmp/cicero-krfh/ref/execute.xml:65(replaceable) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:30(replaceable) /tmp/cicero-Vlsa/ref/execute.xml:65(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:30(replaceable) /tmp/cicero-krfh/ref/execute.xml:74(replaceable) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:30(replaceable) /tmp/cicero-Vlsa/ref/execute.xml:74(replaceable) 
 msgid "parameter"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:29(synopsis) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:29(synopsis) 
 #, no-wrap
 msgid "\nEXECUTE <placeholder-1/> [ ( <placeholder-2/> [, ...] ) ]\n"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:35(title) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:35(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:37(para) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:37(para) 
 msgid "<command>EXECUTE</command> is used to execute a previously prepared statement. Since prepared statements only exist for the duration of a session, the prepared statement must have been created by a <command>PREPARE</command> statement executed earlier in the current session."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:45(para) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:45(para) 
 msgid "If the <command>PREPARE</command> statement that created the statement specified some parameters, a compatible set of parameters must be passed to the <command>EXECUTE</command> statement, or else an error is raised. Note that (unlike functions) prepared statements are not overloaded based on the type or number of their parameters; the name of a prepared statement must be unique within a database session."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:54(para) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:54(para) 
 msgid "For more information on the creation and usage of prepared statements, see <xref linkend=\"sql-prepare\"/>."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:61(title) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:61(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:67(para) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:67(para) 
 msgid "The name of the prepared statement to execute."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:76(para) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:76(para) 
 msgid "The actual value of a parameter to the prepared statement. This must be an expression yielding a value that is compatible with the data type of this parameter, as was determined when the prepared statement was created."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:88(title) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:88(title) 
 msgid "Outputs"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:89(para) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:89(para) 
 msgid "The command tag returned by <command>EXECUTE</command> is that of the prepared statement, and not <literal>EXECUTE</literal>."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:96(title) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:96(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:97(para) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:97(para) 
 msgid "Examples are given in the <xref linkend=\"sql-prepare-examples\" endterm=\"sql-prepare-examples-title\"/> section of the <xref linkend=\"sql-prepare\"/> documentation."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:105(title) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:105(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:107(para) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:107(para) 
 msgid "The SQL standard includes an <command>EXECUTE</command> statement, but it is only for use in embedded SQL. This version of the <command>EXECUTE</command> statement also uses a somewhat different syntax."
 msgstr ""
 
-#: /tmp/cicero-krfh/ref/execute.xml:116(title) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:116(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-krfh/ref/execute.xml:0(None) 
+#: /tmp/cicero-Vlsa/ref/execute.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
