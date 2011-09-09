@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-08 06:57+0200\n"
+"POT-Creation-Date: 2011-09-09 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,115 +9,115 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:9(refentrytitle) /tmp/cicero-lWzA/ref/alter_server.xml:15(refname) /tmp/cicero-lWzA/ref/alter_server.xml:20(primary) 
+#: /tmp/cicero-byia/ref/alter_server.xml:9(refentrytitle) /tmp/cicero-byia/ref/alter_server.xml:15(refname) /tmp/cicero-byia/ref/alter_server.xml:20(primary) 
 msgid "ALTER SERVER"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:10(manvolnum) 
+#: /tmp/cicero-byia/ref/alter_server.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:11(refmiscinfo) 
+#: /tmp/cicero-byia/ref/alter_server.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:16(refpurpose) 
+#: /tmp/cicero-byia/ref/alter_server.xml:16(refpurpose) 
 msgid "change the definition of a foreign server"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:25(replaceable) /tmp/cicero-lWzA/ref/alter_server.xml:27(replaceable) /tmp/cicero-lWzA/ref/alter_server.xml:56(replaceable) 
+#: /tmp/cicero-byia/ref/alter_server.xml:25(replaceable) /tmp/cicero-byia/ref/alter_server.xml:27(replaceable) /tmp/cicero-byia/ref/alter_server.xml:56(replaceable) 
 msgid "server_name"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:25(replaceable) /tmp/cicero-lWzA/ref/alter_server.xml:65(replaceable) 
+#: /tmp/cicero-byia/ref/alter_server.xml:25(replaceable) /tmp/cicero-byia/ref/alter_server.xml:65(replaceable) 
 msgid "new_version"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:26(replaceable) /tmp/cicero-lWzA/ref/alter_server.xml:74(replaceable) 
+#: /tmp/cicero-byia/ref/alter_server.xml:26(replaceable) /tmp/cicero-byia/ref/alter_server.xml:74(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:26(replaceable) /tmp/cicero-lWzA/ref/alter_server.xml:74(replaceable) 
+#: /tmp/cicero-byia/ref/alter_server.xml:26(replaceable) /tmp/cicero-byia/ref/alter_server.xml:74(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:27(replaceable) 
+#: /tmp/cicero-byia/ref/alter_server.xml:27(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:24(synopsis) 
+#: /tmp/cicero-byia/ref/alter_server.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER SERVER <placeholder-1/> [ VERSION '<placeholder-2/>' ]\n    [ OPTIONS ( [ ADD | SET | DROP ] <placeholder-3/> ['<placeholder-4/>'] [, ... ] ) ]\nALTER SERVER <placeholder-5/> OWNER TO <placeholder-6/>\n"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:32(title) 
+#: /tmp/cicero-byia/ref/alter_server.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:34(para) 
+#: /tmp/cicero-byia/ref/alter_server.xml:34(para) 
 msgid "<command>ALTER SERVER</command> changes the definition of a foreign server. The first form changes the server version string or the generic options of the server (at least one clause is required). The second form changes the owner of the server."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:41(para) 
+#: /tmp/cicero-byia/ref/alter_server.xml:41(para) 
 msgid "To alter the server you must be the owner of the server. Additionally to alter the owner, you must own the server and also be a direct or indirect member of the new owning role, and you must have <literal>USAGE</literal> privilege on the server's foreign-data wrapper. (Note that superusers satisfy all these criteria automatically.)"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:52(title) 
+#: /tmp/cicero-byia/ref/alter_server.xml:52(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:58(para) 
+#: /tmp/cicero-byia/ref/alter_server.xml:58(para) 
 msgid "The name of an existing server."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:67(para) 
+#: /tmp/cicero-byia/ref/alter_server.xml:67(para) 
 msgid "New server version."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:74(literal) 
+#: /tmp/cicero-byia/ref/alter_server.xml:74(literal) 
 msgid "OPTIONS ( [ ADD | SET | DROP ] <placeholder-1/> ['<placeholder-2/>'] [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:76(para) 
+#: /tmp/cicero-byia/ref/alter_server.xml:76(para) 
 msgid "Change options for the server. <literal>ADD</literal>, <literal>SET</literal>, and <literal>DROP</literal> specify the action to be performed. <literal>ADD</literal> is assumed if no operation is explicitly specified. Option names must be unique; names and values are also validated using the server's foreign-data wrapper library."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:90(title) 
+#: /tmp/cicero-byia/ref/alter_server.xml:90(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:94(programlisting) 
+#: /tmp/cicero-byia/ref/alter_server.xml:94(programlisting) 
 #, no-wrap
 msgid "\nALTER SERVER foo OPTIONS (host 'foo', dbname 'foodb');\n"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:92(para) 
+#: /tmp/cicero-byia/ref/alter_server.xml:92(para) 
 msgid "Alter server <literal>foo</literal>, add connection options: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:102(programlisting) 
+#: /tmp/cicero-byia/ref/alter_server.xml:102(programlisting) 
 #, no-wrap
 msgid "\nALTER SERVER foo VERSION '8.4' OPTIONS (SET host 'baz');\n"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:99(para) 
+#: /tmp/cicero-byia/ref/alter_server.xml:99(para) 
 msgid "Alter server <literal>foo</literal>, change version, change <literal>host</literal> option: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:108(title) 
+#: /tmp/cicero-byia/ref/alter_server.xml:108(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:110(para) 
+#: /tmp/cicero-byia/ref/alter_server.xml:110(para) 
 msgid "<command>ALTER SERVER</command> conforms to ISO/IEC 9075-9 (SQL/MED)."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/alter_server.xml:116(title) 
+#: /tmp/cicero-byia/ref/alter_server.xml:116(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lWzA/ref/alter_server.xml:0(None) 
+#: /tmp/cicero-byia/ref/alter_server.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

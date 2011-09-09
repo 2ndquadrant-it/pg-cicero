@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-08 06:57+0200\n"
+"POT-Creation-Date: 2011-09-09 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,122 +9,122 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:9(refentrytitle) /tmp/cicero-lWzA/ref/drop_function.xml:15(refname) /tmp/cicero-lWzA/ref/drop_function.xml:20(primary) 
+#: /tmp/cicero-byia/ref/drop_function.xml:9(refentrytitle) /tmp/cicero-byia/ref/drop_function.xml:15(refname) /tmp/cicero-byia/ref/drop_function.xml:20(primary) 
 msgid "DROP FUNCTION"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:10(manvolnum) 
+#: /tmp/cicero-byia/ref/drop_function.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:11(refmiscinfo) 
+#: /tmp/cicero-byia/ref/drop_function.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:16(refpurpose) 
+#: /tmp/cicero-byia/ref/drop_function.xml:16(refpurpose) 
 msgid "remove a function"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:25(replaceable) /tmp/cicero-lWzA/ref/drop_function.xml:57(replaceable) 
+#: /tmp/cicero-byia/ref/drop_function.xml:25(replaceable) /tmp/cicero-byia/ref/drop_function.xml:57(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:25(replaceable) /tmp/cicero-lWzA/ref/drop_function.xml:66(replaceable) 
+#: /tmp/cicero-byia/ref/drop_function.xml:25(replaceable) /tmp/cicero-byia/ref/drop_function.xml:66(replaceable) 
 msgid "argmode"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:25(replaceable) /tmp/cicero-lWzA/ref/drop_function.xml:83(replaceable) 
+#: /tmp/cicero-byia/ref/drop_function.xml:25(replaceable) /tmp/cicero-byia/ref/drop_function.xml:83(replaceable) 
 msgid "argname"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:25(replaceable) /tmp/cicero-lWzA/ref/drop_function.xml:96(replaceable) 
+#: /tmp/cicero-byia/ref/drop_function.xml:25(replaceable) /tmp/cicero-byia/ref/drop_function.xml:96(replaceable) 
 msgid "argtype"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:24(synopsis) 
+#: /tmp/cicero-byia/ref/drop_function.xml:24(synopsis) 
 #, no-wrap
 msgid "\nDROP FUNCTION [ IF EXISTS ] <placeholder-1/> ( [ [ <placeholder-2/> ] [ <placeholder-3/> ] <placeholder-4/> [, ...] ] )\n    [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:31(title) 
+#: /tmp/cicero-byia/ref/drop_function.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:33(para) 
+#: /tmp/cicero-byia/ref/drop_function.xml:33(para) 
 msgid "<command>DROP FUNCTION</command> removes the definition of an existing function. To execute this command the user must be the owner of the function. The argument types to the function must be specified, since several different functions can exist with the same name and different argument lists."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:43(title) 
+#: /tmp/cicero-byia/ref/drop_function.xml:43(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:47(literal) 
+#: /tmp/cicero-byia/ref/drop_function.xml:47(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:49(para) 
+#: /tmp/cicero-byia/ref/drop_function.xml:49(para) 
 msgid "Do not throw an error if the function does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:59(para) 
+#: /tmp/cicero-byia/ref/drop_function.xml:59(para) 
 msgid "The name (optionally schema-qualified) of an existing function."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:69(para) 
+#: /tmp/cicero-byia/ref/drop_function.xml:69(para) 
 msgid "The mode of an argument: <literal>IN</literal>, <literal>OUT</literal>, <literal>INOUT</literal>, or <literal>VARIADIC</literal>. If omitted, the default is <literal>IN</literal>. Note that <command>DROP FUNCTION</command> does not actually pay any attention to <literal>OUT</literal> arguments, since only the input arguments are needed to determine the function's identity. So it is sufficient to list the <literal>IN</literal>, <literal>INOUT</literal>, and <literal>VARIADIC</literal> arguments."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:86(para) 
+#: /tmp/cicero-byia/ref/drop_function.xml:86(para) 
 msgid "The name of an argument. Note that <command>DROP FUNCTION</command> does not actually pay any attention to argument names, since only the argument data types are needed to determine the function's identity."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:99(para) 
+#: /tmp/cicero-byia/ref/drop_function.xml:99(para) 
 msgid "The data type(s) of the function's arguments (optionally schema-qualified), if any."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:107(literal) 
+#: /tmp/cicero-byia/ref/drop_function.xml:107(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:109(para) 
+#: /tmp/cicero-byia/ref/drop_function.xml:109(para) 
 msgid "Automatically drop objects that depend on the function (such as operators or triggers)."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:117(literal) 
+#: /tmp/cicero-byia/ref/drop_function.xml:117(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:119(para) 
+#: /tmp/cicero-byia/ref/drop_function.xml:119(para) 
 msgid "Refuse to drop the function if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:129(title) 
+#: /tmp/cicero-byia/ref/drop_function.xml:129(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:134(programlisting) 
+#: /tmp/cicero-byia/ref/drop_function.xml:134(programlisting) 
 #, no-wrap
 msgid "\nDROP FUNCTION sqrt(integer);\n"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:131(para) 
+#: /tmp/cicero-byia/ref/drop_function.xml:131(para) 
 msgid "This command removes the square root function: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:140(title) 
+#: /tmp/cicero-byia/ref/drop_function.xml:140(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:142(para) 
+#: /tmp/cicero-byia/ref/drop_function.xml:142(para) 
 msgid "A <command>DROP FUNCTION</command> statement is defined in the SQL standard, but it is not compatible with this command."
 msgstr ""
 
-#: /tmp/cicero-lWzA/ref/drop_function.xml:149(title) 
+#: /tmp/cicero-byia/ref/drop_function.xml:149(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-lWzA/ref/drop_function.xml:0(None) 
+#: /tmp/cicero-byia/ref/drop_function.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
