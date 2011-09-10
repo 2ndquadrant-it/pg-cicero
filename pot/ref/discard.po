@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-09 06:59+0200\n"
+"POT-Creation-Date: 2011-09-10 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,90 +9,90 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:9(refentrytitle) /tmp/cicero-Vlsa/ref/discard.xml:15(refname) /tmp/cicero-Vlsa/ref/discard.xml:20(primary) 
+#: /tmp/cicero-GxnD/ref/discard.xml:9(refentrytitle) /tmp/cicero-GxnD/ref/discard.xml:15(refname) /tmp/cicero-GxnD/ref/discard.xml:20(primary) 
 msgid "DISCARD"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:10(manvolnum) 
+#: /tmp/cicero-GxnD/ref/discard.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:11(refmiscinfo) 
+#: /tmp/cicero-GxnD/ref/discard.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:16(refpurpose) 
+#: /tmp/cicero-GxnD/ref/discard.xml:16(refpurpose) 
 msgid "discard session state"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:24(synopsis) 
+#: /tmp/cicero-GxnD/ref/discard.xml:24(synopsis) 
 #, no-wrap
 msgid "\nDISCARD { ALL | PLANS | TEMPORARY | TEMP }\n"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:30(title) 
+#: /tmp/cicero-GxnD/ref/discard.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:32(para) 
+#: /tmp/cicero-GxnD/ref/discard.xml:32(para) 
 msgid "<command>DISCARD</command> releases internal resources associated with a database session. These resources are normally released at the end of the session."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:38(para) 
+#: /tmp/cicero-GxnD/ref/discard.xml:38(para) 
 msgid "<command>DISCARD TEMP</command> drops all temporary tables created in the current session. <command>DISCARD PLANS</command> releases all internally cached query plans. <command>DISCARD ALL</command> resets a session to its original state, discarding temporary resources and resetting session-local configuration changes."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:48(title) 
+#: /tmp/cicero-GxnD/ref/discard.xml:48(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:53(term) 
+#: /tmp/cicero-GxnD/ref/discard.xml:53(term) 
 msgid "<literal>TEMPORARY</literal> or <literal>TEMP</literal>"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:55(para) 
+#: /tmp/cicero-GxnD/ref/discard.xml:55(para) 
 msgid "Drops all temporary tables created in the current session."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:62(literal) 
+#: /tmp/cicero-GxnD/ref/discard.xml:62(literal) 
 msgid "PLANS"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:64(para) 
+#: /tmp/cicero-GxnD/ref/discard.xml:64(para) 
 msgid "Releases all cached query plans."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:71(literal) 
+#: /tmp/cicero-GxnD/ref/discard.xml:71(literal) 
 msgid "ALL"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:78(programlisting) 
+#: /tmp/cicero-GxnD/ref/discard.xml:78(programlisting) 
 #, no-wrap
 msgid "\nSET SESSION AUTHORIZATION DEFAULT;\nRESET ALL;\nDEALLOCATE ALL;\nCLOSE ALL;\nUNLISTEN *;\nSELECT pg_advisory_unlock_all();\nDISCARD PLANS;\nDISCARD TEMP;\n"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:73(para) 
+#: /tmp/cicero-GxnD/ref/discard.xml:73(para) 
 msgid "Releases all temporary resources associated with the current session and resets the session to its initial state. Currently, this has the same effect as executing the following sequence of statements: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:95(title) 
+#: /tmp/cicero-GxnD/ref/discard.xml:95(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:97(para) 
+#: /tmp/cicero-GxnD/ref/discard.xml:97(para) 
 msgid "<command>DISCARD ALL</command> cannot be executed inside a transaction block."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:103(title) 
+#: /tmp/cicero-GxnD/ref/discard.xml:103(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/discard.xml:105(para) 
+#: /tmp/cicero-GxnD/ref/discard.xml:105(para) 
 msgid "<command>DISCARD</command> is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-Vlsa/ref/discard.xml:0(None) 
+#: /tmp/cicero-GxnD/ref/discard.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

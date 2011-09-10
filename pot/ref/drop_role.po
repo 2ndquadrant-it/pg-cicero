@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-09 06:59+0200\n"
+"POT-Creation-Date: 2011-09-10 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,98 +9,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:9(refentrytitle) /tmp/cicero-Vlsa/ref/drop_role.xml:15(refname) /tmp/cicero-Vlsa/ref/drop_role.xml:20(primary) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:9(refentrytitle) /tmp/cicero-GxnD/ref/drop_role.xml:15(refname) /tmp/cicero-GxnD/ref/drop_role.xml:20(primary) 
 msgid "DROP ROLE"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:10(manvolnum) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:11(refmiscinfo) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:16(refpurpose) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:16(refpurpose) 
 msgid "remove a database role"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:25(replaceable) /tmp/cicero-Vlsa/ref/drop_role.xml:72(replaceable) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:25(replaceable) /tmp/cicero-GxnD/ref/drop_role.xml:72(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:24(synopsis) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:24(synopsis) 
 #, no-wrap
 msgid "\nDROP ROLE [ IF EXISTS ] <placeholder-1/> [, ...]\n"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:30(title) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:32(para) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:32(para) 
 msgid "<command>DROP ROLE</command> removes the specified role(s). To drop a superuser role, you must be a superuser yourself; to drop non-superuser roles, you must have <literal>CREATEROLE</literal> privilege."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:39(para) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:39(para) 
 msgid "A role cannot be removed if it is still referenced in any database of the cluster; an error will be raised if so. Before dropping the role, you must drop all the objects it owns (or reassign their ownership) and revoke any privileges the role has been granted. The <xref linkend=\"sql-reassign-owned\"/> and <xref linkend=\"sql-drop-owned\"/> commands can be useful for this purpose."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:49(para) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:49(para) 
 msgid "However, it is not necessary to remove role memberships involving the role; <command>DROP ROLE</command> automatically revokes any memberships of the target role in other roles, and of other roles in the target role. The other roles are not dropped nor otherwise affected."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:58(title) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:58(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:62(literal) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:62(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:64(para) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:64(para) 
 msgid "Do not throw an error if the role does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:74(para) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:74(para) 
 msgid "The name of the role to remove."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:83(title) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:83(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:85(para) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:85(para) 
 msgid "<productname>PostgreSQL</productname> includes a program <xref linkend=\"app-dropuser\"/> that has the same functionality as this command (in fact, it calls this command) but can be run from the command shell."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:94(title) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:94(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:98(programlisting) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:98(programlisting) 
 #, no-wrap
 msgid "\nDROP ROLE jonathan;\n"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:96(para) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:96(para) 
 msgid "To drop a role: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:104(title) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:104(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:106(para) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:106(para) 
 msgid "The SQL standard defines <command>DROP ROLE</command>, but it allows only one role to be dropped at a time, and it specifies different privilege requirements than <productname>PostgreSQL</productname> uses."
 msgstr ""
 
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:114(title) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:114(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-Vlsa/ref/drop_role.xml:0(None) 
+#: /tmp/cicero-GxnD/ref/drop_role.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
