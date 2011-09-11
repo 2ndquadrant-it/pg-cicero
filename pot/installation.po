@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-10 06:59+0200\n"
+"POT-Creation-Date: 2011-09-11 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,1577 +9,1577 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-GxnD/installation.xml:11(title) 
+#: /tmp/cicero-qQrO/installation.xml:11(title) 
 msgid "Installation from Source Code"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:15(primary) 
+#: /tmp/cicero-qQrO/installation.xml:15(primary) 
 msgid "installation"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:18(para) 
+#: /tmp/cicero-qQrO/installation.xml:18(para) 
 msgid "This chapter describes the installation of <productname>PostgreSQL</productname> using the source code distribution. (If you are installing a pre-packaged distribution, such as an RPM or Debian package, ignore this chapter and read the packager's instructions instead.)"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:30(title) 
+#: /tmp/cicero-qQrO/installation.xml:30(title) 
 msgid "Short Version"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:32(para) 
+#: /tmp/cicero-qQrO/installation.xml:32(para) 
 msgid "<synopsis>\n./configure\ngmake\nsu\ngmake install\nadduser postgres\nmkdir /usr/local/pgsql/data\nchown postgres /usr/local/pgsql/data\nsu - postgres\n/usr/local/pgsql/bin/initdb -D /usr/local/pgsql/data\n/usr/local/pgsql/bin/postgres -D /usr/local/pgsql/data &gt;logfile 2&gt;&amp;1 &amp;\n/usr/local/pgsql/bin/createdb test\n/usr/local/pgsql/bin/psql test\n</synopsis> The long version is the rest of this chapter."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:55(title) 
+#: /tmp/cicero-qQrO/installation.xml:55(title) 
 msgid "Requirements"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:57(para) 
+#: /tmp/cicero-qQrO/installation.xml:57(para) 
 msgid "In general, a modern Unix-compatible platform should be able to run <productname>PostgreSQL</productname>. The platforms that had received specific testing at the time of release are listed in <xref linkend=\"supported-platforms\"/> below. In the <filename>doc</filename> subdirectory of the distribution there are several platform-specific <acronym>FAQ</acronym> documents you might wish to consult if you are having trouble."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:73(para) 
+#: /tmp/cicero-qQrO/installation.xml:73(para) 
 msgid "<indexterm><primary>make</primary></indexterm><acronym>GNU</acronym><application>make</application> version 3.80 or newer is required; other <application>make</application> programs or older <acronym>GNU</acronym><application>make</application> versions will <emphasis>not</emphasis> work. <acronym>GNU</acronym><application>make</application> is often installed under the name <filename>gmake</filename>; this document will always refer to it by that name. (On some systems <acronym>GNU</acronym><application>make</application> is the default tool with the name <filename>make</filename>.) To test for <acronym>GNU</acronym><application>make</application> enter: <screen>\n<userinput>gmake --version</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:93(para) 
+#: /tmp/cicero-qQrO/installation.xml:93(para) 
 msgid "You need an <acronym>ISO</acronym>/<acronym>ANSI</acronym> C compiler (at least C89-compliant). Recent versions of <productname>GCC</productname> are recommendable, but <productname>PostgreSQL</productname> is known to build using a wide variety of compilers from different vendors."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:103(para) 
+#: /tmp/cicero-qQrO/installation.xml:103(para) 
 msgid "<application>tar</application> is required to unpack the source distribution, in addition to either <application>gzip</application> or <application>bzip2</application>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:111(para) 
+#: /tmp/cicero-qQrO/installation.xml:111(para) 
 msgid "<indexterm><primary>readline</primary></indexterm><indexterm><primary>libedit</primary></indexterm> The <acronym>GNU</acronym><productname>Readline</productname> library is used by default. It allows <application>psql</application> (the PostgreSQL command line SQL interpreter) to remember each command you type, and allows you to use arrow keys to recall and edit previous commands. This is very helpful and is strongly recommended. If you don't want to use it then you must specify the <option>--without-readline</option> option to <filename>configure</filename>. As an alternative, you can often use the BSD-licensed <filename>libedit</filename> library, originally developed on <productname>NetBSD</productname>. The <filename>libedit</filename> library is GNU <productname>Readline</productname>-compatible and is used if <filename>libreadline</filename> is not found, or if <option>--with-libedit-preferred</option> is used as an option to <filename>configure</filename>. If you are using a package-based Linux distribution, be aware that you need both the <literal>readline</literal> and <literal>readline-devel</literal> packages, if those are separate in your distribution."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:141(para) 
+#: /tmp/cicero-qQrO/installation.xml:141(para) 
 msgid "<indexterm><primary>zlib</primary></indexterm> The <productname>zlib</productname> compression library is used by default. If you don't want to use it then you must specify the <option>--without-zlib</option> option to <filename>configure</filename>. Using this option disables support for compressed archives in <application>pg_dump</application> and <application>pg_restore</application>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:67(para) 
+#: /tmp/cicero-qQrO/installation.xml:67(para) 
 msgid "The following software packages are required for building <productname>PostgreSQL</productname>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:164(para) 
+#: /tmp/cicero-qQrO/installation.xml:164(para) 
 msgid "To build the server programming language <application>PL/Perl</application> you need a full <productname>Perl</productname> installation, including the <filename>libperl</filename> library and the header files. Since <application>PL/Perl</application> will be a shared library, the <indexterm><primary>libperl</primary></indexterm><filename>libperl</filename> library must be a shared library also on most platforms. This appears to be the default in recent <productname>Perl</productname> versions, but it was not in earlier versions, and in any case it is the choice of whomever installed Perl at your site. If you intend to make more than incidental use of <application>PL/Perl</application>, you should ensure that the <productname>Perl</productname> installation was built with the <literal>usemultiplicity</literal> option enabled (<literal>perl -V</literal> will show whether this is the case)."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:183(para) 
+#: /tmp/cicero-qQrO/installation.xml:183(para) 
 msgid "If you don't have the shared library but you need one, a message like this will appear during the <productname>PostgreSQL</productname> build to point out this fact: <screen>\n*** Cannot build PL/Perl because libperl is not a shared library.\n*** You might have to rebuild your Perl installation.  Refer to\n*** the documentation for details.\n</screen> (If you don't follow the on-screen output you will merely notice that the <application>PL/Perl</application> library object, <filename>plperl.so</filename> or similar, will not be installed.) If you see this, you will have to rebuild and install <productname>Perl</productname> manually to be able to build <application>PL/Perl</application>. During the configuration process for <productname>Perl</productname>, request a shared library."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:204(para) 
+#: /tmp/cicero-qQrO/installation.xml:204(para) 
 msgid "To build the <application>PL/Python</application> server programming language, you need a <productname>Python</productname> installation with the header files and the <application>distutils</application> module. The minimum required version is <productname>Python</productname> 2.2. <productname>Python 3</productname> is supported if it's version 3.1 or later; but see <xref linkend=\"plpython-python23\"/> when using Python 3."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:217(para) 
+#: /tmp/cicero-qQrO/installation.xml:217(para) 
 msgid "Since <application>PL/Python</application> will be a shared library, the <indexterm><primary>libpython</primary></indexterm><filename>libpython</filename> library must be a shared library also on most platforms. This is not the case in a default <productname>Python</productname> installation. If after building and installing <productname>PostgreSQL</productname> you have a file called <filename>plpython.so</filename> (possibly a different extension), then everything went well. Otherwise you should have seen a notice like this flying by: <screen>\n*** Cannot build PL/Python because libpython is not a shared library.\n*** You might have to rebuild your Python installation.  Refer to\n*** the documentation for details.\n</screen> That means you have to rebuild (part of) your <productname>Python</productname> installation to create this shared library."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:237(para) 
+#: /tmp/cicero-qQrO/installation.xml:237(para) 
 msgid "If you have problems, run <productname>Python</productname> 2.3 or later's configure using the <literal>--enable-shared</literal> flag. On some operating systems you don't have to build a shared library, but you will have to convince the <productname>PostgreSQL</productname> build system of this. Consult the <filename>Makefile</filename> in the <filename>src/pl/plpython</filename> directory for details."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:248(para) 
+#: /tmp/cicero-qQrO/installation.xml:248(para) 
 msgid "To build the <application>PL/Tcl</application> procedural language, you of course need a <productname>Tcl</productname> installation. If you are using a pre-8.4 release of <productname>Tcl</productname>, ensure that it was built without multithreading support."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:258(para) 
+#: /tmp/cicero-qQrO/installation.xml:258(para) 
 msgid "To enable Native Language Support (<acronym>NLS</acronym>), that is, the ability to display a program's messages in a language other than English, you need an implementation of the <application>Gettext</application><acronym>API</acronym>. Some operating systems have this built-in (e.g., <systemitem class=\"osname\">Linux</systemitem>, <systemitem class=\"osname\">NetBSD</systemitem>, <systemitem class=\"osname\">Solaris</systemitem>), for other systems you can download an add-on package from <ulink url=\"http://www.gnu.org/software/gettext/\"/>. If you are using the <application>Gettext</application> implementation in the <acronym>GNU</acronym> C library then you will additionally need the <productname>GNU Gettext</productname> package for some utility programs. For any of the other implementations you will not need it."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:277(para) 
+#: /tmp/cicero-qQrO/installation.xml:277(para) 
 msgid "You need <application>Kerberos</application>, <productname>OpenSSL</productname>, <productname>OpenLDAP</productname>, and/or <application>PAM</application>, if you want to support authentication or encryption using those services."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:157(para) 
+#: /tmp/cicero-qQrO/installation.xml:157(para) 
 msgid "The following packages are optional. They are not required in the default configuration, but they are needed when certain build options are enabled, as explained below: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:294(para) 
+#: /tmp/cicero-qQrO/installation.xml:294(para) 
 msgid "<indexterm><primary>flex</primary></indexterm><indexterm><primary>lex</primary></indexterm><indexterm><primary>bison</primary></indexterm><indexterm><primary>yacc</primary></indexterm> GNU <application>Flex</application> and <application>Bison</application> are needed to build from a Git checkout, or if you changed the actual scanner and parser definition files. If you need them, be sure to get <application>Flex</application> 2.5.31 or later and <application>Bison</application> 1.875 or later. Other <application>lex</application> and <application>yacc</application> programs cannot be used."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:317(para) 
+#: /tmp/cicero-qQrO/installation.xml:317(para) 
 msgid "<indexterm><primary>perl</primary></indexterm><application>Perl</application> 5.8 or later is needed to build from a Git checkout, or if you changed the input files for any of the build steps that use Perl scripts. If building on Windows you will need <application>Perl</application> in any case."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:287(para) 
+#: /tmp/cicero-qQrO/installation.xml:287(para) 
 msgid "If you are building from a <productname>Git</productname> tree instead of using a released source package, or if you want to do server development, you also need the following packages: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:331(para) 
+#: /tmp/cicero-qQrO/installation.xml:331(para) 
 msgid "If you need to get a <acronym>GNU</acronym> package, you can find it at your local <acronym>GNU</acronym> mirror site (see <ulink url=\"http://www.gnu.org/order/ftp.html\"/> for a list) or at <ulink url=\"ftp://ftp.gnu.org/gnu/\"/>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:339(para) 
+#: /tmp/cicero-qQrO/installation.xml:339(para) 
 msgid "Also check that you have sufficient disk space. You will need about 100 MB for the source tree during compilation and about 20 MB for the installation directory. An empty database cluster takes about 35 MB; databases take about five times the amount of space that a flat text file with the same data would take. If you are going to run the regression tests you will temporarily need up to an extra 150 MB. Use the <command>df</command> command to check free disk space."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:353(title) 
+#: /tmp/cicero-qQrO/installation.xml:353(title) 
 msgid "Getting The Source"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:355(para) 
+#: /tmp/cicero-qQrO/installation.xml:355(para) 
 msgid "The <productname>PostgreSQL</productname> &version; sources can be obtained by anonymous FTP from <ulink url=\"ftp://ftp.postgresql.org/pub/source/v&version;/postgresql-&version;.tar.gz\"/>. Other download options can be found on our website: <ulink url=\"http://www.postgresql.org/download/\"/>. After you have obtained the file, unpack it: <screen>\n<userinput>gunzip postgresql-&version;.tar.gz</userinput>\n<userinput>tar xf postgresql-&version;.tar</userinput>\n</screen> This will create a directory <filename>postgresql-&version;</filename> under the current directory with the <productname>PostgreSQL</productname> sources. Change into that directory for the rest of the installation procedure."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:373(para) 
+#: /tmp/cicero-qQrO/installation.xml:373(para) 
 msgid "You can also get the source directly from the version control repository, see <xref linkend=\"sourcerepo\"/>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:381(title) 
+#: /tmp/cicero-qQrO/installation.xml:381(title) 
 msgid "Installation Procedure"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:386(title) 
+#: /tmp/cicero-qQrO/installation.xml:386(title) 
 msgid "Configuration"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:389(primary) 
+#: /tmp/cicero-qQrO/installation.xml:389(primary) 
 msgid "configure"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:392(para) 
+#: /tmp/cicero-qQrO/installation.xml:392(para) 
 msgid "The first step of the installation procedure is to configure the source tree for your system and choose the options you would like. This is done by running the <filename>configure</filename> script. For a default installation simply enter: <screen>\n<userinput>./configure</userinput>\n</screen> This script will run a number of tests to determine values for various system dependent variables and detect any quirks of your operating system, and finally will create several files in the build tree to record what it found. You can also run <filename>configure</filename> in a directory outside the source tree, if you want to keep the build directory separate. This procedure is also called a <indexterm><primary>VPATH</primary></indexterm><firstterm>VPATH</firstterm> build. Here's how: <screen>\n<userinput>mkdir build_dir</userinput>\n<userinput>cd build_dir</userinput>\n<userinput>/path/to/source/tree/configure [options go here]</userinput>\n<userinput>gmake</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:417(para) 
+#: /tmp/cicero-qQrO/installation.xml:417(para) 
 msgid "The default configuration will build the server and utilities, as well as all client applications and interfaces that require only a C compiler. All files will be installed under <filename>/usr/local/pgsql</filename> by default."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:431(replaceable) 
+#: /tmp/cicero-qQrO/installation.xml:431(replaceable) 
 msgid "PREFIX"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:431(option) 
+#: /tmp/cicero-qQrO/installation.xml:431(option) 
 msgid "--prefix=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:433(para) 
+#: /tmp/cicero-qQrO/installation.xml:433(para) 
 msgid "Install all files under the directory <replaceable>PREFIX</replaceable> instead of <filename>/usr/local/pgsql</filename>. The actual files will be installed into various subdirectories; no files will ever be installed directly into the <replaceable>PREFIX</replaceable> directory."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:441(para) 
+#: /tmp/cicero-qQrO/installation.xml:441(para) 
 msgid "If you have special needs, you can also customize the individual subdirectories with the following options. However, if you leave these with their defaults, the installation will be relocatable, meaning you can move the directory after installation. (The <literal>man</literal> and <literal>doc</literal> locations are not affected by this.)"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:450(para) 
+#: /tmp/cicero-qQrO/installation.xml:450(para) 
 msgid "For relocatable installs, you might want to use <filename>configure</filename>'s <literal>--disable-rpath</literal> option. Also, you will need to tell the operating system how to find the shared libraries."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:460(replaceable) 
+#: /tmp/cicero-qQrO/installation.xml:460(replaceable) 
 msgid "EXEC-PREFIX"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:460(option) 
+#: /tmp/cicero-qQrO/installation.xml:460(option) 
 msgid "--exec-prefix=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:462(para) 
+#: /tmp/cicero-qQrO/installation.xml:462(para) 
 msgid "You can install architecture-dependent files under a different prefix, <replaceable>EXEC-PREFIX</replaceable>, than what <replaceable>PREFIX</replaceable> was set to. This can be useful to share architecture-independent files between hosts. If you omit this, then <replaceable>EXEC-PREFIX</replaceable> is set equal to <replaceable>PREFIX</replaceable> and both architecture-dependent and independent files will be installed under the same tree, which is probably what you want."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:476(replaceable) /tmp/cicero-GxnD/installation.xml:487(replaceable) /tmp/cicero-GxnD/installation.xml:497(replaceable) /tmp/cicero-GxnD/installation.xml:508(replaceable) /tmp/cicero-GxnD/installation.xml:518(replaceable) /tmp/cicero-GxnD/installation.xml:530(replaceable) /tmp/cicero-GxnD/installation.xml:542(replaceable) /tmp/cicero-GxnD/installation.xml:553(replaceable) /tmp/cicero-GxnD/installation.xml:565(replaceable) /tmp/cicero-GxnD/installation.xml:577(replaceable) /tmp/cicero-GxnD/installation.xml:719(replaceable) /tmp/cicero-GxnD/installation.xml:1061(replaceable) 
+#: /tmp/cicero-qQrO/installation.xml:476(replaceable) /tmp/cicero-qQrO/installation.xml:487(replaceable) /tmp/cicero-qQrO/installation.xml:497(replaceable) /tmp/cicero-qQrO/installation.xml:508(replaceable) /tmp/cicero-qQrO/installation.xml:518(replaceable) /tmp/cicero-qQrO/installation.xml:530(replaceable) /tmp/cicero-qQrO/installation.xml:542(replaceable) /tmp/cicero-qQrO/installation.xml:553(replaceable) /tmp/cicero-qQrO/installation.xml:565(replaceable) /tmp/cicero-qQrO/installation.xml:577(replaceable) /tmp/cicero-qQrO/installation.xml:719(replaceable) /tmp/cicero-qQrO/installation.xml:1061(replaceable) 
 msgid "DIRECTORY"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:476(option) 
+#: /tmp/cicero-qQrO/installation.xml:476(option) 
 msgid "--bindir=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:478(para) 
+#: /tmp/cicero-qQrO/installation.xml:478(para) 
 msgid "Specifies the directory for executable programs. The default is <filename><replaceable>EXEC-PREFIX</replaceable>/bin</filename>, which normally means <filename>/usr/local/pgsql/bin</filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:487(option) 
+#: /tmp/cicero-qQrO/installation.xml:487(option) 
 msgid "--sysconfdir=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:489(para) 
+#: /tmp/cicero-qQrO/installation.xml:489(para) 
 msgid "Sets the directory for various configuration files, <filename><replaceable>PREFIX</replaceable>/etc</filename> by default."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:497(option) 
+#: /tmp/cicero-qQrO/installation.xml:497(option) 
 msgid "--libdir=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:499(para) 
+#: /tmp/cicero-qQrO/installation.xml:499(para) 
 msgid "Sets the location to install libraries and dynamically loadable modules. The default is <filename><replaceable>EXEC-PREFIX</replaceable>/lib</filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:508(option) 
+#: /tmp/cicero-qQrO/installation.xml:508(option) 
 msgid "--includedir=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:510(para) 
+#: /tmp/cicero-qQrO/installation.xml:510(para) 
 msgid "Sets the directory for installing C and C++ header files. The default is <filename><replaceable>PREFIX</replaceable>/include</filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:518(option) 
+#: /tmp/cicero-qQrO/installation.xml:518(option) 
 msgid "--datarootdir=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:520(para) 
+#: /tmp/cicero-qQrO/installation.xml:520(para) 
 msgid "Sets the root directory for various types of read-only data files. This only sets the default for some of the following options. The default is <filename><replaceable>PREFIX</replaceable>/share</filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:530(option) 
+#: /tmp/cicero-qQrO/installation.xml:530(option) 
 msgid "--datadir=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:532(para) 
+#: /tmp/cicero-qQrO/installation.xml:532(para) 
 msgid "Sets the directory for read-only data files used by the installed programs. The default is <filename><replaceable>DATAROOTDIR</replaceable></filename>. Note that this has nothing to do with where your database files will be placed."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:542(option) 
+#: /tmp/cicero-qQrO/installation.xml:542(option) 
 msgid "--localedir=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:544(para) 
+#: /tmp/cicero-qQrO/installation.xml:544(para) 
 msgid "Sets the directory for installing locale data, in particular message translation catalog files. The default is <filename><replaceable>DATAROOTDIR</replaceable>/locale</filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:553(option) 
+#: /tmp/cicero-qQrO/installation.xml:553(option) 
 msgid "--mandir=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:555(para) 
+#: /tmp/cicero-qQrO/installation.xml:555(para) 
 msgid "The man pages that come with <productname>PostgreSQL</productname> will be installed under this directory, in their respective <filename>man<replaceable>x</replaceable></filename> subdirectories. The default is <filename><replaceable>DATAROOTDIR</replaceable>/man</filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:565(option) 
+#: /tmp/cicero-qQrO/installation.xml:565(option) 
 msgid "--docdir=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:567(para) 
+#: /tmp/cicero-qQrO/installation.xml:567(para) 
 msgid "Sets the root directory for installing documentation files, except <quote>man</quote> pages. This only sets the default for the following options. The default value for this option is <filename><replaceable>DATAROOTDIR</replaceable>/doc/postgresql</filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:577(option) 
+#: /tmp/cicero-qQrO/installation.xml:577(option) 
 msgid "--htmldir=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:579(para) 
+#: /tmp/cicero-qQrO/installation.xml:579(para) 
 msgid "The HTML-formatted documentation for <productname>PostgreSQL</productname> will be installed under this directory. The default is <filename><replaceable>DATAROOTDIR</replaceable></filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:590(para) 
+#: /tmp/cicero-qQrO/installation.xml:590(para) 
 msgid "Care has been taken to make it possible to install <productname>PostgreSQL</productname> into shared installation locations (such as <filename>/usr/local/include</filename>) without interfering with the namespace of the rest of the system. First, the string <quote><literal>/postgresql</literal></quote> is automatically appended to <varname>datadir</varname>, <varname>sysconfdir</varname>, and <varname>docdir</varname>, unless the fully expanded directory name already contains the string <quote><literal>postgres</literal></quote> or <quote><literal>pgsql</literal></quote>. For example, if you choose <filename>/usr/local</filename> as prefix, the documentation will be installed in <filename>/usr/local/doc/postgresql</filename>, but if the prefix is <filename>/opt/postgres</filename>, then it will be in <filename>/opt/postgres/doc</filename>. The public C header files of the client interfaces are installed into <varname>includedir</varname> and are namespace-clean. The internal header files and the server header files are installed into private directories under <varname>includedir</varname>. See the documentation of each interface for information about how to access its header files. Finally, a private subdirectory will also be created, if appropriate, under <varname>libdir</varname> for dynamically loadable modules."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:424(para) 
+#: /tmp/cicero-qQrO/installation.xml:424(para) 
 msgid "You can customize the build and installation process by supplying one or more of the following command line options to <filename>configure</filename>: <placeholder-1/><placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:620(replaceable) /tmp/cicero-GxnD/installation.xml:638(replaceable) 
+#: /tmp/cicero-qQrO/installation.xml:620(replaceable) /tmp/cicero-qQrO/installation.xml:638(replaceable) 
 msgid "DIRECTORIES"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:620(option) 
+#: /tmp/cicero-qQrO/installation.xml:620(option) 
 msgid "--with-includes=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:622(para) 
+#: /tmp/cicero-qQrO/installation.xml:622(para) 
 msgid "<replaceable>DIRECTORIES</replaceable> is a colon-separated list of directories that will be added to the list the compiler searches for header files. If you have optional packages (such as GNU <application>Readline</application>) installed in a non-standard location, you have to use this option and probably also the corresponding <option>--with-libraries</option> option."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:631(para) 
+#: /tmp/cicero-qQrO/installation.xml:631(para) 
 msgid "Example: <literal>--with-includes=/opt/gnu/include:/usr/sup/include</literal>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:638(option) 
+#: /tmp/cicero-qQrO/installation.xml:638(option) 
 msgid "--with-libraries=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:640(para) 
+#: /tmp/cicero-qQrO/installation.xml:640(para) 
 msgid "<replaceable>DIRECTORIES</replaceable> is a colon-separated list of directories to search for libraries. You will probably have to use this option (and the corresponding <option>--with-includes</option> option) if you have packages installed in non-standard locations."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:647(para) 
+#: /tmp/cicero-qQrO/installation.xml:647(para) 
 msgid "Example: <literal>--with-libraries=/opt/gnu/lib:/usr/sup/lib</literal>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:654(replaceable) 
+#: /tmp/cicero-qQrO/installation.xml:654(replaceable) 
 msgid "LANGUAGES"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:654(optional) 
+#: /tmp/cicero-qQrO/installation.xml:654(optional) 
 msgid "=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:654(option) 
+#: /tmp/cicero-qQrO/installation.xml:654(option) 
 msgid "--enable-nls<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:656(para) 
+#: /tmp/cicero-qQrO/installation.xml:656(para) 
 msgid "Enables Native Language Support (<acronym>NLS</acronym>), that is, the ability to display a program's messages in a language other than English. <replaceable>LANGUAGES</replaceable> is an optional space-separated list of codes of the languages that you want supported, for example <literal>--enable-nls='de fr'</literal>. (The intersection between your list and the set of actually provided translations will be computed automatically.) If you do not specify a list, then all available translations are installed."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:669(para) 
+#: /tmp/cicero-qQrO/installation.xml:669(para) 
 msgid "To use this option, you will need an implementation of the <application>Gettext</application> API; see above."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:677(replaceable) 
+#: /tmp/cicero-qQrO/installation.xml:677(replaceable) 
 msgid "NUMBER"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:677(option) 
+#: /tmp/cicero-qQrO/installation.xml:677(option) 
 msgid "--with-pgport=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:679(para) 
+#: /tmp/cicero-qQrO/installation.xml:679(para) 
 msgid "Set <replaceable>NUMBER</replaceable> as the default port number for server and clients. The default is 5432. The port can always be changed later on, but if you specify it here then both server and clients will have the same default compiled in, which can be very convenient. Usually the only good reason to select a non-default value is if you intend to run multiple <productname>PostgreSQL</productname> servers on the same machine."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:692(option) 
+#: /tmp/cicero-qQrO/installation.xml:692(option) 
 msgid "--with-perl"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:694(para) 
+#: /tmp/cicero-qQrO/installation.xml:694(para) 
 msgid "Build the <application>PL/Perl</application> server-side language."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:701(option) 
+#: /tmp/cicero-qQrO/installation.xml:701(option) 
 msgid "--with-python"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:703(para) 
+#: /tmp/cicero-qQrO/installation.xml:703(para) 
 msgid "Build the <application>PL/Python</application> server-side language."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:710(option) 
+#: /tmp/cicero-qQrO/installation.xml:710(option) 
 msgid "--with-tcl"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:712(para) 
+#: /tmp/cicero-qQrO/installation.xml:712(para) 
 msgid "Build the <application>PL/Tcl</application> server-side language."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:719(option) 
+#: /tmp/cicero-qQrO/installation.xml:719(option) 
 msgid "--with-tclconfig=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:721(para) 
+#: /tmp/cicero-qQrO/installation.xml:721(para) 
 msgid "Tcl installs the file <filename>tclConfig.sh</filename>, which contains configuration information needed to build modules interfacing to Tcl. This file is normally found automatically at a well-known location, but if you want to use a different version of Tcl you can specify the directory in which to look for it."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:733(option) 
+#: /tmp/cicero-qQrO/installation.xml:733(option) 
 msgid "--with-gssapi"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:735(para) 
+#: /tmp/cicero-qQrO/installation.xml:735(para) 
 msgid "Build with support for GSSAPI authentication. On many systems, the GSSAPI (usually a part of the Kerberos installation) system is not installed in a location that is searched by default (e.g., <filename>/usr/include</filename>, <filename>/usr/lib</filename>), so you must use the options <option>--with-includes</option> and <option>--with-libraries</option> in addition to this option. <filename>configure</filename> will check for the required header files and libraries to make sure that your GSSAPI installation is sufficient before proceeding."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:750(option) 
+#: /tmp/cicero-qQrO/installation.xml:750(option) 
 msgid "--with-krb5"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:752(para) 
+#: /tmp/cicero-qQrO/installation.xml:752(para) 
 msgid "Build with support for Kerberos 5 authentication. On many systems, the Kerberos system is not installed in a location that is searched by default (e.g., <filename>/usr/include</filename>, <filename>/usr/lib</filename>), so you must use the options <option>--with-includes</option> and <option>--with-libraries</option> in addition to this option. <filename>configure</filename> will check for the required header files and libraries to make sure that your Kerberos installation is sufficient before proceeding."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:766(replaceable) 
+#: /tmp/cicero-qQrO/installation.xml:766(replaceable) 
 msgid "NAME"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:766(option) 
+#: /tmp/cicero-qQrO/installation.xml:766(option) 
 msgid "--with-krb-srvnam=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:768(para) 
+#: /tmp/cicero-qQrO/installation.xml:768(para) 
 msgid "The default name of the Kerberos service principal (also used by GSSAPI). <literal>postgres</literal> is the default. There's usually no reason to change this unless you have a Windows environment, in which case it must be set to upper case <literal>POSTGRES</literal>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:781(primary) 
+#: /tmp/cicero-qQrO/installation.xml:781(primary) 
 msgid "OpenSSL"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:782(seealso) 
+#: /tmp/cicero-qQrO/installation.xml:782(seealso) 
 msgid "SSL"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:785(option) 
+#: /tmp/cicero-qQrO/installation.xml:785(option) 
 msgid "--with-openssl"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:787(para) 
+#: /tmp/cicero-qQrO/installation.xml:787(para) 
 msgid "Build with support for <acronym>SSL</acronym> (encrypted) connections. This requires the <productname>OpenSSL</productname> package to be installed. <filename>configure</filename> will check for the required header files and libraries to make sure that your <productname>OpenSSL</productname> installation is sufficient before proceeding."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:799(option) 
+#: /tmp/cicero-qQrO/installation.xml:799(option) 
 msgid "--with-pam"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:801(para) 
+#: /tmp/cicero-qQrO/installation.xml:801(para) 
 msgid "Build with <acronym>PAM</acronym><indexterm><primary>PAM</primary></indexterm> (Pluggable Authentication Modules) support."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:809(option) 
+#: /tmp/cicero-qQrO/installation.xml:809(option) 
 msgid "--with-ldap"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:811(para) 
+#: /tmp/cicero-qQrO/installation.xml:811(para) 
 msgid "Build with <acronym>LDAP</acronym><indexterm><primary>LDAP</primary></indexterm> support for authentication and connection parameter lookup (see <xref linkend=\"libpq-ldap\"/> and <xref linkend=\"auth-ldap\"/> for more information). On Unix, this requires the <productname>OpenLDAP</productname> package to be installed. On Windows, the default <productname>WinLDAP</productname> library is used. <filename>configure</filename> will check for the required header files and libraries to make sure that your <productname>OpenLDAP</productname> installation is sufficient before proceeding."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:827(option) 
+#: /tmp/cicero-qQrO/installation.xml:827(option) 
 msgid "--without-readline"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:829(para) 
+#: /tmp/cicero-qQrO/installation.xml:829(para) 
 msgid "Prevents use of the <application>Readline</application> library (and <application>libedit</application> as well). This option disables command-line editing and history in <application>psql</application>, so it is not recommended."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:839(option) 
+#: /tmp/cicero-qQrO/installation.xml:839(option) 
 msgid "--with-libedit-preferred"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:841(para) 
+#: /tmp/cicero-qQrO/installation.xml:841(para) 
 msgid "Favors the use of the BSD-licensed <application>libedit</application> library rather than GPL-licensed <application>Readline</application>. This option is significant only if you have both libraries installed; the default in that case is to use <application>Readline</application>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:851(option) 
+#: /tmp/cicero-qQrO/installation.xml:851(option) 
 msgid "--with-bonjour"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:853(para) 
+#: /tmp/cicero-qQrO/installation.xml:853(para) 
 msgid "Build with Bonjour support. This requires Bonjour support in your operating system. Recommended on Mac OS X."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:861(option) 
+#: /tmp/cicero-qQrO/installation.xml:861(option) 
 msgid "--with-ossp-uuid"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:863(para) 
+#: /tmp/cicero-qQrO/installation.xml:863(para) 
 msgid "Build components using the <ulink url=\"http://www.ossp.org/pkg/lib/uuid/\">OSSP UUID library</ulink>. Specifically, build the <xref linkend=\"uuid-ossp\"/> module, which provides functions to generate UUIDs.<indexterm><primary>UUID</primary></indexterm>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:876(option) 
+#: /tmp/cicero-qQrO/installation.xml:876(option) 
 msgid "--with-libxml"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:878(para) 
+#: /tmp/cicero-qQrO/installation.xml:878(para) 
 msgid "Build with libxml (enables SQL/XML support). Libxml version 2.6.23 or later is required for this feature."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:883(para) 
+#: /tmp/cicero-qQrO/installation.xml:883(para) 
 msgid "Libxml installs a program <command>xml2-config</command> that can be used to detect the required compiler and linker options. PostgreSQL will use it automatically if found. To specify a libxml installation at an unusual location, you can either set the environment variable <envar>XML2_CONFIG</envar> to point to the <command>xml2-config</command> program belonging to the installation, or use the options <option>--with-includes</option> and <option>--with-libraries</option>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:899(option) 
+#: /tmp/cicero-qQrO/installation.xml:899(option) 
 msgid "--with-libxslt"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:901(para) 
+#: /tmp/cicero-qQrO/installation.xml:901(para) 
 msgid "Use libxslt when building the <xref linkend=\"xml2\"/> module. <application>xml2</application> relies on this library to perform XSL transformations of XML."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:912(option) 
+#: /tmp/cicero-qQrO/installation.xml:912(option) 
 msgid "--disable-integer-datetimes"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:914(para) 
+#: /tmp/cicero-qQrO/installation.xml:914(para) 
 msgid "Disable support for 64-bit integer storage for timestamps and intervals, and store datetime values as floating-point numbers instead. Floating-point datetime storage was the default in <productname>PostgreSQL</productname> releases prior to 8.4, but it is now deprecated, because it does not support microsecond precision for the full range of <type>timestamp</type> values. However, integer-based datetime storage requires a 64-bit integer type. Therefore, this option can be used when no such type is available, or for compatibility with applications written for prior versions of <productname>PostgreSQL</productname>. See <xref linkend=\"datatype-datetime\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:934(option) 
+#: /tmp/cicero-qQrO/installation.xml:934(option) 
 msgid "--disable-float4-byval"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:936(para) 
+#: /tmp/cicero-qQrO/installation.xml:936(para) 
 msgid "Disable passing float4 values <quote>by value</quote>, causing them to be passed <quote>by reference</quote> instead. This option costs performance, but may be needed for compatibility with old user-defined functions that are written in C and use the <quote>version 0</quote> calling convention. A better long-term solution is to update any such functions to use the <quote>version 1</quote> calling convention."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:949(option) 
+#: /tmp/cicero-qQrO/installation.xml:949(option) 
 msgid "--disable-float8-byval"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:951(para) 
+#: /tmp/cicero-qQrO/installation.xml:951(para) 
 msgid "Disable passing float8 values <quote>by value</quote>, causing them to be passed <quote>by reference</quote> instead. This option costs performance, but may be needed for compatibility with old user-defined functions that are written in C and use the <quote>version 0</quote> calling convention. A better long-term solution is to update any such functions to use the <quote>version 1</quote> calling convention. Note that this option affects not only float8, but also int8 and some related types such as timestamp. On 32-bit platforms, <option>--disable-float8-byval</option> is the default and it is not allowed to select <option>--enable-float8-byval</option>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:968(replaceable) /tmp/cicero-GxnD/installation.xml:1005(replaceable) 
+#: /tmp/cicero-qQrO/installation.xml:968(replaceable) /tmp/cicero-qQrO/installation.xml:1005(replaceable) 
 msgid "SEGSIZE"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:968(option) 
+#: /tmp/cicero-qQrO/installation.xml:968(option) 
 msgid "--with-segsize=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:970(para) 
+#: /tmp/cicero-qQrO/installation.xml:970(para) 
 msgid "Set the <firstterm>segment size</firstterm>, in gigabytes. Large tables are divided into multiple operating-system files, each of size equal to the segment size. This avoids problems with file size limits that exist on many platforms. The default segment size, 1 gigabyte, is safe on all supported platforms. If your operating system has <quote>largefile</quote> support (which most do, nowadays), you can use a larger segment size. This can be helpful to reduce the number of file descriptors consumed when working with very large tables. But be careful not to select a value larger than is supported by your platform and the file systems you intend to use. Other tools you might wish to use, such as <application>tar</application>, could also set limits on the usable file size. It is recommended, though not absolutely required, that this value be a power of 2. Note that changing this value requires an initdb."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:991(replaceable) /tmp/cicero-GxnD/installation.xml:1019(replaceable) 
+#: /tmp/cicero-qQrO/installation.xml:991(replaceable) /tmp/cicero-qQrO/installation.xml:1019(replaceable) 
 msgid "BLOCKSIZE"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:991(option) 
+#: /tmp/cicero-qQrO/installation.xml:991(option) 
 msgid "--with-blocksize=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:993(para) 
+#: /tmp/cicero-qQrO/installation.xml:993(para) 
 msgid "Set the <firstterm>block size</firstterm>, in kilobytes. This is the unit of storage and I/O within tables. The default, 8 kilobytes, is suitable for most situations; but other values may be useful in special cases. The value must be a power of 2 between 1 and 32 (kilobytes). Note that changing this value requires an initdb."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1005(option) 
+#: /tmp/cicero-qQrO/installation.xml:1005(option) 
 msgid "--with-wal-segsize=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1007(para) 
+#: /tmp/cicero-qQrO/installation.xml:1007(para) 
 msgid "Set the <firstterm>WAL segment size</firstterm>, in megabytes. This is the size of each individual file in the WAL log. It may be useful to adjust this size to control the granularity of WAL log shipping. The default size is 16 megabytes. The value must be a power of 2 between 1 and 64 (megabytes). Note that changing this value requires an initdb."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1019(option) 
+#: /tmp/cicero-qQrO/installation.xml:1019(option) 
 msgid "--with-wal-blocksize=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1021(para) 
+#: /tmp/cicero-qQrO/installation.xml:1021(para) 
 msgid "Set the <firstterm>WAL block size</firstterm>, in kilobytes. This is the unit of storage and I/O within the WAL log. The default, 8 kilobytes, is suitable for most situations; but other values may be useful in special cases. The value must be a power of 2 between 1 and 64 (kilobytes). Note that changing this value requires an initdb."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1033(option) 
+#: /tmp/cicero-qQrO/installation.xml:1033(option) 
 msgid "--disable-spinlocks"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1035(para) 
+#: /tmp/cicero-qQrO/installation.xml:1035(para) 
 msgid "Allow the build to succeed even if <productname>PostgreSQL</productname> has no CPU spinlock support for the platform. The lack of spinlock support will result in poor performance; therefore, this option should only be used if the build aborts and informs you that the platform lacks spinlock support. If this option is required to build <productname>PostgreSQL</productname> on your platform, please report the problem to the <productname>PostgreSQL</productname> developers."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1049(option) 
+#: /tmp/cicero-qQrO/installation.xml:1049(option) 
 msgid "--disable-thread-safety"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1051(para) 
+#: /tmp/cicero-qQrO/installation.xml:1051(para) 
 msgid "Disable the thread-safety of client libraries. This prevents concurrent threads in <application>libpq</application> and <application>ECPG</application> programs from safely controlling their private connection handles."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1061(option) 
+#: /tmp/cicero-qQrO/installation.xml:1061(option) 
 msgid "--with-system-tzdata=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1063(primary) 
+#: /tmp/cicero-qQrO/installation.xml:1063(primary) 
 msgid "time zone data"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1066(para) 
+#: /tmp/cicero-qQrO/installation.xml:1066(para) 
 msgid "<productname>PostgreSQL</productname> includes its own time zone database, which it requires for date and time operations. This time zone database is in fact compatible with the <quote>zoneinfo</quote> time zone database provided by many operating systems such as FreeBSD, Linux, and Solaris, so it would be redundant to install it again. When this option is used, the system-supplied time zone database in <replaceable>DIRECTORY</replaceable> is used instead of the one included in the PostgreSQL source distribution. <replaceable>DIRECTORY</replaceable> must be specified as an absolute path. <filename>/usr/share/zoneinfo</filename> is a likely directory on some operating systems. Note that the installation routine will not detect mismatching or erroneous time zone data. If you use this option, you are advised to run the regression tests to verify that the time zone data you have pointed to works correctly with <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1084(primary) 
+#: /tmp/cicero-qQrO/installation.xml:1084(primary) 
 msgid "cross compilation"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1086(para) 
+#: /tmp/cicero-qQrO/installation.xml:1086(para) 
 msgid "This option is mainly aimed at binary package distributors who know their target operating system well. The main advantage of using this option is that the PostgreSQL package won't need to be upgraded whenever any of the many local daylight-saving time rules change. Another advantage is that PostgreSQL can be cross-compiled more straightforwardly if the time zone database files do not need to be built during the installation."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1100(option) 
+#: /tmp/cicero-qQrO/installation.xml:1100(option) 
 msgid "--without-zlib"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1102(para) 
+#: /tmp/cicero-qQrO/installation.xml:1102(para) 
 msgid "<indexterm><primary>zlib</primary></indexterm> Prevents use of the <application>Zlib</application> library. This disables support for compressed archives in <application>pg_dump</application> and <application>pg_restore</application>. This option is only intended for those rare systems where this library is not available."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1116(option) 
+#: /tmp/cicero-qQrO/installation.xml:1116(option) 
 msgid "--enable-debug"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1118(para) 
+#: /tmp/cicero-qQrO/installation.xml:1118(para) 
 msgid "Compiles all programs and libraries with debugging symbols. This means that you can run the programs in a debugger to analyze problems. This enlarges the size of the installed executables considerably, and on non-GCC compilers it usually also disables compiler optimization, causing slowdowns. However, having the symbols available is extremely helpful for dealing with any problems that might arise. Currently, this option is recommended for production installations only if you use GCC. But you should always have it on if you are doing development work or running a beta version."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1134(option) 
+#: /tmp/cicero-qQrO/installation.xml:1134(option) 
 msgid "--enable-coverage"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1136(para) 
+#: /tmp/cicero-qQrO/installation.xml:1136(para) 
 msgid "If using GCC, all programs and libraries are compiled with code coverage testing instrumentation. When run, they generate files in the build directory with code coverage metrics. See <xref linkend=\"regress-coverage\"/> for more information. This option is for use only with GCC and when doing development work."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1149(option) 
+#: /tmp/cicero-qQrO/installation.xml:1149(option) 
 msgid "--enable-profiling"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1151(para) 
+#: /tmp/cicero-qQrO/installation.xml:1151(para) 
 msgid "If using GCC, all programs and libraries are compiled so they can be profiled. On backend exit, a subdirectory will be created that contains the <filename>gmon.out</filename> file for use in profiling. This option is for use only with GCC and when doing development work."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1161(option) 
+#: /tmp/cicero-qQrO/installation.xml:1161(option) 
 msgid "--enable-cassert"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1163(para) 
+#: /tmp/cicero-qQrO/installation.xml:1163(para) 
 msgid "Enables <firstterm>assertion</firstterm> checks in the server, which test for many <quote>cannot happen</quote> conditions. This is invaluable for code development purposes, but the tests can slow down the server significantly. Also, having the tests turned on won't necessarily enhance the stability of your server! The assertion checks are not categorized for severity, and so what might be a relatively harmless bug will still lead to server restarts if it triggers an assertion failure. This option is not recommended for production use, but you should have it on for development work or when running a beta version."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1180(option) 
+#: /tmp/cicero-qQrO/installation.xml:1180(option) 
 msgid "--enable-depend"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1182(para) 
+#: /tmp/cicero-qQrO/installation.xml:1182(para) 
 msgid "Enables automatic dependency tracking. With this option, the makefiles are set up so that all affected object files will be rebuilt when any header file is changed. This is useful if you are doing development work, but is just wasted overhead if you intend only to compile once and install. At present, this option only works with GCC."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1194(option) 
+#: /tmp/cicero-qQrO/installation.xml:1194(option) 
 msgid "--enable-dtrace"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1196(para) 
+#: /tmp/cicero-qQrO/installation.xml:1196(para) 
 msgid "<indexterm><primary>DTrace</primary></indexterm> Compiles <productname>PostgreSQL</productname> with support for the dynamic tracing tool DTrace. See <xref linkend=\"dynamic-trace\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1206(para) 
+#: /tmp/cicero-qQrO/installation.xml:1206(para) 
 msgid "To point to the <command>dtrace</command> program, the environment variable <envar>DTRACE</envar> can be set. This will often be necessary because <command>dtrace</command> is typically installed under <filename>/usr/sbin</filename>, which might not be in the path."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1214(para) 
+#: /tmp/cicero-qQrO/installation.xml:1214(para) 
 msgid "Extra command-line options for the <command>dtrace</command> program can be specified in the environment variable <envar>DTRACEFLAGS</envar>. On Solaris, to include DTrace support in a 64-bit binary, you must specify <literal>DTRACEFLAGS=\"-64\"</literal> to configure. For example, using the GCC compiler: <screen>\n./configure CC='gcc -m64' --enable-dtrace DTRACEFLAGS='-64' ...\n</screen> Using Sun's compiler: <screen>\n./configure CC='/opt/SUNWspro/bin/cc -xtarget=native64' --enable-dtrace DTRACEFLAGS='-64' ...\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1235(para) 
+#: /tmp/cicero-qQrO/installation.xml:1235(para) 
 msgid "If you prefer a C compiler different from the one <filename>configure</filename> picks, you can set the environment variable <envar>CC</envar> to the program of your choice. By default, <filename>configure</filename> will pick <filename>gcc</filename> if available, else the platform's default (usually <filename>cc</filename>). Similarly, you can override the default compiler flags if needed with the <envar>CFLAGS</envar> variable."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1245(para) 
+#: /tmp/cicero-qQrO/installation.xml:1245(para) 
 msgid "You can specify environment variables on the <filename>configure</filename> command line, for example: <screen>\n<userinput>./configure CC=/opt/bin/gcc CFLAGS='-O2 -pipe'</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1259(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1259(envar) 
 msgid "BISON"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1261(para) 
+#: /tmp/cicero-qQrO/installation.xml:1261(para) 
 msgid "Bison program"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1268(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1268(envar) 
 msgid "CC"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1270(para) 
+#: /tmp/cicero-qQrO/installation.xml:1270(para) 
 msgid "C compiler"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1277(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1277(envar) 
 msgid "CFLAGS"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1279(para) 
+#: /tmp/cicero-qQrO/installation.xml:1279(para) 
 msgid "options to pass to the C compiler"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1286(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1286(envar) 
 msgid "CPP"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1288(para) 
+#: /tmp/cicero-qQrO/installation.xml:1288(para) 
 msgid "C preprocessor"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1295(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1295(envar) 
 msgid "CPPFLAGS"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1297(para) 
+#: /tmp/cicero-qQrO/installation.xml:1297(para) 
 msgid "options to pass to the C preprocessor"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1304(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1304(envar) 
 msgid "DTRACE"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1306(para) 
+#: /tmp/cicero-qQrO/installation.xml:1306(para) 
 msgid "location of the <command>dtrace</command> program"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1313(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1313(envar) 
 msgid "DTRACEFLAGS"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1315(para) 
+#: /tmp/cicero-qQrO/installation.xml:1315(para) 
 msgid "options to pass to the <command>dtrace</command> program"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1322(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1322(envar) 
 msgid "FLEX"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1324(para) 
+#: /tmp/cicero-qQrO/installation.xml:1324(para) 
 msgid "Flex program"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1331(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1331(envar) 
 msgid "LDFLAGS"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1333(para) 
+#: /tmp/cicero-qQrO/installation.xml:1333(para) 
 msgid "options to use when linking either executables or shared libraries"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1340(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1340(envar) 
 msgid "LDFLAGS_EX"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1342(para) 
+#: /tmp/cicero-qQrO/installation.xml:1342(para) 
 msgid "additional options for linking executables only"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1349(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1349(envar) 
 msgid "LDFLAGS_SL"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1351(para) 
+#: /tmp/cicero-qQrO/installation.xml:1351(para) 
 msgid "additional options for linking shared libraries only"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1358(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1358(envar) 
 msgid "MSGFMT"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1360(para) 
+#: /tmp/cicero-qQrO/installation.xml:1360(para) 
 msgid "<command>msgfmt</command> program for native language support"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1367(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1367(envar) 
 msgid "PERL"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1369(para) 
+#: /tmp/cicero-qQrO/installation.xml:1369(para) 
 msgid "Full path to the Perl interpreter. This will be used to determine the dependencies for building PL/Perl."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1377(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1377(envar) 
 msgid "PYTHON"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1379(para) 
+#: /tmp/cicero-qQrO/installation.xml:1379(para) 
 msgid "Full path to the Python interpreter. This will be used to determine the dependencies for building PL/Python. Also, whether Python 2 or 3 is specified here (or otherwise implicitly chosen) determines which variant of the PL/Python language becomes available. See <xref linkend=\"plpython-python23\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1393(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1393(envar) 
 msgid "TCLSH"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1395(para) 
+#: /tmp/cicero-qQrO/installation.xml:1395(para) 
 msgid "Full path to the Tcl interpreter. This will be used to determine the dependencies for building PL/Tcl, and it will be substituted into Tcl scripts."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1404(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1404(envar) 
 msgid "XML2_CONFIG"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1406(para) 
+#: /tmp/cicero-qQrO/installation.xml:1406(para) 
 msgid "<command>xml2-config</command> program used to locate the libxml installation."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1253(para) 
+#: /tmp/cicero-qQrO/installation.xml:1253(para) 
 msgid "Here is a list of the significant variables that can be set in this manner: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1417(title) 
+#: /tmp/cicero-qQrO/installation.xml:1417(title) 
 msgid "Build"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1419(para) 
+#: /tmp/cicero-qQrO/installation.xml:1419(para) 
 msgid "To start the build, type: <screen>\n<userinput>gmake</userinput>\n</screen> (Remember to use <acronym>GNU</acronym><application>make</application>.) The build will take a few minutes depending on your hardware. The last line displayed should be: <screen>\nAll of PostgreSQL is successfully made. Ready to install.\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1432(para) 
+#: /tmp/cicero-qQrO/installation.xml:1432(para) 
 msgid "If you want to build everything that can be built, including the documentation (HTML and man pages), and the additional modules (<filename>contrib</filename>), type instead: <screen>\n<userinput>gmake world</userinput>\n</screen> The last line displayed should be: <screen>\nPostgreSQL, contrib and HTML documentation successfully made. Ready to install.\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1447(title) 
+#: /tmp/cicero-qQrO/installation.xml:1447(title) 
 msgid "Regression Tests"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1450(primary) 
+#: /tmp/cicero-qQrO/installation.xml:1450(primary) 
 msgid "regression test"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1453(para) 
+#: /tmp/cicero-qQrO/installation.xml:1453(para) 
 msgid "If you want to test the newly built server before you install it, you can run the regression tests at this point. The regression tests are a test suite to verify that <productname>PostgreSQL</productname> runs on your machine in the way the developers expected it to. Type: <screen>\n<userinput>gmake check</userinput>\n</screen> (This won't work as root; do it as an unprivileged user.) <xref linkend=\"regress\"/> contains detailed information about interpreting the test results. You can repeat this test at any later time by issuing the same command."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1471(title) 
+#: /tmp/cicero-qQrO/installation.xml:1471(title) 
 msgid "Installing the Files"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1474(para) 
+#: /tmp/cicero-qQrO/installation.xml:1474(para) 
 msgid "If you are upgrading an existing system be sure to read <xref linkend=\"upgrading\"/> which has instructions about upgrading a cluster."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1483(para) 
+#: /tmp/cicero-qQrO/installation.xml:1483(para) 
 msgid "To install <productname>PostgreSQL</productname> enter: <screen>\n<userinput>gmake install</userinput>\n</screen> This will install files into the directories that were specified in <xref linkend=\"configure\"/>. Make sure that you have appropriate permissions to write into that area. Normally you need to do this step as root. Alternatively, you can create the target directories in advance and arrange for appropriate permissions to be granted."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1496(para) 
+#: /tmp/cicero-qQrO/installation.xml:1496(para) 
 msgid "To install the documentation (HTML and man pages), enter: <screen>\n<userinput>gmake install-docs</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1503(para) 
+#: /tmp/cicero-qQrO/installation.xml:1503(para) 
 msgid "If you built the world above, type instead: <screen>\n<userinput>gmake install-world</userinput>\n</screen> This also installs the documentation."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1511(para) 
+#: /tmp/cicero-qQrO/installation.xml:1511(para) 
 msgid "You can use <literal>gmake install-strip</literal> instead of <literal>gmake install</literal> to strip the executable files and libraries as they are installed. This will save some space. If you built with debugging support, stripping will effectively remove the debugging support, so it should only be done if debugging is no longer needed. <literal>install-strip</literal> tries to do a reasonable job saving space, but it does not have perfect knowledge of how to strip every unneeded byte from an executable file, so if you want to save all the disk space you possibly can, you will have to do manual work."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1524(para) 
+#: /tmp/cicero-qQrO/installation.xml:1524(para) 
 msgid "The standard installation provides all the header files needed for client application development as well as for server-side program development, such as custom functions or data types written in C. (Prior to <productname>PostgreSQL</productname> 8.0, a separate <literal>gmake install-all-headers</literal> command was needed for the latter, but this step has been folded into the standard install.)"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1534(title) 
+#: /tmp/cicero-qQrO/installation.xml:1534(title) 
 msgid "Client-only installation:"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1535(para) 
+#: /tmp/cicero-qQrO/installation.xml:1535(para) 
 msgid "If you want to install only the client applications and interface libraries, then you can use these commands: <screen>\n<userinput>gmake -C src/bin install</userinput>\n<userinput>gmake -C src/include install</userinput>\n<userinput>gmake -C src/interfaces install</userinput>\n<userinput>gmake -C doc install</userinput>\n</screen><filename>src/bin</filename> has a few binaries for server-only use, but they are small."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1552(title) 
+#: /tmp/cicero-qQrO/installation.xml:1552(title) 
 msgid "Registering <application>eventlog</application> on <systemitem class=\"osname\">Windows</systemitem>:"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1554(para) 
+#: /tmp/cicero-qQrO/installation.xml:1554(para) 
 msgid "To register a <systemitem class=\"osname\">Windows</systemitem><application>eventlog</application> library with the operating system, issue this command after installation: <screen>\n<userinput>regsvr32 <replaceable>pgsql_library_directory</replaceable>/pgevent.dll</userinput>\n</screen> This creates registry entries used by the event viewer."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1565(title) 
+#: /tmp/cicero-qQrO/installation.xml:1565(title) 
 msgid "Uninstallation:"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1566(para) 
+#: /tmp/cicero-qQrO/installation.xml:1566(para) 
 msgid "To undo the installation use the command <command>gmake uninstall</command>. However, this will not remove any created directories."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1573(title) 
+#: /tmp/cicero-qQrO/installation.xml:1573(title) 
 msgid "Cleaning:"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1575(para) 
+#: /tmp/cicero-qQrO/installation.xml:1575(para) 
 msgid "After the installation you can free disk space by removing the built files from the source tree with the command <command>gmake clean</command>. This will preserve the files made by the <command>configure</command> program, so that you can rebuild everything with <command>gmake</command> later on. To reset the source tree to the state in which it was distributed, use <command>gmake distclean</command>. If you are going to build for several platforms within the same source tree you must do this and re-configure for each platform. (Alternatively, use a separate build tree for each platform, so that the source tree remains unmodified.)"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1589(para) 
+#: /tmp/cicero-qQrO/installation.xml:1589(para) 
 msgid "If you perform a build and then discover that your <command>configure</command> options were wrong, or if you change anything that <command>configure</command> investigates (for example, software upgrades), then it's a good idea to do <command>gmake distclean</command> before reconfiguring and rebuilding. Without this, your changes in configuration choices might not propagate everywhere they need to."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1600(title) 
+#: /tmp/cicero-qQrO/installation.xml:1600(title) 
 msgid "Post-Installation Setup"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1603(title) 
+#: /tmp/cicero-qQrO/installation.xml:1603(title) 
 msgid "Shared Libraries"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1606(primary) 
+#: /tmp/cicero-qQrO/installation.xml:1606(primary) 
 msgid "shared library"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1609(para) 
+#: /tmp/cicero-qQrO/installation.xml:1609(para) 
 msgid "On some systems with shared libraries you need to tell the system how to find the newly installed shared libraries. The systems on which this is <emphasis>not</emphasis> necessary include <systemitem class=\"osname\">BSD/OS</systemitem>, <systemitem class=\"osname\">FreeBSD</systemitem>, <systemitem class=\"osname\">HP-UX</systemitem>, <systemitem class=\"osname\">IRIX</systemitem>, <systemitem class=\"osname\">Linux</systemitem>, <systemitem class=\"osname\">NetBSD</systemitem>, <systemitem class=\"osname\">OpenBSD</systemitem>, <systemitem class=\"osname\">Tru64 UNIX</systemitem> (formerly <systemitem class=\"osname\">Digital UNIX</systemitem>), and <systemitem class=\"osname\">Solaris</systemitem>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1628(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:1628(programlisting) 
 #, no-wrap
 msgid "\nLD_LIBRARY_PATH=/usr/local/pgsql/lib\nexport LD_LIBRARY_PATH\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1633(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:1633(programlisting) 
 #, no-wrap
 msgid "\nsetenv LD_LIBRARY_PATH /usr/local/pgsql/lib\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1623(para) 
+#: /tmp/cicero-qQrO/installation.xml:1623(para) 
 msgid "The method to set the shared library search path varies between platforms, but the most widely-used method is to set the environment variable <envar>LD_LIBRARY_PATH</envar> like so: In Bourne shells (<command>sh</command>, <command>ksh</command>, <command>bash</command>, <command>zsh</command>): <placeholder-1/> or in <command>csh</command> or <command>tcsh</command>: <placeholder-2/> Replace <literal>/usr/local/pgsql/lib</literal> with whatever you set <option><literal>--libdir</literal></option> to in <xref linkend=\"configure\"/>. You should put these commands into a shell start-up file such as <filename>/etc/profile</filename> or <filename>~/.bash_profile</filename>. Some good information about the caveats associated with this method can be found at <ulink url=\"http://xahlee.org/UnixResource_dir/_/ldpath.html\"/>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1645(para) 
+#: /tmp/cicero-qQrO/installation.xml:1645(para) 
 msgid "On some systems it might be preferable to set the environment variable <envar>LD_RUN_PATH</envar><emphasis>before</emphasis> building."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1651(para) 
+#: /tmp/cicero-qQrO/installation.xml:1651(para) 
 msgid "On <systemitem class=\"osname\">Cygwin</systemitem>, put the library directory in the <envar>PATH</envar> or move the <filename>.dll</filename> files into the <filename>bin</filename> directory."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1658(para) 
+#: /tmp/cicero-qQrO/installation.xml:1658(para) 
 msgid "If in doubt, refer to the manual pages of your system (perhaps <command>ld.so</command> or <command>rld</command>). If you later get a message like: <screen>\npsql: error in loading shared libraries\nlibpq.so.2.1: cannot open shared object file: No such file or directory\n</screen> then this step was necessary. Simply take care of it then."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1676(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:1676(programlisting) 
 #, no-wrap
 msgid "\n/sbin/ldconfig /usr/local/pgsql/lib\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1685(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:1685(programlisting) 
 #, no-wrap
 msgid "\n/sbin/ldconfig -m /usr/local/pgsql/lib\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1669(para) 
+#: /tmp/cicero-qQrO/installation.xml:1669(para) 
 msgid "<indexterm><primary>ldconfig</primary></indexterm> If you are on <systemitem class=\"osname\">BSD/OS</systemitem>, <systemitem class=\"osname\">Linux</systemitem>, or <systemitem class=\"osname\">SunOS 4</systemitem> and you have root access you can run: <placeholder-1/> (or equivalent directory) after installation to enable the run-time linker to find the shared libraries faster. Refer to the manual page of <command>ldconfig</command> for more information. On <systemitem class=\"osname\">FreeBSD</systemitem>, <systemitem class=\"osname\">NetBSD</systemitem>, and <systemitem class=\"osname\">OpenBSD</systemitem> the command is: <placeholder-2/> instead. Other systems are not known to have an equivalent command."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1694(title) 
+#: /tmp/cicero-qQrO/installation.xml:1694(title) 
 msgid "Environment Variables"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1697(envar) 
+#: /tmp/cicero-qQrO/installation.xml:1697(envar) 
 msgid "PATH"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1700(para) 
+#: /tmp/cicero-qQrO/installation.xml:1700(para) 
 msgid "If you installed into <filename>/usr/local/pgsql</filename> or some other location that is not searched for programs by default, you should add <filename>/usr/local/pgsql/bin</filename> (or whatever you set <option><literal>--bindir</literal></option> to in <xref linkend=\"configure\"/>) into your <envar>PATH</envar>. Strictly speaking, this is not necessary, but it will make the use of <productname>PostgreSQL</productname> much more convenient."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1714(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:1714(programlisting) 
 #, no-wrap
 msgid "\nPATH=/usr/local/pgsql/bin:$PATH\nexport PATH\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1719(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:1719(programlisting) 
 #, no-wrap
 msgid "\nset path = ( /usr/local/pgsql/bin $path )\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1710(para) 
+#: /tmp/cicero-qQrO/installation.xml:1710(para) 
 msgid "To do this, add the following to your shell start-up file, such as <filename>~/.bash_profile</filename> (or <filename>/etc/profile</filename>, if you want it to affect all users): <placeholder-1/> If you are using <command>csh</command> or <command>tcsh</command>, then use this command: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1732(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:1732(programlisting) 
 #, no-wrap
 msgid "\nMANPATH=/usr/local/pgsql/man:$MANPATH\nexport MANPATH\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1724(para) 
+#: /tmp/cicero-qQrO/installation.xml:1724(para) 
 msgid "<indexterm><primary><envar>MANPATH</envar></primary></indexterm> To enable your system to find the <application>man</application> documentation, you need to add lines like the following to a shell start-up file unless you installed into a location that is searched by default: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1738(para) 
+#: /tmp/cicero-qQrO/installation.xml:1738(para) 
 msgid "The environment variables <envar>PGHOST</envar> and <envar>PGPORT</envar> specify to client applications the host and port of the database server, overriding the compiled-in defaults. If you are going to run client applications remotely then it is convenient if every user that plans to use the database sets <envar>PGHOST</envar>. This is not required, however; the settings can be communicated via command line options to most client programs."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1755(title) 
+#: /tmp/cicero-qQrO/installation.xml:1755(title) 
 msgid "Supported Platforms"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1757(para) 
+#: /tmp/cicero-qQrO/installation.xml:1757(para) 
 msgid "A platform (that is, a CPU architecture and operating system combination) is considered supported by the <productname>PostgreSQL</productname> development community if the code contains provisions to work on that platform and it has recently been verified to build and pass its regression tests on that platform. Currently, most testing of platform compatibility is done automatically by test machines in the <ulink url=\"http://buildfarm.postgresql.org/\">PostgreSQL Build Farm</ulink>. If you are interested in using <productname>PostgreSQL</productname> on a platform that is not represented in the build farm, but on which the code works or can be made to work, you are strongly encouraged to set up a build farm member machine so that continued compatibility can be assured."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1771(para) 
+#: /tmp/cicero-qQrO/installation.xml:1771(para) 
 msgid "In general, <productname>PostgreSQL</productname> can be expected to work on these CPU architectures: x86, x86_64, IA64, PowerPC, PowerPC 64, S/390, S/390x, Sparc, Sparc 64, Alpha, ARM, MIPS, MIPSEL, M68K, and PA-RISC. Code support exists for M32R, NS32K, and VAX, but these architectures are not known to have been tested recently. It is often possible to build on an unsupported CPU type by configuring with <option>--disable-spinlocks</option>, but performance will be poor."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1781(para) 
+#: /tmp/cicero-qQrO/installation.xml:1781(para) 
 msgid "<productname>PostgreSQL</productname> can be expected to work on these operating systems: Linux (all recent distributions), Windows (Win2000 SP4 and later), FreeBSD, OpenBSD, NetBSD, Mac OS X, AIX, HP/UX, IRIX, Solaris, Tru64 Unix, and UnixWare. Other Unix-like systems may also work but are not currently being tested. In most cases, all CPU architectures supported by a given operating system will work. Look in the <xref linkend=\"installation-platform-notes\"/> below to see if there is information specific to your operating system, particularly if using an older system."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1793(para) 
+#: /tmp/cicero-qQrO/installation.xml:1793(para) 
 msgid "If you have installation problems on a platform that is known to be supported according to recent build farm results, please report it to <email>pgsql-bugs@postgresql.org</email>. If you are interested in porting <productname>PostgreSQL</productname> to a new platform, <email>pgsql-hackers@postgresql.org</email> is the appropriate place to discuss that."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1804(title) 
+#: /tmp/cicero-qQrO/installation.xml:1804(title) 
 msgid "Platform-specific Notes"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1806(para) 
+#: /tmp/cicero-qQrO/installation.xml:1806(para) 
 msgid "This section documents additional platform-specific issues regarding the installation and setup of PostgreSQL. Be sure to read the installation instructions, and in particular <xref linkend=\"install-requirements\"/> as well. Also, check <xref linkend=\"regress\"/> regarding the interpretation of regression test results."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1816(para) 
+#: /tmp/cicero-qQrO/installation.xml:1816(para) 
 msgid "Platforms that are not covered here have no known platform-specific installation issues."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1822(title) /tmp/cicero-GxnD/installation.xml:1825(primary) 
+#: /tmp/cicero-qQrO/installation.xml:1822(title) /tmp/cicero-qQrO/installation.xml:1825(primary) 
 msgid "AIX"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1826(secondary) /tmp/cicero-GxnD/installation.xml:2157(secondary) /tmp/cicero-GxnD/installation.xml:2266(secondary) /tmp/cicero-GxnD/installation.xml:2358(secondary) /tmp/cicero-GxnD/installation.xml:2414(secondary) /tmp/cicero-GxnD/installation.xml:2478(secondary) /tmp/cicero-GxnD/installation.xml:2483(secondary) /tmp/cicero-GxnD/installation.xml:2634(secondary) 
+#: /tmp/cicero-qQrO/installation.xml:1826(secondary) /tmp/cicero-qQrO/installation.xml:2157(secondary) /tmp/cicero-qQrO/installation.xml:2266(secondary) /tmp/cicero-qQrO/installation.xml:2358(secondary) /tmp/cicero-qQrO/installation.xml:2414(secondary) /tmp/cicero-qQrO/installation.xml:2478(secondary) /tmp/cicero-qQrO/installation.xml:2483(secondary) /tmp/cicero-qQrO/installation.xml:2634(secondary) 
 msgid "installation on"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1829(para) 
+#: /tmp/cicero-qQrO/installation.xml:1829(para) 
 msgid "PostgreSQL works on AIX, but getting it installed properly can be challenging. AIX versions from 4.3.3 to 6.1 are considered supported. You can use GCC or the native IBM compiler <command>xlc</command>. In general, using recent versions of AIX and PostgreSQL helps. Check the build farm for up to date information about which versions of AIX are known to work."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1838(para) 
+#: /tmp/cicero-qQrO/installation.xml:1838(para) 
 msgid "The minimum recommended fix levels for supported AIX versions are:"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1844(term) 
+#: /tmp/cicero-qQrO/installation.xml:1844(term) 
 msgid "AIX 4.3.3"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1845(para) 
+#: /tmp/cicero-qQrO/installation.xml:1845(para) 
 msgid "Maintenance Level 11 + post ML11 bundle"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1849(term) 
+#: /tmp/cicero-qQrO/installation.xml:1849(term) 
 msgid "AIX 5.1"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1850(para) 
+#: /tmp/cicero-qQrO/installation.xml:1850(para) 
 msgid "Maintenance Level 9 + post ML9 bundle"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1854(term) 
+#: /tmp/cicero-qQrO/installation.xml:1854(term) 
 msgid "AIX 5.2"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1855(para) 
+#: /tmp/cicero-qQrO/installation.xml:1855(para) 
 msgid "Technology Level 10 Service Pack 3"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1859(term) 
+#: /tmp/cicero-qQrO/installation.xml:1859(term) 
 msgid "AIX 5.3"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1860(para) 
+#: /tmp/cicero-qQrO/installation.xml:1860(para) 
 msgid "Technology Level 7"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1864(term) 
+#: /tmp/cicero-qQrO/installation.xml:1864(term) 
 msgid "AIX 6.1"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1865(para) 
+#: /tmp/cicero-qQrO/installation.xml:1865(para) 
 msgid "Base Level"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1869(para) 
+#: /tmp/cicero-qQrO/installation.xml:1869(para) 
 msgid "To check your current fix level, use <command>oslevel -r</command> in AIX 4.3.3 to AIX 5.2 ML 7, or <command>oslevel -s</command> in later versions."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1875(para) 
+#: /tmp/cicero-qQrO/installation.xml:1875(para) 
 msgid "Use the following <command>configure</command> flags in addition to your own if you have installed Readline or libz in <literal>/usr/local</literal>: <literal>--with-includes=/usr/local/include --with-libraries=/usr/local/lib</literal>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1884(title) 
+#: /tmp/cicero-qQrO/installation.xml:1884(title) 
 msgid "GCC Issues"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1886(para) 
+#: /tmp/cicero-qQrO/installation.xml:1886(para) 
 msgid "On AIX 5.3, there have been some problems getting PostgreSQL to compile and run using GCC."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1891(para) 
+#: /tmp/cicero-qQrO/installation.xml:1891(para) 
 msgid "You will want to use a version of GCC subsequent to 3.3.2, particularly if you use a prepackaged version. We had good success with 4.0.1. Problems with earlier versions seem to have more to do with the way IBM packaged GCC than with actual issues with GCC, so that if you compile GCC yourself, you might well have success with an earlier version of GCC."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1902(title) 
+#: /tmp/cicero-qQrO/installation.xml:1902(title) 
 msgid "Unix-Domain Sockets Broken"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1904(para) 
+#: /tmp/cicero-qQrO/installation.xml:1904(para) 
 msgid "AIX 5.3 has a problem where <structname>sockaddr_storage</structname> is not defined to be large enough. In version 5.3, IBM increased the size of <structname>sockaddr_un</structname>, the address structure for Unix-domain sockets, but did not correspondingly increase the size of <structname>sockaddr_storage</structname>. The result of this is that attempts to use Unix-domain sockets with PostgreSQL lead to libpq overflowing the data structure. TCP/IP connections work OK, but not Unix-domain sockets, which prevents the regression tests from working."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1917(para) 
+#: /tmp/cicero-qQrO/installation.xml:1917(para) 
 msgid "The problem was reported to IBM, and is recorded as bug report PMR29657. If you upgrade to maintenance level 5300-03 or later, that will include this fix. A quick workaround is to alter <symbol>_SS_MAXSIZE</symbol> to 1025 in <filename>/usr/include/sys/socket.h</filename>. In either case, recompile PostgreSQL once you have the corrected header file."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1928(title) 
+#: /tmp/cicero-qQrO/installation.xml:1928(title) 
 msgid "Internet Address Issues"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1930(para) 
+#: /tmp/cicero-qQrO/installation.xml:1930(para) 
 msgid "PostgreSQL relies on the system's <function>getaddrinfo</function> function to parse IP addresses in <varname>listen_addresses</varname>, <filename>pg_hba.conf</filename>, etc. Older versions of AIX have assorted bugs in this function. If you have problems related to these settings, updating to the appropriate AIX fix level shown above should take care of it."
 msgstr ""
 
 #. http://archives.postgresql.org/message/6064jt6cfm.fsf_dba2.int.libertyrms.com
-#: /tmp/cicero-GxnD/installation.xml:1941(para) 
+#: /tmp/cicero-qQrO/installation.xml:1941(para) 
 msgid "One user reports:"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1945(para) 
+#: /tmp/cicero-qQrO/installation.xml:1945(para) 
 msgid "When implementing PostgreSQL version 8.1 on AIX 5.3, we periodically ran into problems where the statistics collector would <quote>mysteriously</quote> not come up successfully. This appears to be the result of unexpected behavior in the IPv6 implementation. It looks like PostgreSQL and IPv6 do not play very well together on AIX 5.3."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1958(para) 
+#: /tmp/cicero-qQrO/installation.xml:1958(para) 
 msgid "Delete the IPv6 address for localhost: <screen>\n(as root)\n# ifconfig lo0 inet6 ::1/0 delete\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1973(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:1973(programlisting) 
 #, no-wrap
 msgid "\nhosts=local,bind\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1977(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:1977(programlisting) 
 #, no-wrap
 msgid "\nhosts=local4,bind4\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1968(para) 
+#: /tmp/cicero-qQrO/installation.xml:1968(para) 
 msgid "Remove IPv6 from net services. The file <filename>/etc/netsvc.conf</filename> on AIX is roughly equivalent to <filename>/etc/nsswitch.conf</filename> on Solaris/Linux. The default, on AIX, is thus: <placeholder-1/> Replace this with: <placeholder-2/> to deactivate searching for IPv6 addresses."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1954(para) 
+#: /tmp/cicero-qQrO/installation.xml:1954(para) 
 msgid "Any of the following actions <quote>fix</quote> the problem. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:1987(para) 
+#: /tmp/cicero-qQrO/installation.xml:1987(para) 
 msgid "This is really a workaround for problems relating to immaturity of IPv6 support, which improved visibly during the course of AIX 5.3 releases. It has worked with AIX version 5.3, but does not represent an elegant solution to the problem. It has been reported that this workaround is not only unnecessary, but causes problems on AIX 6.1, where IPv6 support has become more mature."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2000(title) 
+#: /tmp/cicero-qQrO/installation.xml:2000(title) 
 msgid "Memory Management"
 msgstr ""
 
 #. http://archives.postgresql.org/message/603bgqmpl9.fsf@dba2.int.libertyrms.com
-#: /tmp/cicero-GxnD/installation.xml:2003(para) 
+#: /tmp/cicero-qQrO/installation.xml:2003(para) 
 msgid "AIX can be somewhat peculiar with regards to the way it does memory management. You can have a server with many multiples of gigabytes of RAM free, but still get out of memory or address space errors when running applications. One example is <command>createlang</command> failing with unusual errors. For example, running as the owner of the PostgreSQL installation: <screen>\n-bash-3.00$ createlang plperl template1\ncreatelang: language installation failed: ERROR:  could not load library \"/opt/dbs/pgsql748/lib/plperl.so\": A memory address is not in the address space for the process.\n</screen> Running as a non-owner in the group possessing the PostgreSQL installation: <screen>\n-bash-3.00$ createlang plperl template1\ncreatelang: language installation failed: ERROR:  could not load library \"/opt/dbs/pgsql748/lib/plperl.so\": Bad address\n</screen> Another example is out of memory errors in the PostgreSQL server logs, with every memory allocation near or greater than 256 MB failing."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2025(para) 
+#: /tmp/cicero-qQrO/installation.xml:2025(para) 
 msgid "The overall cause of all these problems is the default bittedness and memory model used by the server process. By default, all binaries built on AIX are 32-bit. This does not depend upon hardware type or kernel in use. These 32-bit processes are limited to 4 GB of memory laid out in 256 MB segments using one of a few models. The default allows for less than 256 MB in the heap as it shares a single segment with the stack."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2035(para) 
+#: /tmp/cicero-qQrO/installation.xml:2035(para) 
 msgid "In the case of the <command>createlang</command> example, above, check your umask and the permissions of the binaries in your PostgreSQL installation. The binaries involved in that example were 32-bit and installed as mode 750 instead of 755. Due to the permissions being set in this fashion, only the owner or a member of the possessing group can load the library. Since it isn't world-readable, the loader places the object into the process' heap instead of the shared library segments where it would otherwise be placed."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2047(para) 
+#: /tmp/cicero-qQrO/installation.xml:2047(para) 
 msgid "The <quote>ideal</quote> solution for this is to use a 64-bit build of PostgreSQL, but that is not always practical, because systems with 32-bit processors can build, but not run, 64-bit binaries."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2054(para) 
+#: /tmp/cicero-qQrO/installation.xml:2054(para) 
 msgid "If a 32-bit binary is desired, set <symbol>LDR_CNTRL</symbol> to <literal>MAXDATA=0x<replaceable>n</replaceable>0000000</literal>, where 1 &lt;= n &lt;= 8, before starting the PostgreSQL server, and try different values and <filename>postgresql.conf</filename> settings to find a configuration that works satisfactorily. This use of <symbol>LDR_CNTRL</symbol> tells AIX that you want the server to have <symbol>MAXDATA</symbol> bytes set aside for the heap, allocated in 256 MB segments. When you find a workable configuration, <command>ldedit</command> can be used to modify the binaries so that they default to using the desired heap size. PostgreSQL can also be rebuilt, passing <literal>configure LDFLAGS=\"-Wl,-bmaxdata:0x<replaceable>n</replaceable>0000000\"</literal> to achieve the same effect."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2071(para) 
+#: /tmp/cicero-qQrO/installation.xml:2071(para) 
 msgid "For a 64-bit build, set <envar>OBJECT_MODE</envar> to 64 and pass <literal>CC=\"gcc -maix64\"</literal> and <literal>LDFLAGS=\"-Wl,-bbigtoc\"</literal> to <command>configure</command>. (Options for <command>xlc</command> might differ.) If you omit the export of <envar>OBJECT_MODE</envar>, your build may fail with linker errors. When <envar>OBJECT_MODE</envar> is set, it tells AIX's build utilities such as <command>ar</command>, <command>as</command>, and <command>ld</command> what type of objects to default to handling."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2083(para) 
+#: /tmp/cicero-qQrO/installation.xml:2083(para) 
 msgid "By default, overcommit of paging space can happen. While we have not seen this occur, AIX will kill processes when it runs out of memory and the overcommit is accessed. The closest to this that we have seen is fork failing because the system decided that there was not enough memory for another process. Like many other parts of AIX, the paging space allocation method and out-of-memory kill is configurable on a system- or process-wide basis if this becomes a problem."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2095(title) 
+#: /tmp/cicero-qQrO/installation.xml:2095(title) 
 msgid "References and Resources"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2099(ulink) 
+#: /tmp/cicero-qQrO/installation.xml:2099(ulink) 
 msgid "Large Program Support"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2102(title) /tmp/cicero-GxnD/installation.xml:2111(title) 
+#: /tmp/cicero-qQrO/installation.xml:2102(title) /tmp/cicero-qQrO/installation.xml:2111(title) 
 msgid "AIX Documentation: General Programming Concepts: Writing and Debugging Programs"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2108(ulink) 
+#: /tmp/cicero-qQrO/installation.xml:2108(ulink) 
 msgid "Program Address Space Overview"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2117(ulink) 
+#: /tmp/cicero-qQrO/installation.xml:2117(ulink) 
 msgid "Performance Overview of the Virtual Memory Manager (VMM)"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2120(title) /tmp/cicero-GxnD/installation.xml:2129(title) /tmp/cicero-GxnD/installation.xml:2138(title) 
+#: /tmp/cicero-qQrO/installation.xml:2120(title) /tmp/cicero-qQrO/installation.xml:2129(title) /tmp/cicero-qQrO/installation.xml:2138(title) 
 msgid "AIX Documentation: Performance Management Guide"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2126(ulink) 
+#: /tmp/cicero-qQrO/installation.xml:2126(ulink) 
 msgid "Page Space Allocation"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2135(ulink) 
+#: /tmp/cicero-qQrO/installation.xml:2135(ulink) 
 msgid "Paging-space thresholds tuning"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2143(ulink) 
+#: /tmp/cicero-qQrO/installation.xml:2143(ulink) 
 msgid "Developing and Porting C and C++ Applications on AIX"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2145(publishername) 
+#: /tmp/cicero-qQrO/installation.xml:2145(publishername) 
 msgid "IBM Redbook"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2153(title) /tmp/cicero-GxnD/installation.xml:2156(primary) 
+#: /tmp/cicero-qQrO/installation.xml:2153(title) /tmp/cicero-qQrO/installation.xml:2156(primary) 
 msgid "Cygwin"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2160(para) 
+#: /tmp/cicero-qQrO/installation.xml:2160(para) 
 msgid "PostgreSQL can be built using Cygwin, a Linux-like environment for Windows, but that method is inferior to the native Windows build (see <xref linkend=\"install-windows\"/>) and running a server under Cygwin is no longer recommended."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2175(para) 
+#: /tmp/cicero-qQrO/installation.xml:2175(para) 
 msgid "Set your path to use the Cygwin bin directory before the Windows utilities. This will help prevent problems with compilation."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2183(para) 
+#: /tmp/cicero-qQrO/installation.xml:2183(para) 
 msgid "The GNU make command is called <command>make</command>, not <command>gmake</command>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2189(para) 
+#: /tmp/cicero-qQrO/installation.xml:2189(para) 
 msgid "The <command>adduser</command> command is not supported; use the appropriate user management application on Windows NT, 2000, or XP. Otherwise, skip this step."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2197(para) 
+#: /tmp/cicero-qQrO/installation.xml:2197(para) 
 msgid "The <command>su</command> command is not supported; use ssh to simulate su on Windows NT, 2000, or XP. Otherwise, skip this step."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2205(para) 
+#: /tmp/cicero-qQrO/installation.xml:2205(para) 
 msgid "OpenSSL is not supported."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2211(para) 
+#: /tmp/cicero-qQrO/installation.xml:2211(para) 
 msgid "Start <command>cygserver</command> for shared memory support. To do this, enter the command <literal>/usr/sbin/cygserver &amp;</literal>. This program needs to be running anytime you start the PostgreSQL server or initialize a database cluster (<command>initdb</command>). The default <command>cygserver</command> configuration may need to be changed (e.g., increase <symbol>SEMMNS</symbol>) to prevent PostgreSQL from failing due to a lack of system resources."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2224(para) 
+#: /tmp/cicero-qQrO/installation.xml:2224(para) 
 msgid "Building might fail on some systems where a locale other than C is in use. To fix this, set the locale to C by doing <command>export LANG=C.utf8</command> before building, and then setting it back to the previous setting, after you have installed PostgreSQL."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2241(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:2241(programlisting) 
 #, no-wrap
 msgid "\nmake MAX_CONNECTIONS=5 check\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2234(para) 
+#: /tmp/cicero-qQrO/installation.xml:2234(para) 
 msgid "The parallel regression tests (<literal>make check</literal>) can generate spurious regression test failures due to overflowing the <function>listen()</function> backlog queue which causes connection refused errors or hangs. You can limit the number of connections using the make variable <varname>MAX_CONNECTIONS</varname> thus: <placeholder-1/> (On some systems you can have up to about 10 simultaneous connections)."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2167(para) 
+#: /tmp/cicero-qQrO/installation.xml:2167(para) 
 msgid "When building from source, proceed according to the normal installation procedure (i.e., <literal>./configure; make</literal>; etc.), noting the following-Cygwin specific differences: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2251(para) 
+#: /tmp/cicero-qQrO/installation.xml:2251(para) 
 msgid "It is possible to install <command>cygserver</command> and the PostgreSQL server as Windows NT services. For information on how to do this, please refer to the <filename>README</filename> document included with the PostgreSQL binary package on Cygwin. It is installed in the directory <filename>/usr/share/doc/Cygwin</filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2262(title) /tmp/cicero-GxnD/installation.xml:2265(primary) 
+#: /tmp/cicero-qQrO/installation.xml:2262(title) /tmp/cicero-qQrO/installation.xml:2265(primary) 
 msgid "HP-UX"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2269(para) 
+#: /tmp/cicero-qQrO/installation.xml:2269(para) 
 msgid "PostgreSQL 7.3+ should work on Series 700/800 PA-RISC machines running HP-UX 10.X or 11.X, given appropriate system patch levels and build tools. At least one developer routinely tests on HP-UX 10.20, and we have reports of successful installations on HP-UX 11.00 and 11.11."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2277(para) 
+#: /tmp/cicero-qQrO/installation.xml:2277(para) 
 msgid "Aside from the PostgreSQL source distribution, you will need GNU make (HP's make will not do), and either GCC or HP's full ANSI C compiler. If you intend to build from Git sources rather than a distribution tarball, you will also need Flex (GNU lex) and Bison (GNU yacc). We also recommend making sure you are fairly up-to-date on HP patches. At a minimum, if you are building 64 bit binaries on on HP-UX 11.11 you may need PHSS_30966 (11.11) or a successor patch otherwise <command>initdb</command> may hang: <literallayout>\nPHSS_30966  s700_800 ld(1) and linker tools cumulative patch\n</literallayout> On general principles you should be current on libc and ld/dld patches, as well as compiler patches if you are using HP's C compiler. See HP's support sites such as <ulink url=\"http://itrc.hp.com\"/> and <ulink url=\"ftp://us-ffs.external.hp.com/\"/> for free copies of their latest patches."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2298(para) 
+#: /tmp/cicero-qQrO/installation.xml:2298(para) 
 msgid "If you are building on a PA-RISC 2.0 machine and want to have 64-bit binaries using GCC, you must use GCC 64-bit version. GCC binaries for HP-UX PA-RISC and Itanium are available from <ulink url=\"http://www.hp.com/go/gcc\"/>. Don't forget to get and install binutils at the same time."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2306(para) 
+#: /tmp/cicero-qQrO/installation.xml:2306(para) 
 msgid "If you are building on a PA-RISC 2.0 machine and want the compiled binaries to run on PA-RISC 1.1 machines you will need to specify <option>+DAportable</option> in <envar>CFLAGS</envar>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2312(para) 
+#: /tmp/cicero-qQrO/installation.xml:2312(para) 
 msgid "If you are building on a HP-UX Itanium machine, you will need the latest HP ANSI C compiler with its dependent patch or successor patches: <literallayout>\nPHSS_30848  s700_800 HP C Compiler (A.05.57)\nPHSS_30849  s700_800 u2comp/be/plugin library Patch\n</literallayout>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2326(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:2326(programlisting) 
 #, no-wrap
 msgid "\n./configure CC=cc\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2330(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:2330(programlisting) 
 #, no-wrap
 msgid "\n./configure CC=gcc\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2322(para) 
+#: /tmp/cicero-qQrO/installation.xml:2322(para) 
 msgid "If you have both HP's C compiler and GCC's, then you might want to explicitly select the compiler to use when you run <command>configure</command>: <placeholder-1/> for HP's C compiler, or <placeholder-2/> for GCC. If you omit this setting, then configure will pick <command>gcc</command> if it has a choice."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2337(para) 
+#: /tmp/cicero-qQrO/installation.xml:2337(para) 
 msgid "The default install target location is <filename>/usr/local/pgsql</filename>, which you might want to change to something under <filename>/opt</filename>. If so, use the <option>--prefix</option> switch to <command>configure</command>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2345(para) 
+#: /tmp/cicero-qQrO/installation.xml:2345(para) 
 msgid "In the regression tests, there might be some low-order-digit differences in the geometry tests, which vary depending on which compiler and math library versions you use. Any other error is cause for suspicion."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2354(title) /tmp/cicero-GxnD/installation.xml:2357(primary) 
+#: /tmp/cicero-qQrO/installation.xml:2354(title) /tmp/cicero-qQrO/installation.xml:2357(primary) 
 msgid "IRIX"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2361(para) 
+#: /tmp/cicero-qQrO/installation.xml:2361(para) 
 msgid "PostgreSQL has been reported to run successfully on MIPS r8000, r10000 (both ip25 and ip27) and r12000(ip35) processors, running IRIX 6.5.5m, 6.5.12, 6.5.13, and 6.5.26 with MIPSPro compilers version 7.30, 7.3.1.2m, 7.3, and 7.4.4m."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2368(para) 
+#: /tmp/cicero-qQrO/installation.xml:2368(para) 
 msgid "You will need the MIPSPro full ANSI C compiler. There are problems trying to build with GCC. It is a known GCC bug (not fixed as of version 3.0) related to using functions that return certain kinds of structures. This bug affects functions like <function>inet_ntoa</function>, <function>inet_lnaof</function>, <function>inet_netof</function>, <function>inet_makeaddr</function>, and <function>semctl</function>. It is supposed to be fixed by forcing code to link those functions with libgcc, but this has not been tested yet."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2379(para) 
+#: /tmp/cicero-qQrO/installation.xml:2379(para) 
 msgid "It is known that version 7.4.1m of the MIPSPro compiler generates incorrect code. The symptom is <quote>invalid primary checkpoint record</quote> when trying to start the database.) Version 7.4.4m is OK; the status of intermediate versions is uncertain."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2386(para) 
+#: /tmp/cicero-qQrO/installation.xml:2386(para) 
 msgid "There may be a compilation problem like the following: <screen>\ncc-1020 cc: ERROR File = pqcomm.c, Line = 427\n  The identifier \"TCP_NODELAY\" is undefined.\n\n                if (setsockopt(port-&gt;sock, IPPROTO_TCP, TCP_NODELAY,\n</screen> Some versions include TCP definitions in <filename>sys/xti.h</filename>, so it is necessary to add <literal>#include &lt;sys/xti.h&gt;</literal> in <filename>src/backend/libpq/pqcomm.c</filename> and in <filename>src/interfaces/libpq/fe-connect.c</filename>. If you encounter this, please let us know so we can develop a proper fix."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2402(para) 
+#: /tmp/cicero-qQrO/installation.xml:2402(para) 
 msgid "In the regression tests, there might be some low-order-digit differences in the geometry tests, depending on which FPU are you using. Any other error is cause for suspicion."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2410(title) 
+#: /tmp/cicero-qQrO/installation.xml:2410(title) 
 msgid "MinGW/Native Windows"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2413(primary) 
+#: /tmp/cicero-qQrO/installation.xml:2413(primary) 
 msgid "MinGW"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2417(para) 
+#: /tmp/cicero-qQrO/installation.xml:2417(para) 
 msgid "PostgreSQL for Windows can be built using MinGW, a Unix-like build environment for Microsoft operating systems, or using Microsoft's <productname>Visual C++</productname> compiler suite. The MinGW build variant uses the normal build system described in this chapter; the Visual C++ build works completely differently and is described in <xref linkend=\"install-windows\"/>. It is a fully native build and uses no additional software like MinGW. A ready-made installer is available on the main PostgreSQL web site."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2429(para) 
+#: /tmp/cicero-qQrO/installation.xml:2429(para) 
 msgid "The native Windows port requires a 32 or 64-bit version of Windows 2000 or later. Earlier operating systems do not have sufficient infrastructure (but Cygwin may be used on those). MinGW, the Unix-like build tools, and MSYS, a collection of Unix tools required to run shell scripts like <command>configure</command>, can be downloaded from <ulink url=\"http://www.mingw.org/\"/>. Neither is required to run the resulting binaries; they are needed only for creating the binaries."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2441(para) 
+#: /tmp/cicero-qQrO/installation.xml:2441(para) 
 msgid "To build 64 bit binaries using MinGW, install the 64 bit tool set from <ulink url=\"http://mingw-w64.sourceforge.net/\"/>, put its bin directory in the <envar>PATH</envar>, and run <command>configure</command> with the <command>--host=x86_64-w64-mingw</command> option."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2449(para) 
+#: /tmp/cicero-qQrO/installation.xml:2449(para) 
 msgid "After you have everything installed, it is suggested that you run <application>psql</application> under <command>CMD.EXE</command>, as the MSYS console has buffering issues."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2457(title) 
+#: /tmp/cicero-qQrO/installation.xml:2457(title) 
 msgid "Collecting Crash Dumps on Windows"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2459(para) 
+#: /tmp/cicero-qQrO/installation.xml:2459(para) 
 msgid "If PostgreSQL on Windows crashes, it has the ability to generate <productname>minidumps</productname> that can be used to track down the cause for the crash, similar to core dumps on Unix. These dumps can be read using the <productname>Windows Debugger Tools</productname> or using <productname>Visual Studio</productname>. To enable the generation of dumps on Windows, create a subdirectory named <filename>crashdumps</filename> inside the cluster data directory. The dumps will then be written into this directory with a unique name based on the identifier of the crashing process and the current time of the crash."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2474(title) 
+#: /tmp/cicero-qQrO/installation.xml:2474(title) 
 msgid "SCO OpenServer and SCO UnixWare"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2477(primary) 
+#: /tmp/cicero-qQrO/installation.xml:2477(primary) 
 msgid "SCO"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2482(primary) 
+#: /tmp/cicero-qQrO/installation.xml:2482(primary) 
 msgid "UnixWare"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2486(para) 
+#: /tmp/cicero-qQrO/installation.xml:2486(para) 
 msgid "PostgreSQL can be built on SCO UnixWare 7 and SCO OpenServer 5. On OpenServer, you can use either the OpenServer Development Kit or the Universal Development Kit. However, some tweaking may be needed, as described below."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2494(title) 
+#: /tmp/cicero-qQrO/installation.xml:2494(title) 
 msgid "Skunkware"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2496(para) 
+#: /tmp/cicero-qQrO/installation.xml:2496(para) 
 msgid "You should locate your copy of the SCO Skunkware CD. The Skunkware CD is included with UnixWare 7 and current versions of OpenServer 5. Skunkware includes ready-to-install versions of many popular programs that are available on the Internet. For example, gzip, gunzip, GNU Make, Flex, and Bison are all included. For UnixWare 7.1, this CD is now labeled \"Open License Software Supplement\". If you do not have this CD, the software on it is available from <ulink url=\"http://www.sco.com/skunkware/\"/>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2508(para) 
+#: /tmp/cicero-qQrO/installation.xml:2508(para) 
 msgid "Skunkware has different versions for UnixWare and OpenServer. Make sure you install the correct version for your operating system, except as noted below."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2514(para) 
+#: /tmp/cicero-qQrO/installation.xml:2514(para) 
 msgid "On UnixWare 7.1.3 and beyond, the GCC compiler is included on the UDK CD as is GNU Make."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2521(title) 
+#: /tmp/cicero-qQrO/installation.xml:2521(title) 
 msgid "GNU Make"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2523(para) 
+#: /tmp/cicero-qQrO/installation.xml:2523(para) 
 msgid "You need to use the GNU Make program, which is on the Skunkware CD. By default, it installs as <filename>/usr/local/bin/make</filename>. To avoid confusion with the SCO <filename>make</filename> program, you may want to rename GNU <filename>make</filename> to <filename>gmake</filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2531(para) 
+#: /tmp/cicero-qQrO/installation.xml:2531(para) 
 msgid "As of UnixWare 7.1.3 and above, the GNU Make program is is the OSTK portion of the UDK CD, and is in <filename>/usr/gnu/bin/gmake</filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2539(title) 
+#: /tmp/cicero-qQrO/installation.xml:2539(title) 
 msgid "Readline"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2541(para) 
+#: /tmp/cicero-qQrO/installation.xml:2541(para) 
 msgid "The Readline library is on the Skunkware CD. But it is not included on the UnixWare 7.1 Skunkware CD. If you have the UnixWare 7.0.0 or 7.0.1 Skunkware CDs, you can install it from there. Otherwise, try <ulink url=\"http://www.sco.com/skunkware/\"/>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2555(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:2555(programlisting) 
 #, no-wrap
 msgid "\n./configure --with-libraries=/usr/local/lib --with-includes=/usr/local/include\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2549(para) 
+#: /tmp/cicero-qQrO/installation.xml:2549(para) 
 msgid "By default, Readline installs into <filename>/usr/local/lib</filename> and <filename>/usr/local/include</filename>. However, the PostgreSQL <command>configure</command> program will not find it there without help. If you installed Readline, then use the following options to <command>configure</command>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2562(title) 
+#: /tmp/cicero-qQrO/installation.xml:2562(title) 
 msgid "Using the UDK on OpenServer"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2568(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:2568(programlisting) 
 #, no-wrap
 msgid "\n./configure --with-libraries=/udk/usr/lib --with-includes=/udk/usr/include\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2572(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:2572(programlisting) 
 #, no-wrap
 msgid "\n./configure --with-libraries=\"/udk/usr/lib /usr/local/lib\" --with-includes=\"/udk/usr/include /usr/local/include\"\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2564(para) 
+#: /tmp/cicero-qQrO/installation.xml:2564(para) 
 msgid "If you are using the new Universal Development Kit (UDK) compiler on OpenServer, you need to specify the locations of the UDK libraries: <placeholder-1/> Putting these together with the Readline options from above: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2579(title) 
+#: /tmp/cicero-qQrO/installation.xml:2579(title) 
 msgid "Reading the PostgreSQL Man Pages"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2588(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:2588(programlisting) 
 #, no-wrap
 msgid "\nMANPATH=/usr/lib/scohelp/%L/man:/usr/dt/man:/usr/man:/usr/share/man:scohelp:/usr/local/man:/usr/local/pgsql/man\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2581(para) 
+#: /tmp/cicero-qQrO/installation.xml:2581(para) 
 msgid "By default, the PostgreSQL man pages are installed into <filename>/usr/local/pgsql/man</filename>. By default, UnixWare does not look there for man pages. To be able to read them you need to modify the <varname>MANPATH</varname> variable in <filename>/etc/default/man</filename>, for example: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2593(para) 
+#: /tmp/cicero-qQrO/installation.xml:2593(para) 
 msgid "On OpenServer, some extra research needs to be invested to make the man pages usable, because the man system is a bit different from other platforms. Currently, PostgreSQL will not install them at all."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2602(title) 
+#: /tmp/cicero-qQrO/installation.xml:2602(title) 
 msgid "C99 Issues with the 7.1.1b Feature Supplement"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2604(para) 
+#: /tmp/cicero-qQrO/installation.xml:2604(para) 
 msgid "For compilers earlier than the one released with OpenUNIX 8.0.0 (UnixWare 7.1.2), including the 7.1.1b Feature Supplement, you may need to specify <option>-Xb</option> in <varname>CFLAGS</varname> or the <varname>CC</varname> environment variable. The indication of this is an error in compiling <filename>tuplesort.c</filename> referencing inline functions. Apparently there was a change in the 7.1.2(8.0.0) compiler and beyond."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2617(title) 
+#: /tmp/cicero-qQrO/installation.xml:2617(title) 
 msgid "Threading on UnixWare"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2619(para) 
+#: /tmp/cicero-qQrO/installation.xml:2619(para) 
 msgid "For threading, you<emphasis>must</emphasis> use <option>-Kpthread</option> on <emphasis>all</emphasis> libpq-using programs. libpq uses <function>pthread_*</function> calls, which are only available with the <option>-Kpthread</option>/<option>-Kthread</option> flag."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2630(title) /tmp/cicero-GxnD/installation.xml:2633(primary) 
+#: /tmp/cicero-qQrO/installation.xml:2630(title) /tmp/cicero-qQrO/installation.xml:2633(primary) 
 msgid "Solaris"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2637(para) 
+#: /tmp/cicero-qQrO/installation.xml:2637(para) 
 msgid "PostgreSQL is well-supported on Solaris. The more up to date your operating system, the fewer issues you will experience; details below."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2643(para) 
+#: /tmp/cicero-qQrO/installation.xml:2643(para) 
 msgid "Note that PostgreSQL is bundled with Solaris 10 (from update 2). Official packages are also available on <ulink url=\"http://pgfoundry.org/projects/solarispackages/\"/>. Packages for older Solaris versions (8, 9) you can be obtained from <ulink url=\"http://www.sunfreeware.com/\"/> or <ulink url=\"http://www.blastwave.org/\"/>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2653(title) 
+#: /tmp/cicero-qQrO/installation.xml:2653(title) 
 msgid "Required Tools"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2655(para) 
+#: /tmp/cicero-qQrO/installation.xml:2655(para) 
 msgid "You can build with either GCC or Sun's compiler suite. For better code optimization, Sun's compiler is strongly recommended on the SPARC architecture. We have heard reports of problems when using GCC 2.95.1; GCC 2.95.3 or later is recommended. If you are using Sun's compiler, be careful not to select <filename>/usr/ucb/cc</filename>; use <filename>/opt/SUNWspro/bin/cc</filename>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2665(para) 
+#: /tmp/cicero-qQrO/installation.xml:2665(para) 
 msgid "You can download Sun Studio from <ulink url=\"http://developers.sun.com/sunstudio/downloads/\"/>. Many of GNU tools are integrated into Solaris 10, or they are present on the Solaris companion CD. If you like packages for older version of Solaris, you can find these tools at <ulink url=\"http://www.sunfreeware.com\"/> or <ulink url=\"http://www.blastwave.org\"/>. If you prefer sources, look at <ulink url=\"http://www.gnu.org/order/ftp.html\"/>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2679(title) 
+#: /tmp/cicero-qQrO/installation.xml:2679(title) 
 msgid "Problems with OpenSSL"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2685(filename) 
+#: /tmp/cicero-qQrO/installation.xml:2685(filename) 
 msgid "src/backend/libpq/crypt.c"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2686(filename) 
+#: /tmp/cicero-qQrO/installation.xml:2686(filename) 
 msgid "src/backend/libpq/password.c"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2687(filename) 
+#: /tmp/cicero-qQrO/installation.xml:2687(filename) 
 msgid "src/interfaces/libpq/fe-auth.c"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2688(filename) 
+#: /tmp/cicero-qQrO/installation.xml:2688(filename) 
 msgid "src/interfaces/libpq/fe-connect.c"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2681(para) 
+#: /tmp/cicero-qQrO/installation.xml:2681(para) 
 msgid "When you build PostgreSQL with OpenSSL support you might get compilation errors in the following files: <placeholder-1/> This is because of a namespace conflict between the standard <filename>/usr/include/crypt.h</filename> header and the header files provided by OpenSSL."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2696(para) 
+#: /tmp/cicero-qQrO/installation.xml:2696(para) 
 msgid "Upgrading your OpenSSL installation to version 0.9.6a fixes this problem. Solaris 9 and above has a newer version of OpenSSL."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2703(title) 
+#: /tmp/cicero-qQrO/installation.xml:2703(title) 
 msgid "configure Complains About a Failed Test Program"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2712(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:2712(programlisting) 
 #, no-wrap
 msgid "\nconfigure ... LDFLAGS=\"-R /usr/sfw/lib:/opt/sfw/lib:/usr/local/lib\"\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2705(para) 
+#: /tmp/cicero-qQrO/installation.xml:2705(para) 
 msgid "If <command>configure</command> complains about a failed test program, this is probably a case of the run-time linker being unable to find some library, probably libz, libreadline or some other non-standard library such as libssl. To point it to the right location, set the <envar>LDFLAGS</envar> environment variable on the <command>configure</command> command line, e.g., <placeholder-1/> See the <citerefentry><refentrytitle>ld</refentrytitle><manvolnum>1</manvolnum></citerefentry> man page for more information."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2722(title) 
+#: /tmp/cicero-qQrO/installation.xml:2722(title) 
 msgid "64-bit Build Sometimes Crashes"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2733(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:2733(programlisting) 
 #, no-wrap
 msgid "\nLIBOBJS =\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2737(programlisting) 
+#: /tmp/cicero-qQrO/installation.xml:2737(programlisting) 
 #, no-wrap
 msgid "\nLIBOBJS = snprintf.o\n"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2724(para) 
+#: /tmp/cicero-qQrO/installation.xml:2724(para) 
 msgid "On Solaris 7 and older, the 64-bit version of libc has a buggy <function>vsnprintf</function> routine, which leads to erratic core dumps in PostgreSQL. The simplest known workaround is to force PostgreSQL to use its own version of <function>vsnprintf</function> rather than the library copy. To do this, after you run <command>configure</command> edit a file produced by <command>configure</command>: In <filename>src/Makefile.global</filename>, change the line <placeholder-1/> to read <placeholder-2/> (There might be other files already listed in this variable. Order does not matter.) Then build as usual."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2746(title) 
+#: /tmp/cicero-qQrO/installation.xml:2746(title) 
 msgid "Compiling for Optimal Performance"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2748(para) 
+#: /tmp/cicero-qQrO/installation.xml:2748(para) 
 msgid "On the SPARC architecture, Sun Studio is strongly recommended for compilation. Try using the <option>-xO5</option> optimization flag to generate significantly faster binaries. Do not use any flags that modify behavior of floating-point operations and <varname>errno</varname> processing (e.g., <option>-fast</option>). These flags could raise some nonstandard PostgreSQL behavior for example in the date/time computing."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2759(para) 
+#: /tmp/cicero-qQrO/installation.xml:2759(para) 
 msgid "If you do not have a reason to use 64-bit binaries on SPARC, prefer the 32-bit version. The 64-bit operations are slower and 64-bit binaries are slower than the 32-bit variants. And on other hand, 32-bit code on the AMD64 CPU family is not native, and that is why 32-bit code is significant slower on this CPU family."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2768(para) 
+#: /tmp/cicero-qQrO/installation.xml:2768(para) 
 msgid "Some tricks for tuning PostgreSQL and Solaris for performance can be found at <ulink url=\"http://www.sun.com/servers/coolthreads/tnb/applications_postgresql.jsp\"/>. This article is primary focused on T2000 platform, but many of the recommendations are also useful on other hardware with Solaris."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2779(title) 
+#: /tmp/cicero-qQrO/installation.xml:2779(title) 
 msgid "Using DTrace for Tracing PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2781(para) 
+#: /tmp/cicero-qQrO/installation.xml:2781(para) 
 msgid "Yes, using DTrace is possible. See <xref linkend=\"dynamic-trace\"/> for further information. You can also find more information in this article: <ulink url=\"http://blogs.sun.com/robertlor/entry/user_level_dtrace_probes_in\"/>."
 msgstr ""
 
-#: /tmp/cicero-GxnD/installation.xml:2788(para) 
+#: /tmp/cicero-qQrO/installation.xml:2788(para) 
 msgid "If you see the linking of the <command>postgres</command> executable abort with an error message like: <screen>\nUndefined                       first referenced\n symbol                             in file\nAbortTransaction                    utils/probes.o\nCommitTransaction                   utils/probes.o\nld: fatal: Symbol referencing errors. No output written to postgres\ncollect2: ld returned 1 exit status\ngmake: *** [postgres] Error 1\n</screen> your DTrace installation is too old to handle probes in static functions. You need Solaris 10u4 or newer."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-GxnD/installation.xml:0(None) 
+#: /tmp/cicero-qQrO/installation.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
