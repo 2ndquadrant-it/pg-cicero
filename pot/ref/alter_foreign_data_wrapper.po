@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-10 06:57+0200\n"
+"POT-Creation-Date: 2011-09-11 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,155 +9,155 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:9(refentrytitle) /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:15(refname) /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:20(primary) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:9(refentrytitle) /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:15(refname) /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:20(primary) 
 msgid "ALTER FOREIGN DATA WRAPPER"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:10(manvolnum) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:11(refmiscinfo) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:16(refpurpose) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:16(refpurpose) 
 msgid "change the definition of a foreign-data wrapper"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:25(replaceable) /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:29(replaceable) /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:55(replaceable) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:25(replaceable) /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:29(replaceable) /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:55(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:26(replaceable) /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:64(replaceable) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:26(replaceable) /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:64(replaceable) 
 msgid "handler_function"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:27(replaceable) /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:87(replaceable) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:27(replaceable) /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:87(replaceable) 
 msgid "validator_function"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:28(replaceable) /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:114(replaceable) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:28(replaceable) /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:114(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:28(replaceable) /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:114(replaceable) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:28(replaceable) /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:114(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:29(replaceable) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:29(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:24(synopsis) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER FOREIGN DATA WRAPPER <placeholder-1/>\n    [ HANDLER <placeholder-2/> | NO HANDLER ]\n    [ VALIDATOR <placeholder-3/> | NO VALIDATOR ]\n    [ OPTIONS ( [ ADD | SET | DROP ] <placeholder-4/> ['<placeholder-5/>'] [, ... ]) ]\nALTER FOREIGN DATA WRAPPER <placeholder-6/> OWNER TO <placeholder-7/>\n"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:34(title) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:34(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:36(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:36(para) 
 msgid "<command>ALTER FOREIGN DATA WRAPPER</command> changes the definition of a foreign-data wrapper. The first form of the command changes the support functions or the generic options of the foreign-data wrapper (at least one clause is required). The second form changes the owner of the foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:44(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:44(para) 
 msgid "Only superusers can alter foreign-data wrappers. Additionally, only superusers can own foreign-data wrappers."
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:51(title) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:51(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:57(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:57(para) 
 msgid "The name of an existing foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:64(literal) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:64(literal) 
 msgid "HANDLER <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:66(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:66(para) 
 msgid "Specifies a new handler function for the foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:73(literal) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:73(literal) 
 msgid "NO HANDLER"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:75(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:75(para) 
 msgid "This is used to specify that the foreign-data wrapper should no longer have a handler function."
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:79(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:79(para) 
 msgid "Note that foreign tables that use a foreign-data wrapper with no handler cannot be accessed."
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:87(literal) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:87(literal) 
 msgid "VALIDATOR <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:89(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:89(para) 
 msgid "Specifies a new validator function for the foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:93(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:93(para) 
 msgid "Note that it is possible that after changing the validator the options to the foreign-data wrapper, servers, and user mappings have become invalid. It is up to the user to make sure that these options are correct before using the foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:104(literal) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:104(literal) 
 msgid "NO VALIDATOR"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:106(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:106(para) 
 msgid "This is used to specify that the foreign-data wrapper should no longer have a validator function."
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:114(literal) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:114(literal) 
 msgid "OPTIONS ( [ ADD | SET | DROP ] <placeholder-1/> ['<placeholder-2/>'] [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:116(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:116(para) 
 msgid "Change options for the foreign-data wrapper. <literal>ADD</literal>, <literal>SET</literal>, and <literal>DROP</literal> specify the action to be performed. <literal>ADD</literal> is assumed if no operation is explicitly specified. Option names must be unique; names and values are also validated using the foreign data wrapper's validator function, if any."
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:130(title) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:130(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:135(programlisting) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:135(programlisting) 
 #, no-wrap
 msgid "\nALTER FOREIGN DATA WRAPPER dbi OPTIONS (ADD foo '1', DROP 'bar');\n"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:132(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:132(para) 
 msgid "Change a foreign-data wrapper <literal>dbi</literal>, add option <literal>foo</literal>, drop <literal>bar</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:143(programlisting) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:143(programlisting) 
 #, no-wrap
 msgid "\nALTER FOREIGN DATA WRAPPER dbi VALIDATOR bob.myvalidator;\n"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:140(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:140(para) 
 msgid "Change the foreign-data wrapper <literal>dbi</literal> validator to <literal>bob.myvalidator</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:149(title) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:149(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:151(para) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:151(para) 
 msgid "<command>ALTER FOREIGN DATA WRAPPER</command> conforms to ISO/IEC 9075-9 (SQL/MED), except that the <literal>HANDLER</literal>, <literal>VALIDATOR</literal> and <literal>OWNER TO</literal> clauses are extensions."
 msgstr ""
 
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:159(title) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:159(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-tkrh/ref/alter_foreign_data_wrapper.xml:0(None) 
+#: /tmp/cicero-ivSD/ref/alter_foreign_data_wrapper.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

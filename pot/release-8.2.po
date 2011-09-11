@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-10 06:57+0200\n"
+"POT-Creation-Date: 2011-09-11 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,92 +9,92 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-tkrh/release-8.2.xml:6(title) 
+#: /tmp/cicero-ivSD/release-8.2.xml:6(title) 
 msgid "Release 8.2.21"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:9(title) 
+#: /tmp/cicero-ivSD/release-8.2.xml:9(title) 
 msgid "Release Date"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:10(simpara) 
+#: /tmp/cicero-ivSD/release-8.2.xml:10(simpara) 
 msgid "2011-04-18"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:13(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:13(para) 
 msgid "This release contains a variety of fixes from 8.2.20. For information about new features in the 8.2 major release, see <xref linkend=\"release-8-2\"/>."
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:20(title) 
+#: /tmp/cicero-ivSD/release-8.2.xml:20(title) 
 msgid "Migration to Version 8.2.21"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:22(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:22(para) 
 msgid "A dump/restore is not required for those running 8.2.X. However, if you are upgrading from a version earlier than 8.2.14, see the release notes for 8.2.14."
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:31(title) 
+#: /tmp/cicero-ivSD/release-8.2.xml:31(title) 
 msgid "Changes"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:36(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:36(para) 
 msgid "Avoid potential deadlock during catalog cache initialization (Nikhil Sontakke)"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:41(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:41(para) 
 msgid "In some cases the cache loading code would acquire share lock on a system index before locking the index's catalog. This could deadlock against processes trying to acquire exclusive locks in the other, more standard order."
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:50(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:50(para) 
 msgid "Fix dangling-pointer problem in <literal>BEFORE ROW UPDATE</literal> trigger handling when there was a concurrent update to the target tuple (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:56(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:56(para) 
 msgid "This bug has been observed to result in intermittent <quote>cannot extract system attribute from virtual tuple</quote> failures while trying to do <literal>UPDATE RETURNING ctid</literal>. There is a very small probability of more serious errors, such as generating incorrect index entries for the updated tuple."
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:66(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:66(para) 
 msgid "Disallow <command>DROP TABLE</command> when there are pending deferred trigger events for the table (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:71(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:71(para) 
 msgid "Formerly the <command>DROP</command> would go through, leading to <quote>could not open relation with OID nnn</quote> errors when the triggers were eventually fired."
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:79(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:79(para) 
 msgid "Fix PL/Python memory leak involving array slices (Daniel Popowich)"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:85(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:85(para) 
 msgid "Fix <application>pg_restore</application> to cope with long lines (over 1KB) in TOC files (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:92(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:92(para) 
 msgid "Put in more safeguards against crashing due to division-by-zero with overly enthusiastic compiler optimization (Aurelien Jarno)"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:99(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:99(para) 
 msgid "Support use of dlopen() in FreeBSD and OpenBSD on MIPS (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:103(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:103(para) 
 msgid "There was a hard-wired assumption that this system function was not available on MIPS hardware on these systems. Use a compile-time test instead, since more recent versions have it."
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:111(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:111(para) 
 msgid "Fix compilation failures on HP-UX (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:117(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:117(para) 
 msgid "Fix path separator used by <application>pg_regress</application> on Cygwin (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-tkrh/release-8.2.xml:124(para) 
+#: /tmp/cicero-ivSD/release-8.2.xml:124(para) 
 msgid "Update time zone data files to <application>tzdata</application> release 2011f for DST law changes in Chile, Cuba, Falkland Islands, Morocco, Samoa, and Turkey; also historical corrections for South Australia, Alaska, and Hawaii."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-tkrh/release-8.2.xml:0(None) 
+#: /tmp/cicero-ivSD/release-8.2.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
