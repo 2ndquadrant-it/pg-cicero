@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-11 06:57+0200\n"
+"POT-Creation-Date: 2011-09-12 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,90 +9,90 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ivSD/ref/end.xml:9(refentrytitle) /tmp/cicero-ivSD/ref/end.xml:15(refname) /tmp/cicero-ivSD/ref/end.xml:20(primary) 
+#: /tmp/cicero-Ackt/ref/end.xml:9(refentrytitle) /tmp/cicero-Ackt/ref/end.xml:15(refname) /tmp/cicero-Ackt/ref/end.xml:20(primary) 
 msgid "END"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:10(manvolnum) 
+#: /tmp/cicero-Ackt/ref/end.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:11(refmiscinfo) 
+#: /tmp/cicero-Ackt/ref/end.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:16(refpurpose) 
+#: /tmp/cicero-Ackt/ref/end.xml:16(refpurpose) 
 msgid "commit the current transaction"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:24(synopsis) 
+#: /tmp/cicero-Ackt/ref/end.xml:24(synopsis) 
 #, no-wrap
 msgid "\nEND [ WORK | TRANSACTION ]\n"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:30(title) 
+#: /tmp/cicero-Ackt/ref/end.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:32(para) 
+#: /tmp/cicero-Ackt/ref/end.xml:32(para) 
 msgid "<command>END</command> commits the current transaction. All changes made by the transaction become visible to others and are guaranteed to be durable if a crash occurs. This command is a <productname>PostgreSQL</productname> extension that is equivalent to <xref linkend=\"sql-commit\"/>."
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:42(title) 
+#: /tmp/cicero-Ackt/ref/end.xml:42(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:46(literal) 
+#: /tmp/cicero-Ackt/ref/end.xml:46(literal) 
 msgid "WORK"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:47(literal) 
+#: /tmp/cicero-Ackt/ref/end.xml:47(literal) 
 msgid "TRANSACTION"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:49(para) 
+#: /tmp/cicero-Ackt/ref/end.xml:49(para) 
 msgid "Optional key words. They have no effect."
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:58(title) 
+#: /tmp/cicero-Ackt/ref/end.xml:58(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:60(para) 
+#: /tmp/cicero-Ackt/ref/end.xml:60(para) 
 msgid "Use <xref linkend=\"sql-rollback\"/> to abort a transaction."
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:65(para) 
+#: /tmp/cicero-Ackt/ref/end.xml:65(para) 
 msgid "Issuing <command>END</command> when not inside a transaction does no harm, but it will provoke a warning message."
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:72(title) 
+#: /tmp/cicero-Ackt/ref/end.xml:72(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:76(programlisting) 
+#: /tmp/cicero-Ackt/ref/end.xml:76(programlisting) 
 #, no-wrap
 msgid "\nEND;\n"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:74(para) 
+#: /tmp/cicero-Ackt/ref/end.xml:74(para) 
 msgid "To commit the current transaction and make all changes permanent: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:82(title) 
+#: /tmp/cicero-Ackt/ref/end.xml:82(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:84(para) 
+#: /tmp/cicero-Ackt/ref/end.xml:84(para) 
 msgid "<command>END</command> is a <productname>PostgreSQL</productname> extension that provides functionality equivalent to <xref linkend=\"sql-commit\"/>, which is specified in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-ivSD/ref/end.xml:93(title) 
+#: /tmp/cicero-Ackt/ref/end.xml:93(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ivSD/ref/end.xml:0(None) 
+#: /tmp/cicero-Ackt/ref/end.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
