@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-12 06:59+0200\n"
+"POT-Creation-Date: 2011-09-13 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,408 +9,408 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:9(application) /tmp/cicero-YDWB/ref/createuser.xml:15(refname) /tmp/cicero-YDWB/ref/createuser.xml:20(primary) /tmp/cicero-YDWB/ref/createuser.xml:25(command) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:9(application) /tmp/cicero-jWWW/ref/createuser.xml:15(refname) /tmp/cicero-jWWW/ref/createuser.xml:20(primary) /tmp/cicero-jWWW/ref/createuser.xml:25(command) 
 msgid "createuser"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:10(manvolnum) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:10(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:11(refmiscinfo) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:11(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:16(productname) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:16(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:16(refpurpose) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:16(refpurpose) 
 msgid "define a new <placeholder-1/> user account"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:26(replaceable) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:26(replaceable) 
 msgid "connection-option"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:27(replaceable) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:27(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:28(replaceable) /tmp/cicero-YDWB/ref/createuser.xml:69(replaceable) /tmp/cicero-YDWB/ref/createuser.xml:304(replaceable) /tmp/cicero-YDWB/ref/createuser.xml:305(replaceable) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:28(replaceable) /tmp/cicero-jWWW/ref/createuser.xml:69(replaceable) /tmp/cicero-jWWW/ref/createuser.xml:304(replaceable) /tmp/cicero-jWWW/ref/createuser.xml:305(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:34(title) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:34(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:35(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:35(para) 
 msgid "<application>createuser</application> creates a new <productname>PostgreSQL</productname> user (or more precisely, a role). Only superusers and users with <literal>CREATEROLE</literal> privilege can create new users, so <application>createuser</application> must be invoked by someone who can connect as a superuser or a user with <literal>CREATEROLE</literal> privilege."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:44(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:44(para) 
 msgid "If you wish to create a new superuser, you must connect as a superuser, not merely with <literal>CREATEROLE</literal> privilege. Being a superuser implies the ability to bypass all access permission checks within the database, so superuserdom should not be granted lightly."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:51(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:51(para) 
 msgid "<application>createuser</application> is a wrapper around the <acronym>SQL</acronym> command <xref linkend=\"sql-createrole\"/>. There is no effective difference between creating users via this utility and via other methods for accessing the server."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:62(title) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:62(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:71(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:71(para) 
 msgid "Specifies the name of the <productname>PostgreSQL</productname> user to be created. This name must be different from all existing roles in this <productname>PostgreSQL</productname> installation."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:81(replaceable) /tmp/cicero-YDWB/ref/createuser.xml:82(replaceable) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:81(replaceable) /tmp/cicero-jWWW/ref/createuser.xml:82(replaceable) 
 msgid "number"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:81(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:81(option) 
 msgid "-c <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:82(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:82(option) 
 msgid "--connection-limit=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:84(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:84(para) 
 msgid "Set a maximum number of connections for the new user. The default is to set no limit."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:92(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:92(option) 
 msgid "-d"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:93(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:93(option) 
 msgid "--createdb"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:95(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:95(para) 
 msgid "The new user will be allowed to create databases."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:102(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:102(option) 
 msgid "-D"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:103(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:103(option) 
 msgid "--no-createdb"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:105(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:105(para) 
 msgid "The new user will not be allowed to create databases."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:112(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:112(option) 
 msgid "-e"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:113(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:113(option) 
 msgid "--echo"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:115(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:115(para) 
 msgid "Echo the commands that <application>createuser</application> generates and sends to the server."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:123(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:123(option) 
 msgid "-E"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:124(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:124(option) 
 msgid "--encrypted"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:126(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:126(para) 
 msgid "Encrypts the user's password stored in the database. If not specified, the default password behavior is used."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:134(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:134(option) 
 msgid "-i"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:135(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:135(option) 
 msgid "--inherit"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:137(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:137(para) 
 msgid "The new role will automatically inherit privileges of roles it is a member of. This is the default."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:146(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:146(option) 
 msgid "-I"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:147(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:147(option) 
 msgid "--no-inherit"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:149(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:149(para) 
 msgid "The new role will not automatically inherit privileges of roles it is a member of."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:157(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:157(option) 
 msgid "-l"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:158(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:158(option) 
 msgid "--login"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:160(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:160(para) 
 msgid "The new user will be allowed to log in (that is, the user name can be used as the initial session user identifier). This is the default."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:169(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:169(option) 
 msgid "-L"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:170(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:170(option) 
 msgid "--no-login"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:172(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:172(para) 
 msgid "The new user will not be allowed to log in. (A role without login privilege is still useful as a means of managing database permissions.)"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:181(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:181(option) 
 msgid "-N"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:182(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:182(option) 
 msgid "--unencrypted"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:184(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:184(para) 
 msgid "Does not encrypt the user's password stored in the database. If not specified, the default password behavior is used."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:192(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:192(option) 
 msgid "-P"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:193(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:193(option) 
 msgid "--pwprompt"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:195(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:195(para) 
 msgid "If given, <application>createuser</application> will issue a prompt for the password of the new user. This is not necessary if you do not plan on using password authentication."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:204(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:204(option) 
 msgid "-r"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:205(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:205(option) 
 msgid "--createrole"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:207(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:207(para) 
 msgid "The new user will be allowed to create new roles (that is, this user will have <literal>CREATEROLE</literal> privilege)."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:215(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:215(option) 
 msgid "-R"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:216(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:216(option) 
 msgid "--no-createrole"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:218(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:218(para) 
 msgid "The new user will not be allowed to create new roles."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:225(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:225(option) 
 msgid "-s"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:226(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:226(option) 
 msgid "--superuser"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:228(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:228(para) 
 msgid "The new user will be a superuser."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:235(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:235(option) 
 msgid "-S"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:236(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:236(option) 
 msgid "--no-superuser"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:238(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:238(para) 
 msgid "The new user will not be a superuser."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:245(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:245(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:246(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:246(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:248(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:248(para) 
 msgid "Print the <application>createuser</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:255(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:255(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:256(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:256(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:258(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:258(para) 
 msgid "Show help about <application>createuser</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:64(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:64(para) 
 msgid "<application>createuser</application> accepts the following command-line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:268(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:268(para) 
 msgid "You will be prompted for a name and other missing information if it is not specified on the command line."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:279(replaceable) /tmp/cicero-YDWB/ref/createuser.xml:280(replaceable) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:279(replaceable) /tmp/cicero-jWWW/ref/createuser.xml:280(replaceable) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:279(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:279(option) 
 msgid "-h <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:280(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:280(option) 
 msgid "--host=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:282(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:282(para) 
 msgid "Specifies the host name of the machine on which the server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:292(replaceable) /tmp/cicero-YDWB/ref/createuser.xml:293(replaceable) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:292(replaceable) /tmp/cicero-jWWW/ref/createuser.xml:293(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:292(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:292(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:293(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:293(option) 
 msgid "--port=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:295(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:295(para) 
 msgid "Specifies the TCP port or local Unix domain socket file extension on which the server is listening for connections."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:304(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:304(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:305(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:305(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:307(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:307(para) 
 msgid "User name to connect as (not the user name to create)."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:314(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:314(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:315(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:315(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:317(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:317(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:329(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:329(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:330(option) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:330(option) 
 msgid "--password"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:332(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:332(para) 
 msgid "Force <application>createuser</application> to prompt for a password (for connecting to the server, not for the password of the new user)."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:338(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:338(para) 
 msgid "This option is never essential, since <application>createuser</application> will automatically prompt for a password if the server demands password authentication. However, <application>createuser</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:273(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:273(para) 
 msgid "<application>createuser</application> also accepts the following command-line arguments for connection parameters: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:355(title) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:355(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:359(envar) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:359(envar) 
 msgid "PGHOST"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:360(envar) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:360(envar) 
 msgid "PGPORT"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:361(envar) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:361(envar) 
 msgid "PGUSER"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:364(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:364(para) 
 msgid "Default connection parameters"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:371(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:371(para) 
 msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:381(title) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:381(title) 
 msgid "Diagnostics"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:383(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:383(para) 
 msgid "In case of difficulty, see <xref linkend=\"sql-createrole\"/> and <xref linkend=\"app-psql\"/> for discussions of potential problems and error messages. The database server must be running at the targeted host. Also, any default connection settings and environment variables used by the <application>libpq</application> front-end library will apply."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:397(title) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:397(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:399(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:399(para) 
 msgid "To create a user <literal>joe</literal> on the default database server: <screen>\n<prompt>$ </prompt><userinput>createuser joe</userinput>\n<computeroutput>Shall the new role be a superuser? (y/n) </computeroutput><userinput>n</userinput>\n<computeroutput>Shall the new role be allowed to create databases? (y/n) </computeroutput><userinput>n</userinput>\n<computeroutput>Shall the new role be allowed to create more new roles? (y/n) </computeroutput><userinput>n</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:410(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:410(para) 
 msgid "To create the same user <literal>joe</literal> using the server on host <literal>eden</literal>, port 5000, avoiding the prompts and taking a look at the underlying command: <screen>\n<prompt>$ </prompt><userinput>createuser -h eden -p 5000 -S -D -R -e joe</userinput>\n<computeroutput>CREATE ROLE joe NOSUPERUSER NOCREATEDB NOCREATEROLE INHERIT LOGIN;</computeroutput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:420(para) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:420(para) 
 msgid "To create the user <literal>joe</literal> as a superuser, and assign a password immediately: <screen>\n<prompt>$ </prompt><userinput>createuser -P -s -e joe</userinput>\n<computeroutput>Enter password for new role: </computeroutput><userinput>xyzzy</userinput>\n<computeroutput>Enter it again: </computeroutput><userinput>xyzzy</userinput>\n<computeroutput>CREATE ROLE joe PASSWORD 'md5b5f5ba1a423792b526f799ae4eb3d59e' SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;</computeroutput>\n</screen> In the above example, the new password isn't actually echoed when typed, but we show what was typed for clarity. As you see, the password is encrypted before it is sent to the client. If the option <option>--unencrypted</option> is used, the password <emphasis>will</emphasis> appear in the echoed command (and possibly also in the server log and elsewhere), so you don't want to use <option>-e</option> in that case, if anyone else can see your screen."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/createuser.xml:441(title) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:441(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-YDWB/ref/createuser.xml:0(None) 
+#: /tmp/cicero-jWWW/ref/createuser.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

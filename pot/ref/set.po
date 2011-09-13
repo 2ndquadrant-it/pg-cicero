@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-12 06:59+0200\n"
+"POT-Creation-Date: 2011-09-13 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,227 +9,227 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-YDWB/ref/set.xml:9(refentrytitle) /tmp/cicero-YDWB/ref/set.xml:15(refname) /tmp/cicero-YDWB/ref/set.xml:20(primary) 
+#: /tmp/cicero-jWWW/ref/set.xml:9(refentrytitle) /tmp/cicero-jWWW/ref/set.xml:15(refname) /tmp/cicero-jWWW/ref/set.xml:20(primary) 
 msgid "SET"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:10(manvolnum) 
+#: /tmp/cicero-jWWW/ref/set.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:11(refmiscinfo) 
+#: /tmp/cicero-jWWW/ref/set.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:16(refpurpose) 
+#: /tmp/cicero-jWWW/ref/set.xml:16(refpurpose) 
 msgid "change a run-time parameter"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:25(replaceable) /tmp/cicero-YDWB/ref/set.xml:123(replaceable) 
+#: /tmp/cicero-jWWW/ref/set.xml:25(replaceable) /tmp/cicero-jWWW/ref/set.xml:123(replaceable) 
 msgid "configuration_parameter"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:25(replaceable) /tmp/cicero-YDWB/ref/set.xml:25(replaceable) /tmp/cicero-YDWB/ref/set.xml:133(replaceable) 
+#: /tmp/cicero-jWWW/ref/set.xml:25(replaceable) /tmp/cicero-jWWW/ref/set.xml:25(replaceable) /tmp/cicero-jWWW/ref/set.xml:133(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:26(replaceable) 
+#: /tmp/cicero-jWWW/ref/set.xml:26(replaceable) 
 msgid "timezone"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:24(synopsis) 
+#: /tmp/cicero-jWWW/ref/set.xml:24(synopsis) 
 #, no-wrap
 msgid "\nSET [ SESSION | LOCAL ] <placeholder-1/> { TO | = } { <placeholder-2/> | '<placeholder-3/>' | DEFAULT }\nSET [ SESSION | LOCAL ] TIME ZONE { <placeholder-4/> | LOCAL | DEFAULT }\n"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:31(title) 
+#: /tmp/cicero-jWWW/ref/set.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:33(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:33(para) 
 msgid "The <command>SET</command> command changes run-time configuration parameters. Many of the run-time parameters listed in <xref linkend=\"runtime-config\"/> can be changed on-the-fly with <command>SET</command>. (But some require superuser privileges to change, and others cannot be changed after server or session start.) <command>SET</command> only affects the value used by the current session."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:44(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:44(para) 
 msgid "If <command>SET</command> (or equivalently <command>SET SESSION</command>) is issued within a transaction that is later aborted, the effects of the <command>SET</command> command disappear when the transaction is rolled back. Once the surrounding transaction is committed, the effects will persist until the end of the session, unless overridden by another <command>SET</command>."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:53(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:53(para) 
 msgid "The effects of <command>SET LOCAL</command> last only till the end of the current transaction, whether committed or not. A special case is <command>SET</command> followed by <command>SET LOCAL</command> within a single transaction: the <command>SET LOCAL</command> value will be seen until the end of the transaction, but afterwards (if the transaction is committed) the <command>SET</command> value will take effect."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:62(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:62(para) 
 msgid "The effects of <command>SET</command> or <command>SET LOCAL</command> are also canceled by rolling back to a savepoint that is earlier than the command."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:68(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:68(para) 
 msgid "If <command>SET LOCAL</command> is used within a function that has a <literal>SET</literal> option for the same variable (see <xref linkend=\"sql-createfunction\"/>), the effects of the <command>SET LOCAL</command> command disappear at function exit; that is, the value in effect when the function was called is restored anyway. This allows <command>SET LOCAL</command> to be used for dynamic or repeated changes of a parameter within a function, while still having the convenience of using the <literal>SET</literal> option to save and restore the caller's value. However, a regular <command>SET</command> command overrides any surrounding function's <literal>SET</literal> option; its effects will persist unless rolled back."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:83(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:83(para) 
 msgid "In <productname>PostgreSQL</productname> versions 8.0 through 8.2, the effects of a <command>SET LOCAL</command> would be canceled by releasing an earlier savepoint, or by successful exit from a <application>PL/pgSQL</application> exception block. This behavior has been changed because it was deemed unintuitive."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:94(title) 
+#: /tmp/cicero-jWWW/ref/set.xml:94(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:98(literal) 
+#: /tmp/cicero-jWWW/ref/set.xml:98(literal) 
 msgid "SESSION"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:100(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:100(para) 
 msgid "Specifies that the command takes effect for the current session. (This is the default if neither <literal>SESSION</literal> nor <literal>LOCAL</literal> appears.)"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:109(literal) /tmp/cicero-YDWB/ref/set.xml:238(literal) 
+#: /tmp/cicero-jWWW/ref/set.xml:109(literal) /tmp/cicero-jWWW/ref/set.xml:238(literal) 
 msgid "LOCAL"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:111(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:111(para) 
 msgid "Specifies that the command takes effect for only the current transaction. After <command>COMMIT</command> or <command>ROLLBACK</command>, the session-level setting takes effect again. Note that <command>SET LOCAL</command> will appear to have no effect if it is executed outside a <command>BEGIN</command> block, since the transaction will end immediately."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:125(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:125(para) 
 msgid "Name of a settable run-time parameter. Available parameters are documented in <xref linkend=\"runtime-config\"/> and below."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:135(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:135(para) 
 msgid "New value of parameter. Values can be specified as string constants, identifiers, numbers, or comma-separated lists of these, as appropriate for the particular parameter. <literal>DEFAULT</literal> can be written to specify resetting the parameter to its default value (that is, whatever value it would have had if no <command>SET</command> had been executed in the current session)."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:156(literal) 
+#: /tmp/cicero-jWWW/ref/set.xml:156(literal) 
 msgid "SCHEMA"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:158(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:158(para) 
 msgid "<literal>SET SCHEMA '<replaceable>value</replaceable>'</literal> is an alias for <literal>SET search_path TO <replaceable>value</replaceable></literal>. Only one schema can be specified using this syntax."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:166(literal) 
+#: /tmp/cicero-jWWW/ref/set.xml:166(literal) 
 msgid "NAMES"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:168(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:168(para) 
 msgid "<literal>SET NAMES <replaceable>value</replaceable></literal> is an alias for <literal>SET client_encoding TO <replaceable>value</replaceable></literal>."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:175(literal) 
+#: /tmp/cicero-jWWW/ref/set.xml:175(literal) 
 msgid "SEED"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:177(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:177(para) 
 msgid "Sets the internal seed for the random number generator (the function <function>random</function>). Allowed values are floating-point numbers between -1 and 1, which are then multiplied by 2<superscript>31</superscript>-1."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:187(programlisting) 
+#: /tmp/cicero-jWWW/ref/set.xml:187(programlisting) 
 #, no-wrap
 msgid "\nSELECT setseed(<replaceable>value</replaceable>);\n"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:184(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:184(para) 
 msgid "The seed can also be set by invoking the function <function>setseed</function>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:194(literal) 
+#: /tmp/cicero-jWWW/ref/set.xml:194(literal) 
 msgid "TIME ZONE"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:204(literal) 
+#: /tmp/cicero-jWWW/ref/set.xml:204(literal) 
 msgid "'PST8PDT'"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:206(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:206(para) 
 msgid "The time zone for Berkeley, California."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:212(literal) 
+#: /tmp/cicero-jWWW/ref/set.xml:212(literal) 
 msgid "'Europe/Rome'"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:214(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:214(para) 
 msgid "The time zone for Italy."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:220(literal) 
+#: /tmp/cicero-jWWW/ref/set.xml:220(literal) 
 msgid "-7"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:222(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:222(para) 
 msgid "The time zone 7 hours west from UTC (equivalent to PDT). Positive values are east from UTC."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:229(literal) 
+#: /tmp/cicero-jWWW/ref/set.xml:229(literal) 
 msgid "INTERVAL '-08:00' HOUR TO MINUTE"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:231(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:231(para) 
 msgid "The time zone 8 hours west from UTC (equivalent to PST)."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:239(literal) 
+#: /tmp/cicero-jWWW/ref/set.xml:239(literal) 
 msgid "DEFAULT"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:241(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:241(para) 
 msgid "Set the time zone to your local time zone (that is, the server's default value of <varname>timezone</varname>; if this has not been explicitly set anywhere, it will be the zone that the server's operating system defaults to)."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:196(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:196(para) 
 msgid "<literal>SET TIME ZONE <replaceable>value</replaceable></literal> is an alias for <literal>SET timezone TO <replaceable>value</replaceable></literal>. The syntax <literal>SET TIME ZONE</literal> allows special syntax for the time zone specification. Here are examples of valid values: <placeholder-1/> See <xref linkend=\"datatype-timezones\"/> for more information about time zones."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:148(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:148(para) 
 msgid "Besides the configuration parameters documented in <xref linkend=\"runtime-config\"/>, there are a few that can only be adjusted using the <command>SET</command> command or that have a special syntax: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:261(title) 
+#: /tmp/cicero-jWWW/ref/set.xml:261(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:263(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:263(para) 
 msgid "The function <function>set_config</function> provides equivalent functionality; see <xref linkend=\"functions-admin\"/>. Also, it is possible to UPDATE the <link linkend=\"view-pg-settings\"><structname>pg_settings</structname></link> system view to perform the equivalent of <command>SET</command>."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:273(title) 
+#: /tmp/cicero-jWWW/ref/set.xml:273(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:277(programlisting) 
+#: /tmp/cicero-jWWW/ref/set.xml:277(programlisting) 
 #, no-wrap
 msgid "\nSET search_path TO my_schema, public;\n"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:275(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:275(para) 
 msgid "Set the schema search path: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:282(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:282(para) 
 msgid "Set the style of date to traditional <productname>POSTGRES</productname> with <quote>day before month</quote> input convention: <screen>\nSET datestyle TO postgres, dmy;\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:291(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:291(para) 
 msgid "Set the time zone for Berkeley, California: <screen>\nSET TIME ZONE 'PST8PDT';\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:298(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:298(para) 
 msgid "Set the time zone for Italy: <screen>\nSET TIME ZONE 'Europe/Rome';\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:306(title) 
+#: /tmp/cicero-jWWW/ref/set.xml:306(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:308(para) 
+#: /tmp/cicero-jWWW/ref/set.xml:308(para) 
 msgid "<literal>SET TIME ZONE</literal> extends syntax defined in the SQL standard. The standard allows only numeric time zone offsets while <productname>PostgreSQL</productname> allows more flexible time-zone specifications. All other <literal>SET</literal> features are <productname>PostgreSQL</productname> extensions."
 msgstr ""
 
-#: /tmp/cicero-YDWB/ref/set.xml:318(title) 
+#: /tmp/cicero-jWWW/ref/set.xml:318(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-YDWB/ref/set.xml:0(None) 
+#: /tmp/cicero-jWWW/ref/set.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
