@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-12 06:57+0200\n"
+"POT-Creation-Date: 2011-09-13 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,170 +9,170 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:9(refentrytitle) /tmp/cicero-Ackt/ref/vacuum.xml:15(refname) /tmp/cicero-Ackt/ref/vacuum.xml:20(primary) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:9(refentrytitle) /tmp/cicero-JkEb/ref/vacuum.xml:15(refname) /tmp/cicero-JkEb/ref/vacuum.xml:20(primary) 
 msgid "VACUUM"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:10(manvolnum) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:11(refmiscinfo) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:16(refpurpose) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:16(refpurpose) 
 msgid "garbage-collect and optionally analyze a database"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:25(replaceable) /tmp/cicero-Ackt/ref/vacuum.xml:26(replaceable) /tmp/cicero-Ackt/ref/vacuum.xml:27(replaceable) /tmp/cicero-Ackt/ref/vacuum.xml:131(replaceable) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:25(replaceable) /tmp/cicero-JkEb/ref/vacuum.xml:26(replaceable) /tmp/cicero-JkEb/ref/vacuum.xml:27(replaceable) /tmp/cicero-JkEb/ref/vacuum.xml:131(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:25(replaceable) /tmp/cicero-Ackt/ref/vacuum.xml:27(replaceable) /tmp/cicero-Ackt/ref/vacuum.xml:141(replaceable) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:25(replaceable) /tmp/cicero-JkEb/ref/vacuum.xml:27(replaceable) /tmp/cicero-JkEb/ref/vacuum.xml:141(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:24(synopsis) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:24(synopsis) 
 #, no-wrap
 msgid "\nVACUUM [ ( { FULL | FREEZE | VERBOSE | ANALYZE } [, ...] ) ] [ <placeholder-1/> [ (<placeholder-2/> [, ...] ) ] ]\nVACUUM [ FULL ] [ FREEZE ] [ VERBOSE ] [ <placeholder-3/> ]\nVACUUM [ FULL ] [ FREEZE ] [ VERBOSE ] ANALYZE [ <placeholder-4/> [ (<placeholder-5/> [, ...] ) ] ]\n"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:32(title) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:34(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:34(para) 
 msgid "<command>VACUUM</command> reclaims storage occupied by dead tuples. In normal <productname>PostgreSQL</productname> operation, tuples that are deleted or obsoleted by an update are not physically removed from their table; they remain present until a <command>VACUUM</command> is done. Therefore it's necessary to do <command>VACUUM</command> periodically, especially on frequently-updated tables."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:43(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:43(para) 
 msgid "With no parameter, <command>VACUUM</command> processes every table in the current database that the current user has permission to vacuum. With a parameter, <command>VACUUM</command> processes only that table."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:49(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:49(para) 
 msgid "<command>VACUUM ANALYZE</command> performs a <command>VACUUM</command> and then an <command>ANALYZE</command> for each selected table. This is a handy combination form for routine maintenance scripts. See <xref linkend=\"sql-analyze\"/> for more details about its processing."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:57(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:57(para) 
 msgid "Plain <command>VACUUM</command> (without <literal>FULL</literal>) simply reclaims space and makes it available for re-use. This form of the command can operate in parallel with normal reading and writing of the table, as an exclusive lock is not obtained. However, extra space is not returned to the operating system (in most cases); it's just kept available for re-use within the same table. <command>VACUUM FULL</command> rewrites the entire contents of the table into a new disk file with no extra space, allowing unused space to be returned to the operating system. This form is much slower and requires an exclusive lock on each table while it is being processed."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:70(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:70(para) 
 msgid "When the option list is surrounded by parentheses, the options can be written in any order. Without parentheses, options must be specified in exactly the order shown above. The parenthesized syntax was added in <productname>PostgreSQL</productname> 9.0; the unparenthesized syntax is deprecated."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:81(title) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:81(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:85(literal) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:85(literal) 
 msgid "FULL"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:87(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:87(para) 
 msgid "Selects <quote>full</quote> vacuum, which can reclaim more space, but takes much longer and exclusively locks the table. This method also requires extra disk space, since it writes a new copy of the table and doesn't release the old copy until the operation is complete. Usually this should only be used when a significant amount of space needs to be reclaimed from within the table."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:99(literal) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:99(literal) 
 msgid "FREEZE"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:101(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:101(para) 
 msgid "Selects aggressive <quote>freezing</quote> of tuples. Specifying <literal>FREEZE</literal> is equivalent to performing <command>VACUUM</command> with the <xref linkend=\"guc-vacuum-freeze-min-age\"/> parameter set to zero."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:112(literal) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:112(literal) 
 msgid "VERBOSE"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:114(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:114(para) 
 msgid "Prints a detailed vacuum activity report for each table."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:121(literal) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:121(literal) 
 msgid "ANALYZE"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:123(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:123(para) 
 msgid "Updates statistics used by the planner to determine the most efficient way to execute a query."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:133(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:133(para) 
 msgid "The name (optionally schema-qualified) of a specific table to vacuum. Defaults to all tables in the current database."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:143(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:143(para) 
 msgid "The name of a specific column to analyze. Defaults to all columns. If a column list is specified, <literal>ANALYZE</literal> is implied."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:153(title) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:153(title) 
 msgid "Outputs"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:155(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:155(para) 
 msgid "When <literal>VERBOSE</literal> is specified, <command>VACUUM</command> emits progress messages to indicate which table is currently being processed. Various statistics about the tables are printed as well."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:163(title) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:163(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:165(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:165(para) 
 msgid "To vacuum a table, one must ordinarily be the table's owner or a superuser. However, database owners are allowed to vacuum all tables in their databases, except shared catalogs. (The restriction for shared catalogs means that a true database-wide <command>VACUUM</command> can only be performed by a superuser.) <command>VACUUM</command> will skip over any tables that the calling user does not have permission to vacuum."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:175(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:175(para) 
 msgid "<command>VACUUM</command> cannot be executed inside a transaction block."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:179(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:179(para) 
 msgid "For tables with <acronym>GIN</acronym> indexes, <command>VACUUM</command> (in any form) also completes any pending index insertions, by moving pending index entries to the appropriate places in the main <acronym>GIN</acronym> index structure. See <xref linkend=\"gin-fast-update\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:186(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:186(para) 
 msgid "We recommend that active production databases be vacuumed frequently (at least nightly), in order to remove dead rows. After adding or deleting a large number of rows, it might be a good idea to issue a <command>VACUUM ANALYZE</command> command for the affected table. This will update the system catalogs with the results of all recent changes, and allow the <productname>PostgreSQL</productname> query planner to make better choices in planning queries."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:198(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:198(para) 
 msgid "The <option>FULL</option> option is not recommended for routine use, but might be useful in special cases. An example is when you have deleted or updated most of the rows in a table and would like the table to physically shrink to occupy less disk space and allow faster table scans. <command>VACUUM FULL</command> will usually shrink the table more than a plain <command>VACUUM</command> would."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:207(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:207(para) 
 msgid "<command>VACUUM</command> causes a substantial increase in I/O traffic, which might cause poor performance for other active sessions. Therefore, it is sometimes advisable to use the cost-based vacuum delay feature. See <xref linkend=\"runtime-config-resource-vacuum-cost\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:214(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:214(para) 
 msgid "<productname>PostgreSQL</productname> includes an <quote>autovacuum</quote> facility which can automate routine vacuum maintenance. For more information about automatic and manual vacuuming, see <xref linkend=\"routine-vacuuming\"/>."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:223(title) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:223(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:229(programlisting) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:229(programlisting) 
 #, no-wrap
 msgid "\nregression=# VACUUM (VERBOSE, ANALYZE) onek;\nINFO:  vacuuming \"public.onek\"\nINFO:  index \"onek_unique1\" now contains 1000 tuples in 14 pages\nDETAIL:  3000 index tuples were removed.\n0 index pages have been deleted, 0 are currently reusable.\nCPU 0.01s/0.08u sec elapsed 0.18 sec.\nINFO:  index \"onek_unique2\" now contains 1000 tuples in 16 pages\nDETAIL:  3000 index tuples were removed.\n0 index pages have been deleted, 0 are currently reusable.\nCPU 0.00s/0.07u sec elapsed 0.23 sec.\nINFO:  index \"onek_hundred\" now contains 1000 tuples in 13 pages\nDETAIL:  3000 index tuples were removed.\n0 index pages have been deleted, 0 are currently reusable.\nCPU 0.01s/0.08u sec elapsed 0.17 sec.\nINFO:  index \"onek_stringu1\" now contains 1000 tuples in 48 pages\nDETAIL:  3000 index tuples were removed.\n0 index pages have been deleted, 0 are currently reusable.\nCPU 0.01s/0.09u sec elapsed 0.59 sec.\nINFO:  \"onek\": removed 3000 tuples in 108 pages\nDETAIL:  CPU 0.01s/0.06u sec elapsed 0.07 sec.\nINFO:  \"onek\": found 3000 removable, 1000 nonremovable tuples in 143 pages\nDETAIL:  0 dead tuples cannot be removed yet.\nThere were 0 unused item pointers.\n0 pages are entirely empty.\nCPU 0.07s/0.39u sec elapsed 1.56 sec.\nINFO:  analyzing \"public.onek\"\nINFO:  \"onek\": 36 pages, 1000 rows sampled, 1000 estimated total rows\nVACUUM\n"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:225(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:225(para) 
 msgid "The following is an example from running <command>VACUUM</command> on a table in the regression database: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:262(title) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:262(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:264(para) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:264(para) 
 msgid "There is no <command>VACUUM</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-Ackt/ref/vacuum.xml:270(title) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:270(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-Ackt/ref/vacuum.xml:0(None) 
+#: /tmp/cicero-JkEb/ref/vacuum.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
