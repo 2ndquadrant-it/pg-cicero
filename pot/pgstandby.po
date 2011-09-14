@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-13 06:57+0200\n"
+"POT-Creation-Date: 2011-09-14 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,247 +9,247 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-JkEb/pgstandby.xml:5(title) /tmp/cicero-JkEb/pgstandby.xml:8(primary) 
+#: /tmp/cicero-AXdq/pgstandby.xml:5(title) /tmp/cicero-AXdq/pgstandby.xml:8(primary) 
 msgid "pg_standby"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:11(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:11(para) 
 msgid "<application>pg_standby</application> supports creation of a <quote>warm standby</quote> database server. It is designed to be a production-ready program, as well as a customizable template should you require specific modifications."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:17(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:17(para) 
 msgid "<application>pg_standby</application> is designed to be a waiting <varname>restore_command</varname>, which is needed to turn a standard archive recovery into a warm standby operation. Other configuration is required as well, all of which is described in the main server manual (see <xref linkend=\"warm-standby\"/>)."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:25(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:25(para) 
 msgid "<application>pg_standby</application> features include:"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:30(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:30(para) 
 msgid "Written in C, so very portable and easy to install"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:35(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:35(para) 
 msgid "Easy-to-modify source code, with specifically designated sections to modify for your own needs"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:41(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:41(para) 
 msgid "Already tested on Linux and Windows"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:48(title) 
+#: /tmp/cicero-AXdq/pgstandby.xml:48(title) 
 msgid "Usage"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:54(programlisting) 
+#: /tmp/cicero-AXdq/pgstandby.xml:54(programlisting) 
 #, no-wrap
 msgid "\nrestore_command = 'pg_standby <replaceable>archiveDir</replaceable> %f %p %r'\n"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:50(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:50(para) 
 msgid "To configure a standby server to use <application>pg_standby</application>, put this into its <filename>recovery.conf</filename> configuration file: <placeholder-1/> where <replaceable>archiveDir</replaceable> is the directory from which WAL segment files should be restored."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:60(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:60(para) 
 msgid "The full syntax of <application>pg_standby</application>'s command line is <synopsis>\npg_standby <optional> <replaceable>option</replaceable> ... </optional> <replaceable>archivelocation</replaceable> <replaceable>nextwalfile</replaceable> <replaceable>xlogfilepath</replaceable> <optional> <replaceable>restartwalfile</replaceable> </optional>\n</synopsis> When used within <varname>restore_command</varname>, the <literal>%f</literal> and <literal>%p</literal> macros should be specified for <replaceable>nextwalfile</replaceable> and <replaceable>xlogfilepath</replaceable> respectively, to provide the actual file and path required for the restore."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:70(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:70(para) 
 msgid "If <replaceable>restartwalfile</replaceable> is specified, normally by using the <literal>%r</literal> macro, then all WAL files logically preceding this file will be removed from <replaceable>archivelocation</replaceable>. This minimizes the number of files that need to be retained, while preserving crash-restart capability. Use of this parameter is appropriate if the <replaceable>archivelocation</replaceable> is a transient staging area for this particular standby server, but <emphasis>not</emphasis> when the <replaceable>archivelocation</replaceable> is intended as a long-term WAL archive area."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:80(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:80(para) 
 msgid "<application>pg_standby</application> assumes that <replaceable>archivelocation</replaceable> is a directory readable by the server-owning user. If <replaceable>restartwalfile</replaceable> (or <literal>-k</literal>) is specified, the <replaceable>archivelocation</replaceable> directory must be writable too."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:93(term) 
+#: /tmp/cicero-AXdq/pgstandby.xml:93(term) 
 msgid "Smart Failover"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:95(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:95(para) 
 msgid "In smart failover, the server is brought up after applying all WAL files available in the archive. This results in zero data loss, even if the standby server has fallen behind, but if there is a lot of unapplied WAL it can be a long time before the standby server becomes ready. To trigger a smart failover, create a trigger file containing the word <literal>smart</literal>, or just create it and leave it empty."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:106(term) 
+#: /tmp/cicero-AXdq/pgstandby.xml:106(term) 
 msgid "Fast Failover"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:108(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:108(para) 
 msgid "In fast failover, the server is brought up immediately. Any WAL files in the archive that have not yet been applied will be ignored, and all transactions in those files are lost. To trigger a fast failover, create a trigger file and write the word <literal>fast</literal> into it. <application>pg_standby</application> can also be configured to execute a fast failover automatically if no new WAL file appears within a defined interval."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:87(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:87(para) 
 msgid "There are two ways to fail over to a <quote>warm standby</quote> database server when the master server fails: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:125(title) 
+#: /tmp/cicero-AXdq/pgstandby.xml:125(title) 
 msgid "<application>pg_standby</application> Options"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:133(option) 
+#: /tmp/cicero-AXdq/pgstandby.xml:133(option) 
 msgid "-c"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:135(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:135(para) 
 msgid "Use <literal>cp</literal> or <literal>copy</literal> command to restore WAL files from archive. This is the only supported behavior so this option is useless."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:143(option) 
+#: /tmp/cicero-AXdq/pgstandby.xml:143(option) 
 msgid "-d"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:145(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:145(para) 
 msgid "Print lots of debug logging output on <filename>stderr</filename>."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:152(option) 
+#: /tmp/cicero-AXdq/pgstandby.xml:152(option) 
 msgid "-k"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:154(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:154(para) 
 msgid "Remove files from <replaceable>archivelocation</replaceable> so that no more than this many WAL files before the current one are kept in the archive. Zero (the default) means not to remove any files from <replaceable>archivelocation</replaceable>. This parameter will be silently ignored if <replaceable>restartwalfile</replaceable> is specified, since that specification method is more accurate in determining the correct archive cut-off point. Use of this parameter is <emphasis>deprecated</emphasis> as of <productname>PostgreSQL</productname> 8.3; it is safer and more efficient to specify a <replaceable>restartwalfile</replaceable> parameter. A too small setting could result in removal of files that are still needed for a restart of the standby server, while a too large setting wastes archive space."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:174(option) 
+#: /tmp/cicero-AXdq/pgstandby.xml:174(option) 
 msgid "-r"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:174(replaceable) 
+#: /tmp/cicero-AXdq/pgstandby.xml:174(replaceable) 
 msgid "maxretries"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:176(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:176(para) 
 msgid "Set the maximum number of times to retry the copy command if it fails (default 3). After each failure, we wait for <replaceable>sleeptime</replaceable> * <replaceable>num_retries</replaceable> so that the wait time increases progressively. So by default, we will wait 5 secs, 10 secs, then 15 secs before reporting the failure back to the standby server. This will be interpreted as end of recovery and the standby will come up fully as a result."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:190(option) 
+#: /tmp/cicero-AXdq/pgstandby.xml:190(option) 
 msgid "-s"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:190(replaceable) 
+#: /tmp/cicero-AXdq/pgstandby.xml:190(replaceable) 
 msgid "sleeptime"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:192(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:192(para) 
 msgid "Set the number of seconds (up to 60, default 5) to sleep between tests to see if the WAL file to be restored is available in the archive yet. The default setting is not necessarily recommended; consult <xref linkend=\"warm-standby\"/> for discussion."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:202(option) 
+#: /tmp/cicero-AXdq/pgstandby.xml:202(option) 
 msgid "-t"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:202(replaceable) 
+#: /tmp/cicero-AXdq/pgstandby.xml:202(replaceable) 
 msgid "triggerfile"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:204(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:204(para) 
 msgid "Specify a trigger file whose presence should cause failover. It is recommended that you use a structured file name to avoid confusion as to which server is being triggered when multiple servers exist on the same system; for example <filename>/tmp/pgsql.trigger.5432</filename>."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:215(option) 
+#: /tmp/cicero-AXdq/pgstandby.xml:215(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:215(replaceable) 
+#: /tmp/cicero-AXdq/pgstandby.xml:215(replaceable) 
 msgid "maxwaittime"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:217(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:217(para) 
 msgid "Set the maximum number of seconds to wait for the next WAL file, after which a fast failover will be performed. A setting of zero (the default) means wait forever. The default setting is not necessarily recommended; consult <xref linkend=\"warm-standby\"/> for discussion."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:127(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:127(para) 
 msgid "<application>pg_standby</application> accepts the following command-line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:233(title) 
+#: /tmp/cicero-AXdq/pgstandby.xml:233(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:237(programlisting) 
+#: /tmp/cicero-AXdq/pgstandby.xml:237(programlisting) 
 #, no-wrap
 msgid "\narchive_command = 'cp %p .../archive/%f'\n\nrestore_command = 'pg_standby -d -s 2 -t /tmp/pgsql.trigger.5442 .../archive %f %p %r 2&gt;&gt;standby.log'\n\nrecovery_end_command = 'rm -f /tmp/pgsql.trigger.5442'\n"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:250(para) /tmp/cicero-JkEb/pgstandby.xml:299(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:250(para) /tmp/cicero-AXdq/pgstandby.xml:299(para) 
 msgid "produce debugging output in <filename>standby.log</filename>"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:255(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:255(para) 
 msgid "sleep for 2 seconds between checks for next WAL file availability"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:260(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:260(para) 
 msgid "stop waiting only when a trigger file called <filename>/tmp/pgsql.trigger.5442</filename> appears, and perform failover according to its content"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:267(para) /tmp/cicero-JkEb/pgstandby.xml:316(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:267(para) /tmp/cicero-AXdq/pgstandby.xml:316(para) 
 msgid "remove the trigger file when recovery ends"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:272(para) /tmp/cicero-JkEb/pgstandby.xml:321(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:272(para) /tmp/cicero-AXdq/pgstandby.xml:321(para) 
 msgid "remove no-longer-needed files from the archive directory"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:235(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:235(para) 
 msgid "On Linux or Unix systems, you might use: <placeholder-1/> where the archive directory is physically located on the standby server, so that the <varname>archive_command</varname> is accessing it across NFS, but the files are local to the standby (enabling use of <literal>ln</literal>). This will: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:281(programlisting) 
+#: /tmp/cicero-AXdq/pgstandby.xml:281(programlisting) 
 #, no-wrap
 msgid "\narchive_command = 'copy %p ...\\\\archive\\\\%f'\n\nrestore_command = 'pg_standby -d -s 5 -t C:\\pgsql.trigger.5442 ...\\archive %f %p %r 2&gt;&gt;standby.log'\n\nrecovery_end_command = 'del C:\\pgsql.trigger.5442'\n"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:294(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:294(para) 
 msgid "use the <literal>copy</literal> command to restore WAL files from archive"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:304(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:304(para) 
 msgid "sleep for 5 seconds between checks for next WAL file availability"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:309(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:309(para) 
 msgid "stop waiting only when a trigger file called <filename>C:\\pgsql.trigger.5442</filename> appears, and perform failover according to its content"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:279(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:279(para) 
 msgid "On Windows, you might use: <placeholder-1/> Note that backslashes need to be doubled in the <varname>archive_command</varname>, but <emphasis>not</emphasis> in the <varname>restore_command</varname> or <varname>recovery_end_command</varname>. This will: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:328(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:328(para) 
 msgid "The <literal>copy</literal> command on Windows sets the final file size before the file is completely copied, which would ordinarily confuse <application>pg_standby</application>. Therefore <application>pg_standby</application> waits <literal>sleeptime</literal> seconds once it sees the proper file size. GNUWin32's <literal>cp</literal> sets the file size only after the file copy is complete."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:337(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:337(para) 
 msgid "Since the Windows example uses <literal>copy</literal> at both ends, either or both servers might be accessing the archive directory across the network."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:346(title) 
+#: /tmp/cicero-AXdq/pgstandby.xml:346(title) 
 msgid "Supported Server Versions"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:348(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:348(para) 
 msgid "<application>pg_standby</application> is designed to work with <productname>PostgreSQL</productname> 8.2 and later."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:352(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:352(para) 
 msgid "<productname>PostgreSQL</productname> 8.3 provides the <literal>%r</literal> macro, which is designed to let <application>pg_standby</application> know the last file it needs to keep. With <productname>PostgreSQL</productname> 8.2, the <literal>-k</literal> option must be used if archive cleanup is required. This option remains available in 8.3, but its use is deprecated."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:359(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:359(para) 
 msgid "<productname>PostgreSQL</productname> 8.4 provides the <varname>recovery_end_command</varname> option. Without this option a leftover trigger file can be hazardous."
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:367(title) 
+#: /tmp/cicero-AXdq/pgstandby.xml:367(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-JkEb/pgstandby.xml:369(para) 
+#: /tmp/cicero-AXdq/pgstandby.xml:369(para) 
 msgid "Simon Riggs <email>simon@2ndquadrant.com</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-JkEb/pgstandby.xml:0(None) 
+#: /tmp/cicero-AXdq/pgstandby.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
