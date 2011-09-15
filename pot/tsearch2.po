@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-14 06:57+0200\n"
+"POT-Creation-Date: 2011-09-15 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,100 +9,100 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-AXdq/tsearch2.xml:5(title) /tmp/cicero-AXdq/tsearch2.xml:8(primary) 
+#: /tmp/cicero-fBJf/tsearch2.xml:5(title) /tmp/cicero-fBJf/tsearch2.xml:8(primary) 
 msgid "tsearch2"
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:11(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:11(para) 
 msgid "The <application>tsearch2</application> module provides backwards-compatible text search functionality for applications that used <application>tsearch2</application> before text searching was integrated into core <productname>PostgreSQL</productname> in release 8.3."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:19(title) 
+#: /tmp/cicero-fBJf/tsearch2.xml:19(title) 
 msgid "Portability Issues"
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:21(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:21(para) 
 msgid "Although the built-in text search features were based on <application>tsearch2</application> and are largely similar to it, there are numerous small differences that will create portability issues for existing applications:"
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:30(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:30(para) 
 msgid "Some functions' names were changed, for example <function>rank</function> to <function>ts_rank</function>. The replacement <literal>tsearch2</literal> module provides aliases having the old names."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:39(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:39(para) 
 msgid "The built-in text search data types and functions all exist within the system schema <literal>pg_catalog</literal>. In an installation using <application>tsearch2</application>, these objects would usually have been in the <literal>public</literal> schema, though some users chose to place them in a separate schema of their own. Explicitly schema-qualified references to the objects will therefore fail in either case. The replacement <literal>tsearch2</literal> module provides alias objects that are stored in <literal>public</literal> (or another schema if necessary) so that such references will still work."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:53(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:53(para) 
 msgid "There is no concept of a <quote>current parser</quote> or <quote>current dictionary</quote> in the built-in text search features, only of a current search configuration (set by the <varname>default_text_search_config</varname> parameter). While the current parser and current dictionary were used only by functions intended for debugging, this might still pose a porting obstacle in some cases. The replacement <literal>tsearch2</literal> module emulates these additional state variables and provides backwards-compatible functions for setting and retrieving them."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:67(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:67(para) 
 msgid "There are some issues that are not addressed by the replacement <literal>tsearch2</literal> module, and will therefore require application code changes in any case:"
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:75(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:75(para) 
 msgid "The old <function>tsearch2</function> trigger function allowed items in its argument list to be names of functions to be invoked on the text data before it was converted to <type>tsvector</type> format. This was removed as being a security hole, since it was not possible to guarantee that the function invoked was the one intended. The recommended approach if the data must be massaged before being indexed is to write a custom trigger that does the work for itself."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:87(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:87(para) 
 msgid "Text search configuration information has been moved into core system catalogs that are noticeably different from the tables used by <application>tsearch2</application>. Any applications that examined or modified those tables will need adjustment."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:96(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:96(para) 
 msgid "If an application used any custom text search configurations, those will need to be set up in the core catalogs using the new text search configuration SQL commands. The replacement <literal>tsearch2</literal> module offers a little bit of support for this by making it possible to load an old set of <application>tsearch2</application> configuration tables into <productname>PostgreSQL</productname> 8.3. (Without the module, it is not possible to load the configuration data because values in the <type>regprocedure</type> columns cannot be resolved to functions.) While those configuration tables won't actually <emphasis>do</emphasis> anything, at least their contents will be available to be consulted while setting up an equivalent custom configuration in 8.3."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:113(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:113(para) 
 msgid "The old <function>reset_tsearch()</function> and <function>get_covers()</function> functions are not supported."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:120(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:120(para) 
 msgid "The replacement <literal>tsearch2</literal> module does not define any alias operators, relying entirely on the built-in ones. This would only pose an issue if an application used explicitly schema-qualified operator names, which is very uncommon."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:132(title) 
+#: /tmp/cicero-fBJf/tsearch2.xml:132(title) 
 msgid "Converting a pre-8.3 Installation"
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:134(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:134(para) 
 msgid "The recommended way to update a pre-8.3 installation that uses <application>tsearch2</application> is:"
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:141(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:141(para) 
 msgid "Make a dump from the old installation in the usual way, but be sure not to use <literal>-c</literal> (<literal>--clean</literal>) option of <application>pg_dump</application> or <application>pg_dumpall</application>."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:149(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:149(para) 
 msgid "In the new installation, create empty database(s) and install the replacement <literal>tsearch2</literal> module into each database that will use text search. This must be done <emphasis>before</emphasis> loading the dump data! If your old installation had the <application>tsearch2</application> objects in a schema other than <literal>public</literal>, be sure to adjust the <command>CREATE EXTENSION</command> command so that the replacement objects are created in that same schema."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:162(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:162(para) 
 msgid "Load the dump data. There will be quite a few errors reported due to failure to recreate the original <application>tsearch2</application> objects. These errors can be ignored, but this means you cannot restore the dump in a single transaction (eg, you cannot use <application>pg_restore</application>'s <option>-1</option> switch)."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:172(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:172(para) 
 msgid "Examine the contents of the restored <application>tsearch2</application> configuration tables (<structname>pg_ts_cfg</structname> and so on), and create equivalent built-in text search configurations as needed. You may drop the old configuration tables once you've extracted all the useful information from them."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:182(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:182(para) 
 msgid "Test your application."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:188(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:188(para) 
 msgid "At a later time you may wish to rename application references to the alias text search objects, so that you can eventually uninstall the replacement <literal>tsearch2</literal> module."
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:197(title) 
+#: /tmp/cicero-fBJf/tsearch2.xml:197(title) 
 msgid "References"
 msgstr ""
 
-#: /tmp/cicero-AXdq/tsearch2.xml:198(para) 
+#: /tmp/cicero-fBJf/tsearch2.xml:198(para) 
 msgid "Tsearch2 Development Site <ulink url=\"http://www.sai.msu.su/~megera/postgres/gist/tsearch/V2/\"/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-AXdq/tsearch2.xml:0(None) 
+#: /tmp/cicero-fBJf/tsearch2.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

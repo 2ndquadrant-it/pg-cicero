@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-14 06:57+0200\n"
+"POT-Creation-Date: 2011-09-15 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,111 +9,111 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:9(refentrytitle) /tmp/cicero-AXdq/ref/alter_conversion.xml:15(refname) /tmp/cicero-AXdq/ref/alter_conversion.xml:20(primary) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:9(refentrytitle) /tmp/cicero-fBJf/ref/alter_conversion.xml:15(refname) /tmp/cicero-fBJf/ref/alter_conversion.xml:20(primary) 
 msgid "ALTER CONVERSION"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:10(manvolnum) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:11(refmiscinfo) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:16(refpurpose) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:16(refpurpose) 
 msgid "change the definition of a conversion"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:25(replaceable) /tmp/cicero-AXdq/ref/alter_conversion.xml:26(replaceable) /tmp/cicero-AXdq/ref/alter_conversion.xml:27(replaceable) /tmp/cicero-AXdq/ref/alter_conversion.xml:55(replaceable) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:25(replaceable) /tmp/cicero-fBJf/ref/alter_conversion.xml:26(replaceable) /tmp/cicero-fBJf/ref/alter_conversion.xml:27(replaceable) /tmp/cicero-fBJf/ref/alter_conversion.xml:55(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:25(replaceable) /tmp/cicero-AXdq/ref/alter_conversion.xml:64(replaceable) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:25(replaceable) /tmp/cicero-fBJf/ref/alter_conversion.xml:64(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:26(replaceable) /tmp/cicero-AXdq/ref/alter_conversion.xml:73(replaceable) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:26(replaceable) /tmp/cicero-fBJf/ref/alter_conversion.xml:73(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:27(replaceable) /tmp/cicero-AXdq/ref/alter_conversion.xml:82(replaceable) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:27(replaceable) /tmp/cicero-fBJf/ref/alter_conversion.xml:82(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:24(synopsis) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER CONVERSION <placeholder-1/> RENAME TO <placeholder-2/>\nALTER CONVERSION <placeholder-3/> OWNER TO <placeholder-4/>\nALTER CONVERSION <placeholder-5/> SET SCHEMA <placeholder-6/>\n"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:32(title) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:34(para) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:34(para) 
 msgid "<command>ALTER CONVERSION</command> changes the definition of a conversion."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:39(para) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:39(para) 
 msgid "You must own the conversion to use <command>ALTER CONVERSION</command>. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the conversion's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the conversion. However, a superuser can alter ownership of any conversion anyway.)"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:51(title) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:51(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:57(para) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:57(para) 
 msgid "The name (optionally schema-qualified) of an existing conversion."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:66(para) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:66(para) 
 msgid "The new name of the conversion."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:75(para) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:75(para) 
 msgid "The new owner of the conversion."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:84(para) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:84(para) 
 msgid "The new schema for the conversion."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:93(title) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:93(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:98(programlisting) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:98(programlisting) 
 #, no-wrap
 msgid "\nALTER CONVERSION iso_8859_1_to_utf8 RENAME TO latin1_to_unicode;\n"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:95(para) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:95(para) 
 msgid "To rename the conversion <literal>iso_8859_1_to_utf8</literal> to <literal>latin1_to_unicode</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:106(programlisting) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:106(programlisting) 
 #, no-wrap
 msgid "\nALTER CONVERSION iso_8859_1_to_utf8 OWNER TO joe;\n"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:103(para) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:103(para) 
 msgid "To change the owner of the conversion <literal>iso_8859_1_to_utf8</literal> to <literal>joe</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:112(title) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:112(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:114(para) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:114(para) 
 msgid "There is no <command>ALTER CONVERSION</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:121(title) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:121(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-AXdq/ref/alter_conversion.xml:0(None) 
+#: /tmp/cicero-fBJf/ref/alter_conversion.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-14 06:57+0200\n"
+"POT-Creation-Date: 2011-09-15 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,213 +9,213 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:9(application) /tmp/cicero-AXdq/ref/ecpg-ref.xml:15(application) /tmp/cicero-AXdq/ref/ecpg-ref.xml:20(primary) /tmp/cicero-AXdq/ref/ecpg-ref.xml:25(command) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:9(application) /tmp/cicero-fBJf/ref/ecpg-ref.xml:15(application) /tmp/cicero-fBJf/ref/ecpg-ref.xml:20(primary) /tmp/cicero-fBJf/ref/ecpg-ref.xml:25(command) 
 msgid "ecpg"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:10(manvolnum) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:10(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:11(refmiscinfo) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:11(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:16(refpurpose) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:16(refpurpose) 
 msgid "embedded SQL C preprocessor"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:26(replaceable) /tmp/cicero-AXdq/ref/ecpg-ref.xml:136(replaceable) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:26(replaceable) /tmp/cicero-fBJf/ref/ecpg-ref.xml:136(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:27(replaceable) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:27(replaceable) 
 msgid "file"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:33(title) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:35(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:35(para) 
 msgid "<command>ecpg</command> is the embedded SQL preprocessor for C programs. It converts C programs with embedded SQL statements to normal C code by replacing the SQL invocations with special function calls. The output files can then be processed with any C compiler tool chain."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:43(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:43(para) 
 msgid "<command>ecpg</command> will convert each input file given on the command line to the corresponding C output file. Input files preferably have the extension <filename>.pgc</filename>, in which case the extension will be replaced by <filename>.c</filename> to determine the output file name. If the extension of the input file is not <filename>.pgc</filename>, then the output file name is computed by appending <literal>.c</literal> to the full file name. The output file name can also be overridden using the <option>-o</option> option."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:55(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:55(para) 
 msgid "This reference page does not describe the embedded SQL language. See <xref linkend=\"ecpg\"/> for more information on that topic."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:63(title) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:63(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:71(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:71(option) 
 msgid "-c"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:73(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:73(para) 
 msgid "Automatically generate certain C code from SQL code. Currently, this works for <literal>EXEC SQL TYPE</literal>."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:81(replaceable) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:81(replaceable) 
 msgid "mode"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:81(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:81(option) 
 msgid "-C <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:83(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:83(para) 
 msgid "Set a compatibility mode. <replaceable>mode</replaceable> can be <literal>INFORMIX</literal> or <literal>INFORMIX_SE</literal>."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:92(replaceable) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:92(replaceable) 
 msgid "symbol"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:92(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:92(option) 
 msgid "-D <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:94(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:94(para) 
 msgid "Define a C preprocessor symbol."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:101(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:101(option) 
 msgid "-i"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:103(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:103(para) 
 msgid "Parse system include files as well."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:110(replaceable) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:110(replaceable) 
 msgid "directory"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:110(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:110(option) 
 msgid "-I <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:112(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:112(para) 
 msgid "Specify an additional include path, used to find files included via <literal>EXEC SQL INCLUDE</literal>. Defaults are <filename>.</filename> (current directory), <filename>/usr/local/include</filename>, the <productname>PostgreSQL</productname> include directory which is defined at compile time (default: <filename>/usr/local/pgsql/include</filename>), and <filename>/usr/include</filename>, in that order."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:126(replaceable) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:126(replaceable) 
 msgid "filename"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:126(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:126(option) 
 msgid "-o <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:128(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:128(para) 
 msgid "Specifies that <command>ecpg</command> should write all its output to the given <replaceable>filename</replaceable>."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:136(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:136(option) 
 msgid "-r <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:143(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:143(option) 
 msgid "no_indicator"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:145(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:145(para) 
 msgid "Do not use indicators but instead use special values to represent null values. Historically there have been databases using this approach."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:152(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:152(option) 
 msgid "prepare"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:154(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:154(para) 
 msgid "Prepare all statements before using them. Libecpg will keep a cache of prepared statements and reuse a statement if it gets executed again. If the cache runs full, libecpg will free the least used statement."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:162(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:162(option) 
 msgid "questionmarks"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:164(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:164(para) 
 msgid "Allow question mark as placeholder for compatibility reasons. This used to be the default long ago."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:138(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:138(para) 
 msgid "Selects run-time behavior. <replaceable>Option</replaceable> can be one of the following: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:175(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:175(option) 
 msgid "-t"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:177(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:177(para) 
 msgid "Turn on autocommit of transactions. In this mode, each SQL command is automatically committed unless it is inside an explicit transaction block. In the default mode, commands are committed only when <command>EXEC SQL COMMIT</command> is issued."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:187(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:187(option) 
 msgid "-v"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:189(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:189(para) 
 msgid "Print additional information including the version and the \"include\" path."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:197(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:197(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:199(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:199(para) 
 msgid "Print the <application>ecpg</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:206(option) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:206(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:208(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:208(para) 
 msgid "Show help about <application>ecpg</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:65(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:65(para) 
 msgid "<command>ecpg</command> accepts the following command-line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:221(title) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:221(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:223(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:223(para) 
 msgid "When compiling the preprocessed C code files, the compiler needs to be able to find the <application>ECPG</application> header files in the <productname>PostgreSQL</productname> include directory. Therefore, you might have to use the <option>-I</option> option when invoking the compiler (e.g., <literal>-I/usr/local/pgsql/include</literal>)."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:231(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:231(para) 
 msgid "Programs using C code with embedded SQL have to be linked against the <filename>libecpg</filename> library, for example using the linker options <literal>-L/usr/local/pgsql/lib -lecpg</literal>."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:237(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:237(para) 
 msgid "The value of either of these directories that is appropriate for the installation can be found out using <xref linkend=\"app-pgconfig\"/>."
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:246(title) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:246(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:252(programlisting) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:252(programlisting) 
 #, no-wrap
 msgid "\necpg prog1.pgc\ncc -I/usr/local/pgsql/include -c prog1.c\ncc -o prog1 prog1.o -L/usr/local/pgsql/lib -lecpg\n"
 msgstr ""
 
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:248(para) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:248(para) 
 msgid "If you have an embedded SQL C source file named <filename>prog1.pgc</filename>, you can create an executable program using the following sequence of commands: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-AXdq/ref/ecpg-ref.xml:0(None) 
+#: /tmp/cicero-fBJf/ref/ecpg-ref.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

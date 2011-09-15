@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-14 06:56+0200\n"
+"POT-Creation-Date: 2011-09-15 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,132 +9,132 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-AXdq/postgres.xml:16(title) 
+#: /tmp/cicero-fBJf/postgres.xml:16(title) 
 msgid "PostgreSQL &version; Documentation"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:19(corpauthor) 
+#: /tmp/cicero-fBJf/postgres.xml:19(corpauthor) 
 msgid "The PostgreSQL Global Development Group"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:20(productname) 
+#: /tmp/cicero-fBJf/postgres.xml:20(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:21(productnumber) 
+#: /tmp/cicero-fBJf/postgres.xml:21(productnumber) 
 msgid "&version;"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:18(bookinfo) 
+#: /tmp/cicero-fBJf/postgres.xml:18(bookinfo) 
 msgid "<placeholder-1/><placeholder-2/><placeholder-3/> &legal;"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:28(title) 
+#: /tmp/cicero-fBJf/postgres.xml:28(title) 
 msgid "Tutorial"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:31(para) 
+#: /tmp/cicero-fBJf/postgres.xml:31(para) 
 msgid "Welcome to the <productname>PostgreSQL</productname> Tutorial. The following few chapters are intended to give a simple introduction to <productname>PostgreSQL</productname>, relational database concepts, and the SQL language to those who are new to any one of these aspects. We only assume some general knowledge about how to use computers. No particular Unix or programming experience is required. This part is mainly intended to give you some hands-on experience with important aspects of the <productname>PostgreSQL</productname> system. It makes no attempt to be a complete or thorough treatment of the topics it covers."
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:44(para) 
+#: /tmp/cicero-fBJf/postgres.xml:44(para) 
 msgid "After you have worked through this tutorial you might want to move on to reading <xref linkend=\"sql\"/> to gain a more formal knowledge of the SQL language, or <xref linkend=\"client-interfaces\"/> for information about developing applications for <productname>PostgreSQL</productname>. Those who set up and manage their own server should also read <xref linkend=\"admin\"/>."
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:27(part) 
+#: /tmp/cicero-fBJf/postgres.xml:27(part) 
 msgid "<placeholder-1/><placeholder-2/> &start; &query; &advanced;"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:61(title) 
+#: /tmp/cicero-fBJf/postgres.xml:61(title) 
 msgid "The SQL Language"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:64(para) 
+#: /tmp/cicero-fBJf/postgres.xml:64(para) 
 msgid "This part describes the use of the <acronym>SQL</acronym> language in <productname>PostgreSQL</productname>. We start with describing the general syntax of <acronym>SQL</acronym>, then explain how to create the structures to hold data, how to populate the database, and how to query it. The middle part lists the available data types and functions for use in <acronym>SQL</acronym> commands. The rest treats several aspects that are important for tuning a database for optimal performance."
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:76(para) 
+#: /tmp/cicero-fBJf/postgres.xml:76(para) 
 msgid "The information in this part is arranged so that a novice user can follow it start to end to gain a full understanding of the topics without having to refer forward too many times. The chapters are intended to be self-contained, so that advanced users can read the chapters individually as they choose. The information in this part is presented in a narrative fashion in topical units. Readers looking for a complete description of a particular command should see <xref linkend=\"reference\"/>."
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:87(para) 
+#: /tmp/cicero-fBJf/postgres.xml:87(para) 
 msgid "Readers of this part should know how to connect to a <productname>PostgreSQL</productname> database and issue <acronym>SQL</acronym> commands. Readers that are unfamiliar with these issues are encouraged to read <xref linkend=\"tutorial\"/> first. <acronym>SQL</acronym> commands are typically entered using the <productname>PostgreSQL</productname> interactive terminal <application>psql</application>, but other programs that have similar functionality can be used as well."
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:60(part) 
+#: /tmp/cicero-fBJf/postgres.xml:60(part) 
 msgid "<placeholder-1/><placeholder-2/> &syntax; &ddl; &dml; &queries; &datatype; &func; &typeconv; &indices; &textsearch; &mvcc; &perform;"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:114(title) 
+#: /tmp/cicero-fBJf/postgres.xml:114(title) 
 msgid "Server Administration"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:117(para) 
+#: /tmp/cicero-fBJf/postgres.xml:117(para) 
 msgid "This part covers topics that are of interest to a <productname>PostgreSQL</productname> database administrator. This includes installation of the software, set up and configuration of the server, management of users and databases, and maintenance tasks. Anyone who runs a <productname>PostgreSQL</productname> server, even for personal use, but especially in production, should be familiar with the topics covered in this part."
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:127(para) 
+#: /tmp/cicero-fBJf/postgres.xml:127(para) 
 msgid "The information in this part is arranged approximately in the order in which a new user should read it. But the chapters are self-contained and can be read individually as desired. The information in this part is presented in a narrative fashion in topical units. Readers looking for a complete description of a particular command should see <xref linkend=\"reference\"/>."
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:136(para) 
+#: /tmp/cicero-fBJf/postgres.xml:136(para) 
 msgid "The first few chapters are written so they can be understood without prerequisite knowledge, so new users who need to set up their own server can begin their exploration with this part. The rest of this part is about tuning and management; that material assumes that the reader is familiar with the general use of the <productname>PostgreSQL</productname> database system. Readers are encouraged to look at <xref linkend=\"tutorial\"/> and <xref linkend=\"sql\"/> for additional information."
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:113(part) 
+#: /tmp/cicero-fBJf/postgres.xml:113(part) 
 msgid "<placeholder-1/><placeholder-2/> &installation; &installw; &runtime; &config; &client-auth; &user-manag; &manage-ag; &charset; &maintenance; &backup; &high-availability; &recovery-config; &monitoring; &diskusage; &wal; &regress;"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:168(title) 
+#: /tmp/cicero-fBJf/postgres.xml:168(title) 
 msgid "Client Interfaces"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:171(para) 
+#: /tmp/cicero-fBJf/postgres.xml:171(para) 
 msgid "This part describes the client programming interfaces distributed with <productname>PostgreSQL</productname>. Each of these chapters can be read independently. Note that there are many other programming interfaces for client programs that are distributed separately and contain their own documentation (<xref linkend=\"external-projects\"/> lists some of the more popular ones). Readers of this part should be familiar with using <acronym>SQL</acronym> commands to manipulate and query the database (see <xref linkend=\"sql\"/>) and of course with the programming language that the interface uses."
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:167(part) 
+#: /tmp/cicero-fBJf/postgres.xml:167(part) 
 msgid "<placeholder-1/><placeholder-2/> &libpq; &lobj; &ecpg; &infoschema;"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:192(title) 
+#: /tmp/cicero-fBJf/postgres.xml:192(title) 
 msgid "Server Programming"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:195(para) 
+#: /tmp/cicero-fBJf/postgres.xml:195(para) 
 msgid "This part is about extending the server functionality with user-defined functions, data types, triggers, etc. These are advanced topics which should probably be approached only after all the other user documentation about <productname>PostgreSQL</productname> has been understood. Later chapters in this part describe the server-side programming languages available in the <productname>PostgreSQL</productname> distribution as well as general issues concerning server-side programming languages. It is essential to read at least the earlier sections of <xref linkend=\"extend\"/> (covering functions) before diving into the material about server-side programming languages."
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:191(part) 
+#: /tmp/cicero-fBJf/postgres.xml:191(part) 
 msgid "<placeholder-1/><placeholder-2/> &extend; &trigger; &rules; &xplang; &plsql; &pltcl; &plperl; &plpython; &spi;"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:227(title) 
+#: /tmp/cicero-fBJf/postgres.xml:227(title) 
 msgid "Internals"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:230(para) 
+#: /tmp/cicero-fBJf/postgres.xml:230(para) 
 msgid "This part contains assorted information that might be of use to <productname>PostgreSQL</productname> developers."
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:226(part) 
+#: /tmp/cicero-fBJf/postgres.xml:226(part) 
 msgid "<placeholder-1/><placeholder-2/> &arch-dev; &catalogs; &protocol; &sources; &nls; &plhandler; &fdwhandler; &geqo; &indexam; &gist; &gin; &storage; &bki; &planstats;"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:254(title) 
+#: /tmp/cicero-fBJf/postgres.xml:254(title) 
 msgid "Appendixes"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:253(part) 
+#: /tmp/cicero-fBJf/postgres.xml:253(part) 
 msgid "<placeholder-1/> &errcodes; &datetime; &keywords; &features; &release; &contrib; &external-projects; &sourcerepo; &docguide; &acronyms;"
 msgstr ""
 
-#: /tmp/cicero-AXdq/postgres.xml:15(book) 
+#: /tmp/cicero-fBJf/postgres.xml:15(book) 
 msgid "<placeholder-1/><placeholder-2/> &intro; <placeholder-3/><placeholder-4/><placeholder-5/><placeholder-6/><placeholder-7/> &reference; <placeholder-8/><placeholder-9/> &biblio; &bookindex;"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-AXdq/postgres.xml:0(None) 
+#: /tmp/cicero-fBJf/postgres.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
