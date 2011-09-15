@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-14 06:59+0200\n"
+"POT-Creation-Date: 2011-09-15 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,148 +9,148 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QGVW/release-8.1.xml:6(title) 
+#: /tmp/cicero-LLxx/release-8.1.xml:6(title) 
 msgid "Release 8.1.23"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:9(title) 
+#: /tmp/cicero-LLxx/release-8.1.xml:9(title) 
 msgid "Release Date"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:10(simpara) 
+#: /tmp/cicero-LLxx/release-8.1.xml:10(simpara) 
 msgid "2010-12-16"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:13(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:13(para) 
 msgid "This release contains a variety of fixes from 8.1.22. For information about new features in the 8.1 major release, see <xref linkend=\"release-8-1\"/>."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:19(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:19(para) 
 msgid "This is expected to be the last <productname>PostgreSQL</productname> release in the 8.1.X series. Users are encouraged to update to a newer release branch soon."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:26(title) 
+#: /tmp/cicero-LLxx/release-8.1.xml:26(title) 
 msgid "Migration to Version 8.1.23"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:28(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:28(para) 
 msgid "A dump/restore is not required for those running 8.1.X. However, if you are upgrading from a version earlier than 8.1.18, see the release notes for 8.1.18."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:37(title) 
+#: /tmp/cicero-LLxx/release-8.1.xml:37(title) 
 msgid "Changes"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:42(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:42(para) 
 msgid "Force the default <link linkend=\"guc-wal-sync-method\"><varname>wal_sync_method</varname></link> to be <literal>fdatasync</literal> on Linux (Tom Lane, Marti Raudsepp)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:48(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:48(para) 
 msgid "The default on Linux has actually been <literal>fdatasync</literal> for many years, but recent kernel changes caused <productname>PostgreSQL</productname> to choose <literal>open_datasync</literal> instead. This choice did not result in any performance improvement, and caused outright failures on certain filesystems, notably <literal>ext4</literal> with the <literal>data=journal</literal> mount option."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:59(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:59(para) 
 msgid "Fix recovery from base backup when the starting checkpoint WAL record is not in the same WAL segment as its redo point (Jeff Davis)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:66(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:66(para) 
 msgid "Add support for detecting register-stack overrun on <literal>IA64</literal> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:71(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:71(para) 
 msgid "The <literal>IA64</literal> architecture has two hardware stacks. Full prevention of stack-overrun failures requires checking both."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:78(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:78(para) 
 msgid "Add a check for stack overflow in <function>copyObject()</function> (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:82(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:82(para) 
 msgid "Certain code paths could crash due to stack overflow given a sufficiently complex query."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:89(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:89(para) 
 msgid "Fix detection of page splits in temporary GiST indexes (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:94(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:94(para) 
 msgid "It is possible to have a <quote>concurrent</quote> page split in a temporary index, if for example there is an open cursor scanning the index when an insertion is done. GiST failed to detect this case and hence could deliver wrong results when execution of the cursor continued."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:104(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:104(para) 
 msgid "Avoid memory leakage while <command>ANALYZE</command>'ing complex index expressions (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:111(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:111(para) 
 msgid "Ensure an index that uses a whole-row Var still depends on its table (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:116(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:116(para) 
 msgid "An index declared like <literal>create index i on t (foo(t.*))</literal> would not automatically get dropped when its table was dropped."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:123(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:123(para) 
 msgid "Do not <quote>inline</quote> a SQL function with multiple <literal>OUT</literal> parameters (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:128(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:128(para) 
 msgid "This avoids a possible crash due to loss of information about the expected result rowtype."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:135(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:135(para) 
 msgid "Fix constant-folding of <literal>COALESCE()</literal> expressions (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:139(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:139(para) 
 msgid "The planner would sometimes attempt to evaluate sub-expressions that in fact could never be reached, possibly leading to unexpected errors."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:146(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:146(para) 
 msgid "Add print functionality for <structname>InhRelation</structname> nodes (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:150(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:150(para) 
 msgid "This avoids a failure when <varname>debug_print_parse</varname> is enabled and certain types of query are executed."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:157(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:157(para) 
 msgid "Fix incorrect calculation of distance from a point to a horizontal line segment (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:162(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:162(para) 
 msgid "This bug affected several different geometric distance-measurement operators."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:169(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:169(para) 
 msgid "Fix <application>PL/pgSQL</application>'s handling of <quote>simple</quote> expressions to not fail in recursion or error-recovery cases (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:176(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:176(para) 
 msgid "Fix bug in <filename>contrib/cube</filename>'s GiST picksplit algorithm (Alexander Korotkov)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:181(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:181(para) 
 msgid "This could result in considerable inefficiency, though not actually incorrect answers, in a GiST index on a <type>cube</type> column. If you have such an index, consider <command>REINDEX</command>ing it after installing this update."
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:190(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:190(para) 
 msgid "Don't emit <quote>identifier will be truncated</quote> notices in <filename>contrib/dblink</filename> except when creating new connections (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:198(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:198(para) 
 msgid "Fix potential coredump on missing public key in <filename>contrib/pgcrypto</filename> (Marti Raudsepp)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:205(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:205(para) 
 msgid "Fix memory leak in <filename>contrib/xml2</filename>'s XPath query functions (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/release-8.1.xml:212(para) 
+#: /tmp/cicero-LLxx/release-8.1.xml:212(para) 
 msgid "Update time zone data files to <application>tzdata</application> release 2010o for DST law changes in Fiji and Samoa; also historical corrections for Hong Kong."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QGVW/release-8.1.xml:0(None) 
+#: /tmp/cicero-LLxx/release-8.1.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

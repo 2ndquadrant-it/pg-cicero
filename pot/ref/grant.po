@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-14 06:59+0200\n"
+"POT-Creation-Date: 2011-09-15 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,402 +9,402 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QGVW/ref/grant.xml:9(refentrytitle) /tmp/cicero-QGVW/ref/grant.xml:15(refname) /tmp/cicero-QGVW/ref/grant.xml:20(primary) 
+#: /tmp/cicero-LLxx/ref/grant.xml:9(refentrytitle) /tmp/cicero-LLxx/ref/grant.xml:15(refname) /tmp/cicero-LLxx/ref/grant.xml:20(primary) 
 msgid "GRANT"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:10(manvolnum) 
+#: /tmp/cicero-LLxx/ref/grant.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:11(refmiscinfo) 
+#: /tmp/cicero-LLxx/ref/grant.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:16(refpurpose) 
+#: /tmp/cicero-LLxx/ref/grant.xml:16(refpurpose) 
 msgid "define access privileges"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:27(replaceable) /tmp/cicero-QGVW/ref/grant.xml:33(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:27(replaceable) /tmp/cicero-LLxx/ref/grant.xml:33(replaceable) 
 msgid "table_name"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:28(replaceable) /tmp/cicero-QGVW/ref/grant.xml:39(replaceable) /tmp/cicero-QGVW/ref/grant.xml:56(replaceable) /tmp/cicero-QGVW/ref/grant.xml:68(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:28(replaceable) /tmp/cicero-LLxx/ref/grant.xml:39(replaceable) /tmp/cicero-LLxx/ref/grant.xml:56(replaceable) /tmp/cicero-LLxx/ref/grant.xml:68(replaceable) 
 msgid "schema_name"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:29(replaceable) /tmp/cicero-QGVW/ref/grant.xml:34(replaceable) /tmp/cicero-QGVW/ref/grant.xml:40(replaceable) /tmp/cicero-QGVW/ref/grant.xml:44(replaceable) /tmp/cicero-QGVW/ref/grant.xml:48(replaceable) /tmp/cicero-QGVW/ref/grant.xml:52(replaceable) /tmp/cicero-QGVW/ref/grant.xml:57(replaceable) /tmp/cicero-QGVW/ref/grant.xml:61(replaceable) /tmp/cicero-QGVW/ref/grant.xml:65(replaceable) /tmp/cicero-QGVW/ref/grant.xml:69(replaceable) /tmp/cicero-QGVW/ref/grant.xml:73(replaceable) /tmp/cicero-QGVW/ref/grant.xml:75(replaceable) /tmp/cicero-QGVW/ref/grant.xml:75(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:29(replaceable) /tmp/cicero-LLxx/ref/grant.xml:34(replaceable) /tmp/cicero-LLxx/ref/grant.xml:40(replaceable) /tmp/cicero-LLxx/ref/grant.xml:44(replaceable) /tmp/cicero-LLxx/ref/grant.xml:48(replaceable) /tmp/cicero-LLxx/ref/grant.xml:52(replaceable) /tmp/cicero-LLxx/ref/grant.xml:57(replaceable) /tmp/cicero-LLxx/ref/grant.xml:61(replaceable) /tmp/cicero-LLxx/ref/grant.xml:65(replaceable) /tmp/cicero-LLxx/ref/grant.xml:69(replaceable) /tmp/cicero-LLxx/ref/grant.xml:73(replaceable) /tmp/cicero-LLxx/ref/grant.xml:75(replaceable) /tmp/cicero-LLxx/ref/grant.xml:75(replaceable) 
 msgid "role_name"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:31(replaceable) /tmp/cicero-QGVW/ref/grant.xml:32(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:31(replaceable) /tmp/cicero-LLxx/ref/grant.xml:32(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:38(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:38(replaceable) 
 msgid "sequence_name"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:43(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:43(replaceable) 
 msgid "database_name"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:47(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:47(replaceable) 
 msgid "fdw_name"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:51(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:51(replaceable) 
 msgid "server_name"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:55(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:55(replaceable) 
 msgid "function_name"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:55(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:55(replaceable) 
 msgid "argmode"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:55(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:55(replaceable) 
 msgid "arg_name"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:55(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:55(replaceable) 
 msgid "arg_type"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:60(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:60(replaceable) 
 msgid "lang_name"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:64(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:64(replaceable) 
 msgid "loid"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:72(replaceable) 
+#: /tmp/cicero-LLxx/ref/grant.xml:72(replaceable) 
 msgid "tablespace_name"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:24(synopsis) 
+#: /tmp/cicero-LLxx/ref/grant.xml:24(synopsis) 
 #, no-wrap
 msgid "\nGRANT { { SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES | TRIGGER }\n    [, ...] | ALL [ PRIVILEGES ] }\n    ON { [ TABLE ] <placeholder-1/> [, ...]\n         | ALL TABLES IN SCHEMA <placeholder-2/> [, ...] }\n    TO { [ GROUP ] <placeholder-3/> | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n\nGRANT { { SELECT | INSERT | UPDATE | REFERENCES } ( <placeholder-4/> [, ...] )\n    [, ...] | ALL [ PRIVILEGES ] ( <placeholder-5/> [, ...] ) }\n    ON [ TABLE ] <placeholder-6/> [, ...]\n    TO { [ GROUP ] <placeholder-7/> | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n\nGRANT { { USAGE | SELECT | UPDATE }\n    [, ...] | ALL [ PRIVILEGES ] }\n    ON { SEQUENCE <placeholder-8/> [, ...]\n         | ALL SEQUENCES IN SCHEMA <placeholder-9/> [, ...] }\n    TO { [ GROUP ] <placeholder-10/> | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n\nGRANT { { CREATE | CONNECT | TEMPORARY | TEMP } [, ...] | ALL [ PRIVILEGES ] }\n    ON DATABASE <placeholder-11/> [, ...]\n    TO { [ GROUP ] <placeholder-12/> | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n\nGRANT { USAGE | ALL [ PRIVILEGES ] }\n    ON FOREIGN DATA WRAPPER <placeholder-13/> [, ...]\n    TO { [ GROUP ] <placeholder-14/> | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n\nGRANT { USAGE | ALL [ PRIVILEGES ] }\n    ON FOREIGN SERVER <placeholder-15/> [, ...]\n    TO { [ GROUP ] <placeholder-16/> | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n\nGRANT { EXECUTE | ALL [ PRIVILEGES ] }\n    ON { FUNCTION <placeholder-17/> ( [ [ <placeholder-18/> ] [ <placeholder-19/> ] <placeholder-20/> [, ...] ] ) [, ...]\n         | ALL FUNCTIONS IN SCHEMA <placeholder-21/> [, ...] }\n    TO { [ GROUP ] <placeholder-22/> | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n\nGRANT { USAGE | ALL [ PRIVILEGES ] }\n    ON LANGUAGE <placeholder-23/> [, ...]\n    TO { [ GROUP ] <placeholder-24/> | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n\nGRANT { { SELECT | UPDATE } [, ...] | ALL [ PRIVILEGES ] }\n    ON LARGE OBJECT <placeholder-25/> [, ...]\n    TO { [ GROUP ] <placeholder-26/> | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n\nGRANT { { CREATE | USAGE } [, ...] | ALL [ PRIVILEGES ] }\n    ON SCHEMA <placeholder-27/> [, ...]\n    TO { [ GROUP ] <placeholder-28/> | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n\nGRANT { CREATE | ALL [ PRIVILEGES ] }\n    ON TABLESPACE <placeholder-29/> [, ...]\n    TO { [ GROUP ] <placeholder-30/> | PUBLIC } [, ...] [ WITH GRANT OPTION ]\n\nGRANT <placeholder-31/> [, ...] TO <placeholder-32/> [, ...] [ WITH ADMIN OPTION ]\n"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:80(title) 
+#: /tmp/cicero-LLxx/ref/grant.xml:80(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:82(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:82(para) 
 msgid "The <command>GRANT</command> command has two basic variants: one that grants privileges on a database object (table, column, view, foreign table, sequence, database, foreign-data wrapper, foreign server, function, procedural language, schema, or tablespace), and one that grants membership in a role. These variants are similar in many ways, but they are different enough to be described separately."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:92(title) 
+#: /tmp/cicero-LLxx/ref/grant.xml:92(title) 
 msgid "GRANT on Database Objects"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:94(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:94(para) 
 msgid "This variant of the <command>GRANT</command> command gives specific privileges on a database object to one or more roles. These privileges are added to those already granted, if any."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:101(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:101(para) 
 msgid "There is also an option to grant privileges on all objects of the same type within one or more schemas. This functionality is currently supported only for tables, sequences, and functions (but note that <literal>ALL TABLES</literal> is considered to include views and foreign tables)."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:108(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:108(para) 
 msgid "The key word <literal>PUBLIC</literal> indicates that the privileges are to be granted to all roles, including those that might be created later. <literal>PUBLIC</literal> can be thought of as an implicitly defined group that always includes all roles. Any particular role will have the sum of privileges granted directly to it, privileges granted to any role it is presently a member of, and privileges granted to <literal>PUBLIC</literal>."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:119(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:119(para) 
 msgid "If <literal>WITH GRANT OPTION</literal> is specified, the recipient of the privilege can in turn grant it to others. Without a grant option, the recipient cannot do that. Grant options cannot be granted to <literal>PUBLIC</literal>."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:126(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:126(para) 
 msgid "There is no need to grant privileges to the owner of an object (usually the user that created it), as the owner has all privileges by default. (The owner could, however, choose to revoke some of his own privileges for safety.)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:133(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:133(para) 
 msgid "The right to drop an object, or to alter its definition in any way, is not treated as a grantable privilege; it is inherent in the owner, and cannot be granted or revoked. (However, a similar effect can be obtained by granting or revoking membership in the role that owns the object; see below.) The owner implicitly has all grant options for the object, too."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:142(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:142(para) 
 msgid "PostgreSQL grants default privileges on some types of objects to <literal>PUBLIC</literal>. No privileges are granted to <literal>PUBLIC</literal> by default on tables, columns, schemas or tablespaces. For other types, the default privileges granted to <literal>PUBLIC</literal> are as follows: <literal>CONNECT</literal> and <literal>CREATE TEMP TABLE</literal> for databases; <literal>EXECUTE</literal> privilege for functions; and <literal>USAGE</literal> privilege for languages. The object owner can, of course, <command>REVOKE</command> both default and expressly granted privileges. (For maximum security, issue the <command>REVOKE</command> in the same transaction that creates the object; then there is no window in which another user can use the object.) Also, these initial default privilege settings can be changed using the <xref linkend=\"sql-alterdefaultprivileges\"/> command."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:166(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:166(term) 
 msgid "SELECT"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:168(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:168(para) 
 msgid "Allows <xref linkend=\"sql-select\"/> from any column, or the specific columns listed, of the specified table, view, or sequence. Also allows the use of <xref linkend=\"sql-copy\"/> TO. This privilege is also needed to reference existing column values in <xref linkend=\"sql-update\"/> or <xref linkend=\"sql-delete\"/>. For sequences, this privilege also allows the use of the <function>currval</function> function. For large objects, this privilege allows the object to be read."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:185(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:185(term) 
 msgid "INSERT"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:187(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:187(para) 
 msgid "Allows <xref linkend=\"sql-insert\"/> of a new row into the specified table. If specific columns are listed, only those columns may be assigned to in the <command>INSERT</command> command (other columns will therefore receive default values). Also allows <xref linkend=\"sql-copy\"/> FROM."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:198(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:198(term) 
 msgid "UPDATE"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:200(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:200(para) 
 msgid "Allows <xref linkend=\"sql-update\"/> of any column, or the specific columns listed, of the specified table. (In practice, any nontrivial <command>UPDATE</command> command will require <literal>SELECT</literal> privilege as well, since it must reference table columns to determine which rows to update, and/or to compute new values for columns.) <literal>SELECT ... FOR UPDATE</literal> and <literal>SELECT ... FOR SHARE</literal> also require this privilege on at least one column, in addition to the <literal>SELECT</literal> privilege. For sequences, this privilege allows the use of the <function>nextval</function> and <function>setval</function> functions. For large objects, this privilege allows writing or truncating the object."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:220(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:220(term) 
 msgid "DELETE"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:222(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:222(para) 
 msgid "Allows <xref linkend=\"sql-delete\"/> of a row from the specified table. (In practice, any nontrivial <command>DELETE</command> command will require <literal>SELECT</literal> privilege as well, since it must reference table columns to determine which rows to delete.)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:233(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:233(term) 
 msgid "TRUNCATE"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:235(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:235(para) 
 msgid "Allows <xref linkend=\"sql-truncate\"/> on the specified table."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:243(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:243(term) 
 msgid "REFERENCES"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:245(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:245(para) 
 msgid "To create a foreign key constraint, it is necessary to have this privilege on both the referencing and referenced columns. The privilege may be granted for all columns of a table, or just specific columns."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:255(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:255(term) 
 msgid "TRIGGER"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:257(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:257(para) 
 msgid "Allows the creation of a trigger on the specified table. (See the <xref linkend=\"sql-createtrigger\"/> statement.)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:265(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:265(term) 
 msgid "CREATE"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:267(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:267(para) 
 msgid "For databases, allows new schemas to be created within the database."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:270(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:270(para) 
 msgid "For schemas, allows new objects to be created within the schema. To rename an existing object, you must own the object <emphasis>and</emphasis> have this privilege for the containing schema."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:275(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:275(para) 
 msgid "For tablespaces, allows tables, indexes, and temporary files to be created within the tablespace, and allows databases to be created that have the tablespace as their default tablespace. (Note that revoking this privilege will not alter the placement of existing objects.)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:285(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:285(term) 
 msgid "CONNECT"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:287(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:287(para) 
 msgid "Allows the user to connect to the specified database. This privilege is checked at connection startup (in addition to checking any restrictions imposed by <filename>pg_hba.conf</filename>)."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:296(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:296(term) 
 msgid "TEMPORARY"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:297(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:297(term) 
 msgid "TEMP"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:299(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:299(para) 
 msgid "Allows temporary tables to be created while using the specified database."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:306(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:306(term) 
 msgid "EXECUTE"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:308(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:308(para) 
 msgid "Allows the use of the specified function and the use of any operators that are implemented on top of the function. This is the only type of privilege that is applicable to functions. (This syntax works for aggregate functions, as well.)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:318(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:318(term) 
 msgid "USAGE"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:320(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:320(para) 
 msgid "For procedural languages, allows the use of the specified language for the creation of functions in that language. This is the only type of privilege that is applicable to procedural languages."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:325(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:325(para) 
 msgid "For schemas, allows access to objects contained in the specified schema (assuming that the objects' own privilege requirements are also met). Essentially this allows the grantee to <quote>look up</quote> objects within the schema. Without this permission, it is still possible to see the object names, e.g. by querying the system tables. Also, after revoking this permission, existing backends might have statements that have previously performed this lookup, so this is not a completely secure way to prevent object access."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:335(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:335(para) 
 msgid "For sequences, this privilege allows the use of the <function>currval</function> and <function>nextval</function> functions."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:339(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:339(para) 
 msgid "For foreign-data wrappers, this privilege enables the grantee to create new servers using that foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:343(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:343(para) 
 msgid "For servers, this privilege enables the grantee to create, alter, and drop his own user's user mappings associated with that server. Also, it enables the grantee to query the options of the server and associated user mappings."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:353(term) 
+#: /tmp/cicero-LLxx/ref/grant.xml:353(term) 
 msgid "ALL PRIVILEGES"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:355(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:355(para) 
 msgid "Grant all of the available privileges at once. The <literal>PRIVILEGES</literal> key word is optional in <productname>PostgreSQL</productname>, though it is required by strict SQL."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:161(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:161(para) 
 msgid "The possible privileges are: <placeholder-1/> The privileges required by other commands are listed on the reference page of the respective command."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:371(title) 
+#: /tmp/cicero-LLxx/ref/grant.xml:371(title) 
 msgid "GRANT on Roles"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:373(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:373(para) 
 msgid "This variant of the <command>GRANT</command> command grants membership in a role to one or more other roles. Membership in a role is significant because it conveys the privileges granted to a role to each of its members."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:380(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:380(para) 
 msgid "If <literal>WITH ADMIN OPTION</literal> is specified, the member can in turn grant membership in the role to others, and revoke membership in the role as well. Without the admin option, ordinary users cannot do that. However, database superusers can grant or revoke membership in any role to anyone. Roles having <literal>CREATEROLE</literal> privilege can grant or revoke membership in any role that is not a superuser."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:390(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:390(para) 
 msgid "Unlike the case with privileges, membership in a role cannot be granted to <literal>PUBLIC</literal>. Note also that this form of the command does not allow the noise word <literal>GROUP</literal>."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:400(title) 
+#: /tmp/cicero-LLxx/ref/grant.xml:400(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:402(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:402(para) 
 msgid "The <xref linkend=\"sql-revoke\"/> command is used to revoke access privileges."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:407(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:407(para) 
 msgid "Since <productname>PostgreSQL</productname> 8.1, the concepts of users and groups have been unified into a single kind of entity called a role. It is therefore no longer necessary to use the keyword <literal>GROUP</literal> to identify whether a grantee is a user or a group. <literal>GROUP</literal> is still allowed in the command, but it is a noise word."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:415(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:415(para) 
 msgid "A user may perform <command>SELECT</command>, <command>INSERT</command>, etc. on a column if he holds that privilege for either the specific column or its whole table. Granting the privilege at the table level and then revoking it for one column will not do what you might wish: the table-level grant is unaffected by a column-level operation."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:423(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:423(para) 
 msgid "When a non-owner of an object attempts to <command>GRANT</command> privileges on the object, the command will fail outright if the user has no privileges whatsoever on the object. As long as some privilege is available, the command will proceed, but it will grant only those privileges for which the user has grant options. The <command>GRANT ALL PRIVILEGES</command> forms will issue a warning message if no grant options are held, while the other forms will issue a warning if grant options for any of the privileges specifically named in the command are not held. (In principle these statements apply to the object owner as well, but since the owner is always treated as holding all grant options, the cases can never occur.)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:437(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:437(para) 
 msgid "It should be noted that database superusers can access all objects regardless of object privilege settings. This is comparable to the rights of <literal>root</literal> in a Unix system. As with <literal>root</literal>, it's unwise to operate as a superuser except when absolutely necessary."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:445(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:445(para) 
 msgid "If a superuser chooses to issue a <command>GRANT</command> or <command>REVOKE</command> command, the command is performed as though it were issued by the owner of the affected object. In particular, privileges granted via such a command will appear to have been granted by the object owner. (For role membership, the membership appears to have been granted by the containing role itself.)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:454(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:454(para) 
 msgid "<command>GRANT</command> and <command>REVOKE</command> can also be done by a role that is not the owner of the affected object, but is a member of the role that owns the object, or is a member of a role that holds privileges <literal>WITH GRANT OPTION</literal> on the object. In this case the privileges will be recorded as having been granted by the role that actually owns the object or holds the privileges <literal>WITH GRANT OPTION</literal>. For example, if table <literal>t1</literal> is owned by role <literal>g1</literal>, of which role <literal>u1</literal> is a member, then <literal>u1</literal> can grant privileges on <literal>t1</literal> to <literal>u2</literal>, but those privileges will appear to have been granted directly by <literal>g1</literal>. Any other member of role <literal>g1</literal> could revoke them later."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:469(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:469(para) 
 msgid "If the role executing <command>GRANT</command> holds the required privileges indirectly via more than one role membership path, it is unspecified which containing role will be recorded as having done the grant. In such cases it is best practice to use <command>SET ROLE</command> to become the specific role you want to do the <command>GRANT</command> as."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:477(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:477(para) 
 msgid "Granting permission on a table does not automatically extend permissions to any sequences used by the table, including sequences tied to <type>SERIAL</type> columns. Permissions on sequences must be set separately."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:488(programlisting) 
+#: /tmp/cicero-LLxx/ref/grant.xml:488(programlisting) 
 #, no-wrap
 msgid "\n=&gt; \\dp mytable\n                              Access privileges\n Schema |  Name   | Type  |   Access privileges   | Column access privileges \n--------+---------+-------+-----------------------+--------------------------\n public | mytable | table | miriam=arwdDxt/miriam | col1:\n                          : =r/miriam             :   miriam_rw=rw/miriam\n                          : admin=arw/miriam        \n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:524(programlisting) 
+#: /tmp/cicero-LLxx/ref/grant.xml:524(programlisting) 
 #, no-wrap
 msgid "\nGRANT SELECT ON mytable TO PUBLIC;\nGRANT SELECT, UPDATE, INSERT ON mytable TO admin;\nGRANT SELECT (col1), UPDATE (col1) ON mytable TO miriam_rw;\n"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:484(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:484(para) 
 msgid "Use <xref linkend=\"app-psql\"/>'s <command>\\dp</command> command to obtain information about existing privileges for tables and columns. For example: <placeholder-1/> The entries shown by <command>\\dp</command> are interpreted thus: <literallayout class=\"monospaced\">\nrolename=xxxx -- privileges granted to a role\n        =xxxx -- privileges granted to PUBLIC\n\n            r -- SELECT (\"read\")\n            w -- UPDATE (\"write\")\n            a -- INSERT (\"append\")\n            d -- DELETE\n            D -- TRUNCATE\n            x -- REFERENCES\n            t -- TRIGGER\n            X -- EXECUTE\n            U -- USAGE\n            C -- CREATE\n            c -- CONNECT\n            T -- TEMPORARY\n      arwdDxt -- ALL PRIVILEGES (for tables, varies for other objects)\n            * -- grant option for preceding privilege\n\n        /yyyy -- role that granted this privilege\n</literallayout> The above example display would be seen by user <literal>miriam</literal> after creating table <literal>mytable</literal> and doing: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:531(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:531(para) 
 msgid "For non-table objects there are other <command>\\d</command> commands that can display their privileges."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:536(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:536(para) 
 msgid "If the <quote>Access privileges</quote> column is empty for a given object, it means the object has default privileges (that is, its privileges column is null). Default privileges always include all privileges for the owner, and can include some privileges for <literal>PUBLIC</literal> depending on the object type, as explained above. The first <command>GRANT</command> or <command>REVOKE</command> on an object will instantiate the default privileges (producing, for example, <literal>{miriam=arwdDxt/miriam}</literal>) and then modify them per the specified request. Similarly, entries are shown in <quote>Column access privileges</quote> only for columns with nondefault privileges. (Note: for this purpose, <quote>default privileges</quote> always means the built-in default privileges for the object's type. An object whose privileges have been affected by an <command>ALTER DEFAULT PRIVILEGES</command> command will always be shown with an explicit privilege entry that includes the effects of the <command>ALTER</command>.)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:554(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:554(para) 
 msgid "Notice that the owner's implicit grant options are not marked in the access privileges display. A <literal>*</literal> will appear only when grant options have been explicitly granted to someone."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:562(title) 
+#: /tmp/cicero-LLxx/ref/grant.xml:562(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:567(programlisting) 
+#: /tmp/cicero-LLxx/ref/grant.xml:567(programlisting) 
 #, no-wrap
 msgid "\nGRANT INSERT ON films TO PUBLIC;\n"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:564(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:564(para) 
 msgid "Grant insert privilege to all users on table <literal>films</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:576(programlisting) 
+#: /tmp/cicero-LLxx/ref/grant.xml:576(programlisting) 
 #, no-wrap
 msgid "\nGRANT ALL PRIVILEGES ON kinds TO manuel;\n"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:572(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:572(para) 
 msgid "Grant all available privileges to user <literal>manuel</literal> on view <literal>kinds</literal>: <placeholder-1/> Note that while the above will indeed grant all privileges if executed by a superuser or the owner of <literal>kinds</literal>, when executed by someone else it will only grant those permissions for which the someone else has grant options."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:589(programlisting) 
+#: /tmp/cicero-LLxx/ref/grant.xml:589(programlisting) 
 #, no-wrap
 msgid "\nGRANT admins TO joe;\n"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:586(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:586(para) 
 msgid "Grant membership in role <literal>admins</literal> to user <literal>joe</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:595(title) 
+#: /tmp/cicero-LLxx/ref/grant.xml:595(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:597(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:597(para) 
 msgid "According to the SQL standard, the <literal>PRIVILEGES</literal> key word in <literal>ALL PRIVILEGES</literal> is required. The SQL standard does not support setting the privileges on more than one object per command."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:604(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:604(para) 
 msgid "<productname>PostgreSQL</productname> allows an object owner to revoke his own ordinary privileges: for example, a table owner can make the table read-only to himself by revoking his own <literal>INSERT</literal>, <literal>UPDATE</literal>, <literal>DELETE</literal>, and <literal>TRUNCATE</literal> privileges. This is not possible according to the SQL standard. The reason is that <productname>PostgreSQL</productname> treats the owner's privileges as having been granted by the owner to himself; therefore he can revoke them too. In the SQL standard, the owner's privileges are granted by an assumed entity <quote>_SYSTEM</quote>. Not being <quote>_SYSTEM</quote>, the owner cannot revoke these rights."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:617(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:617(para) 
 msgid "The SQL standard provides for a <literal>USAGE</literal> privilege on other kinds of objects: character sets, collations, translations, domains."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:623(para) 
+#: /tmp/cicero-LLxx/ref/grant.xml:623(para) 
 msgid "Privileges on databases, tablespaces, schemas, and languages are <productname>PostgreSQL</productname> extensions."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/grant.xml:631(title) 
+#: /tmp/cicero-LLxx/ref/grant.xml:631(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QGVW/ref/grant.xml:0(None) 
+#: /tmp/cicero-LLxx/ref/grant.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-14 06:59+0200\n"
+"POT-Creation-Date: 2011-09-15 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,90 +9,90 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QGVW/ref/abort.xml:9(refentrytitle) /tmp/cicero-QGVW/ref/abort.xml:15(refname) /tmp/cicero-QGVW/ref/abort.xml:20(primary) 
+#: /tmp/cicero-LLxx/ref/abort.xml:9(refentrytitle) /tmp/cicero-LLxx/ref/abort.xml:15(refname) /tmp/cicero-LLxx/ref/abort.xml:20(primary) 
 msgid "ABORT"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:10(manvolnum) 
+#: /tmp/cicero-LLxx/ref/abort.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:11(refmiscinfo) 
+#: /tmp/cicero-LLxx/ref/abort.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:16(refpurpose) 
+#: /tmp/cicero-LLxx/ref/abort.xml:16(refpurpose) 
 msgid "abort the current transaction"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:24(synopsis) 
+#: /tmp/cicero-LLxx/ref/abort.xml:24(synopsis) 
 #, no-wrap
 msgid "\nABORT [ WORK | TRANSACTION ]\n"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:30(title) 
+#: /tmp/cicero-LLxx/ref/abort.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:32(para) 
+#: /tmp/cicero-LLxx/ref/abort.xml:32(para) 
 msgid "<command>ABORT</command> rolls back the current transaction and causes all the updates made by the transaction to be discarded. This command is identical in behavior to the standard <acronym>SQL</acronym> command <xref linkend=\"sql-rollback\"/>, and is present only for historical reasons."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:43(title) 
+#: /tmp/cicero-LLxx/ref/abort.xml:43(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:47(literal) 
+#: /tmp/cicero-LLxx/ref/abort.xml:47(literal) 
 msgid "WORK"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:48(literal) 
+#: /tmp/cicero-LLxx/ref/abort.xml:48(literal) 
 msgid "TRANSACTION"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:50(para) 
+#: /tmp/cicero-LLxx/ref/abort.xml:50(para) 
 msgid "Optional key words. They have no effect."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:59(title) 
+#: /tmp/cicero-LLxx/ref/abort.xml:59(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:61(para) 
+#: /tmp/cicero-LLxx/ref/abort.xml:61(para) 
 msgid "Use <xref linkend=\"sql-commit\"/> to successfully terminate a transaction."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:66(para) 
+#: /tmp/cicero-LLxx/ref/abort.xml:66(para) 
 msgid "Issuing <command>ABORT</command> when not inside a transaction does no harm, but it will provoke a warning message."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:73(title) 
+#: /tmp/cicero-LLxx/ref/abort.xml:73(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:77(programlisting) 
+#: /tmp/cicero-LLxx/ref/abort.xml:77(programlisting) 
 #, no-wrap
 msgid "\nABORT;\n"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:75(para) 
+#: /tmp/cicero-LLxx/ref/abort.xml:75(para) 
 msgid "To abort all changes: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:83(title) 
+#: /tmp/cicero-LLxx/ref/abort.xml:83(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:85(para) 
+#: /tmp/cicero-LLxx/ref/abort.xml:85(para) 
 msgid "This command is a <productname>PostgreSQL</productname> extension present for historical reasons. <command>ROLLBACK</command> is the equivalent standard SQL command."
 msgstr ""
 
-#: /tmp/cicero-QGVW/ref/abort.xml:93(title) 
+#: /tmp/cicero-LLxx/ref/abort.xml:93(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QGVW/ref/abort.xml:0(None) 
+#: /tmp/cicero-LLxx/ref/abort.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

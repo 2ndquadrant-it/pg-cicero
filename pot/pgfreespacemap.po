@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-14 06:59+0200\n"
+"POT-Creation-Date: 2011-09-15 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,69 +9,69 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:5(title) /tmp/cicero-QGVW/pgfreespacemap.xml:8(primary) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:5(title) /tmp/cicero-LLxx/pgfreespacemap.xml:8(primary) 
 msgid "pg_freespacemap"
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:11(para) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:11(para) 
 msgid "The <filename>pg_freespacemap</filename> module provides a means for examining the free space map (FSM). It provides a function called <function>pg_freespace</function>, or two overloaded functions, to be precise. The functions show the value recorded in the free space map for a given page, or for all pages in the relation."
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:19(para) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:19(para) 
 msgid "By default public access is revoked from the functions, just in case there are security issues lurking."
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:25(title) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:25(title) 
 msgid "Functions"
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:30(function) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:30(function) 
 msgid "pg_freespace(rel regclass IN, blkno bigint IN) returns int2"
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:34(para) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:34(para) 
 msgid "Returns the amount of free space on the page of the relation, specified by <literal>blkno</literal>, according to the FSM."
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:44(function) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:44(function) 
 msgid "pg_freespace(rel regclass IN, blkno OUT bigint, avail OUT int2)"
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:48(para) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:48(para) 
 msgid "Displays the amount of free space on each page of the relation, according to the FSM. A set of <literal>(blkno bigint, avail int2)</literal> tuples is returned, one tuple for each page in the relation."
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:57(para) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:57(para) 
 msgid "The values stored in the free space map are not exact. They're rounded to precision of 1/256th of <symbol>BLCKSZ</symbol> (32 bytes with default <symbol>BLCKSZ</symbol>), and they're not kept fully up-to-date as tuples are inserted and updated."
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:63(para) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:63(para) 
 msgid "For indexes, what is tracked is entirely-unused pages, rather than free space within pages. Therefore, the values are not meaningful, just whether a page is full or empty."
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:69(para) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:69(para) 
 msgid "NOTE: The interface was changed in version 8.4, to reflect the new FSM implementation introduced in the same version."
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:76(title) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:76(title) 
 msgid "Sample Output"
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:78(screen) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:78(screen) 
 #, no-wrap
 msgid "\npostgres=# SELECT * FROM pg_freespace('foo');\n blkno | avail \n-------+-------\n     0 |     0\n     1 |     0\n     2 |     0\n     3 |    32\n     4 |   704\n     5 |   704\n     6 |   704\n     7 |  1216\n     8 |   704\n     9 |   704\n    10 |   704\n    11 |   704\n    12 |   704\n    13 |   704\n    14 |   704\n    15 |   704\n    16 |   704\n    17 |   704\n    18 |   704\n    19 |  3648\n(20 rows)\n\npostgres=# SELECT * FROM pg_freespace('foo', 7);\n pg_freespace \n--------------\n         1216\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:113(title) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:113(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:115(para) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:115(para) 
 msgid "Original version by Mark Kirkwood <email>markir@paradise.net.nz</email>. Rewritten in version 8.4 to suit new FSM implementation by Heikki Linnakangas <email>heikki@enterprisedb.com</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-QGVW/pgfreespacemap.xml:0(None) 
+#: /tmp/cicero-LLxx/pgfreespacemap.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
