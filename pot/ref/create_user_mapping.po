@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-15 06:59+0200\n"
+"POT-Creation-Date: 2011-09-16 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,102 +9,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:9(refentrytitle) /tmp/cicero-LLxx/ref/create_user_mapping.xml:15(refname) /tmp/cicero-LLxx/ref/create_user_mapping.xml:20(primary) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:9(refentrytitle) /tmp/cicero-fQdk/ref/create_user_mapping.xml:15(refname) /tmp/cicero-fQdk/ref/create_user_mapping.xml:20(primary) 
 msgid "CREATE USER MAPPING"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:10(manvolnum) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:11(refmiscinfo) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:16(refpurpose) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:16(refpurpose) 
 msgid "define a new mapping of a user to a foreign server"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:25(replaceable) /tmp/cicero-LLxx/ref/create_user_mapping.xml:55(replaceable) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:25(replaceable) /tmp/cicero-fQdk/ref/create_user_mapping.xml:55(replaceable) 
 msgid "user_name"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:26(replaceable) /tmp/cicero-LLxx/ref/create_user_mapping.xml:68(replaceable) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:26(replaceable) /tmp/cicero-fQdk/ref/create_user_mapping.xml:68(replaceable) 
 msgid "server_name"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:27(replaceable) /tmp/cicero-LLxx/ref/create_user_mapping.xml:78(replaceable) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:27(replaceable) /tmp/cicero-fQdk/ref/create_user_mapping.xml:78(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:27(replaceable) /tmp/cicero-LLxx/ref/create_user_mapping.xml:78(replaceable) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:27(replaceable) /tmp/cicero-fQdk/ref/create_user_mapping.xml:78(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:24(synopsis) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE USER MAPPING FOR { <placeholder-1/> | USER | CURRENT_USER | PUBLIC }\n    SERVER <placeholder-2/>\n    [ OPTIONS ( <placeholder-3/> '<placeholder-4/>' [ , ... ] ) ]\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:32(title) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:34(para) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:34(para) 
 msgid "<command>CREATE USER MAPPING</command> defines a mapping of a user to a foreign server. A user mapping typically encapsulates connection information that a foreign-data wrapper uses together with the information encapsulated by a foreign server to access an external data resource."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:42(para) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:42(para) 
 msgid "The owner of a foreign server can create user mappings for that server for any user. Also, a user can create a user mapping for his own user name if <literal>USAGE</literal> privilege on the server has been granted to the user."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:51(title) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:51(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:57(para) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:57(para) 
 msgid "The name of an existing user that is mapped to foreign server. <literal>CURRENT_USER</literal> and <literal>USER</literal> match the name of the current user. When <literal>PUBLIC</literal> is specified, a so-called public mapping is created that is used when no user-specific mapping is applicable."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:70(para) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:70(para) 
 msgid "The name of an existing server for which the user mapping is to be created."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:78(literal) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:78(literal) 
 msgid "OPTIONS ( <placeholder-1/> '<placeholder-2/>' [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:80(para) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:80(para) 
 msgid "This clause specifies the options of the user mapping. The options typically define the actual user name and password of the mapping. Option names must be unique. The allowed option names and values are specific to the server's foreign-data wrapper."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:92(title) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:92(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:96(programlisting) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:96(programlisting) 
 #, no-wrap
 msgid "\nCREATE USER MAPPING FOR bob SERVER foo OPTIONS (user 'bob', password 'secret');\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:94(para) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:94(para) 
 msgid "Create a user mapping for user <literal>bob</literal>, server <literal>foo</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:103(title) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:103(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:105(para) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:105(para) 
 msgid "<command>CREATE USER MAPPING</command> conforms to ISO/IEC 9075-9 (SQL/MED)."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:111(title) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:111(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-LLxx/ref/create_user_mapping.xml:0(None) 
+#: /tmp/cicero-fQdk/ref/create_user_mapping.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

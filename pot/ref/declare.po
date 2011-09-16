@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-15 06:59+0200\n"
+"POT-Creation-Date: 2011-09-16 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,206 +9,206 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-LLxx/ref/declare.xml:9(refentrytitle) /tmp/cicero-LLxx/ref/declare.xml:15(refname) /tmp/cicero-LLxx/ref/declare.xml:20(primary) /tmp/cicero-LLxx/ref/declare.xml:25(secondary) 
+#: /tmp/cicero-fQdk/ref/declare.xml:9(refentrytitle) /tmp/cicero-fQdk/ref/declare.xml:15(refname) /tmp/cicero-fQdk/ref/declare.xml:20(primary) /tmp/cicero-fQdk/ref/declare.xml:25(secondary) 
 msgid "DECLARE"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:10(manvolnum) 
+#: /tmp/cicero-fQdk/ref/declare.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:11(refmiscinfo) 
+#: /tmp/cicero-fQdk/ref/declare.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:16(refpurpose) 
+#: /tmp/cicero-fQdk/ref/declare.xml:16(refpurpose) 
 msgid "define a cursor"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:24(primary) 
+#: /tmp/cicero-fQdk/ref/declare.xml:24(primary) 
 msgid "cursor"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:30(replaceable) /tmp/cicero-LLxx/ref/declare.xml:61(replaceable) 
+#: /tmp/cicero-fQdk/ref/declare.xml:30(replaceable) /tmp/cicero-fQdk/ref/declare.xml:61(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:31(replaceable) /tmp/cicero-LLxx/ref/declare.xml:125(replaceable) 
+#: /tmp/cicero-fQdk/ref/declare.xml:31(replaceable) /tmp/cicero-fQdk/ref/declare.xml:125(replaceable) 
 msgid "query"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:29(synopsis) 
+#: /tmp/cicero-fQdk/ref/declare.xml:29(synopsis) 
 #, no-wrap
 msgid "\nDECLARE <placeholder-1/> [ BINARY ] [ INSENSITIVE ] [ [ NO ] SCROLL ]\n    CURSOR [ { WITH | WITHOUT } HOLD ] FOR <placeholder-2/>\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:36(title) 
+#: /tmp/cicero-fQdk/ref/declare.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:38(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:38(para) 
 msgid "<command>DECLARE</command> allows a user to create cursors, which can be used to retrieve a small number of rows at a time out of a larger query. After the cursor is created, rows are fetched from it using <xref linkend=\"sql-fetch\"/>."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:47(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:47(para) 
 msgid "This page describes usage of cursors at the SQL command level. If you are trying to use cursors inside a <application>PL/pgSQL</application> function, the rules are different — see <xref linkend=\"plpgsql-cursors\"/>."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:57(title) 
+#: /tmp/cicero-fQdk/ref/declare.xml:57(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:63(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:63(para) 
 msgid "The name of the cursor to be created."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:70(literal) 
+#: /tmp/cicero-fQdk/ref/declare.xml:70(literal) 
 msgid "BINARY"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:72(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:72(para) 
 msgid "Causes the cursor to return data in binary rather than in text format."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:79(literal) 
+#: /tmp/cicero-fQdk/ref/declare.xml:79(literal) 
 msgid "INSENSITIVE"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:81(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:81(para) 
 msgid "Indicates that data retrieved from the cursor should be unaffected by updates to the table(s) underlying the cursor that occur after the cursor is created. In <productname>PostgreSQL</productname>, this is the default behavior; so this key word has no effect and is only accepted for compatibility with the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:92(literal) 
+#: /tmp/cicero-fQdk/ref/declare.xml:92(literal) 
 msgid "SCROLL"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:93(literal) 
+#: /tmp/cicero-fQdk/ref/declare.xml:93(literal) 
 msgid "NO SCROLL"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:95(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:95(para) 
 msgid "<literal>SCROLL</literal> specifies that the cursor can be used to retrieve rows in a nonsequential fashion (e.g., backward). Depending upon the complexity of the query's execution plan, specifying <literal>SCROLL</literal> might impose a performance penalty on the query's execution time. <literal>NO SCROLL</literal> specifies that the cursor cannot be used to retrieve rows in a nonsequential fashion. The default is to allow scrolling in some cases; this is not the same as specifying <literal>SCROLL</literal>. See <xref linkend=\"sql-declare-notes\" endterm=\"sql-declare-notes-title\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:110(literal) 
+#: /tmp/cicero-fQdk/ref/declare.xml:110(literal) 
 msgid "WITH HOLD"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:111(literal) 
+#: /tmp/cicero-fQdk/ref/declare.xml:111(literal) 
 msgid "WITHOUT HOLD"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:113(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:113(para) 
 msgid "<literal>WITH HOLD</literal> specifies that the cursor can continue to be used after the transaction that created it successfully commits. <literal>WITHOUT HOLD</literal> specifies that the cursor cannot be used outside of the transaction that created it. If neither <literal>WITHOUT HOLD</literal> nor <literal>WITH HOLD</literal> is specified, <literal>WITHOUT HOLD</literal> is the default."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:127(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:127(para) 
 msgid "A <xref linkend=\"sql-select\"/> or <xref linkend=\"sql-values\"/> command which will provide the rows to be returned by the cursor."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:136(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:136(para) 
 msgid "The key words <literal>BINARY</literal>, <literal>INSENSITIVE</literal>, and <literal>SCROLL</literal> can appear in any order."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:144(title) 
+#: /tmp/cicero-fQdk/ref/declare.xml:144(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:146(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:146(para) 
 msgid "Normal cursors return data in text format, the same as a <command>SELECT</command> would produce. The <literal>BINARY</literal> option specifies that the cursor should return data in binary format. This reduces conversion effort for both the server and client, at the cost of more programmer effort to deal with platform-dependent binary data formats. As an example, if a query returns a value of one from an integer column, you would get a string of <literal>1</literal> with a default cursor, whereas with a binary cursor you would get a 4-byte field containing the internal representation of the value (in big-endian byte order)."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:160(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:160(para) 
 msgid "Binary cursors should be used carefully. Many applications, including <application>psql</application>, are not prepared to handle binary cursors and expect data to come back in the text format."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:168(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:168(para) 
 msgid "When the client application uses the <quote>extended query</quote> protocol to issue a <command>FETCH</command> command, the Bind protocol message specifies whether data is to be retrieved in text or binary format. This choice overrides the way that the cursor is defined. The concept of a binary cursor as such is thus obsolete when using extended query protocol — any cursor can be treated as either text or binary."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:178(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:178(para) 
 msgid "Unless <literal>WITH HOLD</literal> is specified, the cursor created by this command can only be used within the current transaction. Thus, <command>DECLARE</command> without <literal>WITH HOLD</literal> is useless outside a transaction block: the cursor would survive only to the completion of the statement. Therefore <productname>PostgreSQL</productname> reports an error if such a command is used outside a transaction block. Use <xref linkend=\"sql-begin\"/> and <xref linkend=\"sql-commit\"/> (or <xref linkend=\"sql-rollback\"/>) to define a transaction block."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:193(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:193(para) 
 msgid "If <literal>WITH HOLD</literal> is specified and the transaction that created the cursor successfully commits, the cursor can continue to be accessed by subsequent transactions in the same session. (But if the creating transaction is aborted, the cursor is removed.) A cursor created with <literal>WITH HOLD</literal> is closed when an explicit <command>CLOSE</command> command is issued on it, or the session ends. In the current implementation, the rows represented by a held cursor are copied into a temporary file or memory area so that they remain available for subsequent transactions."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:206(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:206(para) 
 msgid "<literal>WITH HOLD</literal> may not be specified when the query includes <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal>."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:211(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:211(para) 
 msgid "The <literal>SCROLL</literal> option should be specified when defining a cursor that will be used to fetch backwards. This is required by the SQL standard. However, for compatibility with earlier versions, <productname>PostgreSQL</productname> will allow backward fetches without <literal>SCROLL</literal>, if the cursor's query plan is simple enough that no extra overhead is needed to support it. However, application developers are advised not to rely on using backward fetches from a cursor that has not been created with <literal>SCROLL</literal>. If <literal>NO SCROLL</literal> is specified, then backward fetches are disallowed in any case."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:224(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:224(para) 
 msgid "Backward fetches are also disallowed when the query includes <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal>; therefore <literal>SCROLL</literal> may not be specified in this case."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:231(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:231(para) 
 msgid "Scrollable and <literal>WITH HOLD</literal> cursors may give unexpected results if they invoke any volatile functions (see <xref linkend=\"xfunc-volatility\"/>). When a previously fetched row is re-fetched, the functions might be re-executed, perhaps leading to results different from the first time. One workaround for such cases is to declare the cursor <literal>WITH HOLD</literal> and commit the transaction before reading any rows from it. This will force the entire output of the cursor to be materialized in temporary storage, so that volatile functions are executed exactly once for each row."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:244(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:244(para) 
 msgid "If the cursor's query includes <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal>, then returned rows are locked at the time they are first fetched, in the same way as for a regular <xref linkend=\"sql-select\"/> command with these options. In addition, the returned rows will be the most up-to-date versions; therefore these options provide the equivalent of what the SQL standard calls a <quote>sensitive cursor</quote>. (Specifying <literal>INSENSITIVE</literal> together with <literal>FOR UPDATE</literal> or <literal>FOR SHARE</literal> is an error.)"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:257(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:257(para) 
 msgid "It is generally recommended to use <literal>FOR UPDATE</literal> if the cursor is intended to be used with <command>UPDATE ... WHERE CURRENT OF</command> or <command>DELETE ... WHERE CURRENT OF</command>. Using <literal>FOR UPDATE</literal> prevents other sessions from changing the rows between the time they are fetched and the time they are updated. Without <literal>FOR UPDATE</literal>, a subsequent <literal>WHERE CURRENT OF</literal> command will have no effect if the row was changed since the cursor was created."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:267(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:267(para) 
 msgid "Another reason to use <literal>FOR UPDATE</literal> is that without it, a subsequent <literal>WHERE CURRENT OF</literal> might fail if the cursor query does not meet the SQL standard's rules for being <quote>simply updatable</quote> (in particular, the cursor must reference just one table and not use grouping or <literal>ORDER BY</literal>). Cursors that are not simply updatable might work, or might not, depending on plan choice details; so in the worst case, an application might work in testing and then fail in production."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:278(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:278(para) 
 msgid "The main reason not to use <literal>FOR UPDATE</literal> with <literal>WHERE CURRENT OF</literal> is if you need the cursor to be scrollable, or to be insensitive to the subsequent updates (that is, continue to show the old data). If this is a requirement, pay close heed to the caveats shown above."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:287(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:287(para) 
 msgid "The SQL standard only makes provisions for cursors in embedded <acronym>SQL</acronym>. The <productname>PostgreSQL</productname> server does not implement an <command>OPEN</command> statement for cursors; a cursor is considered to be open when it is declared. However, <application>ECPG</application>, the embedded SQL preprocessor for <productname>PostgreSQL</productname>, supports the standard SQL cursor conventions, including those involving <command>DECLARE</command> and <command>OPEN</command> statements."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:298(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:298(para) 
 msgid "You can see all available cursors by querying the <link linkend=\"view-pg-cursors\"><structname>pg_cursors</structname></link> system view."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:306(title) 
+#: /tmp/cicero-fQdk/ref/declare.xml:306(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:310(programlisting) 
+#: /tmp/cicero-fQdk/ref/declare.xml:310(programlisting) 
 #, no-wrap
 msgid "\nDECLARE liahona CURSOR FOR SELECT * FROM films;\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:308(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:308(para) 
 msgid "To declare a cursor: <placeholder-1/> See <xref linkend=\"sql-fetch\"/> for more examples of cursor usage."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:319(title) 
+#: /tmp/cicero-fQdk/ref/declare.xml:319(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:321(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:321(para) 
 msgid "The SQL standard says that it is implementation-dependent whether cursors are sensitive to concurrent updates of the underlying data by default. In <productname>PostgreSQL</productname>, cursors are insensitive by default, and can be made sensitive by specifying <literal>FOR UPDATE</literal>. Other products may work differently."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:329(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:329(para) 
 msgid "The SQL standard allows cursors only in embedded <acronym>SQL</acronym> and in modules. <productname>PostgreSQL</productname> permits cursors to be used interactively."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:335(para) 
+#: /tmp/cicero-fQdk/ref/declare.xml:335(para) 
 msgid "Binary cursors are a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-LLxx/ref/declare.xml:342(title) 
+#: /tmp/cicero-fQdk/ref/declare.xml:342(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-LLxx/ref/declare.xml:0(None) 
+#: /tmp/cicero-fQdk/ref/declare.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

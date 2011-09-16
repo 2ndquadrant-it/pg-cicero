@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-15 06:58+0200\n"
+"POT-Creation-Date: 2011-09-16 06:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,143 +9,143 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-LLxx/auto-explain.xml:5(title) /tmp/cicero-LLxx/auto-explain.xml:8(primary) 
+#: /tmp/cicero-fQdk/auto-explain.xml:5(title) /tmp/cicero-fQdk/auto-explain.xml:8(primary) 
 msgid "auto_explain"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:11(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:11(para) 
 msgid "The <filename>auto_explain</filename> module provides a means for logging execution plans of slow statements automatically, without having to run <xref linkend=\"sql-explain\"/> by hand. This is especially helpful for tracking down un-optimized queries in large applications."
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:23(programlisting) 
+#: /tmp/cicero-fQdk/auto-explain.xml:23(programlisting) 
 #, no-wrap
 msgid "\nLOAD 'auto_explain';\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:19(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:19(para) 
 msgid "The module provides no SQL-accessible functions. To use it, simply load it into the server. You can load it into an individual session: <placeholder-1/> (You must be superuser to do that.) More typical usage is to preload it into all sessions by including <literal>auto_explain</literal> in <xref linkend=\"guc-shared-preload-libraries\"/> in <filename>postgresql.conf</filename>. Then you can track unexpectedly slow queries no matter when they happen. Of course there is a price in overhead for that."
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:36(title) 
+#: /tmp/cicero-fQdk/auto-explain.xml:36(title) 
 msgid "Configuration Parameters"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:38(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:38(para) 
 msgid "There are several configuration parameters that control the behavior of <filename>auto_explain</filename>. Note that the default behavior is to do nothing, so you must set at least <varname>auto_explain.log_min_duration</varname> if you want any results."
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:47(term) 
+#: /tmp/cicero-fQdk/auto-explain.xml:47(term) 
 msgid "<varname>auto_explain.log_min_duration</varname> (<type>integer</type>)"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:51(varname) 
+#: /tmp/cicero-fQdk/auto-explain.xml:51(varname) 
 msgid "auto_explain.log_min_duration"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:51(primary) /tmp/cicero-LLxx/auto-explain.xml:70(primary) /tmp/cicero-LLxx/auto-explain.xml:94(primary) /tmp/cicero-LLxx/auto-explain.xml:111(primary) /tmp/cicero-LLxx/auto-explain.xml:130(primary) /tmp/cicero-LLxx/auto-explain.xml:148(primary) 
+#: /tmp/cicero-fQdk/auto-explain.xml:51(primary) /tmp/cicero-fQdk/auto-explain.xml:70(primary) /tmp/cicero-fQdk/auto-explain.xml:94(primary) /tmp/cicero-fQdk/auto-explain.xml:111(primary) /tmp/cicero-fQdk/auto-explain.xml:130(primary) /tmp/cicero-fQdk/auto-explain.xml:148(primary) 
 msgid "<placeholder-1/> configuration parameter"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:54(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:54(para) 
 msgid "<varname>auto_explain.log_min_duration</varname> is the minimum statement execution time, in milliseconds, that will cause the statement's plan to be logged. Setting this to zero logs all plans. Minus-one (the default) disables logging of plans. For example, if you set it to <literal>250ms</literal> then all statements that run 250ms or longer will be logged. Only superusers can change this setting."
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:66(term) 
+#: /tmp/cicero-fQdk/auto-explain.xml:66(term) 
 msgid "<varname>auto_explain.log_analyze</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:70(varname) 
+#: /tmp/cicero-fQdk/auto-explain.xml:70(varname) 
 msgid "auto_explain.log_analyze"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:73(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:73(para) 
 msgid "<varname>auto_explain.log_analyze</varname> causes <command>EXPLAIN ANALYZE</command> output, rather than just <command>EXPLAIN</command> output, to be printed when an execution plan is logged. This parameter is off by default. Only superusers can change this setting."
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:80(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:80(para) 
 msgid "When this parameter is on, per-plan-node timing occurs for all statements executed, whether or not they run long enough to actually get logged. This can have extremely negative impact on performance."
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:90(term) 
+#: /tmp/cicero-fQdk/auto-explain.xml:90(term) 
 msgid "<varname>auto_explain.log_verbose</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:94(varname) 
+#: /tmp/cicero-fQdk/auto-explain.xml:94(varname) 
 msgid "auto_explain.log_verbose"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:97(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:97(para) 
 msgid "<varname>auto_explain.log_verbose</varname> causes <command>EXPLAIN VERBOSE</command> output, rather than just <command>EXPLAIN</command> output, to be printed when an execution plan is logged. This parameter is off by default. Only superusers can change this setting."
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:107(term) 
+#: /tmp/cicero-fQdk/auto-explain.xml:107(term) 
 msgid "<varname>auto_explain.log_buffers</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:111(varname) 
+#: /tmp/cicero-fQdk/auto-explain.xml:111(varname) 
 msgid "auto_explain.log_buffers"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:114(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:114(para) 
 msgid "<varname>auto_explain.log_buffers</varname> causes <command>EXPLAIN (ANALYZE, BUFFERS)</command> output, rather than just <command>EXPLAIN</command> output, to be printed when an execution plan is logged. This parameter is off by default. Only superusers can change this setting. This parameter has no effect unless <varname>auto_explain.log_analyze</varname> parameter is set."
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:126(term) 
+#: /tmp/cicero-fQdk/auto-explain.xml:126(term) 
 msgid "<varname>auto_explain.log_format</varname> (<type>enum</type>)"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:130(varname) 
+#: /tmp/cicero-fQdk/auto-explain.xml:130(varname) 
 msgid "auto_explain.log_format"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:133(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:133(para) 
 msgid "<varname>auto_explain.log_format</varname> selects the <command>EXPLAIN</command> output format to be used. The allowed values are <literal>text</literal>, <literal>xml</literal>, <literal>json</literal>, and <literal>yaml</literal>. The default is text. Only superusers can change this setting."
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:144(term) 
+#: /tmp/cicero-fQdk/auto-explain.xml:144(term) 
 msgid "<varname>auto_explain.log_nested_statements</varname> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:148(varname) 
+#: /tmp/cicero-fQdk/auto-explain.xml:148(varname) 
 msgid "auto_explain.log_nested_statements"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:151(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:151(para) 
 msgid "<varname>auto_explain.log_nested_statements</varname> causes nested statements (statements executed inside a function) to be considered for logging. When it is off, only top-level query plans are logged. This parameter is off by default. Only superusers can change this setting."
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:161(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:161(para) 
 msgid "In order to set these parameters in your <filename>postgresql.conf</filename> file, you will need to add <literal>auto_explain</literal> to <xref linkend=\"guc-custom-variable-classes\"/>. Typical usage might be:"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:167(programlisting) 
+#: /tmp/cicero-fQdk/auto-explain.xml:167(programlisting) 
 #, no-wrap
 msgid "\n# postgresql.conf\nshared_preload_libraries = 'auto_explain'\n\ncustom_variable_classes = 'auto_explain'\nauto_explain.log_min_duration = '3s'\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:177(title) 
+#: /tmp/cicero-fQdk/auto-explain.xml:177(title) 
 msgid "Example"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:179(programlisting) 
+#: /tmp/cicero-fQdk/auto-explain.xml:179(programlisting) 
 #, no-wrap
 msgid "\npostgres=# LOAD 'auto_explain';\npostgres=# SET auto_explain.log_min_duration = 0;\npostgres=# SELECT count(*)\n           FROM pg_class, pg_index\n           WHERE oid = indrelid AND indisunique;\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:187(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:187(para) 
 msgid "This might produce log output such as:"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:208(title) 
+#: /tmp/cicero-fQdk/auto-explain.xml:208(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-LLxx/auto-explain.xml:210(para) 
+#: /tmp/cicero-fQdk/auto-explain.xml:210(para) 
 msgid "Takahiro Itagaki <email>itagaki.takahiro@oss.ntt.co.jp</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-LLxx/auto-explain.xml:0(None) 
+#: /tmp/cicero-fQdk/auto-explain.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

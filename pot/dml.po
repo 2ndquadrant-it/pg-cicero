@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-15 06:58+0200\n"
+"POT-Creation-Date: 2011-09-16 06:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,187 +9,187 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-LLxx/dml.xml:5(title) 
+#: /tmp/cicero-fQdk/dml.xml:5(title) 
 msgid "Data Manipulation"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:7(remark) 
+#: /tmp/cicero-fQdk/dml.xml:7(remark) 
 msgid "This chapter is still quite incomplete."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:11(para) 
+#: /tmp/cicero-fQdk/dml.xml:11(para) 
 msgid "The previous chapter discussed how to create tables and other structures to hold your data. Now it is time to fill the tables with data. This chapter covers how to insert, update, and delete table data. The chapter after this will finally explain how to extract your long-lost data from the database."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:21(title) 
+#: /tmp/cicero-fQdk/dml.xml:21(title) 
 msgid "Inserting Data"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:24(primary) 
+#: /tmp/cicero-fQdk/dml.xml:24(primary) 
 msgid "inserting"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:28(primary) 
+#: /tmp/cicero-fQdk/dml.xml:28(primary) 
 msgid "INSERT"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:31(para) 
+#: /tmp/cicero-fQdk/dml.xml:31(para) 
 msgid "When a table is created, it contains no data. The first thing to do before a database can be of much use is to insert data. Data is conceptually inserted one row at a time. Of course you can also insert more than one row, but there is no way to insert less than one row. Even if you know only some column values, a complete row must be created."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:45(programlisting) 
+#: /tmp/cicero-fQdk/dml.xml:45(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE products (\n    product_no integer,\n    name text,\n    price numeric\n);\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:53(programlisting) 
+#: /tmp/cicero-fQdk/dml.xml:53(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO products VALUES (1, 'Cheese', 9.99);\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:40(para) 
+#: /tmp/cicero-fQdk/dml.xml:40(para) 
 msgid "To create a new row, use the <xref linkend=\"sql-insert\"/> command. The command requires the table name and column values. For example, consider the products table from <xref linkend=\"ddl\"/>: <placeholder-1/> An example command to insert a row would be: <placeholder-2/> The data values are listed in the order in which the columns appear in the table, separated by commas. Usually, the data values will be literals (constants), but scalar expressions are also allowed."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:66(programlisting) 
+#: /tmp/cicero-fQdk/dml.xml:66(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO products (product_no, name, price) VALUES (1, 'Cheese', 9.99);\nINSERT INTO products (name, price, product_no) VALUES ('Cheese', 9.99, 1);\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:61(para) 
+#: /tmp/cicero-fQdk/dml.xml:61(para) 
 msgid "The above syntax has the drawback that you need to know the order of the columns in the table. To avoid this you can also list the columns explicitly. For example, both of the following commands have the same effect as the one above: <placeholder-1/> Many users consider it good practice to always list the column names."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:78(programlisting) 
+#: /tmp/cicero-fQdk/dml.xml:78(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO products (product_no, name) VALUES (1, 'Cheese');\nINSERT INTO products VALUES (1, 'Cheese');\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:74(para) 
+#: /tmp/cicero-fQdk/dml.xml:74(para) 
 msgid "If you don't have values for all the columns, you can omit some of them. In that case, the columns will be filled with their default values. For example: <placeholder-1/> The second form is a <productname>PostgreSQL</productname> extension. It fills the columns from the left with as many values as are given, and the rest will be defaulted."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:90(programlisting) 
+#: /tmp/cicero-fQdk/dml.xml:90(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO products (product_no, name, price) VALUES (1, 'Cheese', DEFAULT);\nINSERT INTO products DEFAULT VALUES;\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:87(para) 
+#: /tmp/cicero-fQdk/dml.xml:87(para) 
 msgid "For clarity, you can also request default values explicitly, for individual columns or for the entire row: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:98(programlisting) 
+#: /tmp/cicero-fQdk/dml.xml:98(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO products (product_no, name, price) VALUES\n    (1, 'Cheese', 9.99),\n    (2, 'Bread', 1.99),\n    (3, 'Milk', 2.99);\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:96(para) 
+#: /tmp/cicero-fQdk/dml.xml:96(para) 
 msgid "You can insert multiple rows in a single command: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:107(para) 
+#: /tmp/cicero-fQdk/dml.xml:107(para) 
 msgid "When inserting a lot of data at the same time, considering using the <xref linkend=\"sql-copy\"/> command. It is not as flexible as the <xref linkend=\"sql-insert\"/> command, but is more efficient. Refer to <xref linkend=\"populate\"/> for more information on improving bulk loading performance."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:119(title) 
+#: /tmp/cicero-fQdk/dml.xml:119(title) 
 msgid "Updating Data"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:122(primary) 
+#: /tmp/cicero-fQdk/dml.xml:122(primary) 
 msgid "updating"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:126(primary) 
+#: /tmp/cicero-fQdk/dml.xml:126(primary) 
 msgid "UPDATE"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:129(para) 
+#: /tmp/cicero-fQdk/dml.xml:129(para) 
 msgid "The modification of data that is already in the database is referred to as updating. You can update individual rows, all the rows in a table, or a subset of all rows. Each column can be updated separately; the other columns are not affected."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:142(para) 
+#: /tmp/cicero-fQdk/dml.xml:142(para) 
 msgid "The name of the table and column to update"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:146(para) 
+#: /tmp/cicero-fQdk/dml.xml:146(para) 
 msgid "The new value of the column"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:150(para) 
+#: /tmp/cicero-fQdk/dml.xml:150(para) 
 msgid "Which row(s) to update"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:136(para) 
+#: /tmp/cicero-fQdk/dml.xml:136(para) 
 msgid "To update existing rows, use the <xref linkend=\"sql-update\"/> command. This requires three pieces of information: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:155(para) 
+#: /tmp/cicero-fQdk/dml.xml:155(para) 
 msgid "Recall from <xref linkend=\"ddl\"/> that SQL does not, in general, provide a unique identifier for rows. Therefore it is not always possible to directly specify which row to update. Instead, you specify which conditions a row must meet in order to be updated. Only if you have a primary key in the table (independent of whether you declared it or not) can you reliably address individual rows by choosing a condition that matches the primary key. Graphical database access tools rely on this fact to allow you to update rows individually."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:170(programlisting) 
+#: /tmp/cicero-fQdk/dml.xml:170(programlisting) 
 #, no-wrap
 msgid "\nUPDATE products SET price = 10 WHERE price = 5;\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:167(para) 
+#: /tmp/cicero-fQdk/dml.xml:167(para) 
 msgid "For example, this command updates all products that have a price of 5 to have a price of 10: <placeholder-1/> This might cause zero, one, or many rows to be updated. It is not an error to attempt an update that does not match any rows."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:186(programlisting) 
+#: /tmp/cicero-fQdk/dml.xml:186(programlisting) 
 #, no-wrap
 msgid "\nUPDATE products SET price = price * 1.10;\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:177(para) 
+#: /tmp/cicero-fQdk/dml.xml:177(para) 
 msgid "Let's look at that command in detail. First is the key word <literal>UPDATE</literal> followed by the table name. As usual, the table name can be schema-qualified, otherwise it is looked up in the path. Next is the key word <literal>SET</literal> followed by the column name, an equal sign, and the new column value. The new column value can be any scalar expression, not just a constant. For example, if you want to raise the price of all products by 10% you could use: <placeholder-1/> As you see, the expression for the new value can refer to the existing value(s) in the row. We also left out the <literal>WHERE</literal> clause. If it is omitted, it means that all rows in the table are updated. If it is present, only those rows that match the <literal>WHERE</literal> condition are updated. Note that the equals sign in the <literal>SET</literal> clause is an assignment while the one in the <literal>WHERE</literal> clause is a comparison, but this does not create any ambiguity. Of course, the <literal>WHERE</literal> condition does not have to be an equality test. Many other operators are available (see <xref linkend=\"functions\"/>). But the expression needs to evaluate to a Boolean result."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:207(programlisting) 
+#: /tmp/cicero-fQdk/dml.xml:207(programlisting) 
 #, no-wrap
 msgid "\nUPDATE mytable SET a = 5, b = 3, c = 1 WHERE a &gt; 0;\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:203(para) 
+#: /tmp/cicero-fQdk/dml.xml:203(para) 
 msgid "You can update more than one column in an <command>UPDATE</command> command by listing more than one assignment in the <literal>SET</literal> clause. For example: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:214(title) 
+#: /tmp/cicero-fQdk/dml.xml:214(title) 
 msgid "Deleting Data"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:217(primary) 
+#: /tmp/cicero-fQdk/dml.xml:217(primary) 
 msgid "deleting"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:221(primary) 
+#: /tmp/cicero-fQdk/dml.xml:221(primary) 
 msgid "DELETE"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:224(para) 
+#: /tmp/cicero-fQdk/dml.xml:224(para) 
 msgid "So far we have explained how to add data to tables and how to change data. What remains is to discuss how to remove data that is no longer needed. Just as adding data is only possible in whole rows, you can only remove entire rows from a table. In the previous section we explained that SQL does not provide a way to directly address individual rows. Therefore, removing rows can only be done by specifying conditions that the rows to be removed have to match. If you have a primary key in the table then you can specify the exact row. But you can also remove groups of rows matching a condition, or you can remove all rows in the table at once."
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:243(programlisting) 
+#: /tmp/cicero-fQdk/dml.xml:243(programlisting) 
 #, no-wrap
 msgid "\nDELETE FROM products WHERE price = 10;\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:238(para) 
+#: /tmp/cicero-fQdk/dml.xml:238(para) 
 msgid "You use the <xref linkend=\"sql-delete\"/> command to remove rows; the syntax is very similar to the <command>UPDATE</command> command. For instance, to remove all rows from the products table that have a price of 10, use: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:250(programlisting) 
+#: /tmp/cicero-fQdk/dml.xml:250(programlisting) 
 #, no-wrap
 msgid "\nDELETE FROM products;\n"
 msgstr ""
 
-#: /tmp/cicero-LLxx/dml.xml:248(para) 
+#: /tmp/cicero-fQdk/dml.xml:248(para) 
 msgid "If you simply write: <placeholder-1/> then all rows in the table will be deleted! Caveat programmer."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-LLxx/dml.xml:0(None) 
+#: /tmp/cicero-fQdk/dml.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
