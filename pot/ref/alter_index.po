@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-15 06:57+0200\n"
+"POT-Creation-Date: 2011-09-16 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,172 +9,172 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:9(refentrytitle) /tmp/cicero-fBJf/ref/alter_index.xml:15(refname) /tmp/cicero-fBJf/ref/alter_index.xml:20(primary) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:9(refentrytitle) /tmp/cicero-vPox/ref/alter_index.xml:15(refname) /tmp/cicero-vPox/ref/alter_index.xml:20(primary) 
 msgid "ALTER INDEX"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:10(manvolnum) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:11(refmiscinfo) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:16(refpurpose) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:16(refpurpose) 
 msgid "change the definition of an index"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:25(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:26(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:27(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:28(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:101(replaceable) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:25(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:26(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:27(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:28(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:101(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:25(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:111(replaceable) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:25(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:111(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:26(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:120(replaceable) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:26(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:120(replaceable) 
 msgid "tablespace_name"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:27(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:28(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:64(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:80(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:129(replaceable) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:27(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:28(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:64(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:80(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:129(replaceable) 
 msgid "storage_parameter"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:27(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:64(replaceable) /tmp/cicero-fBJf/ref/alter_index.xml:138(replaceable) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:27(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:64(replaceable) /tmp/cicero-vPox/ref/alter_index.xml:138(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:24(synopsis) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER INDEX <placeholder-1/> RENAME TO <placeholder-2/>\nALTER INDEX <placeholder-3/> SET TABLESPACE <placeholder-4/>\nALTER INDEX <placeholder-5/> SET ( <placeholder-6/> = <placeholder-7/> [, ... ] )\nALTER INDEX <placeholder-8/> RESET ( <placeholder-9/> [, ... ] )\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:33(title) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:42(literal) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:42(literal) 
 msgid "RENAME"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:44(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:44(para) 
 msgid "The <literal>RENAME</literal> form changes the name of the index. There is no effect on the stored data."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:52(literal) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:52(literal) 
 msgid "SET TABLESPACE"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:54(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:54(para) 
 msgid "This form changes the index's tablespace to the specified tablespace and moves the data file(s) associated with the index to the new tablespace. See also <xref linkend=\"sql-createtablespace\"/>."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:64(literal) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:64(literal) 
 msgid "SET ( <placeholder-1/> = <placeholder-2/> [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:66(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:66(para) 
 msgid "This form changes one or more index-method-specific storage parameters for the index. See <xref linkend=\"sql-createindex\"/> for details on the available parameters. Note that the index contents will not be modified immediately by this command; depending on the parameter you might need to rebuild the index with <xref linkend=\"sql-reindex\"/> to get the desired effects."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:80(literal) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:80(literal) 
 msgid "RESET ( <placeholder-1/> [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:82(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:82(para) 
 msgid "This form resets one or more index-method-specific storage parameters to their defaults. As with <literal>SET</literal>, a <literal>REINDEX</literal> might be needed to update the index entirely."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:35(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:35(para) 
 msgid "<command>ALTER INDEX</command> changes the definition of an existing index. There are several subforms: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:96(title) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:96(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:103(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:103(para) 
 msgid "The name (possibly schema-qualified) of an existing index to alter."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:113(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:113(para) 
 msgid "The new name for the index."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:122(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:122(para) 
 msgid "The tablespace to which the index will be moved."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:131(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:131(para) 
 msgid "The name of an index-method-specific storage parameter."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:140(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:140(para) 
 msgid "The new value for an index-method-specific storage parameter. This might be a number or a word depending on the parameter."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:151(title) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:151(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:153(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:153(para) 
 msgid "These operations are also possible using <xref linkend=\"sql-altertable\"/>. <command>ALTER INDEX</command> is in fact just an alias for the forms of <command>ALTER TABLE</command> that apply to indexes."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:160(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:160(para) 
 msgid "There was formerly an <command>ALTER INDEX OWNER</command> variant, but this is now ignored (with a warning). An index cannot have an owner different from its table's owner. Changing the table's owner automatically changes the index as well."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:167(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:167(para) 
 msgid "Changing any part of a system catalog index is not permitted."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:173(title) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:173(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:176(programlisting) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:176(programlisting) 
 #, no-wrap
 msgid "\nALTER INDEX distributors RENAME TO suppliers;\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:174(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:174(para) 
 msgid "To rename an existing index: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:183(programlisting) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:183(programlisting) 
 #, no-wrap
 msgid "\nALTER INDEX distributors SET TABLESPACE fasttablespace;\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:181(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:181(para) 
 msgid "To move an index to a different tablespace: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:191(programlisting) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:191(programlisting) 
 #, no-wrap
 msgid "\nALTER INDEX distributors SET (fillfactor = 75);\nREINDEX INDEX distributors;\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:188(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:188(para) 
 msgid "To change an index's fill factor (assuming that the index method supports it): <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:199(title) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:199(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:201(para) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:201(para) 
 msgid "<command>ALTER INDEX</command> is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/alter_index.xml:209(title) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:209(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-fBJf/ref/alter_index.xml:0(None) 
+#: /tmp/cicero-vPox/ref/alter_index.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

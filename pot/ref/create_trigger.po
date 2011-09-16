@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-15 06:57+0200\n"
+"POT-Creation-Date: 2011-09-16 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,370 +9,370 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:9(refentrytitle) /tmp/cicero-fBJf/ref/create_trigger.xml:15(refname) /tmp/cicero-fBJf/ref/create_trigger.xml:20(primary) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:9(refentrytitle) /tmp/cicero-vPox/ref/create_trigger.xml:15(refname) /tmp/cicero-vPox/ref/create_trigger.xml:20(primary) 
 msgid "CREATE TRIGGER"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:10(manvolnum) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:11(refmiscinfo) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:16(refpurpose) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:16(refpurpose) 
 msgid "define a new trigger"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:25(replaceable) /tmp/cicero-fBJf/ref/create_trigger.xml:193(replaceable) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:25(replaceable) /tmp/cicero-vPox/ref/create_trigger.xml:193(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:25(replaceable) /tmp/cicero-fBJf/ref/create_trigger.xml:33(replaceable) /tmp/cicero-fBJf/ref/create_trigger.xml:220(replaceable) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:25(replaceable) /tmp/cicero-vPox/ref/create_trigger.xml:33(replaceable) /tmp/cicero-vPox/ref/create_trigger.xml:220(replaceable) 
 msgid "event"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:26(replaceable) /tmp/cicero-fBJf/ref/create_trigger.xml:245(replaceable) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:26(replaceable) /tmp/cicero-vPox/ref/create_trigger.xml:245(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:27(replaceable) /tmp/cicero-fBJf/ref/create_trigger.xml:255(replaceable) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:27(replaceable) /tmp/cicero-vPox/ref/create_trigger.xml:255(replaceable) 
 msgid "referenced_table_name"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:30(replaceable) /tmp/cicero-fBJf/ref/create_trigger.xml:297(replaceable) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:30(replaceable) /tmp/cicero-vPox/ref/create_trigger.xml:297(replaceable) 
 msgid "condition"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:31(replaceable) /tmp/cicero-fBJf/ref/create_trigger.xml:333(replaceable) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:31(replaceable) /tmp/cicero-vPox/ref/create_trigger.xml:333(replaceable) 
 msgid "function_name"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:31(replaceable) /tmp/cicero-fBJf/ref/create_trigger.xml:344(replaceable) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:31(replaceable) /tmp/cicero-vPox/ref/create_trigger.xml:344(replaceable) 
 msgid "arguments"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:33(phrase) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:33(phrase) 
 msgid "where <placeholder-1/> can be one of:"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:36(replaceable) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:36(replaceable) 
 msgid "column_name"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:24(synopsis) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE [ CONSTRAINT ] TRIGGER <placeholder-1/> { BEFORE | AFTER | INSTEAD OF } { <placeholder-2/> [ OR ... ] }\n    ON <placeholder-3/>\n    [ FROM <placeholder-4/> ]\n    { NOT DEFERRABLE | [ DEFERRABLE ] { INITIALLY IMMEDIATE | INITIALLY DEFERRED } }\n    [ FOR [ EACH ] { ROW | STATEMENT } ]\n    [ WHEN ( <placeholder-5/> ) ]\n    EXECUTE PROCEDURE <placeholder-6/> ( <placeholder-7/> )\n\n<placeholder-8/>\n\n    INSERT\n    UPDATE [ OF <placeholder-9/> [, ... ] ]\n    DELETE\n    TRUNCATE\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:43(title) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:43(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:45(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:45(para) 
 msgid "<command>CREATE TRIGGER</command> creates a new trigger. The trigger will be associated with the specified table or view and will execute the specified function <replaceable class=\"parameter\">function_name</replaceable> when certain events occur."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:52(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:52(para) 
 msgid "The trigger can be specified to fire before the operation is attempted on a row (before constraints are checked and the <command>INSERT</command>, <command>UPDATE</command>, or <command>DELETE</command> is attempted); or after the operation has completed (after constraints are checked and the <command>INSERT</command>, <command>UPDATE</command>, or <command>DELETE</command> has completed); or instead of the operation (in the case of inserts, updates or deletes on a view). If the trigger fires before or instead of the event, the trigger can skip the operation for the current row, or change the row being inserted (for <command>INSERT</command> and <command>UPDATE</command> operations only). If the trigger fires after the event, all changes, including the effects of other triggers, are <quote>visible</quote> to the trigger."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:69(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:69(para) 
 msgid "A trigger that is marked <literal>FOR EACH ROW</literal> is called once for every row that the operation modifies. For example, a <command>DELETE</command> that affects 10 rows will cause any <literal>ON DELETE</literal> triggers on the target relation to be called 10 separate times, once for each deleted row. In contrast, a trigger that is marked <literal>FOR EACH STATEMENT</literal> only executes once for any given operation, regardless of how many rows it modifies (in particular, an operation that modifies zero rows will still result in the execution of any applicable <literal>FOR EACH STATEMENT</literal> triggers)."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:82(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:82(para) 
 msgid "Triggers that are specified to fire <literal>INSTEAD OF</literal> the trigger event must be marked <literal>FOR EACH ROW</literal>, and can only be defined on views. <literal>BEFORE</literal> and <literal>AFTER</literal> triggers on a view must be marked as <literal>FOR EACH STATEMENT</literal>."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:89(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:89(para) 
 msgid "In addition, triggers may be defined to fire for <command>TRUNCATE</command>, though only <literal>FOR EACH STATEMENT</literal>."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:95(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:95(para) 
 msgid "The following table summarizes which types of triggers may be used on tables and views:"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:104(entry) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:104(entry) 
 msgid "When"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:105(entry) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:105(entry) 
 msgid "Event"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:106(entry) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:106(entry) 
 msgid "Row-level"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:107(entry) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:107(entry) 
 msgid "Statement-level"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:112(literal) /tmp/cicero-fBJf/ref/create_trigger.xml:207(literal) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:112(literal) /tmp/cicero-vPox/ref/create_trigger.xml:207(literal) 
 msgid "BEFORE"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:113(command) /tmp/cicero-fBJf/ref/create_trigger.xml:124(command) /tmp/cicero-fBJf/ref/create_trigger.xml:135(command) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:113(command) /tmp/cicero-vPox/ref/create_trigger.xml:124(command) /tmp/cicero-vPox/ref/create_trigger.xml:135(command) 
 msgid "INSERT"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:113(command) /tmp/cicero-fBJf/ref/create_trigger.xml:124(command) /tmp/cicero-fBJf/ref/create_trigger.xml:135(command) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:113(command) /tmp/cicero-vPox/ref/create_trigger.xml:124(command) /tmp/cicero-vPox/ref/create_trigger.xml:135(command) 
 msgid "UPDATE"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:113(command) /tmp/cicero-fBJf/ref/create_trigger.xml:124(command) /tmp/cicero-fBJf/ref/create_trigger.xml:135(command) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:113(command) /tmp/cicero-vPox/ref/create_trigger.xml:124(command) /tmp/cicero-vPox/ref/create_trigger.xml:135(command) 
 msgid "DELETE"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:113(entry) /tmp/cicero-fBJf/ref/create_trigger.xml:124(entry) /tmp/cicero-fBJf/ref/create_trigger.xml:135(entry) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:113(entry) /tmp/cicero-vPox/ref/create_trigger.xml:124(entry) /tmp/cicero-vPox/ref/create_trigger.xml:135(entry) 
 msgid "<placeholder-1/>/<placeholder-2/>/<placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:114(entry) /tmp/cicero-fBJf/ref/create_trigger.xml:120(entry) /tmp/cicero-fBJf/ref/create_trigger.xml:125(entry) /tmp/cicero-fBJf/ref/create_trigger.xml:131(entry) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:114(entry) /tmp/cicero-vPox/ref/create_trigger.xml:120(entry) /tmp/cicero-vPox/ref/create_trigger.xml:125(entry) /tmp/cicero-vPox/ref/create_trigger.xml:131(entry) 
 msgid "Tables"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:115(entry) /tmp/cicero-fBJf/ref/create_trigger.xml:126(entry) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:115(entry) /tmp/cicero-vPox/ref/create_trigger.xml:126(entry) 
 msgid "Tables and views"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:118(command) /tmp/cicero-fBJf/ref/create_trigger.xml:129(command) /tmp/cicero-fBJf/ref/create_trigger.xml:140(command) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:118(command) /tmp/cicero-vPox/ref/create_trigger.xml:129(command) /tmp/cicero-vPox/ref/create_trigger.xml:140(command) 
 msgid "TRUNCATE"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:119(entry) /tmp/cicero-fBJf/ref/create_trigger.xml:130(entry) /tmp/cicero-fBJf/ref/create_trigger.xml:137(entry) /tmp/cicero-fBJf/ref/create_trigger.xml:141(entry) /tmp/cicero-fBJf/ref/create_trigger.xml:142(entry) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:119(entry) /tmp/cicero-vPox/ref/create_trigger.xml:130(entry) /tmp/cicero-vPox/ref/create_trigger.xml:137(entry) /tmp/cicero-vPox/ref/create_trigger.xml:141(entry) /tmp/cicero-vPox/ref/create_trigger.xml:142(entry) 
 msgid "—"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:123(literal) /tmp/cicero-fBJf/ref/create_trigger.xml:208(literal) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:123(literal) /tmp/cicero-vPox/ref/create_trigger.xml:208(literal) 
 msgid "AFTER"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:134(literal) /tmp/cicero-fBJf/ref/create_trigger.xml:209(literal) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:134(literal) /tmp/cicero-vPox/ref/create_trigger.xml:209(literal) 
 msgid "INSTEAD OF"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:136(entry) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:136(entry) 
 msgid "Views"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:148(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:148(para) 
 msgid "Also, a trigger definition can specify a Boolean <literal>WHEN</literal> condition, which will be tested to see whether the trigger should be fired. In row-level triggers the <literal>WHEN</literal> condition can examine the old and/or new values of columns of the row. Statement-level triggers can also have <literal>WHEN</literal> conditions, although the feature is not so useful for them since the condition cannot refer to any values in the table."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:158(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:158(para) 
 msgid "If multiple triggers of the same kind are defined for the same event, they will be fired in alphabetical order by name."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:163(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:163(para) 
 msgid "When the <literal>CONSTRAINT</literal> option is specified, this command creates a <firstterm>constraint trigger</firstterm>. This is the same as a regular trigger except that the timing of the trigger firing can be adjusted using <xref linkend=\"sql-set-constraints\"/>. Constraint triggers must be <literal>AFTER ROW</literal> triggers. They can be fired either at the end of the statement causing the triggering event, or at the end of the containing transaction; in the latter case they are said to be <firstterm>deferred</firstterm>. A pending deferred-trigger firing can also be forced to happen immediately by using <command>SET CONSTRAINTS</command>. Constraint triggers are expected to raise an exception when the constraints they implement are violated."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:177(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:177(para) 
 msgid "<command>SELECT</command> does not modify any rows so you cannot create <command>SELECT</command> triggers. Rules and views are more appropriate in such cases."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:183(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:183(para) 
 msgid "Refer to <xref linkend=\"triggers\"/> for more information about triggers."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:189(title) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:189(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:195(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:195(para) 
 msgid "The name to give the new trigger. This must be distinct from the name of any other trigger for the same table. The name cannot be schema-qualified — the trigger inherits the schema of its table. For a constraint trigger, this is also the name to use when modifying the trigger's behavior using <command>SET CONSTRAINTS</command>."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:211(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:211(para) 
 msgid "Determines whether the function is called before, after, or instead of the event. A constraint trigger can only be specified as <literal>AFTER</literal>."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:222(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:222(para) 
 msgid "One of <literal>INSERT</literal>, <literal>UPDATE</literal>, <literal>DELETE</literal>, or <literal>TRUNCATE</literal>; this specifies the event that will fire the trigger. Multiple events can be specified using <literal>OR</literal>."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:229(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:229(para) 
 msgid "For <literal>UPDATE</literal> events, it is possible to specify a list of columns using this syntax: <synopsis>\nUPDATE OF <replaceable>column_name1</replaceable> [, <replaceable>column_name2</replaceable> ... ]\n</synopsis> The trigger will only fire if at least one of the listed columns is mentioned as a target of the <command>UPDATE</command> command."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:239(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:239(para) 
 msgid "<literal>INSTEAD OF UPDATE</literal> events do not support lists of columns."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:247(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:247(para) 
 msgid "The name (optionally schema-qualified) of the table or view the trigger is for."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:257(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:257(para) 
 msgid "The (possibly schema-qualified) name of another table referenced by the constraint. This option is used for foreign-key constraints and is not recommended for general use. This can only be specified for constraint triggers."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:267(literal) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:267(literal) 
 msgid "DEFERRABLE"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:268(literal) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:268(literal) 
 msgid "NOT DEFERRABLE"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:269(literal) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:269(literal) 
 msgid "INITIALLY IMMEDIATE"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:270(literal) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:270(literal) 
 msgid "INITIALLY DEFERRED"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:272(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:272(para) 
 msgid "The default timing of the trigger. See the <xref linkend=\"sql-createtable\"/> documentation for details of these constraint options. This can only be specified for constraint triggers."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:282(literal) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:282(literal) 
 msgid "FOR EACH ROW"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:283(literal) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:283(literal) 
 msgid "FOR EACH STATEMENT"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:286(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:286(para) 
 msgid "This specifies whether the trigger procedure should be fired once for every row affected by the trigger event, or just once per SQL statement. If neither is specified, <literal>FOR EACH STATEMENT</literal> is the default. Constraint triggers can only be specified <literal>FOR EACH ROW</literal>."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:299(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:299(para) 
 msgid "A Boolean expression that determines whether the trigger function will actually be executed. If <literal>WHEN</literal> is specified, the function will only be called if the <replaceable class=\"parameter\">condition</replaceable> returns <literal>true</literal>. In <literal>FOR EACH ROW</literal> triggers, the <literal>WHEN</literal> condition can refer to columns of the old and/or new row values by writing <literal>OLD.<replaceable class=\"parameter\">column_name</replaceable></literal> or <literal>NEW.<replaceable class=\"parameter\">column_name</replaceable></literal> respectively. Of course, <literal>INSERT</literal> triggers cannot refer to <literal>OLD</literal> and <literal>DELETE</literal> triggers cannot refer to <literal>NEW</literal>."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:314(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:314(para) 
 msgid "<literal>INSTEAD OF</literal> triggers do not support <literal>WHEN</literal> conditions."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:318(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:318(para) 
 msgid "Currently, <literal>WHEN</literal> expressions cannot contain subqueries."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:323(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:323(para) 
 msgid "Note that for constraint triggers, evaluation of the <literal>WHEN</literal> condition is not deferred, but occurs immediately after the row update operation is performed. If the condition does not evaluate to true then the trigger is not queued for deferred execution."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:335(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:335(para) 
 msgid "A user-supplied function that is declared as taking no arguments and returning type <literal>trigger</literal>, which is executed when the trigger fires."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:346(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:346(para) 
 msgid "An optional comma-separated list of arguments to be provided to the function when the trigger is executed. The arguments are literal string constants. Simple names and numeric constants can be written here, too, but they will all be converted to strings. Please check the description of the implementation language of the trigger function to find out how these arguments can be accessed within the function; it might be different from normal function arguments."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:362(title) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:362(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:364(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:364(para) 
 msgid "To create a trigger on a table, the user must have the <literal>TRIGGER</literal> privilege on the table."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:369(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:369(para) 
 msgid "Use <xref linkend=\"sql-droptrigger\"/> to remove a trigger."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:373(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:373(para) 
 msgid "A column-specific trigger (one defined using the <literal>UPDATE OF <replaceable>column_name</replaceable></literal> syntax) will fire when any of its columns are listed as targets in the <command>UPDATE</command> command's <literal>SET</literal> list. It is possible for a column's value to change even when the trigger is not fired, because changes made to the row's contents by <literal>BEFORE UPDATE</literal> triggers are not considered. Conversely, a command such as <literal>UPDATE ... SET x = x ...</literal> will fire a trigger on column <literal>x</literal>, even though the column's value did not change."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:385(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:385(para) 
 msgid "In a <literal>BEFORE</literal> trigger, the <literal>WHEN</literal> condition is evaluated just before the function is or would be executed, so using <literal>WHEN</literal> is not materially different from testing the same condition at the beginning of the trigger function. Note in particular that the <literal>NEW</literal> row seen by the condition is the current value, as possibly modified by earlier triggers. Also, a <literal>BEFORE</literal> trigger's <literal>WHEN</literal> condition is not allowed to examine the system columns of the <literal>NEW</literal> row (such as <literal>oid</literal>), because those won't have been set yet."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:397(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:397(para) 
 msgid "In an <literal>AFTER</literal> trigger, the <literal>WHEN</literal> condition is evaluated just after the row update occurs, and it determines whether an event is queued to fire the trigger at the end of statement. So when an <literal>AFTER</literal> trigger's <literal>WHEN</literal> condition does not return true, it is not necessary to queue an event nor to re-fetch the row at end of statement. This can result in significant speedups in statements that modify many rows, if the trigger only needs to be fired for a few of the rows."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:408(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:408(para) 
 msgid "In <productname>PostgreSQL</productname> versions before 7.3, it was necessary to declare trigger functions as returning the placeholder type <type>opaque</type>, rather than <type>trigger</type>. To support loading of old dump files, <command>CREATE TRIGGER</command> will accept a function declared as returning <type>opaque</type>, but it will issue a notice and change the function's declared return type to <type>trigger</type>."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:419(title) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:419(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:425(programlisting) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:425(programlisting) 
 #, no-wrap
 msgid "\nCREATE TRIGGER check_update\n    BEFORE UPDATE ON accounts\n    FOR EACH ROW\n    EXECUTE PROCEDURE check_account_update();\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:435(programlisting) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:435(programlisting) 
 #, no-wrap
 msgid "\nCREATE TRIGGER check_update\n    BEFORE UPDATE OF balance ON accounts\n    FOR EACH ROW\n    EXECUTE PROCEDURE check_account_update();\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:445(programlisting) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:445(programlisting) 
 #, no-wrap
 msgid "\nCREATE TRIGGER check_update\n    BEFORE UPDATE ON accounts\n    FOR EACH ROW\n    WHEN (OLD.balance IS DISTINCT FROM NEW.balance)\n    EXECUTE PROCEDURE check_account_update();\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:456(programlisting) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:456(programlisting) 
 #, no-wrap
 msgid "\nCREATE TRIGGER log_update\n    AFTER UPDATE ON accounts\n    FOR EACH ROW\n    WHEN (OLD.* IS DISTINCT FROM NEW.*)\n    EXECUTE PROCEDURE log_account_update();\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:467(programlisting) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:467(programlisting) 
 #, no-wrap
 msgid "\nCREATE TRIGGER view_insert\n    INSTEAD OF INSERT ON my_view\n    FOR EACH ROW\n    EXECUTE PROCEDURE view_insert_row();\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:421(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:421(para) 
 msgid "Execute the function <function>check_account_update</function> whenever a row of the table <literal>accounts</literal> is about to be updated: <placeholder-1/> The same, but only execute the function if column <literal>balance</literal> is specified as a target in the <command>UPDATE</command> command: <placeholder-2/> This form only executes the function if column <literal>balance</literal> has in fact changed value: <placeholder-3/> Call a function to log updates of <literal>accounts</literal>, but only if something changed: <placeholder-4/> Execute the function <function>view_insert_row</function> for each row to insert rows into the tables underlying a view: <placeholder-5/>"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:475(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:475(para) 
 msgid "<xref linkend=\"trigger-example\"/> contains a complete example of a trigger function written in C."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:482(title) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:482(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:491(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:491(para) 
 msgid "SQL allows you to define aliases for the <quote>old</quote> and <quote>new</quote> rows or tables for use in the definition of the triggered action (e.g., <literal>CREATE TRIGGER ... ON tablename REFERENCING OLD ROW AS somename NEW ROW AS othername ...</literal>). Since <productname>PostgreSQL</productname> allows trigger procedures to be written in any number of user-defined languages, access to the data is handled in a language-specific way."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:504(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:504(para) 
 msgid "<productname>PostgreSQL</productname> only allows the execution of a user-defined function for the triggered action. The standard allows the execution of a number of other SQL commands, such as <command>CREATE TABLE</command>, as the triggered action. This limitation is not hard to work around by creating a user-defined function that executes the desired commands."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:484(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:484(para) 
 msgid "The <command>CREATE TRIGGER</command> statement in <productname>PostgreSQL</productname> implements a subset of the <acronym>SQL</acronym> standard. The following functionality is currently missing: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:516(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:516(para) 
 msgid "SQL specifies that multiple triggers should be fired in time-of-creation order. <productname>PostgreSQL</productname> uses name order, which was judged to be more convenient."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:522(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:522(para) 
 msgid "SQL specifies that <literal>BEFORE DELETE</literal> triggers on cascaded deletes fire <emphasis>after</emphasis> the cascaded <literal>DELETE</literal> completes. The <productname>PostgreSQL</productname> behavior is for <literal>BEFORE DELETE</literal> to always fire before the delete action, even a cascading one. This is considered more consistent. There is also nonstandard behavior if <literal>BEFORE</literal> triggers modify rows or prevent updates during an update that is caused by a referential action. This can lead to constraint violations or stored data that does not honor the referential constraint."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:534(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:534(para) 
 msgid "The ability to specify multiple actions for a single trigger using <literal>OR</literal> is a <productname>PostgreSQL</productname> extension of the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:540(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:540(para) 
 msgid "The ability to fire triggers for <command>TRUNCATE</command> is a <productname>PostgreSQL</productname> extension of the SQL standard, as is the ability to define statement-level triggers on views."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:546(para) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:546(para) 
 msgid "<command>CREATE CONSTRAINT TRIGGER</command> is a <productname>PostgreSQL</productname> extension of the <acronym>SQL</acronym> standard."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:555(title) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:555(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-fBJf/ref/create_trigger.xml:0(None) 
+#: /tmp/cicero-vPox/ref/create_trigger.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

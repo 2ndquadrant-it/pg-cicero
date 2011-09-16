@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-15 06:57+0200\n"
+"POT-Creation-Date: 2011-09-16 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,111 +9,111 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:9(refentrytitle) /tmp/cicero-fBJf/ref/unlisten.xml:15(refname) /tmp/cicero-fBJf/ref/unlisten.xml:20(primary) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:9(refentrytitle) /tmp/cicero-vPox/ref/unlisten.xml:15(refname) /tmp/cicero-vPox/ref/unlisten.xml:20(primary) 
 msgid "UNLISTEN"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:10(manvolnum) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:11(refmiscinfo) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:16(refpurpose) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:16(refpurpose) 
 msgid "stop listening for a notification"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:25(replaceable) /tmp/cicero-fBJf/ref/unlisten.xml:56(replaceable) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:25(replaceable) /tmp/cicero-vPox/ref/unlisten.xml:56(replaceable) 
 msgid "channel"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:24(synopsis) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:24(synopsis) 
 #, no-wrap
 msgid "\nUNLISTEN { <placeholder-1/> | * }\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:30(title) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:32(para) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:32(para) 
 msgid "<command>UNLISTEN</command> is used to remove an existing registration for <command>NOTIFY</command> events. <command>UNLISTEN</command> cancels any existing registration of the current <productname>PostgreSQL</productname> session as a listener on the notification channel named <replaceable class=\"PARAMETER\">channel</replaceable>. The special wildcard <literal>*</literal> cancels all listener registrations for the current session."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:43(para) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:43(para) 
 msgid "<xref linkend=\"sql-notify\"/> contains a more extensive discussion of the use of <command>LISTEN</command> and <command>NOTIFY</command>."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:52(title) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:52(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:58(para) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:58(para) 
 msgid "Name of a notification channel (any identifier)."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:65(literal) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:65(literal) 
 msgid "*"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:67(para) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:67(para) 
 msgid "All current listen registrations for this session are cleared."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:76(title) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:76(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:78(para) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:78(para) 
 msgid "You can unlisten something you were not listening for; no warning or error will appear."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:83(para) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:83(para) 
 msgid "At the end of each session, <command>UNLISTEN *</command> is automatically executed."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:88(para) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:88(para) 
 msgid "A transaction that has executed <command>UNLISTEN</command> cannot be prepared for two-phase commit."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:95(title) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:95(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:100(programlisting) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:100(programlisting) 
 #, no-wrap
 msgid "\nLISTEN virtual;\nNOTIFY virtual;\nAsynchronous notification \"virtual\" received from server process with PID 8448.\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:97(para) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:97(para) 
 msgid "To make a registration: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:111(programlisting) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:111(programlisting) 
 #, no-wrap
 msgid "\nUNLISTEN virtual;\nNOTIFY virtual;\n-- no NOTIFY event is received\n"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:107(para) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:107(para) 
 msgid "Once <command>UNLISTEN</command> has been executed, further <command>NOTIFY</command> messages will be ignored: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:119(title) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:119(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:121(para) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:121(para) 
 msgid "There is no <command>UNLISTEN</command> command in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-fBJf/ref/unlisten.xml:127(title) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:127(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-fBJf/ref/unlisten.xml:0(None) 
+#: /tmp/cicero-vPox/ref/unlisten.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
