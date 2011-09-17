@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-16 06:59+0200\n"
+"POT-Creation-Date: 2011-09-17 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,56 +9,56 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-fQdk/reference.xml:5(title) 
+#: /tmp/cicero-VjwJ/reference.xml:5(title) 
 msgid "Reference"
 msgstr ""
 
-#: /tmp/cicero-fQdk/reference.xml:8(para) 
+#: /tmp/cicero-VjwJ/reference.xml:8(para) 
 msgid "The entries in this Reference are meant to provide in reasonable length an authoritative, complete, and formal summary about their respective subjects. More information about the use of <productname>PostgreSQL</productname>, in narrative, tutorial, or example form, can be found in other parts of this book. See the cross-references listed on each reference page."
 msgstr ""
 
-#: /tmp/cicero-fQdk/reference.xml:17(para) 
+#: /tmp/cicero-VjwJ/reference.xml:17(para) 
 msgid "The reference entries are also available as traditional <quote>man</quote> pages."
 msgstr ""
 
-#: /tmp/cicero-fQdk/reference.xml:24(title) 
+#: /tmp/cicero-VjwJ/reference.xml:24(title) 
 msgid "SQL Commands"
 msgstr ""
 
-#: /tmp/cicero-fQdk/reference.xml:27(para) 
+#: /tmp/cicero-VjwJ/reference.xml:27(para) 
 msgid "This part contains reference information for the <acronym>SQL</acronym> commands supported by <productname>PostgreSQL</productname>. By <quote>SQL</quote> the language in general is meant; information about the standards conformance and compatibility of each command can be found on the respective reference page."
 msgstr ""
 
-#: /tmp/cicero-fQdk/reference.xml:23(reference) 
+#: /tmp/cicero-VjwJ/reference.xml:23(reference) 
 msgid "<placeholder-1/><placeholder-2/> &abort; &alterAggregate; &alterCollation; &alterConversion; &alterDatabase; &alterDefaultPrivileges; &alterDomain; &alterExtension; &alterForeignDataWrapper; &alterForeignTable; &alterFunction; &alterGroup; &alterIndex; &alterLanguage; &alterLargeObject; &alterOperator; &alterOperatorClass; &alterOperatorFamily; &alterRole; &alterSchema; &alterSequence; &alterServer; &alterTable; &alterTableSpace; &alterTSConfig; &alterTSDictionary; &alterTSParser; &alterTSTemplate; &alterTrigger; &alterType; &alterUser; &alterUserMapping; &alterView; &analyze; &begin; &checkpoint; &close; &cluster; &commentOn; &commit; &commitPrepared; &copyTable; &createAggregate; &createCast; &createCollation; &createConversion; &createDatabase; &createDomain; &createExtension; &createForeignDataWrapper; &createForeignTable; &createFunction; &createGroup; &createIndex; &createLanguage; &createOperator; &createOperatorClass; &createOperatorFamily; &createRole; &createRule; &createSchema; &createSequence; &createServer; &createTable; &createTableAs; &createTableSpace; &createTSConfig; &createTSDictionary; &createTSParser; &createTSTemplate; &createTrigger; &createType; &createUser; &createUserMapping; &createView; &deallocate; &declare; &delete; &discard; &do; &dropAggregate; &dropCast; &dropCollation; &dropConversion; &dropDatabase; &dropDomain; &dropExtension; &dropForeignDataWrapper; &dropForeignTable; &dropFunction; &dropGroup; &dropIndex; &dropLanguage; &dropOperator; &dropOperatorClass; &dropOperatorFamily; &dropOwned; &dropRole; &dropRule; &dropSchema; &dropSequence; &dropServer; &dropTable; &dropTableSpace; &dropTSConfig; &dropTSDictionary; &dropTSParser; &dropTSTemplate; &dropTrigger; &dropType; &dropUser; &dropUserMapping; &dropView; &end; &execute; &explain; &fetch; &grant; &insert; &listen; &load; &lock; &move; &notify; &prepare; &prepareTransaction; &reassignOwned; &reindex; &releaseSavepoint; &reset; &revoke; &rollback; &rollbackPrepared; &rollbackTo; &savepoint; &securityLabel; &select; &selectInto; &set; &setConstraints; &setRole; &setSessionAuth; &setTransaction; &show; &startTransaction; &truncate; &unlisten; &update; &vacuum; &values;"
 msgstr ""
 
-#: /tmp/cicero-fQdk/reference.xml:191(title) 
+#: /tmp/cicero-VjwJ/reference.xml:191(title) 
 msgid "PostgreSQL Client Applications"
 msgstr ""
 
-#: /tmp/cicero-fQdk/reference.xml:194(para) 
+#: /tmp/cicero-VjwJ/reference.xml:194(para) 
 msgid "This part contains reference information for <productname>PostgreSQL</productname> client applications and utilities. Not all of these commands are of general utility; some might require special privileges. The common feature of these applications is that they can be run on any host, independent of where the database server resides."
 msgstr ""
 
-#: /tmp/cicero-fQdk/reference.xml:190(reference) 
+#: /tmp/cicero-VjwJ/reference.xml:190(reference) 
 msgid "<placeholder-1/><placeholder-2/> &clusterdb; &createdb; &createlang; &createuser; &dropdb; &droplang; &dropuser; &ecpgRef; &pgBasebackup; &pgConfig; &pgDump; &pgDumpall; &pgRestore; &psqlRef; &reindexdb; &vacuumdb;"
 msgstr ""
 
-#: /tmp/cicero-fQdk/reference.xml:224(title) 
+#: /tmp/cicero-VjwJ/reference.xml:224(title) 
 msgid "PostgreSQL Server Applications"
 msgstr ""
 
-#: /tmp/cicero-fQdk/reference.xml:227(para) 
+#: /tmp/cicero-VjwJ/reference.xml:227(para) 
 msgid "This part contains reference information for <productname>PostgreSQL</productname> server applications and support utilities. These commands can only be run usefully on the host where the database server resides. Other utility programs are listed in <xref linkend=\"reference-client\"/>."
 msgstr ""
 
-#: /tmp/cicero-fQdk/reference.xml:223(reference) 
+#: /tmp/cicero-VjwJ/reference.xml:223(reference) 
 msgid "<placeholder-1/><placeholder-2/> &initdb; &pgControldata; &pgCtl; &pgResetxlog; &postgres; &postmaster;"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-fQdk/reference.xml:0(None) 
+#: /tmp/cicero-VjwJ/reference.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
