@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-16 06:56+0200\n"
+"POT-Creation-Date: 2011-09-17 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,189 +9,189 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:5(title) /tmp/cicero-vPox/pgbuffercache.xml:8(primary) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:5(title) /tmp/cicero-eQvn/pgbuffercache.xml:8(primary) 
 msgid "pg_buffercache"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:11(para) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:11(para) 
 msgid "The <filename>pg_buffercache</filename> module provides a means for examining what's happening in the shared buffer cache in real time."
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:16(para) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:16(para) 
 msgid "The module provides a C function <function>pg_buffercache_pages</function> that returns a set of records, plus a view <structname>pg_buffercache</structname> that wraps the function for convenient use."
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:23(para) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:23(para) 
 msgid "By default public access is revoked from both of these, just in case there are security issues lurking."
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:29(title) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:29(title) 
 msgid "The <structname>pg_buffercache</structname> View"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:31(para) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:31(para) 
 msgid "The definitions of the columns exposed by the view are shown in <xref linkend=\"pgbuffercache-columns\"/>."
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:36(title) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:36(title) 
 msgid "<structname>pg_buffercache</structname> Columns"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:41(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:41(entry) 
 msgid "Name"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:42(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:42(entry) 
 msgid "Type"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:43(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:43(entry) 
 msgid "References"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:44(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:44(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:50(structfield) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:50(structfield) 
 msgid "bufferid"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:51(type) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:51(type) 
 msgid "integer"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:53(varname) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:53(varname) 
 msgid "shared_buffers"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:53(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:53(entry) 
 msgid "ID, in the range 1..<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:57(structfield) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:57(structfield) 
 msgid "relfilenode"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:58(type) /tmp/cicero-vPox/pgbuffercache.xml:65(type) /tmp/cicero-vPox/pgbuffercache.xml:72(type) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:58(type) /tmp/cicero-eQvn/pgbuffercache.xml:65(type) /tmp/cicero-eQvn/pgbuffercache.xml:72(type) 
 msgid "oid"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:59(literal) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:59(literal) 
 msgid "pg_class.relfilenode"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:60(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:60(entry) 
 msgid "Filenode number of the relation"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:64(structfield) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:64(structfield) 
 msgid "reltablespace"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:66(literal) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:66(literal) 
 msgid "pg_tablespace.oid"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:67(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:67(entry) 
 msgid "Tablespace OID of the relation"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:71(structfield) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:71(structfield) 
 msgid "reldatabase"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:73(literal) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:73(literal) 
 msgid "pg_database.oid"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:74(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:74(entry) 
 msgid "Database OID of the relation"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:78(structfield) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:78(structfield) 
 msgid "relblocknumber"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:79(type) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:79(type) 
 msgid "bigint"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:81(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:81(entry) 
 msgid "Page number within the relation"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:85(structfield) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:85(structfield) 
 msgid "relforknumber"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:86(type) /tmp/cicero-vPox/pgbuffercache.xml:100(type) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:86(type) /tmp/cicero-eQvn/pgbuffercache.xml:100(type) 
 msgid "smallint"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:88(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:88(entry) 
 msgid "Fork number within the relation"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:92(structfield) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:92(structfield) 
 msgid "isdirty"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:93(type) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:93(type) 
 msgid "boolean"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:95(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:95(entry) 
 msgid "Is the page dirty?"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:99(structfield) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:99(structfield) 
 msgid "usagecount"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:102(entry) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:102(entry) 
 msgid "Page LRU count"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:109(para) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:109(para) 
 msgid "There is one row for each buffer in the shared cache. Unused buffers are shown with all fields null except <structfield>bufferid</structfield>. Shared system catalogs are shown as belonging to database zero."
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:115(para) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:115(para) 
 msgid "Because the cache is shared by all the databases, there will normally be pages from relations not belonging to the current database. This means that there may not be matching join rows in <structname>pg_class</structname> for some rows, or that there could even be incorrect joins. If you are trying to join against <structname>pg_class</structname>, it's a good idea to restrict the join to rows having <structfield>reldatabase</structfield> equal to the current database's OID or zero."
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:125(para) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:125(para) 
 msgid "When the <structname>pg_buffercache</structname> view is accessed, internal buffer manager locks are taken for long enough to copy all the buffer state data that the view will display. This ensures that the view produces a consistent set of results, while not blocking normal buffer activity longer than necessary. Nonetheless there could be some impact on database performance if this view is read often."
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:136(title) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:136(title) 
 msgid "Sample Output"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:138(screen) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:138(screen) 
 #, no-wrap
 msgid "\nregression=# SELECT c.relname, count(*) AS buffers\n             FROM pg_buffercache b INNER JOIN pg_class c\n             ON b.relfilenode = pg_relation_filenode(c.oid) AND\n                b.reldatabase IN (0, (SELECT oid FROM pg_database\n                                      WHERE datname = current_database()))\n             GROUP BY c.relname\n             ORDER BY 2 DESC\n             LIMIT 10;\n\n             relname             | buffers\n---------------------------------+---------\n tenk2                           |     345\n tenk1                           |     141\n pg_proc                         |      46\n pg_class                        |      45\n pg_attribute                    |      43\n pg_class_relname_nsp_index      |      30\n pg_proc_proname_args_nsp_index  |      28\n pg_attribute_relid_attnam_index |      26\n pg_depend                       |      22\n pg_depend_reference_index       |      20\n(10 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:165(title) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:165(title) 
 msgid "Authors"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:167(para) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:167(para) 
 msgid "Mark Kirkwood <email>markir@paradise.net.nz</email>"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:171(para) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:171(para) 
 msgid "Design suggestions: Neil Conway <email>neilc@samurai.com</email>"
 msgstr ""
 
-#: /tmp/cicero-vPox/pgbuffercache.xml:175(para) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:175(para) 
 msgid "Debugging advice: Tom Lane <email>tgl@sss.pgh.pa.us</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-vPox/pgbuffercache.xml:0(None) 
+#: /tmp/cicero-eQvn/pgbuffercache.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

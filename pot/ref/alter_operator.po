@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-16 06:57+0200\n"
+"POT-Creation-Date: 2011-09-17 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,110 +9,110 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:9(refentrytitle) /tmp/cicero-vPox/ref/alter_operator.xml:15(refname) /tmp/cicero-vPox/ref/alter_operator.xml:20(primary) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:9(refentrytitle) /tmp/cicero-eQvn/ref/alter_operator.xml:15(refname) /tmp/cicero-eQvn/ref/alter_operator.xml:20(primary) 
 msgid "ALTER OPERATOR"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:10(manvolnum) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:11(refmiscinfo) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:16(refpurpose) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:16(refpurpose) 
 msgid "change the definition of an operator"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:25(replaceable) /tmp/cicero-vPox/ref/alter_operator.xml:26(replaceable) /tmp/cicero-vPox/ref/alter_operator.xml:54(replaceable) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:25(replaceable) /tmp/cicero-eQvn/ref/alter_operator.xml:26(replaceable) /tmp/cicero-eQvn/ref/alter_operator.xml:54(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:25(replaceable) /tmp/cicero-vPox/ref/alter_operator.xml:26(replaceable) /tmp/cicero-vPox/ref/alter_operator.xml:63(replaceable) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:25(replaceable) /tmp/cicero-eQvn/ref/alter_operator.xml:26(replaceable) /tmp/cicero-eQvn/ref/alter_operator.xml:63(replaceable) 
 msgid "left_type"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:25(replaceable) /tmp/cicero-vPox/ref/alter_operator.xml:26(replaceable) /tmp/cicero-vPox/ref/alter_operator.xml:73(replaceable) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:25(replaceable) /tmp/cicero-eQvn/ref/alter_operator.xml:26(replaceable) /tmp/cicero-eQvn/ref/alter_operator.xml:73(replaceable) 
 msgid "right_type"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:25(replaceable) /tmp/cicero-vPox/ref/alter_operator.xml:83(replaceable) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:25(replaceable) /tmp/cicero-eQvn/ref/alter_operator.xml:83(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:26(replaceable) /tmp/cicero-vPox/ref/alter_operator.xml:92(replaceable) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:26(replaceable) /tmp/cicero-eQvn/ref/alter_operator.xml:92(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:24(synopsis) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER OPERATOR <placeholder-1/> ( { <placeholder-2/> | NONE } , { <placeholder-3/> | NONE } ) OWNER TO <placeholder-4/>\nALTER OPERATOR <placeholder-5/> ( { <placeholder-6/> | NONE } , { <placeholder-7/> | NONE } ) SET SCHEMA <placeholder-8/>\n"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:31(title) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:33(para) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:33(para) 
 msgid "<command>ALTER OPERATOR</command> changes the definition of an operator. The only currently available functionality is to change the owner of the operator."
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:39(para) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:39(para) 
 msgid "You must own the operator to use <command>ALTER OPERATOR</command>. To alter the owner, you must also be a direct or indirect member of the new owning role, and that role must have <literal>CREATE</literal> privilege on the operator's schema. (These restrictions enforce that altering the owner doesn't do anything you couldn't do by dropping and recreating the operator. However, a superuser can alter ownership of any operator anyway.)"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:50(title) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:50(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:56(para) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:56(para) 
 msgid "The name (optionally schema-qualified) of an existing operator."
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:65(para) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:65(para) 
 msgid "The data type of the operator's left operand; write <literal>NONE</literal> if the operator has no left operand."
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:75(para) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:75(para) 
 msgid "The data type of the operator's right operand; write <literal>NONE</literal> if the operator has no right operand."
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:85(para) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:85(para) 
 msgid "The new owner of the operator."
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:94(para) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:94(para) 
 msgid "The new schema for the operator."
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:103(title) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:103(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:107(programlisting) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:107(programlisting) 
 #, no-wrap
 msgid "\nALTER OPERATOR @@ (text, text) OWNER TO joe;\n"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:105(para) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:105(para) 
 msgid "Change the owner of a custom operator <literal>a @@ b</literal> for type <type>text</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:113(title) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:113(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:115(para) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:115(para) 
 msgid "There is no <command>ALTER OPERATOR</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/alter_operator.xml:122(title) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:122(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-vPox/ref/alter_operator.xml:0(None) 
+#: /tmp/cicero-eQvn/ref/alter_operator.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

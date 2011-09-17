@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-16 06:57+0200\n"
+"POT-Creation-Date: 2011-09-17 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,53 +9,53 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-vPox/ref/drop_user.xml:9(refentrytitle) /tmp/cicero-vPox/ref/drop_user.xml:15(refname) /tmp/cicero-vPox/ref/drop_user.xml:20(primary) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:9(refentrytitle) /tmp/cicero-eQvn/ref/drop_user.xml:15(refname) /tmp/cicero-eQvn/ref/drop_user.xml:20(primary) 
 msgid "DROP USER"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/drop_user.xml:10(manvolnum) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/drop_user.xml:11(refmiscinfo) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/drop_user.xml:16(refpurpose) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:16(refpurpose) 
 msgid "remove a database role"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/drop_user.xml:25(replaceable) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:25(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/drop_user.xml:24(synopsis) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:24(synopsis) 
 #, no-wrap
 msgid "\nDROP USER [ IF EXISTS ] <placeholder-1/> [, ...]\n"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/drop_user.xml:30(title) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/drop_user.xml:32(para) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:32(para) 
 msgid "<command>DROP USER</command> is now an alias for <xref linkend=\"sql-droprole\"/>."
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/drop_user.xml:39(title) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:39(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/drop_user.xml:41(para) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:41(para) 
 msgid "The <command>DROP USER</command> statement is a <productname>PostgreSQL</productname> extension. The SQL standard leaves the definition of users to the implementation."
 msgstr ""
 
-#: /tmp/cicero-vPox/ref/drop_user.xml:49(title) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:49(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-vPox/ref/drop_user.xml:0(None) 
+#: /tmp/cicero-eQvn/ref/drop_user.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
