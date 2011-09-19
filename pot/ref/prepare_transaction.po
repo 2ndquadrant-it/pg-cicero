@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-18 06:57+0200\n"
+"POT-Creation-Date: 2011-09-19 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,110 +9,110 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:9(refentrytitle) /tmp/cicero-VxSg/ref/prepare_transaction.xml:15(refname) /tmp/cicero-VxSg/ref/prepare_transaction.xml:20(primary) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:9(refentrytitle) /tmp/cicero-dOlG/ref/prepare_transaction.xml:15(refname) /tmp/cicero-dOlG/ref/prepare_transaction.xml:20(primary) 
 msgid "PREPARE TRANSACTION"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:10(manvolnum) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:11(refmiscinfo) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:16(refpurpose) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:16(refpurpose) 
 msgid "prepare the current transaction for two-phase commit"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:25(replaceable) /tmp/cicero-VxSg/ref/prepare_transaction.xml:69(replaceable) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:25(replaceable) /tmp/cicero-dOlG/ref/prepare_transaction.xml:69(replaceable) 
 msgid "transaction_id"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:24(synopsis) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:24(synopsis) 
 #, no-wrap
 msgid "\nPREPARE TRANSACTION <placeholder-1/>\n"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:30(title) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:32(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:32(para) 
 msgid "<command>PREPARE TRANSACTION</command> prepares the current transaction for two-phase commit. After this command, the transaction is no longer associated with the current session; instead, its state is fully stored on disk, and there is a very high probability that it can be committed successfully, even if a database crash occurs before the commit is requested."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:41(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:41(para) 
 msgid "Once prepared, a transaction can later be committed or rolled back with <xref linkend=\"sql-commit-prepared\"/> or <xref linkend=\"sql-rollback-prepared\"/>, respectively. Those commands can be issued from any session, not only the one that executed the original transaction."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:49(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:49(para) 
 msgid "From the point of view of the issuing session, <command>PREPARE TRANSACTION</command> is not unlike a <command>ROLLBACK</command> command: after executing it, there is no active current transaction, and the effects of the prepared transaction are no longer visible. (The effects will become visible again if the transaction is committed.)"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:57(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:57(para) 
 msgid "If the <command>PREPARE TRANSACTION</command> command fails for any reason, it becomes a <command>ROLLBACK</command>: the current transaction is canceled."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:65(title) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:65(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:71(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:71(para) 
 msgid "An arbitrary identifier that later identifies this transaction for <command>COMMIT PREPARED</command> or <command>ROLLBACK PREPARED</command>. The identifier must be written as a string literal, and must be less than 200 bytes long. It must not be the same as the identifier used for any currently prepared transaction."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:84(title) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:84(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:86(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:86(para) 
 msgid "<command>PREPARE TRANSACTION</command> is not intended for use in applications or interactive sessions. Its purpose is to allow an external transaction manager to perform atomic global transactions across multiple databases or other transactional resources. Unless you're writing a transaction manager, you probably shouldn't be using <command>PREPARE TRANSACTION</command>."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:95(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:95(para) 
 msgid "This command must be used inside a transaction block. Use <xref linkend=\"sql-begin\"/> to start one."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:100(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:100(para) 
 msgid "It is not currently allowed to <command>PREPARE</command> a transaction that has executed any operations involving temporary tables, created any cursors <literal>WITH HOLD</literal>, or executed <command>LISTEN</command> or <command>UNLISTEN</command>. Those features are too tightly tied to the current session to be useful in a transaction to be prepared."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:109(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:109(para) 
 msgid "If the transaction modified any run-time parameters with <command>SET</command> (without the <literal>LOCAL</literal> option), those effects persist after <command>PREPARE TRANSACTION</command>, and will not be affected by any later <command>COMMIT PREPARED</command> or <command>ROLLBACK PREPARED</command>. Thus, in this one respect <command>PREPARE TRANSACTION</command> acts more like <command>COMMIT</command> than <command>ROLLBACK</command>."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:119(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:119(para) 
 msgid "All currently available prepared transactions are listed in the <link linkend=\"view-pg-prepared-xacts\"><structname>pg_prepared_xacts</structname></link> system view."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:126(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:126(para) 
 msgid "It is unwise to leave transactions in the prepared state for a long time. This will interfere with the ability of <command>VACUUM</command> to reclaim storage, and in extreme cases could cause the database to shut down to prevent transaction ID wraparound (see <xref linkend=\"vacuum-for-wraparound\"/>). Keep in mind also that the transaction continues to hold whatever locks it held. The intended usage of the feature is that a prepared transaction will normally be committed or rolled back as soon as an external transaction manager has verified that other databases are also prepared to commit."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:138(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:138(para) 
 msgid "If you have not set up an external transaction manager to track prepared transactions and ensure they get closed out promptly, it is best to keep the prepared-transaction feature disabled by setting <xref linkend=\"guc-max-prepared-transactions\"/> to zero. This will prevent accidental creation of prepared transactions that might then be forgotten and eventually cause problems."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:150(title) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:150(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:155(programlisting) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:155(programlisting) 
 #, no-wrap
 msgid "\nPREPARE TRANSACTION 'foobar';\n"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:151(para) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:151(para) 
 msgid "Prepare the current transaction for two-phase commit, using <literal>foobar</literal> as the transaction identifier: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:161(title) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:161(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-VxSg/ref/prepare_transaction.xml:0(None) 
+#: /tmp/cicero-dOlG/ref/prepare_transaction.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

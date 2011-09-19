@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-18 06:57+0200\n"
+"POT-Creation-Date: 2011-09-19 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,71 +9,71 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:5(title) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:5(title) 
 msgid "The Source Code Repository"
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:7(para) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:7(para) 
 msgid "The <productname>PostgreSQL</productname> source code is stored and managed using the <productname>Git</productname> version control system. A public mirror of the master repository is available; it is updated within a minute of any change to the master repository."
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:14(para) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:14(para) 
 msgid "Our wiki, <ulink url=\"http://wiki.postgresql.org/wiki/Working_with_Git\"/>, has some discussion on working with Git."
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:20(para) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:20(para) 
 msgid "Note that building <productname>PostgreSQL</productname> from the source repository requires reasonably up-to-date versions of <application>bison</application>, <application>flex</application>, and <application>Perl</application>. These tools are not needed to build from a distribution tarball since the files they are used to build are included in the tarball. Other tool requirements are the same as shown in <xref linkend=\"installation\"/>."
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:30(title) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:30(title) 
 msgid "Getting The Source via <productname>Git</productname>"
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:32(para) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:32(para) 
 msgid "With <productname>Git</productname> you will make a copy of the entire code repository on your local machine, so you will have access to all history and branches offline. This is the fastest and most flexible way to develop or test patches."
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:40(title) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:40(title) 
 msgid "Git"
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:43(para) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:43(para) 
 msgid "You will need an installed version of <productname>Git</productname>, which you can get from <ulink url=\"http://git-scm.com\"/>. Many systems already have a recent version of <application>Git</application> installed by default, or available in their package distribution system."
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:55(programlisting) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:55(programlisting) 
 #, no-wrap
 msgid "\ngit clone git://git.postgresql.org/git/postgresql.git\n"
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:52(para) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:52(para) 
 msgid "To begin using the Git repository, make a clone of the official mirror: <placeholder-1/> This will copy the full repository to your local machine, so it may take a while to complete, especially if you have a slow Internet connection. The files will be placed in a new subdirectory <filename>postgresql</filename> of your current directory."
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:70(programlisting) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:70(programlisting) 
 #, no-wrap
 msgid "\ngit clone http://git.postgresql.org/git/postgresql.git\n"
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:65(para) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:65(para) 
 msgid "The Git mirror can also be reached via the HTTP protocol, if for example a firewall is blocking access to the Git protocol. Just change the URL prefix to <literal>http</literal>, as in: <placeholder-1/> The HTTP protocol is less efficient than the Git protocol, so it will be slower to use."
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:84(programlisting) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:84(programlisting) 
 #, no-wrap
 msgid "\ngit fetch\n"
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:80(para) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:80(para) 
 msgid "Whenever you want to get the latest updates in the system, <command>cd</command> into the repository, and run: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-VxSg/sourcerepo.xml:91(para) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:91(para) 
 msgid "<productname>Git</productname> can do a lot more things than just fetch the source. For more information, consult the <productname>Git</productname> man pages, or see the website at <ulink url=\"http://git-scm.com\"/>."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-VxSg/sourcerepo.xml:0(None) 
+#: /tmp/cicero-dOlG/sourcerepo.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

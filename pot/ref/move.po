@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-18 06:57+0200\n"
+"POT-Creation-Date: 2011-09-19 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,91 +9,91 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-VxSg/ref/move.xml:9(refentrytitle) /tmp/cicero-VxSg/ref/move.xml:15(refname) /tmp/cicero-VxSg/ref/move.xml:20(primary) /tmp/cicero-VxSg/ref/move.xml:25(secondary) 
+#: /tmp/cicero-dOlG/ref/move.xml:9(refentrytitle) /tmp/cicero-dOlG/ref/move.xml:15(refname) /tmp/cicero-dOlG/ref/move.xml:20(primary) /tmp/cicero-dOlG/ref/move.xml:25(secondary) 
 msgid "MOVE"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:10(manvolnum) 
+#: /tmp/cicero-dOlG/ref/move.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:11(refmiscinfo) 
+#: /tmp/cicero-dOlG/ref/move.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:16(refpurpose) 
+#: /tmp/cicero-dOlG/ref/move.xml:16(refpurpose) 
 msgid "position a cursor"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:24(primary) 
+#: /tmp/cicero-dOlG/ref/move.xml:24(primary) 
 msgid "cursor"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:31(replaceable) /tmp/cicero-VxSg/ref/move.xml:33(replaceable) 
+#: /tmp/cicero-dOlG/ref/move.xml:31(replaceable) /tmp/cicero-dOlG/ref/move.xml:33(replaceable) 
 msgid "direction"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:31(replaceable) 
+#: /tmp/cicero-dOlG/ref/move.xml:31(replaceable) 
 msgid "cursor_name"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:33(phrase) 
+#: /tmp/cicero-dOlG/ref/move.xml:33(phrase) 
 msgid "where <placeholder-1/> can be empty or one of:"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:39(replaceable) /tmp/cicero-VxSg/ref/move.xml:40(replaceable) /tmp/cicero-VxSg/ref/move.xml:41(replaceable) /tmp/cicero-VxSg/ref/move.xml:44(replaceable) /tmp/cicero-VxSg/ref/move.xml:47(replaceable) 
+#: /tmp/cicero-dOlG/ref/move.xml:39(replaceable) /tmp/cicero-dOlG/ref/move.xml:40(replaceable) /tmp/cicero-dOlG/ref/move.xml:41(replaceable) /tmp/cicero-dOlG/ref/move.xml:44(replaceable) /tmp/cicero-dOlG/ref/move.xml:47(replaceable) 
 msgid "count"
 msgstr ""
 
 #. Note the "direction" bit is also in ref/fetch.sgml
-#: /tmp/cicero-VxSg/ref/move.xml:30(synopsis) 
+#: /tmp/cicero-dOlG/ref/move.xml:30(synopsis) 
 #, no-wrap
 msgid "\nMOVE [ <placeholder-1/> [ FROM | IN ] ] <placeholder-2/>\n\n<placeholder-3/>\n\n    NEXT\n    PRIOR\n    FIRST\n    LAST\n    ABSOLUTE <placeholder-4/>\n    RELATIVE <placeholder-5/>\n    <placeholder-6/>\n    ALL\n    FORWARD\n    FORWARD <placeholder-7/>\n    FORWARD ALL\n    BACKWARD\n    BACKWARD <placeholder-8/>\n    BACKWARD ALL\n"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:53(title) 
+#: /tmp/cicero-dOlG/ref/move.xml:53(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:55(para) 
+#: /tmp/cicero-dOlG/ref/move.xml:55(para) 
 msgid "<command>MOVE</command> repositions a cursor without retrieving any data. <command>MOVE</command> works exactly like the <command>FETCH</command> command, except it only positions the cursor and does not return rows."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:61(para) 
+#: /tmp/cicero-dOlG/ref/move.xml:61(para) 
 msgid "The parameters for the <command>MOVE</command> command are identical to those of the <command>FETCH</command> command; refer to <xref linkend=\"sql-fetch\"/> for details on syntax and usage."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:70(title) 
+#: /tmp/cicero-dOlG/ref/move.xml:70(title) 
 msgid "Outputs"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:72(para) 
+#: /tmp/cicero-dOlG/ref/move.xml:72(para) 
 msgid "On successful completion, a <command>MOVE</command> command returns a command tag of the form <screen>\nMOVE <replaceable class=\"parameter\">count</replaceable>\n</screen> The <replaceable class=\"parameter\">count</replaceable> is the number of rows that a <command>FETCH</command> command with the same parameters would have returned (possibly zero)."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:85(title) 
+#: /tmp/cicero-dOlG/ref/move.xml:85(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:87(programlisting) 
+#: /tmp/cicero-dOlG/ref/move.xml:87(programlisting) 
 #, no-wrap
 msgid "\nBEGIN WORK;\nDECLARE liahona CURSOR FOR SELECT * FROM films;\n\n-- Skip the first 5 rows:\nMOVE FORWARD 5 IN liahona;\nMOVE 5\n\n-- Fetch the 6th row from the cursor liahona:\nFETCH 1 FROM liahona;\n code  | title  | did | date_prod  |  kind  |  len\n-------+--------+-----+------------+--------+-------\n P_303 | 48 Hrs | 103 | 1982-10-22 | Action | 01:37\n(1 row)\n\n-- Close the cursor liahona and end the transaction:\nCLOSE liahona;\nCOMMIT WORK;\n"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:109(title) 
+#: /tmp/cicero-dOlG/ref/move.xml:109(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:111(para) 
+#: /tmp/cicero-dOlG/ref/move.xml:111(para) 
 msgid "There is no <command>MOVE</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-VxSg/ref/move.xml:117(title) 
+#: /tmp/cicero-dOlG/ref/move.xml:117(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-VxSg/ref/move.xml:0(None) 
+#: /tmp/cicero-dOlG/ref/move.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
