@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-19 06:56+0200\n"
+"POT-Creation-Date: 2011-09-20 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,48 +9,48 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-dOlG/errcodes.xml:5(title) /tmp/cicero-dOlG/errcodes.xml:55(title) 
+#: /tmp/cicero-zUix/errcodes.xml:5(title) /tmp/cicero-zUix/errcodes.xml:55(title) 
 msgid "<productname>PostgreSQL</productname> Error Codes"
 msgstr ""
 
-#: /tmp/cicero-dOlG/errcodes.xml:8(primary) 
+#: /tmp/cicero-zUix/errcodes.xml:8(primary) 
 msgid "error codes"
 msgstr ""
 
-#: /tmp/cicero-dOlG/errcodes.xml:9(secondary) 
+#: /tmp/cicero-zUix/errcodes.xml:9(secondary) 
 msgid "list of"
 msgstr ""
 
-#: /tmp/cicero-dOlG/errcodes.xml:12(para) 
+#: /tmp/cicero-zUix/errcodes.xml:12(para) 
 msgid "All messages emitted by the <productname>PostgreSQL</productname> server are assigned five-character error codes that follow the SQL standard's conventions for <quote>SQLSTATE</quote> codes. Applications that need to know which error condition has occurred should usually test the error code, rather than looking at the textual error message. The error codes are less likely to change across <productname>PostgreSQL</productname> releases, and also are not subject to change due to localization of error messages. Note that some, but not all, of the error codes produced by <productname>PostgreSQL</productname> are defined by the SQL standard; some additional error codes for conditions not defined by the standard have been invented or borrowed from other databases."
 msgstr ""
 
-#: /tmp/cicero-dOlG/errcodes.xml:27(para) 
+#: /tmp/cicero-zUix/errcodes.xml:27(para) 
 msgid "According to the standard, the first two characters of an error code denote a class of errors, while the last three characters indicate a specific condition within that class. Thus, an application that does not recognize the specific error code can still be able to infer what to do from the error class."
 msgstr ""
 
-#: /tmp/cicero-dOlG/errcodes.xml:35(para) 
+#: /tmp/cicero-zUix/errcodes.xml:35(para) 
 msgid "<xref linkend=\"errcodes-table\"/> lists all the error codes defined in <productname>PostgreSQL</productname> &version;. (Some are not actually used at present, but are defined by the SQL standard.) The error classes are also shown. For each error class there is a <quote>standard</quote> error code having the last three characters <literal>000</literal>. This code is used only for error conditions that fall within the class but do not have any more-specific code assigned."
 msgstr ""
 
-#: /tmp/cicero-dOlG/errcodes.xml:45(para) 
+#: /tmp/cicero-zUix/errcodes.xml:45(para) 
 msgid "The symbol shown in the column <quote>Condition Name</quote> is also the condition name to use in <application>PL/pgSQL</application>. Condition names can be written in either upper or lower case. (Note that <application>PL/pgSQL</application> does not recognize warning, as opposed to error, condition names; those are classes 00, 01, and 02.)"
 msgstr ""
 
-#: /tmp/cicero-dOlG/errcodes.xml:64(entry) 
+#: /tmp/cicero-zUix/errcodes.xml:64(entry) 
 msgid "Error Code"
 msgstr ""
 
-#: /tmp/cicero-dOlG/errcodes.xml:65(entry) 
+#: /tmp/cicero-zUix/errcodes.xml:65(entry) 
 msgid "Condition Name"
 msgstr ""
 
-#: /tmp/cicero-dOlG/errcodes.xml:69(tbody) 
+#: /tmp/cicero-zUix/errcodes.xml:69(tbody) 
 msgid "&errcodes-table;"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-dOlG/errcodes.xml:0(None) 
+#: /tmp/cicero-zUix/errcodes.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
