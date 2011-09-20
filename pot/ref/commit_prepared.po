@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-19 06:59+0200\n"
+"POT-Creation-Date: 2011-09-20 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,82 +9,82 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:9(refentrytitle) /tmp/cicero-TiEF/ref/commit_prepared.xml:15(refname) /tmp/cicero-TiEF/ref/commit_prepared.xml:20(primary) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:9(refentrytitle) /tmp/cicero-eMpW/ref/commit_prepared.xml:15(refname) /tmp/cicero-eMpW/ref/commit_prepared.xml:20(primary) 
 msgid "COMMIT PREPARED"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:10(manvolnum) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:11(refmiscinfo) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:16(refpurpose) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:16(refpurpose) 
 msgid "commit a transaction that was earlier prepared for two-phase commit"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:25(replaceable) /tmp/cicero-TiEF/ref/commit_prepared.xml:43(replaceable) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:25(replaceable) /tmp/cicero-eMpW/ref/commit_prepared.xml:43(replaceable) 
 msgid "transaction_id"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:24(synopsis) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCOMMIT PREPARED <placeholder-1/>\n"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:30(title) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:32(para) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:32(para) 
 msgid "<command>COMMIT PREPARED</command> commits a transaction that is in prepared state."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:39(title) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:39(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:45(para) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:45(para) 
 msgid "The transaction identifier of the transaction that is to be committed."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:55(title) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:55(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:57(para) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:57(para) 
 msgid "To commit a prepared transaction, you must be either the same user that executed the transaction originally, or a superuser. But you do not have to be in the same session that executed the transaction."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:63(para) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:63(para) 
 msgid "This command cannot be executed inside a transaction block. The prepared transaction is committed immediately."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:68(para) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:68(para) 
 msgid "All currently available prepared transactions are listed in the <link linkend=\"view-pg-prepared-xacts\"><structname>pg_prepared_xacts</structname></link> system view."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:76(title) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:76(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:81(programlisting) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:81(programlisting) 
 #, no-wrap
 msgid "\nCOMMIT PREPARED 'foobar';\n"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:77(para) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:77(para) 
 msgid "Commit the transaction identified by the transaction identifier <literal>foobar</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:88(title) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:88(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-TiEF/ref/commit_prepared.xml:0(None) 
+#: /tmp/cicero-eMpW/ref/commit_prepared.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

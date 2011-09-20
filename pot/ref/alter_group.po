@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-19 06:59+0200\n"
+"POT-Creation-Date: 2011-09-20 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,103 +9,103 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:9(refentrytitle) /tmp/cicero-TiEF/ref/alter_group.xml:15(refname) /tmp/cicero-TiEF/ref/alter_group.xml:20(primary) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:9(refentrytitle) /tmp/cicero-eMpW/ref/alter_group.xml:15(refname) /tmp/cicero-eMpW/ref/alter_group.xml:20(primary) 
 msgid "ALTER GROUP"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:10(manvolnum) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:11(refmiscinfo) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:16(refpurpose) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:16(refpurpose) 
 msgid "change role name or membership"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:25(replaceable) /tmp/cicero-TiEF/ref/alter_group.xml:26(replaceable) /tmp/cicero-TiEF/ref/alter_group.xml:28(replaceable) /tmp/cicero-TiEF/ref/alter_group.xml:64(replaceable) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:25(replaceable) /tmp/cicero-eMpW/ref/alter_group.xml:26(replaceable) /tmp/cicero-eMpW/ref/alter_group.xml:28(replaceable) /tmp/cicero-eMpW/ref/alter_group.xml:64(replaceable) 
 msgid "group_name"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:25(replaceable) /tmp/cicero-TiEF/ref/alter_group.xml:26(replaceable) /tmp/cicero-TiEF/ref/alter_group.xml:73(replaceable) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:25(replaceable) /tmp/cicero-eMpW/ref/alter_group.xml:26(replaceable) /tmp/cicero-eMpW/ref/alter_group.xml:73(replaceable) 
 msgid "user_name"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:28(replaceable) /tmp/cicero-TiEF/ref/alter_group.xml:84(replaceable) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:28(replaceable) /tmp/cicero-eMpW/ref/alter_group.xml:84(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:24(synopsis) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER GROUP <placeholder-1/> ADD USER <placeholder-2/> [, ... ]\nALTER GROUP <placeholder-3/> DROP USER <placeholder-4/> [, ... ]\n\nALTER GROUP <placeholder-5/> RENAME TO <placeholder-6/>\n"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:33(title) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:35(para) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:35(para) 
 msgid "<command>ALTER GROUP</command> changes the attributes of a user group. This is an obsolete command, though still accepted for backwards compatibility, because groups (and users too) have been superseded by the more general concept of roles."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:42(para) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:42(para) 
 msgid "The first two variants add users to a group or remove them from a group. (Any role can play the part of either a <quote>user</quote> or a <quote>group</quote> for this purpose.) These variants are effectively equivalent to granting or revoking membership in the role named as the <quote>group</quote>; so the preferred way to do this is to use <xref linkend=\"sql-grant\"/> or <xref linkend=\"sql-revoke\"/>."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:52(para) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:52(para) 
 msgid "The third variant changes the name of the group. This is exactly equivalent to renaming the role with <xref linkend=\"sql-alterrole\"/>."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:60(title) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:60(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:66(para) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:66(para) 
 msgid "The name of the group (role) to modify."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:75(para) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:75(para) 
 msgid "Users (roles) that are to be added to or removed from the group. The users must already exist; <command>ALTER GROUP</command> does not create or drop users."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:86(para) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:86(para) 
 msgid "The new name of the group."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:95(title) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:95(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:99(programlisting) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:99(programlisting) 
 #, no-wrap
 msgid "\nALTER GROUP staff ADD USER karl, john;\n"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:105(programlisting) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:105(programlisting) 
 #, no-wrap
 msgid "\nALTER GROUP workers DROP USER beth;\n"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:96(para) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:96(para) 
 msgid "Add users to a group: <placeholder-1/> Remove a user from a group: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:111(title) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:111(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:113(para) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:113(para) 
 msgid "There is no <command>ALTER GROUP</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-TiEF/ref/alter_group.xml:120(title) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:120(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-TiEF/ref/alter_group.xml:0(None) 
+#: /tmp/cicero-eMpW/ref/alter_group.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
