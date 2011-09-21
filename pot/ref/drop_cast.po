@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-20 06:57+0200\n"
+"POT-Creation-Date: 2011-09-21 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,106 +9,106 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:6(refentrytitle) /tmp/cicero-zUix/ref/drop_cast.xml:12(refname) /tmp/cicero-zUix/ref/drop_cast.xml:17(primary) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:6(refentrytitle) /tmp/cicero-pPcb/ref/drop_cast.xml:12(refname) /tmp/cicero-pPcb/ref/drop_cast.xml:17(primary) 
 msgid "DROP CAST"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:7(manvolnum) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:7(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:8(refmiscinfo) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:8(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:13(refpurpose) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:13(refpurpose) 
 msgid "remove a cast"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:22(replaceable) /tmp/cicero-zUix/ref/drop_cast.xml:56(replaceable) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:22(replaceable) /tmp/cicero-pPcb/ref/drop_cast.xml:56(replaceable) 
 msgid "source_type"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:22(replaceable) /tmp/cicero-zUix/ref/drop_cast.xml:66(replaceable) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:22(replaceable) /tmp/cicero-pPcb/ref/drop_cast.xml:66(replaceable) 
 msgid "target_type"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:21(synopsis) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:21(synopsis) 
 #, no-wrap
 msgid "\nDROP CAST [ IF EXISTS ] (<placeholder-1/> AS <placeholder-2/>) [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:27(title) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:27(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:29(para) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:29(para) 
 msgid "<command>DROP CAST</command> removes a previously defined cast."
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:33(para) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:33(para) 
 msgid "To be able to drop a cast, you must own the source or the target data type. These are the same privileges that are required to create a cast."
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:41(title) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:41(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:46(literal) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:46(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:48(para) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:48(para) 
 msgid "Do not throw an error if the cast does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:59(para) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:59(para) 
 msgid "The name of the source data type of the cast."
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:69(para) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:69(para) 
 msgid "The name of the target data type of the cast."
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:76(literal) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:76(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:77(literal) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:77(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:80(para) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:80(para) 
 msgid "These key words do not have any effect, since there are no dependencies on casts."
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:90(title) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:90(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:94(programlisting) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:94(programlisting) 
 #, no-wrap
 msgid "\nDROP CAST (text AS int);\n"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:92(para) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:92(para) 
 msgid "To drop the cast from type <type>text</type> to type <type>int</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:100(title) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:100(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:102(para) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:102(para) 
 msgid "The <command>DROP CAST</command> command conforms to the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-zUix/ref/drop_cast.xml:108(title) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:108(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-zUix/ref/drop_cast.xml:0(None) 
+#: /tmp/cicero-pPcb/ref/drop_cast.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
