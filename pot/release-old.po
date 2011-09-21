@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-20 06:59+0200\n"
+"POT-Creation-Date: 2011-09-21 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,72 +9,72 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-eMpW/release-old.xml:6(title) 
+#: /tmp/cicero-hvAh/release-old.xml:6(title) 
 msgid "Release 7.3.21"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:9(title) 
+#: /tmp/cicero-hvAh/release-old.xml:9(title) 
 msgid "Release Date"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:10(simpara) 
+#: /tmp/cicero-hvAh/release-old.xml:10(simpara) 
 msgid "2008-01-07"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:13(para) 
+#: /tmp/cicero-hvAh/release-old.xml:13(para) 
 msgid "This release contains a variety of fixes from 7.3.20, including fixes for significant security issues."
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:18(para) 
+#: /tmp/cicero-hvAh/release-old.xml:18(para) 
 msgid "This is expected to be the last <productname>PostgreSQL</productname> release in the 7.3.X series. Users are encouraged to update to a newer release branch soon."
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:25(title) 
+#: /tmp/cicero-hvAh/release-old.xml:25(title) 
 msgid "Migration to Version 7.3.21"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:27(para) 
+#: /tmp/cicero-hvAh/release-old.xml:27(para) 
 msgid "A dump/restore is not required for those running 7.3.X. However, if you are upgrading from a version earlier than 7.3.13, see the release notes for 7.3.13."
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:36(title) 
+#: /tmp/cicero-hvAh/release-old.xml:36(title) 
 msgid "Changes"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:41(para) 
+#: /tmp/cicero-hvAh/release-old.xml:41(para) 
 msgid "Prevent functions in indexes from executing with the privileges of the user running <command>VACUUM</command>, <command>ANALYZE</command>, etc (Tom)"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:46(para) 
+#: /tmp/cicero-hvAh/release-old.xml:46(para) 
 msgid "Functions used in index expressions and partial-index predicates are evaluated whenever a new table entry is made. It has long been understood that this poses a risk of trojan-horse code execution if one modifies a table owned by an untrustworthy user. (Note that triggers, defaults, check constraints, etc. pose the same type of risk.) But functions in indexes pose extra danger because they will be executed by routine maintenance operations such as <command>VACUUM FULL</command>, which are commonly performed automatically under a superuser account. For example, a nefarious user can execute code with superuser privileges by setting up a trojan-horse index definition and waiting for the next routine vacuum. The fix arranges for standard maintenance operations (including <command>VACUUM</command>, <command>ANALYZE</command>, <command>REINDEX</command>, and <command>CLUSTER</command>) to execute as the table owner rather than the calling user, using the same privilege-switching mechanism already used for <literal>SECURITY DEFINER</literal> functions. To prevent bypassing this security measure, execution of <command>SET SESSION AUTHORIZATION</command> and <command>SET ROLE</command> is now forbidden within a <literal>SECURITY DEFINER</literal> context. (CVE-2007-6600)"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:70(para) 
+#: /tmp/cicero-hvAh/release-old.xml:70(para) 
 msgid "Require non-superusers who use <filename>/contrib/dblink</filename> to use only password authentication, as a security measure (Joe)"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:75(para) 
+#: /tmp/cicero-hvAh/release-old.xml:75(para) 
 msgid "The fix that appeared for this in 7.3.20 was incomplete, as it plugged the hole for only some <filename>dblink</filename> functions. (CVE-2007-6601, CVE-2007-3278)"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:83(para) 
+#: /tmp/cicero-hvAh/release-old.xml:83(para) 
 msgid "Fix potential crash in <function>translate()</function> when using a multibyte database encoding (Tom)"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:90(para) 
+#: /tmp/cicero-hvAh/release-old.xml:90(para) 
 msgid "Make <filename>contrib/tablefunc</filename>'s <function>crosstab()</function> handle NULL rowid as a category in its own right, rather than crashing (Joe)"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:97(para) 
+#: /tmp/cicero-hvAh/release-old.xml:97(para) 
 msgid "Require a specific version of <productname>Autoconf</productname> to be used when re-generating the <command>configure</command> script (Peter)"
 msgstr ""
 
-#: /tmp/cicero-eMpW/release-old.xml:102(para) 
+#: /tmp/cicero-hvAh/release-old.xml:102(para) 
 msgid "This affects developers and packagers only. The change was made to prevent accidental use of untested combinations of <productname>Autoconf</productname> and <productname>PostgreSQL</productname> versions. You can remove the version check if you really want to use a different <productname>Autoconf</productname> version, but it's your responsibility whether the result works or not."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-eMpW/release-old.xml:0(None) 
+#: /tmp/cicero-hvAh/release-old.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

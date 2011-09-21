@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-20 06:59+0200\n"
+"POT-Creation-Date: 2011-09-21 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,102 +9,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-eMpW/ref/listen.xml:9(refentrytitle) /tmp/cicero-eMpW/ref/listen.xml:15(refname) /tmp/cicero-eMpW/ref/listen.xml:20(primary) 
+#: /tmp/cicero-hvAh/ref/listen.xml:9(refentrytitle) /tmp/cicero-hvAh/ref/listen.xml:15(refname) /tmp/cicero-hvAh/ref/listen.xml:20(primary) 
 msgid "LISTEN"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:10(manvolnum) 
+#: /tmp/cicero-hvAh/ref/listen.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:11(refmiscinfo) 
+#: /tmp/cicero-hvAh/ref/listen.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:16(refpurpose) 
+#: /tmp/cicero-hvAh/ref/listen.xml:16(refpurpose) 
 msgid "listen for a notification"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:25(replaceable) /tmp/cicero-eMpW/ref/listen.xml:81(replaceable) 
+#: /tmp/cicero-hvAh/ref/listen.xml:25(replaceable) /tmp/cicero-hvAh/ref/listen.xml:81(replaceable) 
 msgid "channel"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:24(synopsis) 
+#: /tmp/cicero-hvAh/ref/listen.xml:24(synopsis) 
 #, no-wrap
 msgid "\nLISTEN <placeholder-1/>\n"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:30(title) 
+#: /tmp/cicero-hvAh/ref/listen.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:32(para) 
+#: /tmp/cicero-hvAh/ref/listen.xml:32(para) 
 msgid "<command>LISTEN</command> registers the current session as a listener on the notification channel named <replaceable class=\"PARAMETER\">channel</replaceable>. If the current session is already registered as a listener for this notification channel, nothing is done."
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:40(para) 
+#: /tmp/cicero-hvAh/ref/listen.xml:40(para) 
 msgid "Whenever the command <command>NOTIFY <replaceable class=\"PARAMETER\">channel</replaceable></command> is invoked, either by this session or another one connected to the same database, all the sessions currently listening on that notification channel are notified, and each will in turn notify its connected client application."
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:49(para) 
+#: /tmp/cicero-hvAh/ref/listen.xml:49(para) 
 msgid "A session can be unregistered for a given notification channel with the <command>UNLISTEN</command> command. A session's listen registrations are automatically cleared when the session ends."
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:55(para) 
+#: /tmp/cicero-hvAh/ref/listen.xml:55(para) 
 msgid "The method a client application must use to detect notification events depends on which <productname>PostgreSQL</productname> application programming interface it uses. With the <application>libpq</application> library, the application issues <command>LISTEN</command> as an ordinary SQL command, and then must periodically call the function <function>PQnotifies</function> to find out whether any notification events have been received. Other interfaces such as <application>libpgtcl</application> provide higher-level methods for handling notify events; indeed, with <application>libpgtcl</application> the application programmer should not even issue <command>LISTEN</command> or <command>UNLISTEN</command> directly. See the documentation for the interface you are using for more details."
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:68(para) 
+#: /tmp/cicero-hvAh/ref/listen.xml:68(para) 
 msgid "<xref linkend=\"sql-notify\"/> contains a more extensive discussion of the use of <command>LISTEN</command> and <command>NOTIFY</command>."
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:77(title) 
+#: /tmp/cicero-hvAh/ref/listen.xml:77(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:83(para) 
+#: /tmp/cicero-hvAh/ref/listen.xml:83(para) 
 msgid "Name of a notification channel (any identifier)."
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:92(title) 
+#: /tmp/cicero-hvAh/ref/listen.xml:92(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:94(para) 
+#: /tmp/cicero-hvAh/ref/listen.xml:94(para) 
 msgid "<command>LISTEN</command> takes effect at transaction commit. If <command>LISTEN</command> or <command>UNLISTEN</command> is executed within a transaction that later rolls back, the set of notification channels being listened to is unchanged."
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:100(para) 
+#: /tmp/cicero-hvAh/ref/listen.xml:100(para) 
 msgid "A transaction that has executed <command>LISTEN</command> cannot be prepared for two-phase commit."
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:107(title) 
+#: /tmp/cicero-hvAh/ref/listen.xml:107(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:113(programlisting) 
+#: /tmp/cicero-hvAh/ref/listen.xml:113(programlisting) 
 #, no-wrap
 msgid "\nLISTEN virtual;\nNOTIFY virtual;\nAsynchronous notification \"virtual\" received from server process with PID 8448.\n"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:109(para) 
+#: /tmp/cicero-hvAh/ref/listen.xml:109(para) 
 msgid "Configure and execute a listen/notify sequence from <application>psql</application>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:121(title) 
+#: /tmp/cicero-hvAh/ref/listen.xml:121(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:123(para) 
+#: /tmp/cicero-hvAh/ref/listen.xml:123(para) 
 msgid "There is no <command>LISTEN</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-eMpW/ref/listen.xml:130(title) 
+#: /tmp/cicero-hvAh/ref/listen.xml:130(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-eMpW/ref/listen.xml:0(None) 
+#: /tmp/cicero-hvAh/ref/listen.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
