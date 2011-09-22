@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-21 07:00+0200\n"
+"POT-Creation-Date: 2011-09-22 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,45 +9,45 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-hvAh/xoper.xml:5(title) 
+#: /tmp/cicero-cjWZ/xoper.xml:5(title) 
 msgid "User-defined Operators"
 msgstr ""
 
-#: /tmp/cicero-hvAh/xoper.xml:8(primary) 
+#: /tmp/cicero-cjWZ/xoper.xml:8(primary) 
 msgid "operator"
 msgstr ""
 
-#: /tmp/cicero-hvAh/xoper.xml:9(secondary) 
+#: /tmp/cicero-cjWZ/xoper.xml:9(secondary) 
 msgid "user-defined"
 msgstr ""
 
-#: /tmp/cicero-hvAh/xoper.xml:12(para) 
+#: /tmp/cicero-cjWZ/xoper.xml:12(para) 
 msgid "Every operator is <quote>syntactic sugar</quote> for a call to an underlying function that does the real work; so you must first create the underlying function before you can create the operator. However, an operator is <emphasis>not merely</emphasis> syntactic sugar, because it carries additional information that helps the query planner optimize queries that use the operator. The next section will be devoted to explaining that additional information."
 msgstr ""
 
-#: /tmp/cicero-hvAh/xoper.xml:23(para) 
+#: /tmp/cicero-cjWZ/xoper.xml:23(para) 
 msgid "<productname>PostgreSQL</productname> supports left unary, right unary, and binary operators. Operators can be overloaded;<indexterm><primary>overloading</primary><secondary>operators</secondary></indexterm> that is, the same operator name can be used for different operators that have different numbers and types of operands. When a query is executed, the system determines the operator to call from the number and types of the provided operands."
 msgstr ""
 
-#: /tmp/cicero-hvAh/xoper.xml:39(programlisting) 
+#: /tmp/cicero-cjWZ/xoper.xml:39(programlisting) 
 #, no-wrap
 msgid "\nCREATE FUNCTION complex_add(complex, complex)\n    RETURNS complex\n    AS '<replaceable>filename</replaceable>', 'complex_add'\n    LANGUAGE C IMMUTABLE STRICT;\n\nCREATE OPERATOR + (\n    leftarg = complex,\n    rightarg = complex,\n    procedure = complex_add,\n    commutator = +\n);\n"
 msgstr ""
 
-#: /tmp/cicero-hvAh/xoper.xml:33(para) 
+#: /tmp/cicero-cjWZ/xoper.xml:33(para) 
 msgid "Here is an example of creating an operator for adding two complex numbers. We assume we've already created the definition of type <type>complex</type> (see <xref linkend=\"xtypes\"/>). First we need a function that does the work, then we can define the operator: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/xoper.xml:54(para) 
+#: /tmp/cicero-cjWZ/xoper.xml:54(para) 
 msgid "Now we could execute a query like this: <screen>\nSELECT (a + b) AS c FROM test_complex;\n\n        c\n-----------------\n (5.2,6.05)\n (133.42,144.95)\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/xoper.xml:67(para) 
+#: /tmp/cicero-cjWZ/xoper.xml:67(para) 
 msgid "We've shown how to create a binary operator here. To create unary operators, just omit one of <literal>leftarg</literal> (for left unary) or <literal>rightarg</literal> (for right unary). The <literal>procedure</literal> clause and the argument clauses are the only required items in <command>CREATE OPERATOR</command>. The <literal>commutator</literal> clause shown in the example is an optional hint to the query optimizer. Further details about <literal>commutator</literal> and other optimizer hints appear in the next section."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-hvAh/xoper.xml:0(None) 
+#: /tmp/cicero-cjWZ/xoper.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-21 06:59+0200\n"
+"POT-Creation-Date: 2011-09-22 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,424 +9,424 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:9(application) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:15(refname) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:20(primary) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:25(command) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:33(command) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:46(command) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:62(command) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:80(command) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:87(command) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:93(command) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:100(command) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:107(command) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:126(command) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:9(application) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:15(refname) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:20(primary) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:25(command) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:33(command) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:46(command) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:62(command) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:80(command) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:87(command) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:93(command) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:100(command) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:107(command) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:126(command) 
 msgid "pg_ctl"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:10(manvolnum) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:10(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:11(refmiscinfo) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:11(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:16(productname) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:16(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:16(refpurpose) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:16(refpurpose) 
 msgid "initialize, start, stop, or control a <placeholder-1/> server"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:26(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:26(arg) 
 msgid "init[db]"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:27(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:37(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:50(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:66(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:82(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:95(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:121(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:342(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:27(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:37(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:50(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:66(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:82(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:95(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:121(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:342(option) 
 msgid "-s"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:28(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:38(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:51(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:67(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:83(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:89(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:96(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:112(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:259(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:28(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:38(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:51(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:67(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:83(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:89(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:96(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:112(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:259(replaceable) 
 msgid "datadir"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:28(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:38(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:51(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:67(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:83(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:89(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:96(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:112(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:259(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:28(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:38(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:51(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:67(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:83(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:89(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:96(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:112(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:259(option) 
 msgid "-D <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:29(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:308(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:29(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:308(replaceable) 
 msgid "initdb-options"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:29(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:40(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:76(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:122(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:294(option) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:308(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:29(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:40(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:76(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:122(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:294(option) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:308(option) 
 msgid "-o <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:34(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:34(arg) 
 msgid "start"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:35(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:64(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:119(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:361(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:35(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:64(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:119(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:361(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:36(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:49(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:65(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:120(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:36(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:49(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:65(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:120(replaceable) 
 msgid "seconds"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:36(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:49(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:65(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:120(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:36(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:49(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:65(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:120(arg) 
 msgid "-t <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:39(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:270(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:39(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:270(replaceable) 
 msgid "filename"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:39(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:270(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:39(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:270(option) 
 msgid "-l <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:40(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:76(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:122(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:294(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:40(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:76(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:122(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:294(replaceable) 
 msgid "options"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:41(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:322(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:41(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:322(replaceable) 
 msgid "path"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:41(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:322(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:41(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:322(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:42(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:68(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:246(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:42(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:68(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:246(option) 
 msgid "-c"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:47(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:47(arg) 
 msgid "stop"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:48(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:377(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:48(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:377(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:54(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:71(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:54(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:71(arg) 
 msgid "s[mart]"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:55(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:72(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:55(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:72(arg) 
 msgid "f[ast]"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:56(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:73(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:56(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:73(arg) 
 msgid "i[mmediate]"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:52(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:69(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:52(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:69(arg) 
 msgid "-m <group choice=\"plain\"><placeholder-1/><placeholder-2/><placeholder-3/></group>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:63(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:63(arg) 
 msgid "restart"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:81(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:81(arg) 
 msgid "reload"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:88(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:88(arg) 
 msgid "status"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:94(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:94(arg) 
 msgid "promote"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:101(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:101(arg) 
 msgid "kill"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:102(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:102(replaceable) 
 msgid "signal_name"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:103(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:103(replaceable) 
 msgid "process_id"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:108(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:108(arg) 
 msgid "register"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:109(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:128(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:392(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:109(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:128(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:392(replaceable) 
 msgid "servicename"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:109(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:128(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:392(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:109(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:128(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:392(option) 
 msgid "-N <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:110(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:423(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:110(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:423(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:110(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:423(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:110(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:423(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:111(replaceable) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:402(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:111(replaceable) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:402(replaceable) 
 msgid "password"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:111(arg) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:402(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:111(arg) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:402(option) 
 msgid "-P <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:115(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:115(arg) 
 msgid "a[uto]"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:116(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:116(arg) 
 msgid "d[emand]"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:113(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:113(arg) 
 msgid "-S <group choice=\"plain\"><placeholder-1/><placeholder-2/></group>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:127(arg) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:127(arg) 
 msgid "unregister"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:134(title) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:134(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:135(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:135(para) 
 msgid "<application>pg_ctl</application> is a utility for initializing a <productname>PostgreSQL</productname> database cluster, starting, stopping, or restarting the <productname>PostgreSQL</productname> database server (<xref linkend=\"app-postgres\"/>), or displaying the status of a running server. Although the server can be started manually, <application>pg_ctl</application> encapsulates tasks such as redirecting log output and properly detaching from the terminal and process group. It also provides convenient options for controlled shutdown."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:147(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:147(para) 
 msgid "The <option>init</option> or <option>initdb</option> mode creates a new <productname>PostgreSQL</productname> database cluster. A database cluster is a collection of databases that are managed by a single server instance. This mode invokes the <command>initdb</command> command. See <xref linkend=\"app-initdb\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:155(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:155(para) 
 msgid "In <option>start</option> mode, a new server is launched. The server is started in the background, and its standard input is attached to <filename>/dev/null</filename> (or <literal>nul</literal> on Windows). On Unix-like systems, by default, the server's standard output and standard error are sent to <application>pg_ctl</application>'s standard output (not standard error). The standard output of <application>pg_ctl</application> should then be redirected to a file or piped to another process such as a log rotating program like <application>rotatelogs</application>; otherwise <command>postgres</command> will write its output to the controlling terminal (from the background) and will not leave the shell's process group. On Windows, by default the server's standard output and standard error are sent to the terminal. These default behaviors can be changed by using <option>-l</option> to append the server's output to a log file. Use of either <option>-l</option> or output redirection is recommended."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:173(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:173(para) 
 msgid "In <option>stop</option> mode, the server that is running in the specified data directory is shut down. Three different shutdown methods can be selected with the <option>-m</option> option. <quote>Smart</quote> mode (the default) waits for all active clients to disconnect and any online backup to finish. If the server is in hot standby, recovery and streaming replication will be terminated once all clients have disconnected. <quote>Fast</quote> mode does not wait for clients to disconnect and will terminate an online backup in progress. All active transactions are rolled back and clients are forcibly disconnected, then the server is shut down. <quote>Immediate</quote> mode will abort all server processes immediately, without a clean shutdown. This will lead to a crash-recovery run on the next restart."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:189(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:189(para) 
 msgid "<option>restart</option> mode effectively executes a stop followed by a start. This allows changing the <command>postgres</command> command-line options."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:195(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:195(para) 
 msgid "<option>reload</option> mode simply sends the <command>postgres</command> process a <systemitem>SIGHUP</systemitem> signal, causing it to reread its configuration files (<filename>postgresql.conf</filename>, <filename>pg_hba.conf</filename>, etc.). This allows changing of configuration-file options that do not require a complete restart to take effect."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:205(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:205(para) 
 msgid "<option>status</option> mode checks whether a server is running in the specified data directory. If it is, the <acronym>PID</acronym> and the command line options that were used to invoke it are displayed."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:212(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:212(para) 
 msgid "In <option>promote</option> mode, the standby server that is running in the specified data directory is commanded to exit recovery and begin read-write operations."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:218(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:218(para) 
 msgid "<option>kill</option> mode allows you to send a signal to a specified process. This is particularly valuable for <productname>Microsoft Windows</productname> which does not have a <application>kill</application> command. Use <literal>--help</literal> to see a list of supported signal names."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:225(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:225(para) 
 msgid "<option>register</option> mode allows you to register a system service on <productname>Microsoft Windows</productname>. The <option>-S</option> option allows selection of service start type, either <quote>auto</quote> (start service automatically on system startup) or <quote>demand</quote> (start service on demand)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:233(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:233(para) 
 msgid "<option>unregister</option> mode allows you to unregister a system service on <productname>Microsoft Windows</productname>. This undoes the effects of the <option>register</option> command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:241(title) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:241(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:248(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:248(para) 
 msgid "Attempt to allow server crashes to produce core files, on platforms where this is possible, by lifting any soft resource limit placed on core files. This is useful in debugging or diagnosing problems by allowing a stack trace to be obtained from a failed server process."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:261(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:261(para) 
 msgid "Specifies the file system location of the database files. If this is omitted, the environment variable <envar>PGDATA</envar> is used."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:272(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:272(para) 
 msgid "Append the server log output to <replaceable>filename</replaceable>. If the file does not exist, it is created. The <systemitem>umask</systemitem> is set to 077, so access to the log file is disallowed to other users by default."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:282(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:282(replaceable) 
 msgid "mode"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:282(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:282(option) 
 msgid "-m <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:284(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:284(para) 
 msgid "Specifies the shutdown mode. <replaceable>mode</replaceable> can be <literal>smart</literal>, <literal>fast</literal>, or <literal>immediate</literal>, or the first letter of one of these three. If this is omitted, <literal>smart</literal> is used."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:296(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:296(para) 
 msgid "Specifies options to be passed directly to the <command>postgres</command> command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:300(para) /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:314(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:300(para) /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:314(para) 
 msgid "The options should usually be surrounded by single or double quotes to ensure that they are passed through as a group."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:310(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:310(para) 
 msgid "Specifies options to be passed directly to the <command>initdb</command> command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:324(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:324(para) 
 msgid "Specifies the location of the <filename>postgres</filename> executable. By default the <filename>postgres</filename> executable is taken from the same directory as <command>pg_ctl</command>, or failing that, the hard-wired installation directory. It is not necessary to use this option unless you are doing something unusual and get errors that the <filename>postgres</filename> executable was not found."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:333(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:333(para) 
 msgid "In <literal>init</literal> mode, this option analogously specifies the location of the <filename>initdb</filename> executable."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:344(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:344(para) 
 msgid "Print only errors, no informational messages."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:351(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:351(option) 
 msgid "-t"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:353(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:353(para) 
 msgid "The maximum number of seconds to wait when waiting for startup or shutdown to complete. The default is 60 seconds."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:363(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:363(para) 
 msgid "Wait for the startup or shutdown to complete. Waiting is the default option for shutdowns, but not startups. When waiting for startup, <command>pg_ctl</command> repeatedly attempts to connect to the server. When waiting for shutdown, <command>pg_ctl</command> waits for the server to remove its <acronym>PID</acronym> file. <command>pg_ctl</command> returns an exit code based on the success of the startup or shutdown."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:379(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:379(para) 
 msgid "Do not wait for startup or shutdown to complete. This is the default for start and restart modes."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:388(title) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:388(title) 
 msgid "Options for Windows"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:394(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:394(para) 
 msgid "Name of the system service to register. The name will be used as both the service name and the display name."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:404(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:404(para) 
 msgid "Password for the user to start the service."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:411(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:411(replaceable) 
 msgid "start-type"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:411(option) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:411(option) 
 msgid "-S <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:413(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:413(para) 
 msgid "Start type of the system service to register. start-type can be <literal>auto</literal>, or <literal>demand</literal>, or the first letter of one of these two. If this is omitted, <literal>auto</literal> is used."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:425(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:425(para) 
 msgid "User name for the user to start the service. For domain users, use the format <literal>DOMAIN\\username</literal>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:438(title) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:438(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:442(envar) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:442(envar) 
 msgid "PGDATA"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:445(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:445(para) 
 msgid "Default data directory location."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:453(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:453(para) 
 msgid "<command>pg_ctl</command>, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>). For additional server variables, see <xref linkend=\"app-postgres\"/>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:464(title) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:464(title) 
 msgid "Files"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:468(filename) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:468(filename) 
 msgid "postmaster.pid"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:471(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:471(para) 
 msgid "The existence of this file in the data directory is used to help <application>pg_ctl</application> determine if the server is currently running."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:480(filename) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:480(filename) 
 msgid "postmaster.opts"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:483(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:483(para) 
 msgid "If this file exists in the data directory, <application>pg_ctl</application> (in <option>restart</option> mode) will pass the contents of the file as options to <application>postgres</application>, unless overridden by the <option>-o</option> option. The contents of this file are also displayed in <option>status</option> mode."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:498(title) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:498(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:501(title) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:501(title) 
 msgid "Starting the Server"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:503(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:503(para) 
 msgid "To start the server: <screen>\n<prompt>$</prompt> <userinput>pg_ctl start</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:510(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:510(para) 
 msgid "To start the server, waiting until the server is accepting connections: <screen>\n<prompt>$</prompt> <userinput>pg_ctl -w start</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:518(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:518(para) 
 msgid "To start the server using port 5433, and running without <function>fsync</function>, use: <screen>\n<prompt>$</prompt> <userinput>pg_ctl -o \"-F -p 5433\" start</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:527(title) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:527(title) 
 msgid "Stopping the Server"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:528(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:528(para) 
 msgid "To stop the server, use: <screen>\n<prompt>$</prompt> <userinput>pg_ctl stop</userinput>\n</screen> The <option>-m</option> option allows control over <emphasis>how</emphasis> the server shuts down: <screen>\n<prompt>$</prompt> <userinput>pg_ctl stop -m fast</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:541(title) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:541(title) 
 msgid "Restarting the Server"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:543(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:543(para) 
 msgid "Restarting the server is almost equivalent to stopping the server and starting it again, except that <command>pg_ctl</command> saves and reuses the command line options that were passed to the previously running instance. To restart the server in the simplest form, use: <screen>\n<prompt>$</prompt> <userinput>pg_ctl restart</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:554(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:554(para) 
 msgid "To restart the server, waiting for it to shut down and restart: <screen>\n<prompt>$</prompt> <userinput>pg_ctl -w restart</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:562(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:562(para) 
 msgid "To restart using port 5433, disabling <function>fsync</function> upon restart: <screen>\n<prompt>$</prompt> <userinput>pg_ctl -o \"-F -p 5433\" restart</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:570(title) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:570(title) 
 msgid "Showing the Server Status"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:572(para) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:572(para) 
 msgid "Here is sample status output from <application>pg_ctl</application>: <screen>\n<prompt>$</prompt> <userinput>pg_ctl status</userinput>\n<computeroutput>\npg_ctl: server is running (PID: 13718)\n/usr/local/pgsql/bin/postgres \"-D\" \"/usr/local/pgsql/data\" \"-p\" \"5433\" \"-B\" \"128\"\n</computeroutput>\n</screen> This is the command line that would be invoked in restart mode."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:589(title) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:589(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-hvAh/ref/pg_ctl-ref.xml:0(None) 
+#: /tmp/cicero-cjWZ/ref/pg_ctl-ref.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

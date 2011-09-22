@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-21 06:59+0200\n"
+"POT-Creation-Date: 2011-09-22 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,528 +9,528 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:9(application) /tmp/cicero-hvAh/ref/pg_dumpall.xml:15(refname) /tmp/cicero-hvAh/ref/pg_dumpall.xml:20(primary) /tmp/cicero-hvAh/ref/pg_dumpall.xml:25(command) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:9(application) /tmp/cicero-cjWZ/ref/pg_dumpall.xml:15(refname) /tmp/cicero-cjWZ/ref/pg_dumpall.xml:20(primary) /tmp/cicero-cjWZ/ref/pg_dumpall.xml:25(command) 
 msgid "pg_dumpall"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:10(manvolnum) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:10(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:11(refmiscinfo) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:11(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:16(productname) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:16(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:16(refpurpose) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:16(refpurpose) 
 msgid "extract a <placeholder-1/> database cluster into a script file"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:26(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:26(replaceable) 
 msgid "connection-option"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:27(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:27(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:32(title) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:32(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:34(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:34(para) 
 msgid "<application>pg_dumpall</application> is a utility for writing out (<quote>dumping</quote>) all <productname>PostgreSQL</productname> databases of a cluster into one script file. The script file contains <acronym>SQL</acronym> commands that can be used as input to <xref linkend=\"app-psql\"/> to restore the databases. It does this by calling <xref linkend=\"app-pgdump\"/> for each database in a cluster. <application>pg_dumpall</application> also dumps global objects that are common to all databases. (<application>pg_dump</application> does not save these objects.) This currently includes information about database users and groups, tablespaces, and properties such as access permissions that apply to databases as a whole."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:49(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:49(para) 
 msgid "Since <application>pg_dumpall</application> reads tables from all databases you will most likely have to connect as a database superuser in order to produce a complete dump. Also you will need superuser privileges to execute the saved script in order to be allowed to add users and groups, and to create databases."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:57(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:57(para) 
 msgid "The SQL script will be written to the standard output. Use the [-f|file] option or shell operators to redirect it into a file."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:62(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:62(para) 
 msgid "<application>pg_dumpall</application> needs to connect several times to the <productname>PostgreSQL</productname> server (once per database). If you use password authentication it will ask for a password each time. It is convenient to have a <filename>~/.pgpass</filename> file in such cases. See <xref linkend=\"libpq-pgpass\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:74(title) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:74(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:82(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:82(option) 
 msgid "-a"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:83(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:83(option) 
 msgid "--data-only"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:85(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:85(para) 
 msgid "Dump only the data, not the schema (data definitions)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:92(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:92(option) 
 msgid "-c"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:93(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:93(option) 
 msgid "--clean"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:95(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:95(para) 
 msgid "Include SQL commands to clean (drop) databases before recreating them. <command>DROP</command> commands for roles and tablespaces are added as well."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:104(replaceable) /tmp/cicero-hvAh/ref/pg_dumpall.xml:105(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:104(replaceable) /tmp/cicero-cjWZ/ref/pg_dumpall.xml:105(replaceable) 
 msgid "filename"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:104(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:104(option) 
 msgid "-f <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:105(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:105(option) 
 msgid "--file=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:107(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:107(para) 
 msgid "Send output to the specified file. If this is omitted, the standard output is used."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:115(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:115(option) 
 msgid "-g"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:116(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:116(option) 
 msgid "--globals-only"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:118(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:118(para) 
 msgid "Dump only global objects (roles and tablespaces), no databases."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:125(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:125(option) 
 msgid "-i"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:126(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:126(option) 
 msgid "--ignore-version"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:128(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:128(para) 
 msgid "A deprecated option that is now ignored."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:135(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:135(option) 
 msgid "-o"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:136(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:136(option) 
 msgid "--oids"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:138(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:138(para) 
 msgid "Dump object identifiers (<acronym>OID</acronym>s) as part of the data for every table. Use this option if your application references the <acronym>OID</acronym> columns in some way (e.g., in a foreign key constraint). Otherwise, this option should not be used."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:149(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:149(option) 
 msgid "-O"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:150(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:150(option) 
 msgid "--no-owner"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:152(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:152(para) 
 msgid "Do not output commands to set ownership of objects to match the original database. By default, <application>pg_dumpall</application> issues <command>ALTER OWNER</command> or <command>SET SESSION AUTHORIZATION</command> statements to set ownership of created schema elements. These statements will fail when the script is run unless it is started by a superuser (or the same user that owns all of the objects in the script). To make a script that can be restored by any user, but will give that user ownership of all the objects, specify <option>-O</option>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:169(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:169(option) 
 msgid "-r"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:170(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:170(option) 
 msgid "--roles-only"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:172(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:172(para) 
 msgid "Dump only roles, no databases or tablespaces."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:179(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:179(option) 
 msgid "-s"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:180(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:180(option) 
 msgid "--schema-only"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:182(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:182(para) 
 msgid "Dump only the object definitions (schema), not data."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:189(replaceable) /tmp/cicero-hvAh/ref/pg_dumpall.xml:190(replaceable) /tmp/cicero-hvAh/ref/pg_dumpall.xml:450(replaceable) /tmp/cicero-hvAh/ref/pg_dumpall.xml:451(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:189(replaceable) /tmp/cicero-cjWZ/ref/pg_dumpall.xml:190(replaceable) /tmp/cicero-cjWZ/ref/pg_dumpall.xml:450(replaceable) /tmp/cicero-cjWZ/ref/pg_dumpall.xml:451(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:189(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:189(option) 
 msgid "-S <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:190(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:190(option) 
 msgid "--superuser=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:192(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:192(para) 
 msgid "Specify the superuser user name to use when disabling triggers. This is only relevant if <option>--disable-triggers</option> is used. (Usually, it's better to leave this out, and instead start the resulting script as superuser.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:202(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:202(option) 
 msgid "-t"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:203(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:203(option) 
 msgid "--tablespaces-only"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:205(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:205(para) 
 msgid "Dump only tablespaces, no databases or roles."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:212(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:212(option) 
 msgid "-v"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:213(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:213(option) 
 msgid "--verbose"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:215(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:215(para) 
 msgid "Specifies verbose mode. This will cause <application>pg_dumpall</application> to output start/stop times to the dump file, and progress messages to standard error. It will also enable verbose output in <application>pg_dump</application>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:225(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:225(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:226(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:226(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:228(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:228(para) 
 msgid "Print the <application>pg_dumpall</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:235(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:235(option) 
 msgid "-x"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:236(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:236(option) 
 msgid "--no-privileges"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:237(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:237(option) 
 msgid "--no-acl"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:239(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:239(para) 
 msgid "Prevent dumping of access privileges (grant/revoke commands)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:246(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:246(option) 
 msgid "--binary-upgrade"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:248(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:248(para) 
 msgid "This option is for use by in-place upgrade utilities. Its use for other purposes is not recommended or supported. The behavior of the option may change in future releases without notice."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:258(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:258(option) 
 msgid "--column-inserts"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:259(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:259(option) 
 msgid "--attribute-inserts"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:261(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:261(para) 
 msgid "Dump data as <command>INSERT</command> commands with explicit column names (<literal>INSERT INTO <replaceable>table</replaceable> (<replaceable>column</replaceable>, ...) VALUES ...</literal>). This will make restoration very slow; it is mainly useful for making dumps that can be loaded into non-<productname>PostgreSQL</productname> databases."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:274(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:274(option) 
 msgid "--disable-dollar-quoting"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:276(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:276(para) 
 msgid "This option disables the use of dollar quoting for function bodies, and forces them to be quoted using SQL standard string syntax."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:284(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:284(option) 
 msgid "--disable-triggers"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:286(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:286(para) 
 msgid "This option is only relevant when creating a data-only dump. It instructs <application>pg_dumpall</application> to include commands to temporarily disable triggers on the target tables while the data is reloaded. Use this if you have referential integrity checks or other triggers on the tables that you do not want to invoke during data reload."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:295(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:295(para) 
 msgid "Presently, the commands emitted for <option>--disable-triggers</option> must be done as superuser. So, you should also specify a superuser name with <option>-S</option>, or preferably be careful to start the resulting script as a superuser."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:305(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:305(option) 
 msgid "--inserts"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:307(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:307(para) 
 msgid "Dump data as <command>INSERT</command> commands (rather than <command>COPY</command>). This will make restoration very slow; it is mainly useful for making dumps that can be loaded into non-<productname>PostgreSQL</productname> databases. Note that the restore might fail altogether if you have rearranged column order. The <option>--column-inserts</option> option is safer, though even slower."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:320(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:320(replaceable) 
 msgid "timeout"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:320(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:320(option) 
 msgid "--lock-wait-timeout=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:322(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:322(para) 
 msgid "Do not wait forever to acquire shared table locks at the beginning of the dump. Instead, fail if unable to lock a table within the specified <replaceable class=\"parameter\">timeout</replaceable>. The timeout may be specified in any of the formats accepted by <command>SET statement_timeout</command>. Allowed values vary depending on the server version you are dumping from, but an integer number of milliseconds is accepted by all versions since 7.3. This option is ignored when dumping from a pre-7.3 server."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:336(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:336(option) 
 msgid "--no-security-labels"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:338(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:338(para) 
 msgid "Do not dump security labels."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:345(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:345(option) 
 msgid "--no-tablespaces"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:347(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:347(para) 
 msgid "Do not output commands to create tablespaces nor select tablespaces for objects. With this option, all objects will be created in whichever tablespace is the default during restore."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:357(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:357(option) 
 msgid "--no-unlogged-table-data"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:359(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:359(para) 
 msgid "Do not dump the contents of unlogged tables. This option has no effect on whether or not the table definitions (schema) are dumped; it only suppresses dumping the table data."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:368(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:368(option) 
 msgid "--quote-all-identifiers"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:370(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:370(para) 
 msgid "Force quoting of all identifiers. This may be useful when dumping a database for migration to a future version that may have introduced additional keywords."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:379(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:379(option) 
 msgid "--use-set-session-authorization"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:381(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:381(para) 
 msgid "Output SQL-standard <command>SET SESSION AUTHORIZATION</command> commands instead of <command>ALTER OWNER</command> commands to determine object ownership. This makes the dump more standards compatible, but depending on the history of the objects in the dump, might not restore properly."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:392(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:392(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:393(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:393(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:395(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:395(para) 
 msgid "Show help about <application>pg_dumpall</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:76(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:76(para) 
 msgid "The following command-line options control the content and format of the output. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:410(replaceable) /tmp/cicero-hvAh/ref/pg_dumpall.xml:411(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:410(replaceable) /tmp/cicero-cjWZ/ref/pg_dumpall.xml:411(replaceable) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:410(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:410(option) 
 msgid "-h <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:411(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:411(option) 
 msgid "--host=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:413(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:413(para) 
 msgid "Specifies the host name of the machine on which the database server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket. The default is taken from the <envar>PGHOST</envar> environment variable, if set, else a Unix domain socket connection is attempted."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:424(replaceable) /tmp/cicero-hvAh/ref/pg_dumpall.xml:425(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:424(replaceable) /tmp/cicero-cjWZ/ref/pg_dumpall.xml:425(replaceable) 
 msgid "dbname"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:424(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:424(option) 
 msgid "-l <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:425(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:425(option) 
 msgid "--database=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:427(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:427(para) 
 msgid "Specifies the name of the database to connect to to dump global objects and discover what other databases should be dumped. If not specified, the <literal>postgres</literal> database will be used, and if that does not exist, <literal>template1</literal> will be used."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:437(replaceable) /tmp/cicero-hvAh/ref/pg_dumpall.xml:438(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:437(replaceable) /tmp/cicero-cjWZ/ref/pg_dumpall.xml:438(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:437(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:437(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:438(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:438(option) 
 msgid "--port=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:440(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:440(para) 
 msgid "Specifies the TCP port or local Unix domain socket file extension on which the server is listening for connections. Defaults to the <envar>PGPORT</envar> environment variable, if set, or a compiled-in default."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:450(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:450(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:451(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:451(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:453(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:453(para) 
 msgid "User name to connect as."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:460(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:460(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:461(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:461(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:463(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:463(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:475(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:475(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:476(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:476(option) 
 msgid "--password"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:478(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:478(para) 
 msgid "Force <application>pg_dumpall</application> to prompt for a password before connecting to a database."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:483(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:483(para) 
 msgid "This option is never essential, since <application>pg_dumpall</application> will automatically prompt for a password if the server demands password authentication. However, <application>pg_dumpall</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:493(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:493(para) 
 msgid "Note that the password prompt will occur again for each database to be dumped. Usually, it's better to set up a <filename>~/.pgpass</filename> file than to rely on manual password entry."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:502(replaceable) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:502(replaceable) 
 msgid "rolename"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:502(option) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:502(option) 
 msgid "--role=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:504(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:504(para) 
 msgid "Specifies a role name to be used to create the dump. This option causes <application>pg_dumpall</application> to issue a <command>SET ROLE</command><replaceable class=\"parameter\">rolename</replaceable> command after connecting to the database. It is useful when the authenticated user (specified by <option>-U</option>) lacks privileges needed by <application>pg_dumpall</application>, but can switch to a role with the required rights. Some installations have a policy against logging in directly as a superuser, and use of this option allows dumps to be made without violating the policy."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:405(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:405(para) 
 msgid "The following command-line options control the database connection parameters. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:523(title) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:523(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:527(envar) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:527(envar) 
 msgid "PGHOST"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:528(envar) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:528(envar) 
 msgid "PGOPTIONS"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:529(envar) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:529(envar) 
 msgid "PGPORT"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:530(envar) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:530(envar) 
 msgid "PGUSER"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:533(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:533(para) 
 msgid "Default connection parameters"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:540(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:540(para) 
 msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:550(title) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:550(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:552(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:552(para) 
 msgid "Since <application>pg_dumpall</application> calls <application>pg_dump</application> internally, some diagnostic messages will refer to <application>pg_dump</application>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:558(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:558(para) 
 msgid "Once restored, it is wise to run <command>ANALYZE</command> on each database so the optimizer has useful statistics. You can also run <command>vacuumdb -a -z</command> to analyze all databases."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:565(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:565(para) 
 msgid "<application>pg_dumpall</application> requires all needed tablespace directories to exist before the restore; otherwise, database creation will fail for databases in non-default locations."
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:575(title) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:575(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:576(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:576(para) 
 msgid "To dump all databases: <screen>\n<prompt>$</prompt> <userinput>pg_dumpall &gt; db.out</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:584(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:584(para) 
 msgid "To reload database(s) from this file, you can use: <screen>\n<prompt>$</prompt> <userinput>psql -f db.out postgres</userinput>\n</screen> (It is not important to which database you connect here since the script file created by <application>pg_dumpall</application> will contain the appropriate commands to create and connect to the saved databases.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:597(title) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:597(title) 
 msgid "See Also"
 msgstr ""
 
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:599(para) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:599(para) 
 msgid "Check <xref linkend=\"app-pgdump\"/> for details on possible error conditions."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-hvAh/ref/pg_dumpall.xml:0(None) 
+#: /tmp/cicero-cjWZ/ref/pg_dumpall.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

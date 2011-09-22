@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-21 06:59+0200\n"
+"POT-Creation-Date: 2011-09-22 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,2020 +9,2020 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-hvAh/protocol.xml:5(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:5(title) 
 msgid "Frontend/Backend Protocol"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:8(primary) 
+#: /tmp/cicero-cjWZ/protocol.xml:8(primary) 
 msgid "protocol"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:9(secondary) 
+#: /tmp/cicero-cjWZ/protocol.xml:9(secondary) 
 msgid "frontend-backend"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:12(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:12(para) 
 msgid "<productname>PostgreSQL</productname> uses a message-based protocol for communication between frontends and backends (clients and servers). The protocol is supported over <acronym>TCP/IP</acronym> and also over Unix-domain sockets. Port number 5432 has been registered with IANA as the customary TCP port number for servers supporting this protocol, but in practice any non-privileged port number can be used."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:21(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:21(para) 
 msgid "This document describes version 3.0 of the protocol, implemented in <productname>PostgreSQL</productname> 7.4 and later. For descriptions of the earlier protocol versions, see previous releases of the <productname>PostgreSQL</productname> documentation. A single server can support multiple protocol versions. The initial startup-request message tells the server which protocol version the client is attempting to use, and then the server follows that protocol if it is able."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:32(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:32(para) 
 msgid "In order to serve multiple clients efficiently, the server launches a new <quote>backend</quote> process for each client. In the current implementation, a new child process is created immediately after an incoming connection is detected. This is transparent to the protocol, however. For purposes of the protocol, the terms <quote>backend</quote> and <quote>server</quote> are interchangeable; likewise <quote>frontend</quote> and <quote>client</quote> are interchangeable."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:44(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:44(title) 
 msgid "Overview"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:46(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:46(para) 
 msgid "The protocol has separate phases for startup and normal operation. In the startup phase, the frontend opens a connection to the server and authenticates itself to the satisfaction of the server. (This might involve a single message, or multiple messages depending on the authentication method being used.) If all goes well, the server then sends status information to the frontend, and finally enters normal operation. Except for the initial startup-request message, this part of the protocol is driven by the server."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:57(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:57(para) 
 msgid "During normal operation, the frontend sends queries and other commands to the backend, and the backend sends back query results and other responses. There are a few cases (such as <command>NOTIFY</command>) wherein the backend will send unsolicited messages, but for the most part this portion of a session is driven by frontend requests."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:66(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:66(para) 
 msgid "Termination of the session is normally by frontend choice, but can be forced by the backend in certain cases. In any case, when the backend closes the connection, it will roll back any open (incomplete) transaction before exiting."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:73(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:73(para) 
 msgid "Within normal operation, SQL commands can be executed through either of two sub-protocols. In the <quote>simple query</quote> protocol, the frontend just sends a textual query string, which is parsed and immediately executed by the backend. In the <quote>extended query</quote> protocol, processing of queries is separated into multiple steps: parsing, binding of parameter values, and execution. This offers flexibility and performance benefits, at the cost of extra complexity."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:83(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:83(para) 
 msgid "Normal operation has additional sub-protocols for special operations such as <command>COPY</command>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:89(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:89(title) 
 msgid "Messaging Overview"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:91(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:91(para) 
 msgid "All communication is through a stream of messages. The first byte of a message identifies the message type, and the next four bytes specify the length of the rest of the message (this length count includes itself, but not the message-type byte). The remaining contents of the message are determined by the message type. For historical reasons, the very first message sent by the client (the startup message) has no initial message-type byte."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:101(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:101(para) 
 msgid "To avoid losing synchronization with the message stream, both servers and clients typically read an entire message into a buffer (using the byte count) before attempting to process its contents. This allows easy recovery if an error is detected while processing the contents. In extreme situations (such as not having enough memory to buffer the message), the receiver can use the byte count to determine how much input to skip before it resumes reading messages."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:111(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:111(para) 
 msgid "Conversely, both servers and clients must take care never to send an incomplete message. This is commonly done by marshaling the entire message in a buffer before beginning to send it. If a communications failure occurs partway through sending or receiving a message, the only sensible response is to abandon the connection, since there is little hope of recovering message-boundary synchronization."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:122(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:122(title) 
 msgid "Extended Query Overview"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:124(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:124(para) 
 msgid "In the extended-query protocol, execution of SQL commands is divided into multiple steps. The state retained between steps is represented by two types of objects: <firstterm>prepared statements</firstterm> and <firstterm>portals</firstterm>. A prepared statement represents the result of parsing, semantic analysis, and (optionally) planning of a textual query string. A prepared statement is not necessarily ready to execute, because it might lack specific values for <firstterm>parameters</firstterm>. A portal represents a ready-to-execute or already-partially-executed statement, with any missing parameter values filled in. (For <command>SELECT</command> statements, a portal is equivalent to an open cursor, but we choose to use a different term since cursors don't handle non-<command>SELECT</command> statements.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:139(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:139(para) 
 msgid "The overall execution cycle consists of a <firstterm>parse</firstterm> step, which creates a prepared statement from a textual query string; a <firstterm>bind</firstterm> step, which creates a portal given a prepared statement and values for any needed parameters; and an <firstterm>execute</firstterm> step that runs a portal's query. In the case of a query that returns rows (<command>SELECT</command>, <command>SHOW</command>, etc), the execute step can be told to fetch only a limited number of rows, so that multiple execute steps might be needed to complete the operation."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:151(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:151(para) 
 msgid "The backend can keep track of multiple prepared statements and portals (but note that these exist only within a session, and are never shared across sessions). Existing prepared statements and portals are referenced by names assigned when they were created. In addition, an <quote>unnamed</quote> prepared statement and portal exist. Although these behave largely the same as named objects, operations on them are optimized for the case of executing a query only once and then discarding it, whereas operations on named objects are optimized on the expectation of multiple uses."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:165(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:165(title) 
 msgid "Formats and Format Codes"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:167(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:167(para) 
 msgid "Data of a particular data type might be transmitted in any of several different <firstterm>formats</firstterm>. As of <productname>PostgreSQL</productname> 7.4 the only supported formats are <quote>text</quote> and <quote>binary</quote>, but the protocol makes provision for future extensions. The desired format for any value is specified by a <firstterm>format code</firstterm>. Clients can specify a format code for each transmitted parameter value and for each column of a query result. Text has format code zero, binary has format code one, and all other format codes are reserved for future definition."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:179(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:179(para) 
 msgid "The text representation of values is whatever strings are produced and accepted by the input/output conversion functions for the particular data type. In the transmitted representation, there is no trailing null character; the frontend must add one to received values if it wants to process them as C strings. (The text format does not allow embedded nulls, by the way.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:188(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:188(para) 
 msgid "Binary representations for integers use network byte order (most significant byte first). For other data types consult the documentation or source code to learn about the binary representation. Keep in mind that binary representations for complex data types might change across server versions; the text format is usually the more portable choice."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:199(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:199(title) 
 msgid "Message Flow"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:201(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:201(para) 
 msgid "This section describes the message flow and the semantics of each message type. (Details of the exact representation of each message appear in <xref linkend=\"protocol-message-formats\"/>.) There are several different sub-protocols depending on the state of the connection: start-up, query, function call, <command>COPY</command>, and termination. There are also special provisions for asynchronous operations (including notification responses and command cancellation), which can occur at any time after the start-up phase."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:214(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:214(title) 
 msgid "Start-up"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:216(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:216(para) 
 msgid "To begin a session, a frontend opens a connection to the server and sends a startup message. This message includes the names of the user and of the database the user wants to connect to; it also identifies the particular protocol version to be used. (Optionally, the startup message can include additional settings for run-time parameters.) The server then uses this information and the contents of its configuration files (such as <filename>pg_hba.conf</filename>) to determine whether the connection is provisionally acceptable, and what additional authentication is required (if any)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:229(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:229(para) 
 msgid "The server then sends an appropriate authentication request message, to which the frontend must reply with an appropriate authentication response message (such as a password). For all authentication methods except GSSAPI and SSPI, there is at most one request and one response. In some methods, no response at all is needed from the frontend, and so no authentication request occurs. For GSSAPI and SSPI, multiple exchanges of packets may be needed to complete the authentication."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:240(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:240(para) 
 msgid "The authentication cycle ends with the server either rejecting the connection attempt (ErrorResponse), or sending AuthenticationOk."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:250(term) /tmp/cicero-hvAh/protocol.xml:432(term) /tmp/cicero-hvAh/protocol.xml:546(term) /tmp/cicero-hvAh/protocol.xml:919(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:250(term) /tmp/cicero-cjWZ/protocol.xml:432(term) /tmp/cicero-cjWZ/protocol.xml:546(term) /tmp/cicero-cjWZ/protocol.xml:919(term) 
 msgid "ErrorResponse"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:252(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:252(para) 
 msgid "The connection attempt has been rejected. The server then immediately closes the connection."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:260(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:260(term) 
 msgid "AuthenticationOk"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:262(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:262(para) 
 msgid "The authentication exchange is successfully completed."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:269(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:269(term) 
 msgid "AuthenticationKerberosV5"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:271(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:271(para) 
 msgid "The frontend must now take part in a Kerberos V5 authentication dialog (not described here, part of the Kerberos specification) with the server. If this is successful, the server responds with an AuthenticationOk, otherwise it responds with an ErrorResponse."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:282(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:282(term) 
 msgid "AuthenticationCleartextPassword"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:284(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:284(para) 
 msgid "The frontend must now send a PasswordMessage containing the password in clear-text form. If this is the correct password, the server responds with an AuthenticationOk, otherwise it responds with an ErrorResponse."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:294(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:294(term) 
 msgid "AuthenticationMD5Password"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:296(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:296(para) 
 msgid "The frontend must now send a PasswordMessage containing the password encrypted via MD5, using the 4-character salt specified in the AuthenticationMD5Password message. If this is the correct password, the server responds with an AuthenticationOk, otherwise it responds with an ErrorResponse."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:307(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:307(term) 
 msgid "AuthenticationSCMCredential"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:309(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:309(para) 
 msgid "This response is only possible for local Unix-domain connections on platforms that support SCM credential messages. The frontend must issue an SCM credential message and then send a single data byte. (The contents of the data byte are uninteresting; it's only used to ensure that the server waits long enough to receive the credential message.) If the credential is acceptable, the server responds with an AuthenticationOk, otherwise it responds with an ErrorResponse. (This message type is only issued by pre-9.1 servers. It may eventually be removed from the protocol specification.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:325(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:325(term) 
 msgid "AuthenticationGSS"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:327(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:327(para) 
 msgid "The frontend must now initiate a GSSAPI negotiation. The frontend will send a PasswordMessage with the first part of the GSSAPI data stream in response to this. If further messages are needed, the server will respond with AuthenticationGSSContinue."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:337(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:337(term) 
 msgid "AuthenticationSSPI"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:339(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:339(para) 
 msgid "The frontend must now initiate a SSPI negotiation. The frontend will send a PasswordMessage with the first part of the SSPI data stream in response to this. If further messages are needed, the server will respond with AuthenticationGSSContinue."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:349(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:349(term) 
 msgid "AuthenticationGSSContinue"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:351(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:351(para) 
 msgid "This message contains the response data from the previous step of GSSAPI or SSPI negotiation (AuthenticationGSS, AuthenticationSSPI or a previous AuthenticationGSSContinue). If the GSSAPI or SSPI data in this message indicates more data is needed to complete the authentication, the frontend must send that data as another PasswordMessage. If GSSAPI or SSPI authentication is completed by this message, the server will next send AuthenticationOk to indicate successful authentication or ErrorResponse to indicate failure."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:245(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:245(para) 
 msgid "The possible messages from the server in this phase are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:368(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:368(para) 
 msgid "If the frontend does not support the authentication method requested by the server, then it should immediately close the connection."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:374(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:374(para) 
 msgid "After having received AuthenticationOk, the frontend must wait for further messages from the server. In this phase a backend process is being started, and the frontend is just an interested bystander. It is still possible for the startup attempt to fail (ErrorResponse), but in the normal case the backend will send some ParameterStatus messages, BackendKeyData, and finally ReadyForQuery."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:383(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:383(para) 
 msgid "During this phase the backend will attempt to apply any additional run-time parameter settings that were given in the startup message. If successful, these values become session defaults. An error causes ErrorResponse and exit."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:395(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:395(term) 
 msgid "BackendKeyData"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:397(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:397(para) 
 msgid "This message provides secret-key data that the frontend must save if it wants to be able to issue cancel requests later. The frontend should not respond to this message, but should continue listening for a ReadyForQuery message."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:407(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:407(term) 
 msgid "ParameterStatus"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:409(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:409(para) 
 msgid "This message informs the frontend about the current (initial) setting of backend parameters, such as <xref linkend=\"guc-client-encoding\"/> or <xref linkend=\"guc-datestyle\"/>. The frontend can ignore this message, or record the settings for its future use; see <xref linkend=\"protocol-async\"/> for more details. The frontend should not respond to this message, but should continue listening for a ReadyForQuery message."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:423(term) /tmp/cicero-hvAh/protocol.xml:555(term) /tmp/cicero-hvAh/protocol.xml:940(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:423(term) /tmp/cicero-cjWZ/protocol.xml:555(term) /tmp/cicero-cjWZ/protocol.xml:940(term) 
 msgid "ReadyForQuery"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:425(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:425(para) 
 msgid "Start-up is completed. The frontend can now issue commands."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:434(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:434(para) 
 msgid "Start-up failed. The connection is closed after sending this message."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:442(term) /tmp/cicero-hvAh/protocol.xml:569(term) /tmp/cicero-hvAh/protocol.xml:951(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:442(term) /tmp/cicero-cjWZ/protocol.xml:569(term) /tmp/cicero-cjWZ/protocol.xml:951(term) 
 msgid "NoticeResponse"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:444(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:444(para) 
 msgid "A warning message has been issued. The frontend should display the message but continue listening for ReadyForQuery or ErrorResponse."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:390(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:390(para) 
 msgid "The possible messages from the backend in this phase are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:454(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:454(para) 
 msgid "The ReadyForQuery message is the same one that the backend will issue after each command cycle. Depending on the coding needs of the frontend, it is reasonable to consider ReadyForQuery as starting a command cycle, or to consider ReadyForQuery as ending the start-up phase and each subsequent command cycle."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:464(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:464(title) 
 msgid "Simple Query"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:466(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:466(para) 
 msgid "A simple query cycle is initiated by the frontend sending a Query message to the backend. The message includes an SQL command (or commands) expressed as a text string. The backend then sends one or more response messages depending on the contents of the query command string, and finally a ReadyForQuery response message. ReadyForQuery informs the frontend that it can safely send a new command. (It is not actually necessary for the frontend to wait for ReadyForQuery before issuing another command, but the frontend must then take responsibility for figuring out what happens if the earlier command fails and already-issued later commands succeed.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:485(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:485(term) 
 msgid "CommandComplete"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:487(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:487(para) 
 msgid "An SQL command completed normally."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:494(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:494(term) 
 msgid "CopyInResponse"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:496(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:496(para) 
 msgid "The backend is ready to copy data from the frontend to a table; see <xref linkend=\"protocol-copy\"/>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:504(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:504(term) 
 msgid "CopyOutResponse"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:506(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:506(para) 
 msgid "The backend is ready to copy data from a table to the frontend; see <xref linkend=\"protocol-copy\"/>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:514(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:514(term) 
 msgid "RowDescription"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:516(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:516(para) 
 msgid "Indicates that rows are about to be returned in response to a <command>SELECT</command>, <command>FETCH</command>, etc query. The contents of this message describe the column layout of the rows. This will be followed by a DataRow message for each row being returned to the frontend."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:527(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:527(term) 
 msgid "DataRow"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:529(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:529(para) 
 msgid "One of the set of rows returned by a <command>SELECT</command>, <command>FETCH</command>, etc query."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:537(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:537(term) 
 msgid "EmptyQueryResponse"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:539(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:539(para) 
 msgid "An empty query string was recognized."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:548(para) /tmp/cicero-hvAh/protocol.xml:921(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:548(para) /tmp/cicero-cjWZ/protocol.xml:921(para) 
 msgid "An error has occurred."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:557(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:557(para) 
 msgid "Processing of the query string is complete. A separate message is sent to indicate this because the query string might contain multiple SQL commands. (CommandComplete marks the end of processing one SQL command, not the whole string.) ReadyForQuery will always be sent, whether processing terminates successfully or with an error."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:571(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:571(para) 
 msgid "A warning message has been issued in relation to the query. Notices are in addition to other responses, i.e., the backend will continue processing the command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:480(para) /tmp/cicero-hvAh/protocol.xml:914(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:480(para) /tmp/cicero-cjWZ/protocol.xml:914(para) 
 msgid "The possible response messages from the backend are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:582(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:582(para) 
 msgid "The response to a <command>SELECT</command> query (or other queries that return row sets, such as <command>EXPLAIN</command> or <command>SHOW</command>) normally consists of RowDescription, zero or more DataRow messages, and then CommandComplete. <command>COPY</command> to or from the frontend invokes special protocol as described in <xref linkend=\"protocol-copy\"/>. All other query types normally produce only a CommandComplete message."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:593(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:593(para) 
 msgid "Since a query string could contain several queries (separated by semicolons), there might be several such response sequences before the backend finishes processing the query string. ReadyForQuery is issued when the entire string has been processed and the backend is ready to accept a new query string."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:601(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:601(para) 
 msgid "If a completely empty (no contents other than whitespace) query string is received, the response is EmptyQueryResponse followed by ReadyForQuery."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:606(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:606(para) 
 msgid "In the event of an error, ErrorResponse is issued followed by ReadyForQuery. All further processing of the query string is aborted by ErrorResponse (even if more queries remained in it). Note that this might occur partway through the sequence of messages generated by an individual query."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:614(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:614(para) 
 msgid "In simple Query mode, the format of retrieved values is always text, except when the given command is a <command>FETCH</command> from a cursor declared with the <literal>BINARY</literal> option. In that case, the retrieved values are in binary format. The format codes given in the RowDescription message tell which format is being used."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:622(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:622(para) 
 msgid "A frontend must be prepared to accept ErrorResponse and NoticeResponse messages whenever it is expecting any other type of message. See also <xref linkend=\"protocol-async\"/> concerning messages that the backend might generate due to outside events."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:629(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:629(para) 
 msgid "Recommended practice is to code frontends in a state-machine style that will accept any message type at any time that it could make sense, rather than wiring in assumptions about the exact sequence of messages."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:637(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:637(title) 
 msgid "Extended Query"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:639(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:639(para) 
 msgid "The extended query protocol breaks down the above-described simple query protocol into multiple steps. The results of preparatory steps can be re-used multiple times for improved efficiency. Furthermore, additional features are available, such as the possibility of supplying data values as separate parameters instead of having to insert them directly into a query string."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:648(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:648(para) 
 msgid "In the extended protocol, the frontend first sends a Parse message, which contains a textual query string, optionally some information about data types of parameter placeholders, and the name of a destination prepared-statement object (an empty string selects the unnamed prepared statement). The response is either ParseComplete or ErrorResponse. Parameter data types can be specified by OID; if not given, the parser attempts to infer the data types in the same way as it would do for untyped literal string constants."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:661(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:661(para) 
 msgid "A parameter data type can be left unspecified by setting it to zero, or by making the array of parameter type OIDs shorter than the number of parameter symbols (<literal>$</literal><replaceable>n</replaceable>) used in the query string. Another special case is that a parameter's type can be specified as <type>void</type> (that is, the OID of the <type>void</type> pseudotype). This is meant to allow parameter symbols to be used for function parameters that are actually OUT parameters. Ordinarily there is no context in which a <type>void</type> parameter could be used, but if such a parameter symbol appears in a function's parameter list, it is effectively ignored. For example, a function call such as <literal>foo($1,$2,$3,$4)</literal> could match a function with two IN and two OUT arguments, if <literal>$3</literal> and <literal>$4</literal> are specified as having type <type>void</type>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:679(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:679(para) 
 msgid "The query string contained in a Parse message cannot include more than one SQL statement; else a syntax error is reported. This restriction does not exist in the simple-query protocol, but it does exist in the extended protocol, because allowing prepared statements or portals to contain multiple commands would complicate the protocol unduly."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:689(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:689(para) 
 msgid "If successfully created, a named prepared-statement object lasts till the end of the current session, unless explicitly destroyed. An unnamed prepared statement lasts only until the next Parse statement specifying the unnamed statement as destination is issued. (Note that a simple Query message also destroys the unnamed statement.) Named prepared statements must be explicitly closed before they can be redefined by a Parse message, but this is not required for the unnamed statement. Named prepared statements can also be created and accessed at the SQL command level, using <command>PREPARE</command> and <command>EXECUTE</command>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:701(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:701(para) 
 msgid "Once a prepared statement exists, it can be readied for execution using a Bind message. The Bind message gives the name of the source prepared statement (empty string denotes the unnamed prepared statement), the name of the destination portal (empty string denotes the unnamed portal), and the values to use for any parameter placeholders present in the prepared statement. The supplied parameter set must match those needed by the prepared statement. (If you declared any <type>void</type> parameters in the Parse message, pass NULL values for them in the Bind message.) Bind also specifies the format to use for any data returned by the query; the format can be specified overall, or per-column. The response is either BindComplete or ErrorResponse."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:717(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:717(para) 
 msgid "The choice between text and binary output is determined by the format codes given in Bind, regardless of the SQL command involved. The <literal>BINARY</literal> attribute in cursor declarations is irrelevant when using extended query protocol."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:725(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:725(para) 
 msgid "Query planning for named prepared-statement objects occurs when the Parse message is processed. If a query will be repeatedly executed with different parameters, it might be beneficial to send a single Parse message containing a parameterized query, followed by multiple Bind and Execute messages. This will avoid replanning the query on each execution."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:734(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:734(para) 
 msgid "The unnamed prepared statement is likewise planned during Parse processing if the Parse message defines no parameters. But if there are parameters, query planning occurs every time Bind parameters are supplied. This allows the planner to make use of the actual values of the parameters provided by each Bind message, rather than use generic estimates."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:743(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:743(para) 
 msgid "Query plans generated from a parameterized query might be less efficient than query plans generated from an equivalent query with actual parameter values substituted. The query planner cannot make decisions based on actual parameter values (for example, index selectivity) when planning a parameterized query assigned to a named prepared-statement object. This possible penalty is avoided when using the unnamed statement, since it is not planned until actual parameter values are available. The cost is that planning must occur afresh for each Bind, even if the query stays the same."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:756(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:756(para) 
 msgid "If successfully created, a named portal object lasts till the end of the current transaction, unless explicitly destroyed. An unnamed portal is destroyed at the end of the transaction, or as soon as the next Bind statement specifying the unnamed portal as destination is issued. (Note that a simple Query message also destroys the unnamed portal.) Named portals must be explicitly closed before they can be redefined by a Bind message, but this is not required for the unnamed portal. Named portals can also be created and accessed at the SQL command level, using <command>DECLARE CURSOR</command> and <command>FETCH</command>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:768(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:768(para) 
 msgid "Once a portal exists, it can be executed using an Execute message. The Execute message specifies the portal name (empty string denotes the unnamed portal) and a maximum result-row count (zero meaning <quote>fetch all rows</quote>). The result-row count is only meaningful for portals containing commands that return row sets; in other cases the command is always executed to completion, and the row count is ignored. The possible responses to Execute are the same as those described above for queries issued via simple query protocol, except that Execute doesn't cause ReadyForQuery or RowDescription to be issued."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:782(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:782(para) 
 msgid "If Execute terminates before completing the execution of a portal (due to reaching a nonzero result-row count), it will send a PortalSuspended message; the appearance of this message tells the frontend that another Execute should be issued against the same portal to complete the operation. The CommandComplete message indicating completion of the source SQL command is not sent until the portal's execution is completed. Therefore, an Execute phase is always terminated by the appearance of exactly one of these messages: CommandComplete, EmptyQueryResponse (if the portal was created from an empty query string), ErrorResponse, or PortalSuspended."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:795(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:795(para) 
 msgid "At completion of each series of extended-query messages, the frontend should issue a Sync message. This parameterless message causes the backend to close the current transaction if it's not inside a <command>BEGIN</command>/<command>COMMIT</command> transaction block (<quote>close</quote> meaning to commit if no error, or roll back if error). Then a ReadyForQuery response is issued. The purpose of Sync is to provide a resynchronization point for error recovery. When an error is detected while processing any extended-query message, the backend issues ErrorResponse, then reads and discards messages until a Sync is reached, then issues ReadyForQuery and returns to normal message processing. (But note that no skipping occurs if an error is detected <emphasis>while</emphasis> processing Sync — this ensures that there is one and only one ReadyForQuery sent for each Sync.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:812(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:812(para) 
 msgid "Sync does not cause a transaction block opened with <command>BEGIN</command> to be closed. It is possible to detect this situation since the ReadyForQuery message includes transaction status information."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:819(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:819(para) 
 msgid "In addition to these fundamental, required operations, there are several optional operations that can be used with extended-query protocol."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:824(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:824(para) 
 msgid "The Describe message (portal variant) specifies the name of an existing portal (or an empty string for the unnamed portal). The response is a RowDescription message describing the rows that will be returned by executing the portal; or a NoData message if the portal does not contain a query that will return rows; or ErrorResponse if there is no such portal."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:832(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:832(para) 
 msgid "The Describe message (statement variant) specifies the name of an existing prepared statement (or an empty string for the unnamed prepared statement). The response is a ParameterDescription message describing the parameters needed by the statement, followed by a RowDescription message describing the rows that will be returned when the statement is eventually executed (or a NoData message if the statement will not return rows). ErrorResponse is issued if there is no such prepared statement. Note that since Bind has not yet been issued, the formats to be used for returned columns are not yet known to the backend; the format code fields in the RowDescription message will be zeroes in this case."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:846(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:846(para) 
 msgid "In most scenarios the frontend should issue one or the other variant of Describe before issuing Execute, to ensure that it knows how to interpret the results it will get back."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:853(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:853(para) 
 msgid "The Close message closes an existing prepared statement or portal and releases resources. It is not an error to issue Close against a nonexistent statement or portal name. The response is normally CloseComplete, but could be ErrorResponse if some difficulty is encountered while releasing resources. Note that closing a prepared statement implicitly closes any open portals that were constructed from that statement."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:863(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:863(para) 
 msgid "The Flush message does not cause any specific output to be generated, but forces the backend to deliver any data pending in its output buffers. A Flush must be sent after any extended-query command except Sync, if the frontend wishes to examine the results of that command before issuing more commands. Without Flush, messages returned by the backend will be combined into the minimum possible number of packets to minimize network overhead."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:874(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:874(para) 
 msgid "The simple Query message is approximately equivalent to the series Parse, Bind, portal Describe, Execute, Close, Sync, using the unnamed prepared statement and portal objects and no parameters. One difference is that it will accept multiple SQL statements in the query string, automatically performing the bind/describe/execute sequence for each one in succession. Another difference is that it will not return ParseComplete, BindComplete, CloseComplete, or NoData messages."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:887(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:887(title) 
 msgid "Function Call"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:889(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:889(para) 
 msgid "The Function Call sub-protocol allows the client to request a direct call of any function that exists in the database's <structname>pg_proc</structname> system catalog. The client must have execute permission for the function."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:897(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:897(para) 
 msgid "The Function Call sub-protocol is a legacy feature that is probably best avoided in new code. Similar results can be accomplished by setting up a prepared statement that does <literal>SELECT function($1, ...)</literal>. The Function Call cycle can then be replaced with Bind/Execute."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:905(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:905(para) 
 msgid "A Function Call cycle is initiated by the frontend sending a FunctionCall message to the backend. The backend then sends one or more response messages depending on the results of the function call, and finally a ReadyForQuery response message. ReadyForQuery informs the frontend that it can safely send a new query or function call."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:928(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:928(term) 
 msgid "FunctionCallResponse"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:930(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:930(para) 
 msgid "The function call was completed and returned the result given in the message. (Note that the Function Call protocol can only handle a single scalar result, not a row type or set of results.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:942(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:942(para) 
 msgid "Processing of the function call is complete. ReadyForQuery will always be sent, whether processing terminates successfully or with an error."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:953(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:953(para) 
 msgid "A warning message has been issued in relation to the function call. Notices are in addition to other responses, i.e., the backend will continue processing the command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:965(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:965(title) 
 msgid "COPY Operations"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:967(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:967(para) 
 msgid "The <command>COPY</command> command allows high-speed bulk data transfer to or from the server. Copy-in and copy-out operations each switch the connection into a distinct sub-protocol, which lasts until the operation is completed."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:974(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:974(para) 
 msgid "Copy-in mode (data transfer to the server) is initiated when the backend executes a <command>COPY FROM STDIN</command> SQL statement. The backend sends a CopyInResponse message to the frontend. The frontend should then send zero or more CopyData messages, forming a stream of input data. (The message boundaries are not required to have anything to do with row boundaries, although that is often a reasonable choice.) The frontend can terminate the copy-in mode by sending either a CopyDone message (allowing successful termination) or a CopyFail message (which will cause the <command>COPY</command> SQL statement to fail with an error). The backend then reverts to the command-processing mode it was in before the <command>COPY</command> started, which will be either simple or extended query protocol. It will next send either CommandComplete (if successful) or ErrorResponse (if not)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:990(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:990(para) 
 msgid "In the event of a backend-detected error during copy-in mode (including receipt of a CopyFail message), the backend will issue an ErrorResponse message. If the <command>COPY</command> command was issued via an extended-query message, the backend will now discard frontend messages until a Sync message is received, then it will issue ReadyForQuery and return to normal processing. If the <command>COPY</command> command was issued in a simple Query message, the rest of that message is discarded and ReadyForQuery is issued. In either case, any subsequent CopyData, CopyDone, or CopyFail messages issued by the frontend will simply be dropped."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1002(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1002(para) 
 msgid "The backend will ignore Flush and Sync messages received during copy-in mode. Receipt of any other non-copy message type constitutes an error that will abort the copy-in state as described above. (The exception for Flush and Sync is for the convenience of client libraries that always send Flush or Sync after an Execute message, without checking whether the command to be executed is a <command>COPY FROM STDIN</command>.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1011(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1011(para) 
 msgid "Copy-out mode (data transfer from the server) is initiated when the backend executes a <command>COPY TO STDOUT</command> SQL statement. The backend sends a CopyOutResponse message to the frontend, followed by zero or more CopyData messages (always one per row), followed by CopyDone. The backend then reverts to the command-processing mode it was in before the <command>COPY</command> started, and sends CommandComplete. The frontend cannot abort the transfer (except by closing the connection or issuing a Cancel request), but it can discard unwanted CopyData and CopyDone messages."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1023(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1023(para) 
 msgid "In the event of a backend-detected error during copy-out mode, the backend will issue an ErrorResponse message and revert to normal processing. The frontend should treat receipt of ErrorResponse as terminating the copy-out mode."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1030(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1030(para) 
 msgid "It is possible for NoticeResponse and ParameterStatus messages to be interspersed between CopyData messages; frontends must handle these cases, and should be prepared for other asynchronous message types as well (see <xref linkend=\"protocol-async\"/>). Otherwise, any message type other than CopyData or CopyDone may be treated as terminating copy-out mode."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1038(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1038(para) 
 msgid "There is another Copy-related mode called Copy-both, which allows high-speed bulk data transfer to <emphasis>and</emphasis> from the server. Copy-both mode is initiated when a backend in walsender mode executes a <command>START_REPLICATION</command> statement. The backend sends a CopyBothResponse message to the frontend. Both the backend and the frontend may then send CopyData messages until the connection is terminated. See <xref linkend=\"protocol-replication\"/>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1049(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1049(para) 
 msgid "The CopyInResponse, CopyOutResponse and CopyBothResponse messages include fields that inform the frontend of the number of columns per row and the format codes being used for each column. (As of the present implementation, all columns in a given <command>COPY</command> operation will use the same format, but the message design does not assume this.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1061(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:1061(title) 
 msgid "Asynchronous Operations"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1063(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1063(para) 
 msgid "There are several cases in which the backend will send messages that are not specifically prompted by the frontend's command stream. Frontends must be prepared to deal with these messages at any time, even when not engaged in a query. At minimum, one should check for these cases before beginning to read a query response."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1072(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1072(para) 
 msgid "It is possible for NoticeResponse messages to be generated due to outside activity; for example, if the database administrator commands a <quote>fast</quote> database shutdown, the backend will send a NoticeResponse indicating this fact before closing the connection. Accordingly, frontends should always be prepared to accept and display NoticeResponse messages, even when the connection is nominally idle."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1081(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1081(para) 
 msgid "ParameterStatus messages will be generated whenever the active value changes for any of the parameters the backend believes the frontend should know about. Most commonly this occurs in response to a <command>SET</command> SQL command executed by the frontend, and this case is effectively synchronous — but it is also possible for parameter status changes to occur because the administrator changed a configuration file and then sent the <systemitem>SIGHUP</systemitem> signal to the server. Also, if a <command>SET</command> command is rolled back, an appropriate ParameterStatus message will be generated to report the current effective value."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1095(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1095(para) 
 msgid "At present there is a hard-wired set of parameters for which ParameterStatus will be generated: they are <varname>server_version</varname>, <varname>server_encoding</varname>, <varname>client_encoding</varname>, <varname>application_name</varname>, <varname>is_superuser</varname>, <varname>session_authorization</varname>, <varname>DateStyle</varname>, <varname>IntervalStyle</varname>, <varname>TimeZone</varname>, <varname>integer_datetimes</varname>, and <varname>standard_conforming_strings</varname>. (<varname>server_encoding</varname>, <varname>TimeZone</varname>, and <varname>integer_datetimes</varname> were not reported by releases before 8.0; <varname>standard_conforming_strings</varname> was not reported by releases before 8.1; <varname>IntervalStyle</varname> was not reported by releases before 8.4; <varname>application_name</varname> was not reported by releases before 9.0.) Note that <varname>server_version</varname>, <varname>server_encoding</varname> and <varname>integer_datetimes</varname> are pseudo-parameters that cannot change after startup. This set might change in the future, or even become configurable. Accordingly, a frontend should simply ignore ParameterStatus for parameters that it does not understand or care about."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1125(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1125(para) 
 msgid "If a frontend issues a <command>LISTEN</command> command, then the backend will send a NotificationResponse message (not to be confused with NoticeResponse!) whenever a <command>NOTIFY</command> command is executed for the same channel name."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1134(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1134(para) 
 msgid "At present, NotificationResponse can only be sent outside a transaction, and thus it will not occur in the middle of a command-response series, though it might occur just before ReadyForQuery. It is unwise to design frontend logic that assumes that, however. Good practice is to be able to accept NotificationResponse at any point in the protocol."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1146(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:1146(title) 
 msgid "Canceling Requests in Progress"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1148(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1148(para) 
 msgid "During the processing of a query, the frontend might request cancellation of the query. The cancel request is not sent directly on the open connection to the backend for reasons of implementation efficiency: we don't want to have the backend constantly checking for new input from the frontend during query processing. Cancel requests should be relatively infrequent, so we make them slightly cumbersome in order to avoid a penalty in the normal case."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1159(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1159(para) 
 msgid "To issue a cancel request, the frontend opens a new connection to the server and sends a CancelRequest message, rather than the StartupMessage message that would ordinarily be sent across a new connection. The server will process this request and then close the connection. For security reasons, no direct reply is made to the cancel request message."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1168(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1168(para) 
 msgid "A CancelRequest message will be ignored unless it contains the same key data (PID and secret key) passed to the frontend during connection start-up. If the request matches the PID and secret key for a currently executing backend, the processing of the current query is aborted. (In the existing implementation, this is done by sending a special signal to the backend process that is processing the query.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1178(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1178(para) 
 msgid "The cancellation signal might or might not have any effect — for example, if it arrives after the backend has finished processing the query, then it will have no effect. If the cancellation is effective, it results in the current command being terminated early with an error message."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1186(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1186(para) 
 msgid "The upshot of all this is that for reasons of both security and efficiency, the frontend has no direct way to tell whether a cancel request has succeeded. It must continue to wait for the backend to respond to the query. Issuing a cancel simply improves the odds that the current query will finish soon, and improves the odds that it will fail with an error message instead of succeeding."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1196(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1196(para) 
 msgid "Since the cancel request is sent across a new connection to the server and not across the regular frontend/backend communication link, it is possible for the cancel request to be issued by any process, not just the frontend whose query is to be canceled. This might provide additional flexibility when building multiple-process applications. It also introduces a security risk, in that unauthorized persons might try to cancel queries. The security risk is addressed by requiring a dynamically generated secret key to be supplied in cancel requests."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1210(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:1210(title) 
 msgid "Termination"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1212(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1212(para) 
 msgid "The normal, graceful termination procedure is that the frontend sends a Terminate message and immediately closes the connection. On receipt of this message, the backend closes the connection and terminates."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1219(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1219(para) 
 msgid "In rare cases (such as an administrator-commanded database shutdown) the backend might disconnect without any frontend request to do so. In such cases the backend will attempt to send an error or notice message giving the reason for the disconnection before it closes the connection."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1226(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1226(para) 
 msgid "Other termination scenarios arise from various failure cases, such as core dump at one end or the other, loss of the communications link, loss of message-boundary synchronization, etc. If either frontend or backend sees an unexpected closure of the connection, it should clean up and terminate. The frontend has the option of launching a new backend by recontacting the server if it doesn't want to terminate itself. Closing the connection is also advisable if an unrecognizable message type is received, since this probably indicates loss of message-boundary sync."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1237(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1237(para) 
 msgid "For either normal or abnormal termination, any open transaction is rolled back, not committed. One should note however that if a frontend disconnects while a non-<command>SELECT</command> query is being processed, the backend will probably finish the query before noticing the disconnection. If the query is outside any transaction block (<command>BEGIN</command> ... <command>COMMIT</command> sequence) then its results might be committed before the disconnection is recognized."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1250(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:1250(title) 
 msgid "<acronym>SSL</acronym> Session Encryption"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1252(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1252(para) 
 msgid "If <productname>PostgreSQL</productname> was built with <acronym>SSL</acronym> support, frontend/backend communications can be encrypted using <acronym>SSL</acronym>. This provides communication security in environments where attackers might be able to capture the session traffic. For more information on encrypting <productname>PostgreSQL</productname> sessions with <acronym>SSL</acronym>, see <xref linkend=\"ssl-tcp\"/>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1262(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1262(para) 
 msgid "To initiate an <acronym>SSL</acronym>-encrypted connection, the frontend initially sends an SSLRequest message rather than a StartupMessage. The server then responds with a single byte containing <literal>S</literal> or <literal>N</literal>, indicating that it is willing or unwilling to perform <acronym>SSL</acronym>, respectively. The frontend might close the connection at this point if it is dissatisfied with the response. To continue after <literal>S</literal>, perform an <acronym>SSL</acronym> startup handshake (not described here, part of the <acronym>SSL</acronym> specification) with the server. If this is successful, continue with sending the usual StartupMessage. In this case the StartupMessage and all subsequent data will be <acronym>SSL</acronym>-encrypted. To continue after <literal>N</literal>, send the usual StartupMessage and proceed without encryption."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1280(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1280(para) 
 msgid "The frontend should also be prepared to handle an ErrorMessage response to SSLRequest from the server. This would only occur if the server predates the addition of <acronym>SSL</acronym> support to <productname>PostgreSQL</productname>. In this case the connection must be closed, but the frontend might choose to open a fresh connection and proceed without requesting <acronym>SSL</acronym>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1289(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1289(para) 
 msgid "An initial SSLRequest can also be used in a connection that is being opened to send a CancelRequest message."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1294(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1294(para) 
 msgid "While the protocol itself does not provide a way for the server to force <acronym>SSL</acronym> encryption, the administrator can configure the server to reject unencrypted sessions as a byproduct of authentication checking."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1304(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:1304(title) 
 msgid "Streaming Replication Protocol"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1317(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1317(term) 
 msgid "IDENTIFY_SYSTEM"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1319(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1319(para) 
 msgid "Requests the server to identify itself. Server replies with a result set of a single row, containing three fields:"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1327(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1327(term) 
 msgid "systemid"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1331(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1331(para) 
 msgid "The unique system identifier identifying the cluster. This can be used to check that the base backup used to initialize the standby came from the same cluster."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1340(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1340(term) 
 msgid "timeline"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1344(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1344(para) 
 msgid "Current TimelineID. Also useful to check that the standby is consistent with the master."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1352(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1352(term) 
 msgid "xlogpos"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1356(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1356(para) 
 msgid "Current xlog write location. Useful to get a known location in the transaction log where streaming can start."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1369(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1369(term) 
 msgid "START_REPLICATION <replaceable>XXX</replaceable>/<replaceable>XXX</replaceable>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1371(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1371(para) 
 msgid "Instructs server to start streaming WAL, starting at WAL position <replaceable>XXX</replaceable>/<replaceable>XXX</replaceable>. The server can reply with an error, e.g. if the requested section of WAL has already been recycled. On success, server responds with a CopyBothResponse message, and then starts to stream WAL to the frontend. WAL will continue to be streamed until the connection is broken; no further commands will be accepted."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1381(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1381(para) 
 msgid "WAL data is sent as a series of CopyData messages. (This allows other information to be intermixed; in particular the server can send an ErrorResponse message if it encounters a failure after beginning to stream.) The payload in each CopyData message follows this format:"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1391(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1391(term) 
 msgid "XLogData (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1398(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1398(term) 
 msgid "Byte1('w')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1402(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1402(para) 
 msgid "Identifies the message as WAL data."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1408(term) /tmp/cicero-hvAh/protocol.xml:1419(term) /tmp/cicero-hvAh/protocol.xml:1430(term) /tmp/cicero-hvAh/protocol.xml:1502(term) /tmp/cicero-hvAh/protocol.xml:1513(term) /tmp/cicero-hvAh/protocol.xml:1524(term) /tmp/cicero-hvAh/protocol.xml:1535(term) /tmp/cicero-hvAh/protocol.xml:1572(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1408(term) /tmp/cicero-cjWZ/protocol.xml:1419(term) /tmp/cicero-cjWZ/protocol.xml:1430(term) /tmp/cicero-cjWZ/protocol.xml:1502(term) /tmp/cicero-cjWZ/protocol.xml:1513(term) /tmp/cicero-cjWZ/protocol.xml:1524(term) /tmp/cicero-cjWZ/protocol.xml:1535(term) /tmp/cicero-cjWZ/protocol.xml:1572(term) 
 msgid "Byte8"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1412(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1412(para) 
 msgid "The starting point of the WAL data in this message, given in XLogRecPtr format."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1423(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1423(para) 
 msgid "The current end of WAL on the server, given in XLogRecPtr format."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1434(para) /tmp/cicero-hvAh/protocol.xml:1539(para) /tmp/cicero-hvAh/protocol.xml:1576(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1434(para) /tmp/cicero-cjWZ/protocol.xml:1539(para) /tmp/cicero-cjWZ/protocol.xml:1576(para) 
 msgid "The server's system clock at the time of transmission, given in TimestampTz format."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1441(term) /tmp/cicero-hvAh/protocol.xml:2230(term) /tmp/cicero-hvAh/protocol.xml:2408(term) /tmp/cicero-hvAh/protocol.xml:2767(term) /tmp/cicero-hvAh/protocol.xml:3141(term) /tmp/cicero-hvAh/protocol.xml:3503(term) /tmp/cicero-hvAh/protocol.xml:3577(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1441(term) /tmp/cicero-cjWZ/protocol.xml:2230(term) /tmp/cicero-cjWZ/protocol.xml:2408(term) /tmp/cicero-cjWZ/protocol.xml:2767(term) /tmp/cicero-cjWZ/protocol.xml:3141(term) /tmp/cicero-cjWZ/protocol.xml:3503(term) /tmp/cicero-cjWZ/protocol.xml:3577(term) 
 msgid "Byte<replaceable>n</replaceable>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1445(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1445(para) 
 msgid "A section of the WAL data stream."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1456(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1456(para) 
 msgid "A single WAL record is never split across two CopyData messages. When a WAL record crosses a WAL page boundary, and is therefore already split using continuation records, it can be split at the page boundary. In other words, the first main WAL record and its continuation records can be sent in different CopyData messages."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1463(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1463(para) 
 msgid "Note that all fields within the WAL data and the above-described header will be in the sending server's native format. Endianness, and the format for the timestamp, are unpredictable unless the receiver has verified that the sender's system identifier matches its own <filename>pg_control</filename> contents."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1470(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1470(para) 
 msgid "If the WAL sender process is terminated normally (during postmaster shutdown), it will send a CommandComplete message before exiting. This might not happen during an abnormal shutdown, of course."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1476(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1476(para) 
 msgid "The receiving process can send replies back to the sender at any time, using one of the following message formats (also in the payload of a CopyData message):"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1485(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1485(term) 
 msgid "Standby status update (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1492(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1492(term) 
 msgid "Byte1('r')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1496(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1496(para) 
 msgid "Identifies the message as a receiver status update."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1506(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1506(para) 
 msgid "The location of the last WAL byte + 1 received and written to disk in the standby, in XLogRecPtr format."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1517(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1517(para) 
 msgid "The location of the last WAL byte + 1 flushed to disk in the standby, in XLogRecPtr format."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1528(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1528(para) 
 msgid "The location of the last WAL byte + 1 applied in the standby, in XLogRecPtr format."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1555(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1555(term) 
 msgid "Hot Standby feedback message (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1562(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1562(term) 
 msgid "Byte1('h')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1566(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1566(para) 
 msgid "Identifies the message as a Hot Standby feedback message."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1583(term) /tmp/cicero-hvAh/protocol.xml:1593(term) /tmp/cicero-hvAh/protocol.xml:2042(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1583(term) /tmp/cicero-cjWZ/protocol.xml:1593(term) /tmp/cicero-cjWZ/protocol.xml:2042(term) 
 msgid "Byte4"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1587(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1587(para) 
 msgid "The standby's current xmin."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1597(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1597(para) 
 msgid "The standby's current epoch."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1612(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1612(term) 
 msgid "BASE_BACKUP [<literal>LABEL</literal><replaceable>'label'</replaceable>] [<literal>PROGRESS</literal>] [<literal>FAST</literal>] [<literal>WAL</literal>] [<literal>NOWAIT</literal>]"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1621(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:1621(literal) 
 msgid "LABEL"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1621(replaceable) 
+#: /tmp/cicero-cjWZ/protocol.xml:1621(replaceable) 
 msgid "'label'"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1623(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1623(para) 
 msgid "Sets the label of the backup. If none is specified, a backup label of <literal>base backup</literal> will be used. The quoting rules for the label are the same as a standard SQL string with <xref linkend=\"guc-standard-conforming-strings\"/> turned on."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1633(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:1633(literal) 
 msgid "PROGRESS"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1635(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1635(para) 
 msgid "Request information required to generate a progress report. This will send back an approximate size in the header of each tablespace, which can be used to calculate how far along the stream is done. This is calculated by enumerating all the file sizes once before the transfer is even started, and may as such have a negative impact on the performance - in particular it may take longer before the first data is streamed. Since the database files can change during the backup, the size is only approximate and may both grow and shrink between the time of approximation and the sending of the actual files."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1650(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:1650(literal) 
 msgid "FAST"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1652(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1652(para) 
 msgid "Request a fast checkpoint."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1659(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:1659(literal) 
 msgid "WAL"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1661(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1661(para) 
 msgid "Include the necessary WAL segments in the backup. This will include all the files between start and stop backup in the <filename>pg_xlog</filename> directory of the base directory tar file."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1671(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:1671(literal) 
 msgid "NOWAIT"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1673(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1673(para) 
 msgid "By default, the backup will wait until the last required xlog segment has been archived, or emit a warning if log archiving is not enabled. Specifying <literal>NOWAIT</literal> disables both the waiting and the warning, leaving the client responsible for ensuring the required log is available."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1614(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1614(para) 
 msgid "Instructs the server to start streaming a base backup. The system will automatically be put in backup mode before the backup is started, and taken out of it when the backup is complete. The following options are accepted: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1684(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1684(para) 
 msgid "When the backup is started, the server will first send two ordinary result sets, followed by one or more CopyResponse results."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1689(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1689(para) 
 msgid "The first ordinary result set contains the starting position of the backup, given in XLogRecPtr format as a single column in a single row."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1698(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1698(term) 
 msgid "spcoid"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1700(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1700(para) 
 msgid "The oid of the tablespace, or <literal>NULL</literal> if it's the base directory."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1707(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1707(term) 
 msgid "spclocation"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1709(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1709(para) 
 msgid "The full path of the tablespace directory, or <literal>NULL</literal> if it's the base directory."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1716(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1716(term) 
 msgid "size"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1718(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1718(para) 
 msgid "The approximate size of the tablespace, if progress report has been requested; otherwise it's <literal>NULL</literal>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1693(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1693(para) 
 msgid "The second ordinary result set has one row for each tablespace. The fields in this row are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1726(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1726(para) 
 msgid "After the second regular result set, one or more CopyResponse results will be sent, one for PGDATA and one for each additional tablespace other than <literal>pg_default</literal> and <literal>pg_global</literal>. The data in the CopyResponse results will be a tar format (using ustar00 extensions) dump of the tablespace contents. After the tar data is complete, a final ordinary result set will be sent."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1743(filename) 
+#: /tmp/cicero-cjWZ/protocol.xml:1743(filename) 
 msgid "postmaster.pid"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1747(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1747(para) 
 msgid "<filename>pg_xlog</filename>, including subdirectories. If the backup is run with wal files included, a synthesized version of pg_xlog will be included, but it will only contain the files necessary for the backup to work, not the rest of the contents."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1735(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1735(para) 
 msgid "The tar archive for the data directory and each tablespace will contain all files in the directories, regardless of whether they are <productname>PostgreSQL</productname> files or other files added to the same directory. The only excluded files are: <placeholder-1/> Owner, group and file mode are set if the underlying filesystem on the server supports it."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1758(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1758(para) 
 msgid "Once all tablespaces have been sent, a final regular result set will be sent. This result set contains the end position of the backup, given in XLogRecPtr format as a single column in a single row."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1306(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1306(para) 
 msgid "To initiate streaming replication, the frontend sends the <literal>replication</literal> parameter in the startup message. This tells the backend to go into walsender mode, wherein a small set of replication commands can be issued instead of SQL statements. Only the simple query protocol can be used in walsender mode. The commands accepted in walsender mode are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1772(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:1772(title) 
 msgid "Message Data Types"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1780(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1780(term) 
 msgid "Int<replaceable>n</replaceable>(<replaceable>i</replaceable>)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1784(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1784(para) 
 msgid "An <replaceable>n</replaceable>-bit integer in network byte order (most significant byte first). If <replaceable>i</replaceable> is specified it is the exact value that will appear, otherwise the value is variable. Eg. Int16, Int32(42)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1795(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1795(term) 
 msgid "Int<replaceable>n</replaceable>[<replaceable>k</replaceable>]"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1799(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1799(para) 
 msgid "An array of <replaceable>k</replaceable><replaceable>n</replaceable>-bit integers, each in network byte order. The array length <replaceable>k</replaceable> is always determined by an earlier field in the message. Eg. Int16[M]."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1810(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1810(term) 
 msgid "String(<replaceable>s</replaceable>)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1814(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1814(para) 
 msgid "A null-terminated string (C-style string). There is no specific length limitation on strings. If <replaceable>s</replaceable> is specified it is the exact value that will appear, otherwise the value is variable. Eg. String, String(\"user\")."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1823(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1823(para) 
 msgid "<emphasis>There is no predefined limit</emphasis> on the length of a string that can be returned by the backend. Good coding strategy for a frontend is to use an expandable buffer so that anything that fits in memory can be accepted. If that's not feasible, read the full string and discard trailing characters that don't fit into your fixed-size buffer."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1835(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1835(term) 
 msgid "Byte<replaceable>n</replaceable>(<replaceable>c</replaceable>)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1839(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1839(para) 
 msgid "Exactly <replaceable>n</replaceable> bytes. If the field width <replaceable>n</replaceable> is not a constant, it is always determinable from an earlier field in the message. If <replaceable>c</replaceable> is specified it is the exact value. Eg. Byte2, Byte1('\\n')."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1774(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1774(para) 
 msgid "This section describes the base data types used in messages. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1854(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:1854(title) 
 msgid "Message Formats"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1856(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1856(para) 
 msgid "This section describes the detailed format of each message. Each is marked to indicate that it can be sent by a frontend (F), a backend (B), or both (F &amp; B). Notice that although each message includes a byte count at the beginning, the message format is defined so that the message end can be found without reference to the byte count. This aids validity checking. (The CopyData message is an exception, because it forms part of a data stream; the contents of any individual CopyData message cannot be interpretable on their own.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1871(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1871(term) 
 msgid "AuthenticationOk (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1879(term) /tmp/cicero-hvAh/protocol.xml:1924(term) /tmp/cicero-hvAh/protocol.xml:1968(term) /tmp/cicero-hvAh/protocol.xml:2012(term) /tmp/cicero-hvAh/protocol.xml:2067(term) /tmp/cicero-hvAh/protocol.xml:2112(term) /tmp/cicero-hvAh/protocol.xml:2157(term) /tmp/cicero-hvAh/protocol.xml:2200(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1879(term) /tmp/cicero-cjWZ/protocol.xml:1924(term) /tmp/cicero-cjWZ/protocol.xml:1968(term) /tmp/cicero-cjWZ/protocol.xml:2012(term) /tmp/cicero-cjWZ/protocol.xml:2067(term) /tmp/cicero-cjWZ/protocol.xml:2112(term) /tmp/cicero-cjWZ/protocol.xml:2157(term) /tmp/cicero-cjWZ/protocol.xml:2200(term) 
 msgid "Byte1('R')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1883(para) /tmp/cicero-hvAh/protocol.xml:1928(para) /tmp/cicero-hvAh/protocol.xml:1972(para) /tmp/cicero-hvAh/protocol.xml:2016(para) /tmp/cicero-hvAh/protocol.xml:2071(para) /tmp/cicero-hvAh/protocol.xml:2116(para) /tmp/cicero-hvAh/protocol.xml:2161(para) /tmp/cicero-hvAh/protocol.xml:2204(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1883(para) /tmp/cicero-cjWZ/protocol.xml:1928(para) /tmp/cicero-cjWZ/protocol.xml:1972(para) /tmp/cicero-cjWZ/protocol.xml:2016(para) /tmp/cicero-cjWZ/protocol.xml:2071(para) /tmp/cicero-cjWZ/protocol.xml:2116(para) /tmp/cicero-cjWZ/protocol.xml:2161(para) /tmp/cicero-cjWZ/protocol.xml:2204(para) 
 msgid "Identifies the message as an authentication request."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1889(term) /tmp/cicero-hvAh/protocol.xml:1934(term) /tmp/cicero-hvAh/protocol.xml:1978(term) /tmp/cicero-hvAh/protocol.xml:2077(term) /tmp/cicero-hvAh/protocol.xml:2122(term) /tmp/cicero-hvAh/protocol.xml:2167(term) /tmp/cicero-hvAh/protocol.xml:2220(term) /tmp/cicero-hvAh/protocol.xml:4306(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1889(term) /tmp/cicero-cjWZ/protocol.xml:1934(term) /tmp/cicero-cjWZ/protocol.xml:1978(term) /tmp/cicero-cjWZ/protocol.xml:2077(term) /tmp/cicero-cjWZ/protocol.xml:2122(term) /tmp/cicero-cjWZ/protocol.xml:2167(term) /tmp/cicero-cjWZ/protocol.xml:2220(term) /tmp/cicero-cjWZ/protocol.xml:4306(term) 
 msgid "Int32(8)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1893(para) /tmp/cicero-hvAh/protocol.xml:1938(para) /tmp/cicero-hvAh/protocol.xml:1982(para) /tmp/cicero-hvAh/protocol.xml:2026(para) /tmp/cicero-hvAh/protocol.xml:2081(para) /tmp/cicero-hvAh/protocol.xml:2126(para) /tmp/cicero-hvAh/protocol.xml:2171(para) /tmp/cicero-hvAh/protocol.xml:2214(para) /tmp/cicero-hvAh/protocol.xml:2271(para) /tmp/cicero-hvAh/protocol.xml:2326(para) /tmp/cicero-hvAh/protocol.xml:2479(para) /tmp/cicero-hvAh/protocol.xml:2504(para) /tmp/cicero-hvAh/protocol.xml:2572(para) /tmp/cicero-hvAh/protocol.xml:2629(para) /tmp/cicero-hvAh/protocol.xml:2664(para) /tmp/cicero-hvAh/protocol.xml:2761(para) /tmp/cicero-hvAh/protocol.xml:2808(para) /tmp/cicero-hvAh/protocol.xml:2843(para) /tmp/cicero-hvAh/protocol.xml:2890(para) /tmp/cicero-hvAh/protocol.xml:2965(para) /tmp/cicero-hvAh/protocol.xml:3038(para) /tmp/cicero-hvAh/protocol.xml:3109(para) /tmp/cicero-hvAh/protocol.xml:3182(para) /tmp/cicero-hvAh/protocol.xml:3240(para) /tmp/cicero-hvAh/protocol.xml:3275(para) /tmp/cicero-hvAh/protocol.xml:3341(para) /tmp/cicero-hvAh/protocol.xml:3398(para) /tmp/cicero-hvAh/protocol.xml:3433(para) /tmp/cicero-hvAh/protocol.xml:3558(para) /tmp/cicero-hvAh/protocol.xml:3618(para) /tmp/cicero-hvAh/protocol.xml:3653(para) /tmp/cicero-hvAh/protocol.xml:3719(para) /tmp/cicero-hvAh/protocol.xml:3784(para) /tmp/cicero-hvAh/protocol.xml:3842(para) /tmp/cicero-hvAh/protocol.xml:3896(para) /tmp/cicero-hvAh/protocol.xml:3980(para) /tmp/cicero-hvAh/protocol.xml:4019(para) /tmp/cicero-hvAh/protocol.xml:4065(para) /tmp/cicero-hvAh/protocol.xml:4100(para) /tmp/cicero-hvAh/protocol.xml:4146(para) /tmp/cicero-hvAh/protocol.xml:4195(para) /tmp/cicero-hvAh/protocol.xml:4310(para) /tmp/cicero-hvAh/protocol.xml:4348(para) /tmp/cicero-hvAh/protocol.xml:4466(para) /tmp/cicero-hvAh/protocol.xml:4501(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1893(para) /tmp/cicero-cjWZ/protocol.xml:1938(para) /tmp/cicero-cjWZ/protocol.xml:1982(para) /tmp/cicero-cjWZ/protocol.xml:2026(para) /tmp/cicero-cjWZ/protocol.xml:2081(para) /tmp/cicero-cjWZ/protocol.xml:2126(para) /tmp/cicero-cjWZ/protocol.xml:2171(para) /tmp/cicero-cjWZ/protocol.xml:2214(para) /tmp/cicero-cjWZ/protocol.xml:2271(para) /tmp/cicero-cjWZ/protocol.xml:2326(para) /tmp/cicero-cjWZ/protocol.xml:2479(para) /tmp/cicero-cjWZ/protocol.xml:2504(para) /tmp/cicero-cjWZ/protocol.xml:2572(para) /tmp/cicero-cjWZ/protocol.xml:2629(para) /tmp/cicero-cjWZ/protocol.xml:2664(para) /tmp/cicero-cjWZ/protocol.xml:2761(para) /tmp/cicero-cjWZ/protocol.xml:2808(para) /tmp/cicero-cjWZ/protocol.xml:2843(para) /tmp/cicero-cjWZ/protocol.xml:2890(para) /tmp/cicero-cjWZ/protocol.xml:2965(para) /tmp/cicero-cjWZ/protocol.xml:3038(para) /tmp/cicero-cjWZ/protocol.xml:3109(para) /tmp/cicero-cjWZ/protocol.xml:3182(para) /tmp/cicero-cjWZ/protocol.xml:3240(para) /tmp/cicero-cjWZ/protocol.xml:3275(para) /tmp/cicero-cjWZ/protocol.xml:3341(para) /tmp/cicero-cjWZ/protocol.xml:3398(para) /tmp/cicero-cjWZ/protocol.xml:3433(para) /tmp/cicero-cjWZ/protocol.xml:3558(para) /tmp/cicero-cjWZ/protocol.xml:3618(para) /tmp/cicero-cjWZ/protocol.xml:3653(para) /tmp/cicero-cjWZ/protocol.xml:3719(para) /tmp/cicero-cjWZ/protocol.xml:3784(para) /tmp/cicero-cjWZ/protocol.xml:3842(para) /tmp/cicero-cjWZ/protocol.xml:3896(para) /tmp/cicero-cjWZ/protocol.xml:3980(para) /tmp/cicero-cjWZ/protocol.xml:4019(para) /tmp/cicero-cjWZ/protocol.xml:4065(para) /tmp/cicero-cjWZ/protocol.xml:4100(para) /tmp/cicero-cjWZ/protocol.xml:4146(para) /tmp/cicero-cjWZ/protocol.xml:4195(para) /tmp/cicero-cjWZ/protocol.xml:4310(para) /tmp/cicero-cjWZ/protocol.xml:4348(para) /tmp/cicero-cjWZ/protocol.xml:4466(para) /tmp/cicero-cjWZ/protocol.xml:4501(para) 
 msgid "Length of message contents in bytes, including self."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1899(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1899(term) 
 msgid "Int32(0)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1903(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1903(para) 
 msgid "Specifies that the authentication was successful."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1916(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1916(term) 
 msgid "AuthenticationKerberosV5 (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1944(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1944(term) 
 msgid "Int32(2)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1948(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1948(para) 
 msgid "Specifies that Kerberos V5 authentication is required."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1960(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1960(term) 
 msgid "AuthenticationCleartextPassword (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1988(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:1988(term) 
 msgid "Int32(3)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:1992(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:1992(para) 
 msgid "Specifies that a clear-text password is required."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2004(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2004(term) 
 msgid "AuthenticationMD5Password (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2022(term) /tmp/cicero-hvAh/protocol.xml:2267(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2022(term) /tmp/cicero-cjWZ/protocol.xml:2267(term) 
 msgid "Int32(12)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2032(term) /tmp/cicero-hvAh/protocol.xml:4142(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2032(term) /tmp/cicero-cjWZ/protocol.xml:4142(term) 
 msgid "Int32(5)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2036(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2036(para) 
 msgid "Specifies that an MD5-encrypted password is required."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2046(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2046(para) 
 msgid "The salt to use when encrypting the password."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2059(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2059(term) 
 msgid "AuthenticationSCMCredential (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2087(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2087(term) 
 msgid "Int32(6)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2091(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2091(para) 
 msgid "Specifies that an SCM credentials message is required."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2104(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2104(term) 
 msgid "AuthenticationGSS (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2132(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2132(term) 
 msgid "Int32(7)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2136(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2136(para) 
 msgid "Specifies that GSSAPI authentication is required."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2149(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2149(term) 
 msgid "AuthenticationSSPI (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2177(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2177(term) 
 msgid "Int32(9)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2181(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2181(para) 
 msgid "Specifies that SSPI authentication is required."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2192(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2192(term) 
 msgid "AuthenticationGSSContinue (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2210(term) /tmp/cicero-hvAh/protocol.xml:2277(term) /tmp/cicero-hvAh/protocol.xml:2287(term) /tmp/cicero-hvAh/protocol.xml:2322(term) /tmp/cicero-hvAh/protocol.xml:2395(term) /tmp/cicero-hvAh/protocol.xml:2523(term) /tmp/cicero-hvAh/protocol.xml:2533(term) /tmp/cicero-hvAh/protocol.xml:2568(term) /tmp/cicero-hvAh/protocol.xml:2660(term) /tmp/cicero-hvAh/protocol.xml:2757(term) /tmp/cicero-hvAh/protocol.xml:2839(term) /tmp/cicero-hvAh/protocol.xml:2886(term) /tmp/cicero-hvAh/protocol.xml:2961(term) /tmp/cicero-hvAh/protocol.xml:3034(term) /tmp/cicero-hvAh/protocol.xml:3105(term) /tmp/cicero-hvAh/protocol.xml:3128(term) /tmp/cicero-hvAh/protocol.xml:3178(term) /tmp/cicero-hvAh/protocol.xml:3271(term) /tmp/cicero-hvAh/protocol.xml:3337(term) /tmp/cicero-hvAh/protocol.xml:3358(term) /tmp/cicero-hvAh/protocol.xml:3429(term) /tmp/cicero-hvAh/protocol.xml:3439(term) /tmp/cicero-hvAh/protocol.xml:3490(term) /tmp/cicero-hvAh/protocol.xml:3554(term) /tmp/cicero-hvAh/protocol.xml:3564(term) /tmp/cicero-hvAh/protocol.xml:3649(term) /tmp/cicero-hvAh/protocol.xml:3715(term) /tmp/cicero-hvAh/protocol.xml:3725(term) /tmp/cicero-hvAh/protocol.xml:3780(term) /tmp/cicero-hvAh/protocol.xml:3804(term) /tmp/cicero-hvAh/protocol.xml:3838(term) /tmp/cicero-hvAh/protocol.xml:3892(term) /tmp/cicero-hvAh/protocol.xml:3940(term) /tmp/cicero-hvAh/protocol.xml:4015(term) /tmp/cicero-hvAh/protocol.xml:4096(term) /tmp/cicero-hvAh/protocol.xml:4191(term) /tmp/cicero-hvAh/protocol.xml:4224(term) /tmp/cicero-hvAh/protocol.xml:4246(term) /tmp/cicero-hvAh/protocol.xml:4267(term) /tmp/cicero-hvAh/protocol.xml:4344(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2210(term) /tmp/cicero-cjWZ/protocol.xml:2277(term) /tmp/cicero-cjWZ/protocol.xml:2287(term) /tmp/cicero-cjWZ/protocol.xml:2322(term) /tmp/cicero-cjWZ/protocol.xml:2395(term) /tmp/cicero-cjWZ/protocol.xml:2523(term) /tmp/cicero-cjWZ/protocol.xml:2533(term) /tmp/cicero-cjWZ/protocol.xml:2568(term) /tmp/cicero-cjWZ/protocol.xml:2660(term) /tmp/cicero-cjWZ/protocol.xml:2757(term) /tmp/cicero-cjWZ/protocol.xml:2839(term) /tmp/cicero-cjWZ/protocol.xml:2886(term) /tmp/cicero-cjWZ/protocol.xml:2961(term) /tmp/cicero-cjWZ/protocol.xml:3034(term) /tmp/cicero-cjWZ/protocol.xml:3105(term) /tmp/cicero-cjWZ/protocol.xml:3128(term) /tmp/cicero-cjWZ/protocol.xml:3178(term) /tmp/cicero-cjWZ/protocol.xml:3271(term) /tmp/cicero-cjWZ/protocol.xml:3337(term) /tmp/cicero-cjWZ/protocol.xml:3358(term) /tmp/cicero-cjWZ/protocol.xml:3429(term) /tmp/cicero-cjWZ/protocol.xml:3439(term) /tmp/cicero-cjWZ/protocol.xml:3490(term) /tmp/cicero-cjWZ/protocol.xml:3554(term) /tmp/cicero-cjWZ/protocol.xml:3564(term) /tmp/cicero-cjWZ/protocol.xml:3649(term) /tmp/cicero-cjWZ/protocol.xml:3715(term) /tmp/cicero-cjWZ/protocol.xml:3725(term) /tmp/cicero-cjWZ/protocol.xml:3780(term) /tmp/cicero-cjWZ/protocol.xml:3804(term) /tmp/cicero-cjWZ/protocol.xml:3838(term) /tmp/cicero-cjWZ/protocol.xml:3892(term) /tmp/cicero-cjWZ/protocol.xml:3940(term) /tmp/cicero-cjWZ/protocol.xml:4015(term) /tmp/cicero-cjWZ/protocol.xml:4096(term) /tmp/cicero-cjWZ/protocol.xml:4191(term) /tmp/cicero-cjWZ/protocol.xml:4224(term) /tmp/cicero-cjWZ/protocol.xml:4246(term) /tmp/cicero-cjWZ/protocol.xml:4267(term) /tmp/cicero-cjWZ/protocol.xml:4344(term) 
 msgid "Int32"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2224(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2224(para) 
 msgid "Specifies that this message contains GSSAPI or SSPI data."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2234(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2234(para) 
 msgid "GSSAPI or SSPI authentication data."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2247(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2247(term) 
 msgid "BackendKeyData (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2255(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2255(term) 
 msgid "Byte1('K')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2259(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2259(para) 
 msgid "Identifies the message as cancellation key data. The frontend must save these values if it wishes to be able to issue CancelRequest messages later."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2281(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2281(para) 
 msgid "The process ID of this backend."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2291(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2291(para) 
 msgid "The secret key of this backend."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2304(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2304(term) 
 msgid "Bind (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2312(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2312(term) 
 msgid "Byte1('B')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2316(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2316(para) 
 msgid "Identifies the message as a Bind command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2332(term) /tmp/cicero-hvAh/protocol.xml:2343(term) /tmp/cicero-hvAh/protocol.xml:2589(term) /tmp/cicero-hvAh/protocol.xml:2670(term) /tmp/cicero-hvAh/protocol.xml:2849(term) /tmp/cicero-hvAh/protocol.xml:3199(term) /tmp/cicero-hvAh/protocol.xml:3302(term) /tmp/cicero-hvAh/protocol.xml:3347(term) /tmp/cicero-hvAh/protocol.xml:3680(term) /tmp/cicero-hvAh/protocol.xml:3735(term) /tmp/cicero-hvAh/protocol.xml:3745(term) /tmp/cicero-hvAh/protocol.xml:3848(term) /tmp/cicero-hvAh/protocol.xml:3858(term) /tmp/cicero-hvAh/protocol.xml:3902(term) /tmp/cicero-hvAh/protocol.xml:3913(term) /tmp/cicero-hvAh/protocol.xml:4025(term) /tmp/cicero-hvAh/protocol.xml:4106(term) /tmp/cicero-hvAh/protocol.xml:4214(term) /tmp/cicero-hvAh/protocol.xml:4375(term) /tmp/cicero-hvAh/protocol.xml:4427(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2332(term) /tmp/cicero-cjWZ/protocol.xml:2343(term) /tmp/cicero-cjWZ/protocol.xml:2589(term) /tmp/cicero-cjWZ/protocol.xml:2670(term) /tmp/cicero-cjWZ/protocol.xml:2849(term) /tmp/cicero-cjWZ/protocol.xml:3199(term) /tmp/cicero-cjWZ/protocol.xml:3302(term) /tmp/cicero-cjWZ/protocol.xml:3347(term) /tmp/cicero-cjWZ/protocol.xml:3680(term) /tmp/cicero-cjWZ/protocol.xml:3735(term) /tmp/cicero-cjWZ/protocol.xml:3745(term) /tmp/cicero-cjWZ/protocol.xml:3848(term) /tmp/cicero-cjWZ/protocol.xml:3858(term) /tmp/cicero-cjWZ/protocol.xml:3902(term) /tmp/cicero-cjWZ/protocol.xml:3913(term) /tmp/cicero-cjWZ/protocol.xml:4025(term) /tmp/cicero-cjWZ/protocol.xml:4106(term) /tmp/cicero-cjWZ/protocol.xml:4214(term) /tmp/cicero-cjWZ/protocol.xml:4375(term) /tmp/cicero-cjWZ/protocol.xml:4427(term) 
 msgid "String"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2336(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2336(para) 
 msgid "The name of the destination portal (an empty string selects the unnamed portal)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2347(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2347(para) 
 msgid "The name of the source prepared statement (an empty string selects the unnamed prepared statement)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2354(term) /tmp/cicero-hvAh/protocol.xml:2381(term) /tmp/cicero-hvAh/protocol.xml:2423(term) /tmp/cicero-hvAh/protocol.xml:2912(term) /tmp/cicero-hvAh/protocol.xml:2985(term) /tmp/cicero-hvAh/protocol.xml:3058(term) /tmp/cicero-hvAh/protocol.xml:3115(term) /tmp/cicero-hvAh/protocol.xml:3449(term) /tmp/cicero-hvAh/protocol.xml:3476(term) /tmp/cicero-hvAh/protocol.xml:3518(term) /tmp/cicero-hvAh/protocol.xml:3790(term) /tmp/cicero-hvAh/protocol.xml:3923(term) /tmp/cicero-hvAh/protocol.xml:4201(term) /tmp/cicero-hvAh/protocol.xml:4235(term) /tmp/cicero-hvAh/protocol.xml:4256(term) /tmp/cicero-hvAh/protocol.xml:4278(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2354(term) /tmp/cicero-cjWZ/protocol.xml:2381(term) /tmp/cicero-cjWZ/protocol.xml:2423(term) /tmp/cicero-cjWZ/protocol.xml:2912(term) /tmp/cicero-cjWZ/protocol.xml:2985(term) /tmp/cicero-cjWZ/protocol.xml:3058(term) /tmp/cicero-cjWZ/protocol.xml:3115(term) /tmp/cicero-cjWZ/protocol.xml:3449(term) /tmp/cicero-cjWZ/protocol.xml:3476(term) /tmp/cicero-cjWZ/protocol.xml:3518(term) /tmp/cicero-cjWZ/protocol.xml:3790(term) /tmp/cicero-cjWZ/protocol.xml:3923(term) /tmp/cicero-cjWZ/protocol.xml:4201(term) /tmp/cicero-cjWZ/protocol.xml:4235(term) /tmp/cicero-cjWZ/protocol.xml:4256(term) /tmp/cicero-cjWZ/protocol.xml:4278(term) 
 msgid "Int16"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2358(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2358(para) 
 msgid "The number of parameter format codes that follow (denoted <replaceable>C</replaceable> below). This can be zero to indicate that there are no parameters or that the parameters all use the default format (text); or one, in which case the specified format code is applied to all parameters; or it can equal the actual number of parameters."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2370(term) /tmp/cicero-hvAh/protocol.xml:3465(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2370(term) /tmp/cicero-cjWZ/protocol.xml:3465(term) 
 msgid "Int16[<replaceable>C</replaceable>]"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2374(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2374(para) 
 msgid "The parameter format codes. Each must presently be zero (text) or one (binary)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2385(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2385(para) 
 msgid "The number of parameter values that follow (possibly zero). This must match the number of parameters needed by the query."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2399(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2399(para) 
 msgid "The length of the parameter value, in bytes (this count does not include itself). Can be zero. As a special case, -1 indicates a NULL parameter value. No value bytes follow in the NULL case."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2412(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2412(para) 
 msgid "The value of the parameter, in the format indicated by the associated format code. <replaceable>n</replaceable> is the above length."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2427(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2427(para) 
 msgid "The number of result-column format codes that follow (denoted <replaceable>R</replaceable> below). This can be zero to indicate that there are no result columns or that the result columns should all use the default format (text); or one, in which case the specified format code is applied to all result columns (if any); or it can equal the actual number of result columns of the query."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2440(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2440(term) 
 msgid "Int16[<replaceable>R</replaceable>]"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2444(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2444(para) 
 msgid "The result-column format codes. Each must presently be zero (text) or one (binary)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2308(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2308(para) 
 msgid "<placeholder-1/> Next, the following pair of fields appear for each parameter: <placeholder-2/> After the last parameter, the following fields appear: <placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2457(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2457(term) 
 msgid "BindComplete (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2465(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2465(term) 
 msgid "Byte1('2')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2469(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2469(para) 
 msgid "Identifies the message as a Bind-complete indicator."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2475(term) /tmp/cicero-hvAh/protocol.xml:2625(term) /tmp/cicero-hvAh/protocol.xml:2804(term) /tmp/cicero-hvAh/protocol.xml:3236(term) /tmp/cicero-hvAh/protocol.xml:3394(term) /tmp/cicero-hvAh/protocol.xml:3614(term) /tmp/cicero-hvAh/protocol.xml:3976(term) /tmp/cicero-hvAh/protocol.xml:4061(term) /tmp/cicero-hvAh/protocol.xml:4462(term) /tmp/cicero-hvAh/protocol.xml:4497(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2475(term) /tmp/cicero-cjWZ/protocol.xml:2625(term) /tmp/cicero-cjWZ/protocol.xml:2804(term) /tmp/cicero-cjWZ/protocol.xml:3236(term) /tmp/cicero-cjWZ/protocol.xml:3394(term) /tmp/cicero-cjWZ/protocol.xml:3614(term) /tmp/cicero-cjWZ/protocol.xml:3976(term) /tmp/cicero-cjWZ/protocol.xml:4061(term) /tmp/cicero-cjWZ/protocol.xml:4462(term) /tmp/cicero-cjWZ/protocol.xml:4497(term) 
 msgid "Int32(4)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2492(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2492(term) 
 msgid "CancelRequest (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2500(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2500(term) 
 msgid "Int32(16)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2510(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2510(term) 
 msgid "Int32(80877102)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2514(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2514(para) 
 msgid "The cancel request code. The value is chosen to contain <literal>1234</literal> in the most significant 16 bits, and <literal>5678</literal> in the least 16 significant bits. (To avoid confusion, this code must not be the same as any protocol version number.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2527(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2527(para) 
 msgid "The process ID of the target backend."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2537(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2537(para) 
 msgid "The secret key for the target backend."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2550(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2550(term) 
 msgid "Close (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2558(term) /tmp/cicero-hvAh/protocol.xml:2650(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2558(term) /tmp/cicero-cjWZ/protocol.xml:2650(term) 
 msgid "Byte1('C')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2562(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2562(para) 
 msgid "Identifies the message as a Close command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2578(term) /tmp/cicero-hvAh/protocol.xml:3188(term) /tmp/cicero-hvAh/protocol.xml:3286(term) /tmp/cicero-hvAh/protocol.xml:3664(term) /tmp/cicero-hvAh/protocol.xml:4152(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2578(term) /tmp/cicero-cjWZ/protocol.xml:3188(term) /tmp/cicero-cjWZ/protocol.xml:3286(term) /tmp/cicero-cjWZ/protocol.xml:3664(term) /tmp/cicero-cjWZ/protocol.xml:4152(term) 
 msgid "Byte1"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2582(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2582(para) 
 msgid "'<literal>S</literal>' to close a prepared statement; or '<literal>P</literal>' to close a portal."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2593(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2593(para) 
 msgid "The name of the prepared statement or portal to close (an empty string selects the unnamed prepared statement or portal)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2607(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2607(term) 
 msgid "CloseComplete (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2615(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2615(term) 
 msgid "Byte1('3')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2619(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2619(para) 
 msgid "Identifies the message as a Close-complete indicator."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2642(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2642(term) 
 msgid "CommandComplete (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2654(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2654(para) 
 msgid "Identifies the message as a command-completed response."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2674(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2674(para) 
 msgid "The command tag. This is usually a single word that identifies which SQL command was completed."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2679(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2679(para) 
 msgid "For an <command>INSERT</command> command, the tag is <literal>INSERT <replaceable>oid</replaceable><replaceable>rows</replaceable></literal>, where <replaceable>rows</replaceable> is the number of rows inserted. <replaceable>oid</replaceable> is the object ID of the inserted row if <replaceable>rows</replaceable> is 1 and the target table has OIDs; otherwise <replaceable>oid</replaceable> is 0."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2690(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2690(para) 
 msgid "For a <command>DELETE</command> command, the tag is <literal>DELETE <replaceable>rows</replaceable></literal> where <replaceable>rows</replaceable> is the number of rows deleted."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2696(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2696(para) 
 msgid "For an <command>UPDATE</command> command, the tag is <literal>UPDATE <replaceable>rows</replaceable></literal> where <replaceable>rows</replaceable> is the number of rows updated."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2702(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2702(para) 
 msgid "For a <command>SELECT</command> or <command>CREATE TABLE AS</command> command, the tag is <literal>SELECT <replaceable>rows</replaceable></literal> where <replaceable>rows</replaceable> is the number of rows retrieved."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2708(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2708(para) 
 msgid "For a <command>MOVE</command> command, the tag is <literal>MOVE <replaceable>rows</replaceable></literal> where <replaceable>rows</replaceable> is the number of rows the cursor's position has been changed by."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2715(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2715(para) 
 msgid "For a <command>FETCH</command> command, the tag is <literal>FETCH <replaceable>rows</replaceable></literal> where <replaceable>rows</replaceable> is the number of rows that have been retrieved from the cursor."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2722(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2722(para) 
 msgid "For a <command>COPY</command> command, the tag is <literal>COPY <replaceable>rows</replaceable></literal> where <replaceable>rows</replaceable> is the number of rows copied. (Note: the row count appears only in <productname>PostgreSQL</productname> 8.2 and later.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2740(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2740(term) 
 msgid "CopyData (F &amp; B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2747(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2747(term) 
 msgid "Byte1('d')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2751(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2751(para) 
 msgid "Identifies the message as <command>COPY</command> data."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2771(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2771(para) 
 msgid "Data that forms part of a <command>COPY</command> data stream. Messages sent from the backend will always correspond to single data rows, but messages sent by frontends might divide the data stream arbitrarily."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2786(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2786(term) 
 msgid "CopyDone (F &amp; B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2794(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2794(term) 
 msgid "Byte1('c')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2798(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2798(para) 
 msgid "Identifies the message as a <command>COPY</command>-complete indicator."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2821(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2821(term) 
 msgid "CopyFail (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2829(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2829(term) 
 msgid "Byte1('f')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2833(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2833(para) 
 msgid "Identifies the message as a <command>COPY</command>-failure indicator."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2853(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2853(para) 
 msgid "An error message to report as the cause of failure."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2866(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2866(term) 
 msgid "CopyInResponse (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2874(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2874(term) 
 msgid "Byte1('G')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2878(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2878(para) 
 msgid "Identifies the message as a Start Copy In response. The frontend must now send copy-in data (if not prepared to do so, send a CopyFail message)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2896(term) /tmp/cicero-hvAh/protocol.xml:2971(term) /tmp/cicero-hvAh/protocol.xml:3044(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2896(term) /tmp/cicero-cjWZ/protocol.xml:2971(term) /tmp/cicero-cjWZ/protocol.xml:3044(term) 
 msgid "Int8"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2900(para) /tmp/cicero-hvAh/protocol.xml:2975(para) /tmp/cicero-hvAh/protocol.xml:3048(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2900(para) /tmp/cicero-cjWZ/protocol.xml:2975(para) /tmp/cicero-cjWZ/protocol.xml:3048(para) 
 msgid "0 indicates the overall <command>COPY</command> format is textual (rows separated by newlines, columns separated by separator characters, etc). 1 indicates the overall copy format is binary (similar to DataRow format). See <xref linkend=\"sql-copy\"/> for more information."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2916(para) /tmp/cicero-hvAh/protocol.xml:2989(para) /tmp/cicero-hvAh/protocol.xml:3062(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2916(para) /tmp/cicero-cjWZ/protocol.xml:2989(para) /tmp/cicero-cjWZ/protocol.xml:3062(para) 
 msgid "The number of columns in the data to be copied (denoted <replaceable>N</replaceable> below)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2923(term) /tmp/cicero-hvAh/protocol.xml:2996(term) /tmp/cicero-hvAh/protocol.xml:3069(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2923(term) /tmp/cicero-cjWZ/protocol.xml:2996(term) /tmp/cicero-cjWZ/protocol.xml:3069(term) 
 msgid "Int16[<replaceable>N</replaceable>]"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2927(para) /tmp/cicero-hvAh/protocol.xml:3000(para) /tmp/cicero-hvAh/protocol.xml:3073(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2927(para) /tmp/cicero-cjWZ/protocol.xml:3000(para) /tmp/cicero-cjWZ/protocol.xml:3073(para) 
 msgid "The format codes to be used for each column. Each must presently be zero (text) or one (binary). All must be zero if the overall copy format is textual."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2942(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2942(term) 
 msgid "CopyOutResponse (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2950(term) /tmp/cicero-hvAh/protocol.xml:3384(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:2950(term) /tmp/cicero-cjWZ/protocol.xml:3384(term) 
 msgid "Byte1('H')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:2954(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:2954(para) 
 msgid "Identifies the message as a Start Copy Out response. This message will be followed by copy-out data."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3015(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3015(term) 
 msgid "CopyBothResponse (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3023(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3023(term) 
 msgid "Byte1('W')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3027(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3027(para) 
 msgid "Identifies the message as a Start Copy Both response. This message is used only for Streaming Replication."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3088(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3088(term) 
 msgid "DataRow (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3095(term) /tmp/cicero-hvAh/protocol.xml:3168(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3095(term) /tmp/cicero-cjWZ/protocol.xml:3168(term) 
 msgid "Byte1('D')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3099(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3099(para) 
 msgid "Identifies the message as a data row."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3119(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3119(para) 
 msgid "The number of column values that follow (possibly zero)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3132(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3132(para) 
 msgid "The length of the column value, in bytes (this count does not include itself). Can be zero. As a special case, -1 indicates a NULL column value. No value bytes follow in the NULL case."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3145(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3145(para) 
 msgid "The value of the column, in the format indicated by the associated format code. <replaceable>n</replaceable> is the above length."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3092(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3092(para) 
 msgid "<placeholder-1/> Next, the following pair of fields appear for each column: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3160(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3160(term) 
 msgid "Describe (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3172(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3172(para) 
 msgid "Identifies the message as a Describe command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3192(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3192(para) 
 msgid "'<literal>S</literal>' to describe a prepared statement; or '<literal>P</literal>' to describe a portal."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3203(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3203(para) 
 msgid "The name of the prepared statement or portal to describe (an empty string selects the unnamed prepared statement or portal)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3217(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3217(term) 
 msgid "EmptyQueryResponse (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3225(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3225(term) 
 msgid "Byte1('I')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3229(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3229(para) 
 msgid "Identifies the message as a response to an empty query string. (This substitutes for CommandComplete.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3253(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3253(term) 
 msgid "ErrorResponse (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3261(term) /tmp/cicero-hvAh/protocol.xml:3327(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3261(term) /tmp/cicero-cjWZ/protocol.xml:3327(term) 
 msgid "Byte1('E')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3265(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3265(para) 
 msgid "Identifies the message as an error."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3290(para) /tmp/cicero-hvAh/protocol.xml:3668(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3290(para) /tmp/cicero-cjWZ/protocol.xml:3668(para) 
 msgid "A code identifying the field type; if zero, this is the message terminator and no string follows. The presently defined field types are listed in <xref linkend=\"protocol-error-fields\"/>. Since more field types might be added in future, frontends should silently ignore fields of unrecognized type."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3306(para) /tmp/cicero-hvAh/protocol.xml:3684(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3306(para) /tmp/cicero-cjWZ/protocol.xml:3684(para) 
 msgid "The field value."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3257(para) /tmp/cicero-hvAh/protocol.xml:3635(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3257(para) /tmp/cicero-cjWZ/protocol.xml:3635(para) 
 msgid "<placeholder-1/> The message body consists of one or more identified fields, followed by a zero byte as a terminator. Fields can appear in any order. For each field there is the following: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3319(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3319(term) 
 msgid "Execute (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3331(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3331(para) 
 msgid "Identifies the message as an Execute command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3351(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3351(para) 
 msgid "The name of the portal to execute (an empty string selects the unnamed portal)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3362(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3362(para) 
 msgid "Maximum number of rows to return, if portal contains a query that returns rows (ignored otherwise). Zero denotes <quote>no limit</quote>."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3376(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3376(term) 
 msgid "Flush (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3388(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3388(para) 
 msgid "Identifies the message as a Flush command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3411(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3411(term) 
 msgid "FunctionCall (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3419(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3419(term) 
 msgid "Byte1('F')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3423(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3423(para) 
 msgid "Identifies the message as a function call."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3443(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3443(para) 
 msgid "Specifies the object ID of the function to call."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3453(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3453(para) 
 msgid "The number of argument format codes that follow (denoted <replaceable>C</replaceable> below). This can be zero to indicate that there are no arguments or that the arguments all use the default format (text); or one, in which case the specified format code is applied to all arguments; or it can equal the actual number of arguments."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3469(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3469(para) 
 msgid "The argument format codes. Each must presently be zero (text) or one (binary)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3480(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3480(para) 
 msgid "Specifies the number of arguments being supplied to the function."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3494(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3494(para) 
 msgid "The length of the argument value, in bytes (this count does not include itself). Can be zero. As a special case, -1 indicates a NULL argument value. No value bytes follow in the NULL case."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3507(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3507(para) 
 msgid "The value of the argument, in the format indicated by the associated format code. <replaceable>n</replaceable> is the above length."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3522(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3522(para) 
 msgid "The format code for the function result. Must presently be zero (text) or one (binary)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3415(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3415(para) 
 msgid "<placeholder-1/> Next, the following pair of fields appear for each argument: <placeholder-2/> After the last argument, the following field appears: <placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3536(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3536(term) 
 msgid "FunctionCallResponse (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3544(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3544(term) 
 msgid "Byte1('V')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3548(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3548(para) 
 msgid "Identifies the message as a function call result."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3568(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3568(para) 
 msgid "The length of the function result value, in bytes (this count does not include itself). Can be zero. As a special case, -1 indicates a NULL function result. No value bytes follow in the NULL case."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3581(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3581(para) 
 msgid "The value of the function result, in the format indicated by the associated format code. <replaceable>n</replaceable> is the above length."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3596(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3596(term) 
 msgid "NoData (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3604(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3604(term) 
 msgid "Byte1('n')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3608(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3608(para) 
 msgid "Identifies the message as a no-data indicator."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3631(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3631(term) 
 msgid "NoticeResponse (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3639(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3639(term) 
 msgid "Byte1('N')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3643(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3643(para) 
 msgid "Identifies the message as a notice."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3697(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3697(term) 
 msgid "NotificationResponse (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3705(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3705(term) 
 msgid "Byte1('A')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3709(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3709(para) 
 msgid "Identifies the message as a notification response."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3729(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3729(para) 
 msgid "The process ID of the notifying backend process."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3739(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3739(para) 
 msgid "The name of the channel that the notify has been raised on."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3749(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3749(para) 
 msgid "The <quote>payload</quote> string passed from the notifying process."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3762(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3762(term) 
 msgid "ParameterDescription (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3770(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3770(term) 
 msgid "Byte1('t')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3774(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3774(para) 
 msgid "Identifies the message as a parameter description."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3794(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3794(para) 
 msgid "The number of parameters used by the statement (can be zero)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3808(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3808(para) 
 msgid "Specifies the object ID of the parameter data type."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3766(para) /tmp/cicero-hvAh/protocol.xml:3878(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3766(para) /tmp/cicero-cjWZ/protocol.xml:3878(para) 
 msgid "<placeholder-1/> Then, for each parameter, there is the following: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3820(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3820(term) 
 msgid "ParameterStatus (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3828(term) /tmp/cicero-hvAh/protocol.xml:4452(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3828(term) /tmp/cicero-cjWZ/protocol.xml:4452(term) 
 msgid "Byte1('S')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3832(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3832(para) 
 msgid "Identifies the message as a run-time parameter status report."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3852(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3852(para) 
 msgid "The name of the run-time parameter being reported."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3862(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3862(para) 
 msgid "The current value of the parameter."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3874(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3874(term) 
 msgid "Parse (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3882(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3882(term) 
 msgid "Byte1('P')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3886(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3886(para) 
 msgid "Identifies the message as a Parse command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3906(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3906(para) 
 msgid "The name of the destination prepared statement (an empty string selects the unnamed prepared statement)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3917(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3917(para) 
 msgid "The query string to be parsed."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3927(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3927(para) 
 msgid "The number of parameter data types specified (can be zero). Note that this is not an indication of the number of parameters that might appear in the query string, only the number that the frontend wants to prespecify types for."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3944(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3944(para) 
 msgid "Specifies the object ID of the parameter data type. Placing a zero here is equivalent to leaving the type unspecified."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3958(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3958(term) 
 msgid "ParseComplete (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3966(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3966(term) 
 msgid "Byte1('1')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3970(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:3970(para) 
 msgid "Identifies the message as a Parse-complete indicator."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:3993(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:3993(term) 
 msgid "PasswordMessage (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4001(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4001(term) 
 msgid "Byte1('p')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4005(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4005(para) 
 msgid "Identifies the message as a password response. Note that this is also used for GSSAPI and SSPI response messages (which is really a design error, since the contained data is not a null-terminated string in that case, but can be arbitrary binary data)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4029(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4029(para) 
 msgid "The password (encrypted, if requested)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4041(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4041(term) 
 msgid "PortalSuspended (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4049(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4049(term) 
 msgid "Byte1('s')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4053(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4053(para) 
 msgid "Identifies the message as a portal-suspended indicator. Note this only appears if an Execute message's row-count limit was reached."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4078(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4078(term) 
 msgid "Query (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4086(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4086(term) 
 msgid "Byte1('Q')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4090(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4090(para) 
 msgid "Identifies the message as a simple query."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4110(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4110(para) 
 msgid "The query string itself."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4123(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4123(term) 
 msgid "ReadyForQuery (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4131(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4131(term) 
 msgid "Byte1('Z')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4135(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4135(para) 
 msgid "Identifies the message type. ReadyForQuery is sent whenever the backend is ready for a new query cycle."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4156(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4156(para) 
 msgid "Current backend transaction status indicator. Possible values are '<literal>I</literal>' if idle (not in a transaction block); '<literal>T</literal>' if in a transaction block; or '<literal>E</literal>' if in a failed transaction block (queries will be rejected until block is ended)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4173(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4173(term) 
 msgid "RowDescription (B)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4181(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4181(term) 
 msgid "Byte1('T')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4185(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4185(para) 
 msgid "Identifies the message as a row description."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4205(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4205(para) 
 msgid "Specifies the number of fields in a row (can be zero)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4218(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4218(para) 
 msgid "The field name."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4228(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4228(para) 
 msgid "If the field can be identified as a column of a specific table, the object ID of the table; otherwise zero."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4239(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4239(para) 
 msgid "If the field can be identified as a column of a specific table, the attribute number of the column; otherwise zero."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4250(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4250(para) 
 msgid "The object ID of the field's data type."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4260(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4260(para) 
 msgid "The data type size (see <varname>pg_type.typlen</varname>). Note that negative values denote variable-width types."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4271(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4271(para) 
 msgid "The type modifier (see <varname>pg_attribute.atttypmod</varname>). The meaning of the modifier is type-specific."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4282(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4282(para) 
 msgid "The format code being used for the field. Currently will be zero (text) or one (binary). In a RowDescription returned from the statement variant of Describe, the format code is not yet known and will always be zero."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4177(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4177(para) 
 msgid "<placeholder-1/> Then, for each field, there is the following: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4298(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4298(term) 
 msgid "SSLRequest (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4316(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4316(term) 
 msgid "Int32(80877103)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4320(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4320(para) 
 msgid "The <acronym>SSL</acronym> request code. The value is chosen to contain <literal>1234</literal> in the most significant 16 bits, and <literal>5679</literal> in the least 16 significant bits. (To avoid confusion, this code must not be the same as any protocol version number.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4336(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4336(term) 
 msgid "StartupMessage (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4354(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4354(term) 
 msgid "Int32(196608)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4358(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4358(para) 
 msgid "The protocol version number. The most significant 16 bits are the major version number (3 for the protocol described here). The least significant 16 bits are the minor version number (0 for the protocol described here)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4385(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4385(literal) 
 msgid "user"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4388(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4388(para) 
 msgid "The database user name to connect as. Required; there is no default."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4396(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4396(literal) 
 msgid "database"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4399(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4399(para) 
 msgid "The database to connect to. Defaults to the user name."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4406(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4406(literal) 
 msgid "options"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4409(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4409(para) 
 msgid "Command-line arguments for the backend. (This is deprecated in favor of setting individual run-time parameters.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4379(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4379(para) 
 msgid "The parameter name. Currently recognized names are: <placeholder-1/> In addition to the above, any run-time parameter that can be set at backend start time might be listed. Such settings will be applied during backend start (after parsing the command-line options if any). The values will act as session defaults."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4431(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4431(para) 
 msgid "The parameter value."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4340(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4340(para) 
 msgid "<placeholder-1/> The protocol version number is followed by one or more pairs of parameter name and value strings. A zero byte is required as a terminator after the last name/value pair. Parameters can appear in any order. <literal>user</literal> is required, others are optional. Each parameter is specified as: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4444(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4444(term) 
 msgid "Sync (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4456(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4456(para) 
 msgid "Identifies the message as a Sync command."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4479(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4479(term) 
 msgid "Terminate (F)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4487(term) 
+#: /tmp/cicero-cjWZ/protocol.xml:4487(term) 
 msgid "Byte1('X')"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4491(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4491(para) 
 msgid "Identifies the message as a termination."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4519(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:4519(title) 
 msgid "Error and Notice Message Fields"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4521(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4521(para) 
 msgid "This section describes the fields that can appear in ErrorResponse and NoticeResponse messages. Each field type has a single-byte identification token. Note that any given field type should appear at most once per message."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4532(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4532(literal) 
 msgid "S"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4535(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4535(para) 
 msgid "Severity: the field contents are <literal>ERROR</literal>, <literal>FATAL</literal>, or <literal>PANIC</literal> (in an error message), or <literal>WARNING</literal>, <literal>NOTICE</literal>, <literal>DEBUG</literal>, <literal>INFO</literal>, or <literal>LOG</literal> (in a notice message), or a localized translation of one of these. Always present."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4548(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4548(literal) 
 msgid "C"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4551(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4551(para) 
 msgid "Code: the SQLSTATE code for the error (see <xref linkend=\"errcodes-appendix\"/>). Not localizable. Always present."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4560(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4560(literal) 
 msgid "M"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4563(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4563(para) 
 msgid "Message: the primary human-readable error message. This should be accurate but terse (typically one line). Always present."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4573(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4573(literal) 
 msgid "D"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4576(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4576(para) 
 msgid "Detail: an optional secondary error message carrying more detail about the problem. Might run to multiple lines."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4585(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4585(literal) 
 msgid "H"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4588(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4588(para) 
 msgid "Hint: an optional suggestion what to do about the problem. This is intended to differ from Detail in that it offers advice (potentially inappropriate) rather than hard facts. Might run to multiple lines."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4599(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4599(literal) 
 msgid "P"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4602(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4602(para) 
 msgid "Position: the field value is a decimal ASCII integer, indicating an error cursor position as an index into the original query string. The first character has index 1, and positions are measured in characters not bytes."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4613(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4613(literal) 
 msgid "p"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4616(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4616(para) 
 msgid "Internal position: this is defined the same as the <literal>P</literal> field, but it is used when the cursor position refers to an internally generated command rather than the one submitted by the client. The <literal>q</literal> field will always appear when this field appears."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4627(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4627(literal) 
 msgid "q"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4630(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4630(para) 
 msgid "Internal query: the text of a failed internally-generated command. This could be, for example, a SQL query issued by a PL/pgSQL function."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4639(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4639(literal) 
 msgid "W"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4642(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4642(para) 
 msgid "Where: an indication of the context in which the error occurred. Presently this includes a call stack traceback of active procedural language functions and internally-generated queries. The trace is one entry per line, most recent first."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4653(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4653(literal) 
 msgid "F"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4656(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4656(para) 
 msgid "File: the file name of the source-code location where the error was reported."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4665(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4665(literal) 
 msgid "L"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4668(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4668(para) 
 msgid "Line: the line number of the source-code location where the error was reported."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4677(literal) 
+#: /tmp/cicero-cjWZ/protocol.xml:4677(literal) 
 msgid "R"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4680(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4680(para) 
 msgid "Routine: the name of the source-code routine reporting the error."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4688(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4688(para) 
 msgid "The client is responsible for formatting displayed information to meet its needs; in particular it should break long lines as needed. Newline characters appearing in the error message fields should be treated as paragraph breaks, not line breaks."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4698(title) 
+#: /tmp/cicero-cjWZ/protocol.xml:4698(title) 
 msgid "Summary of Changes since Protocol 2.0"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4700(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4700(para) 
 msgid "This section provides a quick checklist of changes, for the benefit of developers trying to update existing client libraries to protocol 3.0."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4705(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4705(para) 
 msgid "The initial startup packet uses a flexible list-of-strings format instead of a fixed format. Notice that session default values for run-time parameters can now be specified directly in the startup packet. (Actually, you could do that before using the <literal>options</literal> field, but given the limited width of <literal>options</literal> and the lack of any way to quote whitespace in the values, it wasn't a very safe technique.)"
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4714(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4714(para) 
 msgid "All messages now have a length count immediately following the message type byte (except for startup packets, which have no type byte). Also note that PasswordMessage now has a type byte."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4720(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4720(para) 
 msgid "ErrorResponse and NoticeResponse ('<literal>E</literal>' and '<literal>N</literal>') messages now contain multiple fields, from which the client code can assemble an error message of the desired level of verbosity. Note that individual fields will typically not end with a newline, whereas the single string sent in the older protocol always did."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4728(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4728(para) 
 msgid "The ReadyForQuery ('<literal>Z</literal>') message includes a transaction status indicator."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4733(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4733(para) 
 msgid "The distinction between BinaryRow and DataRow message types is gone; the single DataRow message type serves for returning data in all formats. Note that the layout of DataRow has changed to make it easier to parse. Also, the representation of binary values has changed: it is no longer directly tied to the server's internal representation."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4741(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4741(para) 
 msgid "There is a new <quote>extended query</quote> sub-protocol, which adds the frontend message types Parse, Bind, Execute, Describe, Close, Flush, and Sync, and the backend message types ParseComplete, BindComplete, PortalSuspended, ParameterDescription, NoData, and CloseComplete. Existing clients do not have to concern themselves with this sub-protocol, but making use of it might allow improvements in performance or functionality."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4750(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4750(para) 
 msgid "<command>COPY</command> data is now encapsulated into CopyData and CopyDone messages. There is a well-defined way to recover from errors during <command>COPY</command>. The special <quote><literal>\\.</literal></quote> last line is not needed anymore, and is not sent during <command>COPY OUT</command>. (It is still recognized as a terminator during <command>COPY IN</command>, but its use is deprecated and will eventually be removed.) Binary <command>COPY</command> is supported. The CopyInResponse and CopyOutResponse messages include fields indicating the number of columns and the format of each column."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4761(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4761(para) 
 msgid "The layout of FunctionCall and FunctionCallResponse messages has changed. FunctionCall can now support passing NULL arguments to functions. It also can handle passing parameters and retrieving results in either text or binary format. There is no longer any reason to consider FunctionCall a potential security hole, since it does not offer direct access to internal server data representations."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4770(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4770(para) 
 msgid "The backend sends ParameterStatus ('<literal>S</literal>') messages during connection startup for all parameters it considers interesting to the client library. Subsequently, a ParameterStatus message is sent whenever the active value changes for any of these parameters."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4777(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4777(para) 
 msgid "The RowDescription ('<literal>T</literal>') message carries new table OID and column number fields for each column of the described row. It also shows the format code for each column."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4783(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4783(para) 
 msgid "The CursorResponse ('<literal>P</literal>') message is no longer generated by the backend."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4788(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4788(para) 
 msgid "The NotificationResponse ('<literal>A</literal>') message has an additional string field, which can carry a <quote>payload</quote> string passed from the <command>NOTIFY</command> event sender."
 msgstr ""
 
-#: /tmp/cicero-hvAh/protocol.xml:4794(para) 
+#: /tmp/cicero-cjWZ/protocol.xml:4794(para) 
 msgid "The EmptyQueryResponse ('<literal>I</literal>') message used to include an empty string parameter; this has been removed."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-hvAh/protocol.xml:0(None) 
+#: /tmp/cicero-cjWZ/protocol.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

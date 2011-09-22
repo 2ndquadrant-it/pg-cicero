@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-21 07:00+0200\n"
+"POT-Creation-Date: 2011-09-22 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,118 +9,118 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-hvAh/unaccent.xml:5(title) /tmp/cicero-hvAh/unaccent.xml:8(primary) /tmp/cicero-hvAh/unaccent.xml:142(primary) 
+#: /tmp/cicero-cjWZ/unaccent.xml:5(title) /tmp/cicero-cjWZ/unaccent.xml:8(primary) /tmp/cicero-cjWZ/unaccent.xml:142(primary) 
 msgid "unaccent"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:11(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:11(para) 
 msgid "<filename>unaccent</filename> is a text search dictionary that removes accents (diacritic signs) from lexemes. It's a filtering dictionary, which means its output is always passed to the next dictionary (if any), unlike the normal behavior of dictionaries. This allows accent-insensitive processing for full text search."
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:20(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:20(para) 
 msgid "The current implementation of <filename>unaccent</filename> cannot be used as a normalizing dictionary for the <filename>thesaurus</filename> dictionary."
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:26(title) 
+#: /tmp/cicero-cjWZ/unaccent.xml:26(title) 
 msgid "Configuration"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:28(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:28(para) 
 msgid "An <literal>unaccent</literal> dictionary accepts the following options:"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:33(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:33(para) 
 msgid "<literal>RULES</literal> is the base name of the file containing the list of translation rules. This file must be stored in <filename>$SHAREDIR/tsearch_data/</filename> (where <literal>$SHAREDIR</literal> means the <productname>PostgreSQL</productname> installation's shared-data directory). Its name must end in <literal>.rules</literal> (which is not to be included in the <literal>RULES</literal> parameter)."
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:43(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:43(para) 
 msgid "The rules file has the following format:"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:52(programlisting) 
+#: /tmp/cicero-cjWZ/unaccent.xml:52(programlisting) 
 #, no-wrap
 msgid "\nÀ        A\nÁ        A\nÂ        A\nÃ        A\nÄ        A\nÅ        A\nÆ        A\n"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:48(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:48(para) 
 msgid "Each line represents a pair, consisting of a character with accent followed by a character without accent. The first is translated into the second. For example, <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:65(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:65(para) 
 msgid "A more complete example, which is directly useful for most European languages, can be found in <filename>unaccent.rules</filename>, which is installed in <filename>$SHAREDIR/tsearch_data/</filename> when the <filename>unaccent</filename> module is installed."
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:74(title) 
+#: /tmp/cicero-cjWZ/unaccent.xml:74(title) 
 msgid "Usage"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:84(programlisting) 
+#: /tmp/cicero-cjWZ/unaccent.xml:84(programlisting) 
 #, no-wrap
 msgid "\nmydb=# ALTER TEXT SEARCH DICTIONARY unaccent (RULES='my_rules');\n"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:76(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:76(para) 
 msgid "Installing the <literal>unaccent</literal> extension creates a text search template <literal>unaccent</literal> and a dictionary <literal>unaccent</literal> based on it. The <literal>unaccent</literal> dictionary has the default parameter setting <literal>RULES='unaccent'</literal>, which makes it immediately usable with the standard <filename>unaccent.rules</filename> file. If you wish, you can alter the parameter, for example <placeholder-1/> or create new dictionaries based on the template."
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:93(programlisting) 
+#: /tmp/cicero-cjWZ/unaccent.xml:93(programlisting) 
 #, no-wrap
 msgid "\nmydb=# select ts_lexize('unaccent','Hôtel');\n ts_lexize\n-----------\n {Hotel}\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:91(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:91(para) 
 msgid "To test the dictionary, you can try: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:105(programlisting) 
+#: /tmp/cicero-cjWZ/unaccent.xml:105(programlisting) 
 #, no-wrap
 msgid "\nmydb=# CREATE TEXT SEARCH CONFIGURATION fr ( COPY = french );\nmydb=# ALTER TEXT SEARCH CONFIGURATION fr\n        ALTER MAPPING FOR hword, hword_part, word\n        WITH unaccent, french_stem;\nmydb=# select to_tsvector('fr','Hôtels de la Mer');\n    to_tsvector\n-------------------\n 'hotel':1 'mer':4\n(1 row)\n\nmydb=# select to_tsvector('fr','Hôtel de la Mer') @@ to_tsquery('fr','Hotels');\n ?column?\n----------\n t\n(1 row)\n\nmydb=# select ts_headline('fr','Hôtel de la Mer',to_tsquery('fr','Hotels'));\n      ts_headline\n------------------------\n &lt;b&gt;Hôtel&lt;/b&gt; de la Mer\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:102(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:102(para) 
 msgid "Here is an example showing how to insert the <filename>unaccent</filename> dictionary into a text search configuration: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:132(title) 
+#: /tmp/cicero-cjWZ/unaccent.xml:132(title) 
 msgid "Functions"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:134(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:134(para) 
 msgid "The <function>unaccent()</function> function removes accents (diacritic signs) from a given string. Basically, it's a wrapper around the <filename>unaccent</filename> dictionary, but it can be used outside normal text search contexts."
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:146(replaceable) 
+#: /tmp/cicero-cjWZ/unaccent.xml:146(replaceable) 
 msgid "dictionary"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:146(optional) 
+#: /tmp/cicero-cjWZ/unaccent.xml:146(optional) 
 msgid "<placeholder-1/>,"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:146(replaceable) 
+#: /tmp/cicero-cjWZ/unaccent.xml:146(replaceable) 
 msgid "string"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:146(type) 
+#: /tmp/cicero-cjWZ/unaccent.xml:146(type) 
 msgid "text"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:145(synopsis) 
+#: /tmp/cicero-cjWZ/unaccent.xml:145(synopsis) 
 #, no-wrap
 msgid "\nunaccent(<placeholder-1/> <placeholder-2/>) returns <placeholder-3/>\n"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:151(programlisting) 
+#: /tmp/cicero-cjWZ/unaccent.xml:151(programlisting) 
 #, no-wrap
 msgid "\nSELECT unaccent('unaccent', 'Hôtel');\nSELECT unaccent('Hôtel');\n"
 msgstr ""
 
-#: /tmp/cicero-hvAh/unaccent.xml:149(para) 
+#: /tmp/cicero-cjWZ/unaccent.xml:149(para) 
 msgid "For example: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-hvAh/unaccent.xml:0(None) 
+#: /tmp/cicero-cjWZ/unaccent.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
