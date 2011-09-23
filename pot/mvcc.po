@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-22 06:56+0200\n"
+"POT-Creation-Date: 2011-09-23 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,624 +9,624 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-clVY/mvcc.xml:5(title) 
+#: /tmp/cicero-ODee/mvcc.xml:5(title) 
 msgid "Concurrency Control"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:8(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:8(primary) 
 msgid "concurrency"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:11(para) 
+#: /tmp/cicero-ODee/mvcc.xml:11(para) 
 msgid "This chapter describes the behavior of the <productname>PostgreSQL</productname> database system when two or more sessions try to access the same data at the same time. The goals in that situation are to allow efficient access for all sessions while maintaining strict data integrity. Every developer of database applications should be familiar with the topics covered in this chapter."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:22(title) 
+#: /tmp/cicero-ODee/mvcc.xml:22(title) 
 msgid "Introduction"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:25(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:25(primary) 
 msgid "Multiversion Concurrency Control"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:29(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:29(primary) 
 msgid "MVCC"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:33(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:33(primary) 
 msgid "Serializable Snapshot Isolation"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:37(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:37(primary) 
 msgid "SSI"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:40(para) 
+#: /tmp/cicero-ODee/mvcc.xml:40(para) 
 msgid "<productname>PostgreSQL</productname> provides a rich set of tools for developers to manage concurrent access to data. Internally, data consistency is maintained by using a multiversion model (Multiversion Concurrency Control, <acronym>MVCC</acronym>). This means that while querying a database each transaction sees a snapshot of data (a <firstterm>database version</firstterm>) as it was some time ago, regardless of the current state of the underlying data. This protects the transaction from viewing inconsistent data that could be caused by (other) concurrent transaction updates on the same data rows, providing <firstterm>transaction isolation</firstterm> for each database session. <acronym>MVCC</acronym>, by eschewing the locking methodologies of traditional database systems, minimizes lock contention in order to allow for reasonable performance in multiuser environments."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:58(para) 
+#: /tmp/cicero-ODee/mvcc.xml:58(para) 
 msgid "The main advantage of using the <acronym>MVCC</acronym> model of concurrency control rather than locking is that in <acronym>MVCC</acronym> locks acquired for querying (reading) data do not conflict with locks acquired for writing data, and so reading never blocks writing and writing never blocks reading. <productname>PostgreSQL</productname> maintains this guarantee even when providing the strictest level of transaction isolation through the use of an innovative <firstterm>Serializable Snapshot Isolation</firstterm> (<acronym>SSI</acronym>) level."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:70(para) 
+#: /tmp/cicero-ODee/mvcc.xml:70(para) 
 msgid "Table- and row-level locking facilities are also available in <productname>PostgreSQL</productname> for applications which don't generally need full transaction isolation and prefer to explicitly manage particular points of conflict. However, proper use of <acronym>MVCC</acronym> will generally provide better performance than locks. In addition, application-defined advisory locks provide a mechanism for acquiring locks that are not tied to a single transaction."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:83(title) 
+#: /tmp/cicero-ODee/mvcc.xml:83(title) 
 msgid "Transaction Isolation"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:86(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:86(primary) 
 msgid "transaction isolation"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:89(para) 
+#: /tmp/cicero-ODee/mvcc.xml:89(para) 
 msgid "The <acronym>SQL</acronym> standard defines four levels of transaction isolation. The most strict is Serializable, which is defined by the standard in a paragraph which says that any concurrent execution of a set of Serializable transactions is guaranteed to produce the same effect as running them one at a time in some order. The other three levels are defined in terms of phenomena, resulting from interaction between concurrent transactions, which must not occur at each level. The standard notes that due to the definition of Serializable, none of these phenomena are possible at that level. (This is hardly surprising -- if the effect of the transactions must be consistent with having been run one at a time, how could you see any phenomena caused by interactions?)"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:109(term) 
+#: /tmp/cicero-ODee/mvcc.xml:109(term) 
 msgid "dirty read <indexterm><primary>dirty read</primary></indexterm>"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:114(para) 
+#: /tmp/cicero-ODee/mvcc.xml:114(para) 
 msgid "A transaction reads data written by a concurrent uncommitted transaction."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:121(term) 
+#: /tmp/cicero-ODee/mvcc.xml:121(term) 
 msgid "nonrepeatable read <indexterm><primary>nonrepeatable read</primary></indexterm>"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:126(para) 
+#: /tmp/cicero-ODee/mvcc.xml:126(para) 
 msgid "A transaction re-reads data it has previously read and finds that data has been modified by another transaction (that committed since the initial read)."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:135(term) 
+#: /tmp/cicero-ODee/mvcc.xml:135(term) 
 msgid "phantom read <indexterm><primary>phantom read</primary></indexterm>"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:140(para) 
+#: /tmp/cicero-ODee/mvcc.xml:140(para) 
 msgid "A transaction re-executes a query returning a set of rows that satisfy a search condition and finds that the set of rows satisfying the condition has changed due to another recently-committed transaction."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:104(para) 
+#: /tmp/cicero-ODee/mvcc.xml:104(para) 
 msgid "The phenomena which are prohibited are various levels are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:150(para) 
+#: /tmp/cicero-ODee/mvcc.xml:150(para) 
 msgid "<indexterm><primary>transaction isolation level</primary></indexterm> The four transaction isolation levels and the corresponding behaviors are described in <xref linkend=\"mvcc-isolevel-table\"/>."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:159(title) 
+#: /tmp/cicero-ODee/mvcc.xml:159(title) 
 msgid "<acronym>SQL</acronym> Transaction Isolation Levels"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:163(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:163(entry) 
 msgid "Isolation Level"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:166(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:166(entry) 
 msgid "Dirty Read"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:169(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:169(entry) 
 msgid "Nonrepeatable Read"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:172(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:172(entry) 
 msgid "Phantom Read"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:179(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:179(entry) 
 msgid "Read uncommitted"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:182(entry) /tmp/cicero-clVY/mvcc.xml:185(entry) /tmp/cicero-clVY/mvcc.xml:188(entry) /tmp/cicero-clVY/mvcc.xml:200(entry) /tmp/cicero-clVY/mvcc.xml:203(entry) /tmp/cicero-clVY/mvcc.xml:218(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:182(entry) /tmp/cicero-ODee/mvcc.xml:185(entry) /tmp/cicero-ODee/mvcc.xml:188(entry) /tmp/cicero-ODee/mvcc.xml:200(entry) /tmp/cicero-ODee/mvcc.xml:203(entry) /tmp/cicero-ODee/mvcc.xml:218(entry) 
 msgid "Possible"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:194(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:194(entry) 
 msgid "Read committed"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:197(entry) /tmp/cicero-clVY/mvcc.xml:212(entry) /tmp/cicero-clVY/mvcc.xml:215(entry) /tmp/cicero-clVY/mvcc.xml:227(entry) /tmp/cicero-clVY/mvcc.xml:230(entry) /tmp/cicero-clVY/mvcc.xml:233(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:197(entry) /tmp/cicero-ODee/mvcc.xml:212(entry) /tmp/cicero-ODee/mvcc.xml:215(entry) /tmp/cicero-ODee/mvcc.xml:227(entry) /tmp/cicero-ODee/mvcc.xml:230(entry) /tmp/cicero-ODee/mvcc.xml:233(entry) 
 msgid "Not possible"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:209(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:209(entry) 
 msgid "Repeatable read"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:224(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:224(entry) 
 msgid "Serializable"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:241(para) 
+#: /tmp/cicero-ODee/mvcc.xml:241(para) 
 msgid "In <productname>PostgreSQL</productname>, you can request any of the four standard transaction isolation levels. But internally, there are only three distinct isolation levels, which correspond to the levels Read Committed, Repeatable Read, and Serializable. When you select the level Read Uncommitted you really get Read Committed, and phantom reads are not possible in the <productname>PostgreSQL</productname> implementation of Repeatable Read, so the actual isolation level might be stricter than what you select. This is permitted by the SQL standard: the four isolation levels only define which phenomena must not happen, they do not define which phenomena must happen. The reason that <productname>PostgreSQL</productname> only provides three isolation levels is that this is the only sensible way to map the standard isolation levels to the multiversion concurrency control architecture. The behavior of the available isolation levels is detailed in the following subsections."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:259(para) 
+#: /tmp/cicero-ODee/mvcc.xml:259(para) 
 msgid "To set the transaction isolation level of a transaction, use the command <xref linkend=\"sql-set-transaction\"/>."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:265(title) 
+#: /tmp/cicero-ODee/mvcc.xml:265(title) 
 msgid "Read Committed Isolation Level"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:268(primary) /tmp/cicero-clVY/mvcc.xml:387(primary) /tmp/cicero-clVY/mvcc.xml:490(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:268(primary) /tmp/cicero-ODee/mvcc.xml:387(primary) /tmp/cicero-ODee/mvcc.xml:490(primary) 
 msgid "transaction isolation level"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:269(secondary) /tmp/cicero-clVY/mvcc.xml:273(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:269(secondary) /tmp/cicero-ODee/mvcc.xml:273(primary) 
 msgid "read committed"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:276(para) 
+#: /tmp/cicero-ODee/mvcc.xml:276(para) 
 msgid "<firstterm>Read Committed</firstterm> is the default isolation level in <productname>PostgreSQL</productname>. When a transaction uses this isolation level, a <command>SELECT</command> query (without a <literal>FOR UPDATE/SHARE</literal> clause) sees only data committed before the query began; it never sees either uncommitted data or changes committed during query execution by concurrent transactions. In effect, a <command>SELECT</command> query sees a snapshot of the database as of the instant the query begins to run. However, <command>SELECT</command> does see the effects of previous updates executed within its own transaction, even though they are not yet committed. Also note that two successive <command>SELECT</command> commands can see different data, even though they are within a single transaction, if other transactions commit changes during execution of the first <command>SELECT</command>."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:293(para) 
+#: /tmp/cicero-ODee/mvcc.xml:293(para) 
 msgid "<command>UPDATE</command>, <command>DELETE</command>, <command>SELECT FOR UPDATE</command>, and <command>SELECT FOR SHARE</command> commands behave the same as <command>SELECT</command> in terms of searching for target rows: they will only find target rows that were committed as of the command start time. However, such a target row might have already been updated (or deleted or locked) by another concurrent transaction by the time it is found. In this case, the would-be updater will wait for the first updating transaction to commit or roll back (if it is still in progress). If the first updater rolls back, then its effects are negated and the second updater can proceed with updating the originally found row. If the first updater commits, the second updater will ignore the row if the first updater deleted it, otherwise it will attempt to apply its operation to the updated version of the row. The search condition of the command (the <literal>WHERE</literal> clause) is re-evaluated to see if the updated version of the row still matches the search condition. If so, the second updater proceeds with its operation using the updated version of the row. In the case of <command>SELECT FOR UPDATE</command> and <command>SELECT FOR SHARE</command>, this means it is the updated version of the row that is locked and returned to the client."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:316(para) 
+#: /tmp/cicero-ODee/mvcc.xml:316(para) 
 msgid "Because of the above rule, it is possible for an updating command to see an inconsistent snapshot: it can see the effects of concurrent updating commands on the same rows it is trying to update, but it does not see effects of those commands on other rows in the database. This behavior makes Read Committed mode unsuitable for commands that involve complex search conditions; however, it is just right for simpler cases. For example, consider updating bank balances with transactions like: <screen>\nBEGIN;\nUPDATE accounts SET balance = balance + 100.00 WHERE acctnum = 12345;\nUPDATE accounts SET balance = balance - 100.00 WHERE acctnum = 7534;\nCOMMIT;\n</screen> If two such transactions concurrently try to change the balance of account 12345, we clearly want the second transaction to start with the updated version of the account's row. Because each command is affecting only a predetermined row, letting it see the updated version of the row does not create any troublesome inconsistency."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:340(para) 
+#: /tmp/cicero-ODee/mvcc.xml:340(para) 
 msgid "More complex usage can produce undesirable results in Read Committed mode. For example, consider a <command>DELETE</command> command operating on data that is being both added and removed from its restriction criteria by another command, e.g., assume <literal>website</literal> is a two-row table with <literal>website.hits</literal> equaling <literal>9</literal> and <literal>10</literal>: <screen>\nBEGIN;\nUPDATE website SET hits = hits + 1;\n-- run from another session:  DELETE FROM website WHERE hits = 10;\nCOMMIT;\n</screen> The <command>DELETE</command> will have no effect even though there is a <literal>website.hits = 10</literal> row before and after the <command>UPDATE</command>. This occurs because the pre-update row value <literal>9</literal> is skipped, and when the <command>UPDATE</command> completes and <command>DELETE</command> obtains a lock, the new row value is no longer <literal>10</literal> but <literal>11</literal>, which no longer matches the criteria."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:365(para) 
+#: /tmp/cicero-ODee/mvcc.xml:365(para) 
 msgid "Because Read Committed mode starts each command with a new snapshot that includes all transactions committed up to that instant, subsequent commands in the same transaction will see the effects of the committed concurrent transaction in any case. The point at issue above is whether or not a <emphasis>single</emphasis> command sees an absolutely consistent view of the database."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:374(para) 
+#: /tmp/cicero-ODee/mvcc.xml:374(para) 
 msgid "The partial transaction isolation provided by Read Committed mode is adequate for many applications, and this mode is fast and simple to use; however, it is not sufficient for all cases. Applications that do complex queries and updates might require a more rigorously consistent view of the database than Read Committed mode provides."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:384(title) 
+#: /tmp/cicero-ODee/mvcc.xml:384(title) 
 msgid "Repeatable Read Isolation Level"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:388(secondary) /tmp/cicero-clVY/mvcc.xml:392(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:388(secondary) /tmp/cicero-ODee/mvcc.xml:392(primary) 
 msgid "repeatable read"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:395(para) 
+#: /tmp/cicero-ODee/mvcc.xml:395(para) 
 msgid "The <firstterm>Repeatable Read</firstterm> isolation level only sees data committed before the transaction began; it never sees either uncommitted data or changes committed during transaction execution by concurrent transactions. (However, the query does see the effects of previous updates executed within its own transaction, even though they are not yet committed.) This is a stronger guarantee than is required by the <acronym>SQL</acronym> standard for this isolation level, and prevents all of the phenomena described in <xref linkend=\"mvcc-isolevel-table\"/>. As mentioned above, this is specifically allowed by the standard, which only describes the <emphasis>minimum</emphasis> protections each isolation level must provide."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:410(para) 
+#: /tmp/cicero-ODee/mvcc.xml:410(para) 
 msgid "This level is different from Read Committed in that a query in a repeatable read transaction sees a snapshot as of the start of the <emphasis>transaction</emphasis>, not as of the start of the current query within the transaction. Thus, successive <command>SELECT</command> commands within a <emphasis>single</emphasis> transaction see the same data, i.e., they do not see changes made by other transactions that committed after their own transaction started."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:420(para) 
+#: /tmp/cicero-ODee/mvcc.xml:420(para) 
 msgid "Applications using this level must be prepared to retry transactions due to serialization failures."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:425(para) 
+#: /tmp/cicero-ODee/mvcc.xml:425(para) 
 msgid "<command>UPDATE</command>, <command>DELETE</command>, <command>SELECT FOR UPDATE</command>, and <command>SELECT FOR SHARE</command> commands behave the same as <command>SELECT</command> in terms of searching for target rows: they will only find target rows that were committed as of the transaction start time. However, such a target row might have already been updated (or deleted or locked) by another concurrent transaction by the time it is found. In this case, the repeatable read transaction will wait for the first updating transaction to commit or roll back (if it is still in progress). If the first updater rolls back, then its effects are negated and the repeatable read transaction can proceed with updating the originally found row. But if the first updater commits (and actually updated or deleted the row, not just locked it) then the repeatable read transaction will be rolled back with the message <screen>\nERROR:  could not serialize access due to concurrent update\n</screen> because a repeatable read transaction cannot modify or lock rows changed by other transactions after the repeatable read transaction began."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:448(para) 
+#: /tmp/cicero-ODee/mvcc.xml:448(para) 
 msgid "When an application receives this error message, it should abort the current transaction and retry the whole transaction from the beginning. The second time through, the transaction will see the previously-committed change as part of its initial view of the database, so there is no logical conflict in using the new version of the row as the starting point for the new transaction's update."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:457(para) 
+#: /tmp/cicero-ODee/mvcc.xml:457(para) 
 msgid "Note that only updating transactions might need to be retried; read-only transactions will never have serialization conflicts."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:462(para) 
+#: /tmp/cicero-ODee/mvcc.xml:462(para) 
 msgid "The Repeatable Read mode provides a rigorous guarantee that each transaction sees a completely stable view of the database. However, this view will not necessarily always be consistent with some serial (one at a time) execution of concurrent transactions of the same level. For example, even a read only transaction at this level may see a control record updated to show that a batch has been completed but <emphasis>not</emphasis> see one of the detail records which is logically part of the batch because it read an earlier revision of the control record. Attempts to enforce business rules by transactions running at this isolation level are not likely to work correctly without careful use of explicit locks to block conflicting transactions."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:477(para) 
+#: /tmp/cicero-ODee/mvcc.xml:477(para) 
 msgid "Prior to <productname>PostgreSQL</productname> version 9.1, a request for the Serializable transaction isolation level provided exactly the same behavior described here. To retain the legacy Serializable behavior, Repeatable Read should now be requested."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:487(title) 
+#: /tmp/cicero-ODee/mvcc.xml:487(title) 
 msgid "Serializable Isolation Level"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:491(secondary) /tmp/cicero-clVY/mvcc.xml:495(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:491(secondary) /tmp/cicero-ODee/mvcc.xml:495(primary) 
 msgid "serializable"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:499(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:499(primary) 
 msgid "predicate locking"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:503(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:503(primary) 
 msgid "serialization anomaly"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:506(para) 
+#: /tmp/cicero-ODee/mvcc.xml:506(para) 
 msgid "The <firstterm>Serializable</firstterm> isolation level provides the strictest transaction isolation. This level emulates serial transaction execution, as if transactions had been executed one after another, serially, rather than concurrently. However, like the Repeatable Read level, applications using this level must be prepared to retry transactions due to serialization failures. In fact, this isolation level works exactly the same as Repeatable Read except that it monitors for conditions which could make execution of a concurrent set of serializable transactions behave in a manner inconsistent with all possible serial (one at a time) executions of those transactions. This monitoring does not introduce any blocking beyond that present in repeatable read, but there is some overhead to the monitoring, and detection of the conditions which could cause a <firstterm>serialization anomaly</firstterm> will trigger a <firstterm>serialization failure</firstterm>."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:525(para) 
+#: /tmp/cicero-ODee/mvcc.xml:525(para) 
 msgid "As an example, consider a table <structname>mytab</structname>, initially containing: <screen>\n class | value \n-------+-------\n     1 |    10\n     1 |    20\n     2 |   100\n     2 |   200\n</screen> Suppose that serializable transaction A computes: <screen>\nSELECT SUM(value) FROM mytab WHERE class = 1;\n</screen> and then inserts the result (30) as the <structfield>value</structfield> in a new row with <structfield>class</structfield><literal> = 2</literal>. Concurrently, serializable transaction B computes: <screen>\nSELECT SUM(value) FROM mytab WHERE class = 2;\n</screen> and obtains the result 300, which it inserts in a new row with <structfield>class</structfield><literal> = 1</literal>. Then both transactions try to commit. If either transaction were running at the Repeatable Read isolation level, both would be allowed to commit; but since there is no serial order of execution consistent with the result, using Serializable transactions will allow one transaction to commit and and will roll the other back with this message: <screen>\nERROR:  could not serialize access due to read/write dependencies among transactions\n</screen> This is because if A had executed before B, B would have computed the sum 330, not 300, and similarly the other order would have resulted in a different sum computed by A."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:563(para) 
+#: /tmp/cicero-ODee/mvcc.xml:563(para) 
 msgid "To guarantee true serializability <productname>PostgreSQL</productname> uses <firstterm>predicate locking</firstterm>, which means that it keeps locks which allow it to determine when a write would have had an impact on the result of a previous read from a concurrent transaction, had it run first. In <productname>PostgreSQL</productname> these locks do not cause any blocking and therefore can <emphasis>not</emphasis> play any part in causing a deadlock. They are used to identify and flag dependencies among concurrent serializable transactions which in certain combinations can lead to serialization anomalies. In contrast, a Read Committed or Repeatable Read transaction which wants to ensure data consistency may need to take out a lock on an entire table, which could block other users attempting to use that table, or it may use <literal>SELECT FOR UPDATE</literal> or <literal>SELECT FOR SHARE</literal> which not only can block other transactions but cause disk access."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:580(para) 
+#: /tmp/cicero-ODee/mvcc.xml:580(para) 
 msgid "Predicate locks in <productname>PostgreSQL</productname>, like in most other database systems, are based on data actually accessed by a transaction. These will show up in the <link linkend=\"view-pg-locks\"><structname>pg_locks</structname></link> system view with a <literal>mode</literal> of <literal>SIReadLock</literal>. The particular locks acquired during execution of a query will depend on the plan used by the query, and multiple finer-grained locks (e.g., tuple locks) may be combined into fewer coarser-grained locks (e.g., page locks) during the course of the transaction to prevent exhaustion of the memory used to track the locks. A <literal>READ ONLY</literal> transaction may be able to release its SIRead locks before completion, if it detects that no conflicts can still occur which could lead to a serialization anomaly. In fact, <literal>READ ONLY</literal> transactions will often be able to establish that fact at startup and avoid taking any predicate locks. If you explicitly request a <literal>SERIALIZABLE READ ONLY DEFERRABLE</literal> transaction, it will block until it can establish this fact. (This is the <emphasis>only</emphasis> case where Serializable transactions block but Repeatable Read transactions don't.) On the other hand, SIRead locks often need to be kept past transaction commit, until overlapping read write transactions complete."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:604(para) 
+#: /tmp/cicero-ODee/mvcc.xml:604(para) 
 msgid "Consistent use of Serializable transactions can simplify development. The guarantee that any set of concurrent serializable transactions will have the same effect as if they were run one at a time means that if you can demonstrate that a single transaction, as written, will do the right thing when run by itself, you can have confidence that it will do the right thing in any mix of serializable transactions, even without any information about what those other transactions might do. It is important that an environment which uses this technique have a generalized way of handling serialization failures (which always return with a SQLSTATE value of '40001'), because it will be very hard to predict exactly which transactions might contribute to the read/write dependencies and need to be rolled back to prevent serialization anomalies. The monitoring of read/write dependencies has a cost, as does the restart of transactions which are terminated with a serialization failure, but balanced against the cost and blocking involved in use of explicit locks and <literal>SELECT FOR UPDATE</literal> or <literal>SELECT FOR SHARE</literal>, Serializable transactions are the best performance choice for some environments."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:631(para) 
+#: /tmp/cicero-ODee/mvcc.xml:631(para) 
 msgid "Declare transactions as <literal>READ ONLY</literal> when possible."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:636(para) 
+#: /tmp/cicero-ODee/mvcc.xml:636(para) 
 msgid "Control the number of active connections, using a connection pool if needed. This is always an important performance consideration, but it can be particularly important in a busy system using Serializable transactions."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:644(para) 
+#: /tmp/cicero-ODee/mvcc.xml:644(para) 
 msgid "Don't put more into a single transaction than needed for integrity purposes."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:650(para) 
+#: /tmp/cicero-ODee/mvcc.xml:650(para) 
 msgid "Don't leave connections dangling <quote>idle in transaction</quote> longer than necessary."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:656(para) 
+#: /tmp/cicero-ODee/mvcc.xml:656(para) 
 msgid "Eliminate explicit locks, <literal>SELECT FOR UPDATE</literal>, and <literal>SELECT FOR SHARE</literal> where no longer needed due to the protections automatically provided by Serializable transactions."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:663(para) 
+#: /tmp/cicero-ODee/mvcc.xml:663(para) 
 msgid "When the system is forced to combine multiple page-level predicate locks into a single relation-level predicate lock because the predicate lock table is short of memory, an increase in the rate of serialization failures may occur. You can avoid this by increasing <xref linkend=\"guc-max-pred-locks-per-transaction\"/>."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:672(para) 
+#: /tmp/cicero-ODee/mvcc.xml:672(para) 
 msgid "A sequential scan will always necessitate a relation-level predicate lock. This can result in an increased rate of serialization failures. It may be helpful to encourage the use of index scans by reducing <xref linkend=\"guc-random-page-cost\"/> and/or increasing <xref linkend=\"guc-cpu-tuple-cost\"/>. Be sure to weigh any decrease in transaction rollbacks and restarts against any overall change in query execution time."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:625(para) 
+#: /tmp/cicero-ODee/mvcc.xml:625(para) 
 msgid "For optimal performance when relying on Serializable transactions for concurrency control, these issues should be considered: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:686(para) 
+#: /tmp/cicero-ODee/mvcc.xml:686(para) 
 msgid "Support for the Serializable transaction isolation level has not yet been added to Hot Standby replication targets (described in <xref linkend=\"hot-standby\"/>). The strictest isolation level currently supported in hot standby mode is Repeatable Read. While performing all permanent database writes within Serializable transactions on the master will ensure that all standbys will eventually reach a consistent state, a Repeatable Read transaction run on the standby can sometimes see a transient state which is inconsistent with any serial execution of serializable transactions on the master."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:702(title) 
+#: /tmp/cicero-ODee/mvcc.xml:702(title) 
 msgid "Explicit Locking"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:705(primary) /tmp/cicero-clVY/mvcc.xml:1212(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:705(primary) /tmp/cicero-ODee/mvcc.xml:1212(primary) 
 msgid "lock"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:708(para) 
+#: /tmp/cicero-ODee/mvcc.xml:708(para) 
 msgid "<productname>PostgreSQL</productname> provides various lock modes to control concurrent access to data in tables. These modes can be used for application-controlled locking in situations where <acronym>MVCC</acronym> does not give the desired behavior. Also, most <productname>PostgreSQL</productname> commands automatically acquire locks of appropriate modes to ensure that referenced tables are not dropped or modified in incompatible ways while the command executes. (For example, <command>TRUNCATE</command> cannot safely be executed concurrently with other operations on the same table, so it obtains an exclusive lock on the table to enforce that.)"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:721(para) 
+#: /tmp/cicero-ODee/mvcc.xml:721(para) 
 msgid "To examine a list of the currently outstanding locks in a database server, use the <link linkend=\"view-pg-locks\"><structname>pg_locks</structname></link> system view. For more information on monitoring the status of the lock manager subsystem, refer to <xref linkend=\"monitoring\"/>."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:730(title) 
+#: /tmp/cicero-ODee/mvcc.xml:730(title) 
 msgid "Table-level Locks"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:733(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:733(primary) 
 msgid "LOCK"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:736(para) 
+#: /tmp/cicero-ODee/mvcc.xml:736(para) 
 msgid "The list below shows the available lock modes and the contexts in which they are used automatically by <productname>PostgreSQL</productname>. You can also acquire any of these locks explicitly with the command <xref linkend=\"sql-lock\"/>. Remember that all of these lock modes are table-level locks, even if the name contains the word <quote>row</quote>; the names of the lock modes are historical. To some extent the names reflect the typical usage of each lock mode — but the semantics are all the same. The only real difference between one lock mode and another is the set of lock modes with which each conflicts (see <xref linkend=\"table-lock-compatibility\"/>). Two transactions cannot hold locks of conflicting modes on the same table at the same time. (However, a transaction never conflicts with itself. For example, it might acquire <literal>ACCESS EXCLUSIVE</literal> lock and later acquire <literal>ACCESS SHARE</literal> lock on the same table.) Non-conflicting lock modes can be held concurrently by many transactions. Notice in particular that some lock modes are self-conflicting (for example, an <literal>ACCESS EXCLUSIVE</literal> lock cannot be held by more than one transaction at a time) while others are not self-conflicting (for example, an <literal>ACCESS SHARE</literal> lock can be held by multiple transactions)."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:762(title) 
+#: /tmp/cicero-ODee/mvcc.xml:762(title) 
 msgid "Table-level Lock Modes"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:765(literal) /tmp/cicero-clVY/mvcc.xml:971(entry) /tmp/cicero-clVY/mvcc.xml:983(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:765(literal) /tmp/cicero-ODee/mvcc.xml:971(entry) /tmp/cicero-ODee/mvcc.xml:983(entry) 
 msgid "ACCESS SHARE"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:768(para) 
+#: /tmp/cicero-ODee/mvcc.xml:768(para) 
 msgid "Conflicts with the <literal>ACCESS EXCLUSIVE</literal> lock mode only."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:773(para) 
+#: /tmp/cicero-ODee/mvcc.xml:773(para) 
 msgid "The <command>SELECT</command> command acquires a lock of this mode on referenced tables. In general, any query that only <emphasis>reads</emphasis> a table and does not modify it will acquire this lock mode."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:783(literal) /tmp/cicero-clVY/mvcc.xml:972(entry) /tmp/cicero-clVY/mvcc.xml:994(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:783(literal) /tmp/cicero-ODee/mvcc.xml:972(entry) /tmp/cicero-ODee/mvcc.xml:994(entry) 
 msgid "ROW SHARE"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:786(para) 
+#: /tmp/cicero-ODee/mvcc.xml:786(para) 
 msgid "Conflicts with the <literal>EXCLUSIVE</literal> and <literal>ACCESS EXCLUSIVE</literal> lock modes."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:791(para) 
+#: /tmp/cicero-ODee/mvcc.xml:791(para) 
 msgid "The <command>SELECT FOR UPDATE</command> and <command>SELECT FOR SHARE</command> commands acquire a lock of this mode on the target table(s) (in addition to <literal>ACCESS SHARE</literal> locks on any other tables that are referenced but not selected <option>FOR UPDATE/FOR SHARE</option>)."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:804(literal) /tmp/cicero-clVY/mvcc.xml:973(entry) /tmp/cicero-clVY/mvcc.xml:1005(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:804(literal) /tmp/cicero-ODee/mvcc.xml:973(entry) /tmp/cicero-ODee/mvcc.xml:1005(entry) 
 msgid "ROW EXCLUSIVE"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:807(para) 
+#: /tmp/cicero-ODee/mvcc.xml:807(para) 
 msgid "Conflicts with the <literal>SHARE</literal>, <literal>SHARE ROW EXCLUSIVE</literal>, <literal>EXCLUSIVE</literal>, and <literal>ACCESS EXCLUSIVE</literal> lock modes."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:813(para) 
+#: /tmp/cicero-ODee/mvcc.xml:813(para) 
 msgid "The commands <command>UPDATE</command>, <command>DELETE</command>, and <command>INSERT</command> acquire this lock mode on the target table (in addition to <literal>ACCESS SHARE</literal> locks on any other referenced tables). In general, this lock mode will be acquired by any command that <emphasis>modifies data</emphasis> in a table."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:826(literal) /tmp/cicero-clVY/mvcc.xml:974(entry) /tmp/cicero-clVY/mvcc.xml:1016(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:826(literal) /tmp/cicero-ODee/mvcc.xml:974(entry) /tmp/cicero-ODee/mvcc.xml:1016(entry) 
 msgid "SHARE UPDATE EXCLUSIVE"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:829(para) 
+#: /tmp/cicero-ODee/mvcc.xml:829(para) 
 msgid "Conflicts with the <literal>SHARE UPDATE EXCLUSIVE</literal>, <literal>SHARE</literal>, <literal>SHARE ROW EXCLUSIVE</literal>, <literal>EXCLUSIVE</literal>, and <literal>ACCESS EXCLUSIVE</literal> lock modes. This mode protects a table against concurrent schema changes and <command>VACUUM</command> runs."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:838(para) 
+#: /tmp/cicero-ODee/mvcc.xml:838(para) 
 msgid "Acquired by <command>VACUUM</command> (without <option>FULL</option>), <command>ANALYZE</command>, <command>CREATE INDEX CONCURRENTLY</command>, and some forms of <command>ALTER TABLE</command>."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:848(literal) /tmp/cicero-clVY/mvcc.xml:975(entry) /tmp/cicero-clVY/mvcc.xml:1027(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:848(literal) /tmp/cicero-ODee/mvcc.xml:975(entry) /tmp/cicero-ODee/mvcc.xml:1027(entry) 
 msgid "SHARE"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:851(para) 
+#: /tmp/cicero-ODee/mvcc.xml:851(para) 
 msgid "Conflicts with the <literal>ROW EXCLUSIVE</literal>, <literal>SHARE UPDATE EXCLUSIVE</literal>, <literal>SHARE ROW EXCLUSIVE</literal>, <literal>EXCLUSIVE</literal>, and <literal>ACCESS EXCLUSIVE</literal> lock modes. This mode protects a table against concurrent data changes."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:859(para) 
+#: /tmp/cicero-ODee/mvcc.xml:859(para) 
 msgid "Acquired by <command>CREATE INDEX</command> (without <option>CONCURRENTLY</option>)."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:868(literal) /tmp/cicero-clVY/mvcc.xml:976(entry) /tmp/cicero-clVY/mvcc.xml:1038(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:868(literal) /tmp/cicero-ODee/mvcc.xml:976(entry) /tmp/cicero-ODee/mvcc.xml:1038(entry) 
 msgid "SHARE ROW EXCLUSIVE"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:871(para) 
+#: /tmp/cicero-ODee/mvcc.xml:871(para) 
 msgid "Conflicts with the <literal>ROW EXCLUSIVE</literal>, <literal>SHARE UPDATE EXCLUSIVE</literal>, <literal>SHARE</literal>, <literal>SHARE ROW EXCLUSIVE</literal>, <literal>EXCLUSIVE</literal>, and <literal>ACCESS EXCLUSIVE</literal> lock modes. This mode protects a table against concurrent data changes, and is self-exclusive so that only one session can hold it at a time."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:881(para) 
+#: /tmp/cicero-ODee/mvcc.xml:881(para) 
 msgid "This lock mode is not automatically acquired by any <productname>PostgreSQL</productname> command."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:890(literal) /tmp/cicero-clVY/mvcc.xml:977(entry) /tmp/cicero-clVY/mvcc.xml:1049(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:890(literal) /tmp/cicero-ODee/mvcc.xml:977(entry) /tmp/cicero-ODee/mvcc.xml:1049(entry) 
 msgid "EXCLUSIVE"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:893(para) 
+#: /tmp/cicero-ODee/mvcc.xml:893(para) 
 msgid "Conflicts with the <literal>ROW SHARE</literal>, <literal>ROW EXCLUSIVE</literal>, <literal>SHARE UPDATE EXCLUSIVE</literal>, <literal>SHARE</literal>, <literal>SHARE ROW EXCLUSIVE</literal>, <literal>EXCLUSIVE</literal>, and <literal>ACCESS EXCLUSIVE</literal> lock modes. This mode allows only concurrent <literal>ACCESS SHARE</literal> locks, i.e., only reads from the table can proceed in parallel with a transaction holding this lock mode."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:904(para) 
+#: /tmp/cicero-ODee/mvcc.xml:904(para) 
 msgid "This lock mode is not automatically acquired on tables by any <productname>PostgreSQL</productname> command."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:913(literal) /tmp/cicero-clVY/mvcc.xml:978(entry) /tmp/cicero-clVY/mvcc.xml:1060(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:913(literal) /tmp/cicero-ODee/mvcc.xml:978(entry) /tmp/cicero-ODee/mvcc.xml:1060(entry) 
 msgid "ACCESS EXCLUSIVE"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:916(para) 
+#: /tmp/cicero-ODee/mvcc.xml:916(para) 
 msgid "Conflicts with locks of all modes (<literal>ACCESS SHARE</literal>, <literal>ROW SHARE</literal>, <literal>ROW EXCLUSIVE</literal>, <literal>SHARE UPDATE EXCLUSIVE</literal>, <literal>SHARE</literal>, <literal>SHARE ROW EXCLUSIVE</literal>, <literal>EXCLUSIVE</literal>, and <literal>ACCESS EXCLUSIVE</literal>). This mode guarantees that the holder is the only transaction accessing the table in any way."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:927(para) 
+#: /tmp/cicero-ODee/mvcc.xml:927(para) 
 msgid "Acquired by the <command>ALTER TABLE</command>, <command>DROP TABLE</command>, <command>TRUNCATE</command>, <command>REINDEX</command>, <command>CLUSTER</command>, and <command>VACUUM FULL</command> commands. This is also the default lock mode for <command>LOCK TABLE</command> statements that do not specify a mode explicitly."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:940(para) 
+#: /tmp/cicero-ODee/mvcc.xml:940(para) 
 msgid "Only an <literal>ACCESS EXCLUSIVE</literal> lock blocks a <command>SELECT</command> (without <option>FOR UPDATE/SHARE</option>) statement."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:947(para) 
+#: /tmp/cicero-ODee/mvcc.xml:947(para) 
 msgid "Once acquired, a lock is normally held till end of transaction. But if a lock is acquired after establishing a savepoint, the lock is released immediately if the savepoint is rolled back to. This is consistent with the principle that <command>ROLLBACK</command> cancels all effects of the commands since the savepoint. The same holds for locks acquired within a <application>PL/pgSQL</application> exception block: an error escape from the block releases locks acquired within it."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:960(title) 
+#: /tmp/cicero-ODee/mvcc.xml:960(title) 
 msgid "Conflicting Lock Modes"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:967(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:967(entry) 
 msgid "Requested Lock Mode"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:968(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:968(entry) 
 msgid "Current Lock Mode"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:991(entry) /tmp/cicero-clVY/mvcc.xml:1001(entry) /tmp/cicero-clVY/mvcc.xml:1002(entry) /tmp/cicero-clVY/mvcc.xml:1010(entry) /tmp/cicero-clVY/mvcc.xml:1011(entry) /tmp/cicero-clVY/mvcc.xml:1012(entry) /tmp/cicero-clVY/mvcc.xml:1013(entry) /tmp/cicero-clVY/mvcc.xml:1020(entry) /tmp/cicero-clVY/mvcc.xml:1021(entry) /tmp/cicero-clVY/mvcc.xml:1022(entry) /tmp/cicero-clVY/mvcc.xml:1023(entry) /tmp/cicero-clVY/mvcc.xml:1024(entry) /tmp/cicero-clVY/mvcc.xml:1030(entry) /tmp/cicero-clVY/mvcc.xml:1031(entry) /tmp/cicero-clVY/mvcc.xml:1033(entry) /tmp/cicero-clVY/mvcc.xml:1034(entry) /tmp/cicero-clVY/mvcc.xml:1035(entry) /tmp/cicero-clVY/mvcc.xml:1041(entry) /tmp/cicero-clVY/mvcc.xml:1042(entry) /tmp/cicero-clVY/mvcc.xml:1043(entry) /tmp/cicero-clVY/mvcc.xml:1044(entry) /tmp/cicero-clVY/mvcc.xml:1045(entry) /tmp/cicero-clVY/mvcc.xml:1046(entry) /tmp/cicero-clVY/mvcc.xml:1051(entry) /tmp/cicero-clVY/mvcc.xml:1052(entry) /tmp/cicero-clVY/mvcc.xml:1053(entry) /tmp/cicero-clVY/mvcc.xml:1054(entry) /tmp/cicero-clVY/mvcc.xml:1055(entry) /tmp/cicero-clVY/mvcc.xml:1056(entry) /tmp/cicero-clVY/mvcc.xml:1057(entry) /tmp/cicero-clVY/mvcc.xml:1061(entry) /tmp/cicero-clVY/mvcc.xml:1062(entry) /tmp/cicero-clVY/mvcc.xml:1063(entry) /tmp/cicero-clVY/mvcc.xml:1064(entry) /tmp/cicero-clVY/mvcc.xml:1065(entry) /tmp/cicero-clVY/mvcc.xml:1066(entry) /tmp/cicero-clVY/mvcc.xml:1067(entry) /tmp/cicero-clVY/mvcc.xml:1068(entry) 
+#: /tmp/cicero-ODee/mvcc.xml:991(entry) /tmp/cicero-ODee/mvcc.xml:1001(entry) /tmp/cicero-ODee/mvcc.xml:1002(entry) /tmp/cicero-ODee/mvcc.xml:1010(entry) /tmp/cicero-ODee/mvcc.xml:1011(entry) /tmp/cicero-ODee/mvcc.xml:1012(entry) /tmp/cicero-ODee/mvcc.xml:1013(entry) /tmp/cicero-ODee/mvcc.xml:1020(entry) /tmp/cicero-ODee/mvcc.xml:1021(entry) /tmp/cicero-ODee/mvcc.xml:1022(entry) /tmp/cicero-ODee/mvcc.xml:1023(entry) /tmp/cicero-ODee/mvcc.xml:1024(entry) /tmp/cicero-ODee/mvcc.xml:1030(entry) /tmp/cicero-ODee/mvcc.xml:1031(entry) /tmp/cicero-ODee/mvcc.xml:1033(entry) /tmp/cicero-ODee/mvcc.xml:1034(entry) /tmp/cicero-ODee/mvcc.xml:1035(entry) /tmp/cicero-ODee/mvcc.xml:1041(entry) /tmp/cicero-ODee/mvcc.xml:1042(entry) /tmp/cicero-ODee/mvcc.xml:1043(entry) /tmp/cicero-ODee/mvcc.xml:1044(entry) /tmp/cicero-ODee/mvcc.xml:1045(entry) /tmp/cicero-ODee/mvcc.xml:1046(entry) /tmp/cicero-ODee/mvcc.xml:1051(entry) /tmp/cicero-ODee/mvcc.xml:1052(entry) /tmp/cicero-ODee/mvcc.xml:1053(entry) /tmp/cicero-ODee/mvcc.xml:1054(entry) /tmp/cicero-ODee/mvcc.xml:1055(entry) /tmp/cicero-ODee/mvcc.xml:1056(entry) /tmp/cicero-ODee/mvcc.xml:1057(entry) /tmp/cicero-ODee/mvcc.xml:1061(entry) /tmp/cicero-ODee/mvcc.xml:1062(entry) /tmp/cicero-ODee/mvcc.xml:1063(entry) /tmp/cicero-ODee/mvcc.xml:1064(entry) /tmp/cicero-ODee/mvcc.xml:1065(entry) /tmp/cicero-ODee/mvcc.xml:1066(entry) /tmp/cicero-ODee/mvcc.xml:1067(entry) /tmp/cicero-ODee/mvcc.xml:1068(entry) 
 msgid "X"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1076(title) 
+#: /tmp/cicero-ODee/mvcc.xml:1076(title) 
 msgid "Row-level Locks"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1078(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1078(para) 
 msgid "In addition to table-level locks, there are row-level locks, which can be exclusive or shared locks. An exclusive row-level lock on a specific row is automatically acquired when the row is updated or deleted. The lock is held until the transaction commits or rolls back, just like table-level locks. Row-level locks do not affect data querying; they block only <emphasis>writers to the same row</emphasis>."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1088(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1088(para) 
 msgid "To acquire an exclusive row-level lock on a row without actually modifying the row, select the row with <command>SELECT FOR UPDATE</command>. Note that once the row-level lock is acquired, the transaction can update the row multiple times without fear of conflicts."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1096(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1096(para) 
 msgid "To acquire a shared row-level lock on a row, select the row with <command>SELECT FOR SHARE</command>. A shared lock does not prevent other transactions from acquiring the same shared lock. However, no transaction is allowed to update, delete, or exclusively lock a row on which any other transaction holds a shared lock. Any attempt to do so will block until the shared lock(s) have been released."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1105(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1105(para) 
 msgid "<productname>PostgreSQL</productname> doesn't remember any information about modified rows in memory, so there is no limit on the number of rows locked at one time. However, locking a row might cause a disk write, e.g., <command>SELECT FOR UPDATE</command> modifies selected rows to mark them locked, and so will result in disk writes."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1114(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1114(para) 
 msgid "In addition to table and row locks, page-level share/exclusive locks are used to control read/write access to table pages in the shared buffer pool. These locks are released immediately after a row is fetched or updated. Application developers normally need not be concerned with page-level locks, but they are mentioned here for completeness."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1125(title) 
+#: /tmp/cicero-ODee/mvcc.xml:1125(title) 
 msgid "Deadlocks"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1128(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:1128(primary) 
 msgid "deadlock"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1131(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1131(para) 
 msgid "The use of explicit locking can increase the likelihood of <firstterm>deadlocks</firstterm>, wherein two (or more) transactions each hold locks that the other wants. For example, if transaction 1 acquires an exclusive lock on table A and then tries to acquire an exclusive lock on table B, while transaction 2 has already exclusive-locked table B and now wants an exclusive lock on table A, then neither one can proceed. <productname>PostgreSQL</productname> automatically detects deadlock situations and resolves them by aborting one of the transactions involved, allowing the other(s) to complete. (Exactly which transaction will be aborted is difficult to predict and should not be relied upon.)"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1146(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1146(para) 
 msgid "Note that deadlocks can also occur as the result of row-level locks (and thus, they can occur even if explicit locking is not used). Consider the case in which two concurrent transactions modify a table. The first transaction executes: <screen>\nUPDATE accounts SET balance = balance + 100.00 WHERE acctnum = 11111;\n</screen> This acquires a row-level lock on the row with the specified account number. Then, the second transaction executes: <screen>\nUPDATE accounts SET balance = balance + 100.00 WHERE acctnum = 22222;\nUPDATE accounts SET balance = balance - 100.00 WHERE acctnum = 11111;\n</screen> The first <command>UPDATE</command> statement successfully acquires a row-level lock on the specified row, so it succeeds in updating that row. However, the second <command>UPDATE</command> statement finds that the row it is attempting to update has already been locked, so it waits for the transaction that acquired the lock to complete. Transaction two is now waiting on transaction one to complete before it continues execution. Now, transaction one executes: <screen>\nUPDATE accounts SET balance = balance - 100.00 WHERE acctnum = 22222;\n</screen> Transaction one attempts to acquire a row-level lock on the specified row, but it cannot: transaction two already holds such a lock. So it waits for transaction two to complete. Thus, transaction one is blocked on transaction two, and transaction two is blocked on transaction one: a deadlock condition. <productname>PostgreSQL</productname> will detect this situation and abort one of the transactions."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1186(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1186(para) 
 msgid "The best defense against deadlocks is generally to avoid them by being certain that all applications using a database acquire locks on multiple objects in a consistent order. In the example above, if both transactions had updated the rows in the same order, no deadlock would have occurred. One should also ensure that the first lock acquired on an object in a transaction is the most restrictive mode that will be needed for that object. If it is not feasible to verify this in advance, then deadlocks can be handled on-the-fly by retrying transactions that abort due to deadlocks."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1199(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1199(para) 
 msgid "So long as no deadlock situation is detected, a transaction seeking either a table-level or row-level lock will wait indefinitely for conflicting locks to be released. This means it is a bad idea for applications to hold transactions open for long periods of time (e.g., while waiting for user input)."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1209(title) 
+#: /tmp/cicero-ODee/mvcc.xml:1209(title) 
 msgid "Advisory Locks"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1213(secondary) 
+#: /tmp/cicero-ODee/mvcc.xml:1213(secondary) 
 msgid "advisory"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1216(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1216(para) 
 msgid "<productname>PostgreSQL</productname> provides a means for creating locks that have application-defined meanings. These are called <firstterm>advisory locks</firstterm>, because the system does not enforce their use — it is up to the application to use them correctly. Advisory locks can be useful for locking strategies that are an awkward fit for the MVCC model."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1224(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1224(para) 
 msgid "There are two different types of advisory locks in <productname>PostgreSQL</productname>: session level and transaction level. Once acquired, a session level advisory lock is held until explicitly released or the session ends. Unlike standard locks, session level advisory locks do not honor transaction semantics: a lock acquired during a transaction that is later rolled back will still be held following the rollback, and likewise an unlock is effective even if the calling transaction fails later. The same session level lock can be acquired multiple times by its owning process: for each lock request there must be a corresponding unlock request before the lock is actually released. (If a session already holds a given lock, additional requests will always succeed, even if other sessions are awaiting the lock.) Transaction level locks on the other hand behave more like regular locks; they are automatically released at the end of the transaction, and can not be explicitly unlocked. Session and transaction level locks share the same lock space, which means that a transaction level lock will prevent another session from obtaining a session level lock on that same resource and vice versa. Like all locks in <productname>PostgreSQL</productname>, a complete list of advisory locks currently held by any session can be found in the <link linkend=\"view-pg-locks\"><structname>pg_locks</structname></link> system view."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1248(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1248(para) 
 msgid "Advisory locks are allocated out of a shared memory pool whose size is defined by the configuration variables <xref linkend=\"guc-max-locks-per-transaction\"/> and <xref linkend=\"guc-max-connections\"/>. Care must be taken not to exhaust this memory or the server will be unable to grant any locks at all. This imposes an upper limit on the number of advisory locks grantable by the server, typically in the tens to hundreds of thousands depending on how the server is configured."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1260(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1260(para) 
 msgid "A common use of advisory locks is to emulate pessimistic locking strategies typical of so called <quote>flat file</quote> data management systems. While a flag stored in a table could be used for the same purpose, advisory locks are faster, avoid MVCC bloat, and can be automatically cleaned up by the server at the end of the session. In certain cases using this advisory locking method, especially in queries involving explicit ordering and <literal>LIMIT</literal> clauses, care must be taken to control the locks acquired because of the order in which SQL expressions are evaluated. For example: <screen>\nSELECT pg_advisory_lock(id) FROM foo WHERE id = 12345; -- ok\nSELECT pg_advisory_lock(id) FROM foo WHERE id &gt; 12345 LIMIT 100; -- danger!\nSELECT pg_advisory_lock(q.id) FROM\n(\n  SELECT id FROM foo WHERE id &gt; 12345 LIMIT 100\n) q; -- ok\n</screen> In the above queries, the second form is dangerous because the <literal>LIMIT</literal> is not guaranteed to be applied before the locking function is executed. This might cause some locks to be acquired that the application was not expecting, and hence would fail to release (until it ends the session). From the point of view of the application, such locks would be dangling, although still viewable in <structname>pg_locks</structname>."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1289(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1289(para) 
 msgid "The functions provided to manipulate advisory locks are described in <xref linkend=\"functions-advisory-locks\"/>."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1298(title) 
+#: /tmp/cicero-ODee/mvcc.xml:1298(title) 
 msgid "Data Consistency Checks at the Application Level"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1300(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1300(para) 
 msgid "It is very difficult to enforce business rules regarding data integrity using Read Committed transactions because the view of the data is shifting with each statement, and even a single statement may not restrict itself to the statement's snapshot if a write conflict occurs."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1307(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1307(para) 
 msgid "While a Repeatable Read transaction has a stable view of the data throughout its execution, there is a subtle issue with using <acronym>MVCC</acronym> snapshots for data consistency checks, involving something known as <firstterm>read/write conflicts</firstterm>. If one transaction writes data and a concurrent transaction attempts to read the same data (whether before or after the write), it cannot see the work of the other transaction. The reader then appears to have executed first regardless of which started first or which committed first. If that is as far as it goes, there is no problem, but if the reader also writes data which is read by a concurrent transaction there is now a transaction which appears to have run before either of the previously mentioned transactions. If the transaction which appears to have executed last actually commits first, it is very easy for a cycle to appear in a graph of the order of execution of the transactions. When such a cycle appears, integrity checks will not work correctly without some help."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1326(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1326(para) 
 msgid "As mentioned in <xref linkend=\"xact-serializable\"/>, Serializable transactions are just Repeatable Read transactions which add non-blocking monitoring for dangerous patterns of read/write conflicts. When a pattern is detected which could cause a cycle in the apparent order of execution, one of the transactions involved is rolled back to break the cycle."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1336(title) 
+#: /tmp/cicero-ODee/mvcc.xml:1336(title) 
 msgid "Enforcing Consistency With Serializable Transactions"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1338(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1338(para) 
 msgid "If the Serializable transaction isolation level is used for all writes and for all reads which need a consistent view of the data, no other effort is required to ensure consistency. Software from other environments which is written to use serializable transactions to ensure consistency should <quote>just work</quote> in this regard in <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1347(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1347(para) 
 msgid "When using this technique, it will avoid creating an unnecessary burden for application programmers if the application software goes through a framework which automatically retries transactions which are rolled back with a serialization failure. It may be a good idea to set <literal>default_transaction_isolation</literal> to <literal>serializable</literal>. It would also be wise to take some action to ensure that no other transaction isolation level is used, either inadvertently or to subvert integrity checks, through checks of the transaction isolation level in triggers."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1359(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1359(para) 
 msgid "See <xref linkend=\"xact-serializable\"/> for performance suggestions."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1364(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1364(para) 
 msgid "This level of integrity protection using Serializable transactions does not yet extend to hot standby mode (<xref linkend=\"hot-standby\"/>). Because of that, those using hot standby may want to use Repeatable Read and explicit locking.on the master."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1374(title) 
+#: /tmp/cicero-ODee/mvcc.xml:1374(title) 
 msgid "Enforcing Consistency With Explicit Blocking Locks"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1376(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1376(para) 
 msgid "When non-serializable writes are possible, to ensure the current validity of a row and protect it against concurrent updates one must use <command>SELECT FOR UPDATE</command>, <command>SELECT FOR SHARE</command>, or an appropriate <command>LOCK TABLE</command> statement. (<command>SELECT FOR UPDATE</command> and <command>SELECT FOR SHARE</command> lock just the returned rows against concurrent updates, while <command>LOCK TABLE</command> locks the whole table.) This should be taken into account when porting applications to <productname>PostgreSQL</productname> from other environments."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1389(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1389(para) 
 msgid "Also of note to those converting from other environments is the fact that <command>SELECT FOR UPDATE</command> does not ensure that a concurrent transaction will not update or delete a selected row. To do that in <productname>PostgreSQL</productname> you must actually update the row, even if no values need to be changed. <command>SELECT FOR UPDATE</command><emphasis>temporarily blocks</emphasis> other transactions from acquiring the same lock or executing an <command>UPDATE</command> or <command>DELETE</command> which would affect the locked row, but once the transaction holding this lock commits or rolls back, a blocked transaction will proceed with the conflicting operation unless an actual <command>UPDATE</command> of the row was performed while the lock was held."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1404(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1404(para) 
 msgid "Global validity checks require extra thought under non-serializable <acronym>MVCC</acronym>. For example, a banking application might wish to check that the sum of all credits in one table equals the sum of debits in another table, when both tables are being actively updated. Comparing the results of two successive <literal>SELECT sum(...)</literal> commands will not work reliably in Read Committed mode, since the second query will likely include the results of transactions not counted by the first. Doing the two sums in a single repeatable read transaction will give an accurate picture of only the effects of transactions that committed before the repeatable read transaction started — but one might legitimately wonder whether the answer is still relevant by the time it is delivered. If the repeatable read transaction itself applied some changes before trying to make the consistency check, the usefulness of the check becomes even more debatable, since now it includes some but not all post-transaction-start changes. In such cases a careful person might wish to lock all tables needed for the check, in order to get an indisputable picture of current reality. A <literal>SHARE</literal> mode (or higher) lock guarantees that there are no uncommitted changes in the locked table, other than those of the current transaction."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1427(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1427(para) 
 msgid "Note also that if one is relying on explicit locking to prevent concurrent changes, one should either use Read Committed mode, or in Repeatable Read mode be careful to obtain locks before performing queries. A lock obtained by a repeatable read transaction guarantees that no other transactions modifying the table are still running, but if the snapshot seen by the transaction predates obtaining the lock, it might predate some now-committed changes in the table. A repeatable read transaction's snapshot is actually frozen at the start of its first query or data-modification command (<literal>SELECT</literal>, <literal>INSERT</literal>, <literal>UPDATE</literal>, or <literal>DELETE</literal>), so it is possible to obtain locks explicitly before the snapshot is frozen."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1446(title) 
+#: /tmp/cicero-ODee/mvcc.xml:1446(title) 
 msgid "Locking and Indexes"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1449(primary) 
+#: /tmp/cicero-ODee/mvcc.xml:1449(primary) 
 msgid "index"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1450(secondary) 
+#: /tmp/cicero-ODee/mvcc.xml:1450(secondary) 
 msgid "locks"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1463(term) 
+#: /tmp/cicero-ODee/mvcc.xml:1463(term) 
 msgid "B-tree and <acronym>GiST</acronym> indexes"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1467(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1467(para) 
 msgid "Short-term share/exclusive page-level locks are used for read/write access. Locks are released immediately after each index row is fetched or inserted. These index types provide the highest concurrency without deadlock conditions."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1477(term) 
+#: /tmp/cicero-ODee/mvcc.xml:1477(term) 
 msgid "Hash indexes"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1481(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1481(para) 
 msgid "Share/exclusive hash-bucket-level locks are used for read/write access. Locks are released after the whole bucket is processed. Bucket-level locks provide better concurrency than index-level ones, but deadlock is possible since the locks are held longer than one index operation."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1492(term) 
+#: /tmp/cicero-ODee/mvcc.xml:1492(term) 
 msgid "<acronym>GIN</acronym> indexes"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1496(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1496(para) 
 msgid "Short-term share/exclusive page-level locks are used for read/write access. Locks are released immediately after each index row is fetched or inserted. But note that insertion of a GIN-indexed value usually produces several index key insertions per row, so GIN might do substantial work for a single value's insertion."
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1453(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1453(para) 
 msgid "Though <productname>PostgreSQL</productname> provides nonblocking read/write access to table data, nonblocking read/write access is not currently offered for every index access method implemented in <productname>PostgreSQL</productname>. The various index types are handled as follows: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-clVY/mvcc.xml:1509(para) 
+#: /tmp/cicero-ODee/mvcc.xml:1509(para) 
 msgid "Currently, B-tree indexes offer the best performance for concurrent applications; since they also have more features than hash indexes, they are the recommended index type for concurrent applications that need to index scalar data. When dealing with non-scalar data, B-trees are not useful, and GiST or GIN indexes should be used instead."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-clVY/mvcc.xml:0(None) 
+#: /tmp/cicero-ODee/mvcc.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
