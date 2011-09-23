@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-22 06:59+0200\n"
+"POT-Creation-Date: 2011-09-23 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,141 +9,141 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:9(refentrytitle) /tmp/cicero-cjWZ/ref/create_schema.xml:15(refname) /tmp/cicero-cjWZ/ref/create_schema.xml:20(primary) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:9(refentrytitle) /tmp/cicero-IQoj/ref/create_schema.xml:15(refname) /tmp/cicero-IQoj/ref/create_schema.xml:20(primary) 
 msgid "CREATE SCHEMA"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:10(manvolnum) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:11(refmiscinfo) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:16(refpurpose) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:16(refpurpose) 
 msgid "define a new schema"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:25(replaceable) /tmp/cicero-cjWZ/ref/create_schema.xml:66(replaceable) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:25(replaceable) /tmp/cicero-IQoj/ref/create_schema.xml:66(replaceable) 
 msgid "schema_name"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:25(replaceable) /tmp/cicero-cjWZ/ref/create_schema.xml:26(replaceable) /tmp/cicero-cjWZ/ref/create_schema.xml:78(replaceable) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:25(replaceable) /tmp/cicero-IQoj/ref/create_schema.xml:26(replaceable) /tmp/cicero-IQoj/ref/create_schema.xml:78(replaceable) 
 msgid "user_name"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:25(replaceable) /tmp/cicero-cjWZ/ref/create_schema.xml:26(replaceable) /tmp/cicero-cjWZ/ref/create_schema.xml:89(replaceable) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:25(replaceable) /tmp/cicero-IQoj/ref/create_schema.xml:26(replaceable) /tmp/cicero-IQoj/ref/create_schema.xml:89(replaceable) 
 msgid "schema_element"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:24(synopsis) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE SCHEMA <placeholder-1/> [ AUTHORIZATION <placeholder-2/> ] [ <placeholder-3/> [ ... ] ]\nCREATE SCHEMA AUTHORIZATION <placeholder-4/> [ <placeholder-5/> [ ... ] ]\n"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:31(title) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:33(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:33(para) 
 msgid "<command>CREATE SCHEMA</command> enters a new schema into the current database. The schema name must be distinct from the name of any existing schema in the current database."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:40(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:40(para) 
 msgid "A schema is essentially a namespace: it contains named objects (tables, data types, functions, and operators) whose names can duplicate those of other objects existing in other schemas. Named objects are accessed either by <quote>qualifying</quote> their names with the schema name as a prefix, or by setting a search path that includes the desired schema(s). A <literal>CREATE</literal> command specifying an unqualified object name creates the object in the current schema (the one at the front of the search path, which can be determined with the function <function>current_schema</function>)."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:52(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:52(para) 
 msgid "Optionally, <command>CREATE SCHEMA</command> can include subcommands to create objects within the new schema. The subcommands are treated essentially the same as separate commands issued after creating the schema, except that if the <literal>AUTHORIZATION</literal> clause is used, all the created objects will be owned by that user."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:62(title) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:62(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:68(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:68(para) 
 msgid "The name of a schema to be created. If this is omitted, the user name is used as the schema name. The name cannot begin with <literal>pg_</literal>, as such names are reserved for system schemas."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:80(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:80(para) 
 msgid "The name of the user who will own the schema. If omitted, defaults to the user executing the command. Only superusers can create schemas owned by users other than themselves."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:91(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:91(para) 
 msgid "An SQL statement defining an object to be created within the schema. Currently, only <command>CREATE TABLE</command>, <command>CREATE VIEW</command>, <command>CREATE INDEX</command>, <command>CREATE SEQUENCE</command>, <command>CREATE TRIGGER</command> and <command>GRANT</command> are accepted as clauses within <command>CREATE SCHEMA</command>. Other kinds of objects may be created in separate commands after the schema is created."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:106(title) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:106(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:108(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:108(para) 
 msgid "To create a schema, the invoking user must have the <literal>CREATE</literal> privilege for the current database. (Of course, superusers bypass this check.)"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:116(title) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:116(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:120(programlisting) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:120(programlisting) 
 #, no-wrap
 msgid "\nCREATE SCHEMA myschema;\n"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:118(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:118(para) 
 msgid "Create a schema: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:128(programlisting) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:128(programlisting) 
 #, no-wrap
 msgid "\nCREATE SCHEMA AUTHORIZATION joe;\n"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:125(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:125(para) 
 msgid "Create a schema for user <literal>joe</literal>; the schema will also be named <literal>joe</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:135(programlisting) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:135(programlisting) 
 #, no-wrap
 msgid "\nCREATE SCHEMA hollywood\n    CREATE TABLE films (title text, release date, awards text[])\n    CREATE VIEW winners AS\n        SELECT title, release FROM films WHERE awards IS NOT NULL;\n"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:133(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:133(para) 
 msgid "Create a schema and create a table and view within it: <placeholder-1/> Notice that the individual subcommands do not end with semicolons."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:146(programlisting) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:146(programlisting) 
 #, no-wrap
 msgid "\nCREATE SCHEMA hollywood;\nCREATE TABLE hollywood.films (title text, release date, awards text[]);\nCREATE VIEW hollywood.winners AS\n    SELECT title, release FROM hollywood.films WHERE awards IS NOT NULL;\n"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:144(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:144(para) 
 msgid "The following is an equivalent way of accomplishing the same result: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:156(title) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:156(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:158(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:158(para) 
 msgid "The SQL standard allows a <literal>DEFAULT CHARACTER SET</literal> clause in <command>CREATE SCHEMA</command>, as well as more subcommand types than are presently accepted by <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:165(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:165(para) 
 msgid "The SQL standard specifies that the subcommands in <command>CREATE SCHEMA</command> can appear in any order. The present <productname>PostgreSQL</productname> implementation does not handle all cases of forward references in subcommands; it might sometimes be necessary to reorder the subcommands in order to avoid forward references."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:174(para) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:174(para) 
 msgid "According to the SQL standard, the owner of a schema always owns all objects within it. <productname>PostgreSQL</productname> allows schemas to contain objects owned by users other than the schema owner. This can happen only if the schema owner grants the <literal>CREATE</literal> privilege on his schema to someone else."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:184(title) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:184(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-cjWZ/ref/create_schema.xml:0(None) 
+#: /tmp/cicero-IQoj/ref/create_schema.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

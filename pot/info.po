@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-22 06:59+0200\n"
+"POT-Creation-Date: 2011-09-23 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,48 +9,48 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-cjWZ/info.xml:5(title) 
+#: /tmp/cicero-IQoj/info.xml:5(title) 
 msgid "Further Information"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/info.xml:14(term) 
+#: /tmp/cicero-IQoj/info.xml:14(term) 
 msgid "Wiki"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/info.xml:16(para) 
+#: /tmp/cicero-IQoj/info.xml:16(para) 
 msgid "The <productname>PostgreSQL</productname><ulink url=\"http://wiki.postgresql.org\">wiki</ulink> contains the project's <ulink url=\"http://wiki.postgresql.org/wiki/Frequently_Asked_Questions\">FAQ</ulink> (Frequently Asked Questions) list, <ulink url=\"http://wiki.postgresql.org/wiki/Todo\">TODO</ulink> list, and detailed information about many more topics."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/info.xml:28(term) 
+#: /tmp/cicero-IQoj/info.xml:28(term) 
 msgid "Web Site"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/info.xml:30(para) 
+#: /tmp/cicero-IQoj/info.xml:30(para) 
 msgid "The <productname>PostgreSQL</productname><ulink url=\"http://www.postgresql.org\">web site</ulink> carries details on the latest release and other information to make your work or play with <productname>PostgreSQL</productname> more productive."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/info.xml:41(term) 
+#: /tmp/cicero-IQoj/info.xml:41(term) 
 msgid "Mailing Lists"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/info.xml:43(para) 
+#: /tmp/cicero-IQoj/info.xml:43(para) 
 msgid "The mailing lists are a good place to have your questions answered, to share experiences with other users, and to contact the developers. Consult the <productname>PostgreSQL</productname> web site for details."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/info.xml:53(term) 
+#: /tmp/cicero-IQoj/info.xml:53(term) 
 msgid "Yourself!"
 msgstr ""
 
-#: /tmp/cicero-cjWZ/info.xml:55(para) 
+#: /tmp/cicero-IQoj/info.xml:55(para) 
 msgid "<productname>PostgreSQL</productname> is an open-source project. As such, it depends on the user community for ongoing support. As you begin to use <productname>PostgreSQL</productname>, you will rely on others for help, either through the documentation or through the mailing lists. Consider contributing your knowledge back. Read the mailing lists and answer questions. If you learn something which is not in the documentation, write it up and contribute it. If you add features to the code, contribute them."
 msgstr ""
 
-#: /tmp/cicero-cjWZ/info.xml:7(para) 
+#: /tmp/cicero-IQoj/info.xml:7(para) 
 msgid "Besides the documentation, that is, this book, there are other resources about <productname>PostgreSQL</productname>: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-cjWZ/info.xml:0(None) 
+#: /tmp/cicero-IQoj/info.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
