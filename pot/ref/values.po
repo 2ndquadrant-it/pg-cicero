@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-23 06:57+0200\n"
+"POT-Creation-Date: 2011-09-24 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,167 +9,167 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ODee/ref/values.xml:9(refentrytitle) /tmp/cicero-ODee/ref/values.xml:15(refname) /tmp/cicero-ODee/ref/values.xml:20(primary) 
+#: /tmp/cicero-fCbP/ref/values.xml:9(refentrytitle) /tmp/cicero-fCbP/ref/values.xml:15(refname) /tmp/cicero-fCbP/ref/values.xml:20(primary) 
 msgid "VALUES"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:10(manvolnum) 
+#: /tmp/cicero-fCbP/ref/values.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:11(refmiscinfo) 
+#: /tmp/cicero-fCbP/ref/values.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:16(refpurpose) 
+#: /tmp/cicero-fCbP/ref/values.xml:16(refpurpose) 
 msgid "compute a set of rows"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:25(replaceable) /tmp/cicero-ODee/ref/values.xml:67(replaceable) 
+#: /tmp/cicero-fCbP/ref/values.xml:25(replaceable) /tmp/cicero-fCbP/ref/values.xml:67(replaceable) 
 msgid "expression"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:26(replaceable) /tmp/cicero-ODee/ref/values.xml:82(replaceable) 
+#: /tmp/cicero-fCbP/ref/values.xml:26(replaceable) /tmp/cicero-fCbP/ref/values.xml:82(replaceable) 
 msgid "sort_expression"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:26(replaceable) /tmp/cicero-ODee/ref/values.xml:95(replaceable) 
+#: /tmp/cicero-fCbP/ref/values.xml:26(replaceable) /tmp/cicero-fCbP/ref/values.xml:95(replaceable) 
 msgid "operator"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:27(replaceable) /tmp/cicero-ODee/ref/values.xml:29(replaceable) /tmp/cicero-ODee/ref/values.xml:105(replaceable) 
+#: /tmp/cicero-fCbP/ref/values.xml:27(replaceable) /tmp/cicero-fCbP/ref/values.xml:29(replaceable) /tmp/cicero-fCbP/ref/values.xml:105(replaceable) 
 msgid "count"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:28(replaceable) /tmp/cicero-ODee/ref/values.xml:115(replaceable) 
+#: /tmp/cicero-fCbP/ref/values.xml:28(replaceable) /tmp/cicero-fCbP/ref/values.xml:115(replaceable) 
 msgid "start"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:24(synopsis) 
+#: /tmp/cicero-fCbP/ref/values.xml:24(synopsis) 
 #, no-wrap
 msgid "\nVALUES ( <placeholder-1/> [, ...] ) [, ...]\n    [ ORDER BY <placeholder-2/> [ ASC | DESC | USING <placeholder-3/> ] [, ...] ]\n    [ LIMIT { <placeholder-4/> | ALL } ]\n    [ OFFSET <placeholder-5/> [ ROW | ROWS ] ]\n    [ FETCH { FIRST | NEXT } [ <placeholder-6/> ] { ROW | ROWS } ONLY ]\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:34(title) 
+#: /tmp/cicero-fCbP/ref/values.xml:34(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:36(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:36(para) 
 msgid "<command>VALUES</command> computes a row value or set of row values specified by value expressions. It is most commonly used to generate a <quote>constant table</quote> within a larger command, but it can be used on its own."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:43(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:43(para) 
 msgid "When more than one row is specified, all the rows must have the same number of elements. The data types of the resulting table's columns are determined by combining the explicit or inferred types of the expressions appearing in that column, using the same rules as for <literal>UNION</literal> (see <xref linkend=\"typeconv-union-case\"/>)."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:51(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:51(para) 
 msgid "Within larger commands, <command>VALUES</command> is syntactically allowed anywhere that <command>SELECT</command> is. Because it is treated like a <command>SELECT</command> by the grammar, it is possible to use the <literal>ORDER BY</literal>, <literal>LIMIT</literal> (or equivalently <literal>FETCH FIRST</literal>), and <literal>OFFSET</literal> clauses with a <command>VALUES</command> command."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:63(title) 
+#: /tmp/cicero-fCbP/ref/values.xml:63(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:69(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:69(para) 
 msgid "A constant or expression to compute and insert at the indicated place in the resulting table (set of rows). In a <command>VALUES</command> list appearing at the top level of an <command>INSERT</command>, an <replaceable class=\"PARAMETER\">expression</replaceable> can be replaced by <literal>DEFAULT</literal> to indicate that the destination column's default value should be inserted. <literal>DEFAULT</literal> cannot be used when <command>VALUES</command> appears in other contexts."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:84(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:84(para) 
 msgid "An expression or integer constant indicating how to sort the result rows. This expression can refer to the columns of the <command>VALUES</command> result as <literal>column1</literal>, <literal>column2</literal>, etc. For more details see <xref linkend=\"sql-orderby\" endterm=\"sql-orderby-title\"/>."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:97(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:97(para) 
 msgid "A sorting operator. For details see <xref linkend=\"sql-orderby\" endterm=\"sql-orderby-title\"/>."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:107(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:107(para) 
 msgid "The maximum number of rows to return. For details see <xref linkend=\"sql-limit\" endterm=\"sql-limit-title\"/>."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:117(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:117(para) 
 msgid "The number of rows to skip before starting to return rows. For details see <xref linkend=\"sql-limit\" endterm=\"sql-limit-title\"/>."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:128(title) 
+#: /tmp/cicero-fCbP/ref/values.xml:128(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:130(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:130(para) 
 msgid "<command>VALUES</command> lists with very large numbers of rows should be avoided, as you might encounter out-of-memory failures or poor performance. <command>VALUES</command> appearing within <command>INSERT</command> is a special case (because the desired column types are known from the <command>INSERT</command>'s target table, and need not be inferred by scanning the <command>VALUES</command> list), so it can handle larger lists than are practical in other contexts."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:141(title) 
+#: /tmp/cicero-fCbP/ref/values.xml:141(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:146(programlisting) 
+#: /tmp/cicero-fCbP/ref/values.xml:146(programlisting) 
 #, no-wrap
 msgid "\nVALUES (1, 'one'), (2, 'two'), (3, 'three');\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:153(programlisting) 
+#: /tmp/cicero-fCbP/ref/values.xml:153(programlisting) 
 #, no-wrap
 msgid "\nSELECT 1 AS column1, 'one' AS column2\nUNION ALL\nSELECT 2, 'two'\nUNION ALL\nSELECT 3, 'three';\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:143(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:143(para) 
 msgid "A bare <command>VALUES</command> command: <placeholder-1/> This will return a table of two columns and three rows. It's effectively equivalent to: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:167(programlisting) 
+#: /tmp/cicero-fCbP/ref/values.xml:167(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO films (code, title, did, date_prod, kind)\n    VALUES ('T_601', 'Yojimbo', 106, '1961-06-16', 'Drama');\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:163(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:163(para) 
 msgid "More usually, <command>VALUES</command> is used within a larger SQL command. The most common use is in <command>INSERT</command>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:178(programlisting) 
+#: /tmp/cicero-fCbP/ref/values.xml:178(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO films VALUES\n    ('UA502', 'Bananas', 105, DEFAULT, 'Comedy', '82 minutes'),\n    ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama', DEFAULT);\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:173(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:173(para) 
 msgid "In the context of <command>INSERT</command>, entries of a <command>VALUES</command> list can be <literal>DEFAULT</literal> to indicate that the column default should be used here instead of specifying a value: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:189(programlisting) 
+#: /tmp/cicero-fCbP/ref/values.xml:189(programlisting) 
 #, no-wrap
 msgid "\nSELECT f.*\n  FROM films f, (VALUES('MGM', 'Horror'), ('UA', 'Sci-Fi')) AS t (studio, kind)\n  WHERE f.studio = t.studio AND f.kind = t.kind;\n\nUPDATE employees SET salary = salary * v.increase\n  FROM (VALUES(1, 200000, 1.2), (2, 400000, 1.4)) AS v (depno, target, increase)\n  WHERE employees.depno = v.depno AND employees.sales &gt;= v.target;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:185(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:185(para) 
 msgid "<command>VALUES</command> can also be used where a sub-<command>SELECT</command> might be written, for example in a <literal>FROM</literal> clause: <placeholder-1/> Note that an <literal>AS</literal> clause is required when <command>VALUES</command> is used in a <literal>FROM</literal> clause, just as is true for <command>SELECT</command>. It is not required that the <literal>AS</literal> clause specify names for all the columns, but it's good practice to do so. (The default column names for <command>VALUES</command> are <literal>column1</literal>, <literal>column2</literal>, etc in <productname>PostgreSQL</productname>, but these names might be different in other database systems.)"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:215(programlisting) 
+#: /tmp/cicero-fCbP/ref/values.xml:215(programlisting) 
 #, no-wrap
 msgid "\nSELECT * FROM machines\nWHERE ip_address IN (VALUES('192.168.0.1'::inet), ('192.168.0.10'), ('192.168.1.43'));\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:208(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:208(para) 
 msgid "When <command>VALUES</command> is used in <command>INSERT</command>, the values are all automatically coerced to the data type of the corresponding destination column. When it's used in other contexts, it might be necessary to specify the correct data type. If the entries are all quoted literal constants, coercing the first is sufficient to determine the assumed type for all: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:221(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:221(para) 
 msgid "For simple <literal>IN</literal> tests, it's better to rely on the list-of-scalars form of <literal>IN</literal> than to write a <command>VALUES</command> query as shown above. The list of scalars method requires less writing and is often more efficient."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:231(title) 
+#: /tmp/cicero-fCbP/ref/values.xml:231(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:233(para) 
+#: /tmp/cicero-fCbP/ref/values.xml:233(para) 
 msgid "<command>VALUES</command> conforms to the SQL standard. <literal>LIMIT</literal> and <literal>OFFSET</literal> are <productname>PostgreSQL</productname> extensions; see also under <xref linkend=\"sql-select\"/>."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/values.xml:241(title) 
+#: /tmp/cicero-fCbP/ref/values.xml:241(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ODee/ref/values.xml:0(None) 
+#: /tmp/cicero-fCbP/ref/values.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

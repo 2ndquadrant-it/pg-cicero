@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-23 06:56+0200\n"
+"POT-Creation-Date: 2011-09-24 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,316 +9,316 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ODee/gist.xml:5(title) 
+#: /tmp/cicero-fCbP/gist.xml:5(title) 
 msgid "GiST Indexes"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:8(primary) 
+#: /tmp/cicero-fCbP/gist.xml:8(primary) 
 msgid "index"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:9(secondary) 
+#: /tmp/cicero-fCbP/gist.xml:9(secondary) 
 msgid "GiST"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:13(title) 
+#: /tmp/cicero-fCbP/gist.xml:13(title) 
 msgid "Introduction"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:15(para) 
+#: /tmp/cicero-fCbP/gist.xml:15(para) 
 msgid "<acronym>GiST</acronym> stands for Generalized Search Tree. It is a balanced, tree-structured access method, that acts as a base template in which to implement arbitrary indexing schemes. B-trees, R-trees and many other indexing schemes can be implemented in <acronym>GiST</acronym>."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:22(para) 
+#: /tmp/cicero-fCbP/gist.xml:22(para) 
 msgid "One advantage of <acronym>GiST</acronym> is that it allows the development of custom data types with the appropriate access methods, by an expert in the domain of the data type, rather than a database expert."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:28(para) 
+#: /tmp/cicero-fCbP/gist.xml:28(para) 
 msgid "Some of the information here is derived from the University of California at Berkeley's GiST Indexing Project <ulink url=\"http://gist.cs.berkeley.edu/\">web site</ulink> and Marcel Kornacker's thesis, <ulink url=\"http://www.sai.msu.su/~megera/postgres/gist/papers/concurrency/access-methods-for-next-generation.pdf.gz\"> Access Methods for Next-Generation Database Systems</ulink>. The <acronym>GiST</acronym> implementation in <productname>PostgreSQL</productname> is primarily maintained by Teodor Sigaev and Oleg Bartunov, and there is more information on their <ulink url=\"http://www.sai.msu.su/~megera/postgres/gist/\">web site</ulink>."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:45(title) 
+#: /tmp/cicero-fCbP/gist.xml:45(title) 
 msgid "Extensibility"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:47(para) 
+#: /tmp/cicero-fCbP/gist.xml:47(para) 
 msgid "Traditionally, implementing a new index access method meant a lot of difficult work. It was necessary to understand the inner workings of the database, such as the lock manager and Write-Ahead Log. The <acronym>GiST</acronym> interface has a high level of abstraction, requiring the access method implementer only to implement the semantics of the data type being accessed. The <acronym>GiST</acronym> layer itself takes care of concurrency, logging and searching the tree structure."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:57(para) 
+#: /tmp/cicero-fCbP/gist.xml:57(para) 
 msgid "This extensibility should not be confused with the extensibility of the other standard search trees in terms of the data they can handle. For example, <productname>PostgreSQL</productname> supports extensible B-trees and hash indexes. That means that you can use <productname>PostgreSQL</productname> to build a B-tree or hash over any data type you want. But B-trees only support range predicates (<literal>&lt;</literal>, <literal>=</literal>, <literal>&gt;</literal>), and hash indexes only support equality queries."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:68(para) 
+#: /tmp/cicero-fCbP/gist.xml:68(para) 
 msgid "So if you index, say, an image collection with a <productname>PostgreSQL</productname> B-tree, you can only issue queries such as <quote>is imagex equal to imagey</quote>, <quote>is imagex less than imagey</quote> and <quote>is imagex greater than imagey</quote>. Depending on how you define <quote>equals</quote>, <quote>less than</quote> and <quote>greater than</quote> in this context, this could be useful. However, by using a <acronym>GiST</acronym> based index, you could create ways to ask domain-specific questions, perhaps <quote>find all images of horses</quote> or <quote>find all over-exposed images</quote>."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:80(para) 
+#: /tmp/cicero-fCbP/gist.xml:80(para) 
 msgid "All it takes to get a <acronym>GiST</acronym> access method up and running is to implement several user-defined methods, which define the behavior of keys in the tree. Of course these methods have to be pretty fancy to support fancy queries, but for all the standard queries (B-trees, R-trees, etc.) they're relatively straightforward. In short, <acronym>GiST</acronym> combines extensibility along with generality, code reuse, and a clean interface."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:93(title) 
+#: /tmp/cicero-fCbP/gist.xml:93(title) 
 msgid "Implementation"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:95(para) 
+#: /tmp/cicero-fCbP/gist.xml:95(para) 
 msgid "There are seven methods that an index operator class for <acronym>GiST</acronym> must provide, and an eighth that is optional. Correctness of the index is ensured by proper implementation of the <function>same</function>, <function>consistent</function> and <function>union</function> methods, while efficiency (size and speed) of the index will depend on the <function>penalty</function> and <function>picksplit</function> methods. The remaining two basic methods are <function>compress</function> and <function>decompress</function>, which allow an index to have internal tree data of a different type than the data it indexes. The leaves are to be of the indexed data type, while the other tree nodes can be of any C struct (but you still have to follow <productname>PostgreSQL</productname> data type rules here, see about <literal>varlena</literal> for variable sized data). If the tree's internal data type exists at the SQL level, the <literal>STORAGE</literal> option of the <command>CREATE OPERATOR CLASS</command> command can be used. The optional eighth method is <function>distance</function>, which is needed if the operator class wishes to support ordered scans (nearest-neighbor searches)."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:118(function) 
+#: /tmp/cicero-fCbP/gist.xml:118(function) 
 msgid "consistent"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:120(para) 
+#: /tmp/cicero-fCbP/gist.xml:120(para) 
 msgid "Given an index entry <literal>p</literal> and a query value <literal>q</literal>, this function determines whether the index entry is <quote>consistent</quote> with the query; that is, could the predicate <quote><replaceable>indexed_column</replaceable><replaceable>indexable_operator</replaceable><literal>q</literal></quote> be true for any row represented by the index entry? For a leaf index entry this is equivalent to testing the indexable condition, while for an internal tree node this determines whether it is necessary to scan the subtree of the index represented by the tree node. When the result is <literal>true</literal>, a <literal>recheck</literal> flag must also be returned. This indicates whether the predicate is certainly true or only possibly true. If <literal>recheck</literal> = <literal>false</literal> then the index has tested the predicate condition exactly, whereas if <literal>recheck</literal> = <literal>true</literal> the row is only a candidate match. In that case the system will automatically evaluate the <replaceable>indexable_operator</replaceable> against the actual row value to see if it is really a match. This convention allows <acronym>GiST</acronym> to support both lossless and lossy index structures."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:145(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:145(programlisting) 
 #, no-wrap
 msgid "\nCREATE OR REPLACE FUNCTION my_consistent(internal, data_type, smallint, oid, internal)\nRETURNS bool\nAS 'MODULE_PATHNAME'\nLANGUAGE C STRICT;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:154(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:154(programlisting) 
 #, no-wrap
 msgid "\nDatum       my_consistent(PG_FUNCTION_ARGS);\nPG_FUNCTION_INFO_V1(my_consistent);\n\nDatum\nmy_consistent(PG_FUNCTION_ARGS)\n{\n    GISTENTRY  *entry = (GISTENTRY *) PG_GETARG_POINTER(0);\n    data_type  *query = PG_GETARG_DATA_TYPE_P(1);\n    StrategyNumber strategy = (StrategyNumber) PG_GETARG_UINT16(2);\n    /* Oid subtype = PG_GETARG_OID(3); */\n    bool       *recheck = (bool *) PG_GETARG_POINTER(4);\n    data_type  *key = DatumGetDataType(entry-&gt;key);\n    bool        retval;\n\n    /*\n     * determine return value as a function of strategy, key and query.\n     *\n     * Use GIST_LEAF(entry) to know where you're called in the index tree,\n     * which comes handy when supporting the = operator for example (you could\n     * check for non empty union() in non-leaf nodes and equality in leaf\n     * nodes).\n     */\n\n    *recheck = true;        /* or false if check is exact */\n\n    PG_RETURN_BOOL(retval);\n}\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:142(para) 
+#: /tmp/cicero-fCbP/gist.xml:142(para) 
 msgid "The <acronym>SQL</acronym> declaration of the function must look like this: <placeholder-1/> And the matching code in the C module could then follow this skeleton: <placeholder-2/> Here, <varname>key</varname> is an element in the index and <varname>query</varname> the value being looked up in the index. The <literal>StrategyNumber</literal> parameter indicates which operator of your operator class is being applied — it matches one of the operator numbers in the <command>CREATE OPERATOR CLASS</command> command. Depending on what operators you have included in the class, the data type of <varname>query</varname> could vary with the operator, but the above skeleton assumes it doesn't."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:197(function) 
+#: /tmp/cicero-fCbP/gist.xml:197(function) 
 msgid "union"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:199(para) 
+#: /tmp/cicero-fCbP/gist.xml:199(para) 
 msgid "This method consolidates information in the tree. Given a set of entries, this function generates a new index entry that represents all the given entries."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:208(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:208(programlisting) 
 #, no-wrap
 msgid "\nCREATE OR REPLACE FUNCTION my_union(internal, internal)\nRETURNS internal\nAS 'MODULE_PATHNAME'\nLANGUAGE C STRICT;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:217(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:217(programlisting) 
 #, no-wrap
 msgid "\nDatum       my_union(PG_FUNCTION_ARGS);\nPG_FUNCTION_INFO_V1(my_union);\n\nDatum\nmy_union(PG_FUNCTION_ARGS)\n{\n    GistEntryVector *entryvec = (GistEntryVector *) PG_GETARG_POINTER(0);\n    GISTENTRY  *ent = entryvec-&gt;vector;\n    data_type  *out,\n               *tmp,\n               *old;\n    int         numranges,\n                i = 0;\n\n    numranges = entryvec-&gt;n;\n    tmp = DatumGetDataType(ent[0].key);\n    out = tmp;\n\n    if (numranges == 1)\n    {\n        out = data_type_deep_copy(tmp);\n\n        PG_RETURN_DATA_TYPE_P(out);\n    }\n\n    for (i = 1; i &lt; numranges; i++)\n    {\n        old = out;\n        tmp = DatumGetDataType(ent[i].key);\n        out = my_union_implementation(out, tmp);\n    }\n\n    PG_RETURN_DATA_TYPE_P(out);\n}\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:205(para) /tmp/cicero-ODee/gist.xml:279(para) /tmp/cicero-ODee/gist.xml:386(para) /tmp/cicero-ODee/gist.xml:435(para) 
+#: /tmp/cicero-fCbP/gist.xml:205(para) /tmp/cicero-fCbP/gist.xml:279(para) /tmp/cicero-fCbP/gist.xml:386(para) /tmp/cicero-fCbP/gist.xml:435(para) 
 msgid "The <acronym>SQL</acronym> declaration of the function must look like this: <placeholder-1/> And the matching code in the C module could then follow this skeleton: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:255(para) 
+#: /tmp/cicero-fCbP/gist.xml:255(para) 
 msgid "As you can see, in this skeleton we're dealing with a data type where <literal>union(X, Y, Z) = union(union(X, Y), Z)</literal>. It's easy enough to support data types where this is not the case, by implementing the proper union algorithm in this <acronym>GiST</acronym> support method."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:263(para) 
+#: /tmp/cicero-fCbP/gist.xml:263(para) 
 msgid "The <function>union</function> implementation function should return a pointer to newly <function>palloc()</function>ed memory. You can't just return whatever the input is."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:272(function) 
+#: /tmp/cicero-fCbP/gist.xml:272(function) 
 msgid "compress"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:274(para) 
+#: /tmp/cicero-fCbP/gist.xml:274(para) 
 msgid "Converts the data item into a format suitable for physical storage in an index page."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:282(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:282(programlisting) 
 #, no-wrap
 msgid "\nCREATE OR REPLACE FUNCTION my_compress(internal)\nRETURNS internal\nAS 'MODULE_PATHNAME'\nLANGUAGE C STRICT;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:291(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:291(programlisting) 
 #, no-wrap
 msgid "\nDatum       my_compress(PG_FUNCTION_ARGS);\nPG_FUNCTION_INFO_V1(my_compress);\n\nDatum\nmy_compress(PG_FUNCTION_ARGS)\n{\n    GISTENTRY  *entry = (GISTENTRY *) PG_GETARG_POINTER(0);\n    GISTENTRY  *retval;\n\n    if (entry-&gt;leafkey)\n    {\n        /* replace entry-&gt;key with a compressed version */\n        compressed_data_type *compressed_data = palloc(sizeof(compressed_data_type));\n\n        /* fill *compressed_data from entry-&gt;key ... */\n\n        retval = palloc(sizeof(GISTENTRY));\n        gistentryinit(*retval, PointerGetDatum(compressed_data),\n                      entry-&gt;rel, entry-&gt;page, entry-&gt;offset, FALSE);\n    }\n    else\n    {\n        /* typically we needn't do anything with non-leaf entries */\n        retval = entry;\n    }\n\n    PG_RETURN_POINTER(retval);\n}\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:323(para) 
+#: /tmp/cicero-fCbP/gist.xml:323(para) 
 msgid "You have to adapt <replaceable>compressed_data_type</replaceable> to the specific type you're converting to in order to compress your leaf nodes, of course."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:329(para) 
+#: /tmp/cicero-fCbP/gist.xml:329(para) 
 msgid "Depending on your needs, you could also need to care about compressing <literal>NULL</literal> values in there, storing for example <literal>(Datum) 0</literal> like <literal>gist_circle_compress</literal> does."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:338(function) 
+#: /tmp/cicero-fCbP/gist.xml:338(function) 
 msgid "decompress"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:340(para) 
+#: /tmp/cicero-fCbP/gist.xml:340(para) 
 msgid "The reverse of the <function>compress</function> method. Converts the index representation of the data item into a format that can be manipulated by the database."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:349(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:349(programlisting) 
 #, no-wrap
 msgid "\nCREATE OR REPLACE FUNCTION my_decompress(internal)\nRETURNS internal\nAS 'MODULE_PATHNAME'\nLANGUAGE C STRICT;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:358(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:358(programlisting) 
 #, no-wrap
 msgid "\nDatum       my_decompress(PG_FUNCTION_ARGS);\nPG_FUNCTION_INFO_V1(my_decompress);\n\nDatum\nmy_decompress(PG_FUNCTION_ARGS)\n{\n    PG_RETURN_POINTER(PG_GETARG_POINTER(0));\n}\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:346(para) 
+#: /tmp/cicero-fCbP/gist.xml:346(para) 
 msgid "The <acronym>SQL</acronym> declaration of the function must look like this: <placeholder-1/> And the matching code in the C module could then follow this skeleton: <placeholder-2/> The above skeleton is suitable for the case where no decompression is needed."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:376(function) 
+#: /tmp/cicero-fCbP/gist.xml:376(function) 
 msgid "penalty"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:378(para) 
+#: /tmp/cicero-fCbP/gist.xml:378(para) 
 msgid "Returns a value indicating the <quote>cost</quote> of inserting the new entry into a particular branch of the tree. Items will be inserted down the path of least <function>penalty</function> in the tree. Values returned by <function>penalty</function> should be non-negative. If a negative value is returned, it will be treated as zero."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:389(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:389(programlisting) 
 #, no-wrap
 msgid "\nCREATE OR REPLACE FUNCTION my_penalty(internal, internal, internal)\nRETURNS internal\nAS 'MODULE_PATHNAME'\nLANGUAGE C STRICT;  -- in some cases penalty functions need not be strict\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:398(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:398(programlisting) 
 #, no-wrap
 msgid "\nDatum       my_penalty(PG_FUNCTION_ARGS);\nPG_FUNCTION_INFO_V1(my_penalty);\n\nDatum\nmy_penalty(PG_FUNCTION_ARGS)\n{\n    GISTENTRY  *origentry = (GISTENTRY *) PG_GETARG_POINTER(0);\n    GISTENTRY  *newentry = (GISTENTRY *) PG_GETARG_POINTER(1);\n    float      *penalty = (float *) PG_GETARG_POINTER(2);\n    data_type  *orig = DatumGetDataType(origentry-&gt;key);\n    data_type  *new = DatumGetDataType(newentry-&gt;key);\n\n    *penalty = my_penalty_implementation(orig, new);\n    PG_RETURN_POINTER(penalty);\n}\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:417(para) 
+#: /tmp/cicero-fCbP/gist.xml:417(para) 
 msgid "The <function>penalty</function> function is crucial to good performance of the index. It'll get used at insertion time to determine which branch to follow when choosing where to add the new entry in the tree. At query time, the more balanced the index, the quicker the lookup."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:427(function) 
+#: /tmp/cicero-fCbP/gist.xml:427(function) 
 msgid "picksplit"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:429(para) 
+#: /tmp/cicero-fCbP/gist.xml:429(para) 
 msgid "When an index page split is necessary, this function decides which entries on the page are to stay on the old page, and which are to move to the new page."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:438(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:438(programlisting) 
 #, no-wrap
 msgid "\nCREATE OR REPLACE FUNCTION my_picksplit(internal, internal)\nRETURNS internal\nAS 'MODULE_PATHNAME'\nLANGUAGE C STRICT;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:447(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:447(programlisting) 
 #, no-wrap
 msgid "\nDatum       my_picksplit(PG_FUNCTION_ARGS);\nPG_FUNCTION_INFO_V1(my_picksplit);\n\nDatum\nmy_picksplit(PG_FUNCTION_ARGS)\n{\n    GistEntryVector *entryvec = (GistEntryVector *) PG_GETARG_POINTER(0);\n    OffsetNumber maxoff = entryvec-&gt;n - 1;\n    GISTENTRY  *ent = entryvec-&gt;vector;\n    GIST_SPLITVEC *v = (GIST_SPLITVEC *) PG_GETARG_POINTER(1);\n    int         i,\n                nbytes;\n    OffsetNumber *left,\n               *right;\n    data_type  *tmp_union;\n    data_type  *unionL;\n    data_type  *unionR;\n    GISTENTRY **raw_entryvec;\n\n    maxoff = entryvec-&gt;n - 1;\n    nbytes = (maxoff + 1) * sizeof(OffsetNumber);\n\n    v-&gt;spl_left = (OffsetNumber *) palloc(nbytes);\n    left = v-&gt;spl_left;\n    v-&gt;spl_nleft = 0;\n\n    v-&gt;spl_right = (OffsetNumber *) palloc(nbytes);\n    right = v-&gt;spl_right;\n    v-&gt;spl_nright = 0;\n\n    unionL = NULL;\n    unionR = NULL;\n\n    /* Initialize the raw entry vector. */\n    raw_entryvec = (GISTENTRY **) malloc(entryvec-&gt;n * sizeof(void *));\n    for (i = FirstOffsetNumber; i &lt;= maxoff; i = OffsetNumberNext(i))\n        raw_entryvec[i] = &amp;(entryvec-&gt;vector[i]);\n\n    for (i = FirstOffsetNumber; i &lt;= maxoff; i = OffsetNumberNext(i))\n    {\n        int         real_index = raw_entryvec[i] - entryvec-&gt;vector;\n\n        tmp_union = DatumGetDataType(entryvec-&gt;vector[real_index].key);\n        Assert(tmp_union != NULL);\n\n        /*\n         * Choose where to put the index entries and update unionL and unionR\n         * accordingly. Append the entries to either v_spl_left or\n         * v_spl_right, and care about the counters.\n         */\n\n        if (my_choice_is_left(unionL, curl, unionR, curr))\n        {\n            if (unionL == NULL)\n                unionL = tmp_union;\n            else\n                unionL = my_union_implementation(unionL, tmp_union);\n\n            *left = real_index;\n            ++left;\n            ++(v-&gt;spl_nleft);\n        }\n        else\n        {\n            /*\n             * Same on the right\n             */\n        }\n    }\n\n    v-&gt;spl_ldatum = DataTypeGetDatum(unionL);\n    v-&gt;spl_rdatum = DataTypeGetDatum(unionR);\n    PG_RETURN_POINTER(v);\n}\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:525(para) 
+#: /tmp/cicero-fCbP/gist.xml:525(para) 
 msgid "Like <function>penalty</function>, the <function>picksplit</function> function is crucial to good performance of the index. Designing suitable <function>penalty</function> and <function>picksplit</function> implementations is where the challenge of implementing well-performing <acronym>GiST</acronym> indexes lies."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:536(function) 
+#: /tmp/cicero-fCbP/gist.xml:536(function) 
 msgid "same"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:538(para) 
+#: /tmp/cicero-fCbP/gist.xml:538(para) 
 msgid "Returns true if two index entries are identical, false otherwise."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:545(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:545(programlisting) 
 #, no-wrap
 msgid "\nCREATE OR REPLACE FUNCTION my_same(internal, internal, internal)\nRETURNS internal\nAS 'MODULE_PATHNAME'\nLANGUAGE C STRICT;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:554(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:554(programlisting) 
 #, no-wrap
 msgid "\nDatum       my_same(PG_FUNCTION_ARGS);\nPG_FUNCTION_INFO_V1(my_same);\n\nDatum\nmy_same(PG_FUNCTION_ARGS)\n{\n    prefix_range *v1 = PG_GETARG_PREFIX_RANGE_P(0);\n    prefix_range *v2 = PG_GETARG_PREFIX_RANGE_P(1);\n    bool       *result = (bool *) PG_GETARG_POINTER(2);\n\n    *result = my_eq(v1, v2);\n    PG_RETURN_POINTER(result);\n}\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:542(para) 
+#: /tmp/cicero-fCbP/gist.xml:542(para) 
 msgid "The <acronym>SQL</acronym> declaration of the function must look like this: <placeholder-1/> And the matching code in the C module could then follow this skeleton: <placeholder-2/> For historical reasons, the <function>same</function> function doesn't just return a Boolean result; instead it has to store the flag at the location indicated by the third argument."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:578(function) 
+#: /tmp/cicero-fCbP/gist.xml:578(function) 
 msgid "distance"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:580(para) 
+#: /tmp/cicero-fCbP/gist.xml:580(para) 
 msgid "Given an index entry <literal>p</literal> and a query value <literal>q</literal>, this function determines the index entry's <quote>distance</quote> from the query value. This function must be supplied if the operator class contains any ordering operators. A query using the ordering operator will be implemented by returning index entries with the smallest <quote>distance</quote> values first, so the results must be consistent with the operator's semantics. For a leaf index entry the result just represents the distance to the index entry; for an internal tree node, the result must be the smallest distance that any child entry could have."
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:596(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:596(programlisting) 
 #, no-wrap
 msgid "\nCREATE OR REPLACE FUNCTION my_distance(internal, data_type, smallint, oid)\nRETURNS float8\nAS 'MODULE_PATHNAME'\nLANGUAGE C STRICT;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:605(programlisting) 
+#: /tmp/cicero-fCbP/gist.xml:605(programlisting) 
 #, no-wrap
 msgid "\nDatum       my_distance(PG_FUNCTION_ARGS);\nPG_FUNCTION_INFO_V1(my_distance);\n\nDatum\nmy_distance(PG_FUNCTION_ARGS)\n{\n    GISTENTRY  *entry = (GISTENTRY *) PG_GETARG_POINTER(0);\n    data_type  *query = PG_GETARG_DATA_TYPE_P(1);\n    StrategyNumber strategy = (StrategyNumber) PG_GETARG_UINT16(2);\n    /* Oid subtype = PG_GETARG_OID(3); */\n    data_type  *key = DatumGetDataType(entry-&gt;key);\n    double      retval;\n\n    /*\n     * determine return value as a function of strategy, key and query.\n     */\n\n    PG_RETURN_FLOAT8(retval);\n}\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:593(para) 
+#: /tmp/cicero-fCbP/gist.xml:593(para) 
 msgid "The <acronym>SQL</acronym> declaration of the function must look like this: <placeholder-1/> And the matching code in the C module could then follow this skeleton: <placeholder-2/> The arguments to the <function>distance</function> function are identical to the arguments of the <function>consistent</function> function, except that no recheck flag is used. The distance to a leaf index entry must always be determined exactly, since there is no way to re-order the tuples once they are returned. Some approximation is allowed when determining the distance to an internal tree node, so long as the result is never greater than any child's actual distance. Thus, for example, distance to a bounding box is usually sufficient in geometric applications. The result value can be any finite <type>float8</type> value. (Infinity and minus infinity are used internally to handle cases such as nulls, so it is not recommended that <function>distance</function> functions return these values.)"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:649(title) 
+#: /tmp/cicero-fCbP/gist.xml:649(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:663(filename) 
+#: /tmp/cicero-fCbP/gist.xml:663(filename) 
 msgid "btree_gist"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:665(para) 
+#: /tmp/cicero-fCbP/gist.xml:665(para) 
 msgid "B-tree equivalent functionality for several data types"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:670(filename) 
+#: /tmp/cicero-fCbP/gist.xml:670(filename) 
 msgid "cube"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:672(para) 
+#: /tmp/cicero-fCbP/gist.xml:672(para) 
 msgid "Indexing for multidimensional cubes"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:677(filename) 
+#: /tmp/cicero-fCbP/gist.xml:677(filename) 
 msgid "hstore"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:679(para) 
+#: /tmp/cicero-fCbP/gist.xml:679(para) 
 msgid "Module for storing (key, value) pairs"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:684(filename) 
+#: /tmp/cicero-fCbP/gist.xml:684(filename) 
 msgid "intarray"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:686(para) 
+#: /tmp/cicero-fCbP/gist.xml:686(para) 
 msgid "RD-Tree for one-dimensional array of int4 values"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:691(filename) 
+#: /tmp/cicero-fCbP/gist.xml:691(filename) 
 msgid "ltree"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:693(para) 
+#: /tmp/cicero-fCbP/gist.xml:693(para) 
 msgid "Indexing for tree-like structures"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:698(filename) 
+#: /tmp/cicero-fCbP/gist.xml:698(filename) 
 msgid "pg_trgm"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:700(para) 
+#: /tmp/cicero-fCbP/gist.xml:700(para) 
 msgid "Text similarity using trigram matching"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:705(filename) 
+#: /tmp/cicero-fCbP/gist.xml:705(filename) 
 msgid "seg"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:707(para) 
+#: /tmp/cicero-fCbP/gist.xml:707(para) 
 msgid "Indexing for <quote>float ranges</quote>"
 msgstr ""
 
-#: /tmp/cicero-ODee/gist.xml:651(para) 
+#: /tmp/cicero-fCbP/gist.xml:651(para) 
 msgid "The <productname>PostgreSQL</productname> source distribution includes several examples of index methods implemented using <acronym>GiST</acronym>. The core system currently provides text search support (indexing for <type>tsvector</type> and <type>tsquery</type>) as well as R-Tree equivalent functionality for some of the built-in geometric data types (see <filename>src/backend/access/gist/gistproc.c</filename>). The following <filename>contrib</filename> modules also contain <acronym>GiST</acronym> operator classes: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ODee/gist.xml:0(None) 
+#: /tmp/cicero-fCbP/gist.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-23 06:56+0200\n"
+"POT-Creation-Date: 2011-09-24 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,92 +9,92 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:5(title) /tmp/cicero-ODee/dict-xsyn.xml:8(primary) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:5(title) /tmp/cicero-fCbP/dict-xsyn.xml:8(primary) 
 msgid "dict_xsyn"
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:11(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:11(para) 
 msgid "<filename>dict_xsyn</filename> (Extended Synonym Dictionary) is an example of an add-on dictionary template for full-text search. This dictionary type replaces words with groups of their synonyms, and so makes it possible to search for a word using any of its synonyms."
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:19(title) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:19(title) 
 msgid "Configuration"
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:21(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:21(para) 
 msgid "A <literal>dict_xsyn</literal> dictionary accepts the following options:"
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:26(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:26(para) 
 msgid "<literal>matchorig</literal> controls whether the original word is accepted by the dictionary. Default is <literal>true</literal>."
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:32(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:32(para) 
 msgid "<literal>matchsynonyms</literal> controls whether the synonyms are accepted by the dictionary. Default is <literal>false</literal>."
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:38(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:38(para) 
 msgid "<literal>keeporig</literal> controls whether the original word is included in the dictionary's output. Default is <literal>true</literal>."
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:44(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:44(para) 
 msgid "<literal>keepsynonyms</literal> controls whether the synonyms are included in the dictionary's output. Default is <literal>true</literal>."
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:50(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:50(para) 
 msgid "<literal>rules</literal> is the base name of the file containing the list of synonyms. This file must be stored in <filename>$SHAREDIR/tsearch_data/</filename> (where <literal>$SHAREDIR</literal> means the <productname>PostgreSQL</productname> installation's shared-data directory). Its name must end in <literal>.rules</literal> (which is not to be included in the <literal>rules</literal> parameter)."
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:60(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:60(para) 
 msgid "The rules file has the following format:"
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:68(programlisting) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:68(programlisting) 
 #, no-wrap
 msgid "\nword syn1 syn2 syn3\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:65(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:65(para) 
 msgid "Each line represents a group of synonyms for a single word, which is given first on the line. Synonyms are separated by whitespace, thus: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:74(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:74(para) 
 msgid "The sharp (<literal>#</literal>) sign is a comment delimiter. It may appear at any position in a line. The rest of the line will be skipped."
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:81(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:81(para) 
 msgid "Look at <filename>xsyn_sample.rules</filename>, which is installed in <filename>$SHAREDIR/tsearch_data/</filename>, for an example."
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:88(title) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:88(title) 
 msgid "Usage"
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:96(programlisting) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:96(programlisting) 
 #, no-wrap
 msgid "\nmydb# ALTER TEXT SEARCH DICTIONARY xsyn (RULES='my_rules', KEEPORIG=false);\nALTER TEXT SEARCH DICTIONARY\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:90(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:90(para) 
 msgid "Installing the <literal>dict_xsyn</literal> extension creates a text search template <literal>xsyn_template</literal> and a dictionary <literal>xsyn</literal> based on it, with default parameters. You can alter the parameters, for example <placeholder-1/> or create new dictionaries based on the template."
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:107(programlisting) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:107(programlisting) 
 #, no-wrap
 msgid "\nmydb=# SELECT ts_lexize('xsyn', 'word');\n      ts_lexize\n-----------------------\n {syn1,syn2,syn3}\n\nmydb# ALTER TEXT SEARCH DICTIONARY xsyn (RULES='my_rules', KEEPORIG=true);\nALTER TEXT SEARCH DICTIONARY\n\nmydb=# SELECT ts_lexize('xsyn', 'word');\n      ts_lexize\n-----------------------\n {word,syn1,syn2,syn3}\n\nmydb# ALTER TEXT SEARCH DICTIONARY xsyn (RULES='my_rules', KEEPORIG=false, MATCHSYNONYMS=true);\nALTER TEXT SEARCH DICTIONARY\n\nmydb=# SELECT ts_lexize('xsyn', 'syn1');\n      ts_lexize\n-----------------------\n {syn1,syn2,syn3}\n\nmydb# ALTER TEXT SEARCH DICTIONARY xsyn (RULES='my_rules', KEEPORIG=true, MATCHORIG=false, KEEPSYNONYMS=false);\nALTER TEXT SEARCH DICTIONARY\n\nmydb=# SELECT ts_lexize('xsyn', 'syn1');\n      ts_lexize\n-----------------------\n {word}\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:142(programlisting) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:142(programlisting) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH CONFIGURATION english\n    ALTER MAPPING FOR word, asciiword WITH xsyn, english_stem;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/dict-xsyn.xml:104(para) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:104(para) 
 msgid "To test the dictionary, you can try <placeholder-1/> Real-world usage will involve including it in a text search configuration as described in <xref linkend=\"textsearch\"/>. That might look like this: <placeholder-2/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ODee/dict-xsyn.xml:0(None) 
+#: /tmp/cicero-fCbP/dict-xsyn.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

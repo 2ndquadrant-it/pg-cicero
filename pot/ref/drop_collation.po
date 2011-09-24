@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-23 06:57+0200\n"
+"POT-Creation-Date: 2011-09-24 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,98 +9,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:6(refentrytitle) /tmp/cicero-ODee/ref/drop_collation.xml:12(refname) /tmp/cicero-ODee/ref/drop_collation.xml:17(primary) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:6(refentrytitle) /tmp/cicero-fCbP/ref/drop_collation.xml:12(refname) /tmp/cicero-fCbP/ref/drop_collation.xml:17(primary) 
 msgid "DROP COLLATION"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:7(manvolnum) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:7(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:8(refmiscinfo) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:8(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:13(refpurpose) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:13(refpurpose) 
 msgid "remove a collation"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:22(replaceable) /tmp/cicero-ODee/ref/drop_collation.xml:50(replaceable) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:22(replaceable) /tmp/cicero-fCbP/ref/drop_collation.xml:50(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:21(synopsis) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:21(synopsis) 
 #, no-wrap
 msgid "\nDROP COLLATION [ IF EXISTS ] <placeholder-1/> [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:27(title) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:27(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:29(para) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:29(para) 
 msgid "<command>DROP COLLATION</command> removes a previously defined collation. To be able to drop a collation, you must own the collation."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:36(title) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:36(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:40(literal) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:40(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:42(para) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:42(para) 
 msgid "Do not throw an error if the collation does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:53(para) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:53(para) 
 msgid "The name of the collation. The collation name can be schema-qualified."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:61(literal) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:61(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:63(para) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:63(para) 
 msgid "Automatically drop objects that depend on the collation."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:70(literal) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:70(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:72(para) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:72(para) 
 msgid "Refuse to drop the collation if any objects depend on it. This is the default."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:82(title) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:82(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:86(programlisting) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:86(programlisting) 
 #, no-wrap
 msgid "\nDROP COLLATION german;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:84(para) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:84(para) 
 msgid "To drop the collation named <literal>german</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:92(title) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:92(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:94(para) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:94(para) 
 msgid "The <command>DROP COLLATION</command> command conforms to the <acronym>SQL</acronym> standard, apart from the <literal>IF EXISTS</literal> option, which is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/drop_collation.xml:102(title) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:102(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ODee/ref/drop_collation.xml:0(None) 
+#: /tmp/cicero-fCbP/ref/drop_collation.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

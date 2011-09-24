@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-23 06:57+0200\n"
+"POT-Creation-Date: 2011-09-24 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,246 +9,246 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ODee/ref/insert.xml:9(refentrytitle) /tmp/cicero-ODee/ref/insert.xml:15(refname) /tmp/cicero-ODee/ref/insert.xml:20(primary) 
+#: /tmp/cicero-fCbP/ref/insert.xml:9(refentrytitle) /tmp/cicero-fCbP/ref/insert.xml:15(refname) /tmp/cicero-fCbP/ref/insert.xml:20(primary) 
 msgid "INSERT"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:10(manvolnum) 
+#: /tmp/cicero-fCbP/ref/insert.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:11(refmiscinfo) 
+#: /tmp/cicero-fCbP/ref/insert.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:16(refpurpose) 
+#: /tmp/cicero-fCbP/ref/insert.xml:16(refpurpose) 
 msgid "create new rows in a table"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:25(replaceable) /tmp/cicero-ODee/ref/insert.xml:90(replaceable) 
+#: /tmp/cicero-fCbP/ref/insert.xml:25(replaceable) /tmp/cicero-fCbP/ref/insert.xml:90(replaceable) 
 msgid "with_query"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:26(replaceable) /tmp/cicero-ODee/ref/insert.xml:110(replaceable) 
+#: /tmp/cicero-fCbP/ref/insert.xml:26(replaceable) /tmp/cicero-fCbP/ref/insert.xml:110(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:26(replaceable) /tmp/cicero-ODee/ref/insert.xml:119(replaceable) 
+#: /tmp/cicero-fCbP/ref/insert.xml:26(replaceable) /tmp/cicero-fCbP/ref/insert.xml:119(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:27(replaceable) /tmp/cicero-ODee/ref/insert.xml:140(replaceable) 
+#: /tmp/cicero-fCbP/ref/insert.xml:27(replaceable) /tmp/cicero-fCbP/ref/insert.xml:140(replaceable) 
 msgid "expression"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:27(replaceable) /tmp/cicero-ODee/ref/insert.xml:160(replaceable) 
+#: /tmp/cicero-fCbP/ref/insert.xml:27(replaceable) /tmp/cicero-fCbP/ref/insert.xml:160(replaceable) 
 msgid "query"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:28(replaceable) /tmp/cicero-ODee/ref/insert.xml:172(replaceable) 
+#: /tmp/cicero-fCbP/ref/insert.xml:28(replaceable) /tmp/cicero-fCbP/ref/insert.xml:172(replaceable) 
 msgid "output_expression"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:28(replaceable) /tmp/cicero-ODee/ref/insert.xml:184(replaceable) 
+#: /tmp/cicero-fCbP/ref/insert.xml:28(replaceable) /tmp/cicero-fCbP/ref/insert.xml:184(replaceable) 
 msgid "output_name"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:24(synopsis) 
+#: /tmp/cicero-fCbP/ref/insert.xml:24(synopsis) 
 #, no-wrap
 msgid "\n[ WITH [ RECURSIVE ] <placeholder-1/> [, ...] ]\nINSERT INTO <placeholder-2/> [ ( <placeholder-3/> [, ...] ) ]\n    { DEFAULT VALUES | VALUES ( { <placeholder-4/> | DEFAULT } [, ...] ) [, ...] | <placeholder-5/> }\n    [ RETURNING * | <placeholder-6/> [ [ AS ] <placeholder-7/> ] [, ...] ]\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:33(title) 
+#: /tmp/cicero-fCbP/ref/insert.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:35(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:35(para) 
 msgid "<command>INSERT</command> inserts new rows into a table. One can insert one or more rows specified by value expressions, or zero or more rows resulting from a query."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:41(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:41(para) 
 msgid "The target column names can be listed in any order. If no list of column names is given at all, the default is all the columns of the table in their declared order; or the first <replaceable>N</replaceable> column names, if there are only <replaceable>N</replaceable> columns supplied by the <literal>VALUES</literal> clause or <replaceable>query</replaceable>. The values supplied by the <literal>VALUES</literal> clause or <replaceable>query</replaceable> are associated with the explicit or implicit column list left-to-right."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:51(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:51(para) 
 msgid "Each column not present in the explicit or implicit column list will be filled with a default value, either its declared default value or null if there is none."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:57(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:57(para) 
 msgid "If the expression for any column is not of the correct data type, automatic type conversion will be attempted."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:62(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:62(para) 
 msgid "The optional <literal>RETURNING</literal> clause causes <command>INSERT</command> to compute and return value(s) based on each row actually inserted. This is primarily useful for obtaining values that were supplied by defaults, such as a serial sequence number. However, any expression using the table's columns is allowed. The syntax of the <literal>RETURNING</literal> list is identical to that of the output list of <command>SELECT</command>."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:72(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:72(para) 
 msgid "You must have <literal>INSERT</literal> privilege on a table in order to insert into it. If a column list is specified, you only need <literal>INSERT</literal> privilege on the listed columns. Use of the <literal>RETURNING</literal> clause requires <literal>SELECT</literal> privilege on all columns mentioned in <literal>RETURNING</literal>. If you use the <replaceable class=\"PARAMETER\">query</replaceable> clause to insert rows from a query, you of course need to have <literal>SELECT</literal> privilege on any table or column used in the query."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:86(title) 
+#: /tmp/cicero-fCbP/ref/insert.xml:86(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:92(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:92(para) 
 msgid "The <literal>WITH</literal> clause allows you to specify one or more subqueries that can be referenced by name in the <command>INSERT</command> query. See <xref linkend=\"queries-with\"/> and <xref linkend=\"sql-select\"/> for details."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:98(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:98(para) 
 msgid "It is possible for the <replaceable class=\"parameter\">query</replaceable> (<command>SELECT</command> statement) to also contain a <literal>WITH</literal> clause. In such a case both sets of <replaceable>with_query</replaceable> can be referenced within the <replaceable class=\"parameter\">query</replaceable>, but the second one takes precedence since it is more closely nested."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:112(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:112(para) 
 msgid "The name (optionally schema-qualified) of an existing table."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:121(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:121(para) 
 msgid "The name of a column in <replaceable class=\"PARAMETER\">table</replaceable>. The column name can be qualified with a subfield name or array subscript, if needed. (Inserting into only some fields of a composite column leaves the other fields null.)"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:131(literal) 
+#: /tmp/cicero-fCbP/ref/insert.xml:131(literal) 
 msgid "DEFAULT VALUES"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:133(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:133(para) 
 msgid "All columns will be filled with their default values."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:142(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:142(para) 
 msgid "An expression or value to assign to the corresponding <replaceable class=\"PARAMETER\">column</replaceable>."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:150(literal) 
+#: /tmp/cicero-fCbP/ref/insert.xml:150(literal) 
 msgid "DEFAULT"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:152(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:152(para) 
 msgid "The corresponding <replaceable>column</replaceable> will be filled with its default value."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:162(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:162(para) 
 msgid "A query (<command>SELECT</command> statement) that supplies the rows to be inserted. Refer to the <xref linkend=\"sql-select\"/> statement for a description of the syntax."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:174(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:174(para) 
 msgid "An expression to be computed and returned by the <command>INSERT</command> command after each row is inserted. The expression can use any column names of the <replaceable class=\"PARAMETER\">table</replaceable>. Write <literal>*</literal> to return all columns of the inserted row(s)."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:186(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:186(para) 
 msgid "A name to use for a returned column."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:195(title) 
+#: /tmp/cicero-fCbP/ref/insert.xml:195(title) 
 msgid "Outputs"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:197(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:197(para) 
 msgid "On successful completion, an <command>INSERT</command> command returns a command tag of the form <screen>\nINSERT <replaceable>oid</replaceable> <replaceable class=\"parameter\">count</replaceable>\n</screen> The <replaceable class=\"parameter\">count</replaceable> is the number of rows inserted. If <replaceable class=\"parameter\">count</replaceable> is exactly one, and the target table has OIDs, then <replaceable class=\"parameter\">oid</replaceable> is the <acronym>OID</acronym> assigned to the inserted row. Otherwise <replaceable class=\"parameter\">oid</replaceable> is zero."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:211(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:211(para) 
 msgid "If the <command>INSERT</command> command contains a <literal>RETURNING</literal> clause, the result will be similar to that of a <command>SELECT</command> statement containing the columns and values defined in the <literal>RETURNING</literal> list, computed over the row(s) inserted by the command."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:221(title) 
+#: /tmp/cicero-fCbP/ref/insert.xml:221(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:226(programlisting) 
+#: /tmp/cicero-fCbP/ref/insert.xml:226(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO films VALUES\n    ('UA502', 'Bananas', 105, '1971-07-13', 'Comedy', '82 minutes');\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:223(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:223(para) 
 msgid "Insert a single row into table <literal>films</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:236(programlisting) 
+#: /tmp/cicero-fCbP/ref/insert.xml:236(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO films (code, title, did, date_prod, kind)\n    VALUES ('T_601', 'Yojimbo', 106, '1961-06-16', 'Drama');\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:232(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:232(para) 
 msgid "In this example, the <literal>len</literal> column is omitted and therefore it will have the default value: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:246(programlisting) 
+#: /tmp/cicero-fCbP/ref/insert.xml:246(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO films VALUES\n    ('UA502', 'Bananas', 105, DEFAULT, 'Comedy', '82 minutes');\nINSERT INTO films (code, title, did, date_prod, kind)\n    VALUES ('T_601', 'Yojimbo', 106, DEFAULT, 'Drama');\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:242(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:242(para) 
 msgid "This example uses the <literal>DEFAULT</literal> clause for the date columns rather than specifying a value: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:257(programlisting) 
+#: /tmp/cicero-fCbP/ref/insert.xml:257(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO films DEFAULT VALUES;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:254(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:254(para) 
 msgid "To insert a row consisting entirely of default values: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:265(programlisting) 
+#: /tmp/cicero-fCbP/ref/insert.xml:265(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO films (code, title, did, date_prod, kind) VALUES\n    ('B6717', 'Tampopo', 110, '1985-02-10', 'Comedy'),\n    ('HG120', 'The Dinner Game', 140, DEFAULT, 'Comedy');\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:262(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:262(para) 
 msgid "To insert multiple rows using the multirow <command>VALUES</command> syntax: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:277(programlisting) 
+#: /tmp/cicero-fCbP/ref/insert.xml:277(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO films SELECT * FROM tmp_films WHERE date_prod &lt; '2004-05-07';\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:272(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:272(para) 
 msgid "This example inserts some rows into table <literal>films</literal> from a table <literal>tmp_films</literal> with the same column layout as <literal>films</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:285(programlisting) 
+#: /tmp/cicero-fCbP/ref/insert.xml:285(programlisting) 
 #, no-wrap
 msgid "\n-- Create an empty 3x3 gameboard for noughts-and-crosses\nINSERT INTO tictactoe (game, board[1:3][1:3])\n    VALUES (1, '{{\" \",\" \",\" \"},{\" \",\" \",\" \"},{\" \",\" \",\" \"}}');\n-- The subscripts in the above example aren't really needed\nINSERT INTO tictactoe (game, board)\n    VALUES (2, '{{X,\" \",\" \"},{\" \",O,\" \"},{\" \",X,\" \"}}');\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:282(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:282(para) 
 msgid "This example inserts into array columns: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:299(programlisting) 
+#: /tmp/cicero-fCbP/ref/insert.xml:299(programlisting) 
 #, no-wrap
 msgid "\nINSERT INTO distributors (did, dname) VALUES (DEFAULT, 'XYZ Widgets')\n   RETURNING did;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:295(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:295(para) 
 msgid "Insert a single row into table <literal>distributors</literal>, returning the sequence number generated by the <literal>DEFAULT</literal> clause: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:309(programlisting) 
+#: /tmp/cicero-fCbP/ref/insert.xml:309(programlisting) 
 #, no-wrap
 msgid "\nWITH upd AS (\n  UPDATE employees SET sales_count = sales_count + 1 WHERE id =\n    (SELECT sales_person FROM accounts WHERE name = 'Acme Corporation')\n    RETURNING *\n)\nINSERT INTO employees_log SELECT *, current_timestamp FROM upd;\n"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:305(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:305(para) 
 msgid "Increment the sales count of the salesperson who manages the account for Acme Corporation, and record the whole updated row along with current time in a log table: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:320(title) 
+#: /tmp/cicero-fCbP/ref/insert.xml:320(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:322(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:322(para) 
 msgid "<command>INSERT</command> conforms to the SQL standard, except that the <literal>RETURNING</literal> clause is a <productname>PostgreSQL</productname> extension, as is the ability to use <literal>WITH</literal> with <command>INSERT</command>. Also, the case in which a column name list is omitted, but not all the columns are filled from the <literal>VALUES</literal> clause or <replaceable>query</replaceable>, is disallowed by the standard."
 msgstr ""
 
-#: /tmp/cicero-ODee/ref/insert.xml:333(para) 
+#: /tmp/cicero-fCbP/ref/insert.xml:333(para) 
 msgid "Possible limitations of the <replaceable class=\"PARAMETER\">query</replaceable> clause are documented under <xref linkend=\"sql-select\"/>."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ODee/ref/insert.xml:0(None) 
+#: /tmp/cicero-fCbP/ref/insert.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
