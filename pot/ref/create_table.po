@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-23 06:59+0200\n"
+"POT-Creation-Date: 2011-09-24 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,952 +9,952 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:9(refentrytitle) /tmp/cicero-IQoj/ref/create_table.xml:15(refname) /tmp/cicero-IQoj/ref/create_table.xml:20(primary) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:9(refentrytitle) /tmp/cicero-xKXn/ref/create_table.xml:15(refname) /tmp/cicero-xKXn/ref/create_table.xml:20(primary) 
 msgid "CREATE TABLE"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:10(manvolnum) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:11(refmiscinfo) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:16(refpurpose) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:16(refpurpose) 
 msgid "define a new table"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:25(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:36(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:198(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:25(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:36(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:198(replaceable) 
 msgid "table_name"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:26(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:38(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:63(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:64(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:66(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:228(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:26(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:38(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:63(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:64(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:66(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:228(replaceable) 
 msgid "column_name"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:26(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:237(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:26(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:237(replaceable) 
 msgid "data_type"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:26(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:249(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:26(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:249(replaceable) 
 msgid "collation"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:26(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:38(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:46(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:26(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:38(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:46(replaceable) 
 msgid "column_constraint"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:27(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:39(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:59(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:27(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:39(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:59(replaceable) 
 msgid "table_constraint"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:28(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:31(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:260(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:310(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:28(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:31(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:260(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:310(replaceable) 
 msgid "parent_table"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:28(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:70(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:310(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:28(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:70(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:310(replaceable) 
 msgid "like_option"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:32(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:42(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:76(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:709(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:32(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:42(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:76(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:709(replaceable) 
 msgid "storage_parameter"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:32(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:42(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:76(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:709(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:32(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:42(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:76(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:709(replaceable) 
 msgid "value"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:34(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:44(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:77(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:804(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:817(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:34(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:44(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:77(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:804(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:817(replaceable) 
 msgid "tablespace"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:37(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:207(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:37(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:207(replaceable) 
 msgid "type_name"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:46(phrase) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:46(phrase) 
 msgid "where <placeholder-1/> is:"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:48(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:61(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:370(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:48(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:61(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:370(replaceable) 
 msgid "constraint_name"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:51(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:62(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:81(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:408(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:51(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:62(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:81(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:408(replaceable) 
 msgid "expression"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:52(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:432(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:52(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:432(replaceable) 
 msgid "default_expr"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:53(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:54(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:63(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:64(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:65(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:74(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:507(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:53(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:54(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:63(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:64(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:65(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:74(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:507(replaceable) 
 msgid "index_parameters"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:55(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:66(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:55(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:66(replaceable) 
 msgid "reftable"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:55(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:66(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:55(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:66(replaceable) 
 msgid "refcolumn"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:56(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:56(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:67(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:67(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:56(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:56(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:67(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:67(replaceable) 
 msgid "action"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:59(phrase) /tmp/cicero-IQoj/ref/create_table.xml:70(phrase) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:59(phrase) /tmp/cicero-xKXn/ref/create_table.xml:70(phrase) 
 msgid "and <placeholder-1/> is:"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:65(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:507(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:65(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:507(replaceable) 
 msgid "index_method"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:65(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:79(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:507(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:65(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:79(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:507(replaceable) 
 msgid "exclude_element"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:65(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:507(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:65(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:507(replaceable) 
 msgid "operator"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:65(replaceable) /tmp/cicero-IQoj/ref/create_table.xml:507(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:65(replaceable) /tmp/cicero-xKXn/ref/create_table.xml:507(replaceable) 
 msgid "predicate"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:74(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:74(literal) 
 msgid "UNIQUE"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:74(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:74(literal) 
 msgid "PRIMARY KEY"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:74(literal) /tmp/cicero-IQoj/ref/create_table.xml:79(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:74(literal) /tmp/cicero-xKXn/ref/create_table.xml:79(literal) 
 msgid "EXCLUDE"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:74(phrase) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:74(phrase) 
 msgid "<placeholder-1/> in <placeholder-2/>, <placeholder-3/>, and <placeholder-4/> constraints are:"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:79(phrase) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:79(phrase) 
 msgid "<placeholder-1/> in an <placeholder-2/> constraint is:"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:81(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:81(replaceable) 
 msgid "column"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:81(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:81(replaceable) 
 msgid "opclass"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:24(synopsis) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE [ [ GLOBAL | LOCAL ] { TEMPORARY | TEMP } | UNLOGGED ] TABLE [ IF NOT EXISTS ] <placeholder-1/> ( [\n  { <placeholder-2/> <placeholder-3/> [ COLLATE <placeholder-4/> ] [ <placeholder-5/> [ ... ] ]\n    | <placeholder-6/>\n    | LIKE <placeholder-7/> [ <placeholder-8/> ... ] }\n    [, ... ]\n] )\n[ INHERITS ( <placeholder-9/> [, ... ] ) ]\n[ WITH ( <placeholder-10/> [= <placeholder-11/>] [, ... ] ) | WITH OIDS | WITHOUT OIDS ]\n[ ON COMMIT { PRESERVE ROWS | DELETE ROWS | DROP } ]\n[ TABLESPACE <placeholder-12/> ]\n\nCREATE [ [ GLOBAL | LOCAL ] { TEMPORARY | TEMP } | UNLOGGED ] TABLE [ IF NOT EXISTS ] <placeholder-13/>\n    OF <placeholder-14/> [ (\n  { <placeholder-15/> WITH OPTIONS [ <placeholder-16/> [ ... ] ]\n    | <placeholder-17/> }\n    [, ... ]\n) ]\n[ WITH ( <placeholder-18/> [= <placeholder-19/>] [, ... ] ) | WITH OIDS | WITHOUT OIDS ]\n[ ON COMMIT { PRESERVE ROWS | DELETE ROWS | DROP } ]\n[ TABLESPACE <placeholder-20/> ]\n\n<placeholder-21/>\n\n[ CONSTRAINT <placeholder-22/> ]\n{ NOT NULL |\n  NULL |\n  CHECK ( <placeholder-23/> ) |\n  DEFAULT <placeholder-24/> |\n  UNIQUE <placeholder-25/> |\n  PRIMARY KEY <placeholder-26/> |\n  REFERENCES <placeholder-27/> [ ( <placeholder-28/> ) ] [ MATCH FULL | MATCH PARTIAL | MATCH SIMPLE ]\n    [ ON DELETE <placeholder-29/> ] [ ON UPDATE <placeholder-30/> ] }\n[ DEFERRABLE | NOT DEFERRABLE ] [ INITIALLY DEFERRED | INITIALLY IMMEDIATE ]\n\n<placeholder-31/>\n\n[ CONSTRAINT <placeholder-32/> ]\n{ CHECK ( <placeholder-33/> ) |\n  UNIQUE ( <placeholder-34/> [, ... ] ) <placeholder-35/> |\n  PRIMARY KEY ( <placeholder-36/> [, ... ] ) <placeholder-37/> |\n  EXCLUDE [ USING <placeholder-38/> ] ( <placeholder-39/> WITH <placeholder-40/> [, ... ] ) <placeholder-41/> [ WHERE ( <placeholder-42/> ) ] |\n  FOREIGN KEY ( <placeholder-43/> [, ... ] ) REFERENCES <placeholder-44/> [ ( <placeholder-45/> [, ... ] ) ]\n    [ MATCH FULL | MATCH PARTIAL | MATCH SIMPLE ] [ ON DELETE <placeholder-46/> ] [ ON UPDATE <placeholder-47/> ] }\n[ DEFERRABLE | NOT DEFERRABLE ] [ INITIALLY DEFERRED | INITIALLY IMMEDIATE ]\n\n<placeholder-48/>\n\n{ INCLUDING | EXCLUDING } { DEFAULTS | CONSTRAINTS | INDEXES | STORAGE | COMMENTS | ALL }\n\n<placeholder-49/>\n\n[ WITH ( <placeholder-50/> [= <placeholder-51/>] [, ... ] ) ]\n[ USING INDEX TABLESPACE <placeholder-52/> ]\n\n<placeholder-53/>\n\n{ <placeholder-54/> | ( <placeholder-55/> ) } [ <placeholder-56/> ] [ ASC | DESC ] [ NULLS { FIRST | LAST } ]\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:87(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:87(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:89(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:89(para) 
 msgid "<command>CREATE TABLE</command> will create a new, initially empty table in the current database. The table will be owned by the user issuing the command."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:95(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:95(para) 
 msgid "If a schema name is given (for example, <literal>CREATE TABLE myschema.mytable ...</literal>) then the table is created in the specified schema. Otherwise it is created in the current schema. Temporary tables exist in a special schema, so a schema name cannot be given when creating a temporary table. The name of the table must be distinct from the name of any other table, sequence, index, view, or foreign table in the same schema."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:105(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:105(para) 
 msgid "<command>CREATE TABLE</command> also automatically creates a data type that represents the composite type corresponding to one row of the table. Therefore, tables cannot have the same name as any existing data type in the same schema."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:112(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:112(para) 
 msgid "The optional constraint clauses specify constraints (tests) that new or updated rows must satisfy for an insert or update operation to succeed. A constraint is an SQL object that helps define the set of valid values in the table in various ways."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:119(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:119(para) 
 msgid "There are two ways to define constraints: table constraints and column constraints. A column constraint is defined as part of a column definition. A table constraint definition is not tied to a particular column, and it can encompass more than one column. Every column constraint can also be written as a table constraint; a column constraint is only a notational convenience for use when the constraint only affects one column."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:131(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:131(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:136(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:136(term) 
 msgid "<literal>TEMPORARY</literal> or <literal>TEMP</literal>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:138(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:138(para) 
 msgid "If specified, the table is created as a temporary table. Temporary tables are automatically dropped at the end of a session, or optionally at the end of the current transaction (see <literal>ON COMMIT</literal> below). Existing permanent tables with the same name are not visible to the current session while the temporary table exists, unless they are referenced with schema-qualified names. Any indexes created on a temporary table are automatically temporary as well."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:149(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:149(para) 
 msgid "The <link linkend=\"autovacuum\">autovacuum daemon</link> cannot access and therefore cannot vacuum or analyze temporary tables. For this reason, appropriate vacuum and analyze operations should be performed via session SQL commands. For example, if a temporary table is going to be used in complex queries, it is wise to run <command>ANALYZE</command> on the temporary table after it is populated."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:158(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:158(para) 
 msgid "Optionally, <literal>GLOBAL</literal> or <literal>LOCAL</literal> can be written before <literal>TEMPORARY</literal> or <literal>TEMP</literal>. This makes no difference in <productname>PostgreSQL</productname>, but see <xref linkend=\"sql-createtable-compatibility\" endterm=\"sql-createtable-compatibility-title\"/>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:169(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:169(literal) 
 msgid "UNLOGGED"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:171(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:171(para) 
 msgid "If specified, the table is created as an unlogged table. Data written to unlogged tables is not written to the write-ahead log (see <xref linkend=\"wal\"/>), which makes them considerably faster than ordinary tables. However, they are not crash-safe: an unlogged table is automatically truncated after a crash or unclean shutdown. The contents of an unlogged table are also not replicated to standby servers. Any indexes created on an unlogged table are automatically unlogged as well; however, unlogged <link linkend=\"gist\">GiST indexes</link> are currently not supported and cannot be created on an unlogged table."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:186(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:186(literal) 
 msgid "IF NOT EXISTS"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:188(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:188(para) 
 msgid "Do not throw an error if a relation with the same name already exists. A notice is issued in this case. Note that there is no guarantee that the existing relation is anything like the one that would have been created."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:200(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:200(para) 
 msgid "The name (optionally schema-qualified) of the table to be created."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:207(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:207(literal) 
 msgid "OF <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:209(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:209(para) 
 msgid "Creates a <firstterm>typed table</firstterm>, which takes its structure from the specified composite type (name optionally schema-qualified). A typed table is tied to its type; for example the table will be dropped if the type is dropped (with <literal>DROP TYPE ... CASCADE</literal>)."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:217(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:217(para) 
 msgid "When a typed table is created, then the data types of the columns are determined by the underlying composite type and are not specified by the <literal>CREATE TABLE</literal> command. But the <literal>CREATE TABLE</literal> command can add defaults and constraints to the table and can specify storage parameters."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:230(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:230(para) 
 msgid "The name of a column to be created in the new table."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:239(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:239(para) 
 msgid "The data type of the column. This can include array specifiers. For more information on the data types supported by <productname>PostgreSQL</productname>, refer to <xref linkend=\"datatype\"/>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:249(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:249(literal) 
 msgid "COLLATE <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:251(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:251(para) 
 msgid "The <literal>COLLATE</literal> clause assigns a collation to the column (which must be of a collatable data type). If not specified, the column data type's default collation is used."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:260(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:260(literal) 
 msgid "INHERITS ( <placeholder-1/> [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:262(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:262(para) 
 msgid "The optional <literal>INHERITS</literal> clause specifies a list of tables from which the new table automatically inherits all columns."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:268(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:268(para) 
 msgid "Use of <literal>INHERITS</literal> creates a persistent relationship between the new child table and its parent table(s). Schema modifications to the parent(s) normally propagate to children as well, and by default the data of the child table is included in scans of the parent(s)."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:276(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:276(para) 
 msgid "If the same column name exists in more than one parent table, an error is reported unless the data types of the columns match in each of the parent tables. If there is no conflict, then the duplicate columns are merged to form a single column in the new table. If the column name list of the new table contains a column name that is also inherited, the data type must likewise match the inherited column(s), and the column definitions are merged into one. If the new table explicitly specifies a default value for the column, this default overrides any defaults from inherited declarations of the column. Otherwise, any parents that specify default values for the column must all specify the same default, or an error will be reported."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:292(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:292(para) 
 msgid "<literal>CHECK</literal> constraints are merged in essentially the same way as columns: if multiple parent tables and/or the new table definition contain identically-named <literal>CHECK</literal> constraints, these constraints must all have the same check expression, or an error will be reported. Constraints having the same name and expression will be merged into one copy. Notice that an unnamed <literal>CHECK</literal> constraint in the new table will never be merged, since a unique name will always be chosen for it."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:302(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:302(para) 
 msgid "Column <literal>STORAGE</literal> settings are also copied from parent tables."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:310(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:310(literal) 
 msgid "LIKE <placeholder-1/> [ <placeholder-2/> ... ]"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:312(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:312(para) 
 msgid "The <literal>LIKE</literal> clause specifies a table from which the new table automatically copies all column names, their data types, and their not-null constraints."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:317(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:317(para) 
 msgid "Unlike <literal>INHERITS</literal>, the new table and original table are completely decoupled after creation is complete. Changes to the original table will not be applied to the new table, and it is not possible to include data of the new table in scans of the original table."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:324(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:324(para) 
 msgid "Default expressions for the copied column definitions will only be copied if <literal>INCLUDING DEFAULTS</literal> is specified. The default behavior is to exclude default expressions, resulting in the copied columns in the new table having null defaults."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:330(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:330(para) 
 msgid "Not-null constraints are always copied to the new table. <literal>CHECK</literal> constraints will only be copied if <literal>INCLUDING CONSTRAINTS</literal> is specified; other types of constraints will never be copied. Also, no distinction is made between column constraints and table constraints — when constraints are requested, all check constraints are copied."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:338(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:338(para) 
 msgid "Any indexes on the original table will not be created on the new table, unless the <literal>INCLUDING INDEXES</literal> clause is specified."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:343(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:343(para) 
 msgid "<literal>STORAGE</literal> settings for the copied column definitions will only be copied if <literal>INCLUDING STORAGE</literal> is specified. The default behavior is to exclude <literal>STORAGE</literal> settings, resulting in the copied columns in the new table having type-specific default settings. For more on <literal>STORAGE</literal> settings, see <xref linkend=\"storage-toast\"/>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:350(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:350(para) 
 msgid "Comments for the copied columns, constraints, and indexes will only be copied if <literal>INCLUDING COMMENTS</literal> is specified. The default behavior is to exclude comments, resulting in the copied columns and constraints in the new table having no comments."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:356(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:356(para) 
 msgid "<literal>INCLUDING ALL</literal> is an abbreviated form of <literal>INCLUDING DEFAULTS INCLUDING CONSTRAINTS INCLUDING INDEXES INCLUDING STORAGE INCLUDING COMMENTS</literal>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:359(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:359(para) 
 msgid "Note also that unlike <literal>INHERITS</literal>, columns and constraints copied by <literal>LIKE</literal> are not merged with similarly named columns and constraints. If the same name is specified explicitly or in another <literal>LIKE</literal> clause, an error is signalled."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:370(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:370(literal) 
 msgid "CONSTRAINT <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:372(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:372(para) 
 msgid "An optional name for a column or table constraint. If the constraint is violated, the constraint name is present in error messages, so constraint names like <literal>col must be positive</literal> can be used to communicate helpful constraint information to client applications. (Double-quotes are needed to specify constraint names that contain spaces.) If a constraint name is not specified, the system generates a name."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:384(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:384(literal) 
 msgid "NOT NULL"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:386(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:386(para) 
 msgid "The column is not allowed to contain null values."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:393(literal) /tmp/cicero-IQoj/ref/create_table.xml:1349(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:393(literal) /tmp/cicero-xKXn/ref/create_table.xml:1349(literal) 
 msgid "NULL"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:395(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:395(para) 
 msgid "The column is allowed to contain null values. This is the default."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:399(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:399(para) 
 msgid "This clause is only provided for compatibility with non-standard SQL databases. Its use is discouraged in new applications."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:408(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:408(literal) 
 msgid "CHECK ( <placeholder-1/> )"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:410(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:410(para) 
 msgid "The <literal>CHECK</literal> clause specifies an expression producing a Boolean result which new or updated rows must satisfy for an insert or update operation to succeed. Expressions evaluating to TRUE or UNKNOWN succeed. Should any row of an insert or update operation produce a FALSE result an error exception is raised and the insert or update does not alter the database. A check constraint specified as a column constraint should reference that column's value only, while an expression appearing in a table constraint can reference multiple columns."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:422(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:422(para) 
 msgid "Currently, <literal>CHECK</literal> expressions cannot contain subqueries nor refer to variables other than columns of the current row."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:431(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:431(literal) 
 msgid "DEFAULT <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:434(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:434(para) 
 msgid "The <literal>DEFAULT</literal> clause assigns a default data value for the column whose column definition it appears within. The value is any variable-free expression (subqueries and cross-references to other columns in the current table are not allowed). The data type of the default expression must match the data type of the column."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:443(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:443(para) 
 msgid "The default expression will be used in any insert operation that does not specify a value for the column. If there is no default for a column, then the default is null."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:452(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:452(term) 
 msgid "<literal>UNIQUE</literal> (column constraint)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:453(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:453(term) 
 msgid "<literal>UNIQUE ( <replaceable class=\"PARAMETER\">column_name</replaceable> [, ... ] )</literal> (table constraint)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:456(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:456(para) 
 msgid "The <literal>UNIQUE</literal> constraint specifies that a group of one or more columns of a table can contain only unique values. The behavior of the unique table constraint is the same as that for column constraints, with the additional capability to span multiple columns."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:464(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:464(para) 
 msgid "For the purpose of a unique constraint, null values are not considered equal."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:469(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:469(para) 
 msgid "Each unique table constraint must name a set of columns that is different from the set of columns named by any other unique or primary key constraint defined for the table. (Otherwise it would just be the same constraint listed twice.)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:479(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:479(term) 
 msgid "<literal>PRIMARY KEY</literal> (column constraint)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:480(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:480(term) 
 msgid "<literal>PRIMARY KEY ( <replaceable class=\"PARAMETER\">column_name</replaceable> [, ... ] )</literal> (table constraint)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:482(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:482(para) 
 msgid "The primary key constraint specifies that a column or columns of a table can contain only unique (non-duplicate), nonnull values. Technically, <literal>PRIMARY KEY</literal> is merely a combination of <literal>UNIQUE</literal> and <literal>NOT NULL</literal>, but identifying a set of columns as primary key also provides metadata about the design of the schema, as a primary key implies that other tables can rely on this set of columns as a unique identifier for rows."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:493(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:493(para) 
 msgid "Only one primary key can be specified for a table, whether as a column constraint or a table constraint."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:498(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:498(para) 
 msgid "The primary key constraint should name a set of columns that is different from other sets of columns named by any unique constraint defined for the same table."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:507(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:507(literal) 
 msgid "EXCLUDE [ USING <placeholder-1/> ] ( <placeholder-2/> WITH <placeholder-3/> [, ... ] ) <placeholder-4/> [ WHERE ( <placeholder-5/> ) ]"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:509(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:509(para) 
 msgid "The <literal>EXCLUDE</literal> clause defines an exclusion constraint, which guarantees that if any two rows are compared on the specified column(s) or expression(s) using the specified operator(s), not all of these comparisons will return <literal>TRUE</literal>. If all of the specified operators test for equality, this is equivalent to a <literal>UNIQUE</literal> constraint, although an ordinary unique constraint will be faster. However, exclusion constraints can specify constraints that are more general than simple equality. For example, you can specify a constraint that no two rows in the table contain overlapping circles (see <xref linkend=\"datatype-geometric\"/>) by using the <literal>&amp;&amp;</literal> operator."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:525(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:525(para) 
 msgid "Exclusion constraints are implemented using an index, so each specified operator must be associated with an appropriate operator class (see <xref linkend=\"indexes-opclass\"/>) for the index access method <replaceable>index_method</replaceable>. The operators are required to be commutative. Each <replaceable class=\"parameter\">exclude_element</replaceable> can optionally specify an operator class and/or ordering options; these are described fully under <xref linkend=\"sql-createindex\"/>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:538(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:538(para) 
 msgid "The access method must support <literal>amgettuple</literal> (see <xref linkend=\"indexam\"/>); at present this means <acronym>GIN</acronym> cannot be used. Although it's allowed, there is little point in using B-tree or hash indexes with an exclusion constraint, because this does nothing that an ordinary unique constraint doesn't do better. So in practice the access method will always be <acronym>GiST</acronym>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:547(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:547(para) 
 msgid "The <replaceable class=\"parameter\">predicate</replaceable> allows you to specify an exclusion constraint on a subset of the table; internally this creates a partial index. Note that parentheses are required around the predicate."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:556(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:556(term) 
 msgid "<literal>REFERENCES <replaceable class=\"parameter\">reftable</replaceable> [ ( <replaceable class=\"parameter\">refcolumn</replaceable> ) ] [ MATCH <replaceable class=\"parameter\">matchtype</replaceable> ] [ ON DELETE <replaceable class=\"parameter\">action</replaceable> ] [ ON UPDATE <replaceable class=\"parameter\">action</replaceable> ]</literal> (column constraint)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:558(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:558(term) 
 msgid "<literal>FOREIGN KEY ( <replaceable class=\"parameter\">column</replaceable> [, ... ] ) REFERENCES <replaceable class=\"parameter\">reftable</replaceable> [ ( <replaceable class=\"parameter\">refcolumn</replaceable> [, ... ] ) ] [ MATCH <replaceable class=\"parameter\">matchtype</replaceable> ] [ ON DELETE <replaceable class=\"parameter\">action</replaceable> ] [ ON UPDATE <replaceable class=\"parameter\">action</replaceable> ]</literal> (table constraint)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:566(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:566(para) 
 msgid "These clauses specify a foreign key constraint, which requires that a group of one or more columns of the new table must only contain values that match values in the referenced column(s) of some row of the referenced table. If <replaceable class=\"parameter\">refcolumn</replaceable> is omitted, the primary key of the <replaceable class=\"parameter\">reftable</replaceable> is used. The referenced columns must be the columns of a non-deferrable unique or primary key constraint in the referenced table. Note that foreign key constraints cannot be defined between temporary tables and permanent tables."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:579(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:579(para) 
 msgid "A value inserted into the referencing column(s) is matched against the values of the referenced table and referenced columns using the given match type. There are three match types: <literal>MATCH FULL</literal>, <literal>MATCH PARTIAL</literal>, and <literal>MATCH SIMPLE</literal>, which is also the default. <literal>MATCH FULL</literal> will not allow one column of a multicolumn foreign key to be null unless all foreign key columns are null. <literal>MATCH SIMPLE</literal> allows some foreign key columns to be null while other parts of the foreign key are not null. <literal>MATCH PARTIAL</literal> is not yet implemented."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:608(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:608(literal) 
 msgid "NO ACTION"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:610(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:610(para) 
 msgid "Produce an error indicating that the deletion or update would create a foreign key constraint violation. If the constraint is deferred, this error will be produced at constraint check time if there still exist any referencing rows. This is the default action."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:621(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:621(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:623(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:623(para) 
 msgid "Produce an error indicating that the deletion or update would create a foreign key constraint violation. This is the same as <literal>NO ACTION</literal> except that the check is not deferrable."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:633(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:633(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:635(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:635(para) 
 msgid "Delete any rows referencing the deleted row, or update the value of the referencing column to the new value of the referenced column, respectively."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:644(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:644(literal) 
 msgid "SET NULL"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:646(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:646(para) 
 msgid "Set the referencing column(s) to null."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:653(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:653(literal) 
 msgid "SET DEFAULT"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:655(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:655(para) 
 msgid "Set the referencing column(s) to their default values."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:592(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:592(para) 
 msgid "In addition, when the data in the referenced columns is changed, certain actions are performed on the data in this table's columns. The <literal>ON DELETE</literal> clause specifies the action to perform when a referenced row in the referenced table is being deleted. Likewise, the <literal>ON UPDATE</literal> clause specifies the action to perform when a referenced column in the referenced table is being updated to a new value. If the row is updated, but the referenced column is not actually changed, no action is done. Referential actions other than the <literal>NO ACTION</literal> check cannot be deferred, even if the constraint is declared deferrable. There are the following possible actions for each clause: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:663(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:663(para) 
 msgid "If the referenced column(s) are changed frequently, it might be wise to add an index to the foreign key column so that referential actions associated with the foreign key column can be performed more efficiently."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:673(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:673(literal) 
 msgid "DEFERRABLE"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:674(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:674(literal) 
 msgid "NOT DEFERRABLE"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:676(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:676(para) 
 msgid "This controls whether the constraint can be deferred. A constraint that is not deferrable will be checked immediately after every command. Checking of constraints that are deferrable can be postponed until the end of the transaction (using the <xref linkend=\"sql-set-constraints\"/> command). <literal>NOT DEFERRABLE</literal> is the default. Currently, only <literal>UNIQUE</literal>, <literal>PRIMARY KEY</literal>, <literal>EXCLUDE</literal>, and <literal>REFERENCES</literal> (foreign key) constraints accept this clause. <literal>NOT NULL</literal> and <literal>CHECK</literal> constraints are not deferrable."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:693(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:693(literal) 
 msgid "INITIALLY IMMEDIATE"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:694(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:694(literal) 
 msgid "INITIALLY DEFERRED"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:696(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:696(para) 
 msgid "If a constraint is deferrable, this clause specifies the default time to check the constraint. If the constraint is <literal>INITIALLY IMMEDIATE</literal>, it is checked after each statement. This is the default. If the constraint is <literal>INITIALLY DEFERRED</literal>, it is checked only at the end of the transaction. The constraint check time can be altered with the <xref linkend=\"sql-set-constraints\"/> command."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:709(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:709(literal) 
 msgid "WITH ( <placeholder-1/> [= <placeholder-2/>] [, ... ] )"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:711(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:711(para) 
 msgid "This clause specifies optional storage parameters for a table or index; see <xref linkend=\"sql-createtable-storage-parameters\" endterm=\"sql-createtable-storage-parameters-title\"/> for more information. The <literal>WITH</literal> clause for a table can also include <literal>OIDS=TRUE</literal> (or just <literal>OIDS</literal>) to specify that rows of the new table should have OIDs (object identifiers) assigned to them, or <literal>OIDS=FALSE</literal> to specify that the rows should not have OIDs. If <literal>OIDS</literal> is not specified, the default setting depends upon the <xref linkend=\"guc-default-with-oids\"/> configuration parameter. (If the new table inherits from any tables that have OIDs, then <literal>OIDS=TRUE</literal> is forced even if the command says <literal>OIDS=FALSE</literal>.)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:727(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:727(para) 
 msgid "If <literal>OIDS=FALSE</literal> is specified or implied, the new table does not store OIDs and no OID will be assigned for a row inserted into it. This is generally considered worthwhile, since it will reduce OID consumption and thereby postpone the wraparound of the 32-bit OID counter. Once the counter wraps around, OIDs can no longer be assumed to be unique, which makes them considerably less useful. In addition, excluding OIDs from a table reduces the space required to store the table on disk by 4 bytes per row (on most machines), slightly improving performance."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:739(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:739(para) 
 msgid "To remove OIDs from a table after it has been created, use <xref linkend=\"sql-altertable\"/>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:747(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:747(literal) 
 msgid "WITH OIDS"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:748(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:748(literal) 
 msgid "WITHOUT OIDS"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:750(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:750(para) 
 msgid "These are obsolescent syntaxes equivalent to <literal>WITH (OIDS)</literal> and <literal>WITH (OIDS=FALSE)</literal>, respectively. If you wish to give both an <literal>OIDS</literal> setting and storage parameters, you must use the <literal>WITH ( ... )</literal> syntax; see above."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:760(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:760(literal) 
 msgid "ON COMMIT"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:769(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:769(literal) 
 msgid "PRESERVE ROWS"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:771(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:771(para) 
 msgid "No special action is taken at the ends of transactions. This is the default behavior."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:779(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:779(literal) 
 msgid "DELETE ROWS"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:781(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:781(para) 
 msgid "All rows in the temporary table will be deleted at the end of each transaction block. Essentially, an automatic <xref linkend=\"sql-truncate\"/> is done at each commit."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:791(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:791(literal) 
 msgid "DROP"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:793(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:793(para) 
 msgid "The temporary table will be dropped at the end of the current transaction block."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:762(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:762(para) 
 msgid "The behavior of temporary tables at the end of a transaction block can be controlled using <literal>ON COMMIT</literal>. The three options are: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:804(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:804(literal) 
 msgid "TABLESPACE <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:806(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:806(para) 
 msgid "The <replaceable class=\"PARAMETER\">tablespace</replaceable> is the name of the tablespace in which the new table is to be created. If not specified, <xref linkend=\"guc-default-tablespace\"/> is consulted, or <xref linkend=\"guc-temp-tablespaces\"/> if the table is temporary."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:817(literal) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:817(literal) 
 msgid "USING INDEX TABLESPACE <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:819(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:819(para) 
 msgid "This clause allows selection of the tablespace in which the index associated with a <literal>UNIQUE</literal>, <literal>PRIMARY KEY</literal>, or <literal>EXCLUDE</literal> constraint will be created. If not specified, <xref linkend=\"guc-default-tablespace\"/> is consulted, or <xref linkend=\"guc-temp-tablespaces\"/> if the table is temporary."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:833(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:833(title) 
 msgid "Storage Parameters"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:836(primary) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:836(primary) 
 msgid "storage parameters"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:839(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:839(para) 
 msgid "The <literal>WITH</literal> clause can specify <firstterm>storage parameters</firstterm> for tables, and for indexes associated with a <literal>UNIQUE</literal>, <literal>PRIMARY KEY</literal>, or <literal>EXCLUDE</literal> constraint. Storage parameters for indexes are documented in <xref linkend=\"sql-createindex\"/>. The storage parameters currently available for tables are listed below. For each parameter, unless noted, there is an additional parameter with the same name prefixed with <literal>toast.</literal>, which can be used to control the behavior of the table's secondary <acronym>TOAST</acronym> table, if any (see <xref linkend=\"storage-toast\"/> for more information about TOAST). Note that the TOAST table inherits the <literal>autovacuum_*</literal> values from its parent table, if there are no <literal>toast.autovacuum_*</literal> settings set."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:859(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:859(term) 
 msgid "<literal>fillfactor</literal> (<type>integer</type>)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:861(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:861(para) 
 msgid "The fillfactor for a table is a percentage between 10 and 100. 100 (complete packing) is the default. When a smaller fillfactor is specified, <command>INSERT</command> operations pack table pages only to the indicated percentage; the remaining space on each page is reserved for updating rows on that page. This gives <command>UPDATE</command> a chance to place the updated copy of a row on the same page as the original, which is more efficient than placing it on a different page. For a table whose entries are never updated, complete packing is the best choice, but in heavily updated tables smaller fillfactors are appropriate. This parameter cannot be set for TOAST tables."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:877(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:877(term) 
 msgid "<literal>autovacuum_enabled</literal>, <literal>toast.autovacuum_enabled</literal> (<type>boolean</type>)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:879(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:879(para) 
 msgid "Enables or disables the autovacuum daemon on a particular table. If true, the autovacuum daemon will initiate a <command>VACUUM</command> operation on a particular table when the number of updated or deleted tuples exceeds <literal>autovacuum_vacuum_threshold</literal> plus <literal>autovacuum_vacuum_scale_factor</literal> times the number of live tuples currently estimated to be in the relation. Similarly, it will initiate an <command>ANALYZE</command> operation when the number of inserted, updated or deleted tuples exceeds <literal>autovacuum_analyze_threshold</literal> plus <literal>autovacuum_analyze_scale_factor</literal> times the number of live tuples currently estimated to be in the relation. If false, this table will not be autovacuumed, except to prevent transaction Id wraparound. See <xref linkend=\"vacuum-for-wraparound\"/> for more about wraparound prevention. Observe that this variable inherits its value from the <xref linkend=\"guc-autovacuum\"/> setting."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:901(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:901(term) 
 msgid "<literal>autovacuum_vacuum_threshold</literal>, <literal>toast.autovacuum_vacuum_threshold</literal> (<type>integer</type>)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:903(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:903(para) 
 msgid "Minimum number of updated or deleted tuples before initiate a <command>VACUUM</command> operation on a particular table."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:911(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:911(term) 
 msgid "<literal>autovacuum_vacuum_scale_factor</literal>, <literal>toast.autovacuum_vacuum_scale_factor</literal> (<type>float4</type>)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:913(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:913(para) 
 msgid "Multiplier for <structfield>reltuples</structfield> to add to <literal>autovacuum_vacuum_threshold</literal>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:921(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:921(term) 
 msgid "<literal>autovacuum_analyze_threshold</literal> (<type>integer</type>)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:923(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:923(para) 
 msgid "Minimum number of inserted, updated, or deleted tuples before initiate an <command>ANALYZE</command> operation on a particular table."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:931(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:931(term) 
 msgid "<literal>autovacuum_analyze_scale_factor</literal> (<type>float4</type>)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:933(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:933(para) 
 msgid "Multiplier for <structfield>reltuples</structfield> to add to <literal>autovacuum_analyze_threshold</literal>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:941(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:941(term) 
 msgid "<literal>autovacuum_vacuum_cost_delay</literal>, <literal>toast.autovacuum_vacuum_cost_delay</literal> (<type>integer</type>)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:943(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:943(para) 
 msgid "Custom <xref linkend=\"guc-autovacuum-vacuum-cost-delay\"/> parameter."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:950(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:950(term) 
 msgid "<literal>autovacuum_vacuum_cost_limit</literal>, <literal>toast.autovacuum_vacuum_cost_limit</literal> (<type>integer</type>)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:952(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:952(para) 
 msgid "Custom <xref linkend=\"guc-autovacuum-vacuum-cost-limit\"/> parameter."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:959(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:959(term) 
 msgid "<literal>autovacuum_freeze_min_age</literal>, <literal>toast.autovacuum_freeze_min_age</literal> (<type>integer</type>)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:961(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:961(para) 
 msgid "Custom <xref linkend=\"guc-vacuum-freeze-min-age\"/> parameter. Note that autovacuum will ignore attempts to set a per-table <literal>autovacuum_freeze_min_age</literal> larger than the half system-wide <xref linkend=\"guc-autovacuum-freeze-max-age\"/> setting."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:971(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:971(term) 
 msgid "<literal>autovacuum_freeze_max_age</literal>, <literal>toast.autovacuum_freeze_max_age</literal> (<type>integer</type>)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:973(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:973(para) 
 msgid "Custom <xref linkend=\"guc-autovacuum-freeze-max-age\"/> parameter. Note that autovacuum will ignore attempts to set a per-table <literal>autovacuum_freeze_max_age</literal> larger than the system-wide setting (it can only be set smaller). Note that while you can set <literal>autovacuum_freeze_max_age</literal> very small, or even zero, this is usually unwise since it will force frequent vacuuming."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:985(term) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:985(term) 
 msgid "<literal>autovacuum_freeze_table_age</literal>, <literal>toast.autovacuum_freeze_table_age</literal> (<type>integer</type>)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:987(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:987(para) 
 msgid "Custom <xref linkend=\"guc-vacuum-freeze-table-age\"/> parameter."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:999(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:999(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1001(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1001(para) 
 msgid "Using OIDs in new applications is not recommended: where possible, using a <literal>SERIAL</literal> or other sequence generator as the table's primary key is preferred. However, if your application does make use of OIDs to identify specific rows of a table, it is recommended to create a unique constraint on the <structfield>oid</structfield> column of that table, to ensure that OIDs in the table will indeed uniquely identify rows even after counter wraparound. Avoid assuming that OIDs are unique across tables; if you need a database-wide unique identifier, use the combination of <structfield>tableoid</structfield> and row OID for the purpose."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1016(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1016(para) 
 msgid "The use of <literal>OIDS=FALSE</literal> is not recommended for tables with no primary key, since without either an OID or a unique data key, it is difficult to identify specific rows."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1023(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1023(para) 
 msgid "<productname>PostgreSQL</productname> automatically creates an index for each unique constraint and primary key constraint to enforce uniqueness. Thus, it is not necessary to create an index explicitly for primary key columns. (See <xref linkend=\"sql-createindex\"/> for more information.)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1031(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1031(para) 
 msgid "Unique constraints and primary keys are not inherited in the current implementation. This makes the combination of inheritance and unique constraints rather dysfunctional."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1037(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1037(para) 
 msgid "A table cannot have more than 1600 columns. (In practice, the effective limit is usually lower because of tuple-length constraints.)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1046(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1046(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1052(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1052(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE films (\n    code        char(5) CONSTRAINT firstkey PRIMARY KEY,\n    title       varchar(40) NOT NULL,\n    did         integer NOT NULL,\n    date_prod   date,\n    kind        varchar(10),\n    len         interval hour to minute\n);\n\nCREATE TABLE distributors (\n     did    integer PRIMARY KEY DEFAULT nextval('serial'),\n     name   varchar(40) NOT NULL CHECK (name &lt;&gt; '')\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1048(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1048(para) 
 msgid "Create table <structname>films</structname> and table <structname>distributors</structname>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1072(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1072(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE array_int (\n    vector  int[][]\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1069(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1069(para) 
 msgid "Create a table with a 2-dimensional array: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1084(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1084(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE films (\n    code        char(5),\n    title       varchar(40),\n    did         integer,\n    date_prod   date,\n    kind        varchar(10),\n    len         interval hour to minute,\n    CONSTRAINT production UNIQUE(date_prod)\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1079(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1079(para) 
 msgid "Define a unique table constraint for the table <literal>films</literal>. Unique table constraints can be defined on one or more columns of the table: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1100(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1100(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE distributors (\n    did     integer CHECK (did &gt; 100),\n    name    varchar(40)\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1097(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1097(para) 
 msgid "Define a check column constraint: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1111(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1111(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE distributors (\n    did     integer,\n    name    varchar(40)\n    CONSTRAINT con1 CHECK (did &gt; 100 AND name &lt;&gt; '')\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1108(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1108(para) 
 msgid "Define a check table constraint: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1124(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1124(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE films (\n    code        char(5),\n    title       varchar(40),\n    did         integer,\n    date_prod   date,\n    kind        varchar(10),\n    len         interval hour to minute,\n    CONSTRAINT code_title PRIMARY KEY(code,title)\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1120(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1120(para) 
 msgid "Define a primary key table constraint for the table <structname>films</structname>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1143(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1143(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE distributors (\n    did     integer,\n    name    varchar(40),\n    PRIMARY KEY(did)\n);\n\nCREATE TABLE distributors (\n    did     integer PRIMARY KEY,\n    name    varchar(40)\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1137(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1137(para) 
 msgid "Define a primary key constraint for table <structname>distributors</structname>. The following two examples are equivalent, the first using the table constraint syntax, the second the column constraint syntax: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1165(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1165(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE distributors (\n    name      varchar(40) DEFAULT 'Luso Films',\n    did       integer DEFAULT nextval('distributors_serial'),\n    modtime   timestamp DEFAULT current_timestamp\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1157(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1157(para) 
 msgid "Assign a literal constant default value for the column <literal>name</literal>, arrange for the default value of column <literal>did</literal> to be generated by selecting the next value of a sequence object, and make the default value of <literal>modtime</literal> be the time at which the row is inserted: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1179(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1179(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE distributors (\n    did     integer CONSTRAINT no_null NOT NULL,\n    name    varchar(40) NOT NULL\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1174(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1174(para) 
 msgid "Define two <literal>NOT NULL</literal> column constraints on the table <classname>distributors</classname>, one of which is explicitly given a name: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1190(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1190(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE distributors (\n    did     integer,\n    name    varchar(40) UNIQUE\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1199(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1199(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE distributors (\n    did     integer,\n    name    varchar(40),\n    UNIQUE(name)\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1187(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1187(para) 
 msgid "Define a unique constraint for the <literal>name</literal> column: <placeholder-1/> The same, specified as a table constraint: <placeholder-2/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1212(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1212(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE distributors (\n    did     integer,\n    name    varchar(40),\n    UNIQUE(name) WITH (fillfactor=70)\n)\nWITH (fillfactor=70);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1208(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1208(para) 
 msgid "Create the same table, specifying 70% fill factor for both the table and its unique index: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1226(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1226(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE circles (\n    c circle,\n    EXCLUDE USING gist (c WITH &amp;&amp;)\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1222(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1222(para) 
 msgid "Create table <structname>circles</structname> with an exclusion constraint that prevents any two circles from overlapping: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1237(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1237(programlisting) 
 #, no-wrap
 msgid "\nCREATE TABLE cinemas (\n        id serial,\n        name text,\n        location text\n) TABLESPACE diskvol1;\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1234(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1234(para) 
 msgid "Create table <structname>cinemas</structname> in tablespace <structname>diskvol1</structname>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1248(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1248(programlisting) 
 #, no-wrap
 msgid "\nCREATE TYPE employee_type AS (name text, salary numeric);\n\nCREATE TABLE employees OF employee_type (\n    PRIMARY KEY (name),\n    salary WITH OPTIONS DEFAULT 1000\n);\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1246(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1246(para) 
 msgid "Create a composite type and a typed table: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1259(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1259(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1261(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1261(para) 
 msgid "The <command>CREATE TABLE</command> command conforms to the <acronym>SQL</acronym> standard, with exceptions listed below."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1267(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1267(title) 
 msgid "Temporary Tables"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1269(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1269(para) 
 msgid "Although the syntax of <literal>CREATE TEMPORARY TABLE</literal> resembles that of the SQL standard, the effect is not the same. In the standard, temporary tables are defined just once and automatically exist (starting with empty contents) in every session that needs them. <productname>PostgreSQL</productname> instead requires each session to issue its own <literal>CREATE TEMPORARY TABLE</literal> command for each temporary table to be used. This allows different sessions to use the same temporary table name for different purposes, whereas the standard's approach constrains all instances of a given temporary table name to have the same table structure."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1283(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1283(para) 
 msgid "The standard's definition of the behavior of temporary tables is widely ignored. <productname>PostgreSQL</productname>'s behavior on this point is similar to that of several other SQL databases."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1289(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1289(para) 
 msgid "The standard's distinction between global and local temporary tables is not in <productname>PostgreSQL</productname>, since that distinction depends on the concept of modules, which <productname>PostgreSQL</productname> does not have. For compatibility's sake, <productname>PostgreSQL</productname> will accept the <literal>GLOBAL</literal> and <literal>LOCAL</literal> keywords in a temporary table declaration, but they have no effect."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1299(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1299(para) 
 msgid "The <literal>ON COMMIT</literal> clause for temporary tables also resembles the SQL standard, but has some differences. If the <literal>ON COMMIT</literal> clause is omitted, SQL specifies that the default behavior is <literal>ON COMMIT DELETE ROWS</literal>. However, the default behavior in <productname>PostgreSQL</productname> is <literal>ON COMMIT PRESERVE ROWS</literal>. The <literal>ON COMMIT DROP</literal> option does not exist in SQL."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1311(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1311(title) 
 msgid "Non-deferred Uniqueness Constraints"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1313(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1313(para) 
 msgid "When a <literal>UNIQUE</literal> or <literal>PRIMARY KEY</literal> constraint is not deferrable, <productname>PostgreSQL</productname> checks for uniqueness immediately whenever a row is inserted or modified. The SQL standard says that uniqueness should be enforced only at the end of the statement; this makes a difference when, for example, a single command updates multiple key values. To obtain standard-compliant behavior, declare the constraint as <literal>DEFERRABLE</literal> but not deferred (i.e., <literal>INITIALLY IMMEDIATE</literal>). Be aware that this can be significantly slower than immediate uniqueness checking."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1328(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1328(title) 
 msgid "Column Check Constraints"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1330(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1330(para) 
 msgid "The SQL standard says that <literal>CHECK</literal> column constraints can only refer to the column they apply to; only <literal>CHECK</literal> table constraints can refer to multiple columns. <productname>PostgreSQL</productname> does not enforce this restriction; it treats column and table check constraints alike."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1340(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1340(title) 
 msgid "<literal>EXCLUDE</literal> Constraint"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1342(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1342(para) 
 msgid "The <literal>EXCLUDE</literal> constraint type is a <productname>PostgreSQL</productname> extension."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1349(quote) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1349(quote) 
 msgid "Constraint"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1351(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1351(para) 
 msgid "The <literal>NULL</literal><quote>constraint</quote> (actually a non-constraint) is a <productname>PostgreSQL</productname> extension to the SQL standard that is included for compatibility with some other database systems (and for symmetry with the <literal>NOT NULL</literal> constraint). Since it is the default for any column, its presence is simply noise."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1362(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1362(title) 
 msgid "Inheritance"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1364(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1364(para) 
 msgid "Multiple inheritance via the <literal>INHERITS</literal> clause is a <productname>PostgreSQL</productname> language extension. SQL:1999 and later define single inheritance using a different syntax and different semantics. SQL:1999-style inheritance is not yet supported by <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1375(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1375(title) 
 msgid "Zero-column Tables"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1377(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1377(para) 
 msgid "<productname>PostgreSQL</productname> allows a table of no columns to be created (for example, <literal>CREATE TABLE foo();</literal>). This is an extension from the SQL standard, which does not allow zero-column tables. Zero-column tables are not in themselves very useful, but disallowing them creates odd special cases for <command>ALTER TABLE DROP COLUMN</command>, so it seems cleaner to ignore this spec restriction."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1388(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1388(title) 
 msgid "<literal>WITH</literal> Clause"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1390(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1390(para) 
 msgid "The <literal>WITH</literal> clause is a <productname>PostgreSQL</productname> extension; neither storage parameters nor OIDs are in the standard."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1397(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1397(title) 
 msgid "Tablespaces"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1399(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1399(para) 
 msgid "The <productname>PostgreSQL</productname> concept of tablespaces is not part of the standard. Hence, the clauses <literal>TABLESPACE</literal> and <literal>USING INDEX TABLESPACE</literal> are extensions."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1407(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1407(title) 
 msgid "Typed Tables"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1409(para) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1409(para) 
 msgid "Typed tables implement a subset of the SQL standard. According to the standard, a typed table has columns corresponding to the underlying composite type as well as one other column that is the <quote>self-referencing column</quote>. PostgreSQL does not support these self-referencing columns explicitly, but the same effect can be had using the OID feature."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_table.xml:1422(title) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:1422(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-IQoj/ref/create_table.xml:0(None) 
+#: /tmp/cicero-xKXn/ref/create_table.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

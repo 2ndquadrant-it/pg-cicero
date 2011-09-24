@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-23 06:59+0200\n"
+"POT-Creation-Date: 2011-09-24 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,184 +9,184 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:9(refentrytitle) /tmp/cicero-IQoj/ref/create_aggregate.xml:15(refname) /tmp/cicero-IQoj/ref/create_aggregate.xml:20(primary) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:9(refentrytitle) /tmp/cicero-xKXn/ref/create_aggregate.xml:15(refname) /tmp/cicero-xKXn/ref/create_aggregate.xml:20(primary) 
 msgid "CREATE AGGREGATE"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:10(manvolnum) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:11(refmiscinfo) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:16(refpurpose) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:16(refpurpose) 
 msgid "define a new aggregate function"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:25(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:35(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:174(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:25(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:35(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:174(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:25(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:184(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:25(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:184(replaceable) 
 msgid "input_data_type"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:26(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:37(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:210(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:26(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:37(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:210(replaceable) 
 msgid "sfunc"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:27(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:38(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:229(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:27(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:38(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:229(replaceable) 
 msgid "state_data_type"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:28(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:39(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:238(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:28(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:39(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:238(replaceable) 
 msgid "ffunc"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:29(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:40(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:255(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:29(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:40(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:255(replaceable) 
 msgid "initial_condition"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:30(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:41(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:267(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:30(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:41(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:267(replaceable) 
 msgid "sort_operator"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:33(phrase) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:33(phrase) 
 msgid "or the old syntax"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:36(replaceable) /tmp/cicero-IQoj/ref/create_aggregate.xml:196(replaceable) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:36(replaceable) /tmp/cicero-xKXn/ref/create_aggregate.xml:196(replaceable) 
 msgid "base_type"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:24(synopsis) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE AGGREGATE <placeholder-1/> ( <placeholder-2/> [ , ... ] ) (\n    SFUNC = <placeholder-3/>,\n    STYPE = <placeholder-4/>\n    [ , FINALFUNC = <placeholder-5/> ]\n    [ , INITCOND = <placeholder-6/> ]\n    [ , SORTOP = <placeholder-7/> ]\n)\n\n<placeholder-8/>\n\nCREATE AGGREGATE <placeholder-9/> (\n    BASETYPE = <placeholder-10/>,\n    SFUNC = <placeholder-11/>,\n    STYPE = <placeholder-12/>\n    [ , FINALFUNC = <placeholder-13/> ]\n    [ , INITCOND = <placeholder-14/> ]\n    [ , SORTOP = <placeholder-15/> ]\n)\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:47(title) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:47(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:49(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:49(para) 
 msgid "<command>CREATE AGGREGATE</command> defines a new aggregate function. Some basic and commonly-used aggregate functions are included with the distribution; they are documented in <xref linkend=\"functions-aggregate\"/>. If one defines new types or needs an aggregate function not already provided, then <command>CREATE AGGREGATE</command> can be used to provide the desired features."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:58(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:58(para) 
 msgid "If a schema name is given (for example, <literal>CREATE AGGREGATE myschema.myagg ...</literal>) then the aggregate function is created in the specified schema. Otherwise it is created in the current schema."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:64(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:64(para) 
 msgid "An aggregate function is identified by its name and input data type(s). Two aggregates in the same schema can have the same name if they operate on different input types. The name and input data type(s) of an aggregate must also be distinct from the name and input data type(s) of every ordinary function in the same schema."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:81(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:81(programlisting) 
 #, no-wrap
 msgid "\n<replaceable class=\"PARAMETER\">sfunc</replaceable>( internal-state, next-data-values ) ---&gt; next-internal-state\n<replaceable class=\"PARAMETER\">ffunc</replaceable>( internal-state ) ---&gt; aggregate-value\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:73(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:73(para) 
 msgid "An aggregate function is made from one or two ordinary functions: a state transition function <replaceable class=\"PARAMETER\">sfunc</replaceable>, and an optional final calculation function <replaceable class=\"PARAMETER\">ffunc</replaceable>. These are used as follows: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:87(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:87(para) 
 msgid "<productname>PostgreSQL</productname> creates a temporary variable of data type <replaceable class=\"PARAMETER\">stype</replaceable> to hold the current internal state of the aggregate. At each input row, the aggregate argument value(s) are calculated and the state transition function is invoked with the current state value and the new argument value(s) to calculate a new internal state value. After all the rows have been processed, the final function is invoked once to calculate the aggregate's return value. If there is no final function then the ending state value is returned as-is."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:100(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:100(para) 
 msgid "An aggregate function can provide an initial condition, that is, an initial value for the internal state value. This is specified and stored in the database as a value of type <type>text</type>, but it must be a valid external representation of a constant of the state value data type. If it is not supplied then the state value starts out null."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:109(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:109(para) 
 msgid "If the state transition function is declared <quote>strict</quote>, then it cannot be called with null inputs. With such a transition function, aggregate execution behaves as follows. Rows with any null input values are ignored (the function is not called and the previous state value is retained). If the initial state value is null, then at the first row with all-nonnull input values, the first argument value replaces the state value, and the transition function is invoked at subsequent rows with all-nonnull input values. This is handy for implementing aggregates like <function>max</function>. Note that this behavior is only available when <replaceable class=\"PARAMETER\">state_data_type</replaceable> is the same as the first <replaceable class=\"PARAMETER\">input_data_type</replaceable>. When these types are different, you must supply a nonnull initial condition or use a nonstrict transition function."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:127(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:127(para) 
 msgid "If the state transition function is not strict, then it will be called unconditionally at each input row, and must deal with null inputs and null transition values for itself. This allows the aggregate author to have full control over the aggregate's handling of null values."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:134(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:134(para) 
 msgid "If the final function is declared <quote>strict</quote>, then it will not be called when the ending state value is null; instead a null result will be returned automatically. (Of course this is just the normal behavior of strict functions.) In any case the final function has the option of returning a null value. For example, the final function for <function>avg</function> returns null when it sees there were zero input rows."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:151(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:151(programlisting) 
 #, no-wrap
 msgid "\nSELECT agg(col) FROM tab;\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:155(programlisting) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:155(programlisting) 
 #, no-wrap
 msgid "\nSELECT col FROM tab ORDER BY col USING sortop LIMIT 1;\n"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:144(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:144(para) 
 msgid "Aggregates that behave like <function>MIN</function> or <function>MAX</function> can sometimes be optimized by looking into an index instead of scanning every input row. If this aggregate can be so optimized, indicate it by specifying a <firstterm>sort operator</firstterm>. The basic requirement is that the aggregate must yield the first element in the sort ordering induced by the operator; in other words: <placeholder-1/> must be equivalent to: <placeholder-2/> Further assumptions are that the aggregate ignores null inputs, and that it delivers a null result if and only if there were no non-null inputs. Ordinarily, a data type's <literal>&lt;</literal> operator is the proper sort operator for <function>MIN</function>, and <literal>&gt;</literal> is the proper sort operator for <function>MAX</function>. Note that the optimization will never actually take effect unless the specified operator is the <quote>less than</quote> or <quote>greater than</quote> strategy member of a B-tree index operator class."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:170(title) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:170(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:176(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:176(para) 
 msgid "The name (optionally schema-qualified) of the aggregate function to create."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:186(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:186(para) 
 msgid "An input data type on which this aggregate function operates. To create a zero-argument aggregate function, write <literal>*</literal> in place of the list of input data types. (An example of such an aggregate is <function>count(*)</function>.)"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:198(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:198(para) 
 msgid "In the old syntax for <command>CREATE AGGREGATE</command>, the input data type is specified by a <literal>basetype</literal> parameter rather than being written next to the aggregate name. Note that this syntax allows only one input parameter. To define a zero-argument aggregate function, specify the <literal>basetype</literal> as <literal>\"ANY\"</literal> (not <literal>*</literal>)."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:212(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:212(para) 
 msgid "The name of the state transition function to be called for each input row. For an <replaceable class=\"PARAMETER\">N</replaceable>-argument aggregate function, the <replaceable class=\"PARAMETER\">sfunc</replaceable> must take <replaceable class=\"PARAMETER\">N</replaceable>+1 arguments, the first being of type <replaceable class=\"PARAMETER\">state_data_type</replaceable> and the rest matching the declared input data type(s) of the aggregate. The function must return a value of type <replaceable class=\"PARAMETER\">state_data_type</replaceable>. This function takes the current state value and the current input data value(s), and returns the next state value."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:231(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:231(para) 
 msgid "The data type for the aggregate's state value."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:240(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:240(para) 
 msgid "The name of the final function called to compute the aggregate's result after all input rows have been traversed. The function must take a single argument of type <replaceable class=\"PARAMETER\">state_data_type</replaceable>. The return data type of the aggregate is defined as the return type of this function. If <replaceable class=\"PARAMETER\">ffunc</replaceable> is not specified, then the ending state value is used as the aggregate's result, and the return type is <replaceable class=\"PARAMETER\">state_data_type</replaceable>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:257(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:257(para) 
 msgid "The initial setting for the state value. This must be a string constant in the form accepted for the data type <replaceable class=\"PARAMETER\">state_data_type</replaceable>. If not specified, the state value starts out null."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:269(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:269(para) 
 msgid "The associated sort operator for a <function>MIN</function>- or <function>MAX</function>-like aggregate. This is just an operator name (possibly schema-qualified). The operator is assumed to have the same input data types as the aggregate (which must be a single-argument aggregate)."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:280(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:280(para) 
 msgid "The parameters of <command>CREATE AGGREGATE</command> can be written in any order, not just the order illustrated above."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:287(title) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:287(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:289(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:289(para) 
 msgid "See <xref linkend=\"xaggr\"/>."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:295(title) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:295(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:297(para) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:297(para) 
 msgid "<command>CREATE AGGREGATE</command> is a <productname>PostgreSQL</productname> language extension. The SQL standard does not provide for user-defined aggregate functions."
 msgstr ""
 
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:305(title) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:305(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-IQoj/ref/create_aggregate.xml:0(None) 
+#: /tmp/cicero-xKXn/ref/create_aggregate.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
