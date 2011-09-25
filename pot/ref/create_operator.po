@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-24 06:59+0200\n"
+"POT-Creation-Date: 2011-09-25 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,207 +9,207 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:9(refentrytitle) /tmp/cicero-xKXn/ref/create_operator.xml:15(refname) /tmp/cicero-xKXn/ref/create_operator.xml:20(primary) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:9(refentrytitle) /tmp/cicero-bqhb/ref/create_operator.xml:15(refname) /tmp/cicero-bqhb/ref/create_operator.xml:20(primary) 
 msgid "CREATE OPERATOR"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:10(manvolnum) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:11(refmiscinfo) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:16(refpurpose) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:16(refpurpose) 
 msgid "define a new operator"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:25(replaceable) /tmp/cicero-xKXn/ref/create_operator.xml:114(replaceable) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:25(replaceable) /tmp/cicero-bqhb/ref/create_operator.xml:114(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:26(replaceable) /tmp/cicero-xKXn/ref/create_operator.xml:129(replaceable) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:26(replaceable) /tmp/cicero-bqhb/ref/create_operator.xml:129(replaceable) 
 msgid "function_name"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:27(replaceable) /tmp/cicero-xKXn/ref/create_operator.xml:138(replaceable) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:27(replaceable) /tmp/cicero-bqhb/ref/create_operator.xml:138(replaceable) 
 msgid "left_type"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:27(replaceable) /tmp/cicero-xKXn/ref/create_operator.xml:148(replaceable) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:27(replaceable) /tmp/cicero-bqhb/ref/create_operator.xml:148(replaceable) 
 msgid "right_type"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:28(replaceable) /tmp/cicero-xKXn/ref/create_operator.xml:158(replaceable) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:28(replaceable) /tmp/cicero-bqhb/ref/create_operator.xml:158(replaceable) 
 msgid "com_op"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:28(replaceable) /tmp/cicero-xKXn/ref/create_operator.xml:167(replaceable) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:28(replaceable) /tmp/cicero-bqhb/ref/create_operator.xml:167(replaceable) 
 msgid "neg_op"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:29(replaceable) /tmp/cicero-xKXn/ref/create_operator.xml:176(replaceable) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:29(replaceable) /tmp/cicero-bqhb/ref/create_operator.xml:176(replaceable) 
 msgid "res_proc"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:29(replaceable) /tmp/cicero-xKXn/ref/create_operator.xml:185(replaceable) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:29(replaceable) /tmp/cicero-bqhb/ref/create_operator.xml:185(replaceable) 
 msgid "join_proc"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:24(synopsis) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE OPERATOR <placeholder-1/> (\n    PROCEDURE = <placeholder-2/>\n    [, LEFTARG = <placeholder-3/> ] [, RIGHTARG = <placeholder-4/> ]\n    [, COMMUTATOR = <placeholder-5/> ] [, NEGATOR = <placeholder-6/> ]\n    [, RESTRICT = <placeholder-7/> ] [, JOIN = <placeholder-8/> ]\n    [, HASHES ] [, MERGES ]\n)\n"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:36(title) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:38(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:38(para) 
 msgid "<command>CREATE OPERATOR</command> defines a new operator, <replaceable class=\"parameter\">name</replaceable>. The user who defines an operator becomes its owner. If a schema name is given then the operator is created in the specified schema. Otherwise it is created in the current schema."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:56(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:56(para) 
 msgid "<literal>--</literal> and <literal>/*</literal> cannot appear anywhere in an operator name, since they will be taken as the start of a comment."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:61(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:61(para) 
 msgid "A multicharacter operator name cannot end in <literal>+</literal> or <literal>-</literal>, unless the name also contains at least one of these characters: <literallayout>\n~ ! @ # % ^ &amp; | ` ?\n</literallayout> For example, <literal>@-</literal> is an allowed operator name, but <literal>*-</literal> is not. This restriction allows <productname>PostgreSQL</productname> to parse SQL-compliant commands without requiring spaces between tokens."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:75(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:75(para) 
 msgid "The use of <literal>=&gt;</literal> as an operator name is deprecated. It may be disallowed altogether in a future release."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:46(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:46(para) 
 msgid "The operator name is a sequence of up to <symbol>NAMEDATALEN</symbol>-1 (63 by default) characters from the following list: <literallayout>\n+ - * / &lt; &gt; = ~ ! @ # % ^ &amp; | ` ?\n</literallayout> There are a few restrictions on your choice of name: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:83(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:83(para) 
 msgid "The operator <literal>!=</literal> is mapped to <literal>&lt;&gt;</literal> on input, so these two names are always equivalent."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:89(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:89(para) 
 msgid "At least one of <literal>LEFTARG</literal> and <literal>RIGHTARG</literal> must be defined. For binary operators, both must be defined. For right unary operators, only <literal>LEFTARG</literal> should be defined, while for left unary operators only <literal>RIGHTARG</literal> should be defined."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:96(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:96(para) 
 msgid "The <replaceable class=\"parameter\">function_name</replaceable> procedure must have been previously defined using <command>CREATE FUNCTION</command> and must be defined to accept the correct number of arguments (either one or two) of the indicated types."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:103(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:103(para) 
 msgid "The other clauses specify optional operator optimization clauses. Their meaning is detailed in <xref linkend=\"xoper-optimization\"/>."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:110(title) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:110(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:116(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:116(para) 
 msgid "The name of the operator to be defined. See above for allowable characters. The name can be schema-qualified, for example <literal>CREATE OPERATOR myschema.+ (...)</literal>. If not, then the operator is created in the current schema. Two operators in the same schema can have the same name if they operate on different data types. This is called <firstterm>overloading</firstterm>."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:131(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:131(para) 
 msgid "The function used to implement this operator."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:140(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:140(para) 
 msgid "The data type of the operator's left operand, if any. This option would be omitted for a left-unary operator."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:150(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:150(para) 
 msgid "The data type of the operator's right operand, if any. This option would be omitted for a right-unary operator."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:160(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:160(para) 
 msgid "The commutator of this operator."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:169(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:169(para) 
 msgid "The negator of this operator."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:178(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:178(para) 
 msgid "The restriction selectivity estimator function for this operator."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:187(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:187(para) 
 msgid "The join selectivity estimator function for this operator."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:194(literal) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:194(literal) 
 msgid "HASHES"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:196(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:196(para) 
 msgid "Indicates this operator can support a hash join."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:203(literal) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:203(literal) 
 msgid "MERGES"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:205(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:205(para) 
 msgid "Indicates this operator can support a merge join."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:216(programlisting) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:216(programlisting) 
 #, no-wrap
 msgid "\nCOMMUTATOR = OPERATOR(myschema.===) ,\n"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:212(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:212(para) 
 msgid "To give a schema-qualified operator name in <replaceable class=\"parameter\">com_op</replaceable> or the other optional arguments, use the <literal>OPERATOR()</literal> syntax, for example: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:222(title) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:222(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:224(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:224(para) 
 msgid "Refer to <xref linkend=\"xoper\"/> for further information."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:228(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:228(para) 
 msgid "It is not possible to specify an operator's lexical precedence in <command>CREATE OPERATOR</command>, because the parser's precedence behavior is hard-wired. See <xref linkend=\"sql-precedence\"/> for precedence details."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:234(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:234(para) 
 msgid "The obsolete options <literal>SORT1</literal>, <literal>SORT2</literal>, <literal>LTCMP</literal>, and <literal>GTCMP</literal> were formerly used to specify the names of sort operators associated with a merge-joinable operator. This is no longer necessary, since information about associated operators is found by looking at B-tree operator families instead. If one of these options is given, it is ignored except for implicitly setting <literal>MERGES</literal> true."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:244(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:244(para) 
 msgid "Use <xref linkend=\"sql-dropoperator\"/> to delete user-defined operators from a database. Use <xref linkend=\"sql-alteroperator\"/> to modify operators in a database."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:252(title) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:252(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:257(programlisting) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:257(programlisting) 
 #, no-wrap
 msgid "\nCREATE OPERATOR === (\n    LEFTARG = box,\n    RIGHTARG = box,\n    PROCEDURE = area_equal_procedure,\n    COMMUTATOR = ===,\n    NEGATOR = !==,\n    RESTRICT = area_restriction_procedure,\n    JOIN = area_join_procedure,\n    HASHES, MERGES\n);\n"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:254(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:254(para) 
 msgid "The following command defines a new operator, area-equality, for the data type <type>box</type>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:272(title) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:272(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:274(para) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:274(para) 
 msgid "<command>CREATE OPERATOR</command> is a <productname>PostgreSQL</productname> extension. There are no provisions for user-defined operators in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-xKXn/ref/create_operator.xml:282(title) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:282(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-xKXn/ref/create_operator.xml:0(None) 
+#: /tmp/cicero-bqhb/ref/create_operator.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
