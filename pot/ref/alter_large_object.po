@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-24 06:57+0200\n"
+"POT-Creation-Date: 2011-09-25 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,69 +9,69 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:9(refentrytitle) /tmp/cicero-fCbP/ref/alter_large_object.xml:15(refname) /tmp/cicero-fCbP/ref/alter_large_object.xml:20(primary) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:9(refentrytitle) /tmp/cicero-nZPK/ref/alter_large_object.xml:15(refname) /tmp/cicero-nZPK/ref/alter_large_object.xml:20(primary) 
 msgid "ALTER LARGE OBJECT"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:10(manvolnum) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:11(refmiscinfo) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:16(refpurpose) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:16(refpurpose) 
 msgid "change the definition of a large object"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:25(replaceable) /tmp/cicero-fCbP/ref/alter_large_object.xml:45(replaceable) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:25(replaceable) /tmp/cicero-nZPK/ref/alter_large_object.xml:45(replaceable) 
 msgid "large_object_oid"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:25(replaceable) /tmp/cicero-fCbP/ref/alter_large_object.xml:54(replaceable) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:25(replaceable) /tmp/cicero-nZPK/ref/alter_large_object.xml:54(replaceable) 
 msgid "new_owner"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:24(synopsis) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER LARGE OBJECT <placeholder-1/> OWNER TO <placeholder-2/>\n"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:30(title) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:30(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:32(para) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:32(para) 
 msgid "<command>ALTER LARGE OBJECT</command> changes the definition of a large object. The only functionality is to assign a new owner. You must be superuser or owner of the large object to use <command>ALTER LARGE OBJECT</command>."
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:41(title) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:41(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:47(para) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:47(para) 
 msgid "OID of the large object to be altered"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:56(para) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:56(para) 
 msgid "The new owner of the large object"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:65(title) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:65(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:67(para) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:67(para) 
 msgid "There is no <command>ALTER LARGE OBJECT</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:74(title) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:74(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-fCbP/ref/alter_large_object.xml:0(None) 
+#: /tmp/cicero-nZPK/ref/alter_large_object.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
