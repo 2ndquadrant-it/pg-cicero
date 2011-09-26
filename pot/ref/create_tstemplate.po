@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-25 06:59+0200\n"
+"POT-Creation-Date: 2011-09-26 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,97 +9,97 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:9(refentrytitle) /tmp/cicero-bqhb/ref/create_tstemplate.xml:15(refname) /tmp/cicero-bqhb/ref/create_tstemplate.xml:20(primary) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:9(refentrytitle) /tmp/cicero-ZVyl/ref/create_tstemplate.xml:15(refname) /tmp/cicero-ZVyl/ref/create_tstemplate.xml:20(primary) 
 msgid "CREATE TEXT SEARCH TEMPLATE"
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:10(manvolnum) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:11(refmiscinfo) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:16(refpurpose) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:16(refpurpose) 
 msgid "define a new text search template"
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:25(replaceable) /tmp/cicero-bqhb/ref/create_tstemplate.xml:69(replaceable) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:25(replaceable) /tmp/cicero-ZVyl/ref/create_tstemplate.xml:69(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:26(replaceable) /tmp/cicero-bqhb/ref/create_tstemplate.xml:79(replaceable) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:26(replaceable) /tmp/cicero-ZVyl/ref/create_tstemplate.xml:79(replaceable) 
 msgid "init_function"
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:27(replaceable) /tmp/cicero-bqhb/ref/create_tstemplate.xml:88(replaceable) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:27(replaceable) /tmp/cicero-ZVyl/ref/create_tstemplate.xml:88(replaceable) 
 msgid "lexize_function"
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:24(synopsis) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE TEXT SEARCH TEMPLATE <placeholder-1/> (\n    [ INIT = <placeholder-2/> , ]\n    LEXIZE = <placeholder-3/>\n)\n"
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:33(title) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:33(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:35(para) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:35(para) 
 msgid "<command>CREATE TEXT SEARCH TEMPLATE</command> creates a new text search template. Text search templates define the functions that implement text search dictionaries. A template is not useful by itself, but must be instantiated as a dictionary to be used. The dictionary typically specifies parameters to be given to the template functions."
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:43(para) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:43(para) 
 msgid "If a schema name is given then the text search template is created in the specified schema. Otherwise it is created in the current schema."
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:48(para) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:48(para) 
 msgid "You must be a superuser to use <command>CREATE TEXT SEARCH TEMPLATE</command>. This restriction is made because an erroneous text search template definition could confuse or even crash the server. The reason for separating templates from dictionaries is that a template encapsulates the <quote>unsafe</quote> aspects of defining a dictionary. The parameters that can be set when defining a dictionary are safe for unprivileged users to set, and so creating a dictionary need not be a privileged operation."
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:59(para) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:59(para) 
 msgid "Refer to <xref linkend=\"textsearch\"/> for further information."
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:65(title) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:65(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:71(para) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:71(para) 
 msgid "The name of the text search template to be created. The name can be schema-qualified."
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:81(para) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:81(para) 
 msgid "The name of the init function for the template."
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:90(para) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:90(para) 
 msgid "The name of the lexize function for the template."
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:97(para) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:97(para) 
 msgid "The function names can be schema-qualified if necessary. Argument types are not given, since the argument list for each type of function is predetermined. The lexize function is required, but the init function is optional."
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:104(para) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:104(para) 
 msgid "The arguments can appear in any order, not only the one shown above."
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:110(title) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:110(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:112(para) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:112(para) 
 msgid "There is no <command>CREATE TEXT SEARCH TEMPLATE</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:120(title) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:120(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-bqhb/ref/create_tstemplate.xml:0(None) 
+#: /tmp/cicero-ZVyl/ref/create_tstemplate.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
