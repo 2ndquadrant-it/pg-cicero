@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-25 06:56+0200\n"
+"POT-Creation-Date: 2011-09-26 06:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,532 +9,532 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:5(title) /tmp/cicero-nZPK/pgupgrade.xml:8(primary) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:5(title) /tmp/cicero-cCcM/pgupgrade.xml:8(primary) 
 msgid "pg_upgrade"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:11(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:11(para) 
 msgid "<application>pg_upgrade</application> (formerly called <application>pg_migrator</application>) allows data stored in <productname>PostgreSQL</productname> data files to be upgraded to a later <productname>PostgreSQL</productname> major version without the data dump/reload typically required for major version upgrades, e.g. from 8.4.7 to the current major release of <productname>PostgreSQL</productname>. It is not required for minor version upgrades, e.g. from 9.0.1 to 9.0.4."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:20(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:20(para) 
 msgid "Major PostgreSQL releases regularly add new features that often change the layout of the system tables, but the internal data storage format rarely changes. <application>pg_upgrade</application> uses this fact to perform rapid upgrades by creating new system tables and simply reusing the old user data files. If a future major release ever changes the data storage format in a way that makes the old data format unreadable, <application>pg_upgrade</application> will not be usable for such upgrades. (The community will attempt to avoid such situations.)"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:32(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:32(para) 
 msgid "<application>pg_upgrade</application> does its best to make sure the old and new clusters are binary-compatible, e.g. by checking for compatible compile-time settings, including 32/64-bit binaries. It is important that any external modules are also binary compatible, though this cannot be checked by <application>pg_upgrade</application>."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:42(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:42(title) 
 msgid "Supported Versions"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:44(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:44(para) 
 msgid "pg_upgrade supports upgrades from 8.3.X and later to the current major release of <productname>PostgreSQL</productname>, including snapshot and alpha releases."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:53(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:53(title) 
 msgid "<application>pg_upgrade</application> Options"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:61(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:61(option) 
 msgid "-b"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:61(replaceable) /tmp/cicero-nZPK/pgupgrade.xml:62(replaceable) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:61(replaceable) /tmp/cicero-cCcM/pgupgrade.xml:62(replaceable) 
 msgid "old_bindir"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:62(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:62(option) 
 msgid "--old-bindir="
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:63(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:63(para) 
 msgid "the old cluster executable directory; environment variable <envar>OLDBINDIR</envar>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:68(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:68(option) 
 msgid "-B"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:68(replaceable) /tmp/cicero-nZPK/pgupgrade.xml:69(replaceable) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:68(replaceable) /tmp/cicero-cCcM/pgupgrade.xml:69(replaceable) 
 msgid "new_bindir"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:69(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:69(option) 
 msgid "--new-bindir="
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:70(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:70(para) 
 msgid "the new cluster executable directory; environment variable <envar>NEWBINDIR</envar>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:75(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:75(option) 
 msgid "-c"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:76(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:76(option) 
 msgid "--check"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:77(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:77(para) 
 msgid "check clusters only, don't change any data"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:81(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:81(option) 
 msgid "-d"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:81(replaceable) /tmp/cicero-nZPK/pgupgrade.xml:82(replaceable) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:81(replaceable) /tmp/cicero-cCcM/pgupgrade.xml:82(replaceable) 
 msgid "old_datadir"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:82(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:82(option) 
 msgid "--old-datadir="
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:83(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:83(para) 
 msgid "the old cluster data directory; environment variable <envar>OLDDATADIR</envar>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:88(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:88(option) 
 msgid "-D"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:88(replaceable) /tmp/cicero-nZPK/pgupgrade.xml:89(replaceable) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:88(replaceable) /tmp/cicero-cCcM/pgupgrade.xml:89(replaceable) 
 msgid "new_datadir"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:89(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:89(option) 
 msgid "--new-datadir="
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:90(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:90(para) 
 msgid "the new cluster data directory; environment variable <envar>NEWDATADIR</envar>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:95(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:95(option) 
 msgid "-g"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:96(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:96(option) 
 msgid "--debug"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:97(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:97(para) 
 msgid "enable debugging"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:101(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:101(option) 
 msgid "-G"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:101(replaceable) /tmp/cicero-nZPK/pgupgrade.xml:102(replaceable) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:101(replaceable) /tmp/cicero-cCcM/pgupgrade.xml:102(replaceable) 
 msgid "debug_filename"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:102(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:102(option) 
 msgid "--debugfile="
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:103(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:103(para) 
 msgid "output debugging activity to file"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:107(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:107(option) 
 msgid "-k"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:108(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:108(option) 
 msgid "--link"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:109(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:109(para) 
 msgid "use hard links instead of copying files to the new cluster"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:113(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:113(option) 
 msgid "-l"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:113(replaceable) /tmp/cicero-nZPK/pgupgrade.xml:114(replaceable) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:113(replaceable) /tmp/cicero-cCcM/pgupgrade.xml:114(replaceable) 
 msgid "log_filename"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:114(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:114(option) 
 msgid "--logfile="
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:115(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:115(para) 
 msgid "log session activity to file"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:119(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:119(option) 
 msgid "-p"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:119(replaceable) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:119(replaceable) 
 msgid "old_port_number"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:120(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:120(option) 
 msgid "--old-port="
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:120(replaceable) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:120(replaceable) 
 msgid "old_portnum"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:121(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:121(para) 
 msgid "the old cluster port number; environment variable <envar>PGPORT</envar>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:126(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:126(option) 
 msgid "-P"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:126(replaceable) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:126(replaceable) 
 msgid "new_port_number"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:127(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:127(option) 
 msgid "--new-port="
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:127(replaceable) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:127(replaceable) 
 msgid "new_portnum"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:128(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:128(para) 
 msgid "the new cluster port number; environment variable <envar>PGPORT</envar>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:133(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:133(option) 
 msgid "-u"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:133(replaceable) /tmp/cicero-nZPK/pgupgrade.xml:134(replaceable) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:133(replaceable) /tmp/cicero-cCcM/pgupgrade.xml:134(replaceable) 
 msgid "user_name"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:134(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:134(option) 
 msgid "--user="
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:135(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:135(para) 
 msgid "cluster's super user name; environment variable <envar>PGUSER</envar>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:140(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:140(option) 
 msgid "-v"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:141(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:141(option) 
 msgid "--verbose"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:142(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:142(para) 
 msgid "enable verbose output"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:146(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:146(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:147(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:147(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:148(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:148(para) 
 msgid "display version information, then exit"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:152(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:152(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:153(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:153(option) 
 msgid "-h"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:154(option) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:154(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:155(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:155(para) 
 msgid "show help, then exit"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:55(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:55(para) 
 msgid "<application>pg_upgrade</application> accepts the following command-line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:164(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:164(title) 
 msgid "Upgrade Steps"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:168(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:168(title) 
 msgid "Optionally move the old cluster"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:170(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:170(para) 
 msgid "If you are using a version-specific installation directory, e.g. <filename>/opt/PostgreSQL/8.4</filename>, you do not need to move the old cluster. The one-click installers all use version-specific installation directories."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:184(programlisting) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:184(programlisting) 
 #, no-wrap
 msgid "\nmv /usr/local/pgsql /usr/local/pgsql.old\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:176(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:176(para) 
 msgid "If your installation directory is not version-specific, e.g. <filename>/usr/local/pgsql</filename>, it is necessary to move the current PostgreSQL install directory so it does not interfere with the new <productname>PostgreSQL</productname> installation. Once the current <productname>PostgreSQL</productname> server is shut down, it is safe to rename the PostgreSQL installation directory; assuming the old directory is <filename>/usr/local/pgsql</filename>, you can do: <placeholder-1/> to rename the directory."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:192(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:192(title) 
 msgid "For source installs, build the new version"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:194(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:194(para) 
 msgid "Build the new PostgreSQL source with <command>configure</command> flags that are compatible with the old cluster. <application>pg_upgrade</application> will check <command>pg_controldata</command> to make sure all settings are compatible before starting the upgrade."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:202(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:202(title) 
 msgid "Install the new PostgreSQL binaries"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:204(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:204(para) 
 msgid "Install the new server's binaries and support files. You can use the same port numbers for both clusters, typically 5432, because the old and new clusters will not be running at the same time."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:214(programlisting) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:214(programlisting) 
 #, no-wrap
 msgid "\ngmake prefix=/usr/local/pgsql.new install\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:210(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:210(para) 
 msgid "For source installs, if you wish to install the new server in a custom location, use the <literal>prefix</literal> variable: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:221(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:221(title) 
 msgid "Install pg_upgrade and pg_upgrade_support"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:223(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:223(para) 
 msgid "Install the <application>pg_upgrade</application> binary and <application>pg_upgrade_support</application> library in the new PostgreSQL cluster."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:230(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:230(title) 
 msgid "Initialize the new PostgreSQL cluster"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:232(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:232(para) 
 msgid "Initialize the new cluster using <command>initdb</command>. Again, use compatible <command>initdb</command> flags that match the old cluster. Many prebuilt installers do this step automatically. There is no need to start the new cluster."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:242(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:242(title) 
 msgid "Install custom shared object files"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:244(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:244(para) 
 msgid "Install any custom shared object files (or DLLs) used by the old cluster into the new cluster, e.g. <filename>pgcrypto.so</filename>, whether they are from <filename>contrib</filename> or some other source. Do not install the schema definitions, e.g. <filename>pgcrypto.sql</filename>, because these will be upgraded from the old cluster."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:253(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:253(title) 
 msgid "Adjust authentication"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:255(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:255(para) 
 msgid "<command>pg_upgrade</command> will connect to the old and new servers several times, so you might want to set authentication to <literal>trust</literal> in <filename>pg_hba.conf</filename>, or if using <literal>md5</literal> authentication, use a <filename>~/.pgpass</filename> file (see <xref linkend=\"libpq-pgpass\"/>) to avoid being prompted repeatedly for a password."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:265(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:265(title) 
 msgid "Stop both servers"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:270(programlisting) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:270(programlisting) 
 #, no-wrap
 msgid "\npg_ctl -D /opt/PostgreSQL/8.4 stop\npg_ctl -D /opt/PostgreSQL/9.0 stop\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:277(programlisting) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:277(programlisting) 
 #, no-wrap
 msgid "\nNET STOP postgresql-8.4\nNET STOP postgresql-9.0\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:284(programlisting) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:284(programlisting) 
 #, no-wrap
 msgid "\nNET STOP pgsql-8.3  (<productname>PostgreSQL</productname> 8.3 and older used a different service name)\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:267(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:267(para) 
 msgid "Make sure both database servers are stopped using, on Unix, e.g.: <placeholder-1/> or on Windows, using the proper service names: <placeholder-2/> or <placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:291(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:291(title) 
 msgid "Run <application>pg_upgrade</application>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:293(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:293(para) 
 msgid "Always run the <application>pg_upgrade</application> binary of the new server, not the old one. <application>pg_upgrade</application> requires the specification of the old and new cluster's data and executable (<filename>bin</filename>) directories. You can also specify user and port values, and whether you want the data linked instead of copied (the default)."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:301(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:301(para) 
 msgid "If you use link mode, the upgrade will be much faster (no file copying), but you will not be able to access your old cluster once you start the new cluster after the upgrade. Link mode also requires that the old and new cluster data directories be in the same file system. See <literal>pg_upgrade --help</literal> for a full list of options."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:314(programlisting) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:314(programlisting) 
 #, no-wrap
 msgid "\nRUNAS /USER:postgres \"CMD.EXE\"\nSET PATH=%PATH%;C:\\Program Files\\PostgreSQL\\9.0\\bin;\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:321(programlisting) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:321(programlisting) 
 #, no-wrap
 msgid "\npg_upgrade.exe\n        --old-datadir \"C:/Program Files/PostgreSQL/8.4/data\"\n        --new-datadir \"C:/Program Files/PostgreSQL/9.0/data\"\n        --old-bindir \"C:/Program Files/PostgreSQL/8.4/bin\"\n        --new-bindir \"C:/Program Files/PostgreSQL/9.0/bin\"\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:310(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:310(para) 
 msgid "For Windows users, you must be logged into an administrative account, and then start a shell as the <literal>postgres</literal> user and set the proper path: <placeholder-1/> and then run <application>pg_upgrade</application> with quoted directories, e.g.: <placeholder-2/> Once started, <command>pg_upgrade</command> will verify the two clusters are compatible and then do the upgrade. You can use <command>pg_upgrade --check</command> to perform only the checks, even if the old server is still running. <command>pg_upgrade --check</command> will also outline any manual adjustments you will need to make after the upgrade. <command>pg_upgrade</command> requires write permission in the current directory."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:337(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:337(para) 
 msgid "Obviously, no one should be accessing the clusters during the upgrade. Consider using a non-default port number, e.g. 50432, for old and new clusters to avoid unintended client connections during the upgrade."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:344(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:344(para) 
 msgid "If an error occurs while restoring the database schema, <command>pg_upgrade</command> will exit and you will have to revert to the old cluster as outlined in <xref linkend=\"pgupgrade-step-revert\"/> below. To try <command>pg_upgrade</command> again, you will need to modify the old cluster so the pg_upgrade schema restore succeeds. If the problem is a contrib module, you might need to uninstall the contrib module from the old cluster and install it in the new cluster after the upgrade, assuming the module is not being used to store user data."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:356(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:356(title) 
 msgid "Restore <filename>pg_hba.conf</filename>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:358(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:358(para) 
 msgid "If you modified <filename>pg_hba.conf</filename> to use <literal>trust</literal>, restore its original authentication settings."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:365(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:365(title) 
 msgid "Post-Upgrade processing"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:374(programlisting) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:374(programlisting) 
 #, no-wrap
 msgid "\npsql --username postgres --file script.sql postgres\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:367(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:367(para) 
 msgid "If any post-upgrade processing is required, pg_upgrade will issue warnings as it completes. It will also generate script files that must be run by the administrator. The script files will connect to each database that needs post-upgrade processing. Each script should be run using: <placeholder-1/> The scripts can be run in any order and can be deleted once they have been run."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:383(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:383(para) 
 msgid "In general it is unsafe to access tables referenced in rebuild scripts until the rebuild scripts have run to completion; doing so could yield incorrect results or poor performance. Tables not referenced in rebuild scripts can be accessed immediately."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:393(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:393(title) 
 msgid "Statistics"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:395(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:395(para) 
 msgid "Because optimizer statistics are not transferred by <command>pg_upgrade</command>, you will be instructed to run a command to regenerate that information at the end of the upgrade."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:403(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:403(title) 
 msgid "Delete old cluster"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:405(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:405(para) 
 msgid "Once you are satisfied with the upgrade, you can delete the old cluster's data directories by running the script mentioned when <command>pg_upgrade</command> completes. You can also delete the old installation directories (e.g. <filename>bin</filename>, <filename>share</filename>)."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:415(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:415(title) 
 msgid "Reverting to old cluster"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:423(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:423(para) 
 msgid "If you ran <command>pg_upgrade</command> with <option>--check</option>, no modifications were made to the old cluster and you can re-use it anytime."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:431(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:431(para) 
 msgid "If you ran <command>pg_upgrade</command> with <option>--link</option>, the data files are shared between the old and new cluster. If you started the new cluster, the new server has written to those shared files and it is unsafe to use the old cluster."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:441(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:441(para) 
 msgid "If you ran <command>pg_upgrade</command><emphasis>without</emphasis><option>--link</option> or did not start the new server, the old cluster was not modified except that an <literal>.old</literal> suffix was appended to <filename>$PGDATA/global/pg_control</filename> and perhaps tablespace directories. To reuse the old cluster, remove the <filename>.old</filename> suffix from <filename>$PGDATA/global/pg_control</filename>. and, if upgrading to 8.4 or earlier, remove the tablespace directories created by the upgrade and remove the <filename>.old</filename> suffix from the tablespace directory names; then you can restart the old cluster."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:417(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:417(para) 
 msgid "If, after running <command>pg_upgrade</command>, you wish to revert to the old cluster, there are several options: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:464(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:464(title) 
 msgid "Limitations in Upgrading <emphasis>from</emphasis> PostgreSQL 8.3"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:473(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:473(para) 
 msgid "a <type>tsquery</type> data type"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:478(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:478(para) 
 msgid "data type <type>name</type> and is not the first column"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:466(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:466(para) 
 msgid "Upgrading from PostgreSQL 8.3 has additional restrictions not present when upgrading from later PostgreSQL releases. For example, pg_upgrade will not work for upgrading from 8.3 if a user column is defined as: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:485(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:485(para) 
 msgid "You must drop any such columns and upgrade them manually."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:493(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:493(para) 
 msgid "a user column is of data type <type>tsvector</type>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:489(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:489(para) 
 msgid "pg_upgrade will require a table rebuild if: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:504(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:504(para) 
 msgid "an index is of type hash or GIN"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:509(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:509(para) 
 msgid "an index uses <function>bpchar_pattern_ops</function>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:500(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:500(para) 
 msgid "pg_upgrade will require a reindex if: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:516(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:516(para) 
 msgid "Also, the default datetime storage format changed to integer after <productname>PostgreSQL</productname> 8.3. pg_upgrade will check that the datetime storage format used by the old and new clusters match. Make sure your new cluster is built with the configure flag <option>--disable-integer-datetimes</option>."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:523(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:523(para) 
 msgid "For Windows users, note that due to different integer datetimes settings used by the one-click installer and the MSI installer, it is only possible to upgrade from version 8.3 of the one-click distribution to version 8.4 or later of the one-click distribution. It is not possible to upgrade from the MSI installer to the one-click installer."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:534(title) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:534(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:536(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:536(para) 
 msgid "<application>pg_upgrade</application> does not support upgrading of databases containing these <type>reg*</type> OID-referencing system data types: <type>regproc</type>, <type>regprocedure</type>, <type>regoper</type>, <type>regoperator</type>, <type>regclass</type>, <type>regconfig</type>, and <type>regdictionary</type>. (<type>regtype</type> can be upgraded.)"
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:544(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:544(para) 
 msgid "All failure, rebuild, and reindex cases will be reported by <application>pg_upgrade</application> if they affect your installation; post-upgrade scripts to rebuild tables and indexes will be generated automatically."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:551(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:551(para) 
 msgid "For deployment testing, create a schema-only copy of the old cluster, insert dummy data, and upgrade that."
 msgstr ""
 
-#: /tmp/cicero-nZPK/pgupgrade.xml:556(para) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:556(para) 
 msgid "If you want to use link mode and you don't want your old cluster to be modified when the new cluster is started, make a copy of the old cluster and upgrade that with link mode. To make a valid copy of the old cluster, use <command>rsync</command> to create a dirty copy of the old cluster while the server is running, then shut down the old server and run <command>rsync</command> again to update the copy with any changes to make it consistent."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-nZPK/pgupgrade.xml:0(None) 
+#: /tmp/cicero-cCcM/pgupgrade.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

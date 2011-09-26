@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-25 06:57+0200\n"
+"POT-Creation-Date: 2011-09-26 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,126 +9,126 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-nZPK/ref/begin.xml:9(refentrytitle) /tmp/cicero-nZPK/ref/begin.xml:15(refname) /tmp/cicero-nZPK/ref/begin.xml:20(primary) 
+#: /tmp/cicero-cCcM/ref/begin.xml:9(refentrytitle) /tmp/cicero-cCcM/ref/begin.xml:15(refname) /tmp/cicero-cCcM/ref/begin.xml:20(primary) 
 msgid "BEGIN"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:10(manvolnum) 
+#: /tmp/cicero-cCcM/ref/begin.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:11(refmiscinfo) 
+#: /tmp/cicero-cCcM/ref/begin.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:16(refpurpose) 
+#: /tmp/cicero-cCcM/ref/begin.xml:16(refpurpose) 
 msgid "start a transaction block"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:25(replaceable) /tmp/cicero-nZPK/ref/begin.xml:27(replaceable) 
+#: /tmp/cicero-cCcM/ref/begin.xml:25(replaceable) /tmp/cicero-cCcM/ref/begin.xml:27(replaceable) 
 msgid "transaction_mode"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:27(phrase) 
+#: /tmp/cicero-cCcM/ref/begin.xml:27(phrase) 
 msgid "where <placeholder-1/> is one of:"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:24(synopsis) 
+#: /tmp/cicero-cCcM/ref/begin.xml:24(synopsis) 
 #, no-wrap
 msgid "\nBEGIN [ WORK | TRANSACTION ] [ <placeholder-1/> [, ...] ]\n\n<placeholder-2/>\n\n    ISOLATION LEVEL { SERIALIZABLE | REPEATABLE READ | READ COMMITTED | READ UNCOMMITTED }\n    READ WRITE | READ ONLY\n    [ NOT ] DEFERRABLE\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:36(title) 
+#: /tmp/cicero-cCcM/ref/begin.xml:36(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:38(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:38(para) 
 msgid "<command>BEGIN</command> initiates a transaction block, that is, all statements after a <command>BEGIN</command> command will be executed in a single transaction until an explicit <xref linkend=\"sql-commit\"/> or <xref linkend=\"sql-rollback\"/> is given. By default (without <command>BEGIN</command>), <productname>PostgreSQL</productname> executes transactions in <quote>autocommit</quote> mode, that is, each statement is executed in its own transaction and a commit is implicitly performed at the end of the statement (if execution was successful, otherwise a rollback is done)."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:52(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:52(para) 
 msgid "Statements are executed more quickly in a transaction block, because transaction start/commit requires significant CPU and disk activity. Execution of multiple statements inside a transaction is also useful to ensure consistency when making several related changes: other sessions will be unable to see the intermediate states wherein not all the related updates have been done."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:61(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:61(para) 
 msgid "If the isolation level, read/write mode, or deferrable mode is specified, the new transaction has those characteristics, as if <xref linkend=\"sql-set-transaction\"/> was executed."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:70(title) 
+#: /tmp/cicero-cCcM/ref/begin.xml:70(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:74(literal) 
+#: /tmp/cicero-cCcM/ref/begin.xml:74(literal) 
 msgid "WORK"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:75(literal) 
+#: /tmp/cicero-cCcM/ref/begin.xml:75(literal) 
 msgid "TRANSACTION"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:77(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:77(para) 
 msgid "Optional key words. They have no effect."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:84(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:84(para) 
 msgid "Refer to <xref linkend=\"sql-set-transaction\"/> for information on the meaning of the other parameters to this statement."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:91(title) 
+#: /tmp/cicero-cCcM/ref/begin.xml:91(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:93(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:93(para) 
 msgid "<xref linkend=\"sql-start-transaction\"/> has the same functionality as <command>BEGIN</command>."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:98(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:98(para) 
 msgid "Use <xref linkend=\"sql-commit\"/> or <xref linkend=\"sql-rollback\"/> to terminate a transaction block."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:104(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:104(para) 
 msgid "Issuing <command>BEGIN</command> when already inside a transaction block will provoke a warning message. The state of the transaction is not affected. To nest transactions within a transaction block, use savepoints (see <xref linkend=\"sql-savepoint\"/>)."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:111(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:111(para) 
 msgid "For reasons of backwards compatibility, the commas between successive <replaceable class=\"parameter\">transaction_modes</replaceable> can be omitted."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:119(title) 
+#: /tmp/cicero-cCcM/ref/begin.xml:119(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:124(programlisting) 
+#: /tmp/cicero-cCcM/ref/begin.xml:124(programlisting) 
 #, no-wrap
 msgid "\nBEGIN;\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:121(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:121(para) 
 msgid "To begin a transaction block: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:130(title) 
+#: /tmp/cicero-cCcM/ref/begin.xml:130(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:132(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:132(para) 
 msgid "<command>BEGIN</command> is a <productname>PostgreSQL</productname> language extension. It is equivalent to the SQL-standard command <xref linkend=\"sql-start-transaction\"/>, whose reference page contains additional compatibility information."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:139(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:139(para) 
 msgid "The <literal>DEFERRABLE</literal><replaceable class=\"parameter\">transaction_mode</replaceable> is a <productname>PostgreSQL</productname> language extension."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:145(para) 
+#: /tmp/cicero-cCcM/ref/begin.xml:145(para) 
 msgid "Incidentally, the <literal>BEGIN</literal> key word is used for a different purpose in embedded SQL. You are advised to be careful about the transaction semantics when porting database applications."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/begin.xml:153(title) 
+#: /tmp/cicero-cCcM/ref/begin.xml:153(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-nZPK/ref/begin.xml:0(None) 
+#: /tmp/cicero-cCcM/ref/begin.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-25 06:55+0200\n"
+"POT-Creation-Date: 2011-09-26 06:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,57 +9,57 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-nZPK/auth-delay.xml:5(title) /tmp/cicero-nZPK/auth-delay.xml:8(primary) 
+#: /tmp/cicero-cCcM/auth-delay.xml:5(title) /tmp/cicero-cCcM/auth-delay.xml:8(primary) 
 msgid "auth_delay"
 msgstr ""
 
-#: /tmp/cicero-nZPK/auth-delay.xml:11(para) 
+#: /tmp/cicero-cCcM/auth-delay.xml:11(para) 
 msgid "<filename>auth_delay</filename> causes the server to pause briefly before reporting authentication failure, to make brute-force attacks on database passwords more difficult. Note that it does nothing to prevent denial-of-service attacks, and may even exacerbate them, since processes that are waiting before reporting authentication failure will still consume connection slots."
 msgstr ""
 
-#: /tmp/cicero-nZPK/auth-delay.xml:20(para) 
+#: /tmp/cicero-cCcM/auth-delay.xml:20(para) 
 msgid "In order to function, this module must be loaded via <xref linkend=\"guc-shared-preload-libraries\"/> in <filename>postgresql.conf</filename>."
 msgstr ""
 
-#: /tmp/cicero-nZPK/auth-delay.xml:26(title) 
+#: /tmp/cicero-cCcM/auth-delay.xml:26(title) 
 msgid "Configuration Parameters"
 msgstr ""
 
-#: /tmp/cicero-nZPK/auth-delay.xml:30(term) 
+#: /tmp/cicero-cCcM/auth-delay.xml:30(term) 
 msgid "<varname>auth_delay.milliseconds</varname> (<type>int</type>)"
 msgstr ""
 
-#: /tmp/cicero-nZPK/auth-delay.xml:34(varname) 
+#: /tmp/cicero-cCcM/auth-delay.xml:34(varname) 
 msgid "auth_delay.milliseconds"
 msgstr ""
 
-#: /tmp/cicero-nZPK/auth-delay.xml:34(primary) 
+#: /tmp/cicero-cCcM/auth-delay.xml:34(primary) 
 msgid "<placeholder-1/> configuration parameter"
 msgstr ""
 
-#: /tmp/cicero-nZPK/auth-delay.xml:37(para) 
+#: /tmp/cicero-cCcM/auth-delay.xml:37(para) 
 msgid "The number of milliseconds to wait before reporting an authentication failure. The default is 0."
 msgstr ""
 
-#: /tmp/cicero-nZPK/auth-delay.xml:45(para) 
+#: /tmp/cicero-cCcM/auth-delay.xml:45(para) 
 msgid "In order to set these parameters in your <filename>postgresql.conf</filename> file, you will need to add <literal>auth_delay</literal> to <xref linkend=\"guc-custom-variable-classes\"/>. Typical usage might be:"
 msgstr ""
 
-#: /tmp/cicero-nZPK/auth-delay.xml:51(programlisting) 
+#: /tmp/cicero-cCcM/auth-delay.xml:51(programlisting) 
 #, no-wrap
 msgid "\n# postgresql.conf\nshared_preload_libraries = 'auth_delay'\n\ncustom_variable_classes = 'auth_delay'\nauth_delay.milliseconds = '500'\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/auth-delay.xml:61(title) 
+#: /tmp/cicero-cCcM/auth-delay.xml:61(title) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-nZPK/auth-delay.xml:63(para) 
+#: /tmp/cicero-cCcM/auth-delay.xml:63(para) 
 msgid "KaiGai Kohei <email>kaigai@ak.jp.nec.com</email>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-nZPK/auth-delay.xml:0(None) 
+#: /tmp/cicero-cCcM/auth-delay.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

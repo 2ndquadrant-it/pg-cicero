@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-25 06:57+0200\n"
+"POT-Creation-Date: 2011-09-26 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,89 +9,89 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:9(refentrytitle) /tmp/cicero-nZPK/ref/deallocate.xml:15(refname) /tmp/cicero-nZPK/ref/deallocate.xml:20(primary) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:9(refentrytitle) /tmp/cicero-cCcM/ref/deallocate.xml:15(refname) /tmp/cicero-cCcM/ref/deallocate.xml:20(primary) 
 msgid "DEALLOCATE"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:10(manvolnum) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:11(refmiscinfo) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:16(refpurpose) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:16(refpurpose) 
 msgid "deallocate a prepared statement"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:24(primary) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:24(primary) 
 msgid "prepared statements"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:25(secondary) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:25(secondary) 
 msgid "removing"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:30(replaceable) /tmp/cicero-nZPK/ref/deallocate.xml:63(replaceable) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:30(replaceable) /tmp/cicero-cCcM/ref/deallocate.xml:63(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:29(synopsis) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:29(synopsis) 
 #, no-wrap
 msgid "\nDEALLOCATE [ PREPARE ] { <placeholder-1/> | ALL }\n"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:35(title) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:35(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:37(para) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:37(para) 
 msgid "<command>DEALLOCATE</command> is used to deallocate a previously prepared SQL statement. If you do not explicitly deallocate a prepared statement, it is deallocated when the session ends."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:43(para) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:43(para) 
 msgid "For more information on prepared statements, see <xref linkend=\"sql-prepare\"/>."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:50(title) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:50(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:54(literal) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:54(literal) 
 msgid "PREPARE"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:56(para) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:56(para) 
 msgid "This key word is ignored."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:65(para) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:65(para) 
 msgid "The name of the prepared statement to deallocate."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:72(literal) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:72(literal) 
 msgid "ALL"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:74(para) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:74(para) 
 msgid "Deallocate all prepared statements."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:83(title) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:83(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:85(para) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:85(para) 
 msgid "The SQL standard includes a <command>DEALLOCATE</command> statement, but it is only for use in embedded SQL."
 msgstr ""
 
-#: /tmp/cicero-nZPK/ref/deallocate.xml:92(title) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:92(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-nZPK/ref/deallocate.xml:0(None) 
+#: /tmp/cicero-cCcM/ref/deallocate.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
