@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-26 06:57+0200\n"
+"POT-Creation-Date: 2011-09-26 12:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,353 +9,353 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:9(refentrytitle) /tmp/cicero-cCcM/ref/create_role.xml:15(refname) /tmp/cicero-cCcM/ref/create_role.xml:20(primary) 
+#: /tmp/cicero-wtof/ref/create_role.xml:9(refentrytitle) /tmp/cicero-wtof/ref/create_role.xml:15(refname) /tmp/cicero-wtof/ref/create_role.xml:20(primary) 
 msgid "CREATE ROLE"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:10(manvolnum) 
+#: /tmp/cicero-wtof/ref/create_role.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:11(refmiscinfo) 
+#: /tmp/cicero-wtof/ref/create_role.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:16(refpurpose) 
+#: /tmp/cicero-wtof/ref/create_role.xml:16(refpurpose) 
 msgid "define a new database role"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:25(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:74(replaceable) 
+#: /tmp/cicero-wtof/ref/create_role.xml:25(replaceable) /tmp/cicero-wtof/ref/create_role.xml:74(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:25(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:27(replaceable) 
+#: /tmp/cicero-wtof/ref/create_role.xml:25(replaceable) /tmp/cicero-wtof/ref/create_role.xml:27(replaceable) 
 msgid "option"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:27(phrase) 
+#: /tmp/cicero-wtof/ref/create_role.xml:27(phrase) 
 msgid "where <placeholder-1/> can be:"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:36(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:196(replaceable) 
+#: /tmp/cicero-wtof/ref/create_role.xml:36(replaceable) /tmp/cicero-wtof/ref/create_role.xml:196(replaceable) 
 msgid "connlimit"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:37(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:206(replaceable) 
+#: /tmp/cicero-wtof/ref/create_role.xml:37(replaceable) /tmp/cicero-wtof/ref/create_role.xml:206(replaceable) 
 msgid "password"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:38(replaceable) 
+#: /tmp/cicero-wtof/ref/create_role.xml:38(replaceable) 
 msgid "timestamp"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:39(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:40(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:41(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:42(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:43(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:258(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:270(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:279(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:290(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:302(replaceable) 
+#: /tmp/cicero-wtof/ref/create_role.xml:39(replaceable) /tmp/cicero-wtof/ref/create_role.xml:40(replaceable) /tmp/cicero-wtof/ref/create_role.xml:41(replaceable) /tmp/cicero-wtof/ref/create_role.xml:42(replaceable) /tmp/cicero-wtof/ref/create_role.xml:43(replaceable) /tmp/cicero-wtof/ref/create_role.xml:258(replaceable) /tmp/cicero-wtof/ref/create_role.xml:270(replaceable) /tmp/cicero-wtof/ref/create_role.xml:279(replaceable) /tmp/cicero-wtof/ref/create_role.xml:290(replaceable) /tmp/cicero-wtof/ref/create_role.xml:302(replaceable) 
 msgid "role_name"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:44(replaceable) /tmp/cicero-cCcM/ref/create_role.xml:312(replaceable) 
+#: /tmp/cicero-wtof/ref/create_role.xml:44(replaceable) /tmp/cicero-wtof/ref/create_role.xml:312(replaceable) 
 msgid "uid"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:24(synopsis) 
+#: /tmp/cicero-wtof/ref/create_role.xml:24(synopsis) 
 #, no-wrap
 msgid "\nCREATE ROLE <placeholder-1/> [ [ WITH ] <placeholder-2/> [ ... ] ]\n\n<placeholder-3/>\n\n      SUPERUSER | NOSUPERUSER\n    | CREATEDB | NOCREATEDB\n    | CREATEROLE | NOCREATEROLE\n    | CREATEUSER | NOCREATEUSER\n    | INHERIT | NOINHERIT\n    | LOGIN | NOLOGIN\n    | REPLICATION | NOREPLICATION\n    | CONNECTION LIMIT <placeholder-4/>\n    | [ ENCRYPTED | UNENCRYPTED ] PASSWORD '<placeholder-5/>'\n    | VALID UNTIL '<placeholder-6/>'\n    | IN ROLE <placeholder-7/> [, ...]\n    | IN GROUP <placeholder-8/> [, ...]\n    | ROLE <placeholder-9/> [, ...]\n    | ADMIN <placeholder-10/> [, ...]\n    | USER <placeholder-11/> [, ...]\n    | SYSID <placeholder-12/>\n"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:49(title) 
+#: /tmp/cicero-wtof/ref/create_role.xml:49(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:51(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:51(para) 
 msgid "<command>CREATE ROLE</command> adds a new role to a <productname>PostgreSQL</productname> database cluster. A role is an entity that can own database objects and have database privileges; a role can be considered a <quote>user</quote>, a <quote>group</quote>, or both depending on how it is used. Refer to <xref linkend=\"user-manag\"/> and <xref linkend=\"client-authentication\"/> for information about managing users and authentication. You must have <literal>CREATEROLE</literal> privilege or be a database superuser to use this command."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:63(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:63(para) 
 msgid "Note that roles are defined at the database cluster level, and so are valid in all databases in the cluster."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:70(title) 
+#: /tmp/cicero-wtof/ref/create_role.xml:70(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:76(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:76(para) 
 msgid "The name of the new role."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:83(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:83(literal) 
 msgid "SUPERUSER"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:84(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:84(literal) 
 msgid "NOSUPERUSER"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:86(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:86(para) 
 msgid "These clauses determine whether the new role is a <quote>superuser</quote>, who can override all access restrictions within the database. Superuser status is dangerous and should be used only when really needed. You must yourself be a superuser to create a new superuser. If not specified, <literal>NOSUPERUSER</literal> is the default."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:98(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:98(literal) 
 msgid "CREATEDB"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:99(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:99(literal) 
 msgid "NOCREATEDB"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:101(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:101(para) 
 msgid "These clauses define a role's ability to create databases. If <literal>CREATEDB</literal> is specified, the role being defined will be allowed to create new databases. Specifying <literal>NOCREATEDB</literal> will deny a role the ability to create databases. If not specified, <literal>NOCREATEDB</literal> is the default."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:113(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:113(literal) 
 msgid "CREATEROLE"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:114(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:114(literal) 
 msgid "NOCREATEROLE"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:116(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:116(para) 
 msgid "These clauses determine whether a role will be permitted to create new roles (that is, execute <command>CREATE ROLE</command>). A role with <literal>CREATEROLE</literal> privilege can also alter and drop other roles. If not specified, <literal>NOCREATEROLE</literal> is the default."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:128(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:128(literal) 
 msgid "CREATEUSER"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:129(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:129(literal) 
 msgid "NOCREATEUSER"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:131(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:131(para) 
 msgid "These clauses are an obsolete, but still accepted, spelling of <literal>SUPERUSER</literal> and <literal>NOSUPERUSER</literal>. Note that they are <emphasis>not</emphasis> equivalent to <literal>CREATEROLE</literal> as one might naively expect!"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:141(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:141(literal) 
 msgid "INHERIT"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:142(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:142(literal) 
 msgid "NOINHERIT"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:144(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:144(para) 
 msgid "These clauses determine whether a role <quote>inherits</quote> the privileges of roles it is a member of. A role with the <literal>INHERIT</literal> attribute can automatically use whatever database privileges have been granted to all roles it is directly or indirectly a member of. Without <literal>INHERIT</literal>, membership in another role only grants the ability to <command>SET ROLE</command> to that other role; the privileges of the other role are only available after having done so. If not specified, <literal>INHERIT</literal> is the default."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:161(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:161(literal) 
 msgid "LOGIN"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:162(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:162(literal) 
 msgid "NOLOGIN"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:164(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:164(para) 
 msgid "These clauses determine whether a role is allowed to log in; that is, whether the role can be given as the initial session authorization name during client connection. A role having the <literal>LOGIN</literal> attribute can be thought of as a user. Roles without this attribute are useful for managing database privileges, but are not users in the usual sense of the word. If not specified, <literal>NOLOGIN</literal> is the default, except when <command>CREATE ROLE</command> is invoked through its alternative spelling <command>CREATE USER</command>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:180(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:180(literal) 
 msgid "REPLICATION"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:181(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:181(literal) 
 msgid "NOREPLICATION"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:183(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:183(para) 
 msgid "These clauses determine whether a role is allowed to initiate streaming replication or put the system in and out of backup mode. A role having the <literal>REPLICATION</literal> attribute is a very highly privileged role, and should only be used on roles actually used for replication. If not specified, <literal>NOREPLICATION</literal> is the default for all roles except superusers."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:196(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:196(literal) 
 msgid "CONNECTION LIMIT"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:198(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:198(para) 
 msgid "If role can log in, this specifies how many concurrent connections the role can make. -1 (the default) means no limit."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:206(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:206(literal) 
 msgid "PASSWORD"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:208(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:208(para) 
 msgid "Sets the role's password. (A password is only of use for roles having the <literal>LOGIN</literal> attribute, but you can nonetheless define one for roles without it.) If you do not plan to use password authentication you can omit this option. If no password is specified, the password will be set to null and password authentication will always fail for that user. A null password can optionally be written explicitly as <literal>PASSWORD NULL</literal>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:222(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:222(literal) 
 msgid "ENCRYPTED"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:223(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:223(literal) 
 msgid "UNENCRYPTED"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:225(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:225(para) 
 msgid "These key words control whether the password is stored encrypted in the system catalogs. (If neither is specified, the default behavior is determined by the configuration parameter <xref linkend=\"guc-password-encryption\"/>.) If the presented password string is already in MD5-encrypted format, then it is stored encrypted as-is, regardless of whether <literal>ENCRYPTED</literal> or <literal>UNENCRYPTED</literal> is specified (since the system cannot decrypt the specified encrypted password string). This allows reloading of encrypted passwords during dump/restore."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:238(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:238(para) 
 msgid "Note that older clients might lack support for the MD5 authentication mechanism that is needed to work with passwords that are stored encrypted."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:247(term) 
+#: /tmp/cicero-wtof/ref/create_role.xml:247(term) 
 msgid "<literal>VALID UNTIL</literal> '<replaceable class=\"parameter\">timestamp</replaceable>'"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:249(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:249(para) 
 msgid "The <literal>VALID UNTIL</literal> clause sets a date and time after which the role's password is no longer valid. If this clause is omitted the password will be valid for all time."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:258(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:258(literal) 
 msgid "IN ROLE"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:260(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:260(para) 
 msgid "The <literal>IN ROLE</literal> clause lists one or more existing roles to which the new role will be immediately added as a new member. (Note that there is no option to add the new role as an administrator; use a separate <command>GRANT</command> command to do that.)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:270(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:270(literal) 
 msgid "IN GROUP"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:272(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:272(para) 
 msgid "<literal>IN GROUP</literal> is an obsolete spelling of <literal>IN ROLE</literal>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:279(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:279(literal) 
 msgid "ROLE"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:281(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:281(para) 
 msgid "The <literal>ROLE</literal> clause lists one or more existing roles which are automatically added as members of the new role. (This in effect makes the new role a <quote>group</quote>.)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:290(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:290(literal) 
 msgid "ADMIN"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:292(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:292(para) 
 msgid "The <literal>ADMIN</literal> clause is like <literal>ROLE</literal>, but the named roles are added to the new role <literal>WITH ADMIN OPTION</literal>, giving them the right to grant membership in this role to others."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:302(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:302(literal) 
 msgid "USER"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:304(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:304(para) 
 msgid "The <literal>USER</literal> clause is an obsolete spelling of the <literal>ROLE</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:312(literal) 
+#: /tmp/cicero-wtof/ref/create_role.xml:312(literal) 
 msgid "SYSID"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:314(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:314(para) 
 msgid "The <literal>SYSID</literal> clause is ignored, but is accepted for backwards compatibility."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:324(title) 
+#: /tmp/cicero-wtof/ref/create_role.xml:324(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:326(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:326(para) 
 msgid "Use <xref linkend=\"sql-alterrole\"/> to change the attributes of a role, and <xref linkend=\"sql-droprole\"/> to remove a role. All the attributes specified by <command>CREATE ROLE</command> can be modified by later <command>ALTER ROLE</command> commands."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:334(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:334(para) 
 msgid "The preferred way to add and remove members of roles that are being used as groups is to use <xref linkend=\"sql-grant\"/> and <xref linkend=\"sql-revoke\"/>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:341(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:341(para) 
 msgid "The <literal>VALID UNTIL</literal> clause defines an expiration time for a password only, not for the role <foreignphrase>per se</foreignphrase>. In particular, the expiration time is not enforced when logging in using a non-password-based authentication method."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:348(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:348(para) 
 msgid "The <literal>INHERIT</literal> attribute governs inheritance of grantable privileges (that is, access privileges for database objects and role memberships). It does not apply to the special role attributes set by <command>CREATE ROLE</command> and <command>ALTER ROLE</command>. For example, being a member of a role with <literal>CREATEDB</literal> privilege does not immediately grant the ability to create databases, even if <literal>INHERIT</literal> is set; it would be necessary to become that role via <xref linkend=\"sql-set-role\"/> before creating a database."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:360(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:360(para) 
 msgid "The <literal>INHERIT</literal> attribute is the default for reasons of backwards compatibility: in prior releases of <productname>PostgreSQL</productname>, users always had access to all privileges of groups they were members of. However, <literal>NOINHERIT</literal> provides a closer match to the semantics specified in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:368(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:368(para) 
 msgid "Be careful with the <literal>CREATEROLE</literal> privilege. There is no concept of inheritance for the privileges of a <literal>CREATEROLE</literal>-role. That means that even if a role does not have a certain privilege but is allowed to create other roles, it can easily create another role with different privileges than its own (except for creating roles with superuser privileges). For example, if the role <quote>user</quote> has the <literal>CREATEROLE</literal> privilege but not the <literal>CREATEDB</literal> privilege, nonetheless it can create a new role with the <literal>CREATEDB</literal> privilege. Therefore, regard roles that have the <literal>CREATEROLE</literal> privilege as almost-superuser-roles."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:381(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:381(para) 
 msgid "<productname>PostgreSQL</productname> includes a program <xref linkend=\"app-createuser\"/> that has the same functionality as <command>CREATE ROLE</command> (in fact, it calls this command) but can be run from the command shell."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:388(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:388(para) 
 msgid "The <literal>CONNECTION LIMIT</literal> option is only enforced approximately; if two new sessions start at about the same time when just one connection <quote>slot</quote> remains for the role, it is possible that both will fail. Also, the limit is never enforced for superusers."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:395(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:395(para) 
 msgid "Caution must be exercised when specifying an unencrypted password with this command. The password will be transmitted to the server in cleartext, and it might also be logged in the client's command history or the server log. The command <xref linkend=\"app-createuser\"/>, however, transmits the password encrypted. Also, <xref linkend=\"app-psql\"/> contains a command <command>\\password</command> that can be used to safely change the password later."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:409(title) 
+#: /tmp/cicero-wtof/ref/create_role.xml:409(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:413(programlisting) 
+#: /tmp/cicero-wtof/ref/create_role.xml:413(programlisting) 
 #, no-wrap
 msgid "\nCREATE ROLE jonathan LOGIN;\n"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:411(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:411(para) 
 msgid "Create a role that can log in, but don't give it a password: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:420(programlisting) 
+#: /tmp/cicero-wtof/ref/create_role.xml:420(programlisting) 
 #, no-wrap
 msgid "\nCREATE USER davide WITH PASSWORD 'jw8s0F4';\n"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:418(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:418(para) 
 msgid "Create a role with a password: <placeholder-1/> (<command>CREATE USER</command> is the same as <command>CREATE ROLE</command> except that it implies <literal>LOGIN</literal>.)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:432(programlisting) 
+#: /tmp/cicero-wtof/ref/create_role.xml:432(programlisting) 
 #, no-wrap
 msgid "\nCREATE ROLE miriam WITH LOGIN PASSWORD 'jw8s0F4' VALID UNTIL '2005-01-01';\n"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:427(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:427(para) 
 msgid "Create a role with a password that is valid until the end of 2004. After one second has ticked in 2005, the password is no longer valid. <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:439(programlisting) 
+#: /tmp/cicero-wtof/ref/create_role.xml:439(programlisting) 
 #, no-wrap
 msgid "\nCREATE ROLE admin WITH CREATEDB CREATEROLE;\n"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:437(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:437(para) 
 msgid "Create a role that can create databases and manage roles: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:445(title) 
+#: /tmp/cicero-wtof/ref/create_role.xml:445(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:447(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:447(para) 
 msgid "The <command>CREATE ROLE</command> statement is in the SQL standard, but the standard only requires the syntax <synopsis>\nCREATE ROLE <replaceable class=\"PARAMETER\">name</replaceable> [ WITH ADMIN <replaceable class=\"PARAMETER\">role_name</replaceable> ]\n</synopsis> Multiple initial administrators, and all the other options of <command>CREATE ROLE</command>, are <productname>PostgreSQL</productname> extensions."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:458(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:458(para) 
 msgid "The SQL standard defines the concepts of users and roles, but it regards them as distinct concepts and leaves all commands defining users to be specified by each database implementation. In <productname>PostgreSQL</productname> we have chosen to unify users and roles into a single kind of entity. Roles therefore have many more optional attributes than they do in the standard."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:467(para) 
+#: /tmp/cicero-wtof/ref/create_role.xml:467(para) 
 msgid "The behavior specified by the SQL standard is most closely approximated by giving users the <literal>NOINHERIT</literal> attribute, while roles are given the <literal>INHERIT</literal> attribute."
 msgstr ""
 
-#: /tmp/cicero-cCcM/ref/create_role.xml:475(title) 
+#: /tmp/cicero-wtof/ref/create_role.xml:475(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-cCcM/ref/create_role.xml:0(None) 
+#: /tmp/cicero-wtof/ref/create_role.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

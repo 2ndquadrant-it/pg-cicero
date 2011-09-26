@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-26 06:57+0200\n"
+"POT-Creation-Date: 2011-09-26 12:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,1652 +9,1652 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-cCcM/release-9.1.xml:6(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:6(title) 
 msgid "Release 9.1"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:9(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:9(title) 
 msgid "Release Date"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:10(simpara) 
+#: /tmp/cicero-wtof/release-9.1.xml:10(simpara) 
 msgid "2011-??-??"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:13(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:13(para) 
 msgid "CURRENT AS OF 2011-08-17"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:16(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:16(title) 
 msgid "Overview"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:18(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:18(para) 
 msgid "This release shows <productname>PostgreSQL</productname> moving beyond the traditional relational-database feature set with new, ground-breaking functionality that is unique to <productname>PostgreSQL</productname>. The streaming replication feature introduced in release 9.0 is significantly enhanced by adding a synchronous-replication option, streaming backups, and monitoring improvements. Major enhancements include:"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:33(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:33(para) 
 msgid "Allow <link linkend=\"synchronous-replication\">synchronous replication</link>"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:40(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:40(para) 
 msgid "Add support for <link linkend=\"sql-createforeigntable\">foreign tables</link>"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:47(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:47(para) 
 msgid "Add per-column <link linkend=\"collation\">collation</link> support"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:54(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:54(para) 
 msgid "Add <link linkend=\"extend-extensions\">extensions</link> which simplify packaging of additions to <productname>PostgreSQL</productname>"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:61(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:61(para) 
 msgid "Add a true <link linkend=\"xact-serializable\">serializable isolation level</link>"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:68(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:68(para) 
 msgid "Support unlogged tables using the <literal>UNLOGGED</literal> option in <link linkend=\"sql-createtable\"><command>CREATE TABLE</command></link>"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:76(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:76(para) 
 msgid "Allow data-modification commands (<command>INSERT</command>/<command>UPDATE</command>/<command>DELETE)</command> in <link linkend=\"queries-with\"><literal>WITH</literal></link> clauses"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:84(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:84(para) 
 msgid "Add nearest-neighbor (order-by-operator) searching to <link linkend=\"gist\"><acronym>GiST</acronym> indexes</link>"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:91(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:91(para) 
 msgid "Add a <link linkend=\"sql-security-label\"><command>SECURITY LABEL</command></link> command and support for <link linkend=\"sepgsql\"><acronym>SELinux</acronym> permissions control</link>"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:99(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:99(para) 
 msgid "Update the <link linkend=\"plpython\">PL/Python</link> server-side language"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:107(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:107(para) 
 msgid "The above items are explained in more detail in the sections below."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:115(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:115(title) 
 msgid "Migration to Version 9.1"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:117(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:117(para) 
 msgid "A dump/restore using <application>pg_dump</application>, or use of <application>pg_upgrade</application>, is required for those wishing to migrate data from any previous release."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:124(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:124(para) 
 msgid "Version 9.1 contains a number of changes that may affect compatibility with previous releases. Observe the following incompatibilities:"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:130(title) /tmp/cicero-cCcM/release-9.1.xml:1146(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:130(title) /tmp/cicero-wtof/release-9.1.xml:1146(title) 
 msgid "Strings"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:135(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:135(para) 
 msgid "Change the default value of <link linkend=\"guc-standard-conforming-strings\"><varname>standard_conforming_strings</varname></link> to on (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:141(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:141(para) 
 msgid "By default, backslashes are now ordinary characters in string literals, not escape characters. This change removes a long-standing incompatibility with the SQL standard. <link linkend=\"guc-escape-string-warning\"><varname>escape_string_warning</varname></link> has produced warnings about this usage for years. <literal>E''</literal> strings are the proper way to embed backslash escapes in strings and are unaffected by this change."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:152(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:152(para) 
 msgid "This change can break applications that are not expecting it and do their own string escaping according to the old rules. The consequences could be as severe as introducing SQL-injection security holes. Be sure to test applications that are exposed to untrusted input, to ensure that they correctly handle single quotes and backslashes in text strings."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:168(title) /tmp/cicero-cCcM/release-9.1.xml:1639(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:168(title) /tmp/cicero-wtof/release-9.1.xml:1639(title) 
 msgid "Casting"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:173(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:173(para) 
 msgid "Disallow function-style and attribute-style data type casts for composite types (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:178(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:178(para) 
 msgid "For example, disallow <literal><replaceable>composite_value</replaceable>.text</literal> and <literal>text(<replaceable>composite_value</replaceable>)</literal>. Unintentional uses of this syntax have frequently resulted in bug reports; although it was not a bug, it seems better to go back to rejecting such expressions. The <literal>CAST</literal> and <literal>::</literal> syntaxes are still available for use when a cast of an entire composite value is actually intended."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:191(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:191(para) 
 msgid "Tighten casting checks for domains based on arrays (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:195(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:195(para) 
 msgid "When a domain is based on an array type, it is allowed to <quote>look through</quote> the domain type to access the array elements, including subscripting the domain value to fetch or assign an element. Assignment to an element of such a domain value, for instance via <literal>UPDATE ... SET domaincol[5] = ...</literal>, will now result in rechecking the domain type's constraints, whereas before the checks were skipped."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:211(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:211(title) 
 msgid "Arrays"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:216(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:216(para) 
 msgid "Change <link linkend=\"array-functions-table\"><function>string_to_array()</function></link> to return an empty array for a zero-length string (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:223(para) /tmp/cicero-cCcM/release-9.1.xml:236(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:223(para) /tmp/cicero-wtof/release-9.1.xml:236(para) 
 msgid "Previously this returned a null value."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:229(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:229(para) 
 msgid "Change <link linkend=\"array-functions-table\"><function>string_to_array()</function></link> so a <literal>NULL</literal> separator splits the string into characters (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:246(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:246(title) 
 msgid "Object Modification"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:251(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:251(para) 
 msgid "Fix improper checks for before/after triggers (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:255(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:255(para) 
 msgid "Triggers can now be fired in three cases: <literal>BEFORE</literal>, <literal>AFTER</literal>, or <literal>INSTEAD OF</literal> some action. Trigger function authors should verify that their logic behaves sanely in all three cases."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:264(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:264(para) 
 msgid "Require superuser or <literal>CREATEROLE</literal> permissions in order to set role comments (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:275(title) /tmp/cicero-cCcM/release-9.1.xml:737(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:275(title) /tmp/cicero-wtof/release-9.1.xml:737(title) 
 msgid "Server Settings"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:280(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:280(para) 
 msgid "Change <link linkend=\"functions-recovery-info-table\"><function>pg_last_xlog_receive_location()</function></link> so it never moves backwards (Fujii Masao)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:286(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:286(para) 
 msgid "Previously <function>pg_last_xlog_receive_location()</function> could move backward when streaming replication is restarted."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:293(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:293(para) 
 msgid "Have logging of replication connections honor <link linkend=\"guc-log-connections\"><varname>log_connections</varname></link> (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:299(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:299(para) 
 msgid "Previously replication connections were always logged."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:309(title) /tmp/cicero-cCcM/release-9.1.xml:1885(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:309(title) /tmp/cicero-wtof/release-9.1.xml:1885(title) 
 msgid "<link linkend=\"plpgsql\">PL/pgSQL</link> Server-Side Language"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:314(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:314(para) 
 msgid "Change PL/pgSQL's <literal>RAISE</literal> command without parameters to be catchable by the attached exception block (Piyush Newe)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:319(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:319(para) 
 msgid "Previously <literal>RAISE</literal> in a code block was always scoped to an attached exception block, so it was uncatchable at the same scope."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:327(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:327(para) 
 msgid "Adjust PL/pgSQL's error line numbering code to be consistent with other PLs (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:332(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:332(para) 
 msgid "Previously, PL/pgSQL would ignore (not count) an empty line at the start of the function body. Since this was inconsistent with all other languages, the special case was removed."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:340(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:340(para) 
 msgid "Make PL/pgSQL complain about conflicting IN and OUT parameter names (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:345(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:345(para) 
 msgid "Formerly, the collision was not detected, and the name would just silently refer to only the OUT parameter."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:352(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:352(para) 
 msgid "Type modifiers of PL/pgSQL variables are now visible to the SQL parser (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:357(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:357(para) 
 msgid "A type modifier (such as a varchar length limit) attached to a PL/pgSQL variable was formerly enforced during assignments, but was ignored for all other purposes. Such variables will now behave more like table columns declared with the same modifier. This is not expected to make any visible difference in most cases, but it could result in subtle changes for some SQL commands issued by PL/pgSQL functions."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:372(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:372(title) 
 msgid "Other Incompatibilities"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:377(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:377(para) 
 msgid "Make <link linkend=\"monitoring-stats-funcs-table\"><function>pg_stat_reset()</function></link> reset all database-level statistics (Tomas Vondra)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:383(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:383(para) 
 msgid "Some <structname>pg_stat_database</structname> counters were not being reset."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:389(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:389(para) 
 msgid "Fix some <link linkend=\"infoschema-triggers\"><structname>information_schema.triggers</structname></link> column names to match the new SQL-standard names (Dean Rasheed)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:397(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:397(para) 
 msgid "Treat <application>ECPG</application> cursor names as case-insensitive (Zoltan Boszormenyi)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:409(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:409(title) 
 msgid "Changes"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:411(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:411(para) 
 msgid "Below you will find a detailed account of the changes between <productname>PostgreSQL</productname> 9.1 and the previous major release."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:418(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:418(title) 
 msgid "Server"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:421(title) /tmp/cicero-cCcM/release-9.1.xml:2763(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:421(title) /tmp/cicero-wtof/release-9.1.xml:2763(title) 
 msgid "Performance"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:426(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:426(para) 
 msgid "Support unlogged tables using the <literal>UNLOGGED</literal> option in <link linkend=\"sql-createtable\"><command>CREATE TABLE</command></link> (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:432(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:432(para) 
 msgid "Such tables provide better update performance than regular tables, but are not crash-safe: their contents are automatically cleared in case of a server crash. Their contents do not propagate to replication slaves, either."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:441(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:441(para) 
 msgid "Allow <literal>FULL OUTER JOIN</literal> to be implemented as a hash join, and allow either side of a <literal>LEFT OUTER JOIN</literal> or <literal>RIGHT OUTER JOIN</literal> to be hashed (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:447(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:447(para) 
 msgid "Previously <literal>FULL OUTER JOIN</literal> could only be implemented as a merge join, and <literal>LEFT OUTER JOIN</literal> and <literal>RIGHT OUTER JOIN</literal> could hash only the nullable side of the join. These changes provide additional query optimization possibilities."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:457(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:457(para) 
 msgid "Merge duplicate fsync requests (Robert Haas, Greg Smith)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:461(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:461(para) 
 msgid "This greatly improves performance under heavy write loads."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:467(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:467(para) 
 msgid "Improve performance of <link linkend=\"guc-commit-siblings\"><varname>commit_siblings</varname></link> (Greg Smith)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:473(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:473(para) 
 msgid "This allows the use of <varname>commit_siblings</varname> with less overhead."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:480(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:480(para) 
 msgid "Reduce the memory requirement for large ispell dictionaries (Pavel Stehule, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:487(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:487(para) 
 msgid "Avoid leaving data files open after <quote>blind writes</quote> (Alvaro Herrera)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:492(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:492(para) 
 msgid "This fixes scenarios where backends might hold open files that were long since deleted, preventing the kernel from reclaiming disk space."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:504(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:504(title) 
 msgid "Optimizer"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:509(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:509(para) 
 msgid "Allow inheritance table scans to return meaningfully-sorted results (Greg Stark, Hans-Jurgen Schonig, Robert Haas, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:514(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:514(para) 
 msgid "This allows better optimization of queries that use <literal>ORDER BY</literal>, <literal>LIMIT</literal>, or <literal>MIN</literal>/<literal>MAX</literal> with inherited tables."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:522(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:522(para) 
 msgid "Improve GIN index scan cost estimation (Teodor Sigaev)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:528(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:528(para) 
 msgid "Improve cost estimation for aggregates and window functions (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:538(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:538(title) 
 msgid "Authentication"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:543(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:543(para) 
 msgid "Support host names and host suffixes (e.g. <literal>.example.com</literal>) in <link linkend=\"auth-pg-hba-conf\"><filename>pg_hba.conf</filename></link> (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:550(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:550(para) 
 msgid "Previously only host <acronym>IP</acronym> addresses and <acronym>CIDR</acronym> values were supported."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:557(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:557(para) 
 msgid "Support the key word <literal>all</literal> in the host column of <link linkend=\"auth-pg-hba-conf\"><filename>pg_hba.conf</filename></link> (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:563(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:563(para) 
 msgid "Previously people used <literal>0.0.0.0/0</literal> or <literal>::/0</literal> for this."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:570(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:570(para) 
 msgid "Reject <literal>local</literal> lines in <link linkend=\"auth-pg-hba-conf\"><filename>pg_hba.conf</filename></link> on platforms that don't support Unix-socket connections (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:577(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:577(para) 
 msgid "Formerly, such lines were silently ignored, which could be surprising. This makes the behavior more like other unsupported cases."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:584(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:584(para) 
 msgid "Allow <link linkend=\"gssapi-auth\"><acronym>GSSAPI</acronym></link> to be used to authenticate to servers via <link linkend=\"sspi-auth\"><acronym>SSPI</acronym></link> (Christian Ullrich)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:590(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:590(para) 
 msgid "Specifically this allows Unix-based <acronym>GSSAPI</acronym> clients to do <acronym>SSPI</acronym> authentication with Windows servers."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:597(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:597(para) 
 msgid "<link linkend=\"auth-ident\"><literal>ident</literal></link> authentication over local sockets is now known as <link linkend=\"auth-peer\"><literal>peer</literal></link> (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:604(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:604(para) 
 msgid "The old term is still accepted for backward compatibility, but since the two methods are fundamentally different, it seemed better to adopt different names for them."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:612(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:612(para) 
 msgid "Rewrite <link linkend=\"auth-peer\"><acronym>peer</acronym></link> authentication to avoid use of credential control messages (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:617(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:617(para) 
 msgid "This change makes the peer authentication code simpler and better-performing. However, it requires the platform to provide the <function>getpeereid</function> function or an equivalent socket operation. So far as is known, the only platform for which peer authentication worked before and now will not is pre-5.0 NetBSD."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:631(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:631(title) 
 msgid "Monitoring"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:636(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:636(para) 
 msgid "Add details to the logging of restartpoints and checkpoints, which is controlled by <link linkend=\"guc-log-checkpoints\"><varname>log_checkpoints</varname></link> (Fujii Masao, Greg Smith)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:643(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:643(para) 
 msgid "New details show <acronym>WAL</acronym> file and sync activity."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:649(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:649(para) 
 msgid "Add <link linkend=\"guc-log-file-mode\"><varname>log_file_mode</varname></link> which controls the permissions on log files created by the logging collector (Martin Pihlak)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:658(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:658(para) 
 msgid "Reduce the default maximum line length for <application>syslog</application> logging to 900 bytes plus prefixes (Noah Misch)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:663(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:663(para) 
 msgid "This avoids truncation of long log lines on syslog implementations that have a 1KB length limit, rather than the more common 2KB."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:674(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:674(title) 
 msgid "Statistical Views"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:679(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:679(para) 
 msgid "Add <structfield>client_hostname</structfield> column to <link linkend=\"monitoring-stats-views-table\"><structname>pg_stat_activity</structname></link> (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:685(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:685(para) 
 msgid "Previously only the client address was reported."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:691(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:691(para) 
 msgid "Add <link linkend=\"monitoring-stats-views-table\"><structname>pg_stat_xact_*</structname></link> statistics functions and views (Joel Jacobson)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:697(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:697(para) 
 msgid "These are like the database-wide statistics counter views, but reflect counts for only the current transaction."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:704(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:704(para) 
 msgid "Add time of last reset in database-level and background writer statistics views (Tomas Vondra)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:711(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:711(para) 
 msgid "Add columns showing the number of vacuum and analyze operations in <link linkend=\"monitoring-stats-views-table\"><structname>pg_stat_*_tables</structname></link> views (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:720(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:720(para) 
 msgid "Add <structfield>buffers_backend_fsync</structfield> column to <link linkend=\"monitoring-stats-views-table\"><structname>pg_stat_bgwriter</structname></link> (Greg Smith)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:726(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:726(para) 
 msgid "This new column counts the number of times a backend fsyncs a buffer."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:742(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:742(para) 
 msgid "Allow auto-tuning of <link linkend=\"guc-wal-buffers\"><varname>wal_buffers</varname></link> (Greg Smith)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:748(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:748(para) 
 msgid "<varname>wal_buffers</varname> is now auto-tuned by default based on the size of <varname>shared_buffers</varname>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:755(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:755(para) 
 msgid "Increase the maximum values for <link linkend=\"guc-deadlock-timeout\"><varname>deadlock_timeout</varname></link>, <link linkend=\"guc-log-min-duration-statement\"><varname>log_min_duration_statement</varname></link>, and <link linkend=\"guc-log-autovacuum-min-duration\"><varname>log_autovacuum_min_duration</varname></link> (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:763(para) /tmp/cicero-cCcM/release-9.1.xml:944(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:763(para) /tmp/cicero-wtof/release-9.1.xml:944(para) 
 msgid "The maximum value for each of these parameters was previously only about 35 minutes. Much larger values are now allowed."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:776(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:776(title) 
 msgid "Replication and Recovery"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:779(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:779(title) 
 msgid "Streaming Replication and Continuous Archiving"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:784(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:784(para) 
 msgid "Allow <link linkend=\"synchronous-replication\">synchronous replication</link> (Simon Riggs, Fujii Masao)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:789(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:789(para) 
 msgid "This allows the primary to wait for a standby to write the transaction information to disk before acknowledging the commit. One standby at a time can take the role of the synchronous standby, as controlled by the <link linkend=\"guc-synchronous-standby-names\"><varname>synchronous_standby_names</varname></link> setting. Synchronous replication can be enabled or disabled on a per-transaction basis using the <link linkend=\"guc-synchronous-commit\"><varname>synchronous_commit</varname></link> setting."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:803(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:803(para) 
 msgid "Add protocol support for sending file system backups to standbys using the streaming replication network connection (Magnus Hagander, Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:809(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:809(para) 
 msgid "This avoids the requirement of manually transferring a file system backup when setting up a standby server."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:816(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:816(para) 
 msgid "Add <link linkend=\"guc-replication-timeout\"><varname>replication_timeout</varname></link> setting (Fujii Masao, Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:822(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:822(para) 
 msgid "Replication connections that are idle for more than the <varname>replication_timeout</varname> interval will be terminated automatically. Formerly, a failed connection was typically not detected until the TCP timeout elapsed, which is inconveniently long in many situations."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:832(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:832(para) 
 msgid "Add command-line tool <link linkend=\"app-pgbasebackup\"><application>pg_basebackup</application></link> for creating a new standby server or database backup (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:841(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:841(para) 
 msgid "Add replication <link linkend=\"sql-createrole\">permission</link> for roles (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:846(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:846(para) 
 msgid "This is a read-only permission used for streaming replication. It allows a non-superuser role to be used for replication connections. Previously only superusers could initiate replication connections; superusers still have this permission by default."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:859(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:859(title) 
 msgid "Replication Monitoring"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:864(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:864(para) 
 msgid "Add system view <link linkend=\"monitoring-stats-views-table\"><structname>pg_stat_replication</structname></link> which displays activity of <acronym>WAL</acronym> sender processes (Itagaki Takahiro, Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:871(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:871(para) 
 msgid "This reports the status of all connected standby servers."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:877(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:877(para) 
 msgid "Add monitoring function <link linkend=\"functions-recovery-info-table\"><function>pg_last_xact_replay_timestamp()</function></link> (Fujii Masao)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:883(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:883(para) 
 msgid "This returns the time at which the primary generated the most recent commit or abort record applied on the standby."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:894(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:894(title) 
 msgid "Hot Standby"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:899(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:899(para) 
 msgid "Add configuration parameter <link linkend=\"guc-hot-standby-feedback\"><varname>hot_standby_feedback</varname></link> to enable standbys to postpone cleanup of old row versions on the primary (Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:906(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:906(para) 
 msgid "This helps avoid canceling long-running queries on the standby."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:912(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:912(para) 
 msgid "Add the <link linkend=\"monitoring-stats-views-table\"><structname>pg_stat_database_conflicts</structname></link> system view to show queries that have been canceled and the reason (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:919(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:919(para) 
 msgid "Cancellations can occur because of dropped tablespaces, lock timeouts, old snapshots, pinned buffers, and deadlocks."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:926(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:926(para) 
 msgid "Add a <structfield>conflicts</structfield> count to <link linkend=\"monitoring-stats-views-table\"><structname>pg_stat_database</structname></link> (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:932(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:932(para) 
 msgid "This is the number of conflicts that occurred in the database."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:938(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:938(para) 
 msgid "Increase the maximum values for <link linkend=\"guc-max-standby-archive-delay\"><varname>max_standby_archive_delay</varname></link> and <link linkend=\"guc-max-standby-streaming-delay\"><varname>max_standby_streaming_delay</varname></link>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:951(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:951(para) 
 msgid "Add <link linkend=\"errcodes-table\"><literal>ERRCODE_T_R_DATABASE_DROPPED</literal></link> error code to report recovery conflicts due to dropped databases (Tatsuo Ishii)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:958(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:958(para) 
 msgid "This is useful for connection pooling software."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:968(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:968(title) 
 msgid "Recovery Control"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:973(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:973(para) 
 msgid "Add functions to control streaming replication replay (Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:977(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:977(para) 
 msgid "The new functions are <link linkend=\"functions-recovery-control-table\"><function>pg_xlog_replay_pause()</function></link>, <link linkend=\"functions-recovery-control-table\"><function>pg_xlog_replay_resume()</function></link>, and the status function <link linkend=\"functions-recovery-control-table\"><function>pg_is_xlog_replay_paused()</function></link>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:988(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:988(para) 
 msgid "Add <filename>recovery.conf</filename> setting <link linkend=\"pause-at-recovery-target\"><varname>pause_at_recovery_target</varname></link> to pause recovery at target (Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:994(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:994(para) 
 msgid "This allows a recovery server to be queried to check whether the recovery point is the one desired."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1001(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1001(para) 
 msgid "Add the ability to create named restore points using <link linkend=\"functions-admin-backup-table\"><function>pg_create_restore_point()</function></link> (Jaime Casanova)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1007(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1007(para) 
 msgid "These named restore points can be specified as recovery targets using the new <filename>recovery.conf</filename> setting <link linkend=\"recovery-target-name\"><varname>recovery_target_name</varname></link>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1015(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1015(para) 
 msgid "Allow standby recovery to switch to a new timeline automatically (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1020(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1020(para) 
 msgid "Now standby servers scan the archive directory for new timelines periodically."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1027(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1027(para) 
 msgid "Add <link linkend=\"guc-restart-after-crash\"><varname>restart_after_crash</varname></link> setting which disables automatic server restart after a backend crash (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1034(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1034(para) 
 msgid "This allows external cluster management software to control whether the database server restarts or not."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1041(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1041(para) 
 msgid "Allow <link linkend=\"recovery-config\"><filename>recovery.conf</filename></link> to use the same quoting behavior as <filename>postgresql.conf</filename> (Dimitri Fontaine)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1048(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1048(para) 
 msgid "Previously all values had to be quoted."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1060(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1060(title) 
 msgid "Queries"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1065(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1065(para) 
 msgid "Add a true <link linkend=\"xact-serializable\">serializable isolation level</link> (Kevin Grittner, Dan Ports)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1071(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1071(para) 
 msgid "Previously, asking for serializable isolation guaranteed only that a single MVCC snapshot would be used for the entire transaction, which allowed certain documented anomalies. The old snapshot isolation behavior is still accessible by requesting the <link linkend=\"xact-repeatable-read\"><literal>REPEATABLE READ</literal></link> isolation level."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1082(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1082(para) 
 msgid "Allow data-modification commands (<command>INSERT</command>/<command>UPDATE</command>/<command>DELETE)</command> in <link linkend=\"queries-with\"><literal>WITH</literal></link> clauses (Marko Tiikkaja, Hitoshi Harada)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1089(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1089(para) 
 msgid "These commands can use <literal>RETURNING</literal> to pass data up to the containing query."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1096(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1096(para) 
 msgid "Allow <link linkend=\"queries-with\"><literal>WITH</literal></link> clauses to be attached to <command>INSERT</command>, <command>UPDATE</command>, <command>DELETE</command> statements (Marko Tiikkaja, Hitoshi Harada)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1104(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1104(para) 
 msgid "Allow non-<link linkend=\"queries-group\"><literal>GROUP BY</literal></link> columns in the query target list when the primary key is specified in the <literal>GROUP BY</literal> clause (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1111(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1111(para) 
 msgid "Some other database system already allowed this behavior, and because of the primary key, the result is unambiguous."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1118(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1118(para) 
 msgid "Allow use of the key word <literal>DISTINCT</literal> in <link linkend=\"queries-union\"><literal>UNION</literal>/<literal>INTERSECT</literal>/<literal>EXCEPT</literal></link> clauses (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1124(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1124(para) 
 msgid "<literal>DISTINCT</literal> is the default behavior so use of this key word is redundant, but the SQL standard allows it."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1131(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1131(para) 
 msgid "Fix ordinary queries with rules to use the same snapshot behavior as <command>EXPLAIN ANALYZE</command> (Marko Tiikkaja)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1136(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1136(para) 
 msgid "Previously <command>EXPLAIN ANALYZE</command> used a slightly different snapshot for queries involving rules. The <command>EXPLAIN ANALYZE</command> behavior was judged to be more logical."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1151(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1151(para) 
 msgid "Add per-column <link linkend=\"collation\">collation</link> support (Peter Eisentraut, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1157(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1157(para) 
 msgid "Previously collation could only be set at database creation. Collation can now be set per column, domain, index, or expression, via the SQL-standard <literal>COLLATE</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1171(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1171(title) 
 msgid "Object Manipulation"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1176(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1176(para) 
 msgid "Add <link linkend=\"extend-extensions\">extensions</link> which simplify packaging of additions to <productname>PostgreSQL</productname> (Dimitri Fontaine, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1182(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1182(para) 
 msgid "Extensions are controlled by the new <link linkend=\"sql-createextension\"><command>CREATE</command></link>/<link linkend=\"sql-alterextension\"><command>ALTER</command></link>/<link linkend=\"sql-dropextension\"><command>DROP EXTENSION</command></link> commands. This replaces ad-hoc methods of grouping objects that are added to a <productname>PostgreSQL</productname> installation."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1193(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1193(para) 
 msgid "Add support for <link linkend=\"sql-createforeigntable\">foreign tables</link> (Shigeru Hanada, Robert Haas, Jan Urbanski, Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1199(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1199(para) 
 msgid "This allows data stored outside the database to be used like native <productname>PostgreSQL</productname>-stored data. Foreign tables are currently read-only, however."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1207(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1207(para) 
 msgid "Allow new values to be added to an existing enum type via <link linkend=\"sql-altertype\"><command>ALTER TYPE</command></link> (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1215(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1215(para) 
 msgid "Add <link linkend=\"sql-altertype\"><command>ALTER TYPE ... ADD/DROP/ALTER/RENAME ATTRIBUTE</command></link> (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1220(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1220(para) 
 msgid "This allows modification of composite types."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1228(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1228(title) 
 msgid "<command>ALTER</command> Object"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1233(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1233(para) 
 msgid "Add <literal>RESTRICT</literal>/<literal>CASCADE</literal> to <link linkend=\"sql-altertype\"><command>ALTER TYPE</command></link> operations on typed tables (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1239(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1239(para) 
 msgid "This controls <literal>ADD</literal>/<literal>DROP</literal>/<literal>ALTER</literal>/<literal>RENAME ATTRIBUTE</literal> cascading behavior."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1247(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1247(para) 
 msgid "Support <literal>ALTER TABLE <replaceable>name</replaceable> {OF | NOT OF} <replaceable>type</replaceable></literal> (Noah Misch)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1253(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1253(para) 
 msgid "This syntax allows a standalone table to be made into a typed table, or a typed table to be made standalone."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1260(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1260(para) 
 msgid "Add support for more object types in <command>ALTER ... SET SCHEMA</command> commands (Dimitri Fontaine)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1265(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1265(para) 
 msgid "This command is now supported for conversions, operators, operator classes, operator families, text search configurations, text search dictionaries, text search parsers, and text search templates."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1277(command) 
+#: /tmp/cicero-wtof/release-9.1.xml:1277(command) 
 msgid "CREATE/ALTER TABLE"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1282(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1282(para) 
 msgid "Add <command>ALTER TABLE ... ADD UNIQUE/PRIMARY KEY USING INDEX</command> (Gurjeet Singh)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1288(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1288(para) 
 msgid "This allows a primary key or unique constraint to be defined using an existing unique index, including a concurrently created unique index."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1295(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1295(para) 
 msgid "Allow <command>ALTER TABLE</command> to add foreign keys without validation (Simon Riggs)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1300(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1300(para) 
 msgid "The new option is called <literal>NOT VALID</literal>, which can later be modified to <literal>VALIDATED</literal> and validation checks performed. Together these allow you to add a foreign key with minimal impact on read and write operations."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1309(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1309(para) 
 msgid "Allow <link linkend=\"sql-altertable\"><command>ALTER TABLE ... SET DATA TYPE</command></link> to avoid table rewrites in appropriate cases (Noah Misch, Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1315(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1315(para) 
 msgid "For example, converting a <type>varchar</type> column to <type>text</type> no longer requires a rewrite of the table. However, increasing the length constraint on a <type>varchar</type> column still requires a table rewrite."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1324(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1324(para) 
 msgid "Add <link linkend=\"sql-createtable\"><command>CREATE TABLE IF NOT EXISTS</command></link> syntax (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1329(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1329(para) 
 msgid "This allows table creation without causing an error if the table already exists."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1336(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1336(para) 
 msgid "Fix possible <quote>tuple concurrently updated</quote> error when two backends attempted to add an inheritance child to the same table at the same time (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1342(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1342(para) 
 msgid "<link linkend=\"sql-altertable\"><command>ALTER TABLE</command></link> now takes a stronger lock on the parent table, so that both children do not try to update it simultaneously."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1354(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1354(title) 
 msgid "Object Permissions"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1359(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1359(para) 
 msgid "Add a <link linkend=\"sql-security-label\"><command>SECURITY LABEL</command></link> command (KaiGai Kohei)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1364(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1364(para) 
 msgid "This allows security labels to be assigned to objects."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1376(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1376(title) 
 msgid "Utility Operations"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1381(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1381(para) 
 msgid "Add transaction-level <link linkend=\"advisory-locks\">advisory locks</link> (Marko Tiikkaja)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1386(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1386(para) 
 msgid "This is similar to the existing session-level advisory locks, but the locks are automatically released at transaction end."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1393(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1393(para) 
 msgid "Make <link linkend=\"sql-truncate\"><command>TRUNCATE ... RESTART IDENTITY</command></link> restart sequences transactionally (Steve Singer)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1399(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1399(para) 
 msgid "Previously the counter could have been left out of sync if a backend crashed between the on-commit truncation activity and commit completion."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1409(command) 
+#: /tmp/cicero-wtof/release-9.1.xml:1409(command) 
 msgid "COPY"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1414(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1414(para) 
 msgid "Add <literal>ENCODING</literal> option to <link linkend=\"sql-copy\"><command>COPY TO/FROM</command></link> (Hitoshi Harada, Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1420(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1420(para) 
 msgid "This allows the encoding of the <command>COPY</command> file to be specified separately from client encoding."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1427(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1427(para) 
 msgid "Add bidirectional <link linkend=\"sql-copy\"><command>COPY</command></link> protocol support (Fujii Masao)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1432(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1432(para) 
 msgid "This is currently only used by streaming replication."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1442(command) 
+#: /tmp/cicero-wtof/release-9.1.xml:1442(command) 
 msgid "EXPLAIN"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1447(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1447(para) 
 msgid "Make <command>EXPLAIN VERBOSE</command> show the function call expression in a <literal>FunctionScan</literal> node (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1458(command) 
+#: /tmp/cicero-wtof/release-9.1.xml:1458(command) 
 msgid "VACUUM"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1463(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1463(para) 
 msgid "Add additional details to the output of <link linkend=\"sql-vacuum\"><command>VACUUM FULL VERBOSE</command></link> and <link linkend=\"sql-cluster\"><command>CLUSTER VERBOSE</command></link> (Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1470(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1470(para) 
 msgid "New information includes the live and dead tuple count and whether <command>CLUSTER</command> is using an index to rebuild."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1477(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1477(para) 
 msgid "Prevent <link linkend=\"autovacuum\">autovacuum</link> from waiting if it cannot acquire a table lock (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1482(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1482(para) 
 msgid "It will try to vacuum that table later."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1492(command) 
+#: /tmp/cicero-wtof/release-9.1.xml:1492(command) 
 msgid "CLUSTER"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1497(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1497(para) 
 msgid "Allow <command>CLUSTER</command> to sort the table rather than scanning the index when it seems likely to be cheaper (Leonardo Francalanci)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1508(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1508(title) 
 msgid "Indexes"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1513(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1513(para) 
 msgid "Add nearest-neighbor (order-by-operator) searching to <link linkend=\"gist\"><acronym>GiST</acronym> indexes</link> (Teodor Sigaev, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1518(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1518(para) 
 msgid "This allows <acronym>GiST</acronym> indexes to quickly return the <replaceable>N</replaceable> closest values in a query with <literal>LIMIT</literal>. For example <placeholder-1/> finds the ten places closest to a given target point."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1531(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1531(para) 
 msgid "Allow <link linkend=\"gin\"><acronym>GIN</acronym> indexes</link> to index null and empty values (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1536(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1536(para) 
 msgid "This allows full <acronym>GIN</acronym> index scans, and fixes various corner cases in which GIN scans would fail."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1543(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1543(para) 
 msgid "Allow <link linkend=\"gin\"><acronym>GIN</acronym> indexes</link> to better recognize duplicate search entries (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1548(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1548(para) 
 msgid "This reduces the cost of index scans, especially in cases where it avoids unnecessary full index scans."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1555(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1555(para) 
 msgid "Fix <link linkend=\"gist\"><acronym>GiST</acronym> indexes</link> to be fully crash-safe (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1560(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1560(para) 
 msgid "Previously there were rare cases where a <command>REINDEX</command> would be required (you would be informed)."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1573(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1573(title) 
 msgid "Data Types"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1578(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1578(para) 
 msgid "Allow <type>numeric</type> to use a more compact, two-byte header in common cases (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1583(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1583(para) 
 msgid "Previously all <type>numeric</type> values had four-byte headers; this saves on disk storage."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1590(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1590(para) 
 msgid "Add support for dividing <type>money</type> by <type>money</type> (Andy Balholm)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1597(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1597(para) 
 msgid "Allow binary I/O on type <type>void</type> (Radoslaw Smogura)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1603(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1603(para) 
 msgid "Improve hypotenuse calculations for geometric operators (Paul Matthews)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1607(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1607(para) 
 msgid "This avoids unnecessary overflows, and may also be more accurate."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1613(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1613(para) 
 msgid "Support hashing array values (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1617(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1617(para) 
 msgid "This provides additional query optimization possibilities."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1623(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1623(para) 
 msgid "Don't treat a composite type as sortable unless all its column types are sortable (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1628(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1628(para) 
 msgid "This avoids possible <quote>could not identify a comparison function</quote> failures at runtime, if it is possible to implement the query without sorting. Also, <command>ANALYZE</command> won't try to use inappropriate statistics-gathering methods for columns of such composite types."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1644(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1644(para) 
 msgid "Add support for casting between <type>money</type> and <type>numeric</type> (Andy Balholm)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1651(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1651(para) 
 msgid "Add support for casting from <type>int4</type> and <type>int8</type> to <type>numeric</type> (Joey Adams)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1658(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1658(para) 
 msgid "Allow casting a table's row type to the table's supertype if it's a typed table (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1663(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1663(para) 
 msgid "This is analogous to the existing facility that allows casting a row type to a supertable's row type."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1674(acronym) 
+#: /tmp/cicero-wtof/release-9.1.xml:1674(acronym) 
 msgid "XML"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1679(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1679(para) 
 msgid "Add <acronym>XML</acronym> function <link linkend=\"xml-exists\"><literal>XMLEXISTS</literal></link> and <link linkend=\"xml-exists\"><function>xpath_exists()</function></link> functions (Mike Fowler)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1686(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1686(para) 
 msgid "These are used for XPath matching."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1692(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1692(para) 
 msgid "Add <acronym>XML</acronym> functions <link linkend=\"xml-is-well-formed\"><function>xml_is_well_formed()</function></link>, <link linkend=\"xml-is-well-formed\"><function>xml_is_well_formed_document()</function></link>, <link linkend=\"xml-is-well-formed\"><function>xml_is_well_formed_content()</function></link> (Mike Fowler)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1702(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1702(para) 
 msgid "These check whether the input is properly-formed <acronym>XML</acronym>. They provide functionality that was previously available only in the deprecated <filename>contrib/xml2</filename> module."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1716(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1716(title) 
 msgid "Functions"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1721(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1721(para) 
 msgid "Add SQL function <link linkend=\"format\"><function>format(text)</function></link>, which behaves like C's <function>printf()</function> (Pavel Stehule, Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1728(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1728(para) 
 msgid "It currently supports formats for strings, SQL literals, and SQL identifiers."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1735(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1735(para) 
 msgid "Add string functions <link linkend=\"functions-string-other\"><function>concat()</function></link>, <link linkend=\"functions-string-other\"><function>concat_ws()</function></link>, <link linkend=\"functions-string-other\"><function>left()</function></link>, <link linkend=\"functions-string-other\"><function>right()</function></link>, and <link linkend=\"functions-string-other\"><function>reverse()</function></link> (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1747(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1747(para) 
 msgid "These improve compatibility with other database products."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1753(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1753(para) 
 msgid "Add function <link linkend=\"functions-admin-genfile\"><function>pg_read_binary_file()</function></link> to read binary files (Dimitri Fontaine, Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1761(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1761(para) 
 msgid "Add a single-parameter version of function <link linkend=\"functions-admin-genfile\"><function>pg_read_file()</function></link> to read an entire file (Dimitri Fontaine, Itagaki Takahiro)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1769(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1769(para) 
 msgid "Add three-parameter forms of <link linkend=\"array-functions-table\"><function>array_to_string()</function></link> and <link linkend=\"array-functions-table\"><function>string_to_array()</function></link> for null value processing control (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1781(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1781(title) 
 msgid "Object Information Functions"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1786(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1786(para) 
 msgid "Add the <link linkend=\"functions-info-catalog-table\"><function>pg_describe_object()</function></link> function (Alvaro Herrera)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1792(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1792(para) 
 msgid "This function is used to obtain a human-readable string describing an object, based on the <link linkend=\"catalog-pg-class\"><structname>pg_class</structname></link> OID, object OID, and sub-object ID. It can be used to help interpret the contents of <link linkend=\"catalog-pg-depend\"><structname>pg_depend</structname></link>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1803(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1803(para) 
 msgid "Update comments for built-in operators and their underlying functions (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1808(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1808(para) 
 msgid "Functions that are meant to be used via an associated operator are now commented as such."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1815(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1815(para) 
 msgid "Add variable <link linkend=\"guc-quote-all-identifiers\"><varname>quote_all_identifiers</varname></link> to force the quoting of all identifiers in <command>EXPLAIN</command> and in system catalog functions like <link linkend=\"functions-info-catalog-table\"><function>pg_get_viewdef()</function></link> (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1824(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1824(para) 
 msgid "This makes exporting schemas to tools and other databases with different quoting rules easier."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1831(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1831(para) 
 msgid "Add columns to the <link linkend=\"infoschema-sequences\"><structname>information_schema.sequences</structname></link> system view (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1837(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1837(para) 
 msgid "Previously, though the view existed, the columns about the sequence parameters were unimplemented."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1844(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1844(para) 
 msgid "Allow <literal>public</literal> as a pseudo-role name in <link linkend=\"functions-info-access-table\"><function>has_table_privilege()</function></link> and related functions (Alvaro Herrera)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1850(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1850(para) 
 msgid "This allows checking for public permissions."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1860(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1860(title) 
 msgid "Function and Trigger Creation"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1865(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1865(para) 
 msgid "Support <link linkend=\"sql-createtrigger\"><literal>INSTEAD OF</literal></link> triggers on views (Dean Rasheed)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1870(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1870(para) 
 msgid "This feature can be used to implement fully updatable views."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1882(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1882(title) 
 msgid "Server-Side Languages"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1890(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1890(para) 
 msgid "Add <link linkend=\"plpgsql-foreach-array\"><command>FOREACH IN ARRAY</command></link> to PL/pgSQL (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1896(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1896(para) 
 msgid "This is more efficient and readable than previous methods of iterating through the elements of an array value."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1903(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1903(para) 
 msgid "Allow <command>RAISE</command> without parameters to be caught in the same places that could catch a <command>RAISE ERROR</command> from the same location (Piyush Newe)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1909(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1909(para) 
 msgid "The previous coding threw the error from the block containing the active exception handler. The new behavior is more consistent with other DBMS products."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1921(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1921(title) 
 msgid "<link linkend=\"plperl\">PL/Perl</link> Server-Side Language"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1926(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1926(para) 
 msgid "Allow generic record arguments to PL/Perl functions (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1931(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1931(para) 
 msgid "PL/Perl functions can now be declared to accept type <type>record</type>. The behavior is the same as for any named composite type."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1938(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1938(para) 
 msgid "Convert PL/Perl array arguments to Perl arrays (Alexey Klyukin, Alex Hunsaker)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1943(para) /tmp/cicero-cCcM/release-9.1.xml:1954(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1943(para) /tmp/cicero-wtof/release-9.1.xml:1954(para) 
 msgid "String representations are still available."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1949(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1949(para) 
 msgid "Convert PL/Perl composite-type arguments to Perl hashes (Alexey Klyukin, Alex Hunsaker)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1964(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:1964(title) 
 msgid "<link linkend=\"plpython\">PL/Python</link> Server-Side Language"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1969(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1969(para) 
 msgid "Add table function support for PL/Python (Jan Urbanski)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1973(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1973(para) 
 msgid "PL/Python can now return multiple <literal>OUT</literal> parameters and record sets."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1980(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1980(para) 
 msgid "Add a validator to PL/Python (Jan Urbanski)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1984(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1984(para) 
 msgid "This allows PL/Python functions to be syntax-checked at function creation time."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1991(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1991(para) 
 msgid "Allow exceptions for SQL queries in PL/Python (Jan Urbanski)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:1995(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:1995(para) 
 msgid "This allows access to SQL-generated exception error codes from PL/Python exception blocks."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2002(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2002(para) 
 msgid "Add explicit subtransactions to PL/Python (Jan Urbanski)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2008(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2008(para) 
 msgid "Add PL/Python functions for quoting strings (Jan Urbanski)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2012(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2012(para) 
 msgid "The functions are <link linkend=\"plpython-util\"><literal>plpy.quote_ident</literal></link>, <link linkend=\"plpython-util\"><literal>plpy.quote_literal</literal></link>, and <link linkend=\"plpython-util\"><literal>plpy.quote_nullable</literal></link>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2022(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2022(para) 
 msgid "Add traceback information to PL/Python errors (Jan Urbanski)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2028(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2028(para) 
 msgid "Report PL/Python errors from iterators with <literal>PLy_elog</literal> (Jan Urbanski)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2035(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2035(para) 
 msgid "Fix exception handling with Python 3 (Jan Urbanski)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2039(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2039(para) 
 msgid "Exception classes were previously not available in <literal>plpy</literal> under Python 3."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2052(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:2052(title) 
 msgid "Client Applications"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2057(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2057(para) 
 msgid "Mark <link linkend=\"app-createlang\"><application>createlang</application></link> and <link linkend=\"app-droplang\"><application>droplang</application></link> as deprecated now that they just invoke extension commands (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2069(application) 
+#: /tmp/cicero-wtof/release-9.1.xml:2069(application) 
 msgid "psql"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2074(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2074(para) 
 msgid "Add <application>psql</application> command <literal>\\conninfo</literal> to show current connection information (David Christensen)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2081(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2081(para) 
 msgid "Add <application>psql</application> command <literal>\\sf</literal> to show a function's definition (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2088(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2088(para) 
 msgid "Add <application>psql</application> command <literal>\\dL</literal> to list languages (Fernando Ike)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2095(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2095(para) 
 msgid "Add the <option>S</option> (<quote>system</quote>) option to <application>psql</application>'s <literal>\\dn</literal> (list schemas) command (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2100(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2100(para) 
 msgid "<literal>\\dn</literal> without <literal>S</literal> now suppresses system schemas."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2107(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2107(para) 
 msgid "Allow <application>psql</application>'s <literal>\\e</literal> and <literal>\\ef</literal> commands to accept a line number to be used to position the cursor in the editor (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2113(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2113(para) 
 msgid "This is passed to the editor according to the <envar>PSQL_EDITOR_LINENUMBER_ARG</envar> environment variable."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2120(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2120(para) 
 msgid "Have <application>psql</application> set the client encoding from the operating system locale by default (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2125(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2125(para) 
 msgid "This only happens if the <envar>PGCLIENTENCODING</envar> environment variable is not set."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2132(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2132(para) 
 msgid "Make <literal>\\d</literal> distinguish between unique indexes and unique constraints (Josh Kupershmidt)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2139(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2139(para) 
 msgid "Make <literal>\\dt+</literal> report <function>pg_table_size</function> instead of <function>pg_relation_size</function> when talking to 9.0 or later servers (Bernd Helmle)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2145(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2145(para) 
 msgid "This is a more useful measure of table size, but note that it is not identical to what was previously reported in the same display."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2152(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2152(para) 
 msgid "Additional tab completion support (Itagaki Takahiro, Pavel Stehule, Andrey Popp, Christoph Berg, David Fetter, Josh Kupershmidt)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2163(application) 
+#: /tmp/cicero-wtof/release-9.1.xml:2163(application) 
 msgid "pg_dump"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2168(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2168(para) 
 msgid "Add <link linkend=\"app-pgdump\"><application>pg_dump</application></link> and <link linkend=\"app-pg-dumpall\"><application>pg_dumpall</application></link> option <option>--quote-all-identifiers</option> to force quoting of all identifiers (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2178(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2178(para) 
 msgid "Add <literal>directory</literal> format to <application>pg_dump</application> (Joachim Wieland, Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2183(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2183(para) 
 msgid "This is internally similar to the <literal>tar</literal><application>pg_dump</application> format."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2194(application) 
+#: /tmp/cicero-wtof/release-9.1.xml:2194(application) 
 msgid "pg_ctl"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2199(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2199(para) 
 msgid "Fix <application>pg_ctl</application> so it no longer incorrectly reports that the server is not running (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2205(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2205(para) 
 msgid "Previously this could happen if the server was running but <application>pg_ctl</application> could not authenticate."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2212(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2212(para) 
 msgid "Improve <application>pg_ctl</application> start's <quote>wait</quote> (<option>-w</option>) option (Bruce Momjian, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2217(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2217(para) 
 msgid "The wait mode is now significantly more robust. It will not get confused by non-default postmaster port numbers, non-default Unix-domain socket locations, permission problems, or stale postmaster lock files."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2226(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2226(para) 
 msgid "Add <literal>promote</literal> option to <application>pg_ctl</application> to switch a standby server to primary (Fujii Masao)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2239(application) 
+#: /tmp/cicero-wtof/release-9.1.xml:2239(application) 
 msgid "Development Tools"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2242(application) 
+#: /tmp/cicero-wtof/release-9.1.xml:2242(application) 
 msgid "libpq"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2247(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2247(para) 
 msgid "Add a libpq connection option <link linkend=\"libpq-connect-client-encoding\"><literal>client_encoding</literal></link> which behaves like the <envar>PGCLIENTENCODING</envar> environment variable (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2254(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2254(para) 
 msgid "The value <literal>auto</literal> sets the client encoding based on the operating system locale."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2261(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2261(para) 
 msgid "Add <link linkend=\"libpq-pqlibversion\"><function>PQlibVersion()</function></link> function which returns the libpq library version (Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2268(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2268(para) 
 msgid "libpq already had <function>PQserverVersion()</function> which returns the server version."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2275(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2275(para) 
 msgid "Allow libpq-using clients to check the user name of the server process when connecting via Unix-domain sockets, with the new <link linkend=\"libpq-connect-requirepeer\"><literal>requirepeer</literal></link> connection option (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2284(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2284(para) 
 msgid "<productname>PostgreSQL</productname> already allowed servers to check the client user name when connecting via Unix-domain sockets."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2291(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2291(para) 
 msgid "Add <link linkend=\"libpq-pqping\"><function>PQping()</function></link> and <link linkend=\"libpq-pqpingparams\"><function>PQpingParams()</function></link> to libpq (Bruce Momjian, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2298(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2298(para) 
 msgid "These functions allow detection of the server's status without trying to open a new session."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2309(application) 
+#: /tmp/cicero-wtof/release-9.1.xml:2309(application) 
 msgid "ECPG"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2314(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2314(para) 
 msgid "Allow ECPG to accept dynamic cursor names even in <literal>WHERE CURRENT OF</literal> clauses (Zoltan Boszormenyi)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2322(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2322(para) 
 msgid "Make <application>ecpglib</application> write <type>double</type> values with a precision of 15 digits, not 14 as formerly (Akira Kurosawa)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2334(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:2334(title) 
 msgid "Build Options"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2339(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2339(para) 
 msgid "Use <literal>+Olibmerrno</literal> compile flag with HP-UX C compilers that accept it (Ibrar Ahmed)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2344(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2344(para) 
 msgid "This avoids possible misbehavior of math library calls on recent HP platforms."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2353(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:2353(title) 
 msgid "Makefiles"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2358(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2358(para) 
 msgid "Improved parallel make support (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2362(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2362(para) 
 msgid "This allows for faster compiles. Also, <literal>make -k</literal> now works more consistently."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2369(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2369(para) 
 msgid "Require <acronym>GNU</acronym><link linkend=\"install-requirements\"><application>make</application></link> 3.80 or newer (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2375(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2375(para) 
 msgid "This is necessary because of the parallel-make improvements."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2381(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2381(para) 
 msgid "Add <literal>make maintainer-check</literal> target (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2386(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2386(para) 
 msgid "This target performs various source code checks that are not appropriate for either the build or the regression tests. Currently: duplicate_oids, SGML syntax and tabs check, NLS syntax check."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2394(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2394(para) 
 msgid "Support <literal>make check</literal> in <filename>contrib</filename> (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2399(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2399(para) 
 msgid "Formerly only <literal>make installcheck</literal> worked, but now there is support for testing in a temporary installation. The top-level <literal>make check-world</literal> target now includes testing <filename>contrib</filename> this way."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2412(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:2412(title) 
 msgid "Windows"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2417(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2417(para) 
 msgid "On Windows, allow <link linkend=\"app-pg-ctl\"><application>pg_ctl</application></link> to register the service as auto-start or start-on-demand (Quan Zongliang)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2425(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2425(para) 
 msgid "Add support for collecting <link linkend=\"windows-crash-dumps\">crash dumps</link> on Windows (Craig Ringer, Magnus Hagander)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2430(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2430(para) 
 msgid "<productname>minidumps</productname> can now be generated by non-debug Windows binaries and analyzed by standard debugging tools."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2437(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2437(para) 
 msgid "Enable building with the MinGW64 compiler (Andrew Dunstan)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2441(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2441(para) 
 msgid "This allows building 64-bit Windows binaries even on non-Windows platforms via cross-compiling."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2454(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:2454(title) 
 msgid "Source Code"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2459(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2459(para) 
 msgid "Revise the API for GUC variable assign hooks (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2463(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2463(para) 
 msgid "The previous functions of assign hooks are now split between check hooks and assign hooks, where the former can fail but the latter shouldn't. This change will impact add-on modules that define custom GUC parameters."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2472(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2472(para) 
 msgid "Add latches to the source code to support waiting for events (Heikki Linnakangas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2479(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2479(para) 
 msgid "Centralize data modification permissions-checking logic (KaiGai Kohei)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2486(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2486(para) 
 msgid "Add missing <function>get_<replaceable>object</replaceable>_oid()</function> functions, for consistency (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2493(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2493(para) 
 msgid "Improve ability to use C++ compilers for <link linkend=\"xfunc-c\">compiling add-on modules</link> by removing conflicting key words (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2501(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2501(para) 
 msgid "Add support for DragonFly <acronym>BSD</acronym> (Rumko)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2507(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2507(para) 
 msgid "Expose <function>quote_literal_cstr()</function> for backend use (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2514(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2514(para) 
 msgid "Run <link linkend=\"build\">regression tests</link> in the default encoding (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2519(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2519(para) 
 msgid "Regression tests were previously always run with <literal>SQL_ASCII</literal> encoding."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2526(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2526(para) 
 msgid "Add <application>src/tools/git_changelog</application> to replace <application>cvs2cl</application> and <application>pgcvslog</application> (Robert Haas, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2534(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2534(para) 
 msgid "Add <application>git-external-diff</application> script to <filename>src/tools</filename> (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2539(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2539(para) 
 msgid "This is used to generate context diffs from git."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2545(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2545(para) 
 msgid "Improve support for building with <application>Clang</application> (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2554(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:2554(title) 
 msgid "Server Hooks"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2559(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2559(para) 
 msgid "Add source code hooks to check permissions (Robert Haas, Stephen Frost)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2566(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2566(para) 
 msgid "Add post-object-creation function hooks for use by security frameworks (KaiGai Kohei)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2573(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2573(para) 
 msgid "Add a client authentication hook (KaiGai Kohei)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2585(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:2585(title) 
 msgid "Contrib"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2590(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2590(para) 
 msgid "Modify <filename>contrib</filename> modules and stored procedure languages to install via the new <link linkend=\"extend-extensions\">extension</link> mechanism (Tom Lane, Dimitri Fontaine)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2599(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2599(para) 
 msgid "Add <link linkend=\"file-fdw\"><filename>contrib/file_fdw</filename></link> foreign-data wrapper (Shigeru Hanada)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2604(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2604(para) 
 msgid "Foreign tables using this foreign data wrapper can read flat files in a manner very similar to <command>COPY</command>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2611(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2611(para) 
 msgid "Add nearest-neighbor search support to <link linkend=\"pgtrgm\"><filename>contrib/pg_trgm</filename></link> and <link linkend=\"btree-gist\"><filename>contrib/btree_gist</filename></link> (Teodor Sigaev)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2620(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2620(para) 
 msgid "Add <link linkend=\"btree-gist\"><filename>contrib/btree_gist</filename></link> support for searching on not-equals (Jeff Davis)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2628(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2628(para) 
 msgid "Fix <link linkend=\"fuzzystrmatch\"><filename>contrib/fuzzystrmatch</filename></link>'s <function>levenshtein()</function> function to handle multibyte characters (Alexander Korotkov)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2637(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2637(para) 
 msgid "Add <function>ssl_cipher()</function> and <function>ssl_version()</function> functions to <link linkend=\"sslinfo\"><filename>contrib/sslinfo</filename></link> (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2646(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2646(para) 
 msgid "Fix <link linkend=\"intarray\"><filename>contrib/intarray</filename></link> and <link linkend=\"hstore\"><filename>contrib/hstore</filename></link> to give consistent results with indexed empty arrays (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2652(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2652(para) 
 msgid "Previously an empty-array query that used an index might return different results from one that used a sequential scan."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2659(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2659(para) 
 msgid "Allow <link linkend=\"intarray\"><filename>contrib/intarray</filename></link> to work properly on multidimensional arrays (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2666(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2666(para) 
 msgid "In <link linkend=\"intarray\"><filename>contrib/intarray</filename></link>, avoid errors complaining about the presence of nulls in cases where no nulls are actually present (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2675(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2675(para) 
 msgid "In <link linkend=\"intarray\"><filename>contrib/intarray</filename></link>, fix behavior of containment operators with respect to empty arrays (Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2682(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2682(para) 
 msgid "Empty arrays are now correctly considered to be contained in any other array."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2689(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2689(para) 
 msgid "Remove <link linkend=\"xml2\"><filename>contrib/xml2</filename></link>'s arbitrary limit on the number of <replaceable>parameter</replaceable>=<replaceable>value</replaceable> pairs that can be handled by <function>xslt_process()</function> (Pavel Stehule)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2696(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2696(para) 
 msgid "The previous limit was 10."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2702(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2702(para) 
 msgid "In <link linkend=\"pageinspect\"><filename>contrib/pageinspect</filename></link>, fix heap_page_item to return infomasks as 32-bit values (Alvaro Herrera)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2707(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2707(para) 
 msgid "This avoids returning negative values, which was confusing. The underlying value is a 16-bit unsigned integer."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2716(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:2716(title) 
 msgid "Security"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2721(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2721(para) 
 msgid "Add <link linkend=\"sepgsql\"><filename>contrib/sepgsql</filename></link> to interface permission checks with <acronym>SELinux</acronym> (KaiGai Kohei)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2726(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2726(para) 
 msgid "This uses the new <link linkend=\"sql-security-label\"><command>SECURITY LABEL</command></link> facility."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2734(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2734(para) 
 msgid "Add contrib module <link linkend=\"auth-delay\"><filename>auth_delay</filename></link> (KaiGai Kohei)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2740(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2740(para) 
 msgid "This causes the server to pause before returning authentication failure; it is designed to make brute force password attacks more difficult."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2748(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2748(para) 
 msgid "Add <link linkend=\"dummy-seclabel\"><filename>dummy_seclabel</filename></link> contrib module (KaiGai Kohei)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2753(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2753(para) 
 msgid "This is used for permission regression testing."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2768(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2768(para) 
 msgid "Add support for <literal>LIKE</literal> and <literal>ILIKE</literal> index searches to <link linkend=\"pgtrgm\"><filename>contrib/pg_trgm</filename></link> (Alexander Korotkov)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2777(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2777(para) 
 msgid "Add <function>levenshtein_less_equal()</function> function to <link linkend=\"fuzzystrmatch\"><filename>contrib/fuzzystrmatch</filename></link>, which is optimized for small distances (Alexander Korotkov)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2785(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2785(para) 
 msgid "Improve performance of index lookups on <link linkend=\"seg\"><filename>contrib/seg</filename></link> columns (Alexander Korotkov)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2793(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2793(para) 
 msgid "Improve performance of <link linkend=\"pgupgrade\"><application>pg_upgrade</application></link> for databases with many relations (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2801(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2801(para) 
 msgid "Add flag to <link linkend=\"pgbench\"><filename>contrib/pgbench</filename></link> to report per-statement latencies (Florian Pflug)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2813(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:2813(title) 
 msgid "Fsync Testing"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2818(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2818(para) 
 msgid "Move <filename>src/tools/test_fsync</filename> to <link linkend=\"pgtestfsync\"><filename>contrib/pg_test_fsync</filename></link> (Bruce Momjian, Tom Lane)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2826(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2826(para) 
 msgid "Add <literal>O_DIRECT</literal> support to <link linkend=\"pgtestfsync\"><filename>contrib/pg_test_fsync</filename></link> (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2832(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2832(para) 
 msgid "This matches the use of <literal>O_DIRECT</literal> by <link linkend=\"guc-wal-sync-method\"><varname>wal_sync_method</varname></link>."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2839(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2839(para) 
 msgid "Add new tests to <link linkend=\"pgtestfsync\"><filename>contrib/pg_test_fsync</filename></link> (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2853(title) 
+#: /tmp/cicero-wtof/release-9.1.xml:2853(title) 
 msgid "Documentation"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2858(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2858(para) 
 msgid "Extensive <link linkend=\"ecpg\"><application>ECPG</application></link> documentation improvements (Satoshi Nagayasu)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2865(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2865(para) 
 msgid "Extensive proofreading and documentation improvements (Thom Brown, Josh Kupershmidt, Susanne Ebrecht)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2872(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2872(para) 
 msgid "Add documentation for <link linkend=\"guc-exit-on-error\"><varname>exit_on_error</varname></link> (Robert Haas)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2878(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2878(para) 
 msgid "This parameter causes sessions to exit on any error."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2884(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2884(para) 
 msgid "Add documentation for <link linkend=\"functions-info-catalog-table\"><function>pg_options_to_table()</function></link> (Josh Berkus)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2890(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2890(para) 
 msgid "This function shows table storage options in a readable form."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2896(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2896(para) 
 msgid "Document that it is possible to access all composite type fields using <link linkend=\"field-selection\"><literal>(compositeval).*</literal></link> syntax (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2905(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2905(para) 
 msgid "Document that <link linkend=\"functions-string-other\"><function>translate()</function></link> removes characters in <literal>from</literal> that don't have a corresponding <literal>to</literal> character (Josh Kupershmidt)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2914(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2914(para) 
 msgid "Merge documentation for <command>CREATE CONSTRAINT TRIGGER</command> and <link linkend=\"sql-createtrigger\"><command>CREATE TRIGGER</command></link> (Alvaro Herrera)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2922(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2922(para) 
 msgid "Centralize <link linkend=\"ddl-priv\">permission</link> and <link linkend=\"upgrading\">upgrade</link> documentation (Bruce Momjian)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2929(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2929(para) 
 msgid "Add <link linkend=\"sysvipc-parameters\">kernel tuning documentation</link> for Solaris 10 (Josh Berkus)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2934(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2934(para) 
 msgid "Previously only Solaris 9 kernel tuning was documented."
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2940(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2940(para) 
 msgid "Handle non-ASCII characters consistently in <filename>HISTORY</filename> file (Peter Eisentraut)"
 msgstr ""
 
-#: /tmp/cicero-cCcM/release-9.1.xml:2945(para) 
+#: /tmp/cicero-wtof/release-9.1.xml:2945(para) 
 msgid "While the <filename>HISTORY</filename> file is in English, we do have to deal with non-ASCII letters in contributor names. These are now transliterated so that they are reasonably legible without assumptions about character set."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-cCcM/release-9.1.xml:0(None) 
+#: /tmp/cicero-wtof/release-9.1.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
