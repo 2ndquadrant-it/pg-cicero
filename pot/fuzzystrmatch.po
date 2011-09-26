@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-26 12:29+0200\n"
+"POT-Creation-Date: 2011-09-26 12:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,128 +9,128 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:5(title) /tmp/cicero-wtof/fuzzystrmatch.xml:8(primary) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:5(title) /tmp/cicero-HnEQ/fuzzystrmatch.xml:8(primary) 
 msgid "fuzzystrmatch"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:11(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:11(para) 
 msgid "The <filename>fuzzystrmatch</filename> module provides several functions to determine similarities and distance between strings."
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:17(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:17(para) 
 msgid "At present, the <function>soundex</function>, <function>metaphone</function>, <function>dmetaphone</function>, and <function>dmetaphone_alt</function> functions do not work well with multibyte encodings (such as UTF-8)."
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:25(title) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:25(title) 
 msgid "Soundex"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:27(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:27(para) 
 msgid "The Soundex system is a method of matching similar-sounding names by converting them to the same code. It was initially used by the United States Census in 1880, 1900, and 1910. Note that Soundex is not very useful for non-English names."
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:34(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:34(para) 
 msgid "The <filename>fuzzystrmatch</filename> module provides two functions for working with Soundex codes:"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:39(synopsis) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:39(synopsis) 
 #, no-wrap
 msgid "\nsoundex(text) returns text\ndifference(text, text) returns int\n"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:44(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:44(para) 
 msgid "The <function>soundex</function> function converts a string to its Soundex code. The <function>difference</function> function converts two strings to their Soundex codes and then reports the number of matching code positions. Since Soundex codes have four characters, the result ranges from zero to four, with zero being no match and four being an exact match. (Thus, the function is misnamed — <function>similarity</function> would have been a better name.)"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:54(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:54(para) 
 msgid "Here are some usage examples:"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:58(programlisting) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:58(programlisting) 
 #, no-wrap
 msgid "\nSELECT soundex('hello world!');\n\nSELECT soundex('Anne'), soundex('Ann'), difference('Anne', 'Ann');\nSELECT soundex('Anne'), soundex('Andrew'), difference('Anne', 'Andrew');\nSELECT soundex('Anne'), soundex('Margaret'), difference('Anne', 'Margaret');\n\nCREATE TABLE s (nm text);\n\nINSERT INTO s VALUES ('john');\nINSERT INTO s VALUES ('joan');\nINSERT INTO s VALUES ('wobbly');\nINSERT INTO s VALUES ('jack');\n\nSELECT * FROM s WHERE soundex(nm) = soundex('john');\n\nSELECT * FROM s WHERE difference(s.nm, 'john') &gt; 2;\n"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:79(title) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:79(title) 
 msgid "Levenshtein"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:81(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:81(para) 
 msgid "This function calculates the Levenshtein distance between two strings:"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:85(synopsis) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:85(synopsis) 
 #, no-wrap
 msgid "\nlevenshtein(text source, text target, int ins_cost, int del_cost, int sub_cost) returns int\nlevenshtein(text source, text target) returns int\nlevenshtein_less_equal(text source, text target, int ins_cost, int del_cost, int sub_cost, int max_d) returns int\nlevenshtein_less_equal(text source, text target, int max_d) returns int\n"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:92(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:92(para) 
 msgid "Both <literal>source</literal> and <literal>target</literal> can be any non-null string, with a maximum of 255 bytes. The cost parameters specify how much to charge for a character insertion, deletion, or substitution, respectively. You can omit the cost parameters, as in the second version of the function; in that case they all default to 1. <literal>levenshtein_less_equal</literal> is accelerated version of levenshtein function for low values of distance. If actual distance is less or equal then max_d, then <literal>levenshtein_less_equal</literal> returns accurate value of it. Otherwise this function returns value which is greater than max_d."
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:105(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:105(para) 
 msgid "Examples:"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:109(screen) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:109(screen) 
 #, no-wrap
 msgid "\ntest=# SELECT levenshtein('GUMBO', 'GAMBOL');\n levenshtein\n-------------\n           2\n(1 row)\n\ntest=# SELECT levenshtein('GUMBO', 'GAMBOL', 2,1,1);\n levenshtein\n-------------\n           3\n(1 row)\n\ntest=# SELECT levenshtein_less_equal('extensive', 'exhaustive',2);\n levenshtein_less_equal\n------------------------\n                      3\n(1 row)\n\ntest=# SELECT levenshtein_less_equal('extensive', 'exhaustive',4);\n levenshtein_less_equal\n------------------------\n                      4\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:137(title) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:137(title) 
 msgid "Metaphone"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:139(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:139(para) 
 msgid "Metaphone, like Soundex, is based on the idea of constructing a representative code for an input string. Two strings are then deemed similar if they have the same codes."
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:145(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:145(para) 
 msgid "This function calculates the metaphone code of an input string:"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:149(synopsis) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:149(synopsis) 
 #, no-wrap
 msgid "\nmetaphone(text source, int max_output_length) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:153(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:153(para) 
 msgid "<literal>source</literal> has to be a non-null string with a maximum of 255 characters. <literal>max_output_length</literal> sets the maximum length of the output metaphone code; if longer, the output is truncated to this length."
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:160(para) /tmp/cicero-wtof/fuzzystrmatch.xml:193(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:160(para) /tmp/cicero-HnEQ/fuzzystrmatch.xml:193(para) 
 msgid "Example:"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:164(screen) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:164(screen) 
 #, no-wrap
 msgid "\ntest=# SELECT metaphone('GUMBO', 4);\n metaphone\n-----------\n KM\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:174(title) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:174(title) 
 msgid "Double Metaphone"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:176(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:176(para) 
 msgid "The Double Metaphone system computes two <quote>sounds like</quote> strings for a given input string — a <quote>primary</quote> and an <quote>alternate</quote>. In most cases they are the same, but for non-English names especially they can be a bit different, depending on pronunciation. These functions compute the primary and alternate codes:"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:184(synopsis) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:184(synopsis) 
 #, no-wrap
 msgid "\ndmetaphone(text source) returns text\ndmetaphone_alt(text source) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:189(para) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:189(para) 
 msgid "There is no length limit on the input strings."
 msgstr ""
 
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:197(screen) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:197(screen) 
 #, no-wrap
 msgid "\ntest=# select dmetaphone('gumbo');\n dmetaphone\n------------\n KMP\n(1 row)\n"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-wtof/fuzzystrmatch.xml:0(None) 
+#: /tmp/cicero-HnEQ/fuzzystrmatch.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

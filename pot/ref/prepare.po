@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-26 12:30+0200\n"
+"POT-Creation-Date: 2011-09-26 12:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,135 +9,135 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-wtof/ref/prepare.xml:9(refentrytitle) /tmp/cicero-wtof/ref/prepare.xml:15(refname) /tmp/cicero-wtof/ref/prepare.xml:20(primary) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:9(refentrytitle) /tmp/cicero-HnEQ/ref/prepare.xml:15(refname) /tmp/cicero-HnEQ/ref/prepare.xml:20(primary) 
 msgid "PREPARE"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:10(manvolnum) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:11(refmiscinfo) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:16(refpurpose) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:16(refpurpose) 
 msgid "prepare a statement for execution"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:24(primary) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:24(primary) 
 msgid "prepared statements"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:25(secondary) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:25(secondary) 
 msgid "creating"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:30(replaceable) /tmp/cicero-wtof/ref/prepare.xml:90(replaceable) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:30(replaceable) /tmp/cicero-HnEQ/ref/prepare.xml:90(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:30(replaceable) /tmp/cicero-wtof/ref/prepare.xml:102(replaceable) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:30(replaceable) /tmp/cicero-HnEQ/ref/prepare.xml:102(replaceable) 
 msgid "data_type"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:30(replaceable) /tmp/cicero-wtof/ref/prepare.xml:116(replaceable) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:30(replaceable) /tmp/cicero-HnEQ/ref/prepare.xml:116(replaceable) 
 msgid "statement"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:29(synopsis) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:29(synopsis) 
 #, no-wrap
 msgid "\nPREPARE <placeholder-1/> [ ( <placeholder-2/> [, ...] ) ] AS <placeholder-3/>\n"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:35(title) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:35(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:37(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:37(para) 
 msgid "<command>PREPARE</command> creates a prepared statement. A prepared statement is a server-side object that can be used to optimize performance. When the <command>PREPARE</command> statement is executed, the specified statement is parsed, rewritten, and planned. When an <command>EXECUTE</command> command is subsequently issued, the prepared statement need only be executed. Thus, the parsing, rewriting, and planning stages are only performed once, instead of every time the statement is executed."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:48(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:48(para) 
 msgid "Prepared statements can take parameters: values that are substituted into the statement when it is executed. When creating the prepared statement, refer to parameters by position, using <literal>$1</literal>, <literal>$2</literal>, etc. A corresponding list of parameter data types can optionally be specified. When a parameter's data type is not specified or is declared as <literal>unknown</literal>, the type is inferred from the context in which the parameter is used (if possible). When executing the statement, specify the actual values for these parameters in the <command>EXECUTE</command> statement. Refer to <xref linkend=\"sql-execute\"/> for more information about that."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:63(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:63(para) 
 msgid "Prepared statements only last for the duration of the current database session. When the session ends, the prepared statement is forgotten, so it must be recreated before being used again. This also means that a single prepared statement cannot be used by multiple simultaneous database clients; however, each client can create their own prepared statement to use. The prepared statement can be manually cleaned up using the <xref linkend=\"sql-deallocate\"/> command."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:73(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:73(para) 
 msgid "Prepared statements have the largest performance advantage when a single session is being used to execute a large number of similar statements. The performance difference will be particularly significant if the statements are complex to plan or rewrite, for example, if the query involves a join of many tables or requires the application of several rules. If the statement is relatively simple to plan and rewrite but relatively expensive to execute, the performance advantage of prepared statements will be less noticeable."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:86(title) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:86(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:92(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:92(para) 
 msgid "An arbitrary name given to this particular prepared statement. It must be unique within a single session and is subsequently used to execute or deallocate a previously prepared statement."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:104(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:104(para) 
 msgid "The data type of a parameter to the prepared statement. If the data type of a particular parameter is unspecified or is specified as <literal>unknown</literal>, it will be inferred from the context in which the parameter is used. To refer to the parameters in the prepared statement itself, use <literal>$1</literal>, <literal>$2</literal>, etc."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:118(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:118(para) 
 msgid "Any <command>SELECT</command>, <command>INSERT</command>, <command>UPDATE</command>, <command>DELETE</command>, or <command>VALUES</command> statement."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:128(title) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:128(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:130(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:130(para) 
 msgid "In some situations, the query plan produced for a prepared statement will be inferior to the query plan that would have been chosen if the statement had been submitted and executed normally. This is because when the statement is planned and the planner attempts to determine the optimal query plan, the actual values of any parameters specified in the statement are unavailable. <productname>PostgreSQL</productname> collects statistics on the distribution of data in the table, and can use constant values in a statement to make guesses about the likely result of executing the statement. Since this data is unavailable when planning prepared statements with parameters, the chosen plan might be suboptimal. To examine the query plan <productname>PostgreSQL</productname> has chosen for a prepared statement, use <xref linkend=\"sql-explain\"/>."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:147(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:147(para) 
 msgid "For more information on query planning and the statistics collected by <productname>PostgreSQL</productname> for that purpose, see the <xref linkend=\"sql-analyze\"/> documentation."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:154(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:154(para) 
 msgid "You can see all available prepared statements of a session by querying the <link linkend=\"view-pg-prepared-statements\"><structname>pg_prepared_statements</structname></link> system view."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:162(title) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:162(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:166(programlisting) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:166(programlisting) 
 #, no-wrap
 msgid "\nPREPARE fooplan (int, text, bool, numeric) AS\n    INSERT INTO foo VALUES($1, $2, $3, $4);\nEXECUTE fooplan(1, 'Hunter Valley', 't', 200.00);\n"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:163(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:163(para) 
 msgid "Create a prepared statement for an <command>INSERT</command> statement, and then execute it: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:176(programlisting) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:176(programlisting) 
 #, no-wrap
 msgid "\nPREPARE usrrptplan (int) AS\n    SELECT * FROM users u, logs l WHERE u.usrid=$1 AND u.usrid=l.usrid\n    AND l.date = $2;\nEXECUTE usrrptplan(1, current_date);\n"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:173(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:173(para) 
 msgid "Create a prepared statement for a <command>SELECT</command> statement, and then execute it: <placeholder-1/> Note that the data type of the second parameter is not specified, so it is inferred from the context in which <literal>$2</literal> is used."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:188(title) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:188(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:190(para) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:190(para) 
 msgid "The SQL standard includes a <command>PREPARE</command> statement, but it is only for use in embedded SQL. This version of the <command>PREPARE</command> statement also uses a somewhat different syntax."
 msgstr ""
 
-#: /tmp/cicero-wtof/ref/prepare.xml:199(title) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:199(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-wtof/ref/prepare.xml:0(None) 
+#: /tmp/cicero-HnEQ/ref/prepare.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
