@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-28 11:00+0200\n"
+"POT-Creation-Date: 2011-09-28 11:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,724 +9,724 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-PyDp/dblink.xml:5(title) /tmp/cicero-PyDp/dblink.xml:8(primary) /tmp/cicero-PyDp/dblink.xml:308(refentrytitle) /tmp/cicero-PyDp/dblink.xml:313(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:5(title) /tmp/cicero-CQzU/dblink.xml:8(primary) /tmp/cicero-CQzU/dblink.xml:308(refentrytitle) /tmp/cicero-CQzU/dblink.xml:313(refname) 
 msgid "dblink"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:11(para) 
+#: /tmp/cicero-CQzU/dblink.xml:11(para) 
 msgid "<filename>dblink</filename> is a module which supports connections to other <productname>PostgreSQL</productname> databases from within a database session."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:19(refentrytitle) /tmp/cicero-PyDp/dblink.xml:24(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:19(refentrytitle) /tmp/cicero-CQzU/dblink.xml:24(refname) 
 msgid "dblink_connect"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:20(manvolnum) /tmp/cicero-PyDp/dblink.xml:185(manvolnum) /tmp/cicero-PyDp/dblink.xml:238(manvolnum) /tmp/cicero-PyDp/dblink.xml:309(manvolnum) /tmp/cicero-PyDp/dblink.xml:531(manvolnum) /tmp/cicero-PyDp/dblink.xml:664(manvolnum) /tmp/cicero-PyDp/dblink.xml:784(manvolnum) /tmp/cicero-PyDp/dblink.xml:933(manvolnum) /tmp/cicero-PyDp/dblink.xml:1040(manvolnum) /tmp/cicero-PyDp/dblink.xml:1081(manvolnum) /tmp/cicero-PyDp/dblink.xml:1140(manvolnum) /tmp/cicero-PyDp/dblink.xml:1218(manvolnum) /tmp/cicero-PyDp/dblink.xml:1277(manvolnum) /tmp/cicero-PyDp/dblink.xml:1355(manvolnum) /tmp/cicero-PyDp/dblink.xml:1503(manvolnum) /tmp/cicero-PyDp/dblink.xml:1567(manvolnum) /tmp/cicero-PyDp/dblink.xml:1655(manvolnum) /tmp/cicero-PyDp/dblink.xml:1786(manvolnum) /tmp/cicero-PyDp/dblink.xml:1900(manvolnum) 
+#: /tmp/cicero-CQzU/dblink.xml:20(manvolnum) /tmp/cicero-CQzU/dblink.xml:185(manvolnum) /tmp/cicero-CQzU/dblink.xml:238(manvolnum) /tmp/cicero-CQzU/dblink.xml:309(manvolnum) /tmp/cicero-CQzU/dblink.xml:531(manvolnum) /tmp/cicero-CQzU/dblink.xml:664(manvolnum) /tmp/cicero-CQzU/dblink.xml:784(manvolnum) /tmp/cicero-CQzU/dblink.xml:933(manvolnum) /tmp/cicero-CQzU/dblink.xml:1040(manvolnum) /tmp/cicero-CQzU/dblink.xml:1081(manvolnum) /tmp/cicero-CQzU/dblink.xml:1140(manvolnum) /tmp/cicero-CQzU/dblink.xml:1218(manvolnum) /tmp/cicero-CQzU/dblink.xml:1277(manvolnum) /tmp/cicero-CQzU/dblink.xml:1355(manvolnum) /tmp/cicero-CQzU/dblink.xml:1503(manvolnum) /tmp/cicero-CQzU/dblink.xml:1567(manvolnum) /tmp/cicero-CQzU/dblink.xml:1655(manvolnum) /tmp/cicero-CQzU/dblink.xml:1786(manvolnum) /tmp/cicero-CQzU/dblink.xml:1900(manvolnum) 
 msgid "3"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:25(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:25(refpurpose) 
 msgid "opens a persistent connection to a remote database"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:29(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:29(synopsis) 
 #, no-wrap
 msgid "\ndblink_connect(text connstr) returns text\ndblink_connect(text connname, text connstr) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:36(title) /tmp/cicero-PyDp/dblink.xml:201(title) /tmp/cicero-PyDp/dblink.xml:254(title) /tmp/cicero-PyDp/dblink.xml:326(title) /tmp/cicero-PyDp/dblink.xml:548(title) /tmp/cicero-PyDp/dblink.xml:680(title) /tmp/cicero-PyDp/dblink.xml:800(title) /tmp/cicero-PyDp/dblink.xml:949(title) /tmp/cicero-PyDp/dblink.xml:1055(title) /tmp/cicero-PyDp/dblink.xml:1096(title) /tmp/cicero-PyDp/dblink.xml:1155(title) /tmp/cicero-PyDp/dblink.xml:1233(title) /tmp/cicero-PyDp/dblink.xml:1293(title) /tmp/cicero-PyDp/dblink.xml:1370(title) /tmp/cicero-PyDp/dblink.xml:1518(title) /tmp/cicero-PyDp/dblink.xml:1584(title) /tmp/cicero-PyDp/dblink.xml:1677(title) /tmp/cicero-PyDp/dblink.xml:1806(title) /tmp/cicero-PyDp/dblink.xml:1921(title) 
+#: /tmp/cicero-CQzU/dblink.xml:36(title) /tmp/cicero-CQzU/dblink.xml:201(title) /tmp/cicero-CQzU/dblink.xml:254(title) /tmp/cicero-CQzU/dblink.xml:326(title) /tmp/cicero-CQzU/dblink.xml:548(title) /tmp/cicero-CQzU/dblink.xml:680(title) /tmp/cicero-CQzU/dblink.xml:800(title) /tmp/cicero-CQzU/dblink.xml:949(title) /tmp/cicero-CQzU/dblink.xml:1055(title) /tmp/cicero-CQzU/dblink.xml:1096(title) /tmp/cicero-CQzU/dblink.xml:1155(title) /tmp/cicero-CQzU/dblink.xml:1233(title) /tmp/cicero-CQzU/dblink.xml:1293(title) /tmp/cicero-CQzU/dblink.xml:1370(title) /tmp/cicero-CQzU/dblink.xml:1518(title) /tmp/cicero-CQzU/dblink.xml:1584(title) /tmp/cicero-CQzU/dblink.xml:1677(title) /tmp/cicero-CQzU/dblink.xml:1806(title) /tmp/cicero-CQzU/dblink.xml:1921(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:38(para) 
+#: /tmp/cicero-CQzU/dblink.xml:38(para) 
 msgid "<function>dblink_connect()</function> establishes a connection to a remote <productname>PostgreSQL</productname> database. The server and database to be contacted are identified through a standard <application>libpq</application> connection string. Optionally, a name can be assigned to the connection. Multiple named connections can be open at once, but only one unnamed connection is permitted at a time. The connection will persist until closed or until the database session is ended."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:48(para) 
+#: /tmp/cicero-CQzU/dblink.xml:48(para) 
 msgid "The connection string may also be the name of an existing foreign server. It is recommended to use the <function>postgresql_fdw_validator</function> when defining the corresponding foreign-data wrapper. See the example below, as well as the following: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:64(title) /tmp/cicero-PyDp/dblink.xml:264(title) /tmp/cicero-PyDp/dblink.xml:343(title) /tmp/cicero-PyDp/dblink.xml:565(title) /tmp/cicero-PyDp/dblink.xml:690(title) /tmp/cicero-PyDp/dblink.xml:809(title) /tmp/cicero-PyDp/dblink.xml:958(title) /tmp/cicero-PyDp/dblink.xml:1105(title) /tmp/cicero-PyDp/dblink.xml:1174(title) /tmp/cicero-PyDp/dblink.xml:1241(title) /tmp/cicero-PyDp/dblink.xml:1306(title) /tmp/cicero-PyDp/dblink.xml:1381(title) /tmp/cicero-PyDp/dblink.xml:1532(title) /tmp/cicero-PyDp/dblink.xml:1594(title) /tmp/cicero-PyDp/dblink.xml:1691(title) /tmp/cicero-PyDp/dblink.xml:1817(title) /tmp/cicero-PyDp/dblink.xml:1938(title) 
+#: /tmp/cicero-CQzU/dblink.xml:64(title) /tmp/cicero-CQzU/dblink.xml:264(title) /tmp/cicero-CQzU/dblink.xml:343(title) /tmp/cicero-CQzU/dblink.xml:565(title) /tmp/cicero-CQzU/dblink.xml:690(title) /tmp/cicero-CQzU/dblink.xml:809(title) /tmp/cicero-CQzU/dblink.xml:958(title) /tmp/cicero-CQzU/dblink.xml:1105(title) /tmp/cicero-CQzU/dblink.xml:1174(title) /tmp/cicero-CQzU/dblink.xml:1241(title) /tmp/cicero-CQzU/dblink.xml:1306(title) /tmp/cicero-CQzU/dblink.xml:1381(title) /tmp/cicero-CQzU/dblink.xml:1532(title) /tmp/cicero-CQzU/dblink.xml:1594(title) /tmp/cicero-CQzU/dblink.xml:1691(title) /tmp/cicero-CQzU/dblink.xml:1817(title) /tmp/cicero-CQzU/dblink.xml:1938(title) 
 msgid "Arguments"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:68(parameter) /tmp/cicero-PyDp/dblink.xml:268(parameter) /tmp/cicero-PyDp/dblink.xml:347(parameter) /tmp/cicero-PyDp/dblink.xml:569(parameter) /tmp/cicero-PyDp/dblink.xml:694(parameter) /tmp/cicero-PyDp/dblink.xml:813(parameter) /tmp/cicero-PyDp/dblink.xml:962(parameter) /tmp/cicero-PyDp/dblink.xml:1109(parameter) /tmp/cicero-PyDp/dblink.xml:1178(parameter) /tmp/cicero-PyDp/dblink.xml:1245(parameter) /tmp/cicero-PyDp/dblink.xml:1310(parameter) /tmp/cicero-PyDp/dblink.xml:1385(parameter) /tmp/cicero-PyDp/dblink.xml:1536(parameter) 
+#: /tmp/cicero-CQzU/dblink.xml:68(parameter) /tmp/cicero-CQzU/dblink.xml:268(parameter) /tmp/cicero-CQzU/dblink.xml:347(parameter) /tmp/cicero-CQzU/dblink.xml:569(parameter) /tmp/cicero-CQzU/dblink.xml:694(parameter) /tmp/cicero-CQzU/dblink.xml:813(parameter) /tmp/cicero-CQzU/dblink.xml:962(parameter) /tmp/cicero-CQzU/dblink.xml:1109(parameter) /tmp/cicero-CQzU/dblink.xml:1178(parameter) /tmp/cicero-CQzU/dblink.xml:1245(parameter) /tmp/cicero-CQzU/dblink.xml:1310(parameter) /tmp/cicero-CQzU/dblink.xml:1385(parameter) /tmp/cicero-CQzU/dblink.xml:1536(parameter) 
 msgid "conname"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:70(para) 
+#: /tmp/cicero-CQzU/dblink.xml:70(para) 
 msgid "The name to use for this connection; if omitted, an unnamed connection is opened, replacing any existing unnamed connection."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:78(parameter) /tmp/cicero-PyDp/dblink.xml:357(parameter) /tmp/cicero-PyDp/dblink.xml:579(parameter) 
+#: /tmp/cicero-CQzU/dblink.xml:78(parameter) /tmp/cicero-CQzU/dblink.xml:357(parameter) /tmp/cicero-CQzU/dblink.xml:579(parameter) 
 msgid "connstr"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:80(para) 
+#: /tmp/cicero-CQzU/dblink.xml:80(para) 
 msgid "<application>libpq</application>-style connection info string, for example <literal>hostaddr=127.0.0.1 port=5432 dbname=mydb user=postgres password=mypasswd</literal>. For details see <function>PQconnectdb</function> in <xref linkend=\"libpq-connect\"/>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:92(title) /tmp/cicero-PyDp/dblink.xml:279(title) /tmp/cicero-PyDp/dblink.xml:391(title) /tmp/cicero-PyDp/dblink.xml:614(title) /tmp/cicero-PyDp/dblink.xml:737(title) /tmp/cicero-PyDp/dblink.xml:857(title) /tmp/cicero-PyDp/dblink.xml:995(title) /tmp/cicero-PyDp/dblink.xml:1064(title) /tmp/cicero-PyDp/dblink.xml:1120(title) /tmp/cicero-PyDp/dblink.xml:1199(title) /tmp/cicero-PyDp/dblink.xml:1256(title) /tmp/cicero-PyDp/dblink.xml:1321(title) /tmp/cicero-PyDp/dblink.xml:1408(title) /tmp/cicero-PyDp/dblink.xml:1547(title) /tmp/cicero-PyDp/dblink.xml:1613(title) /tmp/cicero-PyDp/dblink.xml:1751(title) /tmp/cicero-PyDp/dblink.xml:1865(title) /tmp/cicero-PyDp/dblink.xml:1998(title) 
+#: /tmp/cicero-CQzU/dblink.xml:92(title) /tmp/cicero-CQzU/dblink.xml:279(title) /tmp/cicero-CQzU/dblink.xml:391(title) /tmp/cicero-CQzU/dblink.xml:614(title) /tmp/cicero-CQzU/dblink.xml:737(title) /tmp/cicero-CQzU/dblink.xml:857(title) /tmp/cicero-CQzU/dblink.xml:995(title) /tmp/cicero-CQzU/dblink.xml:1064(title) /tmp/cicero-CQzU/dblink.xml:1120(title) /tmp/cicero-CQzU/dblink.xml:1199(title) /tmp/cicero-CQzU/dblink.xml:1256(title) /tmp/cicero-CQzU/dblink.xml:1321(title) /tmp/cicero-CQzU/dblink.xml:1408(title) /tmp/cicero-CQzU/dblink.xml:1547(title) /tmp/cicero-CQzU/dblink.xml:1613(title) /tmp/cicero-CQzU/dblink.xml:1751(title) /tmp/cicero-CQzU/dblink.xml:1865(title) /tmp/cicero-CQzU/dblink.xml:1998(title) 
 msgid "Return Value"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:94(para) /tmp/cicero-PyDp/dblink.xml:281(para) 
+#: /tmp/cicero-CQzU/dblink.xml:94(para) /tmp/cicero-CQzU/dblink.xml:281(para) 
 msgid "Returns status, which is always <literal>OK</literal> (since any error causes the function to throw an error instead of returning)."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:101(title) /tmp/cicero-PyDp/dblink.xml:427(title) /tmp/cicero-PyDp/dblink.xml:745(title) /tmp/cicero-PyDp/dblink.xml:867(title) /tmp/cicero-PyDp/dblink.xml:1003(title) /tmp/cicero-PyDp/dblink.xml:1427(title) /tmp/cicero-PyDp/dblink.xml:1757(title) /tmp/cicero-PyDp/dblink.xml:1871(title) /tmp/cicero-PyDp/dblink.xml:2004(title) 
+#: /tmp/cicero-CQzU/dblink.xml:101(title) /tmp/cicero-CQzU/dblink.xml:427(title) /tmp/cicero-CQzU/dblink.xml:745(title) /tmp/cicero-CQzU/dblink.xml:867(title) /tmp/cicero-CQzU/dblink.xml:1003(title) /tmp/cicero-CQzU/dblink.xml:1427(title) /tmp/cicero-CQzU/dblink.xml:1757(title) /tmp/cicero-CQzU/dblink.xml:1871(title) /tmp/cicero-CQzU/dblink.xml:2004(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:103(para) 
+#: /tmp/cicero-CQzU/dblink.xml:103(para) 
 msgid "Only superusers may use <function>dblink_connect</function> to create non-password-authenticated connections. If non-superusers need this capability, use <function>dblink_connect_u</function> instead."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:109(para) 
+#: /tmp/cicero-CQzU/dblink.xml:109(para) 
 msgid "It is unwise to choose connection names that contain equal signs, as this opens a risk of confusion with connection info strings in other <filename>dblink</filename> functions."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:117(title) /tmp/cicero-PyDp/dblink.xml:288(title) /tmp/cicero-PyDp/dblink.xml:454(title) /tmp/cicero-PyDp/dblink.xml:622(title) /tmp/cicero-PyDp/dblink.xml:763(title) /tmp/cicero-PyDp/dblink.xml:880(title) /tmp/cicero-PyDp/dblink.xml:1013(title) /tmp/cicero-PyDp/dblink.xml:1070(title) /tmp/cicero-PyDp/dblink.xml:1129(title) /tmp/cicero-PyDp/dblink.xml:1207(title) /tmp/cicero-PyDp/dblink.xml:1266(title) /tmp/cicero-PyDp/dblink.xml:1326(title) /tmp/cicero-PyDp/dblink.xml:1439(title) /tmp/cicero-PyDp/dblink.xml:1556(title) /tmp/cicero-PyDp/dblink.xml:1630(title) /tmp/cicero-PyDp/dblink.xml:1771(title) /tmp/cicero-PyDp/dblink.xml:1885(title) /tmp/cicero-PyDp/dblink.xml:2018(title) 
+#: /tmp/cicero-CQzU/dblink.xml:117(title) /tmp/cicero-CQzU/dblink.xml:288(title) /tmp/cicero-CQzU/dblink.xml:454(title) /tmp/cicero-CQzU/dblink.xml:622(title) /tmp/cicero-CQzU/dblink.xml:763(title) /tmp/cicero-CQzU/dblink.xml:880(title) /tmp/cicero-CQzU/dblink.xml:1013(title) /tmp/cicero-CQzU/dblink.xml:1070(title) /tmp/cicero-CQzU/dblink.xml:1129(title) /tmp/cicero-CQzU/dblink.xml:1207(title) /tmp/cicero-CQzU/dblink.xml:1266(title) /tmp/cicero-CQzU/dblink.xml:1326(title) /tmp/cicero-CQzU/dblink.xml:1439(title) /tmp/cicero-CQzU/dblink.xml:1556(title) /tmp/cicero-CQzU/dblink.xml:1630(title) /tmp/cicero-CQzU/dblink.xml:1771(title) /tmp/cicero-CQzU/dblink.xml:1885(title) /tmp/cicero-CQzU/dblink.xml:2018(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:119(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:119(screen) 
 #, no-wrap
 msgid "\nSELECT dblink_connect('dbname=postgres');\n dblink_connect\n----------------\n OK\n(1 row)\n\nSELECT dblink_connect('myconn', 'dbname=postgres');\n dblink_connect\n----------------\n OK\n(1 row)\n\n-- FOREIGN DATA WRAPPER functionality\n-- Note: local connection must require password authentication for this to work properly\n--       Otherwise, you will receive the following error from dblink_connect():\n--       ----------------------------------------------------------------------\n--       ERROR:  password is required\n--       DETAIL:  Non-superuser cannot connect if the server does not request a password.\n--       HINT:  Target server's authentication method must be changed.\nCREATE USER dblink_regression_test WITH PASSWORD 'secret';\nCREATE FOREIGN DATA WRAPPER postgresql VALIDATOR postgresql_fdw_validator;\nCREATE SERVER fdtest FOREIGN DATA WRAPPER postgresql OPTIONS (hostaddr '127.0.0.1', dbname 'contrib_regression');\n\nCREATE USER MAPPING FOR dblink_regression_test SERVER fdtest OPTIONS (user 'dblink_regression_test', password 'secret');\nGRANT USAGE ON FOREIGN SERVER fdtest TO dblink_regression_test;\nGRANT SELECT ON TABLE foo TO dblink_regression_test;\n\n\\set ORIGINAL_USER :USER\n\\c - dblink_regression_test\nSELECT dblink_connect('myconn', 'fdtest');\n dblink_connect \n----------------\n OK\n(1 row)\n\nSELECT * FROM dblink('myconn','SELECT * FROM foo') AS t(a int, b text, c text[]);\n a  | b |       c       \n----+---+---------------\n  0 | a | {a0,b0,c0}\n  1 | b | {a1,b1,c1}\n  2 | c | {a2,b2,c2}\n  3 | d | {a3,b3,c3}\n  4 | e | {a4,b4,c4}\n  5 | f | {a5,b5,c5}\n  6 | g | {a6,b6,c6}\n  7 | h | {a7,b7,c7}\n  8 | i | {a8,b8,c8}\n  9 | j | {a9,b9,c9}\n 10 | k | {a10,b10,c10}\n(11 rows)\n\n\\c - :ORIGINAL_USER\nREVOKE USAGE ON FOREIGN SERVER fdtest FROM dblink_regression_test;\nREVOKE SELECT ON TABLE foo FROM  dblink_regression_test;\nDROP USER MAPPING FOR dblink_regression_test SERVER fdtest;\nDROP USER dblink_regression_test;\nDROP SERVER fdtest;\nDROP FOREIGN DATA WRAPPER postgresql;\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:184(refentrytitle) /tmp/cicero-PyDp/dblink.xml:189(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:184(refentrytitle) /tmp/cicero-CQzU/dblink.xml:189(refname) 
 msgid "dblink_connect_u"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:190(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:190(refpurpose) 
 msgid "opens a persistent connection to a remote database, insecurely"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:194(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:194(synopsis) 
 #, no-wrap
 msgid "\ndblink_connect_u(text connstr) returns text\ndblink_connect_u(text connname, text connstr) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:203(para) 
+#: /tmp/cicero-CQzU/dblink.xml:203(para) 
 msgid "<function>dblink_connect_u()</function> is identical to <function>dblink_connect()</function>, except that it will allow non-superusers to connect using any authentication method."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:209(para) 
+#: /tmp/cicero-CQzU/dblink.xml:209(para) 
 msgid "If the remote server selects an authentication method that does not involve a password, then impersonation and subsequent escalation of privileges can occur, because the session will appear to have originated from the user as which the local <productname>PostgreSQL</productname> server runs. Also, even if the remote server does demand a password, it is possible for the password to be supplied from the server environment, such as a <filename>~/.pgpass</filename> file belonging to the server's user. This opens not only a risk of impersonation, but the possibility of exposing a password to an untrustworthy remote server. Therefore, <function>dblink_connect_u()</function> is initially installed with all privileges revoked from <literal>PUBLIC</literal>, making it un-callable except by superusers. In some situations it may be appropriate to grant <literal>EXECUTE</literal> permission for <function>dblink_connect_u()</function> to specific users who are considered trustworthy, but this should be done with care. It is also recommended that any <filename>~/.pgpass</filename> file belonging to the server's user <emphasis>not</emphasis> contain any records specifying a wildcard host name."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:229(para) 
+#: /tmp/cicero-CQzU/dblink.xml:229(para) 
 msgid "For further details see <function>dblink_connect()</function>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:237(refentrytitle) /tmp/cicero-PyDp/dblink.xml:242(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:237(refentrytitle) /tmp/cicero-CQzU/dblink.xml:242(refname) 
 msgid "dblink_disconnect"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:243(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:243(refpurpose) 
 msgid "closes a persistent connection to a remote database"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:247(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:247(synopsis) 
 #, no-wrap
 msgid "\ndblink_disconnect() returns text\ndblink_disconnect(text connname) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:256(para) 
+#: /tmp/cicero-CQzU/dblink.xml:256(para) 
 msgid "<function>dblink_disconnect()</function> closes a connection previously opened by <function>dblink_connect()</function>. The form with no arguments closes an unnamed connection."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:270(para) 
+#: /tmp/cicero-CQzU/dblink.xml:270(para) 
 msgid "The name of a named connection to be closed."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:290(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:290(screen) 
 #, no-wrap
 msgid "\nSELECT dblink_disconnect();\n dblink_disconnect\n-------------------\n OK\n(1 row)\n\nSELECT dblink_disconnect('myconn');\n dblink_disconnect\n-------------------\n OK\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:314(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:314(refpurpose) 
 msgid "executes a query in a remote database"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:318(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:318(synopsis) 
 #, no-wrap
 msgid "\ndblink(text connname, text sql [, bool fail_on_error]) returns setof record\ndblink(text connstr, text sql [, bool fail_on_error]) returns setof record\ndblink(text sql [, bool fail_on_error]) returns setof record\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:328(para) 
+#: /tmp/cicero-CQzU/dblink.xml:328(para) 
 msgid "<function>dblink</function> executes a query (usually a <command>SELECT</command>, but it can be any SQL statement that returns rows) in a remote database."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:333(para) /tmp/cicero-PyDp/dblink.xml:555(para) 
+#: /tmp/cicero-CQzU/dblink.xml:333(para) /tmp/cicero-CQzU/dblink.xml:555(para) 
 msgid "When two <type>text</type> arguments are given, the first one is first looked up as a persistent connection's name; if found, the command is executed on that connection. If not found, the first argument is treated as a connection info string as for <function>dblink_connect</function>, and the indicated connection is made just for the duration of this command."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:349(para) /tmp/cicero-PyDp/dblink.xml:571(para) /tmp/cicero-PyDp/dblink.xml:696(para) /tmp/cicero-PyDp/dblink.xml:815(para) /tmp/cicero-PyDp/dblink.xml:964(para) 
+#: /tmp/cicero-CQzU/dblink.xml:349(para) /tmp/cicero-CQzU/dblink.xml:571(para) /tmp/cicero-CQzU/dblink.xml:696(para) /tmp/cicero-CQzU/dblink.xml:815(para) /tmp/cicero-CQzU/dblink.xml:964(para) 
 msgid "Name of the connection to use; omit this parameter to use the unnamed connection."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:359(para) /tmp/cicero-PyDp/dblink.xml:581(para) 
+#: /tmp/cicero-CQzU/dblink.xml:359(para) /tmp/cicero-CQzU/dblink.xml:581(para) 
 msgid "A connection info string, as previously described for <function>dblink_connect</function>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:367(parameter) /tmp/cicero-PyDp/dblink.xml:589(parameter) /tmp/cicero-PyDp/dblink.xml:713(parameter) /tmp/cicero-PyDp/dblink.xml:1187(parameter) 
+#: /tmp/cicero-CQzU/dblink.xml:367(parameter) /tmp/cicero-CQzU/dblink.xml:589(parameter) /tmp/cicero-CQzU/dblink.xml:713(parameter) /tmp/cicero-CQzU/dblink.xml:1187(parameter) 
 msgid "sql"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:369(para) 
+#: /tmp/cicero-CQzU/dblink.xml:369(para) 
 msgid "The SQL query that you wish to execute in the remote database, for example <literal>select * from foo</literal>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:377(parameter) /tmp/cicero-PyDp/dblink.xml:600(parameter) /tmp/cicero-PyDp/dblink.xml:723(parameter) /tmp/cicero-PyDp/dblink.xml:843(parameter) /tmp/cicero-PyDp/dblink.xml:981(parameter) /tmp/cicero-PyDp/dblink.xml:1394(parameter) 
+#: /tmp/cicero-CQzU/dblink.xml:377(parameter) /tmp/cicero-CQzU/dblink.xml:600(parameter) /tmp/cicero-CQzU/dblink.xml:723(parameter) /tmp/cicero-CQzU/dblink.xml:843(parameter) /tmp/cicero-CQzU/dblink.xml:981(parameter) /tmp/cicero-CQzU/dblink.xml:1394(parameter) 
 msgid "fail_on_error"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:379(para) /tmp/cicero-PyDp/dblink.xml:845(para) /tmp/cicero-PyDp/dblink.xml:1396(para) 
+#: /tmp/cicero-CQzU/dblink.xml:379(para) /tmp/cicero-CQzU/dblink.xml:845(para) /tmp/cicero-CQzU/dblink.xml:1396(para) 
 msgid "If true (the default when omitted) then an error thrown on the remote side of the connection causes an error to also be thrown locally. If false, the remote error is locally reported as a NOTICE, and the function returns no rows."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:402(programlisting) 
+#: /tmp/cicero-CQzU/dblink.xml:402(programlisting) 
 #, no-wrap
 msgid "\nSELECT *\n    FROM dblink('dbname=mydb', 'select proname, prosrc from pg_proc')\n      AS t1(proname name, prosrc text)\n    WHERE proname LIKE 'bytea%';\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:393(para) 
+#: /tmp/cicero-CQzU/dblink.xml:393(para) 
 msgid "The function returns the row(s) produced by the query. Since <function>dblink</function> can be used with any query, it is declared to return <type>record</type>, rather than specifying any particular set of columns. This means that you must specify the expected set of columns in the calling query — otherwise <productname>PostgreSQL</productname> would not know what to expect. Here is an example: <placeholder-1/> The <quote>alias</quote> part of the <literal>FROM</literal> clause must specify the column names and types that the function will return. (Specifying column names in an alias is actually standard SQL syntax, but specifying column types is a <productname>PostgreSQL</productname> extension.) This allows the system to understand what <literal>*</literal> should expand to, and what <structname>proname</structname> in the <literal>WHERE</literal> clause refers to, in advance of trying to execute the function. At run time, an error will be thrown if the actual query result from the remote database does not have the same number of columns shown in the <literal>FROM</literal> clause. The column names need not match, however, and <function>dblink</function> does not insist on exact type matches either. It will succeed so long as the returned data strings are valid input for the column type declared in the <literal>FROM</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:429(para) 
+#: /tmp/cicero-CQzU/dblink.xml:429(para) 
 msgid "<function>dblink</function> fetches the entire remote query result before returning any of it to the local system. If the query is expected to return a large number of rows, it's better to open it as a cursor with <function>dblink_open</function> and then fetch a manageable number of rows at a time."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:443(programlisting) 
+#: /tmp/cicero-CQzU/dblink.xml:443(programlisting) 
 #, no-wrap
 msgid "\nCREATE VIEW myremote_pg_proc AS\n  SELECT *\n    FROM dblink('dbname=postgres', 'select proname, prosrc from pg_proc')\n    AS t1(proname name, prosrc text);\n\nSELECT * FROM myremote_pg_proc WHERE proname LIKE 'bytea%';\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:437(para) 
+#: /tmp/cicero-CQzU/dblink.xml:437(para) 
 msgid "A convenient way to use <function>dblink</function> with predetermined queries is to create a view. This allows the column type information to be buried in the view, instead of having to spell it out in every query. For example, <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:456(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:456(screen) 
 #, no-wrap
 msgid "\nSELECT * FROM dblink('dbname=postgres', 'select proname, prosrc from pg_proc')\n  AS t1(proname name, prosrc text) WHERE proname LIKE 'bytea%';\n  proname   |   prosrc\n------------+------------\n byteacat   | byteacat\n byteaeq    | byteaeq\n bytealt    | bytealt\n byteale    | byteale\n byteagt    | byteagt\n byteage    | byteage\n byteane    | byteane\n byteacmp   | byteacmp\n bytealike  | bytealike\n byteanlike | byteanlike\n byteain    | byteain\n byteaout   | byteaout\n(12 rows)\n\nSELECT dblink_connect('dbname=postgres');\n dblink_connect\n----------------\n OK\n(1 row)\n\nSELECT * FROM dblink('select proname, prosrc from pg_proc')\n  AS t1(proname name, prosrc text) WHERE proname LIKE 'bytea%';\n  proname   |   prosrc\n------------+------------\n byteacat   | byteacat\n byteaeq    | byteaeq\n bytealt    | bytealt\n byteale    | byteale\n byteagt    | byteagt\n byteage    | byteage\n byteane    | byteane\n byteacmp   | byteacmp\n bytealike  | bytealike\n byteanlike | byteanlike\n byteain    | byteain\n byteaout   | byteaout\n(12 rows)\n\nSELECT dblink_connect('myconn', 'dbname=regression');\n dblink_connect\n----------------\n OK\n(1 row)\n\nSELECT * FROM dblink('myconn', 'select proname, prosrc from pg_proc')\n  AS t1(proname name, prosrc text) WHERE proname LIKE 'bytea%';\n  proname   |   prosrc\n------------+------------\n bytearecv  | bytearecv\n byteasend  | byteasend\n byteale    | byteale\n byteagt    | byteagt\n byteage    | byteage\n byteane    | byteane\n byteacmp   | byteacmp\n bytealike  | bytealike\n byteanlike | byteanlike\n byteacat   | byteacat\n byteaeq    | byteaeq\n bytealt    | bytealt\n byteain    | byteain\n byteaout   | byteaout\n(14 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:530(refentrytitle) /tmp/cicero-PyDp/dblink.xml:535(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:530(refentrytitle) /tmp/cicero-CQzU/dblink.xml:535(refname) 
 msgid "dblink_exec"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:536(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:536(refpurpose) 
 msgid "executes a command in a remote database"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:540(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:540(synopsis) 
 #, no-wrap
 msgid "\ndblink_exec(text connname, text sql [, bool fail_on_error]) returns text\ndblink_exec(text connstr, text sql [, bool fail_on_error]) returns text\ndblink_exec(text sql [, bool fail_on_error]) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:550(para) 
+#: /tmp/cicero-CQzU/dblink.xml:550(para) 
 msgid "<function>dblink_exec</function> executes a command (that is, any SQL statement that doesn't return rows) in a remote database."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:591(para) 
+#: /tmp/cicero-CQzU/dblink.xml:591(para) 
 msgid "The SQL command that you wish to execute in the remote database, for example <literal>insert into foo values(0,'a','{\"a0\",\"b0\",\"c0\"}')</literal>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:602(para) /tmp/cicero-PyDp/dblink.xml:725(para) /tmp/cicero-PyDp/dblink.xml:983(para) 
+#: /tmp/cicero-CQzU/dblink.xml:602(para) /tmp/cicero-CQzU/dblink.xml:725(para) /tmp/cicero-CQzU/dblink.xml:983(para) 
 msgid "If true (the default when omitted) then an error thrown on the remote side of the connection causes an error to also be thrown locally. If false, the remote error is locally reported as a NOTICE, and the function's return value is set to <literal>ERROR</literal>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:616(para) 
+#: /tmp/cicero-CQzU/dblink.xml:616(para) 
 msgid "Returns status, either the command's status string or <literal>ERROR</literal>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:624(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:624(screen) 
 #, no-wrap
 msgid "\nSELECT dblink_connect('dbname=dblink_test_standby');\n dblink_connect\n----------------\n OK\n(1 row)\n\nSELECT dblink_exec('insert into foo values(21,''z'',''{\"a0\",\"b0\",\"c0\"}'');');\n   dblink_exec\n-----------------\n INSERT 943366 1\n(1 row)\n\nSELECT dblink_connect('myconn', 'dbname=regression');\n dblink_connect\n----------------\n OK\n(1 row)\n\nSELECT dblink_exec('myconn', 'insert into foo values(21,''z'',''{\"a0\",\"b0\",\"c0\"}'');');\n   dblink_exec\n------------------\n INSERT 6432584 1\n(1 row)\n\nSELECT dblink_exec('myconn', 'insert into pg_class values (''foo'')',false);\nNOTICE:  sql error\nDETAIL:  ERROR:  null value in column \"relnamespace\" violates not-null constraint\n\n dblink_exec\n-------------\n ERROR\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:663(refentrytitle) /tmp/cicero-PyDp/dblink.xml:668(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:663(refentrytitle) /tmp/cicero-CQzU/dblink.xml:668(refname) 
 msgid "dblink_open"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:669(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:669(refpurpose) 
 msgid "opens a cursor in a remote database"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:673(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:673(synopsis) 
 #, no-wrap
 msgid "\ndblink_open(text cursorname, text sql [, bool fail_on_error]) returns text\ndblink_open(text connname, text cursorname, text sql [, bool fail_on_error]) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:682(para) 
+#: /tmp/cicero-CQzU/dblink.xml:682(para) 
 msgid "<function>dblink_open()</function> opens a cursor in a remote database. The cursor can subsequently be manipulated with <function>dblink_fetch()</function> and <function>dblink_close()</function>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:704(parameter) /tmp/cicero-PyDp/dblink.xml:823(parameter) /tmp/cicero-PyDp/dblink.xml:972(parameter) 
+#: /tmp/cicero-CQzU/dblink.xml:704(parameter) /tmp/cicero-CQzU/dblink.xml:823(parameter) /tmp/cicero-CQzU/dblink.xml:972(parameter) 
 msgid "cursorname"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:706(para) 
+#: /tmp/cicero-CQzU/dblink.xml:706(para) 
 msgid "The name to assign to this cursor."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:715(para) 
+#: /tmp/cicero-CQzU/dblink.xml:715(para) 
 msgid "The <command>SELECT</command> statement that you wish to execute in the remote database, for example <literal>select * from pg_class</literal>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:739(para) /tmp/cicero-PyDp/dblink.xml:997(para) 
+#: /tmp/cicero-CQzU/dblink.xml:739(para) /tmp/cicero-CQzU/dblink.xml:997(para) 
 msgid "Returns status, either <literal>OK</literal> or <literal>ERROR</literal>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:747(para) 
+#: /tmp/cicero-CQzU/dblink.xml:747(para) 
 msgid "Since a cursor can only persist within a transaction, <function>dblink_open</function> starts an explicit transaction block (<command>BEGIN</command>) on the remote side, if the remote side was not already within a transaction. This transaction will be closed again when the matching <function>dblink_close</function> is executed. Note that if you use <function>dblink_exec</function> to change data between <function>dblink_open</function> and <function>dblink_close</function>, and then an error occurs or you use <function>dblink_disconnect</function> before <function>dblink_close</function>, your change <emphasis>will be lost</emphasis> because the transaction will be aborted."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:765(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:765(screen) 
 #, no-wrap
 msgid "\nSELECT dblink_connect('dbname=postgres');\n dblink_connect\n----------------\n OK\n(1 row)\n\nSELECT dblink_open('foo', 'select proname, prosrc from pg_proc');\n dblink_open\n-------------\n OK\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:783(refentrytitle) /tmp/cicero-PyDp/dblink.xml:788(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:783(refentrytitle) /tmp/cicero-CQzU/dblink.xml:788(refname) 
 msgid "dblink_fetch"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:789(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:789(refpurpose) 
 msgid "returns rows from an open cursor in a remote database"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:793(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:793(synopsis) 
 #, no-wrap
 msgid "\ndblink_fetch(text cursorname, int howmany [, bool fail_on_error]) returns setof record\ndblink_fetch(text connname, text cursorname, int howmany [, bool fail_on_error]) returns setof record\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:802(para) 
+#: /tmp/cicero-CQzU/dblink.xml:802(para) 
 msgid "<function>dblink_fetch</function> fetches rows from a cursor previously established by <function>dblink_open</function>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:825(para) 
+#: /tmp/cicero-CQzU/dblink.xml:825(para) 
 msgid "The name of the cursor to fetch from."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:832(parameter) 
+#: /tmp/cicero-CQzU/dblink.xml:832(parameter) 
 msgid "howmany"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:834(para) 
+#: /tmp/cicero-CQzU/dblink.xml:834(para) 
 msgid "The maximum number of rows to retrieve. The next <parameter>howmany</parameter> rows are fetched, starting at the current cursor position, moving forward. Once the cursor has reached its end, no more rows are produced."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:859(para) 
+#: /tmp/cicero-CQzU/dblink.xml:859(para) 
 msgid "The function returns the row(s) fetched from the cursor. To use this function, you will need to specify the expected set of columns, as previously discussed for <function>dblink</function>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:869(para) 
+#: /tmp/cicero-CQzU/dblink.xml:869(para) 
 msgid "On a mismatch between the number of return columns specified in the <literal>FROM</literal> clause, and the actual number of columns returned by the remote cursor, an error will be thrown. In this event, the remote cursor is still advanced by as many rows as it would have been if the error had not occurred. The same is true for any other error occurring in the local query after the remote <command>FETCH</command> has been done."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:882(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:882(screen) 
 #, no-wrap
 msgid "\nSELECT dblink_connect('dbname=postgres');\n dblink_connect\n----------------\n OK\n(1 row)\n\nSELECT dblink_open('foo', 'select proname, prosrc from pg_proc where proname like ''bytea%''');\n dblink_open\n-------------\n OK\n(1 row)\n\nSELECT * FROM dblink_fetch('foo', 5) AS (funcname name, source text);\n funcname |  source\n----------+----------\n byteacat | byteacat\n byteacmp | byteacmp\n byteaeq  | byteaeq\n byteage  | byteage\n byteagt  | byteagt\n(5 rows)\n\nSELECT * FROM dblink_fetch('foo', 5) AS (funcname name, source text);\n funcname  |  source\n-----------+-----------\n byteain   | byteain\n byteale   | byteale\n bytealike | bytealike\n bytealt   | bytealt\n byteane   | byteane\n(5 rows)\n\nSELECT * FROM dblink_fetch('foo', 5) AS (funcname name, source text);\n  funcname  |   source\n------------+------------\n byteanlike | byteanlike\n byteaout   | byteaout\n(2 rows)\n\nSELECT * FROM dblink_fetch('foo', 5) AS (funcname name, source text);\n funcname | source\n----------+--------\n(0 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:932(refentrytitle) /tmp/cicero-PyDp/dblink.xml:937(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:932(refentrytitle) /tmp/cicero-CQzU/dblink.xml:937(refname) 
 msgid "dblink_close"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:938(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:938(refpurpose) 
 msgid "closes a cursor in a remote database"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:942(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:942(synopsis) 
 #, no-wrap
 msgid "\ndblink_close(text cursorname [, bool fail_on_error]) returns text\ndblink_close(text connname, text cursorname [, bool fail_on_error]) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:951(para) 
+#: /tmp/cicero-CQzU/dblink.xml:951(para) 
 msgid "<function>dblink_close</function> closes a cursor previously opened with <function>dblink_open</function>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:974(para) 
+#: /tmp/cicero-CQzU/dblink.xml:974(para) 
 msgid "The name of the cursor to close."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1005(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1005(para) 
 msgid "If <function>dblink_open</function> started an explicit transaction block, and this is the last remaining open cursor in this connection, <function>dblink_close</function> will issue the matching <command>COMMIT</command>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1015(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:1015(screen) 
 #, no-wrap
 msgid "\nSELECT dblink_connect('dbname=postgres');\n dblink_connect\n----------------\n OK\n(1 row)\n\nSELECT dblink_open('foo', 'select proname, prosrc from pg_proc');\n dblink_open\n-------------\n OK\n(1 row)\n\nSELECT dblink_close('foo');\n dblink_close\n--------------\n OK\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1039(refentrytitle) /tmp/cicero-PyDp/dblink.xml:1044(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:1039(refentrytitle) /tmp/cicero-CQzU/dblink.xml:1044(refname) 
 msgid "dblink_get_connections"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1045(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:1045(refpurpose) 
 msgid "returns the names of all open named dblink connections"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1049(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:1049(synopsis) 
 #, no-wrap
 msgid "\ndblink_get_connections() returns text[]\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1057(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1057(para) 
 msgid "<function>dblink_get_connections</function> returns an array of the names of all open named <filename>dblink</filename> connections."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1066(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1066(para) 
 msgid "Returns a text array of connection names, or NULL if none."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1072(programlisting) 
+#: /tmp/cicero-CQzU/dblink.xml:1072(programlisting) 
 #, no-wrap
 msgid "\nSELECT dblink_get_connections();\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1080(refentrytitle) /tmp/cicero-PyDp/dblink.xml:1085(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:1080(refentrytitle) /tmp/cicero-CQzU/dblink.xml:1085(refname) 
 msgid "dblink_error_message"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1086(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:1086(refpurpose) 
 msgid "gets last error message on the named connection"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1090(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:1090(synopsis) 
 #, no-wrap
 msgid "\ndblink_error_message(text connname) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1098(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1098(para) 
 msgid "<function>dblink_error_message</function> fetches the most recent remote error message for a given connection."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1111(para) /tmp/cicero-PyDp/dblink.xml:1180(para) /tmp/cicero-PyDp/dblink.xml:1387(para) /tmp/cicero-PyDp/dblink.xml:1538(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1111(para) /tmp/cicero-CQzU/dblink.xml:1180(para) /tmp/cicero-CQzU/dblink.xml:1387(para) /tmp/cicero-CQzU/dblink.xml:1538(para) 
 msgid "Name of the connection to use."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1122(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1122(para) 
 msgid "Returns last error message, or an empty string if there has been no error in this connection."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1131(programlisting) 
+#: /tmp/cicero-CQzU/dblink.xml:1131(programlisting) 
 #, no-wrap
 msgid "\nSELECT dblink_error_message('dtest1');\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1139(refentrytitle) /tmp/cicero-PyDp/dblink.xml:1144(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:1139(refentrytitle) /tmp/cicero-CQzU/dblink.xml:1144(refname) 
 msgid "dblink_send_query"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1145(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:1145(refpurpose) 
 msgid "sends an async query to a remote database"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1149(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:1149(synopsis) 
 #, no-wrap
 msgid "\ndblink_send_query(text connname, text sql) returns int\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1157(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1157(para) 
 msgid "<function>dblink_send_query</function> sends a query to be executed asynchronously, that is, without immediately waiting for the result. There must not be an async query already in progress on the connection."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1164(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1164(para) 
 msgid "After successfully dispatching an async query, completion status can be checked with <function>dblink_is_busy</function>, and the results are ultimately collected with <function>dblink_get_result</function>. It is also possible to attempt to cancel an active async query using <function>dblink_cancel_query</function>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1189(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1189(para) 
 msgid "The SQL statement that you wish to execute in the remote database, for example <literal>select * from pg_class</literal>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1201(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1201(para) 
 msgid "Returns 1 if the query was successfully dispatched, 0 otherwise."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1209(programlisting) 
+#: /tmp/cicero-CQzU/dblink.xml:1209(programlisting) 
 #, no-wrap
 msgid "\nSELECT dblink_send_query('dtest1', 'SELECT * FROM foo WHERE f1 &lt; 3');\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1217(refentrytitle) /tmp/cicero-PyDp/dblink.xml:1222(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:1217(refentrytitle) /tmp/cicero-CQzU/dblink.xml:1222(refname) 
 msgid "dblink_is_busy"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1223(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:1223(refpurpose) 
 msgid "checks if connection is busy with an async query"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1227(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:1227(synopsis) 
 #, no-wrap
 msgid "\ndblink_is_busy(text connname) returns int\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1235(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1235(para) 
 msgid "<function>dblink_is_busy</function> tests whether an async query is in progress."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1247(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1247(para) 
 msgid "Name of the connection to check."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1258(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1258(para) 
 msgid "Returns 1 if connection is busy, 0 if it is not busy. If this function returns 0, it is guaranteed that <function>dblink_get_result</function> will not block."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1268(programlisting) 
+#: /tmp/cicero-CQzU/dblink.xml:1268(programlisting) 
 #, no-wrap
 msgid "\nSELECT dblink_is_busy('dtest1');\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1276(refentrytitle) /tmp/cicero-PyDp/dblink.xml:1281(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:1276(refentrytitle) /tmp/cicero-CQzU/dblink.xml:1281(refname) 
 msgid "dblink_get_notify"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1282(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:1282(refpurpose) 
 msgid "retrieve async notifications on a connection"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1286(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:1286(synopsis) 
 #, no-wrap
 msgid "\ndblink_get_notify() returns setof (notify_name text, be_pid int, extra text)\ndblink_get_notify(text connname) returns setof (notify_name text, be_pid int, extra text)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1295(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1295(para) 
 msgid "<function>dblink_get_notify</function> retrieves notifications on either the unnamed connection, or on a named connection if specified. To receive notifications via dblink, <function>LISTEN</function> must first be issued, using <function>dblink_exec</function>. For details see <xref linkend=\"sql-listen\"/> and <xref linkend=\"sql-notify\"/>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1312(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1312(para) 
 msgid "The name of a named connection to get notifications on."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1322(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1322(para) 
 msgid "Returns <type>setof (notify_name text, be_pid int, extra text)</type>, or an empty set if none."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1328(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:1328(screen) 
 #, no-wrap
 msgid "\nSELECT dblink_exec('LISTEN virtual');\n dblink_exec \n-------------\n LISTEN\n(1 row)\n\nSELECT * FROM dblink_get_notify();\n notify_name | be_pid | extra\n-------------+--------+-------\n(0 rows)\n\nNOTIFY virtual;\nNOTIFY\n\nSELECT * FROM dblink_get_notify();\n notify_name | be_pid | extra\n-------------+--------+-------\n virtual     |   1229 |\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1354(refentrytitle) /tmp/cicero-PyDp/dblink.xml:1359(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:1354(refentrytitle) /tmp/cicero-CQzU/dblink.xml:1359(refname) 
 msgid "dblink_get_result"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1360(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:1360(refpurpose) 
 msgid "gets an async query result"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1364(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:1364(synopsis) 
 #, no-wrap
 msgid "\ndblink_get_result(text connname [, bool fail_on_error]) returns setof record\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1372(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1372(para) 
 msgid "<function>dblink_get_result</function> collects the results of an asynchronous query previously sent with <function>dblink_send_query</function>. If the query is not already completed, <function>dblink_get_result</function> will wait until it is."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1410(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1410(para) 
 msgid "For an async query (that is, a SQL statement returning rows), the function returns the row(s) produced by the query. To use this function, you will need to specify the expected set of columns, as previously discussed for <function>dblink</function>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1417(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1417(para) 
 msgid "For an async command (that is, a SQL statement not returning rows), the function returns a single row with a single text column containing the command's status string. It is still necessary to specify that the result will have a single text column in the calling <literal>FROM</literal> clause."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1429(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1429(para) 
 msgid "This function <emphasis>must</emphasis> be called if <function>dblink_send_query</function> returned 1. It must be called once for each query sent, and one additional time to obtain an empty set result, before the connection can be used again."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1441(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:1441(screen) 
 #, no-wrap
 msgid "\ncontrib_regression=# SELECT dblink_connect('dtest1', 'dbname=contrib_regression');\n dblink_connect\n----------------\n OK\n(1 row)\n\ncontrib_regression=# SELECT * FROM\ncontrib_regression-# dblink_send_query('dtest1', 'select * from foo where f1 &lt; 3') AS t1;\n t1\n----\n  1\n(1 row)\n\ncontrib_regression=# SELECT * FROM dblink_get_result('dtest1') AS t1(f1 int, f2 text, f3 text[]);\n f1 | f2 |     f3\n----+----+------------\n  0 | a  | {a0,b0,c0}\n  1 | b  | {a1,b1,c1}\n  2 | c  | {a2,b2,c2}\n(3 rows)\n\ncontrib_regression=# SELECT * FROM dblink_get_result('dtest1') AS t1(f1 int, f2 text, f3 text[]);\n f1 | f2 | f3\n----+----+----\n(0 rows)\n\ncontrib_regression=# SELECT * FROM\ncontrib_regression-# dblink_send_query('dtest1', 'select * from foo where f1 &lt; 3; select * from foo where f1 &gt; 6') AS t1;\n t1\n----\n  1\n(1 row)\n\ncontrib_regression=# SELECT * FROM dblink_get_result('dtest1') AS t1(f1 int, f2 text, f3 text[]);\n f1 | f2 |     f3\n----+----+------------\n  0 | a  | {a0,b0,c0}\n  1 | b  | {a1,b1,c1}\n  2 | c  | {a2,b2,c2}\n(3 rows)\n\ncontrib_regression=# SELECT * FROM dblink_get_result('dtest1') AS t1(f1 int, f2 text, f3 text[]);\n f1 | f2 |      f3\n----+----+---------------\n  7 | h  | {a7,b7,c7}\n  8 | i  | {a8,b8,c8}\n  9 | j  | {a9,b9,c9}\n 10 | k  | {a10,b10,c10}\n(4 rows)\n\ncontrib_regression=# SELECT * FROM dblink_get_result('dtest1') AS t1(f1 int, f2 text, f3 text[]);\n f1 | f2 | f3\n----+----+----\n(0 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1502(refentrytitle) /tmp/cicero-PyDp/dblink.xml:1507(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:1502(refentrytitle) /tmp/cicero-CQzU/dblink.xml:1507(refname) 
 msgid "dblink_cancel_query"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1508(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:1508(refpurpose) 
 msgid "cancels any active query on the named connection"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1512(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:1512(synopsis) 
 #, no-wrap
 msgid "\ndblink_cancel_query(text connname) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1520(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1520(para) 
 msgid "<function>dblink_cancel_query</function> attempts to cancel any query that is in progress on the named connection. Note that this is not certain to succeed (since, for example, the remote query might already have finished). A cancel request simply improves the odds that the query will fail soon. You must still complete the normal query protocol, for example by calling <function>dblink_get_result</function>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1549(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1549(para) 
 msgid "Returns <literal>OK</literal> if the cancel request has been sent, or the text of an error message on failure."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1558(programlisting) 
+#: /tmp/cicero-CQzU/dblink.xml:1558(programlisting) 
 #, no-wrap
 msgid "\nSELECT dblink_cancel_query('dtest1');\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1566(refentrytitle) /tmp/cicero-PyDp/dblink.xml:1571(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:1566(refentrytitle) /tmp/cicero-CQzU/dblink.xml:1571(refname) 
 msgid "dblink_get_pkey"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1572(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:1572(refpurpose) 
 msgid "returns the positions and field names of a relation's primary key fields"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1578(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:1578(synopsis) 
 #, no-wrap
 msgid "\ndblink_get_pkey(text relname) returns setof dblink_pkey_results\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1586(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1586(para) 
 msgid "<function>dblink_get_pkey</function> provides information about the primary key of a relation in the local database. This is sometimes useful in generating queries to be sent to remote databases."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1598(parameter) /tmp/cicero-PyDp/dblink.xml:1695(parameter) /tmp/cicero-PyDp/dblink.xml:1821(parameter) /tmp/cicero-PyDp/dblink.xml:1942(parameter) 
+#: /tmp/cicero-CQzU/dblink.xml:1598(parameter) /tmp/cicero-CQzU/dblink.xml:1695(parameter) /tmp/cicero-CQzU/dblink.xml:1821(parameter) /tmp/cicero-CQzU/dblink.xml:1942(parameter) 
 msgid "relname"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1600(para) /tmp/cicero-PyDp/dblink.xml:1697(para) /tmp/cicero-PyDp/dblink.xml:1823(para) /tmp/cicero-PyDp/dblink.xml:1944(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1600(para) /tmp/cicero-CQzU/dblink.xml:1697(para) /tmp/cicero-CQzU/dblink.xml:1823(para) /tmp/cicero-CQzU/dblink.xml:1944(para) 
 msgid "Name of a local relation, for example <literal>foo</literal> or <literal>myschema.mytab</literal>. Include double quotes if the name is mixed-case or contains special characters, for example <literal>\"FooBar\"</literal>; without quotes, the string will be folded to lower case."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1619(programlisting) 
+#: /tmp/cicero-CQzU/dblink.xml:1619(programlisting) 
 #, no-wrap
 msgid "\nCREATE TYPE dblink_pkey_results AS (position int, colname text);\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1615(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1615(para) 
 msgid "Returns one row for each primary key field, or no rows if the relation has no primary key. The result row type is defined as <placeholder-1/> The <literal>position</literal> column simply runs from 1 to <replaceable>N</replaceable>; it is the number of the field within the primary key, not the number within the table's columns."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1632(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:1632(screen) 
 #, no-wrap
 msgid "\nCREATE TABLE foobar (\n    f1 int,\n    f2 int,\n    f3 int,\n    PRIMARY KEY (f1, f2, f3)\n);\nCREATE TABLE\n\nSELECT * FROM dblink_get_pkey('foobar');\n position | colname\n----------+---------\n        1 | f1\n        2 | f2\n        3 | f3\n(3 rows)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1654(refentrytitle) /tmp/cicero-PyDp/dblink.xml:1659(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:1654(refentrytitle) /tmp/cicero-CQzU/dblink.xml:1659(refname) 
 msgid "dblink_build_sql_insert"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1660(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:1660(refpurpose) 
 msgid "builds an INSERT statement using a local tuple, replacing the primary key field values with alternative supplied values"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1667(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:1667(synopsis) 
 #, no-wrap
 msgid "\ndblink_build_sql_insert(text relname,\n                        int2vector primary_key_attnums,\n                        integer num_primary_key_atts,\n                        text[] src_pk_att_vals_array,\n                        text[] tgt_pk_att_vals_array) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1679(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1679(para) 
 msgid "<function>dblink_build_sql_insert</function> can be useful in doing selective replication of a local table to a remote database. It selects a row from the local table based on primary key, and then builds a SQL <command>INSERT</command> command that will duplicate that row, but with the primary key values replaced by the values in the last argument. (To make an exact copy of the row, just specify the same values for the last two arguments.)"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1708(parameter) /tmp/cicero-PyDp/dblink.xml:1834(parameter) /tmp/cicero-PyDp/dblink.xml:1955(parameter) 
+#: /tmp/cicero-CQzU/dblink.xml:1708(parameter) /tmp/cicero-CQzU/dblink.xml:1834(parameter) /tmp/cicero-CQzU/dblink.xml:1955(parameter) 
 msgid "primary_key_attnums"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1710(para) /tmp/cicero-PyDp/dblink.xml:1836(para) /tmp/cicero-PyDp/dblink.xml:1957(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1710(para) /tmp/cicero-CQzU/dblink.xml:1836(para) /tmp/cicero-CQzU/dblink.xml:1957(para) 
 msgid "Attribute numbers (1-based) of the primary key fields, for example <literal>1 2</literal>."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1718(parameter) /tmp/cicero-PyDp/dblink.xml:1844(parameter) /tmp/cicero-PyDp/dblink.xml:1965(parameter) 
+#: /tmp/cicero-CQzU/dblink.xml:1718(parameter) /tmp/cicero-CQzU/dblink.xml:1844(parameter) /tmp/cicero-CQzU/dblink.xml:1965(parameter) 
 msgid "num_primary_key_atts"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1720(para) /tmp/cicero-PyDp/dblink.xml:1846(para) /tmp/cicero-PyDp/dblink.xml:1967(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1720(para) /tmp/cicero-CQzU/dblink.xml:1846(para) /tmp/cicero-CQzU/dblink.xml:1967(para) 
 msgid "The number of primary key fields."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1727(parameter) /tmp/cicero-PyDp/dblink.xml:1974(parameter) 
+#: /tmp/cicero-CQzU/dblink.xml:1727(parameter) /tmp/cicero-CQzU/dblink.xml:1974(parameter) 
 msgid "src_pk_att_vals_array"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1729(para) /tmp/cicero-PyDp/dblink.xml:1976(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1729(para) /tmp/cicero-CQzU/dblink.xml:1976(para) 
 msgid "Values of the primary key fields to be used to look up the local tuple. Each field is represented in text form. An error is thrown if there is no local row with these primary key values."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1739(parameter) /tmp/cicero-PyDp/dblink.xml:1853(parameter) /tmp/cicero-PyDp/dblink.xml:1986(parameter) 
+#: /tmp/cicero-CQzU/dblink.xml:1739(parameter) /tmp/cicero-CQzU/dblink.xml:1853(parameter) /tmp/cicero-CQzU/dblink.xml:1986(parameter) 
 msgid "tgt_pk_att_vals_array"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1741(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1741(para) 
 msgid "Values of the primary key fields to be placed in the resulting <command>INSERT</command> command. Each field is represented in text form."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1753(para) /tmp/cicero-PyDp/dblink.xml:1867(para) /tmp/cicero-PyDp/dblink.xml:2000(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1753(para) /tmp/cicero-CQzU/dblink.xml:1867(para) /tmp/cicero-CQzU/dblink.xml:2000(para) 
 msgid "Returns the requested SQL statement as text."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1759(para) /tmp/cicero-PyDp/dblink.xml:1873(para) /tmp/cicero-PyDp/dblink.xml:2006(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1759(para) /tmp/cicero-CQzU/dblink.xml:1873(para) /tmp/cicero-CQzU/dblink.xml:2006(para) 
 msgid "As of <productname>PostgreSQL</productname> 9.0, the attribute numbers in <parameter>primary_key_attnums</parameter> are interpreted as logical column numbers, corresponding to the column's position in <literal>SELECT * FROM relname</literal>. Previous versions interpreted the numbers as physical column positions. There is a difference if any column(s) to the left of the indicated column have been dropped during the lifetime of the table."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1773(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:1773(screen) 
 #, no-wrap
 msgid "\nSELECT dblink_build_sql_insert('foo', '1 2', 2, '{\"1\", \"a\"}', '{\"1\", \"b''a\"}');\n             dblink_build_sql_insert\n--------------------------------------------------\n INSERT INTO foo(f1,f2,f3) VALUES('1','b''a','1')\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1785(refentrytitle) /tmp/cicero-PyDp/dblink.xml:1790(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:1785(refentrytitle) /tmp/cicero-CQzU/dblink.xml:1790(refname) 
 msgid "dblink_build_sql_delete"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1791(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:1791(refpurpose) 
 msgid "builds a DELETE statement using supplied values for primary key field values"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1797(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:1797(synopsis) 
 #, no-wrap
 msgid "\ndblink_build_sql_delete(text relname,\n                        int2vector primary_key_attnums,\n                        integer num_primary_key_atts,\n                        text[] tgt_pk_att_vals_array) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1808(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1808(para) 
 msgid "<function>dblink_build_sql_delete</function> can be useful in doing selective replication of a local table to a remote database. It builds a SQL <command>DELETE</command> command that will delete the row with the given primary key values."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1855(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1855(para) 
 msgid "Values of the primary key fields to be used in the resulting <command>DELETE</command> command. Each field is represented in text form."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1887(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:1887(screen) 
 #, no-wrap
 msgid "\nSELECT dblink_build_sql_delete('\"MyFoo\"', '1 2', 2, '{\"1\", \"b\"}');\n           dblink_build_sql_delete\n---------------------------------------------\n DELETE FROM \"MyFoo\" WHERE f1='1' AND f2='b'\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1899(refentrytitle) /tmp/cicero-PyDp/dblink.xml:1904(refname) 
+#: /tmp/cicero-CQzU/dblink.xml:1899(refentrytitle) /tmp/cicero-CQzU/dblink.xml:1904(refname) 
 msgid "dblink_build_sql_update"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1905(refpurpose) 
+#: /tmp/cicero-CQzU/dblink.xml:1905(refpurpose) 
 msgid "builds an UPDATE statement using a local tuple, replacing the primary key field values with alternative supplied values"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1911(synopsis) 
+#: /tmp/cicero-CQzU/dblink.xml:1911(synopsis) 
 #, no-wrap
 msgid "\ndblink_build_sql_update(text relname,\n                        int2vector primary_key_attnums,\n                        integer num_primary_key_atts,\n                        text[] src_pk_att_vals_array,\n                        text[] tgt_pk_att_vals_array) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1923(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1923(para) 
 msgid "<function>dblink_build_sql_update</function> can be useful in doing selective replication of a local table to a remote database. It selects a row from the local table based on primary key, and then builds a SQL <command>UPDATE</command> command that will duplicate that row, but with the primary key values replaced by the values in the last argument. (To make an exact copy of the row, just specify the same values for the last two arguments.) The <command>UPDATE</command> command always assigns all fields of the row — the main difference between this and <function>dblink_build_sql_insert</function> is that it's assumed that the target row already exists in the remote table."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:1988(para) 
+#: /tmp/cicero-CQzU/dblink.xml:1988(para) 
 msgid "Values of the primary key fields to be placed in the resulting <command>UPDATE</command> command. Each field is represented in text form."
 msgstr ""
 
-#: /tmp/cicero-PyDp/dblink.xml:2020(screen) 
+#: /tmp/cicero-CQzU/dblink.xml:2020(screen) 
 #, no-wrap
 msgid "\nSELECT dblink_build_sql_update('foo', '1 2', 2, '{\"1\", \"a\"}', '{\"1\", \"b\"}');\n                   dblink_build_sql_update\n-------------------------------------------------------------\n UPDATE foo SET f1='1',f2='b',f3='1' WHERE f1='1' AND f2='b'\n(1 row)\n"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-PyDp/dblink.xml:0(None) 
+#: /tmp/cicero-CQzU/dblink.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
