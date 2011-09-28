@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-26 12:45+0200\n"
+"POT-Creation-Date: 2011-09-28 10:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,29 +9,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-HnEQ/adminpack.xml:5(title) /tmp/cicero-HnEQ/adminpack.xml:8(primary) 
+#: /tmp/cicero-OXUr/adminpack.xml:5(title) /tmp/cicero-OXUr/adminpack.xml:8(primary) 
 msgid "adminpack"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/adminpack.xml:11(para) 
+#: /tmp/cicero-OXUr/adminpack.xml:11(para) 
 msgid "<filename>adminpack</filename> provides a number of support functions which <application>pgAdmin</application> and other administration and management tools can use to provide additional functionality, such as remote management of server log files."
 msgstr ""
 
-#: /tmp/cicero-HnEQ/adminpack.xml:19(title) 
+#: /tmp/cicero-OXUr/adminpack.xml:19(title) 
 msgid "Functions Implemented"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/adminpack.xml:25(programlisting) 
+#: /tmp/cicero-OXUr/adminpack.xml:25(programlisting) 
 #, no-wrap
 msgid "\nint8 pg_catalog.pg_file_write(fname text, data text, append bool)\nbool pg_catalog.pg_file_rename(oldname text, newname text, archivename text)\nbool pg_catalog.pg_file_rename(oldname text, newname text)\nbool pg_catalog.pg_file_unlink(fname text)\nsetof record pg_catalog.pg_logdir_ls()\n\n/* Renaming of existing backend functions for pgAdmin compatibility */\nint8 pg_catalog.pg_file_read(fname text, data text, append bool)\nbigint pg_catalog.pg_file_length(text)\nint4 pg_catalog.pg_logfile_rotate()\n"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/adminpack.xml:21(para) 
+#: /tmp/cicero-OXUr/adminpack.xml:21(para) 
 msgid "The functions implemented by <filename>adminpack</filename> can only be run by a superuser. Here's a list of these functions: <placeholder-1/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-HnEQ/adminpack.xml:0(None) 
+#: /tmp/cicero-OXUr/adminpack.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

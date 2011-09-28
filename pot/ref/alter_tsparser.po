@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-26 12:46+0200\n"
+"POT-Creation-Date: 2011-09-28 10:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,81 +9,81 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:9(refentrytitle) /tmp/cicero-HnEQ/ref/alter_tsparser.xml:15(refname) /tmp/cicero-HnEQ/ref/alter_tsparser.xml:20(primary) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:9(refentrytitle) /tmp/cicero-OXUr/ref/alter_tsparser.xml:15(refname) /tmp/cicero-OXUr/ref/alter_tsparser.xml:20(primary) 
 msgid "ALTER TEXT SEARCH PARSER"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:10(manvolnum) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:10(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:11(refmiscinfo) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:11(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:16(refpurpose) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:16(refpurpose) 
 msgid "change the definition of a text search parser"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:25(replaceable) /tmp/cicero-HnEQ/ref/alter_tsparser.xml:26(replaceable) /tmp/cicero-HnEQ/ref/alter_tsparser.xml:49(replaceable) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:25(replaceable) /tmp/cicero-OXUr/ref/alter_tsparser.xml:26(replaceable) /tmp/cicero-OXUr/ref/alter_tsparser.xml:49(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:25(replaceable) /tmp/cicero-HnEQ/ref/alter_tsparser.xml:58(replaceable) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:25(replaceable) /tmp/cicero-OXUr/ref/alter_tsparser.xml:58(replaceable) 
 msgid "new_name"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:26(replaceable) /tmp/cicero-HnEQ/ref/alter_tsparser.xml:67(replaceable) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:26(replaceable) /tmp/cicero-OXUr/ref/alter_tsparser.xml:67(replaceable) 
 msgid "new_schema"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:24(synopsis) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:24(synopsis) 
 #, no-wrap
 msgid "\nALTER TEXT SEARCH PARSER <placeholder-1/> RENAME TO <placeholder-2/>\nALTER TEXT SEARCH PARSER <placeholder-3/> SET SCHEMA <placeholder-4/>\n"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:31(title) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:31(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:33(para) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:33(para) 
 msgid "<command>ALTER TEXT SEARCH PARSER</command> changes the definition of a text search parser. Currently, the only supported functionality is to change the parser's name."
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:39(para) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:39(para) 
 msgid "You must be a superuser to use <command>ALTER TEXT SEARCH PARSER</command>."
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:45(title) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:45(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:51(para) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:51(para) 
 msgid "The name (optionally schema-qualified) of an existing text search parser."
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:60(para) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:60(para) 
 msgid "The new name of the text search parser."
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:69(para) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:69(para) 
 msgid "The new schema for the text search parser."
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:78(title) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:78(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:80(para) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:80(para) 
 msgid "There is no <command>ALTER TEXT SEARCH PARSER</command> statement in the SQL standard."
 msgstr ""
 
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:87(title) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:87(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-HnEQ/ref/alter_tsparser.xml:0(None) 
+#: /tmp/cicero-OXUr/ref/alter_tsparser.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
