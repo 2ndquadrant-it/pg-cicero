@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-28 10:45+0200\n"
+"POT-Creation-Date: 2011-09-28 11:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,80 +9,80 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-OXUr/xaggr.xml:5(title) 
+#: /tmp/cicero-PyDp/xaggr.xml:5(title) 
 msgid "User-defined Aggregates"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:8(primary) 
+#: /tmp/cicero-PyDp/xaggr.xml:8(primary) 
 msgid "aggregate function"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:9(secondary) 
+#: /tmp/cicero-PyDp/xaggr.xml:9(secondary) 
 msgid "user-defined"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:12(para) 
+#: /tmp/cicero-PyDp/xaggr.xml:12(para) 
 msgid "Aggregate functions in <productname>PostgreSQL</productname> are expressed in terms of <firstterm>state values</firstterm> and <firstterm>state transition functions</firstterm>. That is, an aggregate operates using a state value that is updated as each successive input row is processed. To define a new aggregate function, one selects a data type for the state value, an initial value for the state, and a state transition function. The state transition function is just an ordinary function that could also be used outside the context of the aggregate. A <firstterm>final function</firstterm> can also be specified, in case the desired result of the aggregate is different from the data that needs to be kept in the running state value."
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:29(para) 
+#: /tmp/cicero-PyDp/xaggr.xml:29(para) 
 msgid "Thus, in addition to the argument and result data types seen by a user of the aggregate, there is an internal state-value data type that might be different from both the argument and result types."
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:35(para) 
+#: /tmp/cicero-PyDp/xaggr.xml:35(para) 
 msgid "If we define an aggregate that does not use a final function, we have an aggregate that computes a running function of the column values from each row. <function>sum</function> is an example of this kind of aggregate. <function>sum</function> starts at zero and always adds the current row's value to its running total. For example, if we want to make a <function>sum</function> aggregate to work on a data type for complex numbers, we only need the addition function for that data type. The aggregate definition would be: <screen>\nCREATE AGGREGATE sum (complex)\n(\n    sfunc = complex_add,\n    stype = complex,\n    initcond = '(0,0)'\n);\n\nSELECT sum(a) FROM test_complex;\n\n   sum\n-----------\n (34,53.9)\n</screen> (Notice that we are relying on function overloading: there is more than one aggregate named <function>sum</function>, but <productname>PostgreSQL</productname> can figure out which kind of sum applies to a column of type <type>complex</type>.)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:67(para) 
+#: /tmp/cicero-PyDp/xaggr.xml:67(para) 
 msgid "The above definition of <function>sum</function> will return zero (the initial state condition) if there are no nonnull input values. Perhaps we want to return null in that case instead — the SQL standard expects <function>sum</function> to behave that way. We can do this simply by omitting the <literal>initcond</literal> phrase, so that the initial state condition is null. Ordinarily this would mean that the <literal>sfunc</literal> would need to check for a null state-condition input. But for <function>sum</function> and some other simple aggregates like <function>max</function> and <function>min</function>, it is sufficient to insert the first nonnull input value into the state variable and then start applying the transition function at the second nonnull input value. <productname>PostgreSQL</productname> will do that automatically if the initial condition is null and the transition function is marked <quote>strict</quote> (i.e., not to be called for null inputs)."
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:85(para) 
+#: /tmp/cicero-PyDp/xaggr.xml:85(para) 
 msgid "Another bit of default behavior for a <quote>strict</quote> transition function is that the previous state value is retained unchanged whenever a null input value is encountered. Thus, null values are ignored. If you need some other behavior for null inputs, do not declare your transition function as strict; instead code it to test for null inputs and do whatever is needed."
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:104(programlisting) 
+#: /tmp/cicero-PyDp/xaggr.xml:104(programlisting) 
 #, no-wrap
 msgid "\nCREATE AGGREGATE avg (float8)\n(\n    sfunc = float8_accum,\n    stype = float8[],\n    finalfunc = float8_avg,\n    initcond = '{0,0,0}'\n);\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:94(para) 
+#: /tmp/cicero-PyDp/xaggr.xml:94(para) 
 msgid "<function>avg</function> (average) is a more complex example of an aggregate. It requires two pieces of running state: the sum of the inputs and the count of the number of inputs. The final result is obtained by dividing these quantities. Average is typically implemented by using an array as the state value. For example, the built-in implementation of <function>avg(float8)</function> looks like: <placeholder-1/> (<function>float8_accum</function> requires a three-element array, not just two elements, because it accumulates the sum of squares as well as the sum and count of the inputs. This is so that it can be used for some other aggregates besides <function>avg</function>.)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:131(programlisting) 
+#: /tmp/cicero-PyDp/xaggr.xml:131(programlisting) 
 #, no-wrap
 msgid "\nCREATE AGGREGATE array_accum (anyelement)\n(\n    sfunc = array_append,\n    stype = anyarray,\n    initcond = '{}'\n);\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:120(para) 
+#: /tmp/cicero-PyDp/xaggr.xml:120(para) 
 msgid "Aggregate functions can use polymorphic state transition functions or final functions, so that the same functions can be used to implement multiple aggregates. See <xref linkend=\"extend-types-polymorphic\"/> for an explanation of polymorphic functions. Going a step further, the aggregate function itself can be specified with polymorphic input type(s) and state type, allowing a single aggregate definition to serve for multiple input data types. Here is an example of a polymorphic aggregate: <placeholder-1/> Here, the actual state type for any aggregate call is the array type having the actual input type as elements. The behavior of the aggregate is to concatenate all the inputs into an array of that type. (Note: the built-in aggregate <function>array_agg</function> provides similar functionality, with better performance than this definition would have.)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:150(programlisting) 
+#: /tmp/cicero-PyDp/xaggr.xml:150(programlisting) 
 #, no-wrap
 msgid "\nSELECT attrelid::regclass, array_accum(attname)\n    FROM pg_attribute\n    WHERE attnum &gt; 0 AND attrelid = 'pg_tablespace'::regclass\n    GROUP BY attrelid;\n\n   attrelid    |              array_accum              \n---------------+---------------------------------------\n pg_tablespace | {spcname,spcowner,spclocation,spcacl}\n(1 row)\n\nSELECT attrelid::regclass, array_accum(atttypid::regtype)\n    FROM pg_attribute\n    WHERE attnum &gt; 0 AND attrelid = 'pg_tablespace'::regclass\n    GROUP BY attrelid;\n\n   attrelid    |        array_accum        \n---------------+---------------------------\n pg_tablespace | {name,oid,text,aclitem[]}\n(1 row)\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:147(para) 
+#: /tmp/cicero-PyDp/xaggr.xml:147(para) 
 msgid "Here's the output using two different actual data types as arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:177(programlisting) 
+#: /tmp/cicero-PyDp/xaggr.xml:177(programlisting) 
 #, no-wrap
 msgid "\nif (AggCheckCallContext(fcinfo, NULL))\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:173(para) 
+#: /tmp/cicero-PyDp/xaggr.xml:173(para) 
 msgid "A function written in C can detect that it is being called as an aggregate transition or final function by calling <function>AggCheckCallContext</function>, for example: <placeholder-1/> One reason for checking this is that when it is true for a transition function, the first input must be a temporary transition value and can therefore safely be modified in-place rather than allocating a new copy. See <literal>int8inc()</literal> for an example. (This is the <emphasis>only</emphasis> case where it is safe for a function to modify a pass-by-reference input. In particular, aggregate final functions should not modify their inputs in any case, because in some cases they will be re-executed on the same final transition value.)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/xaggr.xml:192(para) 
+#: /tmp/cicero-PyDp/xaggr.xml:192(para) 
 msgid "For further details see the <xref linkend=\"sql-createaggregate\"/> command."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-OXUr/xaggr.xml:0(None) 
+#: /tmp/cicero-PyDp/xaggr.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

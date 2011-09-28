@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-28 10:44+0200\n"
+"POT-Creation-Date: 2011-09-28 11:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,1258 +9,1258 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:5(title) /tmp/cicero-OXUr/pgcrypto.xml:8(primary) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:5(title) /tmp/cicero-PyDp/pgcrypto.xml:8(primary) 
 msgid "pgcrypto"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:12(primary) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:12(primary) 
 msgid "encryption"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:13(secondary) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:13(secondary) 
 msgid "for specific columns"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:16(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:16(para) 
 msgid "The <filename>pgcrypto</filename> module provides cryptographic functions for <productname>PostgreSQL</productname>."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:22(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:22(title) 
 msgid "General Hashing Functions"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:25(function) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:25(function) 
 msgid "digest()"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:27(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:27(synopsis) 
 #, no-wrap
 msgid "\ndigest(data text, type text) returns bytea\ndigest(data bytea, type text) returns bytea\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:32(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:32(para) 
 msgid "Computes a binary hash of the given <parameter>data</parameter>. <parameter>type</parameter> is the algorithm to use. Standard algorithms are <literal>md5</literal>, <literal>sha1</literal>, <literal>sha224</literal>, <literal>sha256</literal>, <literal>sha384</literal> and <literal>sha512</literal>. If <filename>pgcrypto</filename> was built with OpenSSL, more algorithms are available, as detailed in <xref linkend=\"pgcrypto-with-without-openssl\"/>."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:46(programlisting) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:46(programlisting) 
 #, no-wrap
 msgid "\nCREATE OR REPLACE FUNCTION sha1(bytea) returns text AS $$\n    SELECT encode(digest($1, 'sha1'), 'hex')\n$$ LANGUAGE SQL STRICT IMMUTABLE;\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:43(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:43(para) 
 msgid "If you want the digest as a hexadecimal string, use <function>encode()</function> on the result. For example: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:55(function) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:55(function) 
 msgid "hmac()"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:57(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:57(synopsis) 
 #, no-wrap
 msgid "\nhmac(data text, key text, type text) returns bytea\nhmac(data bytea, key text, type text) returns bytea\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:62(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:62(para) 
 msgid "Calculates hashed MAC for <parameter>data</parameter> with key <parameter>key</parameter>. <parameter>type</parameter> is the same as in <function>digest()</function>."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:67(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:67(para) 
 msgid "This is similar to <function>digest()</function> but the hash can only be recalculated knowing the key. This prevents the scenario of someone altering data and also changing the hash to match."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:73(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:73(para) 
 msgid "If the key is larger than the hash block size it will first be hashed and the result will be used as key."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:81(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:81(title) 
 msgid "Password Hashing Functions"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:83(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:83(para) 
 msgid "The functions <function>crypt()</function> and <function>gen_salt()</function> are specifically designed for hashing passwords. <function>crypt()</function> does the hashing and <function>gen_salt()</function> prepares algorithm parameters for it."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:90(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:90(para) 
 msgid "The algorithms in <function>crypt()</function> differ from usual hashing algorithms like MD5 or SHA1 in the following respects:"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:97(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:97(para) 
 msgid "They are slow. As the amount of data is so small, this is the only way to make brute-forcing passwords hard."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:103(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:103(para) 
 msgid "They use a random value, called the <firstterm>salt</firstterm>, so that users having the same password will have different encrypted passwords. This is also an additional defense against reversing the algorithm."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:110(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:110(para) 
 msgid "They include the algorithm type in the result, so passwords hashed with different algorithms can co-exist."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:116(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:116(para) 
 msgid "Some of them are adaptive — that means when computers get faster, you can tune the algorithm to be slower, without introducing incompatibility with existing passwords."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:124(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:124(para) 
 msgid "<xref linkend=\"pgcrypto-crypt-algorithms\"/> lists the algorithms supported by the <function>crypt()</function> function."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:130(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:130(title) 
 msgid "Supported Algorithms for <function>crypt()</function>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:134(entry) /tmp/cicero-OXUr/pgcrypto.xml:238(entry) /tmp/cicero-OXUr/pgcrypto.xml:291(entry) /tmp/cicero-OXUr/pgcrypto.xml:1235(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:134(entry) /tmp/cicero-PyDp/pgcrypto.xml:238(entry) /tmp/cicero-PyDp/pgcrypto.xml:291(entry) /tmp/cicero-PyDp/pgcrypto.xml:1235(entry) 
 msgid "Algorithm"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:135(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:135(entry) 
 msgid "Max Password Length"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:136(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:136(entry) 
 msgid "Adaptive?"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:137(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:137(entry) 
 msgid "Salt Bits"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:138(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:138(entry) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:143(literal) /tmp/cicero-OXUr/pgcrypto.xml:252(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:143(literal) /tmp/cicero-PyDp/pgcrypto.xml:252(literal) 
 msgid "bf"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:144(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:144(entry) 
 msgid "72"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:145(entry) /tmp/cicero-OXUr/pgcrypto.xml:159(entry) /tmp/cicero-OXUr/pgcrypto.xml:1033(entry) /tmp/cicero-OXUr/pgcrypto.xml:1034(entry) /tmp/cicero-OXUr/pgcrypto.xml:1038(entry) /tmp/cicero-OXUr/pgcrypto.xml:1039(entry) /tmp/cicero-OXUr/pgcrypto.xml:1043(entry) /tmp/cicero-OXUr/pgcrypto.xml:1053(entry) /tmp/cicero-OXUr/pgcrypto.xml:1054(entry) /tmp/cicero-OXUr/pgcrypto.xml:1058(entry) /tmp/cicero-OXUr/pgcrypto.xml:1064(entry) /tmp/cicero-OXUr/pgcrypto.xml:1068(entry) /tmp/cicero-OXUr/pgcrypto.xml:1069(entry) /tmp/cicero-OXUr/pgcrypto.xml:1073(entry) /tmp/cicero-OXUr/pgcrypto.xml:1074(entry) /tmp/cicero-OXUr/pgcrypto.xml:1078(entry) /tmp/cicero-OXUr/pgcrypto.xml:1079(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:145(entry) /tmp/cicero-PyDp/pgcrypto.xml:159(entry) /tmp/cicero-PyDp/pgcrypto.xml:1033(entry) /tmp/cicero-PyDp/pgcrypto.xml:1034(entry) /tmp/cicero-PyDp/pgcrypto.xml:1038(entry) /tmp/cicero-PyDp/pgcrypto.xml:1039(entry) /tmp/cicero-PyDp/pgcrypto.xml:1043(entry) /tmp/cicero-PyDp/pgcrypto.xml:1053(entry) /tmp/cicero-PyDp/pgcrypto.xml:1054(entry) /tmp/cicero-PyDp/pgcrypto.xml:1058(entry) /tmp/cicero-PyDp/pgcrypto.xml:1064(entry) /tmp/cicero-PyDp/pgcrypto.xml:1068(entry) /tmp/cicero-PyDp/pgcrypto.xml:1069(entry) /tmp/cicero-PyDp/pgcrypto.xml:1073(entry) /tmp/cicero-PyDp/pgcrypto.xml:1074(entry) /tmp/cicero-PyDp/pgcrypto.xml:1078(entry) /tmp/cicero-PyDp/pgcrypto.xml:1079(entry) 
 msgid "yes"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:146(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:146(entry) 
 msgid "128"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:147(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:147(entry) 
 msgid "Blowfish-based, variant 2a"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:150(literal) /tmp/cicero-OXUr/pgcrypto.xml:341(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:150(literal) /tmp/cicero-PyDp/pgcrypto.xml:341(literal) 
 msgid "md5"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:151(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:151(entry) 
 msgid "unlimited"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:152(entry) /tmp/cicero-OXUr/pgcrypto.xml:166(entry) /tmp/cicero-OXUr/pgcrypto.xml:1048(entry) /tmp/cicero-OXUr/pgcrypto.xml:1063(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:152(entry) /tmp/cicero-PyDp/pgcrypto.xml:166(entry) /tmp/cicero-PyDp/pgcrypto.xml:1048(entry) /tmp/cicero-PyDp/pgcrypto.xml:1063(entry) 
 msgid "no"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:153(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:153(entry) 
 msgid "48"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:154(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:154(entry) 
 msgid "MD5-based crypt"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:157(literal) /tmp/cicero-OXUr/pgcrypto.xml:246(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:157(literal) /tmp/cicero-PyDp/pgcrypto.xml:246(literal) 
 msgid "xdes"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:158(entry) /tmp/cicero-OXUr/pgcrypto.xml:165(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:158(entry) /tmp/cicero-PyDp/pgcrypto.xml:165(entry) 
 msgid "8"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:160(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:160(entry) 
 msgid "24"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:161(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:161(entry) 
 msgid "Extended DES"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:164(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:164(literal) 
 msgid "des"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:167(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:167(entry) 
 msgid "12"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:168(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:168(entry) 
 msgid "Original UNIX crypt"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:175(function) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:175(function) 
 msgid "crypt()"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:177(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:177(synopsis) 
 #, no-wrap
 msgid "\ncrypt(password text, salt text) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:181(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:181(para) 
 msgid "Calculates a crypt(3)-style hash of <parameter>password</parameter>. When storing a new password, you need to use <function>gen_salt()</function> to generate a new <parameter>salt</parameter> value. To check a password, pass the stored hash value as <parameter>salt</parameter>, and test whether the result matches the stored value."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:190(programlisting) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:190(programlisting) 
 #, no-wrap
 msgid "\nUPDATE ... SET pswhash = crypt('new password', gen_salt('md5'));\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:188(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:188(para) 
 msgid "Example of setting a new password: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:196(programlisting) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:196(programlisting) 
 #, no-wrap
 msgid "\nSELECT pswhash = crypt('entered password', pswhash) FROM ... ;\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:194(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:194(para) 
 msgid "Example of authentication: <placeholder-1/> This returns <literal>true</literal> if the entered password is correct."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:204(function) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:204(function) 
 msgid "gen_salt()"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:206(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:206(synopsis) 
 #, no-wrap
 msgid "\ngen_salt(type text [, iter_count integer ]) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:210(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:210(para) 
 msgid "Generates a new random salt string for use in <function>crypt()</function>. The salt string also tells <function>crypt()</function> which algorithm to use."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:215(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:215(para) 
 msgid "The <parameter>type</parameter> parameter specifies the hashing algorithm. The accepted types are: <literal>des</literal>, <literal>xdes</literal>, <literal>md5</literal> and <literal>bf</literal>."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:221(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:221(para) 
 msgid "The <parameter>iter_count</parameter> parameter lets the user specify the iteration count, for algorithms that have one. The higher the count, the more time it takes to hash the password and therefore the more time to break it. Although with too high a count the time to calculate a hash may be several years — which is somewhat impractical. If the <parameter>iter_count</parameter> parameter is omitted, the default iteration count is used. Allowed values for <parameter>iter_count</parameter> depend on the algorithm and are shown in <xref linkend=\"pgcrypto-icfc-table\"/>."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:234(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:234(title) 
 msgid "Iteration Counts for <function>crypt()</function>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:239(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:239(entry) 
 msgid "Default"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:240(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:240(entry) 
 msgid "Min"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:241(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:241(entry) 
 msgid "Max"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:247(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:247(entry) 
 msgid "725"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:248(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:248(entry) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:249(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:249(entry) 
 msgid "16777215"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:253(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:253(entry) 
 msgid "6"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:254(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:254(entry) 
 msgid "4"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:255(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:255(entry) 
 msgid "31"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:261(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:261(para) 
 msgid "For <literal>xdes</literal> there is an additional limitation that the iteration count must be an odd number."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:266(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:266(para) 
 msgid "To pick an appropriate iteration count, consider that the original DES crypt was designed to have the speed of 4 hashes per second on the hardware of that time. Slower than 4 hashes per second would probably dampen usability. Faster than 100 hashes per second is probably too fast."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:274(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:274(para) 
 msgid "<xref linkend=\"pgcrypto-hash-speed-table\"/> gives an overview of the relative slowness of different hashing algorithms. The table shows how much time it would take to try all combinations of characters in an 8-character password, assuming that the password contains either only lower case letters, or upper- and lower-case letters and numbers. In the <literal>crypt-bf</literal> entries, the number after a slash is the <parameter>iter_count</parameter> parameter of <function>gen_salt</function>."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:287(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:287(title) 
 msgid "Hash Algorithm Speeds"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:292(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:292(entry) 
 msgid "Hashes/sec"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:293(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:293(literal) 
 msgid "[a-z]"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:293(entry) /tmp/cicero-OXUr/pgcrypto.xml:294(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:293(entry) /tmp/cicero-PyDp/pgcrypto.xml:294(entry) 
 msgid "For <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:294(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:294(literal) 
 msgid "[A-Za-z0-9]"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:299(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:299(literal) 
 msgid "crypt-bf/8"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:300(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:300(entry) 
 msgid "28"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:301(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:301(entry) 
 msgid "246 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:302(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:302(entry) 
 msgid "251322 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:305(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:305(literal) 
 msgid "crypt-bf/7"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:306(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:306(entry) 
 msgid "57"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:307(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:307(entry) 
 msgid "121 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:308(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:308(entry) 
 msgid "123457 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:311(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:311(literal) 
 msgid "crypt-bf/6"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:312(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:312(entry) 
 msgid "112"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:313(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:313(entry) 
 msgid "62 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:314(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:314(entry) 
 msgid "62831 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:317(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:317(literal) 
 msgid "crypt-bf/5"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:318(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:318(entry) 
 msgid "211"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:319(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:319(entry) 
 msgid "33 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:320(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:320(entry) 
 msgid "33351 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:323(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:323(literal) 
 msgid "crypt-md5"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:324(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:324(entry) 
 msgid "2681"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:325(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:325(entry) 
 msgid "2.6 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:326(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:326(entry) 
 msgid "2625 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:329(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:329(literal) 
 msgid "crypt-des"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:330(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:330(entry) 
 msgid "362837"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:331(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:331(entry) 
 msgid "7 days"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:332(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:332(entry) 
 msgid "19 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:335(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:335(literal) 
 msgid "sha1"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:336(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:336(entry) 
 msgid "590223"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:337(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:337(entry) 
 msgid "4 days"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:338(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:338(entry) 
 msgid "12 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:342(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:342(entry) 
 msgid "2345086"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:343(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:343(entry) 
 msgid "1 day"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:344(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:344(entry) 
 msgid "3 years"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:350(para) /tmp/cicero-OXUr/pgcrypto.xml:1085(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:350(para) /tmp/cicero-PyDp/pgcrypto.xml:1085(para) 
 msgid "Notes:"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:356(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:356(para) 
 msgid "The machine used is a 1.5GHz Pentium 4."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:361(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:361(para) 
 msgid "<literal>crypt-des</literal> and <literal>crypt-md5</literal> algorithm numbers are taken from John the Ripper v1.6.38 <literal>-test</literal> output."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:367(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:367(para) 
 msgid "<literal>md5</literal> numbers are from mdcrack 1.2."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:372(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:372(para) 
 msgid "<literal>sha1</literal> numbers are from lcrack-20031130-beta."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:377(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:377(para) 
 msgid "<literal>crypt-bf</literal> numbers are taken using a simple program that loops over 1000 8-character passwords. That way I can show the speed with different numbers of iterations. For reference: <literal>john -test</literal> shows 213 loops/sec for <literal>crypt-bf/5</literal>. (The very small difference in results is in accordance with the fact that the <literal>crypt-bf</literal> implementation in <filename>pgcrypto</filename> is the same one used in John the Ripper.)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:390(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:390(para) 
 msgid "Note that <quote>try all combinations</quote> is not a realistic exercise. Usually password cracking is done with the help of dictionaries, which contain both regular words and various mutations of them. So, even somewhat word-like passwords could be cracked much faster than the above numbers suggest, while a 6-character non-word-like password may escape cracking. Or not."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:402(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:402(title) 
 msgid "PGP Encryption Functions"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:404(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:404(para) 
 msgid "The functions here implement the encryption part of the OpenPGP (RFC 4880) standard. Supported are both symmetric-key and public-key encryption."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:409(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:409(para) 
 msgid "An encrypted PGP message consists of 2 parts, or <firstterm>packets</firstterm>:"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:414(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:414(para) 
 msgid "Packet containing a session key — either symmetric-key or public-key encrypted."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:420(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:420(para) 
 msgid "Packet containing data encrypted with the session key."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:426(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:426(para) 
 msgid "When encrypting with a symmetric key (i.e., a password):"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:431(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:431(para) 
 msgid "The given password is hashed using a String2Key (S2K) algorithm. This is rather similar to <function>crypt()</function> algorithms — purposefully slow and with random salt — but it produces a full-length binary key."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:439(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:439(para) 
 msgid "If a separate session key is requested, a new random key will be generated. Otherwise the S2K key will be used directly as the session key."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:446(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:446(para) 
 msgid "If the S2K key is to be used directly, then only S2K settings will be put into the session key packet. Otherwise the session key will be encrypted with the S2K key and put into the session key packet."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:454(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:454(para) 
 msgid "When encrypting with a public key:"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:459(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:459(para) 
 msgid "A new random session key is generated."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:464(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:464(para) 
 msgid "It is encrypted using the public key and put into the session key packet."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:470(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:470(para) 
 msgid "In either case the data to be encrypted is processed as follows:"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:475(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:475(para) 
 msgid "Optional data-manipulation: compression, conversion to UTF-8, and/or conversion of line-endings."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:481(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:481(para) 
 msgid "The data is prefixed with a block of random bytes. This is equivalent to using a random IV."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:487(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:487(para) 
 msgid "An SHA1 hash of the random prefix and data is appended."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:492(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:492(para) 
 msgid "All this is encrypted with the session key and placed in the data packet."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:499(function) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:499(function) 
 msgid "pgp_sym_encrypt()"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:501(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:501(synopsis) 
 #, no-wrap
 msgid "\npgp_sym_encrypt(data text, psw text [, options text ]) returns bytea\npgp_sym_encrypt_bytea(data bytea, psw text [, options text ]) returns bytea\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:505(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:505(para) 
 msgid "Encrypt <parameter>data</parameter> with a symmetric PGP key <parameter>psw</parameter>. The <parameter>options</parameter> parameter can contain option settings, as described below."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:513(function) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:513(function) 
 msgid "pgp_sym_decrypt()"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:515(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:515(synopsis) 
 #, no-wrap
 msgid "\npgp_sym_decrypt(msg bytea, psw text [, options text ]) returns text\npgp_sym_decrypt_bytea(msg bytea, psw text [, options text ]) returns bytea\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:519(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:519(para) 
 msgid "Decrypt a symmetric-key-encrypted PGP message."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:522(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:522(para) 
 msgid "Decrypting <type>bytea</type> data with <function>pgp_sym_decrypt</function> is disallowed. This is to avoid outputting invalid character data. Decrypting originally textual data with <function>pgp_sym_decrypt_bytea</function> is fine."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:527(para) /tmp/cicero-OXUr/pgcrypto.xml:544(para) /tmp/cicero-OXUr/pgcrypto.xml:569(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:527(para) /tmp/cicero-PyDp/pgcrypto.xml:544(para) /tmp/cicero-PyDp/pgcrypto.xml:569(para) 
 msgid "The <parameter>options</parameter> parameter can contain option settings, as described below."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:534(function) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:534(function) 
 msgid "pgp_pub_encrypt()"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:536(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:536(synopsis) 
 #, no-wrap
 msgid "\npgp_pub_encrypt(data text, key bytea [, options text ]) returns bytea\npgp_pub_encrypt_bytea(data bytea, key bytea [, options text ]) returns bytea\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:540(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:540(para) 
 msgid "Encrypt <parameter>data</parameter> with a public PGP key <parameter>key</parameter>. Giving this function a secret key will produce a error."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:551(function) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:551(function) 
 msgid "pgp_pub_decrypt()"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:553(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:553(synopsis) 
 #, no-wrap
 msgid "\npgp_pub_decrypt(msg bytea, key bytea [, psw text [, options text ]]) returns text\npgp_pub_decrypt_bytea(msg bytea, key bytea [, psw text [, options text ]]) returns bytea\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:557(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:557(para) 
 msgid "Decrypt a public-key-encrypted message. <parameter>key</parameter> must be the secret key corresponding to the public key that was used to encrypt. If the secret key is password-protected, you must give the password in <parameter>psw</parameter>. If there is no password, but you want to specify options, you need to give an empty password."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:564(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:564(para) 
 msgid "Decrypting <type>bytea</type> data with <function>pgp_pub_decrypt</function> is disallowed. This is to avoid outputting invalid character data. Decrypting originally textual data with <function>pgp_pub_decrypt_bytea</function> is fine."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:576(function) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:576(function) 
 msgid "pgp_key_id()"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:578(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:578(synopsis) 
 #, no-wrap
 msgid "\npgp_key_id(bytea) returns text\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:581(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:581(para) 
 msgid "<function>pgp_key_id</function> extracts the key ID of a PGP public or secret key. Or it gives the key ID that was used for encrypting the data, if given an encrypted message."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:586(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:586(para) 
 msgid "It can return 2 special key IDs:"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:592(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:592(literal) 
 msgid "SYMKEY"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:594(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:594(para) 
 msgid "The message is encrypted with a symmetric key."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:600(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:600(literal) 
 msgid "ANYKEY"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:602(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:602(para) 
 msgid "The message is public-key encrypted, but the key ID has been removed. That means you will need to try all your secret keys on it to see which one decrypts it. <filename>pgcrypto</filename> itself does not produce such messages."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:610(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:610(para) 
 msgid "Note that different keys may have the same ID. This is rare but a normal event. The client application should then try to decrypt with each one, to see which fits — like handling <literal>ANYKEY</literal>."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:618(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:618(title) 
 msgid "<function>armor()</function>, <function>dearmor()</function>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:620(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:620(synopsis) 
 #, no-wrap
 msgid "\narmor(data bytea) returns text\ndearmor(data text) returns bytea\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:624(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:624(para) 
 msgid "These functions wrap/unwrap binary data into PGP ASCII-armor format, which is basically Base64 with CRC and additional formatting."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:631(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:631(title) 
 msgid "Options for PGP Functions"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:637(programlisting) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:637(programlisting) 
 #, no-wrap
 msgid "\npgp_sym_encrypt(data, psw, 'compress-algo=1, cipher-algo=aes256')\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:633(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:633(para) 
 msgid "Options are named to be similar to GnuPG. An option's value should be given after an equal sign; separate options from each other with commas. For example: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:642(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:642(para) 
 msgid "All of the options except <literal>convert-crlf</literal> apply only to encrypt functions. Decrypt functions get the parameters from the PGP data."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:648(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:648(para) 
 msgid "The most interesting options are probably <literal>compress-algo</literal> and <literal>unicode-mode</literal>. The rest should have reasonable defaults."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:655(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:655(title) 
 msgid "cipher-algo"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:657(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:657(para) 
 msgid "Which cipher algorithm to use."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:661(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:661(literal) 
 msgid "3des"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:661(literal) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:661(literal) 
 msgid "cast5"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:660(literallayout) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:660(literallayout) 
 #, no-wrap
 msgid "\nValues: bf, aes128, aes192, aes256 (OpenSSL-only: <placeholder-1/>, <placeholder-2/>)\nDefault: aes128\nApplies to: pgp_sym_encrypt, pgp_pub_encrypt\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:668(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:668(title) 
 msgid "compress-algo"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:670(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:670(para) 
 msgid "Which compression algorithm to use. Only available if <productname>PostgreSQL</productname> was built with zlib."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:674(literallayout) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:674(literallayout) 
 #, no-wrap
 msgid "\nValues:\n  0 - no compression\n  1 - ZIP compression\n  2 - ZLIB compression (= ZIP plus meta-data and block CRCs)\nDefault: 0\nApplies to: pgp_sym_encrypt, pgp_pub_encrypt\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:685(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:685(title) 
 msgid "compress-level"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:687(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:687(para) 
 msgid "How much to compress. Higher levels compress smaller but are slower. 0 disables compression."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:691(literallayout) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:691(literallayout) 
 #, no-wrap
 msgid "\nValues: 0, 1-9\nDefault: 6\nApplies to: pgp_sym_encrypt, pgp_pub_encrypt\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:699(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:699(title) 
 msgid "convert-crlf"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:701(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:701(para) 
 msgid "Whether to convert <literal>\\n</literal> into <literal>\\r\\n</literal> when encrypting and <literal>\\r\\n</literal> to <literal>\\n</literal> when decrypting. RFC 4880 specifies that text data should be stored using <literal>\\r\\n</literal> line-feeds. Use this to get fully RFC-compliant behavior."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:708(literallayout) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:708(literallayout) 
 #, no-wrap
 msgid "\nValues: 0, 1\nDefault: 0\nApplies to: pgp_sym_encrypt, pgp_pub_encrypt, pgp_sym_decrypt, pgp_pub_decrypt\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:716(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:716(title) 
 msgid "disable-mdc"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:718(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:718(para) 
 msgid "Do not protect data with SHA-1. The only good reason to use this option is to achieve compatibility with ancient PGP products, predating the addition of SHA-1 protected packets to RFC 4880. Recent gnupg.org and pgp.com software supports it fine."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:724(literallayout) /tmp/cicero-OXUr/pgcrypto.xml:797(literallayout) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:724(literallayout) /tmp/cicero-PyDp/pgcrypto.xml:797(literallayout) 
 #, no-wrap
 msgid "\nValues: 0, 1\nDefault: 0\nApplies to: pgp_sym_encrypt, pgp_pub_encrypt\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:732(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:732(title) 
 msgid "enable-session-key"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:734(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:734(para) 
 msgid "Use separate session key. Public-key encryption always uses a separate session key; this is for symmetric-key encryption, which by default uses the S2K key directly."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:739(literallayout) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:739(literallayout) 
 #, no-wrap
 msgid "\nValues: 0, 1\nDefault: 0\nApplies to: pgp_sym_encrypt\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:747(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:747(title) 
 msgid "s2k-mode"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:749(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:749(para) 
 msgid "Which S2K algorithm to use."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:752(literallayout) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:752(literallayout) 
 #, no-wrap
 msgid "\nValues:\n  0 - Without salt.  Dangerous!\n  1 - With salt but with fixed iteration count.\n  3 - Variable iteration count.\nDefault: 3\nApplies to: pgp_sym_encrypt\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:763(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:763(title) 
 msgid "s2k-digest-algo"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:765(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:765(para) 
 msgid "Which digest algorithm to use in S2K calculation."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:768(literallayout) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:768(literallayout) 
 #, no-wrap
 msgid "\nValues: md5, sha1\nDefault: sha1\nApplies to: pgp_sym_encrypt\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:776(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:776(title) 
 msgid "s2k-cipher-algo"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:778(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:778(para) 
 msgid "Which cipher to use for encrypting separate session key."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:781(literallayout) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:781(literallayout) 
 #, no-wrap
 msgid "\nValues: bf, aes, aes128, aes192, aes256\nDefault: use cipher-algo\nApplies to: pgp_sym_encrypt\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:789(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:789(title) 
 msgid "unicode-mode"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:791(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:791(para) 
 msgid "Whether to convert textual data from database internal encoding to UTF-8 and back. If your database already is UTF-8, no conversion will be done, but the message will be tagged as UTF-8. Without this option it will not be."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:806(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:806(title) 
 msgid "Generating PGP Keys with GnuPG"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:810(programlisting) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:810(programlisting) 
 #, no-wrap
 msgid "\ngpg --gen-key\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:808(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:808(para) 
 msgid "To generate a new key: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:814(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:814(para) 
 msgid "The preferred key type is <quote>DSA and Elgamal</quote>."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:817(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:817(para) 
 msgid "For RSA encryption you must create either DSA or RSA sign-only key as master and then add an RSA encryption subkey with <literal>gpg --edit-key</literal>."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:824(programlisting) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:824(programlisting) 
 #, no-wrap
 msgid "\ngpg --list-secret-keys\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:822(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:822(para) 
 msgid "To list keys: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:830(programlisting) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:830(programlisting) 
 #, no-wrap
 msgid "\ngpg -a --export KEYID &gt; public.key\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:828(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:828(para) 
 msgid "To export a public key in ASCII-armor format: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:836(programlisting) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:836(programlisting) 
 #, no-wrap
 msgid "\ngpg -a --export-secret-keys KEYID &gt; secret.key\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:834(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:834(para) 
 msgid "To export a secret key in ASCII-armor format: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:840(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:840(para) 
 msgid "You need to use <function>dearmor()</function> on these keys before giving them to the PGP functions. Or if you can handle binary data, you can drop <literal>-a</literal> from the command."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:845(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:845(para) 
 msgid "For more details see <literal>man gpg</literal>, <ulink url=\"http://www.gnupg.org/gph/en/manual.html\">The GNU Privacy Handbook</ulink> and other documentation on <ulink url=\"http://www.gnupg.org\"/>."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:854(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:854(title) 
 msgid "Limitations of PGP Code"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:858(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:858(para) 
 msgid "No support for signing. That also means that it is not checked whether the encryption subkey belongs to the master key."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:864(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:864(para) 
 msgid "No support for encryption key as master key. As such practice is generally discouraged, this should not be a problem."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:870(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:870(para) 
 msgid "No support for several subkeys. This may seem like a problem, as this is common practice. On the other hand, you should not use your regular GPG/PGP keys with <filename>pgcrypto</filename>, but create new ones, as the usage scenario is rather different."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:882(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:882(title) 
 msgid "Raw Encryption Functions"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:884(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:884(para) 
 msgid "These functions only run a cipher over data; they don't have any advanced features of PGP encryption. Therefore they have some major problems:"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:890(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:890(para) 
 msgid "They use user key directly as cipher key."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:895(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:895(para) 
 msgid "They don't provide any integrity checking, to see if the encrypted data was modified."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:901(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:901(para) 
 msgid "They expect that users manage all encryption parameters themselves, even IV."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:907(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:907(para) 
 msgid "They don't handle text."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:912(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:912(para) 
 msgid "So, with the introduction of PGP encryption, usage of raw encryption functions is discouraged."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:917(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:917(synopsis) 
 #, no-wrap
 msgid "\nencrypt(data bytea, key bytea, type text) returns bytea\ndecrypt(data bytea, key bytea, type text) returns bytea\n\nencrypt_iv(data bytea, key bytea, iv bytea, type text) returns bytea\ndecrypt_iv(data bytea, key bytea, iv bytea, type text) returns bytea\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:936(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:936(para) 
 msgid "<literal>bf</literal> — Blowfish"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:937(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:937(para) 
 msgid "<literal>aes</literal> — AES (Rijndael-128)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:942(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:942(para) 
 msgid "<literal>cbc</literal> — next block depends on previous (default)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:947(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:947(para) 
 msgid "<literal>ecb</literal> — each block is encrypted separately (for testing only)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:956(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:956(para) 
 msgid "<literal>pkcs</literal> — data may be any length (default)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:961(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:961(para) 
 msgid "<literal>none</literal> — data must be multiple of cipher block size"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:925(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:925(para) 
 msgid "Encrypt/decrypt data using the cipher method specified by <parameter>type</parameter>. The syntax of the <parameter>type</parameter> string is: <synopsis>\n<replaceable>algorithm</replaceable> <optional> <literal>-</literal> <replaceable>mode</replaceable> </optional> <optional> <literal>/pad:</literal> <replaceable>padding</replaceable> </optional>\n</synopsis> where <replaceable>algorithm</replaceable> is one of: <placeholder-1/> and <replaceable>mode</replaceable> is one of: <placeholder-2/> and <replaceable>padding</replaceable> is one of: <placeholder-3/>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:969(programlisting) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:969(programlisting) 
 #, no-wrap
 msgid "\nencrypt(data, 'fooz', 'bf')\nencrypt(data, 'fooz', 'bf-cbc/pad:pkcs')\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:967(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:967(para) 
 msgid "So, for example, these are equivalent: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:974(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:974(para) 
 msgid "In <function>encrypt_iv</function> and <function>decrypt_iv</function>, the <parameter>iv</parameter> parameter is the initial value for the CBC mode; it is ignored for ECB. It is clipped or padded with zeroes if not exactly block size. It defaults to all zeroes in the functions without this parameter."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:984(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:984(title) 
 msgid "Random-Data Functions"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:986(synopsis) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:986(synopsis) 
 #, no-wrap
 msgid "\ngen_random_bytes(count integer) returns bytea\n"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:989(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:989(para) 
 msgid "Returns <parameter>count</parameter> cryptographically strong random bytes. At most 1024 bytes can be extracted at a time. This is to avoid draining the randomness generator pool."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:997(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:997(title) 
 msgid "Notes"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1000(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1000(title) 
 msgid "Configuration"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1002(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1002(para) 
 msgid "<filename>pgcrypto</filename> configures itself according to the findings of the main PostgreSQL <literal>configure</literal> script. The options that affect it are <literal>--with-zlib</literal> and <literal>--with-openssl</literal>."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1009(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1009(para) 
 msgid "When compiled with zlib, PGP encryption functions are able to compress data before encrypting."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1014(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1014(para) 
 msgid "When compiled with OpenSSL, there will be more algorithms available. Also public-key encryption functions will be faster as OpenSSL has more optimized BIGNUM functions."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1021(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1021(title) 
 msgid "Summary of Functionality with and without OpenSSL"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1025(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1025(entry) 
 msgid "Functionality"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1026(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1026(entry) 
 msgid "Built-in"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1027(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1027(entry) 
 msgid "With OpenSSL"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1032(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1032(entry) 
 msgid "MD5"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1037(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1037(entry) 
 msgid "SHA1"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1042(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1042(entry) 
 msgid "SHA224/256/384/512"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1044(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1044(entry) 
 msgid "yes (Note 1)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1047(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1047(entry) 
 msgid "Other digest algorithms"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1049(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1049(entry) 
 msgid "yes (Note 2)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1052(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1052(entry) 
 msgid "Blowfish"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1057(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1057(entry) 
 msgid "AES"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1059(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1059(entry) 
 msgid "yes (Note 3)"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1062(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1062(entry) 
 msgid "DES/3DES/CAST5"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1067(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1067(entry) 
 msgid "Raw encryption"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1072(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1072(entry) 
 msgid "PGP Symmetric encryption"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1077(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1077(entry) 
 msgid "PGP Public-Key encryption"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1091(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1091(para) 
 msgid "SHA2 algorithms were added to OpenSSL in version 0.9.8. For older versions, <filename>pgcrypto</filename> will use built-in code."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1097(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1097(para) 
 msgid "Any digest algorithm OpenSSL supports is automatically picked up. This is not possible with ciphers, which need to be supported explicitly."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1104(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1104(para) 
 msgid "AES is included in OpenSSL since version 0.9.7. For older versions, <filename>pgcrypto</filename> will use built-in code."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1113(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1113(title) 
 msgid "NULL Handling"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1115(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1115(para) 
 msgid "As is standard in SQL, all functions return NULL, if any of the arguments are NULL. This may create security risks on careless usage."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1122(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1122(title) 
 msgid "Security Limitations"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1124(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1124(para) 
 msgid "All <filename>pgcrypto</filename> functions run inside the database server. That means that all the data and passwords move between <filename>pgcrypto</filename> and client applications in clear text. Thus you must:"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1133(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1133(para) 
 msgid "Connect locally or use SSL connections."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1136(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1136(para) 
 msgid "Trust both system and database administrator."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1140(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1140(para) 
 msgid "If you cannot, then better do crypto inside client application."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1146(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1146(title) 
 msgid "Useful Reading"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1151(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1151(para) 
 msgid "The GNU Privacy Handbook."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1155(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1155(para) 
 msgid "Describes the crypt-blowfish algorithm."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1161(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1161(para) 
 msgid "How to choose a good password."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1165(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1165(para) 
 msgid "Interesting idea for picking passwords."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1171(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1171(para) 
 msgid "Describes good and bad cryptography."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1177(title) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1177(title) 
 msgid "Technical References"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1182(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1182(para) 
 msgid "OpenPGP message format."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1186(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1186(para) 
 msgid "The MD5 Message-Digest Algorithm."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1190(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1190(para) 
 msgid "HMAC: Keyed-Hashing for Message Authentication."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1196(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1196(para) 
 msgid "Comparison of crypt-des, crypt-md5 and bcrypt algorithms."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1200(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1200(para) 
 msgid "Standards for DES, 3DES and AES."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1206(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1206(para) 
 msgid "Description of Fortuna CSPRNG."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1210(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1210(para) 
 msgid "Jean-Luc Cooke Fortuna-based <filename>/dev/random</filename> driver for Linux."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1214(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1214(para) 
 msgid "Collection of cryptology pointers."
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1221(title) /tmp/cicero-OXUr/pgcrypto.xml:1236(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1221(title) /tmp/cicero-PyDp/pgcrypto.xml:1236(entry) 
 msgid "Author"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1223(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1223(para) 
 msgid "Marko Kreen <email>markokr@gmail.com</email>"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1227(para) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1227(para) 
 msgid "<filename>pgcrypto</filename> uses code from the following sources:"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1237(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1237(entry) 
 msgid "Source origin"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1242(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1242(entry) 
 msgid "DES crypt"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1243(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1243(entry) 
 msgid "David Burren and others"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1244(entry) /tmp/cicero-OXUr/pgcrypto.xml:1249(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1244(entry) /tmp/cicero-PyDp/pgcrypto.xml:1249(entry) 
 msgid "FreeBSD libcrypt"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1247(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1247(entry) 
 msgid "MD5 crypt"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1248(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1248(entry) 
 msgid "Poul-Henning Kamp"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1252(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1252(entry) 
 msgid "Blowfish crypt"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1253(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1253(entry) 
 msgid "Solar Designer"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1254(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1254(entry) 
 msgid "www.openwall.com"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1257(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1257(entry) 
 msgid "Blowfish cipher"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1258(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1258(entry) 
 msgid "Simon Tatham"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1259(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1259(entry) 
 msgid "PuTTY"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1262(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1262(entry) 
 msgid "Rijndael cipher"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1263(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1263(entry) 
 msgid "Brian Gladman"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1264(entry) /tmp/cicero-OXUr/pgcrypto.xml:1274(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1264(entry) /tmp/cicero-PyDp/pgcrypto.xml:1274(entry) 
 msgid "OpenBSD sys/crypto"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1267(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1267(entry) 
 msgid "MD5 and SHA1"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1268(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1268(entry) 
 msgid "WIDE Project"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1269(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1269(entry) 
 msgid "KAME kame/sys/crypto"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1272(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1272(entry) 
 msgid "SHA256/384/512"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1273(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1273(entry) 
 msgid "Aaron D. Gifford"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1277(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1277(entry) 
 msgid "BIGNUM math"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1278(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1278(entry) 
 msgid "Michael J. Fromberger"
 msgstr ""
 
-#: /tmp/cicero-OXUr/pgcrypto.xml:1279(entry) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:1279(entry) 
 msgid "dartmouth.edu/~sting/sw/imath"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-OXUr/pgcrypto.xml:0(None) 
+#: /tmp/cicero-PyDp/pgcrypto.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
