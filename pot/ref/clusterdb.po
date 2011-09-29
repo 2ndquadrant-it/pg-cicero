@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-29 10:14+0200\n"
+"POT-Creation-Date: 2011-09-29 10:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,292 +9,292 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:9(application) /tmp/cicero-ZMws/ref/clusterdb.xml:15(refname) /tmp/cicero-ZMws/ref/clusterdb.xml:20(primary) /tmp/cicero-ZMws/ref/clusterdb.xml:25(command) /tmp/cicero-ZMws/ref/clusterdb.xml:33(command) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:9(application) /tmp/cicero-UxUm/ref/clusterdb.xml:15(refname) /tmp/cicero-UxUm/ref/clusterdb.xml:20(primary) /tmp/cicero-UxUm/ref/clusterdb.xml:25(command) /tmp/cicero-UxUm/ref/clusterdb.xml:33(command) 
 msgid "clusterdb"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:10(manvolnum) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:10(manvolnum) 
 msgid "1"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:11(refmiscinfo) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:11(refmiscinfo) 
 msgid "Application"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:16(productname) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:16(productname) 
 msgid "PostgreSQL"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:16(refpurpose) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:16(refpurpose) 
 msgid "cluster a <placeholder-1/> database"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:26(replaceable) /tmp/cicero-ZMws/ref/clusterdb.xml:34(replaceable) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:26(replaceable) /tmp/cicero-UxUm/ref/clusterdb.xml:34(replaceable) 
 msgid "connection-option"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:27(arg) /tmp/cicero-ZMws/ref/clusterdb.xml:35(arg) /tmp/cicero-ZMws/ref/clusterdb.xml:127(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:27(arg) /tmp/cicero-UxUm/ref/clusterdb.xml:35(arg) /tmp/cicero-UxUm/ref/clusterdb.xml:127(option) 
 msgid "--verbose"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:27(arg) /tmp/cicero-ZMws/ref/clusterdb.xml:35(arg) /tmp/cicero-ZMws/ref/clusterdb.xml:126(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:27(arg) /tmp/cicero-UxUm/ref/clusterdb.xml:35(arg) /tmp/cicero-UxUm/ref/clusterdb.xml:126(option) 
 msgid "-v"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:28(replaceable) /tmp/cicero-ZMws/ref/clusterdb.xml:116(replaceable) /tmp/cicero-ZMws/ref/clusterdb.xml:117(replaceable) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:28(replaceable) /tmp/cicero-UxUm/ref/clusterdb.xml:116(replaceable) /tmp/cicero-UxUm/ref/clusterdb.xml:117(replaceable) 
 msgid "table"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:28(arg) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:28(arg) 
 msgid "--table | -t <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:29(replaceable) /tmp/cicero-ZMws/ref/clusterdb.xml:80(replaceable) /tmp/cicero-ZMws/ref/clusterdb.xml:81(replaceable) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:29(replaceable) /tmp/cicero-UxUm/ref/clusterdb.xml:80(replaceable) /tmp/cicero-UxUm/ref/clusterdb.xml:81(replaceable) 
 msgid "dbname"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:36(arg) /tmp/cicero-ZMws/ref/clusterdb.xml:71(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:36(arg) /tmp/cicero-UxUm/ref/clusterdb.xml:71(option) 
 msgid "--all"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:36(arg) /tmp/cicero-ZMws/ref/clusterdb.xml:70(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:36(arg) /tmp/cicero-UxUm/ref/clusterdb.xml:70(option) 
 msgid "-a"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:42(title) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:42(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:44(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:44(para) 
 msgid "<application>clusterdb</application> is a utility for reclustering tables in a <productname>PostgreSQL</productname> database. It finds tables that have previously been clustered, and clusters them again on the same index that was last used. Tables that have never been clustered are not affected."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:52(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:52(para) 
 msgid "<application>clusterdb</application> is a wrapper around the SQL command <xref linkend=\"sql-cluster\"/>. There is no effective difference between clustering databases via this utility and via other methods for accessing the server."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:63(title) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:63(title) 
 msgid "Options"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:73(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:73(para) 
 msgid "Cluster all databases."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:80(optional) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:80(optional) 
 msgid "-d"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:81(optional) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:81(optional) 
 msgid "--dbname="
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:83(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:83(para) 
 msgid "Specifies the name of the database to be clustered. If this is not specified and <option>-a</option> (or <option>--all</option>) is not used, the database name is read from the environment variable <envar>PGDATABASE</envar>. If that is not set, the user name specified for the connection is used."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:95(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:95(option) 
 msgid "-e"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:96(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:96(option) 
 msgid "--echo"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:98(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:98(para) 
 msgid "Echo the commands that <application>clusterdb</application> generates and sends to the server."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:106(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:106(option) 
 msgid "-q"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:107(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:107(option) 
 msgid "--quiet"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:109(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:109(para) 
 msgid "Do not display progress messages."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:116(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:116(option) 
 msgid "-t <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:117(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:117(option) 
 msgid "--table=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:119(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:119(para) 
 msgid "Cluster <replaceable class=\"parameter\">table</replaceable> only."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:129(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:129(para) 
 msgid "Print detailed information during processing."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:136(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:136(option) 
 msgid "-V"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:137(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:137(option) 
 msgid "--version"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:139(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:139(para) 
 msgid "Print the <application>clusterdb</application> version and exit."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:146(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:146(option) 
 msgid "-?"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:147(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:147(option) 
 msgid "--help"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:149(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:149(para) 
 msgid "Show help about <application>clusterdb</application> command line arguments, and exit."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:65(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:65(para) 
 msgid "<application>clusterdb</application> accepts the following command-line arguments: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:165(replaceable) /tmp/cicero-ZMws/ref/clusterdb.xml:166(replaceable) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:165(replaceable) /tmp/cicero-UxUm/ref/clusterdb.xml:166(replaceable) 
 msgid "host"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:165(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:165(option) 
 msgid "-h <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:166(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:166(option) 
 msgid "--host=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:168(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:168(para) 
 msgid "Specifies the host name of the machine on which the server is running. If the value begins with a slash, it is used as the directory for the Unix domain socket."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:177(replaceable) /tmp/cicero-ZMws/ref/clusterdb.xml:178(replaceable) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:177(replaceable) /tmp/cicero-UxUm/ref/clusterdb.xml:178(replaceable) 
 msgid "port"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:177(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:177(option) 
 msgid "-p <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:178(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:178(option) 
 msgid "--port=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:180(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:180(para) 
 msgid "Specifies the TCP port or local Unix domain socket file extension on which the server is listening for connections."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:189(replaceable) /tmp/cicero-ZMws/ref/clusterdb.xml:190(replaceable) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:189(replaceable) /tmp/cicero-UxUm/ref/clusterdb.xml:190(replaceable) 
 msgid "username"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:189(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:189(option) 
 msgid "-U <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:190(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:190(option) 
 msgid "--username=<placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:192(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:192(para) 
 msgid "User name to connect as."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:199(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:199(option) 
 msgid "-w"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:200(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:200(option) 
 msgid "--no-password"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:202(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:202(para) 
 msgid "Never issue a password prompt. If the server requires password authentication and a password is not available by other means such as a <filename>.pgpass</filename> file, the connection attempt will fail. This option can be useful in batch jobs and scripts where no user is present to enter a password."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:214(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:214(option) 
 msgid "-W"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:215(option) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:215(option) 
 msgid "--password"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:217(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:217(para) 
 msgid "Force <application>clusterdb</application> to prompt for a password before connecting to a database."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:222(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:222(para) 
 msgid "This option is never essential, since <application>clusterdb</application> will automatically prompt for a password if the server demands password authentication. However, <application>clusterdb</application> will waste a connection attempt finding out that the server wants a password. In some cases it is worth typing <option>-W</option> to avoid the extra connection attempt."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:159(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:159(para) 
 msgid "<application>clusterdb</application> also accepts the following command-line arguments for connection parameters: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:239(title) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:239(title) 
 msgid "Environment"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:243(envar) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:243(envar) 
 msgid "PGDATABASE"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:244(envar) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:244(envar) 
 msgid "PGHOST"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:245(envar) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:245(envar) 
 msgid "PGPORT"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:246(envar) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:246(envar) 
 msgid "PGUSER"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:249(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:249(para) 
 msgid "Default connection parameters"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:256(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:256(para) 
 msgid "This utility, like most other <productname>PostgreSQL</productname> utilities, also uses the environment variables supported by <application>libpq</application> (see <xref linkend=\"libpq-envars\"/>)."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:266(title) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:266(title) 
 msgid "Diagnostics"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:268(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:268(para) 
 msgid "In case of difficulty, see <xref linkend=\"sql-cluster\"/> and <xref linkend=\"app-psql\"/> for discussions of potential problems and error messages. The database server must be running at the targeted host. Also, any default connection settings and environment variables used by the <application>libpq</application> front-end library will apply."
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:282(title) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:282(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:284(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:284(para) 
 msgid "To cluster the database <literal>test</literal>: <screen>\n<prompt>$ </prompt><userinput>clusterdb test</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:291(para) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:291(para) 
 msgid "To cluster a single table <literal>foo</literal> in a database named <literal>xyzzy</literal>: <screen>\n<prompt>$ </prompt><userinput>clusterdb --table foo xyzzy</userinput>\n</screen>"
 msgstr ""
 
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:302(title) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:302(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ZMws/ref/clusterdb.xml:0(None) 
+#: /tmp/cicero-UxUm/ref/clusterdb.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 

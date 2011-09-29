@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-29 10:15+0200\n"
+"POT-Creation-Date: 2011-09-29 10:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,19 +9,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-ZMws/release.xml:40(title) 
+#: /tmp/cicero-UxUm/release.xml:40(title) 
 msgid "Release Notes"
 msgstr ""
 
-#: /tmp/cicero-ZMws/release.xml:42(para) 
+#: /tmp/cicero-UxUm/release.xml:42(para) 
 msgid "The release notes contain the significant changes in each <productname>PostgreSQL</productname> release, with major features and migration issues listed at the top. The release notes do not contain changes that affect only a few users or changes that are internal and therefore not user-visible. For example, the optimizer is improved in almost every release, but the improvements are usually observed by users as simply faster queries."
 msgstr ""
 
-#: /tmp/cicero-ZMws/release.xml:52(para) 
+#: /tmp/cicero-UxUm/release.xml:52(para) 
 msgid "A complete list of changes for each release can be obtained by viewing the <link linkend=\"git\">Git</link> logs for each release. The <ulink url=\"http://archives.postgresql.org/pgsql-committers/\"><literal>pgsql-committers</literal> email list</ulink> records all source code changes as well. There is also a <ulink url=\"http://git.postgresql.org/gitweb?p=postgresql.git;a=summary\">web interface</ulink> that shows changes to specific files."
 msgstr ""
 
-#: /tmp/cicero-ZMws/release.xml:62(para) 
+#: /tmp/cicero-UxUm/release.xml:62(para) 
 msgid "The name appearing next to each item represents the major developer for that item. Of course all changes involve community discussion and patch review, so each item is truly a community effort."
 msgstr ""
 
@@ -56,12 +56,12 @@ msgstr ""
 #. For new features, add links to the documentation sections.  Use </link>
 #. not just </> so that generate_history.pl can remove it, so HISTORY.html
 #. can be created without links to the main documentation.  Don't use <xref>.
-#: /tmp/cicero-ZMws/release.xml:39(appendix) 
+#: /tmp/cicero-UxUm/release.xml:39(appendix) 
 msgid "<placeholder-1/><placeholder-2/><placeholder-3/><placeholder-4/> &release-9.1; &release-9.0; &release-8.4; &release-8.3; &release-8.2; &release-8.1; &release-8.0; &release-7.4; &release-old;"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-ZMws/release.xml:0(None) 
+#: /tmp/cicero-UxUm/release.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
