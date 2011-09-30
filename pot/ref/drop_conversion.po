@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-09-29 10:18+0200\n"
+"POT-Creation-Date: 2011-09-30 06:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -9,94 +9,94 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:6(refentrytitle) /tmp/cicero-UxUm/ref/drop_conversion.xml:12(refname) /tmp/cicero-UxUm/ref/drop_conversion.xml:17(primary) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:6(refentrytitle) /tmp/cicero-tGKz/ref/drop_conversion.xml:12(refname) /tmp/cicero-tGKz/ref/drop_conversion.xml:17(primary) 
 msgid "DROP CONVERSION"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:7(manvolnum) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:7(manvolnum) 
 msgid "7"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:8(refmiscinfo) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:8(refmiscinfo) 
 msgid "SQL - Language Statements"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:13(refpurpose) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:13(refpurpose) 
 msgid "remove a conversion"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:22(replaceable) /tmp/cicero-UxUm/ref/drop_conversion.xml:50(replaceable) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:22(replaceable) /tmp/cicero-tGKz/ref/drop_conversion.xml:50(replaceable) 
 msgid "name"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:21(synopsis) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:21(synopsis) 
 #, no-wrap
 msgid "\nDROP CONVERSION [ IF EXISTS ] <placeholder-1/> [ CASCADE | RESTRICT ]\n"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:27(title) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:27(title) 
 msgid "Description"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:29(para) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:29(para) 
 msgid "<command>DROP CONVERSION</command> removes a previously defined conversion. To be able to drop a conversion, you must own the conversion."
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:36(title) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:36(title) 
 msgid "Parameters"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:40(literal) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:40(literal) 
 msgid "IF EXISTS"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:42(para) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:42(para) 
 msgid "Do not throw an error if the conversion does not exist. A notice is issued in this case."
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:53(para) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:53(para) 
 msgid "The name of the conversion. The conversion name can be schema-qualified."
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:61(literal) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:61(literal) 
 msgid "CASCADE"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:62(literal) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:62(literal) 
 msgid "RESTRICT"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:65(para) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:65(para) 
 msgid "These key words do not have any effect, since there are no dependencies on conversions."
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:75(title) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:75(title) 
 msgid "Examples"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:79(programlisting) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:79(programlisting) 
 #, no-wrap
 msgid "\nDROP CONVERSION myname;\n"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:77(para) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:77(para) 
 msgid "To drop the conversion named <literal>myname</literal>: <placeholder-1/>"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:85(title) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:85(title) 
 msgid "Compatibility"
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:87(para) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:87(para) 
 msgid "There is no <command>DROP CONVERSION</command> statement in the SQL standard, but a <command>DROP TRANSLATION</command> statement that goes along with the <command>CREATE TRANSLATION</command> statement that is similar to the <command>CREATE CONVERSION</command> statement in PostgreSQL."
 msgstr ""
 
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:97(title) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:97(title) 
 msgid "See Also"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: /tmp/cicero-UxUm/ref/drop_conversion.xml:0(None) 
+#: /tmp/cicero-tGKz/ref/drop_conversion.xml:0(None) 
 msgid "translator-credits"
 msgstr ""
 
